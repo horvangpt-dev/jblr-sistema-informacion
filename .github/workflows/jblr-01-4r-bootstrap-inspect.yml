@@ -1,0 +1,30 @@
+name: JBLR 01.4R Baseline Verify
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verify-baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct certified baseline byte-for-byte
+        shell: bash
+        run: |
+          set -euo pipefail
+          PREFIX=/tmp/jblr_prefix.sql
+          BASELINE=/tmp/JBLR_01_2_R2_DDL_PILOT.sql
+          cat \
+            db/baseline/parts/000.sqlpart \
+            db/baseline/parts/001.sqlpart \
+            db/baseline/parts/002.sqlpart \
+            db/baseline/parts/003a.sqlpart \
+            db/baseline/parts/003b.sqlpart > "$PREFIX"
+          test "$(wc -c < "$PREFIX")" = "51545"
+          echo '6ce2980a50c17f29896cd66e015e596f4aad758ea4518dbaeb23e792762c3aa3  /tmp/jblr_prefix.sql' | sha256sum -c -
+          cp "$PREFIX" "$BASELINE"
+          base64 -d db/baseline/remainder_from_51545.gz.b64 | gzip -dc >> "$BASELINE"
+          test "$(wc -c < "$BASELINE")" = "107014"
+          echo '50abe00a643d15e7b940580cce68d1abd34c6b6ccb06edd81f2e86973cb73d07  /tmp/JBLR_01_2_R2_DDL_PILOT.sql' | sha256sum -c -
+          echo 'CERTIFIED_BASELINE_RECONSTRUCTION=PASS'
