@@ -1,0 +1,250 @@
+-- =====================================================================
+-- JBLR · SISTEMA DE INFORMACIÓN BOTÁNICA
+-- 01.1 · MODELO LÓGICO Y DDL POSTGRESQL/POSTGIS PRELIMINAR
+-- PRELIMINAR — NO PRODUCCIÓN — NO EJECUTAR SIN REVISIÓN
+--
+-- Objetivo de compatibilidad:
+--   PostgreSQL 18+ recomendado para piloto.
+--   El diseño usa tipo uuid pero NO depende de DEFAULT uuidv7();
+--   UUIDv7 debe generarse en aplicación o, en PostgreSQL 18+, puede
+--   adoptarse uuidv7() tras revisión.
+-- =====================================================================
+
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
+CREATE SCHEMA IF NOT EXISTS core;
+CREATE SCHEMA IF NOT EXISTS taxonomy;
+CREATE SCHEMA IF NOT EXISTS field;
+CREATE SCHEMA IF NOT EXISTS material;
+CREATE SCHEMA IF NOT EXISTS evidence;
+CREATE SCHEMA IF NOT EXISTS governance;
+CREATE SCHEMA IF NOT EXISTS analytics;
+CREATE SCHEMA IF NOT EXISTS security;
+
+-- =====================================================================
+-- CORE
+-- =====================================================================
+
+CREATE TABLE core.resource_type (
+    resource_type_code varchar(3) PRIMARY KEY,
+    logical_name text NOT NULL UNIQUE,
+    code_prefix varchar(3) UNIQUE,
+    requires_jblr_code boolean NOT NULL DEFAULT false,
+    description text,
+    is_active boolean NOT NULL DEFAULT true,
+    CHECK (resource_type_code ~ '^[A-Z0-9]{3}$'),
+    CHECK (code_prefix IS NULL OR code_prefix ~ '^[A-Z0-9]{3}$')
+);
+
+CREATE TABLE core.resource (
+    resource_id uuid PRIMARY KEY,
+    resource_type_code varchar(3) NOT NULL
+        REFERENCES core.resource_type(resource_type_code) ON DELETE RESTRICT,
+    jblr_code varchar(32) UNIQUE,
+    validation_status text NOT NULL DEFAULT 'unreviewed'
+        CHECK (validation_status IN ('unreviewed','pending_review','validated','disputed','rejected')),
+    currency_status text NOT NULL DEFAULT 'current'
+        CHECK (currency_status IN ('current','superseded','withdrawn')),
+    created_at timestamptz NOT NULL DEFAULT current_timestamp,
+    created_by_agent_id uuid,
+    updated_at timestamptz NOT NULL DEFAULT current_timestamp,
+    row_version integer NOT NULL DEFAULT 1 CHECK (row_version >= 1),
+    CHECK (jblr_code IS NULL OR jblr_code ~ '^JBLR-[A-Z0-9]{3}-[0-9]{8}$')
+);
+
+CREATE INDEX idx_resource_type ON core.resource(resource_type_code);
+CREATE INDEX idx_resource_validation ON core.resource(validation_status);
+CREATE INDEX idx_resource_currency ON core.resource(currency_status);
+
+CREATE TABLE core.agent (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    agent_kind text NOT NULL
+        CHECK (agent_kind IN ('person','organization','software','team')),
+    display_name text NOT NULL,
+    legal_name text,
+    external_identifiers jsonb,
+    notes text
+);
+
+ALTER TABLE core.resource
+    ADD CONSTRAINT fk_resource_created_by_agent
+    FOREIGN KEY (created_by_agent_id)
+    REFERENCES core.agent(resource_id) ON DELETE SET NULL;
+
+CREATE INDEX idx_agent_display_name_trgm
+    ON core.agent USING gin (display_name gin_trgm_ops);
+
+CREATE TABLE core.agent_resource_role (
+    agent_resource_role_id uuid PRIMARY KEY,
+    agent_id uuid NOT NULL
+        REFERENCES core.agent(resource_id) ON DELETE RESTRICT,
+    resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    role_code text NOT NULL,
+    valid_from timestamptz,
+    valid_to timestamptz,
+    notes text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_agent_resource_role_resource ON core.agent_resource_role(resource_id);
+CREATE INDEX idx_agent_resource_role_agent ON core.agent_resource_role(agent_id);
+
+CREATE TABLE core.geographic_area (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    area_kind text NOT NULL,
+    name text NOT NULL,
+    parent_area_id uuid
+        REFERENCES core.geographic_area(resource_id) ON DELETE RESTRICT,
+    external_code text,
+    external_code_system text,
+    valid_from date,
+    valid_to date,
+    notes text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_geographic_area_parent ON core.geographic_area(parent_area_id);
+CREATE INDEX idx_geographic_area_name_trgm
+    ON core.geographic_area USING gin (name gin_trgm_ops);
+
+CREATE TABLE core.resource_set (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    set_kind text NOT NULL,
+    label text NOT NULL,
+    description text,
+    valid_from timestamptz,
+    valid_to timestamptz,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+
+CREATE TABLE core.resource_set_member (
+    resource_set_id uuid NOT NULL
+        REFERENCES core.resource_set(resource_id) ON DELETE RESTRICT,
+    member_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    member_role text,
+    ordinal integer CHECK (ordinal IS NULL OR ordinal >= 0),
+    PRIMARY KEY (resource_set_id, member_resource_id)
+);
+CREATE INDEX idx_resource_set_member_member
+    ON core.resource_set_member(member_resource_id);
+
+-- =====================================================================
+-- EVIDENCE: source registry and assets needed by other schemas
+-- =====================================================================
+
+CREATE TABLE evidence.external_source (
+    external_source_id uuid PRIMARY KEY,
+    source_code text NOT NULL UNIQUE,
+    source_name text NOT NULL,
+    source_type text NOT NULL,
+    base_url text,
+    default_license text,
+    is_active boolean NOT NULL DEFAULT true,
+    notes text
+);
+
+CREATE TABLE evidence.digital_asset (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    sha256 char(64) NOT NULL UNIQUE
+        CHECK (sha256 ~ '^[0-9a-fA-F]{64}$'),
+    size_bytes bigint CHECK (size_bytes IS NULL OR size_bytes >= 0),
+    media_type text,
+    storage_uri text NOT NULL,
+    original_filename text,
+    technical_metadata jsonb,
+    notes text
+);
+
+-- =====================================================================
+-- TAXONOMY
+-- =====================================================================
+
+CREATE TABLE taxonomy.term (
+    term_key text PRIMARY KEY,
+    term_domain text NOT NULL,
+    term_code text NOT NULL,
+    label text NOT NULL,
+    description text,
+    sort_order integer,
+    is_active boolean NOT NULL DEFAULT true,
+    UNIQUE (term_domain, term_code)
+);
+
+CREATE INDEX idx_taxonomy_term_domain ON taxonomy.term(term_domain);
+
+CREATE TABLE taxonomy.taxon_concept (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    rank_term_key text
+        REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    parent_concept_id uuid
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    concept_label text,
+    according_to_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    resolution_status text NOT NULL DEFAULT 'unresolved'
+        CHECK (resolution_status IN ('resolved','partially_resolved','unresolved','ambiguous','not_applicable')),
+    notes text,
+    CHECK (parent_concept_id IS NULL OR parent_concept_id <> resource_id)
+);
+CREATE INDEX idx_taxon_concept_parent ON taxonomy.taxon_concept(parent_concept_id);
+CREATE INDEX idx_taxon_concept_rank ON taxonomy.taxon_concept(rank_term_key);
+
+CREATE TABLE taxonomy.taxonomic_name (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    rank_term_key text
+        REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    scientific_name text NOT NULL,
+    canonical_name text NOT NULL,
+    authorship text,
+    genus text,
+    specific_epithet text,
+    infraspecific_epithet text,
+    hybrid_marker text,
+    nomenclatural_code text,
+    published_year integer CHECK (published_year IS NULL OR published_year BETWEEN 1500 AND 2500),
+    original_spelling text,
+    notes text
+);
+CREATE INDEX idx_taxonomic_name_canonical_lower
+    ON taxonomy.taxonomic_name (lower(canonical_name));
+CREATE INDEX idx_taxonomic_name_scientific_trgm
+    ON taxonomy.taxonomic_name USING gin (scientific_name gin_trgm_ops);
+CREATE INDEX idx_taxonomic_name_canonical_trgm
+    ON taxonomy.taxonomic_name USING gin (canonical_name gin_trgm_ops);
+
+CREATE TABLE taxonomy.name_usage (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    taxon_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    taxonomic_name_id uuid NOT NULL
+        REFERENCES taxonomy.taxonomic_name(resource_id) ON DELETE RESTRICT,
+    treatment_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    usage_role text NOT NULL
+        CHECK (usage_role IN ('accepted','synonym','previously_accepted','basionym','misapplied','historical_usage','unresolved')),
+    verbatim_name text,
+    valid_from date,
+    valid_to date,
+    notes text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_name_usage_concept ON taxonomy.name_usage(taxon_concept_id);
+CREATE INDEX idx_name_usage_name ON taxonomy.name_usage(taxonomic_name_id);
+CREATE INDEX idx_name_usage_treatment ON taxonomy.name_usage(treatment_resource_id);
+
+CREATE TABLE taxonomy.nomenclatural_relation (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    subject_name_id uuid NOT NULL
+        REFERENCES taxonomy.taxonomic_name(resource_id) ON DELETE RESTRICT,
+    object_name_id uuid NOT NULL
+        REFERENCES taxonomy.taxonomic_name(resource_id) ON DELETE RESTRICT,
+    relation_term_key text NOT NULL
