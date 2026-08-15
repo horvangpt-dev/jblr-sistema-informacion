@@ -1,0 +1,250 @@
+        REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    valid_from date,
+    valid_to date,
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    notes text,
+    CHECK (subject_name_id <> object_name_id),
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_nomrel_subject ON taxonomy.nomenclatural_relation(subject_name_id);
+CREATE INDEX idx_nomrel_object ON taxonomy.nomenclatural_relation(object_name_id);
+
+CREATE TABLE taxonomy.taxon_concept_relation (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    subject_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    object_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    relation_type text NOT NULL
+        CHECK (relation_type IN ('congruent_with','includes','included_in','overlaps','disjoint_from','uncertain_relationship')),
+    treatment_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    valid_from date,
+    valid_to date,
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    notes text,
+    CHECK (subject_concept_id <> object_concept_id),
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_taxconrel_subject ON taxonomy.taxon_concept_relation(subject_concept_id);
+CREATE INDEX idx_taxconrel_object ON taxonomy.taxon_concept_relation(object_concept_id);
+
+CREATE TABLE taxonomy.taxon_change_event (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    change_type text NOT NULL
+        CHECK (change_type IN ('split','lump','rank_change','accepted_name_change','recircumscription','other')),
+    effective_date date,
+    decided_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    rationale text,
+    notes text
+);
+
+CREATE TABLE taxonomy.taxon_change_event_concept (
+    taxon_change_event_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_change_event(resource_id) ON DELETE RESTRICT,
+    taxon_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    event_role text NOT NULL
+        CHECK (event_role IN ('input','output','affected')),
+    PRIMARY KEY (taxon_change_event_id, taxon_concept_id, event_role)
+);
+CREATE INDEX idx_tax_change_concept ON taxonomy.taxon_change_event_concept(taxon_concept_id);
+
+CREATE TABLE taxonomy.identification (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    target_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    taxon_concept_id uuid
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    taxonomic_name_id uuid
+        REFERENCES taxonomy.taxonomic_name(resource_id) ON DELETE RESTRICT,
+    verbatim_identification text,
+    identified_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    identified_at date,
+    method_text text,
+    method_reference_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    qualifier text,
+    resolution_status text NOT NULL DEFAULT 'unresolved'
+        CHECK (resolution_status IN ('resolved','partially_resolved','unresolved','ambiguous','not_applicable')),
+    is_preferred boolean NOT NULL DEFAULT false,
+    supersedes_identification_id uuid
+        REFERENCES taxonomy.identification(resource_id) ON DELETE RESTRICT,
+    notes text,
+    CHECK (
+        taxon_concept_id IS NOT NULL
+        OR taxonomic_name_id IS NOT NULL
+        OR verbatim_identification IS NOT NULL
+    ),
+    CHECK (supersedes_identification_id IS NULL OR supersedes_identification_id <> resource_id)
+);
+CREATE INDEX idx_identification_target ON taxonomy.identification(target_resource_id);
+CREATE INDEX idx_identification_concept ON taxonomy.identification(taxon_concept_id);
+CREATE UNIQUE INDEX uq_identification_preferred_target
+    ON taxonomy.identification(target_resource_id)
+    WHERE is_preferred = true;
+
+CREATE TABLE taxonomy.backbone_snapshot (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    external_source_id uuid NOT NULL
+        REFERENCES evidence.external_source(external_source_id) ON DELETE RESTRICT,
+    version_label text,
+    retrieved_at timestamptz NOT NULL,
+    dataset_uri text,
+    checksum text,
+    digital_asset_id uuid
+        REFERENCES evidence.digital_asset(resource_id) ON DELETE RESTRICT,
+    notes text
+);
+CREATE INDEX idx_backbone_source ON taxonomy.backbone_snapshot(external_source_id);
+
+CREATE TABLE taxonomy.external_taxon_reference (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    taxon_concept_id uuid
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    taxonomic_name_id uuid
+        REFERENCES taxonomy.taxonomic_name(resource_id) ON DELETE RESTRICT,
+    external_source_id uuid NOT NULL
+        REFERENCES evidence.external_source(external_source_id) ON DELETE RESTRICT,
+    backbone_snapshot_id uuid
+        REFERENCES taxonomy.backbone_snapshot(resource_id) ON DELETE RESTRICT,
+    external_id text NOT NULL,
+    external_url text,
+    match_type text,
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    notes text,
+    CHECK (taxon_concept_id IS NOT NULL OR taxonomic_name_id IS NOT NULL)
+);
+CREATE INDEX idx_external_taxon_ref_concept ON taxonomy.external_taxon_reference(taxon_concept_id);
+CREATE INDEX idx_external_taxon_ref_name ON taxonomy.external_taxon_reference(taxonomic_name_id);
+CREATE INDEX idx_external_taxon_ref_source_id
+    ON taxonomy.external_taxon_reference(external_source_id, external_id);
+
+CREATE TABLE taxonomy.search_name_assertion (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    taxon_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    taxonomic_name_id uuid NOT NULL
+        REFERENCES taxonomy.taxonomic_name(resource_id) ON DELETE RESTRICT,
+    search_context text NOT NULL
+        CHECK (search_context IN ('bibliography','herbarium','occurrence','genetics','general_discovery')),
+    safety_status text NOT NULL
+        CHECK (safety_status IN ('automatic_safe','reviewed_safe','review_required','excluded')),
+    valid_from date,
+    valid_to date,
+    reviewed_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    reviewed_at timestamptz,
+    rationale text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_search_name_concept_context
+    ON taxonomy.search_name_assertion(taxon_concept_id, search_context);
+
+CREATE TABLE taxonomy.taxonomic_adoption_decision (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    taxon_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    adopted_name_id uuid NOT NULL
+        REFERENCES taxonomy.taxonomic_name(resource_id) ON DELETE RESTRICT,
+    decided_at timestamptz NOT NULL,
+    decided_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    primary_external_source_id uuid
+        REFERENCES evidence.external_source(external_source_id) ON DELETE RESTRICT,
+    primary_evidence_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    policy_basis text,
+    is_policy_exception boolean NOT NULL DEFAULT false,
+    valid_from date,
+    valid_to date,
+    is_current boolean NOT NULL DEFAULT true,
+    rationale text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE UNIQUE INDEX uq_current_taxonomic_adoption
+    ON taxonomy.taxonomic_adoption_decision(taxon_concept_id)
+    WHERE is_current = true;
+CREATE INDEX idx_taxonomic_adoption_name
+    ON taxonomy.taxonomic_adoption_decision(adopted_name_id);
+
+CREATE TABLE taxonomy.regional_taxon_assertion (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    taxon_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    geographic_area_id uuid NOT NULL
+        REFERENCES core.geographic_area(resource_id) ON DELETE RESTRICT,
+
+    presence_term_key text REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    presence_value_status text NOT NULL DEFAULT 'not_recorded'
+        CHECK (presence_value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+
+    origin_term_key text REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    origin_value_status text NOT NULL DEFAULT 'not_recorded'
+        CHECK (origin_value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+
+    establishment_term_key text REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    establishment_value_status text NOT NULL DEFAULT 'not_recorded'
+        CHECK (establishment_value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+
+    context_term_key text REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    context_value_status text NOT NULL DEFAULT 'not_recorded'
+        CHECK (context_value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+
+    temporality_term_key text REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    temporality_value_status text NOT NULL DEFAULT 'not_recorded'
+        CHECK (temporality_value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+
+    catalog_inclusion_term_key text REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    catalog_inclusion_value_status text NOT NULL DEFAULT 'not_recorded'
+        CHECK (catalog_inclusion_value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    valid_from date,
+    valid_to date,
+    notes text,
+
+    CHECK ((presence_value_status = 'present') = (presence_term_key IS NOT NULL)),
+    CHECK ((origin_value_status = 'present') = (origin_term_key IS NOT NULL)),
+    CHECK ((establishment_value_status = 'present') = (establishment_term_key IS NOT NULL)),
+    CHECK ((context_value_status = 'present') = (context_term_key IS NOT NULL)),
+    CHECK ((temporality_value_status = 'present') = (temporality_term_key IS NOT NULL)),
+    CHECK ((catalog_inclusion_value_status = 'present') = (catalog_inclusion_term_key IS NOT NULL)),
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_regional_assertion_taxon_area
+    ON taxonomy.regional_taxon_assertion(taxon_concept_id, geographic_area_id);
+
+CREATE TABLE taxonomy.taxonomic_impact_assessment (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    taxon_change_event_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_change_event(resource_id) ON DELETE RESTRICT,
+    affected_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    historical_assignability text
+        CHECK (historical_assignability IN ('securely_assignable','partially_assignable','not_assignable','requires_redetermination')),
+    impact_term_key text
+        REFERENCES taxonomy.term(term_key) ON DELETE RESTRICT,
+    assessed_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    assessed_at timestamptz NOT NULL,
+    rationale text
+);
+CREATE INDEX idx_taximpact_affected ON taxonomy.taxonomic_impact_assessment(affected_resource_id);
