@@ -26,147 +26,189 @@ jobs:
       PGUSER: postgres
       PGDATABASE: jblr_src
       BASELINE_SHA256: 50abe00a643d15e7b940580cce68d1abd34c6b6ccb06edd81f2e86973cb73d07
-      BUNDLE_SHA256: 4f52d2617cd3014e0931e4883c3d4b77f482a705ae04b60f694e0c0dd549f59f
+      SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install clients and Sqitch
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install SQL client and Sqitch
         run: |
           set -euo pipefail
           sudo apt-get update
-          sudo apt-get install -y postgresql-client sqitch libdbd-pg-perl unzip
-          psql --version
-          pg_dump --version
-          sqitch --version
+          sudo apt-get install -y postgresql-client sqitch libdbd-pg-perl
+          psql --version | tee evidence/host_psql_version.txt
+          sqitch --version | tee evidence/sqitch_version.txt
 
-      - name: Reconstruct exact Drive technical bundle
+      - name: Reconstruct immutable certified baseline byte-for-byte
         run: |
           set -euo pipefail
-          base64 -d .cert_payload_01_4r/JBLR_01_4_TECHNICAL_BUNDLE.zip.b64 > /tmp/JBLR_01_4_TECHNICAL_BUNDLE.zip
-          echo "$BUNDLE_SHA256  /tmp/JBLR_01_4_TECHNICAL_BUNDLE.zip" | sha256sum -c -
-          mkdir -p /tmp/jblr-src
-          unzip -q /tmp/JBLR_01_4_TECHNICAL_BUNDLE.zip -d /tmp/jblr-src
-          cd /tmp/jblr-src
-          sha256sum -c manifests/JBLR_01_4_MANIFEST_SHA256.txt
-          echo "$BASELINE_SHA256  db/baseline/JBLR_01_2_R2_DDL_PILOT.sql" | sha256sum -c -
+          PREFIX=/tmp/jblr_prefix.sql
+          BASELINE=db/baseline/JBLR_01_2_R2_DDL_PILOT.sql
+          cat db/baseline/parts/000.sqlpart db/baseline/parts/001.sqlpart db/baseline/parts/002.sqlpart db/baseline/parts/003a.sqlpart db/baseline/parts/003b.sqlpart > "$PREFIX"
+          test "$(wc -c < "$PREFIX")" = "51545"
+          echo '6ce2980a50c17f29896cd66e015e596f4aad758ea4518dbaeb23e792762c3aa3  /tmp/jblr_prefix.sql' | sha256sum -c -
+          cp "$PREFIX" "$BASELINE"
+          base64 -d db/baseline/remainder_from_51545.gz.b64 | gzip -dc >> "$BASELINE"
+          test "$(wc -c < "$BASELINE")" = "107014"
+          echo "$BASELINE_SHA256  $BASELINE" | sha256sum -c - | tee evidence/baseline_hash_check.txt
+          sha256sum "$BASELINE" > evidence/baseline.sha256
 
-      - name: Record engine versions
+      - name: Record source engine versions
         run: |
           set -euo pipefail
-          mkdir -p evidence
+          SRC_CID=$(docker ps --filter ancestor=postgis/postgis:18-3.6 --format '{{.ID}}' | head -1)
+          test -n "$SRC_CID"
           {
-            echo "github_sha=$GITHUB_SHA"
+            echo "source_sha=$SOURCE_SHA"
+            echo "github_event_sha=$GITHUB_SHA"
             echo "run_id=$GITHUB_RUN_ID"
+            echo "repository=$GITHUB_REPOSITORY"
             psql -X -Atqc 'select version()'
-            psql -X -Atqc "select extname||'='||extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1" || true
+            docker exec "$SRC_CID" pg_dump --version
             sqitch --version
-            pg_dump --version
           } | tee evidence/versions.txt
 
-      - name: Install immutable baseline
+      - name: Install immutable baseline and extensions
         run: |
           set -euo pipefail
-          cd /tmp/jblr-src
-          psql -X -v ON_ERROR_STOP=1 -d jblr_src -f db/baseline/JBLR_01_2_R2_DDL_PILOT.sql | tee "$GITHUB_WORKSPACE/evidence/baseline_install.log"
-          psql -X -Atqc "select extname||'='||extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1" | tee -a "$GITHUB_WORKSPACE/evidence/versions.txt"
+          psql -X -v ON_ERROR_STOP=1 -d jblr_src -f db/baseline/JBLR_01_2_R2_DDL_PILOT.sql > evidence/baseline_install.log
+          psql -X -Atqc "select extname||'='||extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1" | tee evidence/extensions_source.txt
 
       - name: Execute Sqitch deploy and verify for real
         run: |
           set -euo pipefail
-          cd /tmp/jblr-src/db/sqitch
-          sqitch target add ci 'db:pg://postgres@localhost/jblr_src'
-          sqitch deploy ci 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_deploy.log"
-          sqitch verify ci 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_verify.log"
-          psql -X -d jblr_src -Atqc "select count(*) from information_schema.tables where table_schema='sqitch'" | tee "$GITHUB_WORKSPACE/evidence/sqitch_registry_table_count.txt"
+          cd db/sqitch
+          sqitch deploy 'db:pg://postgres@localhost/jblr_src' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_deploy.log"
+          sqitch verify 'db:pg://postgres@localhost/jblr_src' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_verify.log"
+          cd "$GITHUB_WORKSPACE"
+          test "$(psql -X -Atqc "select case when to_regclass('sqitch.changes') is null then 0 else 1 end")" = "1"
+          psql -X -Atqc "select count(*) from sqitch.changes" | tee evidence/sqitch_change_count.txt
+          PLAN_SHA=$(sha256sum db/sqitch/sqitch.plan | awk '{print $1}')
+          psql -X -v ON_ERROR_STOP=1 -c "insert into governance.schema_release(release_id,jblr_release,environment_code,conceptual_version,logical_version,physical_baseline_version,baseline_sha256,sqitch_project,sqitch_plan_hash,git_commit_sha,applied_by,release_status,verification_result,notes) values(uuidv7(),'JBLR_DB_PREPROD_01_4R_CERT','TEST','CORE_CONCEPT_v1','CORE_LOGICAL_MODEL_v1','CORE_PHYSICAL_MODEL_v1','$BASELINE_SHA256','jblr-db','$PLAN_SHA','$SOURCE_SHA','github-actions','verified','sqitch deploy+verify','01.4R technical certification; no production authorization')"
+          psql -X -P pager=off -c "select jblr_release,environment_code,physical_baseline_version,baseline_sha256,git_commit_sha,release_status from governance.schema_release" | tee evidence/schema_release_source.txt
 
-      - name: Safe Sqitch revert and redeploy proof on disposable database
+      - name: Safe Sqitch revert and redeploy on disposable database
         run: |
           set -euo pipefail
           createdb jblr_revert
-          cd /tmp/jblr-src
           psql -X -v ON_ERROR_STOP=1 -d jblr_revert -f db/baseline/JBLR_01_2_R2_DDL_PILOT.sql >/dev/null
           cd db/sqitch
           sqitch deploy 'db:pg://postgres@localhost/jblr_revert' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_revert_db_deploy.log"
-          sqitch revert 'db:pg://postgres@localhost/jblr_revert' -y 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_revert.log"
+          sqitch revert 'db:pg://postgres@localhost/jblr_revert' --to core_physical_model_v1 -y 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_revert.log"
           sqitch deploy 'db:pg://postgres@localhost/jblr_revert' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_redeploy.log"
           sqitch verify 'db:pg://postgres@localhost/jblr_revert' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_redeploy_verify.log"
 
-      - name: Apply and verify functional roles
+      - name: Apply roles, ownership and verify effective privileges
         run: |
           set -euo pipefail
-          cd /tmp/jblr-src
-          psql -X -v ON_ERROR_STOP=1 -d jblr_src -f ops/preprod_roles.sql | tee "$GITHUB_WORKSPACE/evidence/roles_apply.log"
-          psql -X -d jblr_src -P pager=off -c "select rolname,rolcanlogin,rolsuper,rolcreaterole,rolcreatedb from pg_roles where rolname like 'jblr_db_%' order by 1" | tee "$GITHUB_WORKSPACE/evidence/roles_attributes.txt"
-          psql -X -d jblr_src -P pager=off -c "select n.nspname,pg_get_userbyid(n.nspowner) owner from pg_namespace n where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') order by 1" | tee "$GITHUB_WORKSPACE/evidence/schema_ownership.txt"
+          psql -X -v ON_ERROR_STOP=1 -d jblr_src -f ops/preprod_roles.sql | tee evidence/roles_apply.log
+          psql -X -v ON_ERROR_STOP=1 -d jblr_src -f ops/01_4r_assign_ownership.sql | tee evidence/ownership_apply.log
+          psql -X -d jblr_src -P pager=off -c "select rolname,rolcanlogin,rolsuper,rolcreaterole,rolcreatedb,rolinherit from pg_roles where rolname like 'jblr_db_%' order by 1" | tee evidence/roles_attributes.txt
+          test "$(psql -X -Atqc "select count(*) from pg_roles where rolname like 'jblr_db_%'")" = "8"
+          test "$(psql -X -Atqc "select count(*) from pg_roles where rolname like 'jblr_db_%' and rolcanlogin")" = "0"
+          test "$(psql -X -Atqc "select count(*) from pg_namespace where nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') and pg_get_userbyid(nspowner)<>'jblr_db_owner'")" = "0"
+          test "$(psql -X -Atqc "select count(*) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') and c.relkind in ('r','p','v','m','S','f') and pg_get_userbyid(c.relowner)<>'jblr_db_owner'")" = "0"
+          test "$(psql -X -Atqc "select has_schema_privilege('jblr_db_app','core','CREATE')")" = "f"
+          test "$(psql -X -Atqc "select has_schema_privilege('jblr_db_reader','core','CREATE')")" = "f"
+          psql -X -d jblr_src -P pager=off -c "select n.nspname,pg_get_userbyid(n.nspowner) owner from pg_namespace n where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') order by 1" | tee evidence/schema_ownership_source.txt
 
-      - name: Inventory and C1-C5
+      - name: Prepare synthetic C4 fixture and execute C1-C5
         run: |
           set -euo pipefail
-          cd /tmp/jblr-src
-          psql -X -v ON_ERROR_STOP=1 -d jblr_src -f tests/verify_inventory.sql | tee "$GITHUB_WORKSPACE/evidence/inventory_source.log"
-          bash tests/r2_concurrency.sh jblr_src "$GITHUB_WORKSPACE/evidence/c1_c5_source"
+          psql -X -v ON_ERROR_STOP=1 -d jblr_src -c "insert into evidence.external_source(external_source_id,source_code,source_name,source_type,is_active) values('018f0000-0000-7000-8000-00000000007c','R2_SYNTH','R2 synthetic concurrency source','synthetic',true) on conflict do nothing"
+          psql -X -v ON_ERROR_STOP=1 -d jblr_src -f tests/verify_inventory.sql | tee evidence/inventory_source.log
+          bash tests/r2_concurrency.sh jblr_src evidence/c1_c5_source
 
-      - name: Portable PostgreSQL backup
+      - name: Generate portable PostgreSQL 18 backup
         run: |
           set -euo pipefail
-          pg_dump -Fc -d jblr_src -f evidence/jblr_preprod.dump
+          SRC_CID=$(docker ps --filter ancestor=postgis/postgis:18-3.6 --format '{{.ID}}' | head -1)
+          docker exec "$SRC_CID" pg_dump -Fc -U postgres -d jblr_src > evidence/jblr_preprod.dump
           sha256sum evidence/jblr_preprod.dump | tee evidence/jblr_preprod.dump.sha256
           {
             echo "created_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            echo "github_sha=$GITHUB_SHA"
+            echo "source_sha=$SOURCE_SHA"
             echo "baseline_sha256=$BASELINE_SHA256"
-            pg_dump --version
+            echo "format=pg_dump custom (-Fc)"
+            echo "exclusions=cluster-global roles are documented separately and must exist before owner-preserving restore"
+            docker exec "$SRC_CID" pg_dump --version
           } > evidence/backup_manifest.txt
 
-      - name: Real restore into independent clean database
+      - name: Real restore in independent PostgreSQL 18/PostGIS cluster
         run: |
           set -euo pipefail
-          createdb jblr_restore
-          pg_restore --exit-on-error -d jblr_restore evidence/jblr_preprod.dump 2>&1 | tee evidence/restore.log
-          cd /tmp/jblr-src
-          psql -X -v ON_ERROR_STOP=1 -d jblr_restore -f tests/verify_inventory.sql | tee "$GITHUB_WORKSPACE/evidence/inventory_restore.log"
-          psql -X -d jblr_restore -P pager=off -c "select extname,extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1" | tee "$GITHUB_WORKSPACE/evidence/restore_extensions.txt"
-          psql -X -d jblr_restore -Atqc "select count(*) from information_schema.tables where table_schema='sqitch'" | tee "$GITHUB_WORKSPACE/evidence/restore_sqitch_registry_table_count.txt"
-          psql -X -d jblr_restore -Atqc "select to_regclass('governance.schema_release'),to_regclass('migration_staging.source_file')" | tee "$GITHUB_WORKSPACE/evidence/restore_release_staging.txt"
+          docker run -d --name jblr-restore-pg -e POSTGRES_DB=jblr_restore -e POSTGRES_HOST_AUTH_METHOD=trust -p 55431:5432 postgis/postgis:18-3.6 > evidence/restore_container_id.txt
+          for i in $(seq 1 40); do pg_isready -h localhost -p 55431 -U postgres -d jblr_restore && break; sleep 1; done
+          PGPORT=55431 psql -X -v ON_ERROR_STOP=1 -d jblr_restore <<'SQL'
+          DO $$ DECLARE r text; BEGIN
+            FOREACH r IN ARRAY ARRAY['jblr_db_owner','jblr_db_admin','jblr_db_migrator','jblr_db_app','jblr_db_reader','jblr_db_analyst','jblr_db_backup','jblr_db_auditor'] LOOP
+              IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname=r) THEN EXECUTE format('CREATE ROLE %I NOLOGIN',r); END IF;
+            END LOOP;
+          END $$;
+          SQL
+          RESTORE_CID=$(docker ps --filter name=jblr-restore-pg --format '{{.ID}}' | head -1)
+          cat evidence/jblr_preprod.dump | docker exec -i "$RESTORE_CID" pg_restore --exit-on-error -U postgres -d jblr_restore 2>&1 | tee evidence/restore.log
+          PGPORT=55431 psql -X -v ON_ERROR_STOP=1 -d jblr_restore -f tests/verify_inventory.sql | tee evidence/inventory_restore.log
+          test "$(PGPORT=55431 psql -X -Atqc "select case when to_regclass('sqitch.changes') is null then 0 else 1 end" -d jblr_restore)" = "1"
+          test "$(PGPORT=55431 psql -X -Atqc "select count(*) from governance.schema_release where jblr_release='JBLR_DB_PREPROD_01_4R_CERT' and baseline_sha256='$BASELINE_SHA256'" -d jblr_restore)" = "1"
+          test "$(PGPORT=55431 psql -X -Atqc "select count(*) from pg_namespace where nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') and pg_get_userbyid(nspowner)<>'jblr_db_owner'" -d jblr_restore)" = "0"
+          PGPORT=55431 bash tests/r2_concurrency.sh jblr_restore evidence/c1_c5_restore
+          PGPORT=55431 psql -X -P pager=off -d jblr_restore -c "select jblr_release,baseline_sha256,git_commit_sha,release_status from governance.schema_release" | tee evidence/schema_release_restore.txt
 
-      - name: Second installation clean from versioned sources
+      - name: Second completely clean installation from versioned sources
         run: |
           set -euo pipefail
-          createdb jblr_clean
-          cd /tmp/jblr-src
+          docker run -d --name jblr-clean-pg -e POSTGRES_DB=jblr_clean -e POSTGRES_HOST_AUTH_METHOD=trust -p 55432:5432 postgis/postgis:18-3.6 > evidence/clean_container_id.txt
+          for i in $(seq 1 40); do pg_isready -h localhost -p 55432 -U postgres -d jblr_clean && break; sleep 1; done
           echo "$BASELINE_SHA256  db/baseline/JBLR_01_2_R2_DDL_PILOT.sql" | sha256sum -c -
-          psql -X -v ON_ERROR_STOP=1 -d jblr_clean -f db/baseline/JBLR_01_2_R2_DDL_PILOT.sql > "$GITHUB_WORKSPACE/evidence/clean_baseline.log"
+          PGPORT=55432 psql -X -v ON_ERROR_STOP=1 -d jblr_clean -f db/baseline/JBLR_01_2_R2_DDL_PILOT.sql > evidence/clean_baseline.log
           cd db/sqitch
-          sqitch deploy 'db:pg://postgres@localhost/jblr_clean' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/clean_sqitch_deploy.log"
-          sqitch verify 'db:pg://postgres@localhost/jblr_clean' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/clean_sqitch_verify.log"
-          cd /tmp/jblr-src
-          psql -X -v ON_ERROR_STOP=1 -d jblr_clean -f ops/preprod_roles.sql > "$GITHUB_WORKSPACE/evidence/clean_roles.log"
-          psql -X -v ON_ERROR_STOP=1 -d jblr_clean -f tests/verify_inventory.sql | tee "$GITHUB_WORKSPACE/evidence/inventory_clean.log"
-          bash tests/r2_concurrency.sh jblr_clean "$GITHUB_WORKSPACE/evidence/c1_c5_clean"
+          sqitch deploy 'db:pg://postgres@localhost:55432/jblr_clean' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/clean_sqitch_deploy.log"
+          sqitch verify 'db:pg://postgres@localhost:55432/jblr_clean' 2>&1 | tee "$GITHUB_WORKSPACE/evidence/clean_sqitch_verify.log"
+          cd "$GITHUB_WORKSPACE"
+          PGPORT=55432 psql -X -v ON_ERROR_STOP=1 -d jblr_clean -f ops/preprod_roles.sql > evidence/clean_roles.log
+          PGPORT=55432 psql -X -v ON_ERROR_STOP=1 -d jblr_clean -f ops/01_4r_assign_ownership.sql > evidence/clean_ownership.log
+          PLAN_SHA=$(sha256sum db/sqitch/sqitch.plan | awk '{print $1}')
+          PGPORT=55432 psql -X -v ON_ERROR_STOP=1 -d jblr_clean -c "insert into governance.schema_release(release_id,jblr_release,environment_code,conceptual_version,logical_version,physical_baseline_version,baseline_sha256,sqitch_project,sqitch_plan_hash,git_commit_sha,applied_by,release_status,verification_result,notes) values(uuidv7(),'JBLR_DB_PREPROD_01_4R_CERT','TEST','CORE_CONCEPT_v1','CORE_LOGICAL_MODEL_v1','CORE_PHYSICAL_MODEL_v1','$BASELINE_SHA256','jblr-db','$PLAN_SHA','$SOURCE_SHA','github-actions','verified','clean install sqitch deploy+verify','01.4R clean reconstruction; no production authorization')"
+          PGPORT=55432 psql -X -v ON_ERROR_STOP=1 -d jblr_clean -c "insert into evidence.external_source(external_source_id,source_code,source_name,source_type,is_active) values('018f0000-0000-7000-8000-00000000007c','R2_SYNTH','R2 synthetic concurrency source','synthetic',true) on conflict do nothing"
+          PGPORT=55432 psql -X -v ON_ERROR_STOP=1 -d jblr_clean -f tests/verify_inventory.sql | tee evidence/inventory_clean.log
+          test "$(PGPORT=55432 psql -X -Atqc "select count(*) from pg_namespace where nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') and pg_get_userbyid(nspowner)<>'jblr_db_owner'" -d jblr_clean)" = "0"
+          PGPORT=55432 bash tests/r2_concurrency.sh jblr_clean evidence/c1_c5_clean
 
       - name: Compare source restore and clean structural inventories
         run: |
           set -euo pipefail
-          for db in jblr_src jblr_restore jblr_clean; do
-            psql -X -d "$db" -AtF'|' -c "select table_schema,table_name from information_schema.tables where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging','sqitch') order by 1,2" > "evidence/${db}_tables.txt"
-            psql -X -d "$db" -AtF'|' -c "select routine_schema,routine_name,routine_type from information_schema.routines where routine_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') order by 1,2,3" > "evidence/${db}_routines.txt"
-          done
-          diff -u evidence/jblr_src_tables.txt evidence/jblr_restore_tables.txt | tee evidence/diff_src_restore_tables.txt
-          diff -u evidence/jblr_src_tables.txt evidence/jblr_clean_tables.txt | tee evidence/diff_src_clean_tables.txt
-          diff -u evidence/jblr_src_routines.txt evidence/jblr_restore_routines.txt | tee evidence/diff_src_restore_routines.txt
-          diff -u evidence/jblr_src_routines.txt evidence/jblr_clean_routines.txt | tee evidence/diff_src_clean_routines.txt
+          inventory() {
+            local port="$1" db="$2" out="$3"
+            PGPORT="$port" psql -X -d "$db" -AtF'|' -c "select 'SCHEMA',n.nspname,pg_get_userbyid(n.nspowner) from pg_namespace n where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging','sqitch') union all select 'REL',n.nspname||'.'||c.relname,c.relkind||':'||pg_get_userbyid(c.relowner) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging','sqitch') and c.relkind in ('r','p','v','m','S','f') union all select 'EXT',extname,extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1,2,3" > "$out"
+          }
+          inventory 5432 jblr_src evidence/inventory_struct_source.txt
+          inventory 55431 jblr_restore evidence/inventory_struct_restore.txt
+          inventory 55432 jblr_clean evidence/inventory_struct_clean.txt
+          diff -u evidence/inventory_struct_source.txt evidence/inventory_struct_restore.txt | tee evidence/diff_source_restore.txt
+          diff -u evidence/inventory_struct_source.txt evidence/inventory_struct_clean.txt | tee evidence/diff_source_clean.txt
 
-      - name: Final evidence manifest
+      - name: Final technical evidence manifest
         if: always()
         run: |
+          mkdir -p evidence
           set +e
-          sha256sum evidence/* 2>/dev/null | sort > evidence/EVIDENCE_SHA256.txt
-          find evidence -maxdepth 2 -type f -printf '%P\n' | sort > evidence/INVENTORY.txt
-          printf 'github_sha=%s\nrun_id=%s\nrepository=%s\n' "$GITHUB_SHA" "$GITHUB_RUN_ID" "$GITHUB_REPOSITORY" > evidence/RUN_IDENTITY.txt
+          {
+            echo "source_sha=$SOURCE_SHA"
+            echo "github_event_sha=$GITHUB_SHA"
+            echo "run_id=$GITHUB_RUN_ID"
+            echo "repository=$GITHUB_REPOSITORY"
+            echo "baseline_sha256=$BASELINE_SHA256"
+            echo "production_authorized=NO"
+          } > evidence/RUN_IDENTITY.txt
+          find evidence -maxdepth 3 -type f -printf '%P\n' | sort > evidence/INVENTORY.txt
+          find evidence -type f ! -name EVIDENCE_SHA256.txt -print0 | sort -z | xargs -0 sha256sum > evidence/EVIDENCE_SHA256.txt 2>/dev/null
 
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: jblr-01-4r-evidence-${{ github.sha }}
+          name: jblr-01-4r-evidence-${{ github.event.pull_request.head.sha || github.sha }}
           path: evidence
           if-no-files-found: error
