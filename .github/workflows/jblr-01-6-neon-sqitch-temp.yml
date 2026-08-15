@@ -15,10 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      TARGET_HOST: ep-long-dust-b2csrk8n.c-6.eu-central-1.aws.neon.tech
-      TARGET_DB: neondb
+      TARGET_PROJECT_ID: crimson-hall-16978747
       TARGET_BRANCH_ID: br-quiet-pine-b2hj8lb2
       TARGET_BRANCH_NAME: 01.6-sqitch-cli-certified-20260815
+      TARGET_ENDPOINT_ID: ep-long-dust-b2csrk8n
+      TARGET_HOST: ep-long-dust-b2csrk8n.c-6.eu-central-1.aws.neon.tech
+      TARGET_DB: neondb
       TEMP_ROLE: jblr_01_6_sqitch_temp
       BASELINE_PATH: db/baseline/JBLR_01_2_R2_DDL_PILOT_FIX1.sql
       BASELINE_SOURCE_BRANCH: 01.2r-baseline-fix
@@ -50,12 +52,16 @@ jobs:
           set -euo pipefail
           git diff --exit-code "$CERTIFIED_COMMIT" -- db/sqitch
           grep -F "NOT (table_schema='governance' AND table_name='schema_release')" db/sqitch/verify/core_physical_model_v1.sql
+          test "${TARGET_HOST%%.*}" = "$TARGET_ENDPOINT_ID"
           {
             echo "certified_commit=$CERTIFIED_COMMIT"
             echo "technical_branch=$GITHUB_REF_NAME"
             echo "technical_commit=$GITHUB_SHA"
+            echo "target_project_id=$TARGET_PROJECT_ID"
             echo "target_branch_id=$TARGET_BRANCH_ID"
             echo "target_branch_name=$TARGET_BRANCH_NAME"
+            echo "target_endpoint_id=$TARGET_ENDPOINT_ID"
+            echo "target_host=$TARGET_HOST"
           } | tee evidence/run_identity.txt
 
       - name: Materialize normative FIX1 and verify SHA-256
@@ -87,29 +93,86 @@ jobs:
           ) &
           ADMIN_PID=$!
           exec 3>/tmp/jblr_neon_admin_in
+          BINDING_PASS=0
 
           cleanup_admin() {
             set +e
             if [[ -e /proc/$ADMIN_PID ]]; then
-              cat >&3 <<'SQL'
-          ALTER ROLE jblr_01_6_sqitch_temp PASSWORD NULL VALID UNTIL '2000-01-01 00:00:00+00';
+              if [[ "$BINDING_PASS" = "1" ]]; then
+                cat >&3 <<'SQL'
+          DO $cleanup$
+          BEGIN
+            IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname='jblr_01_6_sqitch_temp') THEN
+              ALTER ROLE jblr_01_6_sqitch_temp PASSWORD NULL VALID UNTIL '2000-01-01 00:00:00+00';
+            END IF;
+          END
+          $cleanup$;
           \echo TEMP_LOGIN_REVOKED
           \q
           SQL
+              else
+                printf '\\q\n' >&3
+              fi
               exec 3>&-
               wait "$ADMIN_PID"
             fi
           }
           trap cleanup_admin EXIT
 
+          # Phase 1 is READ ONLY. No CREATE/ALTER/GRANT is sent until the
+          # passwordless session proves its Neon project/branch/endpoint identity.
           cat >&3 <<'SQL'
           \set ON_ERROR_STOP on
-          DO $$
-          BEGIN
-            IF current_user <> 'neondb_owner' THEN
-              RAISE EXCEPTION 'passwordless session must be neondb_owner, got %', current_user;
-            END IF;
-          END $$;
+          \pset tuples_only on
+          \pset format unaligned
+          SELECT 'JBLR_ADMIN_IDENTITY|'
+                 || coalesce(current_setting('neon.project_id', true),'') || '|'
+                 || coalesce(current_setting('neon.branch_id', true),'') || '|'
+                 || coalesce(current_setting('neon.endpoint_id', true),'') || '|'
+                 || current_database() || '|'
+                 || current_user;
+          \echo ADMIN_IDENTITY_READY
+          SQL
+
+          echo 'WAITING_FOR_NEON_PASSWORDLESS_AUTHORIZATION'
+          echo "Authorize the Neon browser link and select project $TARGET_PROJECT_ID, branch $TARGET_BRANCH_NAME."
+
+          identity_ready=0
+          for i in $(seq 1 120); do
+            if grep -q '^ADMIN_IDENTITY_READY$' evidence/admin_passwordless.log; then
+              identity_ready=1
+              break
+            fi
+            if ! kill -0 "$ADMIN_PID" 2>/dev/null; then
+              echo 'ADMIN_PASSWORDLESS_SESSION_ENDED_BEFORE_IDENTITY_CHECK' >&2
+              cat evidence/admin_passwordless.log >&2
+              exit 1
+            fi
+            sleep 1
+          done
+          test "$identity_ready" = "1"
+
+          ACTUAL_IDENTITY="$(grep '^JBLR_ADMIN_IDENTITY|' evidence/admin_passwordless.log | tail -n 1)"
+          EXPECTED_ADMIN_IDENTITY="JBLR_ADMIN_IDENTITY|$TARGET_PROJECT_ID|$TARGET_BRANCH_ID|$TARGET_ENDPOINT_ID|$TARGET_DB|neondb_owner"
+          printf 'actual=%s\nexpected=%s\n' "$ACTUAL_IDENTITY" "$EXPECTED_ADMIN_IDENTITY" | tee evidence/admin_target_identity.txt
+
+          if [[ "$ACTUAL_IDENTITY" != "$EXPECTED_ADMIN_IDENTITY" ]]; then
+            echo 'ADMIN_TARGET_BINDING=FAIL' | tee evidence/admin_target_binding.txt
+            printf '\\q\n' >&3
+            exec 3>&-
+            wait "$ADMIN_PID" || true
+            trap - EXIT
+            unset TMP_PASS
+            echo 'ABORT: passwordless session is not bound to the required Neon target; no mutation executed.' >&2
+            exit 42
+          fi
+
+          BINDING_PASS=1
+          echo 'ADMIN_TARGET_BINDING=PASS' | tee evidence/admin_target_binding.txt
+
+          # Phase 2: mutations are authorized only after exact target identity PASS.
+          cat >&3 <<'SQL'
+          \set ON_ERROR_STOP on
           CREATE EXTENSION IF NOT EXISTS postgis;
           CREATE EXTENSION IF NOT EXISTS pg_trgm;
           \getenv temp_pass TMP_PASS
@@ -129,12 +192,9 @@ jobs:
           \echo TEMP_LOGIN_READY
           SQL
 
-          echo 'WAITING_FOR_NEON_PASSWORDLESS_AUTHORIZATION'
-          echo 'Authorize the Neon browser link printed above and select project crimson-hall-16978747, branch 01.6-sqitch-cli-certified-20260815.'
-
           ready=0
-          for i in $(seq 1 120); do
-            if grep -q 'TEMP_LOGIN_READY' evidence/admin_passwordless.log; then
+          for i in $(seq 1 60); do
+            if grep -q '^TEMP_LOGIN_READY$' evidence/admin_passwordless.log; then
               ready=1
               break
             fi
@@ -143,7 +203,7 @@ jobs:
               cat evidence/admin_passwordless.log >&2
               exit 1
             fi
-            sleep 2
+            sleep 1
           done
           test "$ready" = "1"
 
@@ -153,8 +213,11 @@ jobs:
           export PGDATABASE="$TARGET_DB"
           export PGUSER="$TEMP_ROLE"
 
-          psql -X -v ON_ERROR_STOP=1 -Atqc "select current_user" | tee evidence/direct_login_user.txt
-          test "$(cat evidence/direct_login_user.txt)" = "$TEMP_ROLE"
+          DIRECT_IDENTITY="$(psql -X -v ON_ERROR_STOP=1 -Atqc "select 'JBLR_DIRECT_IDENTITY|'||coalesce(current_setting('neon.project_id', true),'')||'|'||coalesce(current_setting('neon.branch_id', true),'')||'|'||coalesce(current_setting('neon.endpoint_id', true),'')||'|'||current_database()||'|'||current_user")"
+          EXPECTED_DIRECT_IDENTITY="JBLR_DIRECT_IDENTITY|$TARGET_PROJECT_ID|$TARGET_BRANCH_ID|$TARGET_ENDPOINT_ID|$TARGET_DB|$TEMP_ROLE"
+          printf 'actual=%s\nexpected=%s\n' "$DIRECT_IDENTITY" "$EXPECTED_DIRECT_IDENTITY" | tee evidence/direct_login_identity.txt
+          test "$DIRECT_IDENTITY" = "$EXPECTED_DIRECT_IDENTITY"
+          echo 'TEMP_LOGIN_DIRECT_AUTH=PASS' | tee evidence/temp_login_direct_auth.txt
 
           psql -X -v ON_ERROR_STOP=1 -f "$BASELINE_PATH" > evidence/baseline_install.log
 
@@ -163,6 +226,7 @@ jobs:
           test "$BASE_TABLES" = "85"
           test "$BASE_VIEWS" = "8"
           printf 'baseline_tables=%s\nbaseline_views=%s\n' "$BASE_TABLES" "$BASE_VIEWS" | tee evidence/baseline_inventory.txt
+          echo 'FIX1_INSTALL=PASS' | tee evidence/fix1_install.txt
 
           (
             cd db/sqitch
@@ -178,15 +242,23 @@ jobs:
           psql -X -Atqc "select extname||'='||extversion from pg_extension where extname in ('postgis','pg_trgm') order by extname" > evidence/extensions.txt
 
           {
+            echo 'ADMIN_TARGET_BINDING=PASS'
+            echo 'TEMP_LOGIN_DIRECT_AUTH=PASS'
+            echo 'FIX1_SHA=PASS'
+            echo 'FIX1_INSTALL=PASS'
             echo 'SQITCH_CLI_TEMP_DEPLOY=PASS'
             echo 'SQITCH_CLI_TEMP_VERIFY=PASS'
             echo 'baseline_tables=85'
             echo 'baseline_views=8'
             echo 'final_tables=91'
             echo 'final_views=8'
+            echo "target_project_id=$TARGET_PROJECT_ID"
             echo "target_branch_id=$TARGET_BRANCH_ID"
+            echo "target_endpoint_id=$TARGET_ENDPOINT_ID"
+            echo "target_host=$TARGET_HOST"
             echo "technical_commit=$GITHUB_SHA"
-          } | tee evidence/CHECKPOINT_E_STATUS.txt
+            echo "fix1_sha256=$BASELINE_SHA256"
+          } | tee evidence/CHECKPOINT_F_CORRECTION_STATUS.txt
 
           cleanup_admin
           trap - EXIT
