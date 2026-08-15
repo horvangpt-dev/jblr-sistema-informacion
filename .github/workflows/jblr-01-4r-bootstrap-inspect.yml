@@ -1,0 +1,33 @@
+name: JBLR 01.4R Bootstrap Inspect
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  inspect-bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct bootstrap payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap_01_4r/part_* | tr -d '\r\n' > /tmp/bootstrap.b64
+          echo "base64_chars=$(wc -c </tmp/bootstrap.b64)"
+          base64 -d /tmp/bootstrap.b64 > /tmp/bootstrap.gz
+          sha256sum /tmp/bootstrap.gz
+          file /tmp/bootstrap.gz
+          gzip -t /tmp/bootstrap.gz
+          gzip -dc /tmp/bootstrap.gz > /tmp/bootstrap.payload
+          sha256sum /tmp/bootstrap.payload
+          file /tmp/bootstrap.payload
+          if tar -tf /tmp/bootstrap.payload >/tmp/tar-list.txt 2>/tmp/tar-error.txt; then
+            echo 'PAYLOAD_IS_TAR=yes'
+            sed -n '1,120p' /tmp/tar-list.txt
+          else
+            echo 'PAYLOAD_IS_TAR=no'
+            cat /tmp/tar-error.txt
+            echo 'payload_head:'
+            head -c 256 /tmp/bootstrap.payload | xxd
+          fi
