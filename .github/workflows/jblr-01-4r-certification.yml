@@ -169,8 +169,12 @@ jobs:
       - name: Real restore in independent PostgreSQL 18 PostGIS cluster
         run: |
           set -euo pipefail
-          docker run -d --name jblr-restore-pg -e POSTGRES_DB=jblr_restore -e POSTGRES_HOST_AUTH_METHOD=trust -p 55431:5432 postgis/postgis:18-3.6 > evidence/restore_container_id.txt
-          for i in $(seq 1 60); do pg_isready -h localhost -p 55431 -U postgres -d jblr_restore && break; sleep 1; done
+          # Start a separate PostGIS-capable cluster, but restore into a database
+          # created from template0 so the dump itself recreates PostGIS schemas.
+          # This avoids collisions with schemas preloaded by the postgis image.
+          docker run -d --name jblr-restore-pg -e POSTGRES_DB=postgres -e POSTGRES_HOST_AUTH_METHOD=trust -p 55431:5432 postgis/postgis:18-3.6 > evidence/restore_container_id.txt
+          for i in $(seq 1 60); do pg_isready -h localhost -p 55431 -U postgres -d postgres && break; sleep 1; done
+          PGPORT=55431 createdb -T template0 jblr_restore
           PGPORT=55431 psql -X -v ON_ERROR_STOP=1 -d jblr_restore <<'SQL'
           DO $$ DECLARE r text; BEGIN
             FOREACH r IN ARRAY ARRAY['jblr_db_owner','jblr_db_admin','jblr_db_migrator','jblr_db_app','jblr_db_reader','jblr_db_analyst','jblr_db_backup','jblr_db_auditor'] LOOP
