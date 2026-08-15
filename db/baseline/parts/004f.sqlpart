@@ -1,0 +1,145 @@
+ew_resource_id uuid,
+    p_external_source_id uuid,
+    p_external_id text,
+    p_record_type text,
+    p_canonical_url text DEFAULT NULL,
+    p_license_text text DEFAULT NULL,
+    p_notes text DEFAULT NULL
+)
+RETURNS TABLE (external_record_resource_id uuid, created boolean)
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    v_existing uuid;
+BEGIN
+    IF p_new_resource_id IS NULL OR p_external_source_id IS NULL
+       OR p_external_id IS NULL OR p_record_type IS NULL THEN
+        RAISE EXCEPTION 'new resource UUID, source, external_id and record_type are required';
+    END IF;
+
+    -- Primer key namespace JBLR; segundo key hash de la identidad externa.
+    -- Las colisiones de hash sólo sobre-serializan; no afectan integridad.
+    PERFORM pg_advisory_xact_lock(
+        124585,
+        hashtext(p_external_source_id::text || E'\\x1f' || p_external_id)
+    );
+
+    SELECT er.resource_id INTO v_existing
+      FROM evidence.external_record er
+     WHERE er.external_source_id = p_external_source_id
+       AND er.external_id = p_external_id;
+
+    IF v_existing IS NOT NULL THEN
+        RETURN QUERY SELECT v_existing, false;
+        RETURN;
+    END IF;
+
+    INSERT INTO core.resource(resource_id, resource_type_code)
+    VALUES (p_new_resource_id, 'EXT');
+
+    INSERT INTO evidence.external_record(
+        resource_id, external_source_id, external_id, record_type,
+        canonical_url, license_text, notes
+    ) VALUES (
+        p_new_resource_id, p_external_source_id, p_external_id, p_record_type,
+        p_canonical_url, p_license_text, p_notes
+    );
+
+    RETURN QUERY SELECT p_new_resource_id, true;
+END;
+$$;
+
+-- ---------------------------------------------------------------------
+-- R2-E [MAJOR RESUELTO EN DISEÑO] ValidationStatus + ValidationEvent.
+-- Autoridad oficial: esta función. Bloquea la fila Resource, registra el
+-- evento y actualiza el estado dentro de la misma transacción. El parámetro
+-- expected_from permite detectar escrituras obsoletas concurrentes.
+-- No se crean triggers bidireccionales.
+-- ---------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION governance.r2_transition_validation_status(
+    p_event_resource_id uuid,
+    p_target_resource_id uuid,
+    p_to_validation_status text,
+    p_reviewed_by_agent_id uuid DEFAULT NULL,
+    p_data_activity_id uuid DEFAULT NULL,
+    p_reason text DEFAULT NULL,
+    p_expected_from_validation_status text DEFAULT NULL,
+    p_occurred_at timestamptz DEFAULT current_timestamp
+)
+RETURNS void
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    v_from text;
+BEGIN
+    IF p_to_validation_status NOT IN ('unreviewed','pending_review','validated','disputed','rejected') THEN
+        RAISE EXCEPTION 'invalid validation status %', p_to_validation_status;
+    END IF;
+
+    SELECT r.validation_status INTO v_from
+      FROM core.resource r
+     WHERE r.resource_id = p_target_resource_id
+     FOR UPDATE;
+
+    IF NOT FOUND THEN
+        RAISE EXCEPTION 'target Resource % does not exist', p_target_resource_id;
+    END IF;
+
+    IF p_expected_from_validation_status IS NOT NULL
+       AND v_from <> p_expected_from_validation_status THEN
+        RAISE EXCEPTION 'stale validation transition: expected %, current %',
+            p_expected_from_validation_status, v_from;
+    END IF;
+
+    IF v_from = p_to_validation_status THEN
+        RAISE EXCEPTION 'validation transition must change status; current is %', v_from;
+    END IF;
+
+    INSERT INTO core.resource(resource_id, resource_type_code)
+    VALUES (p_event_resource_id, 'VLE');
+
+    INSERT INTO governance.validation_event(
+        resource_id, target_resource_id, from_validation_status,
+        to_validation_status, reviewed_by_agent_id, occurred_at,
+        data_activity_id, reason
+    ) VALUES (
+        p_event_resource_id, p_target_resource_id, v_from,
+        p_to_validation_status, p_reviewed_by_agent_id, p_occurred_at,
+        p_data_activity_id, p_reason
+    );
+
+    UPDATE core.resource
+       SET validation_status = p_to_validation_status,
+           updated_at = current_timestamp,
+           row_version = row_version + 1
+     WHERE resource_id = p_target_resource_id;
+END;
+$$;
+
+-- ---------------------------------------------------------------------
+-- R2-F [IMPROVEMENT requerido antes de producción] Vocabulario controlado
+-- de DataUseConstraint.constraint_kind. No separa DataUseConstraint.
+-- ---------------------------------------------------------------------
+CREATE TABLE security.data_use_constraint_kind (
+    constraint_kind text PRIMARY KEY,
+    label text NOT NULL,
+    description text,
+    is_active boolean NOT NULL DEFAULT true
+);
+
+INSERT INTO security.data_use_constraint_kind(constraint_kind,label,description) VALUES
+('license','Licencia','Condiciones de licencia o atribución'),
+('no_redistribution','No redistribución','Redistribución restringida'),
+('embargo','Embargo','Restricción temporal'),
+('third_party_confidentiality','Confidencialidad de tercero','Limitación impuesta por tercero'),
+('internal_only','Solo uso interno','Consulta interna permitida con publicación restringida');
+
+ALTER TABLE security.data_use_constraint
+    ADD CONSTRAINT fk_data_use_constraint_kind
+    FOREIGN KEY (constraint_kind)
+    REFERENCES security.data_use_constraint_kind(constraint_kind)
+    ON DELETE RESTRICT;
+
+-- =====================================================================
+-- FIN JBLR 01.2 RONDA 2
+-- =====================================================================
