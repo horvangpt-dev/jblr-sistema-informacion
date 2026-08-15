@@ -1,0 +1,250 @@
+
+CREATE TABLE taxonomy.hybrid_parentage (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    hybrid_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    parent_concept_id uuid NOT NULL
+        REFERENCES taxonomy.taxon_concept(resource_id) ON DELETE RESTRICT,
+    parent_position smallint CHECK (parent_position IS NULL OR parent_position IN (1,2)),
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    notes text,
+    CHECK (hybrid_concept_id <> parent_concept_id),
+    UNIQUE (hybrid_concept_id, parent_concept_id)
+);
+
+-- =====================================================================
+-- FIELD
+-- =====================================================================
+
+CREATE TABLE field.location (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    parent_location_id uuid
+        REFERENCES field.location(resource_id) ON DELETE RESTRICT,
+    geographic_area_id uuid
+        REFERENCES core.geographic_area(resource_id) ON DELETE RESTRICT,
+    location_name text,
+    verbatim_locality text,
+    location_kind text,
+    resolution_status text NOT NULL DEFAULT 'unresolved'
+        CHECK (resolution_status IN ('resolved','partially_resolved','unresolved','ambiguous','not_applicable')),
+    notes text,
+    CHECK (parent_location_id IS NULL OR parent_location_id <> resource_id)
+);
+CREATE INDEX idx_location_parent ON field.location(parent_location_id);
+CREATE INDEX idx_location_area ON field.location(geographic_area_id);
+CREATE INDEX idx_location_name_trgm
+    ON field.location USING gin (location_name gin_trgm_ops);
+
+CREATE TABLE field.location_geometry_version (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    location_id uuid NOT NULL
+        REFERENCES field.location(resource_id) ON DELETE RESTRICT,
+    version_no integer NOT NULL CHECK (version_no >= 1),
+    geom geometry(Geometry,4326) NOT NULL,
+    geometry_role text NOT NULL
+        CHECK (geometry_role IN ('exact','interpreted','historical')),
+    source_srid integer,
+    verbatim_coordinates text,
+    source_geometry_text text,
+    uncertainty_m numeric CHECK (uncertainty_m IS NULL OR uncertainty_m >= 0),
+    georeference_method text,
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    valid_from timestamptz,
+    valid_to timestamptz,
+    is_preferred boolean NOT NULL DEFAULT false,
+    notes text,
+    UNIQUE (location_id, version_no),
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from),
+    CHECK (ST_GeometryType(geom) IN (
+        'ST_Point','ST_LineString','ST_Polygon',
+        'ST_MultiPoint','ST_MultiLineString','ST_MultiPolygon'
+    ))
+);
+CREATE INDEX idx_location_geometry_location ON field.location_geometry_version(location_id);
+CREATE INDEX idx_location_geometry_gist
+    ON field.location_geometry_version USING gist (geom);
+CREATE UNIQUE INDEX uq_location_preferred_geometry
+    ON field.location_geometry_version(location_id)
+    WHERE is_preferred = true;
+
+CREATE TABLE field.population (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    population_label text,
+    resolution_status text NOT NULL DEFAULT 'unresolved'
+        CHECK (resolution_status IN ('resolved','partially_resolved','unresolved','ambiguous','not_applicable')),
+    valid_from date,
+    valid_to date,
+    notes text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+
+CREATE TABLE field.population_location (
+    population_location_id uuid PRIMARY KEY,
+    population_id uuid NOT NULL
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    location_id uuid NOT NULL
+        REFERENCES field.location(resource_id) ON DELETE RESTRICT,
+    relation_role text,
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    valid_from date,
+    valid_to date,
+    notes text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_population_location_population ON field.population_location(population_id);
+CREATE INDEX idx_population_location_location ON field.population_location(location_id);
+
+CREATE TABLE field.population_relation (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    subject_population_id uuid NOT NULL
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    object_population_id uuid NOT NULL
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    relation_type text NOT NULL,
+    effective_date date,
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    notes text,
+    CHECK (subject_population_id <> object_population_id)
+);
+CREATE INDEX idx_population_relation_subject ON field.population_relation(subject_population_id);
+CREATE INDEX idx_population_relation_object ON field.population_relation(object_population_id);
+
+CREATE TABLE field.prospection (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    started_at timestamptz,
+    ended_at timestamptz,
+    purpose text,
+    protocol_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    coordinator_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    notes text,
+    CHECK (ended_at IS NULL OR started_at IS NULL OR ended_at >= started_at)
+);
+
+CREATE TABLE field.field_visit (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    prospection_id uuid NOT NULL
+        REFERENCES field.prospection(resource_id) ON DELETE RESTRICT,
+    sequence_no integer NOT NULL CHECK (sequence_no >= 1),
+    location_id uuid NOT NULL
+        REFERENCES field.location(resource_id) ON DELETE RESTRICT,
+    started_at timestamptz,
+    ended_at timestamptz,
+    visit_purpose text,
+    notes text,
+    UNIQUE (prospection_id, sequence_no),
+    CHECK (ended_at IS NULL OR started_at IS NULL OR ended_at >= started_at)
+);
+CREATE INDEX idx_field_visit_location ON field.field_visit(location_id);
+
+CREATE TABLE field.field_visit_population (
+    field_visit_id uuid NOT NULL
+        REFERENCES field.field_visit(resource_id) ON DELETE RESTRICT,
+    population_id uuid NOT NULL
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    visit_role text,
+    PRIMARY KEY (field_visit_id, population_id)
+);
+CREATE INDEX idx_field_visit_population_population
+    ON field.field_visit_population(population_id);
+
+CREATE TABLE field.individual (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    population_id uuid
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    individual_label text,
+    first_seen_at timestamptz,
+    last_seen_at timestamptz,
+    notes text,
+    CHECK (last_seen_at IS NULL OR first_seen_at IS NULL OR last_seen_at >= first_seen_at)
+);
+CREATE INDEX idx_individual_population ON field.individual(population_id);
+
+CREATE TABLE field.observation (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    field_visit_id uuid
+        REFERENCES field.field_visit(resource_id) ON DELETE RESTRICT,
+    observed_at timestamptz,
+    population_id uuid
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    individual_id uuid
+        REFERENCES field.individual(resource_id) ON DELETE RESTRICT,
+    location_id uuid
+        REFERENCES field.location(resource_id) ON DELETE RESTRICT,
+    resolution_status text NOT NULL DEFAULT 'unresolved'
+        CHECK (resolution_status IN ('resolved','partially_resolved','unresolved','ambiguous','not_applicable')),
+    verbatim_observation text,
+    notes text
+);
+CREATE INDEX idx_observation_visit ON field.observation(field_visit_id);
+CREATE INDEX idx_observation_population ON field.observation(population_id);
+CREATE INDEX idx_observation_individual ON field.observation(individual_id);
+CREATE INDEX idx_observation_date ON field.observation(observed_at);
+
+CREATE TABLE field.census (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    field_visit_id uuid NOT NULL
+        REFERENCES field.field_visit(resource_id) ON DELETE RESTRICT,
+    population_id uuid NOT NULL
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    census_at timestamptz NOT NULL,
+    method_text text,
+    notes text
+);
+CREATE INDEX idx_census_population_date ON field.census(population_id, census_at DESC);
+CREATE INDEX idx_census_visit ON field.census(field_visit_id);
+
+CREATE TABLE field.census_measurement (
+    census_measurement_id uuid PRIMARY KEY,
+    census_id uuid NOT NULL
+        REFERENCES field.census(resource_id) ON DELETE RESTRICT,
+    metric_code text NOT NULL,
+    life_stage_code text,
+    value_status text NOT NULL
+        CHECK (value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+    numeric_value numeric,
+    unit_code text,
+    notes text,
+    CHECK (
+        (value_status = 'present' AND numeric_value IS NOT NULL)
+        OR
+        (value_status <> 'present' AND numeric_value IS NULL)
+    )
+);
+CREATE INDEX idx_census_measurement_census ON field.census_measurement(census_id);
+
+CREATE TABLE field.collection_event (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    field_visit_id uuid
+        REFERENCES field.field_visit(resource_id) ON DELETE RESTRICT,
+    population_id uuid
+        REFERENCES field.population(resource_id) ON DELETE RESTRICT,
+    collection_at timestamptz,
+    method_text text,
+    permit_reference text,
+    notes text
+);
+CREATE INDEX idx_collection_visit ON field.collection_event(field_visit_id);
+CREATE INDEX idx_collection_population ON field.collection_event(population_id);
+
+CREATE TABLE field.collection_individual (
+    collection_individual_id uuid PRIMARY KEY,
+    collection_event_id uuid NOT NULL
+        REFERENCES field.collection_event(resource_id) ON DELETE RESTRICT,
