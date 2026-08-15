@@ -17,7 +17,7 @@ jobs:
     env:
       TARGET_PROJECT_ID: crimson-hall-16978747
       TARGET_BRANCH_ID: br-polished-pond-b24mvk11
-      TARGET_BRANCH_NAME: main
+      TARGET_BRANCH_NAME: production
       TARGET_ENDPOINT_ID: ep-hidden-sound-b2uab7di
       TARGET_HOST: ep-hidden-sound-b2uab7di.c-6.eu-central-1.aws.neon.tech
       TARGET_DB: neondb
