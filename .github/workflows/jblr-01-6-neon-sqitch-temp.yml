@@ -6,10 +6,14 @@ on:
     paths:
       - '.github/workflows/jblr-01-6-neon-sqitch-temp.yml'
 
+concurrency:
+  group: jblr-01-6-neon-sqitch-temp
+  cancel-in-progress: true
+
 jobs:
   sqitch-cli-temp:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     env:
       TARGET_HOST: ep-long-dust-b2csrk8n.c-6.eu-central-1.aws.neon.tech
       TARGET_DB: neondb
@@ -32,10 +36,12 @@ jobs:
         run: mkdir -p evidence
 
       - name: Install PostgreSQL client and Sqitch
+        env:
+          DEBIAN_FRONTEND: noninteractive
         run: |
           set -euo pipefail
-          sudo apt-get update
-          sudo apt-get install -y postgresql-client sqitch libdbd-pg-perl
+          timeout 90s sudo apt-get -o Acquire::Retries=2 update
+          timeout 120s sudo apt-get install -y --no-install-recommends postgresql-client sqitch libdbd-pg-perl
           psql --version | tee evidence/psql_version.txt
           sqitch --version | tee evidence/sqitch_version.txt
 
@@ -127,7 +133,7 @@ jobs:
           echo 'Authorize the Neon browser link printed above and select project crimson-hall-16978747, branch 01.6-sqitch-cli-certified-20260815.'
 
           ready=0
-          for i in $(seq 1 150); do
+          for i in $(seq 1 120); do
             if grep -q 'TEMP_LOGIN_READY' evidence/admin_passwordless.log; then
               ready=1
               break
