@@ -217,7 +217,7 @@ jobs:
           set -euo pipefail
           inventory() {
             local port="$1" db="$2" out="$3"
-            PGPORT="$port" psql -X -d "$db" -AtF'|' -c "select 'SCHEMA',n.nspname,pg_get_userbyid(n.nspowner) from pg_namespace n where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging','sqitch') union all select 'REL',n.nspname||'.'||c.relname,c.relkind||':'||pg_get_userbyid(c.relowner) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging','sqitch') and c.relkind in ('r','p','v','m','S','f') union all select 'EXT',extname,extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1,2,3" > "$out"
+            PGPORT="$port" psql -X -d "$db" -AtF'|' -c "select 'SCHEMA',n.nspname,pg_get_userbyid(n.nspowner) from pg_namespace n where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging','sqitch') union all select 'REL',n.nspname||'.'||c.relname,c.relkind::text||':'||pg_get_userbyid(c.relowner) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging','sqitch') and c.relkind in ('r','p','v','m','S','f') union all select 'EXT',extname,extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1,2,3" > "$out"
           }
           inventory 5432 jblr_src evidence/inventory_struct_source.txt
           inventory 55431 jblr_restore evidence/inventory_struct_restore.txt
