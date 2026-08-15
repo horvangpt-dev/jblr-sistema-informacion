@@ -78,10 +78,29 @@ jobs:
         run: |
           set -euo pipefail
           cat tests/01_2r/transport_sample/part_* | base64 -d | gzip -dc > /tmp/sample.sql
-          cat tests/01_2r/transport_queries/part_* | base64 -d | gzip -dc > /tmp/queries.sql
+          cat tests/01_2r/transport_queries/part_* | base64 -d | gzip -dc > /tmp/queries_original.sql
           echo 'e76f257720b150823692cbeba19d04345a3e43298cb43eeed01d05f9f66a4916  /tmp/sample.sql' | sha256sum -c -
-          echo '80a083c667fa33ec3c70c4255e80b060eb03fe53cab1b47c1237c560832809fe  /tmp/queries.sql' | sha256sum -c -
-          sha256sum /tmp/sample.sql /tmp/queries.sql | tee evidence/01_2r_ci/test_package_hashes.sha256
+          echo '80a083c667fa33ec3c70c4255e80b060eb03fe53cab1b47c1237c560832809fe  /tmp/queries_original.sql' | sha256sum -c -
+          python3 - <<'PY' | tee evidence/01_2r_ci/test_harness_binary_proof.txt
+          from pathlib import Path
+          import hashlib
+          p=Path('/tmp/queries_original.sql')
+          b=p.read_bytes()
+          assert len(b)==36728
+          assert b.count(b'\\n\\n')==1
+          pos=b.index(b'\\n\\n'); assert pos==29820
+          f=b[:pos]+b'\n\n'+b[pos+4:]
+          Path('/tmp/queries_01_2r_fix1.sql').write_bytes(f)
+          assert len(f)==36726
+          assert hashlib.sha256(f).hexdigest()=='b685fb65cf7b8311c8bb7e4dfe7276015e9b7b7ed76811aa73d251092c67c082'
+          assert f==b[:pos]+b'\n\n'+b[pos+4:]
+          print('TEST_HARNESS_ONLY_FIX=PASS')
+          print('offset=29820')
+          print('original_bytes='+b[pos:pos+4].hex(' '))
+          print('fixed_bytes='+f[pos:pos+2].hex(' '))
+          print('fixed_sha256='+hashlib.sha256(f).hexdigest())
+          PY
+          sha256sum /tmp/sample.sql /tmp/queries_original.sql /tmp/queries_01_2r_fix1.sql | tee evidence/01_2r_ci/test_package_hashes.sha256
 
       - name: Negative control historical artifact with psql 18
         run: |
@@ -110,7 +129,7 @@ jobs:
         run: |
           set -euo pipefail
           docker exec -i "$CID" psql -X -U postgres -d jblr_fix -v ON_ERROR_STOP=1 < /tmp/sample.sql > evidence/01_2r_ci/sample_data.log 2>&1
-          docker exec -i "$CID" psql -X -U postgres -d jblr_fix -v ON_ERROR_STOP=1 < /tmp/queries.sql > evidence/01_2r_ci/recert_queries.log 2>&1
+          docker exec -i "$CID" psql -X -U postgres -d jblr_fix -v ON_ERROR_STOP=1 < /tmp/queries_01_2r_fix1.sql > evidence/01_2r_ci/recert_queries.log 2>&1
           for i in $(seq 1 17); do grep -F "PASS A${i}" evidence/01_2r_ci/recert_queries.log >/dev/null; done
           for m in 'PASS E1' 'PASS E2' 'PASS E3' 'PASS E4' 'PASS E5' 'PASS E7' 'PASS E8' 'PASS E11'; do grep -F "$m" evidence/01_2r_ci/recert_queries.log >/dev/null; done
           test "$(docker exec "$CID" psql -X -U postgres -d jblr_fix -Atqc "select count(*) from security.v_population_geometry_projection where population_resource_id='018f0000-0000-7000-8000-00000000002b'")" = 2
@@ -124,6 +143,7 @@ jobs:
           set -euo pipefail
           mkdir -p db/baseline evidence/01_2r/runtime
           cp /tmp/JBLR_01_2_R2_DDL_PILOT_FIX1.sql db/baseline/JBLR_01_2_R2_DDL_PILOT_FIX1.sql
+          cp /tmp/queries_01_2r_fix1.sql evidence/01_2r/runtime/JBLR_01_2_CERT_QUERIES_01_2R_FIX1.sql
           cp -a evidence/01_2r_ci/. evidence/01_2r/runtime/
           printf 'GITHUB_RUN_ID=%s\nCERTIFICATION_INPUT_SHA=%s\n' "$GITHUB_RUN_ID" "$GITHUB_SHA" > evidence/01_2r/runtime/CI_RUN.txt
           git config user.name 'github-actions[bot]'
