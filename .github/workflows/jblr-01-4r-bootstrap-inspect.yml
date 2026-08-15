@@ -1,43 +1,23 @@
-name: JBLR 01.4R Bootstrap Inspect
+name: JBLR 01.4R Baseline Transport Verify
 on:
   pull_request:
     branches: [main]
   workflow_dispatch:
 
 jobs:
-  inspect-bootstrap:
+  verify-baseline-transport:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Reconstruct bootstrap payload
+      - name: Verify current immutable baseline parts
         shell: bash
         run: |
           set -euo pipefail
-          cat .bootstrap_01_4r/part_* | tr -d '\r\n' > /tmp/bootstrap.b64
-          n=$(wc -c </tmp/bootstrap.b64)
-          echo "base64_chars=$n mod4=$((n%4))"
-          if grep -q '[^A-Za-z0-9+/=]' /tmp/bootstrap.b64; then
-            echo 'INVALID_CHARACTERS'; exit 10
-          fi
-          case $((n%4)) in
-            0) ;;
-            2) printf '==' >> /tmp/bootstrap.b64 ;;
-            3) printf '=' >> /tmp/bootstrap.b64 ;;
-            *) echo 'IMPOSSIBLE_BASE64_LENGTH'; exit 11 ;;
-          esac
-          base64 -d /tmp/bootstrap.b64 > /tmp/bootstrap.gz
-          echo 'gzip_sha256:'; sha256sum /tmp/bootstrap.gz
-          file /tmp/bootstrap.gz
-          gzip -t /tmp/bootstrap.gz
-          gzip -dc /tmp/bootstrap.gz > /tmp/bootstrap.payload
-          echo 'payload_sha256:'; sha256sum /tmp/bootstrap.payload
-          file /tmp/bootstrap.payload
-          if tar -tf /tmp/bootstrap.payload >/tmp/tar-list.txt 2>/tmp/tar-error.txt; then
-            echo 'PAYLOAD_IS_TAR=yes'
-            sed -n '1,200p' /tmp/tar-list.txt
-          else
-            echo 'PAYLOAD_IS_TAR=no'
-            cat /tmp/tar-error.txt
-            echo 'payload_head:'
-            head -c 512 /tmp/bootstrap.payload | xxd
-          fi
+          cat db/baseline/parts/*.sqlpart > /tmp/current-prefix.sql
+          bytes=$(wc -c </tmp/current-prefix.sql)
+          hash=$(sha256sum /tmp/current-prefix.sql | awk '{print $1}')
+          echo "transport_bytes=$bytes"
+          echo "transport_sha256=$hash"
+          test "$bytes" = "51545"
+          test "$hash" = "6ce2980a50c17f29896cd66e015e596f4aad758ea4518dbaeb23e792762c3aa3"
+          echo 'BASELINE_PREFIX_MATCH=PASS'
