@@ -1,0 +1,233 @@
+    subject_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    predicate_code text,
+    statement_text text NOT NULL,
+    asserted_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    asserted_at timestamptz,
+    resolution_status text NOT NULL DEFAULT 'unresolved'
+        CHECK (resolution_status IN ('resolved','partially_resolved','unresolved','ambiguous','not_applicable')),
+    scope_note text,
+    notes text
+);
+CREATE INDEX idx_assertion_subject ON evidence.assertion(subject_resource_id);
+
+CREATE TABLE evidence.evidence_link (
+    evidence_link_id uuid PRIMARY KEY,
+    assertion_id uuid NOT NULL
+        REFERENCES evidence.assertion(resource_id) ON DELETE RESTRICT,
+    evidence_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    relation_role text NOT NULL
+        CHECK (relation_role IN ('supports','contradicts','corroborates','derived_from')),
+    confidence numeric(4,3) CHECK (confidence IS NULL OR confidence BETWEEN 0 AND 1),
+    notes text,
+    CHECK (assertion_id <> evidence_resource_id)
+);
+CREATE INDEX idx_evidence_link_assertion ON evidence.evidence_link(assertion_id);
+CREATE INDEX idx_evidence_link_evidence ON evidence.evidence_link(evidence_resource_id);
+
+-- =====================================================================
+-- GOVERNANCE
+-- =====================================================================
+
+CREATE TABLE governance.data_activity (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    activity_type text NOT NULL,
+    started_at timestamptz,
+    ended_at timestamptz,
+    performed_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    software_name text,
+    software_version text,
+    code_commit text,
+    parameters jsonb,
+    process_outcome text,
+    notes text,
+    CHECK (ended_at IS NULL OR started_at IS NULL OR ended_at >= started_at)
+);
+CREATE INDEX idx_data_activity_type_date
+    ON governance.data_activity(activity_type, started_at DESC);
+
+CREATE TABLE governance.validation_event (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    target_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    from_validation_status text
+        CHECK (from_validation_status IS NULL OR from_validation_status IN ('unreviewed','pending_review','validated','disputed','rejected')),
+    to_validation_status text NOT NULL
+        CHECK (to_validation_status IN ('unreviewed','pending_review','validated','disputed','rejected')),
+    reviewed_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    occurred_at timestamptz NOT NULL DEFAULT current_timestamp,
+    data_activity_id uuid
+        REFERENCES governance.data_activity(resource_id) ON DELETE RESTRICT,
+    reason text
+);
+CREATE INDEX idx_validation_event_target
+    ON governance.validation_event(target_resource_id, occurred_at DESC);
+
+CREATE TABLE governance.record_revision (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    target_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    revision_no integer NOT NULL CHECK (revision_no >= 1),
+    changed_at timestamptz NOT NULL DEFAULT current_timestamp,
+    changed_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    data_activity_id uuid
+        REFERENCES governance.data_activity(resource_id) ON DELETE RESTRICT,
+    operation text NOT NULL,
+    reason text,
+    UNIQUE (target_resource_id, revision_no)
+);
+CREATE INDEX idx_record_revision_target
+    ON governance.record_revision(target_resource_id, revision_no DESC);
+
+CREATE TABLE governance.revision_change (
+    revision_change_id uuid PRIMARY KEY,
+    record_revision_id uuid NOT NULL
+        REFERENCES governance.record_revision(resource_id) ON DELETE RESTRICT,
+    field_path text NOT NULL,
+    old_value jsonb,
+    new_value jsonb,
+    change_kind text,
+    sensitive_value boolean NOT NULL DEFAULT false
+);
+CREATE INDEX idx_revision_change_revision
+    ON governance.revision_change(record_revision_id);
+
+CREATE TABLE governance.quality_assessment (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    target_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    assessed_at timestamptz NOT NULL DEFAULT current_timestamp,
+    assessed_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    method_text text,
+    score numeric,
+    summary text,
+    data_activity_id uuid
+        REFERENCES governance.data_activity(resource_id) ON DELETE RESTRICT
+);
+CREATE INDEX idx_quality_assessment_target
+    ON governance.quality_assessment(target_resource_id, assessed_at DESC);
+
+CREATE TABLE governance.quality_flag (
+    quality_flag_id uuid PRIMARY KEY,
+    quality_assessment_id uuid NOT NULL
+        REFERENCES governance.quality_assessment(resource_id) ON DELETE RESTRICT,
+    flag_code text NOT NULL,
+    severity text,
+    detail text
+);
+CREATE INDEX idx_quality_flag_assessment
+    ON governance.quality_flag(quality_assessment_id);
+
+CREATE TABLE governance.import_batch (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    data_activity_id uuid NOT NULL UNIQUE
+        REFERENCES governance.data_activity(resource_id) ON DELETE RESTRICT,
+    external_source_id uuid
+        REFERENCES evidence.external_source(external_source_id) ON DELETE RESTRICT,
+    source_uri text,
+    input_asset_id uuid
+        REFERENCES evidence.digital_asset(resource_id) ON DELETE RESTRICT,
+    query_text text,
+    idempotency_key text UNIQUE,
+    source_snapshot_label text,
+    notes text
+);
+
+CREATE TABLE governance.import_batch_item (
+    import_batch_item_id uuid PRIMARY KEY,
+    import_batch_id uuid NOT NULL
+        REFERENCES governance.import_batch(resource_id) ON DELETE RESTRICT,
+    source_item_key text,
+    source_hash text,
+    external_snapshot_resource_id uuid
+        REFERENCES evidence.external_record_snapshot(resource_id) ON DELETE RESTRICT,
+    target_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    process_outcome text NOT NULL
+        CHECK (process_outcome IN ('inserted','updated','unchanged','duplicate','quarantined','failed','skipped')),
+    error_detail jsonb,
+    occurred_at timestamptz NOT NULL DEFAULT current_timestamp
+);
+CREATE INDEX idx_import_item_batch ON governance.import_batch_item(import_batch_id);
+CREATE INDEX idx_import_item_target ON governance.import_batch_item(target_resource_id);
+CREATE INDEX idx_import_item_source_key ON governance.import_batch_item(source_item_key);
+
+CREATE TABLE evidence.provenance_link (
+    provenance_link_id uuid PRIMARY KEY,
+    subject_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    external_source_id uuid
+        REFERENCES evidence.external_source(external_source_id) ON DELETE RESTRICT,
+    data_activity_id uuid
+        REFERENCES governance.data_activity(resource_id) ON DELETE RESTRICT,
+    generation_mode text NOT NULL,
+    relation_role text,
+    notes text,
+    CHECK (
+        source_resource_id IS NOT NULL
+        OR external_source_id IS NOT NULL
+        OR data_activity_id IS NOT NULL
+    )
+);
+CREATE INDEX idx_provenance_subject ON evidence.provenance_link(subject_resource_id);
+CREATE INDEX idx_provenance_source_resource ON evidence.provenance_link(source_resource_id);
+
+-- =====================================================================
+-- ANALYTICS
+-- =====================================================================
+
+CREATE TABLE analytics.metric_definition (
+    metric_definition_id uuid PRIMARY KEY,
+    metric_code text NOT NULL UNIQUE,
+    label text NOT NULL,
+    value_type text NOT NULL
+        CHECK (value_type IN ('numeric','text','boolean','json')),
+    default_unit_code text,
+    description text,
+    is_active boolean NOT NULL DEFAULT true
+);
+
+CREATE TABLE analytics.metric_target_resource_type (
+    metric_definition_id uuid NOT NULL
+        REFERENCES analytics.metric_definition(metric_definition_id) ON DELETE CASCADE,
+    resource_type_code varchar(3) NOT NULL
+        REFERENCES core.resource_type(resource_type_code) ON DELETE RESTRICT,
+    PRIMARY KEY (metric_definition_id, resource_type_code)
+);
+
+CREATE TABLE analytics.analysis_run (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    data_activity_id uuid NOT NULL UNIQUE
+        REFERENCES governance.data_activity(resource_id) ON DELETE RESTRICT,
+    module_code text NOT NULL,
+    method_version text NOT NULL,
+    parameters jsonb,
+    input_manifest_hash text,
+    run_status text NOT NULL
+        CHECK (run_status IN ('running','closed','failed')),
+    closed_at timestamptz,
+    release_label text,
+    released_at timestamptz,
+    notes text,
+    CHECK ((run_status = 'closed') = (closed_at IS NOT NULL))
+);
+CREATE INDEX idx_analysis_run_module
+    ON analytics.analysis_run(module_code, released_at DESC);
+
+CREATE TABLE analytics.analysis_input (
+    analysis_input_id uuid PRIMARY KEY,
+    analysis_run_id uuid NOT NULL
