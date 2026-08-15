@@ -1,0 +1,253 @@
+        REFERENCES analytics.analysis_run(resource_id) ON DELETE RESTRICT,
+    input_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    input_role text NOT NULL,
+    input_hash text,
+    ordinal integer CHECK (ordinal IS NULL OR ordinal >= 1),
+    UNIQUE (analysis_run_id, input_resource_id, input_role)
+);
+CREATE INDEX idx_analysis_input_resource
+    ON analytics.analysis_input(input_resource_id);
+
+CREATE TABLE analytics.analysis_result (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    analysis_run_id uuid NOT NULL
+        REFERENCES analytics.analysis_run(resource_id) ON DELETE RESTRICT,
+    metric_definition_id uuid NOT NULL
+        REFERENCES analytics.metric_definition(metric_definition_id) ON DELETE RESTRICT,
+    subject_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    value_status text NOT NULL
+        CHECK (value_status IN ('present','unknown','not_applicable','not_recorded','not_queried','failed')),
+    numeric_value numeric,
+    text_value text,
+    boolean_value boolean,
+    json_value jsonb,
+    unit_code text,
+    computed_at timestamptz NOT NULL DEFAULT current_timestamp,
+    notes text,
+    UNIQUE (analysis_run_id, metric_definition_id, subject_resource_id),
+    CHECK (
+        (value_status = 'present'
+            AND num_nonnulls(numeric_value,text_value,boolean_value,json_value) = 1)
+        OR
+        (value_status <> 'present'
+            AND num_nonnulls(numeric_value,text_value,boolean_value,json_value) = 0)
+    )
+);
+CREATE INDEX idx_analysis_result_subject
+    ON analytics.analysis_result(subject_resource_id);
+CREATE INDEX idx_analysis_result_metric
+    ON analytics.analysis_result(metric_definition_id);
+CREATE INDEX idx_analysis_result_run
+    ON analytics.analysis_result(analysis_run_id);
+
+-- =====================================================================
+-- SECURITY / ACCESS / PRIVACY
+-- =====================================================================
+
+CREATE TABLE security.security_principal (
+    principal_id uuid PRIMARY KEY,
+    principal_type text NOT NULL
+        CHECK (principal_type IN ('user','service')),
+    agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    identity_provider text,
+    external_subject text,
+    service_name text,
+    credential_reference text,
+    is_active boolean NOT NULL DEFAULT true,
+    created_at timestamptz NOT NULL DEFAULT current_timestamp,
+    CHECK (
+        (principal_type = 'user' AND service_name IS NULL)
+        OR
+        (principal_type = 'service' AND service_name IS NOT NULL)
+    ),
+    UNIQUE (identity_provider, external_subject)
+);
+
+CREATE VIEW security.user_account AS
+SELECT * FROM security.security_principal WHERE principal_type = 'user';
+
+CREATE VIEW security.service_account AS
+SELECT * FROM security.security_principal WHERE principal_type = 'service';
+
+CREATE TABLE security.role (
+    role_id uuid PRIMARY KEY,
+    role_code text NOT NULL UNIQUE,
+    label text NOT NULL,
+    description text,
+    is_active boolean NOT NULL DEFAULT true
+);
+
+CREATE TABLE security.permission (
+    permission_id uuid PRIMARY KEY,
+    permission_code text NOT NULL UNIQUE,
+    label text NOT NULL,
+    description text
+);
+
+CREATE TABLE security.role_permission (
+    role_id uuid NOT NULL
+        REFERENCES security.role(role_id) ON DELETE CASCADE,
+    permission_id uuid NOT NULL
+        REFERENCES security.permission(permission_id) ON DELETE CASCADE,
+    PRIMARY KEY (role_id, permission_id)
+);
+
+CREATE TABLE security.principal_role (
+    principal_id uuid NOT NULL
+        REFERENCES security.security_principal(principal_id) ON DELETE CASCADE,
+    role_id uuid NOT NULL
+        REFERENCES security.role(role_id) ON DELETE RESTRICT,
+    valid_from timestamptz,
+    valid_to timestamptz,
+    granted_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    PRIMARY KEY (principal_id, role_id, valid_from),
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+
+CREATE TABLE security.field_group (
+    field_group_id uuid PRIMARY KEY,
+    resource_type_code varchar(3) NOT NULL
+        REFERENCES core.resource_type(resource_type_code) ON DELETE RESTRICT,
+    group_code text NOT NULL,
+    label text NOT NULL,
+    description text,
+    UNIQUE (resource_type_code, group_code)
+);
+
+CREATE TABLE security.field_group_member (
+    field_group_member_id uuid PRIMARY KEY,
+    field_group_id uuid NOT NULL
+        REFERENCES security.field_group(field_group_id) ON DELETE CASCADE,
+    schema_name text NOT NULL,
+    table_name text NOT NULL,
+    column_name text NOT NULL,
+    UNIQUE (field_group_id, schema_name, table_name, column_name)
+);
+
+CREATE TABLE security.access_grant (
+    access_grant_id uuid PRIMARY KEY,
+    principal_id uuid NOT NULL
+        REFERENCES security.security_principal(principal_id) ON DELETE RESTRICT,
+    permission_id uuid NOT NULL
+        REFERENCES security.permission(permission_id) ON DELETE RESTRICT,
+    scope_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    scope_resource_type_code varchar(3)
+        REFERENCES core.resource_type(resource_type_code) ON DELETE RESTRICT,
+    field_group_id uuid
+        REFERENCES security.field_group(field_group_id) ON DELETE RESTRICT,
+    purpose text NOT NULL,
+    starts_at timestamptz NOT NULL DEFAULT current_timestamp,
+    ends_at timestamptz,
+    authority_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    reason text,
+    is_active boolean NOT NULL DEFAULT true,
+    CHECK (ends_at IS NULL OR ends_at >= starts_at),
+    CHECK (
+        scope_resource_id IS NOT NULL
+        OR scope_resource_type_code IS NOT NULL
+        OR field_group_id IS NOT NULL
+    )
+);
+CREATE INDEX idx_access_grant_principal
+    ON security.access_grant(principal_id, starts_at, ends_at);
+
+CREATE TABLE security.sensitivity_assignment (
+    sensitivity_assignment_id uuid PRIMARY KEY,
+    resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    field_group_id uuid
+        REFERENCES security.field_group(field_group_id) ON DELETE RESTRICT,
+    sensitivity_dimension text NOT NULL
+        CHECK (sensitivity_dimension IN ('scientific','spatial','personal','institutional')),
+    sensitivity_level text NOT NULL
+        CHECK (sensitivity_level IN ('S0','S1','S2','S3')),
+    assigned_at timestamptz NOT NULL DEFAULT current_timestamp,
+    assigned_by_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    valid_from timestamptz,
+    valid_to timestamptz,
+    is_current boolean NOT NULL DEFAULT true,
+    reason text,
+    CHECK (valid_to IS NULL OR valid_from IS NULL OR valid_to >= valid_from)
+);
+CREATE INDEX idx_sensitivity_resource
+    ON security.sensitivity_assignment(resource_id);
+CREATE INDEX idx_sensitivity_level
+    ON security.sensitivity_assignment(sensitivity_level);
+CREATE UNIQUE INDEX uq_current_sensitivity_whole_resource
+    ON security.sensitivity_assignment(resource_id, sensitivity_dimension)
+    WHERE field_group_id IS NULL AND is_current = true;
+CREATE UNIQUE INDEX uq_current_sensitivity_field_group
+    ON security.sensitivity_assignment(resource_id, field_group_id, sensitivity_dimension)
+    WHERE field_group_id IS NOT NULL AND is_current = true;
+
+CREATE TABLE security.data_use_constraint (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    constraint_kind text NOT NULL,
+    title text,
+    source_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    starts_at timestamptz,
+    ends_at timestamptz,
+    blocks_view boolean NOT NULL DEFAULT false,
+    blocks_export boolean NOT NULL DEFAULT false,
+    blocks_publish boolean NOT NULL DEFAULT false,
+    license_uri text,
+    authority_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    conditions jsonb,
+    notes text,
+    CHECK (ends_at IS NULL OR starts_at IS NULL OR ends_at >= starts_at)
+);
+
+CREATE TABLE security.data_use_constraint_link (
+    data_use_constraint_id uuid NOT NULL
+        REFERENCES security.data_use_constraint(resource_id) ON DELETE RESTRICT,
+    target_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    PRIMARY KEY (data_use_constraint_id, target_resource_id)
+);
+CREATE INDEX idx_constraint_link_target
+    ON security.data_use_constraint_link(target_resource_id);
+
+CREATE TABLE security.spatial_disclosure_policy (
+    spatial_disclosure_policy_id uuid PRIMARY KEY,
+    policy_code text NOT NULL UNIQUE,
+    applicable_sensitivity_level text NOT NULL
+        CHECK (applicable_sensitivity_level IN ('S0','S1','S2','S3')),
+    field_group_id uuid
+        REFERENCES security.field_group(field_group_id) ON DELETE RESTRICT,
+    disclosure_mode text NOT NULL
+        CHECK (disclosure_mode IN ('exact','generalized','grid','area_only','withheld')),
+    parameter_meters numeric CHECK (parameter_meters IS NULL OR parameter_meters >= 0),
+    geographic_area_kind text,
+    is_active boolean NOT NULL DEFAULT true,
+    rule_parameters jsonb,
+    notes text
+);
+
+CREATE TABLE security.access_event (
+    access_event_id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    occurred_at timestamptz NOT NULL DEFAULT current_timestamp,
+    principal_id uuid
+        REFERENCES security.security_principal(principal_id) ON DELETE SET NULL,
+    permission_id uuid
+        REFERENCES security.permission(permission_id) ON DELETE SET NULL,
+    resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE SET NULL,
+    field_group_id uuid
+        REFERENCES security.field_group(field_group_id) ON DELETE SET NULL,
+    outcome text NOT NULL,
+    purpose text,
+    client_context jsonb
+);
+CREATE INDEX idx_access_event_principal_date
+    ON security.access_event(principal_id, occurred_at DE
