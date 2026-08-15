@@ -1,0 +1,16 @@
+=== HISTORICAL boundary ===
+000000 72 6f 74 65 63 74 5f 72 65 73 75 6c 74 73 5f 6f  >rotect_results_o<
+000010 66 5f 63 6c 6f 73 65 64 5f 72 75 6e 28 29 3b 0a  >f_closed_run();.<
+000020 5c 6e 5c 6e 2d 2d 20 3d 3d 3d 3d 3d 3d 3d 3d 3d  >\n\n-- =========<
+000030 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  >================<
+000040 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  >================<
+000050 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  >================<
+000060
+=== FIX1 boundary ===
+000000 72 6f 74 65 63 74 5f 72 65 73 75 6c 74 73 5f 6f  >rotect_results_o<
+000010 66 5f 63 6c 6f 73 65 64 5f 72 75 6e 28 29 3b 0a  >f_closed_run();.<
+000020 0a 0a 2d 2d 20 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  >..-- ===========<
+000030 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  >================<
+000040 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  >================<
+000050 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d        >==============<
+00005e

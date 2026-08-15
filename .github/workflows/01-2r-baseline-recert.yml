@@ -1,0 +1,142 @@
+name: 01.2R baseline recertification
+
+on:
+  push:
+    branches: ["01.2r-baseline-fix"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recertify:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgis/postgis:18-3.6
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d postgres"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve PostgreSQL 18 environment
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/01_2r_ci
+          CID=$(docker ps --filter ancestor=postgis/postgis:18-3.6 --format '{{.ID}}' | head -1)
+          test -n "$CID"; echo "CID=$CID" >> "$GITHUB_ENV"
+          docker exec "$CID" psql --version | tee evidence/01_2r_ci/psql_client_version.txt
+          docker exec "$CID" psql -X -U postgres -d postgres -Atqc 'select version()' | tee evidence/01_2r_ci/server_version.txt
+          test "$(docker exec "$CID" psql --version | awk '{print $3}' | cut -d. -f1)" = "18"
+
+      - name: Reconstruct historical and candidate artifacts
+        env:
+          HIST_SHA: 50abe00a643d15e7b940580cce68d1abd34c6b6ccb06edd81f2e86973cb73d07
+          FIX_SHA: 21c533e9e587eb1179ce54c951339f365599f60b9bb6905bb79641866787d8aa
+        run: |
+          set -euo pipefail
+          HIST=/tmp/JBLR_01_2_R2_DDL_PILOT_HISTORICAL.sql
+          FIX=/tmp/JBLR_01_2_R2_DDL_PILOT_FIX1.sql
+          PREFIX=/tmp/jblr_prefix.sql
+          cat db/baseline/parts/{000,001,002,003a,003b}.sqlpart > "$PREFIX"
+          test "$(wc -c < "$PREFIX")" = 51545
+          echo '6ce2980a50c17f29896cd66e015e596f4aad758ea4518dbaeb23e792762c3aa3  /tmp/jblr_prefix.sql' | sha256sum -c -
+          cp "$PREFIX" "$HIST"
+          base64 -d db/baseline/remainder_from_51545.gz.b64 | gzip -dc >> "$HIST"
+          python3 - <<'PY'
+          from pathlib import Path
+          h=Path('/tmp/JBLR_01_2_R2_DDL_PILOT_HISTORICAL.sql').read_bytes()
+          assert h.count(b'\\n\\n') == 1
+          Path('/tmp/JBLR_01_2_R2_DDL_PILOT_FIX1.sql').write_bytes(h.replace(b'\\n\\n', b'\n\n', 1))
+          PY
+          test "$(wc -c < "$HIST")" = 107014; echo "$HIST_SHA  $HIST" | sha256sum -c -
+          test "$(wc -c < "$FIX")" = 107012; echo "$FIX_SHA  $FIX" | sha256sum -c -
+          sha256sum "$HIST" "$FIX" | tee evidence/01_2r_ci/hashes.sha256
+          wc -c "$HIST" "$FIX" | tee evidence/01_2r_ci/sizes.txt
+          cp "$FIX" evidence/01_2r_ci/JBLR_01_2_R2_DDL_PILOT_FIX1.sql
+          python3 - <<'PY' | tee evidence/01_2r_ci/binary_proof.txt
+          from pathlib import Path
+          h=Path('/tmp/JBLR_01_2_R2_DDL_PILOT_HISTORICAL.sql').read_bytes()
+          f=Path('/tmp/JBLR_01_2_R2_DDL_PILOT_FIX1.sql').read_bytes()
+          assert h.count(b'\\n')==2 and h.count(b'\\n\\n')==1
+          p=h.index(b'\\n\\n'); assert p==93948
+          assert f == h[:p] + b'\n\n' + h[p+4:]
+          print('literal_backslash_n_count=2')
+          print('literal_backslash_n_n_count=1')
+          print('offset=93948')
+          print('historical_bytes='+h[p:p+4].hex(' '))
+          print('candidate_bytes='+f[p:p+2].hex(' '))
+          print('only_authorized_transformation=PASS')
+          PY
+
+      - name: Reconstruct certified corrected test package
+        run: |
+          set -euo pipefail
+          cat tests/01_2r/transport_sample/part_* | base64 -d | gzip -dc > /tmp/sample.sql
+          cat tests/01_2r/transport_queries/part_* | base64 -d | gzip -dc > /tmp/queries.sql
+          echo 'e76f257720b150823692cbeba19d04345a3e43298cb43eeed01d05f9f66a4916  /tmp/sample.sql' | sha256sum -c -
+          echo '80a083c667fa33ec3c70c4255e80b060eb03fe53cab1b47c1237c560832809fe  /tmp/queries.sql' | sha256sum -c -
+          sha256sum /tmp/sample.sql /tmp/queries.sql | tee evidence/01_2r_ci/test_package_hashes.sha256
+
+      - name: Negative control historical artifact with psql 18
+        run: |
+          set -euo pipefail
+          docker exec "$CID" createdb -U postgres jblr_neg
+          set +e
+          docker exec -i "$CID" psql -X -U postgres -d jblr_neg -v ON_ERROR_STOP=1 < /tmp/JBLR_01_2_R2_DDL_PILOT_HISTORICAL.sql > evidence/01_2r_ci/negative_control_psql18.log 2>&1
+          RC=$?; set -e
+          echo "$RC" | tee evidence/01_2r_ci/negative_control_exit_code.txt
+          test "$RC" -ne 0
+          grep -F 'invalid command \n' evidence/01_2r_ci/negative_control_psql18.log
+
+      - name: Install FIX1 in clean database with psql 18
+        run: |
+          set -euo pipefail
+          docker exec "$CID" createdb -U postgres jblr_fix
+          docker exec -i "$CID" psql -X -U postgres -d jblr_fix -v ON_ERROR_STOP=1 < /tmp/JBLR_01_2_R2_DDL_PILOT_FIX1.sql > evidence/01_2r_ci/candidate_install_psql18.log 2>&1
+          echo PASS | tee evidence/01_2r_ci/candidate_install_status.txt
+
+      - name: Physical inventory
+        run: |
+          set -euo pipefail
+          docker exec -i "$CID" psql -X -U postgres -d jblr_fix -v ON_ERROR_STOP=1 < tests/01_2r/verify_inventory_01_2r.sql 2>&1 | tee evidence/01_2r_ci/inventory.log
+
+      - name: Minimal functional recertification
+        run: |
+          set -euo pipefail
+          docker exec -i "$CID" psql -X -U postgres -d jblr_fix -v ON_ERROR_STOP=1 < /tmp/sample.sql > evidence/01_2r_ci/sample_data.log 2>&1
+          docker exec -i "$CID" psql -X -U postgres -d jblr_fix -v ON_ERROR_STOP=1 < /tmp/queries.sql > evidence/01_2r_ci/recert_queries.log 2>&1
+          for i in $(seq 1 17); do grep -F "PASS A${i}" evidence/01_2r_ci/recert_queries.log >/dev/null; done
+          for m in 'PASS E1' 'PASS E2' 'PASS E3' 'PASS E4' 'PASS E5' 'PASS E7' 'PASS E8' 'PASS E11'; do grep -F "$m" evidence/01_2r_ci/recert_queries.log >/dev/null; done
+          test "$(docker exec "$CID" psql -X -U postgres -d jblr_fix -Atqc "select count(*) from security.v_population_geometry_projection where population_resource_id='018f0000-0000-7000-8000-00000000002b'")" = 2
+          test "$(docker exec "$CID" psql -X -U postgres -d jblr_fix -Atqc "select count(*) from security.v_population_demography_projection where population_resource_id='018f0000-0000-7000-8000-00000000002b'")" = 3
+          docker exec "$CID" psql -X -U postgres -d jblr_fix -Atqc "select extname||'='||extversion from pg_extension where extname in ('postgis','pg_trgm') order by 1" | tee evidence/01_2r_ci/extensions.txt
+          grep -q '^postgis=3\.6' evidence/01_2r_ci/extensions.txt
+          printf '%s\n' 'A1-A17=PASS' 'R2-domain-E1-E5=PASS' 'ExternalRecord-E7=PASS' 'Validation-E8=PASS' 'PostGIS-E10=PASS' 'MasterGeometry-E11=PASS' 'FieldGroup=2/3 PASS' | tee evidence/01_2r_ci/recert_summary.txt
+
+      - name: Archive certified FIX1 and runtime evidence in correction branch
+        run: |
+          set -euo pipefail
+          mkdir -p db/baseline evidence/01_2r/runtime
+          cp /tmp/JBLR_01_2_R2_DDL_PILOT_FIX1.sql db/baseline/JBLR_01_2_R2_DDL_PILOT_FIX1.sql
+          cp -a evidence/01_2r_ci/. evidence/01_2r/runtime/
+          printf 'GITHUB_RUN_ID=%s\nCERTIFICATION_INPUT_SHA=%s\n' "$GITHUB_RUN_ID" "$GITHUB_SHA" > evidence/01_2r/runtime/CI_RUN.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add db/baseline/JBLR_01_2_R2_DDL_PILOT_FIX1.sql evidence/01_2r/runtime
+          git diff --cached --quiet && exit 0
+          git commit -m 'evidence(01.2R): archive certified FIX1 and psql18 logs [skip ci]'
+          git push origin HEAD:01.2r-baseline-fix
+
+      - name: Upload 01.2R evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: JBLR_01_2R_evidence
+          path: evidence/01_2r_ci
+          if-no-files-found: error

@@ -1,0 +1,2 @@
+Lossless transport for JBLR_01_2_CERT_QUERIES_CORRECTED.sql.
+Expected raw SHA-256: 80a083c667fa33ec3c70c4255e80b060eb03fe53cab1b47c1237c560832809fe

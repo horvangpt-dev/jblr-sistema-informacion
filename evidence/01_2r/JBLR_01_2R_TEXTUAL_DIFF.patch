@@ -1,0 +1,13 @@
+--- HISTORICAL
++++ FIX1
+@@ -2225,7 +2225,9 @@
+ CREATE TRIGGER trg_analysis_result_closed_run_immutable
+ BEFORE INSERT OR UPDATE OR DELETE ON analytics.analysis_result
+ FOR EACH ROW EXECUTE FUNCTION analytics.pilot_protect_results_of_closed_run();
+-\n\n-- =====================================================================
++
++
++-- =====================================================================
+ -- JBLR 01.2 · RONDA 2 — PILOT HARDENING LAYER
+ -- NO PRODUCCION
+ -- Decisiones de 00 incorporadas el 2026-08-15.
