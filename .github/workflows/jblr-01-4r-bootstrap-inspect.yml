@@ -9,41 +9,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect and reconstruct segmented bootstrap
+      - name: Reconstruct bootstrap payload
         shell: bash
         run: |
           set -euo pipefail
-          : > /tmp/bootstrap.gz
-          for f in .bootstrap_01_4r/part_*; do
-            clean="/tmp/$(basename "$f").b64"
-            tr -d '\r\n' < "$f" > "$clean"
-            n=$(wc -c < "$clean")
-            printf '%s chars=%s mod4=%s tail=' "$f" "$n" "$((n%4))"
-            tail -c 12 "$clean"; echo
-            if grep -q '[^A-Za-z0-9+/=]' "$clean"; then
-              echo "INVALID_CHARACTERS in $f"; exit 10
-            fi
-            if base64 -d "$clean" >> /tmp/bootstrap.gz 2>/tmp/decode.err; then
-              echo "decoded $f independently"
-            else
-              echo "independent decode failed for $f"
-              cat /tmp/decode.err
-              exit 11
-            fi
-          done
-          echo "reconstructed_bytes=$(wc -c </tmp/bootstrap.gz)"
-          sha256sum /tmp/bootstrap.gz
+          cat .bootstrap_01_4r/part_* | tr -d '\r\n' > /tmp/bootstrap.b64
+          n=$(wc -c </tmp/bootstrap.b64)
+          echo "base64_chars=$n mod4=$((n%4))"
+          if grep -q '[^A-Za-z0-9+/=]' /tmp/bootstrap.b64; then
+            echo 'INVALID_CHARACTERS'; exit 10
+          fi
+          case $((n%4)) in
+            0) ;;
+            2) printf '==' >> /tmp/bootstrap.b64 ;;
+            3) printf '=' >> /tmp/bootstrap.b64 ;;
+            *) echo 'IMPOSSIBLE_BASE64_LENGTH'; exit 11 ;;
+          esac
+          base64 -d /tmp/bootstrap.b64 > /tmp/bootstrap.gz
+          echo 'gzip_sha256:'; sha256sum /tmp/bootstrap.gz
           file /tmp/bootstrap.gz
           gzip -t /tmp/bootstrap.gz
           gzip -dc /tmp/bootstrap.gz > /tmp/bootstrap.payload
-          sha256sum /tmp/bootstrap.payload
+          echo 'payload_sha256:'; sha256sum /tmp/bootstrap.payload
           file /tmp/bootstrap.payload
           if tar -tf /tmp/bootstrap.payload >/tmp/tar-list.txt 2>/tmp/tar-error.txt; then
             echo 'PAYLOAD_IS_TAR=yes'
-            sed -n '1,160p' /tmp/tar-list.txt
+            sed -n '1,200p' /tmp/tar-list.txt
           else
             echo 'PAYLOAD_IS_TAR=no'
             cat /tmp/tar-error.txt
             echo 'payload_head:'
-            head -c 256 /tmp/bootstrap.payload | xxd
+            head -c 512 /tmp/bootstrap.payload | xxd
           fi
