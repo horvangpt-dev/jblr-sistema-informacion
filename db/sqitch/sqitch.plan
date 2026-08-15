@@ -1,0 +1,8 @@
+%syntax-version=1.0.0
+%project=jblr-db
+%uri=https://github.com/horvangpt-dev/jblr-sistema-informacion
+
+core_physical_model_v1 2026-08-15T13:25:00Z JBLR <jblr@localhost> # register already-installed immutable certified baseline; no DDL rewrite
+institutional_release_registry_v1 [core_physical_model_v1] 2026-08-15T13:30:00Z JBLR <jblr@localhost> # governance.schema_release institutional registry
+migration_staging_v1 [institutional_release_registry_v1] 2026-08-15T13:35:00Z JBLR <jblr@localhost> # raw staging, source map, fingerprints and migration audit
+@JBLR_DB_PREPROD_01_4_1.0.0-dev1 2026-08-15T13:40:00Z JBLR <jblr@localhost> # pre-production only; no production authorization
