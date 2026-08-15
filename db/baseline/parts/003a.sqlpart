@@ -1,0 +1,227 @@
+    individual_id uuid NOT NULL
+        REFERENCES field.individual(resource_id) ON DELETE RESTRICT,
+    role_code text NOT NULL,
+    sequence_no integer CHECK (sequence_no IS NULL OR sequence_no >= 1),
+    notes text,
+    UNIQUE (collection_event_id, individual_id, role_code)
+);
+CREATE INDEX idx_collection_individual_individual
+    ON field.collection_individual(individual_id);
+
+-- =====================================================================
+-- MATERIAL
+-- =====================================================================
+
+CREATE TABLE material.sample (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    sample_kind text NOT NULL,
+    quantity_value numeric CHECK (quantity_value IS NULL OR quantity_value >= 0),
+    quantity_unit text,
+    material_state text,
+    notes text
+);
+
+CREATE TABLE material.sample_origin (
+    sample_origin_id uuid PRIMARY KEY,
+    sample_id uuid NOT NULL
+        REFERENCES material.sample(resource_id) ON DELETE RESTRICT,
+    collection_event_id uuid
+        REFERENCES field.collection_event(resource_id) ON DELETE RESTRICT,
+    individual_id uuid
+        REFERENCES field.individual(resource_id) ON DELETE RESTRICT,
+    origin_role text,
+    proportion numeric CHECK (proportion IS NULL OR (proportion >= 0 AND proportion <= 1)),
+    notes text,
+    CHECK (collection_event_id IS NOT NULL OR individual_id IS NOT NULL)
+);
+CREATE INDEX idx_sample_origin_sample ON material.sample_origin(sample_id);
+CREATE INDEX idx_sample_origin_individual ON material.sample_origin(individual_id);
+CREATE INDEX idx_sample_origin_collection ON material.sample_origin(collection_event_id);
+
+CREATE TABLE material.processing_event (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    process_type text NOT NULL,
+    started_at timestamptz,
+    ended_at timestamptz,
+    operator_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    protocol_resource_id uuid
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    notes text,
+    CHECK (ended_at IS NULL OR started_at IS NULL OR ended_at >= started_at)
+);
+
+CREATE TABLE material.process_input (
+    process_input_id uuid PRIMARY KEY,
+    processing_event_id uuid NOT NULL
+        REFERENCES material.processing_event(resource_id) ON DELETE RESTRICT,
+    sample_id uuid NOT NULL
+        REFERENCES material.sample(resource_id) ON DELETE RESTRICT,
+    quantity_value numeric CHECK (quantity_value IS NULL OR quantity_value >= 0),
+    quantity_unit text,
+    ordinal integer CHECK (ordinal IS NULL OR ordinal >= 1),
+    UNIQUE (processing_event_id, sample_id)
+);
+CREATE INDEX idx_process_input_sample ON material.process_input(sample_id);
+
+CREATE TABLE material.process_output (
+    process_output_id uuid PRIMARY KEY,
+    processing_event_id uuid NOT NULL
+        REFERENCES material.processing_event(resource_id) ON DELETE RESTRICT,
+    sample_id uuid NOT NULL
+        REFERENCES material.sample(resource_id) ON DELETE RESTRICT,
+    quantity_value numeric CHECK (quantity_value IS NULL OR quantity_value >= 0),
+    quantity_unit text,
+    ordinal integer CHECK (ordinal IS NULL OR ordinal >= 1),
+    UNIQUE (processing_event_id, sample_id)
+);
+CREATE INDEX idx_process_output_sample ON material.process_output(sample_id);
+
+CREATE TABLE material.accession (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    accession_date date,
+    accession_status text,
+    curator_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    notes text
+);
+CREATE INDEX idx_accession_date ON material.accession(accession_date);
+
+CREATE TABLE material.accession_material (
+    accession_material_id uuid PRIMARY KEY,
+    accession_id uuid NOT NULL
+        REFERENCES material.accession(resource_id) ON DELETE RESTRICT,
+    sample_id uuid NOT NULL
+        REFERENCES material.sample(resource_id) ON DELETE RESTRICT,
+    material_role text,
+    quantity_value numeric CHECK (quantity_value IS NULL OR quantity_value >= 0),
+    quantity_unit text,
+    notes text,
+    UNIQUE (accession_id, sample_id, material_role)
+);
+CREATE INDEX idx_accession_material_sample ON material.accession_material(sample_id);
+
+-- =====================================================================
+-- EVIDENCE: records, content, assertions
+-- =====================================================================
+
+CREATE TABLE evidence.bibliographic_reference (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    reference_type text,
+    title text,
+    authors_text text,
+    publication_year integer CHECK (publication_year IS NULL OR publication_year BETWEEN 1500 AND 2500),
+    doi text,
+    isbn text,
+    citation_text text,
+    url text,
+    external_source_id uuid
+        REFERENCES evidence.external_source(external_source_id) ON DELETE RESTRICT,
+    notes text
+);
+CREATE UNIQUE INDEX uq_bibliographic_doi_lower
+    ON evidence.bibliographic_reference(lower(doi))
+    WHERE doi IS NOT NULL;
+CREATE INDEX idx_bibliographic_title_trgm
+    ON evidence.bibliographic_reference USING gin (title gin_trgm_ops);
+
+CREATE TABLE evidence.external_record (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    external_source_id uuid NOT NULL
+        REFERENCES evidence.external_source(external_source_id) ON DELETE RESTRICT,
+    external_id text NOT NULL,
+    record_type text NOT NULL,
+    canonical_url text,
+    license_text text,
+    first_seen_at timestamptz NOT NULL DEFAULT current_timestamp,
+    last_seen_at timestamptz NOT NULL DEFAULT current_timestamp,
+    notes text,
+    UNIQUE (external_source_id, external_id)
+);
+CREATE INDEX idx_external_record_type ON evidence.external_record(record_type);
+CREATE INDEX idx_external_record_source ON evidence.external_record(external_source_id);
+
+CREATE TABLE evidence.external_record_snapshot (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    external_record_id uuid NOT NULL
+        REFERENCES evidence.external_record(resource_id) ON DELETE RESTRICT,
+    retrieved_at timestamptz NOT NULL,
+    payload_hash char(64)
+        CHECK (payload_hash IS NULL OR payload_hash ~ '^[0-9a-fA-F]{64}$'),
+    raw_payload jsonb,
+    raw_asset_id uuid
+        REFERENCES evidence.digital_asset(resource_id) ON DELETE RESTRICT,
+    normalized_payload jsonb,
+    schema_version text,
+    license_text text,
+    capture_status text NOT NULL DEFAULT 'captured'
+        CHECK (capture_status IN ('captured','partial','not_available','failed')),
+    notes text,
+    CHECK (raw_payload IS NULL OR raw_asset_id IS NULL)
+);
+CREATE INDEX idx_external_snapshot_record_date
+    ON evidence.external_record_snapshot(external_record_id, retrieved_at DESC);
+CREATE UNIQUE INDEX uq_external_snapshot_hash
+    ON evidence.external_record_snapshot(external_record_id, payload_hash)
+    WHERE payload_hash IS NOT NULL;
+
+CREATE TABLE evidence.content_item (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    content_kind text NOT NULL
+        CHECK (content_kind IN ('document','media')),
+    title text,
+    author_agent_id uuid
+        REFERENCES core.agent(resource_id) ON DELETE SET NULL,
+    captured_at timestamptz,
+    license_text text,
+    description text,
+    notes text
+);
+CREATE INDEX idx_content_kind ON evidence.content_item(content_kind);
+
+CREATE TABLE evidence.content_representation (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
+    content_item_id uuid NOT NULL
+        REFERENCES evidence.content_item(resource_id) ON DELETE RESTRICT,
+    digital_asset_id uuid NOT NULL
+        REFERENCES evidence.digital_asset(resource_id) ON DELETE RESTRICT,
+    representation_role text NOT NULL
+        CHECK (representation_role IN ('original','version','derivative','thumbnail','public_derivative')),
+    version_no integer CHECK (version_no IS NULL OR version_no >= 1),
+    derived_from_representation_id uuid
+        REFERENCES evidence.content_representation(resource_id) ON DELETE RESTRICT,
+    transformation_metadata jsonb,
+    metadata_stripped boolean NOT NULL DEFAULT false,
+    created_at timestamptz NOT NULL DEFAULT current_timestamp,
+    notes text,
+    CHECK (derived_from_representation_id IS NULL OR derived_from_representation_id <> resource_id)
+);
+CREATE INDEX idx_content_representation_item ON evidence.content_representation(content_item_id);
+CREATE INDEX idx_content_representation_asset ON evidence.content_representation(digital_asset_id);
+CREATE UNIQUE INDEX uq_content_original
+    ON evidence.content_representation(content_item_id)
+    WHERE representation_role = 'original';
+
+CREATE TABLE evidence.content_link (
+    content_link_id uuid PRIMARY KEY,
+    content_item_id uuid NOT NULL
+        REFERENCES evidence.content_item(resource_id) ON DELETE RESTRICT,
+    target_resource_id uuid NOT NULL
+        REFERENCES core.resource(resource_id) ON DELETE RESTRICT,
+    relation_role text NOT NULL,
+    notes text,
+    UNIQUE (content_item_id, target_resource_id, relation_role)
+);
+CREATE INDEX idx_content_link_target ON evidence.content_link(target_resource_id);
+
+CREATE TABLE evidence.assertion (
+    resource_id uuid PRIMARY KEY
+        REFERENCES core.resource(resource_id) ON DELETE CASCADE,
