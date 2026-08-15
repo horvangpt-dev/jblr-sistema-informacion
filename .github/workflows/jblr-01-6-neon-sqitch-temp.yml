@@ -1,0 +1,195 @@
+name: JBLR 01.6 Neon Sqitch CLI Temporary Validation
+
+on:
+  push:
+    branches: [01.6-staging-neon-adaptation]
+    paths:
+      - '.github/workflows/jblr-01-6-neon-sqitch-temp.yml'
+
+jobs:
+  sqitch-cli-temp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TARGET_HOST: ep-long-dust-b2csrk8n.c-6.eu-central-1.aws.neon.tech
+      TARGET_DB: neondb
+      TARGET_BRANCH_ID: br-quiet-pine-b2hj8lb2
+      TARGET_BRANCH_NAME: 01.6-sqitch-cli-certified-20260815
+      TEMP_ROLE: jblr_01_6_sqitch_temp
+      BASELINE_PATH: db/baseline/JBLR_01_2_R2_DDL_PILOT_FIX1.sql
+      BASELINE_SOURCE_BRANCH: 01.2r-baseline-fix
+      BASELINE_SOURCE_COMMIT: 2e18c9fdfe9cf9222c8297b93ca0c705e7fb7443
+      BASELINE_SHA256: 21c533e9e587eb1179ce54c951339f365599f60b9bb6905bb79641866787d8aa
+      BASELINE_SIZE: '107012'
+      CERTIFIED_COMMIT: 75b567d15d6b610939ccdc95009a8aa0d30dd8b6
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Initialize evidence
+        run: mkdir -p evidence
+
+      - name: Install PostgreSQL client and Sqitch
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y postgresql-client sqitch libdbd-pg-perl
+          psql --version | tee evidence/psql_version.txt
+          sqitch --version | tee evidence/sqitch_version.txt
+
+      - name: Verify certified technical package is unchanged
+        run: |
+          set -euo pipefail
+          git diff --exit-code "$CERTIFIED_COMMIT" -- db/sqitch
+          grep -F "NOT (table_schema='governance' AND table_name='schema_release')" db/sqitch/verify/core_physical_model_v1.sql
+          {
+            echo "certified_commit=$CERTIFIED_COMMIT"
+            echo "technical_branch=$GITHUB_REF_NAME"
+            echo "technical_commit=$GITHUB_SHA"
+            echo "target_branch_id=$TARGET_BRANCH_ID"
+            echo "target_branch_name=$TARGET_BRANCH_NAME"
+          } | tee evidence/run_identity.txt
+
+      - name: Materialize normative FIX1 and verify SHA-256
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin "$BASELINE_SOURCE_BRANCH"
+          git cat-file -e "$BASELINE_SOURCE_COMMIT^{commit}"
+          mkdir -p "$(dirname "$BASELINE_PATH")"
+          git show "$BASELINE_SOURCE_COMMIT:$BASELINE_PATH" > "$BASELINE_PATH"
+          test "$(wc -c < "$BASELINE_PATH")" = "$BASELINE_SIZE"
+          echo "$BASELINE_SHA256  $BASELINE_PATH" | sha256sum -c - | tee evidence/baseline_hash_check.txt
+
+      - name: Passwordless bootstrap and real Sqitch CLI validation
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          TMP_PASS="$(openssl rand -base64 48 | tr -dc 'A-Za-z0-9_-' | head -c 48)"
+          test "${#TMP_PASS}" -ge 32
+          echo "::add-mask::$TMP_PASS"
+          export TMP_PASS
+
+          mkfifo /tmp/jblr_neon_admin_in
+          touch evidence/admin_passwordless.log
+
+          (
+            stdbuf -oL -eL psql -X -h pg.neon.tech -U neondb_owner -d "$TARGET_DB" -v ON_ERROR_STOP=1 \
+              < /tmp/jblr_neon_admin_in 2>&1 | tee -a evidence/admin_passwordless.log
+          ) &
+          ADMIN_PID=$!
+          exec 3>/tmp/jblr_neon_admin_in
+
+          cleanup_admin() {
+            set +e
+            if [[ -e /proc/$ADMIN_PID ]]; then
+              cat >&3 <<'SQL'
+ALTER ROLE jblr_01_6_sqitch_temp PASSWORD NULL VALID UNTIL '2000-01-01 00:00:00+00';
+\echo TEMP_LOGIN_REVOKED
+\q
+SQL
+              exec 3>&-
+              wait "$ADMIN_PID"
+            fi
+          }
+          trap cleanup_admin EXIT
+
+          cat >&3 <<'SQL'
+\set ON_ERROR_STOP on
+DO $$
+BEGIN
+  IF current_user <> 'neondb_owner' THEN
+    RAISE EXCEPTION 'passwordless session must be neondb_owner, got %', current_user;
+  END IF;
+END $$;
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+\getenv temp_pass TMP_PASS
+SELECT format(
+  'CREATE ROLE jblr_01_6_sqitch_temp LOGIN PASSWORD %L VALID UNTIL %L',
+  :'temp_pass',
+  (current_timestamp + interval '20 minutes')::text
+) WHERE NOT EXISTS (
+  SELECT 1 FROM pg_roles WHERE rolname='jblr_01_6_sqitch_temp'
+) \gexec
+SELECT format(
+  'ALTER ROLE jblr_01_6_sqitch_temp LOGIN PASSWORD %L VALID UNTIL %L',
+  :'temp_pass',
+  (current_timestamp + interval '20 minutes')::text
+) \gexec
+GRANT CREATE ON DATABASE neondb TO jblr_01_6_sqitch_temp;
+\echo TEMP_LOGIN_READY
+SQL
+
+          echo 'WAITING_FOR_NEON_PASSWORDLESS_AUTHORIZATION'
+          echo 'Authorize the Neon browser link printed above and select project crimson-hall-16978747, branch 01.6-sqitch-cli-certified-20260815.'
+
+          ready=0
+          for i in $(seq 1 150); do
+            if grep -q 'TEMP_LOGIN_READY' evidence/admin_passwordless.log; then
+              ready=1
+              break
+            fi
+            if ! kill -0 "$ADMIN_PID" 2>/dev/null; then
+              echo 'ADMIN_PASSWORDLESS_SESSION_ENDED_BEFORE_SETUP' >&2
+              cat evidence/admin_passwordless.log >&2
+              exit 1
+            fi
+            sleep 2
+          done
+          test "$ready" = "1"
+
+          export PGPASSWORD="$TMP_PASS"
+          export PGSSLMODE=require
+          export PGHOST="$TARGET_HOST"
+          export PGDATABASE="$TARGET_DB"
+          export PGUSER="$TEMP_ROLE"
+
+          psql -X -v ON_ERROR_STOP=1 -Atqc "select current_user" | tee evidence/direct_login_user.txt
+          test "$(cat evidence/direct_login_user.txt)" = "$TEMP_ROLE"
+
+          psql -X -v ON_ERROR_STOP=1 -f "$BASELINE_PATH" > evidence/baseline_install.log
+
+          BASE_TABLES="$(psql -X -Atqc "select count(*) from information_schema.tables where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security') and table_type='BASE TABLE'")"
+          BASE_VIEWS="$(psql -X -Atqc "select count(*) from information_schema.views where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security')")"
+          test "$BASE_TABLES" = "85"
+          test "$BASE_VIEWS" = "8"
+          printf 'baseline_tables=%s\nbaseline_views=%s\n' "$BASE_TABLES" "$BASE_VIEWS" | tee evidence/baseline_inventory.txt
+
+          (
+            cd db/sqitch
+            sqitch deploy "db:pg://$TEMP_ROLE@$TARGET_HOST/$TARGET_DB" 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_cli_deploy.log"
+            sqitch verify "db:pg://$TEMP_ROLE@$TARGET_HOST/$TARGET_DB" 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_cli_verify.log"
+          )
+
+          test "$(psql -X -Atqc "select count(*) from sqitch.changes")" = "3"
+          test "$(psql -X -Atqc "select count(*) from information_schema.tables where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') and table_type='BASE TABLE'")" = "91"
+          test "$(psql -X -Atqc "select count(*) from information_schema.views where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging')")" = "8"
+
+          psql -X -P pager=off -c "select change_id,committed_at from sqitch.changes order by committed_at" > evidence/sqitch_changes.txt
+          psql -X -Atqc "select extname||'='||extversion from pg_extension where extname in ('postgis','pg_trgm') order by extname" > evidence/extensions.txt
+
+          {
+            echo 'SQITCH_CLI_TEMP_DEPLOY=PASS'
+            echo 'SQITCH_CLI_TEMP_VERIFY=PASS'
+            echo 'baseline_tables=85'
+            echo 'baseline_views=8'
+            echo 'final_tables=91'
+            echo 'final_views=8'
+            echo "target_branch_id=$TARGET_BRANCH_ID"
+            echo "technical_commit=$GITHUB_SHA"
+          } | tee evidence/CHECKPOINT_E_STATUS.txt
+
+          cleanup_admin
+          trap - EXIT
+          unset PGPASSWORD TMP_PASS
+
+      - name: Upload non-secret checkpoint evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-01-6-sqitch-cli-temp-evidence
+          path: evidence/
+          if-no-files-found: warn
