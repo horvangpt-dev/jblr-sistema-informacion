@@ -1,0 +1,7 @@
+A1-A17=PASS
+R2-domain-E1-E5=PASS
+ExternalRecord-E7=PASS
+Validation-E8=PASS
+PostGIS-E10=PASS
+MasterGeometry-E11=PASS
+FieldGroup=2/3 PASS

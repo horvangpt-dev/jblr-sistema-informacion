@@ -1,0 +1,25 @@
+DO
+NOTICE:  PASS inventory tables=85 views=8 functions=18 triggers=65 schemas=8 required_extensions=2
+        server_version         
+-------------------------------
+ 18.4 (Debian 18.4-1.pgdg13+1)
+(1 row)
+
+ extname | extversion 
+---------+------------
+ pg_trgm | 1.6
+ postgis | 3.6.4
+(2 rows)
+
+  nspname   
+------------
+ analytics
+ core
+ evidence
+ field
+ governance
+ material
+ security
+ taxonomy
+(8 rows)
+

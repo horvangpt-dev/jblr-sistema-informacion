@@ -1,0 +1,6 @@
+literal_backslash_n_count=2
+literal_backslash_n_n_count=1
+offset=93948
+historical_bytes=5c 6e 5c 6e
+candidate_bytes=0a 0a
+only_authorized_transformation=PASS

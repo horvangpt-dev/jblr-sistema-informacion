@@ -1,0 +1,408 @@
+SET
+INSERT 0 2
+INSERT 0 1
+INSERT 0 1
+NOTICE:  PASS A1 duplicate preferred identification rejected: duplicate key value violates unique constraint "uq_identification_preferred_target"
+DO
+NOTICE:  PASS A2 failed+0 rejected: new row for relation "analysis_result" violates check constraint "analysis_result_check"
+DO
+NOTICE:  PASS A3 metric target mismatch rejected: metric 018f0000-0000-7000-8000-00000000009e is not allowed for resource type SMP
+DO
+NOTICE:  PASS A4 metric value type mismatch rejected: metric 018f0000-0000-7000-8000-00000000009e expects value_type numeric, but matching value column is NULL
+DO
+NOTICE:  PASS A5 sample genealogy cycle rejected: sample genealogy cycle detected
+DO
+NOTICE:  PASS A6 second producer rejected: duplicate key value violates unique constraint "uq_process_output_sample_once"
+DO
+NOTICE:  PASS A7 cross-content derivative rejected: derived representation must belong to the same content_item
+DO
+NOTICE:  PASS A8 field group/resource type mismatch rejected: field group type POP does not match resource type ACC
+DO
+NOTICE:  PASS A9 Resource subtype mismatch rejected: resource 018f0000-0000-7000-8000-00000000f501 has type SMP, but table field.population expects one of [0:0]={POP}
+DO
+NOTICE:  PASS A10 wrong JBLR prefix rejected: JBLR code JBLR-TXC-99999999 does not match resource type POP prefix POP
+DO
+NOTICE:  PASS A11 JBLR code reuse rejected by registry: duplicate key value violates unique constraint "jblr_code_registry_pkey"
+DO
+NOTICE:  PASS A12 duplicate open SearchNameAssertion rejected: duplicate key value violates unique constraint "uq_search_name_open_ended"
+DO
+NOTICE:  PASS A13 DOC/MED mismatch rejected: content item 018f0000-0000-7000-8000-00000000f701 kind media requires resource type MED, got DOC
+DO
+NOTICE:  PASS A14 duplicate ExternalRecord rejected transactionally: duplicate key value violates unique constraint "external_record_external_source_id_external_id_key"
+DO
+NOTICE:  PASS A15 duplicate ExternalRecordSnapshot hash rejected: duplicate key value violates unique constraint "uq_external_snapshot_hash"
+DO
+NOTICE:  PASS A16 closed AnalysisRun immutable: closed AnalysisRun 018f0000-0000-7000-8000-000000000059 is immutable
+DO
+NOTICE:  PASS A17 insert into closed AnalysisRun rejected: results of closed AnalysisRun 018f0000-0000-7000-8000-000000000059 are immutable
+DO
+          target_resource_id          |          identification_id           |     scientific_name     | concept_label | identified_at 
+--------------------------------------+--------------------------------------+-------------------------+---------------+---------------
+ 018f0000-0000-7000-8000-00000000002b | 018f0000-0000-7000-8000-00000000003b | Exempla alba (L.) Fict. | Concepto A    | 2026-01-15
+(1 row)
+
+           taxon_concept_id           |           adopted_name_id            |     scientific_name     | canonical_name | authorship |         adoption_decision_id         |       decided_at       
+--------------------------------------+--------------------------------------+-------------------------+----------------+------------+--------------------------------------+------------------------
+ 018f0000-0000-7000-8000-000000000008 | 018f0000-0000-7000-8000-00000000000f | Exempla alba (L.) Fict. | Exempla alba   | (L.) Fict. | 018f0000-0000-7000-8000-00000000001f | 2026-04-01 10:00:00+00
+(1 row)
+
+             resource_id              |      observed_at       |     verbatim_observation     | sequence_no |     location_name     
+--------------------------------------+------------------------+------------------------------+-------------+-----------------------
+ 018f0000-0000-7000-8000-000000000037 | 2025-08-01 08:45:00+00 | Observacion sintetica 1      |           1 | Localidad A sintetica
+ 018f0000-0000-7000-8000-000000000039 | 2025-08-01 09:00:00+00 | Identificacion solo a genero |           1 | Localidad A sintetica
+ 018f0000-0000-7000-8000-000000000038 | 2025-08-01 11:15:00+00 | Observacion sintetica 2      |           2 | Localidad B sintetica
+(3 rows)
+
+            population_id             |              census_id               |       census_at        |            field_visit_id            |   method_text    
+--------------------------------------+--------------------------------------+------------------------+--------------------------------------+------------------
+ 018f0000-0000-7000-8000-00000000002b | 018f0000-0000-7000-8000-00000000003e | 2025-08-01 11:30:00+00 | 018f0000-0000-7000-8000-000000000032 | conteo sintetico
+(1 row)
+
+ depth |             resource_id              |       notes       | individual_label |     collection_at      
+-------+--------------------------------------+-------------------+------------------+------------------------
+     0 | 018f0000-0000-7000-8000-000000000046 | Sample D division |                  | 
+     1 | 018f0000-0000-7000-8000-000000000045 | Sample C mezcla   |                  | 
+     2 | 018f0000-0000-7000-8000-000000000043 | Sample A2 seco    |                  | 
+     2 | 018f0000-0000-7000-8000-000000000044 | Sample B2 seco    |                  | 
+     3 | 018f0000-0000-7000-8000-000000000040 | Sample A madre 1  | Mother 1         | 2025-08-01 14:20:00+00
+     3 | 018f0000-0000-7000-8000-000000000041 | Sample B madre 2  | Mother 2         | 2025-08-01 14:20:00+00
+(6 rows)
+
+             accession_id             | accession_status |              sample_id               |       notes       | material_role | quantity_value | quantity_unit 
+--------------------------------------+------------------+--------------------------------------+-------------------+---------------+----------------+---------------
+ 018f0000-0000-7000-8000-00000000004c | active           | 018f0000-0000-7000-8000-000000000046 | Sample D division | primary       |            0.6 | fraction
+ 018f0000-0000-7000-8000-00000000004d | active           | 018f0000-0000-7000-8000-000000000046 | Sample D division | research      |            0.4 | fraction
+ 018f0000-0000-7000-8000-00000000004d | active           | 018f0000-0000-7000-8000-000000000047 | Sample E division | primary       |            1.0 | fraction
+(3 rows)
+
+ concept_label | scientific_name | safety_status  | valid_from | valid_to 
+---------------+-----------------+----------------+------------+----------
+ Concepto A    | Testa alba L.   | automatic_safe | 2026-01-01 | 
+(1 row)
+
+          external_record_id          |             snapshot_id              |      retrieved_at      |                           payload_hash                           |                              normalized_payload                              
+--------------------------------------+--------------------------------------+------------------------+------------------------------------------------------------------+------------------------------------------------------------------------------
+ 018f0000-0000-7000-8000-00000000004e | 018f0000-0000-7000-8000-000000000050 | 2026-01-02 00:00:00+00 | a8824bfd0048d9e4ceca30a82e569742bc328a3d6c72299eb9929053ae8484c8 | {"name": "Specimen synthetic revised", "count": 1, "external_id": "SYN-001"}
+(1 row)
+
+         subject_resource_id          | metric_code |              result_id               | value_status | numeric_value | release_label |      released_at       
+--------------------------------------+-------------+--------------------------------------+--------------+---------------+---------------+------------------------
+ 018f0000-0000-7000-8000-000000000008 | SCI_COUNT   | 018f0000-0000-7000-8000-00000000005c | present      |             3 | pilot-v2      | 2026-02-02 00:11:00+00
+(1 row)
+
+              result_id               |         impact_assessment_id         |  taxonomic_impact   | historical_assignability |                          rationale                           
+--------------------------------------+--------------------------------------+---------------------+--------------------------+--------------------------------------------------------------
+ 018f0000-0000-7000-8000-00000000005b | 018f0000-0000-7000-8000-000000000060 | taxonomically_stale | requires_redetermination | Resultado historico conservado; requiere revision tras split
+(1 row)
+
+            population_id             | population_label | sensitivity_level | disclosure_mode | public_geometry_wkt |  public_area_name  
+--------------------------------------+------------------+-------------------+-----------------+---------------------+--------------------
+ 018f0000-0000-7000-8000-00000000002b | Population A     | S3                | area_only       |                     | Municipio Ficticio
+ 018f0000-0000-7000-8000-00000000002b | Population A     | S3                | area_only       |                     | Municipio Ficticio
+(2 rows)
+
+     location_name     | version_no | geometry_role | is_preferred |                internal_master_geometry                
+-----------------------+------------+---------------+--------------+--------------------------------------------------------
+ Localidad A sintetica |          1 | exact         | t            | POINT(2.345 1.234)
+ Localidad B sintetica |          1 | interpreted   | t            | POLYGON((2.4 1.3,2.41 1.3,2.41 1.31,2.4 1.31,2.4 1.3))
+(2 rows)
+
+           digital_asset_id           |                              sha256                              |           content_item_id            | content_kind | representation_role |          target_resource_id          | relation_role 
+--------------------------------------+------------------------------------------------------------------+--------------------------------------+--------------+---------------------+--------------------------------------+---------------
+ 018f0000-0000-7000-8000-000000000061 | 4d5f0258991adc8ef17377d7fb979400f4e67b1aff92f4bd1f4e949d34d79664 | 018f0000-0000-7000-8000-000000000067 | document     | original            | 018f0000-0000-7000-8000-000000000030 | documents
+ 018f0000-0000-7000-8000-000000000062 | 419410b81b369a6e98325f22fa390290d1b4558451a67c4629775a319a1f2cb8 | 018f0000-0000-7000-8000-000000000067 | document     | version             | 018f0000-0000-7000-8000-000000000030 | documents
+ 018f0000-0000-7000-8000-000000000063 | 408e40fe9d4cc1fbfb25685283784b483bb6722d8548951759f8068b7a592c10 | 018f0000-0000-7000-8000-000000000068 | media        | original            | 018f0000-0000-7000-8000-00000000002b | depicts
+ 018f0000-0000-7000-8000-000000000064 | 87bdcb144b4ba09779b8d5f3dcf1a43d8d6264585a6d829d18793aef2ddef24d | 018f0000-0000-7000-8000-000000000068 | media        | public_derivative   | 018f0000-0000-7000-8000-00000000002b | depicts
+ 018f0000-0000-7000-8000-000000000065 | dbe1588bde29c47cc94324c5cb7a9408d52b05f12db4bee8c08a9f948ce2bb04 | 018f0000-0000-7000-8000-000000000069 | document     | original            | 018f0000-0000-7000-8000-00000000004c | documents
+ 018f0000-0000-7000-8000-000000000066 | b2daf245b6f099df9783a36a437be6847ac06344d13b4558f5223eec081c7adc | 018f0000-0000-7000-8000-000000000069 | document     | public_derivative   | 018f0000-0000-7000-8000-00000000004c | documents
+(6 rows)
+
+             resource_id              |       started_at       |        ended_at        | visits | distinct_locations 
+--------------------------------------+------------------------+------------------------+--------+--------------------
+ 018f0000-0000-7000-8000-000000000030 | 2025-08-01 08:00:00+00 | 2025-08-01 16:00:00+00 |      3 |                  3
+(1 row)
+
+ population_label | census_count 
+------------------+--------------
+ Population A     |            2
+ Population B     |            0
+ Population C     |            0
+(3 rows)
+
+ source_population |  successor   | relation_type | effective_date 
+-------------------+--------------+---------------+----------------
+ Population A      | Population B | split_into    | 2026-02-01
+ Population A      | Population C | split_into    | 2026-02-01
+(2 rows)
+
+ presence_term_key | presence_value_status | origin_term_key | origin_value_status |  establishment_term_key   | establishment_value_status | context_term_key | context_value_status | temporality_term_key | temporality_value_status | catalog_inclusion_term_key | catalog_inclusion_value_status 
+-------------------+-----------------------+-----------------+---------------------+---------------------------+----------------------------+------------------+----------------------+----------------------+--------------------------+----------------------------+--------------------------------
+ presence:present  | present               | origin:native   | present             | establishment:established | present                    | context:wild     | present              | temporality:current  | present                  | catalog:included           | present
+(1 row)
+
+       location_name       | geometry_versions | geometry_types | max_version 
+---------------------------+-------------------+----------------+-------------
+ Localidad A sintetica     |                 1 | ST_Point       |           1
+ Localidad B sintetica     |                 1 | ST_Polygon     |           1
+ Localidad C sintetica     |                 2 | ST_Point       |           2
+ Localidad D sin geometria |                 0 |                |            
+(4 rows)
+
+ value_status | numeric_value | count 
+--------------+---------------+-------
+ present      |             0 |     1
+ present      |             3 |     1
+ present      |            88 |     1
+ present      |               |     2
+(4 rows)
+
+ value_status | numeric_value | count 
+--------------+---------------+-------
+ present      |             0 |     1
+ present      |            12 |     1
+ unknown      |               |     1
+(3 rows)
+
+ content_kind | resource_type_code |     jblr_code     |        title         
+--------------+--------------------+-------------------+----------------------
+ document     | DOC                | JBLR-DOC-00000066 | Documento sintetico
+ document     | DOC                | JBLR-DOC-00000068 | PDF sintetico
+ media        | MED                | JBLR-MED-00000067 | Fotografia sintetica
+(3 rows)
+
+       constraint_kind       |             title             |       starts_at        |        ends_at         | blocks_view | blocks_export | blocks_publish |             conditions             
+-----------------------------+-------------------------------+------------------------+------------------------+-------------+---------------+----------------+------------------------------------
+ embargo                     | Embargo temporal              | 2026-03-01 00:00:00+00 | 2027-01-01 00:00:00+00 | f           | t             | t              | {}
+ internal_only               | Consulta interna, no publicar | 2026-03-01 00:00:00+00 |                        | f           | f             | t              | {}
+ license                     | Licencia con atribucion       | 2026-03-01 00:00:00+00 |                        | f           | f             | f              | {"attribution_required": true}
+ no_redistribution           | No redistribuir               | 2026-03-01 00:00:00+00 |                        | f           | t             | t              | {}
+ third_party_confidentiality | Confidencialidad de tercero   | 2026-03-01 00:00:00+00 |                        | t           | t             | t              | {"internal_authorized_only": true}
+(5 rows)
+
+ process_outcome | count 
+-----------------+-------
+ duplicate       |     1
+ failed          |     1
+ inserted        |     1
+ quarantined     |     1
+ skipped         |     1
+ unchanged       |     1
+ updated         |     1
+(7 rows)
+
+ validation_status 
+-------------------
+ unreviewed
+(1 row)
+
+ uuid_version | count 
+--------------+-------
+            7 |   124
+(1 row)
+
+ resource_type_code | coded | uncoded 
+--------------------+-------+---------
+ ACC                |     2 |       0
+ ACT                |     0 |       7
+ AGT                |     2 |       0
+ ANR                |     3 |       0
+ ASN                |     1 |       0
+ AST                |     0 |       6
+ CEN                |     2 |       0
+ COL                |     1 |       0
+ CRP                |     0 |       6
+ DOC                |     2 |       0
+ DUC                |     0 |       5
+ EXS                |     0 |       2
+ EXT                |     2 |       0
+ GAR                |     0 |       3
+ HYP                |     0 |       2
+ IDN                |     3 |       0
+ IMP                |     3 |       0
+ IND                |     3 |       0
+ LGE                |     0 |       4
+ LOC                |     4 |       0
+ MED                |     1 |       0
+ NAM                |     7 |       0
+ NUS                |     0 |       3
+ OBS                |     3 |       0
+ POP                |     3 |       0
+ PRC                |     4 |       0
+ PRL                |     0 |       2
+ PRS                |     1 |       0
+ QAS                |     0 |       1
+ REF                |     1 |       0
+ REV                |     0 |       1
+ RSL                |     5 |       0
+ RST                |     0 |       1
+ RTA                |     0 |       1
+ SMP                |     8 |       0
+ SNA                |     0 |       2
+ TAD                |     0 |       1
+ TCE                |     0 |       3
+ TCR                |     0 |       2
+ TIA                |     0 |       1
+ TXC                |     6 |       0
+ VIS                |     3 |       0
+ VLE                |     0 |       1
+(43 rows)
+
+           access_grant_id            | permission_code |       starts_at        |        ends_at         | effective_now 
+--------------------------------------+-----------------+------------------------+------------------------+---------------
+ 018f0000-0000-7000-8000-0000000000be | VIEW            | 2025-01-01 00:00:00+00 | 2025-02-01 00:00:00+00 | f
+ 018f0000-0000-7000-8000-0000000000bd | VIEW            | 2026-01-01 00:00:00+00 | 2027-01-01 00:00:00+00 | t
+(2 rows)
+
+             principal_id             |        title         |  permission_code   | allowed_by_data_use_constraint 
+--------------------------------------+----------------------+--------------------+--------------------------------
+ 018f0000-0000-7000-8000-0000000000a7 | Documento sintetico  | EDIT               | t
+ 018f0000-0000-7000-8000-0000000000a7 | Documento sintetico  | EXPORT             | f
+ 018f0000-0000-7000-8000-0000000000a7 | Documento sintetico  | MANAGE_SENSITIVITY | t
+ 018f0000-0000-7000-8000-0000000000a8 | Documento sintetico  | VIEW               | t
+ 018f0000-0000-7000-8000-0000000000a7 | Documento sintetico  | VIEW               | t
+ 018f0000-0000-7000-8000-0000000000a7 | Fotografia sintetica | EDIT               | t
+ 018f0000-0000-7000-8000-0000000000a7 | Fotografia sintetica | EXPORT             | f
+ 018f0000-0000-7000-8000-0000000000a7 | Fotografia sintetica | MANAGE_SENSITIVITY | t
+ 018f0000-0000-7000-8000-0000000000a7 | Fotografia sintetica | VIEW               | f
+ 018f0000-0000-7000-8000-0000000000a8 | Fotografia sintetica | VIEW               | f
+ 018f0000-0000-7000-8000-0000000000a7 | PDF sintetico        | EDIT               | t
+ 018f0000-0000-7000-8000-0000000000a7 | PDF sintetico        | EXPORT             | f
+ 018f0000-0000-7000-8000-0000000000a7 | PDF sintetico        | MANAGE_SENSITIVITY | t
+ 018f0000-0000-7000-8000-0000000000a7 | PDF sintetico        | VIEW               | t
+ 018f0000-0000-7000-8000-0000000000a8 | PDF sintetico        | VIEW               | t
+(15 rows)
+
+                                                QUERY PLAN                                                 
+-----------------------------------------------------------------------------------------------------------
+ Index Scan using idx_taxonomic_name_canonical_lower on taxonomic_name  (cost=0.14..8.16 rows=1 width=372)
+   Index Cond: (lower(canonical_name) = 'exempla alba'::text)
+(2 rows)
+
+                                       QUERY PLAN                                        
+-----------------------------------------------------------------------------------------
+ Index Scan using resource_jblr_code_key on resource  (cost=0.15..8.17 rows=1 width=214)
+   Index Cond: ((jblr_code)::text = 'JBLR-POP-00000001'::text)
+(2 rows)
+
+                                                         QUERY PLAN                                                          
+-----------------------------------------------------------------------------------------------------------------------------
+ Index Scan using external_record_external_source_id_external_id_key on external_record  (cost=8.31..16.33 rows=1 width=208)
+   Index Cond: ((external_source_id = (InitPlan 1).col1) AND (external_id = 'SYN-001'::text))
+   InitPlan 1
+     ->  Index Scan using external_source_source_code_key on external_source  (cost=0.15..8.17 rows=1 width=16)
+           Index Cond: (source_code = 'SYNTH'::text)
+(5 rows)
+
+                                            QUERY PLAN                                            
+--------------------------------------------------------------------------------------------------
+ Limit  (cost=17.02..22.38 rows=1 width=120)
+   InitPlan 1
+     ->  Seq Scan on population  (cost=0.00..16.88 rows=3 width=16)
+           Filter: (population_label = 'Population A'::text)
+   ->  Index Scan using idx_census_population_date on census  (cost=0.15..16.20 rows=3 width=120)
+         Index Cond: (population_id = (InitPlan 1).col1)
+(6 rows)
+
+NOTICE:  PASS E1 term-domain rank rejected: taxonomy term origin:native belongs to domain origin, expected rank for taxonomy.taxon_concept.rank_term_key
+NOTICE:  PASS E2 term-domain presence rejected: taxonomy term temporality:current belongs to domain temporality, expected presence for taxonomy.regional_taxon_assertion.presence_term_key
+                                                                                                                  QUERY PLAN                                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Index Scan using idx_location_geometry_gist on location_geometry_version  (cost=0.14..20.66 rows=1 width=297)
+   Index Cond: (geom && '0103000020E610000001000000050000006666666666660240333333333333F33F6666666666660240000000000000F83FCDCCCCCCCCCC0440000000000000F83FCDCCCCCCCCCC0440333333333333F33F6666666666660240333333333333F33F'::geometry)
+   Filter: st_intersects(geom, '0103000020E610000001000000050000006666666666660240333333333333F33F6666666666660240000000000000F83FCDCCCCCCCCCC0440000000000000F83FCDCCCCCCCCCC0440333333333333F33F6666666666660240333333333333F33F'::geometry)
+(3 rows)
+
+                                            QUERY PLAN                                             
+---------------------------------------------------------------------------------------------------
+ Sort  (cost=26.39..26.39 rows=2 width=176)
+   Sort Key: access_event.occurred_at DESC
+   InitPlan 1
+     ->  Seq Scan on population  (cost=0.00..16.88 rows=3 width=16)
+           Filter: (population_label = 'Population A'::text)
+   ->  Bitmap Heap Scan on access_event  (cost=4.16..9.50 rows=2 width=176)
+         Recheck Cond: (resource_id = (InitPlan 1).col1)
+         ->  Bitmap Index Scan on idx_access_event_resource_date  (cost=0.00..4.16 rows=2 width=0)
+               Index Cond: (resource_id = (InitPlan 1).col1)
+(9 rows)
+
+                                                     QUERY PLAN                                                     
+--------------------------------------------------------------------------------------------------------------------
+ Index Scan using idx_analysis_result_metric on analysis_result  (cost=23.31..31.33 rows=1 width=265)
+   Index Cond: (metric_definition_id = (InitPlan 1).col1)
+   Filter: (subject_resource_id = (InitPlan 2).col1)
+   InitPlan 1
+     ->  Index Scan using metric_definition_metric_code_key on metric_definition  (cost=0.15..8.17 rows=1 width=16)
+           Index Cond: (metric_code = 'SCI_COUNT'::text)
+   InitPlan 2
+     ->  Seq Scan on taxon_concept  (cost=0.00..15.00 rows=2 width=16)
+           Filter: (concept_label = 'Concepto A'::text)
+(9 rows)
+
+DO
+DO
+NOTICE:  PASS E3 no seeded nomenclatural relation row; trigger covered structurally
+DO
+NOTICE:  PASS E4 incompatible FieldGroup projection rejected: projection population_geometry requires a POP FieldGroup, found ACC
+DO
+NOTICE:  PASS E5 uncontrolled DataUseConstraint kind rejected: insert or update on table "data_use_constraint" violates foreign key constraint "fk_data_use_constraint_kind"
+DO
+    projection_code    | projected_rows 
+-----------------------+----------------
+ population_demography |              3
+ population_geometry   |              2
+(2 rows)
+
+BEGIN
+     external_record_resource_id      | created 
+--------------------------------------+---------
+ 018f0000-0000-7000-8000-0000000000d6 | t
+(1 row)
+
+     external_record_resource_id      | created 
+--------------------------------------+---------
+ 018f0000-0000-7000-8000-0000000000d6 | f
+(1 row)
+
+NOTICE:  PASS E7 sequential ExternalRecord get-or-create
+DO
+ROLLBACK
+BEGIN
+ r2_transition_validation_status 
+---------------------------------
+ 
+(1 row)
+
+ROLLBACK
+NOTICE:  PASS E8 atomic validation rollback
+DO
+             pg18_uuidv7              | version_should_be_7 
+--------------------------------------+---------------------
+ 01a00604-cc37-7989-93a8-160253145f2c |                   7
+(1 row)
+
+                                                                                                                                                                    postgis_full_version                                                                                                                                                                    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ POSTGIS="3.6.4 94d984b" [EXTENSION] PGSQL="180" GEOS="3.13.1-CAPI-1.19.2" PROJ="9.6.0 NETWORK_ENABLED=OFF URL_ENDPOINT=https://cdn.proj.org USER_WRITABLE_DIRECTORY=/var/lib/postgresql/.local/share/proj DATABASE_PATH=/usr/share/proj/proj.db" (compiled against PROJ 9.6.0) LIBXML="2.9.14" LIBJSON="0.18" LIBPROTOBUF="1.5.1" WAGYU="0.5.0 (Internal)"
+(1 row)
+
+             resource_id              | st_geometrytype | st_srid | uncertainty_m 
+--------------------------------------+-----------------+---------+---------------
+ 018f0000-0000-7000-8000-000000000027 | ST_Point        |    4326 |            10
+ 018f0000-0000-7000-8000-000000000028 | ST_Polygon      |    4326 |            50
+ 018f0000-0000-7000-8000-000000000029 | ST_Point        |    4326 |           100
+ 018f0000-0000-7000-8000-00000000002a | ST_Point        |    4326 |            15
+(4 rows)
+
+ intersects_synthetic_envelope 
+-------------------------------
+                             4
+(1 row)
+
+                                                                                                               QUERY PLAN                                                                                                               
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Index Scan using idx_location_geometry_gist on location_geometry_version
+   Index Cond: (geom && '0103000020E6100000010000000500000000000000000014C000000000000014C000000000000014C0000000000000144000000000000014400000000000001440000000000000144000000000000014C000000000000014C000000000000014C0'::geometry)
+(2 rows)
+
+NOTICE:  PASS E11 master geometry retained with restrictive S3 policy
+DO

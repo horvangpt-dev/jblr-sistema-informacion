@@ -1,0 +1,5 @@
+TEST_HARNESS_ONLY_FIX=PASS
+offset=29820
+original_bytes=5c 6e 5c 6e
+fixed_bytes=0a 0a
+fixed_sha256=b685fb65cf7b8311c8bb7e4dfe7276015e9b7b7ed76811aa73d251092c67c082

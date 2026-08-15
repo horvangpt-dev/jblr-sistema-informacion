@@ -1,0 +1,2 @@
+pg_trgm=1.6
+postgis=3.6.4
