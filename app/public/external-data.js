@@ -1,4 +1,20 @@
 (() => {
+  let navigationEpoch = 0;
+  window.beginNavigation = () => ++navigationEpoch;
+  window.isNavigationCurrent = (token) => token === navigationEpoch;
+  window.showView = (viewId, token) => {
+    if (token !== undefined && token !== null && !window.isNavigationCurrent(token)) return false;
+    document.querySelectorAll('main > .panel').forEach((panel) => panel.classList.add('hidden'));
+    const target = document.getElementById(viewId);
+    if (!target) return false;
+    target.classList.remove('hidden');
+    return true;
+  };
+  window.hideViews = () => document.querySelectorAll('main > .panel').forEach((panel) => panel.classList.add('hidden'));
+  window.currentNavigationEpoch = () => navigationEpoch;
+})();
+
+(() => {
   state.currentExternalRecord = null;
   state.currentExternalSnapshot = null;
   state.externalSourceId = null;
@@ -36,12 +52,6 @@
     </section>
   `);
 
-  const oldHide = hideViews;
-  hideViews = () => {
-    oldHide();
-    ['externalDataView','externalRecordDetailView','externalSnapshotDetailView'].forEach((id) => $(`#${id}`).classList.add('hidden'));
-  };
-
   const text = (tag, value, cls = '') => {
     const el = document.createElement(tag);
     if (cls) el.className = cls;
@@ -65,6 +75,7 @@
     pre.textContent = JSON.stringify(value, null, 2);
     return pre;
   };
+  const navToken = (token) => token === undefined ? beginNavigation() : token;
 
   async function xapi(path, options = {}) {
     const response = await fetch(`/mvp9-api${path}`, { headers: { 'Content-Type': 'application/json' }, ...options });
@@ -79,7 +90,7 @@
     const button = text('button', 'FUENTES EXTERNAS', 'secondary external-entry-button');
     button.id = 'openExternalDataBtn';
     button.type = 'button';
-    button.onclick = openExternalData;
+    button.onclick = () => openExternalData();
     identity.append(button);
   }
   new MutationObserver(ensureExternalButton).observe($('#detail'), { childList: true, subtree: true });
@@ -99,13 +110,16 @@
     );
   }
 
-  async function openExternalData() {
+  async function openExternalData(token) {
     if (!state.current?.concept_id) return;
-    hideViews();
-    $('#externalDataView').classList.remove('hidden');
+    const nav = navToken(token);
+    if (!isNavigationCurrent(nav)) return;
+    const conceptId = state.current.concept_id;
+    showView('externalDataView', nav);
     status($('#externalDataStatus'), 'Cargando…');
     try {
-      const detail = await xapi(`/taxa/${state.current.concept_id}/external-data`);
+      const detail = await xapi(`/taxa/${conceptId}/external-data`);
+      if (!isNavigationCurrent(nav)) return;
       $('#externalTaxonTitle').textContent = `Fuentes externas · ${detail.taxon.scientific_name}`;
       state.externalSourceId = detail.source?.external_source_id || null;
       state.externalRecordId = detail.record?.external_record_id || null;
@@ -138,34 +152,38 @@
       $('#createExternalRecordBtn').disabled = !state.externalSourceId;
       status($('#externalDataStatus'), `${detail.source ? 1 : 0} ExternalSource · ${detail.record ? 1 : 0} ExternalRecord · ${detail.snapshots.length} Snapshot · ${detail.linked.length} ProvenanceLink.`);
     } catch (err) {
-      status($('#externalDataStatus'), err.message, true);
+      if (isNavigationCurrent(nav)) status($('#externalDataStatus'), err.message, true);
     }
   }
 
   async function createExternalSource() {
+    const nav = beginNavigation();
     status($('#externalDataStatus'), 'Creando / reutilizando fuente…');
     try {
       const source = await xapi('/external-sources', { method: 'POST', body: JSON.stringify({ sourceName: 'JBLR STAGING · Fuente externa sintética MVP9', notes: 'fuente demo MVP9' }) });
+      if (!isNavigationCurrent(nav)) return;
       state.externalSourceId = source.external_source_id;
-      await openExternalData();
-    } catch (err) { status($('#externalDataStatus'), err.message, true); }
+      await openExternalData(nav);
+    } catch (err) { if (isNavigationCurrent(nav)) status($('#externalDataStatus'), err.message, true); }
   }
 
   async function createExternalRecord() {
     if (!state.externalSourceId) return;
+    const nav = beginNavigation();
     status($('#externalDataStatus'), 'Creando / reutilizando registro…');
     try {
       const record = await xapi('/external-records', { method: 'POST', body: JSON.stringify({ externalSourceId: state.externalSourceId, notes: 'registro sintético MVP9' }) });
+      if (!isNavigationCurrent(nav)) return;
       state.externalRecordId = record.external_record_id;
-      await openExternalRecord(record.external_record_id);
-    } catch (err) { status($('#externalDataStatus'), err.message, true); }
+      await openExternalRecord(record.external_record_id, nav);
+    } catch (err) { if (isNavigationCurrent(nav)) status($('#externalDataStatus'), err.message, true); }
   }
 
-  function renderRecord(detail) {
+  function renderRecord(detail, nav) {
+    if (!isNavigationCurrent(nav)) return;
     state.currentExternalRecord = detail;
     state.externalRecordId = detail.external_record_id;
-    hideViews();
-    $('#externalRecordDetailView').classList.remove('hidden');
+    showView('externalRecordDetailView', nav);
     const root = $('#externalRecordDetail');
     root.innerHTML = '';
     const identity = document.createElement('div');
@@ -208,25 +226,32 @@
     root.append(snapshots);
   }
 
-  async function openExternalRecord(id) {
-    try { renderRecord(await xapi(`/external-records/${id}`)); }
-    catch (err) { alert(err.message); }
+  async function openExternalRecord(id, token) {
+    const nav = navToken(token);
+    try {
+      const detail = await xapi(`/external-records/${id}`);
+      if (!isNavigationCurrent(nav)) return;
+      renderRecord(detail, nav);
+    } catch (err) { if (isNavigationCurrent(nav)) alert(err.message); }
   }
 
   async function createSnapshot() {
     if (!state.externalRecordId) return;
+    const nav = beginNavigation();
+    const recordId = state.externalRecordId;
     try {
-      const snapshot = await xapi(`/external-records/${state.externalRecordId}/snapshots`, { method: 'POST', body: '{}' });
+      const snapshot = await xapi(`/external-records/${recordId}/snapshots`, { method: 'POST', body: '{}' });
+      if (!isNavigationCurrent(nav)) return;
       state.externalSnapshotId = snapshot.snapshot_id;
-      await openExternalSnapshot(snapshot.snapshot_id, 'record');
-    } catch (err) { alert(err.message); }
+      await openExternalSnapshot(snapshot.snapshot_id, 'record', nav);
+    } catch (err) { if (isNavigationCurrent(nav)) alert(err.message); }
   }
 
-  function renderSnapshot(detail, from = 'record') {
+  function renderSnapshot(detail, from, nav) {
+    if (!isNavigationCurrent(nav)) return;
     state.currentExternalSnapshot = detail;
     state.externalSnapshotId = detail.snapshot_id;
-    hideViews();
-    $('#externalSnapshotDetailView').classList.remove('hidden');
+    showView('externalSnapshotDetailView', nav);
     const back = $('#backSnapshotBtn');
     back.dataset.from = from;
     back.textContent = from === 'taxon' ? '← Volver a fuentes externas' : '← Volver al registro externo';
@@ -286,23 +311,32 @@
     root.append(provenance);
   }
 
-  async function openExternalSnapshot(id, from = 'record') {
-    try { renderSnapshot(await xapi(`/external-record-snapshots/${id}`), from); }
-    catch (err) { alert(err.message); }
+  async function openExternalSnapshot(id, from = 'record', token) {
+    const nav = navToken(token);
+    try {
+      const detail = await xapi(`/external-record-snapshots/${id}`);
+      if (!isNavigationCurrent(nav)) return;
+      renderSnapshot(detail, from, nav);
+    } catch (err) { if (isNavigationCurrent(nav)) alert(err.message); }
   }
 
   async function linkProvenance() {
     if (!state.current?.concept_id || !state.externalSnapshotId) return;
+    const nav = beginNavigation();
+    const conceptId = state.current.concept_id;
+    const snapshotId = state.externalSnapshotId;
+    const from = $('#backSnapshotBtn').dataset.from || 'record';
     try {
-      await xapi(`/taxa/${state.current.concept_id}/provenance-links`, { method: 'POST', body: JSON.stringify({ snapshotId: state.externalSnapshotId }) });
-      await openExternalSnapshot(state.externalSnapshotId, $('#backSnapshotBtn').dataset.from || 'record');
-    } catch (err) { alert(err.message); }
+      await xapi(`/taxa/${conceptId}/provenance-links`, { method: 'POST', body: JSON.stringify({ snapshotId }) });
+      if (!isNavigationCurrent(nav)) return;
+      await openExternalSnapshot(snapshotId, from, nav);
+    } catch (err) { if (isNavigationCurrent(nav)) alert(err.message); }
   }
 
   $('#createExternalSourceBtn').onclick = createExternalSource;
   $('#createExternalRecordBtn').onclick = createExternalRecord;
-  $('#backExternalToTaxonBtn').onclick = () => { hideViews(); $('#detailView').classList.remove('hidden'); ensureExternalButton(); };
-  $('#backRecordToExternalBtn').onclick = openExternalData;
+  $('#backExternalToTaxonBtn').onclick = () => { const nav = beginNavigation(); showView('detailView', nav); ensureExternalButton(); };
+  $('#backRecordToExternalBtn').onclick = () => openExternalData();
   $('#backSnapshotBtn').onclick = () => {
     if ($('#backSnapshotBtn').dataset.from === 'taxon') openExternalData();
     else if (state.externalRecordId) openExternalRecord(state.externalRecordId);
