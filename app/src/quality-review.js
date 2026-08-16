@@ -1,5 +1,6 @@
 const { pool } = require('./db');
 const { assertAuthorizedStaging } = require('./staging');
+const review = require('./review-request');
 
 const TARGET_RTA_ID = '01a00cd2-04ef-706a-9e14-2d47c9de0a18';
 const TARGET_TAXON_ID = '01a009e0-2f68-7881-a991-0fd47ae3f2a8';
@@ -55,8 +56,11 @@ function assertSafeTarget(target) {
     throw new Error('MVP12 synthetic quality review is restricted to the accepted MVP11 RegionalTaxonAssertion');
   }
   if (target.resource_type_code !== 'RTA') throw new Error('MVP12 target must be a RegionalTaxonAssertion resource');
-  if (target.regional_assertion_validation_status !== 'unreviewed' || target.regional_assertion_row_version !== 1) {
-    throw new Error('MVP12 target validation state conflicts with accepted MVP11 baseline');
+  const allowedReviewState =
+    (target.regional_assertion_validation_status === 'unreviewed' && target.regional_assertion_row_version === 1) ||
+    (target.regional_assertion_validation_status === 'pending_review' && target.regional_assertion_row_version === 2);
+  if (!allowedReviewState) {
+    throw new Error('MVP12 target validation state conflicts with accepted MVP11/MVP13 lifecycle');
   }
   if (target.presence_value_status !== 'unknown' || target.presence_term_key !== null) {
     throw new Error('MVP12 target presence semantics changed from accepted MVP11 baseline');
@@ -74,9 +78,20 @@ function assertSafeTarget(target) {
   if (target.source_resource_id !== null) throw new Error('MVP12 target source changed from accepted MVP11 baseline');
 }
 
+async function assertCompatibleValidationHistory(target, client = pool) {
+  const events = await review.getTargetValidationEvents(target.regional_assertion_id, client);
+  if (target.regional_assertion_validation_status === 'unreviewed') {
+    if (events.length !== 0) throw new Error('MVP13 fail-closed: unreviewed target unexpectedly has ValidationEvent history');
+    return;
+  }
+  if (events.length !== 1) throw new Error('MVP13 fail-closed: pending_review target must have exactly one ValidationEvent');
+  review.assertDemoEvent(events[0]);
+}
+
 async function listQualityForRegionalAssertion(targetId) {
   const target = await getTargetRegionalAssertion(targetId);
   assertSafeTarget(target);
+  await assertCompatibleValidationHistory(target);
   const result = await pool.query(`
     SELECT qa.resource_id AS quality_assessment_id,
            r.resource_type_code,r.validation_status,r.row_version,
@@ -141,6 +156,7 @@ async function createOrReuseQualityAssessment(targetId) {
 
     const target = await getTargetRegionalAssertion(targetId, client);
     assertSafeTarget(target);
+    await assertCompatibleValidationHistory(target, client);
 
     const demoRows = (await client.query(`
       SELECT qa.*,r.resource_type_code,r.validation_status,r.row_version
@@ -153,6 +169,9 @@ async function createOrReuseQualityAssessment(targetId) {
     let assessment = exactOne(demoRows,'QualityAssessment MVP12');
     let created = false;
     if (!assessment) {
+      if (target.regional_assertion_validation_status !== 'unreviewed') {
+        throw new Error('MVP13 fail-closed: accepted MVP12 QualityAssessment is missing after review request');
+      }
       const resource = (await client.query(`
         INSERT INTO core.resource(resource_id,resource_type_code,validation_status)
         VALUES(uuidv7(),'QAS','unreviewed')
@@ -177,9 +196,7 @@ async function createOrReuseQualityAssessment(targetId) {
     }
 
     const qualityFlagCount = (await client.query('SELECT count(*)::int AS n FROM governance.quality_flag WHERE quality_assessment_id=$1',[assessment.resource_id])).rows[0].n;
-    if (qualityFlagCount !== 0) throw new Error('MVP12 QualityAssessment must not have QualityFlag rows');
-    const validationEventCount = (await client.query('SELECT count(*)::int AS n FROM governance.validation_event WHERE target_resource_id=$1',[targetId])).rows[0].n;
-    if (validationEventCount !== 0) throw new Error('MVP12 must not create ValidationEvent rows');
+    if (qualityFlagCount !== 0) throw new Error('MVP12/MVP13 QualityAssessment must not have QualityFlag rows');
 
     await client.query('COMMIT');
     return { created, assessment: await getQualityAssessment(assessment.resource_id) };
@@ -201,5 +218,6 @@ module.exports = {
   getQualityAssessment,
   createOrReuseQualityAssessment,
   getTargetRegionalAssertion,
-  assertSafeTarget
+  assertSafeTarget,
+  assertCompatibleValidationHistory
 };
