@@ -7,6 +7,7 @@ const taxonomy = require('./taxonomy');
 const populations = require('./populations');
 const fieldActivity = require('./field-activity');
 const materialFlow = require('./material-flow');
+const processingFlow = require('./processing-flow');
 materialFlow.editAccession = require('./accession-edit').editAccession;
 
 const app = express();
@@ -22,10 +23,10 @@ app.use((req, res, next) => {
 });
 const publicDir = path.join(__dirname, '..', 'public');
 app.get('/app.js', (_req, res) => {
-  res.type('application/javascript').send(`${fs.readFileSync(path.join(publicDir, 'app.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow-navigation.js'), 'utf8')}`);
+  res.type('application/javascript').send(`${fs.readFileSync(path.join(publicDir, 'app.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow-navigation.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'processing-flow.js'), 'utf8')}`);
 });
 app.get('/styles.css', (_req, res) => {
-  res.type('text/css').send(`${fs.readFileSync(path.join(publicDir, 'styles.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.css'), 'utf8')}`);
+  res.type('text/css').send(`${fs.readFileSync(path.join(publicDir, 'styles.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'processing-flow.css'), 'utf8')}`);
 });
 app.use(express.static(publicDir));
 
@@ -90,6 +91,33 @@ app.patch('/api/collection-events/:id', async (req, res, next) => {
 
 app.post('/api/collection-events/:id/samples', async (req, res, next) => {
   try { res.status(201).json(await materialFlow.createSample(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/samples/:id/processing', async (req, res, next) => {
+  try {
+    const detail = await processingFlow.getSampleProcessing(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'Sample not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.post('/api/samples/:id/processing', async (req, res, next) => {
+  try {
+    const detail = await processingFlow.createOrReuseProcessing(req.params.id, req.body || {});
+    res.status(detail.created ? 201 : 200).json(detail);
+  } catch (err) { next(err); }
+});
+
+app.get('/api/processing-events/:id', async (req, res, next) => {
+  try {
+    const detail = await processingFlow.getProcessingEventDetail(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'ProcessingEvent not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.patch('/api/processing-events/:id', async (req, res, next) => {
+  try { res.json(await processingFlow.editProcessingEvent(req.params.id, req.body || {})); } catch (err) { next(err); }
 });
 
 app.get('/api/samples/:id', async (req, res, next) => {

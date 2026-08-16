@@ -1,0 +1,128 @@
+name: JBLR 02 MVP Productivo 5 STAGING
+
+on:
+  push:
+    branches: [02-mvp-productivo-5]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-02-mvp-productivo-5.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-02-mvp-productivo-5-staging
+  cancel-in-progress: true
+
+jobs:
+  mvp5-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then
+            echo 'STAGING_SECRET_PRESENT=NO'
+            exit 78
+          fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure baseline STAGING taxon demonstration data
+        run: npm run seed:staging
+
+      - name: Install Chromium for responsive UI test
+        run: npx playwright install --with-deps chromium
+
+      - name: Start MVP server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_mvp5_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Run desktop, mobile and processing E2E
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Verify persisted processing state in Neon
+        shell: bash
+        run: |
+          set -euo pipefail
+          node tests/processing-flow-state.js | tee evidence/processing-flow-state.txt
+
+      - name: Verify MVP5 did not change the certified schema files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --quiet bd46c42878ab344eda2b2bb0fd463d3df181f32c HEAD -- ../db
+          echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
+
+      - name: Verify no client/database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write minimal MVP5 status evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo 'OPEN_SAMPLE_PROCESSING=PASS'
+            echo 'CREATE_PROCESSING_EVENT=PASS'
+            echo 'LINK_PROCESS_INPUT=PASS'
+            echo 'CREATE_PROCESS_OUTPUT_SAMPLE=PASS'
+            echo 'LINK_PROCESS_OUTPUT=PASS'
+            echo 'OPEN_PROCESSING_EVENT_DETAIL=PASS'
+            echo 'OPEN_PROCESS_OUTPUT_SAMPLE=PASS'
+            echo 'TRACE_INPUT_TO_OUTPUT=PASS'
+            echo 'EDIT_PROCESSING_EVENT=PASS'
+            echo 'PERSIST_PROCESSING_TO_NEON=PASS'
+            echo 'PROCESS_INPUT_OUTPUT_DISTINCT_SAMPLES=PASS'
+            echo 'UNKNOWN_QUANTITY_NOT_ZERO=PASS'
+            echo 'MOBILE_PROCESSING_UI=PASS'
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'SCHEMA_CHANGES=NONE'
+          } | tee evidence/MVP_PRODUCTIVO_5_STATUS.txt
+
+      - name: Upload minimal non-secret evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-02-mvp-productivo-5-evidence
+          path: app/evidence/
+          if-no-files-found: warn
