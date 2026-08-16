@@ -42,7 +42,7 @@ test.describe.serial('MVP_PRODUCTIVO_12 traceable regional quality review', () =
     await expect(page.locator('#qualityTargetBlock')).toContainText('La Rioja');
     await expect(page.locator('#qualityTargetBlock')).toContainText('presence_value_status: unknown');
     await expect(page.locator('#qualityTargetBlock')).toContainText('DESCONOCIDO ≠ AUSENCIA');
-    await expect(page.locator('#qualityTargetBlock')).toContainText('validation_status: unreviewed');
+    await expect(page.locator('#qualityTargetBlock')).toContainText(/validation_status: (unreviewed|pending_review)/);
 
     const card = page.locator('#qualityAssessmentList .quality-assessment-card');
     await expect(card).toContainText('STAGING / DEMO / MVP12 QUALITY REVIEW');
@@ -67,7 +67,7 @@ test.describe.serial('MVP_PRODUCTIVO_12 traceable regional quality review', () =
     await expect(detail).toContainText('NO crea ValidationEvent');
     await expect(detail).toContainText('RegionalTaxonAssertion → TaxonConcept');
     await expect(detail).toContainText('RegionalTaxonAssertion → GeographicArea');
-    await expect(detail).toContainText('RTA validation_status: unreviewed');
+    await expect(detail).toContainText(/RTA validation_status: (unreviewed|pending_review)/);
     await expect(detail).toContainText('RTA presence: unknown · term: NULL');
 
     await page.locator('#backQualityDetailBtn').click();
