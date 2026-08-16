@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 });
 const publicDir = path.join(__dirname, '..', 'public');
 app.get('/app.js', (_req, res) => {
-  res.type('application/javascript').send(`${fs.readFileSync(path.join(publicDir, 'app.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.js'), 'utf8')}`);
+  res.type('application/javascript').send(`${fs.readFileSync(path.join(publicDir, 'app.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow-navigation.js'), 'utf8')}`);
 });
 app.get('/styles.css', (_req, res) => {
   res.type('text/css').send(`${fs.readFileSync(path.join(publicDir, 'styles.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.css'), 'utf8')}`);
