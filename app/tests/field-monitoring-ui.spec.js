@@ -15,6 +15,11 @@ async function openMonitoring(page){
   await expect(page.locator('#monitoringContext')).toContainText('Plantago major L.');
 }
 
+async function waitForMonitoringReady(page){
+  await expect(page.locator('#fieldMonitoringView')).toBeVisible();
+  await expect(page.locator('#monitoringStatus')).not.toHaveText('Cargando…');
+}
+
 test.describe.serial('MVP_PRODUCTIVO_7 observations and censuses',()=>{
   test('creates/reuses Observation, Census and measurements, edits safely and persists',async({page})=>{
     await openMonitoring(page);
@@ -35,6 +40,7 @@ test.describe.serial('MVP_PRODUCTIVO_7 observations and censuses',()=>{
     await page.locator('#observationEditForm').getByRole('button',{name:'Guardar cambios'}).click();
     await expect(page.locator('#observationDetail h1')).toHaveText('JBLR STAGING · observación demo MVP7 · editada');
     await page.locator('#backObservationToMonitoringBtn').click();
+    await waitForMonitoringReady(page);
 
     await page.getByRole('button',{name:'Crear / reutilizar Census'}).click();
     await expect(page.locator('#censusCreateDialog')).toBeVisible();
@@ -75,6 +81,7 @@ test.describe.serial('MVP_PRODUCTIVO_7 observations and censuses',()=>{
     overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth);
     expect(overflow).toBeFalsy();
     await page.locator('#backObservationToMonitoringBtn').click();
+    await waitForMonitoringReady(page);
     await page.locator('#censusList .census-card').first().click();
     await expect(page.locator('.measurement-card')).toHaveCount(2);
     overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth);
