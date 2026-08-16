@@ -66,8 +66,8 @@ test.describe.serial('MVP_PRODUCTIVO_3 field activity workflow', () => {
     let visitLabel = await currentVisitLabel(page);
     if (!visitLabel) {
       await page.getByRole('button', { name: 'Nueva visita' }).click();
-      await page.getByLabel('Prospección').selectOption({ label: prospectionLabel });
-      await page.getByLabel('Localización').selectOption({ label: LOCATION_NAME });
+      await page.locator('#fieldVisitProspectionId').selectOption({ label: prospectionLabel });
+      await page.locator('#fieldVisitLocationId').selectOption({ label: LOCATION_NAME });
       await page.locator('#fieldVisitPurpose').fill(VISIT_BASE);
       await page.locator('#fieldVisitNotes').fill('Dato sintético MVP3 sin información sensible');
       await page.getByRole('button', { name: 'Crear visita' }).click();
