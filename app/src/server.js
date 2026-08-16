@@ -7,6 +7,7 @@ const taxonomy = require('./taxonomy');
 const populations = require('./populations');
 const fieldActivity = require('./field-activity');
 const materialFlow = require('./material-flow');
+materialFlow.editAccession = require('./accession-edit').editAccession;
 
 const app = express();
 const defaultPort = Number(process.env.PORT || 3000);
