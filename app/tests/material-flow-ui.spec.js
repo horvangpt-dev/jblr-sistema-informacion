@@ -85,12 +85,13 @@ test.describe.serial('MVP_PRODUCTIVO_4 material flow', () => {
       await page.locator('#collectionPermit').fill('STAGING-DEMO-NO-PERMIT');
       await page.locator('#collectionNotes').fill('Dato sintético MVP4 sin información sensible');
       await page.locator('#collectionEventDialog').getByRole('button', { name: 'Crear recolección' }).click();
-      await expect(page.locator('#materialFlowStatus')).not.toHaveText('Cargando…');
+      await expect(page.locator('#collectionEventDialog')).not.toBeVisible();
+      await expect(page.locator('#collectionEventList .collection-card')).toHaveCount(1);
     }
-    expect(await page.locator('#collectionEventList .collection-card').count()).toBe(1);
+    await expect(page.locator('#collectionEventList .collection-card')).toHaveCount(1);
     await openOnlyCollection(page);
     await expect(page.locator('#collectionEventDetail').getByText('Plantago major L.', { exact: true })).toBeVisible();
-    await expect(page.locator('#collectionEventDetail')).toContainText(VISIT_EDITED.replace(' · editada',''));
+    await expect(page.locator('#collectionEventDetail')).toContainText('Visita demo MVP3');
 
     if (!(await page.locator('#collectionEventDetail .sample-card').count())) {
       await page.getByRole('button', { name: 'Crear muestra' }).click();
@@ -100,8 +101,10 @@ test.describe.serial('MVP_PRODUCTIVO_4 material flow', () => {
       await page.locator('#sampleState').fill('field_demo_unvalidated');
       await page.locator('#sampleNotes').fill(SAMPLE_NOTE);
       await page.locator('#sampleDialog').getByRole('button', { name: 'Crear muestra' }).click();
+      await expect(page.locator('#sampleDialog')).not.toBeVisible();
+      await expect(page.locator('#collectionEventDetail .sample-card')).toHaveCount(1);
     }
-    expect(await page.locator('#collectionEventDetail .sample-card').count()).toBe(1);
+    await expect(page.locator('#collectionEventDetail .sample-card')).toHaveCount(1);
     await openOnlySample(page);
     await expect(page.locator('#sampleDetail')).toContainText('Cantidad: desconocida / no registrada');
     await expect(page.locator('#sampleDetail')).toContainText('SampleOrigin mantiene la procedencia');
@@ -113,8 +116,10 @@ test.describe.serial('MVP_PRODUCTIVO_4 material flow', () => {
       await page.locator('#accessionStatus').fill('staging_demo_unvalidated');
       await page.locator('#accessionNotes').fill(ACCESSION_NOTE);
       await page.locator('#accessionDialog').getByRole('button', { name: 'Crear accesión' }).click();
+      await expect(page.locator('#accessionDialog')).not.toBeVisible();
+      await expect(page.locator('#sampleDetail .accession-card')).toHaveCount(1);
     }
-    expect(await page.locator('#sampleDetail .accession-card').count()).toBe(1);
+    await expect(page.locator('#sampleDetail .accession-card')).toHaveCount(1);
     await openOnlyAccession(page);
     await expect(page.locator('#accessionDetail')).toContainText('Accession representa la entrada/gestión institucional');
     await expect(page.locator('#accessionDetail')).toContainText('seed_demo');
@@ -123,6 +128,7 @@ test.describe.serial('MVP_PRODUCTIVO_4 material flow', () => {
     await page.locator('#accessionEditStatusValue').fill('staging_demo_unvalidated_edited');
     await page.locator('#accessionEditNotes').fill(ACCESSION_NOTE_EDITED);
     await page.locator('#accessionEditDialog').getByRole('button', { name: 'Guardar cambios' }).click();
+    await expect(page.locator('#accessionEditDialog')).not.toBeVisible();
     await expect(page.locator('#accessionDetail')).toContainText('staging_demo_unvalidated_edited');
 
     await page.locator('#backToSampleBtn').click();
@@ -130,6 +136,7 @@ test.describe.serial('MVP_PRODUCTIVO_4 material flow', () => {
     await page.locator('#sampleEditState').fill('field_demo_unvalidated_edited');
     await page.locator('#sampleEditNotes').fill(SAMPLE_NOTE_EDITED);
     await page.locator('#sampleEditDialog').getByRole('button', { name: 'Guardar cambios' }).click();
+    await expect(page.locator('#sampleEditDialog')).not.toBeVisible();
     await expect(page.locator('#sampleDetail')).toContainText('field_demo_unvalidated_edited');
 
     await page.locator('#backToCollectionEventBtn').click();
@@ -138,18 +145,19 @@ test.describe.serial('MVP_PRODUCTIVO_4 material flow', () => {
     await page.locator('#collectionEditPermit').fill('STAGING-DEMO-NO-PERMIT');
     await page.locator('#collectionEditNotes').fill('JBLR STAGING · Recolección MVP4 · editada');
     await page.locator('#collectionEditDialog').getByRole('button', { name: 'Guardar cambios' }).click();
+    await expect(page.locator('#collectionEditDialog')).not.toBeVisible();
     await expect(page.locator('#collectionEventDetail h1')).toHaveText(COLLECTION_EDITED);
 
     await page.reload();
     await openDemoVisit(page);
     await openMaterial(page);
-    expect(await page.locator('#collectionEventList .collection-card').count()).toBe(1);
+    await expect(page.locator('#collectionEventList .collection-card')).toHaveCount(1);
     await expect(page.locator('#collectionEventList')).toContainText(COLLECTION_EDITED);
     await openOnlyCollection(page);
-    expect(await page.locator('#collectionEventDetail .sample-card').count()).toBe(1);
+    await expect(page.locator('#collectionEventDetail .sample-card')).toHaveCount(1);
     await expect(page.locator('#collectionEventDetail')).toContainText('field_demo_unvalidated_edited');
     await openOnlySample(page);
-    expect(await page.locator('#sampleDetail .accession-card').count()).toBe(1);
+    await expect(page.locator('#sampleDetail .accession-card')).toHaveCount(1);
     await expect(page.locator('#sampleDetail')).toContainText('staging_demo_unvalidated_edited');
     await openOnlyAccession(page);
     await expect(page.locator('#accessionDetail').getByText('Plantago major L.', { exact: true })).toBeVisible();
