@@ -1,6 +1,6 @@
 {
-  "name": "jblr-mvp-productivo-3",
-  "version": "0.3.0",
+  "name": "jblr-mvp-productivo-4",
+  "version": "0.4.0",
   "private": true,
   "description": "JBLR botanical productive MVP against authorized Neon STAGING",
   "type": "commonjs",
@@ -10,7 +10,8 @@
     "test:e2e": "node tests/e2e.js",
     "test:population-state": "node tests/population-state.js",
     "test:field-activity-state": "node tests/field-activity-state.js",
-    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js"
+    "test:material-flow-state": "node tests/material-flow-state.js",
+    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js"
   },
   "engines": {
     "node": ">=22"
