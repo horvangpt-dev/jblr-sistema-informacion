@@ -11,7 +11,7 @@
     "test:population-state": "node tests/population-state.js",
     "test:field-activity-state": "node tests/field-activity-state.js",
     "test:material-flow-state": "node tests/material-flow-state.js",
-    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js"
+    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js tests/material-navigation-ui.spec.js"
   },
   "engines": {
     "node": ">=22"
