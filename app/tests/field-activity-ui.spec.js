@@ -77,12 +77,13 @@ test.describe.serial('MVP_PRODUCTIVO_3 field activity workflow', () => {
     }
 
     await page.getByText(visitLabel, { exact: true }).click();
-    await expect(page.getByRole('heading', { name: 'VISITA DE CAMPO' })).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'PROSPECCIÓN' })).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'LOCALIZACIÓN' })).toBeVisible();
-    await expect(page.getByText(LOCATION_NAME, { exact: true })).toBeVisible();
-    await expect(page.getByText('Plantago major L.', { exact: true })).toBeVisible();
-    await expect(page.getByText(/la visita no crea validación taxonómica/i)).toBeVisible();
+    const visitDetail = page.locator('#fieldVisitDetail');
+    await expect(visitDetail.getByRole('heading', { name: 'VISITA DE CAMPO' })).toBeVisible();
+    await expect(visitDetail.getByRole('heading', { name: 'PROSPECCIÓN' })).toBeVisible();
+    await expect(visitDetail.getByRole('heading', { name: 'LOCALIZACIÓN' })).toBeVisible();
+    await expect(visitDetail.getByText(LOCATION_NAME, { exact: true })).toBeVisible();
+    await expect(visitDetail.getByText('Plantago major L.', { exact: true })).toBeVisible();
+    await expect(visitDetail.getByText(/la visita no crea validación taxonómica/i)).toBeVisible();
 
     await page.getByRole('button', { name: 'Editar visita' }).click();
     await page.locator('#fieldVisitEditPurpose').fill(VISIT_EDITED);
@@ -102,9 +103,10 @@ test.describe.serial('MVP_PRODUCTIVO_3 field activity workflow', () => {
     await expect(page.getByText(PROSPECTION_EDITED, { exact: true })).toBeVisible();
     await expect(page.getByText(VISIT_EDITED, { exact: true })).toBeVisible();
     await page.getByText(VISIT_EDITED, { exact: true }).click();
-    await expect(page.getByText(PROSPECTION_EDITED, { exact: true })).toBeVisible();
-    await expect(page.getByText(LOCATION_NAME, { exact: true })).toBeVisible();
-    await expect(page.getByText('Plantago major L.', { exact: true })).toBeVisible();
+    const reloadedDetail = page.locator('#fieldVisitDetail');
+    await expect(reloadedDetail.getByText(PROSPECTION_EDITED, { exact: true })).toBeVisible();
+    await expect(reloadedDetail.getByText(LOCATION_NAME, { exact: true })).toBeVisible();
+    await expect(reloadedDetail.getByText('Plantago major L.', { exact: true })).toBeVisible();
     await page.screenshot({ path: 'evidence/mvp3-field-activity-desktop.png', fullPage: true });
   });
 
@@ -117,9 +119,10 @@ test.describe.serial('MVP_PRODUCTIVO_3 field activity workflow', () => {
       await expect(page.getByRole('button', { name: 'Nueva visita' })).toBeVisible();
       await expect(page.getByText(VISIT_EDITED, { exact: true })).toBeVisible();
       await page.getByText(VISIT_EDITED, { exact: true }).click();
-      await expect(page.getByRole('heading', { name: 'VISITA DE CAMPO' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'PROSPECCIÓN' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'LOCALIZACIÓN' })).toBeVisible();
+      const visitDetail = page.locator('#fieldVisitDetail');
+      await expect(visitDetail.getByRole('heading', { name: 'VISITA DE CAMPO' })).toBeVisible();
+      await expect(visitDetail.getByRole('heading', { name: 'PROSPECCIÓN' })).toBeVisible();
+      await expect(visitDetail.getByRole('heading', { name: 'LOCALIZACIÓN' })).toBeVisible();
       await page.getByRole('button', { name: 'Editar visita' }).click();
       await expect(page.locator('#fieldVisitEditPurpose')).toBeVisible();
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
