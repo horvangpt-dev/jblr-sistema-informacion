@@ -14,6 +14,10 @@ async function openPlantago(page) {
   await expect(page.getByRole('heading', { name: 'Taxonomía' })).toBeVisible();
 }
 
+async function waitPopulationList(page) {
+  await expect(page.locator('#populationsStatus')).not.toHaveText('Cargando…');
+}
+
 function detailLocation(page) {
   return page.locator('#populationDetail .location-card strong').filter({ hasText: LOCATION_NAME });
 }
@@ -25,6 +29,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
 
     await page.getByRole('button', { name: /^Poblaciones:/ }).click();
     await expect(page.getByText('La población y su localización se mantienen como entidades distintas.')).toBeVisible();
+    await waitPopulationList(page);
 
     let existing = page.getByText(POPULATION_EDITED, { exact: true });
     if (!(await existing.count())) existing = page.getByText(POPULATION_BASE, { exact: true });
@@ -49,6 +54,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
       }
       await page.locator('#populationNotes').fill('Dato de demostración no sensible');
       await page.getByRole('button', { name: 'Crear población' }).click();
+      await waitPopulationList(page);
       await expect(page.getByText(POPULATION_BASE, { exact: true })).toBeVisible();
     }
 
@@ -58,6 +64,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
     expect(afterPopulationCount).toBeGreaterThan(0);
 
     await page.getByRole('button', { name: /^Poblaciones:/ }).click();
+    await waitPopulationList(page);
     const populationCard = (await page.getByText(POPULATION_EDITED, { exact: true }).count())
       ? page.getByText(POPULATION_EDITED, { exact: true })
       : page.getByText(POPULATION_BASE, { exact: true });
@@ -76,6 +83,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
     await page.reload();
     await openPlantago(page);
     await page.getByRole('button', { name: /^Poblaciones:/ }).click();
+    await waitPopulationList(page);
     await expect(page.getByText(POPULATION_EDITED, { exact: true })).toBeVisible();
     await page.getByText(POPULATION_EDITED, { exact: true }).click();
     await expect(detailLocation(page)).toBeVisible();
@@ -88,6 +96,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
     test('population and location views fit the mobile viewport', async ({ page }) => {
       await openPlantago(page);
       await page.getByRole('button', { name: /^Poblaciones:/ }).click();
+      await waitPopulationList(page);
       await expect(page.getByText(POPULATION_EDITED, { exact: true })).toBeVisible();
       await page.getByText(POPULATION_EDITED, { exact: true }).click();
       await expect(page.getByRole('heading', { name: 'LOCALIZACIÓN' })).toBeVisible();
