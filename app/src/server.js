@@ -3,6 +3,7 @@ const express = require('express');
 const { pool } = require('./db');
 const { assertAuthorizedStaging } = require('./staging');
 const taxonomy = require('./taxonomy');
+const populations = require('./populations');
 
 const app = express();
 const defaultPort = Number(process.env.PORT || 3000);
@@ -36,6 +37,38 @@ app.get('/api/taxa', async (req, res, next) => {
   } catch (err) { next(err); }
 });
 
+app.get('/api/locations', async (req, res, next) => {
+  try { res.json(await populations.listLocations(req.query.q || '')); } catch (err) { next(err); }
+});
+
+app.post('/api/locations', async (req, res, next) => {
+  try { res.status(201).json(await populations.createLocation(req.body || {})); } catch (err) { next(err); }
+});
+
+app.patch('/api/locations/:id', async (req, res, next) => {
+  try { res.json(await populations.editLocation(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/populations/:id', async (req, res, next) => {
+  try {
+    const detail = await populations.getPopulationDetail(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'Population not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.patch('/api/populations/:id', async (req, res, next) => {
+  try { res.json(await populations.editPopulation(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/taxa/:id/populations', async (req, res, next) => {
+  try { res.json(await populations.getTaxonPopulations(req.params.id)); } catch (err) { next(err); }
+});
+
+app.post('/api/taxa/:id/populations', async (req, res, next) => {
+  try { res.status(201).json(await populations.createPopulation(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
 app.get('/api/taxa/:id', async (req, res, next) => {
   try {
     const detail = await taxonomy.getTaxonDetail(req.params.id);
@@ -58,7 +91,7 @@ app.patch('/api/taxa/:id', async (req, res, next) => {
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Not found' }));
 app.use((err, _req, res, _next) => {
   const message = err && err.message ? err.message : 'Unexpected error';
-  const clientError = /required|invalid|already exists|not found|missing|exceeds/i.test(message);
+  const clientError = /required|invalid|already exists|not found|missing|exceeds|current STAGING/i.test(message);
   if (!clientError) console.error('Request error:', message);
   res.status(clientError ? 400 : 500).json({ error: clientError ? message : 'Internal server error' });
 });
