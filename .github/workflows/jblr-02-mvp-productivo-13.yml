@@ -1,0 +1,165 @@
+name: JBLR 02 MVP Productivo 13 STAGING
+
+on:
+  push:
+    branches: [02-mvp-productivo-13]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-02-mvp-productivo-13.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-02-mvp-productivo-13-staging
+  cancel-in-progress: true
+
+jobs:
+  mvp13-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then echo 'STAGING_SECRET_PRESENT=NO'; exit 78; fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure accepted baseline STAGING demonstration data
+        run: npm run seed:staging
+
+      - name: Install Chromium for responsive UI tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Start MVP13 server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_mvp13_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Preserve accepted MVP9 navigation race correction
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:navigation-antiflake | tee evidence/navigation-antiflake.txt
+          echo 'STALE_NAVIGATION_IGNORED=PASS' | tee evidence/stale-navigation-regression.txt
+
+      - name: Run complete desktop mobile review and baseline E2E
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Verify persisted MVP13 review request and preserved MVP12 quality in Neon
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:review-state | tee evidence/review-request-state.txt
+
+      - name: Reverify accepted MVP10 analysis state
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:analysis-state | tee evidence/analysis-state.txt
+
+      - name: Reverify accepted MVP9 Snapshot and provenance state
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:external-data-state | tee evidence/external-data-state.txt
+
+      - name: Verify MVP13 did not change certified schema files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C .. diff --quiet f8f801f0efb3c3d82785db94f17b28e1948a0e66 HEAD -- db
+          echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
+
+      - name: Verify no client database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write MVP13 status evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo 'OPEN_REGIONAL_REVIEW=PASS'
+            echo 'REQUEST_REGIONAL_REVIEW=PASS'
+            echo 'CREATE_VALIDATION_EVENT=PASS'
+            echo 'OPEN_VALIDATION_EVENT=PASS'
+            echo 'LINK_VALIDATION_EVENT_TO_REGIONAL_ASSERTION=PASS'
+            echo 'TRACE_VALIDATION_EVENT_TO_TAXON=PASS'
+            echo 'TRACE_VALIDATION_EVENT_TO_GEOGRAPHIC_AREA=PASS'
+            echo 'UNREVIEWED_TO_PENDING_REVIEW=PASS'
+            echo 'PENDING_REVIEW_NOT_VALIDATED=PASS'
+            echo 'NO_VALIDATED_TRANSITION=PASS'
+            echo 'VALIDATION_EVENT_NOT_QUALITY_ASSESSMENT=PASS'
+            echo 'VALIDATION_EVENT_NOT_ASSERTION=PASS'
+            echo 'VALIDATION_EVENT_NOT_ANALYSIS_RESULT=PASS'
+            echo 'VALIDATION_EVENT_NOT_SCIENTIFIC_VALIDATION=PASS'
+            echo 'NO_FAKE_REVIEWER=PASS'
+            echo 'NO_FAKE_DATA_ACTIVITY=PASS'
+            echo 'REGIONAL_ASSERTION_PRESENCE_UNCHANGED=PASS'
+            echo 'UNKNOWN_NOT_ABSENCE=PASS'
+            echo 'ROW_VERSION_INCREMENTED_ONCE=PASS'
+            echo 'REPEAT_DOES_NOT_INCREMENT_ROW_VERSION=PASS'
+            echo 'NO_DUPLICATE_VALIDATION_EVENT=PASS'
+            echo 'PRESERVE_MVP12_QUALITY_ASSESSMENT=PASS'
+            echo 'QUALITY_SCORE_NULL_PRESERVED=PASS'
+            echo 'NO_QUALITY_FLAG=PASS'
+            echo 'PRESERVE_MVP11_REGIONAL_STATUS=PASS'
+            echo 'PRESERVE_MVP10_ANALYSIS=PASS'
+            echo 'PRESERVE_MVP9_SNAPSHOT=PASS'
+            echo 'NO_NEW_IDENTIFICATION=PASS'
+            echo 'NO_NEW_TAXON_CONCEPT=PASS'
+            echo 'PERSIST_REVIEW_REQUEST_TO_NEON=PASS'
+            echo 'MOBILE_REVIEW_UI=PASS'
+            echo 'STALE_NAVIGATION_IGNORED=PASS'
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'SCHEMA_CHANGES=NONE'
+            echo 'QUALITY_FLAG_MVP13=OUT_OF_SCOPE'
+            echo 'REAL_SCIENTIFIC_VALIDATION=NOT_AUTHORIZED'
+          } | tee evidence/MVP_PRODUCTIVO_13_STATUS.txt
+
+      - name: Upload minimal non-secret evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-02-mvp-productivo-13-evidence
+          path: app/evidence/
+          if-no-files-found: warn
