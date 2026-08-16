@@ -1,0 +1,1 @@
+.entity-actions{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:flex-end}.compact-results{margin-top:.5rem}.visit-card,.prospection-card{border-left:4px solid #88a695}@media(max-width:640px){.entity-actions{display:grid;grid-template-columns:1fr;width:100%;margin-top:.7rem}.entity-actions button{width:100%;margin:0!important}}
