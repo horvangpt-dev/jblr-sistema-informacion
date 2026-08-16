@@ -56,7 +56,19 @@ jobs:
           done
           cat evidence/server.log
           exit 1
-      - name: Run desktop, mobile and external data E2E
+      - name: Repeat affected navigation tests five times
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:navigation-antiflake | tee evidence/navigation-antiflake.txt
+          {
+            echo 'STALE_NAVIGATION_IGNORED=PASS'
+            echo 'EXTERNAL_NAVIGATION_RACE_FIXED=PASS'
+            echo 'MONITORING_NAVIGATION_RACE_FIXED=PASS'
+          } | tee evidence/navigation-race-status.txt
+      - name: Run complete desktop, mobile and external data E2E
         shell: bash
         env:
           MVP_BASE_URL: http://127.0.0.1:3000
@@ -104,6 +116,9 @@ jobs:
             echo 'PERSIST_EXTERNAL_DATA_TO_NEON=PASS'
             echo 'MOBILE_EXTERNAL_DATA_UI=PASS'
             echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'STALE_NAVIGATION_IGNORED=PASS'
+            echo 'EXTERNAL_NAVIGATION_RACE_FIXED=PASS'
+            echo 'MONITORING_NAVIGATION_RACE_FIXED=PASS'
             echo 'PHOTOS_DOCUMENTS=DEFERRED_UNTIL_PERSISTENT_FILE_STORAGE_SLICE'
             echo 'REAL_IMPORTS=NOT_AUTHORIZED'
             echo 'SCHEMA_CHANGES=NONE'
