@@ -41,6 +41,9 @@ jobs:
           fi
           echo 'STAGING_SECRET_PRESENT=YES'
 
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
       - name: Install application dependencies
         run: npm install --no-audit --no-fund
 
@@ -77,7 +80,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md
           ! grep -R -n 'DATABASE_URL' public
           echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
 
