@@ -304,11 +304,11 @@ async function createOrReuseAnalysis(taxonId) {
           run_status,closed_at,release_label,released_at,notes
         ) VALUES(
           $1,$2,$3,$4,$5::jsonb,NULL,
-          'closed',current_timestamp,NULL,NULL,$6
+          'running',NULL,NULL,NULL,$6
         ) RETURNING *
       `,[resource.resource_id,activity.resource_id,MODULE_CODE,METHOD_VERSION,
          JSON.stringify(ANALYSIS_PARAMETERS),
-         `${NOTE_PREFIX}ejecución analítica sintética cerrada; no es una release científica`])).rows[0];
+         `${NOTE_PREFIX}ejecución analítica sintética; se cierra tras persistir input y resultado`])).rows[0];
       runCreated = true;
     } else if (
       run.resource_type_code !== 'ANR' ||
@@ -389,6 +389,18 @@ async function createOrReuseAnalysis(taxonId) {
         analysisResult.unit_code !== null
       ) {
         throw new Error('Existing AnalysisResult conflicts with MVP10 synthetic result semantics');
+      }
+    }
+
+    if (runCreated) {
+      const closed = await client.query(`
+        UPDATE analytics.analysis_run
+        SET run_status='closed', closed_at=current_timestamp
+        WHERE resource_id=$1 AND run_status='running' AND closed_at IS NULL
+        RETURNING resource_id,run_status,closed_at
+      `,[runId]);
+      if (closed.rows.length !== 1 || closed.rows[0].run_status !== 'closed' || closed.rows[0].closed_at === null) {
+        throw new Error('AnalysisRun could not be closed after persisting MVP10 input and result');
       }
     }
 
