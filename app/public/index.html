@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/evidence-flow.css">
   <link rel="stylesheet" href="/field-monitoring.css">
+  <link rel="stylesheet" href="/individual-traceability.css">
 </head>
 <body>
   <header class="topbar">
@@ -58,10 +59,7 @@
 
   <dialog id="taxonDialog">
     <form id="taxonForm" method="dialog" class="form-stack">
-      <div class="dialog-head">
-        <h2 id="dialogTitle">Nuevo taxón</h2>
-        <button type="button" class="icon-button" id="closeDialogBtn" aria-label="Cerrar">×</button>
-      </div>
+      <div class="dialog-head"><h2 id="dialogTitle">Nuevo taxón</h2><button type="button" class="icon-button" id="closeDialogBtn" aria-label="Cerrar">×</button></div>
       <input type="hidden" id="editConceptId">
       <label>Nombre científico<input id="scientificName" required maxlength="300"></label>
       <label>Nombre canónico<input id="canonicalName" required maxlength="300"></label>
@@ -69,66 +67,41 @@
       <label>Rango<select id="rankTermKey"><option value="">Sin especificar</option></select></label>
       <p class="hint create-only">El alta crea un <strong>TaxonomicName</strong> y un <strong>TaxonConcept</strong> separados, vinculados inicialmente como uso no resuelto.</p>
       <p class="hint edit-only hidden">En este MVP no se modifica la identidad científica ni las relaciones taxonómicas. La edición segura se limita a etiqueta y notas.</p>
-      <div class="grid-2 create-only">
-        <label>Género<input id="genus" maxlength="150"></label>
-        <label>Epíteto específico<input id="specificEpithet" maxlength="150"></label>
-      </div>
+      <div class="grid-2 create-only"><label>Género<input id="genus" maxlength="150"></label><label>Epíteto específico<input id="specificEpithet" maxlength="150"></label></div>
       <label class="edit-only hidden">Etiqueta del concepto<input id="conceptLabel" maxlength="300"></label>
       <label class="edit-only hidden">Notas del nombre<textarea id="nameNotes" rows="3" maxlength="1000"></textarea></label>
       <label class="edit-only hidden">Notas del concepto<textarea id="conceptNotes" rows="3" maxlength="1000"></textarea></label>
       <div id="formStatus" class="status" aria-live="polite"></div>
-      <div class="dialog-actions">
-        <button type="button" class="secondary" id="cancelDialogBtn">Cancelar</button>
-        <button type="submit" class="primary" id="saveTaxonBtn">Guardar</button>
-      </div>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancelDialogBtn">Cancelar</button><button type="submit" class="primary" id="saveTaxonBtn">Guardar</button></div>
     </form>
   </dialog>
 
   <dialog id="populationDialog">
     <form id="populationForm" method="dialog" class="form-stack">
-      <div class="dialog-head">
-        <h2>Nueva población</h2>
-        <button type="button" class="icon-button" id="closePopulationDialogBtn" aria-label="Cerrar">×</button>
-      </div>
+      <div class="dialog-head"><h2>Nueva población</h2><button type="button" class="icon-button" id="closePopulationDialogBtn" aria-label="Cerrar">×</button></div>
       <label>Etiqueta de población<input id="populationLabel" required maxlength="300"></label>
-      <label>Localización existente
-        <select id="populationLocationId" required>
-          <option value="">Selecciona una localización</option>
-        </select>
-      </label>
+      <label>Localización existente<select id="populationLocationId" required><option value="">Selecciona una localización</option></select></label>
       <button type="button" class="secondary" id="createLocationForPopulationBtn">Crear localización nueva</button>
       <p class="hint">La asociación al taxón se registra como <strong>Identification</strong> no resuelta; no constituye validación taxonómica.</p>
       <label>Notas<textarea id="populationNotes" rows="3" maxlength="800"></textarea></label>
       <div id="populationFormStatus" class="status" aria-live="polite"></div>
-      <div class="dialog-actions">
-        <button type="button" class="secondary" id="cancelPopulationDialogBtn">Cancelar</button>
-        <button type="submit" class="primary">Crear población</button>
-      </div>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancelPopulationDialogBtn">Cancelar</button><button type="submit" class="primary">Crear población</button></div>
     </form>
   </dialog>
 
   <dialog id="populationEditDialog">
     <form id="populationEditForm" method="dialog" class="form-stack">
-      <div class="dialog-head">
-        <h2>Editar población</h2>
-        <button type="button" class="icon-button" id="closePopulationEditDialogBtn" aria-label="Cerrar">×</button>
-      </div>
+      <div class="dialog-head"><h2>Editar población</h2><button type="button" class="icon-button" id="closePopulationEditDialogBtn" aria-label="Cerrar">×</button></div>
       <label>Etiqueta de población<input id="populationEditLabel" required maxlength="300"></label>
       <label>Notas<textarea id="populationEditNotes" rows="3" maxlength="1000"></textarea></label>
       <div id="populationEditStatus" class="status" aria-live="polite"></div>
-      <div class="dialog-actions">
-        <button type="button" class="secondary" id="cancelPopulationEditBtn">Cancelar</button>
-        <button type="submit" class="primary">Guardar cambios</button>
-      </div>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancelPopulationEditBtn">Cancelar</button><button type="submit" class="primary">Guardar cambios</button></div>
     </form>
   </dialog>
 
   <dialog id="locationDialog">
     <form id="locationForm" method="dialog" class="form-stack">
-      <div class="dialog-head">
-        <h2 id="locationDialogTitle">Nueva localización</h2>
-        <button type="button" class="icon-button" id="closeLocationDialogBtn" aria-label="Cerrar">×</button>
-      </div>
+      <div class="dialog-head"><h2 id="locationDialogTitle">Nueva localización</h2><button type="button" class="icon-button" id="closeLocationDialogBtn" aria-label="Cerrar">×</button></div>
       <input type="hidden" id="editLocationId">
       <label>Nombre de localización<input id="locationName" required maxlength="300"></label>
       <label>Localidad literal<input id="verbatimLocality" maxlength="500"></label>
@@ -136,15 +109,13 @@
       <label>Notas<textarea id="locationNotes" rows="3" maxlength="800"></textarea></label>
       <p class="hint location-create-only">No se solicitan coordenadas para esta demostración STAGING.</p>
       <div id="locationFormStatus" class="status" aria-live="polite"></div>
-      <div class="dialog-actions">
-        <button type="button" class="secondary" id="cancelLocationDialogBtn">Cancelar</button>
-        <button type="submit" class="primary">Guardar localización</button>
-      </div>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancelLocationDialogBtn">Cancelar</button><button type="submit" class="primary">Guardar localización</button></div>
     </form>
   </dialog>
 
   <script src="/app.js" defer></script>
   <script src="/evidence-flow.js" defer></script>
   <script src="/field-monitoring.js" defer></script>
+  <script src="/individual-traceability.js" defer></script>
 </body>
 </html>
