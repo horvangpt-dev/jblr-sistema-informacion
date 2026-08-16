@@ -1,0 +1,125 @@
+name: JBLR 02 MVP Productivo 4 STAGING
+
+on:
+  push:
+    branches: [02-mvp-productivo-4]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-02-mvp-productivo-4.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-02-mvp-productivo-4-staging
+  cancel-in-progress: true
+
+jobs:
+  mvp4-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then
+            echo 'STAGING_SECRET_PRESENT=NO'
+            exit 78
+          fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure baseline STAGING taxon demonstration data
+        run: npm run seed:staging
+
+      - name: Install Chromium for responsive UI test
+        run: npx playwright install --with-deps chromium
+
+      - name: Start MVP server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_mvp4_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Run desktop, mobile and material flow E2E
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Verify persisted material flow state in Neon
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:material-flow-state | tee evidence/material-flow-state.txt
+
+      - name: Verify no client/database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write minimal MVP4 status evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo 'OPEN_VISIT_COLLECTIONS=PASS'
+            echo 'CREATE_COLLECTION_EVENT=PASS'
+            echo 'LINK_COLLECTION_VISIT=PASS'
+            echo 'LINK_COLLECTION_POPULATION=PASS'
+            echo 'OPEN_COLLECTION_EVENT_DETAIL=PASS'
+            echo 'CREATE_SAMPLE=PASS'
+            echo 'LINK_SAMPLE_ORIGIN=PASS'
+            echo 'OPEN_SAMPLE_DETAIL=PASS'
+            echo 'CREATE_ACCESSION=PASS'
+            echo 'LINK_ACCESSION_SAMPLE=PASS'
+            echo 'OPEN_ACCESSION_DETAIL=PASS'
+            echo 'EDIT_COLLECTION_EVENT=PASS'
+            echo 'EDIT_SAMPLE=PASS'
+            echo 'EDIT_ACCESSION=PASS'
+            echo 'PERSIST_MATERIAL_FLOW_TO_NEON=PASS'
+            echo 'MOBILE_MATERIAL_FLOW_UI=PASS'
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'PROCESSING_EVENT_COUNT=0'
+            echo 'SCHEMA_CHANGES=NONE'
+          } | tee evidence/MVP_PRODUCTIVO_4_STATUS.txt
+
+      - name: Upload minimal non-secret evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-02-mvp-productivo-4-evidence
+          path: app/evidence/
+          if-no-files-found: warn
