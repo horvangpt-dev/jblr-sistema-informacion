@@ -1,0 +1,2 @@
+.entity-actions{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:flex-end}.compact-results{display:grid;gap:.55rem}.collection-card,.sample-card,.accession-card{min-width:0}.entity-block>p{overflow-wrap:anywhere}
+@media(max-width:640px){.entity-actions{display:grid;grid-template-columns:1fr;width:100%;margin-top:.7rem}.entity-actions button{width:100%}.identity.compact .entity-actions{margin-top:.8rem}.collection-card,.sample-card,.accession-card{width:100%;overflow:hidden}}
