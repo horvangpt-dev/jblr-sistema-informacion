@@ -14,6 +14,10 @@ async function openPlantago(page) {
   await expect(page.getByRole('heading', { name: 'Taxonomía' })).toBeVisible();
 }
 
+function detailLocation(page) {
+  return page.locator('#populationDetail .location-card strong').filter({ hasText: LOCATION_NAME });
+}
+
 test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
   test('creates or reuses one STAGING location/population, links them and persists an edit', async ({ page }) => {
     await openPlantago(page);
@@ -61,7 +65,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
 
     await expect(page.getByRole('heading', { name: 'POBLACIÓN' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'LOCALIZACIÓN' })).toBeVisible();
-    await expect(page.getByText(LOCATION_NAME, { exact: true })).toBeVisible();
+    await expect(detailLocation(page)).toBeVisible();
     await expect(page.getByText('Identification ≠ validación taxonómica')).toBeVisible();
 
     await page.getByRole('button', { name: 'Editar población' }).click();
@@ -74,7 +78,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
     await page.getByRole('button', { name: /^Poblaciones:/ }).click();
     await expect(page.getByText(POPULATION_EDITED, { exact: true })).toBeVisible();
     await page.getByText(POPULATION_EDITED, { exact: true }).click();
-    await expect(page.getByText(LOCATION_NAME, { exact: true })).toBeVisible();
+    await expect(detailLocation(page)).toBeVisible();
 
     await page.screenshot({ path: 'evidence/mvp2-populations-desktop.png', fullPage: true });
   });
@@ -87,6 +91,7 @@ test.describe.serial('MVP_PRODUCTIVO_2 population workflow', () => {
       await expect(page.getByText(POPULATION_EDITED, { exact: true })).toBeVisible();
       await page.getByText(POPULATION_EDITED, { exact: true }).click();
       await expect(page.getByRole('heading', { name: 'LOCALIZACIÓN' })).toBeVisible();
+      await expect(detailLocation(page)).toBeVisible();
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
       expect(overflow).toBe(false);
       await page.screenshot({ path: 'evidence/mvp2-populations-mobile.png', fullPage: true });

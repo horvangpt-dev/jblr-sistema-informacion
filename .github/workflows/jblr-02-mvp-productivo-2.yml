@@ -69,12 +69,18 @@ jobs:
           exit 1
 
       - name: Run desktop, mobile and population UI E2E
+        shell: bash
         env:
           MVP_BASE_URL: http://127.0.0.1:3000
-        run: npm run test:ui | tee evidence/ui-status.txt
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
 
       - name: Verify persisted population state in Neon
-        run: npm run test:population-state | tee evidence/population-state.txt
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:population-state | tee evidence/population-state.txt
 
       - name: Verify no client/database secret material is versioned
         shell: bash
