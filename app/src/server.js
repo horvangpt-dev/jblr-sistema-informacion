@@ -6,6 +6,7 @@ const { assertAuthorizedStaging } = require('./staging');
 const taxonomy = require('./taxonomy');
 const populations = require('./populations');
 const fieldActivity = require('./field-activity');
+const materialFlow = require('./material-flow');
 
 const app = express();
 const defaultPort = Number(process.env.PORT || 3000);
@@ -20,10 +21,10 @@ app.use((req, res, next) => {
 });
 const publicDir = path.join(__dirname, '..', 'public');
 app.get('/app.js', (_req, res) => {
-  res.type('application/javascript').send(`${fs.readFileSync(path.join(publicDir, 'app.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.js'), 'utf8')}`);
+  res.type('application/javascript').send(`${fs.readFileSync(path.join(publicDir, 'app.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.js'), 'utf8')}`);
 });
 app.get('/styles.css', (_req, res) => {
-  res.type('text/css').send(`${fs.readFileSync(path.join(publicDir, 'styles.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.css'), 'utf8')}`);
+  res.type('text/css').send(`${fs.readFileSync(path.join(publicDir, 'styles.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'material-flow.css'), 'utf8')}`);
 });
 app.use(express.static(publicDir));
 
@@ -64,6 +65,58 @@ app.get('/api/populations/:id/field-activity', async (req, res, next) => {
 
 app.post('/api/populations/:id/field-visits', async (req, res, next) => {
   try { res.status(201).json(await fieldActivity.createFieldVisit(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/field-visits/:id/material-flow', async (req, res, next) => {
+  try { res.json(await materialFlow.getVisitMaterialFlow(req.params.id)); } catch (err) { next(err); }
+});
+
+app.post('/api/field-visits/:id/collection-events', async (req, res, next) => {
+  try { res.status(201).json(await materialFlow.createCollectionEvent(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/collection-events/:id', async (req, res, next) => {
+  try {
+    const detail = await materialFlow.getCollectionEventDetail(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'CollectionEvent not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.patch('/api/collection-events/:id', async (req, res, next) => {
+  try { res.json(await materialFlow.editCollectionEvent(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.post('/api/collection-events/:id/samples', async (req, res, next) => {
+  try { res.status(201).json(await materialFlow.createSample(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/samples/:id', async (req, res, next) => {
+  try {
+    const detail = await materialFlow.getSampleDetail(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'Sample not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.patch('/api/samples/:id', async (req, res, next) => {
+  try { res.json(await materialFlow.editSample(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.post('/api/samples/:id/accessions', async (req, res, next) => {
+  try { res.status(201).json(await materialFlow.createAccession(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/accessions/:id', async (req, res, next) => {
+  try {
+    const detail = await materialFlow.getAccessionDetail(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'Accession not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.patch('/api/accessions/:id', async (req, res, next) => {
+  try { res.json(await materialFlow.editAccession(req.params.id, req.body || {})); } catch (err) { next(err); }
 });
 
 app.get('/api/field-visits/:id', async (req, res, next) => {
