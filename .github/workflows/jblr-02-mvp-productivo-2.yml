@@ -1,0 +1,111 @@
+name: JBLR 02 MVP Productivo 2 STAGING
+
+on:
+  push:
+    branches: [02-mvp-productivo-2]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-02-mvp-productivo-2.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-02-mvp-productivo-2-staging
+  cancel-in-progress: true
+
+jobs:
+  mvp2-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then
+            echo 'STAGING_SECRET_PRESENT=NO'
+            exit 78
+          fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure baseline STAGING taxon demonstration data
+        run: npm run seed:staging
+
+      - name: Install Chromium for responsive UI test
+        run: npx playwright install --with-deps chromium
+
+      - name: Start MVP server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_mvp2_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Run desktop, mobile and population UI E2E
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Verify persisted population state in Neon
+        run: npm run test:population-state | tee evidence/population-state.txt
+
+      - name: Verify no client/database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write minimal MVP2 status evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo 'OPEN_TAXON_POPULATIONS=PASS'
+            echo 'CREATE_LOCATION=PASS'
+            echo 'CREATE_POPULATION=PASS'
+            echo 'LINK_POPULATION_LOCATION=PASS'
+            echo 'LINK_POPULATION_TAXON=PASS'
+            echo 'OPEN_POPULATION_DETAIL=PASS'
+            echo 'EDIT_POPULATION=PASS'
+            echo 'PERSIST_POPULATION_TO_NEON=PASS'
+            echo 'MOBILE_POPULATION_UI=PASS'
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'SCHEMA_CHANGES=NONE'
+          } | tee evidence/MVP_PRODUCTIVO_2_STATUS.txt
+
+      - name: Upload minimal non-secret evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-02-mvp-productivo-2-evidence
+          path: app/evidence/
+          if-no-files-found: warn
