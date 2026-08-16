@@ -21,7 +21,7 @@ jobs:
       TARGET_ENDPOINT_ID: ep-hidden-sound-b2uab7di
       TARGET_HOST: ep-hidden-sound-b2uab7di.c-6.eu-central-1.aws.neon.tech
       TARGET_DB: neondb
-      TEMP_ROLE: jblr_01_6_sqitch_temp
+      TARGET_USER: neondb_owner
       BASELINE_PATH: db/baseline/JBLR_01_2_R2_DDL_PILOT_FIX1.sql
       BASELINE_SOURCE_BRANCH: 01.2r-baseline-fix
       BASELINE_SOURCE_COMMIT: 2e18c9fdfe9cf9222c8297b93ca0c705e7fb7443
@@ -62,6 +62,8 @@ jobs:
             echo "target_branch_name=$TARGET_BRANCH_NAME"
             echo "target_endpoint_id=$TARGET_ENDPOINT_ID"
             echo "target_host=$TARGET_HOST"
+            echo "target_database=$TARGET_DB"
+            echo "target_user=$TARGET_USER"
           } | tee evidence/run_identity.txt
 
       - name: Materialize normative FIX1 and verify SHA-256
@@ -74,152 +76,108 @@ jobs:
           test "$(wc -c < "$BASELINE_PATH")" = "$BASELINE_SIZE"
           echo "$BASELINE_SHA256  $BASELINE_PATH" | sha256sum -c - | tee evidence/baseline_hash_check.txt
 
-      - name: Fail-closed passwordless bootstrap and STAGING deployment
+      - name: Fail-closed direct protected STAGING deployment
         shell: bash
+        env:
+          STAGING_DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
         run: |
           set -euo pipefail
-          TMP_PASS="$(openssl rand -base64 48 | tr -dc 'A-Za-z0-9_-' | head -c 48)"
-          test "${#TMP_PASS}" -ge 32
-          echo "::add-mask::$TMP_PASS"
-          export TMP_PASS
 
-          mkfifo /tmp/jblr_neon_admin_in
-          touch evidence/admin_passwordless.log
-          (
-            stdbuf -oL -eL psql -X -h pg.neon.tech -U neondb_owner -d "$TARGET_DB" -v ON_ERROR_STOP=1 \
-              < /tmp/jblr_neon_admin_in 2>&1 | tee -a evidence/admin_passwordless.log
-          ) &
-          ADMIN_PID=$!
-          exec 3>/tmp/jblr_neon_admin_in
-          BINDING_PASS=0
+          if [[ -z "${STAGING_DATABASE_URL:-}" ]]; then
+            echo 'STAGING_SECRET_PRESENT=NO' | tee evidence/staging_secret_status.txt
+            echo 'ABORT: GitHub Actions secret JBLR_STAGING_DATABASE_URL is not configured; no connection or mutation attempted.' >&2
+            exit 78
+          fi
+          echo 'STAGING_SECRET_PRESENT=YES' | tee evidence/staging_secret_status.txt
 
-          cleanup_admin() {
-            set +e
-            if [[ -e /proc/$ADMIN_PID ]]; then
-              if [[ "$BINDING_PASS" = "1" ]]; then
-                cat >&3 <<'SQL'
-          DO $cleanup$
-          BEGIN
-            IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname='jblr_01_6_sqitch_temp') THEN
-              ALTER ROLE jblr_01_6_sqitch_temp PASSWORD NULL VALID UNTIL '2000-01-01 00:00:00+00';
-            END IF;
-          END
-          $cleanup$;
-          \echo TEMP_LOGIN_REVOKED
-          \q
-          SQL
-              else
-                printf '\\q\n' >&3
-              fi
-              exec 3>&-
-              wait "$ADMIN_PID"
-            fi
-          }
-          trap cleanup_admin EXIT
+          mapfile -t DB_PARTS < <(python3 - <<'PY'
+          import os
+          from urllib.parse import urlsplit, unquote, parse_qs
 
-          # Read-only identity proof. No mutation is sent before exact match.
-          cat >&3 <<'SQL'
-          \set ON_ERROR_STOP on
-          \pset tuples_only on
-          \pset format unaligned
-          SELECT 'JBLR_ADMIN_IDENTITY|'
-                 || coalesce(current_setting('neon.project_id', true),'') || '|'
-                 || coalesce(current_setting('neon.branch_id', true),'') || '|'
-                 || coalesce(current_setting('neon.endpoint_id', true),'') || '|'
-                 || current_database() || '|'
-                 || current_user;
-          \echo ADMIN_IDENTITY_READY
-          SQL
+          raw = os.environ['STAGING_DATABASE_URL']
+          u = urlsplit(raw)
+          if u.scheme not in ('postgres', 'postgresql'):
+              raise SystemExit('unsupported database URL scheme')
+          q = parse_qs(u.query)
+          values = [
+              u.hostname or '',
+              str(u.port or 5432),
+              unquote(u.username or ''),
+              unquote(u.password or ''),
+              (u.path or '/').lstrip('/'),
+              q.get('sslmode', ['require'])[-1],
+              q.get('channel_binding', ['prefer'])[-1],
+          ]
+          for value in values:
+              print(value)
+          PY
+          )
+          test "${#DB_PARTS[@]}" -eq 7
 
-          echo 'WAITING_FOR_NEON_PASSWORDLESS_AUTHORIZATION'
-          echo "Authorize the Neon browser link and select project $TARGET_PROJECT_ID, branch $TARGET_BRANCH_NAME."
+          export PGHOST="${DB_PARTS[0]}"
+          export PGPORT="${DB_PARTS[1]}"
+          export PGUSER="${DB_PARTS[2]}"
+          export PGPASSWORD="${DB_PARTS[3]}"
+          export PGDATABASE="${DB_PARTS[4]}"
+          export PGSSLMODE="${DB_PARTS[5]}"
+          export PGCHANNELBINDING="${DB_PARTS[6]}"
+          echo "::add-mask::$PGPASSWORD"
+          unset STAGING_DATABASE_URL DB_PARTS
 
-          identity_ready=0
-          for i in $(seq 1 120); do
-            if grep -q '^ADMIN_IDENTITY_READY$' evidence/admin_passwordless.log; then identity_ready=1; break; fi
-            if ! kill -0 "$ADMIN_PID" 2>/dev/null; then
-              echo 'ADMIN_PASSWORDLESS_SESSION_ENDED_BEFORE_IDENTITY_CHECK' >&2
-              cat evidence/admin_passwordless.log >&2
-              exit 1
-            fi
-            sleep 1
-          done
-          test "$identity_ready" = "1"
+          # Declaration checks are local and non-mutating.
+          if [[ "$PGHOST" != "$TARGET_HOST" || "$PGDATABASE" != "$TARGET_DB" || "$PGUSER" != "$TARGET_USER" ]]; then
+            echo 'STAGING_CONNECTION_DECLARATION=FAIL' | tee evidence/staging_connection_declaration.txt
+            echo 'ABORT: protected connection declaration does not match authorized STAGING host/database/user; no connection or mutation attempted.' >&2
+            exit 41
+          fi
+          echo 'STAGING_CONNECTION_DECLARATION=PASS' | tee evidence/staging_connection_declaration.txt
 
-          ACTUAL_IDENTITY="$(grep '^JBLR_ADMIN_IDENTITY|' evidence/admin_passwordless.log | tail -n 1)"
-          EXPECTED_IDENTITY="JBLR_ADMIN_IDENTITY|$TARGET_PROJECT_ID|$TARGET_BRANCH_ID|$TARGET_ENDPOINT_ID|$TARGET_DB|neondb_owner"
+          # Mandatory read-only Neon identity proof. No mutation before exact match.
+          ACTUAL_IDENTITY="$(psql -X -v ON_ERROR_STOP=1 -Atqc "select 'JBLR_ADMIN_IDENTITY|'||coalesce(current_setting('neon.project_id', true),'')||'|'||coalesce(current_setting('neon.branch_id', true),'')||'|'||coalesce(current_setting('neon.endpoint_id', true),'')||'|'||current_database()||'|'||current_user")"
+          EXPECTED_IDENTITY="JBLR_ADMIN_IDENTITY|$TARGET_PROJECT_ID|$TARGET_BRANCH_ID|$TARGET_ENDPOINT_ID|$TARGET_DB|$TARGET_USER"
           printf 'actual=%s\nexpected=%s\n' "$ACTUAL_IDENTITY" "$EXPECTED_IDENTITY" | tee evidence/admin_target_identity.txt
           if [[ "$ACTUAL_IDENTITY" != "$EXPECTED_IDENTITY" ]]; then
             echo 'ADMIN_TARGET_BINDING=FAIL' | tee evidence/admin_target_binding.txt
-            printf '\\q\n' >&3
-            exec 3>&-
-            wait "$ADMIN_PID" || true
-            trap - EXIT
-            unset TMP_PASS
-            echo 'ABORT: wrong Neon target; no mutation executed.' >&2
+            echo 'ABORT: wrong Neon target identity; no mutation executed.' >&2
             exit 42
           fi
-
-          BINDING_PASS=1
           echo 'ADMIN_TARGET_BINDING=PASS' | tee evidence/admin_target_binding.txt
+          echo 'STAGING_DIRECT_AUTH=PASS' | tee evidence/staging_direct_auth.txt
 
-          cat >&3 <<'SQL'
-          \set ON_ERROR_STOP on
-          CREATE EXTENSION IF NOT EXISTS postgis;
-          CREATE EXTENSION IF NOT EXISTS pg_trgm;
-          \getenv temp_pass TMP_PASS
-          SELECT format(
-            'CREATE ROLE jblr_01_6_sqitch_temp LOGIN PASSWORD %L VALID UNTIL %L',
-            :'temp_pass', (current_timestamp + interval '20 minutes')::text
-          ) WHERE NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname='jblr_01_6_sqitch_temp') \gexec
-          SELECT format(
-            'ALTER ROLE jblr_01_6_sqitch_temp LOGIN PASSWORD %L VALID UNTIL %L',
-            :'temp_pass', (current_timestamp + interval '20 minutes')::text
-          ) \gexec
-          GRANT CREATE ON DATABASE neondb TO jblr_01_6_sqitch_temp;
-          \echo TEMP_LOGIN_READY
-          SQL
-
-          ready=0
-          for i in $(seq 1 60); do
-            if grep -q '^TEMP_LOGIN_READY$' evidence/admin_passwordless.log; then ready=1; break; fi
-            if ! kill -0 "$ADMIN_PID" 2>/dev/null; then exit 1; fi
-            sleep 1
-          done
-          test "$ready" = "1"
-
-          export PGPASSWORD="$TMP_PASS" PGSSLMODE=require PGHOST="$TARGET_HOST" PGDATABASE="$TARGET_DB" PGUSER="$TEMP_ROLE"
-          DIRECT_IDENTITY="$(psql -X -v ON_ERROR_STOP=1 -Atqc "select 'JBLR_DIRECT_IDENTITY|'||coalesce(current_setting('neon.project_id', true),'')||'|'||coalesce(current_setting('neon.branch_id', true),'')||'|'||coalesce(current_setting('neon.endpoint_id', true),'')||'|'||current_database()||'|'||current_user")"
-          EXPECTED_DIRECT="JBLR_DIRECT_IDENTITY|$TARGET_PROJECT_ID|$TARGET_BRANCH_ID|$TARGET_ENDPOINT_ID|$TARGET_DB|$TEMP_ROLE"
-          printf 'actual=%s\nexpected=%s\n' "$DIRECT_IDENTITY" "$EXPECTED_DIRECT" | tee evidence/direct_login_identity.txt
-          test "$DIRECT_IDENTITY" = "$EXPECTED_DIRECT"
-          echo 'TEMP_LOGIN_DIRECT_AUTH=PASS' | tee evidence/temp_login_direct_auth.txt
+          # Mutations are allowed only after the exact target binding PASS above.
+          psql -X -v ON_ERROR_STOP=1 -c 'CREATE EXTENSION IF NOT EXISTS postgis;'
+          psql -X -v ON_ERROR_STOP=1 -c 'CREATE EXTENSION IF NOT EXISTS pg_trgm;'
 
           psql -X -v ON_ERROR_STOP=1 -f "$BASELINE_PATH" > evidence/baseline_install.log
           BASE_TABLES="$(psql -X -Atqc "select count(*) from information_schema.tables where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security') and table_type='BASE TABLE'")"
           BASE_VIEWS="$(psql -X -Atqc "select count(*) from information_schema.views where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security')")"
-          test "$BASE_TABLES" = "85"
-          test "$BASE_VIEWS" = "8"
+          test "$BASE_TABLES" = '85'
+          test "$BASE_VIEWS" = '8'
           echo 'FIX1_INSTALL=PASS' | tee evidence/fix1_install.txt
 
           (
             cd db/sqitch
-            sqitch deploy "db:pg://$TEMP_ROLE@$TARGET_HOST/$TARGET_DB" 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_cli_deploy.log"
-            sqitch verify "db:pg://$TEMP_ROLE@$TARGET_HOST/$TARGET_DB" 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_cli_verify.log"
+            SQITCH_TARGET="db:pg://$PGUSER@$PGHOST:$PGPORT/$PGDATABASE"
+            sqitch deploy "$SQITCH_TARGET" 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_cli_deploy.log"
+            sqitch verify "$SQITCH_TARGET" 2>&1 | tee "$GITHUB_WORKSPACE/evidence/sqitch_cli_verify.log"
           )
 
-          test "$(psql -X -Atqc "select count(*) from sqitch.changes")" = "3"
+          SQITCH_CHANGES="$(psql -X -Atqc 'select count(*) from sqitch.changes')"
           FINAL_TABLES="$(psql -X -Atqc "select count(*) from information_schema.tables where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging') and table_type='BASE TABLE'")"
           FINAL_VIEWS="$(psql -X -Atqc "select count(*) from information_schema.views where table_schema in ('core','taxonomy','field','material','evidence','governance','analytics','security','migration_staging')")"
-          test "$FINAL_TABLES" = "91"
-          test "$FINAL_VIEWS" = "8"
+          test "$SQITCH_CHANGES" = '3'
+          test "$FINAL_TABLES" = '91'
+          test "$FINAL_VIEWS" = '8'
+
           psql -X -Atqc "select extname||'='||extversion from pg_extension where extname in ('postgis','pg_trgm') order by extname" > evidence/extensions.txt
-          psql -X -P pager=off -c "select change_id,committed_at from sqitch.changes order by committed_at" > evidence/sqitch_changes.txt
+          grep -Fx 'pg_trgm=1.6' evidence/extensions.txt
+          grep -Fx 'postgis=3.6.0' evidence/extensions.txt
+          psql -X -P pager=off -c 'select change_id,committed_at from sqitch.changes order by committed_at' > evidence/sqitch_changes.txt
 
           {
             echo 'STAGING_MAIN_DEPLOYMENT=PASS'
             echo 'ADMIN_TARGET_BINDING=PASS'
-            echo 'TEMP_LOGIN_DIRECT_AUTH=PASS'
+            echo 'STAGING_DIRECT_AUTH=PASS'
             echo 'FIX1_SHA=PASS'
             echo 'FIX1_INSTALL=PASS'
             echo 'SQITCH_CLI_STAGING_DEPLOY=PASS'
@@ -228,17 +186,18 @@ jobs:
             echo "baseline_views=$BASE_VIEWS"
             echo "final_tables=$FINAL_TABLES"
             echo "final_views=$FINAL_VIEWS"
+            echo "sqitch_changes=$SQITCH_CHANGES"
             echo "target_project_id=$TARGET_PROJECT_ID"
             echo "target_branch_id=$TARGET_BRANCH_ID"
             echo "target_endpoint_id=$TARGET_ENDPOINT_ID"
             echo "target_host=$TARGET_HOST"
+            echo "target_database=$TARGET_DB"
+            echo "target_user=$TARGET_USER"
             echo "technical_commit=$GITHUB_SHA"
             echo "fix1_sha256=$BASELINE_SHA256"
           } | tee evidence/STAGING_MAIN_STATUS.txt
 
-          cleanup_admin
-          trap - EXIT
-          unset PGPASSWORD TMP_PASS
+          unset PGPASSWORD PGHOST PGPORT PGUSER PGDATABASE PGSSLMODE PGCHANNELBINDING SQITCH_TARGET ACTUAL_IDENTITY EXPECTED_IDENTITY
 
       - name: Upload non-secret STAGING evidence
         if: always()
