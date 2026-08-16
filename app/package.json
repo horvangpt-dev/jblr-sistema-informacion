@@ -16,7 +16,8 @@
     "test:field-monitoring-state": "node tests/field-monitoring-state.js",
     "test:individual-traceability-state": "node tests/individual-traceability-state.js",
     "test:external-data-state": "node tests/external-data-state.js",
-    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js tests/material-navigation-ui.spec.js tests/processing-flow-ui.spec.js tests/evidence-flow-ui.spec.js tests/field-monitoring-ui.spec.js tests/individual-traceability-ui.spec.js tests/external-data-ui.spec.js"
+    "test:navigation-antiflake": "playwright test tests/external-data-ui.spec.js tests/field-monitoring-ui.spec.js tests/navigation-race.spec.js --repeat-each=5",
+    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js tests/material-navigation-ui.spec.js tests/processing-flow-ui.spec.js tests/evidence-flow-ui.spec.js tests/field-monitoring-ui.spec.js tests/individual-traceability-ui.spec.js tests/external-data-ui.spec.js tests/navigation-race.spec.js"
   },
   "engines": {"node": ">=22"},
   "dependencies": {"express": "^5.1.0", "pg": "^8.16.3"},
