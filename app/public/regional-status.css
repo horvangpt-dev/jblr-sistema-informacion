@@ -1,0 +1,61 @@
+.regional-identity,
+.regional-identity > div,
+.regional-section,
+.regional-value-card {
+  min-width: 0;
+}
+.regional-entry-button {
+  white-space: nowrap;
+}
+.regional-warning {
+  font-weight: 600;
+}
+.regional-value-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: .75rem;
+}
+.regional-value-card {
+  border: 1px solid #dfe6e1;
+  border-radius: 12px;
+  padding: .9rem;
+  background: #fcfdfc;
+}
+.regional-value-card h3 {
+  margin: 0 0 .35rem;
+  font-size: .88rem;
+  letter-spacing: .06em;
+}
+.regional-value-card p {
+  margin: .28rem 0;
+}
+.regional-value-status {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.regional-note {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.regional-section .resource-id,
+.regional-identity h1 {
+  overflow-wrap: anywhere;
+}
+.regional-semantics p {
+  margin: .45rem 0;
+}
+@media (max-width: 640px) {
+  .regional-identity {
+    align-items: stretch;
+  }
+  .regional-identity > button {
+    width: 100%;
+    margin-top: .6rem;
+  }
+  .regional-value-grid {
+    grid-template-columns: 1fr;
+  }
+  .regional-section {
+    overflow-x: hidden;
+  }
+}
