@@ -1,0 +1,71 @@
+.quality-identity,
+.quality-section,
+.quality-assessment-card,
+#qualityTargetBlock,
+#qualityAssessmentDetail {
+  min-width: 0;
+}
+
+.quality-identity {
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.quality-identity > div {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.quality-identity h1,
+.quality-section h2,
+.quality-section h3,
+.quality-section p,
+.quality-assessment-card,
+.resource-id {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.quality-section {
+  margin-top: 1rem;
+}
+
+.quality-warning {
+  font-weight: 650;
+}
+
+.quality-null,
+.quality-score {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+
+.quality-entry-button {
+  flex: 0 0 auto;
+}
+
+.quality-semantics p {
+  margin: .45rem 0;
+}
+
+@media (max-width: 560px) {
+  .quality-identity {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .quality-identity > button,
+  .quality-entry-button,
+  #createQualityAssessmentBtn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #qualityOverviewView,
+  #qualityAssessmentDetailView,
+  #qualityOverviewView .section,
+  #qualityAssessmentDetailView .section {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
