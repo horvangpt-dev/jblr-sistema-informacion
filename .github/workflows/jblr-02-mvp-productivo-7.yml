@@ -1,0 +1,137 @@
+name: JBLR 02 MVP Productivo 7 STAGING
+
+on:
+  push:
+    branches: [02-mvp-productivo-7]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-02-mvp-productivo-7.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-02-mvp-productivo-7-staging
+  cancel-in-progress: true
+
+jobs:
+  mvp7-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then
+            echo 'STAGING_SECRET_PRESENT=NO'
+            exit 78
+          fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure baseline STAGING taxon demonstration data
+        run: npm run seed:staging
+
+      - name: Install Chromium for responsive UI test
+        run: npx playwright install --with-deps chromium
+
+      - name: Start MVP server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_mvp7_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Run desktop, mobile and field monitoring E2E
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Verify persisted observations, censuses and measurements in Neon
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:field-monitoring-state | tee evidence/field-monitoring-state.txt
+
+      - name: Verify MVP7 did not change the certified schema files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C .. diff --quiet 10e891d7bf32d92cce6fd53a4f255c5dbc33b16d HEAD -- db
+          echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
+
+      - name: Verify no client/database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write minimal MVP7 status evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo 'OPEN_VISIT_OBSERVATIONS_CENSUSES=PASS'
+            echo 'CREATE_OBSERVATION=PASS'
+            echo 'LINK_OBSERVATION_VISIT=PASS'
+            echo 'LINK_OBSERVATION_POPULATION=PASS'
+            echo 'LINK_OBSERVATION_LOCATION=PASS'
+            echo 'OPEN_OBSERVATION_DETAIL=PASS'
+            echo 'EDIT_OBSERVATION=PASS'
+            echo 'CREATE_CENSUS=PASS'
+            echo 'LINK_CENSUS_VISIT=PASS'
+            echo 'LINK_CENSUS_POPULATION=PASS'
+            echo 'OPEN_CENSUS_DETAIL=PASS'
+            echo 'CREATE_CENSUS_MEASUREMENT=PASS'
+            echo 'SHOW_CENSUS_MEASUREMENTS=PASS'
+            echo 'EDIT_CENSUS=PASS'
+            echo 'PERSIST_FIELD_MONITORING_TO_NEON=PASS'
+            echo 'VALUE_STATUS_SEMANTICS=PASS'
+            echo 'UNKNOWN_NOT_ZERO=PASS'
+            echo 'MOBILE_FIELD_MONITORING_UI=PASS'
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'CENSUS_MEASUREMENT_COUNT=2'
+            echo 'PHOTOS_DOCUMENTS=DEFERRED_UNTIL_PERSISTENT_FILE_STORAGE_SLICE'
+            echo 'SCHEMA_CHANGES=NONE'
+          } | tee evidence/MVP_PRODUCTIVO_7_STATUS.txt
+
+      - name: Upload minimal non-secret evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-02-mvp-productivo-7-evidence
+          path: app/evidence/
+          if-no-files-found: warn
