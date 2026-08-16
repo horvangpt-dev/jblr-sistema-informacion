@@ -4,6 +4,9 @@
 .analysis-section .result-card {
   min-width: 0;
 }
+.analysis-identity h1 {
+  overflow-wrap: anywhere;
+}
 .analysis-entry-button {
   white-space: nowrap;
 }
