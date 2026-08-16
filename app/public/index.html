@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JBLR · Botánica STAGING</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <strong>JBLR · Botánica</strong>
+      <span class="badge">STAGING</span>
+    </div>
+    <button id="newTaxonBtn" class="primary">Nuevo taxón</button>
+  </header>
+
+  <main>
+    <section id="searchView" class="panel hero">
+      <p class="eyebrow">MVP_PRODUCTIVO_1</p>
+      <h1>Buscar taxón</h1>
+      <form id="searchForm" class="search-row">
+        <label class="sr-only" for="searchInput">Buscar por nombre científico</label>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Ej. Plantago, Papaver…" minlength="2">
+        <button class="primary" type="submit">Buscar</button>
+      </form>
+      <p class="hint">Busca por nombre científico o canónico. Se admiten fragmentos.</p>
+      <div id="searchStatus" class="status" aria-live="polite"></div>
+      <div id="results" class="results"></div>
+    </section>
+
+    <section id="detailView" class="panel hidden" aria-live="polite">
+      <button class="link-button" id="backBtn">← Volver a búsqueda</button>
+      <div id="detail"></div>
+    </section>
+  </main>
+
+  <dialog id="taxonDialog">
+    <form id="taxonForm" method="dialog" class="form-stack">
+      <div class="dialog-head">
+        <h2 id="dialogTitle">Nuevo taxón</h2>
+        <button type="button" class="icon-button" id="closeDialogBtn" aria-label="Cerrar">×</button>
+      </div>
+      <input type="hidden" id="editConceptId">
+      <label>Nombre científico<input id="scientificName" required maxlength="300"></label>
+      <label>Nombre canónico<input id="canonicalName" required maxlength="300"></label>
+      <label>Autoría<input id="authorship" maxlength="200"></label>
+      <label>Rango<select id="rankTermKey"><option value="">Sin especificar</option></select></label>
+      <p class="hint create-only">El alta crea un <strong>TaxonomicName</strong> y un <strong>TaxonConcept</strong> separados, vinculados inicialmente como uso no resuelto.</p>
+      <p class="hint edit-only hidden">En este MVP no se modifica la identidad científica ni las relaciones taxonómicas. La edición segura se limita a etiqueta y notas.</p>
+      <div class="grid-2 create-only">
+        <label>Género<input id="genus" maxlength="150"></label>
+        <label>Epíteto específico<input id="specificEpithet" maxlength="150"></label>
+      </div>
+      <label class="edit-only hidden">Etiqueta del concepto<input id="conceptLabel" maxlength="300"></label>
+      <label class="edit-only hidden">Notas del nombre<textarea id="nameNotes" rows="3" maxlength="1000"></textarea></label>
+      <label class="edit-only hidden">Notas del concepto<textarea id="conceptNotes" rows="3" maxlength="1000"></textarea></label>
+      <div id="formStatus" class="status" aria-live="polite"></div>
+      <div class="dialog-actions">
+        <button type="button" class="secondary" id="cancelDialogBtn">Cancelar</button>
+        <button type="submit" class="primary" id="saveTaxonBtn">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
