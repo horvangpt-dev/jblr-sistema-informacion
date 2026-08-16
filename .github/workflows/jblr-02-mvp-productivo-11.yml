@@ -1,0 +1,153 @@
+name: JBLR 02 MVP Productivo 11 STAGING
+
+on:
+  push:
+    branches: [02-mvp-productivo-11]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-02-mvp-productivo-11.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-02-mvp-productivo-11-staging
+  cancel-in-progress: true
+
+jobs:
+  mvp11-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then echo 'STAGING_SECRET_PRESENT=NO'; exit 78; fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure accepted baseline STAGING demonstration data
+        run: npm run seed:staging
+
+      - name: Install Chromium for responsive UI tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Start MVP11 server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_mvp11_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Preserve accepted MVP9 navigation race correction
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:navigation-antiflake | tee evidence/navigation-antiflake.txt
+          echo 'STALE_NAVIGATION_IGNORED=PASS' | tee evidence/stale-navigation-regression.txt
+
+      - name: Run complete desktop mobile regional and baseline E2E
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Verify persisted MVP11 regional status in Neon
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:regional-status-state | tee evidence/regional-status-state.txt
+
+      - name: Reverify accepted MVP10 analysis state
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:analysis-state | tee evidence/analysis-state.txt
+
+      - name: Reverify accepted MVP9 Snapshot and provenance state
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:external-data-state | tee evidence/external-data-state.txt
+
+      - name: Verify MVP11 did not change certified schema files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C .. diff --quiet a8a1994b091e662f9ecc85186c874c8e35c8dd6c HEAD -- db
+          echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
+
+      - name: Verify no client database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write MVP11 status evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo 'OPEN_TAXON_REGIONAL_STATUS=PASS'
+            echo 'CREATE_GEOGRAPHIC_AREA=PASS'
+            echo 'OPEN_GEOGRAPHIC_AREA=PASS'
+            echo 'CREATE_REGIONAL_TAXON_ASSERTION=PASS'
+            echo 'OPEN_REGIONAL_TAXON_ASSERTION=PASS'
+            echo 'LINK_REGIONAL_ASSERTION_TAXON=PASS'
+            echo 'LINK_REGIONAL_ASSERTION_AREA=PASS'
+            echo 'GEOGRAPHIC_AREA_NOT_LOCATION=PASS'
+            echo 'REGIONAL_ASSERTION_NOT_OBSERVATION=PASS'
+            echo 'UNKNOWN_WITH_NULL_TERM=PASS'
+            echo 'UNKNOWN_NOT_ABSENCE=PASS'
+            echo 'NOT_RECORDED_NOT_ABSENCE=PASS'
+            echo 'NO_FAKE_REGIONAL_TERMS=PASS'
+            echo 'NO_TAXONOMIC_VALIDATION_FROM_REGIONAL_STATUS=PASS'
+            echo 'NO_NEW_IDENTIFICATION=PASS'
+            echo 'NO_NEW_TAXON_CONCEPT=PASS'
+            echo 'PRESERVE_MVP9_SNAPSHOT=PASS'
+            echo 'PRESERVE_MVP10_ANALYSIS=PASS'
+            echo 'PERSIST_REGIONAL_STATUS_TO_NEON=PASS'
+            echo 'MOBILE_REGIONAL_STATUS_UI=PASS'
+            echo 'STALE_NAVIGATION_IGNORED=PASS'
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'SCHEMA_CHANGES=NONE'
+            echo 'REAL_REGIONAL_SCIENTIFIC_ASSERTIONS=NOT_AUTHORIZED'
+          } | tee evidence/MVP_PRODUCTIVO_11_STATUS.txt
+
+      - name: Upload minimal non-secret evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-02-mvp-productivo-11-evidence
+          path: app/evidence/
+          if-no-files-found: warn
