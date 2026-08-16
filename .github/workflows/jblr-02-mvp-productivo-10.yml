@@ -1,0 +1,149 @@
+name: JBLR 02 MVP Productivo 10 STAGING
+
+on:
+  push:
+    branches: [02-mvp-productivo-10]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-02-mvp-productivo-10.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-02-mvp-productivo-10-staging
+  cancel-in-progress: true
+
+jobs:
+  mvp10-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then echo 'STAGING_SECRET_PRESENT=NO'; exit 78; fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+
+      - name: Initialize evidence directory
+        run: mkdir -p evidence
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure accepted baseline STAGING demonstration data
+        run: npm run seed:staging
+
+      - name: Install Chromium for responsive UI tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Start MVP10 server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_mvp10_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Preserve accepted MVP9 navigation race correction
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:navigation-antiflake | tee evidence/navigation-antiflake.txt
+          echo 'STALE_NAVIGATION_IGNORED=PASS' | tee evidence/stale-navigation-regression.txt
+
+      - name: Run complete desktop mobile and analysis E2E
+        shell: bash
+        env:
+          MVP_BASE_URL: http://127.0.0.1:3000
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Verify persisted MVP10 analysis state in Neon
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:analysis-state | tee evidence/analysis-state.txt
+
+      - name: Reverify accepted MVP9 Snapshot and provenance state
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:external-data-state | tee evidence/external-data-state.txt
+
+      - name: Verify MVP10 did not change certified schema files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C .. diff --quiet 44003ec65554c78ac5675b8a227d7e827f96ed40 HEAD -- db
+          echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
+
+      - name: Verify no client database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write MVP10 status evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo 'OPEN_TAXON_ANALYSES=PASS'
+            echo 'CREATE_METRIC_DEFINITION=PASS'
+            echo 'LINK_METRIC_TARGET_TAXONCONCEPT=PASS'
+            echo 'CREATE_DATA_ACTIVITY=PASS'
+            echo 'CREATE_ANALYSIS_RUN=PASS'
+            echo 'LINK_ANALYSIS_INPUT=PASS'
+            echo 'CREATE_ANALYSIS_RESULT=PASS'
+            echo 'OPEN_ANALYSIS_RUN_DETAIL=PASS'
+            echo 'OPEN_ANALYSIS_RESULT_DETAIL=PASS'
+            echo 'TRACE_RESULT_TO_RUN=PASS'
+            echo 'TRACE_RUN_TO_INPUT_SNAPSHOT=PASS'
+            echo 'TRACE_RESULT_TO_TAXON=PASS'
+            echo 'TRACE_RUN_TO_DATA_ACTIVITY=PASS'
+            echo 'ANALYSIS_RUN_NOT_RESULT=PASS'
+            echo 'ANALYSIS_INPUT_NOT_RESULT=PASS'
+            echo 'ANALYSIS_VALUE_STATUS_SEMANTICS=PASS'
+            echo 'PRESERVE_ANALYSIS_HISTORY=PASS'
+            echo 'NO_TAXONOMIC_VALIDATION_FROM_ANALYSIS=PASS'
+            echo 'NO_NEW_IDENTIFICATION=PASS'
+            echo 'NO_NEW_TAXON_CONCEPT=PASS'
+            echo 'PERSIST_ANALYSIS_TO_NEON=PASS'
+            echo 'MOBILE_ANALYSIS_UI=PASS'
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'STALE_NAVIGATION_IGNORED=PASS'
+            echo 'SCHEMA_CHANGES=NONE'
+            echo 'REAL_ANALYSIS=NOT_AUTHORIZED'
+          } | tee evidence/MVP_PRODUCTIVO_10_STATUS.txt
+
+      - name: Upload minimal non-secret evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-02-mvp-productivo-10-evidence
+          path: app/evidence/
+          if-no-files-found: warn

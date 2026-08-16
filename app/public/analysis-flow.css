@@ -1,0 +1,36 @@
+.analysis-identity,
+.analysis-identity > div,
+.analysis-section,
+.analysis-section .result-card {
+  min-width: 0;
+}
+.analysis-entry-button {
+  white-space: nowrap;
+}
+.analysis-warning {
+  font-weight: 600;
+}
+.analysis-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.analysis-json {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.analysis-section .resource-id {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+  .analysis-identity {
+    align-items: stretch;
+  }
+  .analysis-identity > button {
+    width: 100%;
+  }
+  .analysis-section {
+    overflow-x: hidden;
+  }
+}
