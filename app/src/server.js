@@ -1,9 +1,11 @@
+const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const { pool } = require('./db');
 const { assertAuthorizedStaging } = require('./staging');
 const taxonomy = require('./taxonomy');
 const populations = require('./populations');
+const fieldActivity = require('./field-activity');
 
 const app = express();
 const defaultPort = Number(process.env.PORT || 3000);
@@ -16,7 +18,14 @@ app.use((req, res, next) => {
   res.setHeader('Cache-Control', 'no-store');
   next();
 });
-app.use(express.static(path.join(__dirname, '..', 'public')));
+const publicDir = path.join(__dirname, '..', 'public');
+app.get('/app.js', (_req, res) => {
+  res.type('application/javascript').send(`${fs.readFileSync(path.join(publicDir, 'app.js'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.js'), 'utf8')}`);
+});
+app.get('/styles.css', (_req, res) => {
+  res.type('text/css').send(`${fs.readFileSync(path.join(publicDir, 'styles.css'), 'utf8')}\n${fs.readFileSync(path.join(publicDir, 'field-activity.css'), 'utf8')}`);
+});
+app.use(express.static(publicDir));
 
 app.get('/api/health', async (_req, res, next) => {
   try {
@@ -47,6 +56,42 @@ app.post('/api/locations', async (req, res, next) => {
 
 app.patch('/api/locations/:id', async (req, res, next) => {
   try { res.json(await populations.editLocation(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/populations/:id/field-activity', async (req, res, next) => {
+  try { res.json(await fieldActivity.getPopulationFieldActivity(req.params.id)); } catch (err) { next(err); }
+});
+
+app.post('/api/populations/:id/field-visits', async (req, res, next) => {
+  try { res.status(201).json(await fieldActivity.createFieldVisit(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/field-visits/:id', async (req, res, next) => {
+  try {
+    const detail = await fieldActivity.getFieldVisitDetail(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'FieldVisit not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.patch('/api/field-visits/:id', async (req, res, next) => {
+  try { res.json(await fieldActivity.editFieldVisit(req.params.id, req.body || {})); } catch (err) { next(err); }
+});
+
+app.post('/api/prospections', async (req, res, next) => {
+  try { res.status(201).json(await fieldActivity.createProspection(req.body || {})); } catch (err) { next(err); }
+});
+
+app.get('/api/prospections/:id', async (req, res, next) => {
+  try {
+    const detail = await fieldActivity.getProspectionDetail(req.params.id);
+    if (!detail) return res.status(404).json({ error: 'Prospection not found' });
+    res.json(detail);
+  } catch (err) { next(err); }
+});
+
+app.patch('/api/prospections/:id', async (req, res, next) => {
+  try { res.json(await fieldActivity.editProspection(req.params.id, req.body || {})); } catch (err) { next(err); }
 });
 
 app.get('/api/populations/:id', async (req, res, next) => {
@@ -91,7 +136,7 @@ app.patch('/api/taxa/:id', async (req, res, next) => {
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Not found' }));
 app.use((err, _req, res, _next) => {
   const message = err && err.message ? err.message : 'Unexpected error';
-  const clientError = /required|invalid|already exists|not found|missing|exceeds|current STAGING/i.test(message);
+  const clientError = /required|invalid|already exists|not found|missing|exceeds|must not|current STAGING/i.test(message);
   if (!clientError) console.error('Request error:', message);
   res.status(clientError ? 400 : 500).json({ error: clientError ? message : 'Internal server error' });
 });
