@@ -1,0 +1,73 @@
+.review-identity,
+.review-section,
+.review-inline-state {
+  min-width: 0;
+}
+
+.review-entry-button {
+  white-space: nowrap;
+}
+
+.review-section h2,
+.review-section h3,
+.review-section p,
+.review-section strong,
+.review-section .resource-id,
+.review-state-label {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.review-state-label {
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: .03em;
+}
+
+.review-state-large {
+  font-size: 1.15rem;
+  margin-bottom: .5rem;
+}
+
+.review-warning {
+  font-weight: 650;
+}
+
+.review-transition {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+
+.review-null {
+  font-weight: 700;
+}
+
+#validationEventList,
+#reviewTargetBlock,
+#validationEventDetail {
+  min-width: 0;
+}
+
+#requestReviewBtn:disabled {
+  cursor: default;
+  opacity: .7;
+}
+
+@media (max-width: 560px) {
+  .review-identity {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .review-entry-button,
+  #requestReviewBtn {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .review-section,
+  .validation-event-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
