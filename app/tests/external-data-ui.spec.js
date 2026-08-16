@@ -12,10 +12,15 @@ async function openPlantago(page) {
   await expect(page.getByRole('button', { name: 'FUENTES EXTERNAS' })).toBeVisible();
 }
 
-async function openExternal(page) {
-  await page.getByRole('button', { name: 'FUENTES EXTERNAS' }).click();
+async function waitExternalReady(page) {
+  await expect(page.locator('#externalDataView')).toBeVisible();
   await expect(page.locator('#externalDataStatus')).not.toHaveText('Cargando…');
   await expect(page.locator('#externalDataView')).toContainText('Importación ≠ validación');
+}
+
+async function openExternal(page) {
+  await page.getByRole('button', { name: 'FUENTES EXTERNAS' }).click();
+  await waitExternalReady(page);
 }
 
 async function ensureFullChain(page) {
@@ -56,16 +61,18 @@ test.describe.serial('MVP_PRODUCTIVO_9 external scientific records', () => {
     await expect(page.locator('#externalRecordDetailView')).toBeVisible();
     await expect(page.locator('#externalRecordDetail .external-snapshot-card')).toHaveCount(1);
     await page.locator('#backRecordToExternalBtn').click();
-    await expect(page.locator('#externalDataView')).toBeVisible();
+    await waitExternalReady(page);
     await expect(page.locator('#externalRecordList .external-record-card')).toHaveCount(1);
     await expect(page.locator('#externalLinkedList .external-linked-card')).toHaveCount(1);
 
     await page.locator('#backExternalToTaxonBtn').click();
     await expect(page.locator('#detailView')).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Taxonomía' })).toBeVisible();
-    await page.getByRole('button', { name: 'FUENTES EXTERNAS' }).click();
-    await expect(page.locator('#externalDataStatus')).not.toHaveText('Cargando…');
-    await page.locator('#externalLinkedList .external-linked-card').click();
+    await openExternal(page);
+    const linked = page.locator('#externalLinkedList .external-linked-card');
+    await expect(linked).toHaveCount(1);
+    await expect(linked).toBeVisible();
+    await linked.click();
     await expect(page.locator('#externalSnapshotDetail')).toContainText('source_record_snapshot');
 
     await page.reload();
@@ -73,6 +80,7 @@ test.describe.serial('MVP_PRODUCTIVO_9 external scientific records', () => {
     await openExternal(page);
     await expect(page.locator('#externalRecordList .external-record-card')).toHaveCount(1);
     await expect(page.locator('#externalLinkedList .external-linked-card')).toHaveCount(1);
+    await expect(page.locator('#externalLinkedList .external-linked-card')).toBeVisible();
     await page.locator('#externalLinkedList .external-linked-card').click();
     await expect(page.locator('#externalSnapshotDetail')).toContainText('MVP9-DEMO-0001');
     await expect(page.locator('#externalSnapshotDetail')).toContainText('raw_asset_id: NULL');
@@ -87,8 +95,10 @@ test.describe.serial('MVP_PRODUCTIVO_9 external scientific records', () => {
       await openExternal(page);
       await expect(page.locator('#externalSourceBlock')).toContainText('STAGING_MVP9');
       await expect(page.locator('#externalRecordList .external-record-card')).toHaveCount(1);
+      await expect(page.locator('#externalRecordList .external-record-card')).toBeVisible();
       await page.locator('#externalRecordList .external-record-card').click();
       await expect(page.locator('#externalRecordDetail .external-snapshot-card')).toHaveCount(1);
+      await expect(page.locator('#externalRecordDetail .external-snapshot-card')).toBeVisible();
       await page.locator('#externalRecordDetail .external-snapshot-card').click();
       await expect(page.locator('#externalSnapshotDetail')).toContainText('RAW PAYLOAD');
       await expect(page.locator('#externalSnapshotDetail')).toContainText('NORMALIZED PAYLOAD');
