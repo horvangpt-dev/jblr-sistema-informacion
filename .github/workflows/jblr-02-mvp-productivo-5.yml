@@ -24,6 +24,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -80,13 +82,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          node tests/processing-flow-state.js | tee evidence/processing-flow-state.txt
+          npm run test:processing-state | tee evidence/processing-flow-state.txt
 
       - name: Verify MVP5 did not change the certified schema files
         shell: bash
         run: |
           set -euo pipefail
-          git diff --quiet bd46c42878ab344eda2b2bb0fd463d3df181f32c HEAD -- ../db
+          git -C .. diff --quiet bd46c42878ab344eda2b2bb0fd463d3df181f32c HEAD -- db
           echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
 
       - name: Verify no client/database secret material is versioned
