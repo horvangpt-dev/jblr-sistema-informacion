@@ -1,0 +1,40 @@
+name: JBLR 05 Amenaza Europe Continental 2011 Discovery
+
+on:
+  push:
+    branches:
+      - 05-motores-analiticos-botanicos
+    paths:
+      - '.github/workflows/jblr-05-amenaza-europe-continental-discovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download official-publication mirror and extract Appendix 2 layout text
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out/05/amenaza/europe-continental-2011
+          curl --fail --location --retry 3 --retry-delay 2 \
+            'https://bibliotecadigital.ipb.pt/bitstreams/0080af51-723a-4c02-9074-da3a1510aa8a/download' \
+            -o out/05/amenaza/europe-continental-2011/European_Red_List_Vascular_Plants_2011.pdf
+          command -v pdftotext
+          pdfinfo out/05/amenaza/europe-continental-2011/European_Red_List_Vascular_Plants_2011.pdf | tee out/05/amenaza/europe-continental-2011/pdfinfo.txt
+          pdftotext -f 82 -l 124 -layout \
+            out/05/amenaza/europe-continental-2011/European_Red_List_Vascular_Plants_2011.pdf \
+            out/05/amenaza/europe-continental-2011/appendix2_layout.txt
+          sha256sum out/05/amenaza/europe-continental-2011/European_Red_List_Vascular_Plants_2011.pdf | tee out/05/amenaza/europe-continental-2011/pdf_sha256.txt
+          sed -n '1,160p' out/05/amenaza/europe-continental-2011/appendix2_layout.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-amenaza-europe-continental-2011-discovery
+          path: out/05/amenaza/europe-continental-2011/
+          if-no-files-found: error
+          retention-days: 30
