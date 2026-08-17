@@ -47,18 +47,18 @@ app.post('/controlled-real-api/persistent-real-pilot-01', route(async (req,res) 
   res.status(201).json(result);
 }));
 
+app.get('/real-flow', route(async (_req,res) => {
+  res.type('html').send(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JBLR · 04.1 Flujo botánico real</title><link rel="stylesheet" href="/styles.css"></head><body><header class="topbar"><div><strong>JBLR · Flujo botánico real</strong><span class="badge">STAGING</span></div></header><main><section id="searchView" class="panel hero"><p class="eyebrow">04.1</p><h1>Campo → Jardín → Banco</h1><p>La interfaz operativa se carga a continuación.</p></section></main><script src="/real-material-flow.js" defer></script></body></html>`);
+}));
+
 app.get('/real-flow-api/capability', route(async (_req,res) => {
   await require('./staging').assertAuthorizedStaging();
   res.json({
-    mode:'REAL_BOTANICAL_MATERIAL_FLOW',
-    stagingOnly:true,
+    mode:'REAL_BOTANICAL_MATERIAL_FLOW', stagingOnly:true,
     supportedStages:realMaterialFlow.SUPPORTED_STAGES,
-    retrospectiveEntry:true,
-    newCollectionEntry:true,
-    prospectionRequired:false,
-    fieldVisitRequired:false,
-    historyStructured:true,
-    structuredPhysicalStorage:false,
+    retrospectiveEntry:true, newCollectionEntry:true,
+    prospectionRequired:false, fieldVisitRequired:false,
+    historyStructured:true, structuredPhysicalStorage:false,
     storageBlocker:'CORE_PHYSICAL_MODEL_v1 has no canonical structured physical-storage entity; fail closed instead of overloading ResourceSet.'
   });
 }));
