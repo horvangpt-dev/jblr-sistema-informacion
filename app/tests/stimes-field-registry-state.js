@@ -3,6 +3,7 @@
 
 const assert = require('assert');
 const registry = require('../src/stimes/field-registry-v0.json');
+const externalSchemas = require('./fixtures/stimes/external-schemas-v0.json');
 
 const REQUIRED = registry.required_field_properties;
 const AUTOMATION = new Set(registry.allowed_automation_types);
@@ -24,6 +25,16 @@ assert.strictEqual(registry.status, 'BLOCK_01_READY');
 assert.strictEqual(registry.fields.length, 9, 'Block 01 must contain exactly 9 fields');
 assert.strictEqual(registry.source_policy.miteco_headers.count, 101, 'MITECO output schema must retain 101 headers');
 assert.strictEqual(registry.source_policy.repaired_master_status, 'NOT_FOUND', 'NOT_FOUND must remain explicit, never converted to absence');
+
+assert.strictEqual(externalSchemas.miteco.status, 'RECOVERED');
+assert.strictEqual(externalSchemas.miteco.field_count, 101);
+assert.strictEqual(externalSchemas.miteco.headers.length, 101);
+assert.strictEqual(new Set(externalSchemas.miteco.headers).size, 101, 'MITECO headers must be unique');
+assert.deepStrictEqual(externalSchemas.miteco.headers.slice(0, 9), EXPECTED_MITECO_BLOCK_01, 'Recovered MITECO order changed');
+assert.strictEqual(externalSchemas.missouri_index_seminum.field_count, 16);
+assert.strictEqual(externalSchemas.missouri_index_seminum.headers.length, 16);
+assert.strictEqual(externalSchemas.vista_rapida.status, 'PARTIALLY_RECOVERED');
+assert.strictEqual(externalSchemas.vista_rapida.exact_full_header_order, 'NOT_YET_PROVEN');
 
 const ids = new Set();
 const canonical = new Set();
@@ -54,5 +65,8 @@ assert.strictEqual(byMiteco.idtaxon.requiere_revision_humana, true, 'Taxonomic l
 assert.strictEqual(byMiteco.nom_cient.requiere_revision_humana, true, 'Accepted name cannot be silently asserted');
 assert.notStrictEqual(byMiteco.id_acces.mapeo_jblr.target, 'core.resource.jblr_code', 'Banco 2 accession identifier must not be collapsed into technical JBLR code');
 assert.strictEqual(byMiteco.estado.vocabulario_controlado.includes('BAJA'), true, 'MITECO BAJA state must remain representable without deletion');
+
+const visibleBlock01 = registry.fields.filter(f => f.equivalente_vista_rapida).map(f => f.equivalente_MITECO);
+assert.deepStrictEqual(visibleBlock01, externalSchemas.vista_rapida.block_01_visible_miteco_fields, 'Block 01 quick-view visibility changed');
 
 console.log('STIMES_FIELD_REGISTRY_BLOCK_01_PASS');
