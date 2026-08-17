@@ -12,8 +12,8 @@ async function main() {
       (SELECT count(*)::int FROM material.accession_material) AS accession_material,
       (SELECT count(*)::int FROM material.processing_event) AS processing_event
   `)).rows[0];
-  if (counts.collection_event !== 1 || counts.sample !== 1 || counts.sample_origin !== 1 || counts.accession !== 1 || counts.accession_material !== 1 || counts.processing_event !== 0) {
-    throw new Error(`Unexpected MVP4 cardinalities: ${JSON.stringify(counts)}`);
+  if (counts.collection_event !== 1 || counts.sample !== 2 || counts.sample_origin !== 1 || counts.accession !== 1 || counts.accession_material !== 1 || counts.processing_event !== 1) {
+    throw new Error(`Unexpected accepted post-MVP5 cardinalities: ${JSON.stringify(counts)}`);
   }
 
   const { rows } = await pool.query(`
@@ -34,6 +34,8 @@ async function main() {
       so.collection_event_id AS sample_origin_collection_event_id,
       so.individual_id,
       so.origin_role,
+      ci.individual_id AS collection_link_individual_id,
+      ci.role_code AS collection_individual_role,
       a.resource_id AS accession_id,
       a.accession_status,
       ar.validation_status AS accession_validation,
@@ -74,8 +76,9 @@ async function main() {
     JOIN material.accession_material am ON am.sample_id=s.resource_id
     JOIN material.accession a ON a.resource_id=am.accession_id
     JOIN core.resource ar ON ar.resource_id=a.resource_id
+    LEFT JOIN field.collection_individual ci ON ci.collection_event_id=ce.resource_id
   `);
-  if (rows.length !== 1) throw new Error(`Expected exactly one complete MVP4 chain, got ${rows.length}`);
+  if (rows.length !== 1) throw new Error(`Expected exactly one accepted source-material chain, got ${rows.length}`);
   const r = rows[0];
   const checks = [
     r.method_text === 'JBLR STAGING · Recolección demo MVP4 · editada',
@@ -83,7 +86,9 @@ async function main() {
     /Visita demo MVP3/.test(r.visit_purpose || ''),
     /Población demo MVP2/.test(r.population_label || ''),
     r.sample_origin_collection_event_id === r.collection_event_id,
-    r.individual_id === null,
+    r.individual_id !== null,
+    r.individual_id === r.collection_link_individual_id,
+    r.collection_individual_role === 'mother_plant',
     r.origin_role === 'source_collection',
     r.sample_kind === 'seed_demo',
     r.sample_quantity_value === null,
@@ -103,7 +108,7 @@ async function main() {
     r.accession_revisions === 1,
     r.material_identifications === 0,
   ];
-  if (checks.some(v => !v)) throw new Error(`MVP4 canonical state check failed: ${JSON.stringify(r)}`);
+  if (checks.some(v => !v)) throw new Error(`Accepted post-MVP8 material preservation check failed: ${JSON.stringify(r)}`);
 
   console.log(JSON.stringify({
     OPEN_VISIT_COLLECTIONS: 'PASS',
@@ -120,6 +125,8 @@ async function main() {
     EDIT_COLLECTION_EVENT: 'PASS',
     EDIT_SAMPLE: 'PASS',
     EDIT_ACCESSION: 'PASS',
+    PRESERVE_MVP5_PROCESSING: 'PASS',
+    PRESERVE_MVP8_INDIVIDUAL_TRACEABILITY: 'PASS',
     PERSIST_MATERIAL_FLOW_TO_NEON: 'PASS',
     collectionEventId: r.collection_event_id,
     sampleId: r.sample_id,
