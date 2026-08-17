@@ -28,7 +28,7 @@ async function openGeoreference(page) {
 test.describe.serial('MVP_PRODUCTIVO_14 versioned location georeference', () => {
   test('creates/reuses one synthetic preferred geometry and exposes traceable detail', async ({ page }) => {
     await openGeoreference(page);
-    await expect(page.getByText('Sitio sintético STAGING sin coordenadas reales', { exact: false })).toBeVisible();
+    await expect(page.locator('#georeferenceLocationBlock').getByText('Localidad literal: Sitio sintético STAGING sin coordenadas reales', { exact: true })).toBeVisible();
 
     if (await page.locator('#locationGeometryVersionList .location-geometry-version-card').count() === 0) {
       await page.getByRole('button', { name: 'CREAR GEOMETRÍA DEMO' }).click();
