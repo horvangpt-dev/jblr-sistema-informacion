@@ -1,9 +1,11 @@
 name: JBLR 05 Amenaza Europe Continental Reconcile EIDOS
 
 on:
-  workflow_run:
-    workflows: ["JBLR 05 Amenaza EIDOS Full Evidence"]
-    types: [completed]
+  push:
+    branches: [05-motores-analiticos-botanicos]
+    paths:
+      - '.github/workflows/jblr-05-amenaza-europe-continental-reconcile-eidos.yml'
+      - 'ops/05/amenaza_europe_continental_reconcile_eidos.py'
   workflow_dispatch:
 
 permissions:
@@ -12,7 +14,6 @@ permissions:
 
 jobs:
   reconcile:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -24,21 +25,16 @@ jobs:
           set -euo pipefail
           python ops/05/reconstruct_taxon_universe.py
           echo '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4  data/05/taxon_universe.csv' | sha256sum -c -
-      - name: Download cached Objective 01 EIDOS artifact
+      - name: Download pinned cached Objective 01 EIDOS artifact
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           mkdir -p input/eidos
-          if [ "${{ github.event_name }}" = "workflow_run" ]; then
-            RUN_ID='${{ github.event.workflow_run.id }}'
-          else
-            RUN_ID=$(gh run list --workflow jblr-05-amenaza-eidos-full.yml --branch 05-motores-analiticos-botanicos --status success --limit 1 --json databaseId --jq '.[0].databaseId')
-          fi
-          test -n "$RUN_ID"
-          gh run download "$RUN_ID" -n jblr-05-amenaza-eidos-full -D input/eidos
+          gh run download 32033095341 -n jblr-05-amenaza-eidos-full -D input/eidos
           test "$(($(wc -l < input/eidos/taxon_reconciliation.csv)-1))" -eq 2742
+          echo 'EIDOS_CACHE_RUN_ID=32033095341'
       - name: Reuse cached verified European source artifact and extract source records
         shell: bash
         env:
@@ -55,6 +51,7 @@ jobs:
             --universe data/05/taxon_universe.csv \
             --out input/eucont
           test "$(($(wc -l < input/eucont/source_records.csv)-1))" -eq 1826
+          echo 'EUROPE_SOURCE_CACHE_RUN_ID=32036803768'
       - name: Reconcile source names through EIDOS accepted identities
         run: |
           python ops/05/amenaza_europe_continental_reconcile_eidos.py \
