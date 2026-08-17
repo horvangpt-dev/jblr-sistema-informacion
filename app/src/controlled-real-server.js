@@ -1,6 +1,7 @@
 const { app, startServer } = require('./external-taxon-reference-server');
 const { pool } = require('./db');
 const controlled = require('./controlled-real');
+const persistentPilot = require('./controlled-real-persistent-pilot');
 
 function enabled() {
   return process.env[controlled.ACTIVATION_ENV] === 'true';
@@ -38,6 +39,11 @@ app.post('/controlled-real-api/disposable-integration-probe/reverse', route(asyn
   const comparison = controlled.compareSnapshots(before,after);
   if (!comparison.exact) throw new Error(`Post-reversal baseline mismatch: ${JSON.stringify(comparison)}`);
   res.json({ reversed, after, comparison });
+}));
+
+app.post('/controlled-real-api/persistent-real-pilot-01', route(async (req,res) => {
+  const result = await persistentPilot.createPersistentRealPilot(req.body || {});
+  res.status(201).json(result);
 }));
 
 if (require.main === module) {
