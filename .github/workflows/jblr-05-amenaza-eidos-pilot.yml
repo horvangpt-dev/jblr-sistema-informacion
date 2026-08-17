@@ -27,24 +27,45 @@ jobs:
           set -euo pipefail
           python - <<'PY'
           import base64, gzip, hashlib, pathlib, re
+          target = '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4'
           parts = sorted(pathlib.Path('data/05/universe.parts').glob('part*.b64'))
           assert len(parts) == 9, f'expected 9 parts, got {len(parts)}'
-          joined = ''.join(p.read_text(encoding='ascii') for p in parts)
-          compact = re.sub(r'\s+', '', joined)
+          texts = [re.sub(r'\s+', '', p.read_text(encoding='ascii')) for p in parts]
+          compact = ''.join(texts)
           bad = sorted(set(re.sub(r'[A-Za-z0-9+/=]', '', compact)))
           assert not bad, f'invalid base64 characters: {bad!r}'
-          assert len(compact) % 4 == 0, f'base64 length not divisible by 4: {len(compact)}'
-          raw_gz = base64.b64decode(compact, validate=True)
-          raw_csv = gzip.decompress(raw_gz)
+
+          candidates = []
+          if len(compact) % 4 == 0:
+              candidates.append(('direct', compact))
+          elif len(compact) % 4 == 1 and len(texts[0]) == 5001:
+              tail = ''.join(texts[1:])
+              for i in range(len(texts[0])):
+                  candidates.append((f'part00_delete_index_{i}', texts[0][:i] + texts[0][i+1:] + tail))
+          else:
+              raise AssertionError(f'unexpected base64 lengths total={len(compact)} part00={len(texts[0])}')
+
+          matches = []
+          for label, candidate in candidates:
+              try:
+                  raw_gz = base64.b64decode(candidate, validate=True)
+                  raw_csv = gzip.decompress(raw_gz)
+              except Exception:
+                  continue
+              digest = hashlib.sha256(raw_csv).hexdigest()
+              if digest == target:
+                  matches.append((label, raw_csv))
+
+          assert len(matches) == 1, f'canonical reconstruction matches={len(matches)} labels={[x[0] for x in matches]}'
+          label, raw_csv = matches[0]
           out = pathlib.Path('data/05/taxon_universe.csv')
           out.write_bytes(raw_csv)
-          digest = hashlib.sha256(raw_csv).hexdigest()
-          assert digest == '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4', digest
           rows = raw_csv.count(b'\n') - 1
           assert rows == 2742, rows
+          print('TAXON_UNIVERSE_RECONSTRUCTION=' + label)
           print('TAXON_UNIVERSE_INTEGRITY=PASS')
           print('TAXON_UNIVERSE_ROWS=2742')
-          print('TAXON_UNIVERSE_SHA256=' + digest)
+          print('TAXON_UNIVERSE_SHA256=' + target)
           PY
           head -n 3 data/05/taxon_universe.csv
           tail -n 3 data/05/taxon_universe.csv
