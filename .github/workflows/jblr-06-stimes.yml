@@ -1,0 +1,33 @@
+name: JBLR 06 STIMES
+
+on:
+  push:
+    branches:
+      - 06-stimes-banco-semillas
+    paths:
+      - 'app/src/stimes/**'
+      - 'app/tests/stimes-*.js'
+      - '.github/workflows/jblr-06-stimes.yml'
+  pull_request:
+    paths:
+      - 'app/src/stimes/**'
+      - 'app/tests/stimes-*.js'
+      - '.github/workflows/jblr-06-stimes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  field-registry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate STIMES field registry
+        run: node app/tests/stimes-field-registry-state.js
