@@ -25,12 +25,27 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat data/05/universe.parts/part*.b64 > /tmp/taxon_universe.csv.gz.b64
-          base64 -d /tmp/taxon_universe.csv.gz.b64 | gunzip > data/05/taxon_universe.csv
-          echo '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4  data/05/taxon_universe.csv' | sha256sum -c -
-          test "$(($(wc -l < data/05/taxon_universe.csv) - 1))" -eq 2742
-          echo 'TAXON_UNIVERSE_INTEGRITY=PASS'
-          echo 'TAXON_UNIVERSE_ROWS=2742'
+          python - <<'PY'
+          import base64, gzip, hashlib, pathlib, re
+          parts = sorted(pathlib.Path('data/05/universe.parts').glob('part*.b64'))
+          assert len(parts) == 9, f'expected 9 parts, got {len(parts)}'
+          joined = ''.join(p.read_text(encoding='ascii') for p in parts)
+          compact = re.sub(r'\s+', '', joined)
+          bad = sorted(set(re.sub(r'[A-Za-z0-9+/=]', '', compact)))
+          assert not bad, f'invalid base64 characters: {bad!r}'
+          assert len(compact) % 4 == 0, f'base64 length not divisible by 4: {len(compact)}'
+          raw_gz = base64.b64decode(compact, validate=True)
+          raw_csv = gzip.decompress(raw_gz)
+          out = pathlib.Path('data/05/taxon_universe.csv')
+          out.write_bytes(raw_csv)
+          digest = hashlib.sha256(raw_csv).hexdigest()
+          assert digest == '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4', digest
+          rows = raw_csv.count(b'\n') - 1
+          assert rows == 2742, rows
+          print('TAXON_UNIVERSE_INTEGRITY=PASS')
+          print('TAXON_UNIVERSE_ROWS=2742')
+          print('TAXON_UNIVERSE_SHA256=' + digest)
+          PY
           head -n 3 data/05/taxon_universe.csv
           tail -n 3 data/05/taxon_universe.csv
 
