@@ -51,7 +51,7 @@ async function one(sql,params=[]){ const {rows}=await pool.query(sql,params); re
     assert(JSON.stringify(afterTaxon)===JSON.stringify(beforeTaxon),'TaxonConcept was modified by MVP15');
 
     const geo=await one(`SELECT lgv.resource_id,r.created_at,lgv.version_no,ST_AsText(lgv.geom) AS wkt,lgv.uncertainty_m,lgv.is_preferred FROM field.location_geometry_version lgv JOIN core.resource r ON r.resource_id=lgv.resource_id WHERE lgv.resource_id=$1`,[GEO_ID]);
-    assert(geo && String(geo.created_at)===GEO_CREATED_AT && Number(geo.version_no)===1 && geo.wkt==='POINT(0 0)' && geo.uncertainty_m===null && geo.is_preferred===true,'MVP14 georeference changed');
+    assert(geo && new Date(geo.created_at).toISOString()===GEO_CREATED_AT && Number(geo.version_no)===1 && geo.wkt==='POINT(0 0)' && geo.uncertainty_m===null && geo.is_preferred===true,'MVP14 georeference changed');
 
     const ve=await one(`SELECT target_resource_id,from_validation_status,to_validation_status,occurred_at FROM governance.validation_event WHERE resource_id=$1`,[VALIDATION_EVENT_ID]);
     assert(ve && ve.from_validation_status==='unreviewed' && ve.to_validation_status==='pending_review','MVP13 review state changed');
