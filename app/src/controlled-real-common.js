@@ -71,25 +71,35 @@ function normalizeProbeInput(input = {}) {
   };
 }
 
-async function nextProbeJblrCode(client,typeCode,manifest) {
+async function resourceIdentityPolicy(client,typeCode) {
+  const row=(await client.query('SELECT requires_jblr_code,code_prefix FROM core.resource_type WHERE resource_type_code=$1',[typeCode])).rows[0];
+  if (!row) throw new Error(`Unknown resource type ${typeCode}`);
+  if (row.requires_jblr_code && !row.code_prefix) throw new Error(`Physical identity inconsistency: ${typeCode} requires JBLR code but has no code prefix`);
+  return {requiresJblrCode:row.requires_jblr_code===true,codePrefix:row.code_prefix||null};
+}
+
+async function nextProbeJblrCode(client,typeCode,codePrefix,manifest) {
+  if (!codePrefix) throw new Error(`Missing JBLR code prefix for required resource type ${typeCode}`);
   if (!manifest.codeSeed) {
     const seed = parseInt(crypto.createHash('sha256').update(manifest.token).digest('hex').slice(0,8),16);
     manifest.codeSeed = 90000000 + (seed % 8000000); manifest.codeCursor = 0; manifest.jblrCodes = [];
   }
-  const prefixRow=(await client.query('SELECT code_prefix FROM core.resource_type WHERE resource_type_code=$1',[typeCode])).rows[0];
-  if (!prefixRow || !prefixRow.code_prefix) throw new Error(`Missing JBLR code prefix for ${typeCode}`);
   for (let tries=0; tries<10000; tries+=1) {
     const n=manifest.codeSeed + manifest.codeCursor++; if (n>98999999) manifest.codeCursor=0;
-    const code=`JBLR-${prefixRow.code_prefix}-${String(n).padStart(8,'0')}`;
+    const code=`JBLR-${codePrefix}-${String(n).padStart(8,'0')}`;
     if (!(await client.query('SELECT 1 FROM core.jblr_code_registry WHERE jblr_code=$1',[code])).rows[0]) { manifest.jblrCodes.push(code); return code; }
   }
   throw new Error('Unable to allocate reversible probe JBLR code');
 }
 
 async function newResource(client,typeCode,manifest,key) {
-  const jblrCode=await nextProbeJblrCode(client,typeCode,manifest);
-  const row=(await client.query(`INSERT INTO core.resource(resource_id,resource_type_code,jblr_code,validation_status) VALUES(uuidv7(),$1,$2,'unreviewed') RETURNING resource_id`,[typeCode,jblrCode])).rows[0];
-  manifest.coreResources.push(row.resource_id); manifest.entities[key]=row.resource_id; return row.resource_id;
+  const policy=await resourceIdentityPolicy(client,typeCode);
+  const jblrCode=policy.requiresJblrCode?await nextProbeJblrCode(client,typeCode,policy.codePrefix,manifest):null;
+  const row=(await client.query(`INSERT INTO core.resource(resource_id,resource_type_code,jblr_code,validation_status) VALUES(uuidv7(),$1,$2,'unreviewed') RETURNING resource_id,jblr_code`,[typeCode,jblrCode])).rows[0];
+  manifest.coreResources.push(row.resource_id); manifest.entities[key]=row.resource_id;
+  if (!manifest.resourceIdentity) manifest.resourceIdentity={};
+  manifest.resourceIdentity[key]={resourceId:row.resource_id,resourceTypeCode:typeCode,requiresJblrCode:policy.requiresJblrCode,codePrefix:policy.codePrefix,jblrCode:row.jblr_code};
+  return row.resource_id;
 }
 
 function hashPayload(value) { return crypto.createHash('sha256').update(JSON.stringify(value,Object.keys(value).sort()),'utf8').digest('hex'); }
