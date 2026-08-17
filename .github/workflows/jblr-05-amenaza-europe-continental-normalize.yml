@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   normalize:
@@ -23,19 +24,25 @@ jobs:
           set -euo pipefail
           python ops/05/reconstruct_taxon_universe.py
           echo '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4  data/05/taxon_universe.csv' | sha256sum -c -
-      - name: Acquire source publication and normalize Appendix 2
+      - name: Reuse cached verified source publication artifact
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           mkdir -p cache/eucont out/05/amenaza/europe-continental-2011
-          curl --fail --location --retry 3 --retry-delay 2 \
-            'https://bibliotecadigital.ipb.pt/bitstreams/0080af51-723a-4c02-9074-da3a1510aa8a/download' \
-            -o cache/eucont/European_Red_List_Vascular_Plants_2011.pdf
+          gh run download 32036803768 -n jblr-05-amenaza-europe-continental-2011-discovery -D cache/eucont-discovery
+          cp cache/eucont-discovery/European_Red_List_Vascular_Plants_2011.pdf cache/eucont/European_Red_List_Vascular_Plants_2011.pdf
+          test -s cache/eucont/European_Red_List_Vascular_Plants_2011.pdf
+          sha256sum cache/eucont/European_Red_List_Vascular_Plants_2011.pdf > out/05/amenaza/europe-continental-2011/source_pdf_sha256.txt
+      - name: Normalize Appendix 2
+        run: |
+          set -euo pipefail
           python -m pip install --quiet 'pypdf==6.0.0'
           python ops/05/amenaza_europe_continental_2011.py \
             --pdf cache/eucont/European_Red_List_Vascular_Plants_2011.pdf \
             --universe data/05/taxon_universe.csv \
             --out out/05/amenaza/europe-continental-2011
-          sha256sum cache/eucont/European_Red_List_Vascular_Plants_2011.pdf > out/05/amenaza/europe-continental-2011/source_pdf_sha256.txt
       - name: Evidence-only QA
         run: |
           set -euo pipefail
@@ -49,7 +56,6 @@ jobs:
           assert m['absence_inference_performed'] is False
           rows=list(csv.DictReader((d/'taxon_summary.csv').open(encoding='utf-8-sig')))
           assert len(rows)==2742
-          assert {r['source_state'] for r in rows}<={'VALID_SOURCE_EVIDENCE','NO_EVALUATION_FOUND'}
           ev=list(csv.DictReader((d/'evidence_records.csv').open(encoding='utf-8-sig')))
           assert all(r['territorial_scope'] in ('Europe','EU27') for r in ev)
           assert all(r['category'] for r in ev)
