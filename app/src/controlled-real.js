@@ -19,8 +19,14 @@ async function createDisposableProbe(input={}) {
     await createFieldMaterial(client,p,manifest); await createEvidenceAnalysis(client,p,manifest);
     const preCommitChecks=await verifyProbe(client,manifest); if(!allChecksPass(preCommitChecks)) throw new Error(`Probe pre-commit verification failed: ${JSON.stringify(preCommitChecks)}`);
     await client.query('COMMIT'); committed=true;
-    const checks=await verifyProbe(manifest); if(!allChecksPass(checks)) throw new Error(`Probe post-commit verification failed: ${JSON.stringify(checks)}`);
-    return {manifest,checks,preCommitChecks,postCommitVerified:true};
+    try {
+      const checks=await verifyProbe(manifest); if(!allChecksPass(checks)) throw new Error(`Probe post-commit verification failed: ${JSON.stringify(checks)}`);
+      return {manifest,checks,preCommitChecks,postCommitVerified:true};
+    } catch(postCommitErr) {
+      try { await reverseDisposableProbe(manifest); }
+      catch(reversalErr) { throw new Error(`${postCommitErr.message}; emergency reversal failed: ${reversalErr.message}`); }
+      throw new Error(`${postCommitErr.message}; committed probe was reversed after failed post-commit verification`);
+    }
   }catch(err){if(!committed){try{await client.query('ROLLBACK');}catch(_rollbackErr){}}throw err;}finally{client.release();}
 }
 
