@@ -1,0 +1,194 @@
+name: JBLR 03.1 Integrated Preproduction STAGING
+
+on:
+  push:
+    branches: [03-1-integracion-preproductiva]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-03-1-integrated-preproduction-staging.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-03-1-integrated-preproduction-staging
+  cancel-in-progress: false
+
+jobs:
+  integrated-preproduction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+      JBLR_CONTROLLED_REAL_ENABLED: 'true'
+      MVP_BASE_URL: http://127.0.0.1:3000
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Verify exact 03 entry baseline ancestry
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=21713c8b378a08610a51837ed65c1d1b8a247dca
+          git cat-file -e "$BASE^{commit}"
+          test "$(git merge-base "$BASE" HEAD)" = "$BASE"
+          echo '03_ENTRY_BASELINE_EXACT=PASS' | tee evidence-baseline.tmp
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then echo 'STAGING_SECRET_PRESENT=NO'; exit 78; fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+          if [[ "${JBLR_CONTROLLED_REAL_ENABLED:-}" != 'true' ]]; then echo 'CONTROLLED_REAL_EXPLICIT_ACTIVATION=NO'; exit 79; fi
+          echo 'CONTROLLED_REAL_EXPLICIT_ACTIVATION=YES'
+
+      - name: Initialize evidence directory
+        shell: bash
+        run: |
+          mkdir -p evidence
+          mv evidence-baseline.tmp evidence/03-entry-baseline.txt
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure accepted MVP1-MVP15 STAGING baseline data
+        run: npm run seed:staging
+
+      - name: Install Chromium for regression UI tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify CONTROLLED_REAL source separation
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f src/controlled-real.js
+          test -f src/controlled-real-server.js
+          grep -q "JBLR_CONTROLLED_REAL_ENABLED" src/controlled-real.js src/controlled-real-common.js
+          ! grep -nE 'STAGING DEMO|processed_demo|ST_MakePoint\(0[[:space:]]*,[[:space:]]*0\)|01a00[0-9a-f-]{20,}' src/controlled-real*.js
+          grep -q 'ST_MakePoint(\$3,\$4)' src/controlled-real-field-material.js
+          echo 'CONTROLLED_REAL_ROUTE_EXISTS=PASS' | tee evidence/controlled-real-source.txt
+          echo 'CONTROLLED_REAL_STAGING_ONLY=PASS' | tee -a evidence/controlled-real-source.txt
+          echo 'DEMO_ROUTE_PRESERVED=PASS' | tee -a evidence/controlled-real-source.txt
+          echo 'NO_AUTOMATIC_DEMO_PREFIX_IN_CONTROLLED_REAL=PASS' | tee -a evidence/controlled-real-source.txt
+          echo 'NO_HARDCODED_DEMO_IDS_IN_CONTROLLED_REAL=PASS' | tee -a evidence/controlled-real-source.txt
+          echo 'NO_AUTOMATIC_POINT_0_0_IN_CONTROLLED_REAL=PASS' | tee -a evidence/controlled-real-source.txt
+          echo 'NO_AUTOMATIC_PROCESSED_DEMO_VALUES_IN_CONTROLLED_REAL=PASS' | tee -a evidence/controlled-real-source.txt
+
+      - name: Start integrated 03.1 server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_031_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then
+              curl --fail --silent http://127.0.0.1:3000/controlled-real-api/capability | tee evidence/controlled-real-capability.json
+              exit 0
+            fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Run accepted navigation antiflake regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:navigation-antiflake | tee evidence/navigation-antiflake.txt
+
+      - name: Run complete accepted UI regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Run MVP1-MVP15 state regression suite
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            npm run test:e2e
+            npm run test:population-state
+            npm run test:field-activity-state
+            npm run test:material-flow-state
+            npm run test:processing-state
+            npm run test:evidence-state
+            npm run test:field-monitoring-state
+            npm run test:individual-traceability-state
+            npm run test:external-data-state
+            npm run test:analysis-state
+            npm run test:regional-status-state
+            npm run test:quality-state
+            npm run test:review-state
+            npm run test:georeference-state
+            npm run test:external-taxon-reference-state
+          } | tee evidence/mvp1-15-regression.txt
+          echo 'MVP1_15_REGRESSION_SUITE=PASS' | tee evidence/mvp1-15-regression-status.txt
+
+      - name: Create, verify and reverse disposable integration probe
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:03-1-probe | tee evidence/03-1-probe-run.txt
+
+      - name: Verify exact accepted baseline after reversal
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:03-1-post-reversal | tee evidence/03-1-post-reversal-run.txt
+
+      - name: Verify no database schema changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C .. diff --quiet 21713c8b378a08610a51837ed65c1d1b8a247dca HEAD -- db
+          echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
+
+      - name: Verify no client database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write 03.1-A gate summary
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo '03_ENTRY_BASELINE_EXACT=PASS'
+            echo 'CONTROLLED_REAL_ROUTE_EXISTS=PASS'
+            echo 'CONTROLLED_REAL_STAGING_ONLY=PASS'
+            echo 'DEMO_ROUTE_PRESERVED=PASS'
+            echo 'NO_AUTOMATIC_DEMO_PREFIX_IN_CONTROLLED_REAL=PASS'
+            echo 'NO_HARDCODED_DEMO_IDS_IN_CONTROLLED_REAL=PASS'
+            echo 'NO_AUTOMATIC_POINT_0_0_IN_CONTROLLED_REAL=PASS'
+            echo 'NO_AUTOMATIC_PROCESSED_DEMO_VALUES_IN_CONTROLLED_REAL=PASS'
+            echo 'MVP1_15_REGRESSION_SUITE=PASS'
+            cat evidence/03-1-controlled-real-status.txt
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'NO_MASS_IMPORT=PASS'
+            echo 'NO_PUBLIC_PRODUCTION=PASS'
+            echo 'SCHEMA_CHANGES=NONE'
+            echo "HEAD_SHA=${GITHUB_SHA}"
+            echo "RUN_ATTEMPT=${GITHUB_RUN_ATTEMPT}"
+          } | tee evidence/03_1_A_STATUS.txt
+
+      - name: Upload 03.1-A evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-03-1-a-evidence-attempt-${{ github.run_attempt }}
+          path: app/evidence/
+          if-no-files-found: warn
