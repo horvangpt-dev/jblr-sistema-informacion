@@ -45,7 +45,8 @@ jobs:
           else:
               raise AssertionError(f'unexpected base64 lengths total={len(compact)} part00={len(texts[0])}')
 
-          matches = []
+          canonical_outputs = {}
+          labels = []
           for label, candidate in candidates:
               try:
                   raw_gz = base64.b64decode(candidate, validate=True)
@@ -54,15 +55,16 @@ jobs:
                   continue
               digest = hashlib.sha256(raw_csv).hexdigest()
               if digest == target:
-                  matches.append((label, raw_csv))
+                  canonical_outputs[raw_csv] = digest
+                  labels.append(label)
 
-          assert len(matches) == 1, f'canonical reconstruction matches={len(matches)} labels={[x[0] for x in matches]}'
-          label, raw_csv = matches[0]
+          assert len(canonical_outputs) == 1, f'unique canonical outputs={len(canonical_outputs)} labels={labels}'
+          raw_csv = next(iter(canonical_outputs))
           out = pathlib.Path('data/05/taxon_universe.csv')
           out.write_bytes(raw_csv)
           rows = raw_csv.count(b'\n') - 1
           assert rows == 2742, rows
-          print('TAXON_UNIVERSE_RECONSTRUCTION=' + label)
+          print('TAXON_UNIVERSE_RECONSTRUCTION_LABELS=' + '|'.join(labels))
           print('TAXON_UNIVERSE_INTEGRITY=PASS')
           print('TAXON_UNIVERSE_ROWS=2742')
           print('TAXON_UNIVERSE_SHA256=' + target)
