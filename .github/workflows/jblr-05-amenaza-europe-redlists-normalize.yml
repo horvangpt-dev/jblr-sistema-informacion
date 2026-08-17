@@ -1,0 +1,59 @@
+name: JBLR 05 Amenaza Europe Redlists Normalize
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 05-motores-analiticos-botanicos
+    paths:
+      - '.github/workflows/jblr-05-amenaza-europe-redlists-normalize.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct canonical universe
+        run: python ops/05/reconstruct_taxon_universe.py
+      - name: Download verified Figshare v1.0 source
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p source
+          curl --fail --location --retry 4 --retry-delay 2 https://ndownloader.figshare.com/files/49115563 -o source/europe_redlists_v1.xlsx
+          echo '7292f006b8f32f4e79b8c1985cd91069  source/europe_redlists_v1.xlsx' | md5sum -c -
+      - name: Normalize exact taxonomic matches only
+        run: |
+          python ops/05/amenaza_europe_redlists.py \
+            --universe data/05/taxon_universe.csv \
+            --source source/europe_redlists_v1.xlsx \
+            --out out/05/amenaza/europe-national-redlists
+      - name: QA evidence-only invariants
+        run: |
+          python - <<'PY'
+          import csv,json
+          from pathlib import Path
+          d=Path('out/05/amenaza/europe-national-redlists')
+          m=json.loads((d/'run_manifest.json').read_text(encoding='utf-8'))
+          s=list(csv.DictReader((d/'taxon_summary.csv').open(encoding='utf-8-sig')))
+          e=list(csv.DictReader((d/'evidence_records.csv').open(encoding='utf-8-sig')))
+          assert m['taxon_universe']==2742
+          assert len(s)==2742
+          assert m['scoring_performed'] is False
+          assert m['absence_inference_performed'] is False
+          assert all(r['evidence_state'] in {'VALID_SOURCE_EVIDENCE','TAXON_UNRESOLVED'} for r in e)
+          assert all(r['red_list_category'] for r in e)
+          print('EUROPE_NATIONAL_REDLISTS_QA=PASS')
+          print(json.dumps(m,ensure_ascii=False,sort_keys=True))
+          PY
+      - name: Upload normalized evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-amenaza-europe-national-redlists
+          path: out/05/amenaza/europe-national-redlists/
+          if-no-files-found: error
+          retention-days: 30
