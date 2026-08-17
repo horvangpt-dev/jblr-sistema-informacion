@@ -7,7 +7,7 @@ on:
     paths:
       - '.github/workflows/jblr-05-amenaza-eidos-pilot.yml'
       - 'ops/05/amenaza_eidos.py'
-      - 'data/05/taxon_universe.csv.gz.b64'
+      - 'data/05/universe.parts/**'
   workflow_dispatch:
 
 permissions:
@@ -25,17 +25,20 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          base64 -d data/05/taxon_universe.csv.gz.b64 | gunzip > data/05/taxon_universe.csv
+          cat data/05/universe.parts/part*.b64 > /tmp/taxon_universe.csv.gz.b64
+          base64 -d /tmp/taxon_universe.csv.gz.b64 | gunzip > data/05/taxon_universe.csv
           echo '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4  data/05/taxon_universe.csv' | sha256sum -c -
           test "$(($(wc -l < data/05/taxon_universe.csv) - 1))" -eq 2742
+          echo 'TAXON_UNIVERSE_INTEGRITY=PASS'
+          echo 'TAXON_UNIVERSE_ROWS=2742'
           head -n 3 data/05/taxon_universe.csv
           tail -n 3 data/05/taxon_universe.csv
 
       - name: Syntax check collector
         run: python -m py_compile ops/05/amenaza_eidos.py
 
-      - name: Pilot common taxa
-        run: python ops/05/amenaza_eidos.py --universe data/05/taxon_universe.csv --out out/05/amenaza/pilot-common --start 1 --limit 12 --pause 0.10
+      - name: Pilot first window
+        run: python ops/05/amenaza_eidos.py --universe data/05/taxon_universe.csv --out out/05/amenaza/pilot-first --start 1 --limit 12 --pause 0.10
 
       - name: Pilot Androsace window
         run: python ops/05/amenaza_eidos.py --universe data/05/taxon_universe.csv --out out/05/amenaza/pilot-androsace --start 130 --limit 12 --pause 0.10
@@ -47,13 +50,14 @@ jobs:
           python - <<'PY'
           import csv, json
           from pathlib import Path
-          for d in [Path('out/05/amenaza/pilot-common'), Path('out/05/amenaza/pilot-androsace')]:
+          allowed = {'VALID_SOURCE_EVIDENCE','NO_EVALUATION_FOUND_IN_EIDOS','TAXON_UNRESOLVED','SOURCE_ERROR'}
+          for d in [Path('out/05/amenaza/pilot-first'), Path('out/05/amenaza/pilot-androsace')]:
               m = json.loads((d/'run_manifest.json').read_text(encoding='utf-8'))
               assert m['scoring_performed'] is False
               assert m['absence_inference_performed'] is False
               rows = list(csv.DictReader((d/'taxon_summary.csv').open(encoding='utf-8-sig')))
               assert len(rows) == 12
-              assert all(r['evidence_state'] in {'VALID_SOURCE_EVIDENCE','NO_EVALUATION_FOUND_IN_EIDOS','TAXON_UNRESOLVED','SOURCE_ERROR'} for r in rows)
+              assert all(r['evidence_state'] in allowed for r in rows)
           print('EVIDENCE_ONLY_INVARIANTS=PASS')
           PY
 
