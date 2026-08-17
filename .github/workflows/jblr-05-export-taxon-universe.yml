@@ -1,0 +1,30 @@
+name: JBLR 05 Export Canonical Taxon Universe
+
+on:
+  push:
+    branches:
+      - 05-motores-analiticos-botanicos
+    paths:
+      - '.github/workflows/jblr-05-export-taxon-universe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct and verify
+        run: |
+          set -euo pipefail
+          python ops/05/reconstruct_taxon_universe.py
+          test "$(($(wc -l < data/05/taxon_universe.csv) - 1))" -eq 2742
+          echo '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4  data/05/taxon_universe.csv' | sha256sum -c -
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-canonical-taxon-universe
+          path: data/05/taxon_universe.csv
+          if-no-files-found: error
+          retention-days: 30
