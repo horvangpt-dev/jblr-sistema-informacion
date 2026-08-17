@@ -1,0 +1,39 @@
+name: JBLR 05 Amenaza Europe Redlists Download
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 05-motores-analiticos-botanicos
+    paths:
+      - '.github/workflows/jblr-05-amenaza-europe-redlists-download.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download authoritative Figshare source files
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out/05/amenaza/europe-redlists-source
+          curl --fail --location --retry 4 --retry-delay 2 \
+            https://ndownloader.figshare.com/files/49115563 \
+            -o 'out/05/amenaza/europe-redlists-source/Database_of_European_vascular_plants_red_lists_v1.0.xlsx'
+          curl --fail --location --retry 4 --retry-delay 2 \
+            https://ndownloader.figshare.com/files/49115590 \
+            -o 'out/05/amenaza/europe-redlists-source/ReadMe_red_lists_dataset.txt'
+          echo '7292f006b8f32f4e79b8c1985cd91069  out/05/amenaza/europe-redlists-source/Database_of_European_vascular_plants_red_lists_v1.0.xlsx' | md5sum -c -
+          ls -lh out/05/amenaza/europe-redlists-source/
+      - name: Upload unchanged source snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-amenaza-europe-redlists-source
+          path: out/05/amenaza/europe-redlists-source/
+          if-no-files-found: error
+          retention-days: 30
