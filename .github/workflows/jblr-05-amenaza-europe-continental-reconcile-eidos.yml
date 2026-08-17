@@ -36,15 +36,19 @@ jobs:
           else
             RUN_ID=$(gh run list --workflow jblr-05-amenaza-eidos-full.yml --branch 05-motores-analiticos-botanicos --status success --limit 1 --json databaseId --jq '.[0].databaseId')
           fi
+          test -n "$RUN_ID"
           gh run download "$RUN_ID" -n jblr-05-amenaza-eidos-full -D input/eidos
           test "$(($(wc -l < input/eidos/taxon_reconciliation.csv)-1))" -eq 2742
-      - name: Acquire European source publication and extract source records
+      - name: Reuse cached verified European source artifact and extract source records
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          mkdir -p cache/eucont input/eucont
-          curl --fail --location --retry 3 --retry-delay 2 \
-            'https://bibliotecadigital.ipb.pt/bitstreams/0080af51-723a-4c02-9074-da3a1510aa8a/download' \
-            -o cache/eucont/European_Red_List_Vascular_Plants_2011.pdf
+          mkdir -p cache/eucont-discovery cache/eucont input/eucont
+          gh run download 32036803768 -n jblr-05-amenaza-europe-continental-2011-discovery -D cache/eucont-discovery
+          cp cache/eucont-discovery/European_Red_List_Vascular_Plants_2011.pdf cache/eucont/European_Red_List_Vascular_Plants_2011.pdf
+          test -s cache/eucont/European_Red_List_Vascular_Plants_2011.pdf
           python -m pip install --quiet 'pypdf==6.0.0'
           python ops/05/amenaza_europe_continental_2011.py \
             --pdf cache/eucont/European_Red_List_Vascular_Plants_2011.pdf \
