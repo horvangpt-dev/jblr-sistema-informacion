@@ -58,7 +58,10 @@ async function jsonFetch(url, options = {}) {
   });
   fs.writeFileSync(path.join(evidenceDir,'03-1-probe-manifest.json'),JSON.stringify(created.manifest,null,2));
   fs.writeFileSync(path.join(evidenceDir,'03-1-baseline-before.json'),JSON.stringify(created.baseline,null,2));
+  fs.writeFileSync(path.join(evidenceDir,'03-1-probe-precommit-checks.json'),JSON.stringify(created.preCommitChecks,null,2));
   fs.writeFileSync(path.join(evidenceDir,'03-1-probe-checks.json'),JSON.stringify(created.checks,null,2));
+
+  if (created.postCommitVerified !== true) throw new Error('POST_COMMIT_PROBE_PRESENT=FAIL');
 
   const requiredChecks = [
     'TAXON_TO_POPULATION_TO_LOCATION','LOCATION_TO_GEOMETRY_VERSION','PROSPECTION_TO_FIELD_VISIT',
@@ -67,11 +70,17 @@ async function jsonFetch(url, options = {}) {
     'OUTPUT_SAMPLE_LINKED_AS_PROCESS_OUTPUT','CREATE_ACCESSION_FROM_OUTPUT_SAMPLE',
     'ACCESSION_MATERIAL_POINTS_TO_OUTPUT_SAMPLE','ACCESSION_NOT_FORCED_TO_SOURCE_SAMPLE',
     'BIBLIOGRAPHY_ASSERTION_EVIDENCE','EXTERNAL_RECORD_SNAPSHOT_PROVENANCE',
-    'EXTERNAL_TAXON_REFERENCE_TRACEABLE','ANALYSIS_INPUT_RUN_RESULT_TRACEABLE','NO_AUTOMATIC_TAXONOMIC_VALIDATION',
-    'REQUIRED_CODE_RESOURCE_HAS_REVERSIBLE_JBLR_CODE','NON_REQUIRED_CODE_RESOURCE_HAS_NULL_JBLR_CODE',
-    'NO_REGISTRY_ENTRY_FOR_NULL_JBLR_CODE','NO_JBLR_SEQUENCE_CONSUMPTION'
+    'EXTERNAL_TAXON_REFERENCE_TRACEABLE','ANALYSIS_INPUT_RUN_RESULT_TRACEABLE',
+    'ANALYSIS_RUN_CREATED_RUNNING','ANALYSIS_RUN_CLOSED_AT_NULL','ANALYSIS_INPUT_CREATED_BEFORE_REVERSAL',
+    'ANALYSIS_RESULT_CREATED_WHILE_RUN_MUTABLE','DISPOSABLE_ANALYSIS_RUN_REMAINS_REVERSIBLE',
+    'CLOSED_RUN_IMMUTABILITY_NOT_BYPASSED','NO_REOPEN_CLOSED_ANALYSIS_RUN','MVP10_CANONICAL_CLOSED_ANALYSIS_PRESERVED',
+    'NO_AUTOMATIC_TAXONOMIC_VALIDATION','REQUIRED_CODE_RESOURCE_HAS_REVERSIBLE_JBLR_CODE',
+    'NON_REQUIRED_CODE_RESOURCE_HAS_NULL_JBLR_CODE','NO_REGISTRY_ENTRY_FOR_NULL_JBLR_CODE','NO_JBLR_SEQUENCE_CONSUMPTION'
   ];
-  for (const name of requiredChecks) if (created.checks[name] !== true) throw new Error(`${name}=FAIL`);
+  for (const name of requiredChecks) {
+    if (created.preCommitChecks[name] !== true) throw new Error(`${name}=FAIL_PRECOMMIT`);
+    if (created.checks[name] !== true) throw new Error(`${name}=FAIL_POSTCOMMIT`);
+  }
 
   const identities=Object.values(created.manifest.resourceIdentity||{});
   if (identities.length!==created.manifest.coreResources.length) throw new Error('REVERSAL_MANIFEST_COMPLETE=FAIL: resource identity coverage mismatch');
@@ -86,6 +95,10 @@ async function jsonFetch(url, options = {}) {
   if (reversed.reversed.remaining !== 0 || reversed.comparison.exact !== true) throw new Error('REVERSIBILITY_PROVED=FAIL');
   if (reversed.comparison.changedTables.includes('core.jblr_code_registry')) throw new Error('JBLR_CODE_REGISTRY_BASELINE_CHANGED=1');
   if (reversed.comparison.sequenceChanged !== false) throw new Error('JBLR_CODE_SEQUENCE_CHANGED=1');
+  const ar=reversed.reversed.analyticalRemaining||{};
+  if (ar.input_remaining!==0||ar.result_remaining!==0||ar.run_remaining!==0||ar.activity_remaining!==0||ar.metric_remaining!==0||ar.metric_target_remaining!==0) {
+    throw new Error(`DISPOSABLE_ANALYTICAL_ROWS_REMAINING=${JSON.stringify(ar)}`);
+  }
 
   const status = [
     'CONTROLLED_REAL_ROUTE_EXISTS=PASS',
@@ -95,10 +108,16 @@ async function jsonFetch(url, options = {}) {
     'NO_AUTOMATIC_POINT_0_0_IN_CONTROLLED_REAL=PASS',
     'NO_AUTOMATIC_PROCESSED_DEMO_VALUES_IN_CONTROLLED_REAL=PASS',
     'INTEGRATED_PROBE_CREATED=PASS',
+    'PROBE_COMMITTED=PASS',
+    'POST_COMMIT_PROBE_PRESENT=PASS',
     ...requiredChecks.map((k)=>`${k}=PASS`),
     'PROCESSED_OUTPUT_TO_ACCESSION=PASS',
     'REVERSAL_MANIFEST_COMPLETE=PASS',
     'REVERSAL_TRANSACTION_EXECUTED=PASS',
+    'DISPOSABLE_ANALYSIS_INPUT_REMAINING=0',
+    'DISPOSABLE_ANALYSIS_RESULT_REMAINING=0',
+    'DISPOSABLE_ANALYSIS_RUN_REMAINING=0',
+    'DISPOSABLE_DATA_ACTIVITY_REMAINING=0',
     'PROBE_RESOURCES_REMAINING=0',
     'ACCEPTED_BASELINE_RESOURCES_CHANGED=0',
     'JBLR_CODE_REGISTRY_BASELINE_CHANGED=0',
