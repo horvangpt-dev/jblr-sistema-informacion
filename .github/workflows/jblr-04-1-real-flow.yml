@@ -1,0 +1,38 @@
+name: JBLR 04.1 Real Material Flow
+
+on:
+  push:
+    branches: [04-1-primer-flujo-botanico-real]
+    paths:
+      - 'app/src/real-material-flow.js'
+      - 'app/src/controlled-real-server.js'
+      - 'app/public/real-material-flow.js'
+      - 'app/tests/real-material-flow-state.js'
+      - 'app/package.json'
+      - '.github/workflows/jblr-04-1-real-flow.yml'
+  workflow_dispatch:
+
+jobs:
+  real-material-flow-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: app/package.json
+      - run: npm install --no-audit --no-fund
+      - name: Syntax check
+        run: |
+          node --check src/real-material-flow.js
+          node --check src/controlled-real-server.js
+          node --check public/real-material-flow.js
+      - name: Reusable flow contract
+        run: npm run test:04-1-real-flow
+      - name: Verify no schema changes
+        run: git diff --quiet 9588e1a25c4047c922193d955eb95730db427131 HEAD -- db
