@@ -2,6 +2,7 @@ const { app, startServer } = require('./external-taxon-reference-server');
 const { pool } = require('./db');
 const controlled = require('./controlled-real');
 const persistentPilot = require('./controlled-real-persistent-pilot');
+const realMaterialFlow = require('./real-material-flow');
 
 function enabled() {
   return process.env[controlled.ACTIVATION_ENV] === 'true';
@@ -14,7 +15,7 @@ function route(handler) {
       await handler(req,res);
     } catch (err) {
       const message = err && err.message ? err.message : 'Unexpected error';
-      console.error('03.1 CONTROLLED_REAL request error:', message);
+      console.error('CONTROLLED_REAL request error:', message);
       res.status(400).json({ error: message });
     }
   };
@@ -46,9 +47,39 @@ app.post('/controlled-real-api/persistent-real-pilot-01', route(async (req,res) 
   res.status(201).json(result);
 }));
 
+app.get('/real-flow-api/capability', route(async (_req,res) => {
+  await require('./staging').assertAuthorizedStaging();
+  res.json({
+    mode:'REAL_BOTANICAL_MATERIAL_FLOW',
+    stagingOnly:true,
+    supportedStages:realMaterialFlow.SUPPORTED_STAGES,
+    retrospectiveEntry:true,
+    newCollectionEntry:true,
+    prospectionRequired:false,
+    fieldVisitRequired:false,
+    historyStructured:true,
+    structuredPhysicalStorage:false,
+    storageBlocker:'CORE_PHYSICAL_MODEL_v1 has no canonical structured physical-storage entity; fail closed instead of overloading ResourceSet.'
+  });
+}));
+
+app.post('/real-flow-api/preview', route(async (req,res) => {
+  res.json(realMaterialFlow.planFlow(req.body || {}));
+}));
+
+app.post('/real-flow-api/flows', route(async (req,res) => {
+  const result = await realMaterialFlow.createFlow(req.body || {});
+  res.status(201).json(result);
+}));
+
+app.post('/real-flow-api/resources/:id/revisions', route(async (req,res) => {
+  const result = await realMaterialFlow.recordRevision(req.params.id,req.body || {});
+  res.status(201).json(result);
+}));
+
 if (require.main === module) {
   startServer().then((httpServer) => {
-    console.log(`JBLR STAGING 03.1 CONTROLLED_REAL listening on http://127.0.0.1:${httpServer.address().port}`);
+    console.log(`JBLR STAGING CONTROLLED_REAL listening on http://127.0.0.1:${httpServer.address().port}`);
   }).catch((err) => {
     console.error(err.message);
     pool.end().finally(() => process.exit(1));
