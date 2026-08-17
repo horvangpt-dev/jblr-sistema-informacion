@@ -10,7 +10,7 @@ on:
 
 concurrency:
   group: jblr-03-1-integrated-preproduction-staging
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   integrated-preproduction:
