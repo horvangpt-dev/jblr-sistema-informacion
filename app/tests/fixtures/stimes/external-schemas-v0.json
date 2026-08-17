@@ -1,0 +1,26 @@
+{
+  "fixture_id": "STIMES_EXTERNAL_SCHEMAS_v0",
+  "miteco": {
+    "status": "RECOVERED",
+    "role": "EXTERNAL_OUTPUT_SCHEMA",
+    "field_count": 101,
+    "headers": [
+      "id_acces","cod_banco","idtaxon","nom_cient","cod_origen","fecha_reco","recolec","prot_reco","estado","plant_econtr","plant_muest","gen_muest","muest_area","muest_metod","tipo_mat","subtipo_mat","acces_peso_inic","volum_inic","unid_inic","acces_peso_limp","volum_limp","acces_peso_fin","volum_fin","unid_fin","procedencia","cod_acces","orig_dup","pais","ccaa","prov","mun","localidad","cod_AFA/SEFA","utm10x10","utm1x1","x_coord","y_coord","proyec","alt","alt_obt","orientacion","pendiente","profund","regbio","rproc_fores_div","rproc_fores_agl","sub_biogeo","sec_biogeo","habit_lp","habit_descrip","mup","cod_enp","cod_eunis","cod_ugc","cod_mb","tipo_mb","aut_mb","cat_mb","cod_muest_suelo","suelo_text","suelo_ph","suelo_uso","geocode","geocode_obt","obs_recolec","fecha_recep","fech_dup","fecha_acond","fech_incor","colecc","colecc_subtip","ubi","centro","estante","cajon","caja","bote","fase_proc","luga_acond","hum_inicial","hum_alm","temp_alm","hum_mue","cond_sec","muest_pure","semi_peso_100","semi_num_calc","viab_fecha","viab_test","viab","analisis_div_gen","analisis_div_fen","biblio_analisis","dat_prop","obs_acces","gbif","pliego_herb","fich_rec","fich_acon","fich_lab","perm_recol"
+    ]
+  },
+  "missouri_index_seminum": {
+    "status": "RECOVERED",
+    "role": "SIMPLIFIED_VIEW_REFERENCE_ONLY",
+    "field_count": 16,
+    "headers": [
+      "Accession #","Taxon Name","IPEN #","Provenance","Collection Date","Collection #","Location Name","Country","State/Province","Latitude","Longitude","Altitude","Collector Names","Subject to ABS Regulations","Subject to Biosecurity Regulations","Subject to CITES Regulations"
+    ]
+  },
+  "vista_rapida": {
+    "status": "PARTIALLY_RECOVERED",
+    "exact_full_header_order": "NOT_YET_PROVEN",
+    "block_01_visibility_source": "00_Diccionario_Maestro_Campos.xlsx",
+    "block_01_visible_miteco_fields": ["id_acces","idtaxon","nom_cient","fecha_reco","recolec"],
+    "block_01_not_visible_miteco_fields": ["cod_banco","cod_origen","prot_reco","estado"]
+  }
+}
