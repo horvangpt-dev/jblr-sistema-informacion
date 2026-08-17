@@ -1,9 +1,11 @@
 name: JBLR 05 Proteccion Legal EIDOS
 
 on:
-  workflow_run:
-    workflows: ["JBLR 05 Amenaza EIDOS Full Evidence"]
-    types: [completed]
+  push:
+    branches: [05-motores-analiticos-botanicos]
+    paths:
+      - '.github/workflows/jblr-05-proteccion-eidos.yml'
+      - 'ops/05/proteccion_eidos_from_reconciliation.py'
   workflow_dispatch:
 
 permissions:
@@ -12,30 +14,25 @@ permissions:
 
 jobs:
   proteccion-eidos:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
           ref: 05-motores-analiticos-botanicos
-      - name: Download cached Objective 01 EIDOS artifact
+      - name: Download pinned cached Objective 01 EIDOS artifact
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           mkdir -p input/eidos
-          if [ "${{ github.event_name }}" = "workflow_run" ]; then
-            RUN_ID='${{ github.event.workflow_run.id }}'
-          else
-            RUN_ID=$(gh run list --workflow jblr-05-amenaza-eidos-full.yml --branch 05-motores-analiticos-botanicos --status success --limit 1 --json databaseId --jq '.[0].databaseId')
-          fi
-          test -n "$RUN_ID"
+          RUN_ID=32033095341
           gh run download "$RUN_ID" -n jblr-05-amenaza-eidos-full -D input/eidos
           test -s input/eidos/taxon_reconciliation.csv
           test -s input/eidos/taxon_summary.csv
           test "$(($(wc -l < input/eidos/taxon_reconciliation.csv)-1))" -eq 2742
+          echo 'EIDOS_CACHE_RUN_ID=32033095341'
       - name: Syntax check
         run: python -m py_compile ops/05/proteccion_eidos_from_reconciliation.py
       - name: Acquire legal-protection evidence from cached accepted IDs
