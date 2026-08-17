@@ -1,0 +1,82 @@
+name: JBLR 05 Amenaza Europe Continental Reconcile EIDOS
+
+on:
+  workflow_run:
+    workflows: ["JBLR 05 Amenaza EIDOS Full Evidence"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  reconcile:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 05-motores-analiticos-botanicos
+      - name: Reconstruct canonical universe
+        run: |
+          set -euo pipefail
+          python ops/05/reconstruct_taxon_universe.py
+          echo '3a0f9badf84a6798d01f0b5f3c01d72875d28f852db0b2ec49592bccfb2f31e4  data/05/taxon_universe.csv' | sha256sum -c -
+      - name: Download cached Objective 01 EIDOS artifact
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p input/eidos
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            RUN_ID='${{ github.event.workflow_run.id }}'
+          else
+            RUN_ID=$(gh run list --workflow jblr-05-amenaza-eidos-full.yml --branch 05-motores-analiticos-botanicos --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          fi
+          gh run download "$RUN_ID" -n jblr-05-amenaza-eidos-full -D input/eidos
+          test "$(($(wc -l < input/eidos/taxon_reconciliation.csv)-1))" -eq 2742
+      - name: Acquire European source publication and extract source records
+        run: |
+          set -euo pipefail
+          mkdir -p cache/eucont input/eucont
+          curl --fail --location --retry 3 --retry-delay 2 \
+            'https://bibliotecadigital.ipb.pt/bitstreams/0080af51-723a-4c02-9074-da3a1510aa8a/download' \
+            -o cache/eucont/European_Red_List_Vascular_Plants_2011.pdf
+          python -m pip install --quiet 'pypdf==6.0.0'
+          python ops/05/amenaza_europe_continental_2011.py \
+            --pdf cache/eucont/European_Red_List_Vascular_Plants_2011.pdf \
+            --universe data/05/taxon_universe.csv \
+            --out input/eucont
+          test "$(($(wc -l < input/eucont/source_records.csv)-1))" -eq 1826
+      - name: Reconcile source names through EIDOS accepted identities
+        run: |
+          python ops/05/amenaza_europe_continental_reconcile_eidos.py \
+            --source-records input/eucont/source_records.csv \
+            --canonical-reconciliation input/eidos/taxon_reconciliation.csv \
+            --universe data/05/taxon_universe.csv \
+            --out out/05/amenaza/europe-continental-2011-reconciled \
+            --workers 4
+      - name: QA
+        run: |
+          python - <<'PY'
+          import csv,json
+          p='out/05/amenaza/europe-continental-2011-reconciled'
+          m=json.load(open(p+'/run_manifest.json',encoding='utf-8'))
+          assert m['source_records']==1826
+          assert m['scoring_performed'] is False
+          s=list(csv.DictReader(open(p+'/taxon_summary.csv',encoding='utf-8-sig')))
+          assert len(s)==2742
+          assert {r['source_state'] for r in s} <= {'VALID_SOURCE_EVIDENCE','NO_EVALUATION_FOUND','UNKNOWN'}
+          q=list(csv.DictReader(open(p+'/query_provenance.csv',encoding='utf-8-sig')))
+          assert len(q)==m['source_names_queried']
+          print(json.dumps(m,ensure_ascii=False,sort_keys=True))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-amenaza-europe-continental-2011-reconciled
+          path: out/05/amenaza/europe-continental-2011-reconciled/
+          if-no-files-found: error
+          retention-days: 30
