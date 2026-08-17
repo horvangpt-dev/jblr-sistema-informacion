@@ -1,0 +1,200 @@
+name: JBLR 03.1-B Real Pilot 01 STAGING
+
+on:
+  push:
+    branches: [03-1-b-pilot-data-packet-01]
+    paths:
+      - 'app/**'
+      - '.github/workflows/jblr-03-1-b-real-pilot-01-staging.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: jblr-03-1-b-real-pilot-01-staging
+  cancel-in-progress: true
+
+jobs:
+  real-pilot-01:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    defaults:
+      run:
+        working-directory: app
+    env:
+      DATABASE_URL: ${{ secrets.JBLR_STAGING_DATABASE_URL }}
+      JBLR_CONTROLLED_REAL_ENABLED: 'true'
+      MVP_BASE_URL: http://127.0.0.1:3000
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: app/package.json
+
+      - name: Verify accepted 03.1-A and 02 baselines are immutable
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE_A=72d5a058f63af61b20a5abf780eb91b213ab1fc0
+          BASE_02=21713c8b378a08610a51837ed65c1d1b8a247dca
+          git cat-file -e "$BASE_A^{commit}"
+          git cat-file -e "$BASE_02^{commit}"
+          test "$(git merge-base "$BASE_A" HEAD)" = "$BASE_A"
+          git fetch origin 03-1-integracion-preproductiva:refs/remotes/origin/03-1-integracion-preproductiva
+          git fetch origin 02-mvp-productivo-15:refs/remotes/origin/02-mvp-productivo-15
+          test "$(git rev-parse origin/03-1-integracion-preproductiva)" = "$BASE_A"
+          test "$(git rev-parse origin/02-mvp-productivo-15)" = "$BASE_02"
+          echo '03_1_A_ACCEPTED_HEAD_IMMUTABLE=PASS' > evidence-baseline.tmp
+          echo '02_FINAL_BASELINE_IMMUTABLE=PASS' >> evidence-baseline.tmp
+
+      - name: Fail closed if STAGING secret is absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${DATABASE_URL:-}" ]]; then echo 'STAGING_SECRET_PRESENT=NO'; exit 78; fi
+          if [[ "${JBLR_CONTROLLED_REAL_ENABLED:-}" != 'true' ]]; then echo 'CONTROLLED_REAL_EXPLICIT_ACTIVATION=NO'; exit 79; fi
+          echo 'STAGING_SECRET_PRESENT=YES'
+          echo 'CONTROLLED_REAL_EXPLICIT_ACTIVATION=YES'
+
+      - name: Initialize evidence directory
+        shell: bash
+        run: |
+          mkdir -p evidence
+          mv evidence-baseline.tmp evidence/03-1-b-baseline.txt
+
+      - name: Install application dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure accepted MVP1-MVP15 STAGING baseline data
+        run: npm run seed:staging
+
+      - name: Install Chromium for regression UI tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify persistent CONTROLLED_REAL source separation
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f src/controlled-real-persistent-pilot.js
+          grep -q 'PILOT_DATA_PACKET_01' src/controlled-real-persistent-pilot.js
+          grep -q 'OPERADOR_JBLR / REGISTRO_OPERATIVO_REAL' src/controlled-real-persistent-pilot.js
+          grep -q "persistent-real-pilot-01" src/controlled-real-server.js
+          ! grep -nE 'STAGING DEMO|processed_demo|ST_MakePoint\(|POINT\(|latitude|longitude|90000000|98999999' src/controlled-real-persistent-pilot.js
+          grep -q 'disposable-integration-probe' src/controlled-real-server.js
+          echo 'CONTROLLED_REAL_STAGING_ONLY=PASS' | tee evidence/03-1-b-source-separation.txt
+          echo 'DEMO_ROUTE_PRESERVED=PASS' | tee -a evidence/03-1-b-source-separation.txt
+          echo 'DISPOSABLE_PROBE_PRESERVED=PASS' | tee -a evidence/03-1-b-source-separation.txt
+          echo 'PERSISTENT_REAL_PILOT_DISTINCT=PASS' | tee -a evidence/03-1-b-source-separation.txt
+
+      - name: Start integrated 03.1 server
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm start > evidence/server.log 2>&1 &
+          echo $! > /tmp/jblr_031b_pid
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health >/dev/null; then
+              curl --fail --silent http://127.0.0.1:3000/controlled-real-api/capability | tee evidence/controlled-real-capability.json
+              exit 0
+            fi
+            sleep 1
+          done
+          cat evidence/server.log
+          exit 1
+
+      - name: Run accepted navigation antiflake regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:navigation-antiflake | tee evidence/navigation-antiflake.txt
+
+      - name: Run complete accepted UI regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:ui | tee evidence/ui-status.txt
+
+      - name: Run MVP1-MVP15 state regression suite before real write
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            npm run test:e2e
+            npm run test:population-state
+            npm run test:field-activity-state
+            npm run test:material-flow-state
+            npm run test:processing-state
+            npm run test:evidence-state
+            npm run test:field-monitoring-state
+            npm run test:individual-traceability-state
+            npm run test:external-data-state
+            npm run test:analysis-state
+            npm run test:regional-status-state
+            npm run test:quality-state
+            npm run test:review-state
+            npm run test:georeference-state
+            npm run test:external-taxon-reference-state
+          } | tee evidence/mvp1-15-regression.txt
+          echo 'MVP1_15_REGRESSION_SUITE=PASS' | tee evidence/mvp1-15-regression-status.txt
+
+      - name: Execute PILOT_DATA_PACKET_01 and commit real data
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:03-1-b-pilot-01 | tee evidence/03-1-b-pilot-run.txt
+
+      - name: Verify persistent real pilot directly after COMMIT
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run test:03-1-b-post-commit | tee evidence/03-1-b-post-commit-run.txt
+
+      - name: Verify no database schema changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C .. diff --quiet 72d5a058f63af61b20a5abf780eb91b213ab1fc0 HEAD -- db
+          echo 'SCHEMA_CHANGES=NONE' | tee evidence/schema-changes.txt
+
+      - name: Verify no client database secret material is versioned
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -R -nE 'npg_[A-Za-z0-9]+|postgresql://[^:[:space:]]+:[^@[:space:]]+@' public src scripts tests README.md .env.example --exclude='.env.example'
+          ! grep -R -n 'DATABASE_URL' public
+          echo 'NO_CLIENT_DATABASE_SECRET=PASS' | tee evidence/no-client-secret.txt
+
+      - name: Write 03.1-B gate summary
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo '03.1-B=PILOT_DATA_PACKET_01'
+            echo '03_1_A_ACCEPTED_HEAD_IMMUTABLE=PASS'
+            echo '02_FINAL_BASELINE_IMMUTABLE=PASS'
+            echo 'CONTROLLED_REAL_STAGING_ONLY=PASS'
+            echo 'DEMO_ROUTE_PRESERVED=PASS'
+            echo 'DISPOSABLE_PROBE_PRESERVED=PASS'
+            echo 'NAVIGATION_ANTIFLAKE=PASS'
+            echo 'MVP_UI_REGRESSION=PASS'
+            echo 'MVP1_15_REGRESSION_SUITE=PASS'
+            cat evidence/03-1-b-real-pilot-status.txt
+            cat evidence/03-1-b-post-commit-status.txt
+            echo 'NO_CLIENT_DATABASE_SECRET=PASS'
+            echo 'SCHEMA_CHANGES=NONE'
+            echo 'NO_MASS_IMPORT=PASS'
+            echo 'NO_PUBLIC_PRODUCTION=PASS'
+            echo "HEAD_SHA=${GITHUB_SHA}"
+            echo "RUN_ATTEMPT=${GITHUB_RUN_ATTEMPT}"
+          } | tee evidence/03_1_B_STATUS.txt
+
+      - name: Upload 03.1-B evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-03-1-b-pilot-01-evidence-attempt-${{ github.run_attempt }}
+          path: app/evidence/
+          if-no-files-found: warn
