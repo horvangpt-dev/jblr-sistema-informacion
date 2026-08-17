@@ -6,6 +6,7 @@ const SNAPSHOT_ID = '01a00bd3-59a5-755d-8100-8850279516d9';
 const SNAPSHOT_HASH = 'f550a5eacddde3288d726c1e0fd2d9b7c6df929cff965d89d4568bcd6a74eea7';
 const ANALYSIS_RUN_ID = '01a00ca7-8cc3-746f-8db2-6c5a07b5517d';
 const ANALYSIS_RESULT_ID = '01a00ca7-8ee3-796b-aa85-f23b9632f57c';
+const VALIDATION_EVENT_ID = '01a00d10-7d9b-7e10-859e-36f0e6b580c7';
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -52,12 +53,25 @@ async function scalar(sql, params = []) {
     const qualityFlag = await scalar('SELECT count(*)::int AS n FROM governance.quality_flag');
     const validationEvent = await scalar('SELECT count(*)::int AS n FROM governance.validation_event');
     assert(qualityFlag.n === 0, `QualityFlag is out of scope; count=${qualityFlag.n}`);
-    assert(validationEvent.n === 0, `ValidationEvent is out of scope; count=${validationEvent.n}`);
+    assert(validationEvent.n === 1, `Accepted MVP13 ValidationEvent cardinality changed; count=${validationEvent.n}`);
+    const acceptedValidationEvent = await scalar(`
+      SELECT resource_id,target_resource_id,from_validation_status,to_validation_status,reviewed_by_agent_id,data_activity_id,reason
+      FROM governance.validation_event
+      WHERE resource_id=$1
+    `,[VALIDATION_EVENT_ID]);
+    assert(acceptedValidationEvent, 'Accepted MVP13 ValidationEvent missing');
+    assert(acceptedValidationEvent.target_resource_id === quality.TARGET_RTA_ID, 'Accepted MVP13 ValidationEvent target changed');
+    assert(acceptedValidationEvent.from_validation_status === 'unreviewed' && acceptedValidationEvent.to_validation_status === 'pending_review',
+      'Accepted MVP13 ValidationEvent transition changed');
+    assert(acceptedValidationEvent.reviewed_by_agent_id === null && acceptedValidationEvent.data_activity_id === null,
+      'Accepted MVP13 ValidationEvent reviewer/activity changed');
+    assert(acceptedValidationEvent.reason === 'STAGING / DEMO / MVP13 REVIEW REQUEST · NO SCIENTIFIC VALIDATION',
+      'Accepted MVP13 ValidationEvent reason changed');
 
-    assert(target.regional_assertion_validation_status === 'unreviewed', 'Quality review must not change RTA validation_status');
-    assert(target.regional_assertion_row_version === 1, 'Quality review must not edit RTA core resource');
+    assert(target.regional_assertion_validation_status === 'pending_review', 'Accepted MVP13 RTA validation_status changed');
+    assert(target.regional_assertion_row_version === 2, 'Accepted MVP13 RTA row_version changed');
     assert(target.presence_value_status === 'unknown' && target.presence_term_key === null,
-      'Quality review must preserve unknown+NULL presence');
+      'Quality preservation must keep unknown+NULL presence');
     const secondary = [
       [target.origin_value_status,target.origin_term_key],
       [target.establishment_value_status,target.establishment_term_key],
@@ -66,15 +80,15 @@ async function scalar(sql, params = []) {
       [target.catalog_inclusion_value_status,target.catalog_inclusion_term_key]
     ];
     assert(secondary.every(([status,term]) => status === 'not_recorded' && term === null),
-      'Quality review must preserve not_recorded+NULL regional fields');
-    assert(target.source_resource_id === null, 'Quality review must preserve NULL regional source');
+      'Quality preservation must keep not_recorded+NULL regional fields');
+    assert(target.source_resource_id === null, 'Quality preservation must keep NULL regional source');
 
     const area = await scalar('SELECT name,area_kind FROM core.geographic_area WHERE resource_id=$1',[quality.TARGET_AREA_ID]);
     assert(area && area.name === 'La Rioja' && area.area_kind === 'autonomous_community', 'MVP11 GeographicArea was not preserved');
 
     const terms = (await pool.query('SELECT term_key FROM taxonomy.term ORDER BY term_key')).rows.map((row) => row.term_key);
     assert(terms.length === 2 && terms[0] === 'rank:genus' && terms[1] === 'rank:species',
-      `MVP12 must not create taxonomy terms: ${terms.join(',')}`);
+      `Quality preservation must not create taxonomy terms: ${terms.join(',')}`);
 
     const identificationCount = await scalar('SELECT count(*)::int AS n FROM taxonomy.identification');
     const taxonCount = await scalar('SELECT count(*)::int AS n FROM taxonomy.taxon_concept');
@@ -97,7 +111,7 @@ async function scalar(sql, params = []) {
       FROM evidence.assertion
     `);
     assert(genericAssertion.total === 1 && genericAssertion.unresolved === 1,
-      'MVP12 must not resolve or replace the generic Assertion');
+      'Quality preservation must not resolve or replace the generic Assertion');
 
     const cardinalities = (await pool.query(`
       SELECT
@@ -119,7 +133,7 @@ async function scalar(sql, params = []) {
 
     assert(cardinalities.quality_assessment === 1, `QualityAssessment cardinality=${cardinalities.quality_assessment}`);
     assert(cardinalities.quality_flag === 0, `QualityFlag cardinality=${cardinalities.quality_flag}`);
-    assert(cardinalities.validation_event === 0, `ValidationEvent cardinality=${cardinalities.validation_event}`);
+    assert(cardinalities.validation_event === 1, `ValidationEvent cardinality=${cardinalities.validation_event}`);
     assert(cardinalities.geographic_area === 1, `GeographicArea cardinality=${cardinalities.geographic_area}`);
     assert(cardinalities.regional_taxon_assertion === 1, `RegionalTaxonAssertion cardinality=${cardinalities.regional_taxon_assertion}`);
     assert(cardinalities.taxonomy_term === 2, `taxonomy.term cardinality=${cardinalities.taxonomy_term}`);
@@ -133,7 +147,6 @@ async function scalar(sql, params = []) {
 
     console.log(JSON.stringify({
       OPEN_REGIONAL_QUALITY:'PASS',
-      CREATE_QUALITY_ASSESSMENT:'PASS',
       OPEN_QUALITY_ASSESSMENT:'PASS',
       LINK_QUALITY_ASSESSMENT_TO_REGIONAL_ASSERTION:'PASS',
       TRACE_QUALITY_TO_TAXON:'PASS',
@@ -146,8 +159,8 @@ async function scalar(sql, params = []) {
       NO_FAKE_REVIEWER:'PASS',
       NO_FAKE_DATA_ACTIVITY:'PASS',
       NO_QUALITY_FLAG:'PASS',
-      NO_VALIDATION_EVENT:'PASS',
-      REGIONAL_ASSERTION_VALIDATION_STATUS_UNCHANGED:'PASS',
+      PRESERVE_MVP13_VALIDATION_EVENT:'PASS',
+      PRESERVE_MVP13_REVIEW_STATE:'PASS',
       REGIONAL_ASSERTION_PRESENCE_UNCHANGED:'PASS',
       UNKNOWN_NOT_ABSENCE:'PASS',
       PRESERVE_MVP11_REGIONAL_STATUS:'PASS',
@@ -155,7 +168,7 @@ async function scalar(sql, params = []) {
       PRESERVE_MVP9_SNAPSHOT:'PASS',
       NO_NEW_IDENTIFICATION:'PASS',
       NO_NEW_TAXON_CONCEPT:'PASS',
-      PERSIST_QUALITY_ASSESSMENT_TO_NEON:'PASS',
+      PRESERVE_MVP12_QUALITY_ASSESSMENT:'PASS',
       qualityAssessmentId:qa.resource_id,
       targetRegionalAssertionId:qa.target_resource_id,
       assessedAt:qa.assessed_at,
