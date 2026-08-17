@@ -1,0 +1,74 @@
+{
+  "model_name": "AMENAZA_SCORING_MODEL_v1",
+  "model_status": "WORKING_ANALYTICAL_MODEL",
+  "evidence_dependency": "AMENAZA_EVIDENCE_v1+",
+  "scale": "0-100 when evaluable; null/UNKNOWN when not evaluable",
+  "principles": [
+    "Evidence version is independent from scoring version",
+    "NO_EVALUATION_FOUND is not zero and does not imply no threat",
+    "UNKNOWN is not zero",
+    "All source assessments remain preserved outside the scoring projection",
+    "Latest assessment is selected only within comparable source/scope logical units",
+    "Differences across territories, dates or independent sources are not conflicts by themselves",
+    "Where a true same-unit conflict remains, the precautionary maximum severity is used and the conflict flag is retained"
+  ],
+  "category_severity": {
+    "EX": 100,
+    "EW": 100,
+    "RE": 100,
+    "CR": 95,
+    "EN": 80,
+    "VU": 60,
+    "NT": 35,
+    "LC": 10,
+    "DD": 45,
+    "NE": null,
+    "NA": null
+  },
+  "territorial_relevance": {
+    "LA_RIOJA": 1.0,
+    "SPAIN_NATIONAL": 0.9,
+    "SPAIN_OTHER_SUBNATIONAL": 0.55,
+    "EUROPE_CONTINENTAL_OR_EU27": 0.7,
+    "GLOBAL": 0.7,
+    "OTHER_EUROPEAN_COUNTRY": 0.3,
+    "OTHER_EUROPEAN_SUBNATIONAL": 0.2,
+    "UNKNOWN_SCOPE": 0.4
+  },
+  "temporal_relevance": {
+    "age_0_10_years": 1.0,
+    "age_11_20_years": 0.9,
+    "age_21_30_years": 0.8,
+    "age_31_40_years": 0.7,
+    "age_over_40_years": 0.6,
+    "date_unknown": 0.85
+  },
+  "logical_unit": [
+    "source",
+    "territorial_scope",
+    "authority_or_category_system",
+    "dataset_or_reference_identity"
+  ],
+  "aggregation": {
+    "description": "Compute weighted assessment scores after within-unit temporal selection. Final score = 0.8 * maximum weighted assessment + 0.2 * mean of the three highest weighted assessments from distinct logical units. With one assessment this equals that assessment score.",
+    "max_component_weight": 0.8,
+    "corroboration_component_weight": 0.2,
+    "corroboration_top_n": 3,
+    "cap": 100
+  },
+  "conflict_policy": {
+    "same_unit_same_version_incompatible_categories": "UNRESOLVED_CONFLICT; retain all records; scoring projection uses precautionary maximum evaluable severity",
+    "different_date_scope_source_or_country": "PRESERVE_MULTIPLE_ASSESSMENTS; not a conflict"
+  },
+  "missingness": {
+    "NO_EVALUATION_FOUND": null,
+    "TAXON_UNRESOLVED": null,
+    "SOURCE_ERROR": null,
+    "UNKNOWN": null,
+    "NE": null,
+    "NA": null
+  },
+  "rationale": "The module measures collection urgency attributable to documented extinction risk for a La Rioja botanical programme. Local/regional evidence is therefore most relevant, national Spanish evidence remains strong, continental/global evidence is supportive, and threat assessments from unrelated European territories are retained but down-weighted. Temporal attenuation avoids treating old assessments as equally current without discarding historically valid evidence. DD receives a precautionary intermediate value but remains explicitly distinguishable from threatened categories.",
+  "created_date": "2026-08-17",
+  "canonical_status": "NOT_CANONICAL_UNTIL_00D_ADOPTION"
+}
