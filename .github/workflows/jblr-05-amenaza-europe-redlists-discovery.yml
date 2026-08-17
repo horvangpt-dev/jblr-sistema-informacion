@@ -1,0 +1,28 @@
+name: JBLR 05 Amenaza Europe Redlists Discovery
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 05-motores-analiticos-botanicos
+    paths:
+      - '.github/workflows/jblr-05-amenaza-europe-redlists-discovery.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect public Figshare dataset
+        run: python ops/05/inspect_europe_redlists_figshare.py
+      - name: Upload discovery metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-amenaza-europe-redlists-discovery
+          path: out/05/amenaza/europe-redlists-discovery/
+          if-no-files-found: error
+          retention-days: 30
