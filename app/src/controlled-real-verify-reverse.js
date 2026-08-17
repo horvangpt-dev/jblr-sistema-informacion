@@ -2,6 +2,8 @@ const { pool } = require('./db');
 const { assertAuthorizedStaging } = require('./staging');
 const { PROBE_MARKER, assertControlledRealEnabled } = require('./controlled-real-common');
 
+const MVP10_RUN_ID='01a00ca7-8cc3-746f-8db2-6c5a07b5517d';
+
 async function verifyProbe(clientOrManifest,maybeManifest) {
   const client=maybeManifest?clientOrManifest:pool; const manifest=maybeManifest||clientOrManifest; await assertAuthorizedStaging(client);
   const e=manifest.entities,r=manifest.relations;
@@ -24,8 +26,9 @@ async function verifyProbe(clientOrManifest,maybeManifest) {
       EXISTS(SELECT 1 FROM taxonomy.external_taxon_reference etr WHERE etr.resource_id=$28 AND etr.taxon_concept_id=$3 AND etr.external_source_id=$29) AS external_reference,
       EXISTS(SELECT 1 FROM analytics.analysis_input ai WHERE ai.analysis_input_id=$30 AND ai.analysis_run_id=$31 AND ai.input_resource_id=$27) AS analysis_input,
       EXISTS(SELECT 1 FROM analytics.analysis_result ar WHERE ar.resource_id=$32 AND ar.analysis_run_id=$31 AND ar.subject_resource_id=$3) AS analysis_result,
+      EXISTS(SELECT 1 FROM analytics.analysis_run ar WHERE ar.resource_id=$31 AND ar.run_status='running' AND ar.closed_at IS NULL AND ar.notes LIKE '%'||$36||'%') AS analysis_run_mutable,
       NOT EXISTS(SELECT 1 FROM core.resource cr WHERE cr.resource_id=ANY($33::uuid[]) AND cr.validation_status<>'unreviewed') AS no_auto_validation
-  `,[e.identification,e.population,e.taxonConcept,r.populationLocation,e.location,e.locationGeometryVersion,e.fieldVisit,e.prospection,e.observation,e.census,r.collectionIndividual,e.collectionEvent,e.individual,r.sampleOrigin,e.sourceSample,r.processInput,e.processingEvent,r.processOutput,e.outputSample,r.accessionMaterial,e.accession,e.regionalTaxonAssertion,r.evidenceLink,e.assertion,e.bibliographicReference,r.provenanceLink,e.externalRecordSnapshot,e.externalTaxonReference,manifest.nonResourceRows.externalSource,r.analysisInput,e.analysisRun,e.analysisResult,manifest.coreResources,manifest.probeLongitude,manifest.probeLatitude])).rows[0];
+  `,[e.identification,e.population,e.taxonConcept,r.populationLocation,e.location,e.locationGeometryVersion,e.fieldVisit,e.prospection,e.observation,e.census,r.collectionIndividual,e.collectionEvent,e.individual,r.sampleOrigin,e.sourceSample,r.processInput,e.processingEvent,r.processOutput,e.outputSample,r.accessionMaterial,e.accession,e.regionalTaxonAssertion,r.evidenceLink,e.assertion,e.bibliographicReference,r.provenanceLink,e.externalRecordSnapshot,e.externalTaxonReference,manifest.nonResourceRows.externalSource,r.analysisInput,e.analysisRun,e.analysisResult,manifest.coreResources,manifest.probeLongitude,manifest.probeLatitude,PROBE_MARKER])).rows[0];
 
   const identity=(await client.query(`
     SELECT
@@ -55,6 +58,32 @@ async function verifyProbe(clientOrManifest,maybeManifest) {
   const sequenceAfter=(await client.query('SELECT last_value,is_called FROM core.jblr_code_sequence')).rows[0];
   const sequenceUnchanged=JSON.stringify(manifest.sequenceBeforeCreate)===JSON.stringify(sequenceAfter);
 
+  const canonical=(await client.query(`
+    SELECT
+      EXISTS(
+        SELECT 1 FROM analytics.analysis_run ar
+        WHERE ar.resource_id=$1 AND ar.run_status='closed' AND ar.closed_at IS NOT NULL
+      ) AS mvp10_closed,
+      (SELECT count(*)::int FROM analytics.analysis_input ai WHERE ai.analysis_run_id=$1) AS mvp10_inputs,
+      (SELECT count(*)::int FROM analytics.analysis_result ar WHERE ar.analysis_run_id=$1) AS mvp10_results,
+      EXISTS(
+        SELECT 1 FROM pg_trigger t
+        JOIN pg_class c ON c.oid=t.tgrelid
+        JOIN pg_namespace n ON n.oid=c.relnamespace
+        WHERE n.nspname='analytics' AND c.relname='analysis_result'
+          AND t.tgname='trg_analysis_result_closed_run_immutable' AND NOT t.tgisinternal AND t.tgenabled<>'D'
+      ) AS result_immutability_trigger_enabled,
+      EXISTS(
+        SELECT 1 FROM pg_trigger t
+        JOIN pg_class c ON c.oid=t.tgrelid
+        JOIN pg_namespace n ON n.oid=c.relnamespace
+        WHERE n.nspname='analytics' AND c.relname='analysis_run'
+          AND t.tgname='trg_analysis_run_closed_immutable' AND NOT t.tgisinternal AND t.tgenabled<>'D'
+      ) AS run_immutability_trigger_enabled
+  `,[MVP10_RUN_ID])).rows[0];
+  const mvp10Preserved=canonical.mvp10_closed&&canonical.mvp10_inputs===1&&canonical.mvp10_results===1;
+  const closedPolicyPreserved=mvp10Preserved&&canonical.result_immutability_trigger_enabled&&canonical.run_immutability_trigger_enabled;
+
   return {
     TAXON_TO_POPULATION_TO_LOCATION:q.taxon_population&&q.population_location, LOCATION_TO_GEOMETRY_VERSION:q.geometry,
     PROSPECTION_TO_FIELD_VISIT:q.prospection_visit, OBSERVATION_CENSUS_TRACEABLE:q.observation&&q.census,
@@ -64,7 +93,15 @@ async function verifyProbe(clientOrManifest,maybeManifest) {
     CREATE_ACCESSION_FROM_OUTPUT_SAMPLE:q.accession_output, ACCESSION_MATERIAL_POINTS_TO_OUTPUT_SAMPLE:q.accession_output,
     ACCESSION_NOT_FORCED_TO_SOURCE_SAMPLE:q.accession_output&&e.outputSample!==e.sourceSample,
     BIBLIOGRAPHY_ASSERTION_EVIDENCE:q.evidence, EXTERNAL_RECORD_SNAPSHOT_PROVENANCE:q.provenance,
-    EXTERNAL_TAXON_REFERENCE_TRACEABLE:q.external_reference, ANALYSIS_INPUT_RUN_RESULT_TRACEABLE:q.analysis_input&&q.analysis_result,
+    EXTERNAL_TAXON_REFERENCE_TRACEABLE:q.external_reference, ANALYSIS_INPUT_RUN_RESULT_TRACEABLE:q.analysis_input&&q.analysis_result&&q.analysis_run_mutable,
+    ANALYSIS_RUN_CREATED_RUNNING:q.analysis_run_mutable,
+    ANALYSIS_RUN_CLOSED_AT_NULL:q.analysis_run_mutable,
+    ANALYSIS_INPUT_CREATED_BEFORE_REVERSAL:q.analysis_input,
+    ANALYSIS_RESULT_CREATED_WHILE_RUN_MUTABLE:q.analysis_result&&q.analysis_run_mutable,
+    DISPOSABLE_ANALYSIS_RUN_REMAINS_REVERSIBLE:q.analysis_run_mutable,
+    CLOSED_RUN_IMMUTABILITY_NOT_BYPASSED:closedPolicyPreserved&&q.analysis_run_mutable,
+    NO_REOPEN_CLOSED_ANALYSIS_RUN:canonical.mvp10_closed,
+    MVP10_CANONICAL_CLOSED_ANALYSIS_PRESERVED:mvp10Preserved,
     NO_AUTOMATIC_TAXONOMIC_VALIDATION:q.no_auto_validation,
     REQUIRED_CODE_RESOURCE_HAS_REVERSIBLE_JBLR_CODE:identity.required_count>0&&identity.required_codes_reversible&&identity.registry_complete_for_required,
     NON_REQUIRED_CODE_RESOURCE_HAS_NULL_JBLR_CODE:identity.non_required_count>0&&identity.non_required_codes_null,
@@ -79,9 +116,24 @@ async function reverseDisposableProbe(manifest) {
   const client=await pool.connect();
   try{
     await client.query('BEGIN'); await assertAuthorizedStaging(client); const e=manifest.entities,nr=manifest.nonResourceRows,r=manifest.relations;
+    const mutable=(await client.query(`SELECT run_status,closed_at FROM analytics.analysis_run WHERE resource_id=$1`,[e.analysisRun])).rows[0];
+    if(!mutable||mutable.run_status!=='running'||mutable.closed_at!==null) throw new Error('Disposable AnalysisRun is not mutable at reversal boundary');
     await client.query('DELETE FROM analytics.analysis_input WHERE analysis_input_id=$1',[r.analysisInput]);
-    await client.query('DELETE FROM analytics.analysis_result WHERE resource_id=$1',[e.analysisResult]); await client.query('DELETE FROM analytics.analysis_run WHERE resource_id=$1',[e.analysisRun]);
-    await client.query('DELETE FROM governance.data_activity WHERE resource_id=$1',[e.dataActivity]); await client.query('DELETE FROM analytics.metric_target_resource_type WHERE metric_definition_id=$1',[nr.metricDefinition]); await client.query('DELETE FROM analytics.metric_definition WHERE metric_definition_id=$1',[nr.metricDefinition]);
+    await client.query('DELETE FROM analytics.analysis_result WHERE resource_id=$1',[e.analysisResult]);
+    await client.query('DELETE FROM analytics.analysis_run WHERE resource_id=$1',[e.analysisRun]);
+    await client.query('DELETE FROM governance.data_activity WHERE resource_id=$1',[e.dataActivity]);
+    await client.query('DELETE FROM analytics.metric_target_resource_type WHERE metric_definition_id=$1',[nr.metricDefinition]);
+    await client.query('DELETE FROM analytics.metric_definition WHERE metric_definition_id=$1',[nr.metricDefinition]);
+    const analyticalRemaining=(await client.query(`
+      SELECT
+        (SELECT count(*)::int FROM analytics.analysis_input WHERE analysis_input_id=$1) AS input_remaining,
+        (SELECT count(*)::int FROM analytics.analysis_result WHERE resource_id=$2) AS result_remaining,
+        (SELECT count(*)::int FROM analytics.analysis_run WHERE resource_id=$3) AS run_remaining,
+        (SELECT count(*)::int FROM governance.data_activity WHERE resource_id=$4) AS activity_remaining,
+        (SELECT count(*)::int FROM analytics.metric_definition WHERE metric_definition_id=$5) AS metric_remaining,
+        (SELECT count(*)::int FROM analytics.metric_target_resource_type WHERE metric_definition_id=$5) AS metric_target_remaining
+    `,[r.analysisInput,e.analysisResult,e.analysisRun,e.dataActivity,nr.metricDefinition])).rows[0];
+    if(Object.values(analyticalRemaining).some((n)=>n!==0)) throw new Error(`Disposable analytical rows remaining after reversal cleanup: ${JSON.stringify(analyticalRemaining)}`);
     await client.query('DELETE FROM taxonomy.external_taxon_reference WHERE resource_id=$1',[e.externalTaxonReference]); await client.query('DELETE FROM evidence.provenance_link WHERE provenance_link_id=$1',[r.provenanceLink]);
     await client.query('DELETE FROM evidence.external_record_snapshot WHERE resource_id=$1',[e.externalRecordSnapshot]); await client.query('DELETE FROM evidence.external_record WHERE resource_id=$1',[e.externalRecord]); await client.query('DELETE FROM evidence.external_source WHERE external_source_id=$1',[nr.externalSource]);
     await client.query('DELETE FROM evidence.evidence_link WHERE evidence_link_id=$1',[r.evidenceLink]); await client.query('DELETE FROM evidence.assertion WHERE resource_id=$1',[e.assertion]); await client.query('DELETE FROM evidence.bibliographic_reference WHERE resource_id=$1',[e.bibliographicReference]);
@@ -96,7 +148,7 @@ async function reverseDisposableProbe(manifest) {
     const before=(await client.query('SELECT count(*)::int AS n FROM core.resource WHERE resource_id=ANY($1::uuid[])',[manifest.coreResources])).rows[0].n; if(before!==manifest.coreResources.length) throw new Error('Reversal manifest/core resource mismatch before core cleanup');
     await client.query('DELETE FROM core.resource WHERE resource_id=ANY($1::uuid[])',[manifest.coreResources]); await client.query('DELETE FROM core.jblr_code_registry WHERE first_resource_id=ANY($1::uuid[])',[manifest.coreResources]);
     const remaining=(await client.query('SELECT count(*)::int AS n FROM core.resource WHERE resource_id=ANY($1::uuid[])',[manifest.coreResources])).rows[0].n; if(remaining!==0) throw new Error(`Probe resources remaining after reversal: ${remaining}`);
-    await client.query('COMMIT'); return {remaining};
+    await client.query('COMMIT'); return {remaining,analyticalRemaining};
   }catch(err){await client.query('ROLLBACK');throw err;}finally{client.release();}
 }
 
