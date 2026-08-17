@@ -1,0 +1,80 @@
+name: JBLR 05 Amenaza EIDOS Full Evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 05-motores-analiticos-botanicos
+    paths:
+      - '.github/workflows/jblr-05-amenaza-eidos-full.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  eidos-full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Reconstruct and verify canonical taxon universe
+        run: |
+          set -euo pipefail
+          python ops/05/reconstruct_taxon_universe.py
+          test "$(($(wc -l < data/05/taxon_universe.csv) - 1))" -eq 2742
+
+      - name: Syntax check evidence collector
+        run: python -m py_compile ops/05/amenaza_eidos.py ops/05/reconstruct_taxon_universe.py
+
+      - name: Acquire IEPNB EIDOS evidence for complete universe
+        env:
+          EIDOS_PAUSE: '0.12'
+        run: |
+          set -euo pipefail
+          python ops/05/amenaza_eidos.py \
+            --universe data/05/taxon_universe.csv \
+            --out out/05/amenaza/eidos-full \
+            --start 1 \
+            --limit 2742 \
+            --pause 0.12
+
+      - name: Validate evidence-only invariants and completeness
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          d = Path('out/05/amenaza/eidos-full')
+          m = json.loads((d/'run_manifest.json').read_text(encoding='utf-8'))
+          assert m['taxa_attempted'] == 2742, m['taxa_attempted']
+          assert m['scoring_performed'] is False
+          assert m['absence_inference_performed'] is False
+          summary = list(csv.DictReader((d/'taxon_summary.csv').open(encoding='utf-8-sig')))
+          evidence = list(csv.DictReader((d/'evidence_records.csv').open(encoding='utf-8-sig')))
+          recon = list(csv.DictReader((d/'taxon_reconciliation.csv').open(encoding='utf-8-sig')))
+          assert len(summary) == 2742
+          assert len(recon) == 2742
+          assert len({int(r['universe_index']) for r in summary}) == 2742
+          assert {int(r['universe_index']) for r in summary} == set(range(1, 2743))
+          allowed = {'VALID_SOURCE_EVIDENCE','NO_EVALUATION_FOUND_IN_EIDOS','TAXON_UNRESOLVED','SOURCE_ERROR'}
+          assert all(r['evidence_state'] in allowed for r in summary)
+          assert all(r['territorial_scope'] and r['category'] and r['category_system'] and r['evaluation_year'] for r in evidence)
+          assert all(r['validation_state'] == 'SOURCE_STRUCTURED_RECORD' for r in evidence)
+          print('EIDOS_FULL_EVIDENCE_QA=PASS')
+          print('TAXA=2742')
+          print('EVIDENCE_RECORDS=' + str(len(evidence)))
+          print('STATE_COUNTS=' + json.dumps(m['evidence_state_counts'], ensure_ascii=False, sort_keys=True))
+          print('RECONCILIATION_COUNTS=' + json.dumps(m['reconciliation_state_counts'], ensure_ascii=False, sort_keys=True))
+          print('API_CALLS=' + str(m['api_calls']))
+          print('RETRIES=' + str(m['retry_count']))
+          PY
+
+      - name: Upload complete EIDOS evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-amenaza-eidos-full
+          path: out/05/amenaza/eidos-full/
+          if-no-files-found: error
+          retention-days: 30
