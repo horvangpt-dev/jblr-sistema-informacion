@@ -26,6 +26,35 @@ async function verifyProbe(clientOrManifest,maybeManifest) {
       EXISTS(SELECT 1 FROM analytics.analysis_result ar WHERE ar.resource_id=$32 AND ar.analysis_run_id=$31 AND ar.subject_resource_id=$3) AS analysis_result,
       NOT EXISTS(SELECT 1 FROM core.resource cr WHERE cr.resource_id=ANY($33::uuid[]) AND cr.validation_status<>'unreviewed') AS no_auto_validation
   `,[e.identification,e.population,e.taxonConcept,r.populationLocation,e.location,e.locationGeometryVersion,e.fieldVisit,e.prospection,e.observation,e.census,r.collectionIndividual,e.collectionEvent,e.individual,r.sampleOrigin,e.sourceSample,r.processInput,e.processingEvent,r.processOutput,e.outputSample,r.accessionMaterial,e.accession,e.regionalTaxonAssertion,r.evidenceLink,e.assertion,e.bibliographicReference,r.provenanceLink,e.externalRecordSnapshot,e.externalTaxonReference,manifest.nonResourceRows.externalSource,r.analysisInput,e.analysisRun,e.analysisResult,manifest.coreResources,manifest.probeLongitude,manifest.probeLatitude])).rows[0];
+
+  const identity=(await client.query(`
+    SELECT
+      count(*) FILTER (WHERE rt.requires_jblr_code)::int AS required_count,
+      count(*) FILTER (WHERE NOT rt.requires_jblr_code)::int AS non_required_count,
+      COALESCE(bool_and(CASE WHEN rt.requires_jblr_code THEN cr.jblr_code IS NOT NULL AND cr.jblr_code=ANY($2::text[]) ELSE true END),false) AS required_codes_reversible,
+      COALESCE(bool_and(CASE WHEN NOT rt.requires_jblr_code THEN cr.jblr_code IS NULL ELSE true END),false) AS non_required_codes_null,
+      NOT EXISTS(
+        SELECT 1 FROM core.resource cr2
+        JOIN core.resource_type rt2 ON rt2.resource_type_code=cr2.resource_type_code
+        JOIN core.jblr_code_registry reg ON reg.first_resource_id=cr2.resource_id
+        WHERE cr2.resource_id=ANY($1::uuid[]) AND NOT rt2.requires_jblr_code
+      ) AS no_registry_for_non_required,
+      NOT EXISTS(
+        SELECT 1 FROM core.resource cr3
+        JOIN core.resource_type rt3 ON rt3.resource_type_code=cr3.resource_type_code
+        WHERE cr3.resource_id=ANY($1::uuid[]) AND rt3.requires_jblr_code
+          AND NOT EXISTS(
+            SELECT 1 FROM core.jblr_code_registry reg3
+            WHERE reg3.first_resource_id=cr3.resource_id AND reg3.jblr_code=cr3.jblr_code
+          )
+      ) AS registry_complete_for_required
+    FROM core.resource cr
+    JOIN core.resource_type rt ON rt.resource_type_code=cr.resource_type_code
+    WHERE cr.resource_id=ANY($1::uuid[])
+  `,[manifest.coreResources,manifest.jblrCodes||[]])).rows[0];
+  const sequenceAfter=(await client.query('SELECT last_value,is_called FROM core.jblr_code_sequence')).rows[0];
+  const sequenceUnchanged=JSON.stringify(manifest.sequenceBeforeCreate)===JSON.stringify(sequenceAfter);
+
   return {
     TAXON_TO_POPULATION_TO_LOCATION:q.taxon_population&&q.population_location, LOCATION_TO_GEOMETRY_VERSION:q.geometry,
     PROSPECTION_TO_FIELD_VISIT:q.prospection_visit, OBSERVATION_CENSUS_TRACEABLE:q.observation&&q.census,
@@ -37,6 +66,10 @@ async function verifyProbe(clientOrManifest,maybeManifest) {
     BIBLIOGRAPHY_ASSERTION_EVIDENCE:q.evidence, EXTERNAL_RECORD_SNAPSHOT_PROVENANCE:q.provenance,
     EXTERNAL_TAXON_REFERENCE_TRACEABLE:q.external_reference, ANALYSIS_INPUT_RUN_RESULT_TRACEABLE:q.analysis_input&&q.analysis_result,
     NO_AUTOMATIC_TAXONOMIC_VALIDATION:q.no_auto_validation,
+    REQUIRED_CODE_RESOURCE_HAS_REVERSIBLE_JBLR_CODE:identity.required_count>0&&identity.required_codes_reversible&&identity.registry_complete_for_required,
+    NON_REQUIRED_CODE_RESOURCE_HAS_NULL_JBLR_CODE:identity.non_required_count>0&&identity.non_required_codes_null,
+    NO_REGISTRY_ENTRY_FOR_NULL_JBLR_CODE:identity.no_registry_for_non_required,
+    NO_JBLR_SEQUENCE_CONSUMPTION:sequenceUnchanged,
   };
 }
 
