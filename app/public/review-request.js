@@ -83,11 +83,14 @@
       section.className = 'section entity-block review-section review-inline-state';
       identity.insertAdjacentElement('afterend', section);
     }
+
     const detail = state.currentRegionalAssertion;
     const raw = detail?.regional_assertion_validation_status;
     const version = detail?.regional_assertion_row_version;
-    section.innerHTML = '';
-    section.append(
+    const signature = `${raw ?? ''}|${version ?? ''}`;
+    if (section.dataset.reviewStateSignature === signature) return;
+    section.dataset.reviewStateSignature = signature;
+    section.replaceChildren(
       vt('h2', 'ESTADO DE REVISIÓN'),
       vt('strong', reviewLabel(raw), 'review-state-label'),
       vt('p', `validation_status: ${raw || 'NO REGISTRADO'} · row_version: ${version ?? 'NO REGISTRADO'}`, 'muted'),
@@ -95,7 +98,15 @@
     );
   }
 
-  new MutationObserver(renderInlineReviewState).observe($('#regionalAssertionDetail'), { childList: true, subtree: true });
+  let reviewRenderQueued = false;
+  new MutationObserver(() => {
+    if (reviewRenderQueued) return;
+    reviewRenderQueued = true;
+    queueMicrotask(() => {
+      reviewRenderQueued = false;
+      renderInlineReviewState();
+    });
+  }).observe($('#regionalAssertionDetail'), { childList: true, subtree: true });
 
   function validationEventCard(item) {
     const el = document.createElement('article');
