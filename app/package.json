@@ -1,8 +1,8 @@
 {
   "name": "jblr-03-1-integracion-preproductiva",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "private": true,
-  "description": "JBLR 03.1 integrated preproduction against authorized Neon STAGING",
+  "description": "JBLR integrated preproduction and controlled real botanical material flow against authorized Neon STAGING",
   "type": "commonjs",
   "scripts": {
     "start": "node src/controlled-real-server.js",
@@ -26,6 +26,7 @@
     "test:03-1-post-reversal": "node scripts/03-1-post-reversal-state.js",
     "test:03-1-b-pilot-01": "node scripts/03-1-b-pilot-data-packet-01.js",
     "test:03-1-b-post-commit": "node scripts/03-1-b-post-commit-state.js",
+    "test:04-1-real-flow": "node tests/real-material-flow-state.js",
     "test:navigation-antiflake": "playwright test tests/external-data-ui.spec.js tests/field-monitoring-ui.spec.js tests/navigation-race.spec.js --repeat-each=5",
     "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js tests/material-navigation-ui.spec.js tests/processing-flow-ui.spec.js tests/evidence-flow-ui.spec.js tests/field-monitoring-ui.spec.js tests/individual-traceability-ui.spec.js tests/external-data-ui.spec.js tests/navigation-race.spec.js tests/analysis-flow-ui.spec.js tests/analysis-navigation-race.spec.js tests/regional-status-ui.spec.js tests/regional-status-navigation-race.spec.js tests/quality-review-ui.spec.js tests/quality-review-navigation-race.spec.js tests/review-request-ui.spec.js tests/review-request-navigation-race.spec.js tests/location-georeference-ui.spec.js tests/location-georeference-navigation-race.spec.js tests/external-taxon-reference-ui.spec.js tests/external-taxon-reference-navigation-race.spec.js"
   },
