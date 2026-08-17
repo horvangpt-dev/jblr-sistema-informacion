@@ -1,0 +1,32 @@
+name: JBLR 05 Export Amenaza Control Data
+
+on:
+  push:
+    branches: [05-motores-analiticos-botanicos]
+    paths:
+      - '.github/workflows/jblr-05-export-amenaza-control-data.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package versioned control inputs
+        run: |
+          set -euo pipefail
+          mkdir -p export
+          cp data/05/amenaza_rioja_redbook_summary_2001.csv export/
+          cp data/05/amenaza_source_registry_v1.csv export/
+          cp models/05/AMENAZA_SCORING_MODEL_v1.json export/
+          cp models/05/AMENAZA_SCORING_MODEL_v1_1.json export/
+          sha256sum export/* | sort > export/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jblr-05-amenaza-control-data
+          path: export/
+          if-no-files-found: error
+          retention-days: 30
