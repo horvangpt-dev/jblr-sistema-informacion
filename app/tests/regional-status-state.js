@@ -6,6 +6,8 @@ const SNAPSHOT_ID = '01a00bd3-59a5-755d-8100-8850279516d9';
 const SNAPSHOT_HASH = 'f550a5eacddde3288d726c1e0fd2d9b7c6df929cff965d89d4568bcd6a74eea7';
 const ANALYSIS_RUN_ID = '01a00ca7-8cc3-746f-8db2-6c5a07b5517d';
 const ANALYSIS_RESULT_ID = '01a00ca7-8ee3-796b-aa85-f23b9632f57c';
+const VALIDATION_EVENT_ID = '01a00d10-7d9b-7e10-859e-36f0e6b580c7';
+const REVIEW_REASON = 'STAGING / DEMO / MVP13 REVIEW REQUEST · NO SCIENTIFIC VALIDATION';
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -45,9 +47,10 @@ async function scalar(sql, params = []) {
     assert(assertionRows.length === 1, `Expected one MVP11 RegionalTaxonAssertion, received ${assertionRows.length}`);
     const rta = assertionRows[0];
     assert(rta.resource_type_code === 'RTA', 'RegionalTaxonAssertion must be an RTA resource');
-    assert(rta.validation_status === 'unreviewed', 'RegionalTaxonAssertion must remain unreviewed');
-    assert(rta.presence_value_status === 'unknown', 'presence_value_status must be unknown');
-    assert(rta.presence_term_key === null, 'presence_term_key must be NULL when presence is unknown');
+    assert(rta.validation_status === 'pending_review', 'Accepted MVP13 review request must leave RegionalTaxonAssertion pending_review');
+    assert(Number(rta.row_version) === 2, `Accepted MVP13 review request must leave RegionalTaxonAssertion row_version=2, received ${rta.row_version}`);
+    assert(rta.presence_value_status === 'unknown', 'presence_value_status must remain unknown after review request');
+    assert(rta.presence_term_key === null, 'presence_term_key must remain NULL when presence is unknown');
 
     const secondaryStatuses = [
       ['origin',rta.origin_term_key,rta.origin_value_status],
@@ -58,10 +61,38 @@ async function scalar(sql, params = []) {
     ];
     for (const [label,termKey,valueStatus] of secondaryStatuses) {
       assert(termKey === null, `${label}_term_key must remain NULL`);
-      assert(valueStatus === 'not_recorded', `${label}_value_status must be not_recorded`);
+      assert(valueStatus === 'not_recorded', `${label}_value_status must remain not_recorded`);
     }
-    assert(rta.source_resource_id === null, 'source_resource_id must be NULL for unknown MVP11 status');
+    assert(rta.source_resource_id === null, 'source_resource_id must remain NULL for unknown MVP11 status');
     assert(rta.valid_from === null && rta.valid_to === null, 'MVP11 must not invent validity dates');
+
+    const validationEvents = (await pool.query(`
+      SELECT ve.resource_id,ve.target_resource_id,ve.from_validation_status,ve.to_validation_status,
+             ve.reviewed_by_agent_id,ve.data_activity_id,ve.reason,ve.occurred_at,r.resource_type_code
+      FROM governance.validation_event ve
+      JOIN core.resource r ON r.resource_id=ve.resource_id
+      WHERE ve.target_resource_id=$1
+      ORDER BY ve.occurred_at,ve.resource_id
+    `,[rta.resource_id])).rows;
+    assert(validationEvents.length === 1, `Expected exactly one accepted MVP13 ValidationEvent for RegionalTaxonAssertion, received ${validationEvents.length}`);
+    const validationEvent = validationEvents[0];
+    assert(validationEvent.resource_id === VALIDATION_EVENT_ID, `Accepted MVP13 ValidationEvent ID changed: ${validationEvent.resource_id}`);
+    assert(validationEvent.resource_type_code === 'VLE', 'Accepted MVP13 ValidationEvent must remain VLE');
+    assert(validationEvent.target_resource_id === rta.resource_id, 'Accepted MVP13 ValidationEvent target changed');
+    assert(validationEvent.from_validation_status === 'unreviewed', 'Accepted MVP13 ValidationEvent from status changed');
+    assert(validationEvent.to_validation_status === 'pending_review', 'Accepted MVP13 ValidationEvent to status changed');
+    assert(validationEvent.reviewed_by_agent_id === null, 'Accepted MVP13 review request must not invent reviewer');
+    assert(validationEvent.data_activity_id === null, 'Accepted MVP13 review request must not invent DataActivity');
+    assert(validationEvent.reason === REVIEW_REASON, 'Accepted MVP13 ValidationEvent reason changed');
+    assert(validationEvent.occurred_at !== null, 'Accepted MVP13 ValidationEvent must retain occurred_at');
+
+    const forbiddenValidation = await scalar(`
+      SELECT count(*)::int AS n
+      FROM governance.validation_event
+      WHERE target_resource_id=$1
+        AND (from_validation_status <> 'unreviewed' OR to_validation_status <> 'pending_review')
+    `,[rta.resource_id]);
+    assert(forbiddenValidation.n === 0, 'A validation transition beyond the accepted MVP13 review request exists');
 
     const terms = (await pool.query(`SELECT term_key FROM taxonomy.term ORDER BY term_key`)).rows.map((row) => row.term_key);
     assert(terms.length === 2, `MVP11 must not create regional terms; taxonomy.term count=${terms.length}`);
@@ -78,8 +109,8 @@ async function scalar(sql, params = []) {
       JOIN core.resource r ON r.resource_id=tc.resource_id
       WHERE tc.resource_id=$1
     `,[regional.TAXON_ID]);
-    assert(taxon.validation_status === 'unreviewed', 'Regional status must not validate TaxonConcept');
-    assert(taxon.row_version === 1, 'Regional status must not edit TaxonConcept');
+    assert(taxon.validation_status === 'unreviewed', 'Regional status/review request must not validate TaxonConcept');
+    assert(Number(taxon.row_version) === 1, 'Regional status/review request must not edit TaxonConcept');
 
     const identificationCount = await scalar(`SELECT count(*)::int AS n FROM taxonomy.identification`);
     const taxonCount = await scalar(`SELECT count(*)::int AS n FROM taxonomy.taxon_concept`);
@@ -108,7 +139,7 @@ async function scalar(sql, params = []) {
       FROM evidence.assertion
     `);
     assert(genericAssertion.total === 1 && genericAssertion.unresolved === 1,
-      'MVP11 must not resolve or replace the generic Assertion');
+      'MVP11/MVP13 must not resolve or replace the generic Assertion');
 
     const cardinalities = (await pool.query(`
       SELECT
@@ -119,8 +150,11 @@ async function scalar(sql, params = []) {
         (SELECT count(*)::int FROM taxonomy.taxon_concept) AS taxon_concept,
         (SELECT count(*)::int FROM evidence.external_record_snapshot) AS external_record_snapshot,
         (SELECT count(*)::int FROM analytics.analysis_run) AS analysis_run,
-        (SELECT count(*)::int FROM analytics.analysis_result) AS analysis_result
+        (SELECT count(*)::int FROM analytics.analysis_result) AS analysis_result,
+        (SELECT count(*)::int FROM governance.validation_event) AS validation_event
     `)).rows[0];
+    const expected = { geographic_area:1,regional_taxon_assertion:1,taxonomy_term:2,identification:1,taxon_concept:4,external_record_snapshot:1,analysis_run:1,analysis_result:1,validation_event:1 };
+    for (const [key,value] of Object.entries(expected)) assert(cardinalities[key] === value, `${key} cardinality changed: ${cardinalities[key]} != ${value}`);
 
     console.log(JSON.stringify({
       OPEN_TAXON_REGIONAL_STATUS:'PASS',
@@ -137,6 +171,11 @@ async function scalar(sql, params = []) {
       NOT_RECORDED_NOT_ABSENCE:'PASS',
       NO_FAKE_REGIONAL_TERMS:'PASS',
       NO_TAXONOMIC_VALIDATION_FROM_REGIONAL_STATUS:'PASS',
+      PRESERVE_MVP13_REVIEW_STATE:'PASS',
+      PRESERVE_MVP13_VALIDATION_EVENT:'PASS',
+      PENDING_REVIEW_NOT_VALIDATED:'PASS',
+      NO_FAKE_REVIEWER:'PASS',
+      NO_FAKE_DATA_ACTIVITY:'PASS',
       NO_NEW_IDENTIFICATION:'PASS',
       NO_NEW_TAXON_CONCEPT:'PASS',
       PRESERVE_MVP9_SNAPSHOT:'PASS',
@@ -146,6 +185,9 @@ async function scalar(sql, params = []) {
       geographicAreaCode:area.jblr_code,
       regionalAssertionId:rta.resource_id,
       regionalAssertionCode:rta.jblr_code,
+      regionalAssertionValidationStatus:rta.validation_status,
+      regionalAssertionRowVersion:rta.row_version,
+      validationEventId:validationEvent.resource_id,
       taxonConceptId:regional.TAXON_ID,
       presenceValueStatus:rta.presence_value_status,
       presenceTermKey:rta.presence_term_key,
