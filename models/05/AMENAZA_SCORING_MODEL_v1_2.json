@@ -1,0 +1,24 @@
+{
+  "model_name": "AMENAZA_SCORING_MODEL_v1_2",
+  "supersedes_working_model": "AMENAZA_SCORING_MODEL_v1_1",
+  "model_status": "WORKING_ANALYTICAL_MODEL",
+  "canonical_status": "NOT_CANONICAL_UNTIL_00D_ADOPTION",
+  "evidence_dependency": "AMENAZA_EVIDENCE_v2",
+  "scale": "0-100 when evaluable; null/UNKNOWN when not evaluable",
+  "category_systems": {
+    "IUCN": {"EX":100,"EW":100,"RE":100,"REW":100,"CR":95,"EN":80,"VU":60,"NT":35,"LC":10,"DD":45,"NE":null,"NA":null},
+    "HABITATS_DIRECTIVE_ARTICLE_17": {"FV":10,"U1":45,"U2":75,"XX":null}
+  },
+  "category_normalization": {
+    "description": "Use the leading source/standardized code before explanatory text. IUCN/regional-red-list codes and Article 17 codes remain separate systems.",
+    "REW": "Regional extinction/extinction in the wild in the source jurisdiction; maximum source-territory severity, still multiplied by territorial relevance."
+  },
+  "territorial_relevance": {"LA_RIOJA":1.0,"SPAIN_NATIONAL":0.9,"SPAIN_BIOGEOGRAPHIC_REGION":0.65,"SPAIN_OTHER_SUBNATIONAL":0.55,"EUROPE_CONTINENTAL_OR_EU27":0.7,"GLOBAL":0.7,"OTHER_EUROPEAN_COUNTRY":0.3,"OTHER_EUROPEAN_SUBNATIONAL":0.2,"UNKNOWN_SCOPE":0.4},
+  "temporal_relevance": {"age_0_10_years":1.0,"age_11_20_years":0.9,"age_21_30_years":0.8,"age_31_40_years":0.7,"age_over_40_years":0.6,"date_unknown":0.85},
+  "logical_unit": ["source","territorial_scope","authority_or_category_system","dataset_or_reference_identity"],
+  "aggregation": {"max_component_weight":0.8,"corroboration_component_weight":0.2,"corroboration_top_n":3,"cap":100,"description":"After latest-within-logical-unit selection, score = 0.8*highest weighted assessment + 0.2*mean(up to three highest distinct-unit weighted assessments)."},
+  "conflict_policy": {"same_unit_same_version_incompatible_categories":"UNRESOLVED_CONFLICT; preserve all; scoring projection uses precautionary maximum evaluable severity","different_date_scope_source_or_country":"PRESERVE_MULTIPLE_ASSESSMENTS; not a conflict"},
+  "missingness": {"NO_EVALUATION_FOUND":null,"TAXON_UNRESOLVED":null,"SOURCE_ERROR":null,"UNKNOWN":null,"IUCN_NE":null,"IUCN_NA":null,"ARTICLE17_XX":null},
+  "rationale": {"territory":"Regional and Spanish evidence has highest relevance for a La Rioja collection programme; continental/global is supportive; unrelated European jurisdictions are lower weight.","time":"Historical evidence is attenuated rather than discarded.","DD":"Data Deficient is not low risk and receives a precautionary intermediate value.","REW":"Regional extinction is maximum severity within that jurisdiction but low territorial relevance prevents an unrelated-country regional extinction from dominating La Rioja urgency.","article_17":"Article 17 conservation status is transformed separately from IUCN extinction-risk categories."},
+  "created_date":"2026-08-17"
+}
