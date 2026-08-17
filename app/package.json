@@ -1,11 +1,11 @@
 {
-  "name": "jblr-mvp-productivo-14",
-  "version": "0.14.0",
+  "name": "jblr-mvp-productivo-15",
+  "version": "0.15.0",
   "private": true,
   "description": "JBLR botanical productive MVP against authorized Neon STAGING",
   "type": "commonjs",
   "scripts": {
-    "start": "node src/location-georeference-server.js",
+    "start": "node src/external-taxon-reference-server.js",
     "seed:staging": "node scripts/seed-staging.js",
     "test:e2e": "node tests/e2e.js",
     "test:population-state": "node tests/population-state.js",
@@ -21,8 +21,9 @@
     "test:quality-state": "node tests/quality-review-state.js",
     "test:review-state": "node tests/review-request-state.js",
     "test:georeference-state": "node tests/location-georeference-state.js",
+    "test:external-taxon-reference-state": "node tests/external-taxon-reference-state.js",
     "test:navigation-antiflake": "playwright test tests/external-data-ui.spec.js tests/field-monitoring-ui.spec.js tests/navigation-race.spec.js --repeat-each=5",
-    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js tests/material-navigation-ui.spec.js tests/processing-flow-ui.spec.js tests/evidence-flow-ui.spec.js tests/field-monitoring-ui.spec.js tests/individual-traceability-ui.spec.js tests/external-data-ui.spec.js tests/navigation-race.spec.js tests/analysis-flow-ui.spec.js tests/analysis-navigation-race.spec.js tests/regional-status-ui.spec.js tests/regional-status-navigation-race.spec.js tests/quality-review-ui.spec.js tests/quality-review-navigation-race.spec.js tests/review-request-ui.spec.js tests/review-request-navigation-race.spec.js tests/location-georeference-ui.spec.js tests/location-georeference-navigation-race.spec.js"
+    "test:ui": "playwright test tests/ui.spec.js tests/population-ui.spec.js tests/field-activity-ui.spec.js tests/material-flow-ui.spec.js tests/material-navigation-ui.spec.js tests/processing-flow-ui.spec.js tests/evidence-flow-ui.spec.js tests/field-monitoring-ui.spec.js tests/individual-traceability-ui.spec.js tests/external-data-ui.spec.js tests/navigation-race.spec.js tests/analysis-flow-ui.spec.js tests/analysis-navigation-race.spec.js tests/regional-status-ui.spec.js tests/regional-status-navigation-race.spec.js tests/quality-review-ui.spec.js tests/quality-review-navigation-race.spec.js tests/review-request-ui.spec.js tests/review-request-navigation-race.spec.js tests/location-georeference-ui.spec.js tests/location-georeference-navigation-race.spec.js tests/external-taxon-reference-ui.spec.js tests/external-taxon-reference-navigation-race.spec.js"
   },
   "engines": {
     "node": ">=22"
