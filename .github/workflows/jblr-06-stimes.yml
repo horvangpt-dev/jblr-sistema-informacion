@@ -33,3 +33,5 @@ jobs:
         run: node app/tests/stimes-field-registry-state.js
       - name: Validate STIMES AMENAZA item
         run: node app/tests/stimes-amenaza-state.js
+      - name: Validate STIMES PROTECCION cases A-H
+        run: node app/tests/stimes-proteccion-state.js
