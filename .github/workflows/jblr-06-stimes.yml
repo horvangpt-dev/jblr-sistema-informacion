@@ -35,3 +35,5 @@ jobs:
         run: node app/tests/stimes-amenaza-state.js
       - name: Validate STIMES PROTECCION cases A-H
         run: node app/tests/stimes-proteccion-state.js
+      - name: Validate STIMES REPRESENTACION EX SITU core and QA
+        run: node app/tests/stimes-rep-ex-situ-state.js
