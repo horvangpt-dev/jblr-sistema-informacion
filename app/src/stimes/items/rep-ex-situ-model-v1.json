@@ -1,0 +1,36 @@
+{
+  "model_id": "REP_EX_SITU_MODEL_v1",
+  "version": "1.0.0",
+  "status": "OPERATIONAL_METHOD_ACTIVE_SCALE_SNAPSHOT_PENDING_REAL_UNIVERSE_COMPLETION",
+  "scope": "Wild-flora seeds currently conserved in eligible seed/germplasm banks physically located in Spain.",
+  "orientation": {
+    "REPRESENTACION_EX_SITU_100": "0=minimal relative ex-situ representation; 100=very high relative representation under the active frozen STIMES distribution",
+    "DEFICIT_EX_SITU_100": "100 - REPRESENTACION_EX_SITU_100; 0=minimal contribution to collection urgency, 100=maximal contribution"
+  },
+  "raw_variables": {
+    "A": "n_accesiones_independientes válidas, actuales y confirmadas",
+    "P": "n_poblaciones_representadas válidas derivadas de unidades operativas población-localización auditables"
+  },
+  "distribution_metrics": ["median", "P75", "P90", "P95", "P99", "max", "outliers_iqr"],
+  "percentile_method": {
+    "id": "EMPIRICAL_LINEAR_N_MINUS_1_v1",
+    "definition": "Sort ascending; h=(n-1)*p; linearly interpolate between floor(h) and ceil(h).",
+    "reason": "Deterministic continuous empirical percentile implementation suitable for a frozen version; changing it requires a new model version."
+  },
+  "robust_ceiling": "P99",
+  "score_accessions": "S_A = min(100, 100*A/P99_A)",
+  "score_populations": "S_P = min(100, 100*P/P99_P)",
+  "final_score": "REPRESENTACION_EX_SITU_100 = 0.70*S_P + 0.30*S_A",
+  "weights": {
+    "populations": 0.7,
+    "accessions": 0.3,
+    "methodological_status": "STIMES_v1_DECISION_NOT_UNIVERSAL_SCIENTIFIC_STANDARD"
+  },
+  "deficit": "DEFICIT_EX_SITU_100 = 100 - REPRESENTACION_EX_SITU_100",
+  "zero_denominator_rule": "A real annual model snapshot cannot be frozen with P99_A<=0 or P99_P<=0. If the empirical universe genuinely contains zero for one dimension, model calibration is PENDIENTE_DE_DEFINICION rather than dividing by zero.",
+  "individual_refresh_rule": "Taxon-specific refreshes always reuse the frozen P99_A/P99_P of the active dated model snapshot.",
+  "annual_refresh_rule": "A complete annual universe refresh recalculates the distribution and emits a new dated snapshot when adopted; historical snapshots and scores remain immutable.",
+  "meaning_of_100": "Very high representation relative to the frozen STIMES universe and model distribution; never biological completeness or complete genetic representation.",
+  "active_dated_snapshot": "PENDIENTE_DE_DEFINICION",
+  "reason_active_snapshot_pending": "The national bank active universe and taxon-by-bank coverage are not yet completely verified; real P99_A/P99_P must not be fabricated from partial evidence."
+}
