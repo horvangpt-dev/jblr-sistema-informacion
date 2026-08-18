@@ -1,0 +1,253 @@
+{
+  "item_id": "STIMES.ITEM.PROTECCION",
+  "FIELD_ID": "STIMES.ITEM.PROTECCION",
+  "field_identity_rule": "Analytical outputs use the existing STIMES.ITEM namespace as their canonical field identity. No second master-field identifier is created, because STIMES_ITEM_REGISTRY_v0 explicitly separates analytical items from observed/master FIELD_ID values.",
+  "item_version": "1.0.0",
+  "status": "OPERATIONAL_WITH_EXPLICIT_PENDING_DEFINITIONS",
+  "group": "LOCALIZACION_Y_SELECCION_TAXONES",
+  "subject_type": "TAXON",
+  "entity_owner": "TAXON",
+  "definition": "Proteccion juridica vigente, valida y efectivamente aplicable al taxon en La Rioja, preservando por separado evidencia normativa original, normalizacion, seleccion de la proteccion mas restrictiva, score analitico y confiabilidad.",
+  "provider": {
+    "module": "05_MOTORES_ANALITICOS_BOTANICOS",
+    "role": "VERSIONED_ANALYTICAL_EVIDENCE_PROVIDER",
+    "evidence_version": "PROTECCION_LEGAL_EVIDENCE_v2",
+    "existing_scoring_version": "PROTECCION_LEGAL_SCORING_MODEL_v1",
+    "existing_scoring_status": "WORKING_ANALYTICAL_MODEL",
+    "existing_scale": "0-100 when positive applicable legal protection is evidenced; null/UNKNOWN otherwise",
+    "existing_aggregation": "MAX current applicable evaluable legal record with jurisdiction weights",
+    "rule": "Existing 05 evidence and score are preserved. STIMES adds a versioned effective-protection selection because the current item requirement treats territorial applicability as an eligibility gate rather than a score penalty."
+  },
+  "stimes_selection": {
+    "method_version": "PROTECCION_STIMES_SELECTION_v1",
+    "equivalence_table": "PROTECCION_LEGAL_CATEGORY_EQUIVALENCE_v1",
+    "pipeline": [
+      "TAXON_IDENTITY_SUFFICIENTLY_RESOLVED",
+      "AUTHORIZED_SOURCE",
+      "PRIMARY_OR_OFFICIAL_LEGAL_SOURCE_TRACED",
+      "LEGAL_NORM_IDENTIFIED",
+      "CURRENTNESS_VERIFIED",
+      "LEGAL_VALIDITY_VERIFIED",
+      "LA_RIOJA_APPLICABILITY_VERIFIED",
+      "CATEGORY_EQUIVALENCE_VERSION_RESOLVED",
+      "SELECT_HIGHEST_SCORE_100_AS_MOST_RESTRICTIVE_EFFECTIVE_PROTECTION"
+    ],
+    "territorial_rule": "Any autonomous-community rule outside La Rioja is EXTERNAL_AUTONOMOUS_REFERENCE and is excluded even if upstream data mislabeled it as national.",
+    "currentness_rule": "Repealed, superseded, modified-away or source-marked-not-current evidence cannot produce the current score; it remains immutable historical evidence.",
+    "tie_rule": "If several current valid applicable records have the same highest score_100, preserve all as co-effective evidence and choose a deterministic short display reference without deleting alternatives.",
+    "manual_score": "PROHIBITED"
+  },
+  "layers": [
+    "ORIGINAL_LEGAL_EVIDENCE",
+    "NORMALIZED_LEGAL_EVIDENCE",
+    "CURRENTNESS_AND_VALIDITY_RESOLUTION",
+    "LA_RIOJA_APPLICABILITY_RESOLUTION",
+    "EFFECTIVE_PROTECTION_SELECTION",
+    "SCORE_NATIVE_05",
+    "SCORE_100_STIMES",
+    "RELIABILITY"
+  ],
+  "semantic_states": {
+    "PROTECTED": "A current valid applicable record is selected",
+    "SIN_PROTECCION": "A complete valid search across the configured authorized source set found no current valid applicable protection for a sufficiently resolved taxon",
+    "NO_COMPROBADO": "The complete legal check required by the item has not been completed",
+    "SOURCE_NOT_ACQUIRED": "One or more required sources could not be acquired",
+    "TAXON_UNRESOLVED": "Taxonomic identity is insufficiently resolved for a legal assertion",
+    "UNKNOWN": "Current protection cannot be determined from the acquired evidence",
+    "CONFLICT": "Currentness, applicability, taxonomy or legal relationship remains materially contradictory after deterministic rules"
+  },
+  "missingness": {
+    "canonical_score_for_unchecked": null,
+    "downstream_operational_fallback": 0,
+    "fallback_status": "PROVISIONAL",
+    "rule": "Provisional zero is permitted only as a downstream computational contribution; it never changes the semantic protection state and never becomes evidence of no protection."
+  },
+  "source_priority": [
+    {
+      "rank": 1,
+      "source_class": "OFFICIAL_PRIMARY_NORMATIVE_TEXT",
+      "examples": ["BOR/BOE official publication", "EUR-Lex official legal act"],
+      "role": "LEGAL_ASSERTION_AUTHORITY"
+    },
+    {
+      "rank": 2,
+      "source_class": "OFFICIAL_CONSOLIDATED_INSTITUTIONAL_SOURCE",
+      "role": "CURRENTNESS_AND_DISCOVERY_SUPPORT",
+      "caution": "Consolidated informational texts do not replace the legally authoritative official publication where legal certainty is required."
+    },
+    {
+      "rank": 3,
+      "source_class": "EIDOS_IEPNB",
+      "role": "DISCOVERY_STRUCTURED_EVIDENCE_AND_CROSSCHECK"
+    },
+    {
+      "rank": 4,
+      "source_class": "OTHER_EXPLICITLY_AUTHORIZED_SOURCE",
+      "role": "SUPPORT_ONLY_UNLESS_FORMALLY_PROMOTED"
+    }
+  ],
+  "verified_current_legal_framework": [
+    {
+      "key": "LA_RIOJA_LAW_2_2023_AS_AMENDED_2_2025",
+      "territory": "LA_RIOJA",
+      "official_id": "BOE-A-2023-4327",
+      "current_framework": "Ley 2/2023, de 31 de enero, de biodiversidad y patrimonio natural de La Rioja, modificada por Ley 2/2025, de 23 de mayo",
+      "verified_structures": ["Registro Riojano de Especies Silvestres en Regimen de Proteccion Especial", "Catalogo Riojano de Especies Amenazadas"],
+      "verified_current_catalogue_categories": ["En peligro de extincion", "Vulnerable"],
+      "historical_relation": "Decreto 59/1998 is repealed as a norm but prior records remain historical/provenance; transitional/current annex effects must be resolved from the current law and implementing acts."
+    },
+    {
+      "key": "SPAIN_LAW_42_2007",
+      "territory": "SPAIN",
+      "official_id": "BOE-A-2007-21490",
+      "verified_structures": ["Listado de Especies Silvestres en Regimen de Proteccion Especial", "Catalogo Espanol de Especies Amenazadas"],
+      "verified_current_catalogue_categories": ["En peligro de extincion", "Vulnerable"]
+    },
+    {
+      "key": "EU_HABITATS_92_43_EEC",
+      "territory": "EU",
+      "official_id": "CELEX:31992L0043",
+      "verified_effect": "Article 13 requires a system of strict protection for plant species in Annex IV(b); taxon-level annex membership and Spanish implementation must be verified before scoring."
+    },
+    {
+      "key": "EU_REGULATION_338_97",
+      "territory": "EU",
+      "official_id": "CELEX:31997R0338",
+      "verified_effect": "Direct EU wildlife-trade controls use Annexes A-D; current annex membership/version must be verified before scoring."
+    }
+  ],
+  "legal_evidence_minimum": [
+    "taxon_id",
+    "queried_name",
+    "literal_name_in_norm",
+    "taxonomic_resolution",
+    "norm_title",
+    "official_identifier",
+    "norm_rank",
+    "administration",
+    "territorial_scope",
+    "applicability_la_rioja",
+    "legal_validity",
+    "currentness",
+    "publication_date",
+    "effective_date_if_known",
+    "repeal_or_modification_date_if_known",
+    "article",
+    "annex_or_list",
+    "original_category",
+    "primary_source_reference",
+    "acquisition_method",
+    "consulted_at",
+    "evidence_state",
+    "equivalence_key",
+    "equivalence_version",
+    "score_native_05_if_available",
+    "score_100",
+    "reliability",
+    "history_link"
+  ],
+  "category_equivalence": {
+    "table": "app/src/stimes/items/proteccion-category-equivalence-v1.json",
+    "rule": "Literal category is immutable. Normalized category and numeric score are derived fields tied to the table version.",
+    "change_policy": "New table version + full recalculation; never rewrite original evidence."
+  },
+  "reliability": {
+    "requested_formula": "sum(weights of checked components) / sum(total component weights) * 100",
+    "required_components": [
+      "QUERY_EXECUTED",
+      "TAXON_RESOLVED",
+      "SOURCE_AUTHORIZED",
+      "NORM_IDENTIFIED",
+      "CURRENTNESS_VERIFIED",
+      "LA_RIOJA_APPLICABILITY_VERIFIED",
+      "PRIMARY_LEGAL_SOURCE_TRACEABLE"
+    ],
+    "component_weight_model": "PENDIENTE_DE_DEFINICION",
+    "thresholds_version": "PENDIENTE_DE_DEFINICION",
+    "display_categories": ["MUY ALTA", "ALTA", "MEDIA", "BAJA", "MUY BAJA"],
+    "rule": "No numeric confidence or display category is invented until weights and thresholds are formally versioned. Checked/total component counts are still stored so incomplete evidence is objectively distinguishable."
+  },
+  "update_policy": {
+    "annual": {"cadence":"ANNUAL","scope":"ALL_TAXA","runtime_scheduler":"PENDIENTE_DE_DEFINICION"},
+    "on_taxon_query": {
+      "action": "REQUEST_FULL_LOCALIZACION_Y_SELECCION_REFRESH_FOR_TAXON",
+      "proteccion_action": "REFRESH_PROTECCION_FROM_AUTHORIZED_LEGAL_SOURCES_AND_PROVIDER_05",
+      "rule": "A taxon request refreshes every automatically refreshable LOCALIZACION_Y_SELECCION item, not only PROTECCION."
+    },
+    "legal_refresh_steps": [
+      "RECHECK_PRIMARY_SOURCES",
+      "CHECK_NEW_LEGISLATION",
+      "CHECK_MODIFICATIONS_AND_REPEALS",
+      "CHECK_ANNEX_OR_LIST_CHANGES",
+      "CHECK_TAXONOMIC_CHANGES",
+      "APPEND_NEW_IMMUTABLE_REVISION",
+      "RESELECT_EFFECTIVE_PROTECTION",
+      "RECALCULATE_SCORE_100",
+      "RECALCULATE_RELIABILITY_WHEN_MODEL_DEFINED",
+      "EMIT_DEPENDENCY_RECALCULATION_IF_CHANGED"
+    ]
+  },
+  "dependencies": {
+    "direct_downstream": ["URGENCIA_RECOLECCION"],
+    "transitive_downstream": ["PRIORIDAD_TAXON"],
+    "current_06_behavior": "EMIT_RECALCULATION_REQUEST_ONLY",
+    "rule": "No URGENCIA or PRIORIDAD formula is implemented in this PROTECCION execution."
+  },
+  "storage_mapping": {
+    "schema_change_required": false,
+    "neon_changes_now": "NONE",
+    "analysis_run": "analytics.analysis_run",
+    "analysis_result": "analytics.analysis_result",
+    "metric_definition": "analytics.metric_definition",
+    "external_source": "evidence.external_source",
+    "external_record": "evidence.external_record",
+    "external_record_snapshot": "evidence.external_record_snapshot",
+    "provenance": "evidence.provenance_link",
+    "rule": "PROTECCION is versioned analytical enrichment/evidence attached to the taxon resource, not a mutable accession/population field."
+  },
+  "excel_view": {
+    "sheet_name": "PROTECCIÓN",
+    "headers": ["N.º", "Familia", "Taxón", "La Rioja", "España", "Europa/UE", "Internacional", "Score protección", "Norma efectiva", "Última actualización", "Evidencia", "Confiabilidad"],
+    "score_display_decimals_max": 2,
+    "territorial_columns_rule": "Display source-original current categories, never replace literal legal category with JBLR score.",
+    "effective_norm_rule": "Short reference to the current valid applicable most-restrictive selected norm; complete co-effective and alternative records remain internal.",
+    "evidence_rule": "One short auditable reference to effective evidence; full chain remains in STIMES."
+  },
+  "audit": {
+    "must_reconstruct": [
+      "why_this_score",
+      "effective_norm",
+      "original_category",
+      "why_applicable_in_la_rioja",
+      "currentness_and_validity",
+      "alternative_norms",
+      "why_alternatives_not_selected",
+      "restriction_comparison",
+      "equivalence_version",
+      "consulted_at",
+      "unchecked_components",
+      "change_from_previous_revision"
+    ],
+    "memory_dependency": "PROHIBITED"
+  },
+  "known_provider_defects_or_gaps": [
+    {
+      "id": "PROTECCION.QA.001",
+      "finding": "Some EIDOS-derived records from Castilla-La Mancha are present in the 05 final workbook as scope Nacional/APPLICABLE_NATIONAL despite containing a non-La-Rioja autonomous sub_country.",
+      "stimes_rule": "A non-La-Rioja sub_country is an exclusion signal regardless of the upstream national label; retain the source record and record corrected applicability as a derived STIMES resolution."
+    },
+    {
+      "id": "PROTECCION.QA.002",
+      "finding": "At least one CITES Appendix II record in the existing evidence is normalized to CITES_A_OR_APPENDIX_I.",
+      "stimes_rule": "Do not score such a record effectively until the literal annex/appendix and current primary legal source have been reconciled."
+    }
+  ],
+  "pending_definitions": [
+    "RELIABILITY_COMPONENT_WEIGHT_MODEL",
+    "RELIABILITY_CATEGORY_THRESHOLDS",
+    "ANNUAL_REFRESH_RUNTIME_SCHEDULER",
+    "PRIMARY_SOURCE_QA_FOR_ALL_05_CATEGORY_CLASSES",
+    "CITES_LITERAL_TO_NORMALIZED_CLASS_RECONCILIATION_WHERE_EXISTING_DATA_CONFLICTS",
+    "WHETHER_MATERIAL_BASE_GENETIC_CONSERVATION_AND_NATURA_REFERENCE_COUNT_AS_EFFECTIVE_PROTECTION_FOR_THIS_ITEM"
+  ]
+}
