@@ -19,7 +19,7 @@ permissions:
   contents: read
 
 jobs:
-  field-registry:
+  stimes-contracts:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -31,3 +31,5 @@ jobs:
           node-version: '22'
       - name: Validate STIMES field registry
         run: node app/tests/stimes-field-registry-state.js
+      - name: Validate STIMES AMENAZA item
+        run: node app/tests/stimes-amenaza-state.js
