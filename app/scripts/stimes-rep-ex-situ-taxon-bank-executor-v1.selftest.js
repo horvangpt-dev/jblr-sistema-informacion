@@ -33,17 +33,37 @@ const core={
     return {subject:taxon,state:frozenSnapshot?'FINAL':'MODEL_SCALE_NOT_FROZEN',n_accesiones_independientes:accessions.length,n_poblaciones_representadas:locs.size,bankChecks};
   },
   freezeModelSnapshot({taxonResults}){
-    freezeCalls++; assert(taxonResults.every(r=>r.state==='FINAL'));
+    freezeCalls++;
+    assert(taxonResults.every(r=>r.state==='FINAL'));
     return {status:'FROZEN',P99_A:2,P99_P:2,snapshot_id:'TEST_SNAPSHOT'};
   }
 };
 const complete=x.runFullUniverse({universe,registry:{active_universe_complete:true,banks},sourceManifest:manifest,baseDir:tmp,core,updatedAt:'2026-08-18'});
-assert.equal(complete.all_taxa_matrix_complete,true); assert.equal(complete.model_scale_frozen,true); assert.equal(freezeCalls,1);
-assert.equal(complete.matrix[0].bankChecks[0].state,'COMPROBADO_CON_ACCESION'); assert.equal(complete.matrix[0].bankChecks[1].state,'COMPROBADO_SIN_ACCESION');
+assert.equal(complete.all_taxa_matrix_complete,true);
+assert.equal(complete.model_scale_frozen,true);
+assert.equal(freezeCalls,1);
+assert.equal(complete.matrix[0].bankChecks[0].state,'COMPROBADO_CON_ACCESION');
+assert.equal(complete.matrix[0].bankChecks[1].state,'COMPROBADO_SIN_ACCESION');
 assert.equal(complete.matrix[0].accessions[0].matched_taxon_name,'Alpha old');
-const incompleteManifest=JSON.parse(JSON.stringify(manifest)); incompleteManifest.sources[1].snapshot_complete_for_holdings=false;
+// catalogNumber is bank-local provenance and MUST NOT prove independent-accession identity.
+assert.equal(complete.matrix[0].accessions[0].source_record_id,'A1');
+assert.equal(complete.matrix[0].accessions[0].original_accession_code,null);
+assert.equal(complete.matrix[0].accessions[0].independence_documented,false);
+const explicit=x.normalizeAccession({scientificName:'Taxon alpha',source_record_id:'SRC-1',origin_institution:'ORIGIN-X',original_accession_code:'ACC-42'},manifest.sources[0],universe[0]);
+assert.equal(explicit.independence_documented,true);
+assert.equal(explicit.original_accession_code,'ACC-42');
+assert.equal(explicit.origin_institution,'ORIGIN-X');
+
+const incompleteManifest=JSON.parse(JSON.stringify(manifest));
+incompleteManifest.sources[1].snapshot_complete_for_holdings=false;
 const incomplete=x.runFullUniverse({universe,registry:{active_universe_complete:true,banks},sourceManifest:incompleteManifest,baseDir:tmp,core,updatedAt:'2026-08-18'});
-assert.equal(incomplete.all_taxa_matrix_complete,false); assert.equal(incomplete.model_scale_frozen,false); assert.equal(incomplete.matrix[0].bankChecks[1].state,'BANCO_NO_COMPROBADO_PARA_EL_TAXON'); assert.equal(freezeCalls,1);
+assert.equal(incomplete.all_taxa_matrix_complete,false);
+assert.equal(incomplete.model_scale_frozen,false);
+assert.equal(incomplete.matrix[0].bankChecks[1].state,'BANCO_NO_COMPROBADO_PARA_EL_TAXON');
+assert.equal(freezeCalls,1);
+
 const incompleteUniverse=x.runFullUniverse({universe,registry:{active_universe_complete:false,banks},sourceManifest:manifest,baseDir:tmp,core,updatedAt:'2026-08-18'});
-assert.equal(incompleteUniverse.all_taxa_matrix_complete,true); assert.equal(incompleteUniverse.model_scale_frozen,false); assert.equal(freezeCalls,1);
+assert.equal(incompleteUniverse.all_taxa_matrix_complete,true);
+assert.equal(incompleteUniverse.model_scale_frozen,false);
+assert.equal(freezeCalls,1);
 console.log('STIMES_REP_EX_SITU_TAXON_BANK_EXECUTOR_V1_SELFTEST_PASS');
