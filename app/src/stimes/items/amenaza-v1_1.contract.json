@@ -1,0 +1,124 @@
+{
+  "contract_id": "AMENAZA_STIMES_CONTRACT_v1_1",
+  "item_id": "STIMES.ITEM.AMENAZA",
+  "item_version": "1.1.0",
+  "status": "ACTIVE",
+  "supersedes_for_current_execution": "amenaza-v1.contract.json",
+  "historical_contract_preserved": true,
+  "group": "LOCALIZACION_Y_SELECCION_TAXONES",
+  "subject_type": "TAXON",
+  "definition": "Amenaza del taxón derivada de evidencia externa auditable y versionada. STIMES conserva el score nativo de 05 y genera una vista jerárquica 0-100 usando la primera escala territorial evaluable autorizada.",
+  "authority": [
+    "AMENAZA_SCORING_MODEL_v1_2",
+    "AMENAZA_STIMES_EXECUTION_POLICY_v1_1",
+    "JBLR-EVT-0000-20260818-AMENAZA-002",
+    "JBLR-EVT-0000-20260818-DELEGATION-06-001"
+  ],
+  "territorial_scope_order": ["La Rioja", "España", "Europa", "Mundial", "Subsidiario"],
+  "outputs": {
+    "score_native_05": {
+      "type": "number|null",
+      "meaning": "Historical/provider multiscope score. Never overwritten by STIMES."
+    },
+    "score_stimes_100": {
+      "type": "number|null",
+      "meaning": "Semantic STIMES score in the first evaluable territorial scope. Null for non-evaluable semantic states."
+    },
+    "score_numeric_projection_100": {
+      "type": "number",
+      "meaning": "Computational projection. Equals score_stimes_100 when evaluable and 0 when the semantic score is non-evaluable."
+    },
+    "score_numeric_projection_is_placeholder": {
+      "type": "boolean",
+      "meaning": "True only when numeric 0 is the authorized technical placeholder rather than a semantic score."
+    },
+    "score_numeric_projection_semantics": {
+      "values": ["EVALUABLE_SCORE", "TECHNICAL_NON_SEMANTIC_NON_PONDERING"]
+    },
+    "score_state": {
+      "values": ["SCORED", "SCORED_WITH_CONFLICT", "UNKNOWN", "TAXON_UNRESOLVED"]
+    },
+    "effective_scope": {
+      "values": ["La Rioja", "España", "Europa", "Mundial", "Subsidiario", null]
+    }
+  },
+  "semantic_rules": [
+    "unknown != zero",
+    "unknown != absence",
+    "not_found != absence",
+    "not_acquired != absence",
+    "unresolved != absence",
+    "conflict != absence",
+    "technical numeric zero != no threat",
+    "technical numeric zero != semantic score zero",
+    "original evidence != normalized evidence",
+    "normalized evidence != analytical result",
+    "manual score override = prohibited"
+  ],
+  "numeric_projection_rule": {
+    "non_evaluable_placeholder": 0,
+    "semantic_effect": "NONE",
+    "downstream_use": "Allowed only as a technical numeric projection where a numeric percentage input is required; the semantic state remains authoritative and visible.",
+    "replacement": "When valid evidence resolves the state, replace placeholder with recalculated score while preserving prior revision/provenance."
+  },
+  "logical_unit_rule": {
+    "fields": ["source", "territorial_scope", "authority_or_category_system", "dataset_or_reference_identity"],
+    "implementation": "Prefer provider logical_unit. Fallback must include source_identifier before source_reference/source_url.",
+    "history": "Different date/source dataset identity/scope/country remains historical or independent evidence and is not automatically a conflict."
+  },
+  "conflict_rule": "True provider same-unit conflict or taxon-level conflict is preserved explicitly. A conflicting evaluable taxon keeps its score according to the v1_2 precautionary projection and simultaneously carries SCORED_WITH_CONFLICT.",
+  "scoring": {
+    "provider_model": "AMENAZA_SCORING_MODEL_v1_2",
+    "execution_policy": "AMENAZA_STIMES_EXECUTION_POLICY_v1_1",
+    "scope_selection": "first evaluable scope",
+    "scope_aggregation": "0.8 * highest + 0.2 * mean(up to three highest distinct logical units), cap 100",
+    "manual_score": "PROHIBITED"
+  },
+  "source_policy": {
+    "cache_first": true,
+    "reuse_existing_evidence": true,
+    "direct_iucn": "Preferred direct global source when authenticated acquisition is available; non-acquisition is an explicit state and not zero/absence.",
+    "external_requery": "Only when cached evidence is insufficient, obsolete or a protocol requires refresh."
+  },
+  "reliability": {
+    "state": "PENDIENTE_DE_DEFINICION",
+    "numeric_value": null,
+    "rule": "Do not invent component weights or a reliability percentage."
+  },
+  "human_view": {
+    "sheet_name": "AMENAZA",
+    "headers": ["N.º", "Familia", "Taxón", "La Rioja", "España", "Europa", "Mundial", "Score amenaza", "Ámbito efectivo", "Última actualización", "Evidencia", "Confiabilidad"],
+    "score_column": "score_numeric_projection_100",
+    "non_evaluable_visibility": "Evidence and territorial state cells must state UNKNOWN/TAXON_UNRESOLVED/NO ADQUIRIDO; a displayed numeric 0 is explicitly marked technical/non-semantic in Evidence.",
+    "confiabilidad_display_when_undefined": "NO DEFINIDA"
+  },
+  "snapshot_contract": {
+    "required": true,
+    "row_count": 2742,
+    "required_fields": [
+      "universe_index", "family", "taxon", "score_state", "score_semantic_100",
+      "score_numeric_projection_100", "numeric_projection_is_placeholder",
+      "effective_scope", "score_native_05", "principal_source", "principal_category",
+      "principal_evidence_url", "scoring_model", "execution_policy", "cache_reused",
+      "external_query_performed", "materialized_at"
+    ]
+  },
+  "integration_gate": {
+    "universe_count": 2742,
+    "universe_coverage": "100_PERCENT_PROCESSED",
+    "required_qa": [
+      "UNKNOWN_HANDLING", "TAXON_UNRESOLVED_HANDLING", "CONFLICT_HANDLING",
+      "ZERO_TECHNICAL_PROJECTION", "NATIVE_SCORE_PRESERVATION", "SCORE_STIMES_100",
+      "EFFECTIVE_SCOPE", "MODEL_VERSION", "PROVENANCE", "EVIDENCE_POINTERS",
+      "OUTPUT_SNAPSHOT", "HUMAN_VIEW", "CONTRACT_ALIGNMENT"
+    ]
+  },
+  "storage": {
+    "schema_change_required": false,
+    "neon_write_required_for_this_repair": false,
+    "drive": "row-level snapshot + human view + QA/audit",
+    "github": "policy + adapter + versioned contract + tests"
+  },
+  "downstream": ["COMPOSITE_STIME_URGENCIA_RECOLECCION", "PRIORIDAD_TAXON"],
+  "history_rule": "Never delete or silently overwrite prior evidence, provider score, contracts or execution revisions."
+}
