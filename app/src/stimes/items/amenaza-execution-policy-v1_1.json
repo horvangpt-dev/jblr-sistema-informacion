@@ -1,0 +1,21 @@
+{
+  "policy_id": "AMENAZA_STIMES_EXECUTION_POLICY_v1_1",
+  "version": "1.1.0",
+  "status": "ACTIVE_FROM_CANONICAL_DRIVE_V9",
+  "authority": [
+    "Botanico/STIMES/00_LEEME_STIMES_ARQUITECTURA_Y_PROCESOS",
+    "STIME_AMENAZA/01_REVISION_HUMANA/01_SISTEMA_OPERATIVO_STIME_AMENAZA",
+    "00E_COPIA_CONTINUIDAD_v9_STIMES"
+  ],
+  "effective_scope_order": ["La Rioja", "España", "Europa", "Mundial", "Subsidiario"],
+  "provider_native_model": "AMENAZA_SCORING_MODEL_v1_2",
+  "provider_native_score_rule": "Preserve the existing 05 multiscope aggregate unchanged as score_native_05 for history and audit.",
+  "stimes_effective_score_rule": "Select the first scope in effective_scope_order containing evaluable cached evidence, then apply the v1_2 aggregation formula only to distinct logical units within that selected scope: 0.8*highest + 0.2*mean(up to 3 highest), capped at 100.",
+  "logical_unit": ["source", "territorial_scope", "authority_or_category_system", "dataset_or_reference_identity"],
+  "conflict_rule": "Preserve all conflicting evidence. Within one logical unit, use the precautionary maximum evaluable weighted assessment as inherited from v1_2 and expose conflict status explicitly.",
+  "cache_policy": "CACHE_FIRST_REUSE_05_EVIDENCE",
+  "external_requery_for_current_cached_result": "PROHIBITED_UNLESS_MISSING_OBSOLETE_OR_PROTOCOL_REQUIRES_REFRESH",
+  "missingness": "No evaluable scope produces null/UNKNOWN, never zero.",
+  "reliability": "Keep separate. No invented weight model; coverage/component state may be reported even when a final reliability percentage is undefined.",
+  "precedence_resolution": "This policy supersedes the stale AMENAZA.INCOMPAT.001 presentation/selection behavior in amenaza-v1.contract.json for executions starting under current Drive v9 authority; it does not rewrite the historical provider model or evidence."
+}
