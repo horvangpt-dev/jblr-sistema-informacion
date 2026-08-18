@@ -31,8 +31,10 @@ jobs:
           node-version: '22'
       - name: Validate STIMES field registry
         run: node app/tests/stimes-field-registry-state.js
-      - name: Validate STIMES AMENAZA item
+      - name: Validate STIMES AMENAZA legacy adapter
         run: node app/tests/stimes-amenaza-state.js
+      - name: Validate STIMES AMENAZA current hierarchy v1.1
+        run: node app/tests/stimes-amenaza-v1_1-state.js
       - name: Validate STIMES PROTECCION cases A-H
         run: node app/tests/stimes-proteccion-state.js
       - name: Validate STIMES REPRESENTACION EX SITU core and QA
