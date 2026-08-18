@@ -1,6 +1,6 @@
 {
   "registry_id": "STIMES_ITEM_REGISTRY_v0",
-  "registry_version": "0.2.0",
+  "registry_version": "0.3.0",
   "status": "AMENAZA_AND_PROTECCION_REGISTERED",
   "rule": "Analytical items are registered separately from observed/master FIELD_ID values. The canonical analytical item_id serves as the formal field identity for analytical outputs; no duplicate identifier system is created. Analytical outputs remain versioned results with provenance and method identity.",
   "items": [
@@ -26,11 +26,11 @@
       "provider": "05_MOTORES_ANALITICOS_BOTANICOS",
       "evidence_version": "PROTECCION_LEGAL_EVIDENCE_v2",
       "provider_scoring_version": "PROTECCION_LEGAL_SCORING_MODEL_v1",
-      "stimes_selection_version": "PROTECCION_STIMES_SELECTION_v1",
+      "stimes_selection_version": "PROTECCION_STIMES_SELECTION_v1_1",
       "contract_path": "app/src/stimes/items/proteccion-v1.contract.json",
       "runtime_adapter_path": "app/src/stimes/items/proteccion-v1.js",
-      "equivalence_path": "app/src/stimes/items/proteccion-category-equivalence-v1.json",
-      "status": "OPERATIONAL_WITH_EXPLICIT_PENDING_DEFINITIONS",
+      "equivalence_path": "app/src/stimes/items/proteccion-category-equivalence-v2.json",
+      "status": "OPERATIONAL_CORE_WITH_EXPLICIT_RELIABILITY_CONFIGURATION_PENDING",
       "database_schema_change": "NONE",
       "direct_downstream": ["URGENCIA_RECOLECCION"]
     }
