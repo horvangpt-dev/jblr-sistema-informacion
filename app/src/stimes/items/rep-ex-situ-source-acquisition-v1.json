@@ -1,0 +1,113 @@
+{
+  "manifest_id": "REP_EX_SITU_SOURCE_ACQUISITION_v1",
+  "version": "1.0.0",
+  "run_id": "STIMES_LS_REPAIR_01_2026-08-18",
+  "target_snapshot_id": "REP_EX_SITU_MODEL_v1_2026_PENDING_REAL_MATRIX",
+  "status": "EXECUTION_SOURCE_MANIFEST_ACTIVE_P99_NOT_FROZEN",
+  "rule": "This is an acquisition/execution manifest, not a parallel bank registry. Canonical denominator eligibility remains controlled by BANCO_SEMILLAS_ES_v1_2026 and must not be inferred from discovery sources.",
+  "acquisition_mode": "TAXON_BY_TAXON",
+  "batching_role": "TECHNICAL_ONLY_NOT_SAMPLE",
+  "negative_assertion_rule": "COMPROBADO_SIN_ACCESION is allowed only from a loaded, complete, current holdings snapshot of a bank whose current active wild-flora role is independently verified.",
+  "freeze_rule": "P99_A and P99_P may be frozen only after the active-bank universe is complete and every taxon has an auditable check against every active bank.",
+  "discovery_evidence": {
+    "redbag_2022_2023_evaluation": {
+      "scope": "Protected LESRPE/CEEA flora only",
+      "updated_accessions": 2834,
+      "banks_reporting": 20,
+      "period_of_collections": "1968-2022",
+      "use": "DISCOVERY_AND_HISTORICAL_CACHE_ONLY_UNLESS_CURRENT_HOLDING_IS_RECONFIRMED",
+      "note": "REDBAG contacted banks individually because many OpenREDBAG catalogues were not sufficiently updated. This dataset is not treated as a complete current 2742-taxon national matrix."
+    }
+  },
+  "sources": [
+    {
+      "BANK_ID": "STIMES.BANK.ES.RJC",
+      "source_name": "URJC Germplasm Bank Darwin Core Archive",
+      "source_key": "GBIF_IPT_URJC_2025_V1_12",
+      "source_url": "https://ipt.gbif.es/resource?r=germoplasma-urjc",
+      "snapshot_date": "2025-10-09",
+      "published_records": 495,
+      "publisher_reports_current_accessions": 560,
+      "bank_current_active_verified": true,
+      "current_holding_snapshot": true,
+      "snapshot_complete_for_holdings": false,
+      "snapshot_loaded": false,
+      "transport_state": "DWCA_PUBLIC_BUT_NOT_INGESTED_IN_CURRENT_RUNTIME",
+      "note": "Positive matches may become usable after archive ingestion; absence cannot be asserted from 495 published rows when the publisher reports 560 current accessions."
+    },
+    {
+      "BANK_ID": "STIMES.BANK.ES.JBA",
+      "source_name": "Jardín Botánico Atlántico long-term base bank Darwin Core Archive",
+      "source_key": "GBIF_IPT_JBA_BASE_2024",
+      "source_url": "https://ipt.gbif.es/resource?r=banco_base_jba",
+      "snapshot_date": "2024-02-20",
+      "published_records": 1191,
+      "bank_current_active_verified": true,
+      "current_holding_snapshot": false,
+      "snapshot_complete_for_holdings": false,
+      "snapshot_loaded": false,
+      "transport_state": "DWCA_PUBLIC_BUT_NOT_INGESTED_IN_CURRENT_RUNTIME",
+      "note": "Base-bank subset only; negative assertions are prohibited."
+    },
+    {
+      "BANK_ID": "STIMES.BANK.ES.UPM",
+      "source_name": "UPM César Gómez Campo germplasm occurrence dataset",
+      "source_key": "GBIF_UPM_RESCUED_2020",
+      "source_url": "https://www.gbif.org/dataset/85b571c0-f762-11e1-a439-00145eb45e9a",
+      "snapshot_date": "2020-06-18",
+      "published_records": 9754,
+      "bank_current_active_verified": true,
+      "current_holding_snapshot": false,
+      "snapshot_complete_for_holdings": false,
+      "snapshot_loaded": false,
+      "transport_state": "PUBLIC_DATASET_STALE_FOR_CURRENT_NEGATIVES",
+      "note": "Useful historical/positive cache after ingestion; no current negative assertion from the 2020 snapshot."
+    },
+    {
+      "BANK_ID": "STIMES.BANK.ES.UVA",
+      "source_name": "Universitat de València seed bank public collection dataset",
+      "source_key": "GBIF_ES_UV_GERMPLASM",
+      "source_url": "https://gbif.es/coleccion/universidad-de-valencia-jardin-botanico-banco-de-germoplasma/",
+      "snapshot_date": null,
+      "published_records": 4000,
+      "bank_current_active_verified": true,
+      "current_holding_snapshot": false,
+      "snapshot_complete_for_holdings": false,
+      "snapshot_loaded": false,
+      "transport_state": "PUBLIC_COLLECTION_RESOURCE_IDENTIFIED_ARCHIVE_NOT_INGESTED",
+      "note": "Public collection metadata states 100% computerization but current negative assertions require a dated complete holdings snapshot."
+    },
+    {
+      "BANK_ID": "STIMES.BANK.ES.ALC",
+      "source_name": "Real Jardín Botánico Juan Carlos I germplasm occurrence dataset",
+      "source_key": "GBIF_ALC_GERMPLASM",
+      "source_url": "https://www.gbif.org/dataset/d15c4775-92dd-48fa-88d4-1b26b957d941",
+      "snapshot_date": null,
+      "bank_current_active_verified": false,
+      "current_holding_snapshot": false,
+      "snapshot_complete_for_holdings": false,
+      "snapshot_loaded": false,
+      "transport_state": "PUBLIC_DATASET_IDENTIFIED_CURRENTNESS_REQUIRES_VERIFICATION"
+    },
+    {
+      "BANK_ID": "STIMES.BANK.ES.JBR",
+      "source_name": "2025 MITECO listado de semillas.xlsx · ACCESIONES",
+      "source_key": "MITECO_JBR_2025",
+      "source_url": null,
+      "snapshot_date": "2025",
+      "published_records": 175,
+      "bank_current_active_verified": true,
+      "current_holding_snapshot": false,
+      "snapshot_complete_for_holdings": false,
+      "snapshot_loaded": false,
+      "transport_state": "LOCAL_SOURCE_AVAILABLE_NORMALIZED_IN_REPAIR_RUN",
+      "note": "JBR source is physically available in the execution environment, but blank accession identifiers and incomplete locality fields are preserved and it is not treated as a complete national source."
+    }
+  ],
+  "known_blockers": [
+    "ACTIVE_BANK_UNIVERSE_NOT_YET_PROVEN_EXHAUSTIVE_FOR_2026",
+    "REDBAG_2022_2023_HOMOGENEOUS_2834_ACCESSION_DATABASE_NOT_FOUND_AS_PUBLIC_DOWNLOAD",
+    "PUBLIC_DWCA_ARCHIVES_NOT_TRANSPORTED_INTO_CURRENT_EXECUTION_RUNTIME",
+    "MATERIAL_PART_OF_TAXON_BANK_MATRIX_STILL_NOT_ACQUIRED"
+  ]
+}
