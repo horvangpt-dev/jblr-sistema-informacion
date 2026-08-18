@@ -1,0 +1,20 @@
+{
+  "registry_id": "STIMES_ITEM_REGISTRY_v0",
+  "registry_version": "0.1.0",
+  "status": "AMENAZA_REGISTERED",
+  "rule": "Analytical items are registered separately from observed/master FIELD_ID values. Analytical outputs remain versioned results with provenance and method identity.",
+  "items": [
+    {
+      "item_id": "STIMES.ITEM.AMENAZA",
+      "label": "AMENAZA",
+      "group": "LOCALIZACION_Y_SELECCION_TAXONES",
+      "subject_type": "TAXON",
+      "classification": "ANALYTICAL_OUTPUT",
+      "provider": "05_MOTORES_ANALITICOS_BOTANICOS",
+      "contract_path": "app/src/stimes/items/amenaza-v1.contract.json",
+      "runtime_adapter_path": "app/src/stimes/items/amenaza-v1.js",
+      "status": "OPERATIONAL_WITH_EXPLICIT_PENDING_DEFINITIONS",
+      "database_schema_change": "NONE"
+    }
+  ]
+}
