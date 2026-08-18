@@ -1,0 +1,271 @@
+{
+  "item_id": "STIMES.ITEM.AMENAZA",
+  "item_version": "1.0.0",
+  "status": "OPERATIONAL_WITH_EXPLICIT_PENDING_DEFINITIONS",
+  "group": "LOCALIZACION_Y_SELECCION_TAXONES",
+  "subject_type": "TAXON",
+  "subject_rule": "AMENAZA belongs to the taxon and must not be duplicated as a population, locality, collection or accession property.",
+  "definition": "Nivel de amenaza/conservacion atribuido al taxon a partir de evidencia externa fiable, auditable y versionada, calculado exclusivamente por el proveedor analitico 05 mediante el modelo de scoring declarado.",
+  "provider": {
+    "module": "05_MOTORES_ANALITICOS_BOTANICOS",
+    "role": "VERSIONED_ANALYTICAL_ENRICHMENT_PROVIDER",
+    "evidence_version": "AMENAZA_EVIDENCE_v2",
+    "scoring_version": "AMENAZA_SCORING_MODEL_v1_2",
+    "scoring_model_status": "WORKING_ANALYTICAL_MODEL",
+    "canonical_status": "NOT_CANONICAL_UNTIL_00D_ADOPTION",
+    "rule": "STIMES consumes provider output; it does not reimplement or silently alter scoring."
+  },
+  "layers": [
+    "ORIGINAL_EVIDENCE",
+    "NORMALIZED_EVIDENCE",
+    "SELECTED_EVIDENCE_FOR_SCORING",
+    "ANALYTICAL_RESULT",
+    "RELIABILITY"
+  ],
+  "semantic_rules": [
+    "unknown != zero",
+    "unknown != absence",
+    "not_found != absence",
+    "query_failure != negative_evidence",
+    "original_evidence != normalized_evidence",
+    "normalized_evidence != analytical_result",
+    "manual_score_entry = PROHIBITED"
+  ],
+  "authorized_sources": [
+    {
+      "source_key": "RIOJA_RED_BOOK",
+      "territorial_role": "LA_RIOJA",
+      "current_state": "PARTIAL_EXPLICIT_EVIDENCE_EXTRACTED_COMPLETE_DATASET_NOT_ACCESSIBLE"
+    },
+    {
+      "source_key": "EIDOS",
+      "territorial_role": "SPAIN_AND_REFERENCED_GLOBAL_OR_OTHER_AS_SOURCE_RETURNS",
+      "current_state": "AVAILABLE"
+    },
+    {
+      "source_key": "SPAIN_RED_LISTS",
+      "territorial_role": "SPAIN",
+      "current_state": "REPRESENTED_WHERE_STRUCTURED_THROUGH_EIDOS"
+    },
+    {
+      "source_key": "EUROPE_CONTINENTAL_2011",
+      "territorial_role": "EUROPE",
+      "current_state": "LOCATED_SELECTIVE_DATASET"
+    },
+    {
+      "source_key": "EUROPE_NATIONAL_REDLISTS",
+      "territorial_role": "SUBSIDIARY_EUROPEAN_NATIONAL_OR_SUBNATIONAL",
+      "current_state": "VALIDATED"
+    },
+    {
+      "source_key": "IUCN_GLOBAL",
+      "territorial_role": "WORLD",
+      "current_state": "NOT_ACQUIRED_AUTHENTICATION_REQUIRED",
+      "future_rule": "When direct authenticated IUCN acquisition is available it becomes the preferred direct global source; previously acquired indirect evidence is retained."
+    }
+  ],
+  "acquisition": {
+    "policy": "CACHE_FIRST_AND_SOURCE_PRESERVING",
+    "required_trace": [
+      "taxon_queried",
+      "taxonomic_identity_used",
+      "source_key",
+      "source_name",
+      "territorial_scope",
+      "original_category",
+      "consulted_at",
+      "method_version",
+      "dataset_or_reference_version",
+      "raw_evidence_or_reference",
+      "taxonomic_state",
+      "evidence_state"
+    ],
+    "human_intervention_allowed": [
+      "CORRECT_TAXONOMIC_IDENTIFICATION",
+      "VALIDATE_OR_INVALIDATE_EVIDENCE",
+      "CORRECT_SOURCE",
+      "RESOLVE_CONFLICT_WHERE_METHOD_ALLOWS"
+    ],
+    "human_intervention_prohibited": [
+      "WRITE_OR_OVERRIDE_AMENAZA_SCORE"
+    ]
+  },
+  "scoring": {
+    "owner": "05_MOTORES_ANALITICOS_BOTANICOS",
+    "model": "AMENAZA_SCORING_MODEL_v1_2",
+    "scale": "0-100 when evaluable; null/UNKNOWN when not evaluable",
+    "aggregation": "0.8 * highest weighted assessment + 0.2 * mean(up to three highest distinct logical-unit weighted assessments), cap 100",
+    "logical_unit": [
+      "source",
+      "territorial_scope",
+      "authority_or_category_system",
+      "dataset_or_reference_identity"
+    ],
+    "missingness": {
+      "NO_EVALUATION_FOUND": null,
+      "TAXON_UNRESOLVED": null,
+      "SOURCE_ERROR": null,
+      "UNKNOWN": null,
+      "IUCN_NE": null,
+      "IUCN_NA": null,
+      "ARTICLE17_XX": null
+    },
+    "manual_score": "PROHIBITED"
+  },
+  "territorial_views": {
+    "display_scopes": [
+      "La Rioja",
+      "España",
+      "Europa",
+      "Mundial"
+    ],
+    "subsidiary_evidence_allowed": true,
+    "original_category_rule": "Excel territorial columns show source-original categories; internal normalized codes never overwrite them.",
+    "conflict_display_rule": "Multiple valid categories for the same displayed scope are joined with ' / ' and no extra CONFLICTO label."
+  },
+  "conflict_policy": {
+    "provider_rule": "Same logical unit and version with incompatible evaluable categories is UNRESOLVED_CONFLICT; preserve all; scoring projection uses precautionary maximum evaluable severity.",
+    "history_rule": "No conflicting evidence is deleted or overwritten."
+  },
+  "reliability": {
+    "requested_formula": "sum(weights of checked components) / sum(total component weights) * 100",
+    "checked_component_rule": "A component is checked only when acquisition succeeded, taxonomic identity is sufficiently resolved, source is authorized, and the evidence is auditable to source and method.",
+    "display_categories": [
+      "MUY ALTA",
+      "ALTA",
+      "MEDIA",
+      "BAJA",
+      "MUY BAJA"
+    ],
+    "thresholds_version": "PENDIENTE_DE_DEFINICION",
+    "component_weight_model": "PENDIENTE_DE_DEFINICION",
+    "reason_pending": "AMENAZA_SCORING_MODEL_v1_2 does not define a reliability model and the prompt does not provide exact thresholds or component weights. STIMES must not invent them.",
+    "double_penalty_rule": "Source quality is resolved during source/evidence selection and must not be penalized a second time in reliability."
+  },
+  "update_policy": {
+    "periodic": {
+      "cadence": "ANNUAL",
+      "scope": "ALL_TAXA",
+      "scheduler_state": "PENDIENTE_DE_DEFINICION"
+    },
+    "on_taxon_query": {
+      "action": "REQUEST_FULL_LOCALIZACION_Y_SELECCION_REFRESH_FOR_TAXON",
+      "stimes_amenaza_action": "REFRESH_AMENAZA_FROM_PROVIDER_05",
+      "rule": "A taxon-specific request must not be treated as an AMENAZA-only refresh when other automatically refreshable LOCALIZACION_Y_SELECCION items exist."
+    },
+    "refresh_steps": [
+      "REACQUIRE_OR_REUSE_AUTHORIZED_SOURCE_EVIDENCE_ACCORDING_TO_PROVIDER_POLICY",
+      "RECORD_UPDATE_TIMESTAMP",
+      "PRESERVE_PRIOR_REVISION",
+      "COMPARE_WITH_CURRENT_REVISION",
+      "APPEND_NEW_REVISION",
+      "RECALCULATE_DEPENDENTS_IF_ITEM_CHANGED"
+    ]
+  },
+  "dependencies": {
+    "direct_downstream": [
+      "URGENCIA_RECOLECCION"
+    ],
+    "transitive_downstream": [
+      "PRIORIDAD_TAXON"
+    ],
+    "current_06_behavior": "EMIT_RECALCULATION_REQUEST_ONLY",
+    "reason": "Dependent item formulas are outside this execution and must not be invented or implemented while AMENAZA is the only authorized item."
+  },
+  "storage_mapping": {
+    "schema_change_required": false,
+    "neon_changes_now": "NONE",
+    "analysis_run": "analytics.analysis_run",
+    "analysis_result": "analytics.analysis_result",
+    "metric_definition": "analytics.metric_definition",
+    "external_source": "evidence.external_source",
+    "external_record": "evidence.external_record",
+    "external_record_snapshot": "evidence.external_record_snapshot",
+    "provenance": "evidence.provenance_link",
+    "subject": "taxonomy/core taxon resource referenced by analytics.analysis_result.subject_resource_id",
+    "rule": "AMENAZA is versioned analytical enrichment, not a permanent mutable column on population/locality/collection/accession."
+  },
+  "excel_view": {
+    "sheet_name": "AMENAZA",
+    "headers": [
+      "N.º",
+      "Familia",
+      "Taxón",
+      "La Rioja",
+      "España",
+      "Europa",
+      "Mundial",
+      "Score amenaza",
+      "Ámbito efectivo",
+      "Última actualización",
+      "Evidencia",
+      "Confiabilidad"
+    ],
+    "effective_scope_values": [
+      "La Rioja",
+      "España",
+      "Europa",
+      "Mundial",
+      "Subsidiario"
+    ],
+    "unknown_display": {
+      "NO_EVALUATION_FOUND": "SIN EVAL.",
+      "SOURCE_NOT_ACQUIRED": "NO ADQUIRIDO",
+      "SOURCE_NOT_ACQUIRED_AUTH_REQUIRED": "NO ADQUIRIDO",
+      "TAXON_UNRESOLVED": "TAXÓN NO RESUELTO",
+      "UNKNOWN": "DESCONOCIDO",
+      "SOURCE_ERROR": "ERROR FUENTE"
+    },
+    "score_display_decimals_max": 2,
+    "score_internal_precision_state": "PROVIDER_CURRENTLY_EMITS_TWO_DECIMAL_RESULT",
+    "evidence_column_rule": "Display one short auditable reference to the principal assessment actually used; complete trace remains internal.",
+    "latest_update_rule": "One date representing the latest valid integral update of AMENAZA for the taxon."
+  },
+  "audit": {
+    "must_reconstruct": [
+      "why_this_score",
+      "which_sources_were_used",
+      "which_territorial_scopes_contributed",
+      "original_categories",
+      "alternative_evidence",
+      "unchecked_or_unacquired_components",
+      "scoring_model_version",
+      "update_time",
+      "changes_from_previous_revision"
+    ],
+    "memory_dependency": "PROHIBITED"
+  },
+  "incompatibilities_preserved_by_precedence": [
+    {
+      "id": "AMENAZA.INCOMPAT.001",
+      "prompt_requirement": "La Rioja -> España -> Europa -> Mundial -> Subsidiario; use the first evaluable scope",
+      "existing_model": "AMENAZA_SCORING_MODEL_v1_2 aggregates multiple weighted logical units and does not select one first-available territorial scope.",
+      "decision": "KEEP_EXISTING_MODEL",
+      "effect": "A single Ámbito efectivo cannot be populated truthfully from v1_2 without defining a new presentation semantic or changing the scoring model.",
+      "state": "PENDIENTE_DE_DEFINICION"
+    },
+    {
+      "id": "AMENAZA.INCOMPAT.002",
+      "prompt_requirement": "Use provisional numeric zero when an unchecked component needs a number",
+      "existing_model": "AMENAZA_SCORING_MODEL_v1_2 maps missing/non-evaluable states to null/UNKNOWN.",
+      "decision": "KEEP_EXISTING_MODEL",
+      "effect": "STIMES never injects provisional zero into AMENAZA scoring v1_2.",
+      "state": "RESOLVED_BY_PRECEDENCE"
+    },
+    {
+      "id": "AMENAZA.INCOMPAT.003",
+      "prompt_requirement": "Display at most two decimals without changing internal precision",
+      "existing_model": "The current 05 scorer writes the final amenaza_score rounded to two decimals.",
+      "decision": "DO_NOT_CHANGE_PROVIDER_IN_06",
+      "effect": "Higher precision is not currently available to STIMES from this provider output.",
+      "state": "PENDIENTE_DE_DEFINICION"
+    }
+  ],
+  "pending_definitions": [
+    "RELIABILITY_COMPONENT_WEIGHT_MODEL",
+    "RELIABILITY_CATEGORY_THRESHOLDS",
+    "SINGLE_EFFECTIVE_SCOPE_SEMANTIC_FOR_V1_2_MULTISCOPE_SCORING",
+    "ANNUAL_REFRESH_SCHEDULER",
+    "HIGHER_PRECISION_PROVIDER_OUTPUT_IF_REQUIRED"
+  ]
+}
