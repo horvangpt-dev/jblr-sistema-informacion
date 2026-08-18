@@ -1,8 +1,8 @@
 {
   "registry_id": "STIMES_ITEM_REGISTRY_v0",
-  "registry_version": "0.1.0",
-  "status": "AMENAZA_REGISTERED",
-  "rule": "Analytical items are registered separately from observed/master FIELD_ID values. Analytical outputs remain versioned results with provenance and method identity.",
+  "registry_version": "0.2.0",
+  "status": "AMENAZA_AND_PROTECCION_REGISTERED",
+  "rule": "Analytical items are registered separately from observed/master FIELD_ID values. The canonical analytical item_id serves as the formal field identity for analytical outputs; no duplicate identifier system is created. Analytical outputs remain versioned results with provenance and method identity.",
   "items": [
     {
       "item_id": "STIMES.ITEM.AMENAZA",
@@ -15,6 +15,24 @@
       "runtime_adapter_path": "app/src/stimes/items/amenaza-v1.js",
       "status": "OPERATIONAL_WITH_EXPLICIT_PENDING_DEFINITIONS",
       "database_schema_change": "NONE"
+    },
+    {
+      "item_id": "STIMES.ITEM.PROTECCION",
+      "FIELD_ID": "STIMES.ITEM.PROTECCION",
+      "label": "PROTECCIÓN",
+      "group": "LOCALIZACION_Y_SELECCION_TAXONES",
+      "subject_type": "TAXON",
+      "classification": "ANALYTICAL_OUTPUT",
+      "provider": "05_MOTORES_ANALITICOS_BOTANICOS",
+      "evidence_version": "PROTECCION_LEGAL_EVIDENCE_v2",
+      "provider_scoring_version": "PROTECCION_LEGAL_SCORING_MODEL_v1",
+      "stimes_selection_version": "PROTECCION_STIMES_SELECTION_v1",
+      "contract_path": "app/src/stimes/items/proteccion-v1.contract.json",
+      "runtime_adapter_path": "app/src/stimes/items/proteccion-v1.js",
+      "equivalence_path": "app/src/stimes/items/proteccion-category-equivalence-v1.json",
+      "status": "OPERATIONAL_WITH_EXPLICIT_PENDING_DEFINITIONS",
+      "database_schema_change": "NONE",
+      "direct_downstream": ["URGENCIA_RECOLECCION"]
     }
   ]
 }
