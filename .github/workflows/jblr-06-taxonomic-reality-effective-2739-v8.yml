@@ -1,0 +1,78 @@
+name: JBLR TAXONOMIC REALITY EFFECTIVE 2739 V8 HYBRID AWARE
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 06-taxonomic-genus-reconciliation-v3
+    paths:
+      - 'app/data/taxonomy/taxonomic-reality-effective-v8-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jblr-taxonomic-reality-effective-2739-v8
+  cancel-in-progress: false
+
+jobs:
+  taxonomic-reality-effective-2739-v8:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TAXON_REALITY_OUT: artifacts/taxonomic_reality_effective_2739_v8
+    steps:
+      - name: Checkout active actor branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-taxonomic-genus-reconciliation-v3
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests
+
+      - name: Execute hybrid-aware effective 2739 audit
+        run: python3 app/scripts/taxonomic-reality-effective-2739-v8-hybrid-aware.py
+
+      - name: Materialize auditable v8 results
+        if: success()
+        shell: bash
+        run: |
+          TARGET='evidence/06_stimes/taxonomic_reality_effective_2739_v8/latest'
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_EFFECTIVE_2739_PREFLIGHT_V8.json" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_EFFECTIVE_2739_RESULTS_V8.csv" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_EFFECTIVE_2739_NO_RESPONSE_ALL_THREE_V8.csv" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_EFFECTIVE_2739_SOURCE_INCOMPLETE_V8.csv" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_EFFECTIVE_2739_ANOMALOUS_GENERA_V8.csv" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_EFFECTIVE_2739_QA_V8.json" "$TARGET/"
+          printf '%s\n' \
+            "github_run_id=${GITHUB_RUN_ID}" \
+            "source_commit=${GITHUB_SHA}" \
+            'scope=EFFECTIVE_ACTIVE_TAXON_UNIVERSE_2739' \
+            'sources=POWO_WCVP_OFFICIAL_DWCA,WFO_2026_06_OFFICIAL_CLASSIFICATION,ANTHOS_RJB_CSIC_OFFICIAL_DWCA' \
+            'phase=HYBRID_AWARE_EXACT_TAXON_REALITY_AUDIT' \
+            'hybrid_marker_patch=SCIENTIFIC_NAME_HYBRID_MARKER_ALIAS_v8' \
+            'automatic_deletion=NO' \
+            'automatic_normalization=NO' \
+            > "$TARGET/RUN_METADATA.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$TARGET"
+          if git diff --cached --quiet; then
+            echo 'No result change to commit'
+          else
+            git commit -m 'Materialize hybrid-aware effective 2739 taxonomic reality v8 [skip ci]'
+            git push origin HEAD:06-taxonomic-genus-reconciliation-v3
+          fi
+
+      - name: Upload execution artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TAXONOMIC_REALITY_EFFECTIVE_2739_V8_HYBRID_AWARE
+          path: artifacts/taxonomic_reality_effective_2739_v8/
+          if-no-files-found: warn
+          retention-days: 30
