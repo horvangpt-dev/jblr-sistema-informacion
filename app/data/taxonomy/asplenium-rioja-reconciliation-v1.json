@@ -1,0 +1,76 @@
+{
+  "id": "ASPLENIUM_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-19",
+  "family": "ASPLENIACEAE",
+  "genus": "Asplenium",
+  "state": "TAXONOMIC_NAMES_REAL_LOCAL_PRESENCE_CONFLICT_AND_PARSER_DEFECT_IDENTIFIED",
+  "local_source": "User photograph, Actualización del catálogo de la flora vascular silvestre de La Rioja, catálogo florístico, ASPLENIACEAE complete block",
+  "local_block_complete": true,
+  "local_taxa_as_printed": [
+    "Asplenium adiantum-nigrum subsp. adiantum-nigrum",
+    "Asplenium ceterach subsp. ceterach",
+    "Asplenium csikii",
+    "Asplenium fontanum subsp. fontanum",
+    "Asplenium obovatum subsp. lanceolatum",
+    "Asplenium onopteris",
+    "Asplenium petrarchae subsp. petrarchae",
+    "Asplenium ruta-muraria subsp. ruta-muraria",
+    "Asplenium scolopendrium subsp. scolopendrium",
+    "Asplenium seelosii subsp. glabrum",
+    "Asplenium septentrionale subsp. septentrionale",
+    "Asplenium trichomanes subsp. hastatum",
+    "Asplenium trichomanes subsp. quadrivalens",
+    "Asplenium trichomanes subsp. trichomanes",
+    "Asplenium viride"
+  ],
+  "local_note": "The printed source states for Asplenium trichomanes subsp. trichomanes: no se tienen pruebas definitivas de su presencia en La Rioja.",
+  "v7_review_taxa": [
+    "Asplenium x alternifolium",
+    "Asplenium x sarniense",
+    "Asplenium x souchei",
+    "Asplenium x staufferi",
+    "Asplenium x ticinense"
+  ],
+  "local_catalogue_exact_presence_for_v7_review_taxa": false,
+  "national_pattern_exact_hybrid_search": {
+    "spreadsheet_id": "1gjP6VU2JxqoRq2rVcVdvDjkV7d3Z9Qmhrr5Dn3Y6kNc",
+    "canonical_column": "S",
+    "searched_rows": "1:68198",
+    "queries": ["Asplenium x", "Asplenium ×"],
+    "matches": 0,
+    "interpretation": "No exact hybrid-form Asplenium names found in the searched national pattern canonical-name column; this is not proof that the hybrids are taxonomically invalid."
+  },
+  "current_official_taxonomic_check": {
+    "source": "Plants of the World Online / WCVP, Kew, 2026",
+    "result": "ALL_FIVE_NAMES_LISTED_AS_ACCEPTED_HYBRIDS",
+    "accepted_hybrids": [
+      "Asplenium × alternifolium Wulfen",
+      "Asplenium × sarniense Sleep",
+      "Asplenium × souchei Litard.",
+      "Asplenium × staufferi (Lovis & Reichst.) L.Sáez & Rosselló",
+      "Asplenium × ticinense D.E.Mey."
+    ],
+    "distribution_note": "Taxonomic acceptance does not by itself establish presence in La Rioja."
+  },
+  "implementation_finding": {
+    "id": "HYBRID_MARKER_EXACT_MATCH_DEFECT_v1",
+    "affected_execution": "TAXONOMIC_REALITY_EFFECTIVE_2739_V7",
+    "mechanism": "The static-source canonical reconstruction uses genus/specificEpithet and can drop the hybrid marker from scientificName. Therefore an active target written as 'Genus x epithet' can be falsely classified as NO_RESPONSE_ALL_THREE even when the official source carries 'Genus × epithet'.",
+    "impact": "The five Asplenium review rows are not reliable evidence of taxonomic non-response. Other hybrid-form review rows may be affected globally.",
+    "repair": "TAXONOMIC_REALITY_EFFECTIVE_2739_V8_HYBRID_AWARE triggered; v7 preserved as historical evidence."
+  },
+  "decision": {
+    "taxonomic_names": "KEEP_AS_REAL_HYBRID_NAMES",
+    "rioja_presence": "CONFLICT_REVIEW_REQUIRED",
+    "active_universe_mutation": false,
+    "reason": "The local complete Rioja catalogue does not list these five hybrid names, while POWO/WCVP recognizes them taxonomically. Do not convert either fact into silent deletion or a Rioja-presence assertion."
+  },
+  "guards": [
+    "Taxonomic validity is distinct from presence in La Rioja.",
+    "Absence from the local catalogue is preserved as local-source negative evidence, not as global taxonomic invalidity.",
+    "POWO/WCVP acceptance is not used to infer Rioja occurrence.",
+    "v7 no-response for hybrid-form names is superseded for exact-matching interpretation by the hybrid-marker defect finding.",
+    "No active-universe deletion or replacement is authorized from this reconciliation alone."
+  ],
+  "next_step": "Run and inspect v8 hybrid-aware full-universe audit before selecting the next anomaly queue."
+}
