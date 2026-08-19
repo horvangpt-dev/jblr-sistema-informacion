@@ -1,0 +1,77 @@
+{
+  "protocol_id": "GENUS_RECONCILIATION_WITH_RIOJA_FLORA_PROTOCOL_v1",
+  "actor": "06",
+  "status": "ACTIVE_BY_USER_DIRECTIVE",
+  "purpose": "Systematically reconcile anomalous JBLR botanical genera against Flora vascular de La Rioja, the national pattern list, POWO/WCVP, WFO and ANTHOS, while detecting possible non-plant contamination.",
+  "triggers": [
+    "NO_TAXONOMIC_CANDIDATE",
+    "WEAK_CANDIDATE_REVIEW",
+    "SINGLE_SOURCE_STRONG_CANDIDATE",
+    "rank mismatch",
+    "suspected spelling/transcription error",
+    "suspected conflation of two taxa",
+    "unexpected genus/species in botanical universe",
+    "possible cross-kingdom contamination"
+  ],
+  "local_flora_input": {
+    "source": "Flora vascular de La Rioja",
+    "method": "User supplies photograph(s) covering the genus entry.",
+    "verbatim_first": true,
+    "coverage_guard": "Absence from one photograph is not absence from the local flora unless the supplied page set demonstrably covers the complete genus entry. For genera spanning several pages, all relevant pages are required before using absence as evidence."
+  },
+  "comparison_layers": [
+    {
+      "source": "Flora vascular de La Rioja",
+      "role": "local Rioja occurrence/list evidence and rank as printed"
+    },
+    {
+      "source": "Spanish national pattern list",
+      "role": "exact taxon, kingdom, family, taxonomic group and Flora Iberica-linked national record"
+    },
+    {
+      "source": "POWO/WCVP",
+      "role": "taxonomic existence/status/synonymy"
+    },
+    {
+      "source": "World Flora Online",
+      "role": "taxonomic existence/status/synonymy"
+    },
+    {
+      "source": "ANTHOS",
+      "role": "Spanish botanical taxon/occurrence support"
+    }
+  ],
+  "per_genus_outputs": [
+    "PRESENT_OK",
+    "MISSING_FROM_ACTIVE_UNIVERSE",
+    "EXTRA_IN_ACTIVE_UNIVERSE",
+    "RANK_MISMATCH",
+    "SPELLING_OR_TRANSCRIPTION_ERROR",
+    "INVALID_CONFLATION",
+    "TAXONOMIC_CONFLICT",
+    "POSSIBLE_CROSS_KINGDOM_CONTAMINATION",
+    "SOURCE_COVERAGE_INCOMPLETE",
+    "HUMAN_DECISION_REQUIRED"
+  ],
+  "cross_kingdom_guard": {
+    "rule": "An exact name returned as non-Plantae by the national pattern list is a contamination candidate, not automatic proof of exclusion.",
+    "required_confirmation": [
+      "kingdom/family/group mismatch is explicit",
+      "no corresponding botanical taxon is supported by POWO/WCVP, WFO or ANTHOS under the exact name or demonstrated valid botanical synonym",
+      "historical source row remains preserved"
+    ],
+    "final_state_if_confirmed": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE"
+  },
+  "mutation_rules": {
+    "no_silent_delete": true,
+    "no_silent_name_replacement": true,
+    "preserve_original_provenance": true,
+    "missing_local_flora_photo_alone_cannot_delete": true,
+    "user_supplied_local_flora_evidence_can_support_addition_or_rank_reconciliation_when corroborated by taxonomic/national evidence": true
+  },
+  "downstream_invalidation": {
+    "rule": "Any taxon identity change, split, merge reversal, rank replacement, addition or botanical-universe removal invalidates inherited AMENAZA, PROTECCION and REPRESENTACION_EX_SITU conclusions for the changed identity.",
+    "action": "Fresh downstream execution is required; old outputs remain audit evidence only."
+  },
+  "working_mode": "Process anomalous genera one by one. After the user supplies the relevant Rioja flora page(s), reconcile the complete genus before moving to the next genus."
+}
