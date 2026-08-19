@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "library": "07_LA_BIBLIOTECA",
   "canonical_storage": "GOOGLE_DRIVE",
   "github_role": "INDEX_AUTOMATION_AND_POINTERS",
@@ -20,11 +20,149 @@
       "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
       "geographic_scope": ["Península Ibérica", "Islas Baleares"],
       "use_classes": ["identificación", "taxonomía", "nomenclatura", "distribución"],
-      "ingest_status": "PENDING_DOWNLOAD",
-      "rule": "Cada volumen tendrá registro individual cuando sea incorporado; la colección permanecerá físicamente junta."
+      "ingest_status": "PARTIAL_10_OF_22_IN_DRIVE",
+      "acquired_verified_count": 11,
+      "drive_file_count": 10,
+      "pending_large_file_count": 1,
+      "rule": "Cada volumen tiene registro individual. La colección permanece físicamente junta en Drive."
     }
   ],
   "documents": [
+    {
+      "library_id": "JBLR-LIB-FI-000001",
+      "title": "Flora iberica. Vol. I",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/71/a5/be/6f/71a5be6f-b4bc-432f-9a6a-baa17a5d8ccb/files/Fl_iber1.pdf",
+      "drive_file_id": "1aAgbfpwRGBFYkTXVeB7K0qVQ1Xnm9eqF",
+      "drive_url": "https://drive.google.com/file/d/1aAgbfpwRGBFYkTXVeB7K0qVQ1Xnm9eqF/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 14337838,
+      "sha256": "62112a9def954cf0fa292de3758e8134efd20cf7f361cb01d0b423f85c8032ab",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000002",
+      "title": "Flora iberica. Vol. II",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/4c/53/b4/f7/4c53b4f7-9ace-4018-83b7-49df650f7f3b/files/F(46)Fl_Iber2.pdf",
+      "drive_file_id": "1mhAkxy6rVLmPtE8oP1iCaxdSa2Qst3gB",
+      "drive_url": "https://drive.google.com/file/d/1mhAkxy6rVLmPtE8oP1iCaxdSa2Qst3gB/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 20547581,
+      "sha256": "eac33a0c3c262e2ce5a76f98f46f1a406cee89ea9b214a5a573996734798b2a6",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000003",
+      "title": "Flora iberica. Vol. III",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/c3/f6/07/52/c3f60752-cff2-40b4-bf80-a03a995b641c/files/Fl_Iber3.pdf",
+      "drive_file_id": "1CHT5xTELLrwG8VEc2ZseyC_6ZI8fJ1tf",
+      "drive_url": "https://drive.google.com/file/d/1CHT5xTELLrwG8VEc2ZseyC_6ZI8fJ1tf/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 12569544,
+      "sha256": "8819f85997530604dffb731fa2fea1921ace7ad4d69182ff08a25a27e744e321",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000006",
+      "title": "Flora iberica. Vol. VI. Rosaceae",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/9902",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/89/7a/82/b8/897a82b8-c39b-4e69-aec4-cbab751b7220/files/Fl_Iber6.pdf",
+      "drive_file_id": "1jx5N3Ol_mQwTXazIzHHgl0XG37x6hphS",
+      "drive_url": "https://drive.google.com/file/d/1jx5N3Ol_mQwTXazIzHHgl0XG37x6hphS/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 13124503,
+      "sha256": "7b2a73e3f6e1119bc618e2c4222281de7d30a41b20baaf630f6efd948017e063",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000007A",
+      "title": "Flora iberica. Vol. VII (1). Leguminosae (partim)",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/9903",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/05/89/94/4b/0589944b-4ed7-46a4-b63d-a45c5f8617ff/files/Fl_Iber7%281%29.pdf",
+      "drive_file_id": "1fM9CgRgTEmopeInreAw3TF6R_ifhV9eZ",
+      "drive_url": "https://drive.google.com/file/d/1fM9CgRgTEmopeInreAw3TF6R_ifhV9eZ/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 12765715,
+      "sha256": "b625eb1e1875b0152abb0f289afd3a98771969c579470cd18a5c759dc311a778",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000008",
+      "title": "Flora iberica. Vol. VIII. Haloragaceae-Euphorbiaceae",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/9905",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/f9/86/3a/e2/f9863ae2-f845-454c-98c8-71cba67f2382/files/Fl_Iber8.pdf",
+      "drive_file_id": "1zWa7bk1eT3Zih-iIdXOJmF6RrwuouWbc",
+      "drive_url": "https://drive.google.com/file/d/1zWa7bk1eT3Zih-iIdXOJmF6RrwuouWbc/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 6208298,
+      "sha256": "7c2d9edd8032852f7d1827e7b6e743d9c7b39aabd6c2246662269ff98826c1fd",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000009",
+      "title": "Flora iberica. Vol. IX. Rhamnaceae-Polygalaceae",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/c4/51/33/b3/c45133b3-9c20-4017-926a-91004c85ae29/files/Fl_Iber9.pdf",
+      "bytes": 107146185,
+      "sha256": "3e42951b117a2228f2b979c4726f9052b1f875f793034f5484c6f08f985c22ab",
+      "acquisition_artifact_id": 9386796902,
+      "ingest_status": "ACQUIRED_VERIFIED_PENDING_DRIVE_LARGE_FILE",
+      "notes": "El PDF original fue adquirido y verificado. La transferencia local a Drive falló por límite de tamaño; no se ha fragmentado ni recomprimido."
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000012",
+      "title": "Flora iberica. Vol. XII. Verbenaceae-Labiatae-Callitrichaceae",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/79/52/4a/29/79524a29-60f7-4ae3-adab-f1737b76bb4f/files/Fl_Iber12.pdf",
+      "drive_file_id": "1WX9L3VmpP3QpavGyiM4F00qIR3iryo_G",
+      "drive_url": "https://drive.google.com/file/d/1WX9L3VmpP3QpavGyiM4F00qIR3iryo_G/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 35882227,
+      "sha256": "e9aeafad98f9293d7838624511d9baccf4f6cf0d9d329a099b2d0f46bb4a14fb",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000013",
+      "title": "Flora iberica. Vol. XIII. Plantaginaceae-Scrophulariaceae",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/e6/4c/d0/0a/e64cd00a-6746-4b04-925c-17e4d3d1b7fb/files/Fl_Iber13.pdf",
+      "drive_file_id": "1bdubKQ3rYToswfwSj_zB6sf3ZwPh8gD_",
+      "drive_url": "https://drive.google.com/file/d/1bdubKQ3rYToswfwSj_zB6sf3ZwPh8gD_/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 12947137,
+      "sha256": "edc91d7e752289f4b732ef3fab2e593dc6c86389704a2836d64647596b45eeb7",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000014",
+      "title": "Flora iberica. Vol. XIV",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/09/59/65/3a/0959653a-7994-4265-8981-218b9db67e52/files/Fl_Iber14.pdf",
+      "drive_file_id": "1vuFsOEnqzJc7SoQY7L-7kA8zg5xlVn7E",
+      "drive_url": "https://drive.google.com/file/d/1vuFsOEnqzJc7SoQY7L-7kA8zg5xlVn7E/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 7478526,
+      "sha256": "d37ccef214e585b4feae78c48e9a094c1b6046d0f3d5f126a5d3902c30f516f6",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000021",
+      "title": "Flora iberica. Vol. XXI. Smilacaceae-Orchidaceae",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/9897",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/de/2d/ec/1c/de2dec1c-730c-460c-a7af-598fde6fe80a/files/475.pdf",
+      "drive_file_id": "1fMpbeMJcuc7qXNlKRmiWFMhvhAg90scR",
+      "drive_url": "https://drive.google.com/file/d/1fMpbeMJcuc7qXNlKRmiWFMhvhAg90scR/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "bytes": 18099236,
+      "sha256": "7cb5d0687fc024bd9a6c201d8609b4f32453d0c7dcf9c659243c0f23a8f41380",
+      "ingest_status": "INGESTED_VERIFIED"
+    },
     {
       "library_id": "JBLR-LIB-000001",
       "title": "Flora de la Rioja",
@@ -40,8 +178,8 @@
       "contains_taxon_records": "REVIEW_REQUIRED",
       "contains_population_counts": "UNKNOWN",
       "rioja_priority": "MAXIMUM",
-      "ingest_status": "LOCATED_PENDING_DOWNLOAD",
-      "notes": "Obra prioritaria para extracción posterior de citas históricas, taxones y localidades. Los dos tomos deberán recibir subregistros individuales al incorporarse."
+      "ingest_status": "PARTIAL_TOMO_II_INGESTED",
+      "notes": "Tomo II incorporado. Tomo I pendiente. Obra prioritaria para extracción posterior de citas históricas, taxones y localidades."
     },
     {
       "library_id": "JBLR-LIB-000002",
@@ -49,15 +187,20 @@
       "author": "Zubía e Icazuriaga, Ildefonso",
       "year": 1921,
       "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
-      "source_url": "https://bibdigital.rjb.csic.es/idurl/1/10190",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/10190",
+      "source_url": "https://bibdigital.rjb.csic.es/medias/e3/fa/2f/5c/e3fa2f5c-cb87-4a98-a445-abd2fb43ab97/files/ZUB_Fl_Rioj_1.pdf",
       "drive_path": "Botanico/07_BIBLIOTECA/01_RIOJA_DIRECTA/00_FUENTES_TAXONES_LOCALIZACIONES_Y_CENSOS/04_HISTORICAS_HASTA_1950",
       "drive_folder_id": "1u7R1-MkrkWxyv7MFyUmSV4Jn5aGC-0tg",
+      "drive_file_id": "1k1pOqlW6H2BsbEBX2LI8wr5aFbFHXOEq",
+      "drive_url": "https://drive.google.com/file/d/1k1pOqlW6H2BsbEBX2LI8wr5aFbFHXOEq/view",
+      "bytes": 53790037,
+      "sha256": "a2d03d49ac0924514b173b2c7a64709b45a4d50c24613738b621cb3277a0dba1",
       "geographic_scope": ["La Rioja"],
       "contains_locality_or_chorology": "REVIEW_REQUIRED",
       "contains_taxon_records": "REVIEW_REQUIRED",
       "contains_population_counts": "UNKNOWN",
       "rioja_priority": "MAXIMUM",
-      "ingest_status": "LOCATED_PENDING_DOWNLOAD"
+      "ingest_status": "INGESTED_VERIFIED"
     },
     {
       "library_id": "JBLR-LIB-SER-000001",
@@ -79,6 +222,17 @@
       "rioja_priority": "MAXIMUM",
       "ingest_status": "LOCATED_PENDING_EXACT_ITEM_URLS_AND_DOWNLOAD",
       "notes": "Crear un registro individual por parte cuando se resuelvan los item/permalink exactos."
+    }
+  ],
+  "acquisition_batches": [
+    {
+      "batch": "RJB_CORE_01",
+      "workflow_run_id": 32312019323,
+      "artifact_id": 9386796902,
+      "artifact_sha256": "564f66ab782b90438146ecd250fb9f12d251d9dc45a2abac91170737b0282d91",
+      "targets": 11,
+      "acquired": 11,
+      "failures": 0
     }
   ],
   "invariants": {
