@@ -1,0 +1,6 @@
+JBLR_ACTIVE_TAXON_UNIVERSE_HASH_SAFE_BATCH_v2
+triggered_at=2026-08-20T01:28:00+02:00
+pilot_gate=EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v3_PASS
+accepted_only=true
+odontites_mutated=false
+herniaria_mutated=false
