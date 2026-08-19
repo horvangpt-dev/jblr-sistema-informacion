@@ -1,0 +1,64 @@
+{
+  "override_id": "JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v1",
+  "base_universe": {
+    "row_count": 2742,
+    "minimal_queue_sha256": "901f748d8733dfb85cb566bbc0308274248718bd98fb10c72721fbdd415685ed"
+  },
+  "result_universe": {
+    "row_count": 2742,
+    "minimal_queue_sha256": "6875c0833e11206bacb0c9599f1fdc6785ef827b4eeea7819c79368a83e1b50b"
+  },
+  "guard": "Apply only when universe_index and expected_original_taxon both match. Refuse silent application on mismatch.",
+  "replacements": [
+    {
+      "universe_index": 196,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria grandiflora",
+      "active_taxon": "Arenaria grandiflora subsp. grandiflora",
+      "reason": "Exact Rioja flora rank reconciliation"
+    },
+    {
+      "universe_index": 197,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria interpres",
+      "active_taxon": "Arenaria pomelii",
+      "reason": "Remove cross-kingdom bird contamination while preserving user-authorized real Arenaria pomelii from the conflated-name review"
+    },
+    {
+      "universe_index": 199,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria modesta",
+      "active_taxon": "Arenaria modesta subsp. modesta",
+      "reason": "Exact Rioja flora rank reconciliation"
+    },
+    {
+      "universe_index": 200,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria montana",
+      "active_taxon": "Arenaria montana subsp. montana",
+      "reason": "Exact Rioja flora rank reconciliation"
+    },
+    {
+      "universe_index": 201,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria pomelii subsp. ciliaris",
+      "active_taxon": "Arenaria obtusiflora subsp. ciliaris",
+      "reason": "Remove invalid conflated combination; exact local flora and national pattern record support A. obtusiflora subsp. ciliaris"
+    }
+  ],
+  "corrected_arenaria_active_set": [
+    "Arenaria erinacea",
+    "Arenaria grandiflora subsp. grandiflora",
+    "Arenaria pomelii",
+    "Arenaria leptoclados",
+    "Arenaria modesta subsp. modesta",
+    "Arenaria montana subsp. montana",
+    "Arenaria obtusiflora subsp. ciliaris",
+    "Arenaria serpyllifolia"
+  ],
+  "invalidated_downstream_evidence": {
+    "rule": "No threat/protection/ex-situ score is inherited across a taxon-identity replacement.",
+    "requires_fresh_reexecution_indices": [196, 197, 199, 200, 201]
+  },
+  "provenance": "See app/data/taxonomy/arenaria-rioja-reconciliation-v1.json"
+}
