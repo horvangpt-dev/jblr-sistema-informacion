@@ -7,6 +7,12 @@ on:
     paths:
       - '.github/workflows/07_rjb_probe.yml'
       - 'library/07_biblioteca/diagnostics/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/07_rjb_probe.yml'
+      - 'library/07_biblioteca/diagnostics/**'
   workflow_dispatch:
 
 permissions:
