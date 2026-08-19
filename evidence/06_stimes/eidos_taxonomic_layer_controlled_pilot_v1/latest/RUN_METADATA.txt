@@ -1,0 +1,6 @@
+github_run_id=32312652051
+source_commit=79d5d61f3d6d3624f33f1aef71074830928a188d
+authority=MITECO_IEPNB_EIDOS
+endpoint=https://datos.iepnb.es/sparql
+canonical_field_directive=JBLR-EVT-0000-20260820-TAXONOMIC-FIELDS-001
+canonical_execution_directive=JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001
