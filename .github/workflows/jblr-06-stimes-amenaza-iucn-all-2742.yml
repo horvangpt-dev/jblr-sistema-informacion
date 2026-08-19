@@ -88,3 +88,5 @@ jobs:
           path: artifacts/iucn_all_2742_fresh/
           if-no-files-found: warn
           retention-days: 30
+
+# activation: full universe fresh acquisition
