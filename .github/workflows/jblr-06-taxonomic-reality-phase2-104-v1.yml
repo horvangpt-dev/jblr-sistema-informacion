@@ -1,0 +1,75 @@
+name: JBLR TAXONOMIC REALITY PHASE2 104
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - 06-stimes-banco-semillas
+    paths:
+      - 'app/data/stimes/amenaza/taxonomic-reality-phase2-104-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jblr-taxonomic-reality-phase2-104
+  cancel-in-progress: false
+
+jobs:
+  taxonomic-reality-phase2-104:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TAXON_PHASE2_OUT: artifacts/taxonomic_reality_phase2_104
+    steps:
+      - name: Checkout canonical actor branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-stimes-banco-semillas
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests
+
+      - name: Execute synonym notation and spelling candidate analysis
+        run: python3 app/scripts/taxonomic-reality-phase2-104-v1.py
+
+      - name: Materialize auditable phase-2 results
+        if: success()
+        shell: bash
+        run: |
+          TARGET='evidence/06_stimes/taxonomic_reality_phase2_104/latest'
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          cp "$TAXON_PHASE2_OUT/TAXONOMIC_REALITY_PHASE2_104_RESULTS.csv" "$TARGET/"
+          cp "$TAXON_PHASE2_OUT/TAXONOMIC_REALITY_PHASE2_HUMAN_REVIEW.csv" "$TARGET/"
+          cp "$TAXON_PHASE2_OUT/TAXONOMIC_REALITY_PHASE2_SUPPORTED.csv" "$TARGET/"
+          cp "$TAXON_PHASE2_OUT/TAXONOMIC_REALITY_PHASE2_104_QA.json" "$TARGET/"
+          printf '%s\n' \
+            "github_run_id=${GITHUB_RUN_ID}" \
+            "source_commit=${GITHUB_SHA}" \
+            'scope=PHASE1_NO_RESPONSE_ALL_THREE_104' \
+            'sources=POWO_WCVP_OFFICIAL_DWCA,WFO_2026_06_OFFICIAL_CLASSIFICATION,ANTHOS_RJB_CSIC_OFFICIAL_DWCA' \
+            'phase=SYNONYMY_NOTATION_SPELLING_CANDIDATE_REVIEW' \
+            'automatic_correction=NO' \
+            'automatic_deletion=NO' \
+            > "$TARGET/RUN_METADATA.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$TARGET"
+          if git diff --cached --quiet; then
+            echo 'No result change to commit'
+          else
+            git commit -m 'Materialize taxonomic reality phase2 for 104 unresolved taxa [skip ci]'
+            git push origin HEAD:06-stimes-banco-semillas
+          fi
+
+      - name: Upload execution artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TAXONOMIC_REALITY_PHASE2_104_V1
+          path: artifacts/taxonomic_reality_phase2_104/
+          if-no-files-found: warn
+          retention-days: 30
