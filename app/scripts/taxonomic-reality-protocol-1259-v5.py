@@ -7,6 +7,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+import certifi
 import requests
 
 V4_PATH = Path(__file__).with_name("taxonomic-reality-protocol-1259-v4.py")
@@ -58,8 +59,9 @@ def truthy(value):
 class WfoApi:
     def __init__(self):
         self.session = requests.Session()
+        self.session.verify = certifi.where()
         self.session.headers.update({
-            "User-Agent": "JBLR-Taxonomic-Reality-Protocol/5.0 (+scientific quality-control)",
+            "User-Agent": "JBLR-Taxonomic-Reality-Protocol/5.1 (+scientific quality-control)",
             "Accept": "application/json",
             "Content-Type": "application/json",
         })
@@ -73,6 +75,7 @@ class WfoApi:
             "fallbackToGenus": False,
             "checkHomonyms": False,
             "checkRank": False,
+            "tls_verification": "CERTIFI_CA_BUNDLE",
         }
 
     def _throttle(self):
@@ -202,7 +205,7 @@ def execute():
     }
     preflight_ok = all(v.get("pass") for v in controls.values())
     preflight = {
-        "execution": "TAXONOMIC_REALITY_1259_PREFLIGHT_v5",
+        "execution": "TAXONOMIC_REALITY_1259_PREFLIGHT_v5_1",
         "at": now(),
         "pass": preflight_ok,
         "checks": controls,
@@ -271,7 +274,7 @@ def execute():
     write_csv(OUT / "TAXONOMIC_REALITY_REVIEW_REQUIRED_V5.csv", review)
 
     qa = {
-        "execution": "TAXONOMIC_REALITY_1259_V5",
+        "execution": "TAXONOMIC_REALITY_1259_V5_1",
         "at": now(),
         "queue_count": len(queue),
         "results_count": len(results),
