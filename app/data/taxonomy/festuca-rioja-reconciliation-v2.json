@@ -1,0 +1,27 @@
+{
+  "id": "FESTUCA_RIOJA_RECONCILIATION_v2",
+  "date": "2026-08-19",
+  "supersedes_analysis_state_only": "FESTUCA_RIOJA_RECONCILIATION_v1",
+  "family": "POACEAE",
+  "genus": "Festuca",
+  "state": "ANALYSIS_COMPLETE_SP_PLACEHOLDER_EXCLUDED_CONFLICTS_PRESERVED",
+  "unchanged_from_v1": [
+    "Festuca carpetana remains PRESENT_OK_KEEP_REAL_TAXON.",
+    "Festuca arundinacea subsp. fenas remains a real historical name/current synonym case and is not silently removed.",
+    "Festuca ovina var. glauca remains authorship/homonym ambiguous.",
+    "Festuca rivas-martinezii remains a rank/taxonomic-treatment conflict.",
+    "Festuca ampla, Festuca pratensis, Festuca rivularis and Festuca rubra subsp. rubra remain Rioja-source conflict reviews, not absences."
+  ],
+  "new_user_authorized_action": {
+    "universe_index": 981,
+    "expected_original_taxon": "Festuca sp.",
+    "action": "EXCLUDE_FROM_ACTIVE_SPECIES_UNIVERSE_PRESERVE_HISTORY",
+    "basis": "NON_SPECIFIC_SP_ACTIVE_UNIVERSE_EXCLUSION_RULE_v1"
+  },
+  "guards": [
+    "No other Festuca is removed by this version.",
+    "No source disagreement is converted into absence.",
+    "Historical provenance is preserved."
+  ],
+  "active_universe_mutation": true
+}
