@@ -1,0 +1,242 @@
+{
+  "execution": "TAXONOMIC_REALITY_1259_PREFLIGHT_v6",
+  "at": "2026-08-19T17:29:43.531735+00:00",
+  "pass": true,
+  "checks": {
+    "powo_wcvp": {
+      "pass": true,
+      "positive_attempts": [
+        {
+          "name": "Quercus ilex",
+          "result": {
+            "state": "EXACT_CANONICAL_FOUND",
+            "matched_canonical": "Quercus ilex",
+            "scientific_name": "Quercus ilex",
+            "authorship": "Lour.",
+            "taxonomic_status": "Illegitimate",
+            "accepted_name": "",
+            "accepted_id": "173047",
+            "taxon_id": "173163",
+            "source_sha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483",
+            "error": ""
+          }
+        }
+      ],
+      "nonsense": {
+        "state": "EXACT_CANONICAL_NOT_FOUND",
+        "matched_canonical": "",
+        "scientific_name": "",
+        "authorship": "",
+        "taxonomic_status": "",
+        "accepted_name": "",
+        "accepted_id": "",
+        "taxon_id": "",
+        "source_sha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483",
+        "error": ""
+      },
+      "meta": {
+        "source": "POWO/WCVP",
+        "provenance": "WCVP official Darwin Core Archive published by Royal Botanic Gardens, Kew; WCVP is the POWO names backbone",
+        "requested_url": "http://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+        "final_url": "https://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+        "archive_sha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483",
+        "archive_bytes": 88208088,
+        "meta_location": "meta.xml",
+        "core_location_declared": "wcvp_taxon.csv",
+        "core_location_resolved": "wcvp_taxon.csv",
+        "core_rows": 1448984,
+        "unique_canonical_names": 1394071,
+        "available_fields": [
+          "acceptedNameUsageID",
+          "dynamicProperties",
+          "family",
+          "genus",
+          "infraSpecificEpithet",
+          "namePublishedIn",
+          "nomenclaturalStatus",
+          "originalNameUsageID",
+          "parentNameUsageID",
+          "references",
+          "scientificName",
+          "scientificNameAuthorship",
+          "scientificNameID",
+          "specificEpithet",
+          "taxonID",
+          "taxonomicStatus",
+          "taxonRank",
+          "taxonRemarks"
+        ],
+        "parser_version": "ROBUST_DWCA_NESTED_META_CASEFOLD_v4"
+      }
+    },
+    "wfo": {
+      "pass": true,
+      "positive_attempts": [
+        {
+          "name": "Quercus ilex",
+          "result": {
+            "state": "EXACT_CANONICAL_FOUND",
+            "matched_canonical": "Quercus ilex",
+            "scientific_name": "Quercus ilex",
+            "authorship": "L.",
+            "taxonomic_status": "Accepted",
+            "accepted_name": "",
+            "accepted_id": "",
+            "taxon_id": "wfo-0000291202",
+            "source_sha256": "ccfc7e3ca85c8b80aa96eb52d4e50e07e1811d28916b544280d8a4f1a043ba72",
+            "error": ""
+          }
+        }
+      ],
+      "nonsense": {
+        "state": "EXACT_CANONICAL_NOT_FOUND",
+        "matched_canonical": "",
+        "scientific_name": "",
+        "authorship": "",
+        "taxonomic_status": "",
+        "accepted_name": "",
+        "accepted_id": "",
+        "taxon_id": "",
+        "source_sha256": "ccfc7e3ca85c8b80aa96eb52d4e50e07e1811d28916b544280d8a4f1a043ba72",
+        "error": ""
+      },
+      "meta": {
+        "source": "World Flora Online",
+        "provenance": "World Flora Online Plant List 2026-06 official _DwC_backbone_R.zip via Zenodo",
+        "requested_url": "https://zenodo.org/records/20782718/files/_DwC_backbone_R.zip?download=1",
+        "final_url": "https://zenodo.org/records/20782718/files/_DwC_backbone_R.zip?download=1",
+        "archive_sha256": "ccfc7e3ca85c8b80aa96eb52d4e50e07e1811d28916b544280d8a4f1a043ba72",
+        "archive_bytes": 121660019,
+        "member": "classification.csv",
+        "rows_scanned": 1664014,
+        "matched_rows": 1516,
+        "targets": 1263,
+        "headers": [
+          "taxonID",
+          "scientificNameID",
+          "localID",
+          "scientificName",
+          "taxonRank",
+          "parentNameUsageID",
+          "scientificNameAuthorship",
+          "family",
+          "subfamily",
+          "tribe",
+          "subtribe",
+          "genus",
+          "subgenus",
+          "specificEpithet",
+          "infraspecificEpithet",
+          "verbatimTaxonRank",
+          "nomenclaturalStatus",
+          "namePublishedIn",
+          "taxonomicStatus",
+          "acceptedNameUsageID",
+          "originalNameUsageID",
+          "nameAccordingToID",
+          "taxonRemarks",
+          "created",
+          "modified",
+          "references",
+          "source",
+          "majorGroup",
+          "tplID"
+        ],
+        "delimiter": "\t",
+        "field_resolution": {
+          "canonical": null,
+          "scientific": "scientificName",
+          "authorship": "scientificNameAuthorship",
+          "genus": "genus",
+          "species": "specificEpithet",
+          "infra": "infraspecificEpithet",
+          "rank": "taxonRank",
+          "status": "taxonomicStatus",
+          "accepted": null,
+          "accepted_id": "acceptedNameUsageID",
+          "id": "taxonID"
+        }
+      }
+    },
+    "anthos": {
+      "pass": true,
+      "positive_attempts": [
+        {
+          "name": "Quercus ilex",
+          "result": {
+            "state": "EXACT_CANONICAL_FOUND",
+            "matched_canonical": "Quercus ilex",
+            "scientific_name": "Quercus ilex L.",
+            "authorship": "L.",
+            "taxonomic_status": "",
+            "accepted_name": "",
+            "accepted_id": "",
+            "taxon_id": "FUND. BIODIVERSIDAD:ANTHOS:41062",
+            "source_sha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991",
+            "error": ""
+          }
+        }
+      ],
+      "nonsense": {
+        "state": "EXACT_CANONICAL_NOT_FOUND",
+        "matched_canonical": "",
+        "scientific_name": "",
+        "authorship": "",
+        "taxonomic_status": "",
+        "accepted_name": "",
+        "accepted_id": "",
+        "taxon_id": "",
+        "source_sha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991",
+        "error": ""
+      },
+      "meta": {
+        "source": "ANTHOS",
+        "provenance": "ANTHOS official RJB-CSIC Darwin Core Archive via GBIF-Spain IPT",
+        "requested_url": "https://ipt.gbif.es/archive.do?r=rjb-anthos",
+        "final_url": "https://ipt.gbif.es/archive.do?r=rjb-anthos",
+        "archive_sha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991",
+        "archive_bytes": 57334273,
+        "meta_location": "meta.xml",
+        "core_location_declared": "occurrence.txt",
+        "core_location_resolved": "occurrence.txt",
+        "core_rows": 1667138,
+        "unique_canonical_names": 9031,
+        "available_fields": [
+          "basisOfRecord",
+          "catalogNumber",
+          "class",
+          "collectionCode",
+          "coordinateUncertaintyInMeters",
+          "country",
+          "countryCode",
+          "decimalLatitude",
+          "decimalLongitude",
+          "establishmentMeans",
+          "family",
+          "genus",
+          "geodeticDatum",
+          "habitat",
+          "infraspecificEpithet",
+          "institutionCode",
+          "kingdom",
+          "language",
+          "locality",
+          "maximumElevationInMeters",
+          "minimumElevationInMeters",
+          "modified",
+          "occurrenceID",
+          "order",
+          "phylum",
+          "scientificName",
+          "scientificNameAuthorship",
+          "specificEpithet",
+          "stateProvince",
+          "taxonRank",
+          "verbatimCoordinates",
+          "verbatimElevation"
+        ],
+        "parser_version": "ROBUST_DWCA_NESTED_META_CASEFOLD_v4"
+      }
+    }
+  }
+}
