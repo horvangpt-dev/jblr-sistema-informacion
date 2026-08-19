@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install requests
+          python3 -m pip install requests certifi
 
       - name: Execute preflight and full 1259-taxon three-source reality filter
         run: python3 app/scripts/taxonomic-reality-protocol-1259-v5.py
