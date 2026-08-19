@@ -1,0 +1,46 @@
+name: JBLR STIMES AMENAZA IUCN UNKNOWN 523 FRESH
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 06-stimes-banco-semillas
+    paths:
+      - .github/workflows/jblr-06-stimes-amenaza-iucn-unknown-523.yml
+      - app/scripts/stimes-amenaza-iucn-unknown-523-fresh.py
+
+permissions:
+  contents: read
+
+jobs:
+  iucn-unknown-523-fresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      IUCN_API_TOKEN: ${{ secrets.IUCN_API_TOKEN }}
+      IUCN_OUT: artifacts/iucn_unknown_523_fresh
+      IUCN_WAIT_SECONDS: "0.65"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify IUCN secret
+        shell: bash
+        run: |
+          if [ -z "${IUCN_API_TOKEN}" ]; then
+            echo "IUCN_API_TOKEN is not configured"
+            exit 1
+          fi
+          echo "IUCN_API_TOKEN is configured"
+
+      - name: Execute fresh IUCN API v4 search
+        run: python3 app/scripts/stimes-amenaza-iucn-unknown-523-fresh.py
+
+      - name: Upload fresh IUCN evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: IUCN_UNKNOWN_523_FRESH_v1
+          path: artifacts/iucn_unknown_523_fresh/
+          if-no-files-found: warn
+          retention-days: 30
