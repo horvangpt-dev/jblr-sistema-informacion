@@ -1,0 +1,85 @@
+{
+  "id": "ONOPORDUM_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-19",
+  "family": "ASTERACEAE",
+  "input_anomaly_genus": "Onopordon",
+  "resolved_genus": "Onopordum",
+  "state": "RECONCILIATION_COMPLETE_ACTIVE_UNIVERSE_MUTATION_PENDING_HASH_SAFE_BATCH",
+  "local_evidence": {
+    "source": "User photograph, Actualización del catálogo de la flora vascular silvestre de La Rioja. Catálogo florístico, p. 22",
+    "coverage": "Complete Onopordum block; preceded by Omalotheca and followed by Pallenis.",
+    "taxa_as_printed": [
+      "Onopordum acanthium",
+      "Onopordum acaulon",
+      "Onopordum corymbosum subsp. corymbosum",
+      "Onopordum nervosum"
+    ]
+  },
+  "national_pattern_evidence": {
+    "source": "Spanish national pattern list, JBLR temporary native sheet 1gjP6VU2JxqoRq2rVcVdvDjkV7d3Z9Qmhrr5Dn3Y6kNc",
+    "supported_names": [
+      "Onopordum acanthium",
+      "Onopordum acanthium subsp. acanthium",
+      "Onopordum acaulon",
+      "Onopordum corymbosum",
+      "Onopordum corymbosum subsp. corymbosum",
+      "Onopordum nervosum"
+    ],
+    "kingdom": "Plantae",
+    "family": "Asteraceae",
+    "group": "Plantas vasculares"
+  },
+  "v8_context": {
+    "wrong_spelling_review_rows": [
+      {"universe_index": 1732, "taxon": "Onopordon acanthium"},
+      {"universe_index": 1733, "taxon": "Onopordon corymbosum"},
+      {"universe_index": 1734, "taxon": "Onopordon nervosum"}
+    ],
+    "already_present_correct_rows": [
+      {"universe_index": 1735, "taxon": "Onopordum acanthium", "exact_supported_powo_wfo_anthos": true},
+      {"universe_index": 1736, "taxon": "Onopordum acaulon", "exact_supported_powo_wfo_anthos": true},
+      {"universe_index": 1737, "taxon": "Onopordum corymbosum", "exact_supported_at_least_one_official_source": true},
+      {"universe_index": 1738, "taxon": "Onopordum nervosum", "exact_supported_at_least_one_official_source": true}
+    ]
+  },
+  "current_international_taxonomic_evidence": {
+    "powo_wcvp_2026": "Onopordum corymbosum Willk. is accepted at species rank; Onopordum tauricum subsp. corymbosum is treated as a synonym of O. corymbosum.",
+    "wfo_2026": "Onopordum corymbosum Willk. is accepted at species rank.",
+    "interpretation": "International current treatment at species rank does not invalidate the Spanish/local autonymic subspecies record; preserve the framework/rank distinction rather than silently collapsing it."
+  },
+  "decisions": [
+    {
+      "universe_index": 1732,
+      "expected_original_taxon": "Onopordon acanthium",
+      "classification": "SPELLING_OR_TRANSCRIPTION_ERROR_DUPLICATE_OF_EXISTING_CORRECT_TAXON",
+      "action": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
+      "duplicate_target_index": 1735,
+      "duplicate_target_taxon": "Onopordum acanthium"
+    },
+    {
+      "universe_index": 1733,
+      "expected_original_taxon": "Onopordon corymbosum",
+      "classification": "SPELLING_ERROR_PLUS_LOCAL_NATIONAL_RANK_RECONCILIATION",
+      "action": "REPLACE_BY_GUARDED_OVERLAY",
+      "active_taxon_candidate": "Onopordum corymbosum subsp. corymbosum",
+      "reason": "The correct species Onopordum corymbosum already exists at index 1737; the complete Rioja flora block and the Spanish national pattern list both explicitly support the autonymic subspecies, which is otherwise missing from the active universe."
+    },
+    {
+      "universe_index": 1734,
+      "expected_original_taxon": "Onopordon nervosum",
+      "classification": "SPELLING_OR_TRANSCRIPTION_ERROR_DUPLICATE_OF_EXISTING_CORRECT_TAXON",
+      "action": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
+      "duplicate_target_index": 1738,
+      "duplicate_target_taxon": "Onopordum nervosum"
+    }
+  ],
+  "guards": [
+    "Do not create duplicate active species rows where a correctly spelled Onopordum taxon already exists.",
+    "Preserve all original Onopordon strings as historical provenance.",
+    "Do not silently collapse the Spanish/local Onopordum corymbosum subsp. corymbosum rank into the international species-rank treatment.",
+    "No threat, protection or ex-situ score is inherited across the 1733 identity/rank replacement without fresh downstream execution.",
+    "Apply all exclusions/replacements only through a hash-safe regenerated active-universe overlay."
+  ],
+  "active_universe_mutation": "PENDING_HASH_SAFE_BATCH_WITH_ODONTITES_AND_OENANTHE",
+  "next_genus_after_resolution": "CARYOPHYLLACEAE · Herniaria"
+}
