@@ -1,0 +1,188 @@
+{
+  "reconciliation_id": "SAXIFRAGA_RIOJA_RECONCILIATION_v1",
+  "actor": "06",
+  "family": "SAXIFRAGACEAE",
+  "genus": "Saxifraga",
+  "created_at": "2026-08-20T00:46:54+02:00",
+  "protocol_id": "GENUS_RECONCILIATION_WITH_RIOJA_FLORA_PROTOCOL_v1",
+  "status": "ACTIVE_UNIVERSE_DECISION_CLOSED_NO_MUTATION_WITH_NATIONAL_PATTERN_EXACT_RECHECK_TOOL_UNAVAILABLE",
+  "branch": "06-taxonomic-genus-reconciliation-v3",
+  "branch_head_before": "33199cd08ea18f956059dae037397c268f5f4a66",
+  "principles": {
+    "reality_first": true,
+    "no_silent_inference": true,
+    "preserve_source_verbatim_and_rank": true,
+    "rank_difference_alone_cannot_delete": true,
+    "historical_presence_does_not_equal_current_validated_presence": true
+  },
+  "local_rioja_flora_direct_evidence": {
+    "source": "Flora vascular de La Rioja · user-supplied direct photograph · same image previously used for SALICACEAE · Salix",
+    "page": 43,
+    "coverage_confirmation": "USER_CONFIRMED_SAXIFRAGACEAE_SAXIFRAGA_BLOCK_IS_BELOW_SALICACEAE_IN_THE_ALREADY_SUPPLIED_IMAGE",
+    "priority": "MAXIMUM_LOCAL_PRIORITY",
+    "visual_retranscription_state_this_execution": "NOT_RE_RENDERED_FROM_IMAGE_IN_CURRENT_TOOL_CONTEXT",
+    "guard": "Do not invent or claim a fresh visual transcription from an image that could not be re-rendered. Use the independently recovered 2026 JBLR catalogue as machine-readable local-current evidence while preserving the user's direct-photo provenance."
+  },
+  "rioja_catalogue_2026": {
+    "source_id": "1-GcXsv73HIO_FI_lSBmCHmaCjr9Ay_hh",
+    "source_title": "Catálogo flora Rioja_cruce Banco semillas JBLR_Febrero 11-02-2026.xlsx",
+    "rows": "1770-1781",
+    "treatments": [
+      "Saxifraga aizoides",
+      "Saxifraga carpetana",
+      "Saxifraga dichotoma",
+      "Saxifraga fragosoi",
+      "Saxifraga granulata",
+      "Saxifraga hirsuta",
+      "Saxifraga losae",
+      "Saxifraga moncayensis",
+      "Saxifraga oppositifolia",
+      "Saxifraga pentadactylis subsp. willkommiana",
+      "Saxifraga platyloba",
+      "Saxifraga tridactylites"
+    ],
+    "source_note_for_platyloba": "The 2026 catalogue itself records Saxifraga platyloba with an explicit equivalence note to Saxifraga cuneata sensu Flora iberica.",
+    "all_represented_in_active_v8": true,
+    "count": 12
+  },
+  "rioja_lista_patron_2016": {
+    "source": "Banco de Datos de la Biodiversidad de La Rioja · Lista Patrón de Especies Silvestres",
+    "date": "2016-11-04",
+    "page": 138,
+    "type_in_source": "Autóctona",
+    "historical_treatments": [
+      "Saxifraga carpetana subsp. carpetana",
+      "Saxifraga cuneata",
+      "Saxifraga cuneata x S. fragosoi",
+      "Saxifraga cuneata x S. losae",
+      "Saxifraga dichotoma",
+      "Saxifraga fragosoi",
+      "Saxifraga granulata",
+      "Saxifraga hirsuta subsp. hirsuta",
+      "Saxifraga losae",
+      "Saxifraga moncayensis",
+      "Saxifraga oppositifolia subsp. oppositifolia",
+      "Saxifraga pentadactylis subsp. willkommiana",
+      "Saxifraga tridactylites",
+      "Saxifraga x arizagae",
+      "Saxifraga x celtiberica"
+    ],
+    "count": 15,
+    "interpretation": "Historical regional assertions are preserved exactly and are not silently promoted to current 2026 flora assertions."
+  },
+  "merged_rioja_catalogue_crosswalk": {
+    "source": "Flora_vascular_La_Rioja_catalogo_completo_cruce_lista_patron.xlsx · Añadidos Lista Patrón",
+    "explicitly_added_because_literal_not_represented_in_2026_catalogue": [
+      "Saxifraga cuneata",
+      "Saxifraga cuneata x S. losae",
+      "Saxifraga hirsuta subsp. hirsuta",
+      "Saxifraga x arizagae",
+      "Saxifraga x celtiberica"
+    ]
+  },
+  "active_v8": {
+    "run": "TAXONOMIC_REALITY_EFFECTIVE_2739_V8",
+    "materialization_commit": "1cab528b0e6093858d5121a50a10bfae3ff2e13e",
+    "rows": [
+      {"universe_index": 2248, "taxon": "Saxifraga aizoides", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2249, "taxon": "Saxifraga carpetana", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2250, "taxon": "Saxifraga cuneata", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2251, "taxon": "Saxifraga cuneata x S. losae", "resolution": "NO_RESPONSE_ALL_THREE_REVIEW_REQUIRED", "reconciliation_resolution": "SEMANTIC_PARENT_FORMULA_RESOLVED_TO_ACCEPTED_SAXIFRAGA_X_ALEJANDREI_NO_SOURCE_LITERAL_REPLACEMENT"},
+      {"universe_index": 2252, "taxon": "Saxifraga dichotoma", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2253, "taxon": "Saxifraga fragosoi", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2254, "taxon": "Saxifraga granulata", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2255, "taxon": "Saxifraga hirsuta", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2256, "taxon": "Saxifraga hirsuta subsp. hirsuta", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2257, "taxon": "Saxifraga losae", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2258, "taxon": "Saxifraga moncayensis", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2259, "taxon": "Saxifraga oppositifolia", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2260, "taxon": "Saxifraga pentadactylis subsp. willkommiana", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+      {"universe_index": 2261, "taxon": "Saxifraga platyloba", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE", "powo_wfo_status_in_v8": "SYNONYM", "accepted_name_in_v8": "Saxifraga cuneata"},
+      {"universe_index": 2262, "taxon": "Saxifraga tridactylites", "resolution": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"}
+    ],
+    "active_count": 15,
+    "review_rows_for_genus_in_last_full_v8": 1,
+    "review_taxon": "Saxifraga cuneata x S. losae",
+    "global_review_required_last_full_execution": 78,
+    "global_counts_rematerialized_after_saxifraga": false
+  },
+  "current_taxonomic_reconciliation": {
+    "powo_wcvp": [
+      {
+        "source_literal": "Saxifraga cuneata x S. losae",
+        "current_accepted_treatment": "Saxifraga × alejandrei P.Vargas",
+        "relationship": "EXPLICIT_HYBRID_FORMULA_EQUIVALENCE",
+        "hybrid_formula": "Saxifraga cuneata × Saxifraga losae",
+        "decision": "PRESERVE_SOURCE_LITERAL_AND_LINK_TO_ACCEPTED_NAMED_HYBRID"
+      },
+      {
+        "source_literal": "Saxifraga cuneata x S. fragosoi",
+        "current_accepted_treatment": "Saxifraga × urbionica Losa",
+        "relationship": "EXPLICIT_HYBRID_FORMULA_EQUIVALENCE",
+        "hybrid_formula": "Saxifraga cuneata × Saxifraga fragosoi",
+        "decision": "PRESERVE_HISTORICAL_SOURCE_LITERAL_AND_LINK_TO_ACCEPTED_NAMED_HYBRID"
+      },
+      {
+        "source_literal": "Saxifraga platyloba",
+        "current_accepted_treatment": "Saxifraga cuneata",
+        "relationship": "EXPLICIT_SYNONYMY_ALREADY_PRESENT_IN_V8_AND_2026_CATALOGUE_CONTEXT",
+        "decision": "PRESERVE_BOTH_SOURCE_NAMES_AND_PROVENANCE_NO_DESTRUCTIVE_REPLACEMENT"
+      },
+      {
+        "source_literal": "Saxifraga x arizagae",
+        "relationship": "CURRENT_POWO_ACCEPTED_SPECIES_LIST_AND_WFO_GENUS_LIST_SUPPORT",
+        "decision": "PRESERVE_HISTORICAL_REGIONAL_LITERAL_NO_AUTOMATIC_ACTIVE_ADDITION"
+      },
+      {
+        "source_literal": "Saxifraga x celtiberica",
+        "relationship": "CURRENT_POWO_ACCEPTED_SPECIES_LIST_AND_WFO_GENUS_LIST_SUPPORT",
+        "decision": "PRESERVE_HISTORICAL_REGIONAL_LITERAL_NO_AUTOMATIC_ACTIVE_ADDITION"
+      }
+    ],
+    "anthos": {
+      "basis": "Official ANTHOS archive used in V8 exact audit",
+      "v8_source_complete": true,
+      "separate_live_requery_this_execution": false,
+      "guard": "Do not infer taxon-specific live ANTHOS states beyond the V8 recorded exact results."
+    },
+    "spanish_national_pattern": {
+      "official_current_dataset_existence_confirmed": true,
+      "taxon_level_exact_recheck_this_execution": "TOOL_UNAVAILABLE",
+      "failure": "artifact_tool RPC TransportError/Broken pipe while importing the supplied official workbook",
+      "inference_made": false,
+      "decision_dependency": "NONE_FOR_CURRENT_NO_MUTATION_DECISION"
+    }
+  },
+  "active_universe_decision": {
+    "current_2026_catalogue_treatments_missing_from_active_v8": [],
+    "active_v8_treatments_not_literal_in_current_2026_catalogue_but_preserved": [
+      "Saxifraga cuneata",
+      "Saxifraga cuneata x S. losae",
+      "Saxifraga hirsuta subsp. hirsuta"
+    ],
+    "historical_2016_treatments_not_auto_added_to_active_universe": [
+      "Saxifraga carpetana subsp. carpetana",
+      "Saxifraga cuneata x S. fragosoi",
+      "Saxifraga oppositifolia subsp. oppositifolia",
+      "Saxifraga x arizagae",
+      "Saxifraga x celtiberica"
+    ],
+    "automatic_replacements": [],
+    "automatic_exclusions": [],
+    "automatic_additions": [],
+    "effective_universe_count_before": 2739,
+    "effective_universe_count_after": 2739,
+    "downstream_invalidation_required": false,
+    "reason": "No taxon identity change, addition or exclusion was applied. Source literals and rank treatments are preserved with explicit relationships where demonstrated."
+  },
+  "closure": {
+    "active_universe_decision_complete": true,
+    "taxonomy_semantic_unknowns_for_active_v8_saxifraga": 0,
+    "comparison_layer_limitations": [
+      "Spanish national pattern exact taxon-level recheck unavailable in this execution because the mandated spreadsheet engine failed; no result was inferred."
+    ],
+    "fresh_global_v8_execution_required_to_change_historical_review_count": true,
+    "next_genus": "UNRESOLVED_BY_CANONICAL_QUEUE_ORDER",
+    "next_action": "Derive the next anomalous genus from the canonical reconciliation queue/state before requesting further local-flora evidence."
+  }
+}
