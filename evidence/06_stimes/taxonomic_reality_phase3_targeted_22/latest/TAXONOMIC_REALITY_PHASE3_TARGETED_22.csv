@@ -1,0 +1,23 @@
+universe_index,taxon,phase3_state,suggested_taxon,evidence_summary,master_mutation
+100,Allosurus acrosticus,KEEP_CORRECTION_SUPPORTED,Allosorus acrosticus,"POWO recognizes Allosorus acrosticus as synonym of accepted Hemionitis acrostica; original JBLR genus spelling unsupported",NO
+101,Allosurus pteridioides,KEEP_CORRECTION_SUPPORTED,Allosorus pteridioides,"POWO recognizes Allosorus pteridioides; accepted placement Hemionitis pteridioides",NO
+201,Arenaria pomelii subsp. ciliaris,HUMAN_DECISION_REQUIRED,,"Arenaria pomelii is accepted, but ciliaris is documented under Arenaria obtusiflora subsp. ciliaris; original combination remains unsupported",NO
+296,Atropa belladona,KEEP_CORRECTION_SUPPORTED,Atropa bella-donna,"POWO accepts Atropa bella-donna; original belladona spelling unsupported",NO
+333,Bidens cernuus,KEEP_CORRECTION_SUPPORTED,Bidens cernua,"POWO accepts Bidens cernua; original cernuus spelling unsupported",NO
+963,Festuca carpetana,KEEP_REAL_TAXON_SUPPORTED,Festuca carpetana,"Species was formally published for Iberian flora in 2014; absence from the three static exact-name checks is not evidence of nonexistence",NO
+981,Festuca sp.,HUMAN_DECISION_REQUIRED,,"Non-specific placeholder, not a species-level taxon name",NO
+1121,Gnaphalium luteo-album,KEEP_CORRECTION_SUPPORTED,Gnaphalium luteoalbum,"POWO recognizes Gnaphalium luteoalbum as synonym of accepted Pseudognaphalium luteoalbum; hyphenated JBLR form unsupported",NO
+1418,Leontodon carolipaui,HUMAN_DECISION_REQUIRED,,"No support found for original name; accepted Leontodon caroliaedoi occurs in northern Spain and has type locality in Logroño, but identity with JBLR entry is not demonstrable",NO
+1465,Linomium paui,KEEP_CORRECTION_SUPPORTED,Limonium paui,"Limonium paui is documented from La Rioja and Flora Iberica-related sources; original genus Linomium unsupported",NO
+1696,Odontites verna,KEEP_CORRECTION_SUPPORTED,Odontites vernus,"POWO accepts Odontites vernus; original feminine epithet form unsupported",NO
+1697,Odontites verna subsp. serotina,KEEP_CORRECTION_SUPPORTED,Odontites vernus subsp. serotinus,"POWO recognizes Odontites vernus subsp. serotinus as synonym of Odontites vulgaris",NO
+1698,Odontites verna subsp. verna,KEEP_CORRECTION_SUPPORTED,Odontites vernus subsp. vernus,"POWO accepts Odontites vernus and its autonymic subspecies vernus",NO
+1700,Odontites viscosa,KEEP_CORRECTION_SUPPORTED,Odontites viscosus,"POWO accepts Odontites viscosus; original feminine epithet form unsupported",NO
+1732,Onopordon acanthium,KEEP_CORRECTION_SUPPORTED,Onopordum acanthium,"POWO and WFO accept Onopordum acanthium; Onopordon is an orthographic variant/error for the genus",NO
+1733,Onopordon corymbosum,KEEP_CORRECTION_SUPPORTED,Onopordum corymbosum,"POWO accepts Onopordum corymbosum Willk.; original genus spelling unsupported",NO
+1734,Onopordon nervosum,KEEP_CORRECTION_SUPPORTED,Onopordum nervosum,"POWO accepts Onopordum nervosum; original genus spelling unsupported",NO
+1833,Persicaria minus,KEEP_CORRECTION_SUPPORTED,Persicaria minor,"POWO accepts Persicaria minor and treats Polygonum minus as synonym; original Persicaria minus is unsupported",NO
+1881,Pilosella sp.,HUMAN_DECISION_REQUIRED,,"Non-specific placeholder, not a species-level taxon name",NO
+2352,Sesleria argentea subsp. hispanica,KEEP_NOMENCLATURAL_RELATION_SUPPORTED,Sesleria argentea,"POWO records Sesleria argentea var. hispanica as synonym of accepted Sesleria argentea; original subspecies combination unsupported",NO
+2488,Taraxacum gr.,HUMAN_DECISION_REQUIRED,,"Group-level placeholder, not a species-level taxon name",NO
+2494,Taraxacum sp.,HUMAN_DECISION_REQUIRED,,"Non-specific placeholder, not a species-level taxon name",NO
