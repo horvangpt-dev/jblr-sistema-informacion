@@ -1,0 +1,43 @@
+{
+  "evidence_id": "NATIONAL_PATTERN_RECHECK_ACCEPTED_MUTATIONS_v1",
+  "actor": "06",
+  "checked_at": "2026-08-20T01:20:00+02:00",
+  "source_file": "/mnt/data/lista-patron-especies-silvestres.xlsx",
+  "source_sha256": "00f95b3a6d6efb6f145654d5fae78d8cd1d1a7f3f8c5f67e6fe3c835e915bac7",
+  "source_size_bytes": 11378362,
+  "source_sheet": "v_listapatronespecie_idtaxon=gt",
+  "read_mode": "RAW_XLSX_XML_READ_ONLY_AFTER_ARTIFACT_TOOL_TRANSPORT_FAILURE",
+  "artifact_tool_attempt": {
+    "state": "FAILED",
+    "error": "TransportError: RPC transport error: [Errno 32] Broken pipe",
+    "inference_substituted": false
+  },
+  "authority_note": "Supplementary national-pattern evidence only. Under JBLR-EVT-0000-20260820-TAXONOMIC-FIELDS-001, current ID_TAXON authority is live EIDOS, not this static workbook.",
+  "headers_relevant": ["idtaxon", "idnombre", "ScientificName", "taxonConceptID", "ScientificNameID", "kingdom", "phylum", "class", "order", "family", "genus", "specificepithet", "infraspecificepithet", "taxonRank", "WithoutAutorship", "ScientificNameAuthorship"],
+  "rows": [
+    {"sheet_row": 8868, "idtaxon": "11453", "ScientificName": "Oenanthe hispanica (Linnaeus, 1758)", "kingdom": "Animalia", "phylum": "Chordata", "class": "Aves", "order": "Passeriformes", "family": "Muscicapidae", "genus": "Oenanthe", "taxonRank": "Species", "WithoutAutorship": "Oenanthe hispanica"},
+    {"sheet_row": 8992, "idtaxon": "11592", "ScientificName": "Oenanthe leucura (Gmelin, JF, 1789)", "kingdom": "Animalia", "phylum": "Chordata", "class": "Aves", "order": "Passeriformes", "family": "Muscicapidae", "genus": "Oenanthe", "taxonRank": "Species", "WithoutAutorship": "Oenanthe leucura"},
+    {"sheet_row": 9247, "idtaxon": "11890", "ScientificName": "Oenanthe oenanthe (Linnaeus, 1758)", "kingdom": "Animalia", "phylum": "Chordata", "class": "Aves", "order": "Passeriformes", "family": "Muscicapidae", "genus": "Oenanthe", "taxonRank": "Species", "WithoutAutorship": "Oenanthe oenanthe"},
+    {"sheet_row": 5179, "idtaxon": "6733", "ScientificName": "Onopordum acanthium L.", "kingdom": "Plantae", "phylum": "Tracheophyta", "class": "Magnoliopsida", "order": "Asterales", "family": "Asteraceae", "genus": "Onopordum", "taxonRank": "Species", "WithoutAutorship": "Onopordum acanthium"},
+    {"sheet_row": 5180, "idtaxon": "6734", "ScientificName": "Onopordum acanthium L. subsp. acanthium", "kingdom": "Plantae", "phylum": "Tracheophyta", "class": "Magnoliopsida", "order": "Asterales", "family": "Asteraceae", "genus": "Onopordum", "taxonRank": "Subspecies", "WithoutAutorship": "Onopordum acanthium subsp. acanthium"},
+    {"sheet_row": 5182, "idtaxon": "6736", "ScientificName": "Onopordum corymbosum Willk.", "kingdom": "Plantae", "phylum": "Tracheophyta", "class": "Magnoliopsida", "order": "Asterales", "family": "Asteraceae", "genus": "Onopordum", "taxonRank": "Species", "WithoutAutorship": "Onopordum corymbosum"},
+    {"sheet_row": 5183, "idtaxon": "6737", "ScientificName": "Onopordum corymbosum Willk. subsp. corymbosum", "kingdom": "Plantae", "phylum": "Tracheophyta", "class": "Magnoliopsida", "order": "Asterales", "family": "Asteraceae", "genus": "Onopordum", "taxonRank": "Subspecies", "WithoutAutorship": "Onopordum corymbosum subsp. corymbosum"},
+    {"sheet_row": 5058, "idtaxon": "6585", "ScientificName": "Onopordum nervosum Boiss.", "kingdom": "Plantae", "phylum": "Tracheophyta", "class": "Magnoliopsida", "order": "Asterales", "family": "Asteraceae", "genus": "Onopordum", "taxonRank": "Species", "WithoutAutorship": "Onopordum nervosum"},
+    {"sheet_row": 6079, "idtaxon": "7887", "ScientificName": "Salix cantabrica Rech. f.", "kingdom": "Plantae", "phylum": "Tracheophyta", "class": "Magnoliopsida", "order": "Malpighiales", "family": "Salicaceae", "genus": "Salix", "taxonRank": "Species", "WithoutAutorship": "Salix cantabrica"},
+    {"sheet_row": 6174, "idtaxon": "8008", "ScientificName": "Saxifraga cuneata Willd.", "kingdom": "Plantae", "phylum": "Tracheophyta", "class": "Magnoliopsida", "order": "Saxifragales", "family": "Saxifragaceae", "genus": "Saxifraga", "taxonRank": "Species", "WithoutAutorship": "Saxifraga cuneata"}
+  ],
+  "findings": {
+    "oenanthe_cross_kingdom_rows_confirmed": [8868, 8992, 9247],
+    "onopordum_correct_botanical_rows_confirmed": [5058, 5179, 5180, 5182, 5183],
+    "onopordon_misspelling_used_by_pending_jblr_rows_is_not_treated_as_an_official_botanical_name": true,
+    "salix_cantabrica_static_idtaxon": "7887",
+    "saxifraga_cuneata_static_idtaxon": "8008",
+    "no_static_id_is_promoted_to_current_id_taxon_authority": true
+  },
+  "canonical_dependencies": [
+    "JBLR-EVT-06-20260819-TAXON-OENANTHE-001",
+    "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001",
+    "JBLR-EVT-0000-20260820-TAXONOMIC-FIELDS-001",
+    "JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001"
+  ]
+}
