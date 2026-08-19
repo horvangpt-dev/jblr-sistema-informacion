@@ -1,0 +1,238 @@
+{
+  "id": "SALIX_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-20",
+  "actor": "06",
+  "family": "SALICACEAE",
+  "genus": "Salix",
+  "protocol": "GENUS_RECONCILIATION_WITH_RIOJA_FLORA_PROTOCOL_v1",
+  "state": "RECONCILIATION_COMPLETE_WITH_CONFLICTS_PRESERVED_NO_AUTOMATIC_UNIVERSE_MUTATION",
+  "principles": [
+    "REALITY_FIRST",
+    "NO_SILENT_INFERENCE",
+    "unknown != zero",
+    "not_found != absence",
+    "preserve exact direct Rioja-flora printed name and rank",
+    "external taxonomy reconciles but never erases direct local evidence"
+  ],
+  "direct_rioja_flora_evidence": {
+    "source": "User-supplied direct photograph, Flora vascular de La Rioja, p.43",
+    "coverage": "COMPLETE_SALIX_BLOCK_BETWEEN_POPULUS_AND_SANTALACEAE",
+    "priority": "MAXIMUM_LOCAL_PRIORITY",
+    "taxa_as_printed": [
+      "Salix alba",
+      "Salix atrocinerea",
+      "Salix cantabrica",
+      "Salix caprea",
+      "Salix elaeagnos",
+      "Salix fragilis",
+      "Salix purpurea",
+      "Salix salviifolia",
+      "Salix triandra"
+    ]
+  },
+  "jblr_current_catalog_2026": {
+    "source": "Catálogo flora Rioja_cruce Banco semillas JBLR_Febrero 11-02-2026.xlsx",
+    "rows": "1744-1752",
+    "taxa": [
+      "Salix alba",
+      "Salix atrocinerea",
+      "Salix cantabrica",
+      "Salix caprea",
+      "Salix eleagnos",
+      "Salix fragilis",
+      "Salix purpurea",
+      "Salix salviifolia",
+      "Salix triandra"
+    ],
+    "note": "The current JBLR catalogue has the same nine-taxon genus block as the direct Rioja image, except that the catalogue spells Salix eleagnos while the direct photographed Rioja source prints Salix elaeagnos. The direct photographed literal is preserved verbatim."
+  },
+  "rioja_pattern_list_2016_additions": {
+    "source": "Banco de Datos de la Biodiversidad de La Rioja / Lista Patrón 04-11-2016, p.136, as preserved in Flora_vascular_La_Rioja_catalogo_completo_cruce_lista_patron.xlsx",
+    "role": "HISTORICAL_REGIONAL_SOURCE_NAMES_NOT_REPRESENTED_IN_2026_CATALOG",
+    "taxa": [
+      "Salix atrocinerea x S. caprea",
+      "Salix babylonica",
+      "Salix purpurea var. lambertiana",
+      "Salix salvifolia",
+      "Salix x neotricha",
+      "Salix x rubens"
+    ],
+    "guard": "These source rows are not direct 2026 catalogue evidence. Preserve their regional source assertion and exact literal; do not silently promote, delete or conflate them."
+  },
+  "national_pattern_list_2026_crosscheck": {
+    "source": "lista-patron-especies-silvestres.xlsx",
+    "sha256": "00f95b3a6d6efb6f145654d5fae78d8cd1d1a7f3f8c5f67e6fe3c835e915bac7",
+    "exact_or_directly_corresponding_records": [
+      "Salix alba L.",
+      "Salix atrocinerea Brot.",
+      "Salix cantabrica Rech. f.",
+      "Salix caprea L.",
+      "Salix eleagnos Scop.",
+      "Salix fragilis L.",
+      "Salix purpurea L.",
+      "Salix salviifolia Brot.",
+      "Salix triandra L.",
+      "Salix neotricha Goerz"
+    ],
+    "guard": "National-pattern non-match is not absence. It is used only as one reconciliation layer."
+  },
+  "v8_salix_rows": [
+    {"universe_index": 2208, "taxon": "Salix alba", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2209, "taxon": "Salix atrocinerea", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2210, "taxon": "Salix atrocinerea x S. caprea", "v8_state": "NO_RESPONSE_ALL_THREE_REVIEW_REQUIRED"},
+    {"universe_index": 2211, "taxon": "Salix babylonica", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2212, "taxon": "Salix cantabrica", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2213, "taxon": "Salix caprea", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2214, "taxon": "Salix eleagnos", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2215, "taxon": "Salix fragilis", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2216, "taxon": "Salix purpurea", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2217, "taxon": "Salix purpurea var. lambertiana", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2218, "taxon": "Salix salvifolia", "v8_state": "NO_RESPONSE_ALL_THREE_REVIEW_REQUIRED"},
+    {"universe_index": 2219, "taxon": "Salix salviifolia", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2220, "taxon": "Salix triandra", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2221, "taxon": "Salix x neotricha", "v8_state": "EXACT_SUPPORTED_AT_LEAST_ONE_OFFICIAL_SOURCE"},
+    {"universe_index": 2222, "taxon": "Salix x rubens", "v8_state": "NO_RESPONSE_ALL_THREE_REVIEW_REQUIRED"}
+  ],
+  "reconciliation": [
+    {
+      "taxon": "Salix alba",
+      "output": "PRESENT_OK",
+      "action": "KEEP",
+      "evidence": "Direct Rioja p.43 + JBLR 2026 + national pattern + WFO/ANTHOS support."
+    },
+    {
+      "taxon": "Salix atrocinerea",
+      "output": "PRESENT_OK",
+      "action": "KEEP",
+      "evidence": "Direct Rioja p.43 + JBLR 2026 + national pattern + current international support."
+    },
+    {
+      "taxon": "Salix cantabrica",
+      "output": "TAXONOMIC_CONFLICT",
+      "action": "KEEP_DIRECT_RIOJA_TREATMENT_AND_RECORD_WFO_CONFLICT",
+      "evidence": "Direct Rioja p.43, JBLR 2026, Spanish national pattern, POWO/WCVP and ANTHOS support Salix cantabrica; WFO treats Salix cantabrica as a synonym under Salix bicolor. Local treatment is preserved and is not replaced."
+    },
+    {
+      "taxon": "Salix caprea",
+      "output": "PRESENT_OK",
+      "action": "KEEP",
+      "evidence": "Direct Rioja p.43 + JBLR 2026 + national pattern + current international support."
+    },
+    {
+      "taxon": "Salix elaeagnos",
+      "output": "TAXONOMIC_CONFLICT",
+      "action": "PRESERVE_DIRECT_RIOJA_LITERAL_AND_LINK_TO_CURRENT_SALIX_ELEAGNOS_TREATMENT",
+      "evidence": "Direct Rioja p.43 prints Salix elaeagnos. JBLR 2026, national pattern, IPNI/POWO/WCVP and WFO use Salix eleagnos Scop. Historical Spanish public sources also use elaeagnos. Treat as a source-orthography/nomenclatural reconciliation, not as a silent correction."
+    },
+    {
+      "taxon": "Salix fragilis",
+      "output": "TAXONOMIC_CONFLICT",
+      "action": "PRESERVE_DIRECT_RIOJA_AND_SPANISH_SOURCE_TREATMENT; LINK_EXTERNAL_CURRENT_HYBRID_TREATMENT",
+      "evidence": "Direct Rioja p.43, JBLR 2026, Spanish national pattern and ANTHOS preserve Salix fragilis. POWO/WCVP and WFO currently accept Salix × fragilis L. as a hybrid and place several historical fragilis-related names beneath that treatment. No local evidence is erased."
+    },
+    {
+      "taxon": "Salix purpurea",
+      "output": "PRESENT_OK",
+      "action": "KEEP",
+      "evidence": "Direct Rioja p.43 + JBLR 2026 + national pattern + current international support."
+    },
+    {
+      "taxon": "Salix salviifolia",
+      "output": "PRESENT_OK",
+      "action": "KEEP",
+      "evidence": "Direct Rioja p.43 + JBLR 2026 + national pattern + POWO/WCVP/WFO/ANTHOS support."
+    },
+    {
+      "taxon": "Salix triandra",
+      "output": "PRESENT_OK",
+      "action": "KEEP",
+      "evidence": "Direct Rioja p.43 + JBLR 2026 + national pattern + current international support."
+    },
+    {
+      "taxon": "Salix atrocinerea x S. caprea",
+      "source": "Rioja pattern list 2016",
+      "output": "PRESENT_OK",
+      "action": "RETAIN_VERBATIM_HYBRID_FORMULA_AND_PARSE_SEMANTICALLY_WITHOUT_INVENTING_NOTHOSPECIES",
+      "evidence": "The literal is a hybrid formula with abbreviated second parent. Its exact-string V8 non-response is a parser/matching limitation, not evidence of invalidity. Retain the exact source literal and parent identities; no named hybrid is inferred."
+    },
+    {
+      "taxon": "Salix babylonica",
+      "source": "Rioja pattern list 2016",
+      "output": "TAXONOMIC_CONFLICT",
+      "action": "RETAIN_HISTORICAL_REGIONAL_ASSERTION; DO_NOT_INFER_CURRENT_WILD_RIOJA_STATUS_OR_ORIGIN",
+      "evidence": "Rioja 2016 explicitly records it as Autóctona, while the complete 2026 Rioja Salix block omits it and POWO/WCVP gives an East Asian native range. The taxon itself is accepted. The historical regional presence/origin assertion is preserved but not silently promoted to a validated current wild-origin fact."
+    },
+    {
+      "taxon": "Salix purpurea var. lambertiana",
+      "source": "Rioja pattern list 2016",
+      "output": "RANK_MISMATCH",
+      "action": "PRESERVE_EXACT_VAR_TREATMENT_AND_LINK_EXPLICIT_SYNONYMY_TO_SALIX_X_LAMBERTIANA",
+      "evidence": "POWO/WCVP explicitly treats Salix purpurea var. lambertiana (Sm.) W.D.J.Koch as a synonym of accepted hybrid Salix × lambertiana Sm. (S. atrocinerea × S. purpurea). This satisfies the var/subsp/rank guard without deleting the regional source treatment."
+    },
+    {
+      "taxon": "Salix salvifolia",
+      "source": "Rioja pattern list 2016",
+      "output": "TAXONOMIC_CONFLICT",
+      "action": "PRESERVE_HISTORICAL_ORTHOGRAPHIC_SOURCE_NAME_AND_LINK_TO_SALIX_SALVIIFOLIA_WITH_PROVENANCE",
+      "evidence": "Current POWO/WCVP and the national pattern use Salix salviifolia Brot.; Spanish/EU public sources have also used Salix salvifolia, including protected-taxon combinations. Therefore salvifolia is retained as historical/source orthography and is not discarded as an unsupported typo."
+    },
+    {
+      "taxon": "Salix x neotricha",
+      "source": "Rioja pattern list 2016",
+      "output": "TAXONOMIC_CONFLICT",
+      "action": "PRESERVE_SOURCE_LITERAL_AND_LINK_EXPLICIT_SYNONYMY_WITH_SALIX_X_FRAGILIS_COMPLEX",
+      "evidence": "The Spanish national pattern contains Salix neotricha Goerz. POWO/WCVP treats Salix × fragilis subsp. neotricha (Goerz) Vigo as a synonym of Salix × fragilis f. fragilis, and the current international fragilis treatment preserves neotricha in synonymy. Hybrid marker/rank variation is retained with provenance."
+    },
+    {
+      "taxon": "Salix x rubens",
+      "source": "Rioja pattern list 2016",
+      "output": "TAXONOMIC_CONFLICT",
+      "action": "PRESERVE_SOURCE_LITERAL_AND_LINK_EXPLICIT_SYNONYMY_TO_SALIX_X_FRAGILIS_F_FRAGILIS",
+      "evidence": "POWO/WCVP explicitly treats Salix × rubens Schrank as a synonym of Salix × fragilis f. fragilis. The 2016 Rioja source literal is preserved; no silent deletion or replacement is applied."
+    }
+  ],
+  "v8_review_resolution": [
+    {
+      "universe_index": 2210,
+      "taxon": "Salix atrocinerea x S. caprea",
+      "previous": "NO_RESPONSE_ALL_THREE_REVIEW_REQUIRED",
+      "resolution": "RESOLVED_BY_SEMANTIC_HYBRID_FORMULA_PARSE",
+      "active_universe_mutation": "NONE"
+    },
+    {
+      "universe_index": 2218,
+      "taxon": "Salix salvifolia",
+      "previous": "NO_RESPONSE_ALL_THREE_REVIEW_REQUIRED",
+      "resolution": "RESOLVED_AS_HISTORICAL_ORTHOGRAPHIC_SOURCE_USAGE_LINKED_TO_SALIX_SALVIIFOLIA",
+      "active_universe_mutation": "NONE"
+    },
+    {
+      "universe_index": 2222,
+      "taxon": "Salix x rubens",
+      "previous": "NO_RESPONSE_ALL_THREE_REVIEW_REQUIRED",
+      "resolution": "RESOLVED_BY_EXPLICIT_SYNONYMY_TO_SALIX_X_FRAGILIS_F_FRAGILIS",
+      "active_universe_mutation": "NONE"
+    }
+  ],
+  "active_universe_decision": {
+    "automatic_replacements": 0,
+    "automatic_exclusions": 0,
+    "reason": "All Salix discrepancies are source-preserving taxonomic relations, orthographic treatments, hybrid formulae, rank/synonym treatments or presence/origin conflicts. The current row-level overlay cannot encode these relations without collapsing provenance. Preserve rows and resolve through linked taxonomic identity/name-usage semantics; no destructive or identity-changing overlay is justified here."
+  },
+  "downstream_invalidation": {
+    "required_now": false,
+    "reason": "No active-universe taxon identity replacement, addition or exclusion is applied by this reconciliation."
+  },
+  "closure": {
+    "salix_reconciliation_complete": true,
+    "remaining_unknown_taxonomic_gaps": 0,
+    "remaining_documented_conflicts": [
+      "Salix cantabrica: POWO/WCVP/local/Spanish support versus WFO synonym treatment under S. bicolor",
+      "Salix elaeagnos versus current nomenclatural spelling Salix eleagnos",
+      "Salix fragilis local/Spanish treatment versus current POWO/WFO Salix × fragilis hybrid treatment",
+      "Salix babylonica: historical Rioja 2016 Autóctona assertion versus omission from complete 2026 Rioja block and East-Asian native-range taxonomy"
+    ],
+    "conflicts_are_preserved_not_silently_resolved": true,
+    "next_genus": "SAXIFRAGACEAE · Saxifraga"
+  }
+}
