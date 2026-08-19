@@ -10,7 +10,7 @@ on:
       - app/scripts/stimes-amenaza-iucn-unknown-523-fresh.py
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   iucn-unknown-523-fresh:
@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: 06-stimes-banco-semillas
 
       - name: Verify IUCN secret
         shell: bash
@@ -33,8 +35,46 @@ jobs:
           fi
           echo "IUCN_API_TOKEN is configured"
 
+      - name: Verify IUCN API authentication
+        shell: bash
+        run: |
+          curl --silent --show-error --fail-with-body \
+            -H "Authorization: ${IUCN_API_TOKEN}" \
+            -H "Accept: application/json" \
+            "https://api.iucnredlist.org/api/v4/countries/" \
+            -o /tmp/iucn-auth-check.json
+          python3 - <<'PY'
+          import json
+          with open('/tmp/iucn-auth-check.json', encoding='utf-8') as f:
+              data=json.load(f)
+          if not isinstance(data, dict):
+              raise SystemExit('Unexpected IUCN authentication response')
+          print('IUCN API authentication verified')
+          PY
+
       - name: Execute fresh IUCN API v4 search
         run: python3 app/scripts/stimes-amenaza-iucn-unknown-523-fresh.py
+
+      - name: Materialize auditable result on branch
+        shell: bash
+        run: |
+          TARGET="evidence/06_stimes/iucn_unknown_523_fresh/latest"
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          cp "$IUCN_OUT/IUCN_UNKNOWN_523_QUEUE_USED.csv" "$TARGET/"
+          cp "$IUCN_OUT/IUCN_UNKNOWN_523_RESULTS.csv" "$TARGET/"
+          cp "$IUCN_OUT/IUCN_UNKNOWN_523_ISSUES.csv" "$TARGET/"
+          cp "$IUCN_OUT/IUCN_UNKNOWN_523_QA.json" "$TARGET/"
+          printf '%s\n' "github_run_id=${GITHUB_RUN_ID}" "github_run_attempt=${GITHUB_RUN_ATTEMPT}" "source_commit=${GITHUB_SHA}" > "$TARGET/RUN_METADATA.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET"
+          if git diff --cached --quiet; then
+            echo "No result change to commit"
+          else
+            git commit -m "Materialize fresh IUCN UNKNOWN 523 results [skip ci]"
+            git push origin HEAD:06-stimes-banco-semillas
+          fi
 
       - name: Upload fresh IUCN evidence
         if: always()
@@ -44,5 +84,3 @@ jobs:
           path: artifacts/iucn_unknown_523_fresh/
           if-no-files-found: warn
           retention-days: 30
-
-# activation: 2026-08-19T00:07Z
