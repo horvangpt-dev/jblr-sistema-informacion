@@ -1,0 +1,502 @@
+universe_index,family,taxon
+1,PINACEAE,Abies alba
+2,MALVACEAE,Abutilon theophrasti
+3,SAPINDACEAE,Acer campestre
+4,SAPINDACEAE,Acer monspessulanum
+5,SAPINDACEAE,Acer monspessulanum x A. campestre
+6,SAPINDACEAE,Acer opalus
+7,SAPINDACEAE,Acer platanoides
+8,SAPINDACEAE,Acer pseudoplatanus
+9,RANUNCULACEAE,Aconitum anthora
+10,RANUNCULACEAE,Aconitum burnatii
+11,RANUNCULACEAE,Aconitum napellus
+12,RANUNCULACEAE,Aconitum vulparia
+13,RANUNCULACEAE,Aconitum vulparia subsp. neapolitanum
+14,ASTERACEAE,Achillea millefolium
+15,ASTERACEAE,Achillea tomentosa
+16,LAMIACEAE,Acinos alpinus
+17,LAMIACEAE,Acinos arvensis
+18,POACEAE,Aegilops geniculata
+19,POACEAE,Aegilops neglecta
+20,RANUNCULACEAE,Aconitum vulgaria subsp. neapolitanum
+21,POACEAE,Aegilops triuncialis
+22,POACEAE,Aegilops ventricosa
+23,ROSACEAE,Agrimonia eupatoria
+24,ROSACEAE,Agrimonia procera
+25,POACEAE,Agrostis capillaris
+26,POACEAE,Agrostis castellana
+27,POACEAE,Agrostis stolonifera
+28,POACEAE,Agrostis vinealis
+29,AMARYLLIDACEAE,Allium ampeloprasum
+30,AMARYLLIDACEAE,Allium carinatum
+31,AMARYLLIDACEAE,Allium ericetorum
+32,AMARYLLIDACEAE,Allium flavum
+33,AMARYLLIDACEAE,Allium massaessylum
+34,AMARYLLIDACEAE,Allium moly
+35,AMARYLLIDACEAE,Allium moschatum
+36,AMARYLLIDACEAE,Allium oleraceum
+37,AMARYLLIDACEAE,Allium pallens
+38,AMARYLLIDACEAE,Allium paniculatum
+39,AMARYLLIDACEAE,Allium roseum
+40,AMARYLLIDACEAE,Allium sphaerocephalon
+41,AMARYLLIDACEAE,Allium ursinum
+42,AMARYLLIDACEAE,Allium vineale
+43,MALVACEAE,Althaea officinalis
+44,FABACEAE,Anthyllis vulneraria
+45,FABACEAE,Anthyllis vulneraria subsp. forondae
+46,FABACEAE,Anthyllis vulneraria subsp. gandogeri
+47,FABACEAE,Anthyllis vulneraria subsp. maura
+48,FABACEAE,Anthyllis vulneraria subsp. reuteri
+49,FABACEAE,Anthyllis vulneraria subsp. sampaioana
+50,FABACEAE,Anthyllis vulneraria subsp. vulneraria
+51,APIACEAE,Anthriscus caucalis
+52,APIACEAE,Anthriscus sylvestris
+53,POACEAE,Anthoxanthum odoratum
+54,POACEAE,Anthoxanthum aristatum
+55,RANUNCULACEAE,Aquilegia vulgaris
+56,RANUNCULACEAE,Aquilegia vulgaris subsp. vulgaris
+57,ARALIACEAE,Hedera helix
+58,ASTERACEAE,Arctium minus
+59,ASTERACEAE,Arctium minus subsp. minus
+60,ASTERACEAE,Arctium nemorosum
+61,ASTERACEAE,Arctium tomentosum
+62,CARYOPHYLLACEAE,Agrostemma githago
+63,POACEAE,Aira caryophyllea
+64,POACEAE,Aira cupaniana
+65,POACEAE,Aira elegantissima
+66,POACEAE,Aira praecox
+67,BRASSICACEAE,Alliaria petiolata
+68,AMARANTHACEAE,Amaranthus albus
+69,AMARANTHACEAE,Amaranthus blitoides
+70,AMARANTHACEAE,Amaranthus blitum
+71,AMARANTHACEAE,Amaranthus blitum subsp. emarginatus
+72,AMARANTHACEAE,Amaranthus blitum subsp. blitum
+73,AMARANTHACEAE,Amaranthus cruentus
+74,AMARANTHACEAE,Amaranthus deflexus
+75,AMARANTHACEAE,Amaranthus graecizans
+76,AMARANTHACEAE,Amaranthus hybridus
+77,AMARANTHACEAE,Amaranthus hypochondriacus
+78,AMARANTHACEAE,Amaranthus muricatus
+79,AMARANTHACEAE,Amaranthus powellii
+80,AMARANTHACEAE,Amaranthus retroflexus
+81,AMARANTHACEAE,Amaranthus viridis
+82,AMARYLLIDACEAE,Allium scorodoprasum
+83,AMARYLLIDACEAE,Allium scorodoprasum subsp. rotundum
+84,AMARYLLIDACEAE,Allium schoenoprasum
+85,AMARYLLIDACEAE,Allium schoenoprasum subsp. schoenoprasum
+86,AMARYLLIDACEAE,Allium sativum
+87,AMARYLLIDACEAE,Allium senescens
+88,AMARYLLIDACEAE,Allium senescens subsp. montanum
+89,AMARYLLIDACEAE,Allium oleraceum var. oleraceum
+90,AMARYLLIDACEAE,Allium pardoi
+91,AMARYLLIDACEAE,Allium pyrenaicum
+92,AMARYLLIDACEAE,Allium schoenoprassum
+93,AMARYLLIDACEAE,Allium scorodoprasum subsp. scorodoprasum
+94,AMARYLLIDACEAE,Allium subvillosum
+95,AMARYLLIDACEAE,Allium triquetrum
+96,AMARYLLIDACEAE,Allium victorialis
+97,AMARYLLIDACEAE,Allium vineale subsp. vineale
+98,PTERIDACEAE,Allosorus crispus
+99,PTERIDACEAE,Allosorus tinaei
+100,PTERIDACEAE,Allosurus acrosticus
+101,PTERIDACEAE,Allosurus pteridioides
+102,ROSACEAE,Alchemilla alpina
+103,ROSACEAE,Alchemilla colorata
+104,ROSACEAE,Alchemilla coriacea
+105,ROSACEAE,Alchemilla filicaulis
+106,ROSACEAE,Alchemilla glabra
+107,ROSACEAE,Alchemilla glaucescens
+108,ROSACEAE,Alchemilla plicatula
+109,ROSACEAE,Alchemilla saxatilis
+110,ROSACEAE,Alchemilla transiens
+111,ROSACEAE,Alchemilla vulgaris
+112,ROSACEAE,Alchemilla xanthochlora
+113,AMARYLLIDACEAE,Allium stearnii
+114,AMARYLLIDACEAE,Allium chamaemoly
+115,AMARYLLIDACEAE,Allium neapolitanum
+116,AMARYLLIDACEAE,Allium nigrum
+117,AMARYLLIDACEAE,Allium roseum subsp. roseum
+118,AMARYLLIDACEAE,Allium subhirsutum
+119,AMARYLLIDACEAE,Allium triquetrum subsp. triquetrum
+120,AMARYLLIDACEAE,Allium ursinum subsp. ursinum
+121,AMARYLLIDACEAE,Allium vineale subsp. compactum
+122,AMARYLLIDACEAE,Allium vineale subsp. purpureum
+123,AMARYLLIDACEAE,Allium vineale subsp. vineale
+124,AMARYLLIDACEAE,Allium yellowstoneense
+125,AMARANTHACEAE,Amaranthus palmeri
+126,AMARANTHACEAE,Amaranthus powelli
+127,AMARANTHACEAE,Amaranthus rudis
+128,AMARANTHACEAE,Amaranthus spinosus
+129,AMARANTHACEAE,Amaranthus tuberculatus
+130,AMARANTHACEAE,Amaranthus viridis subsp. viridis
+131,AMARYLLIDACEAE,Allium lusitanicum
+132,AMARYLLIDACEAE,Allium senescens subsp. montanum
+133,AMARYLLIDACEAE,Allium vineale subsp. affine
+134,CARYOPHYLLACEAE,Alsine media
+135,CARYOPHYLLACEAE,Alsine pallida
+136,CARYOPHYLLACEAE,Alsine tenuifolia
+137,AMARANTHACEAE,Amaranthus caudatus
+138,AMARANTHACEAE,Amaranthus hybridus subsp. cruentus
+139,AMARANTHACEAE,Amaranthus hybridus subsp. hybridus
+140,AMARANTHACEAE,Amaranthus hybridus subsp. patulus
+141,AMARANTHACEAE,Amaranthus hybridus subsp. quitensis
+142,AMARANTHACEAE,Amaranthus lividus
+143,AMARANTHACEAE,Amaranthus viridis subsp. gracilis
+144,ASTERACEAE,Ambrosia artemisiifolia
+145,ASTERACEAE,Ambrosia coronopifolia
+146,ASTERACEAE,Ambrosia psilostachya
+147,ASTERACEAE,Ambrosia trifida
+148,PRIMULACEAE,Anagallis arvensis
+149,PRIMULACEAE,Anagallis foemina
+150,PRIMULACEAE,Anagallis minima
+151,PRIMULACEAE,Anagallis tenella
+152,BRASSICACEAE,Anastatica hierochuntica
+153,ASTERACEAE,Andryala integrifolia
+154,ASTERACEAE,Andryala ragusina
+155,POACEAE,Anisantha diandra
+156,POACEAE,Anisantha madritensis
+157,POACEAE,Anisantha rigida
+158,POACEAE,Anisantha sterilis
+159,POACEAE,Anisantha tectorum
+160,RANUNCULACEAE,Anemone nemorosa
+161,RANUNCULACEAE,Anemone palmata
+162,RANUNCULACEAE,Anemone pavoniana
+163,RANUNCULACEAE,Anemone ranunculoides
+164,RANUNCULACEAE,Anemone trifolia
+165,RANUNCULACEAE,Anemone trifolia subsp. albida
+166,APIACEAE,Angelica major
+167,APIACEAE,Angelica razulii
+168,APIACEAE,Angelica sylvestris
+169,APIACEAE,Angelica sylvestris subsp. sylvestris
+170,APIACEAE,Angelica sylvestris subsp. villosa
+171,BRASSICACEAE,Arabis alpina
+172,BRASSICACEAE,Arabis alpina subsp. caucasica
+173,BRASSICACEAE,Arabis alpina subsp. alpina
+174,BRASSICACEAE,Arabis auriculata
+175,BRASSICACEAE,Arabis ciliata
+176,BRASSICACEAE,Arabis collina
+177,BRASSICACEAE,Arabis glabra
+178,BRASSICACEAE,Arabis hirsuta
+179,BRASSICACEAE,Arabis hirsuta subsp. sagittata
+180,BRASSICACEAE,Arabis nova
+181,BRASSICACEAE,Arabis parvula
+182,BRASSICACEAE,Arabis planisiliqua
+183,BRASSICACEAE,Arabis scabra
+184,BRASSICACEAE,Arabis serpillifolia
+185,BRASSICACEAE,Arabis turrita
+186,ARACEAE,Arum italicum
+187,ARACEAE,Arum maculatum
+188,ARACEAE,Arum cylindraceum
+189,ARACEAE,Arum italicum subsp. italicum
+190,ARACEAE,Arum maculatum subsp. maculatum
+191,APIACEAE,Apium graveolens
+192,APIACEAE,Apium nodiflorum
+193,APIACEAE,Apium repens
+194,CARYOPHYLLACEAE,Arenaria erinacea
+195,CARYOPHYLLACEAE,Arenaria grandiflora subsp. grandiflora
+196,CARYOPHYLLACEAE,Arenaria pomelii
+197,CARYOPHYLLACEAE,Arenaria leptoclados
+198,CARYOPHYLLACEAE,Arenaria modesta subsp. modesta
+199,CARYOPHYLLACEAE,Arenaria montana subsp. montana
+200,CARYOPHYLLACEAE,Arenaria obtusiflora subsp. ciliaris
+201,CARYOPHYLLACEAE,Arenaria serpyllifolia
+202,ASTERACEAE,Arctium lappa
+203,ASTERACEAE,Arctium minus subsp. pubens
+204,ASTERACEAE,Arctium pubens
+205,ASTERACEAE,Artemisia absinthium
+206,ASTERACEAE,Artemisia alba
+207,ASTERACEAE,Artemisia annua
+208,ASTERACEAE,Artemisia arborescens
+209,ASTERACEAE,Artemisia barrelieri
+210,ASTERACEAE,Artemisia caerulescens
+211,ASTERACEAE,Artemisia campestris
+212,ASTERACEAE,Artemisia campestris subsp. glutinosa
+213,ASTERACEAE,Artemisia campestris subsp. maritima
+214,ASTERACEAE,Artemisia campestris subsp. variabilis
+215,ASTERACEAE,Artemisia chamaemelifolia
+216,ASTERACEAE,Artemisia gallica
+217,ASTERACEAE,Artemisia herba-alba
+218,ASTERACEAE,Artemisia maritima
+219,ASTERACEAE,Artemisia reptans
+220,ASTERACEAE,Artemisia scoparia
+221,ASTERACEAE,Artemisia verlotiorum
+222,ASTERACEAE,Artemisia vulgaris
+223,ASTERACEAE,Artemisia vulgaris subsp. vulgaris
+224,ASTERACEAE,Aster alpinus
+225,ASTERACEAE,Aster aragonensis
+226,ASTERACEAE,Aster linosyris
+227,ASTERACEAE,Aster sedifolius
+228,ASTERACEAE,Aster squamatus
+229,ASTERACEAE,Aster tripolium
+230,ASTERACEAE,Aster willkommii
+231,ASTERACEAE,Asteriscus aquaticus
+232,ASTERACEAE,Asteriscus maritimus
+233,ASTERACEAE,Asteriscus spinosus
+234,ASTERACEAE,Asteriscus spinosus subsp. spinosus
+235,ASTERACEAE,Asteriscus spinosus subsp. aureus
+236,ASTERACEAE,Asteriscus spinosus subsp. spinulosus
+237,ASTERACEAE,Asyneuma canescens
+238,ASTERACEAE,Asyneuma limonifolium
+239,ASPHODELACEAE,Asphodelus aestivus
+240,ASPHODELACEAE,Asphodelus serotinum
+241,ASPHODELACEAE,Asphodelus albus
+242,ASPHODELACEAE,Asphodelus albus subsp. albus
+243,ASPHODELACEAE,Asphodelus albus subsp. occidentalis
+244,ASPHODELACEAE,Asphodelus cerasiferus
+245,ASPHODELACEAE,Asphodelus fistulosus
+246,ASPHODELACEAE,Asphodelus macrocarpus
+247,ASPHODELACEAE,Asphodelus macrocarpus subsp. macrocarpus
+248,ASPHODELACEAE,Asphodelus macrocarpus subsp. rubescens
+249,ASPHODELACEAE,Asphodelus ramosus
+250,ASPHODELACEAE,Asphodelus ramosus subsp. ramosus
+251,ASPHODELACEAE,Asphodelus tenuifolius
+252,ASPHODELACEAE,Asphodelus viscidulus
+253,ASPLENIACEAE,Asplenium adiantum-nigrum
+254,ASPLENIACEAE,Asplenium adulterinum
+255,ASPLENIACEAE,Asplenium ceterach
+256,ASPLENIACEAE,Asplenium fontanum
+257,ASPLENIACEAE,Asplenium x alternifolium
+258,ASPLENIACEAE,Asplenium x sarniense
+259,ASPLENIACEAE,Asplenium x souchei
+260,ASPLENIACEAE,Asplenium x staufferi
+261,ASPLENIACEAE,Asplenium x ticinense
+262,ASPLENIACEAE,Asplenium foreziense
+263,ASPLENIACEAE,Asplenium lepidum
+264,ASPLENIACEAE,Asplenium marinum
+265,ASPLENIACEAE,Asplenium obovatum
+266,ASPLENIACEAE,Asplenium obovatum subsp. obovatum
+267,ASPLENIACEAE,Asplenium onopteris
+268,ASPLENIACEAE,Asplenium petrarchae
+269,ASPLENIACEAE,Asplenium petrarchae subsp. bivalens
+270,ASPLENIACEAE,Asplenium petrarchae subsp. petrarchae
+271,ASPLENIACEAE,Asplenium ruta-muraria
+272,ASPLENIACEAE,Asplenium seelosii
+273,ASPLENIACEAE,Asplenium septentrionale
+274,ASPLENIACEAE,Asplenium trichomanes
+275,ASPLENIACEAE,Asplenium trichomanes subsp. pachyrachis
+276,ASPLENIACEAE,Asplenium trichomanes subsp. quadrivalens
+277,ASPLENIACEAE,Asplenium trichomanes subsp. trichomanes
+278,ASPLENIACEAE,Asplenium viride
+279,ASPLENIACEAE,Asplenium viride subsp. viride
+280,ASTERACEAE,Asteriscus aquaticus subsp. aquaticus
+281,ASTERACEAE,Asteriscus aquaticus subsp. prostratus
+282,ASTERACEAE,Asteriscus aquaticus subsp. pygmaeus
+283,ASTERACEAE,Asteriscus spinosus subsp. spinosus
+284,ASTERACEAE,Atractylis cancellata
+285,ASTERACEAE,Atractylis humilis
+286,ASTERACEAE,Atractylis humilis subsp. humilis
+287,ASTERACEAE,Atractylis humilis subsp. spinosa
+288,ASTERACEAE,Atractylis humilis var. spinosa
+289,ASTERACEAE,Atractylis preauxiana
+290,ASTERACEAE,Atractylis serratuloides
+291,ASTERACEAE,Atractylis squarrosa
+292,ASTERACEAE,Atractylis spinosa
+293,ASTERACEAE,Atractylis vulgaris
+294,SOLANACEAE,Atropa baetica
+295,SOLANACEAE,Atropa belladonna
+296,SOLANACEAE,Atropa belladona
+297,SOLANACEAE,Atropa belladonna var. belladonna
+298,SOLANACEAE,Atropa belladonna var. lutea
+299,POACEAE,Avena barbata
+300,POACEAE,Avena barbata subsp. barbata
+301,POACEAE,Avena barbata subsp. hirtula
+302,POACEAE,Avena byzantina
+303,POACEAE,Avena fatua
+304,POACEAE,Avena longiglumis
+305,POACEAE,Avena macrostachya
+306,POACEAE,Avena nuda
+307,POACEAE,Avena sativa
+308,POACEAE,Avena sterilis
+309,POACEAE,Avena sterilis subsp. ludoviciana
+310,POACEAE,Avena sterilis subsp. sterilis
+311,POACEAE,Avena strigosa
+312,POACEAE,Avena ventricosa
+313,POACEAE,Avenula bromoides
+314,POACEAE,Avenula bromoides subsp. bromoides
+315,POACEAE,Avenula bromoides subsp. pauneroi
+316,POACEAE,Avenula sulcata
+317,POACEAE,Avenula sulcata subsp. sulcata
+318,POACEAE,Avenula sulcata subsp. occidentalis
+319,POACEAE,Avenula sulcata subsp. pyrenaica
+320,POACEAE,Avenula sulcata subsp. sulcata
+321,POACEAE,Avenula pratensis
+322,POACEAE,Avenula pratensis subsp. iberica
+323,POACEAE,Avenula pratensis subsp. pratensis
+324,BETULACEAE,Betula alba
+325,BETULACEAE,Betula alba subsp. alba
+326,BETULACEAE,Betula alba var. alba
+327,BETULACEAE,Betula pendula
+328,BETULACEAE,Betula pubescens
+329,BETULACEAE,Betula pubescens subsp. celtiberica
+330,BETULACEAE,Betula pubescens subsp. pubescens
+331,ASTERACEAE,Bidens aurea
+332,ASTERACEAE,Bidens bipinnata
+333,ASTERACEAE,Bidens cernuus
+334,ASTERACEAE,Bidens frondosa
+335,ASTERACEAE,Bidens pilosa
+336,ASTERACEAE,Bidens tripartita
+337,ASTERACEAE,Bidens vulgata
+338,BORAGINACEAE,Borago officinalis
+339,BORAGINACEAE,Borago pygmaea
+340,BORAGINACEAE,Borago officinalis subsp. officinalis
+341,BORAGINACEAE,Borago officinalis var. alba
+342,BORAGINACEAE,Borago officinalis var. officinalis
+343,BRASSICACEAE,Brassica barrelieri
+344,BRASSICACEAE,Brassica barrelieri subsp. barrelieri
+345,BRASSICACEAE,Brassica fruticulosa
+346,BRASSICACEAE,Brassica fruticulosa subsp. fruticulosa
+347,BRASSICACEAE,Brassica fruticulosa subsp. mauritanica
+348,BRASSICACEAE,Brassica napus
+349,BRASSICACEAE,Brassica nigra
+350,BRASSICACEAE,Brassica oleracea
+351,BRASSICACEAE,Brassica rapa
+352,BRASSICACEAE,Brassica tournefortii
+353,OROBANCHACEAE,Bouardia latisquama
+354,BRASSICACEAE,Brassica barrelieri subsp. oxyrrhina
+355,BRASSICACEAE,Brassica oleracea var. acephala
+356,BRASSICACEAE,Brassica rapa subsp. campestris
+357,BRASSICACEAE,Brassica rapa subsp. rapa
+358,BRASSICACEAE,Brassica tournefortii var. tournefortii
+359,BRASSICACEAE,Brassica villosa
+360,BRASSICACEAE,Brassica villosa subsp. villosa
+361,BRASSICACEAE,Brassica villosa subsp. drepanensis
+362,BRASSICACEAE,Brassica villosa subsp. tineoi
+363,BRASSICACEAE,Brassica villosa subsp. trinacriae
+364,BRASSICACEAE,Brassica villosa subsp. drepanensis
+365,BRASSICACEAE,Brassica villosa subsp. tineoi
+366,BRASSICACEAE,Brassica villosa subsp. trinacriae
+367,BRASSICACEAE,Bunias erucago
+368,BRASSICACEAE,Bunias orientalis
+369,BRASSICACEAE,Bunias cakile
+370,BRASSICACEAE,Bunias cochlearioides
+371,BRASSICACEAE,Bunias erucago subsp. erucago
+372,BRASSICACEAE,Bunias erucago subsp. tuberculata
+373,BRASSICACEAE,Bunias orientalis subsp. orientalis
+374,BRASSICACEAE,Bunias orientalis var. orientalis
+375,CARYOPHYLLACEAE,Bufonia paniculata
+376,CARYOPHYLLACEAE,Bufonia perennis
+377,CARYOPHYLLACEAE,Bufonia tenuifolia
+378,CARYOPHYLLACEAE,Bufonia tenuifolia subsp. tenuifolia
+379,CARYOPHYLLACEAE,Bufonia willkommiana
+380,CARYOPHYLLACEAE,Bufonia willkommiana subsp. willkommiana
+381,CARYOPHYLLACEAE,Bufonia willkommiana subsp. duvaljouvei
+382,CARYOPHYLLACEAE,Bufonia willkommiana var. willkommiana
+383,CARYOPHYLLACEAE,Bufonia macropetala
+384,CARYOPHYLLACEAE,Bufonia macropetala subsp. macropetala
+385,CARYOPHYLLACEAE,Bufonia macropetala var. macropetala
+386,CARYOPHYLLACEAE,Bufonia macropetala var. tenuifolia
+387,CARYOPHYLLACEAE,Bufonia macropetala subsp. tenuifolia
+388,CARYOPHYLLACEAE,Bufonia macropetala subsp. perennis
+389,CARYOPHYLLACEAE,Bufonia macropetala subsp. paniculata
+390,ASTERACEAE,Calendula arvensis
+391,ASTERACEAE,Calendula officinalis
+392,ASTERACEAE,Calendula suffruticosa
+393,ASTERACEAE,Calendula suffruticosa subsp. boissieri
+394,ASTERACEAE,Calendula suffruticosa subsp. fulgida
+395,ASTERACEAE,Calendula suffruticosa subsp. maritima
+396,ASTERACEAE,Calendula suffruticosa subsp. monardii
+397,ASTERACEAE,Calendula suffruticosa subsp. tomentosa
+398,ASTERACEAE,Calendula tripterocarpa
+399,POACEAE,Calamagrostis arundinacea
+400,POACEAE,Calamagrostis canescens
+401,POACEAE,Calamagrostis epigeros
+402,POACEAE,Calamagrostis pseudophragmites
+403,POACEAE,Calamagrostis purpurea
+404,POACEAE,Calamagrostis stricta
+405,POACEAE,Calamagrostis varia
+406,POACEAE,Calamagrostis villosa
+407,POACEAE,Calamagrostis arundinacea subsp. arundinacea
+408,POACEAE,Calamagrostis arundinacea subsp. brachytricha
+409,POACEAE,Calamagrostis canescens subsp. canescens
+410,POACEAE,Calamagrostis canescens var. canescens
+411,POACEAE,Calamagrostis canescens var. brachytricha
+412,POACEAE,Calamagrostis pseudophragmites subsp. pseudophragmites
+413,POACEAE,Calamagrostis stricta subsp. stricta
+414,POACEAE,Calamagrostis stricta subsp. neglecta
+415,POACEAE,Calamagrostis varia subsp. varia
+416,POACEAE,Calamagrostis villosa subsp. villosa
+417,CAMPANULACEAE,Campanula alata
+418,CAMPANULACEAE,Campanula alpestris
+419,CAMPANULACEAE,Campanula arvatica
+420,CAMPANULACEAE,Campanula barbata
+421,CAMPANULACEAE,Campanula bononiensis
+422,CAMPANULACEAE,Campanula cochleariifolia
+423,CAMPANULACEAE,Campanula erinus
+424,CAMPANULACEAE,Campanula fastigiata
+425,CAMPANULACEAE,Campanula glomerata
+426,CAMPANULACEAE,Campanula glomerata subsp. glomerata
+427,CAMPANULACEAE,Campanula glomerata subsp. hispanica
+428,CAMPANULACEAE,Campanula latifolia
+429,CAMPANULACEAE,Campanula lusitanica
+430,CAMPANULACEAE,Campanula lusitanica subsp. lusitanica
+431,CAMPANULACEAE,Campanula lusitanica subsp. matritensis
+432,CAMPANULACEAE,Campanula macrorhiza
+433,CAMPANULACEAE,Campanula medium
+434,CAMPANULACEAE,Campanula patula
+435,CAMPANULACEAE,Campanula patula subsp. patula
+436,CAMPANULACEAE,Campanula persicifolia
+437,CAMPANULACEAE,Campanula rapunculoides
+438,CAMPANULACEAE,Campanula rapunculus
+439,CAMPANULACEAE,Campanula rotundifolia
+440,CAMPANULACEAE,Campanula rotundifolia subsp. rotundifolia
+441,CAMPANULACEAE,Campanula scheuchzeri
+442,CAMPANULACEAE,Campanula scheuchzeri subsp. scheuchzeri
+443,CAMPANULACEAE,Campanula speciosa
+444,CAMPANULACEAE,Campanula trachelium
+445,CAMPANULACEAE,Campanula trachelium subsp. trachelium
+446,CAMPANULACEAE,Campanula trachelium subsp. athoa
+447,CAMPANULACEAE,Campanula trachelium subsp. urticifolia
+448,CAMPANULACEAE,Campanula trachelium var. trachelium
+449,CAMPANULACEAE,Campanula trachelium var. urticifolia
+450,CAMPANULACEAE,Campanula latifolia subsp. latifolia
+451,CAMPANULACEAE,Campanula patula subsp. abietina
+452,CAMPANULACEAE,Campanula persicifolia subsp. persicifolia
+453,CAMPANULACEAE,Campanula rapunculus subsp. rapunculus
+454,CAMPANULACEAE,Campanula rotundifolia subsp. arctica
+455,CAMPANULACEAE,Campanula rotundifolia subsp. hispanica
+456,CAMPANULACEAE,Campanula rotundifolia subsp. montana
+457,CAMPANULACEAE,Campanula scheuchzeri subsp. lanceolata
+458,CAMPANULACEAE,Campanula scheuchzeri var. lanceolata
+459,CAMPANULACEAE,Campanula speciosa subsp. speciosa
+460,CAMPANULACEAE,Campanula speciosa subsp. affinis
+461,CAMPANULACEAE,Campanula speciosa subsp. glabrescens
+462,CAMPANULACEAE,Campanula speciosa subsp. speciosa
+463,CAMPANULACEAE,Campanula trachelium subsp. urticifolia
+464,CAMPANULACEAE,Campanula trachelium var. urticifolia
+465,CYPERACEAE,Carex acuta
+466,CYPERACEAE,Carex alba
+467,CYPERACEAE,Carex atrata
+468,CYPERACEAE,Carex brizoides
+469,CYPERACEAE,Carex digitata
+470,CYPERACEAE,Carex hallerana
+471,CYPERACEAE,Carex hostiana
+472,CYPERACEAE,Carex humilis
+473,CYPERACEAE,Carex laevigata
+474,CYPERACEAE,Carex lepidocarpa
+475,CYPERACEAE,Carex limosa
+476,CYPERACEAE,Carex nigra
+477,CYPERACEAE,Carex panicea
+478,CYPERACEAE,Carex pendula
+479,CYPERACEAE,Carex pseudocyperus
+480,CYPERACEAE,Carex pulicaris
+481,CYPERACEAE,Carex remota
+482,CYPERACEAE,Carex riparia
+483,CYPERACEAE,Carex rostrata
+484,CYPERACEAE,Carex sylvatica
+485,CYPERACEAE,Carex vesicaria
+486,CYPERACEAE,Carex vulpina
+487,CYPERACEAE,Carex acutiformis
+488,CYPERACEAE,Carex arenaria
+489,CYPERACEAE,Carex binervis
+490,CYPERACEAE,Carex caryophyllea
+491,CYPERACEAE,Carex cuprina
+492,CYPERACEAE,Carex distans
+493,CYPERACEAE,Carex divisa
+494,CYPERACEAE,Carex echinata
+495,CYPERACEAE,Carex elata
+496,CYPERACEAE,Carex extensa
+497,CYPERACEAE,Carex flacca
+498,CYPERACEAE,Carex flava
+499,CYPERACEAE,Carex hirta
+500,CYPERACEAE,Carex leporina
+...TRUNCATED...
