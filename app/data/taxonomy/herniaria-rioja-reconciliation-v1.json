@@ -3,10 +3,11 @@
   "date": "2026-08-19",
   "family": "CARYOPHYLLACEAE",
   "genus": "Herniaria",
-  "state": "RECONCILIATION_COMPLETE_ACTIVE_UNIVERSE_MUTATION_PENDING_HASH_SAFE_BATCH",
+  "state": "REOPENED_FOR_RANK_SYNONYMY_RECONCILIATION",
+  "supersedes_state": "RECONCILIATION_COMPLETE_ACTIVE_UNIVERSE_MUTATION_PENDING_HASH_SAFE_BATCH",
+  "correction_reason": "User clarified that var. and subsp. treatments can be synonymic or rank-shift representations of the same taxon in source lists. Therefore rank mismatch alone is not evidence for deletion or identity replacement.",
   "local_evidence": {
     "source": "User photographs, Actualización del catálogo de la flora vascular silvestre de La Rioja. Catálogo florístico, pp. 15-17; complete Herniaria block on p.16",
-    "coverage": "Complete genus block; preceded by Gypsophila and followed by Holosteum.",
     "taxa_as_printed": [
       "Herniaria cinerea",
       "Herniaria fruticosa",
@@ -16,92 +17,51 @@
       "Herniaria scabrida subsp. scabrida"
     ]
   },
-  "national_pattern_evidence": {
-    "source": "Spanish national pattern list, JBLR temporary native sheet 1gjP6VU2JxqoRq2rVcVdvDjkV7d3Z9Qmhrr5Dn3Y6kNc",
-    "relevant_supported_names": [
-      "Herniaria fruticosa",
-      "Herniaria glabra",
-      "Herniaria scabrida",
-      "Herniaria scabrida subsp. scabrida"
-    ],
-    "not_found_exact_as_variety": [
-      "Herniaria fruticosa var. fruticosa",
-      "Herniaria glabra var. glabra",
-      "Herniaria scabrida var. scabrida"
-    ],
-    "kingdom": "Plantae",
-    "family": "Caryophyllaceae",
-    "group": "Plantas vasculares"
-  },
-  "v8_context": {
-    "review_rows": [
-      {"universe_index": 1166, "taxon": "Herniaria fruticosa var. fruticosa"},
-      {"universe_index": 1168, "taxon": "Herniaria glabra var. glabra"},
-      {"universe_index": 1173, "taxon": "Herniaria scabrida var. scabrida"}
-    ],
-    "already_present_correct_rows": [
-      {"universe_index": 1165, "taxon": "Herniaria fruticosa", "exact_supported_at_least_one_official_source": true},
-      {"universe_index": 1167, "taxon": "Herniaria glabra", "exact_supported_at_least_one_official_source": true},
-      {"universe_index": 1172, "taxon": "Herniaria scabrida", "exact_supported_at_least_one_official_source": true}
-    ]
-  },
-  "international_evidence_2026": {
-    "powo_wcvp": {
-      "Herniaria fruticosa": "accepted species; POWO also accepts H. fruticosa subsp. fruticosa",
-      "Herniaria glabra": "accepted species",
-      "Herniaria scabrida": "accepted species",
-      "note": "No evidence was found for any of the three V8 variety autonyms as the operative accepted treatment."
-    },
-    "wfo": {
-      "Herniaria glabra": "accepted species",
-      "Herniaria fruticosa subsp. fruticosa": "listed as Unchecked",
-      "note": "WFO evidence does not support the three V8 variety autonyms as accepted exact identities."
-    },
-    "anthos": {
-      "v8_exact_base_species_support": [
-        "Herniaria fruticosa",
-        "Herniaria glabra",
-        "Herniaria scabrida"
-      ],
-      "exact_web_verification_for_new_rank_candidate": "NOT_VERIFIED_IN_THIS_PASS"
-    }
-  },
-  "decisions": [
+  "v8_review_rows": [
+    {"universe_index": 1166, "taxon": "Herniaria fruticosa var. fruticosa"},
+    {"universe_index": 1168, "taxon": "Herniaria glabra var. glabra"},
+    {"universe_index": 1173, "taxon": "Herniaria scabrida var. scabrida"}
+  ],
+  "corrected_decisions": [
     {
       "universe_index": 1166,
-      "expected_original_taxon": "Herniaria fruticosa var. fruticosa",
-      "classification": "UNSUPPORTED_VAR_RANK_DUPLICATE_OF_EXISTING_SPECIES_RECORD",
-      "action": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
-      "duplicate_target_index": 1165,
-      "duplicate_target_taxon": "Herniaria fruticosa",
-      "reason": "Rioja flora and the Spanish national pattern list support the species rank; the active universe already contains that exact supported species. POWO's separate acceptance of subsp. fruticosa is retained as international taxonomic context but does not prove the Rioja population should be represented at that subspecific rank."
+      "previous_action": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
+      "new_action": "HOLD_PENDING_EXPLICIT_VAR_SUBSP_SPECIES_SYNONYMY_CHAIN",
+      "reason": "The exact variety name was not found by V8, but absence of an exact string does not show that the variety is taxonomically invalid or independent. POWO currently accepts Herniaria fruticosa subsp. fruticosa, so a rank/synonym relationship must be tested before mutation."
     },
     {
       "universe_index": 1168,
-      "expected_original_taxon": "Herniaria glabra var. glabra",
-      "classification": "UNSUPPORTED_VAR_RANK_DUPLICATE_OF_EXISTING_SPECIES_RECORD",
-      "action": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
-      "duplicate_target_index": 1167,
-      "duplicate_target_taxon": "Herniaria glabra",
-      "reason": "Rioja flora, Spanish national pattern list, POWO/WCVP, WFO and ANTHOS support H. glabra at species rank; the exact variety autonym is unsupported in the current evidence stack."
+      "previous_action": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
+      "new_action": "HOLD_PENDING_EXPLICIT_VAR_SUBSP_SPECIES_SYNONYMY_CHAIN",
+      "reason": "Herniaria glabra is accepted at species rank, but the variety-form string cannot be deleted solely because the current exact resolver did not return it. Synonymy/rank-equivalence must be checked first."
     },
     {
       "universe_index": 1173,
-      "expected_original_taxon": "Herniaria scabrida var. scabrida",
-      "classification": "RANK_MISMATCH_VAR_TO_SUBSP_SUPPORTED_BY_SPANISH_AND_LOCAL_SOURCES",
-      "action": "REPLACE_BY_GUARDED_OVERLAY",
-      "active_taxon_candidate": "Herniaria scabrida subsp. scabrida",
-      "reason": "The complete Rioja flora block explicitly prints H. scabrida subsp. scabrida and the Spanish national pattern list contains the same exact subspecies. The existing species H. scabrida remains active as a separate higher-rank taxon record. POWO currently treats H. scabrida at species rank; this framework difference is preserved rather than silently collapsed."
+      "previous_action": "REPLACE_BY_GUARDED_OVERLAY_WITH_HERNIARIA_SCABRIDA_SUBSP_SCABRIDA",
+      "new_action": "HOLD_PENDING_EXPLICIT_VAR_TO_SUBSP_SYNONYMY_CHAIN",
+      "reason": "Rioja flora and the Spanish national pattern list support Herniaria scabrida subsp. scabrida, but the existing var. scabrida may represent a synonymic/rank-shift treatment rather than an erroneous identity. Preserve both source strings until the relationship is explicitly demonstrated."
     }
   ],
+  "general_rule": {
+    "id": "VAR_SUBSP_RANK_SYNONYMY_GUARD_v1",
+    "rule": "Never delete, merge or replace a var./subsp. record solely because another source uses a different infraspecific rank or the base species. First establish the explicit synonymy or rank-equivalence chain from authoritative evidence. If equivalent, preserve all source names as synonyms/provenance and select the operative accepted treatment according to the active JBLR taxonomic naming policy. If equivalence is not demonstrated, retain as review-required.",
+    "no_silent_inference": true
+  },
+  "current_external_context": {
+    "powo_2026": [
+      "Herniaria fruticosa subsp. fruticosa is accepted",
+      "Herniaria glabra is accepted at species rank",
+      "Herniaria scabrida is accepted at species rank"
+    ],
+    "interpretation": "These current treatments do not, by themselves, prove the exact status of the three V8 var. strings."
+  },
+  "active_universe_mutation_for_indices_1166_1168_1173": "CANCELLED_PENDING_RECONCILIATION",
   "guards": [
-    "Do not infer Rioja occurrence of H. fruticosa subsp. fruticosa from international acceptance alone.",
-    "Do not preserve unsupported variety autonyms as active identities merely because their base species is valid.",
-    "Preserve all three original V8 strings and provenance in audit history.",
-    "Do not collapse the Spanish/local H. scabrida subsp. scabrida treatment into the international species-rank treatment.",
-    "No threat, protection or ex-situ score is inherited across the 1173 rank replacement without fresh downstream execution.",
-    "Apply exclusions/replacement only through a regenerated hash-safe active-universe overlay."
+    "var. and subsp. are rank markers, not spelling noise.",
+    "Different ranks can be taxonomic synonyms or alternative treatments.",
+    "Exact-string not-found is not absence and not invalidity.",
+    "Preserve original names, source, rank and synonym chain.",
+    "No downstream score inheritance across any eventual rank reconciliation without fresh execution."
   ],
-  "active_universe_mutation": "PENDING_HASH_SAFE_BATCH_WITH_ODONTITES_OENANTHE_ONOPORDUM",
-  "next_genus_after_resolution": "SALICACEAE · Salix"
+  "next_genus_after_reopen": "SALICACEAE · Salix"
 }
