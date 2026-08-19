@@ -15,14 +15,19 @@
   ],
   "local_flora_input": {
     "source": "Flora vascular de La Rioja",
-    "method": "User supplies photograph(s) covering the genus entry.",
+    "method": "User supplies direct photograph(s) covering the genus entry.",
     "verbatim_first": true,
-    "coverage_guard": "Absence from one photograph is not absence from the local flora unless the supplied page set demonstrably covers the complete genus entry. For genera spanning several pages, all relevant pages are required before using absence as evidence."
+    "maximum_local_priority": true,
+    "preserve_exact_printed_name_and_rank": true,
+    "coverage_guard": "Absence from one photograph is not absence from the local flora unless the supplied page set demonstrably covers the complete genus entry. For genera spanning several pages, all relevant pages are required before using absence as evidence.",
+    "priority_rule": "A legible user-supplied direct photograph of Flora vascular de La Rioja is maximum-priority evidence for how the taxon is represented in the Rioja flora. The printed name and printed rank (species, subsp., var., hybrid, group or other explicit treatment) must be preserved and must not be discarded merely because an external source uses a different accepted name or rank.",
+    "external_reconciliation_rule": "POWO/WCVP, WFO, ANTHOS and the national pattern list may establish synonymy, current acceptance, alternative rank or nomenclatural context, but they do not erase the direct Rioja-flora evidence. Preserve the photographed local treatment and link it to any demonstrated synonym/accepted treatment.",
+    "rank_guard": "Never delete or replace a photographed var./subsp. treatment solely because another source uses a different infraspecific rank. If synonymy/equivalence is demonstrated, preserve both the photographed Rioja treatment and the external accepted/synonym treatment with provenance."
   },
   "comparison_layers": [
     {
-      "source": "Flora vascular de La Rioja",
-      "role": "local Rioja occurrence/list evidence and rank as printed"
+      "source": "Flora vascular de La Rioja · direct user photograph",
+      "role": "MAXIMUM_PRIORITY_LOCAL_EVIDENCE: local Rioja occurrence/list evidence and exact rank/name as printed; never silently discarded"
     },
     {
       "source": "Spanish national pattern list",
@@ -30,7 +35,7 @@
     },
     {
       "source": "POWO/WCVP",
-      "role": "taxonomic existence/status/synonymy"
+      "role": "taxonomic existence/status/synonymy/current international treatment"
     },
     {
       "source": "World Flora Online",
@@ -66,12 +71,20 @@
     "no_silent_delete": true,
     "no_silent_name_replacement": true,
     "preserve_original_provenance": true,
+    "preserve_direct_rioja_flora_photo_evidence": true,
+    "preserve_direct_rioja_flora_printed_rank": true,
     "missing_local_flora_photo_alone_cannot_delete": true,
-    "user_supplied_local_flora_evidence_can_support_addition_or_rank_reconciliation_when corroborated by taxonomic/national evidence": true
+    "rank_difference_alone_cannot_delete": true,
+    "user_supplied_local_flora_evidence_can_support_addition_or rank_reconciliation when corroborated by taxonomic/national evidence": true
   },
   "downstream_invalidation": {
     "rule": "Any taxon identity change, split, merge reversal, rank replacement, addition or botanical-universe removal invalidates inherited AMENAZA, PROTECCION and REPRESENTACION_EX_SITU conclusions for the changed identity.",
     "action": "Fresh downstream execution is required; old outputs remain audit evidence only."
   },
-  "working_mode": "Process anomalous genera one by one. After the user supplies the relevant Rioja flora page(s), reconcile the complete genus before moving to the next genus."
+  "working_mode": "Process anomalous genera one by one. After the user supplies the relevant Rioja flora page(s), reconcile the complete genus before moving to the next genus.",
+  "user_directives_added_2026_08_19": [
+    "Género sp. records may be removed from the active botanical species universe with historical trace, because genus-only unidentified records are not operationally useful to the user.",
+    "Abbreviations must be interpreted semantically before action: gr. means group and is not equivalent to sp.; subsp. is not sp.; cf., aff., agg. and other abbreviations require correct botanical interpretation.",
+    "Direct photographed evidence from Flora vascular de La Rioja has maximum local priority and is never discarded."
+  ]
 }
