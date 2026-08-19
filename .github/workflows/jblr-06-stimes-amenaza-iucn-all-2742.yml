@@ -8,6 +8,8 @@ on:
     paths:
       - '.github/workflows/jblr-06-stimes-amenaza-iucn-all-2742.yml'
       - 'app/scripts/stimes-amenaza-iucn-all-2742-fresh.py'
+      - 'app/scripts/stimes-amenaza-iucn-all-2742-fresh-v2.py'
+      - 'app/data/stimes/amenaza/iucn-all-2742-queue.b64.part-*'
 
 permissions:
   contents: write
@@ -48,8 +50,8 @@ jobs:
           print('IUCN API authentication verified')
           PY
 
-      - name: Execute fresh IUCN API v4 acquisition for 2742 taxa
-        run: python3 app/scripts/stimes-amenaza-iucn-all-2742-fresh.py
+      - name: Verify queue and execute fresh IUCN API v4 acquisition for 2742 taxa
+        run: python3 app/scripts/stimes-amenaza-iucn-all-2742-fresh-v2.py
 
       - name: Materialize complete IUCN evidence on branch
         if: success()
@@ -69,6 +71,7 @@ jobs:
             "source_commit=${GITHUB_SHA}" \
             'source=IUCN_RED_LIST_API_V4_FRESH' \
             'scope=FULL_JBLR_TAXON_UNIVERSE_2742' \
+            'queue_sha256=901f748d8733dfb85cb566bbc0308274248718bd98fb10c72721fbdd415685ed' \
             > "$TARGET/RUN_METADATA.txt"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -89,4 +92,4 @@ jobs:
           if-no-files-found: warn
           retention-days: 30
 
-# activation: full universe fresh acquisition
+# activation: verified chunked queue v2
