@@ -3,7 +3,6 @@ import csv
 import importlib.util
 import json
 import os
-import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -147,8 +146,8 @@ class WfoApi:
 
 
 def build_static_sources():
-    powo = v4.DwcIndex("powo_wcvp", v4.SOURCES["powo_wcvp"])
-    anthos = v4.DwcIndex("anthos", v4.SOURCES["anthos"])
+    powo = v4.RobustDwcIndex("powo_wcvp", v4.mod.SOURCES["powo_wcvp"])
+    anthos = v4.RobustDwcIndex("anthos", v4.mod.SOURCES["anthos"])
     powo.start()
     anthos.start()
     return powo, anthos
@@ -175,9 +174,10 @@ def write_csv(path, rows):
 
 def execute():
     OUT.mkdir(parents=True, exist_ok=True)
-    queue = v4.load_queue()
-    if len(queue) != v4.EXPECTED_N:
-        raise SystemExit(f"QUEUE_COUNT_MISMATCH expected={v4.EXPECTED_N} got={len(queue)}")
+    queue = v4.mod.load_queue()
+    expected_n = v4.mod.EXPECTED_N
+    if len(queue) != expected_n:
+        raise SystemExit(f"QUEUE_COUNT_MISMATCH expected={expected_n} got={len(queue)}")
 
     powo, anthos = build_static_sources()
     wfo = WfoApi()
@@ -222,7 +222,7 @@ def execute():
         wr = wfo.search(taxon)
 
         threat_reference = any(truthy(row.get(k)) for k in (
-            "assessment_id", "red_list_category_code", "red_list_category", "citation", "url"
+            "assessment_id", "red_list_category_code", "red_list_category"
         ))
         any_found = static_found(pr) or static_found(ar) or wr.get("state") == "TAXON_MATCH_FOUND"
         any_error = wr.get("state") == "SOURCE_ERROR"
