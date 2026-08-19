@@ -1,0 +1,72 @@
+genus,family,review_taxon_count,review_taxa
+Asplenium,ASPLENIACEAE,5,Asplenium x alternifolium | Asplenium x sarniense | Asplenium x souchei | Asplenium x staufferi | Asplenium x ticinense
+Odontites,OROBANCHACEAE,5,Odontites longiflora | Odontites verna | Odontites verna subsp. serotina | Odontites verna subsp. verna | Odontites viscosa
+Salix,SALICACEAE,4,Salix atrocinerea x S. caprea | Salix salvifolia | Salix x neotricha | Salix x rubens
+Oenanthe,APIACEAE,3,Oenanthe hispanica | Oenanthe leucura | Oenanthe oenanthe
+Onopordon,ASTERACEAE,3,Onopordon acanthium | Onopordon corymbosum | Onopordon nervosum
+Herniaria,CARYOPHYLLACEAE,3,Herniaria fruticosa var. fruticosa | Herniaria glabra var. glabra | Herniaria scabrida var. scabrida
+Dryopteris,DRYOPTERIDACEAE,3,Dryopteris affinis var. borreri | Dryopteris x ambroseae | Dryopteris x mantoniae
+Saxifraga,SAXIFRAGACEAE,3,Saxifraga cuneata x S. losae | Saxifraga x arizagae | Saxifraga x celtiberica
+Allium,AMARYLLIDACEAE,2,Allium oleraceum var. oleraceum | Allium schoenoprassum
+Centaurea,ASTERACEAE,2,Centaurea bofiliana | Centaurea x zubiae
+Hypochoeris,ASTERACEAE,2,Hypochoeris glabra | Hypochoeris radicata
+Polystichum,DRYOPTERIDACEAE,2,Polystichum x bicknellii | Polystichum x illyricum
+Equisetum,EQUISETACEAE,2,Equisetum x litorale | Equisetum x moorei
+Juncus,JUNCACEAE,2,Juncus gerardii | Juncus inflexus var. inflexus
+Polypodium,POLYPODIACEAE,2,Polypodium x mantoniae | Polypodium x shivasiae
+Allosurus,PTERIDACEAE,2,Allosurus acrosticus | Allosurus pteridioides
+Ranunculus,RANUNCULACEAE,2,Ranunculus aconitifoius | Ranunculus peltatus var. peltatus
+Amaranthus,AMARANTHACEAE,1,Amaranthus powelli
+Suaeda,AMARANTHACEAE,1,Suaeda vera subsp. braun-blanquetii
+Seseli,APIACEAE,1,Seseli libanotis subsp. libanotis
+Asphodelus,ASPHODELACEAE,1,Asphodelus serotinum
+Bidens,ASTERACEAE,1,Bidens cernuus
+Chamaemelaum,ASTERACEAE,1,Chamaemelaum nobile
+Gnaphalium,ASTERACEAE,1,Gnaphalium luteo-album
+Hieracium,ASTERACEAE,1,Hieracium pulmorioides
+Leucanthemum,ASTERACEAE,1,Leucanthemum vulgare subsp. pujulae
+Phagnalon,ASTERACEAE,1,Phagnalon saxatilis
+Pulicaria,ASTERACEAE,1,Pulicaria dysenterica subsp. hispanica
+Scorzoneriodes,ASTERACEAE,1,Scorzoneriodes pyrenaica
+Betula,BETULACEAE,1,Betula alba var. alba
+Myosotis,BORAGINACEAE,1,Myosotis laxa subsp. caespitosa
+Jasione,CAMPANULACEAE,1,Jasione sessilifolia
+Centranthus,CAPRIFOLIACEAE,1,Centranthus calcitrape
+Paronychia,CARYOPHYLLACEAE,1,Paronychia capitata var. capitata
+Cistus,CISTACEAE,1,Cistus salvifolius
+Carex,CYPERACEAE,1,Carex hallerana
+Eleocharis,CYPERACEAE,1,Eleocharis palustris subsp. walterssii
+Euphorbia,EUPHORBIACEAE,1,Euphorbia helioscopin subsp. helioscopioides
+Vicia,FABACEAE,1,Vicia amphycarpa
+Mentha,LAMIACEAE,1,Mentha x dumetorum
+Fritillaria,LILIACEAE,1,Fritillaria nervosa subsp. nervosa
+Linum,LINACEAE,1,Linum suffruticosum subsp. diferens
+Tilia,MALVACEAE,1,Tilia x vulgaris
+Epipactis,ORCHIDACEAE,1,Epipactis phyllantes
+Ophrys,ORCHIDACEAE,1,Ophrys x manfredoniae
+Platanthera,ORCHIDACEAE,1,Platanthera clorantha
+Serapias,ORCHIDACEAE,1,Serapias lingua x parviflora
+Bouardia,OROBANCHACEAE,1,Bouardia latisquama
+Euphrasia,OROBANCHACEAE,1,Euphrasia officinalis subsp. rostkovina
+Larix,PINACEAE,1,Larix x eurolepis
+Picea,PINACEAE,1,Picea abies subsp. abies
+Kicksia,PLANTAGINACEAE,1,Kicksia elatine
+Veronica,PLANTAGINACEAE,1,Veronica becabunga
+Linomium,PLUMBAGINACEAE,1,Linomium paui
+Calamagrostis,POACEAE,1,Calamagrostis epigeros
+Festuca,POACEAE,1,Festuca carpetana
+Neoschischkinia,POACEAE,1,Neoschischkinia truncatula subsp. duriaei
+Sesleria,POACEAE,1,Sesleria argentea subsp. hispanica
+Stipa,POACEAE,1,Stipa gigantea subsp. gigantea
+Persicaria,POLYGONACEAE,1,Persicaria minus
+Lysimachia,PRIMULACEAE,1,Lysimachia nemorun
+Aconitum,RANUNCULACEAE,1,Aconitum vulgaria subsp. neapolitanum
+Rhamnus,RHAMNACEAE,1,Rhamnus alaternus subsp. munyozgarmediae
+Rosa,ROSACEAE,1,Rosa blondeana
+Rubus,ROSACEAE,1,Rubus caesius x R. ulmifolius
+Populus,SALICACEAE,1,Populus x canadensis
+Acer,SAPINDACEAE,1,Acer monspessulanum x A. campestre
+Macrosyrhingion,SCROPHULARIACEAE,1,Macrosyrhingion longiflorum
+Atropa,SOLANACEAE,1,Atropa belladona
+Hyosciamus,SOLANACEAE,1,Hyosciamus albus
+Ulmus,ULMACEAE,1,Ulmus x hollandica
