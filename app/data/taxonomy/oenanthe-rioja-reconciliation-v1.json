@@ -1,0 +1,69 @@
+{
+  "id": "OENANTHE_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-19",
+  "family": "APIACEAE",
+  "genus": "Oenanthe",
+  "state": "CROSS_KINGDOM_CONTAMINATION_CONFIRMED_FOR_THREE_ACTIVE_ROWS",
+  "local_evidence": {
+    "source": "User photographs, Actualización del catálogo de la flora vascular silvestre de La Rioja, pp. 46-47",
+    "coverage": "Complete Oenanthe block: p.46 ends with Oenanthe crocata and Oenanthe lachenalii; p.47 starts with Orlaya, therefore the genus block is complete.",
+    "taxa_as_printed": [
+      "Oenanthe crocata",
+      "Oenanthe lachenalii"
+    ]
+  },
+  "jblr_v8_rows": [
+    {
+      "universe_index": 1702,
+      "taxon": "Oenanthe crocata",
+      "resolution": "KEEP",
+      "evidence": "V8 exact-supported by POWO/WCVP, WFO and ANTHOS; also present in the supplied Rioja flora block."
+    },
+    {
+      "universe_index": 1703,
+      "taxon": "Oenanthe hispanica",
+      "resolution": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
+      "classification": "POSSIBLE_CROSS_KINGDOM_CONTAMINATION_CONFIRMED",
+      "evidence": "Spanish national pattern list row 8868: kingdom Animalia, class Aves, family Muscicapidae, taxonomic group Aves, vernacular Collalba rubia. V8 botanical exact audit: no exact canonical match in POWO/WCVP, WFO or ANTHOS. Not present in complete Rioja botanical Oenanthe block."
+    },
+    {
+      "universe_index": 1704,
+      "taxon": "Oenanthe lachenalii",
+      "resolution": "KEEP",
+      "evidence": "V8 exact-supported by POWO/WCVP, WFO and ANTHOS; also present in the supplied Rioja flora block."
+    },
+    {
+      "universe_index": 1705,
+      "taxon": "Oenanthe leucura",
+      "resolution": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
+      "classification": "POSSIBLE_CROSS_KINGDOM_CONTAMINATION_CONFIRMED",
+      "evidence": "Spanish national pattern list row 8992: kingdom Animalia, class Aves, family Muscicapidae, taxonomic group Aves, vernacular Collalba negra. V8 botanical exact audit: no exact canonical match in POWO/WCVP, WFO or ANTHOS. Not present in complete Rioja botanical Oenanthe block."
+    },
+    {
+      "universe_index": 1706,
+      "taxon": "Oenanthe oenanthe",
+      "resolution": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE",
+      "classification": "POSSIBLE_CROSS_KINGDOM_CONTAMINATION_CONFIRMED",
+      "evidence": "Spanish national pattern list row 9247: kingdom Animalia, class Aves, family Muscicapidae, taxonomic group Aves, vernacular Collalba gris. V8 botanical exact audit: no exact canonical match in POWO/WCVP, WFO or ANTHOS. Not present in complete Rioja botanical Oenanthe block."
+    }
+  ],
+  "cross_kingdom_guard": {
+    "national_pattern_non_plantae_explicit": true,
+    "botanical_exact_support_absent_in_powo_wfo_anthos_for_three_contaminants": true,
+    "historical_source_rows_preserved": true,
+    "final_state": "REMOVE_FROM_ACTIVE_BOTANICAL_UNIVERSE_WITH_TRACE"
+  },
+  "decision": {
+    "remove_indices": [1703, 1705, 1706],
+    "keep_indices": [1702, 1704],
+    "active_universe_mutation": "PENDING_HASH_SAFE_BATCH_OVERLAY",
+    "reason": "The three names are confirmed bird taxa sharing the homonymous genus Oenanthe; removal is authorized by the active cross-kingdom contamination protocol, but the effective-universe overlay must be regenerated with consistent row-count/hash metadata before full-audit rerun."
+  },
+  "guards": [
+    "Do not infer a botanical replacement for any removed bird row.",
+    "Preserve historical source identity and the non-botanical national-pattern evidence.",
+    "Oenanthe crocata and Oenanthe lachenalii remain active botanical taxa.",
+    "Any downstream threat/protection/ex-situ values attached to the bird-contaminant rows are invalid for botanical processing and must not be inherited."
+  ],
+  "next_genus_after_resolution": "ASTERACEAE · Onopordon"
+}
