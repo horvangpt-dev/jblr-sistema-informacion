@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.1",
+  "library": "07_LA_BIBLIOTECA",
+  "canonical_storage": "GOOGLE_DRIVE",
+  "github_role": "INDEX_AUTOMATION_AND_POINTERS",
+  "drive_root": {
+    "path": "Botanico/07_BIBLIOTECA",
+    "folder_id": "1d3irAPiX5drg1FNlOzD6ENTe_83pSldr"
+  },
+  "collections": [
+    {
+      "library_id": "JBLR-LIB-COL-000001",
+      "title": "Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares",
+      "author_editor": "Castroviejo Bolibar, Santiago & al. (eds.)",
+      "date": "1986-",
+      "extent": "21 tomos en 22 volúmenes",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/idurl/1/9895",
+      "drive_path": "Botanico/07_BIBLIOTECA/03_HERRAMIENTAS_IDENTIFICACION/Flora_Iberica",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "geographic_scope": ["Península Ibérica", "Islas Baleares"],
+      "use_classes": ["identificación", "taxonomía", "nomenclatura", "distribución"],
+      "ingest_status": "PENDING_DOWNLOAD",
+      "rule": "Cada volumen tendrá registro individual cuando sea incorporado; la colección permanecerá físicamente junta."
+    }
+  ],
+  "documents": [
+    {
+      "library_id": "JBLR-LIB-000001",
+      "title": "Flora de la Rioja",
+      "author": "Zubía e Icazuriaga, Ildefonso",
+      "year": 1921,
+      "extent": "2 tomos",
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/idurl/1/10188",
+      "drive_path": "Botanico/07_BIBLIOTECA/01_RIOJA_DIRECTA/00_FUENTES_TAXONES_LOCALIZACIONES_Y_CENSOS/04_HISTORICAS_HASTA_1950",
+      "drive_folder_id": "1u7R1-MkrkWxyv7MFyUmSV4Jn5aGC-0tg",
+      "geographic_scope": ["La Rioja", "provincia de Logroño"],
+      "contains_locality_or_chorology": "REVIEW_REQUIRED",
+      "contains_taxon_records": "REVIEW_REQUIRED",
+      "contains_population_counts": "UNKNOWN",
+      "rioja_priority": "MAXIMUM",
+      "ingest_status": "LOCATED_PENDING_DOWNLOAD",
+      "notes": "Obra prioritaria para extracción posterior de citas históricas, taxones y localidades. Los dos tomos deberán recibir subregistros individuales al incorporarse."
+    },
+    {
+      "library_id": "JBLR-LIB-000002",
+      "title": "Flora de la Rioja. Parte descriptiva. Tomo II",
+      "author": "Zubía e Icazuriaga, Ildefonso",
+      "year": 1921,
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
+      "source_url": "https://bibdigital.rjb.csic.es/idurl/1/10190",
+      "drive_path": "Botanico/07_BIBLIOTECA/01_RIOJA_DIRECTA/00_FUENTES_TAXONES_LOCALIZACIONES_Y_CENSOS/04_HISTORICAS_HASTA_1950",
+      "drive_folder_id": "1u7R1-MkrkWxyv7MFyUmSV4Jn5aGC-0tg",
+      "geographic_scope": ["La Rioja"],
+      "contains_locality_or_chorology": "REVIEW_REQUIRED",
+      "contains_taxon_records": "REVIEW_REQUIRED",
+      "contains_population_counts": "UNKNOWN",
+      "rioja_priority": "MAXIMUM",
+      "ingest_status": "LOCATED_PENDING_DOWNLOAD"
+    },
+    {
+      "library_id": "JBLR-LIB-SER-000001",
+      "title": "Estudios sobre Flora de La Rioja baja",
+      "author": "Cámara Niño, Fernando",
+      "parts": [
+        {"part": 1, "year": 1936},
+        {"part": 2, "year": 1936},
+        {"part": 3, "year": 1940}
+      ],
+      "source_repository": "Biblioteca Digital del Real Jardín Botánico de Madrid / Biodiversity Heritage Library",
+      "source_url": "https://www.biodiversitylibrary.org/browse/contributor/BDRJBM/e",
+      "drive_path": "Botanico/07_BIBLIOTECA/01_RIOJA_DIRECTA/00_FUENTES_TAXONES_LOCALIZACIONES_Y_CENSOS/04_HISTORICAS_HASTA_1950",
+      "drive_folder_id": "1u7R1-MkrkWxyv7MFyUmSV4Jn5aGC-0tg",
+      "geographic_scope": ["La Rioja Baja"],
+      "contains_locality_or_chorology": "REVIEW_REQUIRED",
+      "contains_taxon_records": "REVIEW_REQUIRED",
+      "contains_population_counts": "UNKNOWN",
+      "rioja_priority": "MAXIMUM",
+      "ingest_status": "LOCATED_PENDING_EXACT_ITEM_URLS_AND_DOWNLOAD",
+      "notes": "Crear un registro individual por parte cuando se resuelvan los item/permalink exactos."
+    }
+  ],
+  "invariants": {
+    "unknown_is_not_zero": true,
+    "reference_is_not_assertion": true,
+    "evidence_is_not_conclusion": true,
+    "raw_is_not_normalized": true,
+    "drive_holds_document_binaries": true,
+    "github_does_not_replace_drive": true
+  }
+}
