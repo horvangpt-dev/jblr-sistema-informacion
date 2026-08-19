@@ -1,0 +1,54 @@
+{
+  "id": "TARAXACUM_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-19",
+  "family": "ASTERACEAE",
+  "genus": "Taraxacum",
+  "state": "LOCAL_SET_RECONCILED_WITH_GROUP_PLACEHOLDER_PRESERVED",
+  "local_source": "User photograph, Actualización del catálogo de la flora vascular silvestre de La Rioja, p.24",
+  "local_taxa": [
+    "Taraxacum ciliare",
+    "Taraxacum elegantius",
+    "Taraxacum gasparrinii",
+    "Taraxacum malato-belizii",
+    "Taraxacum marginellum",
+    "Taraxacum obovatum",
+    "Taraxacum pinto-silvae",
+    "Taraxacum pyropappum"
+  ],
+  "local_group_reference": "Taraxacum grupo spectabile Dahlst. is printed in the source under Taraxacum elegantius.",
+  "jblr_before": [
+    {"universe_index": 2485, "taxon": "Taraxacum ciliare"},
+    {"universe_index": 2486, "taxon": "Taraxacum elegantius"},
+    {"universe_index": 2487, "taxon": "Taraxacum gasparrinii"},
+    {"universe_index": 2488, "taxon": "Taraxacum gr."},
+    {"universe_index": 2489, "taxon": "Taraxacum malato-belizii"},
+    {"universe_index": 2490, "taxon": "Taraxacum marginellum"},
+    {"universe_index": 2491, "taxon": "Taraxacum obovatum"},
+    {"universe_index": 2492, "taxon": "Taraxacum pinto-silvae"},
+    {"universe_index": 2493, "taxon": "Taraxacum pyropappum"},
+    {"universe_index": 2494, "taxon": "Taraxacum sp."}
+  ],
+  "exact_local_species_matches": [2485, 2486, 2487, 2489, 2490, 2491, 2492, 2493],
+  "decisions": [
+    {
+      "universe_index": 2494,
+      "taxon": "Taraxacum sp.",
+      "classification": "NON_SPECIFIC_PLACEHOLDER",
+      "action": "EXCLUDE_FROM_ACTIVE_SPECIES_UNIVERSE_PRESERVE_HISTORY"
+    },
+    {
+      "universe_index": 2488,
+      "taxon": "Taraxacum gr.",
+      "classification": "GROUP_LEVEL_DETERMINATION",
+      "action": "KEEP_UNCHANGED_AS_GROUP_LEVEL_RECORD",
+      "guard": "Do not infer that the abbreviated source record necessarily means grupo spectabile unless its own provenance proves that epithet."
+    }
+  ],
+  "national_pattern_check": "The eight named local species are present in the national pattern list used by actor 06.",
+  "guards": [
+    "gr. is semantically distinct from sp. and is not removed by the sp.-placeholder exclusion rule.",
+    "No group epithet is silently inferred.",
+    "Historical source strings are preserved."
+  ],
+  "active_universe_mutation": true
+}
