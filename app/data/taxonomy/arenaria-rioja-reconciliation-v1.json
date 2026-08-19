@@ -1,0 +1,130 @@
+{
+  "reconciliation_id": "ARENARIA_RIOJA_RECONCILIATION_v1",
+  "decision_date": "2026-08-19",
+  "scope": "active botanical taxon universe derived for JBLR/STIMES",
+  "historical_universe_count": 2742,
+  "effective_universe_count_after_patch": 2742,
+  "principles": [
+    "REALITY_FIRST",
+    "NO_SILENT_INFERENCE",
+    "historical source rows are preserved as audit evidence",
+    "changed taxon identity invalidates inherited threat scoring until fresh re-execution"
+  ],
+  "evidence": {
+    "user_supplied_source": {
+      "title": "Flora vascular de La Rioja",
+      "page": 15,
+      "visible_arenaria_taxa": [
+        "Arenaria erinacea",
+        "Arenaria grandiflora subsp. grandiflora",
+        "Arenaria leptoclados",
+        "Arenaria modesta subsp. modesta",
+        "Arenaria montana subsp. montana",
+        "Arenaria obtusiflora subsp. ciliaris",
+        "Arenaria serpyllifolia"
+      ]
+    },
+    "national_pattern_sheet": {
+      "spreadsheet_id": "1gjP6VU2JxqoRq2rVcVdvDjkV7d3Z9Qmhrr5Dn3Y6kNc",
+      "sheet": "v_listapatronespecie_idtaxon=gt",
+      "exact_rows": {
+        "Arenaria erinacea": 1616,
+        "Arenaria grandiflora": 1621,
+        "Arenaria grandiflora subsp. grandiflora": 1622,
+        "Arenaria leptoclados": 1627,
+        "Arenaria modesta": 1630,
+        "Arenaria modesta subsp. modesta": 1631,
+        "Arenaria montana": 1634,
+        "Arenaria montana subsp. montana": 1635,
+        "Arenaria obtusiflora subsp. ciliaris": 1640,
+        "Arenaria pomelii": 1642,
+        "Arenaria serpyllifolia": 1649,
+        "Arenaria interpres": 8929
+      },
+      "cross_kingdom_finding": "Arenaria interpres is Animalia / Chordata / Aves / Charadriiformes / Scolopacidae; it is not a botanical Arenaria taxon."
+    }
+  },
+  "current_active_arenaria_before_patch": [
+    "Arenaria erinacea",
+    "Arenaria grandiflora",
+    "Arenaria interpres",
+    "Arenaria leptoclados",
+    "Arenaria modesta",
+    "Arenaria montana",
+    "Arenaria pomelii subsp. ciliaris",
+    "Arenaria serpyllifolia"
+  ],
+  "active_arenaria_after_patch": [
+    "Arenaria erinacea",
+    "Arenaria grandiflora subsp. grandiflora",
+    "Arenaria leptoclados",
+    "Arenaria modesta subsp. modesta",
+    "Arenaria montana subsp. montana",
+    "Arenaria obtusiflora subsp. ciliaris",
+    "Arenaria pomelii",
+    "Arenaria serpyllifolia"
+  ],
+  "actions": [
+    {
+      "action": "REPLACE_EXACT_RANK",
+      "from": "Arenaria grandiflora",
+      "to": "Arenaria grandiflora subsp. grandiflora",
+      "reason": "Flora vascular de La Rioja gives the Riojan entry at subspecies rank; exact subspecies is also independently present in the national pattern sheet.",
+      "inherit_previous_threat_score": false
+    },
+    {
+      "action": "REMOVE_FROM_BOTANICAL_UNIVERSE",
+      "taxon": "Arenaria interpres",
+      "reason": "Cross-kingdom contamination: national pattern sheet identifies it as the bird Vuelvepiedras, family Scolopacidae.",
+      "delete_historical_trace": false
+    },
+    {
+      "action": "REPLACE_EXACT_RANK",
+      "from": "Arenaria modesta",
+      "to": "Arenaria modesta subsp. modesta",
+      "reason": "Flora vascular de La Rioja gives the Riojan entry at subspecies rank; exact subspecies is also independently present in the national pattern sheet.",
+      "inherit_previous_threat_score": false
+    },
+    {
+      "action": "REPLACE_EXACT_RANK",
+      "from": "Arenaria montana",
+      "to": "Arenaria montana subsp. montana",
+      "reason": "Flora vascular de La Rioja gives the Riojan entry at subspecies rank; exact subspecies is also independently present in the national pattern sheet.",
+      "inherit_previous_threat_score": false
+    },
+    {
+      "action": "REMOVE_INVALID_CONFLATED_NAME",
+      "taxon": "Arenaria pomelii subsp. ciliaris",
+      "reason": "No supporting taxonomic evidence for this combination; evidence demonstrates two separate real taxa.",
+      "delete_historical_trace": false
+    },
+    {
+      "action": "ADD_FROM_SPLIT",
+      "taxon": "Arenaria obtusiflora subsp. ciliaris",
+      "reason": "Explicitly present in Flora vascular de La Rioja and exact national pattern record.",
+      "rioja_occurrence_support": "DIRECT_LOCAL_FLORA_SOURCE",
+      "inherit_previous_threat_score": false
+    },
+    {
+      "action": "ADD_FROM_SPLIT",
+      "taxon": "Arenaria pomelii",
+      "reason": "Real independent species confirmed by the national pattern sheet and earlier three-source taxonomic review; user explicitly instructed preserving the two taxa separately.",
+      "rioja_occurrence_support": "NOT_ASSERTED_BY_THE_SUPPLIED_PAGE",
+      "inherit_previous_threat_score": false
+    }
+  ],
+  "downstream_effect": {
+    "taxa_requiring_fresh_threat_execution": [
+      "Arenaria grandiflora subsp. grandiflora",
+      "Arenaria modesta subsp. modesta",
+      "Arenaria montana subsp. montana",
+      "Arenaria obtusiflora subsp. ciliaris",
+      "Arenaria pomelii"
+    ],
+    "removed_from_botanical_threat_processing": [
+      "Arenaria interpres",
+      "Arenaria pomelii subsp. ciliaris"
+    ]
+  },
+  "automatic_deletion_without_trace": false
+}
