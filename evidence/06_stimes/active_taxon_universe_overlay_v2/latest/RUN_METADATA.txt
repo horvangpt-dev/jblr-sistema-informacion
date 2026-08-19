@@ -1,0 +1,7 @@
+github_run_id=32313165198
+source_commit=a87c8081f3d07577dc7c3d474507960778429aa5
+batch=ACCEPTED_MUTATIONS_ONLY
+pilot_gate=EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v3_PASS
+odontites_mutated=NO
+herniaria_mutated=NO
+canonical_execution_directive=JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001

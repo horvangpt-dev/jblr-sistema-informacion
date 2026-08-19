@@ -1,0 +1,90 @@
+{
+  "execution": "JBLR_ACTIVE_TAXON_UNIVERSE_HASH_SAFE_BATCH_v2",
+  "at": "2026-08-19T23:25:23.219984+00:00",
+  "pass": true,
+  "base_blob_sha_verified": "de79a9d7e6ed29c566c12861dc5ec889a1de0674",
+  "overlay_v1_blob_sha_verified": "87829711307debbbe975cee1f6929fde280c1e93",
+  "input_effective_count": 2739,
+  "input_effective_queue_sha256_v2_algorithm": "8ee963c013160756bef0c4278ee36cde4611815831c08d1dd6d0f93570d1668b",
+  "output_effective_count": 2734,
+  "output_effective_queue_sha256": "f3b8c641ea75cd19020448a0209702de7fc637f0d0bcf85bd44e9d0b932b662f",
+  "new_replacement_indices": [
+    1733
+  ],
+  "new_exclusion_indices": [
+    1703,
+    1705,
+    1706,
+    1732,
+    1734
+  ],
+  "all_excluded_indices_cumulative": [
+    981,
+    1703,
+    1705,
+    1706,
+    1732,
+    1734,
+    1881,
+    2494
+  ],
+  "before_after": [
+    {
+      "action": "EXCLUDE",
+      "universe_index": 1703,
+      "family": "APIACEAE",
+      "before_taxon": "Oenanthe hispanica",
+      "after_taxon": null,
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+    },
+    {
+      "action": "EXCLUDE",
+      "universe_index": 1705,
+      "family": "APIACEAE",
+      "before_taxon": "Oenanthe leucura",
+      "after_taxon": null,
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+    },
+    {
+      "action": "EXCLUDE",
+      "universe_index": 1706,
+      "family": "APIACEAE",
+      "before_taxon": "Oenanthe oenanthe",
+      "after_taxon": null,
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+    },
+    {
+      "action": "EXCLUDE",
+      "universe_index": 1732,
+      "family": "ASTERACEAE",
+      "before_taxon": "Onopordon acanthium",
+      "after_taxon": null,
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+    },
+    {
+      "action": "EXCLUDE",
+      "universe_index": 1734,
+      "family": "ASTERACEAE",
+      "before_taxon": "Onopordon nervosum",
+      "after_taxon": null,
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+    },
+    {
+      "action": "REPLACE",
+      "universe_index": 1733,
+      "family": "ASTERACEAE",
+      "before_taxon": "Onopordon corymbosum",
+      "after_taxon": "Onopordum corymbosum subsp. corymbosum",
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+    }
+  ],
+  "pilot_gate": {
+    "pilot_id": "EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v3",
+    "overall": "PASS",
+    "pass_count": 9,
+    "review_required_count": 0,
+    "evidence_path": "evidence/06_stimes/eidos_taxonomic_layer_controlled_pilot_v3/latest/EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_V3.json"
+  },
+  "odontites_mutated": false,
+  "herniaria_mutated": false
+}

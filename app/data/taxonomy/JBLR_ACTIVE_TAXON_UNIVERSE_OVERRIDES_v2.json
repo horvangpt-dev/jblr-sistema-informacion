@@ -1,0 +1,282 @@
+{
+  "override_id": "JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v2",
+  "base_universe": {
+    "row_count": 2742,
+    "minimal_queue_sha256": "901f748d8733dfb85cb566bbc0308274248718bd98fb10c72721fbdd415685ed"
+  },
+  "result_universe": {
+    "row_count": 2734,
+    "minimal_queue_sha256": "f3b8c641ea75cd19020448a0209702de7fc637f0d0bcf85bd44e9d0b932b662f",
+    "hash_algorithm": "SHA256_CANONICAL_JSON_SORT_KEYS_COMPACT_UTF8_OF_ORDERED_[universe_index,family,taxon]_v2"
+  },
+  "guard": "Apply only when universe_index and expected_original_taxon both match. Refuse silent application on mismatch. Exclusions preserve source/provenance records and remove only active botanical processing membership.",
+  "replacements": [
+    {
+      "universe_index": 196,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria grandiflora",
+      "active_taxon": "Arenaria grandiflora subsp. grandiflora",
+      "reason": "Exact Rioja flora rank reconciliation"
+    },
+    {
+      "universe_index": 197,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria interpres",
+      "active_taxon": "Arenaria pomelii",
+      "reason": "Remove cross-kingdom bird contamination while preserving user-authorized real Arenaria pomelii from the conflated-name review"
+    },
+    {
+      "universe_index": 199,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria modesta",
+      "active_taxon": "Arenaria modesta subsp. modesta",
+      "reason": "Exact Rioja flora rank reconciliation"
+    },
+    {
+      "universe_index": 200,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria montana",
+      "active_taxon": "Arenaria montana subsp. montana",
+      "reason": "Exact Rioja flora rank reconciliation"
+    },
+    {
+      "universe_index": 201,
+      "family": "CARYOPHYLLACEAE",
+      "expected_original_taxon": "Arenaria pomelii subsp. ciliaris",
+      "active_taxon": "Arenaria obtusiflora subsp. ciliaris",
+      "reason": "Remove invalid conflated combination; exact local flora and national pattern record support A. obtusiflora subsp. ciliaris"
+    },
+    {
+      "universe_index": 1418,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Leontodon carolipaui",
+      "active_taxon": "Leontodon caroliaedoi",
+      "reason": "Rioja flora, national pattern list and POWO/WCVP support caroliaedoi; original string is a spelling/transcription error"
+    },
+    {
+      "universe_index": 1419,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Leontodon hispidus",
+      "active_taxon": "Leontodon hispidus subsp. hispidus",
+      "reason": "Exact Rioja flora rank reconciliation; national pattern list contains the autonym"
+    },
+    {
+      "universe_index": 1733,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Onopordon corymbosum",
+      "active_taxon": "Onopordum corymbosum subsp. corymbosum",
+      "reason": "ACCEPTED correction preserving the local/Spanish autonymic subspecies treatment; correctly spelled species Onopordum corymbosum already exists separately at index 1737.",
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+    }
+  ],
+  "exclusions": [
+    {
+      "universe_index": 981,
+      "family": "POACEAE",
+      "expected_original_taxon": "Festuca sp.",
+      "reason": "User-authorized exclusion of non-specific Genus sp. placeholders from active species processing"
+    },
+    {
+      "universe_index": 1881,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Pilosella sp.",
+      "reason": "User-authorized exclusion of non-specific Genus sp. placeholders from active species processing"
+    },
+    {
+      "universe_index": 2494,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Taraxacum sp.",
+      "reason": "User-authorized exclusion of non-specific Genus sp. placeholders from active species processing"
+    },
+    {
+      "universe_index": 1703,
+      "family": "APIACEAE",
+      "expected_original_taxon": "Oenanthe hispanica",
+      "reason": "ACCEPTED cross-kingdom contamination: official Spanish national pattern classifies this literal as Animalia/Aves/Muscicapidae; remove only from active botanical processing with trace.",
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+    },
+    {
+      "universe_index": 1705,
+      "family": "APIACEAE",
+      "expected_original_taxon": "Oenanthe leucura",
+      "reason": "ACCEPTED cross-kingdom contamination: official Spanish national pattern classifies this literal as Animalia/Aves/Muscicapidae; remove only from active botanical processing with trace.",
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+    },
+    {
+      "universe_index": 1706,
+      "family": "APIACEAE",
+      "expected_original_taxon": "Oenanthe oenanthe",
+      "reason": "ACCEPTED cross-kingdom contamination: official Spanish national pattern classifies this literal as Animalia/Aves/Muscicapidae; remove only from active botanical processing with trace.",
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+    },
+    {
+      "universe_index": 1732,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Onopordon acanthium",
+      "reason": "ACCEPTED spelling/transcription-error duplicate of existing active Onopordum acanthium; remove duplicate from active botanical processing with trace.",
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001",
+      "duplicate_target_index": 1735,
+      "duplicate_target_taxon": "Onopordum acanthium"
+    },
+    {
+      "universe_index": 1734,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Onopordon nervosum",
+      "reason": "ACCEPTED spelling/transcription-error duplicate of existing active Onopordum nervosum; remove duplicate from active botanical processing with trace.",
+      "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001",
+      "duplicate_target_index": 1738,
+      "duplicate_target_taxon": "Onopordum nervosum"
+    }
+  ],
+  "retained_non_species_determinations": [
+    {
+      "universe_index": 2488,
+      "family": "ASTERACEAE",
+      "expected_original_taxon": "Taraxacum gr.",
+      "interpretation": "GROUP_LEVEL_DETERMINATION",
+      "reason": "User clarification that gr. means grupo; do not treat as sp. and do not infer a group epithet without provenance"
+    }
+  ],
+  "corrected_arenaria_active_set": [
+    "Arenaria erinacea",
+    "Arenaria grandiflora subsp. grandiflora",
+    "Arenaria pomelii",
+    "Arenaria leptoclados",
+    "Arenaria modesta subsp. modesta",
+    "Arenaria montana subsp. montana",
+    "Arenaria obtusiflora subsp. ciliaris",
+    "Arenaria serpyllifolia"
+  ],
+  "invalidated_downstream_evidence": {
+    "rule": "No threat/protection/ex-situ score is inherited across a taxon-identity replacement. Excluded placeholders have no current species-level downstream score.",
+    "requires_fresh_reexecution_indices": [
+      196,
+      197,
+      199,
+      200,
+      201,
+      1418,
+      1419,
+      1733
+    ],
+    "removed_from_species_level_processing_indices": [
+      981,
+      1703,
+      1705,
+      1706,
+      1732,
+      1734,
+      1881,
+      2494
+    ],
+    "group_level_non_species_index_requires_semantic_handling": [
+      2488
+    ],
+    "post_v8_rule": "Fresh downstream execution required after this identity/membership batch; no old score inheritance."
+  },
+  "provenance": [
+    "app/data/taxonomy/arenaria-rioja-reconciliation-v1.json",
+    "app/data/taxonomy/festuca-rioja-reconciliation-v2.json",
+    "app/data/taxonomy/leontodon-rioja-reconciliation-v1.json",
+    "app/data/taxonomy/taraxacum-rioja-reconciliation-v1.json",
+    "app/data/taxonomy/NON_SPECIFIC_SP_ACTIVE_UNIVERSE_EXCLUSION_RULE_v1.json",
+    "app/data/taxonomy/oenanthe-rioja-reconciliation-v1.json",
+    "app/data/taxonomy/onopordum-rioja-reconciliation-v1.json",
+    "evidence/06_stimes/national_pattern_recheck_20260820/NATIONAL_PATTERN_RECHECK_ACCEPTED_MUTATIONS_v1.json",
+    "evidence/06_stimes/eidos_taxonomic_layer_controlled_pilot_v3/latest/EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_V3.json",
+    "JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001",
+    "JBLR-EVT-0000-20260820-TAXONOMIC-FIELDS-001"
+  ],
+  "supersedes_override_id": "JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v1",
+  "generated_at": "2026-08-19T23:25:23.148754+00:00",
+  "canonical_execution_directive": "JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001",
+  "canonical_field_directive": "JBLR-EVT-0000-20260820-TAXONOMIC-FIELDS-001",
+  "pilot_gate": {
+    "pilot_id": "EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v3",
+    "overall": "PASS",
+    "pass_count": 9,
+    "review_required_count": 0,
+    "evidence_path": "evidence/06_stimes/eidos_taxonomic_layer_controlled_pilot_v3/latest/EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_V3.json"
+  },
+  "hash_safe_input_guard": {
+    "base_file": "evidence/06_stimes/iucn_all_2742_fresh/latest/IUCN_ALL_2742_RESULTS.csv",
+    "base_git_blob_sha": "de79a9d7e6ed29c566c12861dc5ec889a1de0674",
+    "overlay_v1_file": "app/data/taxonomy/JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v1.json",
+    "overlay_v1_git_blob_sha": "87829711307debbbe975cee1f6929fde280c1e93",
+    "v1_declared_result_minimal_queue_sha256_legacy": "56bc82c0e8525dd3f8b2a99802ec594f7bb611321ec3ba361cccdd6492aafd9f",
+    "v1_effective_row_count_verified": 2739,
+    "v1_effective_queue_sha256_v2_algorithm": "8ee963c013160756bef0c4278ee36cde4611815831c08d1dd6d0f93570d1668b",
+    "queue_hash_algorithm": "SHA256_CANONICAL_JSON_SORT_KEYS_COMPACT_UTF8_OF_ORDERED_[universe_index,family,taxon]_v2"
+  },
+  "accepted_mutation_batch_2026_08_20": {
+    "state": "HASH_SAFE_ACCEPTED_ONLY_BATCH_MATERIALIZED",
+    "replacement_indices": [
+      1733
+    ],
+    "exclusion_indices": [
+      1703,
+      1705,
+      1706,
+      1732,
+      1734
+    ],
+    "accepted_events": [
+      "JBLR-EVT-06-20260819-TAXON-OENANTHE-001",
+      "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+    ],
+    "odotites_mutation_applied": false,
+    "odontites_note": "No unequivocal ACCEPTED per-taxon mutation authorization reconstructed; excluded from batch.",
+    "herniaria_mutation_applied": false,
+    "herniaria_note": "Indices 1166/1168/1173 remain HOLD under VAR_SUBSP_RANK_SYNONYMY_GUARD_v1.",
+    "before_after_evidence": [
+      {
+        "action": "EXCLUDE",
+        "universe_index": 1703,
+        "family": "APIACEAE",
+        "before_taxon": "Oenanthe hispanica",
+        "after_taxon": null,
+        "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+      },
+      {
+        "action": "EXCLUDE",
+        "universe_index": 1705,
+        "family": "APIACEAE",
+        "before_taxon": "Oenanthe leucura",
+        "after_taxon": null,
+        "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+      },
+      {
+        "action": "EXCLUDE",
+        "universe_index": 1706,
+        "family": "APIACEAE",
+        "before_taxon": "Oenanthe oenanthe",
+        "after_taxon": null,
+        "accepted_event": "JBLR-EVT-06-20260819-TAXON-OENANTHE-001"
+      },
+      {
+        "action": "EXCLUDE",
+        "universe_index": 1732,
+        "family": "ASTERACEAE",
+        "before_taxon": "Onopordon acanthium",
+        "after_taxon": null,
+        "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+      },
+      {
+        "action": "EXCLUDE",
+        "universe_index": 1734,
+        "family": "ASTERACEAE",
+        "before_taxon": "Onopordon nervosum",
+        "after_taxon": null,
+        "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+      },
+      {
+        "action": "REPLACE",
+        "universe_index": 1733,
+        "family": "ASTERACEAE",
+        "before_taxon": "Onopordon corymbosum",
+        "after_taxon": "Onopordum corymbosum subsp. corymbosum",
+        "accepted_event": "JBLR-EVT-06-20260819-TAXON-ONOPORDUM-001"
+      }
+    ]
+  }
+}
