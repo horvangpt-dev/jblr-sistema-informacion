@@ -1,0 +1,65 @@
+{
+  "id": "LEONTODON_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-19",
+  "family": "ASTERACEAE",
+  "genus": "Leontodon",
+  "state": "PARTIAL_MUTATION_WITH_UNRESOLVED_EXTRAS_PRESERVED",
+  "local_source": "User photograph, Actualización del catálogo de la flora vascular silvestre de La Rioja, p.22",
+  "local_taxa": [
+    "Leontodon caroliaedoi",
+    "Leontodon hispidus subsp. hispidus"
+  ],
+  "jblr_before": [
+    {"universe_index": 1417, "taxon": "Leontodon autumnalis"},
+    {"universe_index": 1418, "taxon": "Leontodon carolipaui"},
+    {"universe_index": 1419, "taxon": "Leontodon hispidus"},
+    {"universe_index": 1420, "taxon": "Leontodon taraxacoides"}
+  ],
+  "decisions": [
+    {
+      "universe_index": 1418,
+      "expected_original_taxon": "Leontodon carolipaui",
+      "active_taxon": "Leontodon caroliaedoi",
+      "classification": "SPELLING_OR_TRANSCRIPTION_ERROR",
+      "evidence": [
+        "Rioja flora p.22 gives Leontodon caroliaedoi Talavera & M. Talavera",
+        "National pattern list contains Leontodon caroliaedoi Talavera & M. Talavera",
+        "POWO/WCVP 2026 lists Leontodon caroliaedoi among accepted species"
+      ]
+    },
+    {
+      "universe_index": 1419,
+      "expected_original_taxon": "Leontodon hispidus",
+      "active_taxon": "Leontodon hispidus subsp. hispidus",
+      "classification": "RANK_MISMATCH_LOCAL_AUTONYM",
+      "evidence": [
+        "Rioja flora p.22 gives Leontodon hispidus subsp. hispidus",
+        "National pattern list contains Leontodon hispidus subsp. hispidus"
+      ]
+    }
+  ],
+  "preserved_unresolved": [
+    {
+      "universe_index": 1417,
+      "taxon": "Leontodon autumnalis",
+      "classification": "EXTRA_IN_ACTIVE_LEONTODON_SET_PENDING_GENUS_TRANSFER_OR_LOCAL_STATUS_REVIEW",
+      "action": "KEEP_UNCHANGED_PENDING_EVIDENCE"
+    },
+    {
+      "universe_index": 1420,
+      "taxon": "Leontodon taraxacoides",
+      "classification": "EXTRA_IN_ACTIVE_LEONTODON_SET_PENDING_GENUS_TRANSFER_OR_LOCAL_STATUS_REVIEW",
+      "action": "KEEP_UNCHANGED_PENDING_EVIDENCE"
+    }
+  ],
+  "resolver_notes": {
+    "wfo_web": "No directly verifiable exact result obtained in this pass; not_found is not treated as absence.",
+    "anthos_web": "No directly verifiable exact result obtained in this pass; not_found is not treated as absence."
+  },
+  "guards": [
+    "No unresolved extra is deleted from a single local-page absence.",
+    "No downstream threat/protection/ex-situ score is inherited across identity or rank changes.",
+    "Original strings remain historical provenance."
+  ],
+  "active_universe_mutation": true
+}
