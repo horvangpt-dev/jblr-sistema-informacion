@@ -1,0 +1,28 @@
+{
+  "id": "NON_SPECIFIC_SP_ACTIVE_UNIVERSE_EXCLUSION_RULE_v1",
+  "date": "2026-08-19",
+  "state": "ACCEPTED_USER_SEMANTIC_DIRECTIVE",
+  "rule": "Entries whose complete taxon string is exactly a genus followed by 'sp.' are not species-level taxa and are excluded from the active botanical taxon universe while preserving their historical source/provenance record.",
+  "scope_guard": {
+    "match_semantically": "Genus sp.",
+    "do_not_confuse_with": ["subsp.", "gr.", "cf.", "aff.", "agg."],
+    "other_abbreviations": "Interpret botanically before any action; if meaning is uncertain, preserve as unresolved and do not infer."
+  },
+  "user_clarification": "gr. means grupo and must not be treated as sp.; official group determinations are retained.",
+  "current_universe_scan": {
+    "base_row_count": 2742,
+    "exact_sp_placeholder_count": 3,
+    "matches": [
+      {"universe_index": 981, "family": "POACEAE", "taxon": "Festuca sp."},
+      {"universe_index": 1881, "family": "ASTERACEAE", "taxon": "Pilosella sp."},
+      {"universe_index": 2494, "family": "ASTERACEAE", "taxon": "Taraxacum sp."}
+    ]
+  },
+  "historical_record_policy": "COPY_NEVER_MOVE; exclusion from active processing does not delete original evidence.",
+  "downstream_policy": "No species-level STIME score may remain current for an excluded placeholder.",
+  "evidence": [
+    "User directive 2026-08-19T18:52:57Z",
+    "User clarification 2026-08-19T18:55:20Z",
+    "IUCN_ALL_2742_QUEUE_USED.csv exact full-universe scan"
+  ]
+}
