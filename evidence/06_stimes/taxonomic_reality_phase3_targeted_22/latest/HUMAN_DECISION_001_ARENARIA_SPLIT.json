@@ -1,0 +1,47 @@
+{
+  "decision_id": "HUMAN_DECISION_001_ARENARIA_SPLIT",
+  "original_jblr_entry": "Arenaria pomelii subsp. ciliaris",
+  "decision": "SPLIT_INTO_TWO_SUPPORTED_TAXA",
+  "resulting_taxa": [
+    "Arenaria pomelii",
+    "Arenaria obtusiflora subsp. ciliaris"
+  ],
+  "rationale": {
+    "Arenaria pomelii": "Phase-2 review found Arenaria pomelii as the parent binomial in POWO/WCVP, WFO and ANTHOS; POWO/WCVP and WFO treated the species as accepted.",
+    "Arenaria obtusiflora subsp. ciliaris": "User-supplied photograph of the Flora vascular de La Rioja page shows the entry 'Arenaria obtusiflora G. Kunze subsp. ciliaris (Loscos) Font Quer'."
+  },
+  "source_evidence": [
+    {
+      "source": "POWO/WCVP",
+      "evidence_type": "taxonomic_backbone",
+      "taxon": "Arenaria pomelii",
+      "status": "Accepted"
+    },
+    {
+      "source": "World Flora Online",
+      "evidence_type": "taxonomic_backbone",
+      "taxon": "Arenaria pomelii",
+      "status": "Accepted"
+    },
+    {
+      "source": "ANTHOS",
+      "evidence_type": "occurrence/taxonomic response",
+      "taxon": "Arenaria pomelii",
+      "status": "FOUND"
+    },
+    {
+      "source": "Flora vascular de La Rioja",
+      "evidence_type": "user_supplied_photograph",
+      "page": 15,
+      "taxon": "Arenaria obtusiflora subsp. ciliaris",
+      "verbatim_visible_entry": "Arenaria obtusiflora G. Kunze subsp. ciliaris (Loscos) Font Quer"
+    }
+  ],
+  "master_mutation_authorization": {
+    "add_Arenaria_pomelii": true,
+    "add_Arenaria_obtusiflora_subsp_ciliaris": true,
+    "retain_original_as_trace_only": true,
+    "delete_without_trace": false
+  },
+  "semantic_guard": "The original combined string is treated as a likely accidental conflation of two supported taxa. Preserve provenance of the original entry; do not silently overwrite history."
+}
