@@ -10,6 +10,11 @@ on:
       - 'app/scripts/stimes-amenaza-iucn-all-2742-fresh.py'
       - 'app/scripts/stimes-amenaza-iucn-all-2742-fresh-v2.py'
       - 'app/data/stimes/amenaza/iucn-all-2742-queue.b64.part-*'
+  pull_request:
+    branches:
+      - 06-stimes-banco-semillas
+    paths:
+      - 'app/data/stimes/amenaza/iucn-all-2742-pr-trigger.txt'
 
 permissions:
   contents: write
@@ -93,3 +98,4 @@ jobs:
           retention-days: 30
 
 # activation: verified chunked queue v2
+# pr-trigger: enabled for observable execution
