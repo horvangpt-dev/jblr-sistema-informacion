@@ -1,0 +1,78 @@
+name: JBLR TAXONOMIC REALITY 1259 ROBUST DWCA V4
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - 06-stimes-banco-semillas
+    paths:
+      - 'app/data/stimes/amenaza/taxonomic-reality-1259-v4-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jblr-taxonomic-reality-1259-v4
+  cancel-in-progress: false
+
+jobs:
+  taxonomic-reality-1259-v4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      TAXON_REALITY_OUT: artifacts/taxonomic_reality_1259_v4
+    steps:
+      - name: Checkout canonical actor branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-stimes-banco-semillas
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests
+
+      - name: Preflight official WCVP WFO and ANTHOS robust DwCA readers
+        run: python3 app/scripts/taxonomic-reality-protocol-1259-v4.py --preflight
+
+      - name: Execute exact canonical-name reality filter for 1259 taxa
+        run: python3 app/scripts/taxonomic-reality-protocol-1259-v4.py --run
+
+      - name: Materialize auditable phase-1 results
+        if: success()
+        shell: bash
+        run: |
+          TARGET='evidence/06_stimes/taxonomic_reality_1259_v4/latest'
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_PREFLIGHT_V4.json" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_1259_RESULTS_V4.csv" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_NO_EXACT_ALL_THREE_V4.csv" "$TARGET/"
+          cp "$TAXON_REALITY_OUT/TAXONOMIC_REALITY_1259_QA_V4.json" "$TARGET/"
+          printf '%s\n' \
+            "github_run_id=${GITHUB_RUN_ID}" \
+            "source_commit=${GITHUB_SHA}" \
+            'scope=IUCN_PROBLEM_CASES_1259' \
+            'sources=POWO_WCVP_OFFICIAL_BACKBONE,WFO_2026_06_OFFICIAL_BACKBONE,ANTHOS_RJB_CSIC_OFFICIAL_DWCA' \
+            'phase=EXACT_CANONICAL_NAME_REALITY_FILTER' \
+            'parser=ROBUST_DWCA_NESTED_META_CASEFOLD_v4' \
+            'automatic_deletion=NO' \
+            > "$TARGET/RUN_METADATA.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$TARGET"
+          if git diff --cached --quiet; then
+            echo 'No result change to commit'
+          else
+            git commit -m 'Materialize taxonomic reality filter v4 for 1259 IUCN problem taxa [skip ci]'
+            git push origin HEAD:06-stimes-banco-semillas
+          fi
+
+      - name: Upload phase-1 artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TAXONOMIC_REALITY_1259_ROBUST_DWCA_V4
+          path: artifacts/taxonomic_reality_1259_v4/
+          if-no-files-found: warn
+          retention-days: 30
