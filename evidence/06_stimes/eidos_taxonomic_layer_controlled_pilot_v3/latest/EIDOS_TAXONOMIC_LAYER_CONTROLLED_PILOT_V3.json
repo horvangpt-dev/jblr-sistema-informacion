@@ -1,0 +1,292 @@
+{
+  "pilot_id": "EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v3",
+  "started_at": "2026-08-19T23:23:03.665397+00:00",
+  "finished_at": "2026-08-19T23:23:21.441107+00:00",
+  "source_authority": "MITECO_IEPNB_EIDOS_OFFICIAL_LINKED_DATA_SPARQL",
+  "endpoint": "https://datos.iepnb.es/sparql",
+  "canonical_directives": [
+    "JBLR-EVT-0000-20260820-TAXONOMIC-FIELDS-001",
+    "JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001"
+  ],
+  "overall": "PASS",
+  "case_count": 9,
+  "pass_count": 9,
+  "review_required_count": 0,
+  "cases": [
+    {
+      "case_id": "A",
+      "contract": "SPECIES_WITH_EXACT_EIDOS_ID",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:04.854919+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Quercus ilex",
+      "operative_name": "Quercus ilex L.",
+      "id_taxon_exact": "7483",
+      "id_taxon_effective": "7483",
+      "resolution_state": "RESOLVED_EIDOS_CURRENT",
+      "candidates": [
+        {
+          "taxon_record_id": "7483",
+          "scientific_name": "Quercus ilex L."
+        },
+        {
+          "taxon_record_id": "7484",
+          "scientific_name": "Quercus ilex L. subsp. ilex"
+        },
+        {
+          "taxon_record_id": "7379",
+          "scientific_name": "Quercus ilex subsp. ballota (Desf.) Samp."
+        }
+      ]
+    },
+    {
+      "case_id": "B",
+      "contract": "INFRASPECIFIC_WITH_OWN_EIDOS_ID",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:07.137003+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Leontodon hispidus subsp. hispidus",
+      "operative_name": "Leontodon hispidus L. subsp. hispidus",
+      "id_taxon_exact": "415",
+      "id_taxon_effective": "415",
+      "parent_species_name": "leontodon hispidus",
+      "parent_species_id_taxon": "10402",
+      "resolution_state": "RESOLVED_EIDOS_CURRENT",
+      "observations": [
+        {
+          "target": "Leontodon hispidus subsp. hispidus",
+          "infra": {
+            "taxon_record_id": "415",
+            "scientific_name": "Leontodon hispidus L. subsp. hispidus"
+          },
+          "parent": {
+            "taxon_record_id": "10402",
+            "scientific_name": "Leontodon hispidus L."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "C",
+      "contract": "INFRASPECIFIC_TEMPORARY_PARENT_SPECIES_REFERENCE",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:11.622328+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Herniaria fruticosa var. fruticosa",
+      "operative_name": "Herniaria fruticosa var. fruticosa",
+      "id_taxon_exact": null,
+      "id_taxon_effective": "5159",
+      "id_taxon_reference_level": "SPECIES",
+      "resolution_state": "INHERITED_FROM_PARENT_SPECIES_PENDING_OWN_ID",
+      "parent_species_name": "herniaria fruticosa",
+      "parent_species_id_taxon": "5159",
+      "guard": "Parent ID is an operational reference only; it is not asserted as exact infraspecific identity.",
+      "observations": [
+        {
+          "target": "Quercus ilex subsp. ilex",
+          "infra": {
+            "taxon_record_id": "7484",
+            "scientific_name": "Quercus ilex L. subsp. ilex"
+          },
+          "parent": {
+            "taxon_record_id": "7483",
+            "scientific_name": "Quercus ilex L."
+          }
+        },
+        {
+          "target": "Herniaria fruticosa var. fruticosa",
+          "infra": null,
+          "parent": {
+            "taxon_record_id": "5159",
+            "scientific_name": "Herniaria fruticosa L."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "D",
+      "contract": "EIDOS_VS_ANTHOS_CONFLICT_PRESERVED",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:14.554287+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Salix cantabrica",
+      "operative_eidos_name": "Salix cantabrica Rech.f.",
+      "eidos_id_taxon": "7887",
+      "anthos_parallel_treatment": "Salix cantabrica Rech. fil.",
+      "resolution_state": "CONFLICT_PRESERVED_EIDOS_OPERATIVE",
+      "observations": [
+        {
+          "taxon": "Arenaria pomelii",
+          "eidos": {
+            "taxon_record_id": "2342",
+            "scientific_name": "Arenaria pomelii Munby"
+          },
+          "anthos_name": "Arenaria pomelii Munby",
+          "anthos_state": "EXACT_CANONICAL_FOUND"
+        },
+        {
+          "taxon": "Leontodon caroliaedoi",
+          "eidos": null,
+          "anthos_name": "",
+          "anthos_state": "EXACT_CANONICAL_NOT_FOUND"
+        },
+        {
+          "taxon": "Salix cantabrica",
+          "eidos": {
+            "taxon_record_id": "7887",
+            "scientific_name": "Salix cantabrica Rech.f."
+          },
+          "anthos_name": "Salix cantabrica Rech. fil.",
+          "anthos_state": "EXACT_CANONICAL_FOUND"
+        }
+      ]
+    },
+    {
+      "case_id": "E",
+      "contract": "RIOJA_FINER_OR_ALTERNATIVE_TREATMENT_PRESERVED",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:15.491226+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Saxifraga platyloba",
+      "operative_eidos_name": "Saxifraga cuneata Willd.",
+      "eidos_id_taxon": "8008",
+      "parallel_rioja_treatment": "Saxifraga platyloba",
+      "relationship_evidence": "Rioja 2026 catalogue explicitly links platyloba to cuneata sensu Flora iberica",
+      "resolution_state": "PARALLEL_TREATMENTS_PRESERVED",
+      "observations": [
+        {
+          "rioja_name": "Saxifraga platyloba",
+          "eidos_search_name": "Saxifraga cuneata",
+          "eidos": {
+            "taxon_record_id": "8008",
+            "scientific_name": "Saxifraga cuneata Willd."
+          },
+          "evidence": "Rioja 2026 catalogue explicitly links platyloba to cuneata sensu Flora iberica"
+        }
+      ]
+    },
+    {
+      "case_id": "F",
+      "contract": "HYBRID_MARKER_AND_IDENTITY_PRESERVED",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:16.802805+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Salix x fragilis",
+      "operative_name": "Salix x fragilis",
+      "eidos_contextual_treatment": "Salix fragilis L.",
+      "eidos_contextual_id_taxon": "7893",
+      "id_taxon_exact": null,
+      "id_taxon_effective": null,
+      "resolution_state": "EIDOS_NO_EXACT_HYBRID_MATCH_SOURCE_HYBRID_PRESERVED",
+      "hybrid_marker_preserved": true,
+      "guard": "A contextual EIDOS species record is not promoted to the exact hybrid ID. The source hybrid remains intact and unresolved at exact EIDOS identity level.",
+      "observations": [
+        {
+          "target": "Salix x fragilis",
+          "contextual_candidates": [
+            {
+              "taxon_record_id": "7893",
+              "scientific_name": "Salix fragilis L."
+            }
+          ],
+          "exact_hybrid_record": null
+        }
+      ]
+    },
+    {
+      "case_id": "G",
+      "contract": "GROUP_LEVEL_RECORD_NO_SPECIES_COLLAPSE",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:18.159023+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Taraxacum gr.",
+      "operative_name": "Taraxacum gr.",
+      "id_taxon_exact": null,
+      "id_taxon_effective": null,
+      "resolution_state": "GROUP_LEVEL_NOT_ELIGIBLE_FOR_SPECIES_ID_INFERENCE",
+      "eidos_taxarows_seen": 100,
+      "guard": "No species is inferred from a group-level record."
+    },
+    {
+      "case_id": "H",
+      "contract": "VALIDATED_SYNONYM_OR_HISTORICAL_NAME_RESOLUTION",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:20.125290+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Salix salvifolia",
+      "operative_name": "Salix salviifolia Brot.",
+      "id_taxon_exact": "7905",
+      "resolution_state": "RESOLVED_VIA_VALIDATED_NAME_NETWORK",
+      "matched_name_type": "VALIDATED_SYNONYM_OR_HISTORICAL_ALIAS",
+      "relationship_evidence": "Historical orthographic usage explicitly reconciled in SALIX_RIOJA_RECONCILIATION_v1",
+      "source_name_direct_eidos_record": null,
+      "observations": [
+        {
+          "source_name": "Salix salvifolia",
+          "source_record": null,
+          "resolved_name": "Salix salviifolia",
+          "resolved_record": {
+            "taxon_record_id": "7905",
+            "scientific_name": "Salix salviifolia Brot."
+          },
+          "evidence": "Historical orthographic usage explicitly reconciled in SALIX_RIOJA_RECONCILIATION_v1"
+        }
+      ]
+    },
+    {
+      "case_id": "I",
+      "contract": "EIDOS_UNRESOLVED_WITHOUT_ABSENCE_INFERENCE",
+      "status": "PASS",
+      "checked_at": "2026-08-19T23:23:21.240919+00:00",
+      "eidos_endpoint": "https://datos.iepnb.es/sparql",
+      "no_silent_inference": true,
+      "no_information_loss": true,
+      "source_verbatim": "Herniaria fruticosa var. fruticosa",
+      "operative_name": "Herniaria fruticosa var. fruticosa",
+      "id_taxon_exact": null,
+      "id_taxon_effective": null,
+      "resolution_state": "ID_TAXON_UNRESOLVED_EIDOS",
+      "guard": "NOT_FOUND_IN_EIDOS is not biological absence and does not authorize deletion.",
+      "observations": [
+        {
+          "target": "Herniaria fruticosa var. fruticosa",
+          "record": null,
+          "candidate_count": 1
+        }
+      ]
+    }
+  ],
+  "global_rematerialization_allowed": true,
+  "invariants": {
+    "reality_first": true,
+    "no_silent_inference": true,
+    "no_information_loss": true,
+    "not_found_is_not_absence": true,
+    "source_verbatim_preserved": true,
+    "eidos_temporal_provenance_required": true
+  },
+  "supersedes_pilots": [
+    "EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v1",
+    "EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v2"
+  ],
+  "fixes": [
+    "HYBRID_X_TOKEN_IS_STRUCTURAL_MARKER_NOT_SPECIFIC_EPITHET",
+    "NON_HYBRID_EIDOS_CONTEXTUAL_RECORD_CANNOT_BE_PROMOTED_TO_EXACT_HYBRID_IDENTITY"
+  ]
+}

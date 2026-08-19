@@ -1,0 +1,7 @@
+github_run_id=32313001294
+source_commit=c18324076595ae1e53eb272cfa4a6251566df63c
+authority=MITECO_IEPNB_EIDOS
+endpoint=https://datos.iepnb.es/sparql
+contract=HYBRID_MARKER_AND_IDENTITY_PRESERVED
+canonical_field_directive=JBLR-EVT-0000-20260820-TAXONOMIC-FIELDS-001
+canonical_execution_directive=JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001
