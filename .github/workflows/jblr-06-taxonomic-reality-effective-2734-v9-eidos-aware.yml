@@ -1,0 +1,80 @@
+name: JBLR TAXONOMIC REALITY EFFECTIVE 2734 V9 EIDOS AWARE
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 06-taxonomic-genus-reconciliation-v3
+    paths:
+      - 'app/data/taxonomy/taxonomic-reality-effective-v9-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jblr-taxonomic-reality-effective-2734-v9
+  cancel-in-progress: false
+
+jobs:
+  taxonomic-reality-effective-2734-v9:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TAXON_REALITY_OUT: artifacts/taxonomic_reality_effective_2734_v9
+    steps:
+      - name: Checkout active actor branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-taxonomic-genus-reconciliation-v3
+          fetch-depth: 0
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests
+      - name: Execute EIDOS-aware effective 2734 audit
+        run: python3 app/scripts/taxonomic-reality-effective-2734-v9-eidos-aware.py
+      - name: Materialize auditable V9 results
+        if: success()
+        shell: bash
+        run: |
+          TARGET='evidence/06_stimes/taxonomic_reality_effective_2734_v9/latest'
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          for f in \
+            TAXONOMIC_REALITY_EFFECTIVE_2734_RESULTS_V9.csv \
+            TAXONOMIC_REALITY_EFFECTIVE_2734_REVIEW_REQUIRED_V9.csv \
+            TAXONOMIC_REALITY_EFFECTIVE_2734_SOURCE_INCOMPLETE_V9.csv \
+            TAXONOMIC_REALITY_EFFECTIVE_2734_ANOMALOUS_GENERA_V9.csv \
+            TAXONOMIC_REALITY_EFFECTIVE_2734_QA_V9.json; do
+            test -e "$TAXON_REALITY_OUT/$f"
+            cp "$TAXON_REALITY_OUT/$f" "$TARGET/"
+          done
+          printf '%s\n' \
+            "github_run_id=${GITHUB_RUN_ID}" \
+            "source_commit=${GITHUB_SHA}" \
+            'scope=EFFECTIVE_ACTIVE_TAXON_UNIVERSE_2734' \
+            'primary_current_authority_where_direct=EIDOS_MITECO_IEPNB' \
+            'parallel_sources=POWO_WCVP,WFO,ANTHOS,RIOJA_LOCAL_EVIDENCE' \
+            'pilot_gate=EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v3_PASS' \
+            'overlay=JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v2' \
+            'v8_preserved_immutable=YES' \
+            'odontites_mutated=NO' \
+            'herniaria_1166_1168_1173=HOLD' \
+            > "$TARGET/RUN_METADATA.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$TARGET"
+          if git diff --cached --quiet; then
+            echo 'No V9 result change to commit'
+          else
+            git commit -m 'Materialize EIDOS-aware effective 2734 taxonomic reality V9 [skip ci]'
+            git push origin HEAD:06-taxonomic-genus-reconciliation-v3
+          fi
+      - name: Upload V9 execution artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TAXONOMIC_REALITY_EFFECTIVE_2734_V9_EIDOS_AWARE
+          path: artifacts/taxonomic_reality_effective_2734_v9/
+          if-no-files-found: warn
+          retention-days: 30
