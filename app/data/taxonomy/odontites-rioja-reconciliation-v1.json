@@ -1,0 +1,95 @@
+{
+  "id": "ODONTITES_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-19",
+  "family_current": "OROBANCHACEAE",
+  "family_regional_list_2016": "SCROPHULARIACEAE",
+  "genus": "Odontites",
+  "state": "TAXONOMIC_RECONCILIATION_COMPLETE_ACTIVE_UNIVERSE_MUTATION_PENDING_HASH_SAFE_OVERLAY",
+  "local_evidence": {
+    "user_photo": {
+      "source": "Actualización del catálogo de la flora vascular silvestre de La Rioja. Catálogo florístico, p. 36",
+      "coverage": "OROBANCHACEAE block complete on supplied page",
+      "odontites_present_in_block": false,
+      "interpretation": "The photographed OROBANCHACEAE block contains Boulardia, Orobanche and Phelipanche but no Odontites. This is negative evidence for this printed 2026 catalogue block only and is not evidence of absence from La Rioja."
+    },
+    "regional_pattern_list": {
+      "source": "Banco de Datos de la Biodiversidad de La Rioja, Lista patrón de Especies, 04-11-2016, p. 105",
+      "status": "AUTÓCTONA",
+      "historical_family_placement": "SCROPHULARIACEAE",
+      "taxa": [
+        "Odontites eliassennenii",
+        "Odontites kaliformis",
+        "Odontites longiflora",
+        "Odontites luteus",
+        "Odontites verna",
+        "Odontites verna subsp. serotina",
+        "Odontites verna subsp. verna",
+        "Odontites viscosa"
+      ],
+      "interpretation": "Regional occurrence support exists independently of the 2026 catalogue block. The historical family placement explains why searching only the photographed OROBANCHACEAE block is insufficient."
+    }
+  },
+  "v8_review_rows": [
+    {"universe_index": 1693, "taxon": "Odontites longiflora"},
+    {"universe_index": 1696, "taxon": "Odontites verna"},
+    {"universe_index": 1697, "taxon": "Odontites verna subsp. serotina"},
+    {"universe_index": 1698, "taxon": "Odontites verna subsp. verna"},
+    {"universe_index": 1700, "taxon": "Odontites viscosa"}
+  ],
+  "current_taxonomic_evidence": {
+    "source": "Plants of the World Online / WCVP, Kew, checked 2026-08-19",
+    "decisions": [
+      {
+        "universe_index": 1693,
+        "expected_original_taxon": "Odontites longiflora",
+        "active_taxon_candidate": "Odontites longiflorus",
+        "classification": "SPELLING_OR_GRAMMATICAL_GENDER_CORRECTION",
+        "evidence": "POWO/WCVP accepts Odontites longiflorus (Vahl) Webb; native range includes Spain."
+      },
+      {
+        "universe_index": 1696,
+        "expected_original_taxon": "Odontites verna",
+        "active_taxon_candidate": "Odontites vernus",
+        "classification": "SPELLING_OR_GRAMMATICAL_GENDER_CORRECTION",
+        "evidence": "POWO/WCVP accepts Odontites vernus (Bellardi) Dumort.; native range includes Spain."
+      },
+      {
+        "universe_index": 1697,
+        "expected_original_taxon": "Odontites verna subsp. serotina",
+        "active_taxon_candidate": "Odontites vulgaris",
+        "classification": "CURRENT_ACCEPTED_SYNONYM_RECONCILIATION",
+        "evidence": "POWO/WCVP treats Odontites vernus subsp. serotinus Corb. as a synonym of Odontites vulgaris."
+      },
+      {
+        "universe_index": 1698,
+        "expected_original_taxon": "Odontites verna subsp. verna",
+        "active_taxon_candidate": "Odontites vernus subsp. vernus",
+        "classification": "SPELLING_OR_GRAMMATICAL_GENDER_CORRECTION",
+        "evidence": "POWO/WCVP accepts Odontites vernus subsp. vernus; native range includes Spain."
+      },
+      {
+        "universe_index": 1700,
+        "expected_original_taxon": "Odontites viscosa",
+        "active_taxon_candidate": "Odontites viscosus",
+        "classification": "SPELLING_OR_GRAMMATICAL_GENDER_CORRECTION",
+        "evidence": "POWO/WCVP accepts Odontites viscosus (L.) Clairv.; native range includes Spain."
+      }
+    ]
+  },
+  "decision": {
+    "rioja_presence": "SUPPORTED_BY_2016_REGIONAL_PATTERN_LIST_FOR_THE_FIVE_HISTORICAL_NAMES",
+    "2026_catalogue_block_absence": "PRESERVE_AS_SOURCE_SPECIFIC_NEGATIVE_EVIDENCE_ONLY",
+    "taxonomic_reconciliation": "FIVE_V8_REVIEW_ROWS_RESOLVED_TO_CURRENT_ACCEPTED_CANDIDATES",
+    "active_universe_mutation": false,
+    "mutation_reason": "Do not modify JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v1 until its result_universe minimal_queue_sha256 can be recomputed deterministically after the five guarded replacements. Avoid stale audit metadata."
+  },
+  "guards": [
+    "Absence from the photographed 2026 OROBANCHACEAE block is not absence from La Rioja.",
+    "The 2016 regional pattern list is occurrence/list evidence; it does not by itself define current accepted nomenclature.",
+    "POWO/WCVP taxonomic acceptance or synonymy is not used to infer Rioja occurrence; occurrence support comes from the regional list.",
+    "Historical names remain provenance and must not be silently overwritten.",
+    "No threat, protection or ex-situ result is inherited across an identity replacement without fresh downstream execution.",
+    "No active-universe mutation is performed with a stale result-universe hash."
+  ],
+  "next_step": "Recompute the effective-universe minimal queue hash under the five guarded replacements, then apply them through a hash-safe overlay and rerun the full exact audit before selecting the next anomaly genus."
+}
