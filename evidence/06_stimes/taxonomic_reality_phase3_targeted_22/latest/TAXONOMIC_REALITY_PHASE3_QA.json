@@ -1,0 +1,20 @@
+{
+  "execution": "TAXONOMIC_REALITY_PHASE3_TARGETED_22",
+  "scope": "PHASE2_HUMAN_REVIEW_22",
+  "reviewed": 22,
+  "keep_supported_without_master_mutation": 16,
+  "human_decision_required": 6,
+  "fresh_iucn_threat_reference_present_in_phase1_no_response_queue": 0,
+  "automatic_correction": false,
+  "automatic_deletion": false,
+  "remaining_human_cases": [
+    "Arenaria pomelii subsp. ciliaris",
+    "Festuca sp.",
+    "Leontodon carolipaui",
+    "Pilosella sp.",
+    "Taraxacum gr.",
+    "Taraxacum sp."
+  ],
+  "complete": true,
+  "semantic_note": "not_found != absence; supported correction != silent master mutation; non-specific placeholders require explicit human policy/decision"
+}
