@@ -1,0 +1,70 @@
+name: JBLR 06 ACTIVE TAXON OVERLAY V2 HASH SAFE
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 06-taxonomic-genus-reconciliation-v3
+    paths:
+      - 'app/data/taxonomy/active-taxon-overlay-v2-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jblr-06-active-taxon-overlay-v2-hash-safe
+  cancel-in-progress: false
+
+jobs:
+  build-overlay-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TAXON_OVERLAY_V2_OUT: artifacts/active_taxon_universe_overlay_v2
+    steps:
+      - name: Checkout actor 06 branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-taxonomic-genus-reconciliation-v3
+          fetch-depth: 0
+      - name: Build and verify hash-safe overlay v2
+        run: python3 app/scripts/build-active-taxon-universe-overlay-v2.py
+      - name: Materialize overlay v2 and QA
+        shell: bash
+        run: |
+          SRC="$TAXON_OVERLAY_V2_OUT/JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v2.json"
+          QA="$TAXON_OVERLAY_V2_OUT/JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v2_QA.json"
+          test -s "$SRC"
+          test -s "$QA"
+          cp "$SRC" app/data/taxonomy/JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v2.json
+          TARGET='evidence/06_stimes/active_taxon_universe_overlay_v2/latest'
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          cp "$SRC" "$TARGET/"
+          cp "$QA" "$TARGET/"
+          printf '%s\n' \
+            "github_run_id=${GITHUB_RUN_ID}" \
+            "source_commit=${GITHUB_SHA}" \
+            'batch=ACCEPTED_MUTATIONS_ONLY' \
+            'pilot_gate=EIDOS_TAXONOMIC_LAYER_CONTROLLED_PILOT_v3_PASS' \
+            'odontites_mutated=NO' \
+            'herniaria_mutated=NO' \
+            'canonical_execution_directive=JBLR-EVT-0000-20260820-TAXONOMIC-EXEC-001' \
+            > "$TARGET/RUN_METADATA.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app/data/taxonomy/JBLR_ACTIVE_TAXON_UNIVERSE_OVERRIDES_v2.json "$TARGET"
+          if git diff --cached --quiet; then
+            echo 'No overlay v2 change to commit'
+          else
+            git commit -m 'Materialize hash-safe accepted taxon overlay v2 [skip ci]'
+            git push origin HEAD:06-taxonomic-genus-reconciliation-v3
+          fi
+      - name: Upload QA artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: JBLR_ACTIVE_TAXON_UNIVERSE_OVERLAY_V2_HASH_SAFE
+          path: artifacts/active_taxon_universe_overlay_v2/
+          if-no-files-found: warn
+          retention-days: 30
