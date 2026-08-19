@@ -1,0 +1,31 @@
+{
+  "execution": "IUCN_ALL_2742_FRESH_v1",
+  "source": "IUCN Red List API v4",
+  "started_at": "2026-08-19T05:48:55.897640+00:00",
+  "finished_at": "2026-08-19T06:35:34.044858+00:00",
+  "queue_count": 2742,
+  "queue_sha256": "901f748d8733dfb85cb566bbc0308274248718bd98fb10c72721fbdd415685ed",
+  "results_count": 2742,
+  "api_errors": 0,
+  "complete": true,
+  "counts": {
+    "EXACT_INFRARANK_CHILD": 8,
+    "EXACT_PRIMARY": 1474,
+    "GLOBAL_ASSESSMENT_ACQUIRED": 377,
+    "NO_API_TAXON": 974,
+    "NO_EXACT_MATCH": 257,
+    "NO_GLOBAL_ASSESSMENT_FOUND": 1106,
+    "SYNONYM_PRIMARY": 1,
+    "UNPARSABLE_NAME": 28
+  },
+  "categories": {
+    "DD": 11,
+    "EN": 1,
+    "LC": 356,
+    "LR/nt": 1,
+    "NT": 7,
+    "VU": 1
+  },
+  "raw_jsonl_gz_sha256": "f374a80f4adc2db7d511ec47efe6872d1d95b659987aa6472c2dd68d0eceee68",
+  "semantic_guard": "IUCN data are evidence, not automatic STIME conclusions. Synonym, parent and complex-name matches require explicit taxonomic applicability before score mutation."
+}
