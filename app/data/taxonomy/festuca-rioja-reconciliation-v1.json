@@ -1,0 +1,60 @@
+{
+  "id": "FESTUCA_RIOJA_RECONCILIATION_v1",
+  "date": "2026-08-19",
+  "family": "POACEAE",
+  "genus": "Festuca",
+  "state": "ANALYSIS_COMPLETE_CONFLICTS_PRESERVED",
+  "local_source": "User photograph, Actualización del catálogo de la flora vascular silvestre de La Rioja, p.52",
+  "local_taxa": [
+    "Festuca altissima",
+    "Festuca arundinacea",
+    "Festuca carpetana",
+    "Festuca durandoi subsp. livida",
+    "Festuca gigantea",
+    "Festuca gautieri",
+    "Festuca gracilior",
+    "Festuca heterophylla subsp. braun-blanquetii",
+    "Festuca hystrix",
+    "Festuca iberica",
+    "Festuca marginata subsp. andres-molinae",
+    "Festuca marginata subsp. gallica",
+    "Festuca paniculata subsp. longiglumis",
+    "Festuca paniculata subsp. spadicea",
+    "Festuca rivas-martinezii subsp. rivas-martinezii",
+    "Festuca rivas-martinezii subsp. rectifolia"
+  ],
+  "exact_local_jblr_count": 15,
+  "local_not_exact_jblr": ["Festuca rivas-martinezii subsp. rivas-martinezii"],
+  "jblr_not_on_local_page": [
+    "Festuca ampla",
+    "Festuca arundinacea subsp. fenas",
+    "Festuca ovina var. glauca",
+    "Festuca pratensis",
+    "Festuca rivas-martinezii",
+    "Festuca rivularis",
+    "Festuca rubra subsp. rubra",
+    "Festuca sp."
+  ],
+  "classifications": {
+    "Festuca carpetana": "PRESENT_OK_KEEP_REAL_TAXON",
+    "Festuca arundinacea subsp. fenas": "REAL_HISTORICAL_NAME_CURRENT_SYNONYM_OF_LOLIUM_INTERRUPTUM",
+    "Festuca ovina var. glauca": "HOMONYM_AMBIGUITY_AUTHORSHIP_REQUIRED",
+    "Festuca rivas-martinezii": "RANK_AND_TAXONOMIC_TREATMENT_CONFLICT",
+    "Festuca sp.": "PLACEHOLDER_NOT_SPECIES_LEVEL_TAXON",
+    "Festuca ampla": "RIOJA_SOURCE_CONFLICT_REVIEW_REQUIRED",
+    "Festuca pratensis": "RIOJA_SOURCE_CONFLICT_REVIEW_REQUIRED",
+    "Festuca rivularis": "RIOJA_SOURCE_CONFLICT_REVIEW_REQUIRED",
+    "Festuca rubra subsp. rubra": "RIOJA_SOURCE_CONFLICT_REVIEW_REQUIRED"
+  },
+  "pointers": {
+    "national_pattern_spreadsheet": "1gjP6VU2JxqoRq2rVcVdvDjkV7d3Z9Qmhrr5Dn3Y6kNc",
+    "phase3_csv": "evidence/06_stimes/taxonomic_reality_phase3_targeted_22/latest/TAXONOMIC_REALITY_PHASE3_TARGETED_22.csv"
+  },
+  "guards": [
+    "No source disagreement is converted into absence.",
+    "No unresolved Festuca identity is silently normalized.",
+    "Festuca sp. is retained as historical provenance but is not a species-level identity.",
+    "Downstream scores must be recalculated if a taxon identity later changes."
+  ],
+  "active_universe_mutation": false
+}
