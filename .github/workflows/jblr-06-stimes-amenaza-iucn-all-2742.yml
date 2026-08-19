@@ -1,0 +1,90 @@
+name: JBLR STIMES AMENAZA IUCN ALL 2742 FRESH
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 06-stimes-banco-semillas
+    paths:
+      - '.github/workflows/jblr-06-stimes-amenaza-iucn-all-2742.yml'
+      - 'app/scripts/stimes-amenaza-iucn-all-2742-fresh.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jblr-iucn-api-v4-full-universe
+  cancel-in-progress: false
+
+jobs:
+  iucn-all-2742-fresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      IUCN_API_TOKEN: ${{ secrets.IUCN_API_TOKEN }}
+      IUCN_OUT: artifacts/iucn_all_2742_fresh
+      IUCN_WAIT_SECONDS: '0.65'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: 06-stimes-banco-semillas
+
+      - name: Verify secret and IUCN API authentication
+        shell: bash
+        run: |
+          test -n "${IUCN_API_TOKEN}" || { echo 'IUCN_API_TOKEN is not configured'; exit 1; }
+          curl --silent --show-error --fail-with-body \
+            -H "Authorization: ${IUCN_API_TOKEN}" \
+            -H 'Accept: application/json' \
+            'https://api.iucnredlist.org/api/v4/countries/' \
+            -o /tmp/iucn-auth-check.json
+          python3 - <<'PY'
+          import json
+          with open('/tmp/iucn-auth-check.json', encoding='utf-8') as f:
+              data=json.load(f)
+          if not isinstance(data, dict):
+              raise SystemExit('Unexpected IUCN authentication response')
+          print('IUCN API authentication verified')
+          PY
+
+      - name: Execute fresh IUCN API v4 acquisition for 2742 taxa
+        run: python3 app/scripts/stimes-amenaza-iucn-all-2742-fresh.py
+
+      - name: Materialize complete IUCN evidence on branch
+        if: success()
+        shell: bash
+        run: |
+          TARGET='evidence/06_stimes/iucn_all_2742_fresh/latest'
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          cp "$IUCN_OUT/IUCN_ALL_2742_QUEUE_USED.csv" "$TARGET/"
+          cp "$IUCN_OUT/IUCN_ALL_2742_RESULTS.csv" "$TARGET/"
+          cp "$IUCN_OUT/IUCN_ALL_2742_ISSUES.csv" "$TARGET/"
+          cp "$IUCN_OUT/IUCN_ALL_2742_QA.json" "$TARGET/"
+          split -b 45m -d -a 3 "$IUCN_OUT/IUCN_ALL_2742_RAW.jsonl.gz" "$TARGET/IUCN_ALL_2742_RAW.jsonl.gz.part-"
+          printf '%s\n' \
+            "github_run_id=${GITHUB_RUN_ID}" \
+            "github_run_attempt=${GITHUB_RUN_ATTEMPT}" \
+            "source_commit=${GITHUB_SHA}" \
+            'source=IUCN_RED_LIST_API_V4_FRESH' \
+            'scope=FULL_JBLR_TAXON_UNIVERSE_2742' \
+            > "$TARGET/RUN_METADATA.txt"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$TARGET"
+          if git diff --cached --quiet; then
+            echo 'No result change to commit'
+          else
+            git commit -m 'Materialize fresh IUCN evidence for all 2742 JBLR taxa [skip ci]'
+            git push origin HEAD:06-stimes-banco-semillas
+          fi
+
+      - name: Upload complete execution artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: IUCN_ALL_2742_FRESH_v1
+          path: artifacts/iucn_all_2742_fresh/
+          if-no-files-found: warn
+          retention-days: 30
