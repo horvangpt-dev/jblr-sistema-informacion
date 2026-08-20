@@ -6,6 +6,7 @@ const os = require('node:os');
 const path = require('node:path');
 const { JBLROrchestrator } = require('../src/agent-runtime/orchestrator');
 const { GitHubRuntimeAdapter } = require('../src/agent-runtime/github-runtime-adapter');
+const { toObjects, normalizeEvents } = require('../src/agent-runtime/external-state-adapter');
 
 class RecordingAdapter {
   constructor(delayMs = 0) { this.calls = []; this.delayMs = delayMs; }
@@ -64,6 +65,14 @@ class FakeExternalAdapter {
   assert.equal(concurrent[1].state.runtimeSessionId, '06-session-000001');
   const state = await runtime.store.readActorState('06');
   assert.equal(state.sessionSequence, 1);
+
+  const parsedRows = toObjects([
+    ['EVENT_ID', 'VALIDATION_STATE', 'CANONICAL_EFFECT', 'NOTES', 'CANONICAL_EFFECT'],
+    ['E-DUP', 'ACCEPTED', 'PRIMARY_EFFECT', 'note', 'LEGACY_EFFECT'],
+  ]);
+  const parsedEvent = normalizeEvents(parsedRows)[0];
+  assert.equal(parsedEvent.canonicalEffect, 'PRIMARY_EFFECT');
+  assert.equal(parsedEvent.legacyCanonicalEffect, 'LEGACY_EFFECT');
 
   const github = new GitHubRuntimeAdapter({ repo: 'example/repo', token: null });
   const degraded = await github.readBranch('main');
