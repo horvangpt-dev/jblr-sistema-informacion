@@ -7,7 +7,14 @@ const DEFAULT_CANONICAL_STATE_ID = '1UhIkAmCNLVJibUUhbAogyU8EtzUsNOsIqdkEdfS_KMo
 
 function toObjects(values = []) {
   if (!values.length) return [];
-  const headers = values[0].map(value => String(value || '').trim());
+  const seen = new Map();
+  const headers = values[0].map(value => {
+    const base = String(value || '').trim();
+    if (!base) return '';
+    const count = (seen.get(base) || 0) + 1;
+    seen.set(base, count);
+    return count === 1 ? base : `${base}__${count}`;
+  });
   return values.slice(1).filter(row => row.some(value => value !== '' && value != null)).map(row => {
     const out = {};
     headers.forEach((header, index) => {
@@ -51,6 +58,7 @@ function normalizeEvents(rows) {
     sourceVersion: row.SOURCE_VERSION || null,
     supersedesEventId: row.SUPERSEDES_EVENT_ID || null,
     notes: row.NOTES || null,
+    legacyCanonicalEffect: row.CANONICAL_EFFECT__2 || null,
   })).filter(event => event.eventId);
 }
 
