@@ -1,0 +1,26 @@
+name: JBLR 08 STIME Execution Control Plane QA
+
+on:
+  push:
+    branches:
+      - 08-stime-execution-v1
+    paths:
+      - 'execution/08/**'
+      - '.github/workflows/08-stime-execution-control-plane.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-control-plane-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Synthetic QA only — no real botanical run
+        working-directory: execution/08
+        run: node --test test/control-plane.test.js
