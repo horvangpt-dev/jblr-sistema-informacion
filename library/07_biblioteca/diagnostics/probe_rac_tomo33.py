@@ -13,7 +13,7 @@ session = requests.Session()
 session.headers.update({"User-Agent":"JBLR-Biblioteca/0.3 public repository identification"})
 
 matches = []
-for n in range(3300, 3381):
+for n in range(3400, 3430):
     rid = f"{n:05d}"
     url = BASE.format(id=rid)
     try:
@@ -31,13 +31,13 @@ for n in range(3300, 3381):
         low = head.casefold()
         if needle_title in low or needle_author in low or needle_author_ascii in low:
             print("*** MATCH", rid, "PAGES", len(reader.pages), "BYTES", len(r.content), "URL", url)
-            print("HEAD", head[:2400])
+            print("HEAD", head[:2600])
             matches.append(rid)
         elif "tomo xxxiii" in low or "cuaderno segundo" in low or "cuaderno tercero" in low:
-            print("ISSUE_CANDIDATE", rid, "PAGES", len(reader.pages), "HEAD", head[:800])
+            print("ISSUE_CANDIDATE", rid, "PAGES", len(reader.pages), "HEAD", head[:1200])
     except Exception as exc:
         print("ERROR", rid, repr(exc))
 
 print("MATCHES", matches)
 if not matches:
-    raise SystemExit("No Cámara Niño match found in 03300-03380")
+    raise SystemExit("No Cámara Niño match found in 03400-03429")
