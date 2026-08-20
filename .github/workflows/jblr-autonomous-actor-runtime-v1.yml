@@ -7,6 +7,7 @@ on:
     paths:
       - 'app/src/agent-runtime/**'
       - 'app/tests/agent-runtime-core.js'
+      - 'app/tests/agent-runtime-integration.js'
       - 'app/package.json'
       - 'app/.env.example'
       - '.github/workflows/jblr-autonomous-actor-runtime-v1.yml'
@@ -16,7 +17,7 @@ permissions:
   contents: read
 
 jobs:
-  core-runtime:
+  runtime-qa:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -41,9 +42,11 @@ jobs:
           node -c src/agent-runtime/actor-registry.js
           node -c src/agent-runtime/runtime-store.js
           node -c src/agent-runtime/continuity.js
+          node -c src/agent-runtime/external-state-adapter.js
+          node -c src/agent-runtime/github-runtime-adapter.js
           node -c src/agent-runtime/openai-agent-adapter.js
           node -c src/agent-runtime/orchestrator.js
           node -c src/agent-runtime/server.js
 
-      - name: Test autonomous session rotation
+      - name: Test autonomous runtime
         run: npm run test:agent-runtime
