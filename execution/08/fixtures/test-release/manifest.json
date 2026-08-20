@@ -1,0 +1,17 @@
+{
+  "release_id": "JBLR_TEST_RELEASE_SYNTHETIC_v1",
+  "release_version": "test-v1",
+  "publication_state": "TEST_RELEASE",
+  "publication_ready": false,
+  "final_release": false,
+  "synthetic_only": true,
+  "not_real_botanical_run": true,
+  "source_corpus_version": "SYNTHETIC_ONLY",
+  "taxon_count": 5,
+  "actor": "08_TEST_FIXTURE",
+  "members_file": "members.json",
+  "historical_universe_contamination": "NONE",
+  "manifest_hash_algorithm": "SHA-256",
+  "manifest_hash_scope": "canonical JSON of manifest excluding manifest_hash",
+  "manifest_hash": "822338c26fcac046c39b93fd2f51fca7fb289a151085333bd74bfe79cfb48991"
+}
