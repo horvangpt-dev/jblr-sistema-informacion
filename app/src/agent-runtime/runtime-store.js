@@ -85,6 +85,12 @@ class RuntimeStore {
     }
   }
 
+  async replaceExternalEvents(events) {
+    await fs.mkdir(this.rootDir, { recursive: true });
+    const lines = (events || []).map(event => JSON.stringify(event)).join('\n');
+    await fs.writeFile(this.eventBusPath(), lines ? `${lines}\n` : '');
+  }
+
   async createSession(actorId, reason = 'INITIAL') {
     const state = await this.readActorState(actorId);
     const seq = (state.sessionSequence || 0) + 1;
