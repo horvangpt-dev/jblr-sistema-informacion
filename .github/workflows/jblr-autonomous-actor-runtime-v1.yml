@@ -1,0 +1,49 @@
+name: JBLR Autonomous Actor Runtime v1
+
+on:
+  push:
+    branches:
+      - 00e-autonomous-actor-runtime-v1
+    paths:
+      - 'app/src/agent-runtime/**'
+      - 'app/tests/agent-runtime-core.js'
+      - 'app/package.json'
+      - 'app/.env.example'
+      - '.github/workflows/jblr-autonomous-actor-runtime-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  core-runtime:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: app/package.json
+
+      - name: Install dependencies
+        run: npm install --ignore-scripts
+
+      - name: Syntax check runtime
+        run: |
+          node -c src/agent-runtime/file-session.js
+          node -c src/agent-runtime/actor-registry.js
+          node -c src/agent-runtime/runtime-store.js
+          node -c src/agent-runtime/continuity.js
+          node -c src/agent-runtime/openai-agent-adapter.js
+          node -c src/agent-runtime/orchestrator.js
+          node -c src/agent-runtime/server.js
+
+      - name: Test autonomous session rotation
+        run: npm run test:agent-runtime
