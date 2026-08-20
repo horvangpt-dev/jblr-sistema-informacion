@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "0.3",
   "library": "07_LA_BIBLIOTECA",
   "canonical_storage": "GOOGLE_DRIVE",
   "github_role": "INDEX_AUTOMATION_AND_POINTERS",
@@ -20,10 +20,10 @@
       "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
       "geographic_scope": ["Península Ibérica", "Islas Baleares"],
       "use_classes": ["identificación", "taxonomía", "nomenclatura", "distribución"],
-      "ingest_status": "PARTIAL_10_OF_22_IN_DRIVE",
+      "ingest_status": "PARTIAL_11_OF_22_IN_DRIVE",
       "acquired_verified_count": 11,
-      "drive_file_count": 10,
-      "pending_large_file_count": 1,
+      "drive_file_count": 11,
+      "pending_large_file_count": 0,
       "rule": "Cada volumen tiene registro individual. La colección permanece físicamente junta en Drive."
     }
   ],
@@ -108,11 +108,19 @@
       "title": "Flora iberica. Vol. IX. Rhamnaceae-Polygalaceae",
       "source_repository": "Biblioteca Digital del Real Jardín Botánico, CSIC",
       "source_url": "https://bibdigital.rjb.csic.es/medias/c4/51/33/b3/c45133b3-9c20-4017-926a-91004c85ae29/files/Fl_Iber9.pdf",
-      "bytes": 107146185,
-      "sha256": "3e42951b117a2228f2b979c4726f9052b1f875f793034f5484c6f08f985c22ab",
+      "source_bytes": 107146185,
+      "source_sha256": "3e42951b117a2228f2b979c4726f9052b1f875f793034f5484c6f08f985c22ab",
       "acquisition_artifact_id": 9386796902,
-      "ingest_status": "ACQUIRED_VERIFIED_PENDING_DRIVE_LARGE_FILE",
-      "notes": "El PDF original fue adquirido y verificado. La transferencia local a Drive falló por límite de tamaño; no se ha fragmentado ni recomprimido."
+      "drive_file_id": "1fFsRBqG_mGULpMs5n6OxHJpsnSn35o2E",
+      "drive_url": "https://drive.google.com/file/d/1fFsRBqG_mGULpMs5n6OxHJpsnSn35o2E/view",
+      "drive_folder_id": "12IcpdN4LDiXWjMxUS-FHxXaqAZ2SUdRu",
+      "drive_bytes": 76705337,
+      "drive_sha256": "4115fede9b4c1b2ba95ed39ff2b4331eb0d186261578c4c89bd4c5f2366e12ab",
+      "drive_derivative": "PDFWRITE_REPACK_NO_IMAGE_DOWNSAMPLING",
+      "page_count_source": 617,
+      "page_count_drive": 617,
+      "ingest_status": "INGESTED_VERIFIED_DERIVATIVE_WITH_SOURCE_HASH_PRESERVED",
+      "notes": "El binario fuente RJB se conserva por referencia, tamaño y SHA-256. La copia de Drive fue reempaquetada con Ghostscript pdfwrite sin downsampling de imágenes para superar el límite de transferencia; conserva 617 páginas. raw != normalized."
     },
     {
       "library_id": "JBLR-LIB-FI-000012",
