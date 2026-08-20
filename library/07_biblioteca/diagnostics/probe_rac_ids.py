@@ -5,7 +5,7 @@ import requests
 from pypdf import PdfReader
 
 BASE = "https://rac.es/fedora/get/Revistas%3AREV_20100220_{id}/PDF"
-ids = [f"034{i:02d}" for i in range(20, 31)]
+ids = [f"034{i:02d}" for i in range(31, 46)]
 
 for rid in ids:
     url = BASE.format(id=rid)
@@ -15,7 +15,13 @@ for rid in ids:
         if r.status_code != 200 or not r.content.startswith(b"%PDF-"):
             continue
         reader = PdfReader(io.BytesIO(r.content))
-        first = (reader.pages[0].extract_text() or "").replace("\n", " ")[:900]
-        print("PDF", rid, "PAGES", len(reader.pages), "FIRST", first)
+        texts = []
+        for pidx in range(min(2, len(reader.pages))):
+            texts.append((reader.pages[pidx].extract_text() or "").replace("\n", " "))
+        head = " ".join(texts)[:1400]
+        print("PDF", rid, "PAGES", len(reader.pages), "HEAD", head)
+        low = head.casefold()
+        if "flora de la rioja baja" in low or "cámara niño" in low or "camara niño" in low:
+            print("*** CAMARA_CANDIDATE", rid, "***")
     except Exception as exc:
         print("ERROR", rid, repr(exc))
