@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  synthetic-control-plane-qa:
+  control-plane-qa:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -21,6 +21,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Synthetic QA only — no real botanical run
+      - name: Control-plane QA — no external queries, no Neon writes
         working-directory: execution/08
-        run: node --test test/control-plane.test.js
+        run: node --test test/*.test.js
