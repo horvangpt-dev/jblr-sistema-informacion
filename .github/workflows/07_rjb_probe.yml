@@ -1,4 +1,4 @@
-name: JBLR 07 RJB Metadata Probe
+name: JBLR 07 Metadata Probe
 
 on:
   push:
@@ -6,13 +6,13 @@ on:
       - 07-biblioteca-index
     paths:
       - '.github/workflows/07_rjb_probe.yml'
-      - 'library/07_biblioteca/diagnostics/**'
+      - 'library/07_biblioteca/diagnostics/probe_rac_metadata.py'
   pull_request:
     branches:
       - main
     paths:
       - '.github/workflows/07_rjb_probe.yml'
-      - 'library/07_biblioteca/diagnostics/**'
+      - 'library/07_biblioteca/diagnostics/probe_rac_metadata.py'
   workflow_dispatch:
 
 permissions:
@@ -21,20 +21,12 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install requests beautifulsoup4 pypdf
-      - name: Probe RJB frontend metadata
-        run: python library/07_biblioteca/diagnostics/probe_rjb.py
-      - name: Probe BHL Flora iberica index
-        run: python library/07_biblioteca/diagnostics/probe_bhl.py
-      - name: Probe RAC known volume link
-        run: python library/07_biblioteca/diagnostics/probe_rac_camaranino.py
-      - name: Probe RAC public object IDs for Cámara Niño
-        run: python library/07_biblioteca/diagnostics/probe_rac_ids.py
+      - run: python -m pip install requests
       - name: Probe RAC Fedora metadata datastreams
         run: python library/07_biblioteca/diagnostics/probe_rac_metadata.py
