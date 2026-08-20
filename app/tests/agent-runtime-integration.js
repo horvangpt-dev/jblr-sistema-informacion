@@ -67,12 +67,16 @@ class FakeExternalAdapter {
   assert.equal(state.sessionSequence, 1);
 
   const parsedRows = toObjects([
-    ['EVENT_ID', 'VALIDATION_STATE', 'CANONICAL_EFFECT', 'NOTES', 'CANONICAL_EFFECT'],
-    ['E-DUP', 'ACCEPTED', 'PRIMARY_EFFECT', 'note', 'LEGACY_EFFECT'],
+    ['EVENT_ID', 'VALIDATION_STATE', 'CANONICAL_EFFECT', 'NOTES', 'CANONICAL_EFFECT', 'SOURCE_DOCUMENT_ID', 'INGESTED_AT', 'NOTES'],
+    ['E-DUP', 'ACCEPTED', 'PRIMARY_EFFECT', 'primary note', 'LEGACY_EFFECT', 'DOC-001', '2026-08-20T21:59:25+02:00', 'secondary note'],
   ]);
   const parsedEvent = normalizeEvents(parsedRows)[0];
   assert.equal(parsedEvent.canonicalEffect, 'PRIMARY_EFFECT');
   assert.equal(parsedEvent.legacyCanonicalEffect, 'LEGACY_EFFECT');
+  assert.equal(parsedEvent.notes, 'primary note');
+  assert.equal(parsedEvent.sourceDocumentId, 'DOC-001');
+  assert.equal(parsedEvent.ingestedAt, '2026-08-20T21:59:25+02:00');
+  assert.equal(parsedEvent.secondaryNotes, 'secondary note');
 
   const github = new GitHubRuntimeAdapter({ repo: 'example/repo', token: null });
   const degraded = await github.readBranch('main');
