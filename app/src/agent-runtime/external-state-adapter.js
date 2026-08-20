@@ -59,6 +59,9 @@ function normalizeEvents(rows) {
     supersedesEventId: row.SUPERSEDES_EVENT_ID || null,
     notes: row.NOTES || null,
     legacyCanonicalEffect: row.CANONICAL_EFFECT__2 || null,
+    sourceDocumentId: row.SOURCE_DOCUMENT_ID || null,
+    ingestedAt: row.INGESTED_AT || null,
+    secondaryNotes: row.NOTES__2 || null,
   })).filter(event => event.eventId);
 }
 
@@ -117,7 +120,7 @@ class GoogleJBLRExternalStateAdapter {
 
     const [canonicalValues, eventValues] = await Promise.all([
       this.readRange(this.canonicalSpreadsheetId, 'CANONICAL_STATE!A1:I1000'),
-      this.readRange(this.eventBusSpreadsheetId, 'EVENTS!A1:M1000'),
+      this.readRange(this.eventBusSpreadsheetId, 'EVENTS!A1:P1000'),
     ]);
 
     const canonicalRows = toObjects(canonicalValues);
@@ -161,9 +164,10 @@ class GoogleJBLRExternalStateAdapter {
     if (!this.isConfigured()) return { mode: 'LOCAL_ONLY', written: false };
     const { sheets } = await this.getClients();
     const eventId = event.eventId || `JBLR-EVT-RUNTIME-${crypto.randomUUID()}`;
+    const timestamp = event.timestamp || new Date().toISOString();
     const row = [[
       eventId,
-      event.timestamp || new Date().toISOString(),
+      timestamp,
       event.originActor || '',
       event.originChatInstance || 'AUTONOMOUS_RUNTIME',
       event.type || 'RUNTIME_EVENT',
@@ -174,10 +178,14 @@ class GoogleJBLRExternalStateAdapter {
       event.sourceVersion || 'JBLR_AUTONOMOUS_ACTOR_RUNTIME_v1',
       event.supersedesEventId || '',
       event.notes || '',
+      event.legacyCanonicalEffect || '',
+      event.sourceDocumentId || '',
+      event.ingestedAt || timestamp,
+      event.secondaryNotes || '',
     ]];
     await sheets.spreadsheets.values.append({
       spreadsheetId: this.eventBusSpreadsheetId,
-      range: 'EVENTS!A:L',
+      range: 'EVENTS!A:P',
       valueInputOption: 'RAW',
       insertDataOption: 'INSERT_ROWS',
       requestBody: { values: row },
