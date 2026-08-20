@@ -1,11 +1,13 @@
 {
   "name": "jblr-03-1-integracion-preproductiva",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "private": true,
-  "description": "JBLR integrated preproduction and controlled real botanical material flow against authorized Neon STAGING",
+  "description": "JBLR integrated preproduction, controlled botanical flow and autonomous persistent actor runtime",
   "type": "commonjs",
   "scripts": {
     "start": "node src/controlled-real-server.js",
+    "start:agent-runtime": "node src/agent-runtime/server.js",
+    "test:agent-runtime": "node tests/agent-runtime-core.js",
     "seed:staging": "node scripts/seed-staging.js",
     "test:e2e": "node tests/e2e.js",
     "test:population-state": "node tests/population-state.js",
@@ -34,8 +36,10 @@
     "node": ">=22"
   },
   "dependencies": {
+    "@openai/agents": "^0.16.1",
     "express": "^5.1.0",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0"
