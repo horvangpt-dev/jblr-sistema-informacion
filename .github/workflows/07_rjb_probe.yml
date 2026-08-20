@@ -36,3 +36,5 @@ jobs:
         run: python library/07_biblioteca/diagnostics/probe_rac_camaranino.py
       - name: Probe RAC public object IDs for Cámara Niño
         run: python library/07_biblioteca/diagnostics/probe_rac_ids.py
+      - name: Probe RAC Fedora metadata datastreams
+        run: python library/07_biblioteca/diagnostics/probe_rac_metadata.py
