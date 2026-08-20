@@ -1,0 +1,11 @@
+{
+  "name": "jblr-actor-08-execution-control-plane",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JBLR actor 08 STIME execution control plane. Synthetic QA only until an explicit downstream-consumable release from actor 09 exists.",
+  "type": "commonjs",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "test": "node --test test/control-plane.test.js"
+  }
+}
