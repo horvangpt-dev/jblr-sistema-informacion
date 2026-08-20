@@ -1,0 +1,32 @@
+name: JBLR 07 RAC Tomo XXXIII Probe
+
+on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - '.github/workflows/07_rac_tomo33_probe.yml'
+      - 'library/07_biblioteca/diagnostics/probe_rac_tomo33.py'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/07_rac_tomo33_probe.yml'
+      - 'library/07_biblioteca/diagnostics/probe_rac_tomo33.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests pypdf
+      - name: Scan RAC Tomo XXXIII
+        run: python library/07_biblioteca/diagnostics/probe_rac_tomo33.py
