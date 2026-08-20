@@ -1,0 +1,7 @@
+[
+  {"taxon_id":"SYN-001","taxon_name":"Alpha exemplaris","genus":"Alpha","synthetic_value":11},
+  {"taxon_id":"SYN-002","taxon_name":"Alpha incognita","genus":"Alpha","test_behavior":"UNKNOWN"},
+  {"taxon_id":"SYN-003","taxon_name":"Beta absens","genus":"Beta","test_behavior":"NOT_FOUND"},
+  {"taxon_id":"SYN-004","taxon_name":"Gamma inaccessa","genus":"Gamma","test_behavior":"SOURCE_UNAVAILABLE"},
+  {"taxon_id":"SYN-005","taxon_name":"Delta retryensis","genus":"Delta","test_behavior":"RETRY_ONCE","synthetic_value":55}
+]
