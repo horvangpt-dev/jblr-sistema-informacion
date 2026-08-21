@@ -1,0 +1,57 @@
+name: JBLR STIME00 Actor 09 Full Corpus
+
+on:
+  push:
+    branches:
+      - 09-taxonomic-universe-materialization-v1
+    paths:
+      - '.github/workflows/jblr-stime00-09.yml'
+      - 'execution/09/stime00/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  stime00-full-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout exact actor 09 branch
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Decode and validate executor
+        shell: bash
+        run: |
+          set -euo pipefail
+          base64 -d execution/09/stime00/stime00_full_corpus.py.gz.b64 | gzip -d > execution/09/stime00/stime00_full_corpus.py
+          python -m py_compile execution/09/stime00/stime00_full_corpus.py
+          python - <<'PY'
+          from pathlib import Path
+          import base64,gzip,hashlib,json
+          p=Path('execution/09/stime00/membership_rc2.jsonl.gz.b64')
+          raw=gzip.decompress(base64.b64decode(p.read_text().strip()))
+          assert hashlib.sha256(raw).hexdigest() == '1a2727c410dd0a016973df88de19934cf656ad808b87357d6fe95aee47914265'
+          assert sum(1 for x in raw.decode().splitlines() if x.strip()) == 2210
+          print('RC2 membership preflight PASS')
+          PY
+
+      - name: Execute STIME00 full corpus
+        shell: bash
+        run: |
+          set -euo pipefail
+          python execution/09/stime00/stime00_full_corpus.py
+
+      - name: Upload execution artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: JBLR_STIME00_ACTOR09_EXECUTION_v1
+          path: stime00_output/
+          if-no-files-found: warn
+          retention-days: 30
