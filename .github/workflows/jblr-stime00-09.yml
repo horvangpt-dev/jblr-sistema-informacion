@@ -36,6 +36,7 @@ jobs:
           set -euo pipefail
           base64 -d execution/09/stime00/stime00_full_corpus.py.gz.b64 | gzip -d > execution/09/stime00/stime00_full_corpus.py
           python -m py_compile execution/09/stime00/stime00_full_corpus.py
+          cat execution/09/stime00/membership_parts/part*.b64 > execution/09/stime00/membership_rc2.jsonl.gz.b64
           python - <<'PY'
           from pathlib import Path
           import base64,gzip,hashlib
