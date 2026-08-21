@@ -1,0 +1,50 @@
+{
+  "binding_version": "08_STIME_00_SOURCE_BINDINGS_v1",
+  "protocol": "TAXON_BY_TAXON_v2",
+  "stime": "STIME_00_REVISION_TAXONOMICA",
+  "bindings": {
+    "EIDOS_LIVE_MITECO_IEPNB": {
+      "transport_contract": "MITECO_EIDOS_TAXONOMY_LIVE_SERVICE",
+      "endpoint": null,
+      "dataset_version": null,
+      "state": "UNVERIFIED_EXTERNAL_ENDPOINT",
+      "assertion_authority": ["ID_TAXON_GOBIERNO", "TAX_EIDOS"]
+    },
+    "ANTHOS_RJB_CSIC": {
+      "transport_contract": "ANTHOS_OFFICIAL_SERVICE_OR_OFFICIAL_RJB_CSIC_DARWIN_CORE_ARCHIVE",
+      "endpoint": null,
+      "dataset_version": null,
+      "state": "UNVERIFIED_EXTERNAL_ENDPOINT_OR_DATASET_VERSION",
+      "assertion_authority": ["TAX_ANTHOS"]
+    },
+    "KEW_POWO_WCVP": {
+      "transport_contract": "POWO_CURRENT_PORTAL_OR_VERSIONED_WCVP_DOWNLOAD_FROM_POWO",
+      "endpoint": "https://powo.science.kew.org/",
+      "dataset_version": null,
+      "state": "PORTAL_IDENTITY_BOUND_DATASET_VERSION_UNVERIFIED",
+      "assertion_authority": ["TAX_POWO_WCVP"]
+    },
+    "WORLD_FLORA_ONLINE": {
+      "transport_contract": "WFO_CURRENT_PORTAL_API_OR_VERSIONED_OFFICIAL_BACKBONE",
+      "endpoint": "https://www.worldfloraonline.org/",
+      "dataset_version": null,
+      "state": "PORTAL_IDENTITY_BOUND_DATASET_VERSION_UNVERIFIED",
+      "assertion_authority": ["TAX_WFO"]
+    },
+    "EUROPLUSMED_PLANTBASE": {
+      "transport_contract": "CURRENT_EUROPLUSMED_PORTAL",
+      "endpoint": null,
+      "dataset_version": null,
+      "state": "CURRENT_ENDPOINT_UNVERIFIED",
+      "legacy_transport": "WW2_BGBM_EUROPLUSMED_LEGACY_SUPPORT_ONLY",
+      "assertion_authority": ["TAX_EUROMED"]
+    },
+    "HISTORICAL_SOURCE_REGISTRY": {
+      "transport_contract": "VERSIONED_EVIDENCE_REGISTRY",
+      "endpoint": null,
+      "dataset_version": "HISTORICAL_SOURCE_REGISTRY_v1",
+      "state": "INTERNAL_REGISTRY_BOUND",
+      "assertion_authority": ["TAX_HISTORICOS"]
+    }
+  }
+}
