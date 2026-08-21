@@ -7,6 +7,11 @@ on:
     paths:
       - '.github/workflows/jblr-stime00-09.yml'
       - 'execution/09/stime00/**'
+  pull_request:
+    branches:
+      - 09-taxonomic-universe-materialization-v1
+    paths:
+      - 'execution/09/stime00/**'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
-      - name: Checkout exact actor 09 branch
+      - name: Checkout exact execution ref
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -33,7 +38,7 @@ jobs:
           python -m py_compile execution/09/stime00/stime00_full_corpus.py
           python - <<'PY'
           from pathlib import Path
-          import base64,gzip,hashlib,json
+          import base64,gzip,hashlib
           p=Path('execution/09/stime00/membership_rc2.jsonl.gz.b64')
           raw=gzip.decompress(base64.b64decode(p.read_text().strip()))
           assert hashlib.sha256(raw).hexdigest() == '1a2727c410dd0a016973df88de19934cf656ad808b87357d6fe95aee47914265'
