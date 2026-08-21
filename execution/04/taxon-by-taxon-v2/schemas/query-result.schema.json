@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "jblr://taxon-by-taxon/v2/query-result.schema.json",
+  "title": "TAXON_BY_TAXON_v2 Query Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "query_unit_id",
+    "protocol_version",
+    "taxon_work_key",
+    "field_target",
+    "source_target",
+    "query_value_verbatim",
+    "source_response_status",
+    "core_state",
+    "queried_at",
+    "qa_state"
+  ],
+  "properties": {
+    "run_id": {"type": "string"},
+    "query_unit_id": {"type": "string"},
+    "protocol_version": {"const": "TAXON_BY_TAXON_v2"},
+    "taxon_work_key": {"type": "string"},
+    "id_taxon_jblr_at_query": {"type": ["string", "null"]},
+    "field_target": {"type": "string"},
+    "source_target": {"type": "string"},
+    "query_value_verbatim": {"type": "string"},
+    "query_value_transport": {"type": ["string", "null"]},
+    "source_request_pointer": {"type": ["string", "null"]},
+    "source_response_status": {"type": "string"},
+    "raw_payload_pointer": {"type": ["string", "null"]},
+    "raw_payload_hash": {"type": ["string", "null"], "pattern": "^[0-9a-fA-F]{64}$"},
+    "source_snapshot_version": {"type": ["string", "null"]},
+    "queried_at": {"type": "string", "format": "date-time"},
+    "candidate_count": {"type": "integer", "minimum": 0},
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["returned_name", "candidate_state"],
+        "properties": {
+          "returned_name": {"type": "string"},
+          "authorship": {"type": ["string", "null"]},
+          "rank": {"type": ["string", "null"]},
+          "external_id": {"type": ["string", "null"]},
+          "taxonomic_status": {"type": ["string", "null"]},
+          "source_asserted_relation": {"type": ["string", "null"]},
+          "candidate_state": {"type": "string"},
+          "evidence_pointer": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "core_state": {
+      "enum": [
+        "FOUND_VALIDATED",
+        "FOUND_MULTIPLE_CANDIDATES",
+        "FOUND_RELATED_ONLY",
+        "FOUND_PARENT_ONLY",
+        "NOT_FOUND",
+        "SOURCE_UNAVAILABLE",
+        "SOURCE_ERROR",
+        "AMBIGUOUS",
+        "CONFLICT",
+        "BLOCKED",
+        "NOT_EXECUTED"
+      ]
+    },
+    "field_value": {"type": ["string", "null"]},
+    "field_state": {"type": ["string", "null"]},
+    "assertion_rule_id": {"type": ["string", "null"]},
+    "assertion_evidence_pointer": {"type": ["string", "null"]},
+    "parent_reference_id": {"type": ["string", "null"]},
+    "new_validated_query_names": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "retry_count": {"type": "integer", "minimum": 0},
+    "qa_state": {"enum": ["PASS", "REVIEW_REQUIRED", "FAIL"]},
+    "qa_notes": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"core_state": {"const": "FOUND_VALIDATED"}}},
+      "then": {"required": ["assertion_evidence_pointer"]}
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "registry_version": "FIELD_SOURCE_REGISTRY_v1",
+  "protocol": "TAXON_BY_TAXON_v2",
+  "stime": "STIME_00_REVISION_TAXONOMICA",
+  "fields": [
+    {
+      "field": "TAX_RIOJA",
+      "source_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2",
+      "source_role": "AUTHORITATIVE_INPUT_CORPUS",
+      "query_required": false,
+      "write_rule": "COPY_VERBATIM_FROM_AUTHORIZED_RIOJA_RELEASE",
+      "normalization_allowed": false,
+      "notes": "No external resolver may overwrite TAX_RIOJA. Corrections belong to a new authorized Rioja release, not to this FIELD."
+    },
+    {
+      "field": "ID_TAXON_GOBIERNO",
+      "source_id": "EIDOS_LIVE_MITECO_IEPNB",
+      "source_role": "SOLE_CURRENT_OFFICIAL_ID_AUTHORITY",
+      "query_required": true,
+      "preferred_transport": "MITECO_EIDOS_TAXONOMY_LIVE_SERVICE",
+      "supporting_discovery_sources": ["MITECO_LISTA_PATRON_STATIC_VERSIONED"],
+      "supporting_source_may_assert_field": false,
+      "output": "OFFICIAL_EIDOS_TAXONID",
+      "write_rule": "WRITE_ONLY_ON_UNEQUIVOCAL_SAME_TAXON_MATCH",
+      "notes": "Static MITECO files may discover candidates but never backfill the current government ID without live EIDOS confirmation. Parent species ID is reference only, never child identity."
+    },
+    {
+      "field": "ID_TAXON_JBLR",
+      "source_id": "JBLR_IDENTITY_RULE_STIME_00",
+      "source_role": "DERIVED_INTERNAL_OPERATIONAL_IDENTIFIER",
+      "query_required": false,
+      "write_rule": "IF_ID_TAXON_GOBIERNO_EXACT_THEN_COPY_SAME_VALUE_ELSE_GENERATE_UNIQUE_TEMPORARY_JBLR_ID",
+      "notes": "TAXON_WORK_KEY remains the immutable technical anchor. Temporary JBLR IDs are preserved as aliases/history when superseded by a government ID."
+    },
+    {
+      "field": "TAX_EIDOS",
+      "source_id": "EIDOS_LIVE_MITECO_IEPNB",
+      "source_role": "SPANISH_TAXONOMIC_REPOSITORY_1",
+      "query_required": true,
+      "preferred_transport": "MITECO_EIDOS_TAXONOMY_LIVE_SERVICE",
+      "output": "SCIENTIFIC_NAME_DISPLAYED_OR_ASSERTED_BY_EIDOS_FOR_MATCHED_TAXON",
+      "write_rule": "ONLY_EIDOS_MAY_WRITE_TAX_EIDOS"
+    },
+    {
+      "field": "TAX_ANTHOS",
+      "source_id": "ANTHOS_RJB_CSIC",
+      "source_role": "SPANISH_TAXONOMIC_REPOSITORY_2",
+      "query_required": true,
+      "preferred_transport": "ANTHOS_OFFICIAL_SERVICE_OR_OFFICIAL_RJB_CSIC_DARWIN_CORE_ARCHIVE",
+      "output": "SCIENTIFIC_NAME_ACCEPTED_OR_DISPLAYED_BY_ANTHOS_FOR_MATCHED_TAXON",
+      "write_rule": "ONLY_ANTHOS_MAY_WRITE_TAX_ANTHOS",
+      "notes": "If the web interface is unavailable, a versioned official RJB-CSIC/GBIF-Spain IPT archive may be used as transport while preserving ANTHOS as the source identity."
+    },
+    {
+      "field": "TAX_POWO_WCVP",
+      "source_id": "KEW_POWO_WCVP",
+      "source_role": "INTERNATIONAL_TAXONOMIC_REPOSITORY_1",
+      "query_required": true,
+      "preferred_transport": "POWO_CURRENT_PORTAL_OR_VERSIONED_WCVP_DOWNLOAD_FROM_POWO",
+      "output": "CURRENT_ACCEPTED_KEW_TREATMENT_FOR_MATCHED_TAXON",
+      "write_rule": "ONLY_KEW_POWO_WCVP_MAY_WRITE_TAX_POWO_WCVP",
+      "notes": "POWO and WCVP are treated as one Kew source family because current Kew consolidation places WCVP data in POWO; do not create conflicting duplicate fields from the same underlying Kew treatment."
+    },
+    {
+      "field": "TAX_WFO",
+      "source_id": "WORLD_FLORA_ONLINE",
+      "source_role": "INTERNATIONAL_TAXONOMIC_REPOSITORY_2",
+      "query_required": true,
+      "preferred_transport": "WFO_CURRENT_PORTAL_API_OR_VERSIONED_OFFICIAL_BACKBONE",
+      "output": "WFO_ACCEPTED_NAME_FOR_MATCHED_TAXON",
+      "write_rule": "ONLY_WFO_MAY_WRITE_TAX_WFO",
+      "metadata_to_preserve": ["WFO_ID", "taxonomicStatus", "rank", "acceptedNameUsageID_or_equivalent"]
+    },
+    {
+      "field": "TAX_EUROMED",
+      "source_id": "EUROPLUSMED_PLANTBASE",
+      "source_role": "INTERNATIONAL_TAXONOMIC_REPOSITORY_3",
+      "query_required": true,
+      "preferred_transport": "CURRENT_EUROPLUSMED_PORTAL",
+      "legacy_transport": "WW2_BGBM_EUROPLUSMED_LEGACY",
+      "legacy_transport_may_assert_current_field": false,
+      "output": "CURRENT_EUROPLUSMED_ACCEPTED_TREATMENT_FOR_MATCHED_TAXON",
+      "write_rule": "ONLY_CURRENT_EUROPLUSMED_SOURCE_MAY_WRITE_TAX_EUROMED",
+      "notes": "Legacy ww2.bgbm.org Euro+Med is explicitly marked as no longer updated; it may provide historical/supporting evidence but not silently stand in for current Euro+Med."
+    },
+    {
+      "field": "TAX_HISTORICOS",
+      "source_id": "HISTORICAL_SOURCE_REGISTRY",
+      "source_role": "COMPOSITE_MULTI_SOURCE_HISTORICAL_NAME_FIELD",
+      "query_required": true,
+      "output": "ORDERED_SUBFIELDS_TAX_HISTORICO_1_TO_N",
+      "write_rule": "ONE_HISTORICAL_NAME_PER_SUBFIELD_NO_CONCATENATION",
+      "authorized_discovery_sources": [
+        "EIDOS_SYNONYMY_OR_HISTORICAL_RELATIONS",
+        "ANTHOS_SYNONYMY_OR_HISTORICAL_RELATIONS",
+        "POWO_WCVP_SYNONYMY_OR_HISTORICAL_RELATIONS",
+        "WFO_SYNONYMY_OR_HISTORICAL_RELATIONS",
+        "EUROPLUSMED_SYNONYMY_OR_HISTORICAL_RELATIONS",
+        "ACTOR_07_DOCUMENTARY_LIBRARY_QUERY",
+        "AUTHORIZED_RIOJA_OR_IBERIAN_HISTORICAL_BOTANICAL_LITERATURE"
+      ],
+      "promotion_rule": "A_NAME_BECOMES_TAX_HISTORICO_N_ONLY_IF_ITS_RELATION_TO_THE_SAME_TAXON_IS_EVIDENCED",
+      "required_companion_metadata": ["TAX_HISTORICO_N_SOURCE", "TAX_HISTORICO_N_EVIDENCE", "TAX_HISTORICO_N_RELATION", "TAX_HISTORICO_N_DATE_OR_WORK"]
+    }
+  ]
+}

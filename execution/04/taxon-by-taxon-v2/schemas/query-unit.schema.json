@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "jblr://taxon-by-taxon/v2/query-unit.schema.json",
+  "title": "TAXON_BY_TAXON_v2 Query Unit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "query_unit_id",
+    "protocol_version",
+    "corpus_release_id",
+    "corpus_release_version",
+    "corpus_manifest_pointer",
+    "corpus_manifest_sha256",
+    "corpus_row_id",
+    "taxon_work_key",
+    "field_target",
+    "source_target",
+    "source_adapter_version",
+    "query_value_verbatim",
+    "query_value_origin",
+    "query_reason"
+  ],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "query_unit_id": {"type": "string", "minLength": 1},
+    "protocol_version": {"const": "TAXON_BY_TAXON_v2"},
+    "corpus_release_id": {"type": "string", "minLength": 1},
+    "corpus_release_version": {"type": "string", "minLength": 1},
+    "corpus_manifest_pointer": {"type": "string", "minLength": 1},
+    "corpus_manifest_sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "corpus_row_id": {"type": ["string", "integer"]},
+    "taxon_work_key": {"type": "string", "minLength": 1},
+    "id_taxon_jblr_current": {"type": ["string", "null"]},
+    "field_target": {
+      "enum": [
+        "ID_TAXON_GOBIERNO",
+        "TAX_EIDOS",
+        "TAX_ANTHOS",
+        "TAX_POWO_WCVP",
+        "TAX_WFO",
+        "TAX_EUROMED",
+        "TAX_HISTORICOS"
+      ]
+    },
+    "source_target": {
+      "enum": [
+        "EIDOS_LIVE_MITECO_IEPNB",
+        "ANTHOS_RJB_CSIC",
+        "KEW_POWO_WCVP",
+        "WORLD_FLORA_ONLINE",
+        "EUROPLUSMED_PLANTBASE",
+        "HISTORICAL_SOURCE_REGISTRY"
+      ]
+    },
+    "source_adapter_version": {"type": "string", "minLength": 1},
+    "query_value_verbatim": {"type": "string", "minLength": 1},
+    "query_value_transport": {"type": ["string", "null"]},
+    "transport_transformation_rule": {"type": ["string", "null"]},
+    "query_value_origin": {
+      "pattern": "^(TAX_RIOJA|TAX_EIDOS|TAX_ANTHOS|TAX_POWO_WCVP|TAX_WFO|TAX_EUROMED|TAX_HISTORICO_[1-9][0-9]*|OTHER_AUTHORIZED)$"
+    },
+    "query_reason": {
+      "enum": [
+        "INITIAL_RIOJA_QUERY",
+        "CROSS_SOURCE_REQUERY",
+        "GOVERNMENT_ID_REQUERY",
+        "HISTORICAL_REQUERY",
+        "AUTHORIZED_REFRESH"
+      ]
+    }
+  }
+}
