@@ -1,0 +1,62 @@
+{
+  "run_id": 32488336058,
+  "run_attempt": 1,
+  "trigger_sha": "08e7fcd21f84f47960036387ab28b9c60729afd9",
+  "job_status": "success",
+  "actor": "09",
+  "stime": "STIME_00_REVISION_TAXONOMICA",
+  "rc2_membership_sha256": "1a2727c410dd0a016973df88de19934cf656ad808b87357d6fe95aee47914265",
+  "hybrid_recovery_executor_sha256": "529e53c1f8184095702572a1931646f96c717566c89a80eca7bc0af660643a9f",
+  "artifact_name": "JBLR_STIME00_ACTOR09_HYBRID_RECOVERY_v4",
+  "source_artifact_name": "JBLR_STIME00_HYBRID_RECOVERY_V4_SOURCE_AUDIT",
+  "government_ids_found": 2057,
+  "temporary_ids_remaining": 153,
+  "recovery_counts": {
+    "exact_rioja": 1830,
+    "reverse_synonym_unique": 50,
+    "unresolved": 153,
+    "existing_network_unique": 155,
+    "orthographic_unique": 22
+  },
+  "output_files": {
+    "STIME00_ARTIFACT_MANIFEST.json": {
+      "sha256": "b98050d6365d4a078dc14d45ad117ec25de1ea9b0c8da5d669c2cceaa10b340a",
+      "bytes": 1352
+    },
+    "STIME00_EXECUTION_REPORT.md": {
+      "sha256": "1e1b2d95dccca88becc4b196eb5830c41833aa51536c88543c317ff798e1337c",
+      "bytes": 632
+    },
+    "STIME00_HUMAN_AUDIT_VIEW.csv": {
+      "sha256": "5681326e09bcd34e045f08958037ce810df5504ae46c1d1363de80465f9bf44d",
+      "bytes": 668493
+    },
+    "STIME00_HYBRID_RECOVERY_v4.json": {
+      "sha256": "38a3a75f7a9f48f4fb2e62ebd352a94d48b525c31b7c0f5637d373213087a5eb",
+      "bytes": 28473
+    },
+    "STIME00_INTERNAL_JBLR_MACHINE.jsonl": {
+      "sha256": "9e31797c43989665db83e96d13db1ae84a9f0d5ab93224b5ebaef71913f151ed",
+      "bytes": 4966049
+    },
+    "STIME00_NATIONAL_ID_RECOVERY_EVIDENCE.jsonl.gz": {
+      "sha256": "e5232f0aaf16e7396202f815c9592a147b96c99484731c610f15e5167eaf5e49",
+      "bytes": 87712
+    },
+    "STIME00_QA.json": {
+      "sha256": "aa8f23375f9644bbc4914d837d54dfe9d13704cb36f602be691203e1f83088c1",
+      "bytes": 33221
+    },
+    "STIME00_QUERY_EVIDENCE.jsonl.gz": {
+      "sha256": "b1bc0ae98e7eeec8307a3b3441fe795d4fe1ef2e6931be6b2c5a7538d6015046",
+      "bytes": 3937830
+    },
+    "STIME00_SOURCE_SNAPSHOTS.json": {
+      "sha256": "d1318fd0c83d35e9e02793d96313adba267ddfb44f94611b61a789c9ad4e67cb",
+      "bytes": 1244
+    }
+  },
+  "rc2_mutated": false,
+  "neon_writes": 0,
+  "stime_closed": false
+}
