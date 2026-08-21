@@ -47,6 +47,13 @@ jobs:
           print('RC2 membership preflight PASS')
           PY
 
+      - name: Upload decoded executor source
+        uses: actions/upload-artifact@v4
+        with:
+          name: JBLR_STIME00_EXECUTOR_SOURCE_AUDIT
+          path: execution/09/stime00/stime00_full_corpus.py
+          retention-days: 7
+
       - name: Execute STIME00 full corpus
         shell: bash
         run: |

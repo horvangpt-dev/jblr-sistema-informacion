@@ -1,0 +1,35 @@
+name: JBLR STIME00 Extract Legacy Executor
+
+on:
+  push:
+    branches:
+      - 09-stime00-execution-run-1
+    paths:
+      - '.github/workflows/jblr-stime00-extract-legacy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract-legacy-executor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout execution branch
+        uses: actions/checkout@v4
+
+      - name: Decode legacy executor
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p legacy_executor
+          base64 -d execution/09/stime00/stime00_full_corpus.py.gz.b64 | gzip -d > legacy_executor/stime00_full_corpus.py
+          python -m py_compile legacy_executor/stime00_full_corpus.py
+          sha256sum legacy_executor/stime00_full_corpus.py > legacy_executor/SHA256.txt
+
+      - name: Upload legacy executor source
+        uses: actions/upload-artifact@v4
+        with:
+          name: JBLR_STIME00_LEGACY_EXECUTOR_SOURCE
+          path: legacy_executor/
+          retention-days: 7
