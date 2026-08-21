@@ -1,43 +1,78 @@
 {
-  "binding_version": "08_STIME_00_SOURCE_BINDINGS_v1",
+  "binding_version": "08_STIME_00_SOURCE_BINDINGS_v1_1",
   "protocol": "TAXON_BY_TAXON_v2",
   "stime": "STIME_00_REVISION_TAXONOMICA",
+  "verified_at": "2026-08-21T10:55:00+02:00",
+  "binding_rule": "EXACT_LIVE_ENDPOINT_OR_OFFICIAL_VERSIONED_DATASET_REQUIRED; EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND",
   "bindings": {
     "EIDOS_LIVE_MITECO_IEPNB": {
       "transport_contract": "MITECO_EIDOS_TAXONOMY_LIVE_SERVICE",
-      "endpoint": null,
+      "endpoint": "https://eportal.miteco.gob.es/IEPNB_EIDOS_WS/services/IEPNB_EIDOS?wsdl",
       "dataset_version": null,
-      "state": "UNVERIFIED_EXTERNAL_ENDPOINT",
-      "assertion_authority": ["ID_TAXON_GOBIERNO", "TAX_EIDOS"]
+      "state": "VERIFIED_OFFICIAL_LIVE_WSDL",
+      "authority_evidence": [
+        "MITECO official EIDOS taxonomy web-service documentation",
+        "MITECO official EIDOS access/service documentation"
+      ],
+      "assertion_authority": ["ID_TAXON_GOBIERNO", "TAX_EIDOS"],
+      "execution_note": "Exact unequivocal same-taxon match required before government ID supersession. Parent or broader taxon IDs remain reference-only."
     },
     "ANTHOS_RJB_CSIC": {
       "transport_contract": "ANTHOS_OFFICIAL_SERVICE_OR_OFFICIAL_RJB_CSIC_DARWIN_CORE_ARCHIVE",
-      "endpoint": null,
-      "dataset_version": null,
-      "state": "UNVERIFIED_EXTERNAL_ENDPOINT_OR_DATASET_VERSION",
+      "endpoint": "https://ipt.gbif.es/archive.do?r=rjb-anthos&v=1.19",
+      "dataset_version": "1.19",
+      "published_at": "2021-11-30",
+      "dataset_doi": "10.15468/4wnutv",
+      "dataset_uuid": "4cf3eec1-b902-40c9-b15b-05c5fe5928b6",
+      "state": "VERIFIED_OFFICIAL_VERSIONED_DWCA",
+      "authority_evidence": [
+        "Real Jardín Botánico (CSIC) ANTHOS dataset published through GBIF Spain IPT",
+        "https://ipt.gbif.es/resource?r=rjb-anthos"
+      ],
       "assertion_authority": ["TAX_ANTHOS"]
     },
     "KEW_POWO_WCVP": {
       "transport_contract": "POWO_CURRENT_PORTAL_OR_VERSIONED_WCVP_DOWNLOAD_FROM_POWO",
-      "endpoint": "https://powo.science.kew.org/",
-      "dataset_version": null,
-      "state": "PORTAL_IDENTITY_BOUND_DATASET_VERSION_UNVERIFIED",
+      "endpoint": "https://powo.science.kew.org/results?q={QUERY_URLENCODED}",
+      "dataset_version": "WCVP_ROLLING_DWCA_2026-06-04",
+      "dataset_endpoint": "https://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+      "dataset_last_modified": "2026-06-04",
+      "immutable_archive_latest_numbered_observed": "WCVP_v15_2026-01-07",
+      "state": "VERIFIED_OFFICIAL_LIVE_PORTAL_AND_CURRENT_WCVP_ROLLING_SNAPSHOT",
+      "authority_evidence": [
+        "Royal Botanic Gardens, Kew POWO current portal",
+        "https://sftp.kew.org/pub/data-repositories/WCVP/",
+        "https://sftp.kew.org/pub/data-repositories/WCVP/archive/"
+      ],
       "assertion_authority": ["TAX_POWO_WCVP"]
     },
     "WORLD_FLORA_ONLINE": {
       "transport_contract": "WFO_CURRENT_PORTAL_API_OR_VERSIONED_OFFICIAL_BACKBONE",
-      "endpoint": "https://www.worldfloraonline.org/",
-      "dataset_version": null,
-      "state": "PORTAL_IDENTITY_BOUND_DATASET_VERSION_UNVERIFIED",
+      "endpoint": "https://list.worldfloraonline.org/",
+      "dataset_version": "WFO_PLANT_LIST_2026-06",
+      "dataset_endpoint": "https://zenodo.org/records/20782718",
+      "state": "VERIFIED_OFFICIAL_API_AND_VERSIONED_BACKBONE",
+      "authority_evidence": [
+        "World Flora Online Plant List current API/portal",
+        "WFO Plant List 2026-06 versioned Zenodo release"
+      ],
       "assertion_authority": ["TAX_WFO"]
     },
     "EUROPLUSMED_PLANTBASE": {
       "transport_contract": "CURRENT_EUROPLUSMED_PORTAL",
-      "endpoint": null,
-      "dataset_version": null,
-      "state": "CURRENT_ENDPOINT_UNVERIFIED",
-      "legacy_transport": "WW2_BGBM_EUROPLUSMED_LEGACY_SUPPORT_ONLY",
-      "assertion_authority": ["TAX_EUROMED"]
+      "endpoint": "https://europlusmed.org/",
+      "api_endpoint": "https://api.cybertaxonomy.org/euromed/",
+      "api_docs": "http://api.cybertaxonomy.org/euromed/doc",
+      "dataset_version": "CONTINUOUSLY_UPDATED_LIVE_CDM",
+      "state": "VERIFIED_CURRENT_PORTAL_AND_LIVE_CDM_ENDPOINT",
+      "legacy_transport": "https://ww2.bgbm.org/euroPlusmed/",
+      "legacy_state": "SUPPORT_ONLY_NOT_CURRENT_ASSERTION_AUTHORITY",
+      "authority_evidence": [
+        "Legacy BGBM Euro+Med page explicitly redirects updates to the new data portal",
+        "Current Euro+Med PlantBase portal and EDIT CyberTaxonomy CDM service"
+      ],
+      "assertion_authority": ["TAX_EUROMED"],
+      "execution_note": "If automated access is unavailable or blocked, record SOURCE_UNAVAILABLE/SOURCE_ERROR and retain raw technical evidence; never convert transport failure to NOT_FOUND."
     },
     "HISTORICAL_SOURCE_REGISTRY": {
       "transport_contract": "VERSIONED_EVIDENCE_REGISTRY",
@@ -46,5 +81,12 @@
       "state": "INTERNAL_REGISTRY_BOUND",
       "assertion_authority": ["TAX_HISTORICOS"]
     }
+  },
+  "verification_result": {
+    "required_external_source_families": 5,
+    "verified_external_source_families": 5,
+    "live_source_bindings_complete": true,
+    "full_corpus_execution_by_08": 0,
+    "ready_for_09_source_binding_gate": true
   }
 }
