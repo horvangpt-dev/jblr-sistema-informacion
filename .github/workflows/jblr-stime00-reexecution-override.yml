@@ -40,7 +40,7 @@ jobs:
           base64 -d execution/09/stime00/stime00_full_corpus.py.gz.b64 | gzip -d > execution/09/stime00/stime00_full_corpus.py
           base64 -d execution/09/stime00/stime00_reexecution_v3.py.gz.b64 | gzip -d > execution/09/stime00/stime00_reexecution_v3.py
           base64 -d execution/09/stime00/stime00_hybrid_recovery_v4.py.gz.b64 | gzip -d > execution/09/stime00/stime00_hybrid_recovery_v4.py
-          python -m py_compile execution/09/stime00/stime00_full_corpus.py execution/09/stime00/stime00_reexecution_v3.py execution/09/stime00/stime00_hybrid_recovery_v4.py
+          python -m py_compile execution/09/stime00/stime00_full_corpus.py execution/09/stime00/stime00_reexecution_v3.py execution/09/stime00/stime00_hybrid_recovery_v4.py execution/09/stime00/stime00_conflict34_provenance_audit.py
           python - <<'PY'
           from pathlib import Path
           import base64,gzip,hashlib,os
@@ -65,6 +65,7 @@ jobs:
             execution/09/stime00/stime00_full_corpus.py
             execution/09/stime00/stime00_reexecution_v3.py
             execution/09/stime00/stime00_hybrid_recovery_v4.py
+            execution/09/stime00/stime00_conflict34_provenance_audit.py
           retention-days: 30
 
       - name: Execute hybrid recovery full corpus
@@ -74,6 +75,12 @@ jobs:
           set -euo pipefail
           rm -rf stime00_output stime00_cache
           python execution/09/stime00/stime00_hybrid_recovery_v4.py
+
+      - name: Audit provenance of 34 conflicting national IDs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python execution/09/stime00/stime00_conflict34_provenance_audit.py
 
       - name: Upload hybrid recovery artifacts
         if: always()
