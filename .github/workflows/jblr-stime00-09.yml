@@ -30,12 +30,13 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Decode and validate executor
+      - name: Decode and validate corrected executor
         shell: bash
         run: |
           set -euo pipefail
           base64 -d execution/09/stime00/stime00_full_corpus.py.gz.b64 | gzip -d > execution/09/stime00/stime00_full_corpus.py
-          python -m py_compile execution/09/stime00/stime00_full_corpus.py
+          base64 -d execution/09/stime00/stime00_reexecution_v3.py.gz.b64 | gzip -d > execution/09/stime00/stime00_reexecution_v3.py
+          python -m py_compile execution/09/stime00/stime00_full_corpus.py execution/09/stime00/stime00_reexecution_v3.py
           python - <<'PY'
           from pathlib import Path
           import base64,gzip,hashlib
@@ -43,27 +44,32 @@ jobs:
           raw=gzip.decompress(base64.b64decode(p.read_text().strip()))
           assert hashlib.sha256(raw).hexdigest() == '1a2727c410dd0a016973df88de19934cf656ad808b87357d6fe95aee47914265'
           assert sum(1 for x in raw.decode().splitlines() if x.strip()) == 2210
+          corrected=Path('execution/09/stime00/stime00_reexecution_v3.py').read_bytes()
+          assert hashlib.sha256(corrected).hexdigest() == '49b84bafc49228b570eae0d3f0e10121746945e9af4b5903ddf547ee3390a221'
           print('RC2 membership preflight PASS')
+          print('Corrected executor SHA256 PASS')
           PY
 
-      - name: Upload decoded executor source
+      - name: Upload corrected executor source
         uses: actions/upload-artifact@v4
         with:
-          name: JBLR_STIME00_EXECUTOR_SOURCE_AUDIT
-          path: execution/09/stime00/stime00_full_corpus.py
+          name: JBLR_STIME00_REEXECUTION_V3_SOURCE_AUDIT
+          path: |
+            execution/09/stime00/stime00_full_corpus.py
+            execution/09/stime00/stime00_reexecution_v3.py
           retention-days: 7
 
-      - name: Execute STIME00 full corpus
+      - name: Execute corrected STIME00 full corpus
         shell: bash
         run: |
           set -euo pipefail
-          python execution/09/stime00/stime00_full_corpus.py
+          python execution/09/stime00/stime00_reexecution_v3.py
 
-      - name: Upload execution artifacts
+      - name: Upload corrected execution artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: JBLR_STIME00_ACTOR09_EXECUTION_v1
+          name: JBLR_STIME00_ACTOR09_REEXECUTION_v2
           path: stime00_output/
           if-no-files-found: warn
           retention-days: 30
