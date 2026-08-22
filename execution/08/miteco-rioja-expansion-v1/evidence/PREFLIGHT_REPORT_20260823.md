@@ -1,111 +1,94 @@
 # 08 · MITECO_RIOJA_EXPANSION_v1 · Preflight report
 
 ## Scope
-
 Actor 08 implementation/preflight only. No productive territorial taxon discovery, productive corpus cross, canonical membership mutation, RC2 mutation or Neon productive writes were performed.
 
 ## Design binding
-
 - Correlation: `JBLR-HANDOFF-04-08-MITECO-RIOJA-EXPANSION-v1`
 - Delivery event: `JBLR-EVT-04-20260823-MSG-08-MITECO-RIOJA-EXPANSION-HANDOFF-001`
-- Delivery manifest: Drive `1meS_8TGATo9TPBgzxMQ_OQ2C_QuHG1B8RtkGpwk0Hkw`
-- Final handoff: Drive `1_Bw1vwEM7mp4lf9Sq9hxTY3al_ytRe5s3AzLyPUIAFE`
 - Protocols: `MITECO_RIOJA_EXPANSION_v1`, `ID_TAXON_BY_ID_TAXON_v1`
 
 ## Implemented nonproductive core
+Deterministic SHA256 serialization, positive-area spatial fixture engine, deterministic manifest serialization, source-binding state machine, ID-by-ID outcome model, exact-ID full outer join, duplicate-ID audit, hard actor-08 nonproductive guard and 110-slot A–G controlled harness remain implemented.
 
-- deterministic SHA256 serialization helper;
-- deterministic, name-independent MITECO-only `TAXON_WORK_KEY` derivation;
-- positive-area spatial-selection controlled-fixture engine with FULL/PARTIAL/TOUCH semantics;
-- deterministic controlled manifest serialization/hash;
-- source-binding validation state machine;
-- ID-by-ID technical outcome states preserving source failure != NOT_FOUND;
-- exact-ID full outer join with required output classes;
-- duplicate-ID audit path;
-- hard actor-08 nonproductive guard;
-- READY_FOR_09 gate evaluator;
-- 110-slot A–G controlled test harness.
+## Source findings after user-supplied official files
 
-The spatial fixture engine is deliberately not a substitute for productive polygon processing. The real manifest may only be built from pinned authoritative geometry snapshots.
+### MITECO IEET 10×10 grid — VERIFIED
+User supplied the official MITECO ZIP `malla10x10terrestre_p_tcm30-199156.zip`.
+- SHA256: `81eff6329051a6ee740b94ca42b49499c3d33721cce01738127246f4a9711c77`
+- bytes: `3221811`
+- feature count: `5441`
+- CRS read from source metadata: `EPSG:25830`
+- geometry type: Polygon
+- invalid geometries: `0`
+- native fields include `OBJECTID`, `UTMCODE`, `CUADRICULA`, `COD_INB`
+- embedded metadata identifier: `ESMAGRAMAMALLA10201206250001`
 
-## Official source findings
+Blocker `MITECO_GRID_SNAPSHOT_HASH_UNAVAILABLE` is RESOLVED.
 
-### MITECO IEET 10×10 grid
-Official MITECO page confirms the `malla10x10_p` resource for Península/Baleares and ETRS89 / UTM zone 30N. The current official ZIP URL was resolved, but raw ZIP bytes could not be acquired in the current execution environment; therefore byte size, feature count, native schema and SHA256 are not asserted.
+### IDERioja WFS — PARTIAL, materially advanced
+User supplied current GetCapabilities.
+- SHA256: `89b06e8443f2396a5af09c61a15c71a3c4f211f25451cdd8bf167bbccb6463db`
+- service version: `1.1.0`
+- exact perimeter typename: `perimetro`
+- exact crosscheck grid typename: `cuadricula_utm_de_10_x_10_km`
+- default CRS for both: `EPSG:25830`
 
-State: `PARTIAL`.
+Remaining: DescribeFeatureType plus actual perimeter/grid geometries. No bbox approximation is permitted.
 
-### IDERioja boundary and 10×10 crosscheck
-The Gobierno de La Rioja official OGC page confirms the WFS base `https://ogc.larioja.org/wfs/request.php`. The current execution environment could not obtain a live GetCapabilities/DescribeFeatureType response, so exact QName, geometry field and service schema are not asserted.
+### EIDOS distribution WFS — PARTIAL, materially advanced
+User supplied current GeoServer GetCapabilities.
+- SHA256: `3ea1fec150641eccba1ff15d9bb289001aeb0f888901698d91bc49320e360fa9`
+- service version: `2.0.0`
+- exact typename: `especies:distribucion_especies`
+- declared default CRS: `EPSG:3857`
 
-State: `PARTIAL`.
+Remaining: DescribeFeatureType to verify actual geometry and local species identifier/name fields.
 
-### EIDOS territorial distribution WFS
-The IEPNB geoserver domain is current official infrastructure in MITECO open-data resources, but the exact EIDOS SpeciesDistribution GetCapabilities/typename/schema could not be acquired in this execution environment.
+### MITECO vascular-flora filter — VERIFIED
+The available current MITECO Lista Patrón with normativa exposes an explicit row-level classifier.
+- source SHA256: `6f98009923977acd53583b34f0bdc3307c4e7a8ef1ea8679bfaf825faaf4b15d`
+- `Grupo taxonómico = Plantas vasculares`
+- independent crosscheck: `LP Flora vascular = 1`
+- unique idtaxon total: `4527`
+- vascular IDs: `2508`
+- excluded IDs: `2019`
+- unresolved classifications: `0`
+- cross-field consistency: PASS
 
-State: `PARTIAL`.
+Artifact: `contracts/MITECO_FLORA_VASCULAR_ID_SET_v1.json`.
 
-### Current IEPNB/EIDOS taxonomy route
-The current IEPNB/EIDOS portal route is already canonical in JBLR and is retained as the primary national taxon-ID confirmation route.
+Blocker `FLORA_VASCULAR_FILTER_UNVERIFIED` is RESOLVED.
 
-State: `VERIFIED` for route identity. No productive taxon query executed by actor 08.
+### IEET static distribution — VERSION VERIFIED
+The current MITECO IEET page exposes `BD_IEET` at `bd_ieet_2015_tcm30-207985.zip`. It remains a secondary static source and must stay provenance-separated from current EIDOS evidence. Snapshot bytes were not acquired by actor 08.
 
-### Current MITECO Lista Patrón
-The current MITECO page explicitly exposes the vigente unified species list in XLSX/JSON and the JSON API endpoint. The current list combines multiple taxonomic groups. A reliable explicit row-level classification field/value that deterministically defines vascular flora was not verified from the accessible schema in this execution environment. No heuristic family/name filter is permitted.
-
-State: `PARTIAL`.
-
-### IEET static distribution
-Exact current resource/version was not pinned.
-
-State: `UNVERIFIED`.
+Blocker `IEET_STATIC_DISTRIBUTION_VERSION_UNVERIFIED` is RESOLVED at version-binding level.
 
 ## Grid manifest
-
 `GRID_MANIFEST_POINTER = NOT_MATERIALIZED_BLOCKED`
-
 `GRID_MANIFEST_SHA256 = NOT_AVAILABLE`
-
 `EXACT_SELECTED_GRID_LIST_POINTER = NOT_AVAILABLE`
 
-No grid code was guessed, manually copied or inferred from a map. This is required by `REALITY_FIRST` and the grid protocol.
-
-## Flora vascular filter
-
-`FLORA_VASCULAR_FILTER_POINTER = NOT_MATERIALIZED_BLOCKED`
-
-`FLORA_FILTER_COUNTS = NOT_AVAILABLE`
-
-Blocker: `FLORA_VASCULAR_FILTER_UNVERIFIED`.
+Reason: authoritative Rioja perimeter geometry and IDERioja 10×10 crosscheck geometries are still missing. No cell list is guessed or manually entered.
 
 ## Test/QA state
-
-Local Node 22 controlled harness executed 110 named matrix slots with no runtime failures. This proves the nonproductive core/harness mechanics only; it does **not** convert source-dependent A/B/D/E gates into PASS where live source evidence is missing.
-
 - `TEST_TOTAL = 110`
 - `CONTROLLED_HARNESS_PASS = 110`
 - `CONTROLLED_HARNESS_FAIL = 0`
-- `SOURCE_DEPENDENT_ACCEPTANCE = INCOMPLETE`
 - `PRODUCTIVE_TAXON_DISCOVERY_BY_08 = 0`
 - `PRODUCTIVE_CORPUS_CROSS_BY_08 = 0`
 - `CANONICAL_MEMBERSHIP_WRITES = 0`
 - `RC2_MUTATION = 0`
 - `NEON_PRODUCTIVE_WRITES = 0`
 
-Systemic controlled-core zero guards are satisfied. Overall preflight gate is blocked by missing source-backed evidence.
-
-## Exact blockers
-
-1. `MITECO_GRID_SNAPSHOT_HASH_UNAVAILABLE`
-2. `IDERIOJA_BOUNDARY_WFS_SCHEMA_UNVERIFIED`
-3. `IDERIOJA_GRID_CROSSCHECK_SCHEMA_UNVERIFIED`
-4. `EIDOS_DISTRIBUTION_WFS_SCHEMA_UNVERIFIED`
-5. `FLORA_VASCULAR_FILTER_UNVERIFIED`
-6. `IEET_STATIC_DISTRIBUTION_VERSION_UNVERIFIED`
-7. consequently `RIOJA_MITECO_GRID_MANIFEST_v1` cannot be materialized without inventing evidence.
+## Remaining exact blockers
+1. `IDERIOJA_BOUNDARY_DESCRIBEFEATURETYPE_AND_GEOMETRY_MISSING`
+2. `IDERIOJA_GRID_CROSSCHECK_DESCRIBEFEATURETYPE_AND_GEOMETRIES_MISSING`
+3. `EIDOS_DISTRIBUTION_DESCRIBEFEATURETYPE_MISSING`
+4. consequently `RIOJA_MITECO_GRID_MANIFEST_v1` cannot yet be materialized.
 
 ## Gate
-
 `READY_FOR_09 = NO`
 
-Actor 08 must not instruct 09 from this handoff until the blockers above are resolved and the source-backed acceptance gates are rerun.
+Do not instruct 09 until the three remaining source payloads above are verified and the real geographic preflight is rerun.
