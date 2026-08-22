@@ -1,6 +1,6 @@
 {
-  "version": "SOURCE_BINDINGS_MITECO_RIOJA_v1_1",
-  "verified_at": "2026-08-23T01:34:00+02:00",
+  "version": "SOURCE_BINDINGS_MITECO_RIOJA_v1_2",
+  "verified_at": "2026-08-23T01:36+02:00",
   "execution_scope": "ACTOR_08_PREFLIGHT_ONLY",
   "sources": [
     {
@@ -16,8 +16,7 @@
       "invalidGeometryCount": 0,
       "idField": "OBJECTID",
       "nativeCodeFields": ["UTMCODE", "CUADRICULA", "COD_INB"],
-      "bindingState": "VERIFIED",
-      "evidence": ["user-uploaded official MITECO ZIP", "embedded metadata ESMAGRAMAMALLA10201206250001", "MITECO current IEET page"]
+      "bindingState": "VERIFIED"
     },
     {
       "sourceId": "IDERIOJA_ADMIN_BOUNDARY",
@@ -29,8 +28,14 @@
       "layerOrTypename": "perimetro",
       "crs": "EPSG:25830",
       "getCapabilitiesSha256": "89b06e8443f2396a5af09c61a15c71a3c4f211f25451cdd8bf167bbccb6463db",
-      "bindingState": "PARTIAL",
-      "knownLimitations": ["GETCAPABILITIES_VERIFIED", "EXACT_TYPENAME_VERIFIED", "DEFAULT_CRS_VERIFIED", "DESCRIBEFEATURETYPE_NOT_YET_CAPTURED", "FEATURE_GEOMETRY_NOT_YET_CAPTURED"]
+      "describeFeatureTypeSha256": "1429e60eacdd790d7b1732708d27bbc8e04a8c885ff956481473f31e658845c4",
+      "featureSnapshotSha256": "e4e2364121b2bb3d2cb1825a0d77c51a529ab97f6c3d19bc0ceb55d885c4be24",
+      "geometryField": "msGeometry",
+      "geometryType": "MultiSurface",
+      "idField": "T211_ID",
+      "nameField": "T211_NOMBRE",
+      "featureCount": 1,
+      "bindingState": "VERIFIED"
     },
     {
       "sourceId": "IDERIOJA_GRID_10X10",
@@ -42,8 +47,18 @@
       "layerOrTypename": "cuadricula_utm_de_10_x_10_km",
       "crs": "EPSG:25830",
       "getCapabilitiesSha256": "89b06e8443f2396a5af09c61a15c71a3c4f211f25451cdd8bf167bbccb6463db",
-      "bindingState": "PARTIAL",
-      "knownLimitations": ["GETCAPABILITIES_VERIFIED", "EXACT_TYPENAME_VERIFIED", "DEFAULT_CRS_VERIFIED", "DESCRIBEFEATURETYPE_NOT_YET_CAPTURED", "FEATURE_GEOMETRIES_NOT_YET_CAPTURED"]
+      "describeFeatureTypeSha256": "1429e60eacdd790d7b1732708d27bbc8e04a8c885ff956481473f31e658845c4",
+      "featureSnapshotSha256": "1ab588d1f0eceb85fb2cb90364e15f53e76678c18b8d398f8df4669496044828",
+      "geometryField": "msGeometry",
+      "geometryType": "Polygon",
+      "idField": "T096_ID",
+      "nameField": "T096_NOMBRE",
+      "featureCount": 117,
+      "positiveAreaCrosscheckCount": 77,
+      "crosscheckState": "PASS_WITH_CODE_DIFFERENCE",
+      "codeDifferenceCount": 16,
+      "materialGeometryMismatchCount": 0,
+      "bindingState": "VERIFIED"
     },
     {
       "sourceId": "MITECO_IEPNB_EIDOS_DISTRIBUTION_CURRENT",
@@ -53,10 +68,21 @@
       "accessMethod": "WFS",
       "serviceVersion": "2.0.0",
       "layerOrTypename": "especies:distribucion_especies",
-      "crs": "EPSG:3857",
+      "defaultCrs": "EPSG:3857",
       "getCapabilitiesSha256": "3ea1fec150641eccba1ff15d9bb289001aeb0f888901698d91bc49320e360fa9",
-      "bindingState": "PARTIAL",
-      "knownLimitations": ["GETCAPABILITIES_VERIFIED", "EXACT_TYPENAME_VERIFIED", "DEFAULT_CRS_VERIFIED", "DESCRIBEFEATURETYPE_NOT_YET_CAPTURED", "LOCAL_SPECIES_AND_GEOMETRY_FIELDS_NOT_YET_VERIFIED"]
+      "describeFeatureTypeSha256": "e2bf7d274fc6934094fb76beb3850d0c525c99cfc544f54ecff54fb9b3774c31",
+      "sourceFeatureIdField": "id",
+      "spatialUnitCodeField": "cuadricula",
+      "vascularTaxonCountField": "total_taxones_plantvas",
+      "vascularTaxonIdListField": "lista_idstaxon_filtro_plantvas",
+      "geometryField": "geom",
+      "geometryType": "gml:MultiSurfacePropertyType",
+      "jsonOutputSupported": true,
+      "identityMapping": "GRID_AGGREGATE_ID_LIST; RESOLVE_EACH_ID_VIA_CURRENT_EIDOS_IDENTITY_ROUTE",
+      "singleSpeciesIdFieldExposed": false,
+      "singleSpeciesNameFieldExposed": false,
+      "schemaChangePolicy": "UNRECOGNIZED_ID_LIST_ENCODING_OR_FIELD_CHANGE=>SYSTEMIC_STOP_SOURCE_SCHEMA_CHANGED_UNHANDLED",
+      "bindingState": "VERIFIED"
     },
     {
       "sourceId": "IEPNB_EIDOS_CURRENT_PORTAL",
@@ -84,8 +110,7 @@
       "excludedIdCount": 2019,
       "unresolvedClassificationCount": 0,
       "classificationConsistency": "PASS",
-      "bindingState": "VERIFIED",
-      "knownLimitations": ["FILTER_IS_SCOPE_CLASSIFICATION_ONLY; DOES_NOT_ASSERT_RIOJA_OCCURRENCE"]
+      "bindingState": "VERIFIED"
     },
     {
       "sourceId": "MITECO_IEET_STATIC_DISTRIBUTION",
@@ -97,6 +122,7 @@
       "knownLimitations": ["STATIC_SECONDARY_SOURCE", "RAW_SNAPSHOT_BYTES_NOT_ACQUIRED_BY_08", "MUST_REMAIN_SEPARATE_FROM_CURRENT_EIDOS_EVIDENCE"]
     }
   ],
+  "allPrimarySourceBindingsVerified": true,
   "productive_taxon_discovery_by_08": 0,
   "productive_corpus_cross_by_08": 0,
   "canonical_membership_writes": 0
