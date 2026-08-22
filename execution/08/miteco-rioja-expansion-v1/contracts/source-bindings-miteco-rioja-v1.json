@@ -1,16 +1,23 @@
 {
-  "version": "SOURCE_BINDINGS_MITECO_RIOJA_v1",
-  "verified_at": "2026-08-23T01:02:00+02:00",
+  "version": "SOURCE_BINDINGS_MITECO_RIOJA_v1_1",
+  "verified_at": "2026-08-23T01:34:00+02:00",
   "execution_scope": "ACTOR_08_PREFLIGHT_ONLY",
   "sources": [
     {
       "sourceId": "MITECO_IEET_GRID_10X10",
       "role": "PRIMARY_GRID_GEOMETRY",
       "authority": "MITECO / Inventario Español de Especies Terrestres",
-      "canonicalResourceUrl": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/malla10x10_p_tcm30-200057.zip",
-      "declaredCrs": "EPSG:25830",
-      "bindingState": "PARTIAL",
-      "knownLimitations": ["OFFICIAL_RESOURCE_AND_CRS_CONFIRMED", "RAW_ZIP_SNAPSHOT_BYTES_NOT_ACQUIRED_IN_CURRENT_EXECUTION_ENVIRONMENT", "SNAPSHOT_SHA256_NOT_AVAILABLE"]
+      "canonicalResourceUrl": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/malla10x10terrestre_p_tcm30-199156.zip",
+      "snapshotSha256": "81eff6329051a6ee740b94ca42b49499c3d33721cce01738127246f4a9711c77",
+      "snapshotBytes": 3221811,
+      "featureCount": 5441,
+      "crs": "EPSG:25830",
+      "geometryType": "Polygon",
+      "invalidGeometryCount": 0,
+      "idField": "OBJECTID",
+      "nativeCodeFields": ["UTMCODE", "CUADRICULA", "COD_INB"],
+      "bindingState": "VERIFIED",
+      "evidence": ["user-uploaded official MITECO ZIP", "embedded metadata ESMAGRAMAMALLA10201206250001", "MITECO current IEET page"]
     },
     {
       "sourceId": "IDERIOJA_ADMIN_BOUNDARY",
@@ -18,8 +25,12 @@
       "authority": "Gobierno de La Rioja / IDERioja",
       "canonicalResourceUrl": "https://ogc.larioja.org/wfs/request.php",
       "accessMethod": "WFS",
+      "serviceVersion": "1.1.0",
+      "layerOrTypename": "perimetro",
+      "crs": "EPSG:25830",
+      "getCapabilitiesSha256": "89b06e8443f2396a5af09c61a15c71a3c4f211f25451cdd8bf167bbccb6463db",
       "bindingState": "PARTIAL",
-      "knownLimitations": ["OFFICIAL_WFS_BASE_CONFIRMED", "GETCAPABILITIES_QUERY_RESPONSE_NOT_ACQUIRED", "EXACT_PERIMETER_QNAME_AND_DESCRIBEFEATURETYPE_UNVERIFIED"]
+      "knownLimitations": ["GETCAPABILITIES_VERIFIED", "EXACT_TYPENAME_VERIFIED", "DEFAULT_CRS_VERIFIED", "DESCRIBEFEATURETYPE_NOT_YET_CAPTURED", "FEATURE_GEOMETRY_NOT_YET_CAPTURED"]
     },
     {
       "sourceId": "IDERIOJA_GRID_10X10",
@@ -27,8 +38,12 @@
       "authority": "Gobierno de La Rioja / IDERioja",
       "canonicalResourceUrl": "https://ogc.larioja.org/wfs/request.php",
       "accessMethod": "WFS",
+      "serviceVersion": "1.1.0",
+      "layerOrTypename": "cuadricula_utm_de_10_x_10_km",
+      "crs": "EPSG:25830",
+      "getCapabilitiesSha256": "89b06e8443f2396a5af09c61a15c71a3c4f211f25451cdd8bf167bbccb6463db",
       "bindingState": "PARTIAL",
-      "knownLimitations": ["OFFICIAL_WFS_BASE_CONFIRMED", "EXACT_10X10_QNAME_AND_GEOMETRY_SCHEMA_UNVERIFIED"]
+      "knownLimitations": ["GETCAPABILITIES_VERIFIED", "EXACT_TYPENAME_VERIFIED", "DEFAULT_CRS_VERIFIED", "DESCRIBEFEATURETYPE_NOT_YET_CAPTURED", "FEATURE_GEOMETRIES_NOT_YET_CAPTURED"]
     },
     {
       "sourceId": "MITECO_IEPNB_EIDOS_DISTRIBUTION_CURRENT",
@@ -36,8 +51,12 @@
       "authority": "MITECO / IEPNB / EIDOS",
       "canonicalResourceUrl": "https://geoserver.iepnb.es/geoserver/wfs",
       "accessMethod": "WFS",
+      "serviceVersion": "2.0.0",
+      "layerOrTypename": "especies:distribucion_especies",
+      "crs": "EPSG:3857",
+      "getCapabilitiesSha256": "3ea1fec150641eccba1ff15d9bb289001aeb0f888901698d91bc49320e360fa9",
       "bindingState": "PARTIAL",
-      "knownLimitations": ["CURRENT_OFFICIAL_GEOSERVER_DOMAIN_SUPPORTED_BY_MITECO_OPEN_DATA", "EIDOS_GETCAPABILITIES_NOT_ACQUIRED", "EXACT_SPECIESDISTRIBUTION_TYPENAME_GEOMETRY_AND_LOCAL_SPECIES_FIELDS_UNVERIFIED"]
+      "knownLimitations": ["GETCAPABILITIES_VERIFIED", "EXACT_TYPENAME_VERIFIED", "DEFAULT_CRS_VERIFIED", "DESCRIBEFEATURETYPE_NOT_YET_CAPTURED", "LOCAL_SPECIES_AND_GEOMETRY_FIELDS_NOT_YET_VERIFIED"]
     },
     {
       "sourceId": "IEPNB_EIDOS_CURRENT_PORTAL",
@@ -46,23 +65,36 @@
       "canonicalResourceUrl": "https://iepnb.gob.es/areas-tematicas/especies-silvestres/eidos?search_api_fulltext=&items_per_page=10",
       "accessMethod": "CURRENT_PORTAL",
       "bindingState": "VERIFIED",
-      "knownLimitations": ["ROUTE_IDENTITY_VERIFIED_AND_CANONICAL_IN_JBLR", "NO_PRODUCTIVE_ID_QUERIES_BY_08"]
+      "knownLimitations": ["NO_PRODUCTIVE_ID_QUERIES_BY_08"]
     },
     {
       "sourceId": "MITECO_CURRENT_PATTERN_LIST",
       "role": "TAXONOMIC_SCOPE_FILTER_AND_OFFICIAL_ID_SUPPORT",
       "authority": "MITECO",
       "canonicalResourceUrl": "https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/bdn_listas_patron.html",
-      "jsonApi": "https://iepnb.gob.es/api/catalogo/v_listapatronespecie?idtaxon=gt.0",
-      "bindingState": "PARTIAL",
-      "knownLimitations": ["CURRENT_DOWNLOAD_PAGE_AND_JSON_API_CONFIRMED", "CURRENT_MODEL_IS_MULTI_GROUP", "EXPLICIT_RELIABLE_ROW_LEVEL_VASCULAR_FLORA_CLASSIFIER_NOT_VERIFIED", "FLORA_VASCULAR_FILTER_NOT_MATERIALIZED"]
+      "snapshotFile": "lista-patron-especies-silvestres-con-normativa.xlsx",
+      "snapshotSha256": "6f98009923977acd53583b34f0bdc3307c4e7a8ef1ea8679bfaf825faaf4b15d",
+      "classificationField": "Grupo taxonómico",
+      "classificationValue": "Plantas vasculares",
+      "crosscheckField": "LP Flora vascular",
+      "crosscheckValue": "1",
+      "idField": "idtaxon",
+      "uniqueIdCount": 4527,
+      "includedVascularIdCount": 2508,
+      "excludedIdCount": 2019,
+      "unresolvedClassificationCount": 0,
+      "classificationConsistency": "PASS",
+      "bindingState": "VERIFIED",
+      "knownLimitations": ["FILTER_IS_SCOPE_CLASSIFICATION_ONLY; DOES_NOT_ASSERT_RIOJA_OCCURRENCE"]
     },
     {
       "sourceId": "MITECO_IEET_STATIC_DISTRIBUTION",
       "role": "SECONDARY_COMPLETENESS_BACKFILL",
       "authority": "MITECO",
-      "bindingState": "UNVERIFIED",
-      "knownLimitations": ["EXACT_CURRENT_STATIC_RESOURCE_VERSION_NOT_PINNED"]
+      "canonicalResourceUrl": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/bd_ieet_2015_tcm30-207985.zip",
+      "serviceVersion": "2015_STATIC_RESOURCE_EXPOSED_BY_CURRENT_MITECO_PAGE",
+      "bindingState": "VERIFIED",
+      "knownLimitations": ["STATIC_SECONDARY_SOURCE", "RAW_SNAPSHOT_BYTES_NOT_ACQUIRED_BY_08", "MUST_REMAIN_SEPARATE_FROM_CURRENT_EIDOS_EVIDENCE"]
     }
   ],
   "productive_taxon_discovery_by_08": 0,
