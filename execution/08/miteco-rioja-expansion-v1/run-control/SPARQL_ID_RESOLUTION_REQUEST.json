@@ -1,8 +1,8 @@
 {
   "enabled": true,
-  "requestId": "IEPNB_EXACT_ID_RESOLUTION_20260823_001",
-  "idtaxon": ["2443", "208841", "210528"],
-  "purpose": "Resolve current EIDOS vascular taxon IDs found in the independent MITECO-La Rioja discovery that are absent from the local MITECO vascular pattern snapshot.",
+  "requestId": "IEPNB_EXACT_ID_RESOLUTION_20260823_002",
+  "idtaxon": ["1085","1086","1807","1941","2156","2443","3521","4351","4570","4808","5455","6093","6425","6524","6543","6759","7389","7854","8606","9924","208841","210528"],
+  "purpose": "Resolve all exact current EIDOS vascular taxon IDs independently discovered in the 77 JBLR La Rioja 10x10 cells, to characterize what the distribucion_especies plantvas field actually represents.",
   "crossWithJblr": false,
-  "notes": "Exact-ID resolution only. Existing JBLR/Rioja corpus and RC2 remain prohibited inputs."
+  "notes": "Exact-ID resolution only. No RC2 or existing JBLR/Rioja corpus is used as input, filter, hint, or validation source. Preserve unresolved IDs as unresolved; no name matching and no absence inference."
 }
