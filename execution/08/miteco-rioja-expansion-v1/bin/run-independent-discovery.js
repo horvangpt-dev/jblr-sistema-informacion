@@ -14,6 +14,12 @@ const {
   sha256Utf8
 } = require('../src/independent-discovery-core');
 
+const EIDOS_WFS_ENDPOINTS = [
+  'https://geoserver.iepnb.es/geoserver/wfs',
+  'https://geoserver.iepnb.es/geoserver/especies/wfs',
+  'https://geoserver.iepnb.es/geoserver/especies/distribucion_especies/wfs'
+];
+
 function parseArgs(argv) {
   const out = {};
   for (let i = 2; i < argv.length; i += 1) {
@@ -61,13 +67,45 @@ async function fetchText(url, timeoutMs) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const res = await fetch(url, { signal: controller.signal, headers: { 'user-agent': 'JBLR-MITECO-RIOJA-DISCOVERY/1.0' } });
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        'accept': 'application/json,application/geo+json;q=0.9,*/*;q=0.5',
+        'accept-language': 'es-ES,es;q=0.9,en;q=0.7',
+        'cache-control': 'no-cache',
+        'referer': 'https://iepnb.gob.es/',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 JBLR/1.0'
+      }
+    });
     const text = await res.text();
-    if (!res.ok) throw new Error(`SOURCE_HTTP_${res.status}`);
+    if (!res.ok) {
+      const err = new Error(`SOURCE_HTTP_${res.status}`);
+      err.status = res.status;
+      err.responsePreview = text.slice(0, 500);
+      throw err;
+    }
     return { status: res.status, text, contentType: res.headers.get('content-type') };
   } finally {
     clearTimeout(timer);
   }
+}
+
+async function fetchWithEndpointFallback({registry,startIndex,pageSize,timeoutMs}) {
+  const attempts=[];
+  let lastErr=null;
+  for (const endpoint of EIDOS_WFS_ENDPOINTS) {
+    const url=buildEidosDistributionRequest({bbox:registry.bbox,startIndex,count:pageSize,srsName:registry.crs,endpoint});
+    try {
+      const fetched=await fetchText(url,timeoutMs);
+      return {fetched,url,endpoint,attempts};
+    } catch(err) {
+      lastErr=err;
+      attempts.push({endpoint,status:err.status ?? null,error:err.message,responsePreview:err.responsePreview ?? null});
+      if (![403,404].includes(err.status)) break;
+    }
+  }
+  const detail=attempts.map(a=>`${a.endpoint}:${a.status ?? a.error}`).join('|');
+  throw new Error(`SOURCE_UNAVAILABLE:${lastErr?.message || 'UNKNOWN'}:ENDPOINT_ATTEMPTS=${detail}`);
 }
 
 async function acquireLive({ registry, outDir, pageSize, timeoutMs, maxPages }) {
@@ -79,14 +117,14 @@ async function acquireLive({ registry, outDir, pageSize, timeoutMs, maxPages }) 
   let paginationComplete = false;
   let sourceErrors = 0;
   for (let pageNo = 0; pageNo < maxPages; pageNo += 1) {
-    const url = buildEidosDistributionRequest({ bbox: registry.bbox, startIndex, count: pageSize, srsName: registry.crs });
-    let fetched;
+    let result;
     try {
-      fetched = await fetchText(url, timeoutMs);
+      result = await fetchWithEndpointFallback({registry,startIndex,pageSize,timeoutMs});
     } catch (err) {
       sourceErrors += 1;
-      throw new Error(`SOURCE_UNAVAILABLE:${err.message}`);
+      throw err;
     }
+    const {fetched,url,endpoint,attempts}=result;
     const rawHash = sha256Utf8(fetched.text);
     const rawFile = `eidos-page-${String(pageNo + 1).padStart(4, '0')}.json`;
     fs.writeFileSync(path.join(rawDir, rawFile), fetched.text);
@@ -99,6 +137,8 @@ async function acquireLive({ registry, outDir, pageSize, timeoutMs, maxPages }) 
     requests.push({
       requestId: `REQ-${String(pageNo + 1).padStart(4, '0')}`,
       requestUrl: url,
+      endpointUsed:endpoint,
+      endpointFallbackAttempts:attempts,
       startIndex,
       count: pageSize,
       httpStatus: fetched.status,
