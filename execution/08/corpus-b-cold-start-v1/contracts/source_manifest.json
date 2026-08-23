@@ -1,0 +1,17 @@
+{
+  "source_drive_id": "10SgY3zlEWKXbRSOfO8HvynvJMF5r0zOX",
+  "source_title": "SOURCE_RAW_0_Lista_patron_especies_La_Rioja_2024-09-19",
+  "source_sha256": "f3b2c9ca0921779cf5131ea8d4c98a35299a325cf0be4f419cfec4d39e667f4f",
+  "source_sheet": "lista_patron_especies_LaRioja 1",
+  "source_data_rows": 5661,
+  "filter": {"Reino": "Plantae", "Phylum": "Tracheophyta"},
+  "expected": {
+    "VASCULAR_RAW_ROWS": 2262,
+    "EIDOS_PRESENT_AND_PARSEABLE": 1924,
+    "EIDOS_EMPTY_IN_SOURCE": 338,
+    "EIDOS_PARSE_FAILURE": 0
+  },
+  "execution_mode": "COLD_START",
+  "corpus_a_cross": false,
+  "productive_execution_by_08": 0
+}
