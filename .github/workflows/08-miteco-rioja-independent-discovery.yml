@@ -9,7 +9,7 @@ on:
       - 'execution/08/miteco-rioja-expansion-v1/run-control/REQUEST.json'
 
 permissions:
-  contents: read
+  contents: write
 
 env:
   ROOT: execution/08/miteco-rioja-expansion-v1
@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: 08-stime-execution-v1
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -76,3 +78,83 @@ jobs:
           path: ${{ runner.temp }}/miteco-rioja-output
           if-no-files-found: error
           retention-days: 90
+
+      - name: Publish observable PASS receipt
+        if: steps.request.outputs.run == 'true' && success()
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const root=process.env.ROOT;
+          const out=process.env.RUNNER_TEMP+'/miteco-rioja-output';
+          const req=JSON.parse(fs.readFileSync(root+'/run-control/REQUEST.json','utf8'));
+          const run=JSON.parse(fs.readFileSync(out+'/RUN_MANIFEST_MITECO_DISCOVERY_v1.json','utf8'));
+          const corpus=JSON.parse(fs.readFileSync(out+'/MITECO_RIOJA_PARALLEL_CORPUS_v1.json','utf8'));
+          const qa=run.qa || corpus.payload?.qa || {};
+          if (qa.systemicQa !== 'PASS') throw new Error('RECEIPT_REFUSES_NON_PASS_CORPUS');
+          const receipt={
+            receiptVersion:'MITECO_RIOJA_DISCOVERY_RECEIPT_v1',
+            requestId:req.requestId || null,
+            githubRunId:String(process.env.GITHUB_RUN_ID),
+            githubRunAttempt:String(process.env.GITHUB_RUN_ATTEMPT || '1'),
+            status:'PASS',
+            observedAt:new Date().toISOString(),
+            corpusSha256:run.corpusSha256 || corpus.sha256 || null,
+            qa,
+            counts:{
+              uniqueEidosIdsDiscovered:qa.uniqueEidosIdsDiscovered ?? null,
+              confirmedInteriorTaxa:qa.confirmedInteriorTaxa ?? null,
+              borderGridCandidateTaxa:qa.borderGridCandidateTaxa ?? null,
+              identityResolvedTaxa:qa.identityResolvedTaxa ?? null,
+              identityUnresolvedTaxa:qa.identityUnresolvedTaxa ?? null,
+              rawFeatureCount:qa.rawFeatureCount ?? null,
+              featuresMatchingManifest:qa.featuresMatchingManifest ?? null
+            },
+            artifactName:`MITECO_RIOJA_INDEPENDENT_DISCOVERY_${process.env.GITHUB_RUN_ID}`,
+            existingRiojaCorpusInputUsed:false,
+            rc2InputUsed:false,
+            crossWithJblrPerformed:false,
+            canonicalEffect:'NONE',
+            nextGate:'FREEZE_AND_PRESERVE_MITECO_PARALLEL_CORPUS_BEFORE_ANY_JBLR_CROSS'
+          };
+          fs.writeFileSync(root+'/run-control/LAST_RESULT.json',JSON.stringify(receipt,null,2)+'\n');
+          NODE
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/run-control/LAST_RESULT.json"
+          git commit -m "receipt(08): record MITECO Rioja discovery PASS ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:08-stime-execution-v1
+
+      - name: Publish observable FAILURE receipt
+        if: steps.request.outputs.run == 'true' && failure()
+        env:
+          JOB_STATUS: ${{ job.status }}
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const root=process.env.ROOT;
+          const req=JSON.parse(fs.readFileSync(root+'/run-control/REQUEST.json','utf8'));
+          const receipt={
+            receiptVersion:'MITECO_RIOJA_DISCOVERY_RECEIPT_v1',
+            requestId:req.requestId || null,
+            githubRunId:String(process.env.GITHUB_RUN_ID),
+            githubRunAttempt:String(process.env.GITHUB_RUN_ATTEMPT || '1'),
+            status:'FAIL',
+            observedAt:new Date().toISOString(),
+            jobStatus:process.env.JOB_STATUS || 'failure',
+            corpusSha256:null,
+            existingRiojaCorpusInputUsed:false,
+            rc2InputUsed:false,
+            crossWithJblrPerformed:false,
+            canonicalEffect:'NONE',
+            failureSemantics:'SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND_OR_ABSENCE',
+            nextGate:'INSPECT_WORKFLOW_LOGS_AND_RETRY_AFTER_FIX'
+          };
+          fs.writeFileSync(root+'/run-control/LAST_RESULT.json',JSON.stringify(receipt,null,2)+'\n');
+          NODE
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/run-control/LAST_RESULT.json"
+          git commit -m "receipt(08): record MITECO Rioja discovery FAILURE ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:08-stime-execution-v1
