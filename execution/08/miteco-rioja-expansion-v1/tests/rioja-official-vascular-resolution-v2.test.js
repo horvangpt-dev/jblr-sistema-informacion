@@ -28,3 +28,4 @@ t('22 species/subspecies remain distinct names',()=>{assert.notEqual(M.keyName('
 t('23 hybrid formula remains distinct',()=>assert.notEqual(M.keyName('A x B'),M.keyName('A')));
 t('24 direct ID prevents need for alias stage by terminal status',()=>{let r=rec();M.directStage(r,{idtaxon:'99'});assert.equal(r.resolution_status,M.STATUSES.DIRECT);});
 console.log(`RESULT ${pass}/24 PASS`);
+// QA_TRIGGER_2026_08_23
