@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "requestId": "IEPNB_SPARQL_TARGETED_RELATION_PROBE_001",
+  "controlMitecoTaxonId": "854",
+  "controlScientificName": "Astragalus devesae",
+  "purpose": "Inspect exact outgoing/incoming linked-data relations for a known MITECO vascular-plant taxon and test whether current EIDOS linked data exposes spatial/grid distribution relations.",
+  "crossWithJblr": false,
+  "notes": "The MITECO national pattern list is used only to select a known official ID for schema probing; no Rioja/JBLR corpus is used."
+}
