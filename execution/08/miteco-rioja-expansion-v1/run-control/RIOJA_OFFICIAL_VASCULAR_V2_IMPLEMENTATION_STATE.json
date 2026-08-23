@@ -1,0 +1,22 @@
+{
+  "implementation_state":"IMPLEMENTED_PENDING_RUNTIME_TEST_EXECUTION",
+  "contract":"CORPUS_RIOJA_OFICIAL_VASCULAR_v1",
+  "event":"JBLR-EVT-04-20260823-MSG-08V2-RIOJA-OFFICIAL-VASCULAR-EXECUTE-001",
+  "amendment":"JBLR-EVT-04-20260823-AMEND-08V2-RIOJA-ID-RESOLUTION-SEQUENCE-001",
+  "execution_order":["DIRECT_SOURCE_ID_CLOSE","EXTERNAL_SYNONYM_SWEEP","EIDOS_ALL_VALIDATED_ALIASES","MITECO_NATIVE_TREATMENT_AND_SYNONYM_EXPANSION","HUMAN_REVIEW_REMAINDER"],
+  "direct_id_stage_implemented":true,
+  "external_synonym_stage_implemented":true,
+  "eidos_alias_stage_implemented":true,
+  "miteco_native_synonym_stage_implemented":true,
+  "human_review_stage_implemented":true,
+  "raw_evidence_store_implemented":true,
+  "deduplication_implemented":true,
+  "fixpoint_implemented":true,
+  "spanish_iberian_source_priority_implemented":true,
+  "productive_execution_by_08":0,
+  "productive_corpus_materialization_by_08":0,
+  "rc2_mutation":0,
+  "neon_productive_writes":0,
+  "ready_for_09":false,
+  "ready_blocker":"Repository write interface does not execute Node tests; runtime test evidence still required before READY_FOR_09 can be asserted."
+}
