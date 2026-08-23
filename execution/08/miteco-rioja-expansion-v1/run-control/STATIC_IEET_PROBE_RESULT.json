@@ -1,9 +1,9 @@
 {
-  "probeVersion": "MITECO_IEET_STATIC_PROBE_v1",
+  "probeVersion": "MITECO_IEET_STATIC_PROBE_v2",
   "sourceUrl": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/bd_ieet_2015_tcm30-207985.zip",
-  "observedAt": "2026-08-23T07:27:28.163Z",
+  "observedAt": "2026-08-23T07:31:08.260Z",
   "status": "PASS",
-  "semantics": "SCHEMA_PROBE_ONLY; NOT_CURRENT_EIDOS; NO_JBLR_CORPUS_INPUT; NO_OCCURRENCE_ASSERTION",
+  "semantics": "SCHEMA_AND_SCOPE_PROBE_ONLY; NOT_CURRENT_EIDOS; NO_JBLR_CORPUS_INPUT; NO_OCCURRENCE_ASSERTION",
   "httpStatus": 200,
   "archiveBytes": 6378906,
   "archiveSha256": "5244f91485f7b421883240c007d7a8b459f0f0a067c17e82605d46c3a1d31262",
@@ -22,12 +22,141 @@
       "tableProbes": [
         {
           "table": "BD_IEET_2015",
-          "sample": "IdEspecie,Grupo,Nombre,Genero,Especie,Infra,CUTM10x10,EstadoCUTM,FechaCUTM,OrigenCUTM,DescripcionOrigenCUTM,Autor,Reino,Division,Clase,Orden,Familia\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM06\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM21\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM20\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM19\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM18\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM17\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM16\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM15\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM14\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM13\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM12\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM11\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM10\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM09\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUL90\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM00\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUL16\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUL94\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUL95\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUL96\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUL97\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM08\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUL99\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM07\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM01\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM02\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM03\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM04\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n\"{001EA522-FF81-4C79-95E289B3F453037F}\",\"Mamíferos\",\"Rattus norvegicus\",\"Rattus\",\"norvegicus\",,\"30TUM05\",\"Confirmada\",\"01/01/07 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de los Mamíferos Terrestres de España\",\"(Berkenhout, 1769)\",\"Animalia\",\"Chordata\",\"Mammalia\",\"Roedores\",\"Muridae\"\n",
-          "plantKeywordMatches": "\"{00999DC5-A275-4524-AF31813A6E2B267B}\",\"Flora vascular\",\"Astragalus devesae\",\"Astragalus\",\"devesae\",,\"30TUK49\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"Talavera & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Fabales\",\"LEGUMINOSAE (FABACEAE)\"\n\"{00999DC5-A275-4524-AF31813A6E2B267B}\",\"Flora vascular\",\"Astragalus devesae\",\"Astragalus\",\"devesae\",,\"30TUL40\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"Talavera & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Fabales\",\"LEGUMINOSAE (FABACEAE)\"\n\"{00999DC5-A275-4524-AF31813A6E2B267B}\",\"Flora vascular\",\"Astragalus devesae\",\"Astragalus\",\"devesae\",,\"30TUK09\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"Talavera & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Fabales\",\"LEGUMINOSAE (FABACEAE)\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF10\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{01A7CDF0-998A-4E41-AB044B03652B778E}\",\"Flora vascular\",\"Limonium vigoi\",\"Limonium\",\"vigoi\",,\"31TCF13\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"L. Sáez & al.\",\"Plantae\",\"Magnoliophyta\",\"Magnoliopsida\",\"Plumbaginales\",\"Plumbaginaceae\"\n\"{02E25EB8-C00C-429C-AC483B2DE56D27E2}\",\"Flora vascular\",\"Psilotum nudum\",\"Psilotum\",\"nudum\",,\"30STF72\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"(L.) P. Beauv.\",\"Plantae\",\"Pteridophyta\",\"Psilotopsida\",\"Psilotales\",\"Psilotaceae\"\n\"{02E25EB8-C00C-429C-AC483B2DE56D27E2}\",\"Flora vascular\",\"Psilotum nudum\",\"Psilotum\",\"nudum\",,\"30STF61\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"(L.) P. Beauv.\",\"Plantae\",\"Pteridophyta\",\"Psilotopsida\",\"Psilotales\",\"Psilotaceae\"\n\"{02E25EB8-C00C-429C-AC483B2DE56D27E2}\",\"Flora vascular\",\"Psilotum nudum\",\"Psilotum\",\"nudum\",,\"30STF61\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"(L.) P. Beauv.\",\"Plantae\",\"Pteridophyta\",\"Psilotopsida\",\"Psilotales\",\"Psilotaceae\"\n\"{02E25EB8-C00C-429C-AC483B2DE56D27E2}\",\"Flora vascular\",\"Psilotum nudum\",\"Psilotum\",\"nudum\",,\"30STF51\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"(L.) P. Beauv.\",\"Plantae\",\"Pteridophyta\",\"Psilotopsida\",\"Psilotales\",\"Psilotaceae\"\n\"{02E25EB8-C00C-429C-AC483B2DE56D27E2}\",\"Flora vascular\",\"Psilotum nudum\",\"Psilotum\",\"nudum\",,\"30STF72\",\"Confirmada\",\"01/01/04 00:00:00\",\"Atlas y/o Libro Rojo\",\"Atlas y Libro Rojo de la Flora Vascular Amenazada de España 2004\",\"(L.) P. Beauv.\",\"Plantae\",\"Pteridophyta\",\"Psilotopsida\",\"Psilotales\",\"Psilotaceae\"\n"
+          "exportStatus": "PASS",
+          "analysisStatus": "PASS",
+          "columns": [
+            "IdEspecie",
+            "Grupo",
+            "Nombre",
+            "Genero",
+            "Especie",
+            "Infra",
+            "CUTM10x10",
+            "EstadoCUTM",
+            "FechaCUTM",
+            "OrigenCUTM",
+            "DescripcionOrigenCUTM",
+            "Autor",
+            "Reino",
+            "Division",
+            "Clase",
+            "Orden",
+            "Familia"
+          ],
+          "totalRows": 656025,
+          "overall": {
+            "Grupo": {
+              "Mamíferos": 92195,
+              "Anfibios": 30606,
+              "Invertebrados": 37482,
+              "Reptiles": 46545,
+              "Flora vascular": 9386,
+              "Aves": 419541,
+              "Peces continentales": 19795,
+              "Flora no vascular": 475
+            },
+            "Reino": {
+              "Animalia": 646164,
+              "Plantae": 9861
+            },
+            "Division": {
+              "Chordata": 608682,
+              "Arthropoda": 35966,
+              "Magnoliophyta": 9016,
+              "Pteridophyta": 342,
+              "Mollusca": 1516,
+              "Marchantiophyta": 142,
+              "Bryophyta": 333,
+              "Coniferophyta": 28
+            },
+            "Clase": {
+              "Mammalia": 92195,
+              "Amphibia": 30606,
+              "Insecta": 35150,
+              "Reptilia": 46545,
+              "Magnoliopsida": 7736,
+              "Aves": 419541,
+              "Arachnida": 302,
+              "Psilotopsida": 5,
+              "Gastropoda": 1180,
+              "Actinopterygii": 19656,
+              "Liliopsida": 1280,
+              "Polypodiopsida": 322,
+              "-": 421,
+              "Pinopsida": 28,
+              "Filicopsida": 5,
+              "Bivalvia": 336,
+              "Malacostraca": 514,
+              "Cephalaspidomorphi": 139,
+              "Bryopsida": 54,
+              "Lycopodiopsida": 10
+            }
+          },
+          "selected77": {
+            "rowCount": 12996,
+            "uniqueNames": 509,
+            "Grupo": {
+              "Mamíferos": 2249,
+              "Anfibios": 622,
+              "Invertebrados": 662,
+              "Aves": 8014,
+              "Peces continentales": 535,
+              "Reptiles": 880,
+              "Flora vascular": 31,
+              "Flora no vascular": 3
+            },
+            "Reino": {
+              "Animalia": 12962,
+              "Plantae": 34
+            },
+            "Division": {
+              "Chordata": 12300,
+              "Arthropoda": 638,
+              "Mollusca": 24,
+              "Magnoliophyta": 31,
+              "Bryophyta": 3
+            },
+            "Clase": {
+              "Mammalia": 2249,
+              "Amphibia": 622,
+              "Insecta": 618,
+              "Aves": 8014,
+              "Actinopterygii": 535,
+              "Reptilia": 880,
+              "Gastropoda": 7,
+              "Bivalvia": 17,
+              "Magnoliopsida": 29,
+              "-": 3,
+              "Liliopsida": 2,
+              "Malacostraca": 20
+            }
+          }
         }
       ]
     }
   ],
   "hasReadableDatabase": true,
-  "hasPlantKeywordEvidence": true
+  "hasSelectedRiojaRows": true,
+  "selectedRiojaGroupLabels": [
+    "Anfibios",
+    "Aves",
+    "Flora no vascular",
+    "Flora vascular",
+    "Invertebrados",
+    "Mamíferos",
+    "Peces continentales",
+    "Reptiles"
+  ],
+  "selectedRiojaKingdomLabels": [
+    "Animalia",
+    "Plantae"
+  ],
+  "selectedRiojaDivisionLabels": [
+    "Arthropoda",
+    "Bryophyta",
+    "Chordata",
+    "Magnoliophyta",
+    "Mollusca"
+  ],
+  "hasExplicitVascularFloraGroup": true
 }

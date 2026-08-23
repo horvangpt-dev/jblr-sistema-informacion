@@ -1,7 +1,7 @@
 {
   "probeVersion": "IEPNB_EIDOS_SPARQL_PROBE_v1",
   "endpoint": "https://datos.iepnb.es/sparql",
-  "observedAt": "2026-08-23T07:27:11.273Z",
+  "observedAt": "2026-08-23T07:30:53.888Z",
   "perQueryTimeoutMs": 10000,
   "probes": [
     {
