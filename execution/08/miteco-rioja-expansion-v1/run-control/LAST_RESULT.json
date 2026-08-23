@@ -1,10 +1,10 @@
 {
   "receiptVersion": "MITECO_RIOJA_DISCOVERY_RECEIPT_v1",
-  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_003",
-  "githubRunId": "32625366548",
+  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_005",
+  "githubRunId": "32625561225",
   "githubRunAttempt": "1",
   "status": "FAIL",
-  "observedAt": "2026-08-23T07:22:01.208Z",
+  "observedAt": "2026-08-23T07:27:34.157Z",
   "jobStatus": "failure",
   "corpusSha256": null,
   "existingRiojaCorpusInputUsed": false,
@@ -12,5 +12,5 @@
   "crossWithJblrPerformed": false,
   "canonicalEffect": "NONE",
   "failureSemantics": "SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND_OR_ABSENCE",
-  "nextGate": "INSPECT_WORKFLOW_LOGS_AND_RETRY_AFTER_FIX"
+  "nextGate": "USE_VERIFIED_OFFICIAL_FALLBACK_PROBE_RESULTS; DO_NOT_INFER_ABSENCE"
 }
