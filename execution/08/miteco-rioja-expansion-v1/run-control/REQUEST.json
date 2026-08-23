@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "requestId": "NOT_REQUESTED",
+  "mode": "live",
+  "purpose": "Generate the independent MITECO-La Rioja parallel corpus from MITECO/EIDOS only.",
+  "crossWithJblr": false,
+  "notes": "Set enabled=true only by explicit request. Never use RC2 or any existing Rioja corpus as discovery input."
+}
