@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "requestId": "MITECO_RIOJA_IEET_STATIC_2015_RELEASE_001",
+  "purpose": "Generate and freeze the independent historical MITECO IEET 2015 vascular-flora layer for the frozen 77-cell Rioja grid.",
+  "crossWithJblr": false,
+  "scopeFilter": "Grupo=Flora vascular AND CUTM10x10 in frozen 77-cell registry",
+  "notes": "This is a historical secondary MITECO layer, not the complete current EIDOS corpus. It must remain separate and noncanonical until later comparison gates."
+}
