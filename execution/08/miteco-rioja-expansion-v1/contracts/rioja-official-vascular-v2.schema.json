@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"JBLR/RIOJA_OFFICIAL_VASCULAR_v2",
+  "type":"object",
+  "required":["RIOJA_ID","NOMBRE_RIOJA_VERBATIM","RANK_RIOJA_VERBATIM","SOURCE_ROW_POINTER","SOURCE_SNAPSHOT_HASH"],
+  "properties":{
+    "RIOJA_ID":{"type":["string","integer"]},
+    "NOMBRE_RIOJA_VERBATIM":{"type":"string","minLength":1},
+    "RANK_RIOJA_VERBATIM":{"type":"string"},
+    "SOURCE_ROW_POINTER":{"type":"string","minLength":1},
+    "SOURCE_SNAPSHOT_HASH":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+    "MITECO_IDTAXON":{"type":["string","null"],"pattern":"^$|^[0-9]+$"},
+    "VASCULAR_MEMBERSHIP":{"enum":["CONFIRMED_VASCULAR","CONFIRMED_NON_VASCULAR","VASCULAR_MEMBERSHIP_UNRESOLVED","SOURCE_CLASSIFICATION_CONFLICT"]},
+    "HYBRID_STATE":{"enum":["NAMED_NOTHOTAXON","EXPLICIT_HYBRID_FORMULA","HYBRID_IDENTITY_UNRESOLVED","NON_HYBRID"]}
+  },
+  "additionalProperties":true
+}
