@@ -1,10 +1,11 @@
 {
   "enabled": true,
-  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_004",
+  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_005",
   "mode": "live",
-  "purpose": "Probe official IEPNB SPARQL linked-data fallback while preserving independent MITECO-La Rioja discovery semantics.",
+  "purpose": "Probe both official IEPNB SPARQL linked data and MITECO IEET static snapshot while preserving independent MITECO-La Rioja discovery semantics.",
   "crossWithJblr": false,
   "observabilityReceipt": true,
   "probeSparqlFallback": true,
-  "notes": "EIDOS GeoServer returned HTTP 403 from GitHub runners on global/workspace/layer routes. This run probes official datos.iepnb.es SPARQL structure before any fallback implementation. RC2 and every existing Rioja/JBLR corpus remain prohibited discovery inputs."
+  "probeStaticIeetFallback": true,
+  "notes": "EIDOS GeoServer is blocked by HTTP 403 from GitHub runners. This run probes official alternative MITECO/IEPNB routes and records their real schemas before any fallback implementation. RC2 and every existing Rioja/JBLR corpus remain prohibited discovery inputs."
 }
