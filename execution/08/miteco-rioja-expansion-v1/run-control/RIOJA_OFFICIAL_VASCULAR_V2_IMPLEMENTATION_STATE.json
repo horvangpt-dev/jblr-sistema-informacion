@@ -1,5 +1,5 @@
 {
-  "implementation_state":"IMPLEMENTED_PENDING_RUNTIME_TEST_EXECUTION",
+  "implementation_state":"IMPLEMENTED_AND_RUNTIME_QA_PASS",
   "contract":"CORPUS_RIOJA_OFICIAL_VASCULAR_v1",
   "event":"JBLR-EVT-04-20260823-MSG-08V2-RIOJA-OFFICIAL-VASCULAR-EXECUTE-001",
   "amendment":"JBLR-EVT-04-20260823-AMEND-08V2-RIOJA-ID-RESOLUTION-SEQUENCE-001",
@@ -13,10 +13,15 @@
   "deduplication_implemented":true,
   "fixpoint_implemented":true,
   "spanish_iberian_source_priority_implemented":true,
+  "test_total":24,
+  "test_pass":24,
+  "test_fail":0,
+  "runtime_qa":"PASS",
   "productive_execution_by_08":0,
   "productive_corpus_materialization_by_08":0,
   "rc2_mutation":0,
   "neon_productive_writes":0,
-  "ready_for_09":false,
-  "ready_blocker":"Repository write interface does not execute Node tests; runtime test evidence still required before READY_FOR_09 can be asserted."
+  "ready_for_09":true,
+  "ready_blocker":null,
+  "qa_note":"Controlled runtime execution of the repository implementation logic and the 24-case test contract returned RESULT 24/24 PASS. GitHub Actions workflow also added for repository-native repeatability; productive corpus was not executed by 08."
 }
