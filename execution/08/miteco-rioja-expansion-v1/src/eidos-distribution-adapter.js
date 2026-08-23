@@ -46,10 +46,11 @@ function extractEidosDistributionFeature(feature) {
   };
 }
 
-function buildEidosDistributionRequest({bbox, startIndex = 0, count = 10000, srsName = 'EPSG:25830'}) {
+function buildEidosDistributionRequest({bbox, startIndex = 0, count = 10000, srsName = 'EPSG:25830', endpoint = 'https://geoserver.iepnb.es/geoserver/wfs'}) {
   if (!Array.isArray(bbox) || bbox.length !== 4 || !bbox.every(Number.isFinite)) throw new Error('BBOX_REQUIRED');
   if (!Number.isInteger(startIndex) || startIndex < 0) throw new Error('START_INDEX_INVALID');
   if (!Number.isInteger(count) || count <= 0) throw new Error('COUNT_INVALID');
+  if (typeof endpoint !== 'string' || !endpoint.startsWith('https://geoserver.iepnb.es/geoserver/')) throw new Error('EIDOS_ENDPOINT_INVALID');
   const params = new URLSearchParams({
     service: 'WFS',
     version: '2.0.0',
@@ -61,7 +62,7 @@ function buildEidosDistributionRequest({bbox, startIndex = 0, count = 10000, srs
     startIndex: String(startIndex),
     count: String(count)
   });
-  return `https://geoserver.iepnb.es/geoserver/wfs?${params.toString()}`;
+  return `${endpoint}?${params.toString()}`;
 }
 
 function pageCompleteness({numberMatched, numberReturned, startIndex, count}) {
