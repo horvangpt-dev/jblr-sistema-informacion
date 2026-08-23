@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "requestId": "IEPNB_EXACT_ID_RESOLUTION_20260823_001",
+  "idtaxon": ["2443", "208841", "210528"],
+  "purpose": "Resolve current EIDOS vascular taxon IDs found in the independent MITECO-La Rioja discovery that are absent from the local MITECO vascular pattern snapshot.",
+  "crossWithJblr": false,
+  "notes": "Exact-ID resolution only. Existing JBLR/Rioja corpus and RC2 remain prohibited inputs."
+}
