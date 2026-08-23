@@ -1,8 +1,8 @@
 {
-  "enabled": false,
-  "requestId": "NOT_REQUESTED",
+  "enabled": true,
+  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_001",
   "mode": "live",
   "purpose": "Generate the independent MITECO-La Rioja parallel corpus from MITECO/EIDOS only.",
   "crossWithJblr": false,
-  "notes": "Set enabled=true only by explicit request. Never use RC2 or any existing Rioja corpus as discovery input."
+  "notes": "Direct user-authorized live discovery. RC2 and every existing Rioja/JBLR corpus are prohibited discovery inputs. Output must remain parallel and noncanonical."
 }
