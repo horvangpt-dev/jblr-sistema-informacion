@@ -1,0 +1,25 @@
+name: 08 Corpus B cold-start QA
+
+on:
+  push:
+    branches:
+      - 08-corpus-b-cold-start-v1
+    paths:
+      - 'execution/08/corpus-b-cold-start-v1/**'
+      - '.github/workflows/08-corpus-b-cold-start-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run actor 08 controlled QA
+        working-directory: execution/08/corpus-b-cold-start-v1
+        run: node --test test/*.test.js
