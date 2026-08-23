@@ -48,6 +48,13 @@ jobs:
         working-directory: execution/08
         run: node --test test/miteco-rioja-expansion-v1-eidos-adapter.test.js test/miteco-rioja-independent-discovery.test.js
 
+      - name: Probe official IEPNB SPARQL fallback
+        if: steps.request.outputs.run == 'true'
+        continue-on-error: true
+        shell: bash
+        run: |
+          node "$ROOT/bin/probe-iepnb-sparql.js" "$ROOT/run-control/SPARQL_PROBE_RESULT.json"
+
       - name: Live MITECO/EIDOS distribution discovery
         if: steps.request.outputs.run == 'true'
         shell: bash
@@ -122,6 +129,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$ROOT/run-control/LAST_RESULT.json"
+          test ! -f "$ROOT/run-control/SPARQL_PROBE_RESULT.json" || git add "$ROOT/run-control/SPARQL_PROBE_RESULT.json"
           git commit -m "receipt(08): record MITECO Rioja discovery PASS ${GITHUB_RUN_ID}" || true
           git push origin HEAD:08-stime-execution-v1
 
@@ -149,12 +157,13 @@ jobs:
             crossWithJblrPerformed:false,
             canonicalEffect:'NONE',
             failureSemantics:'SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND_OR_ABSENCE',
-            nextGate:'INSPECT_WORKFLOW_LOGS_AND_RETRY_AFTER_FIX'
+            nextGate:'INSPECT_WORKFLOW_LOGS_AND_USE_PROBED_OFFICIAL_FALLBACK_IF_VALID'
           };
           fs.writeFileSync(root+'/run-control/LAST_RESULT.json',JSON.stringify(receipt,null,2)+'\n');
           NODE
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$ROOT/run-control/LAST_RESULT.json"
+          test ! -f "$ROOT/run-control/SPARQL_PROBE_RESULT.json" || git add "$ROOT/run-control/SPARQL_PROBE_RESULT.json"
           git commit -m "receipt(08): record MITECO Rioja discovery FAILURE ${GITHUB_RUN_ID}" || true
           git push origin HEAD:08-stime-execution-v1
