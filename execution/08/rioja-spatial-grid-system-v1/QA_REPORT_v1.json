@@ -1,0 +1,48 @@
+{
+  "qa_version": "JBLR_RIOJA_SPATIAL_GRID_QA_v1",
+  "test_total": 25,
+  "pass": 25,
+  "fail": 0,
+  "tests": [
+    {"test":"BOUNDARY_VALID","pass":true},
+    {"test":"BOUNDARY_AREA_POSITIVE","pass":true},
+    {"test":"GRID10_COUNT_77","pass":true},
+    {"test":"GRID10_FULL_26","pass":true},
+    {"test":"GRID10_PARTIAL_51","pass":true},
+    {"test":"GRID5_COUNT_261","pass":true},
+    {"test":"GRID5_FULL_147","pass":true},
+    {"test":"GRID5_PARTIAL_114","pass":true},
+    {"test":"GRID5_AREA_PARTITION","pass":true},
+    {"test":"GRID1_COUNT_5375","pass":true},
+    {"test":"GRID1_FULL_4706","pass":true},
+    {"test":"GRID1_PARTIAL_669","pass":true},
+    {"test":"GRID1_AREA_PARTITION","pass":true},
+    {"test":"GRID1_CODES_UNIQUE","pass":true},
+    {"test":"GRID1_ALL_HAVE_10KM_PARENT","pass":true},
+    {"test":"GRID1_ALL_HAVE_5KM_PARENT","pass":true},
+    {"test":"OFFICIAL_CODE_EXAMPLE_30TWN3101","pass":true},
+    {"test":"ZERO_AREA_TOUCHES_EXCLUDED","pass":true},
+    {"test":"INTERSECTION_RATIO_BOUNDED","pass":true},
+    {"test":"MATERIALIZATION_POLICY_FINE_VIRTUAL","pass":true},
+    {"test":"EXACT_COORDINATE_POLICY","pass":true},
+    {"test":"NO_TAXON_DISCOVERY","pass":true},
+    {"test":"NO_MEMBERSHIP_MUTATION","pass":true},
+    {"test":"NO_NEON_WRITES","pass":true},
+    {"test":"SAMPLE_POINT_HIERARCHY","pass":true}
+  ],
+  "sample_internal_point": {
+    "easting": 542721.1186233737,
+    "northing": 4681327.6032785,
+    "in_rioja": true,
+    "grid_10km": "30TWM48",
+    "grid_5km": "JBLR5K:30TWM48:WS",
+    "grid_1km": "30TWM4281",
+    "grid_100m": "30TWM427813",
+    "grid_10m": "30TWM42728132"
+  },
+  "area_partition": {
+    "rioja_area_m2": 5041355517.26916,
+    "grid5_sum_m2": 5041355517.269161,
+    "grid1_sum_m2": 5041355517.269162
+  }
+}
