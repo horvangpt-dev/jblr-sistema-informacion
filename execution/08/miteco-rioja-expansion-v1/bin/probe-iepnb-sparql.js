@@ -5,7 +5,7 @@ const path=require('node:path');
 
 const ENDPOINT='https://datos.iepnb.es/sparql';
 
-async function querySparql(query, timeoutMs=60000){
+async function querySparql(query, timeoutMs=10000){
   const controller=new AbortController();
   const timer=setTimeout(()=>controller.abort(),timeoutMs);
   try{
@@ -46,6 +46,7 @@ async function main(){
     probeVersion:'IEPNB_EIDOS_SPARQL_PROBE_v1',
     endpoint:ENDPOINT,
     observedAt:new Date().toISOString(),
+    perQueryTimeoutMs:10000,
     probes,
     semantics:'DISCOVERY_PROBE_ONLY; NO_JBLR_CORPUS_INPUT; NO_OCCURRENCE_ASSERTION'
   };
