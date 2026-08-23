@@ -1,0 +1,101 @@
+name: JBLR 08 MITECO Rioja IEET Static Independent Layer
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 08-stime-execution-v1
+    paths:
+      - 'execution/08/miteco-rioja-expansion-v1/run-control/STATIC_REQUEST.json'
+
+permissions:
+  contents: write
+
+env:
+  ROOT: execution/08/miteco-rioja-expansion-v1
+
+jobs:
+  static-layer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 08-stime-execution-v1
+      - name: Validate independent request
+        id: request
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json,os
+          p=json.load(open(os.environ['ROOT']+'/run-control/STATIC_REQUEST.json'))
+          if p.get('crossWithJblr') is not False: raise SystemExit('CROSS_WITH_JBLR_MUST_BE_FALSE')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write('run='+('true' if p.get('enabled') is True else 'false')+'\n')
+          PY
+      - name: Install MDB reader
+        if: steps.request.outputs.run == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq mdbtools
+      - name: Build frozen independent historical MITECO layer
+        if: steps.request.outputs.run == 'true'
+        run: |
+          rm -rf "$RUNNER_TEMP/miteco-rioja-ieet-static"
+          python3 "$ROOT/bin/run-ieet-static-rioja-discovery.py" \
+            --registry "$ROOT/contracts/rioja-grid-cell-registry-v1.json" \
+            --out "$RUNNER_TEMP/miteco-rioja-ieet-static"
+      - name: Upload immutable evidence
+        if: steps.request.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: MITECO_RIOJA_IEET_STATIC_2015_${{ github.run_id }}
+          path: ${{ runner.temp }}/miteco-rioja-ieet-static
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish observable receipt
+        if: steps.request.outputs.run == 'true' && success()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json,os
+          root=os.environ['ROOT']; out=os.environ['RUNNER_TEMP']+'/miteco-rioja-ieet-static'
+          req=json.load(open(root+'/run-control/STATIC_REQUEST.json'))
+          man=json.load(open(out+'/RUN_MANIFEST_MITECO_RIOJA_IEET_STATIC_2015_v1.json'))
+          receipt={
+            'receiptVersion':'MITECO_RIOJA_IEET_STATIC_RECEIPT_v1',
+            'requestId':req.get('requestId'),
+            'githubRunId':os.environ['GITHUB_RUN_ID'],
+            'status':'PASS',
+            'observedAt':man['generatedAt'],
+            'release':man['release'],
+            'sourceSha256':man['sourceSha256'],
+            'qa':man['qa'],
+            'artifactName':'MITECO_RIOJA_IEET_STATIC_2015_'+os.environ['GITHUB_RUN_ID'],
+            'existingRiojaCorpusInputUsed':False,
+            'rc2InputUsed':False,
+            'crossWithJblrPerformed':False,
+            'canonicalEffect':'NONE',
+            'nextGate':'PRESERVE_ARTIFACT_AND_CONTINUE_CURRENT_EIDOS_COMPLETENESS_PASS'
+          }
+          json.dump(receipt,open(root+'/run-control/STATIC_LAST_RESULT.json','w'),ensure_ascii=False,indent=2);open(root+'/run-control/STATIC_LAST_RESULT.json','a').write('\n')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/run-control/STATIC_LAST_RESULT.json"
+          git commit -m "receipt(08): record MITECO Rioja IEET static PASS ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:08-stime-execution-v1
+      - name: Publish failure receipt
+        if: steps.request.outputs.run == 'true' && failure()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json,os,datetime
+          root=os.environ['ROOT']; req=json.load(open(root+'/run-control/STATIC_REQUEST.json'))
+          receipt={'receiptVersion':'MITECO_RIOJA_IEET_STATIC_RECEIPT_v1','requestId':req.get('requestId'),'githubRunId':os.environ['GITHUB_RUN_ID'],'status':'FAIL','observedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'existingRiojaCorpusInputUsed':False,'rc2InputUsed':False,'crossWithJblrPerformed':False,'canonicalEffect':'NONE','failureSemantics':'SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_ABSENCE'}
+          json.dump(receipt,open(root+'/run-control/STATIC_LAST_RESULT.json','w'),ensure_ascii=False,indent=2);open(root+'/run-control/STATIC_LAST_RESULT.json','a').write('\n')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/run-control/STATIC_LAST_RESULT.json"
+          git commit -m "receipt(08): record MITECO Rioja IEET static FAILURE ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:08-stime-execution-v1
