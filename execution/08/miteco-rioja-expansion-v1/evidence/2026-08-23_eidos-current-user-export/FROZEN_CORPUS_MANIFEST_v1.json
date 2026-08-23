@@ -1,0 +1,27 @@
+{
+  "releaseVersion": "MITECO_RIOJA_PARALLEL_CORPUS_v1",
+  "state": "FROZEN_INDEPENDENT_BEFORE_JBLR_CROSS",
+  "source": "MITECO_IEPNB_EIDOS_DISTRIBUTION_CURRENT_USER_BROWSER_EXPORT",
+  "sourceFeatureCollectionTimestamp": "2026-08-23T07:51:42.217Z",
+  "rawSourceSha256": "395f05729dda0af8a7a388c1b6c2368df546ae1c9199fb5da06b3447dea04e98",
+  "gridManifestCells": 77,
+  "gridMatchedCells": 77,
+  "fullyWithinRiojaCells": 26,
+  "partialIntersectionCells": 51,
+  "uniqueEidosPlantVascularIds": 22,
+  "identityResolvedExactIds": 20,
+  "identityUnresolvedCurrentIds": ["208841", "210528"],
+  "territoriallyConfirmedIdsIncludingUnresolved": 13,
+  "borderOnlyIdsIncludingUnresolved": 9,
+  "taxaTsvSha256": "a9582974883585d9711d3a7b9dde5f2a9e494694da70ee2b2879adac5d0ca917",
+  "independenceGuard": {
+    "existingRiojaCorpusUsed": false,
+    "RC2Used": false,
+    "crossWithJblrPerformed": false
+  },
+  "unresolvedSemantics": {
+    "208841": "EIDOS current asserts membership in lista_idstaxon_filtro_plantvas and places it in full Rioja cells, but IEPNB SPARQL exposes no resolvable TaxonRecord/hierarchy at this ID.",
+    "210528": "EIDOS current asserts membership in lista_idstaxon_filtro_plantvas in border cell 30TXM07, but IEPNB SPARQL exposes no resolvable TaxonRecord/hierarchy at this ID."
+  },
+  "nextGate": "CROSS_FROZEN_MITECO_PARALLEL_CORPUS_WITH_JBLR_CORPUS_AS_A_SEPARATE_PHASE"
+}
