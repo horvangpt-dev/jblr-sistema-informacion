@@ -1,0 +1,1676 @@
+{
+  "resolverVersion": "IEPNB_EIDOS_EXACT_ID_RESOLVER_v1",
+  "endpoint": "https://datos.iepnb.es/sparql",
+  "observedAt": "2026-08-23T08:01:54.135Z",
+  "requestId": "IEPNB_EXACT_ID_RESOLUTION_20260823_001",
+  "ids": [
+    "2443",
+    "208841",
+    "210528"
+  ],
+  "results": [
+    {
+      "idtaxon": "2443",
+      "status": "PASS",
+      "taxonRecordUri": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/2443",
+      "grupoTaxonomico": "Plantas vasculares",
+      "hierarchyUri": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2443",
+      "candidateNameFacts": [
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/nameAccordingTo",
+          "o": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la PenÃ­nsula IbÃ©rica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real JardÃ­n BotÃ¡nico, CSIC. Madrid."
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/namePublishedIn",
+          "o": "Veg. Alta Mont. CantÃ¡brica 256. 1984"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/namePublishedInYear",
+          "o": "1984"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/scientificName",
+          "o": "Armeria bigerrensis subsp. losae (Bernis) Rivas Mart. & al."
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/scientificNameAuthorship",
+          "o": "(Bernis) Rivas Mart. & al."
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonConceptID",
+          "o": "urn:lsid:recibio.net:taxon:aff18318-1fed-4865-b9a7-31c9166e814b"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonID",
+          "o": "2443"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonRank",
+          "o": "Subspecies"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonomicStatus",
+          "o": "Aceptado/Válido"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/verbatimTaxonRank",
+          "o": "subsp."
+        }
+      ],
+      "outgoing": [
+        {
+          "p": "http://purl.org/dc/terms/hasManagementConservation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/ManagementConservationType/2443_CONSERVATIONMANAGEMENT"
+        },
+        {
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#FullDescriptionUnstructured",
+          "o": " Planta almohadillada, con abundantes restos foliares, apretados. Hojas de 15 a 35 mm, acanaladas o subtriquetras, erectas y más o menos rígidas. Escapos de hasta 12 cm, en general de más de 0,5 mm de diámetro en la base. Involucro de 15-20 mm de diámetro. Espículas subsésiles o cortamente estipitadas, con brácteas poco consistentes. Cáliz formado por lóbulos 1-1,8 mm, ovado-triangulares. "
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecordID",
+          "o": "2443"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#grupoTaxonomico",
+          "o": "Plantas vasculares"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasCollection",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/16"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasCollection",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/18"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasCollection",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/25"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasCollection",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/39"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasCollection",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/8"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasCollection",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/84"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasDirectThreats",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/DirectThreatsType/2443_DIRECTTHREATTYPE"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasDistribution",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/DistributionType/2443_DISTRIBUTIONTYPE"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasHabitats",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/2443_HABITATTYPE"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasHierarchy",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Taxon/2443"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasMeasurement",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/22539"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasMeasurement",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/6359"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasMeasurement",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/16177"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasMeasurement",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/15571"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasMeasurement",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/23329"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasMeasurement",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/23950"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasPopulationBiology",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/PopulationBiologyType/2443_POPULATIONTYPE"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF11"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF14"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF15"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF3"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF4"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF6"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF8"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasRecordMetadata",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/2443_OTHREF9"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasThreatStatus",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/ThreatStatusType/11774"
+        }
+      ],
+      "hierarchy": [
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/class",
+          "o": "Magnoliopsida"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/family",
+          "o": "Plumbaginaceae"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/genus",
+          "o": "Armeria"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/higherClassification",
+          "o": "Plantae | Tracheophyta | Magnoliopsida | Caryophyllales | Plumbaginaceae | Armeria |  | bigerrensis | losae"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/infraspecificEpithet",
+          "o": "losae"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/kingdom",
+          "o": "Plantae"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/nameAccordingTo",
+          "o": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la PenÃ­nsula IbÃ©rica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real JardÃ­n BotÃ¡nico, CSIC. Madrid."
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/namePublishedIn",
+          "o": "Veg. Alta Mont. CantÃ¡brica 256. 1984"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/namePublishedInYear",
+          "o": "1984"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/order",
+          "o": "Caryophyllales"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/phylum",
+          "o": "Tracheophyta"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/scientificName",
+          "o": "Armeria bigerrensis subsp. losae (Bernis) Rivas Mart. & al."
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/scientificNameAuthorship",
+          "o": "(Bernis) Rivas Mart. & al."
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/specificEpithet",
+          "o": "bigerrensis"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonConceptID",
+          "o": "urn:lsid:recibio.net:taxon:aff18318-1fed-4865-b9a7-31c9166e814b"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonID",
+          "o": "2443"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonRank",
+          "o": "Subspecies"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/taxonomicStatus",
+          "o": "Aceptado/Válido"
+        },
+        {
+          "p": "http://rs.tdwg.org/dwc/terms/verbatimTaxonRank",
+          "o": "subsp."
+        },
+        {
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "http://rs.tdwg.org/dwc/terms/Taxon"
+        }
+      ]
+    },
+    {
+      "idtaxon": "208841",
+      "status": "PASS",
+      "taxonRecordUri": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/208841",
+      "grupoTaxonomico": null,
+      "hierarchyUri": null,
+      "candidateNameFacts": [],
+      "outgoing": [
+        {
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE277N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE277N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE278N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE279N237"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE281N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE281N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE281N240"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE282N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE284N243"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE285N243"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE286N244"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE287N246"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE288N237"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE288N238"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE288N240"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE288N246"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE290N242"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE290N243"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE290N244"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE290N245"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE291N243"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE291N244"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE291N245"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE293N207"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE293N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE293N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE294N207"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE294N208"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE294N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE294N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE294N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N203"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N206"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N207"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N208"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE295N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE296N207"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE296N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE296N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE296N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE297N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE297N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE297N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE297N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE297N236"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE298N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE298N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE298N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE298N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE298N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE298N236"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE299N204"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE299N205"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE299N206"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE299N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE300N203"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE300N204"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE300N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE300N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE300N236"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE301N203"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE301N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE301N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE301N236"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE302N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE302N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE302N236"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE303N206"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE303N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE304N205"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE304N206"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE304N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE304N237"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE305N206"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE305N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE305N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE306N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE306N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE306N236"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE307N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE307N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE307N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE307N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE307N236"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE308N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE308N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE309N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE309N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE310N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE310N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE311N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE311N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE311N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE311N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE312N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE312N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE312N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE313N207"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE313N208"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE313N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE313N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE313N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE313N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE313N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE314N207"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE314N208"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE314N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE314N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE314N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE315N207"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE315N208"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE315N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE315N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE315N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE316N201"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE316N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE316N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE318N210"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE318N211"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE318N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE319N210"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE319N211"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE319N213"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE319N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE319N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE319N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE320N210"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE320N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE320N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE320N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE320N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE320N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE321N209"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE321N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE321N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE321N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE321N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE321N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE322N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE322N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE322N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE322N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE322N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N234"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE323N235"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE324N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE324N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE324N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE324N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE324N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE325N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE325N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE325N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE325N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE325N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE325N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N214"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N215"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N216"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE326N233"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE327N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE328N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE328N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE328N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE328N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE329N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE329N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE329N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE329N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE329N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE330N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE330N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE330N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE330N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE330N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE330N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE331N214"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE331N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE331N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE331N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE331N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE332N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE332N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE332N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE333N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE333N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE333N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE334N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE334N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE334N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE335N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE335N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE335N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE336N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE336N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE336N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE336N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE336N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE336N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE336N232"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE337N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE337N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE337N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE337N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE337N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE337N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE337N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE338N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE338N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE338N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE338N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE338N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE339N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE339N229"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE339N230"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE339N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE340N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE341N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE341N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE341N228"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE342N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE342N227"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE343N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE343N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE344N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE344N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE344N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE344N226"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE345N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE345N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE345N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE346N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE346N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE346N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE346N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE347N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE347N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE347N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE347N225"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE348N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE348N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE349N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE349N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE350N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE351N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE352N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE352N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE352N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE353N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE353N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE354N210"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE354N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE354N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE354N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE355N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE355N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE355N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE355N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE355N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE355N224"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE356N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE356N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE356N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE356N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE356N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE356N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE357N214"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE357N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE357N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE357N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE357N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE357N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE357N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE358N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE358N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE358N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE358N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE359N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE359N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE359N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE360N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE360N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE360N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE360N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE360N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE361N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE361N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE361N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE361N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE362N215"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE362N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE363N209"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE363N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE363N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE364N218"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE364N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE366N215"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE366N216"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE366N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE367N210"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE367N215"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE367N216"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE367N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE368N209"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE368N215"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE368N216"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE368N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE369N210"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE369N216"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE369N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE371N217"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE373N213"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE358N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE361N222"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE362N220"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE362N219"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE340N231"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE353N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE354N223"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE362N221"
+        },
+        {
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#hasLocation",
+          "o": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE346N225"
+        }
+      ],
+      "hierarchy": []
+    },
+    {
+      "idtaxon": "210528",
+      "status": "PASS",
+      "taxonRecordUri": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/210528",
+      "grupoTaxonomico": null,
+      "hierarchyUri": null,
+      "candidateNameFacts": [],
+      "outgoing": [],
+      "hierarchy": []
+    }
+  ],
+  "semantics": "EXACT_ID_RESOLUTION_ONLY; NO_RIOJA_OR_JBLR_CORPUS_INPUT; NO_NAME_MATCH_DISCOVERY"
+}
