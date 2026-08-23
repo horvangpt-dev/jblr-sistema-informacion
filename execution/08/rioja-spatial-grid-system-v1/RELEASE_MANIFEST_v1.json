@@ -1,0 +1,23 @@
+{
+  "release_id": "JBLR_RIOJA_SPATIAL_GRID_RELEASE_v1",
+  "created_at": "2026-08-23T01:56:01+02:00",
+  "drive_folder_id": "1r1fHYx9DcuutRmfYAtdpYa31xvM77ydi",
+  "drive_state_document_id": "1Su15BR5XcykQyn4zwKlawYg3ONjKY19_wSRWsqYTrb0",
+  "drive_release_zip_id": "1f58swsIh8vunMioqiFVi2gaH2qSA74R3",
+  "drive_geopackage_id": "1kSgb-L7h_pj5mrqevbf9g7Ilrn9Oh_gf",
+  "drive_viewer_id": "1mPqxSevyjM2mjK8DIM2LjuUDLNE__gjx",
+  "files": [
+    {"name":"JBLR_RIOJA_GRID_VIEWER_v1.html","bytes":4093642,"sha256":"acb111a62a5ca7777af91b2e3af6682e18dad8fccd32a17e444bafe797790545"},
+    {"name":"JBLR_RIOJA_SPATIAL_GRID_SYSTEM_v1.gpkg","bytes":4190208,"sha256":"bd46f98abaec244c09a457d8cf84b86de5f6c282cd9b1c6e83541acb25f26997"},
+    {"name":"JBLR_RIOJA_SPATIAL_GRID_SYSTEM_v1.json","bytes":3473,"sha256":"44652cd6f20f1652bcb5fe01dc20b794fbd7ccba4083a9c0ae5318fe1e256672"},
+    {"name":"QA_REPORT_v1.json","bytes":2841,"sha256":"906d27ec875e6285f7bf7931c42afbd351e679b41cf1359cd0fa5608e94af3e2"},
+    {"name":"README.md","bytes":1669,"sha256":"dfe8578a74ab6bd69c2d2fdf1826ba3cda2b8f068a57c75e6204d3a0af7cc457"},
+    {"name":"RIOJA_GRID_1KM_MANIFEST_v1.csv","bytes":468710,"sha256":"2dac10ab291fa71f8eb82c575268da396f4f1b794bb5a2671c5c99bc05431c6a"},
+    {"name":"RIOJA_GRID_5KM_MANIFEST_v1.csv","bytes":22528,"sha256":"62202c3075e8030e8b78787dcc7719a38af7f8d19dd052e8846d0412e759e1ab"},
+    {"name":"jblr_spatial_index.py","bytes":2641,"sha256":"91265ba92d22727dc4ce7f29abf0228ab26c33cdef72de72a5c634eb9f1b0b55"}
+  ],
+  "release_sha256": "789e693587153ae22df0a1d0b1f36878364ef0b77f1a9ca59cce7cfc591dba9d",
+  "zip_sha256": "e8de1344417620b925b367378550d5f6f3a4ee7e278a1b6c9fc4c97f197cebd0",
+  "source_distinction": "10KM_OFFICIAL_SNAPSHOT; 5KM_DERIVED_ALIGNED; 1KM_MITECO_COMPATIBLE_DERIVED; 100M_AND_10M_VIRTUAL_ON_DEMAND",
+  "evolution_policy": "IMMUTABLE_BASELINE_PLUS_VERSIONED_SUCCESSORS"
+}
