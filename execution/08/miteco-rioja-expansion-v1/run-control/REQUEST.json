@@ -1,9 +1,9 @@
 {
   "enabled": true,
-  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_002",
+  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_003",
   "mode": "live",
-  "purpose": "Generate and verify the independent MITECO-La Rioja parallel corpus from MITECO/EIDOS only, publishing an observable receipt.",
+  "purpose": "Retry independent MITECO-La Rioja discovery with hardened official EIDOS WFS access and observable receipt.",
   "crossWithJblr": false,
   "observabilityReceipt": true,
-  "notes": "Direct user-authorized live discovery. RC2 and every existing Rioja/JBLR corpus are prohibited discovery inputs. Output must remain parallel and noncanonical. Freeze MITECO corpus before any JBLR cross."
+  "notes": "Retry after run 002 returned SOURCE_HTTP_403 from the global EIDOS WFS. Uses browser-compatible headers and verified GeoServer virtual endpoint fallbacks. RC2 and every existing Rioja/JBLR corpus remain prohibited discovery inputs."
 }
