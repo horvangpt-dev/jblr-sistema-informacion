@@ -1,0 +1,186 @@
+name: JBLR 08 MITECO Rioja Independent Discovery
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 08-stime-execution-v1
+    paths:
+      - 'execution/08/miteco-rioja-expansion-v1/run-control/REQUEST.json'
+
+permissions:
+  contents: write
+
+env:
+  ROOT: execution/08/miteco-rioja-expansion-v1
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 08-stime-execution-v1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate explicit run request
+        id: request
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const p=JSON.parse(fs.readFileSync(process.env.ROOT+'/run-control/REQUEST.json','utf8'));
+          if (p.crossWithJblr !== false) throw new Error('CROSS_WITH_JBLR_MUST_BE_FALSE');
+          if (process.env.GITHUB_EVENT_NAME === 'push' && p.enabled !== true) {
+            console.log('enabled=false; no live discovery requested.');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT,'run=false\n');
+          } else {
+            fs.appendFileSync(process.env.GITHUB_OUTPUT,'run=true\n');
+            console.log(`Authorized request ${p.requestId || 'workflow_dispatch'}`);
+          }
+          NODE
+
+      - name: Unit tests
+        if: steps.request.outputs.run == 'true'
+        working-directory: execution/08
+        run: node --test test/miteco-rioja-expansion-v1-eidos-adapter.test.js test/miteco-rioja-independent-discovery.test.js
+
+      - name: Probe official IEPNB SPARQL fallback
+        if: steps.request.outputs.run == 'true'
+        continue-on-error: true
+        shell: bash
+        run: |
+          node "$ROOT/bin/probe-iepnb-sparql.js" "$ROOT/run-control/SPARQL_PROBE_RESULT.json"
+
+      - name: Install static IEET probe reader
+        if: steps.request.outputs.run == 'true'
+        continue-on-error: true
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq mdbtools unzip
+
+      - name: Probe official MITECO IEET static snapshot
+        if: steps.request.outputs.run == 'true'
+        continue-on-error: true
+        shell: bash
+        run: |
+          node "$ROOT/bin/probe-ieet-static.js" "$ROOT/run-control/STATIC_IEET_PROBE_RESULT.json"
+
+      - name: Live MITECO/EIDOS distribution discovery
+        if: steps.request.outputs.run == 'true'
+        shell: bash
+        run: |
+          rm -rf "$RUNNER_TEMP/miteco-rioja-output"
+          node "$ROOT/bin/run-independent-discovery.js" \
+            --mode live \
+            --registry "$ROOT/contracts/rioja-grid-cell-registry-v1.json" \
+            --out "$RUNNER_TEMP/miteco-rioja-output" \
+            --page-size 5000 \
+            --timeout-ms 60000 \
+            --max-pages 100 \
+            --source-version "EIDOS_CURRENT_${GITHUB_RUN_ID}"
+
+      - name: Build exact-ID taxon-by-taxon resolution queue
+        if: steps.request.outputs.run == 'true'
+        shell: bash
+        run: |
+          node "$ROOT/bin/build-id-resolution-queue.js" \
+            --input "$RUNNER_TEMP/miteco-rioja-output/MITECO_RIOJA_PARALLEL_CORPUS_v1.json" \
+            --output "$RUNNER_TEMP/miteco-rioja-output/MITECO_RIOJA_ID_RESOLUTION_QUEUE_v1.json"
+
+      - name: Upload immutable discovery evidence
+        if: steps.request.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: MITECO_RIOJA_INDEPENDENT_DISCOVERY_${{ github.run_id }}
+          path: ${{ runner.temp }}/miteco-rioja-output
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Publish observable PASS receipt
+        if: steps.request.outputs.run == 'true' && success()
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const root=process.env.ROOT;
+          const out=process.env.RUNNER_TEMP+'/miteco-rioja-output';
+          const req=JSON.parse(fs.readFileSync(root+'/run-control/REQUEST.json','utf8'));
+          const run=JSON.parse(fs.readFileSync(out+'/RUN_MANIFEST_MITECO_DISCOVERY_v1.json','utf8'));
+          const corpus=JSON.parse(fs.readFileSync(out+'/MITECO_RIOJA_PARALLEL_CORPUS_v1.json','utf8'));
+          const qa=run.qa || corpus.payload?.qa || {};
+          if (qa.systemicQa !== 'PASS') throw new Error('RECEIPT_REFUSES_NON_PASS_CORPUS');
+          const receipt={
+            receiptVersion:'MITECO_RIOJA_DISCOVERY_RECEIPT_v1',
+            requestId:req.requestId || null,
+            githubRunId:String(process.env.GITHUB_RUN_ID),
+            githubRunAttempt:String(process.env.GITHUB_RUN_ATTEMPT || '1'),
+            status:'PASS',
+            observedAt:new Date().toISOString(),
+            corpusSha256:run.corpusSha256 || corpus.sha256 || null,
+            qa,
+            counts:{
+              uniqueEidosIdsDiscovered:qa.uniqueEidosIdsDiscovered ?? null,
+              confirmedInteriorTaxa:qa.confirmedInteriorTaxa ?? null,
+              borderGridCandidateTaxa:qa.borderGridCandidateTaxa ?? null,
+              identityResolvedTaxa:qa.identityResolvedTaxa ?? null,
+              identityUnresolvedTaxa:qa.identityUnresolvedTaxa ?? null,
+              rawFeatureCount:qa.rawFeatureCount ?? null,
+              featuresMatchingManifest:qa.featuresMatchingManifest ?? null
+            },
+            artifactName:`MITECO_RIOJA_INDEPENDENT_DISCOVERY_${process.env.GITHUB_RUN_ID}`,
+            existingRiojaCorpusInputUsed:false,
+            rc2InputUsed:false,
+            crossWithJblrPerformed:false,
+            canonicalEffect:'NONE',
+            nextGate:'FREEZE_AND_PRESERVE_MITECO_PARALLEL_CORPUS_BEFORE_ANY_JBLR_CROSS'
+          };
+          fs.writeFileSync(root+'/run-control/LAST_RESULT.json',JSON.stringify(receipt,null,2)+'\n');
+          NODE
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/run-control/LAST_RESULT.json"
+          test ! -f "$ROOT/run-control/SPARQL_PROBE_RESULT.json" || git add "$ROOT/run-control/SPARQL_PROBE_RESULT.json"
+          test ! -f "$ROOT/run-control/STATIC_IEET_PROBE_RESULT.json" || git add "$ROOT/run-control/STATIC_IEET_PROBE_RESULT.json"
+          git commit -m "receipt(08): record MITECO Rioja discovery PASS ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:08-stime-execution-v1
+
+      - name: Publish observable FAILURE receipt
+        if: steps.request.outputs.run == 'true' && failure()
+        env:
+          JOB_STATUS: ${{ job.status }}
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const root=process.env.ROOT;
+          const req=JSON.parse(fs.readFileSync(root+'/run-control/REQUEST.json','utf8'));
+          const receipt={
+            receiptVersion:'MITECO_RIOJA_DISCOVERY_RECEIPT_v1',
+            requestId:req.requestId || null,
+            githubRunId:String(process.env.GITHUB_RUN_ID),
+            githubRunAttempt:String(process.env.GITHUB_RUN_ATTEMPT || '1'),
+            status:'FAIL',
+            observedAt:new Date().toISOString(),
+            jobStatus:process.env.JOB_STATUS || 'failure',
+            corpusSha256:null,
+            existingRiojaCorpusInputUsed:false,
+            rc2InputUsed:false,
+            crossWithJblrPerformed:false,
+            canonicalEffect:'NONE',
+            failureSemantics:'SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND_OR_ABSENCE',
+            nextGate:'USE_VERIFIED_OFFICIAL_FALLBACK_PROBE_RESULTS; DO_NOT_INFER_ABSENCE'
+          };
+          fs.writeFileSync(root+'/run-control/LAST_RESULT.json',JSON.stringify(receipt,null,2)+'\n');
+          NODE
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/run-control/LAST_RESULT.json"
+          test ! -f "$ROOT/run-control/SPARQL_PROBE_RESULT.json" || git add "$ROOT/run-control/SPARQL_PROBE_RESULT.json"
+          test ! -f "$ROOT/run-control/STATIC_IEET_PROBE_RESULT.json" || git add "$ROOT/run-control/STATIC_IEET_PROBE_RESULT.json"
+          git commit -m "receipt(08): record MITECO Rioja discovery FAILURE ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:08-stime-execution-v1

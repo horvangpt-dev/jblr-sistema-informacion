@@ -1,0 +1,38 @@
+{
+  "release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1",
+  "release_version": "v1-rc1",
+  "publication_state": "RELEASE_CANDIDATE",
+  "canonical_state": "NOT_CANONICAL_UNTIL_0000_ACCEPTS",
+  "source_corpus_version": "FLORA_RIOJANA_CURRENT_ONLY_v1",
+  "taxon_count": 2210,
+  "created_at": "2026-08-20T23:33:47+02:00",
+  "actor": "09",
+  "input_pointers": {
+    "working_matrix_drive_id": "1DHE35NssIuRuRtYtYXmjUf3px9EX2QYpRM1vp0Odxd4",
+    "working_matrix_revision_id": "6",
+    "source_corpus_drive_id": "1uFMKVD1I6IRdy2eHVD_Dq_PPXPv-H9Kw",
+    "source_corpus_sha256": "e7a615fd8b1c4f29d9e23adf5708b0031cc6e93cacd6837fdfaf0a71e140fc27",
+    "github_baseline": "aa1f6ba5b05ef07b4b7a3baf606c3772f6d33d7e",
+    "github_branch": "09-taxonomic-universe-materialization-v1"
+  },
+  "provenance_file": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1_PROVENANCE.json",
+  "unresolved_count_definition": "rows_with_at_least_one_pending_or_unacquired_external_control_source",
+  "unresolved_count": 2210,
+  "qa_state": "PASS_STRUCTURAL_WITH_DECLARED_PROVENANCE_LIMITATION",
+  "publication_ready": false,
+  "outputs": {
+    "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1.csv": "9f3aa11ace2f70ee2f18903003ebb3135361f01aa255e8f08134fdbc9022193c",
+    "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1.jsonl": "1ab6b74fcbce3e6ebcb2900e38103c35a2330c3141c9cb9bddb588b6339ec5f6",
+    "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1_UNRESOLVED_PENDING.csv": "38584498cd5fd74031ab314d5ff4192d68d70800c2791e4769067b1ca0767b56",
+    "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1_PROVENANCE.json": "a9e84a9602d97c2e2394a3f34af633ed84c329120789428db05407f064601513",
+    "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1_QA.json": "46de790971608e83b2af70abc1dbab3872e6df019de8da100bc7ebcf4dc21abb",
+    "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1_QA.md": "9eb446922aad98c6f64df3125d62eaf1c175f6b09f9c02d6e8bdd334083dade1",
+    "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC1_SUMMARY.md": "5f63055954743a13df22391ef540d7d9a4567458870f3419fc5f0f7b439591ad"
+  },
+  "neon_integration_state": "READ_ONLY_PREPARATION",
+  "database_writes": 0,
+  "historical_universe_contamination": "NONE",
+  "manifest_hash_algorithm": "SHA-256",
+  "manifest_hash_scope": "canonical JSON of manifest excluding manifest_hash",
+  "manifest_hash": "9c7840663316a0e7c77c66022803794e74a1b75ab38629914ed33bbae3ca7f4c"
+}

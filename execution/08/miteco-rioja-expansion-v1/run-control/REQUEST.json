@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "requestId": "MITECO_RIOJA_LIVE_DISCOVERY_20260823_006",
+  "mode": "live",
+  "purpose": "Profile the official MITECO IEET static database taxonomic groups across the frozen 77 Rioja grid cells and determine whether it can support an independent vascular-flora fallback corpus.",
+  "crossWithJblr": false,
+  "observabilityReceipt": true,
+  "probeSparqlFallback": true,
+  "probeStaticIeetFallback": true,
+  "profileStaticTaxonomicGroups": true,
+  "notes": "No JBLR/RC2/Rioja curated corpus may be used. This run determines scope directly from official MITECO fields Grupo/Reino/Division/Clase and CUTM10x10 before any fallback corpus extraction."
+}

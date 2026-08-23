@@ -1,0 +1,18 @@
+{
+  "version": "MITECO_FLORA_VASCULAR_ID_SET_v1",
+  "source_file": "lista-patron-especies-silvestres-con-normativa.xlsx",
+  "source_sha256": "6f98009923977acd53583b34f0bdc3307c4e7a8ef1ea8679bfaf825faaf4b15d",
+  "id_field": "idtaxon",
+  "classification_field": "Grupo taxonómico",
+  "classification_value": "Plantas vasculares",
+  "crosscheck_field": "LP Flora vascular",
+  "crosscheck_value": "1",
+  "derivation_rule": "DISTINCT idtaxon WHERE [Grupo taxonómico] = 'Plantas vasculares' AND [LP Flora vascular] = 1",
+  "unique_id_count_total": 4527,
+  "included_id_count": 2508,
+  "excluded_id_count": 2019,
+  "unresolved_count": 0,
+  "classification_consistency": "PASS",
+  "semantic_note": "This filter defines vascular-flora scope only. It does not assert occurrence in La Rioja and does not mutate the accepted Rioja corpus.",
+  "productive_taxon_discovery_by_08": 0
+}

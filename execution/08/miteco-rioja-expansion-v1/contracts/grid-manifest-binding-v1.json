@@ -1,0 +1,21 @@
+{
+  "version": "GRID_MANIFEST_BINDING_v1",
+  "manifestVersion": "RIOJA_MITECO_GRID_MANIFEST_v1",
+  "driveFolderId": "18byihH3xEx9a7ZvpLmpZrtZh-Kl30-Zp",
+  "manifestDriveId": "1bylY9pRrV8xL564G9CDiiUApRzGePz3R",
+  "manifestSha256": "2130223540a220465b102d64f309e3eca821bc1c6334843912b7d9988df334ee",
+  "selectedCodesDriveId": "1UZMLpR49xtJm5dwHSFWrgkUTrYbxJj7b",
+  "crosscheckDriveId": "1HJXKXtFfqfiHjF0TCZy-5aSjOAKwFw5o",
+  "eidosSchemaBindingDriveId": "1PqDVWgggaeam5WrW99g_yNuDYybk5o89",
+  "sourceDependentAcceptanceDriveId": "11QnuEi84onGQXwd32iEuh5iEKN7XBOAG",
+  "preflightReportDriveId": "1igdtfdhz8R3BMlO0GkWdjm3NOKAQvAbJ",
+  "selectedCount": 77,
+  "fullyWithinCount": 26,
+  "partialCount": 51,
+  "gridCrosscheckState": "PASS_WITH_CODE_DIFFERENCE",
+  "codeDifferenceCount": 16,
+  "materialGeometryMismatchCount": 0,
+  "primaryCodeAuthority": "MITECO",
+  "productiveTaxonDiscoveryBy08": 0,
+  "productiveCorpusCrossBy08": 0
+}

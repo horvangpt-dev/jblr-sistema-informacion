@@ -1,0 +1,1248 @@
+{
+  "probeVersion": "IEPNB_EIDOS_SPARQL_PROBE_v1",
+  "endpoint": "https://datos.iepnb.es/sparql",
+  "observedAt": "2026-08-23T07:30:53.888Z",
+  "perQueryTimeoutMs": 10000,
+  "probes": [
+    {
+      "name": "endpoint_basic",
+      "status": "PASS",
+      "rowCount": 1,
+      "rows": [
+        {
+          "s": "http://www.openlinksw.com/virtrdf-data-formats#default-iid",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"
+        }
+      ]
+    },
+    {
+      "name": "plinian_predicates",
+      "status": "FAIL",
+      "error": "This operation was aborted"
+    },
+    {
+      "name": "distribution_like_predicates",
+      "status": "FAIL",
+      "error": "This operation was aborted"
+    },
+    {
+      "name": "rioja_cell_literal",
+      "status": "FAIL",
+      "error": "This operation was aborted"
+    },
+    {
+      "name": "rioja_cell_partial_literal",
+      "status": "FAIL",
+      "error": "This operation was aborted"
+    },
+    {
+      "name": "taxon_record_sample",
+      "status": "PASS",
+      "rowCount": 200,
+      "rows": [
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/100",
+          "id": "100",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10023",
+          "id": "10023",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10024",
+          "id": "10024",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10025",
+          "id": "10025",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10026",
+          "id": "10026",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10027",
+          "id": "10027",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10028",
+          "id": "10028",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10029",
+          "id": "10029",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1004",
+          "id": "1004",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1007",
+          "id": "1007",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10093",
+          "id": "10093",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/101",
+          "id": "101",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/102",
+          "id": "102",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/103",
+          "id": "103",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10330",
+          "id": "10330",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10344",
+          "id": "10344",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1038",
+          "id": "1038",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10381",
+          "id": "10381",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10382",
+          "id": "10382",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10383",
+          "id": "10383",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10384",
+          "id": "10384",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10385",
+          "id": "10385",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10386",
+          "id": "10386",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/104",
+          "id": "104",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10432",
+          "id": "10432",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10433",
+          "id": "10433",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10434",
+          "id": "10434",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10435",
+          "id": "10435",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10436",
+          "id": "10436",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10437",
+          "id": "10437",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10489",
+          "id": "10489",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/105",
+          "id": "105",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10539",
+          "id": "10539",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1056",
+          "id": "1056",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10573",
+          "id": "10573",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10585",
+          "id": "10585",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10586",
+          "id": "10586",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10587",
+          "id": "10587",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10648",
+          "id": "10648",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10650",
+          "id": "10650",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10662",
+          "id": "10662",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10664",
+          "id": "10664",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10675",
+          "id": "10675",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10679",
+          "id": "10679",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10698",
+          "id": "10698",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10714",
+          "id": "10714",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10715",
+          "id": "10715",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10718",
+          "id": "10718",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10723",
+          "id": "10723",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10724",
+          "id": "10724",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10728",
+          "id": "10728",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10733",
+          "id": "10733",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10734",
+          "id": "10734",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10738",
+          "id": "10738",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10739",
+          "id": "10739",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10740",
+          "id": "10740",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10742",
+          "id": "10742",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10743",
+          "id": "10743",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10745",
+          "id": "10745",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10749",
+          "id": "10749",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10750",
+          "id": "10750",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10755",
+          "id": "10755",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10759",
+          "id": "10759",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10764",
+          "id": "10764",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10766",
+          "id": "10766",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10768",
+          "id": "10768",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10770",
+          "id": "10770",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10773",
+          "id": "10773",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1078",
+          "id": "1078",
+          "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "o": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#TaxonRecord"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10344",
+          "id": "10344",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeCITES",
+          "o": "18768"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10650",
+          "id": "10650",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeCITES",
+          "o": "3798"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10698",
+          "id": "10698",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeCITES",
+          "o": "6137"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10739",
+          "id": "10739",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeCITES",
+          "o": "4341"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10740",
+          "id": "10740",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeCITES",
+          "o": "10671"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10755",
+          "id": "10755",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeCITES",
+          "o": "9829"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/100",
+          "id": "100",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "192129"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10023",
+          "id": "10023",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "191787"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10024",
+          "id": "10024",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "190736"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10025",
+          "id": "10025",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "192014"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10026",
+          "id": "10026",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "190149"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10027",
+          "id": "10027",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "191037"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10028",
+          "id": "10028",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "190155"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10029",
+          "id": "10029",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "191810"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1004",
+          "id": "1004",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "5732"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1007",
+          "id": "1007",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "5737"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10093",
+          "id": "10093",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "192876"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/101",
+          "id": "101",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "190584"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/102",
+          "id": "102",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "191654"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/103",
+          "id": "103",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "190912"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10330",
+          "id": "10330",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1689"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10344",
+          "id": "10344",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "153665"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1038",
+          "id": "1038",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "5973"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10381",
+          "id": "10381",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "154820"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10382",
+          "id": "10382",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "153685"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10383",
+          "id": "10383",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "154344"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10384",
+          "id": "10384",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "174582"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10385",
+          "id": "10385",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "152651"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10386",
+          "id": "10386",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "152653"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/104",
+          "id": "104",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "190913"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10432",
+          "id": "10432",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "160229"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10433",
+          "id": "10433",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "159491"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10434",
+          "id": "10434",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "159820"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10435",
+          "id": "10435",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "160586"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10436",
+          "id": "10436",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "192760"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10489",
+          "id": "10489",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "916"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/105",
+          "id": "105",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "190320"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10539",
+          "id": "10539",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "151198"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1056",
+          "id": "1056",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "5952"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10573",
+          "id": "10573",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "258987"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10585",
+          "id": "10585",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "258990"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10586",
+          "id": "10586",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "11324"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10587",
+          "id": "10587",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "10035"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10648",
+          "id": "10648",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1149"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10650",
+          "id": "10650",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1339"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10662",
+          "id": "10662",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1236"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10664",
+          "id": "10664",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "958"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10675",
+          "id": "10675",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "405"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10679",
+          "id": "10679",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "313"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10698",
+          "id": "10698",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1287"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10714",
+          "id": "10714",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "134"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10715",
+          "id": "10715",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1522"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10718",
+          "id": "10718",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "663"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10723",
+          "id": "10723",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "981"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10724",
+          "id": "10724",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1210"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10728",
+          "id": "10728",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1296"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10733",
+          "id": "10733",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "955"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10734",
+          "id": "10734",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "929"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10738",
+          "id": "10738",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1141"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10739",
+          "id": "10739",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1195"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10740",
+          "id": "10740",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "284"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10743",
+          "id": "10743",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "888"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10745",
+          "id": "10745",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1253"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10749",
+          "id": "10749",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "710"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10750",
+          "id": "10750",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1126"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10755",
+          "id": "10755",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "1568"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10764",
+          "id": "10764",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "14983"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10766",
+          "id": "10766",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "842"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10768",
+          "id": "10768",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "853"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10770",
+          "id": "10770",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "681"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10773",
+          "id": "10773",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "15620"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1078",
+          "id": "1078",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEUNIS",
+          "o": "155005"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10489",
+          "id": "10489",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "1660"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10648",
+          "id": "10648",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "10200"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10650",
+          "id": "10650",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "7350"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10662",
+          "id": "10662",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "6620"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10664",
+          "id": "10664",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "4770"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10698",
+          "id": "10698",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "7610"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10723",
+          "id": "10723",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "6720"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10724",
+          "id": "10724",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "13070"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10728",
+          "id": "10728",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "12760"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10733",
+          "id": "10733",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "14870"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10734",
+          "id": "10734",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "9680"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10738",
+          "id": "10738",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "8400"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10739",
+          "id": "10739",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "2310"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10743",
+          "id": "10743",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "7950"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10745",
+          "id": "10745",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "4070"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10750",
+          "id": "10750",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "9740"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10759",
+          "id": "10759",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "801"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10766",
+          "id": "10766",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "12530"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10768",
+          "id": "10768",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "9760"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10773",
+          "id": "10773",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeEURING",
+          "o": "482"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10648",
+          "id": "10648",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "34866"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10650",
+          "id": "10650",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "23392"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10662",
+          "id": "10662",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "34845"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10664",
+          "id": "10664",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "35038"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10698",
+          "id": "10698",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "34814"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10718",
+          "id": "10718",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "21639"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10724",
+          "id": "10724",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "36461"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10733",
+          "id": "10733",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "35010"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10734",
+          "id": "10734",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "21627"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10738",
+          "id": "10738",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "34857"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10739",
+          "id": "10739",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "34803"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10743",
+          "id": "10743",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "20199"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10745",
+          "id": "10745",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "35089"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10750",
+          "id": "10750",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "34851"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10755",
+          "id": "10755",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "35082"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10766",
+          "id": "10766",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "34864"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10768",
+          "id": "10768",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodePhoto",
+          "o": "35018"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/100",
+          "id": "100",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1886"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10029",
+          "id": "10029",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1885"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1004",
+          "id": "1004",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1703"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1007",
+          "id": "1007",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1704"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10344",
+          "id": "10344",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1762"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1038",
+          "id": "1038",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1566"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10489",
+          "id": "10489",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A044"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/1056",
+          "id": "1056",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1819"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10587",
+          "id": "10587",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "5807"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10648",
+          "id": "10648",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A262"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10650",
+          "id": "10650",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A213"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10662",
+          "id": "10662",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A205"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10664",
+          "id": "10664",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A138"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10675",
+          "id": "10675",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1102"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10679",
+          "id": "10679",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1087"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10698",
+          "id": "10698",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A219"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10714",
+          "id": "10714",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1065"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10715",
+          "id": "10715",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1326"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10718",
+          "id": "10718",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "1283"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10723",
+          "id": "10723",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A422"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10724",
+          "id": "10724",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A313"
+        },
+        {
+          "taxonRecord": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/10728",
+          "id": "10728",
+          "p": "https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#CodeRedNatura",
+          "o": "A310"
+        }
+      ]
+    }
+  ],
+  "semantics": "DISCOVERY_PROBE_ONLY; NO_JBLR_CORPUS_INPUT; NO_OCCURRENCE_ASSERTION"
+}

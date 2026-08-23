@@ -1,0 +1,162 @@
+{
+  "probeVersion": "MITECO_IEET_STATIC_PROBE_v2",
+  "sourceUrl": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/bd_ieet_2015_tcm30-207985.zip",
+  "observedAt": "2026-08-23T07:31:08.260Z",
+  "status": "PASS",
+  "semantics": "SCHEMA_AND_SCOPE_PROBE_ONLY; NOT_CURRENT_EIDOS; NO_JBLR_CORPUS_INPUT; NO_OCCURRENCE_ASSERTION",
+  "httpStatus": 200,
+  "archiveBytes": 6378906,
+  "archiveSha256": "5244f91485f7b421883240c007d7a8b459f0f0a067c17e82605d46c3a1d31262",
+  "archiveFiles": [
+    "BD_IEET_2015/BD_IEET_2015.mdb"
+  ],
+  "databaseFiles": [
+    "extracted/BD_IEET_2015/BD_IEET_2015.mdb"
+  ],
+  "databases": [
+    {
+      "file": "extracted/BD_IEET_2015/BD_IEET_2015.mdb",
+      "tables": [
+        "BD_IEET_2015"
+      ],
+      "tableProbes": [
+        {
+          "table": "BD_IEET_2015",
+          "exportStatus": "PASS",
+          "analysisStatus": "PASS",
+          "columns": [
+            "IdEspecie",
+            "Grupo",
+            "Nombre",
+            "Genero",
+            "Especie",
+            "Infra",
+            "CUTM10x10",
+            "EstadoCUTM",
+            "FechaCUTM",
+            "OrigenCUTM",
+            "DescripcionOrigenCUTM",
+            "Autor",
+            "Reino",
+            "Division",
+            "Clase",
+            "Orden",
+            "Familia"
+          ],
+          "totalRows": 656025,
+          "overall": {
+            "Grupo": {
+              "Mamíferos": 92195,
+              "Anfibios": 30606,
+              "Invertebrados": 37482,
+              "Reptiles": 46545,
+              "Flora vascular": 9386,
+              "Aves": 419541,
+              "Peces continentales": 19795,
+              "Flora no vascular": 475
+            },
+            "Reino": {
+              "Animalia": 646164,
+              "Plantae": 9861
+            },
+            "Division": {
+              "Chordata": 608682,
+              "Arthropoda": 35966,
+              "Magnoliophyta": 9016,
+              "Pteridophyta": 342,
+              "Mollusca": 1516,
+              "Marchantiophyta": 142,
+              "Bryophyta": 333,
+              "Coniferophyta": 28
+            },
+            "Clase": {
+              "Mammalia": 92195,
+              "Amphibia": 30606,
+              "Insecta": 35150,
+              "Reptilia": 46545,
+              "Magnoliopsida": 7736,
+              "Aves": 419541,
+              "Arachnida": 302,
+              "Psilotopsida": 5,
+              "Gastropoda": 1180,
+              "Actinopterygii": 19656,
+              "Liliopsida": 1280,
+              "Polypodiopsida": 322,
+              "-": 421,
+              "Pinopsida": 28,
+              "Filicopsida": 5,
+              "Bivalvia": 336,
+              "Malacostraca": 514,
+              "Cephalaspidomorphi": 139,
+              "Bryopsida": 54,
+              "Lycopodiopsida": 10
+            }
+          },
+          "selected77": {
+            "rowCount": 12996,
+            "uniqueNames": 509,
+            "Grupo": {
+              "Mamíferos": 2249,
+              "Anfibios": 622,
+              "Invertebrados": 662,
+              "Aves": 8014,
+              "Peces continentales": 535,
+              "Reptiles": 880,
+              "Flora vascular": 31,
+              "Flora no vascular": 3
+            },
+            "Reino": {
+              "Animalia": 12962,
+              "Plantae": 34
+            },
+            "Division": {
+              "Chordata": 12300,
+              "Arthropoda": 638,
+              "Mollusca": 24,
+              "Magnoliophyta": 31,
+              "Bryophyta": 3
+            },
+            "Clase": {
+              "Mammalia": 2249,
+              "Amphibia": 622,
+              "Insecta": 618,
+              "Aves": 8014,
+              "Actinopterygii": 535,
+              "Reptilia": 880,
+              "Gastropoda": 7,
+              "Bivalvia": 17,
+              "Magnoliopsida": 29,
+              "-": 3,
+              "Liliopsida": 2,
+              "Malacostraca": 20
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "hasReadableDatabase": true,
+  "hasSelectedRiojaRows": true,
+  "selectedRiojaGroupLabels": [
+    "Anfibios",
+    "Aves",
+    "Flora no vascular",
+    "Flora vascular",
+    "Invertebrados",
+    "Mamíferos",
+    "Peces continentales",
+    "Reptiles"
+  ],
+  "selectedRiojaKingdomLabels": [
+    "Animalia",
+    "Plantae"
+  ],
+  "selectedRiojaDivisionLabels": [
+    "Arthropoda",
+    "Bryophyta",
+    "Chordata",
+    "Magnoliophyta",
+    "Mollusca"
+  ],
+  "hasExplicitVascularFloraGroup": true
+}

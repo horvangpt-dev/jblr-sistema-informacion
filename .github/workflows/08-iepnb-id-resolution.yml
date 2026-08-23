@@ -1,0 +1,36 @@
+name: JBLR 08 IEPNB Exact ID Resolution
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 08-stime-execution-v1
+    paths:
+      - 'execution/08/miteco-rioja-expansion-v1/run-control/SPARQL_ID_RESOLUTION_REQUEST.json'
+
+permissions:
+  contents: write
+
+env:
+  ROOT: execution/08/miteco-rioja-expansion-v1
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 08-stime-execution-v1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Resolve exact IEPNB taxon IDs
+        run: node "$ROOT/bin/resolve-iepnb-taxon-ids.js" "$ROOT/run-control/SPARQL_ID_RESOLUTION_REQUEST.json" "$ROOT/run-control/SPARQL_ID_RESOLUTION_RESULT.json"
+      - name: Publish result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/run-control/SPARQL_ID_RESOLUTION_RESULT.json"
+          git commit -m "resolve(08): record IEPNB exact ID resolution ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:08-stime-execution-v1

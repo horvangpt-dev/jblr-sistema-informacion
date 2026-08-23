@@ -1,0 +1,18 @@
+{
+  "sample_state": "SYNTHETIC_CONTROLLED_ONLY_NOT_REAL_TAXONOMIC_ASSERTION",
+  "protocol": "TAXON_BY_TAXON_v2",
+  "stime": "STIME_00_FIELD_PROTOCOLS_v1",
+  "TAXON_WORK_KEY": "TWK-SYNTHETIC-0001",
+  "ID_TAXON_GOBIERNO": "EIDOS-SYNTHETIC-123",
+  "ID_TAXON_JBLR": null,
+  "ID_TAXON_JBLR_STATE": "HOLD_PENDING_0000_ID_MAPPING_RESOLUTION",
+  "TAX_RIOJA": "Taxon alpha subsp. beta",
+  "TAX_EIDOS": "Taxon alpha subsp. beta",
+  "TAX_ANTHOS": "Taxon alpha subsp. beta",
+  "TAX_POWO_WCVP": "Taxon alpha subsp. beta",
+  "TAX_WFO": "Taxon alpha subsp. beta",
+  "TAX_EUROMED": null,
+  "TAX_EUROMED_STATE": "CURRENT_SOURCE_UNVERIFIED",
+  "TAX_HISTORICO_1": "Taxon alpha var. beta",
+  "REVIEW_REQUIRED": ["ID_TAXON_JBLR_MAPPING_GATE", "TAX_EUROMED_CURRENT_SOURCE_UNVERIFIED"]
+}

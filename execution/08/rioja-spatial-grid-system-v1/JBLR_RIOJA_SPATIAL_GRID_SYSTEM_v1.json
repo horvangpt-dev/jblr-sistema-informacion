@@ -1,0 +1,86 @@
+{
+  "state_id": "JBLR_RIOJA_SPATIAL_GRID_SYSTEM_v1",
+  "created_at": "2026-08-23T01:56:01+02:00",
+  "authority": "DIRECT_USER_OVERRIDE_FOR_THIS_MAP_STEP",
+  "design_and_execution_actor": "08",
+  "workflow_override": "SKIP_04_DESIGN_FOR_THIS_STEP_ONLY",
+  "crs": "EPSG:25830",
+  "predecessor_state": "JBLR_RIOJA_GRID_10X10_STATE_v1",
+  "drive_state_document_id": "1Su15BR5XcykQyn4zwKlawYg3ONjKY19_wSRWsqYTrb0",
+  "drive_release_folder_id": "1r1fHYx9DcuutRmfYAtdpYa31xvM77ydi",
+  "boundary": {
+    "source": "IDERIOJA_ADMIN_BOUNDARY",
+    "source_feature_id": "1487730",
+    "name": "La Rioja",
+    "snapshot_sha256": "e4e2364121b2bb3d2cb1825a0d77c51a529ab97f6c3d19bc0ceb55d885c4be24",
+    "area_m2": 5041355517.26916,
+    "bounds": [488974.834204, 4641288.307831, 609103.437943, 4721312.238913]
+  },
+  "grid_10km": {
+    "state": "FROZEN_BASELINE_REUSED",
+    "source": "MITECO_IEET_GRID_10X10",
+    "manifest_sha256": "2130223540a220465b102d64f309e3eca821bc1c6334843912b7d9988df334ee",
+    "count": 77,
+    "fully_within": 26,
+    "partial": 51,
+    "selection_rule": "positive-area intersection; zero-area touches excluded"
+  },
+  "grid_5km": {
+    "state": "DERIVED_ALIGNED_FROM_OFFICIAL_10KM_AND_UTM",
+    "count": 261,
+    "fully_within": 147,
+    "partial": 114,
+    "official_miteco_resource_declared": true,
+    "official_miteco_snapshot_acquired": false,
+    "official_resource_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/malla_5x5_tierra_p_tcm30-508790.zip",
+    "note": "Exact 5 km UTM subdivision of the frozen 10 km system; not claimed as byte-for-byte official snapshot until crosschecked."
+  },
+  "grid_1km": {
+    "state": "MITECO_COMPATIBLE_DERIVED_UTM_GRID",
+    "count": 5375,
+    "fully_within": 4706,
+    "partial": 669,
+    "official_miteco_resource_declared": true,
+    "official_miteco_snapshot_acquired": false,
+    "code_rule": "MGRS/UTM 1 km code derived from validated MITECO 10 km parent",
+    "validation_example": "30TWN3101",
+    "note": "Operationally usable now; future official 1 km snapshot must be crosschecked without silently replacing this baseline."
+  },
+  "grid_100m": {
+    "state": "VIRTUAL_ON_DEMAND",
+    "materialized": false,
+    "resolution_m": 100
+  },
+  "grid_10m": {
+    "state": "VIRTUAL_ON_DEMAND",
+    "materialized": false,
+    "resolution_m": 10
+  },
+  "coordinate_policy": {
+    "exact_coordinate_is_primary_evidence": true,
+    "grid_membership_is_derived_index": true,
+    "never_replace_exact_coordinate_with_grid": true,
+    "public_disclosure_is_separate_from_master_precision": true
+  },
+  "future_linkable_entities": [
+    "Population", "Observation", "Prospection", "FieldVisit", "CollectionEvent",
+    "Sample", "Accession", "Image", "ExternalEvidence", "AnalysisResult"
+  ],
+  "qa": {
+    "version": "JBLR_RIOJA_SPATIAL_GRID_QA_v1",
+    "tests": 25,
+    "pass": 25,
+    "fail": 0
+  },
+  "release": {
+    "release_sha256": "789e693587153ae22df0a1d0b1f36878364ef0b77f1a9ca59cce7cfc591dba9d",
+    "zip_sha256": "e8de1344417620b925b367378550d5f6f3a4ee7e278a1b6c9fc4c97f197cebd0"
+  },
+  "system_state": "OPERATIONAL_GEOGRAPHIC_BASELINE_READY",
+  "botanical_occurrence_layer": "EMPTY_BY_DESIGN",
+  "productive_taxon_discovery": 0,
+  "taxon_membership_mutation": 0,
+  "neon_writes": 0,
+  "evolution_policy": "IMMUTABLE_BASELINE_PLUS_VERSIONED_SUCCESSORS",
+  "canonical_registration": "PENDING_0000"
+}

@@ -1,0 +1,23 @@
+{
+  "manifestVersion": "MITECO_RIOJA_EIDOS_CURRENT_DISCOVERY_v1_MANIFEST",
+  "releaseSha256": "bcc6a3f3a662564a6e4b051c84279fb3e580e39065dc9575314b8abeec12039b",
+  "rawSourceSha256": "395f05729dda0af8a7a388c1b6c2368df546ae1c9199fb5da06b3447dea04e98",
+  "engineRunManifestSha256": "4c98f6995932b0e38d51730fb281ef3e5356e5fbfb406baf5d82e97fd9ebaafe",
+  "qa": "PASS",
+  "countChecks": "PASS",
+  "missingManifestCells": 0,
+  "unresolvedCurrentIds": ["2443", "208841", "210528"],
+  "sourceFeatureCollectionTimestamp": "2026-08-23T07:51:42.217Z",
+  "sourceNumberMatched": 165,
+  "sourceNumberReturned": 165,
+  "manifestCellsMatched": 77,
+  "outsideWindowFeaturesPreservedCount": 88,
+  "uniquePlantVascularIds": 22,
+  "resolvedAgainstMitecoVascularPatternSnapshot": 19,
+  "territoriallyConfirmedIdsIncludingUnresolved": 13,
+  "borderOnlyIdsIncludingUnresolved": 9,
+  "existingRiojaCorpusUsed": false,
+  "rc2Used": false,
+  "crossWithJblrPerformed": false,
+  "nextGate": "RESOLVE_3_CURRENT_IDS_THEN_FREEZE_PARALLEL_MITECO_CORPUS_BEFORE_ANY_JBLR_CROSS"
+}
