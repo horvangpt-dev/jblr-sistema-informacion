@@ -1,0 +1,11 @@
+{
+  "runId": "09_FI_INTERFACE_DIAGNOSTIC_20260824_001",
+  "enabled": true,
+  "humanDirectiveObservedAt": "2026-08-24T07:26:32Z",
+  "objective": "Resolve the current official Flora Iberica nomenclatural interface needed for taxon-by-taxon Spanish synonym research on the 337 Corpus B carry-forward records",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "noFuzzy": true,
+  "noRankCollapse": true,
+  "noParentIdInheritance": true
+}
