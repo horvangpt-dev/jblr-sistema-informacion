@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "scope": 185,
+  "releaseEvent": "JBLR-EVT-0000-20260824-RELEASE-09-TOP4-SEED-BOUND-RECOVERY-185-001",
+  "failureDiagnosisEvent": "JBLR-EVT-0000-20260824-FAST-TOP4-FAILURE-DIAGNOSIS-001",
+  "implementationReviewEvent": "JBLR-EVT-0000-20260824-REVIEW-09-RECOVERY-IMPLEMENTATION-001",
+  "relationClauseFixReadyEvent": "JBLR-EVT-09-20260824-RELATION-CLAUSE-FIX-READY-001",
+  "implementationHeadReviewed": "49d977bcb5a582dc5cb743dbd46f01bf27347949",
+  "supersedesRun": 32723005903,
+  "relaunchAsIs": false,
+  "seedBoundExplicitRelationRequired": true,
+  "relationClauseBindingRequired": true,
+  "boundedPersistenceRequired": true,
+  "primaryPassSources": [
+    "FLORA_MONTIBERICA",
+    "JOLUBE_BOTANICAL_CATALOGS",
+    "ARANZADI_MUNIBE",
+    "FLORA_CATALANA"
+  ],
+  "other11RescueOnly": true,
+  "deduplicateNamesPerTaxonBeforeEidos": true,
+  "queryEveryUniqueDiscoveredNameOnce": true,
+  "seedExcludedFromSynonymCompendium": true,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true
+}
