@@ -1,0 +1,20 @@
+{
+  "runClass": "FLORA_CATALANA_EXACT_SYNONYMY_TO_EIDOS_337",
+  "input": 337,
+  "output": 337,
+  "counts": {
+    "NOT_FOUND_IN_FLORA_CATALANA": 239,
+    "RESOLVED_EXACT_ORIGINAL_NAME": 4,
+    "RESOLVED_SPANISH_SYNONYM": 24,
+    "HUMAN_REVIEW_REQUIRED": 70
+  },
+  "resolvedNew": 28,
+  "explicitSameRankRelations": 254,
+  "crossRankRelationsPreservedNotUsed": 172,
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "eidosBytes": 250612716,
+  "sourcePlanCompleteRows": 0,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false
+}
