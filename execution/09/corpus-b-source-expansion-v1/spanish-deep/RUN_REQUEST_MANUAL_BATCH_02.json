@@ -1,0 +1,17 @@
+{
+  "runId": "SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_001",
+  "enabled": true,
+  "scope": 337,
+  "inputRelations": 25,
+  "objective": "Contrast fresh explicit Spanish taxonomic relations against the official current EIDOS open-data dump to recover additional taxon IDs without fuzzy equivalence or rank collapse",
+  "humanDirective": "taxon-by-taxon deep Spanish synonymy search then contrast each result with EIDOS",
+  "parentReleaseEvent": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001",
+  "terminalAttempt003Event": "JBLR-EVT-09-20260824-SOURCE-EXPANSION-337-TERMINAL-ATTEMPT003-001",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "sourceFailureNotAbsence": true
+}
