@@ -1,0 +1,72 @@
+name: 09 Corpus B Spanish synonymy to EIDOS deep full
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FULL.json'
+
+permissions:
+  contents: write
+
+jobs:
+  full-sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+      - uses: r-lib/actions/setup-r@v2
+      - name: Install florae and JSON support
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcurl4-openssl-dev libssl-dev libxml2-dev git
+          Rscript -e 'install.packages(c("jsonlite","remotes"), repos="https://cloud.r-project.org"); remotes::install_gitlab("point-veg/florae", dependencies=TRUE, upgrade="never")'
+      - name: Validate governed request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FULL.json'))
+          assert p['enabled'] is True
+          assert p['crossWithA'] is False
+          assert p['neonWrites'] == 0
+          assert p['noFuzzy'] is True
+          assert p['noParentIdInheritance'] is True
+          assert p['noRankCollapse'] is True
+          PY
+      - name: Fresh Flora Iberica taxon-by-taxon sweep 337
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001"
+          mkdir -p "$OUT"
+          Rscript "$ROOT/run_flora_iberica_337.R" \
+            execution/09/corpus-b-cold-start-v1/runs/09_CORPUS_B_COLD_START_20260824_002/CORPUS_B_338_RESOLUTION_RESULTS_v2.json \
+            "$OUT"
+      - name: Download official current EIDOS open-data dump
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 1200 \
+            -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+      - name: Contrast complete Spanish name network with EIDOS
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001"
+          python "$ROOT/contrast_name_network_with_eidos.py" \
+            "$OUT/FLORA_IBERICA_337_NAME_NETWORK.json" \
+            "$RUNNER_TEMP/eidos.ttl" \
+            "$OUT"
+          sha256sum "$OUT"/* > "$OUT/SHA256SUMS.txt"
+      - name: Persist immutable full sweep
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001
+          git commit -m "result(09): full 337 Spanish synonymy EIDOS sweep ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
