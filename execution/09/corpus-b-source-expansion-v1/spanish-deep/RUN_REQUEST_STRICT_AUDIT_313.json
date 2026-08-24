@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "runId": "CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001",
+  "scope": 313,
+  "baseRun": "CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_20260824_001",
+  "noSilentInference": true,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false
+}
