@@ -1,0 +1,39 @@
+name: 09 florae source diagnostic
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FLORAE_DIAGNOSTIC.json'
+
+permissions:
+  contents: write
+
+jobs:
+  inspect-florae:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+      - name: Clone open florae source and extract FI functions
+        run: |
+          set -euo pipefail
+          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/diagnostics/florae_source
+          mkdir -p "$OUT"
+          git clone --depth=1 https://gitlab.com/point-veg/florae.git "$RUNNER_TEMP/florae"
+          grep -RIlE 'Fi_get_taxon_synonyms|Fi_taxon_in|cientificos2|cientificos_' "$RUNNER_TEMP/florae" > "$OUT/matching_files.txt"
+          while read -r f; do
+            b=$(basename "$f")
+            cp "$f" "$OUT/${b}"
+          done < "$OUT/matching_files.txt"
+          grep -RniE 'Fi_get_taxon_synonyms|Fi_taxon_in|cientificos2|cientificos_|read_html|html_' "$RUNNER_TEMP/florae" > "$OUT/relevant_lines.txt" || true
+      - name: Persist diagnostic
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add execution/09/corpus-b-source-expansion-v1/spanish-deep/diagnostics/florae_source
+          git commit -m "evidence(09): inspect florae FI query implementation ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
