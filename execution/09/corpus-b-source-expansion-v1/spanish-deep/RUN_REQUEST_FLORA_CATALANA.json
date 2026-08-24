@@ -1,0 +1,17 @@
+{
+  "runId": "FLORA_CATALANA_EIDOS_337_20260824_001",
+  "enabled": true,
+  "inputCount": 337,
+  "source": "FLORA_CATALANA_VASCULAR_TAXON_SYNONYM_SEARCH",
+  "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi",
+  "humanDirectiveObservedAt": "2026-08-24T07:47:59Z",
+  "objective": "For each unresolved Corpus B taxon, query Flora Catalana by scientific name or synonym, preserve exact source-backed same-rank relations, and contrast those names against the official current MITECO EIDOS open-data dump",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "sourceFailureNotAbsence": true,
+  "notFoundNotAbsence": true
+}
