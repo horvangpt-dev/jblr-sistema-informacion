@@ -1,0 +1,220 @@
+{
+  "runClass": "CORPUS_B_SOURCE_YIELD_CALIBRATION_25_TOP4",
+  "sampleRule": "FIRST_25_ROWS_OF_NO_RESULT_IN_SPANISH_SOURCES_CONSULTED_185",
+  "inputTaxa": 25,
+  "sourceCount": 15,
+  "totalSourceTaxonQueries": 375,
+  "searchQueriesPerTaxonSource": 1,
+  "maxSearchResultsPerTaxonSource": 6,
+  "eidosUsed": false,
+  "rankingCriterion": "SUM_OF_PER_TAXON_DEDUPLICATED_SYNONYM_NAMES_PER_SOURCE",
+  "seedNameExcludedFromSynonymCount": true,
+  "ranking": [
+    {
+      "source": "ARANZADI_MUNIBE",
+      "domain": "aranzadi.eus",
+      "taxaAudited": 25,
+      "totalSynonyms": 373,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 1
+    },
+    {
+      "source": "UMA_ACTA_BOTANICA_MALACITANA",
+      "domain": "revistas.uma.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 272,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 14,
+      "fetchFailures": 2
+    },
+    {
+      "source": "ASTURNATURA",
+      "domain": "asturnatura.com",
+      "taxaAudited": 25,
+      "totalSynonyms": 10,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "CICYTEX_EXTREMADURA",
+      "domain": "cicytex.juntaex.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 2,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORA_MONTIBERICA",
+      "domain": "floramontiberica.org",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 0
+    },
+    {
+      "source": "HVMO_UIB",
+      "domain": "herbarivirtual.uib.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORAGON_JACA",
+      "domain": "floragon.ipe.csic.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORA_ANDALUCIA",
+      "domain": "florandalucia.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORA_CANARIAS",
+      "domain": "floradecanarias.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORA_CATALANA",
+      "domain": "floracatalana.cat",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORA_VASCULAR_BIOSCRIPTS",
+      "domain": "floravascular.com",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "UGR_HERBARIUM_FLORA_ANDALUCIA_ORIENTAL",
+      "domain": "herbarium.ugr.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "UNAVARRA",
+      "domain": "unavarra.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "US_FLORA_ANDALUCIA_AUTHOR_PAGES",
+      "domain": "personal.us.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "JOLUBE_BOTANICAL_CATALOGS",
+      "domain": "jolube.net",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "searchHitTaxa": 0,
+      "searchFailureTaxa": 14,
+      "fetchFailures": 0
+    }
+  ],
+  "top4": [
+    "ARANZADI_MUNIBE",
+    "UMA_ACTA_BOTANICA_MALACITANA",
+    "ASTURNATURA",
+    "CICYTEX_EXTREMADURA"
+  ],
+  "top4Detail": [
+    {
+      "source": "ARANZADI_MUNIBE",
+      "domain": "aranzadi.eus",
+      "taxaAudited": 25,
+      "totalSynonyms": 373,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 1
+    },
+    {
+      "source": "UMA_ACTA_BOTANICA_MALACITANA",
+      "domain": "revistas.uma.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 272,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 14,
+      "fetchFailures": 2
+    },
+    {
+      "source": "ASTURNATURA",
+      "domain": "asturnatura.com",
+      "taxaAudited": 25,
+      "totalSynonyms": 10,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "CICYTEX_EXTREMADURA",
+      "domain": "cicytex.juntaex.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 2,
+      "taxaWithSynonyms": 1,
+      "searchHitTaxa": 1,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    }
+  ],
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "semantics": [
+    "SEARCH_HIT!=SYNONYM",
+    "SOURCE_FAILURE!=NOT_FOUND",
+    "RANKING_ONLY_DOES_NOT_CANONICALIZE_TAXONOMY"
+  ]
+}
