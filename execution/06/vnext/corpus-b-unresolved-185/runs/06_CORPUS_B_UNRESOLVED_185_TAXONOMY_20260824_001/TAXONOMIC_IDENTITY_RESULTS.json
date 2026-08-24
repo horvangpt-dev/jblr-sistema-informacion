@@ -1,0 +1,5542 @@
+{
+  "runId": "06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001",
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "nameVerbatim": "Adenocarpus hispanicus subsp. neilense",
+      "nameParsed": "Adenocarpus hispanicus subsp.. neilense",
+      "nameReconciled": "Adenocarpus hispanicus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Adenocarpus hispanicus subsp.. neilense",
+        "Adenocarpus hispanicus",
+        "Cytisus hispanicus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "nameVerbatim": "Alchemilla basaltica",
+      "nameParsed": "Alchemilla basaltica",
+      "nameReconciled": "Alchemilla basaltica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Alchemilla basaltica",
+        "Alchemilla transiens",
+        "Alchemilla subtruncata",
+        "Alchemilla brachyclada",
+        "Alchemilla saxetana",
+        "Alchemilla obovalis",
+        "Alchemilla mucronata",
+        "Alchemilla bulgarica",
+        "Alchemilla heptakteis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3143",
+      "nameVerbatim": "Alchemilla filicaulis var. vestita",
+      "nameParsed": "Alchemilla filicaulis var.. vestita",
+      "nameReconciled": "Alchemilla filicaulis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Alchemilla filicaulis var.. vestita",
+        "Alchemilla filicaulis",
+        "Potentilla salmoniana",
+        "Alchemilla pseudominor",
+        "Alchemilla vestita",
+        "Alchemilla salmoniana"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2250",
+      "nameVerbatim": "Allium oleraceum var. oleraceum",
+      "nameParsed": "Allium oleraceum var.. oleraceum",
+      "nameReconciled": "Allium oleraceum var.. oleraceum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Allium oleraceum var.. oleraceum",
+        "Allium oleraceum",
+        "Allium longispathum",
+        "Allium amansii",
+        "Allium collinum",
+        "Allium dentiferum",
+        "Allium intermedium",
+        "Codonoprasum longispathum",
+        "Allium pugetii",
+        "Allium boryanum",
+        "Allium paniculatum",
+        "Allium monspessulanum",
+        "Codonoprasum alpicola",
+        "Allium complanatum",
+        "Raphione oleracea",
+        "Allium scabrum",
+        "Codonoprasum viridiflorum",
+        "Allium virescens",
+        "Codonoprasum intermedium",
+        "Cepa oleracea",
+        "Allium virens",
+        "Codonoprasum oleraceum",
+        "Codonoprasum complanatum",
+        "Porrum oleraceum",
+        "Allium oxypetalum",
+        "Allium parviflorum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "156",
+      "nameVerbatim": "Allium schoenoprassum",
+      "nameParsed": "Allium schoenoprassum",
+      "nameReconciled": "Allium schoenoprassum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Allium schoenoprassum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "895",
+      "nameVerbatim": "Andryala ragusina var. ragusina",
+      "nameParsed": "Andryala ragusina var.. ragusina",
+      "nameReconciled": "Andryala ragusina",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Andryala ragusina var.. ragusina",
+        "Andryala ragusina",
+        "Rothia argentea",
+        "Rothia lyrata",
+        "Crepis incana",
+        "Andryala incana",
+        "Andryala laciniata",
+        "Andryala lyrata",
+        "Andryala macrocephala",
+        "Andryala ramosissima",
+        "Andryala sinuata",
+        "Andryala tomentosa",
+        "Hieracium laciniatum",
+        "Hieracium linearifolium"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "nameVerbatim": "Anteriorchis coriophora var. carpetana",
+      "nameParsed": "Anteriorchis coriophora var.. carpetana",
+      "nameReconciled": "Anteriorchis coriophora var.. carpetana",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Anteriorchis coriophora var.. carpetana",
+        "Anteriorchis coriophora",
+        "Anacamptis coriophora",
+        "Herorchis coriophora",
+        "Orchis coriophora"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "nameVerbatim": "Anthemis triumfettii",
+      "nameParsed": "Anthemis triumfettii",
+      "nameReconciled": "Anthemis triumfettii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Anthemis triumfettii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2285",
+      "nameVerbatim": "Arum orientale subsp. orientale",
+      "nameParsed": "Arum orientale subsp.. orientale",
+      "nameReconciled": "Arum orientale subsp.. orientale",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Arum orientale subsp.. orientale",
+        "Arum orientale"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "836",
+      "nameVerbatim": "Asperula pyrenaica",
+      "nameParsed": "Asperula pyrenaica",
+      "nameReconciled": "Asperula pyrenaica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Asperula pyrenaica",
+        "Cynanchica pyrenaica"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "nameVerbatim": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "nameParsed": "Asplenium adiantum-nigrum var.. adiantum-nigrum",
+      "nameReconciled": "Asplenium adiantum-nigrum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Asplenium adiantum-nigrum var.. adiantum-nigrum",
+        "Asplenium adiantum-nigrum",
+        "Tarachia adiantum-nigrum",
+        "Chamaefilix adiantum-nigrum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "nameVerbatim": "Astragalus monspessulanus subsp. teresianus",
+      "nameParsed": "Astragalus monspessulanus subsp.. teresianus",
+      "nameReconciled": "Astragalus monspessulanus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Astragalus monspessulanus subsp.. teresianus",
+        "Astragalus monspessulanus",
+        "Astragalus declinatus",
+        "Astragalus polygala",
+        "Podochrea monspessulana",
+        "Proselias monspessulanus",
+        "Tragacantha monspessulana",
+        "Astragalus tragacanthoides",
+        "Myobroma lignosa",
+        "Astragalus samamensis",
+        "Myobroma albana",
+        "Astragalus badamliensis",
+        "Tragacantha declinata",
+        "Tragacantha samamensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "nameVerbatim": "Astragalus sempervirens subsp. muticus",
+      "nameParsed": "Astragalus sempervirens subsp.. muticus",
+      "nameReconciled": "Astragalus sempervirens",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Astragalus sempervirens subsp.. muticus",
+        "Astragalus sempervirens",
+        "Astragalus cephalonicus",
+        "Tragacantha aristata",
+        "Phaca tragacantha",
+        "Phaca aristata",
+        "Astragalus aristatus",
+        "Tragacantha cephalonica"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "nameVerbatim": "Astragalus vesicarius subsp. vesicarius",
+      "nameParsed": "Astragalus vesicarius subsp.. vesicarius",
+      "nameReconciled": "Astragalus vesicarius",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Astragalus vesicarius subsp.. vesicarius",
+        "Astragalus vesicarius",
+        "Tragacantha vesicaria",
+        "Solenotus vesicarius"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "nameVerbatim": "Atropa bella-donna",
+      "nameParsed": "Atropa bella-donna",
+      "nameReconciled": "Atropa bella-donna",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Atropa bella-donna",
+        "Boberella bella-donna",
+        "Atropa borealis",
+        "Atropa cordata",
+        "Atropa digitaloides",
+        "Atropa lethalis",
+        "Belladona baccifera",
+        "Belladona trichotoma",
+        "Atropa caucasica",
+        "Atropa paschkewiczii",
+        "Atropa mediterranea",
+        "Atropa lutea"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "nameVerbatim": "Avenula bromoides subsp. pauneroi",
+      "nameParsed": "Avenula bromoides subsp.. pauneroi",
+      "nameReconciled": "Avenula bromoides",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Avenula bromoides subsp.. pauneroi",
+        "Avenula bromoides",
+        "Helictochloa bromoides",
+        "Avena truncata",
+        "Avenastrum bromoides",
+        "Helictotrichon bromoides",
+        "Heuffelia bromoides",
+        "Arrhenatherum bromoides",
+        "Avena bromoides",
+        "Avenochloa bromoides"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "nameVerbatim": "Avenula lodunensis subsp. romero-zarcoi",
+      "nameParsed": "Avenula lodunensis subsp.. romero-zarcoi",
+      "nameReconciled": "Avenula lodunensis subsp.. romero-zarcoi",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Avenula lodunensis subsp.. romero-zarcoi",
+        "Avenula lodunensis",
+        "Helictochloa marginata",
+        "Avena lodunensis",
+        "Avena marginata",
+        "Avena splendens",
+        "Avena sulcata",
+        "Avenastrum sulcatum",
+        "Avenochloa sulcata",
+        "Avenula cintrana",
+        "Avenula occidentalis",
+        "Avenula sulcata",
+        "Helictotrichon cintranum",
+        "Helictotrichon marginatum",
+        "Helictotrichon occidentale",
+        "Helictotrichon sulcatum",
+        "Arrhenatherum sulcatum",
+        "Helictochloa discreta",
+        "Helictochloa cintrana",
+        "Avenula marginata",
+        "Helictochloa delicatula",
+        "Helictochloa occidentalis",
+        "Avenochloa occidentalis",
+        "Avenula delicatula"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1398",
+      "nameVerbatim": "Avenula pratensis var. paniculata",
+      "nameParsed": "Avenula pratensis var.. paniculata",
+      "nameReconciled": "Avenula pratensis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Avenula pratensis var.. paniculata",
+        "Avenula pratensis",
+        "Helictochloa pratensis",
+        "Avenastrum pratense",
+        "Helictotrichon pratense",
+        "Heuffelia pratensis",
+        "Avena pratensis",
+        "Arrhenatherum pratense",
+        "Trisetum pratense",
+        "Avenochloa pratensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1399",
+      "nameVerbatim": "Avenula pratensis var. vasconica",
+      "nameParsed": "Avenula pratensis var.. vasconica",
+      "nameReconciled": "Avenula pratensis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Avenula pratensis var.. vasconica",
+        "Avenula pratensis",
+        "Helictochloa pratensis",
+        "Avenastrum pratense",
+        "Helictotrichon pratense",
+        "Heuffelia pratensis",
+        "Avena pratensis",
+        "Arrhenatherum pratense",
+        "Trisetum pratense",
+        "Avenochloa pratensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "615",
+      "nameVerbatim": "Avenula sulcata subsp. sulcata",
+      "nameParsed": "Avenula sulcata subsp.. sulcata",
+      "nameReconciled": "Avenula sulcata subsp.. sulcata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Avenula sulcata subsp.. sulcata",
+        "Avenula sulcata",
+        "Helictochloa marginata",
+        "Avena lodunensis",
+        "Avena marginata",
+        "Avena splendens",
+        "Avena sulcata",
+        "Avenastrum sulcatum",
+        "Avenochloa sulcata",
+        "Avenula cintrana",
+        "Avenula lodunensis",
+        "Avenula occidentalis",
+        "Helictotrichon cintranum",
+        "Helictotrichon marginatum",
+        "Helictotrichon occidentale",
+        "Helictotrichon sulcatum",
+        "Arrhenatherum sulcatum",
+        "Helictochloa discreta",
+        "Helictochloa cintrana",
+        "Avenula marginata",
+        "Helictochloa delicatula",
+        "Helictochloa occidentalis",
+        "Avenochloa occidentalis",
+        "Avenula delicatula"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4509",
+      "nameVerbatim": "Betula alba var. alba",
+      "nameParsed": "Betula alba var.. alba",
+      "nameReconciled": "Betula alba",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Betula alba var.. alba",
+        "Betula alba",
+        "Betula odorata",
+        "Betula friesii",
+        "Betula glabra",
+        "Betula glauca",
+        "Betula broccembergensis",
+        "Betula baicalia",
+        "Betula asplenifolia",
+        "Betula ambigua",
+        "Betula aurea",
+        "Betula concinna",
+        "Betula dalecarlica",
+        "Betula laciniata",
+        "Betula krylovii",
+        "Betula lenta",
+        "Betula microdontia",
+        "Betula megaloptera",
+        "Betula macrostachya",
+        "Betula major",
+        "Betula ovata",
+        "Betula murithii",
+        "Betula nigricans",
+        "Betula jacutica",
+        "Betula hackelii",
+        "Betula glutinosa",
+        "Betula pontica",
+        "Betula populifolia",
+        "Betula platyodontia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4510",
+      "nameVerbatim": "Betula alba var. glabrata",
+      "nameParsed": "Betula alba var.. glabrata",
+      "nameReconciled": "Betula alba",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Betula alba var.. glabrata",
+        "Betula alba",
+        "Betula odorata",
+        "Betula friesii",
+        "Betula glabra",
+        "Betula glauca",
+        "Betula broccembergensis",
+        "Betula baicalia",
+        "Betula asplenifolia",
+        "Betula ambigua",
+        "Betula aurea",
+        "Betula concinna",
+        "Betula dalecarlica",
+        "Betula laciniata",
+        "Betula krylovii",
+        "Betula lenta",
+        "Betula microdontia",
+        "Betula megaloptera",
+        "Betula macrostachya",
+        "Betula major",
+        "Betula ovata",
+        "Betula murithii",
+        "Betula nigricans",
+        "Betula jacutica",
+        "Betula hackelii",
+        "Betula glutinosa",
+        "Betula pontica",
+        "Betula populifolia",
+        "Betula platyodontia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1192",
+      "nameVerbatim": "Betula pendula var. meridionalis",
+      "nameParsed": "Betula pendula var.. meridionalis",
+      "nameReconciled": "Betula pendula",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Betula pendula var.. meridionalis",
+        "Betula pendula"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3787",
+      "nameVerbatim": "Biscutella valentina var. laevigata",
+      "nameParsed": "Biscutella valentina var.. laevigata",
+      "nameReconciled": "Biscutella valentina var.. laevigata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Biscutella valentina var.. laevigata",
+        "Biscutella valentina",
+        "Biscutella sempervirens",
+        "Biscutella virgata",
+        "Biscutella laurichii",
+        "Sisymbrium valentinum",
+        "Biscutella augustini",
+        "Biscutella tenuicaulis",
+        "Brassicella valentina",
+        "Brassica valentina"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3788",
+      "nameVerbatim": "Biscutella valentina var. valentina",
+      "nameParsed": "Biscutella valentina var.. valentina",
+      "nameReconciled": "Biscutella valentina var.. valentina",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Biscutella valentina var.. valentina",
+        "Biscutella valentina",
+        "Biscutella sempervirens",
+        "Biscutella virgata",
+        "Biscutella laurichii",
+        "Sisymbrium valentinum",
+        "Biscutella augustini",
+        "Biscutella tenuicaulis",
+        "Brassicella valentina",
+        "Brassica valentina"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3789",
+      "nameVerbatim": "Biscutella valentina var. variegata",
+      "nameParsed": "Biscutella valentina var.. variegata",
+      "nameReconciled": "Biscutella valentina var.. variegata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Biscutella valentina var.. variegata",
+        "Biscutella valentina",
+        "Biscutella sempervirens",
+        "Biscutella virgata",
+        "Biscutella laurichii",
+        "Sisymbrium valentinum",
+        "Biscutella augustini",
+        "Biscutella tenuicaulis",
+        "Brassicella valentina",
+        "Brassica valentina"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "415",
+      "nameVerbatim": "Blechnum spicant var. spicant",
+      "nameParsed": "Blechnum spicant var.. spicant",
+      "nameReconciled": "Blechnum spicant",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Blechnum spicant var.. spicant",
+        "Blechnum spicant",
+        "Struthiopteris spicant",
+        "Asplenium spicant",
+        "Blechnum boreale",
+        "Lomaria borealis",
+        "Lomaria spicant",
+        "Onoclea spicant",
+        "Osmunda borealis",
+        "Osmunda spicant",
+        "Spicanta borealis",
+        "Acrostichum spicant",
+        "Lonchitis-aspera spicant"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "910",
+      "nameVerbatim": "Bupleurum ranunculoides subsp. gramineus",
+      "nameParsed": "Bupleurum ranunculoides subsp.. gramineus",
+      "nameReconciled": "Bupleurum ranunculoides",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Bupleurum ranunculoides subsp.. gramineus",
+        "Bupleurum ranunculoides",
+        "Selinum ranunculoides"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "911",
+      "nameVerbatim": "Bupleurum ranunculoides subsp. ranunculoides",
+      "nameParsed": "Bupleurum ranunculoides subsp.. ranunculoides",
+      "nameReconciled": "Bupleurum ranunculoides",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Bupleurum ranunculoides subsp.. ranunculoides",
+        "Bupleurum ranunculoides",
+        "Selinum ranunculoides"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3587",
+      "nameVerbatim": "Campanula hispanica",
+      "nameParsed": "Campanula hispanica",
+      "nameReconciled": "Campanula hispanica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Campanula hispanica",
+        "Campanula granatensis",
+        "Campanula guiraoi",
+        "Campanula lanceolata",
+        "Campanula losae",
+        "Campanula burgalensis",
+        "Campanula betetae",
+        "Campanula tenella",
+        "Campanula paui"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1172",
+      "nameVerbatim": "Campanula paui",
+      "nameParsed": "Campanula paui",
+      "nameReconciled": "Campanula paui",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Campanula paui",
+        "Campanula hispanica",
+        "Campanula granatensis",
+        "Campanula guiraoi",
+        "Campanula lanceolata",
+        "Campanula losae",
+        "Campanula burgalensis",
+        "Campanula betetae",
+        "Campanula tenella"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3629",
+      "nameVerbatim": "Campanula trachelium subsp. trachelium",
+      "nameParsed": "Campanula trachelium subsp.. trachelium",
+      "nameReconciled": "Campanula trachelium subsp.. trachelium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Campanula trachelium subsp.. trachelium",
+        "Campanula trachelium",
+        "Drymocodon trachelium",
+        "Campanula urticifolia",
+        "Trachelioides vulgaris",
+        "Campanula brunonis",
+        "Campanula eriocarpa",
+        "Campanula macrantha",
+        "Campanula azurea",
+        "Campanula bocconei",
+        "Campanula chysnysuensis",
+        "Campanula contracta",
+        "Campanula crenata",
+        "Campanula dumetorum",
+        "Campanula elegans",
+        "Campanula elongata",
+        "Campanula foliosa",
+        "Campanula glabricarpa",
+        "Campanula grossheimii",
+        "Campanula hortensis",
+        "Campanula infundibuliformis",
+        "Campanula lunariifolia",
+        "Campanula macrostachya",
+        "Campanula neglecta",
+        "Campanula nemorosa",
+        "Campanula nutans",
+        "Campanula pyrenaica",
+        "Campanula pyramidiflora",
+        "Campanula racemosa",
+        "Campanula ranunculoides",
+        "Campanula rhomboidalis",
+        "Campanula rhomboidea",
+        "Campanula rigida",
+        "Campanula secunda",
+        "Campanula setosa",
+        "Campanula speciosa",
+        "Campanula trachelioides",
+        "Campanula ucranica",
+        "Campanula oenipontana",
+        "Campanula cordata",
+        "Campanula plicatula",
+        "Campanula serratifolia",
+        "Campanula oligosantha",
+        "Campanula bononiensis",
+        "Campanula cana",
+        "Campanula lychnitis",
+        "Campanula micrantha",
+        "Campanula pyramidata",
+        "Campanula multiflora",
+        "Campanula obliquifolia",
+        "Campanula petraea",
+        "Campanula tenuiflora",
+        "Campanula thaliana",
+        "Campanula simplex",
+        "Cenekia simplex",
+        "Drymocodon bononiensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3767",
+      "nameVerbatim": "Campanula urbionensis",
+      "nameParsed": "Campanula urbionensis",
+      "nameReconciled": "Campanula rotundifolia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Campanula urbionensis",
+        "Campanula rotundifolia",
+        "Campanula minuta",
+        "Campanula filiformis",
+        "Campanula lanceolata",
+        "Rapunculus esculentus",
+        "Campanula rotunda",
+        "Campanula reboudiana",
+        "Campanula racemosa",
+        "Campanula pubescens",
+        "Campanula pseudovaldensis",
+        "Campanula poenina",
+        "Campanula pinifolia",
+        "Campanula pennica",
+        "Campanula pennina",
+        "Campanula paenina",
+        "Jasione minuta",
+        "Jasione nummulariifolia",
+        "Phyteuma minutum",
+        "Phyteuma rigidifolium"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4858",
+      "nameVerbatim": "Carduus assoi",
+      "nameParsed": "Carduus assoi",
+      "nameReconciled": "Carduus assoi",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Carduus assoi",
+        "Carduus subcarlinoides"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3165",
+      "nameVerbatim": "Carex flacca subsp. serrulata",
+      "nameParsed": "Carex flacca subsp.. serrulata",
+      "nameReconciled": "Carex flacca",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Carex flacca subsp.. serrulata",
+        "Carex flacca"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3498",
+      "nameVerbatim": "Carex hallerana",
+      "nameParsed": "Carex hallerana",
+      "nameReconciled": "Carex hallerana",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Carex hallerana"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1968",
+      "nameVerbatim": "Carex muricata subsp. lamprocarpa",
+      "nameParsed": "Carex muricata subsp.. lamprocarpa",
+      "nameReconciled": "Carex muricata subsp.. lamprocarpa",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Carex muricata subsp.. lamprocarpa",
+        "Carex muricata",
+        "Carex brongniartii",
+        "Carex hypoxanthos",
+        "Carex muehlenbergii",
+        "Carex divulsa",
+        "Carex nemorosa",
+        "Carex persica",
+        "Vignea divulsa",
+        "Vignea persica",
+        "Vignea virens",
+        "Vignea guestphalica",
+        "Carex canescens",
+        "Carex lumnitzeri",
+        "Carex subramosa",
+        "Caricina divulsa",
+        "Carex virens",
+        "Carex guestphalica",
+        "Carex cephalantha",
+        "Carex fasciculata",
+        "Carex gajonum",
+        "Carex gasparrinii",
+        "Carex josselynii",
+        "Carex leptophylla",
+        "Vignea angustior",
+        "Vignea hydrophila",
+        "Vignea grypos",
+        "Vignea perileia",
+        "Vignea stellulata",
+        "Carex convexa",
+        "Carex grypos",
+        "Carex hawaiiensis",
+        "Carex hydrophila",
+        "Carex angustior",
+        "Carex caflischii",
+        "Carex basilata",
+        "Carex serrulata",
+        "Carex stellulata",
+        "Carex svenonis",
+        "Caricina stellulata",
+        "Carex provincialis",
+        "Carex perileia",
+        "Carex ormantha",
+        "Carex minganinsularum",
+        "Carex leersii",
+        "Carex laricina",
+        "Vignea muricata",
+        "Caricina muricata",
+        "Carex densa",
+        "Carex vicaria",
+        "Carex dudleyi",
+        "Carex chrysoleuca",
+        "Carex breviligulata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2758",
+      "nameVerbatim": "Centaurea debeauxii subsp. nemoralis",
+      "nameParsed": "Centaurea debeauxii subsp.. nemoralis",
+      "nameReconciled": "Centaurea debeauxii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Centaurea debeauxii subsp.. nemoralis",
+        "Centaurea debeauxii",
+        "Centaurea sessilifolia",
+        "Jacea debeauxii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2367",
+      "nameVerbatim": "Centaurea paniculata subsp. castellana",
+      "nameParsed": "Centaurea paniculata subsp.. castellana",
+      "nameReconciled": "Centaurea paniculata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Centaurea paniculata subsp.. castellana",
+        "Centaurea paniculata",
+        "Centaurea graeca",
+        "Centaurea ceccariniana",
+        "Centaurea cordonis",
+        "Colymbada ceccariniana",
+        "Colymbada graeca",
+        "Centaurea bubanii",
+        "Centaurea spina-badia",
+        "Centaurea pallidula",
+        "Centaurea praetoria",
+        "Acosta paniculata",
+        "Acrolophus paniculatus",
+        "Centaurea pedemontana",
+        "Acosta subalbida",
+        "Acrolophus maculosus",
+        "Acrolophus rhenanus",
+        "Acrolophus subalbidus",
+        "Acrolophus tenuisectus",
+        "Centaurea augustana",
+        "Acosta chaubardii",
+        "Acosta maculosa",
+        "Acosta muretii",
+        "Acosta rhenana",
+        "Centaurea chaubardii",
+        "Centaurea crispatula",
+        "Centaurea leptoloma",
+        "Centaurea maculata",
+        "Centaurea maculosa",
+        "Centaurea muretii",
+        "Centaurea rhenana",
+        "Centaurea subalbida",
+        "Centaurea tenuisecta",
+        "Cyanus paniculatus",
+        "Centaurea cristata",
+        "Centaurea acutiloba",
+        "Centaurea scopolii",
+        "Centaurea karschiana",
+        "Centaurea rabenhorstiana",
+        "Acosta cristata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3681",
+      "nameVerbatim": "Centaurea triumfetti subsp. lingulata",
+      "nameParsed": "Centaurea triumfetti subsp.. lingulata",
+      "nameReconciled": "Centaurea triumfetti",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Centaurea triumfetti subsp.. lingulata",
+        "Centaurea triumfetti"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3006",
+      "nameVerbatim": "Centaurium erythraea subsp. grandiflorum",
+      "nameParsed": "Centaurium erythraea subsp.. grandiflorum",
+      "nameReconciled": "Centaurium erythraea",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Centaurium erythraea subsp.. grandiflorum",
+        "Centaurium erythraea",
+        "Centaurium minus",
+        "Chironia centaurium",
+        "Erythraea vulgaris",
+        "Erythraea centaurium",
+        "Centaurium centaurium",
+        "Gentiana centaurium",
+        "Gonipia linearis",
+        "Libadion variabile",
+        "Xolemia palustris",
+        "Centaurium capitatum",
+        "Centaurium corymbosum",
+        "Centaurium latifolium",
+        "Centaurium lomae",
+        "Centaurium sylvaticum",
+        "Centaurella dichotoma",
+        "Centaurium umbellatum",
+        "Centaurium vulgare",
+        "Chironia erythraea",
+        "Gentiana gerardii",
+        "Gentiana palustris",
+        "Erythraea capitata",
+        "Erythraea corymbosa",
+        "Erythraea germanica",
+        "Erythraea latifolia",
+        "Erythraea lomae",
+        "Erythraea schuttleworthiana",
+        "Erythraea sylvatica",
+        "Hippocentaurea centaurium"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5177",
+      "nameVerbatim": "Centranthus calcitrapae subsp. calcitrapae",
+      "nameParsed": "Centranthus calcitrapae subsp.. calcitrapae",
+      "nameReconciled": "Centranthus calcitrapae",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Centranthus calcitrapae subsp.. calcitrapae",
+        "Centranthus calcitrapae",
+        "Valeriana calcitrapae",
+        "Valeriana parviflora",
+        "Valeriana rotundifolia",
+        "Valeriana stevenii",
+        "Valeriana laciniata",
+        "Valeriana annua",
+        "Centranthus clausonis",
+        "Centranthus pinnatifidus",
+        "Rittera calcitrapae",
+        "Ocymastrum calcitrapa",
+        "Centranthus baeticus",
+        "Hybidium calcitrapa",
+        "Porteria parviflora"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5080",
+      "nameVerbatim": "Cerastium brachypetalum var. brachypetalum",
+      "nameParsed": "Cerastium brachypetalum var.. brachypetalum",
+      "nameReconciled": "Cerastium brachypetalum var.. brachypetalum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Cerastium brachypetalum var.. brachypetalum",
+        "Cerastium brachypetalum",
+        "Alsine brachypetala",
+        "Stellaria sitchana",
+        "Stellaria brachypetala",
+        "Stellaria elisabethiae",
+        "Stellaria duthiei",
+        "Stellaria caroliniana",
+        "Stellaria cerastium",
+        "Stellaria chlorotica",
+        "Stellaria hiemalis",
+        "Stellaria glabra",
+        "Stellaria grandiflora",
+        "Stellaria alsine",
+        "Stellaria alsinoides",
+        "Stellaria latifolia",
+        "Stellaria latisepala",
+        "Stellaria bertolae",
+        "Stellaria monogyna",
+        "Stellaria oligandra",
+        "Stellaria xanthanthera",
+        "Stellaria microphylla",
+        "Stellaria vulgaris",
+        "Stellaria murmuria",
+        "Stellaria modesta",
+        "Stellaria pilosa",
+        "Stellaria alpicola",
+        "Stellaria minor",
+        "Stellaria glabella",
+        "Stellaria cucubaloides",
+        "Stellaria dichotoma",
+        "Stellaria decandra",
+        "Alsine avicularum",
+        "Alsine barbata",
+        "Alsine bipartita",
+        "Alsine elongata",
+        "Alsine gussonii",
+        "Alsine latifolia",
+        "Alsine repens",
+        "Alsine vulgaris",
+        "Alsinella wallichiana",
+        "Arenaria vulgaris",
+        "Holosteum alsine"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "nameVerbatim": "Chaenorhinum rupestre",
+      "nameParsed": "Chaenorhinum rupestre",
+      "nameReconciled": "Chaenorhinum exile",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Chaenorhinum rupestre",
+        "Linaria exilis",
+        "Linaria rupestris",
+        "Chaenorhinum thymiflorum",
+        "Chaenorhinum exile",
+        "Linaria meyeri"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "686",
+      "nameVerbatim": "Chaerophyllum temulentum",
+      "nameParsed": "Chaerophyllum temulentum",
+      "nameReconciled": "Chaerophyllum temulentum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Chaerophyllum temulentum",
+        "Chaerophyllum temulum",
+        "Bellia temulenta",
+        "Polgidon temulum",
+        "Selinum temulum",
+        "Scandix nutans",
+        "Scandix temula",
+        "Chaerophyllum geniculatum",
+        "Chaerophyllum aureum",
+        "Myrrhis temula"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4419",
+      "nameVerbatim": "Cheilanthes acrostica",
+      "nameParsed": "Cheilanthes acrostica",
+      "nameReconciled": "Cheilanthes acrostica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Cheilanthes acrostica",
+        "Hemionitis acrostica",
+        "Adiantum odorum",
+        "Hemionitis atreyu",
+        "Cheilanthes odora",
+        "Allosorus pusillus",
+        "Pteris acrostica",
+        "Allosorus acrosticus",
+        "Oeosporangium acrosticum",
+        "Aleuritopteris acrostica"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "839",
+      "nameVerbatim": "Cirsium pyrenaicum var. longespinosum",
+      "nameParsed": "Cirsium pyrenaicum var.. longespinosum",
+      "nameReconciled": "Cirsium pyrenaicum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Cirsium pyrenaicum var.. longespinosum",
+        "Cirsium pyrenaicum",
+        "Cirsium fulvispinum",
+        "Carduus jacquinii",
+        "Cirsium flavispina",
+        "Carduus paniculatus",
+        "Carduus pyrenaicus",
+        "Cirsium allionii",
+        "Cirsium castellanum",
+        "Cirsium paniculatum",
+        "Cirsium matritense",
+        "Cnicus flavispinus",
+        "Cnicus pyrenaicus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "840",
+      "nameVerbatim": "Cirsium pyrenaicum var. pyrenaicum",
+      "nameParsed": "Cirsium pyrenaicum var.. pyrenaicum",
+      "nameReconciled": "Cirsium pyrenaicum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Cirsium pyrenaicum var.. pyrenaicum",
+        "Cirsium pyrenaicum",
+        "Cirsium fulvispinum",
+        "Carduus jacquinii",
+        "Cirsium flavispina",
+        "Carduus paniculatus",
+        "Carduus pyrenaicus",
+        "Cirsium allionii",
+        "Cirsium castellanum",
+        "Cirsium paniculatum",
+        "Cirsium matritense",
+        "Cnicus flavispinus",
+        "Cnicus pyrenaicus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "79",
+      "nameVerbatim": "Cistus salvifolius",
+      "nameParsed": "Cistus salvifolius",
+      "nameReconciled": "Cistus salvifolius",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Cistus salvifolius"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4871",
+      "nameVerbatim": "Colutea atlantica",
+      "nameParsed": "Colutea atlantica",
+      "nameReconciled": "Colutea atlantica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Colutea atlantica"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5071",
+      "nameVerbatim": "Conopodium bourgaei",
+      "nameParsed": "Conopodium bourgaei",
+      "nameReconciled": "Conopodium bourgaei",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Conopodium bourgaei",
+        "Conopodium pyrenaeum",
+        "Bunium bourgaei",
+        "Bunium pyrenaeum",
+        "Bunium sampaioi",
+        "Conopodium richteri",
+        "Conopodium subcarneum",
+        "Conopodium pumilum",
+        "Conopodium mutabile",
+        "Heterotaenia bourgaei",
+        "Carum bourgaei",
+        "Carum huetii",
+        "Bunium carviforme",
+        "Bunium cataonicum",
+        "Bunium fallax",
+        "Bunium tempskyanun"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5244",
+      "nameVerbatim": "Conopodium capillifolium",
+      "nameParsed": "Conopodium capillifolium",
+      "nameReconciled": "Conopodium capillifolium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Conopodium capillifolium",
+        "Geocaryum capillifolium",
+        "Myrrhis capillifolia",
+        "Bunium capillifolium",
+        "Biasolettia montenegrina",
+        "Conopodium graecum",
+        "Freyera balcanica",
+        "Freyera montenegrina"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "907",
+      "nameVerbatim": "Conopodium ramosum",
+      "nameParsed": "Conopodium ramosum",
+      "nameReconciled": "Conopodium ramosum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Conopodium ramosum",
+        "Conopodium arvense",
+        "Conopodium marcetii",
+        "Heterotaenia arvensis",
+        "Conopodium marianum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "173",
+      "nameVerbatim": "Cytisus scoparius subsp. cantabricus",
+      "nameParsed": "Cytisus scoparius subsp.. cantabricus",
+      "nameReconciled": "Cytisus scoparius",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Cytisus scoparius subsp.. cantabricus",
+        "Cytisus scoparius",
+        "Spartium scoparium",
+        "Sarothamnus scoparius",
+        "Sarothamnus vulgaris",
+        "Corema scoparium",
+        "Genista scoparia",
+        "Genista vulgaris",
+        "Cytisogenista scoparia",
+        "Lebeckia sepiaria",
+        "Sarcophyllus carnosus",
+        "Genista pinastrifolia",
+        "Lebeckia sarcophylloides",
+        "Genista sepiaria",
+        "Lebeckia simsiana",
+        "Lebeckia simsioides",
+        "Spartium pinastrifolium",
+        "Spartium sepiarium"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3594",
+      "nameVerbatim": "Dactylis hispanica",
+      "nameParsed": "Dactylis hispanica",
+      "nameReconciled": "Dactylis hispanica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylis hispanica",
+        "Bromus cylindraceus",
+        "Festuca phalarioides",
+        "Dactylis abbreviata",
+        "Dactylis altaica",
+        "Dactylis capitellata",
+        "Dactylis decalcata",
+        "Dactylis cylindracea",
+        "Dactylis kovarovicii",
+        "Dactylis glaucescens",
+        "Dactylis heterophylla",
+        "Dactylis kirschbaumii",
+        "Dactylis nemorosa",
+        "Dactylis stenophylla",
+        "Dactylis ortmanniana",
+        "Dactylis noeana",
+        "Dactylis pendula",
+        "Dactylis peylii",
+        "Dactylis pubescens",
+        "Dactylis scaberrima",
+        "Dactylis villosa",
+        "Sesleria cirtensis",
+        "Dactylis himalayensis",
+        "Festuca dactyloides"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2934",
+      "nameVerbatim": "Dactylorhiza elata subsp. sesquipedalis",
+      "nameParsed": "Dactylorhiza elata subsp.. sesquipedalis",
+      "nameReconciled": "Dactylorhiza elata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylorhiza elata subsp.. sesquipedalis",
+        "Dactylorhiza elata",
+        "Dactylorhiza sesquipedalis",
+        "Dactylorhiza vestita",
+        "Dactylorhiza brennensis",
+        "Orchis durandii",
+        "Orchis munbyana",
+        "Orchis sesquipedalis",
+        "Dactylorchis munbyana",
+        "Orchis elata",
+        "Dactylorchis sesquipedalis",
+        "Dactylorchis durandii",
+        "Dactylorchis elata",
+        "Gymnadenia elata",
+        "Dactylorhiza atlantica",
+        "Dactylorhiza mauritanica",
+        "Dactylorhiza kabyliensis",
+        "Dactylorhiza asturiensis",
+        "Orchis kabyliensis",
+        "Orchis lusitanica",
+        "Orchis vestita",
+        "Orchis rassautae",
+        "Orchis ambigua",
+        "Orchis africana",
+        "Orchidactyla kabyliensis",
+        "Dactylorhiza munbyana",
+        "Dactylorhiza occitanica",
+        "Dactylorhiza durandii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2994",
+      "nameVerbatim": "Dactylorhiza ericetorum",
+      "nameParsed": "Dactylorhiza ericetorum",
+      "nameReconciled": "Dactylorhiza ericetorum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylorhiza ericetorum",
+        "Dactylorhiza savogiensis",
+        "Dactylorhiza sudetica",
+        "Dactylorhiza transsilvanica",
+        "Dactylorhiza caramulensis",
+        "Orchis comosa",
+        "Orchis solida",
+        "Orchis macedonica",
+        "Orchis tetragona",
+        "Dactylorchis elodes"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2483",
+      "nameVerbatim": "Dactylorhiza incarnata subsp. incarnata",
+      "nameParsed": "Dactylorhiza incarnata subsp.. incarnata",
+      "nameReconciled": "Dactylorhiza incarnata subsp.. incarnata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylorhiza incarnata subsp.. incarnata",
+        "Dactylorhiza incarnata",
+        "Dactylorchis incarnata",
+        "Orchis incarnata",
+        "Dactylorhiza sambucina",
+        "Orchis laurentina",
+        "Orchis pallens",
+        "Orchis saccata",
+        "Orchis salina",
+        "Orchis sambucina",
+        "Orchis schleicheri",
+        "Orchis fasciculata",
+        "Dactylorchis sambucina",
+        "Dactylorhiza fasciculata",
+        "Orchis guffroyi",
+        "Orchis lutea"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1624",
+      "nameVerbatim": "Dactylorhiza maculata subsp. elodes",
+      "nameParsed": "Dactylorhiza maculata subsp.. elodes",
+      "nameReconciled": "Dactylorhiza maculata subsp.. elodes",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylorhiza maculata subsp.. elodes",
+        "Dactylorhiza maculata",
+        "Orchis maculata",
+        "Dactylorchis maculata",
+        "Orchis basilica",
+        "Neotinea maculata",
+        "Aceras densiflorum",
+        "Aceras intactum",
+        "Aceras maculatum",
+        "Aceras secundiflorum",
+        "Aceras vayredae",
+        "Coeloglossum densiflorum",
+        "Himantoglossum secundiflorum",
+        "Himantoglossum parviflorum",
+        "Habenaria intacta",
+        "Orchis atlantica",
+        "Orchis ecalcarata",
+        "Orchis imbecilla",
+        "Orchis intacta",
+        "Orchis sagittata",
+        "Orchis secundiflora",
+        "Peristylus atlanticus",
+        "Peristylus densiflorus",
+        "Peristylus maculatus",
+        "Tinea cylindrica",
+        "Tinea intacta",
+        "Tinea maculata",
+        "Satyrium atlanticum",
+        "Satyrium densiflorum",
+        "Neotinea intacta",
+        "Ophrys secundiflora",
+        "Ophrys densiflora",
+        "Satyrium parviflorum",
+        "Satyrium maculatum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1625",
+      "nameVerbatim": "Dactylorhiza maculata subsp. maculata",
+      "nameParsed": "Dactylorhiza maculata subsp.. maculata",
+      "nameReconciled": "Dactylorhiza maculata subsp.. maculata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylorhiza maculata subsp.. maculata",
+        "Dactylorhiza maculata",
+        "Orchis maculata",
+        "Dactylorchis maculata",
+        "Orchis basilica",
+        "Neotinea maculata",
+        "Aceras densiflorum",
+        "Aceras intactum",
+        "Aceras maculatum",
+        "Aceras secundiflorum",
+        "Aceras vayredae",
+        "Coeloglossum densiflorum",
+        "Himantoglossum secundiflorum",
+        "Himantoglossum parviflorum",
+        "Habenaria intacta",
+        "Orchis atlantica",
+        "Orchis ecalcarata",
+        "Orchis imbecilla",
+        "Orchis intacta",
+        "Orchis sagittata",
+        "Orchis secundiflora",
+        "Peristylus atlanticus",
+        "Peristylus densiflorus",
+        "Peristylus maculatus",
+        "Tinea cylindrica",
+        "Tinea intacta",
+        "Tinea maculata",
+        "Satyrium atlanticum",
+        "Satyrium densiflorum",
+        "Neotinea intacta",
+        "Ophrys secundiflora",
+        "Ophrys densiflora",
+        "Satyrium parviflorum",
+        "Satyrium maculatum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1647",
+      "nameVerbatim": "Dactylorhiza majalis subsp. majalis",
+      "nameParsed": "Dactylorhiza majalis subsp.. majalis",
+      "nameReconciled": "Dactylorhiza majalis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylorhiza majalis subsp.. majalis",
+        "Dactylorhiza majalis",
+        "Dactylorchis majalis",
+        "Orchis majalis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1696",
+      "nameVerbatim": "Dactylorhiza markusii",
+      "nameParsed": "Dactylorhiza markusii",
+      "nameReconciled": "Dactylorhiza markusii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dactylorhiza markusii",
+        "Dactylorhiza libanotica",
+        "Dactylorhiza sicula",
+        "Orchis bracteata",
+        "Orchis lucana",
+        "Orchis markusii",
+        "Orchis mediterranea",
+        "Orchis natalis",
+        "Orchis ochroleuca",
+        "Orchis pseudosambucina",
+        "Orchis sambucina",
+        "Orchis siciliensis",
+        "Orchis sicula"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3595",
+      "nameVerbatim": "Deschampsia hispanica",
+      "nameParsed": "Deschampsia hispanica",
+      "nameReconciled": "Deschampsia hispanica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Deschampsia hispanica",
+        "Agrostis gredensis",
+        "Calamagrostis arundo",
+        "Aira altissima",
+        "Aira ambigua",
+        "Aira hybrida",
+        "Aira neumaniana",
+        "Aira alpicola",
+        "Aira alpina",
+        "Aira andraei",
+        "Aira aristulata",
+        "Aira australis",
+        "Aira biebersteinii",
+        "Aira bottnica",
+        "Aira brevifolia",
+        "Aira breviaristata",
+        "Aira caespitosa",
+        "Aira chrysophaena",
+        "Aira festucoides",
+        "Aira glomerata",
+        "Aira glauca",
+        "Aira hartmaniana",
+        "Aira grandis",
+        "Aira latifolia",
+        "Aira litoralis",
+        "Aira littoralis",
+        "Aira micans",
+        "Aira neutralis",
+        "Aira paludosa",
+        "Aira pulchra",
+        "Aira pungens",
+        "Aira stolonifera",
+        "Aira sukatschewii",
+        "Aira triflora",
+        "Aira turczaninowii",
+        "Czerniaevia melicoides",
+        "Deschampsia alpigena",
+        "Deschampsia neumaniana",
+        "Deschampsia aenea",
+        "Deschampsia aleutica",
+        "Deschampsia alpicola",
+        "Deschampsia altaica",
+        "Deschampsia ambigua",
+        "Deschampsia anadyrensis",
+        "Deschampsia andina",
+        "Deschampsia andraei",
+        "Deschampsia austrobohemica",
+        "Deschampsia biebersteiniana",
+        "Deschampsia borealis",
+        "Deschampsia bottnica",
+        "Deschampsia breviaristata",
+        "Deschampsia caespitosa",
+        "Arundo argentea",
+        "Deyeuxia neglecta",
+        "Arundo speciosa",
+        "Arundo neglecta",
+        "Arundo halleri",
+        "Calamagrostis conspicua",
+        "Achnatherum argenteum",
+        "Calamagrostis halleri",
+        "Achnatherum halleri",
+        "Calamagrostis neglecta",
+        "Stipa longifolia",
+        "Calamagrostis leucantha",
+        "Calamagrostis leersii",
+        "Calamagrostis speciosa"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2816",
+      "nameVerbatim": "Doronicum diazii",
+      "nameParsed": "Doronicum diazii",
+      "nameReconciled": "Doronicum diazii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Doronicum diazii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4480",
+      "nameVerbatim": "Dryopteris affinis subsp. cambrensis",
+      "nameParsed": "Dryopteris affinis subsp.. cambrensis",
+      "nameReconciled": "Dryopteris affinis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dryopteris affinis subsp.. cambrensis",
+        "Dryopteris affinis",
+        "Dryopteris caucasica",
+        "Aspidium affine",
+        "Aspidium caucasicum",
+        "Polystichum affine",
+        "Nephrodium affine",
+        "Polystichum pseudotsus-simense",
+        "Lastrea nivalis",
+        "Thelypteris muminorum",
+        "Cyclosorus affinis",
+        "Gymnogramma macrotis",
+        "Sagenia menisciicarpa",
+        "Nephrodium auriculare",
+        "Pronephrium affine",
+        "Dryopteris oxyotis",
+        "Dryopteris pseudomas",
+        "Dryopteris abbreviata",
+        "Nephrodium abbreviatum",
+        "Nephrodium paleaceum",
+        "Lophodium abbreviatum",
+        "Polystichum abbreviatum",
+        "Dryopteris resendeana",
+        "Lastrea abbreviata",
+        "Lastrea pseudomas",
+        "Aspidium abbreviatum",
+        "Polystichum paleaceum",
+        "Polypodium paleaceum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4481",
+      "nameVerbatim": "Dryopteris affinis var. borreri",
+      "nameParsed": "Dryopteris affinis var.. borreri",
+      "nameReconciled": "Dryopteris affinis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dryopteris affinis var.. borreri",
+        "Dryopteris affinis",
+        "Dryopteris caucasica",
+        "Aspidium affine",
+        "Aspidium caucasicum",
+        "Polystichum affine",
+        "Nephrodium affine",
+        "Polystichum pseudotsus-simense",
+        "Lastrea nivalis",
+        "Thelypteris muminorum",
+        "Cyclosorus affinis",
+        "Gymnogramma macrotis",
+        "Sagenia menisciicarpa",
+        "Nephrodium auriculare",
+        "Pronephrium affine",
+        "Dryopteris oxyotis",
+        "Dryopteris pseudomas",
+        "Dryopteris abbreviata",
+        "Nephrodium abbreviatum",
+        "Nephrodium paleaceum",
+        "Lophodium abbreviatum",
+        "Polystichum abbreviatum",
+        "Dryopteris resendeana",
+        "Lastrea abbreviata",
+        "Lastrea pseudomas",
+        "Aspidium abbreviatum",
+        "Polystichum paleaceum",
+        "Polypodium paleaceum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4482",
+      "nameVerbatim": "Dryopteris affinis var. robusta",
+      "nameParsed": "Dryopteris affinis var.. robusta",
+      "nameReconciled": "Dryopteris affinis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Dryopteris affinis var.. robusta",
+        "Dryopteris affinis",
+        "Dryopteris caucasica",
+        "Aspidium affine",
+        "Aspidium caucasicum",
+        "Polystichum affine",
+        "Nephrodium affine",
+        "Polystichum pseudotsus-simense",
+        "Lastrea nivalis",
+        "Thelypteris muminorum",
+        "Cyclosorus affinis",
+        "Gymnogramma macrotis",
+        "Sagenia menisciicarpa",
+        "Nephrodium auriculare",
+        "Pronephrium affine",
+        "Dryopteris oxyotis",
+        "Dryopteris pseudomas",
+        "Dryopteris abbreviata",
+        "Nephrodium abbreviatum",
+        "Nephrodium paleaceum",
+        "Lophodium abbreviatum",
+        "Polystichum abbreviatum",
+        "Dryopteris resendeana",
+        "Lastrea abbreviata",
+        "Lastrea pseudomas",
+        "Aspidium abbreviatum",
+        "Polystichum paleaceum",
+        "Polypodium paleaceum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4850",
+      "nameVerbatim": "Echium asperrinum",
+      "nameParsed": "Echium asperrinum",
+      "nameReconciled": "Echium asperrinum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Echium asperrinum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3592",
+      "nameVerbatim": "Epipactis hispanica",
+      "nameParsed": "Epipactis hispanica",
+      "nameReconciled": "Epipactis hispanica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Epipactis hispanica",
+        "Epipactis bugacensis",
+        "Epipactis provincialis",
+        "Epipactis maricae",
+        "Epipactis moravica",
+        "Epipactis campeadorii",
+        "Epipactis rhodanensis",
+        "Epipactis mecsekensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1156",
+      "nameVerbatim": "Epipactis parviflora",
+      "nameParsed": "Epipactis parviflora",
+      "nameReconciled": "Epipactis kleinii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Epipactis parviflora",
+        "Goodyera procera",
+        "Cordylestylis foliosa",
+        "Epipactis philippinensis",
+        "Epipactis procera",
+        "Cionisaccus lanceolatus",
+        "Neottia parviflora",
+        "Neottia procera",
+        "Spiranthes parviflora",
+        "Peramium procerum",
+        "Goodyera philippinensis",
+        "Goodyera parviflora",
+        "Goodyera carnea",
+        "Goodyera lancifolia",
+        "Orchiodes parviflorum",
+        "Orchiodes procerum",
+        "Leucostachys procera",
+        "Cionisaccus procera",
+        "Epipactis kleinii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1250",
+      "nameVerbatim": "Epipactis phyllanthes var. fageticola",
+      "nameParsed": "Epipactis phyllanthes var.. fageticola",
+      "nameReconciled": "Epipactis phyllanthes var.. fageticola",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Epipactis phyllanthes var.. fageticola",
+        "Epipactis phyllanthes",
+        "Epipactis confusa",
+        "Epipactis fageticola",
+        "Epipactis degenera",
+        "Epipactis cambrensis",
+        "Epipactis olarionensis",
+        "Epipactis vectensis",
+        "Epipactis arenaria",
+        "Epipactis pendula"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3536",
+      "nameVerbatim": "Festuca heterophylla subsp. braun-blanquetii",
+      "nameParsed": "Festuca heterophylla subsp.. braun-blanquetii",
+      "nameReconciled": "Festuca heterophylla subsp.. braun-blanquetii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Festuca heterophylla subsp.. braun-blanquetii",
+        "Festuca heterophylla",
+        "Festuca nemorosa",
+        "Festuca nemorum",
+        "Festuca halleri-II-septiflora",
+        "Festuca vulpioides",
+        "Festuca transsilvanica",
+        "Festuca citardae",
+        "Festuca longiseta",
+        "Festuca ovina",
+        "Avena dura",
+        "Avena ovina",
+        "Bromus ovinus",
+        "Festuca agrestis",
+        "Festuca centroapenninica",
+        "Festuca duriuscula",
+        "Festuca fontqueriana",
+        "Festuca glaucantha",
+        "Festuca lasiantha",
+        "Festuca leucantha",
+        "Festuca multiflora",
+        "Festuca nigra",
+        "Festuca pauciflora",
+        "Festuca pumila",
+        "Festuca sphagnicola",
+        "Festuca vulgaris",
+        "Festuca yarochenkoi",
+        "Gnomonia ovina",
+        "Poa setacea",
+        "Festuca serpentinica",
+        "Festuca guinochetii",
+        "Festuca sulcatiformis",
+        "Festuca livida"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2316",
+      "nameVerbatim": "Festuca ovina var. glauca",
+      "nameParsed": "Festuca ovina var.. glauca",
+      "nameReconciled": "Festuca ovina",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Festuca ovina var.. glauca",
+        "Festuca ovina",
+        "Avena dura",
+        "Avena ovina",
+        "Bromus ovinus",
+        "Festuca agrestis",
+        "Festuca centroapenninica",
+        "Festuca duriuscula",
+        "Festuca fontqueriana",
+        "Festuca glaucantha",
+        "Festuca lasiantha",
+        "Festuca leucantha",
+        "Festuca multiflora",
+        "Festuca nigra",
+        "Festuca pauciflora",
+        "Festuca pumila",
+        "Festuca sphagnicola",
+        "Festuca vulgaris",
+        "Festuca yarochenkoi",
+        "Gnomonia ovina",
+        "Poa setacea",
+        "Festuca serpentinica",
+        "Festuca guinochetii",
+        "Festuca sulcatiformis",
+        "Festuca livida"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3720",
+      "nameVerbatim": "Filipendula ulmaria subsp. ulmaria",
+      "nameParsed": "Filipendula ulmaria subsp.. ulmaria",
+      "nameReconciled": "Filipendula ulmaria",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Filipendula ulmaria subsp.. ulmaria",
+        "Filipendula ulmaria",
+        "Ulmaria ulmaria",
+        "Thecanisia ulmaria",
+        "Spiraea ulmaria"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2043",
+      "nameVerbatim": "Fritillaria nervosa subsp. nervosa",
+      "nameParsed": "Fritillaria nervosa subsp.. nervosa",
+      "nameReconciled": "Fritillaria nervosa subsp.. nervosa",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Fritillaria nervosa subsp.. nervosa",
+        "Fritillaria nervosa",
+        "Fritillaria nigra",
+        "Fritillaria umbellata",
+        "Fritillaria aquitanica",
+        "Fritillaria linophylla",
+        "Fritillaria pyrenaea",
+        "Fritillaria tardiflora"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4676",
+      "nameVerbatim": "Galeopsis angustifolia subsp. carpetana",
+      "nameParsed": "Galeopsis angustifolia subsp.. carpetana",
+      "nameReconciled": "Galeopsis angustifolia subsp.. carpetana",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Galeopsis angustifolia subsp.. carpetana",
+        "Galeopsis angustifolia",
+        "Dalanum angustifolium",
+        "Ladanum angustifolium",
+        "Ladanella angustifolia",
+        "Galeopsis bertetii",
+        "Galeopsis orophila",
+        "Galeopsis arvatica",
+        "Galeopsis calcarea",
+        "Galeopsis rivas-martinezii",
+        "Galeopsis canescens",
+        "Galeopsis glabra",
+        "Galeopsis glaucescens",
+        "Galeopsis inermis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4547",
+      "nameVerbatim": "Galium album subsp. album",
+      "nameParsed": "Galium album subsp.. album",
+      "nameReconciled": "Galium album subsp.. album",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Galium album subsp.. album",
+        "Galium album",
+        "Galium heldreichii",
+        "Galium amani",
+        "Galium aristatum",
+        "Galium attenuatum",
+        "Galium beilanense",
+        "Galium besseri",
+        "Galium bielzii",
+        "Galium bocconei",
+        "Galium calcareum",
+        "Galium capsiriense",
+        "Galium chloranthum",
+        "Galium corrudifolium",
+        "Galium diffusum",
+        "Galium elatum",
+        "Galium erectum",
+        "Galium kernerianum",
+        "Galium ibericum",
+        "Galium insubricum",
+        "Galium lucidum",
+        "Galium molle",
+        "Galium nemorosum",
+        "Galium oligotrichum",
+        "Galium pallidulum",
+        "Galium paulianum",
+        "Galium petraeum",
+        "Galium provinciale",
+        "Galium pseudocinereum",
+        "Galium pseudomollugo",
+        "Galium pseudorubioides",
+        "Galium pubescens",
+        "Galium scabrum",
+        "Galium splendens",
+        "Galium tyrolense",
+        "Galion molluginum",
+        "Galium viridulum",
+        "Galium virgultorum",
+        "Galium caudatum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3271",
+      "nameVerbatim": "Galium fruticescens",
+      "nameParsed": "Galium fruticescens",
+      "nameReconciled": "Galium fruticescens",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Galium fruticescens",
+        "Galium aciphyllum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1285",
+      "nameVerbatim": "Galium pinetorum",
+      "nameParsed": "Galium pinetorum",
+      "nameReconciled": "Galium estebanii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Galium pinetorum",
+        "Galium estebanii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4134",
+      "nameVerbatim": "Genista cinerea subsp. cinerea",
+      "nameParsed": "Genista cinerea subsp.. cinerea",
+      "nameReconciled": "Genista cinerea",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Genista cinerea subsp.. cinerea",
+        "Genista cinerea",
+        "Spartium cinereum",
+        "Cytisus cinereus",
+        "Telinaria cinerea",
+        "Chamaecytisus ratisbonensis",
+        "Tubocytisus biflorus",
+        "Tubocytisus elongatus",
+        "Aulonix biflorus",
+        "Chamaecytisus biflorus",
+        "Cytisus collinus",
+        "Cytisus lithuanicus",
+        "Cytisus serotinus",
+        "Cytisus supinus",
+        "Genista ratisbonensis",
+        "Viborgia hirsuta",
+        "Cytisus communis",
+        "Cytisus biflorus",
+        "Cytisus horniflorus",
+        "Cytisus falcatus",
+        "Cytisus macrospermus",
+        "Cytisus ratisbonensis",
+        "Cytisus pilosus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3203",
+      "nameVerbatim": "Genista florida subsp. polygaliphylla",
+      "nameParsed": "Genista florida subsp.. polygaliphylla",
+      "nameReconciled": "Genista florida",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Genista florida subsp.. polygaliphylla",
+        "Genista florida",
+        "Genista leptoclada",
+        "Genista polygalifolia",
+        "Genista polygaliphylla",
+        "Genistella flagelliformis",
+        "Genistella florida",
+        "Genista bourgaei",
+        "Telinaria florida",
+        "Genista exaltata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4677",
+      "nameVerbatim": "Gentiana angustifolia subsp. occidentalis",
+      "nameParsed": "Gentiana angustifolia subsp.. occidentalis",
+      "nameReconciled": "Gentiana angustifolia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Gentiana angustifolia subsp.. occidentalis",
+        "Gentiana angustifolia",
+        "Ciminalis angustifolia",
+        "Gentiana sabauda",
+        "Eyrythalia angustifolia",
+        "Pneumonanthe angustifolia",
+        "Thylacitis angustifolia",
+        "Gentiana caulescens",
+        "Gentiana autumnalis",
+        "Diploma angustifolia",
+        "Dasystephana porphyrio",
+        "Gentiana porphyrio",
+        "Gentiana stoneana",
+        "Hippion porphyris",
+        "Ericoila angustifolia",
+        "Pneumonanthe porphyrio",
+        "Voyria aphylla",
+        "Gentiana aphylla",
+        "Leiphaimos pallidus",
+        "Hippion aphyllum",
+        "Voyria araguensis",
+        "Leiphaimos lutea",
+        "Exacum aphyllum",
+        "Voyria uniflora",
+        "Leiphaimos eximia",
+        "Ciminalis grandiflora",
+        "Leiphaimos feildenii",
+        "Leiphaimos costaricensis",
+        "Ciminalis alpina",
+        "Leiphaimos aphylla",
+        "Ciminalis aphylla",
+        "Leiphaimos uniflorus",
+        "Lita aphylla",
+        "Voyria pallida",
+        "Lita uniflora"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2789",
+      "nameVerbatim": "Gymnadenia densiflora",
+      "nameParsed": "Gymnadenia densiflora",
+      "nameReconciled": "Gymnadenia densiflora",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Gymnadenia densiflora",
+        "Orchis densiflora"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2149",
+      "nameVerbatim": "Helianthemum nummularium subsp. nummularium",
+      "nameParsed": "Helianthemum nummularium subsp.. nummularium",
+      "nameReconciled": "Helianthemum nummularium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Helianthemum nummularium subsp.. nummularium",
+        "Helianthemum nummularium",
+        "Rhodax penicillatus",
+        "Rhodax chamaecistus",
+        "Cistus alpestris",
+        "Cistus anglicus",
+        "Cistus seguieri",
+        "Cistus strigosus",
+        "Helianthemum paniculatum",
+        "Helianthemum pulchellum",
+        "Helianthemum rhodax",
+        "Helianthemum strigosum",
+        "Cistus nummularius"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "412",
+      "nameVerbatim": "Heracleum sphondylium subsp. montanum",
+      "nameParsed": "Heracleum sphondylium subsp.. montanum",
+      "nameReconciled": "Heracleum sphondylium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Heracleum sphondylium subsp.. montanum",
+        "Heracleum sphondylium",
+        "Pastinaca sphondylium",
+        "Sphondylium vulgare"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3272",
+      "nameVerbatim": "Herniaria fruticosa var. fruticosa",
+      "nameParsed": "Herniaria fruticosa var.. fruticosa",
+      "nameReconciled": "Herniaria fruticosa var.. fruticosa",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Herniaria fruticosa var.. fruticosa",
+        "Herniaria fruticosa",
+        "Herniaria bollei",
+        "Herniaria teknensis",
+        "Heterochiton fontanesii",
+        "Herniaria glabra",
+        "Paronychia herniaria",
+        "Herniaria kotovii",
+        "Herniaria suavis",
+        "Herniaria polymorpha",
+        "Herniaria rotundifolia",
+        "Herniaria corrigioloides",
+        "Herniaria ceretana",
+        "Herniaria ceretanica",
+        "Herniaria graebneri",
+        "Herniaria microcarpa",
+        "Herniaria vulgaria",
+        "Herniaria vulgaris",
+        "Herniaria arenaria",
+        "Herniaria hemistemon",
+        "Herniaria sphacelata",
+        "Heterochiton hemistemon",
+        "Herniaria polygama",
+        "Herniaria euxina",
+        "Herniaria odorata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3428",
+      "nameVerbatim": "Herniaria glabra var. glabra",
+      "nameParsed": "Herniaria glabra var.. glabra",
+      "nameReconciled": "Herniaria glabra var.. glabra",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Herniaria glabra var.. glabra",
+        "Herniaria glabra",
+        "Paronychia herniaria",
+        "Herniaria kotovii",
+        "Herniaria suavis",
+        "Herniaria polymorpha",
+        "Herniaria rotundifolia",
+        "Herniaria fruticosa",
+        "Herniaria corrigioloides",
+        "Herniaria ceretana",
+        "Herniaria ceretanica",
+        "Herniaria graebneri",
+        "Herniaria microcarpa",
+        "Herniaria vulgaria",
+        "Herniaria vulgaris",
+        "Herniaria arenaria"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "136",
+      "nameVerbatim": "Herniaria scabrida var. glabrescens",
+      "nameParsed": "Herniaria scabrida var.. glabrescens",
+      "nameReconciled": "Herniaria scabrida",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Herniaria scabrida var.. glabrescens",
+        "Herniaria scabrida",
+        "Herniaria unomunoana",
+        "Herniaria hybernonis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "137",
+      "nameVerbatim": "Herniaria scabrida var. scabrida",
+      "nameParsed": "Herniaria scabrida var.. scabrida",
+      "nameReconciled": "Herniaria scabrida",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Herniaria scabrida var.. scabrida",
+        "Herniaria scabrida",
+        "Herniaria unomunoana",
+        "Herniaria hybernonis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2602",
+      "nameVerbatim": "Hieracium lactucella subsp. lactucella",
+      "nameParsed": "Hieracium lactucella subsp.. lactucella",
+      "nameReconciled": "Hieracium lactucella subsp.. lactucella",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Hieracium lactucella subsp.. lactucella",
+        "Hieracium lactucella",
+        "Pilosella lactucella"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1270",
+      "nameVerbatim": "Hieracium pilosella subsp. micradenium",
+      "nameParsed": "Hieracium pilosella subsp.. micradenium",
+      "nameReconciled": "Hieracium pilosella subsp.. micradenium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Hieracium pilosella subsp.. micradenium",
+        "Hieracium pilosella",
+        "Pilosella officinarum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1271",
+      "nameVerbatim": "Hieracium pilosella subsp. pilosella",
+      "nameParsed": "Hieracium pilosella subsp.. pilosella",
+      "nameReconciled": "Hieracium pilosella subsp.. pilosella",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Hieracium pilosella subsp.. pilosella",
+        "Hieracium pilosella",
+        "Pilosella officinarum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1272",
+      "nameVerbatim": "Hieracium pilosella subsp. tricholepium",
+      "nameParsed": "Hieracium pilosella subsp.. tricholepium",
+      "nameReconciled": "Hieracium pilosella subsp.. tricholepium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Hieracium pilosella subsp.. tricholepium",
+        "Hieracium pilosella",
+        "Pilosella officinarum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3555",
+      "nameVerbatim": "Himantoglossum hircinum subsp. hircinum",
+      "nameParsed": "Himantoglossum hircinum subsp.. hircinum",
+      "nameReconciled": "Himantoglossum hircinum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Himantoglossum hircinum subsp.. hircinum",
+        "Himantoglossum hircinum",
+        "Loroglossum hircinum",
+        "Satyrium hircinum",
+        "Aceras hircinum",
+        "Orchis hircina"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4217",
+      "nameVerbatim": "Hippocrepis comosa subsp. squamata",
+      "nameParsed": "Hippocrepis comosa subsp.. squamata",
+      "nameReconciled": "Hippocrepis comosa subsp.. squamata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Hippocrepis comosa subsp.. squamata",
+        "Hippocrepis comosa",
+        "Ornithopus perpusillus",
+        "Coronilla perpusilla",
+        "Hedysarum moniliforme",
+        "Ornithopus nodosus",
+        "Ornithopus pusillus",
+        "Ornithopus subumbellatus",
+        "Ornithopodium perpusillum",
+        "Ornithopodium missus",
+        "Ornithopus albus",
+        "Ornithopus intermedius",
+        "Ornithopus glaber",
+        "Ornithopodium roseum",
+        "Coronilla comosa",
+        "Hippocrepis rolandi",
+        "Hippocrepis helvetica",
+        "Hippocrepis burgalensis",
+        "Hippocrepis alpestris",
+        "Hippocrepis atlantica",
+        "Hippocrepis montgronyana",
+        "Hippocrepis perennis",
+        "Hippocrepis heterocarpa",
+        "Hippocrepis glauca"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2617",
+      "nameVerbatim": "Jasione laevis subsp. carpetana",
+      "nameParsed": "Jasione laevis subsp.. carpetana",
+      "nameReconciled": "Jasione laevis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Jasione laevis subsp.. carpetana",
+        "Jasione laevis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4244",
+      "nameVerbatim": "Juncus conglomeratus var. conglomeratus",
+      "nameParsed": "Juncus conglomeratus var.. conglomeratus",
+      "nameReconciled": "Juncus conglomeratus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Juncus conglomeratus var.. conglomeratus",
+        "Juncus conglomeratus",
+        "Tristemon conglomeratus",
+        "Juncus glomeratus",
+        "Juncus leersii",
+        "Juncus matthioli",
+        "Juncus subuliflorus",
+        "Tristemon glomeratus",
+        "Agathryon conglomeratum",
+        "Juncus concinnus",
+        "Juncus luteocarpus",
+        "Juncus meiguensis",
+        "Juncus albescens",
+        "Alpinojuncus concinnus",
+        "Juncus lanpinguensis",
+        "Juncus yoskisukei",
+        "Juncus elegans"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4245",
+      "nameVerbatim": "Juncus conglomeratus var. laxus",
+      "nameParsed": "Juncus conglomeratus var.. laxus",
+      "nameReconciled": "Juncus conglomeratus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Juncus conglomeratus var.. laxus",
+        "Juncus conglomeratus",
+        "Tristemon conglomeratus",
+        "Juncus glomeratus",
+        "Juncus leersii",
+        "Juncus matthioli",
+        "Juncus subuliflorus",
+        "Tristemon glomeratus",
+        "Agathryon conglomeratum",
+        "Juncus concinnus",
+        "Juncus luteocarpus",
+        "Juncus meiguensis",
+        "Juncus albescens",
+        "Alpinojuncus concinnus",
+        "Juncus lanpinguensis",
+        "Juncus yoskisukei",
+        "Juncus elegans"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2929",
+      "nameVerbatim": "Juncus effusus var. effusus",
+      "nameParsed": "Juncus effusus var.. effusus",
+      "nameReconciled": "Juncus effusus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Juncus effusus var.. effusus",
+        "Juncus effusus",
+        "Juncus communis",
+        "Juncus laevis",
+        "Agathryon effusum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2930",
+      "nameVerbatim": "Juncus effusus var. subglomeratus",
+      "nameParsed": "Juncus effusus var.. subglomeratus",
+      "nameReconciled": "Juncus effusus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Juncus effusus var.. subglomeratus",
+        "Juncus effusus",
+        "Juncus communis",
+        "Juncus laevis",
+        "Agathryon effusum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2500",
+      "nameVerbatim": "Juncus inflexus var. inflexus",
+      "nameParsed": "Juncus inflexus var.. inflexus",
+      "nameReconciled": "Juncus inflexus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Juncus inflexus var.. inflexus",
+        "Juncus inflexus",
+        "Juncus glaucus",
+        "Juncus tenax",
+        "Agathryon inflexum",
+        "Juncus angelisii",
+        "Juncus leptocarpus",
+        "Juncus longicornis",
+        "Juncus luetkei",
+        "Juncus pallidus",
+        "Juncus diaphragmarius",
+        "Juncus paniculatus",
+        "Juncus depauperatus",
+        "Juncus deangelisii",
+        "Juncus warakensis",
+        "Juncus cyprius",
+        "Juncus equisetosus",
+        "Juncus elatus",
+        "Juncus acutissimus",
+        "Juncus glaucescens",
+        "Juncus vaginatus",
+        "Agathryon vaginatum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4837",
+      "nameVerbatim": "Knautia arvernensis",
+      "nameParsed": "Knautia arvernensis",
+      "nameReconciled": "Knautia arvernensis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Knautia arvernensis",
+        "Scabiosa ovatifolia",
+        "Trichera arvernensis",
+        "Knautia angustata",
+        "Knautia lacaitae",
+        "Knautia prostii",
+        "Knautia ovatifolia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "591",
+      "nameVerbatim": "Knautia subscaposa subsp. subscaposa",
+      "nameParsed": "Knautia subscaposa subsp.. subscaposa",
+      "nameReconciled": "Knautia subscaposa",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Knautia subscaposa subsp.. subscaposa",
+        "Knautia subscaposa"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5335",
+      "nameVerbatim": "Koeleria pyramidata subsp. pyramidata",
+      "nameParsed": "Koeleria pyramidata subsp.. pyramidata",
+      "nameReconciled": "Koeleria pyramidata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Koeleria pyramidata subsp.. pyramidata",
+        "Koeleria pyramidata",
+        "Brachystylus cristatus",
+        "Poa pyramidata",
+        "Koeleria cristata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2538",
+      "nameVerbatim": "Leucanthemum ircutianum",
+      "nameParsed": "Leucanthemum ircutianum",
+      "nameReconciled": "Leucanthemum ircutianum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Leucanthemum ircutianum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4589",
+      "nameVerbatim": "Linaria alpina var. aciculifolia",
+      "nameParsed": "Linaria alpina var.. aciculifolia",
+      "nameReconciled": "Linaria alpina",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Linaria alpina var.. aciculifolia",
+        "Linaria alpina",
+        "Cymbalaria alpina",
+        "Antirrhinum alpinum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1433",
+      "nameVerbatim": "Linaria proxima",
+      "nameParsed": "Linaria proxima",
+      "nameReconciled": "Linaria badalii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Linaria proxima",
+        "Linaria badalii",
+        "Linaria guarensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3758",
+      "nameVerbatim": "Littorela uniflora",
+      "nameParsed": "Littorela uniflora",
+      "nameReconciled": "Littorela uniflora",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Littorela uniflora"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1412",
+      "nameVerbatim": "Lotus preslii",
+      "nameParsed": "Lotus preslii",
+      "nameReconciled": "Lotus glaber",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Lotus preslii",
+        "Lotus tenuifolius",
+        "Lotus tenuis",
+        "Dorycnium iberecum",
+        "Lotus macbridei",
+        "Lotus minor",
+        "Lotus noeanus",
+        "Lotus acutus",
+        "Lotus glaber",
+        "Lotus filicaulis",
+        "Lotus campestris",
+        "Psoralea fascicularis",
+        "Lotodes fasciculare",
+        "Psoralea thunbergiana",
+        "Psoralea tenuifolia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5195",
+      "nameVerbatim": "Luzula campestris subsp. carpetana",
+      "nameParsed": "Luzula campestris subsp.. carpetana",
+      "nameReconciled": "Luzula campestris",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Luzula campestris subsp.. carpetana",
+        "Luzula campestris",
+        "Luzula vulgaris",
+        "Cyperella campestris",
+        "Juncoides campestris",
+        "Luciola campestris",
+        "Gymnodes campestris",
+        "Juncus campestris",
+        "Luzula subpilosa"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1949",
+      "nameVerbatim": "Luzula multiflora subsp. congesta",
+      "nameParsed": "Luzula multiflora subsp.. congesta",
+      "nameReconciled": "Luzula multiflora",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Luzula multiflora subsp.. congesta",
+        "Luzula multiflora",
+        "Juncoides multiflora",
+        "Gymnodes multiflora",
+        "Juncus multiflorus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "636",
+      "nameVerbatim": "Luzula sylvatica subsp. henriquesii",
+      "nameParsed": "Luzula sylvatica subsp.. henriquesii",
+      "nameReconciled": "Luzula sylvatica subsp.. henriquesii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Luzula sylvatica subsp.. henriquesii",
+        "Luzula sylvatica",
+        "Juncus sylvaticus",
+        "Juncoides sylvatica",
+        "Luciola sylvatica",
+        "Juncus acuminatus",
+        "Juncus fraternus",
+        "Juncus multiceps",
+        "Verojuncus acuminatus",
+        "Tristemon albus",
+        "Juncus paradoxus",
+        "Tristemon macrocarpon",
+        "Juncus pondii",
+        "Juncus subnodulosus",
+        "Juncus obtusatus",
+        "Juncus divaricatus",
+        "Verojuncus subnodulosus",
+        "Juncus bifolius",
+        "Juncus divergens",
+        "Juncus retroflexus",
+        "Juncus erectus",
+        "Juncus obtusiflorus",
+        "Juncus neesii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2037",
+      "nameVerbatim": "Lysimachia nemorun",
+      "nameParsed": "Lysimachia nemorun",
+      "nameReconciled": "Lysimachia nemorun",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Lysimachia nemorun"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2034",
+      "nameVerbatim": "Myosotis nemorosa",
+      "nameParsed": "Myosotis nemorosa",
+      "nameReconciled": "Myosotis nemorosa",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Myosotis nemorosa",
+        "Myosotis alpina",
+        "Myosotis pratensis",
+        "Myosotis pyrenaea",
+        "Myosotis gracilis",
+        "Myosotis cognata",
+        "Myosotis eusilvatica",
+        "Myosotis diplotricha",
+        "Myosotis umbrosa",
+        "Myosotis myriantha",
+        "Myosotis nana",
+        "Myosotis pallens",
+        "Myosotis campestris",
+        "Myosotis lactea",
+        "Myosotis amoena",
+        "Myosotis pyrenaica",
+        "Myosotis sachalinensis",
+        "Myosotis montana",
+        "Myosotis rupicola",
+        "Myosotis adpressa",
+        "Myosotis odorata",
+        "Myosotis superalpina",
+        "Myosotis prostrata",
+        "Myosotis microsepala",
+        "Myosotis pantocsekii",
+        "Myosotis acutata",
+        "Myosotis ronnigeri",
+        "Myosotis pseudoimitata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "900",
+      "nameVerbatim": "Myosotis ramosissima subsp. globularis",
+      "nameParsed": "Myosotis ramosissima subsp.. globularis",
+      "nameReconciled": "Myosotis ramosissima",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Myosotis ramosissima subsp.. globularis",
+        "Myosotis ramosissima"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5122",
+      "nameVerbatim": "Narcissus bulbocodium subsp. bulbocodium",
+      "nameParsed": "Narcissus bulbocodium subsp.. bulbocodium",
+      "nameReconciled": "Narcissus bulbocodium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Narcissus bulbocodium subsp.. bulbocodium",
+        "Narcissus bulbocodium",
+        "Corbularia bulbocodium",
+        "Corbularia turgida",
+        "Narcissus turgidus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2041",
+      "nameVerbatim": "Nepeta nepetella subsp. cordifolia",
+      "nameParsed": "Nepeta nepetella subsp.. cordifolia",
+      "nameReconciled": "Nepeta nepetella",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Nepeta nepetella subsp.. cordifolia",
+        "Nepeta nepetella",
+        "Glechoma nepetella",
+        "Cataria nepetella",
+        "Nepeta humilis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2953",
+      "nameVerbatim": "Odontites eliassennenii",
+      "nameParsed": "Odontites eliassennenii",
+      "nameReconciled": "Odontites recordonii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Odontites eliassennenii",
+        "Odontites recordonii",
+        "Odontites anselmi"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1529",
+      "nameVerbatim": "Odontites longiflora",
+      "nameParsed": "Odontites longiflora",
+      "nameReconciled": "Odontites longiflora",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Odontites longiflora"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3843",
+      "nameVerbatim": "Odontites verna",
+      "nameParsed": "Odontites verna",
+      "nameReconciled": "Odontites verna",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Odontites verna"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3837",
+      "nameVerbatim": "Odontites verna subsp. serotina",
+      "nameParsed": "Odontites verna subsp.. serotina",
+      "nameReconciled": "Odontites verna subsp.. serotina",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Odontites verna subsp.. serotina",
+        "Odontites verna"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3839",
+      "nameVerbatim": "Odontites verna subsp. verna",
+      "nameParsed": "Odontites verna subsp.. verna",
+      "nameReconciled": "Odontites verna subsp.. verna",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Odontites verna subsp.. verna",
+        "Odontites verna"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3942",
+      "nameVerbatim": "Odontites viscosa",
+      "nameParsed": "Odontites viscosa",
+      "nameReconciled": "Odontites viscosa",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Odontites viscosa"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "624",
+      "nameVerbatim": "Omalotheca supina subsp. pusilla",
+      "nameParsed": "Omalotheca supina subsp.. pusilla",
+      "nameReconciled": "Omalotheca supina subsp.. pusilla",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Omalotheca supina subsp.. pusilla",
+        "Omalotheca supina",
+        "Gnaphalium filiforme",
+        "Gnaphalium pusillum",
+        "Dasyanthus supinus",
+        "Gnaphalium balcanicum",
+        "Gnaphalium rectum",
+        "Gnaphalium supinum",
+        "Gnaphalium decipiens",
+        "Euchiton decipiens",
+        "Filago acaulis",
+        "Gnaphalium acaule",
+        "Gnaphalium fuscum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "635",
+      "nameVerbatim": "Omalotheca sylvatica subsp. carpetana",
+      "nameParsed": "Omalotheca sylvatica subsp.. carpetana",
+      "nameReconciled": "Omalotheca sylvatica subsp.. carpetana",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Omalotheca sylvatica subsp.. carpetana",
+        "Omalotheca sylvatica",
+        "Gnaphalium mutabile",
+        "Omalotheca einseleana",
+        "Dasyanthus fuscus",
+        "Dasyanthus sylvaticus",
+        "Gnaphalium carpetanum",
+        "Gnaphalium einseleanum",
+        "Gnaphalium fuscatum",
+        "Gnaphalium sophiae",
+        "Gnaphalium spadiceum",
+        "Helichrysum strictum",
+        "Synchaeta silvatica",
+        "Gnaphalium sylvaticum",
+        "Gnaphalium rectum",
+        "Filago recta",
+        "Filago sylvatica",
+        "Gamochaeta sylvatica",
+        "Gnaphalium alpigenum",
+        "Cyttarium silvaticum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4403",
+      "nameVerbatim": "Onopordon acanthium",
+      "nameParsed": "Onopordon acanthium",
+      "nameReconciled": "Onopordon acanthium",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Onopordon acanthium"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4309",
+      "nameVerbatim": "Onopordon corymbosum",
+      "nameParsed": "Onopordon corymbosum",
+      "nameReconciled": "Onopordon corymbosum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Onopordon corymbosum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2045",
+      "nameVerbatim": "Onopordon nervosum",
+      "nameParsed": "Onopordon nervosum",
+      "nameReconciled": "Onopordon nervosum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Onopordon nervosum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4407",
+      "nameVerbatim": "Onopordum acaulon subsp. acaulon",
+      "nameParsed": "Onopordum acaulon subsp.. acaulon",
+      "nameReconciled": "Onopordum acaulon",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Onopordum acaulon subsp.. acaulon",
+        "Onopordum acaulon",
+        "Onopordum acaule",
+        "Onopordum pyrenaicum",
+        "Onopordum uniflorum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4791",
+      "nameVerbatim": "Ophrys arnoldii",
+      "nameParsed": "Ophrys arnoldii",
+      "nameReconciled": "Ophrys arnoldii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ophrys arnoldii",
+        "Ophrys laetea",
+        "Ophrys leucadica",
+        "Ophrys lucana",
+        "Ophrys tricolor",
+        "Ophrys sabulosa",
+        "Ophrys decembris",
+        "Ophrys cressa",
+        "Ophrys gackiae",
+        "Ophrys parosica",
+        "Ophrys parvula",
+        "Ophrys clara",
+        "Ophrys phaseliana",
+        "Ophrys rueckbrodtiana",
+        "Ophrys achillis",
+        "Ophrys lupercalis",
+        "Ophrys eivissa",
+        "Ophrys laureotica",
+        "Ophrys lindia",
+        "Ophrys lindleyana",
+        "Ophrys cesmeensis",
+        "Ophrys myodes",
+        "Ophrys akhdarensis",
+        "Ophrys thriptiensis",
+        "Ophrys forestieri",
+        "Ophrys meropes",
+        "Ophrys flammeola",
+        "Ophrys theophrasti",
+        "Ophrys ficuzzana",
+        "Ophrys thracica",
+        "Ophrys fenarolii",
+        "Ophrys maghrebiaca",
+        "Ophrys eptapigiensis",
+        "Ophrys pseudomigoutiana",
+        "Ophrys calocaerina",
+        "Ophrys creticola",
+        "Ophrys japigiae",
+        "Ophrys creberrima",
+        "Ophrys attaviria",
+        "Ophrys varinoi",
+        "Ophrys pratesii",
+        "Ophrys pallidula",
+        "Ophrys phaidra",
+        "Ophrys kedra",
+        "Ophrys malacitana"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5031",
+      "nameVerbatim": "Ophrys bilunulata",
+      "nameParsed": "Ophrys bilunulata",
+      "nameReconciled": "Ophrys bilunulata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ophrys bilunulata",
+        "Ophrys africana",
+        "Ophrys caesiella",
+        "Ophrys dianica",
+        "Ophrys gazella",
+        "Ophrys lucentina",
+        "Ophrys lucifera",
+        "Ophrys marmorata",
+        "Ophrys subfusca",
+        "Ophrys ortuabis",
+        "Ophrys punctulata",
+        "Ophrys fabrella",
+        "Ophrys perpusilla",
+        "Ophrys delforgei",
+        "Ophrys sancti-isidorii",
+        "Ophrys kalirachiensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5299",
+      "nameVerbatim": "Ophrys castellana",
+      "nameParsed": "Ophrys castellana",
+      "nameReconciled": "Ophrys arachnitiformis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ophrys castellana",
+        "Ophrys arachnitiformis",
+        "Ophrys glanensis",
+        "Ophrys licana",
+        "Ophrys obscura",
+        "Ophrys pesseiae",
+        "Ophrys bakonyensis",
+        "Ophrys dionysii",
+        "Ophrys specularia",
+        "Ophrys sterzae",
+        "Ophrys carduccii",
+        "Ophrys filomenoi",
+        "Ophrys marzuola",
+        "Ophrys archipelagi",
+        "Ophrys metellae",
+        "Ophrys aschersonii",
+        "Ophrys augustae",
+        "Ophrys chatenieri",
+        "Ophrys crocii",
+        "Ophrys estacensis",
+        "Ophrys occidentalis",
+        "Ophrys fayencensis",
+        "Ophrys gallica",
+        "Ophrys brunamontei",
+        "Ophrys godferyana",
+        "Ophrys trombettensis",
+        "Ophrys tyrrhena",
+        "Ophrys panattensis",
+        "Ophrys sipontensis",
+        "Ophrys splendida",
+        "Ophrys morisii",
+        "Ophrys monachorum",
+        "Ophrys montis-leonis",
+        "Ophrys mateolana",
+        "Ophrys maladroxiensis",
+        "Ophrys debruijckereana",
+        "Ophrys integra",
+        "Ophrys milioniae",
+        "Ophrys friderici",
+        "Ophrys castri-pontium"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1166",
+      "nameVerbatim": "Ophrys passionis",
+      "nameParsed": "Ophrys passionis",
+      "nameReconciled": "Ophrys passionis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ophrys passionis",
+        "Ophrys minipassionis",
+        "Ophrys ligustica",
+        "Ophrys garganica",
+        "Ophrys pseudoatrata",
+        "Ophrys caloptera"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1261",
+      "nameVerbatim": "Ophrys picta",
+      "nameParsed": "Ophrys picta",
+      "nameReconciled": "Ophrys picta",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ophrys picta",
+        "Ophrys corniculata",
+        "Ophrys apiformis",
+        "Ophrys aurita",
+        "Ophrys sphegifera",
+        "Orchis oestrifera",
+        "Ophrys dicipulus",
+        "Ophrys cornuta",
+        "Ophrys elbursana",
+        "Ophrys akcaliensis",
+        "Ophrys lemnosiana",
+        "Ophrys cornutula",
+        "Ophrys pseudoheldreichii",
+        "Ophrys bremifera",
+        "Ophrys balcanica",
+        "Ophrys bicornis",
+        "Ophrys abchasica",
+        "Ophrys orphanidea",
+        "Ophrys oestrifera",
+        "Ophrys masticorum",
+        "Ophrys kopetdagensis",
+        "Ophrys leptomera",
+        "Ophrys muscaria",
+        "Ophrys kvarneri",
+        "Ophrys kassandra",
+        "Ophrys nestoris",
+        "Ophrys cephaloniensis",
+        "Ophrys minuscula",
+        "Ophrys montis-gargani",
+        "Ophrys mycenensis",
+        "Ophrys sappho",
+        "Ophrys minutiflora",
+        "Ophrys rhodostephane",
+        "Ophrys sepioides",
+        "Ophrys crassicornis",
+        "Ophrys ceto",
+        "Ophrys cerastes"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "986",
+      "nameVerbatim": "Ophrys riojana",
+      "nameParsed": "Ophrys riojana",
+      "nameReconciled": "Ophrys riojana",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ophrys riojana",
+        "Ophrys metaurensis",
+        "Ophrys argensonensis",
+        "Ophrys argentaria",
+        "Ophrys araneola",
+        "Ophrys incantata",
+        "Ophrys ausonia",
+        "Ophrys quadriloba",
+        "Ophrys massiliensis",
+        "Ophrys litigiosa",
+        "Ophrys tommasinii",
+        "Ophrys clypeata",
+        "Ophrys virescens",
+        "Ophrys illyrica",
+        "Ophrys kallaikia",
+        "Ophrys olonae",
+        "Ophrys suboccidentalis",
+        "Ophrys maritima"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3813",
+      "nameVerbatim": "Ophrys vasconica",
+      "nameParsed": "Ophrys vasconica",
+      "nameReconciled": "Ophrys vasconica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ophrys vasconica",
+        "Ophrys ambrosii",
+        "Ophrys creutzburgii",
+        "Ophrys lithinensis",
+        "Ophrys sitiaca",
+        "Ophrys socae",
+        "Ophrys pelinaea",
+        "Ophrys scyria",
+        "Ophrys pintoi"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1262",
+      "nameVerbatim": "Orchis picta",
+      "nameParsed": "Orchis picta",
+      "nameReconciled": "Orchis picta",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Orchis picta",
+        "Orchis aschersonii",
+        "Herorchis picta",
+        "Anacamptis picta",
+        "Anoectochilus setaceus",
+        "Anoectochilus aureus",
+        "Anoectochilus regalis",
+        "Anoectochilus setaceopictus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2620",
+      "nameVerbatim": "Orobanche laevis",
+      "nameParsed": "Orobanche laevis",
+      "nameReconciled": "Orobanche laevis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Orobanche laevis",
+        "Orobanche arenaria",
+        "Lathraea arenaria",
+        "Phelypaea comosa",
+        "Kopsia borkhausenii",
+        "Phelypaea arenaria",
+        "Phelipanche laevis",
+        "Orobanche artemisae-vulgaris",
+        "Phelypaea robusta",
+        "Phelypaea obtusiloba",
+        "Orobanche comosa",
+        "Phelipanche atlantica",
+        "Phelipanche arenaria",
+        "Orobanche borkhausenii",
+        "Orobanche abortiva",
+        "Orobanche ionantha",
+        "Orobanche robusta",
+        "Kopsia arenaria",
+        "Orobanche caryophyllacea",
+        "Catodiacrum incurvum",
+        "Orobanche citrina",
+        "Orobanche adenostemon",
+        "Orobanche buhsei",
+        "Orobanche bipontina",
+        "Orobanche strobiligena",
+        "Orobanche erubescens",
+        "Orobanche gilva",
+        "Orobanche major",
+        "Orobanche macrantha",
+        "Orobanche krausei",
+        "Orobanche incurva",
+        "Orobanche latepubescens",
+        "Orobanche loti-corniculati",
+        "Orobanche ligustri",
+        "Orobanche galiophya",
+        "Orobanche galionepiphyta",
+        "Orobanche galii-molluginis",
+        "Orobanche galii",
+        "Orobanche vulgaris",
+        "Orobanche tubiflora",
+        "Orobanche torquata",
+        "Orobanche myrtilli",
+        "Orobanche quadrifida",
+        "Orobanche papyracea",
+        "Orobanche laxiflora",
+        "Orobanche caerulea",
+        "Phelypaea millefolii",
+        "Phelypaea caerulea",
+        "Phelypaea cedreti",
+        "Phelypaea pareysi",
+        "Kopsia caerulea",
+        "Orobanche vagabunda",
+        "Orobanche purpurascens",
+        "Orobanche millefolii",
+        "Phelipanche caerulea",
+        "Orobanche pareysi",
+        "Orchis abortiva",
+        "Orobanche bicolor",
+        "Orobanche glaucantha",
+        "Orobanche sarmatica"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5337",
+      "nameVerbatim": "Orobanche leptantha",
+      "nameParsed": "Orobanche leptantha",
+      "nameReconciled": "Orobanche leptantha",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Orobanche leptantha",
+        "Orobanche curvata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4770",
+      "nameVerbatim": "Paronychia argentea var. argentea",
+      "nameParsed": "Paronychia argentea var.. argentea",
+      "nameReconciled": "Paronychia argentea",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Paronychia argentea var.. argentea",
+        "Paronychia argentea",
+        "Illecebrum italicum",
+        "Illecebrum mauritanicum",
+        "Paronychia cuatrecasasii",
+        "Paronychia mauritanica",
+        "Illecebrum argenteum",
+        "Paronychia italica",
+        "Ferriera mediterranea",
+        "Paronychia hispanica",
+        "Paronychia saguntina",
+        "Plottzia paronychia",
+        "Paronychia nitida",
+        "Paronychia glomerata",
+        "Chaetonychia paronychia",
+        "Illecebrum paronychia",
+        "Illecebrum narbonnense",
+        "Paronychia rigida",
+        "Paronychia nivea",
+        "Paronychia maritima",
+        "Paronychia imbricata",
+        "Paronychia kochiana",
+        "Anychia herniariae",
+        "Ferriera nivea",
+        "Illecebrum herniarioides",
+        "Illecebrum maritimum",
+        "Illecebrum niveum",
+        "Illecebrum pubescens",
+        "Illecebrum villosum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5247",
+      "nameVerbatim": "Paronychia capitata var. capitata",
+      "nameParsed": "Paronychia capitata var.. capitata",
+      "nameReconciled": "Paronychia capitata var.. capitata",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Paronychia capitata var.. capitata",
+        "Paronychia capitata",
+        "Illecebrum capitatum",
+        "Paronychia hungarica",
+        "Paronychia macrosepala",
+        "Paronychia insularum",
+        "Paronychia euboea",
+        "Paronychia aretioides",
+        "Illecebrum aretioides"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2582",
+      "nameVerbatim": "Paronychia kapela var. pseudoaretioides",
+      "nameParsed": "Paronychia kapela var.. pseudoaretioides",
+      "nameReconciled": "Paronychia kapela",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Paronychia kapela var.. pseudoaretioides",
+        "Paronychia kapela",
+        "Illecebrum kapela"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1348",
+      "nameVerbatim": "Paronychia polygonifolia var. polygonifolia",
+      "nameParsed": "Paronychia polygonifolia var.. polygonifolia",
+      "nameReconciled": "Paronychia polygonifolia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Paronychia polygonifolia var.. polygonifolia",
+        "Paronychia polygonifolia",
+        "Ferriera polygonifolia",
+        "Illecebrum alpinum",
+        "Paronychia polygonoides",
+        "Plottzia polygonifolia",
+        "Paronychia trinervis",
+        "Chaetonychia polygonifolia",
+        "Illecebrum polygonifolium"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2228",
+      "nameVerbatim": "Peucedanum officinales subsp. officinale",
+      "nameParsed": "Peucedanum officinales subsp.. officinale",
+      "nameReconciled": "Peucedanum officinales subsp.. officinale",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Peucedanum officinales subsp.. officinale",
+        "Peucedanum officinales"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "843",
+      "nameVerbatim": "Phyteuma pyrenaicum",
+      "nameParsed": "Phyteuma pyrenaicum",
+      "nameReconciled": "Phyteuma spicatum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Phyteuma pyrenaicum",
+        "Phyteuma spicatum",
+        "Phyteuma angustifolium",
+        "Phyteuma occidentale",
+        "Phyteuma abelis",
+        "Phyteuma ambigens",
+        "Phyteuma bracteatum",
+        "Phyteuma rapunculus",
+        "Rapunculus albidus",
+        "Rapunculus ovatus",
+        "Rapunculus spicatus",
+        "Phyteuma coeruleum",
+        "Phyteuma elongatum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3402",
+      "nameVerbatim": "Pimpinella gracilis",
+      "nameParsed": "Pimpinella gracilis",
+      "nameReconciled": "Pimpinella espanensis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Pimpinella gracilis",
+        "Pimpinella affinis",
+        "Pimpinella ambigua",
+        "Pimpinella multiradiata",
+        "Pimpinella griffithiana",
+        "Pimpinella korovinii",
+        "Pimpinella reuteriana",
+        "Pimpinella propinqua",
+        "Pimpinella espanensis",
+        "Reutera gracilis",
+        "Reutera puberula",
+        "Reutera catalaunica",
+        "Apium gracile",
+        "Apium puberulum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3401",
+      "nameVerbatim": "Pimpinella gracilis subsp. puberula",
+      "nameParsed": "Pimpinella gracilis subsp.. puberula",
+      "nameReconciled": "Pimpinella espanensis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Pimpinella gracilis subsp.. puberula",
+        "Pimpinella gracilis",
+        "Pimpinella affinis",
+        "Pimpinella ambigua",
+        "Pimpinella multiradiata",
+        "Pimpinella griffithiana",
+        "Pimpinella korovinii",
+        "Pimpinella reuteriana",
+        "Pimpinella propinqua",
+        "Pimpinella espanensis",
+        "Reutera gracilis",
+        "Reutera puberula",
+        "Reutera catalaunica",
+        "Apium gracile",
+        "Apium puberulum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4588",
+      "nameVerbatim": "Plantago alpina subsp. penyalarensis",
+      "nameParsed": "Plantago alpina subsp.. penyalarensis",
+      "nameReconciled": "Plantago alpina subsp.. penyalarensis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Plantago alpina subsp.. penyalarensis",
+        "Plantago alpina",
+        "Arnoglossum alpinum",
+        "Plantago incana",
+        "Plantaginella alpina",
+        "Plantago bidentata",
+        "Plantago cinerascens",
+        "Plantago penyalarensis",
+        "Plantago ovina",
+        "Plantago subulata",
+        "Plantaginella subulata",
+        "Plantago humilis",
+        "Plantago acanthophylla",
+        "Plantaginella carinata",
+        "Plantago recurvata",
+        "Plantago radicata",
+        "Plantago holosteum",
+        "Plantago incurvata",
+        "Plantago pungens",
+        "Plantago serrata",
+        "Plantago triquetra",
+        "Plantago serpentina",
+        "Plantago sarda",
+        "Plantago carinata",
+        "Plantago capitella",
+        "Plantago capitellata",
+        "Plantago brachyphylla",
+        "Plantago zerpentina",
+        "Plantago gerardii",
+        "Plantago lagascae",
+        "Plantago sessiliflora",
+        "Plantago wulfenii",
+        "Plantago latifolia",
+        "Plantago transsilvanica",
+        "Plantago badalii",
+        "Plantago calabrica",
+        "Plantago monnieri",
+        "Plantago oblongifolia",
+        "Plantago plicata",
+        "Plantago sibirica",
+        "Plantago brutia",
+        "Plantago bertolanii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4876",
+      "nameVerbatim": "Plantago atrata subsp. discolor",
+      "nameParsed": "Plantago atrata subsp.. discolor",
+      "nameReconciled": "Plantago atrata subsp.. discolor",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Plantago atrata subsp.. discolor",
+        "Plantago atrata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4172",
+      "nameVerbatim": "Platanthera clorantha",
+      "nameParsed": "Platanthera clorantha",
+      "nameReconciled": "Platanthera clorantha",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Platanthera clorantha"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5125",
+      "nameVerbatim": "Poa bulbosa var. vivipara",
+      "nameParsed": "Poa bulbosa var.. vivipara",
+      "nameReconciled": "Poa bulbosa var.. vivipara",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Poa bulbosa var.. vivipara",
+        "Poa bulbosa",
+        "Poa crispa",
+        "Paneion bulbosum",
+        "Poa briziformis",
+        "Poa eigii",
+        "Poa bulbillifera",
+        "Poa desertorum",
+        "Poa praecox",
+        "Poa pasqualii",
+        "Poa perligularis",
+        "Poa nevskii",
+        "Poa montana",
+        "Poa rhenana",
+        "Poa psammophila",
+        "Poa prolifera",
+        "Poa compressa",
+        "Poa protuberata",
+        "Poa cephalonica",
+        "Poa pseudoconcinna",
+        "Poa alpina",
+        "Poa vivipara",
+        "Poa crassipes",
+        "Poa sinaica",
+        "Poa catharinae",
+        "Poa reuteriana",
+        "Poa glauca",
+        "Poa gracilis",
+        "Poa dahurica",
+        "Poa laxa",
+        "Poa insolita",
+        "Poa coarctata",
+        "Poa elegans",
+        "Poa mataniae",
+        "Poa simplex",
+        "Poa rigidula"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2071",
+      "nameVerbatim": "Populus nigra var. italica",
+      "nameParsed": "Populus nigra var.. italica",
+      "nameReconciled": "Populus nigra var.. italica",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Populus nigra var.. italica",
+        "Populus nigra",
+        "Aigiros nigra",
+        "Populus puschkinii",
+        "Populus alba",
+        "Populus nivea",
+        "Populus pendula",
+        "Populus pseudonivea",
+        "Populus arembergica",
+        "Populus triloba",
+        "Populus viminalis",
+        "Populus paletskyana",
+        "Populus morisetiana",
+        "Populus palmata",
+        "Populus hyrcana",
+        "Leuce alba",
+        "Populus caspica",
+        "Populus excelsa",
+        "Populus arbeel",
+        "Populus berkarensis",
+        "Populus acerifolia",
+        "Populus leucophylla",
+        "Populus hybrida",
+        "Populus subintegerrima",
+        "Populus denudata",
+        "Populus grisea",
+        "Populus aegyptiaca",
+        "Populus intermedia",
+        "Populus major",
+        "Populus quercifolia",
+        "Populus hickeliana",
+        "Populus bachofenii",
+        "Populus belgica",
+        "Populus bolleana",
+        "Populus arembergiana"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3817",
+      "nameVerbatim": "Potentilla velutina",
+      "nameParsed": "Potentilla velutina",
+      "nameReconciled": "Potentilla velutina",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Potentilla velutina",
+        "Potentilla subacaulis",
+        "Fragaria incana",
+        "Potentilla clementei",
+        "Potentilla incana",
+        "Dynamidium clementei",
+        "Argentina peduncularis",
+        "Potentilla peduncularis",
+        "Potentilla remota",
+        "Potentilla acaulis",
+        "Dasiphora subacaulis",
+        "Potentilla arenaria",
+        "Dynamidium subacaule"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5127",
+      "nameVerbatim": "Ranunculus bulbosus var. aleae",
+      "nameParsed": "Ranunculus bulbosus var.. aleae",
+      "nameReconciled": "Ranunculus bulbosus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ranunculus bulbosus var.. aleae",
+        "Ranunculus bulbosus",
+        "Ranunculus laetus",
+        "Ranunculastrum bulbosum",
+        "Ranunculus distans",
+        "Ranunculus brevirostris",
+        "Ranunculus pseudolaetus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5128",
+      "nameVerbatim": "Ranunculus bulbosus var. hispanicus",
+      "nameParsed": "Ranunculus bulbosus var.. hispanicus",
+      "nameReconciled": "Ranunculus bulbosus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ranunculus bulbosus var.. hispanicus",
+        "Ranunculus bulbosus",
+        "Ranunculus laetus",
+        "Ranunculastrum bulbosum",
+        "Ranunculus distans",
+        "Ranunculus brevirostris",
+        "Ranunculus pseudolaetus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1189",
+      "nameVerbatim": "Ranunculus peltatus var. peltatus",
+      "nameParsed": "Ranunculus peltatus var.. peltatus",
+      "nameReconciled": "Ranunculus peltatus var.. peltatus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Ranunculus peltatus var.. peltatus",
+        "Ranunculus peltatus",
+        "Ranunculus aquatilis",
+        "Ranunculus circinatoides",
+        "Ranunculus heterophyllus",
+        "Ranunculus aquaticus",
+        "Ranunculus foeniculaceus",
+        "Ranunculus hydrocharis",
+        "Ranunculus gmelinii",
+        "Ranunculus lacustris",
+        "Ranunculus hypotrichus",
+        "Ranunculus godronii",
+        "Ranunculus divaricatus",
+        "Ranunculus lejospermus",
+        "Ranunculus diversifolius",
+        "Ranunculus elongatus",
+        "Ranunculus fistulosus",
+        "Ranunculus feniculaceus",
+        "Ranunculus commutatus",
+        "Ranunculus capillaceus",
+        "Ranunculus capillaris",
+        "Ranunculus beckii",
+        "Ranunculus acutilobus",
+        "Ranunculus radians",
+        "Ranunculus tripartitus",
+        "Ranunculus submersus",
+        "Ranunculus paui",
+        "Ranunculus pantothrix",
+        "Ranunculus pectinatus",
+        "Batrachium pantothrix",
+        "Batrachium radians",
+        "Batrachium peltatum",
+        "Batrachium triphyllum",
+        "Batrachium heterophyllum",
+        "Batrachium gilibertii",
+        "Batrachium godronii",
+        "Batrachium friesii",
+        "Batrachium diversifolium",
+        "Batrachium capillaceum",
+        "Batrachium aquatile",
+        "Batrachium argutum",
+        "Ranunculus carinatus",
+        "Ranunculus grayanus",
+        "Ranunculus rigidus",
+        "Batrachium carinatum",
+        "Batrachium circinatoides",
+        "Ranunculus rhipiphyllus",
+        "Ranunculus triphyllos",
+        "Ranunculus truncatus",
+        "Ranunculus intermedius",
+        "Ranunculus floribundus",
+        "Ranunculus eleophilus",
+        "Batrachium truncatum",
+        "Batrachium rhipiphyllum",
+        "Batrachium pseudofluitans",
+        "Batrachium elongatum",
+        "Batrachium langei",
+        "Ranunculus macranthus",
+        "Batrachium floribundum",
+        "Ranunculus heleophyllus",
+        "Ranunculus kastamonuensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1614",
+      "nameVerbatim": "Rhamnus lycioides subsp. velutina",
+      "nameParsed": "Rhamnus lycioides subsp.. velutina",
+      "nameReconciled": "Rhamnus lycioides",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Rhamnus lycioides subsp.. velutina",
+        "Rhamnus lycioides",
+        "Rhamnus pallasii",
+        "Rhamnus medwedewii",
+        "Rhamnus erythroxylon"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1442",
+      "nameVerbatim": "Robinia pseudacacia",
+      "nameParsed": "Robinia pseudacacia",
+      "nameReconciled": "Robinia pseudacacia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Robinia pseudacacia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2111",
+      "nameVerbatim": "Rosa nitidula",
+      "nameParsed": "Rosa nitidula",
+      "nameReconciled": "Rosa blondaeana",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Rosa nitidula",
+        "Rosa bujedana",
+        "Rosa blondaeana",
+        "Rosa aspernata",
+        "Rosa latens",
+        "Rosa latebrosa"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2944",
+      "nameVerbatim": "Salix eleagnos subsp. angustifolia",
+      "nameParsed": "Salix eleagnos subsp.. angustifolia",
+      "nameReconciled": "Salix eleagnos subsp.. angustifolia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Salix eleagnos subsp.. angustifolia",
+        "Salix eleagnos",
+        "Salix incana",
+        "Salix rorismarinifolia",
+        "Salix salviifolia",
+        "Salix hircina",
+        "Salix lavendulifolia",
+        "Salix kerneri",
+        "Salix cyllenea",
+        "Salix viminalis",
+        "Salix riparia",
+        "Salix affinis",
+        "Salix asplenifolia",
+        "Salix angustifolia",
+        "Salix patula",
+        "Salix linearis",
+        "Salix longebracteata",
+        "Salix otites",
+        "Salix oleifolia",
+        "Salix rivularis",
+        "Salix firma",
+        "Salix atrovirens",
+        "Salix coriacea",
+        "Salix crassifolia",
+        "Salix grisophylla",
+        "Salix silesiaca",
+        "Salix septentrionalis",
+        "Salix sepiaria",
+        "Salix prunifolia",
+        "Salix pruinosa",
+        "Salix proteifolia",
+        "Salix pectinata",
+        "Salix protea",
+        "Salix psilocarpa",
+        "Salix recurvata",
+        "Salix ramifusca",
+        "Salix pyrolifolia",
+        "Salix pyrifolia",
+        "Vimen forsteriana",
+        "Vimen andersoniana",
+        "Vimen cotinifolia",
+        "Urnectis hirta",
+        "Salix lacustris",
+        "Salix dura",
+        "Salix schleicheriana",
+        "Salix sordida",
+        "Salix ovata",
+        "Salix ulmifolia",
+        "Salix candidula",
+        "Salix glabricarpa",
+        "Salix frangula",
+        "Salix glaucescens",
+        "Salix glaucophylla",
+        "Salix glareosa",
+        "Salix grisonensis",
+        "Salix gryonensis",
+        "Salix halleri",
+        "Salix helvetica",
+        "Salix elliptica",
+        "Salix diffusa",
+        "Salix divaricata",
+        "Salix fagifolia",
+        "Salix forsteriana",
+        "Salix lemana",
+        "Salix laxa",
+        "Salix hybrida",
+        "Salix hirta",
+        "Salix denudata",
+        "Salix crisposerrata",
+        "Salix cydoniifolia",
+        "Salix cotinifolia",
+        "Salix villosula",
+        "Salix villosa",
+        "Salix juratensis",
+        "Salix ilicofolia",
+        "Salix ansoniana",
+        "Salix candida",
+        "Salix tomentosa",
+        "Salix nivea"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "779",
+      "nameVerbatim": "Salix purpurea var. lambertiana",
+      "nameParsed": "Salix purpurea var.. lambertiana",
+      "nameReconciled": "Salix purpurea",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Salix purpurea var.. lambertiana",
+        "Salix purpurea",
+        "Knafia purpurea",
+        "Vetrix purpurea",
+        "Salix monandra"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "78",
+      "nameVerbatim": "Salix salvifolia",
+      "nameParsed": "Salix salvifolia",
+      "nameReconciled": "Salix salvifolia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Salix salvifolia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1821",
+      "nameVerbatim": "Sanguisorba minor subsp. muricata",
+      "nameParsed": "Sanguisorba minor subsp.. muricata",
+      "nameReconciled": "Sanguisorba minor",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Sanguisorba minor subsp.. muricata",
+        "Sanguisorba minor",
+        "Blitum sanguisorba",
+        "Pimpinella minor",
+        "Pimpinella sanguisorba",
+        "Poterium minus",
+        "Poterium sanguisorba",
+        "Sanguisorba sanguisorba",
+        "Pimpinella alpina",
+        "Pimpinella acaulis",
+        "Pimpinella dissecta",
+        "Pimpinella calvertii",
+        "Pimpinella rupestris",
+        "Pimpinella triloba",
+        "Pimpinella intermedia",
+        "Pimpinella laciniata",
+        "Pimpinella lucida",
+        "Pimpinella media",
+        "Tragoselinum minus",
+        "Selinum pimpinella",
+        "Pimpinella poteriifolia",
+        "Pimpinella pratensis",
+        "Tragoselinum hircinum",
+        "Pimpinella rotunda",
+        "Pimpinella rotundifolia",
+        "Pimpinella crispa",
+        "Pimpinella latifolia",
+        "Pimpinella magna",
+        "Pimpinella laconica",
+        "Pimpinella ovata",
+        "Pimpinella genevensis",
+        "Pimpinella hircina",
+        "Pimpinella angustifolia",
+        "Pimpinella alpestris",
+        "Pimpinella asopii",
+        "Apium laconicum",
+        "Apium tragoselinum",
+        "Carum alpinum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4839",
+      "nameVerbatim": "Satureja ascendens",
+      "nameParsed": "Satureja ascendens",
+      "nameReconciled": "Satureja ascendens",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Satureja ascendens",
+        "Calamintha intermedia",
+        "Calamintha ascendens",
+        "Clinopodium ascendens",
+        "Melissa intermedia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4082",
+      "nameVerbatim": "Scirpus cespitosus subsp. germanicum",
+      "nameParsed": "Scirpus cespitosus subsp.. germanicum",
+      "nameReconciled": "Scirpus cespitosus subsp.. germanicum",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Scirpus cespitosus subsp.. germanicum",
+        "Scirpus cespitosus",
+        "Fimbristylis caespitosa",
+        "Fimbristylis brachylaena",
+        "Fimbristylis elata",
+        "Iria caespitosa",
+        "Iria elata",
+        "Scirpus elatus",
+        "Trichophorum cespitosum",
+        "Baeothryon cespitosum",
+        "Clavula cespitosa",
+        "Eleocharis cespitosa",
+        "Kreczetoviczia cespitosa",
+        "Limnochloa cespitosa",
+        "Eleocharis quinqueflora",
+        "Clavula boeotryon",
+        "Scirpus atacamensis",
+        "Scirpus campestris",
+        "Scirpus sepium",
+        "Limnochloa pauciflora",
+        "Scirpus quinqueflorus",
+        "Limnochloa baeothryon",
+        "Isolepis andina",
+        "Scirpus scheuchzeri",
+        "Trichophorum pauciflorum",
+        "Trichophorum vierhapperi",
+        "Scirpus baeothryon",
+        "Baeothryon pauciflorum",
+        "Baeothryon halleri",
+        "Eleocharis pauciflora",
+        "Eleocharis vierhapperi",
+        "Eleocharis czernjajevi",
+        "Eleocharis fernaldii",
+        "Eleocharis meridionalis",
+        "Eleocharis obscura",
+        "Eleocharis atacamensis",
+        "Eleocharis baeothryon",
+        "Scirpus pauciflorus",
+        "Scirpus graecus",
+        "Scirpus halleri",
+        "Cyperus pauciflorus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4679",
+      "nameVerbatim": "Scorzonera angustifolia var. angustifolia",
+      "nameParsed": "Scorzonera angustifolia var.. angustifolia",
+      "nameReconciled": "Scorzonera angustifolia var.. angustifolia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Scorzonera angustifolia var.. angustifolia",
+        "Scorzonera angustifolia",
+        "Podospermum pinifolium",
+        "Scorzonera valentina",
+        "Scorzonera macrocephala",
+        "Scorzonera pinifolia",
+        "Scorzonera dalmatica",
+        "Scorzonera graminifolia",
+        "Scorzonera hirsuta",
+        "Scorzonera sardoa",
+        "Scorzonera julia",
+        "Takhtajaniantha austriaca",
+        "Scorzonera humilis",
+        "Scorzonera latifolia",
+        "Scorzonera prescottii",
+        "Scorzonera austriaca",
+        "Scorzonera gebleri",
+        "Scorzonera manshurica"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2604",
+      "nameVerbatim": "Senecio laderoi subsp. laderoi",
+      "nameParsed": "Senecio laderoi subsp.. laderoi",
+      "nameReconciled": "Senecio laderoi subsp.. laderoi",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Senecio laderoi subsp.. laderoi",
+        "Senecio laderoi",
+        "Senecio altissimus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2699",
+      "nameVerbatim": "Serratula leucantha",
+      "nameParsed": "Serratula leucantha",
+      "nameReconciled": "Serratula leucantha",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Serratula leucantha",
+        "Carduus leucanthus",
+        "Klasea leucantha"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3625",
+      "nameVerbatim": "Seseli libanotis subsp. libanotis",
+      "nameParsed": "Seseli libanotis subsp.. libanotis",
+      "nameReconciled": "Seseli libanotis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Seseli libanotis subsp.. libanotis",
+        "Seseli libanotis",
+        "Libanotis pumila",
+        "Libanotis montana",
+        "Libanotis major",
+        "Libanotis humilis",
+        "Libanotis athamanthoides",
+        "Libanotis athamantina",
+        "Libanotis gracilis",
+        "Libanotis daucoides",
+        "Libanotis hostiana",
+        "Libanotis daucus-creticus",
+        "Libanotis daucifolia",
+        "Libanotis vulgaris",
+        "Ligusticum condensatum",
+        "Ligusticum divaricatilobum",
+        "Ligusticum ferulaceum",
+        "Sium ammi",
+        "Seseli reichenbachii",
+        "Seseli pencanum",
+        "Selinum libanotis",
+        "Libanotis riviniana",
+        "Seseli pubicarpum",
+        "Libanotis pubescens",
+        "Seseli vulgare",
+        "Libanotis taurica",
+        "Seseli libanotum",
+        "Libanotis montana-ferulacea",
+        "Libanotis libanotis",
+        "Seseli leiocarpum",
+        "Libanotis nitens",
+        "Libanotis nitida",
+        "Seseli athamantoides",
+        "Libanotis cretensis",
+        "Libanotis crithmoides",
+        "Libanotis athamantica",
+        "Libanotis athamantoides",
+        "Libanotis alpina",
+        "Ligusticum sibiricum",
+        "Ammi daucifolium",
+        "Athamanta caucasica",
+        "Athamanta collina",
+        "Athamanta daucoides",
+        "Athamanta libanotis",
+        "Athamanta oreoselinum",
+        "Athamanta pubescens",
+        "Athamanta riviniana",
+        "Balinotella libanotis",
+        "Bubon libanotis",
+        "Athamanta cretensis",
+        "Libanotis italica",
+        "Libanotis annua",
+        "Libanotis hirsuta",
+        "Petrocarvi cretense",
+        "Turbith annua",
+        "Seseli athamantha",
+        "Seseli cinereum",
+        "Selinum athamantha",
+        "Athamanta alpina",
+        "Athamanta lobelii",
+        "Daucus creticus",
+        "Athamanta annua",
+        "Athamanta mutellinoides",
+        "Athamanta capillacea",
+        "Athamanta hirsuta",
+        "Athamanta rupestris",
+        "Durieua graeca"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4769",
+      "nameVerbatim": "Sesleria argentea subsp. hispanica",
+      "nameParsed": "Sesleria argentea subsp.. hispanica",
+      "nameReconciled": "Sesleria argentea",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Sesleria argentea subsp.. hispanica",
+        "Sesleria argentea",
+        "Festuca argentea",
+        "Cynosurus coeruleus",
+        "Cynosurus cylindricus",
+        "Sesleria cylindrica",
+        "Sesleria pallescens",
+        "Koeleria coerulea"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5145",
+      "nameVerbatim": "Sesleria caerulea",
+      "nameParsed": "Sesleria caerulea",
+      "nameReconciled": "Sesleria caerulea",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Sesleria caerulea",
+        "Aira varia",
+        "Alopecurus varius",
+        "Cynosurus caeruleus",
+        "Cynosurus rupestris",
+        "Cynosurus sesleria",
+        "Diptychum caeruleum",
+        "Sesleria arduinoi",
+        "Sesleria barcensis",
+        "Sesleria cristata",
+        "Sesleria calcaria",
+        "Sesleria varia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5184",
+      "nameVerbatim": "Sideritis camarae",
+      "nameParsed": "Sideritis camarae",
+      "nameReconciled": "Sideritis bubanii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Sideritis camarae",
+        "Sideritis bubanii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3916",
+      "nameVerbatim": "Solidago virgaurea subsp. fallit-tirones",
+      "nameParsed": "Solidago virgaurea subsp.. fallit-tirones",
+      "nameReconciled": "Solidago virgaurea",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Solidago virgaurea subsp.. fallit-tirones",
+        "Solidago virgaurea",
+        "Solidago vulgaris"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4898",
+      "nameVerbatim": "Sorbus aucuparia subsp. aucuparia",
+      "nameParsed": "Sorbus aucuparia subsp.. aucuparia",
+      "nameReconciled": "Sorbus aucuparia",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Sorbus aucuparia subsp.. aucuparia",
+        "Sorbus aucuparia",
+        "Aucuparia pinnata",
+        "Aucuparia silvestris",
+        "Crataegus aucuparia",
+        "Pyrus aucuparia",
+        "Pyrenia aucuparia",
+        "Mespilus aucuparia"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1941",
+      "nameVerbatim": "Sorbus mougeotii",
+      "nameParsed": "Sorbus mougeotii",
+      "nameReconciled": "Sorbus mougeotii",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Sorbus mougeotii",
+        "Hedlundia mougeotii",
+        "Ariosorbus mougeotii",
+        "Aria mougeotii",
+        "Hahnia mougeotii",
+        "Pyrus mougeotii",
+        "Sorbus fallacina",
+        "Sorbus quernea",
+        "Sorbus scandica",
+        "Sorbus tomophylla"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2231",
+      "nameVerbatim": "Stachys officinalis subsp. officinalis",
+      "nameParsed": "Stachys officinalis subsp.. officinalis",
+      "nameReconciled": "Stachys officinalis subsp.. officinalis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Stachys officinalis subsp.. officinalis",
+        "Stachys officinalis",
+        "Betonica officinalis",
+        "Stachys betonica",
+        "Stachys annua",
+        "Betonica annua",
+        "Olisia annua",
+        "Prasium stachydium",
+        "Betonica decumbens",
+        "Betonica hirta",
+        "Stachys stenophylla",
+        "Stachys bufonia",
+        "Stachys glabrata",
+        "Stachys hirta",
+        "Stachys decumbens",
+        "Stachys delphinensis",
+        "Sideritis maculata",
+        "Stachys procumbens",
+        "Stachys sideritis",
+        "Stachys sarajevensis",
+        "Stachys sylvestris",
+        "Stachys transsilvanica",
+        "Stachys krynkensis",
+        "Stachys montenegrina",
+        "Stachys nitens",
+        "Stachys erecta",
+        "Stachys czernjaevii"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "923",
+      "nameVerbatim": "Stachys recta subsp. recta",
+      "nameParsed": "Stachys recta subsp.. recta",
+      "nameReconciled": "Stachys recta",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Stachys recta subsp.. recta",
+        "Stachys recta",
+        "Ortostachys recta",
+        "Prasium stachys",
+        "Betonica recta"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1690",
+      "nameVerbatim": "Tetragonolobus maritimus var. hirsutus",
+      "nameParsed": "Tetragonolobus maritimus var.. hirsutus",
+      "nameReconciled": "Tetragonolobus maritimus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Tetragonolobus maritimus var.. hirsutus",
+        "Tetragonolobus maritimus",
+        "Lotus maritimus",
+        "Scandalida flava",
+        "Tetragonolobus tauricus",
+        "Lotus pratensis",
+        "Scandalida maritima",
+        "Lotus bouteloui",
+        "Tetragonolobus bivonaeus",
+        "Lotus bivonaeus",
+        "Tetragonolobus glaucus",
+        "Tetragonolobus bouteloui",
+        "Tetragonolobus prostratus",
+        "Tetragonolobus scandalida",
+        "Macroptilium lathyroides",
+        "Phaseolus semierectus",
+        "Phaseolus strictus",
+        "Phaseolus psoraleoides",
+        "Phaseolus hastifolius",
+        "Phaseolus lathyroides",
+        "Phaseolus maritimus",
+        "Phaseolus crotalarioides",
+        "Phasellus lathyroides",
+        "Phaseolus cinnabarinus"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4813",
+      "nameVerbatim": "Torilis arvensis subsp. arvensis",
+      "nameParsed": "Torilis arvensis subsp.. arvensis",
+      "nameReconciled": "Torilis arvensis",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Torilis arvensis subsp.. arvensis",
+        "Torilis arvensis",
+        "Caucalis arvensis",
+        "Anthriscus arvensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "945",
+      "nameVerbatim": "Trifolium repens subsp. nevadense",
+      "nameParsed": "Trifolium repens subsp.. nevadense",
+      "nameReconciled": "Trifolium repens",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Trifolium repens subsp.. nevadense",
+        "Trifolium repens",
+        "Amoria repens"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1582",
+      "nameVerbatim": "Valerianella lusitanica",
+      "nameParsed": "Valerianella lusitanica",
+      "nameReconciled": "Valerianella locusta",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Valerianella lusitanica",
+        "Valeriana locusta",
+        "Fedia locusta",
+        "Fedia olitaria",
+        "Valeriana olitoria",
+        "Fedia olitcria",
+        "Valerianella locusta",
+        "Valerianella pusilla",
+        "Valerianella olitoria",
+        "Locusta communis",
+        "Valerianella caerulea",
+        "Fedia caerulea",
+        "Valerianella dichotoma",
+        "Masema olitorium",
+        "Fedia ecalyculata",
+        "Fedia striata",
+        "Valerianella rhombicarpa",
+        "Valerianella striata",
+        "Fedia paniculata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "240",
+      "nameVerbatim": "Verbascum thapsus subsp. crassifolium",
+      "nameParsed": "Verbascum thapsus subsp.. crassifolium",
+      "nameReconciled": "Verbascum thapsus",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Verbascum thapsus subsp.. crassifolium",
+        "Verbascum thapsus",
+        "Verbascum spectabile",
+        "Verbascum salgirensis"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4923",
+      "nameVerbatim": "Veronica austriaca subsp. vahlii",
+      "nameParsed": "Veronica austriaca subsp.. vahlii",
+      "nameReconciled": "Veronica verna",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Veronica austriaca subsp.. vahlii",
+        "Veronica austriaca",
+        "Veronica pinnatifida",
+        "Veronica laciniata",
+        "Veronica verna",
+        "Veronica procerior",
+        "Agerella verna",
+        "Veronica succulenta",
+        "Veronica linearifolia",
+        "Veronica palmatiloba",
+        "Veronica trifida",
+        "Veronica bernettii",
+        "Veronica bellardii",
+        "Veronica chamaepitys",
+        "Veronica campestris",
+        "Veronica brevistyla",
+        "Cardia verna",
+        "Veronica pinnata",
+        "Veronica hispanica",
+        "Pseudolysimachion pinnatum",
+        "Veronica spuria",
+        "Ponaria laciniata",
+        "Veronica stephaniana",
+        "Veronica sublaciniata",
+        "Veronica paniculata",
+        "Veronica rubella",
+        "Veronica serrulata",
+        "Veronicastrum incisum",
+        "Veronica upsaliensis",
+        "Veronica triquetra",
+        "Veronicastrum laciniatum",
+        "Veronica leucantha",
+        "Veronica incisa",
+        "Veronica foliosa",
+        "Veronica leptostachya",
+        "Veronica virgata",
+        "Veronica verbenae",
+        "Veronica ramosa",
+        "Veronica brevifolia",
+        "Veronica capitulata",
+        "Veronica amethystina",
+        "Veronica altaica",
+        "Pseudolysimachion spurium",
+        "Veronica mollis",
+        "Veronica rubicunda",
+        "Veronica nitida",
+        "Pseudolysimachion paniculatum"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4640",
+      "nameVerbatim": "Vicia amphycarpa",
+      "nameParsed": "Vicia amphycarpa",
+      "nameReconciled": "Vicia amphycarpa",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Vicia amphycarpa"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2372",
+      "nameVerbatim": "Vicia pannonica var. purpurascens",
+      "nameParsed": "Vicia pannonica var.. purpurascens",
+      "nameReconciled": "Vicia pannonica var.. purpurascens",
+      "rank": "species",
+      "isHybrid": false,
+      "documentedQueryNames": [
+        "Vicia pannonica var.. purpurascens",
+        "Vicia pannonica",
+        "Hypechusa pannonica",
+        "Vicia purpurascens",
+        "Hypechusa purpurascens",
+        "Vicia hybrida",
+        "Vicia nissoliana",
+        "Vicioides striata",
+        "Vicioides uncinata",
+        "Vicioides hirsuta",
+        "Vicia striata"
+      ],
+      "sourceStates": {
+        "POWO_WCVP": "QUERIED_EXACT_SAME_RANK",
+        "ANTHOS": "QUERIED_EXACT_SAME_RANK",
+        "WFO": "SOURCE_FAILURE"
+      },
+      "identityState": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS"
+    }
+  ]
+}

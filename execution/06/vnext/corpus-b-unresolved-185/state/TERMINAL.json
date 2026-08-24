@@ -1,0 +1,15 @@
+{
+  "state": "PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES",
+  "stopRequired": false,
+  "stopReason": null,
+  "runId": "06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001",
+  "githubRunId": "32755271425",
+  "processedRows": 185,
+  "resolvedCount": 88,
+  "unresolvedOrConflictCount": 97,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "corpusBFreeze": false,
+  "downstreamStimesExecuted": false
+}
