@@ -1,0 +1,12 @@
+{
+  "actor": "06",
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+  "supersedesRunId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "rankFixVersion": "RANK_FIX_v1",
+  "scope": 67,
+  "scopeChange": false,
+  "scientificCriteriaChange": false,
+  "technicalFixOnly": true,
+  "triggerNonce": "2026-08-24T21:50:00+02:00_working_branch_corrective_trigger",
+  "authorizationBasis": "JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001"
+}
