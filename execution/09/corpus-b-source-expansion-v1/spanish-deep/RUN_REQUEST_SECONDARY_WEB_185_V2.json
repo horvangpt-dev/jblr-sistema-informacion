@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "scope": 185,
+  "runId": "CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V2_20260824_001",
+  "discoveryMode": true,
+  "seedNotRequiredInsideSynonymyBlock": true,
+  "searchRankingNotEvidence": true,
+  "queryEveryUniqueDiscoveredNameOnce": true,
+  "deduplicateNamesPerTaxonBeforeEidos": true,
+  "sourceCountPreserved": true,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "supersedesMethod": "CORPUS_B_SECONDARY_WEB_SYNONYMY_185_20260824_001",
+  "reason": "User-directed generic secondary-source discovery: retain explicit synonymy relationships from source-returned pages without requiring the seed name inside the synonymy block; deduplicate discovered names and query each once in EIDOS."
+}
