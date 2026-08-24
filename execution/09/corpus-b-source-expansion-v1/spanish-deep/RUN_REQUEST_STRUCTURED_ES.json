@@ -1,5 +1,5 @@
 {
-  "runId": "SPANISH_STRUCTURED_ES_EIDOS_337_20260824_001",
+  "runId": "SPANISH_STRUCTURED_ES_EIDOS_337_20260824_002",
   "enabled": true,
   "inputCount": 337,
   "source": "GBIF_SPAIN_LISTA_TAXONES_FLORA_VASCULAR_2025_V1_16",
@@ -9,6 +9,9 @@
   "humanDirectiveObservedAt": "2026-08-24T07:47:59Z",
   "parentReleaseEvent": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001",
   "pilotEvidenceCommit": "118ab31c8e0c6fe99fffa85ccd072c89dd0cd828",
+  "priorFailedRun": 32704092952,
+  "infrastructureCorrectionCommit": "475ef125850857e70af009125c28a4dcf2a0d068",
+  "retryReason": "DWCA_XML_ELEMENT_TRUTHINESS_PARSER_BUG_ONLY_NO_TAXONOMIC_SEMANTIC_CHANGE",
   "crossWithA": false,
   "neonWrites": 0,
   "corpusBFreeze": false,
