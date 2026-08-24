@@ -1,0 +1,16 @@
+{
+  "runId": "09_CORPUS_B_SOURCE_EXPANSION_337_20260824_001",
+  "enabled": true,
+  "releaseEvent": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001",
+  "directiveDocumentId": "1ZNGdTSTBGLr26_jx4CZiWfBfsOshIKL8_uo9TbkclQ4",
+  "carryForwardQueue": 337,
+  "acceptedPriorResolutionCount": 1,
+  "acceptedPriorCommit": "fe0dd36a952a24f737495ee7ebe3d57be9e21ee9",
+  "implementation08Commit": "b04c32c08d7f1fcf47b558efab3ce2a13a4ccf99",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "cacheInitialState": "EMPTY",
+  "sourceFailureNotFoundEquivalent": false,
+  "notFoundAbsenceEquivalent": false
+}
