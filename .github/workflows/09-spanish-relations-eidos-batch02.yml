@@ -25,6 +25,7 @@ jobs:
           import json
           p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_MANUAL_BATCH_02.json'))
           assert p['enabled'] is True and p['scope']==337
+          assert p['runId']=='SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_002'
           assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
           assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
           PY
@@ -38,16 +39,17 @@ jobs:
         run: |
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
-          OUT="$ROOT/runs/SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_001/RUN_RECEIPT.json"
+          OUT="$ROOT/runs/SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_002/RUN_RECEIPT.json"
           python "$ROOT/manual_spanish_relations_eidos_batch.py" "$ROOT/MANUAL_SPANISH_RELATIONS_BATCH_02.json" "$RUNNER_TEMP/eidos.ttl" "$OUT"
       - name: QA and persist evidence
         run: |
           set -euo pipefail
-          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_001
+          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_002
           python - <<'PY'
           import json
-          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_001/RUN_RECEIPT.json'
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_002/RUN_RECEIPT.json'
           r=json.load(open(p))
+          assert r['resolverVersion']=='RANK_EXACT_v2'
           assert r['inputRelations']==r['outputRelations']==25
           assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
           assert r['noFuzzy'] is True and r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
@@ -56,5 +58,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin 09-corpus-b-spanish-synonymy-eidos-deep-v1
           git add "$OUT"
-          git commit -m "evidence(09): Spanish relations EIDOS batch02 ${GITHUB_RUN_ID}"
+          git commit -m "evidence(09): Spanish relations EIDOS batch02 rank-exact ${GITHUB_RUN_ID}"
           git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
