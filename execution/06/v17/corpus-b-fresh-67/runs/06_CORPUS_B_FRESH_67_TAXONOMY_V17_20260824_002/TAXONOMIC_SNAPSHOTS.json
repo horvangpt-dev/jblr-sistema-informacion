@@ -1,0 +1,4990 @@
+{
+  "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+  "rows": [
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3600",
+      "nameVerbatim": "Adenocarpus hispanicus subsp. neilense",
+      "nameParsed": "Adenocarpus hispanicus subsp. neilense",
+      "nameReconciled": "Adenocarpus hispanicus subsp. neilense",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Adenocarpus hispanicus subsp. neilense"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.683921+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Adenocarpus hispanicus subsp. neilense"
+            ],
+            "evidence": [
+              {
+                "queryName": "Adenocarpus hispanicus subsp. neilense",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Adenocarpus hispanicus subsp. neilense"
+            ],
+            "evidence": [
+              {
+                "queryName": "Adenocarpus hispanicus subsp. neilense",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Adenocarpus hispanicus subsp. neilense",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4286",
+      "nameVerbatim": "Anteriorchis coriophora var. carpetana",
+      "nameParsed": "Anteriorchis coriophora var. carpetana",
+      "nameReconciled": "Anteriorchis coriophora var. carpetana",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Anteriorchis coriophora var. carpetana"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.684022+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Anteriorchis coriophora var. carpetana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Anteriorchis coriophora var. carpetana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Anteriorchis coriophora var. carpetana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Anteriorchis coriophora var. carpetana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Anteriorchis coriophora var. carpetana",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4440",
+      "nameVerbatim": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "nameParsed": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "nameReconciled": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Asplenium adiantum-nigrum var. adiantum-nigrum"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.684118+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Asplenium adiantum-nigrum var. adiantum-nigrum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Asplenium adiantum-nigrum var. adiantum-nigrum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1894",
+      "nameVerbatim": "Astragalus monspessulanus subsp. teresianus",
+      "nameParsed": "Astragalus monspessulanus subsp. teresianus",
+      "nameReconciled": "Astragalus monspessulanus subsp. teresianus",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Astragalus monspessulanus subsp. teresianus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.684196+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Astragalus monspessulanus subsp. teresianus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Astragalus monspessulanus subsp. teresianus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Astragalus monspessulanus subsp. teresianus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Astragalus monspessulanus subsp. teresianus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Astragalus monspessulanus subsp. teresianus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "294",
+      "nameVerbatim": "Astragalus sempervirens subsp. muticus",
+      "nameParsed": "Astragalus sempervirens subsp. muticus",
+      "nameReconciled": "Astragalus sempervirens subsp. muticus",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Astragalus sempervirens subsp. muticus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.684268+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Astragalus sempervirens subsp. muticus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Astragalus sempervirens subsp. muticus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Astragalus sempervirens subsp. muticus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Astragalus sempervirens subsp. muticus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Astragalus sempervirens subsp. muticus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3862",
+      "nameVerbatim": "Astragalus vesicarius subsp. vesicarius",
+      "nameParsed": "Astragalus vesicarius subsp. vesicarius",
+      "nameReconciled": "Astragalus vesicarius subsp. vesicarius",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Astragalus vesicarius subsp. vesicarius"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.684361+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Astragalus vesicarius subsp. vesicarius"
+            ],
+            "evidence": [
+              {
+                "queryName": "Astragalus vesicarius subsp. vesicarius",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Astragalus vesicarius subsp. vesicarius"
+            ],
+            "evidence": [
+              {
+                "queryName": "Astragalus vesicarius subsp. vesicarius",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Astragalus vesicarius subsp. vesicarius",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "5099",
+      "nameVerbatim": "Avenula bromoides subsp. pauneroi",
+      "nameParsed": "Avenula bromoides subsp. pauneroi",
+      "nameReconciled": "Avenula bromoides subsp. pauneroi",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Avenula bromoides subsp. pauneroi"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692245+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Avenula bromoides subsp. pauneroi"
+            ],
+            "evidence": [
+              {
+                "queryName": "Avenula bromoides subsp. pauneroi",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Avenula bromoides subsp. pauneroi"
+            ],
+            "evidence": [
+              {
+                "queryName": "Avenula bromoides subsp. pauneroi",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": [
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:56053",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:56054",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:56055",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:82323",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:82324",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:85999",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92465",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92466",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92467",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92468",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:104314",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:113744",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:115641",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:115642",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:969786",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:987263",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:988015",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:988016",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1029468",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Avenula bromoides subsp. pauneroi",
+                    "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1029469",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  }
+                ]
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Avenula bromoides subsp. pauneroi",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1522",
+      "nameVerbatim": "Avenula lodunensis subsp. romero-zarcoi",
+      "nameParsed": "Avenula lodunensis subsp. romero-zarcoi",
+      "nameReconciled": "Avenula lodunensis subsp. romero-zarcoi",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Avenula lodunensis subsp. romero-zarcoi"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692330+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Avenula lodunensis subsp. romero-zarcoi"
+            ],
+            "evidence": [
+              {
+                "queryName": "Avenula lodunensis subsp. romero-zarcoi",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Avenula lodunensis subsp. romero-zarcoi"
+            ],
+            "evidence": [
+              {
+                "queryName": "Avenula lodunensis subsp. romero-zarcoi",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Avenula lodunensis subsp. romero-zarcoi",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3789",
+      "nameVerbatim": "Biscutella valentina var. variegata",
+      "nameParsed": "Biscutella valentina var. variegata",
+      "nameReconciled": "Biscutella valentina var. variegata",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Biscutella valentina var. variegata"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692420+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Biscutella valentina var. variegata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Biscutella valentina var. variegata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Biscutella valentina var. variegata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Biscutella valentina var. variegata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Biscutella valentina var. variegata",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "910",
+      "nameVerbatim": "Bupleurum ranunculoides subsp. gramineus",
+      "nameParsed": "Bupleurum ranunculoides subsp. gramineus",
+      "nameReconciled": "Bupleurum ranunculoides subsp. gramineus",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Bupleurum ranunculoides subsp. gramineus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692497+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Bupleurum ranunculoides subsp. gramineus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Bupleurum ranunculoides subsp. gramineus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Bupleurum ranunculoides subsp. gramineus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Bupleurum ranunculoides subsp. gramineus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Bupleurum ranunculoides subsp. gramineus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "911",
+      "nameVerbatim": "Bupleurum ranunculoides subsp. ranunculoides",
+      "nameParsed": "Bupleurum ranunculoides subsp. ranunculoides",
+      "nameReconciled": "Bupleurum ranunculoides subsp. ranunculoides",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Bupleurum ranunculoides subsp. ranunculoides"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692574+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Bupleurum ranunculoides subsp. ranunculoides"
+            ],
+            "evidence": [
+              {
+                "queryName": "Bupleurum ranunculoides subsp. ranunculoides",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Bupleurum ranunculoides subsp. ranunculoides"
+            ],
+            "evidence": [
+              {
+                "queryName": "Bupleurum ranunculoides subsp. ranunculoides",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Bupleurum ranunculoides subsp. ranunculoides",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3629",
+      "nameVerbatim": "Campanula trachelium subsp. trachelium",
+      "nameParsed": "Campanula trachelium subsp. trachelium",
+      "nameReconciled": "Campanula trachelium subsp. trachelium",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Campanula trachelium subsp. trachelium"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692643+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Campanula trachelium subsp. trachelium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Campanula trachelium subsp. trachelium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Campanula trachelium subsp. trachelium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Campanula trachelium subsp. trachelium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Campanula trachelium subsp. trachelium",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1968",
+      "nameVerbatim": "Carex muricata subsp. lamprocarpa",
+      "nameParsed": "Carex muricata subsp. lamprocarpa",
+      "nameReconciled": "Carex muricata subsp. lamprocarpa",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Carex muricata subsp. lamprocarpa"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692711+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Carex muricata subsp. lamprocarpa"
+            ],
+            "evidence": [
+              {
+                "queryName": "Carex muricata subsp. lamprocarpa",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Carex muricata subsp. lamprocarpa"
+            ],
+            "evidence": [
+              {
+                "queryName": "Carex muricata subsp. lamprocarpa",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Carex muricata subsp. lamprocarpa",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2758",
+      "nameVerbatim": "Centaurea debeauxii subsp. nemoralis",
+      "nameParsed": "Centaurea debeauxii subsp. nemoralis",
+      "nameReconciled": "Centaurea debeauxii subsp. nemoralis",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Centaurea debeauxii subsp. nemoralis"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692782+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centaurea debeauxii subsp. nemoralis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centaurea debeauxii subsp. nemoralis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centaurea debeauxii subsp. nemoralis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centaurea debeauxii subsp. nemoralis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Centaurea debeauxii subsp. nemoralis",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2367",
+      "nameVerbatim": "Centaurea paniculata subsp. castellana",
+      "nameParsed": "Centaurea paniculata subsp. castellana",
+      "nameReconciled": "Centaurea paniculata subsp. castellana",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Centaurea paniculata subsp. castellana"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692849+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centaurea paniculata subsp. castellana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centaurea paniculata subsp. castellana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centaurea paniculata subsp. castellana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centaurea paniculata subsp. castellana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Centaurea paniculata subsp. castellana",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3681",
+      "nameVerbatim": "Centaurea triumfetti subsp. lingulata",
+      "nameParsed": "Centaurea triumfetti subsp. lingulata",
+      "nameReconciled": "Centaurea triumfetti subsp. lingulata",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Centaurea triumfetti subsp. lingulata"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692921+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centaurea triumfetti subsp. lingulata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centaurea triumfetti subsp. lingulata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centaurea triumfetti subsp. lingulata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centaurea triumfetti subsp. lingulata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Centaurea triumfetti subsp. lingulata",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "5177",
+      "nameVerbatim": "Centranthus calcitrapae subsp. calcitrapae",
+      "nameParsed": "Centranthus calcitrapae subsp. calcitrapae",
+      "nameReconciled": "Centranthus calcitrapae subsp. calcitrapae",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Centranthus calcitrapae subsp. calcitrapae"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.692995+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centranthus calcitrapae subsp. calcitrapae"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centranthus calcitrapae subsp. calcitrapae",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Centranthus calcitrapae subsp. calcitrapae"
+            ],
+            "evidence": [
+              {
+                "queryName": "Centranthus calcitrapae subsp. calcitrapae",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Centranthus calcitrapae subsp. calcitrapae",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "5080",
+      "nameVerbatim": "Cerastium brachypetalum var. brachypetalum",
+      "nameParsed": "Cerastium brachypetalum var. brachypetalum",
+      "nameReconciled": "Cerastium brachypetalum var. brachypetalum",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Cerastium brachypetalum var. brachypetalum"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693068+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cerastium brachypetalum var. brachypetalum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cerastium brachypetalum var. brachypetalum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cerastium brachypetalum var. brachypetalum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cerastium brachypetalum var. brachypetalum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Cerastium brachypetalum var. brachypetalum",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "839",
+      "nameVerbatim": "Cirsium pyrenaicum var. longespinosum",
+      "nameParsed": "Cirsium pyrenaicum var. longespinosum",
+      "nameReconciled": "Cirsium pyrenaicum var. longespinosum",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Cirsium pyrenaicum var. longespinosum"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693136+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cirsium pyrenaicum var. longespinosum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cirsium pyrenaicum var. longespinosum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cirsium pyrenaicum var. longespinosum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cirsium pyrenaicum var. longespinosum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Cirsium pyrenaicum var. longespinosum",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "840",
+      "nameVerbatim": "Cirsium pyrenaicum var. pyrenaicum",
+      "nameParsed": "Cirsium pyrenaicum var. pyrenaicum",
+      "nameReconciled": "Cirsium pyrenaicum var. pyrenaicum",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Cirsium pyrenaicum var. pyrenaicum"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693208+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cirsium pyrenaicum var. pyrenaicum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cirsium pyrenaicum var. pyrenaicum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cirsium pyrenaicum var. pyrenaicum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cirsium pyrenaicum var. pyrenaicum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Cirsium pyrenaicum var. pyrenaicum",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "173",
+      "nameVerbatim": "Cytisus scoparius subsp. cantabricus",
+      "nameParsed": "Cytisus scoparius subsp. cantabricus",
+      "nameReconciled": "Cytisus scoparius subsp. cantabricus",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Cytisus scoparius subsp. cantabricus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693279+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cytisus scoparius subsp. cantabricus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cytisus scoparius subsp. cantabricus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Cytisus scoparius subsp. cantabricus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Cytisus scoparius subsp. cantabricus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Cytisus scoparius subsp. cantabricus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2934",
+      "nameVerbatim": "Dactylorhiza elata subsp. sesquipedalis",
+      "nameParsed": "Dactylorhiza elata subsp. sesquipedalis",
+      "nameReconciled": "Dactylorhiza elata subsp. sesquipedalis",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Dactylorhiza elata subsp. sesquipedalis"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693351+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza elata subsp. sesquipedalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza elata subsp. sesquipedalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza elata subsp. sesquipedalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza elata subsp. sesquipedalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Dactylorhiza elata subsp. sesquipedalis",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2483",
+      "nameVerbatim": "Dactylorhiza incarnata subsp. incarnata",
+      "nameParsed": "Dactylorhiza incarnata subsp. incarnata",
+      "nameReconciled": "Dactylorhiza incarnata subsp. incarnata",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Dactylorhiza incarnata subsp. incarnata"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693435+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza incarnata subsp. incarnata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza incarnata subsp. incarnata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza incarnata subsp. incarnata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza incarnata subsp. incarnata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Dactylorhiza incarnata subsp. incarnata",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1624",
+      "nameVerbatim": "Dactylorhiza maculata subsp. elodes",
+      "nameParsed": "Dactylorhiza maculata subsp. elodes",
+      "nameReconciled": "Dactylorhiza maculata subsp. elodes",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Dactylorhiza maculata subsp. elodes"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693506+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza maculata subsp. elodes"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza maculata subsp. elodes",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza maculata subsp. elodes"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza maculata subsp. elodes",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Dactylorhiza maculata subsp. elodes",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1625",
+      "nameVerbatim": "Dactylorhiza maculata subsp. maculata",
+      "nameParsed": "Dactylorhiza maculata subsp. maculata",
+      "nameReconciled": "Dactylorhiza maculata subsp. maculata",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Dactylorhiza maculata subsp. maculata"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693575+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza maculata subsp. maculata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza maculata subsp. maculata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza maculata subsp. maculata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza maculata subsp. maculata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Dactylorhiza maculata subsp. maculata",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1647",
+      "nameVerbatim": "Dactylorhiza majalis subsp. majalis",
+      "nameParsed": "Dactylorhiza majalis subsp. majalis",
+      "nameReconciled": "Dactylorhiza majalis subsp. majalis",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Dactylorhiza majalis subsp. majalis"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.693646+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza majalis subsp. majalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza majalis subsp. majalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dactylorhiza majalis subsp. majalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dactylorhiza majalis subsp. majalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Dactylorhiza majalis subsp. majalis",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4480",
+      "nameVerbatim": "Dryopteris affinis subsp. cambrensis",
+      "nameParsed": "Dryopteris affinis subsp. cambrensis",
+      "nameReconciled": "Dryopteris affinis subsp. cambrensis",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Dryopteris affinis subsp. cambrensis"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694361+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dryopteris affinis subsp. cambrensis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dryopteris affinis subsp. cambrensis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Dryopteris affinis subsp. cambrensis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Dryopteris affinis subsp. cambrensis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": [
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1427383",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1427384",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1427385",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242161",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242160",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242159",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242167",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242166",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242165",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242162",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242163",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242164",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398020",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398021",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398022",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398023",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398024",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398025",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398026",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  },
+                  {
+                    "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                    "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                    "rank": "subspecies",
+                    "taxonomicStatus": "",
+                    "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398027",
+                    "acceptedNameUsage": "",
+                    "acceptedNameUsageID": ""
+                  }
+                ]
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Dryopteris affinis subsp. cambrensis",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1250",
+      "nameVerbatim": "Epipactis phyllanthes var. fageticola",
+      "nameParsed": "Epipactis phyllanthes var. fageticola",
+      "nameReconciled": "Epipactis phyllanthes var. fageticola",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Epipactis phyllanthes var. fageticola"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694448+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Epipactis phyllanthes var. fageticola"
+            ],
+            "evidence": [
+              {
+                "queryName": "Epipactis phyllanthes var. fageticola",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Epipactis phyllanthes var. fageticola"
+            ],
+            "evidence": [
+              {
+                "queryName": "Epipactis phyllanthes var. fageticola",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Epipactis phyllanthes var. fageticola",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3720",
+      "nameVerbatim": "Filipendula ulmaria subsp. ulmaria",
+      "nameParsed": "Filipendula ulmaria subsp. ulmaria",
+      "nameReconciled": "Filipendula ulmaria subsp. ulmaria",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Filipendula ulmaria subsp. ulmaria"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694521+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Filipendula ulmaria subsp. ulmaria"
+            ],
+            "evidence": [
+              {
+                "queryName": "Filipendula ulmaria subsp. ulmaria",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Filipendula ulmaria subsp. ulmaria"
+            ],
+            "evidence": [
+              {
+                "queryName": "Filipendula ulmaria subsp. ulmaria",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Filipendula ulmaria subsp. ulmaria",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3203",
+      "nameVerbatim": "Genista florida subsp. polygaliphylla",
+      "nameParsed": "Genista florida subsp. polygaliphylla",
+      "nameReconciled": "Genista florida subsp. polygaliphylla",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Genista florida subsp. polygaliphylla"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694600+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Genista florida subsp. polygaliphylla"
+            ],
+            "evidence": [
+              {
+                "queryName": "Genista florida subsp. polygaliphylla",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Genista florida subsp. polygaliphylla"
+            ],
+            "evidence": [
+              {
+                "queryName": "Genista florida subsp. polygaliphylla",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Genista florida subsp. polygaliphylla",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4677",
+      "nameVerbatim": "Gentiana angustifolia subsp. occidentalis",
+      "nameParsed": "Gentiana angustifolia subsp. occidentalis",
+      "nameReconciled": "Gentiana angustifolia subsp. occidentalis",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Gentiana angustifolia subsp. occidentalis"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694673+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Gentiana angustifolia subsp. occidentalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Gentiana angustifolia subsp. occidentalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Gentiana angustifolia subsp. occidentalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Gentiana angustifolia subsp. occidentalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Gentiana angustifolia subsp. occidentalis",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2149",
+      "nameVerbatim": "Helianthemum nummularium subsp. nummularium",
+      "nameParsed": "Helianthemum nummularium subsp. nummularium",
+      "nameReconciled": "Helianthemum nummularium subsp. nummularium",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Helianthemum nummularium subsp. nummularium"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694744+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Helianthemum nummularium subsp. nummularium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Helianthemum nummularium subsp. nummularium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Helianthemum nummularium subsp. nummularium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Helianthemum nummularium subsp. nummularium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Helianthemum nummularium subsp. nummularium",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "412",
+      "nameVerbatim": "Heracleum sphondylium subsp. montanum",
+      "nameParsed": "Heracleum sphondylium subsp. montanum",
+      "nameReconciled": "Heracleum sphondylium subsp. montanum",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Heracleum sphondylium subsp. montanum"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694813+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Heracleum sphondylium subsp. montanum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Heracleum sphondylium subsp. montanum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Heracleum sphondylium subsp. montanum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Heracleum sphondylium subsp. montanum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Heracleum sphondylium subsp. montanum",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "136",
+      "nameVerbatim": "Herniaria scabrida var. glabrescens",
+      "nameParsed": "Herniaria scabrida var. glabrescens",
+      "nameReconciled": "Herniaria scabrida var. glabrescens",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Herniaria scabrida var. glabrescens"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694883+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Herniaria scabrida var. glabrescens"
+            ],
+            "evidence": [
+              {
+                "queryName": "Herniaria scabrida var. glabrescens",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Herniaria scabrida var. glabrescens"
+            ],
+            "evidence": [
+              {
+                "queryName": "Herniaria scabrida var. glabrescens",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Herniaria scabrida var. glabrescens",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2602",
+      "nameVerbatim": "Hieracium lactucella subsp. lactucella",
+      "nameParsed": "Hieracium lactucella subsp. lactucella",
+      "nameReconciled": "Hieracium lactucella subsp. lactucella",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Hieracium lactucella subsp. lactucella"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.694953+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium lactucella subsp. lactucella"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium lactucella subsp. lactucella",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium lactucella subsp. lactucella"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium lactucella subsp. lactucella",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Hieracium lactucella subsp. lactucella",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1270",
+      "nameVerbatim": "Hieracium pilosella subsp. micradenium",
+      "nameParsed": "Hieracium pilosella subsp. micradenium",
+      "nameReconciled": "Hieracium pilosella subsp. micradenium",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Hieracium pilosella subsp. micradenium"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695052+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium pilosella subsp. micradenium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium pilosella subsp. micradenium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium pilosella subsp. micradenium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium pilosella subsp. micradenium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Hieracium pilosella subsp. micradenium",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1271",
+      "nameVerbatim": "Hieracium pilosella subsp. pilosella",
+      "nameParsed": "Hieracium pilosella subsp. pilosella",
+      "nameReconciled": "Hieracium pilosella subsp. pilosella",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Hieracium pilosella subsp. pilosella"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695120+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium pilosella subsp. pilosella"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium pilosella subsp. pilosella",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium pilosella subsp. pilosella"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium pilosella subsp. pilosella",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Hieracium pilosella subsp. pilosella",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1272",
+      "nameVerbatim": "Hieracium pilosella subsp. tricholepium",
+      "nameParsed": "Hieracium pilosella subsp. tricholepium",
+      "nameReconciled": "Hieracium pilosella subsp. tricholepium",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Hieracium pilosella subsp. tricholepium"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695191+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium pilosella subsp. tricholepium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium pilosella subsp. tricholepium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hieracium pilosella subsp. tricholepium"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hieracium pilosella subsp. tricholepium",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Hieracium pilosella subsp. tricholepium",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3555",
+      "nameVerbatim": "Himantoglossum hircinum subsp. hircinum",
+      "nameParsed": "Himantoglossum hircinum subsp. hircinum",
+      "nameReconciled": "Himantoglossum hircinum subsp. hircinum",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Himantoglossum hircinum subsp. hircinum"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695261+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Himantoglossum hircinum subsp. hircinum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Himantoglossum hircinum subsp. hircinum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Himantoglossum hircinum subsp. hircinum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Himantoglossum hircinum subsp. hircinum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Himantoglossum hircinum subsp. hircinum",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4217",
+      "nameVerbatim": "Hippocrepis comosa subsp. squamata",
+      "nameParsed": "Hippocrepis comosa subsp. squamata",
+      "nameReconciled": "Hippocrepis comosa subsp. squamata",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Hippocrepis comosa subsp. squamata"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695330+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hippocrepis comosa subsp. squamata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hippocrepis comosa subsp. squamata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Hippocrepis comosa subsp. squamata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Hippocrepis comosa subsp. squamata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Hippocrepis comosa subsp. squamata",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4244",
+      "nameVerbatim": "Juncus conglomeratus var. conglomeratus",
+      "nameParsed": "Juncus conglomeratus var. conglomeratus",
+      "nameReconciled": "Juncus conglomeratus var. conglomeratus",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Juncus conglomeratus var. conglomeratus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695420+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Juncus conglomeratus var. conglomeratus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Juncus conglomeratus var. conglomeratus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Juncus conglomeratus var. conglomeratus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Juncus conglomeratus var. conglomeratus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Juncus conglomeratus var. conglomeratus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2930",
+      "nameVerbatim": "Juncus effusus var. subglomeratus",
+      "nameParsed": "Juncus effusus var. subglomeratus",
+      "nameReconciled": "Juncus effusus var. subglomeratus",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Juncus effusus var. subglomeratus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695490+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Juncus effusus var. subglomeratus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Juncus effusus var. subglomeratus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Juncus effusus var. subglomeratus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Juncus effusus var. subglomeratus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Juncus effusus var. subglomeratus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "591",
+      "nameVerbatim": "Knautia subscaposa subsp. subscaposa",
+      "nameParsed": "Knautia subscaposa subsp. subscaposa",
+      "nameReconciled": "Knautia subscaposa subsp. subscaposa",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Knautia subscaposa subsp. subscaposa"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695564+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Knautia subscaposa subsp. subscaposa"
+            ],
+            "evidence": [
+              {
+                "queryName": "Knautia subscaposa subsp. subscaposa",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Knautia subscaposa subsp. subscaposa"
+            ],
+            "evidence": [
+              {
+                "queryName": "Knautia subscaposa subsp. subscaposa",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Knautia subscaposa subsp. subscaposa",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3758",
+      "nameVerbatim": "Littorela uniflora",
+      "nameParsed": "Littorela uniflora",
+      "nameReconciled": "Littorela uniflora",
+      "rank": "species",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Littorela uniflora"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695620+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Littorela uniflora"
+            ],
+            "evidence": [
+              {
+                "queryName": "Littorela uniflora",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Littorela uniflora"
+            ],
+            "evidence": [
+              {
+                "queryName": "Littorela uniflora",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Littorela uniflora",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "5195",
+      "nameVerbatim": "Luzula campestris subsp. carpetana",
+      "nameParsed": "Luzula campestris subsp. carpetana",
+      "nameReconciled": "Luzula campestris subsp. carpetana",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Luzula campestris subsp. carpetana"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695689+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Luzula campestris subsp. carpetana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Luzula campestris subsp. carpetana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Luzula campestris subsp. carpetana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Luzula campestris subsp. carpetana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Luzula campestris subsp. carpetana",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1949",
+      "nameVerbatim": "Luzula multiflora subsp. congesta",
+      "nameParsed": "Luzula multiflora subsp. congesta",
+      "nameReconciled": "Luzula multiflora subsp. congesta",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Luzula multiflora subsp. congesta"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695759+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Luzula multiflora subsp. congesta"
+            ],
+            "evidence": [
+              {
+                "queryName": "Luzula multiflora subsp. congesta",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Luzula multiflora subsp. congesta"
+            ],
+            "evidence": [
+              {
+                "queryName": "Luzula multiflora subsp. congesta",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Luzula multiflora subsp. congesta",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "636",
+      "nameVerbatim": "Luzula sylvatica subsp. henriquesii",
+      "nameParsed": "Luzula sylvatica subsp. henriquesii",
+      "nameReconciled": "Luzula sylvatica subsp. henriquesii",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Luzula sylvatica subsp. henriquesii"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695826+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Luzula sylvatica subsp. henriquesii"
+            ],
+            "evidence": [
+              {
+                "queryName": "Luzula sylvatica subsp. henriquesii",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Luzula sylvatica subsp. henriquesii"
+            ],
+            "evidence": [
+              {
+                "queryName": "Luzula sylvatica subsp. henriquesii",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Luzula sylvatica subsp. henriquesii",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "624",
+      "nameVerbatim": "Omalotheca supina subsp. pusilla",
+      "nameParsed": "Omalotheca supina subsp. pusilla",
+      "nameReconciled": "Omalotheca supina subsp. pusilla",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Omalotheca supina subsp. pusilla"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695892+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Omalotheca supina subsp. pusilla"
+            ],
+            "evidence": [
+              {
+                "queryName": "Omalotheca supina subsp. pusilla",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Omalotheca supina subsp. pusilla"
+            ],
+            "evidence": [
+              {
+                "queryName": "Omalotheca supina subsp. pusilla",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Omalotheca supina subsp. pusilla",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "635",
+      "nameVerbatim": "Omalotheca sylvatica subsp. carpetana",
+      "nameParsed": "Omalotheca sylvatica subsp. carpetana",
+      "nameReconciled": "Omalotheca sylvatica subsp. carpetana",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Omalotheca sylvatica subsp. carpetana"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.695963+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Omalotheca sylvatica subsp. carpetana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Omalotheca sylvatica subsp. carpetana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Omalotheca sylvatica subsp. carpetana"
+            ],
+            "evidence": [
+              {
+                "queryName": "Omalotheca sylvatica subsp. carpetana",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Omalotheca sylvatica subsp. carpetana",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4407",
+      "nameVerbatim": "Onopordum acaulon subsp. acaulon",
+      "nameParsed": "Onopordum acaulon subsp. acaulon",
+      "nameReconciled": "Onopordum acaulon subsp. acaulon",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Onopordum acaulon subsp. acaulon"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696030+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Onopordum acaulon subsp. acaulon"
+            ],
+            "evidence": [
+              {
+                "queryName": "Onopordum acaulon subsp. acaulon",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Onopordum acaulon subsp. acaulon"
+            ],
+            "evidence": [
+              {
+                "queryName": "Onopordum acaulon subsp. acaulon",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Onopordum acaulon subsp. acaulon",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4770",
+      "nameVerbatim": "Paronychia argentea var. argentea",
+      "nameParsed": "Paronychia argentea var. argentea",
+      "nameReconciled": "Paronychia argentea var. argentea",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Paronychia argentea var. argentea"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696098+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Paronychia argentea var. argentea"
+            ],
+            "evidence": [
+              {
+                "queryName": "Paronychia argentea var. argentea",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Paronychia argentea var. argentea"
+            ],
+            "evidence": [
+              {
+                "queryName": "Paronychia argentea var. argentea",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Paronychia argentea var. argentea",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2582",
+      "nameVerbatim": "Paronychia kapela var. pseudoaretioides",
+      "nameParsed": "Paronychia kapela var. pseudoaretioides",
+      "nameReconciled": "Paronychia kapela var. pseudoaretioides",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Paronychia kapela var. pseudoaretioides"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696170+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Paronychia kapela var. pseudoaretioides"
+            ],
+            "evidence": [
+              {
+                "queryName": "Paronychia kapela var. pseudoaretioides",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Paronychia kapela var. pseudoaretioides"
+            ],
+            "evidence": [
+              {
+                "queryName": "Paronychia kapela var. pseudoaretioides",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Paronychia kapela var. pseudoaretioides",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1348",
+      "nameVerbatim": "Paronychia polygonifolia var. polygonifolia",
+      "nameParsed": "Paronychia polygonifolia var. polygonifolia",
+      "nameReconciled": "Paronychia polygonifolia var. polygonifolia",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Paronychia polygonifolia var. polygonifolia"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696243+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Paronychia polygonifolia var. polygonifolia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Paronychia polygonifolia var. polygonifolia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Paronychia polygonifolia var. polygonifolia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Paronychia polygonifolia var. polygonifolia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Paronychia polygonifolia var. polygonifolia",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2228",
+      "nameVerbatim": "Peucedanum officinales subsp. officinale",
+      "nameParsed": "Peucedanum officinales subsp. officinale",
+      "nameReconciled": "Peucedanum officinales subsp. officinale",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Peucedanum officinales subsp. officinale"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696321+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Peucedanum officinales subsp. officinale"
+            ],
+            "evidence": [
+              {
+                "queryName": "Peucedanum officinales subsp. officinale",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Peucedanum officinales subsp. officinale"
+            ],
+            "evidence": [
+              {
+                "queryName": "Peucedanum officinales subsp. officinale",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Peucedanum officinales subsp. officinale",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3401",
+      "nameVerbatim": "Pimpinella gracilis subsp. puberula",
+      "nameParsed": "Pimpinella gracilis subsp. puberula",
+      "nameReconciled": "Pimpinella gracilis subsp. puberula",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Pimpinella gracilis subsp. puberula"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696409+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Pimpinella gracilis subsp. puberula"
+            ],
+            "evidence": [
+              {
+                "queryName": "Pimpinella gracilis subsp. puberula",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Pimpinella gracilis subsp. puberula"
+            ],
+            "evidence": [
+              {
+                "queryName": "Pimpinella gracilis subsp. puberula",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Pimpinella gracilis subsp. puberula",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4588",
+      "nameVerbatim": "Plantago alpina subsp. penyalarensis",
+      "nameParsed": "Plantago alpina subsp. penyalarensis",
+      "nameReconciled": "Plantago alpina subsp. penyalarensis",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Plantago alpina subsp. penyalarensis"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696478+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Plantago alpina subsp. penyalarensis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Plantago alpina subsp. penyalarensis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Plantago alpina subsp. penyalarensis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Plantago alpina subsp. penyalarensis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Plantago alpina subsp. penyalarensis",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "5128",
+      "nameVerbatim": "Ranunculus bulbosus var. hispanicus",
+      "nameParsed": "Ranunculus bulbosus var. hispanicus",
+      "nameReconciled": "Ranunculus bulbosus var. hispanicus",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Ranunculus bulbosus var. hispanicus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696556+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Ranunculus bulbosus var. hispanicus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Ranunculus bulbosus var. hispanicus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Ranunculus bulbosus var. hispanicus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Ranunculus bulbosus var. hispanicus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Ranunculus bulbosus var. hispanicus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2944",
+      "nameVerbatim": "Salix eleagnos subsp. angustifolia",
+      "nameParsed": "Salix eleagnos subsp. angustifolia",
+      "nameReconciled": "Salix eleagnos subsp. angustifolia",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Salix eleagnos subsp. angustifolia"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696623+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Salix eleagnos subsp. angustifolia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Salix eleagnos subsp. angustifolia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Salix eleagnos subsp. angustifolia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Salix eleagnos subsp. angustifolia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Salix eleagnos subsp. angustifolia",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1821",
+      "nameVerbatim": "Sanguisorba minor subsp. muricata",
+      "nameParsed": "Sanguisorba minor subsp. muricata",
+      "nameReconciled": "Sanguisorba minor subsp. muricata",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Sanguisorba minor subsp. muricata"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696693+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Sanguisorba minor subsp. muricata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Sanguisorba minor subsp. muricata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Sanguisorba minor subsp. muricata"
+            ],
+            "evidence": [
+              {
+                "queryName": "Sanguisorba minor subsp. muricata",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Sanguisorba minor subsp. muricata",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4082",
+      "nameVerbatim": "Scirpus cespitosus subsp. germanicum",
+      "nameParsed": "Scirpus cespitosus subsp. germanicum",
+      "nameReconciled": "Scirpus cespitosus subsp. germanicum",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Scirpus cespitosus subsp. germanicum"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696763+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Scirpus cespitosus subsp. germanicum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Scirpus cespitosus subsp. germanicum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Scirpus cespitosus subsp. germanicum"
+            ],
+            "evidence": [
+              {
+                "queryName": "Scirpus cespitosus subsp. germanicum",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Scirpus cespitosus subsp. germanicum",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4679",
+      "nameVerbatim": "Scorzonera angustifolia var. angustifolia",
+      "nameParsed": "Scorzonera angustifolia var. angustifolia",
+      "nameReconciled": "Scorzonera angustifolia var. angustifolia",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Scorzonera angustifolia var. angustifolia"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696836+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Scorzonera angustifolia var. angustifolia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Scorzonera angustifolia var. angustifolia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Scorzonera angustifolia var. angustifolia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Scorzonera angustifolia var. angustifolia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Scorzonera angustifolia var. angustifolia",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "3916",
+      "nameVerbatim": "Solidago virgaurea subsp. fallit-tirones",
+      "nameParsed": "Solidago virgaurea subsp. fallit-tirones",
+      "nameReconciled": "Solidago virgaurea subsp. fallit-tirones",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Solidago virgaurea subsp. fallit-tirones"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696913+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Solidago virgaurea subsp. fallit-tirones"
+            ],
+            "evidence": [
+              {
+                "queryName": "Solidago virgaurea subsp. fallit-tirones",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Solidago virgaurea subsp. fallit-tirones"
+            ],
+            "evidence": [
+              {
+                "queryName": "Solidago virgaurea subsp. fallit-tirones",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Solidago virgaurea subsp. fallit-tirones",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "4898",
+      "nameVerbatim": "Sorbus aucuparia subsp. aucuparia",
+      "nameParsed": "Sorbus aucuparia subsp. aucuparia",
+      "nameReconciled": "Sorbus aucuparia subsp. aucuparia",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Sorbus aucuparia subsp. aucuparia"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.696981+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Sorbus aucuparia subsp. aucuparia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Sorbus aucuparia subsp. aucuparia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Sorbus aucuparia subsp. aucuparia"
+            ],
+            "evidence": [
+              {
+                "queryName": "Sorbus aucuparia subsp. aucuparia",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Sorbus aucuparia subsp. aucuparia",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2231",
+      "nameVerbatim": "Stachys officinalis subsp. officinalis",
+      "nameParsed": "Stachys officinalis subsp. officinalis",
+      "nameReconciled": "Stachys officinalis subsp. officinalis",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Stachys officinalis subsp. officinalis"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.697052+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Stachys officinalis subsp. officinalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Stachys officinalis subsp. officinalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Stachys officinalis subsp. officinalis"
+            ],
+            "evidence": [
+              {
+                "queryName": "Stachys officinalis subsp. officinalis",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Stachys officinalis subsp. officinalis",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "1690",
+      "nameVerbatim": "Tetragonolobus maritimus var. hirsutus",
+      "nameParsed": "Tetragonolobus maritimus var. hirsutus",
+      "nameReconciled": "Tetragonolobus maritimus var. hirsutus",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Tetragonolobus maritimus var. hirsutus"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.697152+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Tetragonolobus maritimus var. hirsutus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Tetragonolobus maritimus var. hirsutus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Tetragonolobus maritimus var. hirsutus"
+            ],
+            "evidence": [
+              {
+                "queryName": "Tetragonolobus maritimus var. hirsutus",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Tetragonolobus maritimus var. hirsutus",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "945",
+      "nameVerbatim": "Trifolium repens subsp. nevadense",
+      "nameParsed": "Trifolium repens subsp. nevadense",
+      "nameReconciled": "Trifolium repens subsp. nevadense",
+      "rank": "subspecies",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Trifolium repens subsp. nevadense"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.697221+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Trifolium repens subsp. nevadense"
+            ],
+            "evidence": [
+              {
+                "queryName": "Trifolium repens subsp. nevadense",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Trifolium repens subsp. nevadense"
+            ],
+            "evidence": [
+              {
+                "queryName": "Trifolium repens subsp. nevadense",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Trifolium repens subsp. nevadense",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "snapshotVersion": "06_TAXONOMIC_SNAPSHOT_CORPUS_B_FRESH_67_v17_RANKFIX_v1",
+      "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+      "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+      "sourceBatchId": "CORPUS_B_FRESH_67_v17",
+      "B_SOURCE_RECORD_ID": "2372",
+      "nameVerbatim": "Vicia pannonica var. purpurascens",
+      "nameParsed": "Vicia pannonica var. purpurascens",
+      "nameReconciled": "Vicia pannonica var. purpurascens",
+      "rank": "variety",
+      "isHybrid": false,
+      "synonymsAndParallelTreatments": [
+        "Vicia pannonica var. purpurascens"
+      ],
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "eidosAcceptedRecord": null,
+      "lastChecked": "2026-08-24T19:51:32.697295+00:00",
+      "provenance": {
+        "networkSources": {
+          "POWO_WCVP": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Vicia pannonica var. purpurascens"
+            ],
+            "evidence": [
+              {
+                "queryName": "Vicia pannonica var. purpurascens",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+          },
+          "ANTHOS": {
+            "state": "QUERIED_EXACT_SAME_RANK",
+            "names": [
+              "Vicia pannonica var. purpurascens"
+            ],
+            "evidence": [
+              {
+                "queryName": "Vicia pannonica var. purpurascens",
+                "queryMode": "EXACT_CANONICAL_SAME_RANK",
+                "records": []
+              }
+            ],
+            "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+          },
+          "WFO": {
+            "state": "SOURCE_FAILURE",
+            "error": "RuntimeError:meta.xml not found"
+          }
+        },
+        "eidos": {
+          "source": "https://datos.iepnb.es/datasets/eidos.ttl",
+          "sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+          "queries": [
+            {
+              "queryName": "Vicia pannonica var. purpurascens",
+              "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+              "taxonID": null,
+              "record": null,
+              "sameRankRecords": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

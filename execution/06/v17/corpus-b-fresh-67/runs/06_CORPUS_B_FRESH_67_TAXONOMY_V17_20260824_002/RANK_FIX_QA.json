@@ -1,0 +1,21 @@
+{
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+  "rankFixVersion": "RANK_FIX_v1",
+  "pass": true,
+  "scope": 67,
+  "checkedRows": 67,
+  "rankCounts": {
+    "species": 1,
+    "subspecies": 49,
+    "variety": 17,
+    "form": 0
+  },
+  "doublePeriodCount": 0,
+  "failures": [],
+  "unitTests": {
+    "subspDottedRecognized": true,
+    "varDottedRecognized": true,
+    "speciesUnaffected": true,
+    "canonicalDoublePeriodForbidden": true
+  }
+}

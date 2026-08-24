@@ -1,0 +1,3602 @@
+{
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+  "sourceStatus": {
+    "POWO_WCVP": {
+      "state": "READY",
+      "meta": {
+        "source": "POWO_WCVP",
+        "provenance": "WCVP official Darwin Core Archive published by Royal Botanic Gardens, Kew; POWO names backbone",
+        "requestedUrl": "http://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+        "finalUrl": "https://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+        "archiveSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483",
+        "archiveBytes": 88208088,
+        "coreRows": 1448984,
+        "uniqueCanonicalNames": 1040041,
+        "availableFields": [
+          "acceptedNameUsageID",
+          "dynamicProperties",
+          "family",
+          "genus",
+          "infraSpecificEpithet",
+          "namePublishedIn",
+          "nomenclaturalStatus",
+          "originalNameUsageID",
+          "parentNameUsageID",
+          "references",
+          "scientificName",
+          "scientificNameAuthorship",
+          "scientificNameID",
+          "specificEpithet",
+          "taxonID",
+          "taxonRank",
+          "taxonRemarks",
+          "taxonomicStatus"
+        ]
+      }
+    },
+    "WFO": {
+      "state": "SOURCE_FAILURE",
+      "error": "RuntimeError:meta.xml not found"
+    },
+    "ANTHOS": {
+      "state": "READY",
+      "meta": {
+        "source": "ANTHOS",
+        "provenance": "ANTHOS official RJB-CSIC Darwin Core Archive via GBIF-Spain IPT",
+        "requestedUrl": "https://ipt.gbif.es/archive.do?r=rjb-anthos",
+        "finalUrl": "https://ipt.gbif.es/archive.do?r=rjb-anthos",
+        "archiveSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991",
+        "archiveBytes": 57334273,
+        "coreRows": 1667138,
+        "uniqueCanonicalNames": 9029,
+        "availableFields": [
+          "basisOfRecord",
+          "catalogNumber",
+          "class",
+          "collectionCode",
+          "coordinateUncertaintyInMeters",
+          "country",
+          "countryCode",
+          "decimalLatitude",
+          "decimalLongitude",
+          "establishmentMeans",
+          "family",
+          "genus",
+          "geodeticDatum",
+          "habitat",
+          "infraspecificEpithet",
+          "institutionCode",
+          "kingdom",
+          "language",
+          "locality",
+          "maximumElevationInMeters",
+          "minimumElevationInMeters",
+          "modified",
+          "occurrenceID",
+          "order",
+          "phylum",
+          "scientificName",
+          "scientificNameAuthorship",
+          "specificEpithet",
+          "stateProvince",
+          "taxonRank",
+          "verbatimCoordinates",
+          "verbatimElevation"
+        ]
+      }
+    }
+  },
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "seed": "Adenocarpus hispanicus subsp. neilense",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Adenocarpus hispanicus subsp. neilense"
+          ],
+          "evidence": [
+            {
+              "queryName": "Adenocarpus hispanicus subsp. neilense",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Adenocarpus hispanicus subsp. neilense"
+          ],
+          "evidence": [
+            {
+              "queryName": "Adenocarpus hispanicus subsp. neilense",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Adenocarpus hispanicus subsp. neilense",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "seed": "Anteriorchis coriophora var. carpetana",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Anteriorchis coriophora var. carpetana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Anteriorchis coriophora var. carpetana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Anteriorchis coriophora var. carpetana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Anteriorchis coriophora var. carpetana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Anteriorchis coriophora var. carpetana",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "seed": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Asplenium adiantum-nigrum var. adiantum-nigrum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Asplenium adiantum-nigrum var. adiantum-nigrum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "seed": "Astragalus monspessulanus subsp. teresianus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Astragalus monspessulanus subsp. teresianus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Astragalus monspessulanus subsp. teresianus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Astragalus monspessulanus subsp. teresianus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Astragalus monspessulanus subsp. teresianus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Astragalus monspessulanus subsp. teresianus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "seed": "Astragalus sempervirens subsp. muticus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Astragalus sempervirens subsp. muticus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Astragalus sempervirens subsp. muticus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Astragalus sempervirens subsp. muticus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Astragalus sempervirens subsp. muticus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Astragalus sempervirens subsp. muticus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "seed": "Astragalus vesicarius subsp. vesicarius",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Astragalus vesicarius subsp. vesicarius"
+          ],
+          "evidence": [
+            {
+              "queryName": "Astragalus vesicarius subsp. vesicarius",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Astragalus vesicarius subsp. vesicarius"
+          ],
+          "evidence": [
+            {
+              "queryName": "Astragalus vesicarius subsp. vesicarius",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Astragalus vesicarius subsp. vesicarius",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "seed": "Avenula bromoides subsp. pauneroi",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Avenula bromoides subsp. pauneroi"
+          ],
+          "evidence": [
+            {
+              "queryName": "Avenula bromoides subsp. pauneroi",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Avenula bromoides subsp. pauneroi"
+          ],
+          "evidence": [
+            {
+              "queryName": "Avenula bromoides subsp. pauneroi",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": [
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:56053",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:56054",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:56055",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:82323",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:82324",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:85999",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92465",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92466",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92467",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:92468",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:104314",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:113744",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:115641",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:115642",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:969786",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:987263",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:988015",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:988016",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1029468",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Avenula bromoides subsp. pauneroi",
+                  "scientificName": "Avenula bromoides subsp. pauneroi Romero Zarco",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1029469",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                }
+              ]
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Avenula bromoides subsp. pauneroi",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "seed": "Avenula lodunensis subsp. romero-zarcoi",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Avenula lodunensis subsp. romero-zarcoi"
+          ],
+          "evidence": [
+            {
+              "queryName": "Avenula lodunensis subsp. romero-zarcoi",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Avenula lodunensis subsp. romero-zarcoi"
+          ],
+          "evidence": [
+            {
+              "queryName": "Avenula lodunensis subsp. romero-zarcoi",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Avenula lodunensis subsp. romero-zarcoi",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3789",
+      "seed": "Biscutella valentina var. variegata",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Biscutella valentina var. variegata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Biscutella valentina var. variegata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Biscutella valentina var. variegata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Biscutella valentina var. variegata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Biscutella valentina var. variegata",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "910",
+      "seed": "Bupleurum ranunculoides subsp. gramineus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Bupleurum ranunculoides subsp. gramineus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Bupleurum ranunculoides subsp. gramineus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Bupleurum ranunculoides subsp. gramineus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Bupleurum ranunculoides subsp. gramineus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Bupleurum ranunculoides subsp. gramineus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "911",
+      "seed": "Bupleurum ranunculoides subsp. ranunculoides",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Bupleurum ranunculoides subsp. ranunculoides"
+          ],
+          "evidence": [
+            {
+              "queryName": "Bupleurum ranunculoides subsp. ranunculoides",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Bupleurum ranunculoides subsp. ranunculoides"
+          ],
+          "evidence": [
+            {
+              "queryName": "Bupleurum ranunculoides subsp. ranunculoides",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Bupleurum ranunculoides subsp. ranunculoides",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3629",
+      "seed": "Campanula trachelium subsp. trachelium",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Campanula trachelium subsp. trachelium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Campanula trachelium subsp. trachelium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Campanula trachelium subsp. trachelium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Campanula trachelium subsp. trachelium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Campanula trachelium subsp. trachelium",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1968",
+      "seed": "Carex muricata subsp. lamprocarpa",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Carex muricata subsp. lamprocarpa"
+          ],
+          "evidence": [
+            {
+              "queryName": "Carex muricata subsp. lamprocarpa",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Carex muricata subsp. lamprocarpa"
+          ],
+          "evidence": [
+            {
+              "queryName": "Carex muricata subsp. lamprocarpa",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Carex muricata subsp. lamprocarpa",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2758",
+      "seed": "Centaurea debeauxii subsp. nemoralis",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centaurea debeauxii subsp. nemoralis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centaurea debeauxii subsp. nemoralis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centaurea debeauxii subsp. nemoralis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centaurea debeauxii subsp. nemoralis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Centaurea debeauxii subsp. nemoralis",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2367",
+      "seed": "Centaurea paniculata subsp. castellana",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centaurea paniculata subsp. castellana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centaurea paniculata subsp. castellana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centaurea paniculata subsp. castellana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centaurea paniculata subsp. castellana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Centaurea paniculata subsp. castellana",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3681",
+      "seed": "Centaurea triumfetti subsp. lingulata",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centaurea triumfetti subsp. lingulata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centaurea triumfetti subsp. lingulata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centaurea triumfetti subsp. lingulata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centaurea triumfetti subsp. lingulata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Centaurea triumfetti subsp. lingulata",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5177",
+      "seed": "Centranthus calcitrapae subsp. calcitrapae",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centranthus calcitrapae subsp. calcitrapae"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centranthus calcitrapae subsp. calcitrapae",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Centranthus calcitrapae subsp. calcitrapae"
+          ],
+          "evidence": [
+            {
+              "queryName": "Centranthus calcitrapae subsp. calcitrapae",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Centranthus calcitrapae subsp. calcitrapae",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5080",
+      "seed": "Cerastium brachypetalum var. brachypetalum",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cerastium brachypetalum var. brachypetalum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cerastium brachypetalum var. brachypetalum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cerastium brachypetalum var. brachypetalum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cerastium brachypetalum var. brachypetalum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Cerastium brachypetalum var. brachypetalum",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "839",
+      "seed": "Cirsium pyrenaicum var. longespinosum",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cirsium pyrenaicum var. longespinosum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cirsium pyrenaicum var. longespinosum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cirsium pyrenaicum var. longespinosum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cirsium pyrenaicum var. longespinosum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Cirsium pyrenaicum var. longespinosum",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "840",
+      "seed": "Cirsium pyrenaicum var. pyrenaicum",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cirsium pyrenaicum var. pyrenaicum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cirsium pyrenaicum var. pyrenaicum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cirsium pyrenaicum var. pyrenaicum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cirsium pyrenaicum var. pyrenaicum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Cirsium pyrenaicum var. pyrenaicum",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "173",
+      "seed": "Cytisus scoparius subsp. cantabricus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cytisus scoparius subsp. cantabricus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cytisus scoparius subsp. cantabricus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Cytisus scoparius subsp. cantabricus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Cytisus scoparius subsp. cantabricus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Cytisus scoparius subsp. cantabricus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2934",
+      "seed": "Dactylorhiza elata subsp. sesquipedalis",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza elata subsp. sesquipedalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza elata subsp. sesquipedalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza elata subsp. sesquipedalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza elata subsp. sesquipedalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Dactylorhiza elata subsp. sesquipedalis",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2483",
+      "seed": "Dactylorhiza incarnata subsp. incarnata",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza incarnata subsp. incarnata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza incarnata subsp. incarnata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza incarnata subsp. incarnata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza incarnata subsp. incarnata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Dactylorhiza incarnata subsp. incarnata",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1624",
+      "seed": "Dactylorhiza maculata subsp. elodes",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza maculata subsp. elodes"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza maculata subsp. elodes",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza maculata subsp. elodes"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza maculata subsp. elodes",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Dactylorhiza maculata subsp. elodes",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1625",
+      "seed": "Dactylorhiza maculata subsp. maculata",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza maculata subsp. maculata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza maculata subsp. maculata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza maculata subsp. maculata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza maculata subsp. maculata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Dactylorhiza maculata subsp. maculata",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1647",
+      "seed": "Dactylorhiza majalis subsp. majalis",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza majalis subsp. majalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza majalis subsp. majalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dactylorhiza majalis subsp. majalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dactylorhiza majalis subsp. majalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Dactylorhiza majalis subsp. majalis",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4480",
+      "seed": "Dryopteris affinis subsp. cambrensis",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dryopteris affinis subsp. cambrensis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dryopteris affinis subsp. cambrensis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Dryopteris affinis subsp. cambrensis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Dryopteris affinis subsp. cambrensis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": [
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1427383",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1427384",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:1427385",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242161",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242160",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242159",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242167",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242166",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242165",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242162",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242163",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2242164",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398020",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398021",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398022",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398023",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398024",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398025",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398026",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                },
+                {
+                  "canonicalName": "Dryopteris affinis subsp. cambrensis",
+                  "scientificName": "Dryopteris affinis subsp. cambrensis Fraser-Jenk.",
+                  "rank": "subspecies",
+                  "taxonomicStatus": "",
+                  "taxonID": "FUND. BIODIVERSIDAD:ANTHOS:2398027",
+                  "acceptedNameUsage": "",
+                  "acceptedNameUsageID": ""
+                }
+              ]
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Dryopteris affinis subsp. cambrensis",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1250",
+      "seed": "Epipactis phyllanthes var. fageticola",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Epipactis phyllanthes var. fageticola"
+          ],
+          "evidence": [
+            {
+              "queryName": "Epipactis phyllanthes var. fageticola",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Epipactis phyllanthes var. fageticola"
+          ],
+          "evidence": [
+            {
+              "queryName": "Epipactis phyllanthes var. fageticola",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Epipactis phyllanthes var. fageticola",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3720",
+      "seed": "Filipendula ulmaria subsp. ulmaria",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Filipendula ulmaria subsp. ulmaria"
+          ],
+          "evidence": [
+            {
+              "queryName": "Filipendula ulmaria subsp. ulmaria",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Filipendula ulmaria subsp. ulmaria"
+          ],
+          "evidence": [
+            {
+              "queryName": "Filipendula ulmaria subsp. ulmaria",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Filipendula ulmaria subsp. ulmaria",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3203",
+      "seed": "Genista florida subsp. polygaliphylla",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Genista florida subsp. polygaliphylla"
+          ],
+          "evidence": [
+            {
+              "queryName": "Genista florida subsp. polygaliphylla",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Genista florida subsp. polygaliphylla"
+          ],
+          "evidence": [
+            {
+              "queryName": "Genista florida subsp. polygaliphylla",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Genista florida subsp. polygaliphylla",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4677",
+      "seed": "Gentiana angustifolia subsp. occidentalis",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Gentiana angustifolia subsp. occidentalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Gentiana angustifolia subsp. occidentalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Gentiana angustifolia subsp. occidentalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Gentiana angustifolia subsp. occidentalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Gentiana angustifolia subsp. occidentalis",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2149",
+      "seed": "Helianthemum nummularium subsp. nummularium",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Helianthemum nummularium subsp. nummularium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Helianthemum nummularium subsp. nummularium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Helianthemum nummularium subsp. nummularium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Helianthemum nummularium subsp. nummularium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Helianthemum nummularium subsp. nummularium",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "412",
+      "seed": "Heracleum sphondylium subsp. montanum",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Heracleum sphondylium subsp. montanum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Heracleum sphondylium subsp. montanum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Heracleum sphondylium subsp. montanum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Heracleum sphondylium subsp. montanum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Heracleum sphondylium subsp. montanum",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "136",
+      "seed": "Herniaria scabrida var. glabrescens",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Herniaria scabrida var. glabrescens"
+          ],
+          "evidence": [
+            {
+              "queryName": "Herniaria scabrida var. glabrescens",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Herniaria scabrida var. glabrescens"
+          ],
+          "evidence": [
+            {
+              "queryName": "Herniaria scabrida var. glabrescens",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Herniaria scabrida var. glabrescens",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2602",
+      "seed": "Hieracium lactucella subsp. lactucella",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium lactucella subsp. lactucella"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium lactucella subsp. lactucella",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium lactucella subsp. lactucella"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium lactucella subsp. lactucella",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Hieracium lactucella subsp. lactucella",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1270",
+      "seed": "Hieracium pilosella subsp. micradenium",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium pilosella subsp. micradenium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium pilosella subsp. micradenium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium pilosella subsp. micradenium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium pilosella subsp. micradenium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Hieracium pilosella subsp. micradenium",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1271",
+      "seed": "Hieracium pilosella subsp. pilosella",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium pilosella subsp. pilosella"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium pilosella subsp. pilosella",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium pilosella subsp. pilosella"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium pilosella subsp. pilosella",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Hieracium pilosella subsp. pilosella",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1272",
+      "seed": "Hieracium pilosella subsp. tricholepium",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium pilosella subsp. tricholepium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium pilosella subsp. tricholepium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hieracium pilosella subsp. tricholepium"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hieracium pilosella subsp. tricholepium",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Hieracium pilosella subsp. tricholepium",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3555",
+      "seed": "Himantoglossum hircinum subsp. hircinum",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Himantoglossum hircinum subsp. hircinum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Himantoglossum hircinum subsp. hircinum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Himantoglossum hircinum subsp. hircinum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Himantoglossum hircinum subsp. hircinum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Himantoglossum hircinum subsp. hircinum",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4217",
+      "seed": "Hippocrepis comosa subsp. squamata",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hippocrepis comosa subsp. squamata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hippocrepis comosa subsp. squamata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Hippocrepis comosa subsp. squamata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Hippocrepis comosa subsp. squamata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Hippocrepis comosa subsp. squamata",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4244",
+      "seed": "Juncus conglomeratus var. conglomeratus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Juncus conglomeratus var. conglomeratus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Juncus conglomeratus var. conglomeratus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Juncus conglomeratus var. conglomeratus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Juncus conglomeratus var. conglomeratus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Juncus conglomeratus var. conglomeratus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2930",
+      "seed": "Juncus effusus var. subglomeratus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Juncus effusus var. subglomeratus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Juncus effusus var. subglomeratus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Juncus effusus var. subglomeratus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Juncus effusus var. subglomeratus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Juncus effusus var. subglomeratus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "591",
+      "seed": "Knautia subscaposa subsp. subscaposa",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Knautia subscaposa subsp. subscaposa"
+          ],
+          "evidence": [
+            {
+              "queryName": "Knautia subscaposa subsp. subscaposa",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Knautia subscaposa subsp. subscaposa"
+          ],
+          "evidence": [
+            {
+              "queryName": "Knautia subscaposa subsp. subscaposa",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Knautia subscaposa subsp. subscaposa",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3758",
+      "seed": "Littorela uniflora",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Littorela uniflora"
+          ],
+          "evidence": [
+            {
+              "queryName": "Littorela uniflora",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Littorela uniflora"
+          ],
+          "evidence": [
+            {
+              "queryName": "Littorela uniflora",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Littorela uniflora",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5195",
+      "seed": "Luzula campestris subsp. carpetana",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Luzula campestris subsp. carpetana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Luzula campestris subsp. carpetana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Luzula campestris subsp. carpetana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Luzula campestris subsp. carpetana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Luzula campestris subsp. carpetana",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1949",
+      "seed": "Luzula multiflora subsp. congesta",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Luzula multiflora subsp. congesta"
+          ],
+          "evidence": [
+            {
+              "queryName": "Luzula multiflora subsp. congesta",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Luzula multiflora subsp. congesta"
+          ],
+          "evidence": [
+            {
+              "queryName": "Luzula multiflora subsp. congesta",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Luzula multiflora subsp. congesta",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "636",
+      "seed": "Luzula sylvatica subsp. henriquesii",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Luzula sylvatica subsp. henriquesii"
+          ],
+          "evidence": [
+            {
+              "queryName": "Luzula sylvatica subsp. henriquesii",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Luzula sylvatica subsp. henriquesii"
+          ],
+          "evidence": [
+            {
+              "queryName": "Luzula sylvatica subsp. henriquesii",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Luzula sylvatica subsp. henriquesii",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "624",
+      "seed": "Omalotheca supina subsp. pusilla",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Omalotheca supina subsp. pusilla"
+          ],
+          "evidence": [
+            {
+              "queryName": "Omalotheca supina subsp. pusilla",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Omalotheca supina subsp. pusilla"
+          ],
+          "evidence": [
+            {
+              "queryName": "Omalotheca supina subsp. pusilla",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Omalotheca supina subsp. pusilla",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "635",
+      "seed": "Omalotheca sylvatica subsp. carpetana",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Omalotheca sylvatica subsp. carpetana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Omalotheca sylvatica subsp. carpetana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Omalotheca sylvatica subsp. carpetana"
+          ],
+          "evidence": [
+            {
+              "queryName": "Omalotheca sylvatica subsp. carpetana",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Omalotheca sylvatica subsp. carpetana",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4407",
+      "seed": "Onopordum acaulon subsp. acaulon",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Onopordum acaulon subsp. acaulon"
+          ],
+          "evidence": [
+            {
+              "queryName": "Onopordum acaulon subsp. acaulon",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Onopordum acaulon subsp. acaulon"
+          ],
+          "evidence": [
+            {
+              "queryName": "Onopordum acaulon subsp. acaulon",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Onopordum acaulon subsp. acaulon",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4770",
+      "seed": "Paronychia argentea var. argentea",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Paronychia argentea var. argentea"
+          ],
+          "evidence": [
+            {
+              "queryName": "Paronychia argentea var. argentea",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Paronychia argentea var. argentea"
+          ],
+          "evidence": [
+            {
+              "queryName": "Paronychia argentea var. argentea",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Paronychia argentea var. argentea",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2582",
+      "seed": "Paronychia kapela var. pseudoaretioides",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Paronychia kapela var. pseudoaretioides"
+          ],
+          "evidence": [
+            {
+              "queryName": "Paronychia kapela var. pseudoaretioides",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Paronychia kapela var. pseudoaretioides"
+          ],
+          "evidence": [
+            {
+              "queryName": "Paronychia kapela var. pseudoaretioides",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Paronychia kapela var. pseudoaretioides",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1348",
+      "seed": "Paronychia polygonifolia var. polygonifolia",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Paronychia polygonifolia var. polygonifolia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Paronychia polygonifolia var. polygonifolia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Paronychia polygonifolia var. polygonifolia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Paronychia polygonifolia var. polygonifolia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Paronychia polygonifolia var. polygonifolia",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2228",
+      "seed": "Peucedanum officinales subsp. officinale",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Peucedanum officinales subsp. officinale"
+          ],
+          "evidence": [
+            {
+              "queryName": "Peucedanum officinales subsp. officinale",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Peucedanum officinales subsp. officinale"
+          ],
+          "evidence": [
+            {
+              "queryName": "Peucedanum officinales subsp. officinale",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Peucedanum officinales subsp. officinale",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3401",
+      "seed": "Pimpinella gracilis subsp. puberula",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Pimpinella gracilis subsp. puberula"
+          ],
+          "evidence": [
+            {
+              "queryName": "Pimpinella gracilis subsp. puberula",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Pimpinella gracilis subsp. puberula"
+          ],
+          "evidence": [
+            {
+              "queryName": "Pimpinella gracilis subsp. puberula",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Pimpinella gracilis subsp. puberula",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4588",
+      "seed": "Plantago alpina subsp. penyalarensis",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Plantago alpina subsp. penyalarensis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Plantago alpina subsp. penyalarensis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Plantago alpina subsp. penyalarensis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Plantago alpina subsp. penyalarensis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Plantago alpina subsp. penyalarensis",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5128",
+      "seed": "Ranunculus bulbosus var. hispanicus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Ranunculus bulbosus var. hispanicus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Ranunculus bulbosus var. hispanicus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Ranunculus bulbosus var. hispanicus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Ranunculus bulbosus var. hispanicus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Ranunculus bulbosus var. hispanicus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2944",
+      "seed": "Salix eleagnos subsp. angustifolia",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Salix eleagnos subsp. angustifolia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Salix eleagnos subsp. angustifolia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Salix eleagnos subsp. angustifolia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Salix eleagnos subsp. angustifolia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Salix eleagnos subsp. angustifolia",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1821",
+      "seed": "Sanguisorba minor subsp. muricata",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Sanguisorba minor subsp. muricata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Sanguisorba minor subsp. muricata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Sanguisorba minor subsp. muricata"
+          ],
+          "evidence": [
+            {
+              "queryName": "Sanguisorba minor subsp. muricata",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Sanguisorba minor subsp. muricata",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4082",
+      "seed": "Scirpus cespitosus subsp. germanicum",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Scirpus cespitosus subsp. germanicum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Scirpus cespitosus subsp. germanicum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Scirpus cespitosus subsp. germanicum"
+          ],
+          "evidence": [
+            {
+              "queryName": "Scirpus cespitosus subsp. germanicum",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Scirpus cespitosus subsp. germanicum",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4679",
+      "seed": "Scorzonera angustifolia var. angustifolia",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Scorzonera angustifolia var. angustifolia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Scorzonera angustifolia var. angustifolia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Scorzonera angustifolia var. angustifolia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Scorzonera angustifolia var. angustifolia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Scorzonera angustifolia var. angustifolia",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3916",
+      "seed": "Solidago virgaurea subsp. fallit-tirones",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Solidago virgaurea subsp. fallit-tirones"
+          ],
+          "evidence": [
+            {
+              "queryName": "Solidago virgaurea subsp. fallit-tirones",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Solidago virgaurea subsp. fallit-tirones"
+          ],
+          "evidence": [
+            {
+              "queryName": "Solidago virgaurea subsp. fallit-tirones",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Solidago virgaurea subsp. fallit-tirones",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4898",
+      "seed": "Sorbus aucuparia subsp. aucuparia",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Sorbus aucuparia subsp. aucuparia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Sorbus aucuparia subsp. aucuparia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Sorbus aucuparia subsp. aucuparia"
+          ],
+          "evidence": [
+            {
+              "queryName": "Sorbus aucuparia subsp. aucuparia",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Sorbus aucuparia subsp. aucuparia",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2231",
+      "seed": "Stachys officinalis subsp. officinalis",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Stachys officinalis subsp. officinalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Stachys officinalis subsp. officinalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Stachys officinalis subsp. officinalis"
+          ],
+          "evidence": [
+            {
+              "queryName": "Stachys officinalis subsp. officinalis",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Stachys officinalis subsp. officinalis",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1690",
+      "seed": "Tetragonolobus maritimus var. hirsutus",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Tetragonolobus maritimus var. hirsutus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Tetragonolobus maritimus var. hirsutus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Tetragonolobus maritimus var. hirsutus"
+          ],
+          "evidence": [
+            {
+              "queryName": "Tetragonolobus maritimus var. hirsutus",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Tetragonolobus maritimus var. hirsutus",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "945",
+      "seed": "Trifolium repens subsp. nevadense",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Trifolium repens subsp. nevadense"
+          ],
+          "evidence": [
+            {
+              "queryName": "Trifolium repens subsp. nevadense",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Trifolium repens subsp. nevadense"
+          ],
+          "evidence": [
+            {
+              "queryName": "Trifolium repens subsp. nevadense",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Trifolium repens subsp. nevadense",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2372",
+      "seed": "Vicia pannonica var. purpurascens",
+      "networkSources": {
+        "POWO_WCVP": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Vicia pannonica var. purpurascens"
+          ],
+          "evidence": [
+            {
+              "queryName": "Vicia pannonica var. purpurascens",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483"
+        },
+        "ANTHOS": {
+          "state": "QUERIED_EXACT_SAME_RANK",
+          "names": [
+            "Vicia pannonica var. purpurascens"
+          ],
+          "evidence": [
+            {
+              "queryName": "Vicia pannonica var. purpurascens",
+              "queryMode": "EXACT_CANONICAL_SAME_RANK",
+              "records": []
+            }
+          ],
+          "sourceSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991"
+        },
+        "WFO": {
+          "state": "SOURCE_FAILURE",
+          "error": "RuntimeError:meta.xml not found"
+        }
+      },
+      "eidosQueries": [
+        {
+          "queryName": "Vicia pannonica var. purpurascens",
+          "state": "EXACT_NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "record": null,
+          "sameRankRecords": []
+        }
+      ]
+    }
+  ]
+}
