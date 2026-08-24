@@ -1,0 +1,15 @@
+{
+  "runId": "CORPUS_B_DEDUP_CARRY_FORWARD_20260824_001",
+  "enabled": true,
+  "sourceQueueRows": 337,
+  "gateEvent": "JBLR-EVT-0000-20260824-ACCEPT-09-DEEP-SPANISH-BATCH02-V2-001",
+  "batch02ResultCommit": "abacc188f123b85a5f7adc64cccb0e9cfc29f809",
+  "objective": "Deduplicate accepted Batch02 v2 taxonomic resolutions by B_SOURCE_RECORD_ID and MITECO_IDTAXON, preserve conflicts in carry-forward, and emit the exact remaining Corpus B queue cardinality",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "sourceFailureNotAbsence": true
+}
