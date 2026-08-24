@@ -1,0 +1,133 @@
+name: 06 vNEXT Corpus B 185 taxonomic phase
+
+on:
+  push:
+    branches:
+      - 06-vnext-corpus-b-185-taxonomy
+    paths:
+      - 'execution/06/vnext/corpus-b-unresolved-185/RUN_REQUEST.json'
+
+permissions:
+  contents: write
+
+jobs:
+  corpus_b_185_taxonomy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 06-vnext-corpus-b-185-taxonomy
+          fetch-depth: 1
+
+      - name: Validate isolated governed request and exact input
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/06/vnext/corpus-b-unresolved-185/RUN_REQUEST.json'))
+          assert p['enabled'] is True and p['actor']=='06'
+          assert p['runId']=='06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001'
+          assert p['corpusId']=='BIODIVERSIDAD_RIOJANA_FLORA'
+          assert p['sourceBatchId']=='CORPUS_B_UNRESOLVED_185_v1'
+          assert p['scope']==185
+          assert p['crossWithA'] is False and p['corpusBFreeze'] is False
+          assert p['neonWrites']==0 and p['databaseWrites']==0
+          assert p['noFuzzy'] is True and p['noRankCollapse'] is True and p['noParentIdInheritance'] is True
+          assert p['downstreamStimesAuthorized'] is False
+          assert p['masterPromptId']=='1Vn3VTU8NcOtA4-G8C0zzrhw_g_nvQ3Bt9TBUySzBZDA'
+          assert p['restorationEvent']=='JBLR-EVT-06-20260824-RESTORATION-VNEXT-001'
+          PY
+          INPUT='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json'
+          test "$(git hash-object "$INPUT")" = 'ef5192304fa22c2ca8a9daffd67f58aa9c4827de'
+
+      - name: Persist running state
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/vnext/corpus-b-unresolved-185'
+          mkdir -p "$ROOT/state"
+          cat > "$ROOT/state/RUNNING.json" <<JSON
+          {"state":"RUNNING","actor":"06","runId":"06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001","scope":185,"githubRunId":"${GITHUB_RUN_ID}","crossWithA":false,"neonWrites":0,"databaseWrites":0,"downstreamStimesExecuted":false}
+          JSON
+
+      - name: Install runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Download current official EIDOS snapshot
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl" | tee "$RUNNER_TEMP/eidos.sha256"
+
+      - name: Execute ACTOR 06 taxonomic phase only
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/vnext/corpus-b-unresolved-185'
+          INPUT='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json'
+          OUT="$ROOT/runs/06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001"
+          rm -rf "$OUT"
+          mkdir -p "$OUT"
+          python "$ROOT/taxonomy_185_vnext.py" "$INPUT" "$RUNNER_TEMP/eidos.ttl" "$OUT" "$ROOT/RUN_REQUEST.json"
+
+      - name: Enforce phase-1 QA and no downstream writes
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          out=Path('execution/06/vnext/corpus-b-unresolved-185/runs/06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001')
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          q=json.load(open(out/'QA_REPORT.json'))
+          assert r['crossWithA'] is False
+          assert r['neonWrites']==0 and r['databaseWrites']==0
+          if r.get('processedRows'):
+              assert r['processedRows']==185
+              assert r['downstreamStimesExecuted'] is False
+              assert r['existingCorpusOverwritten'] is False
+          for p in out.rglob('*.json'):
+              assert p.stat().st_size < 100*1024*1024, (str(p),p.stat().st_size)
+          print(json.dumps({'state':r['state'],'stopRequired':r['stopRequired'],'processedRows':r['processedRows'],'qaPass':q['pass']},ensure_ascii=False))
+          PY
+
+      - name: Persist terminal evidence atomically on isolated branch
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/vnext/corpus-b-unresolved-185'
+          OUT="$ROOT/runs/06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path('execution/06/vnext/corpus-b-unresolved-185')
+          out=root/'runs/06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001'
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          state={
+            'state': r['state'], 'stopRequired': r['stopRequired'], 'stopReason': r['stopReason'],
+            'runId': r['runId'], 'githubRunId': os.environ['GITHUB_RUN_ID'],
+            'processedRows': r['processedRows'], 'resolvedCount': r.get('resolvedCount',0),
+            'unresolvedOrConflictCount': r.get('unresolvedOrConflictCount',0),
+            'crossWithA': False, 'neonWrites': 0, 'databaseWrites': 0,
+            'corpusBFreeze': False, 'downstreamStimesExecuted': False,
+          }
+          (root/'state/TERMINAL.json').write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-vnext-corpus-b-185-taxonomy
+          git add "$OUT" "$ROOT/state/RUNNING.json" "$ROOT/state/TERMINAL.json"
+          git commit -m "evidence(06): vNEXT Corpus B 185 taxonomy ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-vnext-corpus-b-185-taxonomy
+
+      - name: Enforce STOP_REQUIRED or phase boundary
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/06/vnext/corpus-b-unresolved-185/runs/06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          if r['stopRequired']:
+              raise SystemExit('STOP_REQUIRED: '+str(r['stopReason']))
+          assert r['state']=='PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES'
+          assert r['processedRows']==185
+          assert r['downstreamStimesExecuted'] is False
+          PY
