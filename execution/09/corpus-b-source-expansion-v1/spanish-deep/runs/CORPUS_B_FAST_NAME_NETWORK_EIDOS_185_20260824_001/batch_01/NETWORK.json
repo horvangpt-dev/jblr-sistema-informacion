@@ -1,0 +1,681 @@
+{
+  "receipt": {
+    "batchIndex": 1,
+    "offset": 0,
+    "inputRows": 25,
+    "runtimeSeconds": 4.734,
+    "resolvedCount": 0,
+    "unresolvedCount": 25,
+    "conflictCount": 0,
+    "specialCaseCount": 0,
+    "sourceFailureCount": 0,
+    "sourceNotFoundCount": 25,
+    "networkRowsWithAlternates": 0,
+    "sourceFailureCluster": false,
+    "nearZeroYield": true,
+    "anomalous": true,
+    "anomalyReason": "NEAR_ZERO_RESOLUTION_YIELD_0_OF_25",
+    "method": "DOCUMENTED_STRUCTURED_NAME_NETWORK_THEN_EXACT_EIDOS_CONTRAST",
+    "primaryNetworkSource": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+    "top4Primary": false,
+    "top4RescueOnly": true,
+    "crossWithA": false,
+    "neonWrites": 0,
+    "corpusBFreeze": false,
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true
+  },
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "NOMBRE_RIOJA_VERBATIM": "Adenocarpus hispanicus subsp. neilense",
+      "names": [
+        "Adenocarpus hispanicus subsp. neilense"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Adenocarpus hispanicus subsp. neilense",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Adenocarpus+hispanicus+subsp.+neilense&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla basaltica",
+      "names": [
+        "Alchemilla basaltica"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Alchemilla basaltica",
+          "requiredRank": "species",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Alchemilla+basaltica&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3143",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla filicaulis var. vestita",
+      "names": [
+        "Alchemilla filicaulis var. vestita"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Alchemilla filicaulis var. vestita",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Alchemilla+filicaulis+var.+vestita&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2250",
+      "NOMBRE_RIOJA_VERBATIM": "Allium oleraceum var. oleraceum",
+      "names": [
+        "Allium oleraceum var. oleraceum"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Allium oleraceum var. oleraceum",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Allium+oleraceum+var.+oleraceum&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "156",
+      "NOMBRE_RIOJA_VERBATIM": "Allium schoenoprassum",
+      "names": [
+        "Allium schoenoprassum"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Allium schoenoprassum",
+          "requiredRank": "species",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Allium+schoenoprassum&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "895",
+      "NOMBRE_RIOJA_VERBATIM": "Andryala ragusina var. ragusina",
+      "names": [
+        "Andryala ragusina var. ragusina"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Andryala ragusina var. ragusina",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Andryala+ragusina+var.+ragusina&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "NOMBRE_RIOJA_VERBATIM": "Anteriorchis coriophora var. carpetana",
+      "names": [
+        "Anteriorchis coriophora var. carpetana"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Anteriorchis coriophora var. carpetana",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Anteriorchis+coriophora+var.+carpetana&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "NOMBRE_RIOJA_VERBATIM": "Anthemis triumfettii",
+      "names": [
+        "Anthemis triumfettii"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Anthemis triumfettii",
+          "requiredRank": "species",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Anthemis+triumfettii&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2285",
+      "NOMBRE_RIOJA_VERBATIM": "Arum orientale subsp. orientale",
+      "names": [
+        "Arum orientale subsp. orientale"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Arum orientale subsp. orientale",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Arum+orientale+subsp.+orientale&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "836",
+      "NOMBRE_RIOJA_VERBATIM": "Asperula pyrenaica",
+      "names": [
+        "Asperula pyrenaica"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Asperula pyrenaica",
+          "requiredRank": "species",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Asperula+pyrenaica&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "names": [
+        "Asplenium adiantum-nigrum var. adiantum-nigrum"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Asplenium+adiantum-nigrum+var.+adiantum-nigrum&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "NOMBRE_RIOJA_VERBATIM": "Astragalus monspessulanus subsp. teresianus",
+      "names": [
+        "Astragalus monspessulanus subsp. teresianus"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Astragalus monspessulanus subsp. teresianus",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Astragalus+monspessulanus+subsp.+teresianus&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "NOMBRE_RIOJA_VERBATIM": "Astragalus sempervirens subsp. muticus",
+      "names": [
+        "Astragalus sempervirens subsp. muticus"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Astragalus sempervirens subsp. muticus",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Astragalus+sempervirens+subsp.+muticus&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "NOMBRE_RIOJA_VERBATIM": "Astragalus vesicarius subsp. vesicarius",
+      "names": [
+        "Astragalus vesicarius subsp. vesicarius"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Astragalus vesicarius subsp. vesicarius",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Astragalus+vesicarius+subsp.+vesicarius&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "NOMBRE_RIOJA_VERBATIM": "Atropa bella-donna",
+      "names": [
+        "Atropa bella-donna"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Atropa bella-donna",
+          "requiredRank": "species",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Atropa+bella-donna&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula bromoides subsp. pauneroi",
+      "names": [
+        "Avenula bromoides subsp. pauneroi"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Avenula bromoides subsp. pauneroi",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Avenula+bromoides+subsp.+pauneroi&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula lodunensis subsp. romero-zarcoi",
+      "names": [
+        "Avenula lodunensis subsp. romero-zarcoi"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Avenula lodunensis subsp. romero-zarcoi",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Avenula+lodunensis+subsp.+romero-zarcoi&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1398",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula pratensis var. paniculata",
+      "names": [
+        "Avenula pratensis var. paniculata"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Avenula pratensis var. paniculata",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Avenula+pratensis+var.+paniculata&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1399",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula pratensis var. vasconica",
+      "names": [
+        "Avenula pratensis var. vasconica"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Avenula pratensis var. vasconica",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Avenula+pratensis+var.+vasconica&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "615",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula sulcata subsp. sulcata",
+      "names": [
+        "Avenula sulcata subsp. sulcata"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Avenula sulcata subsp. sulcata",
+          "requiredRank": "subspecies",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Avenula+sulcata+subsp.+sulcata&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4509",
+      "NOMBRE_RIOJA_VERBATIM": "Betula alba var. alba",
+      "names": [
+        "Betula alba var. alba"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Betula alba var. alba",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Betula+alba+var.+alba&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4510",
+      "NOMBRE_RIOJA_VERBATIM": "Betula alba var. glabrata",
+      "names": [
+        "Betula alba var. glabrata"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Betula alba var. glabrata",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Betula+alba+var.+glabrata&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1192",
+      "NOMBRE_RIOJA_VERBATIM": "Betula pendula var. meridionalis",
+      "names": [
+        "Betula pendula var. meridionalis"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Betula pendula var. meridionalis",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Betula+pendula+var.+meridionalis&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3787",
+      "NOMBRE_RIOJA_VERBATIM": "Biscutella valentina var. laevigata",
+      "names": [
+        "Biscutella valentina var. laevigata"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Biscutella valentina var. laevigata",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Biscutella+valentina+var.+laevigata&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3788",
+      "NOMBRE_RIOJA_VERBATIM": "Biscutella valentina var. valentina",
+      "names": [
+        "Biscutella valentina var. valentina"
+      ],
+      "evidence": [
+        {
+          "source": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+          "seed": "Biscutella valentina var. valentina",
+          "requiredRank": "variety",
+          "search": {
+            "url": "https://api.gbif.org/v1/species/search?name=Biscutella+valentina+var.+valentina&limit=100",
+            "status": 200,
+            "attempt": 1
+          },
+          "exactUsageKeys": [],
+          "acceptedRootKeys": [],
+          "detailFetches": [],
+          "synonymFetches": []
+        }
+      ],
+      "query_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_state": "SOURCE_EXACT_NAME_NOT_FOUND",
+      "source_failure": false
+    }
+  ]
+}

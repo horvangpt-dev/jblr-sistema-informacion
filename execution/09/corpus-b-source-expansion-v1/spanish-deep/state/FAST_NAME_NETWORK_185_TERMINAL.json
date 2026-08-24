@@ -1,0 +1,11 @@
+{
+  "state": "STOP_REQUIRED_ANOMALY",
+  "githubRunId": "32740593160",
+  "processedRows": 25,
+  "resolvedCount": 0,
+  "stopRequired": true,
+  "stopReason": "NEAR_ZERO_RESOLUTION_YIELD_0_OF_25",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false
+}
