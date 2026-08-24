@@ -1,0 +1,21 @@
+{
+  "evidenceClass": "FRESH_SPANISH_DOCUMENTED_RELATIONS_PILOT",
+  "rules": {
+    "noFuzzy": true,
+    "noParentInheritance": true,
+    "sourceFailureNotAbsence": true
+  },
+  "rows": [
+    {"B_SOURCE_RECORD_ID":"4415","original":"Satureja acinos","names":["Acinos arvensis","Thymus acinos","Calamintha acinos","Clinopodium acinos"],"source":"Flora Iberica","evidence":"https://www.floraiberica.es/floraiberica/texto/imprenta/tomoXII/entrega_3/12_140_27_Acinos.pdf"},
+    {"B_SOURCE_RECORD_ID":"335","original":"Scirpus setaceus","names":["Isolepis setacea"],"source":"Flora Iberica","evidence":"https://www.floraiberica.es/floraiberica/texto/pdfs/18_173_08_Isolepis.pdf"},
+    {"B_SOURCE_RECORD_ID":"4075","original":"Scirpus cernuus","names":["Isolepis cernua","Scirpus savii","Isolepis savii"],"source":"Flora Iberica","evidence":"https://www.floraiberica.es/floraiberica/texto/pdfs/18_173_08_Isolepis.pdf"},
+    {"B_SOURCE_RECORD_ID":"2603","original":"Scirpus lacustris","names":["Schoenoplectus lacustris"],"source":"Flora Iberica","evidence":"Flora Iberica Schoenoplectus treatment; Scirpus lacustris explicitly basionym"},
+    {"B_SOURCE_RECORD_ID":"3688","original":"Bellardia trixago","names":["Bartsia trixago","Trixago apula"],"source":"Flora Iberica","evidence":"https://www.floraiberica.es/floraiberica/texto/pdfs/13_144_28_Bartsia.pdf"},
+    {"B_SOURCE_RECORD_ID":"4092","original":"Orchis champagneuxii","names":["Orchis morio","Anacamptis morio"],"source":"Flora Iberica","evidence":"https://www.floraiberica.es/floraiberica/texto/pdfs/21_189_18_Orchis.pdf"},
+    {"B_SOURCE_RECORD_ID":"3262","original":"Orchis fragrans","names":["Orchis coriophora"],"source":"Flora Iberica","evidence":"https://www.floraiberica.es/floraiberica/texto/pdfs/21_189_18_Orchis.pdf"},
+    {"B_SOURCE_RECORD_ID":"68","original":"Genista sagittalis","names":["Chamaespartium sagittale"],"source":"Flora Montiberica","evidence":"https://www.floramontiberica.org/FM/Flora_Montiberica82.pdf"},
+    {"B_SOURCE_RECORD_ID":"4809","original":"Lithospermum arvense","names":["Buglossoides arvensis"],"source":"Spanish regional catalogue using Flora Iberica nomenclature","evidence":"https://www.lagunaseloso.es/wp-content/uploads/2024/12/2024-Luceno-et-al.-Medit.-Bot_Catalogo-de-Avila.pdf"},
+    {"B_SOURCE_RECORD_ID":"4593","original":"Satureja alpina","names":["Acinos alpinus","Calamintha alpina"],"source":"Atlas de Flora del Pirineo Aragones / Spanish source","evidence":"Atlas Flora Pirineo Aragones II; explicit bracketed synonymy"},
+    {"B_SOURCE_RECORD_ID":"4023","original":"Satureja vulgaris subsp. vulgaris","names":["Clinopodium vulgare"],"source":"Spanish regional flora / UCLM","evidence":"Spanish regional flora explicitly says Satureja vulgaris ... Vease Clinopodium vulgare"}
+  ]
+}
