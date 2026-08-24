@@ -1,0 +1,18 @@
+{
+  "requestId": "09_CORPUS_B_COLD_START_20260824_002",
+  "requestedAt": "2026-08-24T08:14:15+02:00",
+  "originActor": "09",
+  "chatInstance": "09_V2",
+  "releaseEvent": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-CORPUS-B-001",
+  "reason": "CORRECT_DWC_CANONICAL_EXTRACTION_WITHOUT_FUZZY_EQUIVALENCE",
+  "preserveAttempt001": true,
+  "sourceDriveId": "10SgY3zlEWKXbRSOfO8HvynvJMF5r0zOX",
+  "sourceSha256": "f3b2c9ca0921779cf5131ea8d4c98a35299a325cf0be4f419cfec4d39e667f4f",
+  "freshResolutionQueueRows": 338,
+  "cacheInitialState": "EMPTY",
+  "crossWithA": false,
+  "crosswalkModuleExecuted": false,
+  "neonWrites": 0,
+  "canonicalCorpusAMutation": 0,
+  "freezeBy09": false
+}
