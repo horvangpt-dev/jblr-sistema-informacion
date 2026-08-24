@@ -1,0 +1,4817 @@
+{
+  "RUN_ID": "09_CORPUS_B_COLD_START_20260824_002",
+  "counts": {
+    "HUMAN_REVIEW_REQUIRED": 336,
+    "UNRESOLVED_AFTER_EXHAUSTIVE_SEARCH": 1,
+    "RESOLVED_EXACT_ORIGINAL_NAME": 1
+  },
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "1891",
+      "NOMBRE_RIOJA_VERBATIM": "Acer monspessulanum x A. campestre",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Acer monspessulanum x A. campestre",
+        "Acer monspessulanum × A. campestre",
+        "Acer monspessulanum × Acer campestre",
+        "Acer monspessulanum x Acer campestre"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "NOMBRE_RIOJA_VERBATIM": "Adenocarpus hispanicus subsp. neilense",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Adenocarpus hispanicus subsp. neilense"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5517",
+      "NOMBRE_RIOJA_VERBATIM": "Agave americana",
+      "TERMINAL_STATE": "UNRESOLVED_AFTER_EXHAUSTIVE_SEARCH",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Agave americana"
+      ],
+      "SPANISH_EVIDENCE": [
+        {
+          "taxonID": "F204F218-B678-468B-AF7D-0496E2DB973C",
+          "acceptedNameUsageID": "",
+          "canonicalName": "Agave americana",
+          "scientificName": "Agave americana L.",
+          "taxonomicStatus": "",
+          "taxonRank": "species"
+        }
+      ],
+      "SOURCE_PLAN_COMPLETE": true,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla basaltica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Alchemilla basaltica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3143",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla filicaulis var. vestita",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Alchemilla filicaulis var. vestita"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1326",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla plicatula",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Alchemilla plicatula"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2250",
+      "NOMBRE_RIOJA_VERBATIM": "Allium oleraceum var. oleraceum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Allium oleraceum var. oleraceum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "156",
+      "NOMBRE_RIOJA_VERBATIM": "Allium schoenoprassum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Allium schoenoprassum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "300",
+      "NOMBRE_RIOJA_VERBATIM": "Allium senescens subsp. montanum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Allium senescens subsp. montanum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2545",
+      "NOMBRE_RIOJA_VERBATIM": "Anchusa italica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Anchusa italica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "895",
+      "NOMBRE_RIOJA_VERBATIM": "Andryala ragusina var. ragusina",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Andryala ragusina var. ragusina"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4287",
+      "NOMBRE_RIOJA_VERBATIM": "Anteriorchis coriophora",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Anteriorchis coriophora"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "NOMBRE_RIOJA_VERBATIM": "Anteriorchis coriophora var. carpetana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Anteriorchis coriophora var. carpetana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3261",
+      "NOMBRE_RIOJA_VERBATIM": "Anteriorchis fragrans",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Anteriorchis fragrans"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "NOMBRE_RIOJA_VERBATIM": "Anthemis triumfettii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Anthemis triumfettii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1897",
+      "NOMBRE_RIOJA_VERBATIM": "Anthyllis montana subsp. hispanica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Anthyllis montana subsp. hispanica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4979",
+      "NOMBRE_RIOJA_VERBATIM": "Antirrhinum barrelieri",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Antirrhinum barrelieri"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2285",
+      "NOMBRE_RIOJA_VERBATIM": "Arum orientale subsp. orientale",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Arum orientale subsp. orientale"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "836",
+      "NOMBRE_RIOJA_VERBATIM": "Asperula pyrenaica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asperula pyrenaica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asplenium adiantum-nigrum var. adiantum-nigrum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3646",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium trichomanes subsp. hastatum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asplenium trichomanes subsp. hastatum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3980",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium x alternifolium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asplenium x alternifolium",
+        "Asplenium × alternifolium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3997",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium x sarniense",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asplenium x sarniense",
+        "Asplenium × sarniense"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3999",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium x souchei",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asplenium x souchei",
+        "Asplenium × souchei"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4000",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium x staufferi",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asplenium x staufferi",
+        "Asplenium × staufferi"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4001",
+      "NOMBRE_RIOJA_VERBATIM": "Asplenium x ticinense",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Asplenium x ticinense",
+        "Asplenium × ticinense"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "NOMBRE_RIOJA_VERBATIM": "Astragalus monspessulanus subsp. teresianus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Astragalus monspessulanus subsp. teresianus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "NOMBRE_RIOJA_VERBATIM": "Astragalus sempervirens subsp. muticus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Astragalus sempervirens subsp. muticus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "NOMBRE_RIOJA_VERBATIM": "Astragalus vesicarius subsp. vesicarius",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Astragalus vesicarius subsp. vesicarius"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "NOMBRE_RIOJA_VERBATIM": "Atropa bella-donna",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Atropa bella-donna"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula bromoides subsp. pauneroi",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Avenula bromoides subsp. pauneroi"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula lodunensis subsp. romero-zarcoi",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Avenula lodunensis subsp. romero-zarcoi"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1395",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula pratensis subsp. iberica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Avenula pratensis subsp. iberica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1398",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula pratensis var. paniculata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Avenula pratensis var. paniculata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1399",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula pratensis var. vasconica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Avenula pratensis var. vasconica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "615",
+      "NOMBRE_RIOJA_VERBATIM": "Avenula sulcata subsp. sulcata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Avenula sulcata subsp. sulcata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5324",
+      "NOMBRE_RIOJA_VERBATIM": "Azolla spp.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Azolla spp."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2070",
+      "NOMBRE_RIOJA_VERBATIM": "Ballota nigra subsp. foetida",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ballota nigra subsp. foetida"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3688",
+      "NOMBRE_RIOJA_VERBATIM": "Bellardia trixago",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Bellardia trixago"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4509",
+      "NOMBRE_RIOJA_VERBATIM": "Betula alba var. alba",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Betula alba var. alba"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4510",
+      "NOMBRE_RIOJA_VERBATIM": "Betula alba var. glabrata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Betula alba var. glabrata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4065",
+      "NOMBRE_RIOJA_VERBATIM": "Betula celtiberica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Betula celtiberica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1192",
+      "NOMBRE_RIOJA_VERBATIM": "Betula pendula var. meridionalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Betula pendula var. meridionalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3787",
+      "NOMBRE_RIOJA_VERBATIM": "Biscutella valentina var. laevigata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Biscutella valentina var. laevigata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3788",
+      "NOMBRE_RIOJA_VERBATIM": "Biscutella valentina var. valentina",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Biscutella valentina var. valentina"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3789",
+      "NOMBRE_RIOJA_VERBATIM": "Biscutella valentina var. variegata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Biscutella valentina var. variegata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "415",
+      "NOMBRE_RIOJA_VERBATIM": "Blechnum spicant var. spicant",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Blechnum spicant var. spicant"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1298",
+      "NOMBRE_RIOJA_VERBATIM": "Brachypodium pinnatum x B. phoenicoides",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Brachypodium pinnatum x B. phoenicoides",
+        "Brachypodium pinnatum × B. phoenicoides",
+        "Brachypodium pinnatum × Brachypodium phoenicoides",
+        "Brachypodium pinnatum x Brachypodium phoenicoides"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4058",
+      "NOMBRE_RIOJA_VERBATIM": "Bromus catharticus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Bromus catharticus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4958",
+      "NOMBRE_RIOJA_VERBATIM": "Bupleurum baldense subsp. baldense",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Bupleurum baldense subsp. baldense"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "910",
+      "NOMBRE_RIOJA_VERBATIM": "Bupleurum ranunculoides subsp. gramineus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Bupleurum ranunculoides subsp. gramineus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "911",
+      "NOMBRE_RIOJA_VERBATIM": "Bupleurum ranunculoides subsp. ranunculoides",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Bupleurum ranunculoides subsp. ranunculoides"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "305",
+      "NOMBRE_RIOJA_VERBATIM": "Calystegia sepium subsp. sepium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Calystegia sepium subsp. sepium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3378",
+      "NOMBRE_RIOJA_VERBATIM": "Campanula glomerata subsp. glomerata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Campanula glomerata subsp. glomerata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3587",
+      "NOMBRE_RIOJA_VERBATIM": "Campanula hispanica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Campanula hispanica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1172",
+      "NOMBRE_RIOJA_VERBATIM": "Campanula paui",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Campanula paui"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3629",
+      "NOMBRE_RIOJA_VERBATIM": "Campanula trachelium subsp. trachelium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Campanula trachelium subsp. trachelium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3767",
+      "NOMBRE_RIOJA_VERBATIM": "Campanula urbionensis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Campanula urbionensis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4858",
+      "NOMBRE_RIOJA_VERBATIM": "Carduus assoi",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carduus assoi"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2152",
+      "NOMBRE_RIOJA_VERBATIM": "Carduus nutans subsp. nutans",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carduus nutans subsp. nutans"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3164",
+      "NOMBRE_RIOJA_VERBATIM": "Carex flacca subsp. flacca",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carex flacca subsp. flacca"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3165",
+      "NOMBRE_RIOJA_VERBATIM": "Carex flacca subsp. serrulata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carex flacca subsp. serrulata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3498",
+      "NOMBRE_RIOJA_VERBATIM": "Carex hallerana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carex hallerana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1968",
+      "NOMBRE_RIOJA_VERBATIM": "Carex muricata subsp. lamprocarpa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carex muricata subsp. lamprocarpa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2308",
+      "NOMBRE_RIOJA_VERBATIM": "Carex ovalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carex ovalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4021",
+      "NOMBRE_RIOJA_VERBATIM": "Carlina vulgaris subsp. vulgaris",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carlina vulgaris subsp. vulgaris"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2629",
+      "NOMBRE_RIOJA_VERBATIM": "Carthamus lanatus subsp. lanatus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Carthamus lanatus subsp. lanatus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2758",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurea debeauxii subsp. nemoralis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurea debeauxii subsp. nemoralis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2296",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurea ornata x C. scabiosa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurea ornata x C. scabiosa",
+        "Centaurea ornata × C. scabiosa",
+        "Centaurea ornata × Centaurea scabiosa",
+        "Centaurea ornata x Centaurea scabiosa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2367",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurea paniculata subsp. castellana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurea paniculata subsp. castellana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3681",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurea triumfetti subsp. lingulata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurea triumfetti subsp. lingulata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3903",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurea vinyalsii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurea vinyalsii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4002",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurea x zubiae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurea x zubiae",
+        "Centaurea × zubiae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3006",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurium erythraea subsp. grandiflorum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurium erythraea subsp. grandiflorum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3007",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurium erythraea subsp. majus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centaurium erythraea subsp. majus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5177",
+      "NOMBRE_RIOJA_VERBATIM": "Centranthus calcitrapae subsp. calcitrapae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Centranthus calcitrapae subsp. calcitrapae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5080",
+      "NOMBRE_RIOJA_VERBATIM": "Cerastium brachypetalum var. brachypetalum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cerastium brachypetalum var. brachypetalum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2289",
+      "NOMBRE_RIOJA_VERBATIM": "Chaenorhinum origanifolium subsp. crassifolium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Chaenorhinum origanifolium subsp. crassifolium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "NOMBRE_RIOJA_VERBATIM": "Chaenorhinum rupestre",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Chaenorhinum rupestre"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "686",
+      "NOMBRE_RIOJA_VERBATIM": "Chaerophyllum temulentum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Chaerophyllum temulentum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4419",
+      "NOMBRE_RIOJA_VERBATIM": "Cheilanthes acrostica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cheilanthes acrostica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4781",
+      "NOMBRE_RIOJA_VERBATIM": "Cicer arietinum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cicer arietinum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "839",
+      "NOMBRE_RIOJA_VERBATIM": "Cirsium pyrenaicum var. longespinosum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cirsium pyrenaicum var. longespinosum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "840",
+      "NOMBRE_RIOJA_VERBATIM": "Cirsium pyrenaicum var. pyrenaicum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cirsium pyrenaicum var. pyrenaicum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "974",
+      "NOMBRE_RIOJA_VERBATIM": "Cirsium richterianum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cirsium richterianum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1367",
+      "NOMBRE_RIOJA_VERBATIM": "Cistus populifolius x C. Salvifolius",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cistus populifolius x C. Salvifolius",
+        "Cistus populifolius × C. Salvifolius",
+        "Cistus populifolius × Cistus Salvifolius",
+        "Cistus populifolius x Cistus Salvifolius"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "79",
+      "NOMBRE_RIOJA_VERBATIM": "Cistus salvifolius",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cistus salvifolius"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4871",
+      "NOMBRE_RIOJA_VERBATIM": "Colutea atlantica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Colutea atlantica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5071",
+      "NOMBRE_RIOJA_VERBATIM": "Conopodium bourgaei",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Conopodium bourgaei"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5244",
+      "NOMBRE_RIOJA_VERBATIM": "Conopodium capillifolium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Conopodium capillifolium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "907",
+      "NOMBRE_RIOJA_VERBATIM": "Conopodium ramosum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Conopodium ramosum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3784",
+      "NOMBRE_RIOJA_VERBATIM": "Coronilla valentina subsp. glauca",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Coronilla valentina subsp. glauca"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5325",
+      "NOMBRE_RIOJA_VERBATIM": "Cortaderia spp.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cortaderia spp."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2015",
+      "NOMBRE_RIOJA_VERBATIM": "Cotoneaster nebrodensis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cotoneaster nebrodensis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1878",
+      "NOMBRE_RIOJA_VERBATIM": "Crataegus monogyna subsp. brevispina",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Crataegus monogyna subsp. brevispina"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1879",
+      "NOMBRE_RIOJA_VERBATIM": "Crataegus monogyna subsp. monogyna",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Crataegus monogyna subsp. monogyna"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5528",
+      "NOMBRE_RIOJA_VERBATIM": "Cylindropuntia spp.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cylindropuntia spp."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4957",
+      "NOMBRE_RIOJA_VERBATIM": "Cytisus balansae subsp. europaeus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cytisus balansae subsp. europaeus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "173",
+      "NOMBRE_RIOJA_VERBATIM": "Cytisus scoparius subsp. cantabricus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Cytisus scoparius subsp. cantabricus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3594",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylis hispanica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylis hispanica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2934",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylorhiza elata subsp. sesquipedalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylorhiza elata subsp. sesquipedalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2994",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylorhiza ericetorum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylorhiza ericetorum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2483",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylorhiza incarnata subsp. incarnata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylorhiza incarnata subsp. incarnata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1624",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylorhiza maculata subsp. elodes",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylorhiza maculata subsp. elodes"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1625",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylorhiza maculata subsp. maculata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylorhiza maculata subsp. maculata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1647",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylorhiza majalis subsp. majalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylorhiza majalis subsp. majalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1696",
+      "NOMBRE_RIOJA_VERBATIM": "Dactylorhiza markusii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dactylorhiza markusii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3595",
+      "NOMBRE_RIOJA_VERBATIM": "Deschampsia hispanica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Deschampsia hispanica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2816",
+      "NOMBRE_RIOJA_VERBATIM": "Doronicum diazii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Doronicum diazii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1204",
+      "NOMBRE_RIOJA_VERBATIM": "Dorycnium pentaphyllum subsp. pentaphyllum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dorycnium pentaphyllum subsp. pentaphyllum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4480",
+      "NOMBRE_RIOJA_VERBATIM": "Dryopteris affinis subsp. cambrensis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dryopteris affinis subsp. cambrensis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4481",
+      "NOMBRE_RIOJA_VERBATIM": "Dryopteris affinis var. borreri",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dryopteris affinis var. borreri"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4482",
+      "NOMBRE_RIOJA_VERBATIM": "Dryopteris affinis var. robusta",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dryopteris affinis var. robusta"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5527",
+      "NOMBRE_RIOJA_VERBATIM": "Dryopteris mindshelkensis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dryopteris mindshelkensis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3981",
+      "NOMBRE_RIOJA_VERBATIM": "Dryopteris x ambroseae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dryopteris x ambroseae",
+        "Dryopteris × ambroseae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3992",
+      "NOMBRE_RIOJA_VERBATIM": "Dryopteris x mantoniae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Dryopteris x mantoniae",
+        "Dryopteris × mantoniae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4850",
+      "NOMBRE_RIOJA_VERBATIM": "Echium asperrinum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Echium asperrinum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3592",
+      "NOMBRE_RIOJA_VERBATIM": "Epipactis hispanica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Epipactis hispanica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1156",
+      "NOMBRE_RIOJA_VERBATIM": "Epipactis parviflora",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Epipactis parviflora"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1250",
+      "NOMBRE_RIOJA_VERBATIM": "Epipactis phyllanthes var. fageticola",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Epipactis phyllanthes var. fageticola"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3990",
+      "NOMBRE_RIOJA_VERBATIM": "Equisetum x litorale",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Equisetum x litorale",
+        "Equisetum × litorale"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4802",
+      "NOMBRE_RIOJA_VERBATIM": "Festuca arundinacea subsp. fenas",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Festuca arundinacea subsp. fenas"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3536",
+      "NOMBRE_RIOJA_VERBATIM": "Festuca heterophylla subsp. braun-blanquetii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Festuca heterophylla subsp. braun-blanquetii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2316",
+      "NOMBRE_RIOJA_VERBATIM": "Festuca ovina var. glauca",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Festuca ovina var. glauca"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "394",
+      "NOMBRE_RIOJA_VERBATIM": "Festuca sp.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Festuca sp."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3720",
+      "NOMBRE_RIOJA_VERBATIM": "Filipendula ulmaria subsp. ulmaria",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Filipendula ulmaria subsp. ulmaria"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2043",
+      "NOMBRE_RIOJA_VERBATIM": "Fritillaria nervosa subsp. nervosa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Fritillaria nervosa subsp. nervosa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3250",
+      "NOMBRE_RIOJA_VERBATIM": "Gagea fragifera",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Gagea fragifera"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2054",
+      "NOMBRE_RIOJA_VERBATIM": "Gagea nevadensis gr.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Gagea nevadensis gr."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4676",
+      "NOMBRE_RIOJA_VERBATIM": "Galeopsis angustifolia subsp. carpetana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Galeopsis angustifolia subsp. carpetana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4547",
+      "NOMBRE_RIOJA_VERBATIM": "Galium album subsp. album",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Galium album subsp. album"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4300",
+      "NOMBRE_RIOJA_VERBATIM": "Galium corrudifolium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Galium corrudifolium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2865",
+      "NOMBRE_RIOJA_VERBATIM": "Galium divaricatum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Galium divaricatum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3271",
+      "NOMBRE_RIOJA_VERBATIM": "Galium fruticescens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Galium fruticescens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1285",
+      "NOMBRE_RIOJA_VERBATIM": "Galium pinetorum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Galium pinetorum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "489",
+      "NOMBRE_RIOJA_VERBATIM": "Galium spurium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Galium spurium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4133",
+      "NOMBRE_RIOJA_VERBATIM": "Genista cinerea subsp. ausetana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Genista cinerea subsp. ausetana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4134",
+      "NOMBRE_RIOJA_VERBATIM": "Genista cinerea subsp. cinerea",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Genista cinerea subsp. cinerea"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3203",
+      "NOMBRE_RIOJA_VERBATIM": "Genista florida subsp. polygaliphylla",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Genista florida subsp. polygaliphylla"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "68",
+      "NOMBRE_RIOJA_VERBATIM": "Genista sagittalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Genista sagittalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4677",
+      "NOMBRE_RIOJA_VERBATIM": "Gentiana angustifolia subsp. occidentalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Gentiana angustifolia subsp. occidentalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2789",
+      "NOMBRE_RIOJA_VERBATIM": "Gymnadenia densiflora",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Gymnadenia densiflora"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4240",
+      "NOMBRE_RIOJA_VERBATIM": "Hedysarum confertum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hedysarum confertum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2149",
+      "NOMBRE_RIOJA_VERBATIM": "Helianthemum nummularium subsp. nummularium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Helianthemum nummularium subsp. nummularium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "412",
+      "NOMBRE_RIOJA_VERBATIM": "Heracleum sphondylium subsp. montanum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Heracleum sphondylium subsp. montanum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "413",
+      "NOMBRE_RIOJA_VERBATIM": "Heracleum sphondylium subsp. pyrenaicum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Heracleum sphondylium subsp. pyrenaicum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3272",
+      "NOMBRE_RIOJA_VERBATIM": "Herniaria fruticosa var. fruticosa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Herniaria fruticosa var. fruticosa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3428",
+      "NOMBRE_RIOJA_VERBATIM": "Herniaria glabra var. glabra",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Herniaria glabra var. glabra"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "136",
+      "NOMBRE_RIOJA_VERBATIM": "Herniaria scabrida var. glabrescens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Herniaria scabrida var. glabrescens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "137",
+      "NOMBRE_RIOJA_VERBATIM": "Herniaria scabrida var. scabrida",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Herniaria scabrida var. scabrida"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4776",
+      "NOMBRE_RIOJA_VERBATIM": "Hieracium argillaceum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hieracium argillaceum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2602",
+      "NOMBRE_RIOJA_VERBATIM": "Hieracium lactucella subsp. lactucella",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hieracium lactucella subsp. lactucella"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2120",
+      "NOMBRE_RIOJA_VERBATIM": "Hieracium niveum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hieracium niveum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1270",
+      "NOMBRE_RIOJA_VERBATIM": "Hieracium pilosella subsp. micradenium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hieracium pilosella subsp. micradenium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1271",
+      "NOMBRE_RIOJA_VERBATIM": "Hieracium pilosella subsp. pilosella",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hieracium pilosella subsp. pilosella"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1272",
+      "NOMBRE_RIOJA_VERBATIM": "Hieracium pilosella subsp. tricholepium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hieracium pilosella subsp. tricholepium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3555",
+      "NOMBRE_RIOJA_VERBATIM": "Himantoglossum hircinum subsp. hircinum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Himantoglossum hircinum subsp. hircinum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4217",
+      "NOMBRE_RIOJA_VERBATIM": "Hippocrepis comosa subsp. squamata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hippocrepis comosa subsp. squamata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3429",
+      "NOMBRE_RIOJA_VERBATIM": "Hypochoeris glabra",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hypochoeris glabra"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "892",
+      "NOMBRE_RIOJA_VERBATIM": "Hypochoeris radicata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Hypochoeris radicata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4342",
+      "NOMBRE_RIOJA_VERBATIM": "Jasione crispa subsp. centralis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Jasione crispa subsp. centralis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4343",
+      "NOMBRE_RIOJA_VERBATIM": "Jasione crispa subsp. sessiliflora",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Jasione crispa subsp. sessiliflora"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2617",
+      "NOMBRE_RIOJA_VERBATIM": "Jasione laevis subsp. carpetana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Jasione laevis subsp. carpetana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2618",
+      "NOMBRE_RIOJA_VERBATIM": "Jasione laevis subsp. laevis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Jasione laevis subsp. laevis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4244",
+      "NOMBRE_RIOJA_VERBATIM": "Juncus conglomeratus var. conglomeratus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Juncus conglomeratus var. conglomeratus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4245",
+      "NOMBRE_RIOJA_VERBATIM": "Juncus conglomeratus var. laxus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Juncus conglomeratus var. laxus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2929",
+      "NOMBRE_RIOJA_VERBATIM": "Juncus effusus var. effusus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Juncus effusus var. effusus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2930",
+      "NOMBRE_RIOJA_VERBATIM": "Juncus effusus var. subglomeratus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Juncus effusus var. subglomeratus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2500",
+      "NOMBRE_RIOJA_VERBATIM": "Juncus inflexus var. inflexus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Juncus inflexus var. inflexus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "687",
+      "NOMBRE_RIOJA_VERBATIM": "Juncus tenageia subsp. tenageia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Juncus tenageia subsp. tenageia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4837",
+      "NOMBRE_RIOJA_VERBATIM": "Knautia arvernensis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Knautia arvernensis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "781",
+      "NOMBRE_RIOJA_VERBATIM": "Knautia purpurea",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Knautia purpurea"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "591",
+      "NOMBRE_RIOJA_VERBATIM": "Knautia subscaposa subsp. subscaposa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Knautia subscaposa subsp. subscaposa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5335",
+      "NOMBRE_RIOJA_VERBATIM": "Koeleria pyramidata subsp. pyramidata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Koeleria pyramidata subsp. pyramidata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2063",
+      "NOMBRE_RIOJA_VERBATIM": "Lathyrus niger subsp. niger",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lathyrus niger subsp. niger"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "531",
+      "NOMBRE_RIOJA_VERBATIM": "Lavandula stoechas subsp. pedunculata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lavandula stoechas subsp. pedunculata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5298",
+      "NOMBRE_RIOJA_VERBATIM": "Legousia castellana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Legousia castellana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "670",
+      "NOMBRE_RIOJA_VERBATIM": "Leontodon taraxacoides subsp. hispidus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Leontodon taraxacoides subsp. hispidus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2538",
+      "NOMBRE_RIOJA_VERBATIM": "Leucanthemum ircutianum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Leucanthemum ircutianum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4589",
+      "NOMBRE_RIOJA_VERBATIM": "Linaria alpina var. aciculifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Linaria alpina var. aciculifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1433",
+      "NOMBRE_RIOJA_VERBATIM": "Linaria proxima",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Linaria proxima"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4809",
+      "NOMBRE_RIOJA_VERBATIM": "Lithospermum arvense",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lithospermum arvense"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2487",
+      "NOMBRE_RIOJA_VERBATIM": "Lithospermum incrassatum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lithospermum incrassatum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "789",
+      "NOMBRE_RIOJA_VERBATIM": "Lithospermum purpurocaeruleum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lithospermum purpurocaeruleum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3758",
+      "NOMBRE_RIOJA_VERBATIM": "Littorela uniflora",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Littorela uniflora"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5255",
+      "NOMBRE_RIOJA_VERBATIM": "Lonicera caprifolium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lonicera caprifolium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1693",
+      "NOMBRE_RIOJA_VERBATIM": "Lotus maritimus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lotus maritimus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1412",
+      "NOMBRE_RIOJA_VERBATIM": "Lotus preslii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lotus preslii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5516",
+      "NOMBRE_RIOJA_VERBATIM": "Ludwigia spp.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ludwigia spp."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5195",
+      "NOMBRE_RIOJA_VERBATIM": "Luzula campestris subsp. carpetana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Luzula campestris subsp. carpetana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1949",
+      "NOMBRE_RIOJA_VERBATIM": "Luzula multiflora subsp. congesta",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Luzula multiflora subsp. congesta"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "636",
+      "NOMBRE_RIOJA_VERBATIM": "Luzula sylvatica subsp. henriquesii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Luzula sylvatica subsp. henriquesii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2037",
+      "NOMBRE_RIOJA_VERBATIM": "Lysimachia nemorun",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Lysimachia nemorun"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1883",
+      "NOMBRE_RIOJA_VERBATIM": "Medicago monspeliaca",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Medicago monspeliaca"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1343",
+      "NOMBRE_RIOJA_VERBATIM": "Medicago polyceratia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Medicago polyceratia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "106",
+      "NOMBRE_RIOJA_VERBATIM": "Medicago sativa subsp. sativa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Medicago sativa subsp. sativa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4615",
+      "NOMBRE_RIOJA_VERBATIM": "Melilotus altissima",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Melilotus altissima"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2012",
+      "NOMBRE_RIOJA_VERBATIM": "Melilotus neapolitanus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Melilotus neapolitanus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1755",
+      "NOMBRE_RIOJA_VERBATIM": "Melittis melissophyllum subsp. melissophyllum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Melittis melissophyllum subsp. melissophyllum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3986",
+      "NOMBRE_RIOJA_VERBATIM": "Mentha x dumetorum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Mentha x dumetorum",
+        "Mentha × dumetorum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2034",
+      "NOMBRE_RIOJA_VERBATIM": "Myosotis nemorosa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Myosotis nemorosa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "900",
+      "NOMBRE_RIOJA_VERBATIM": "Myosotis ramosissima subsp. globularis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Myosotis ramosissima subsp. globularis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5122",
+      "NOMBRE_RIOJA_VERBATIM": "Narcissus bulbocodium subsp. bulbocodium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Narcissus bulbocodium subsp. bulbocodium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2041",
+      "NOMBRE_RIOJA_VERBATIM": "Nepeta nepetella subsp. cordifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Nepeta nepetella subsp. cordifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2953",
+      "NOMBRE_RIOJA_VERBATIM": "Odontites eliassennenii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Odontites eliassennenii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1529",
+      "NOMBRE_RIOJA_VERBATIM": "Odontites longiflora",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Odontites longiflora"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3843",
+      "NOMBRE_RIOJA_VERBATIM": "Odontites verna",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Odontites verna"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3837",
+      "NOMBRE_RIOJA_VERBATIM": "Odontites verna subsp. serotina",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Odontites verna subsp. serotina"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3839",
+      "NOMBRE_RIOJA_VERBATIM": "Odontites verna subsp. verna",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Odontites verna subsp. verna"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3942",
+      "NOMBRE_RIOJA_VERBATIM": "Odontites viscosa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Odontites viscosa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "624",
+      "NOMBRE_RIOJA_VERBATIM": "Omalotheca supina subsp. pusilla",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Omalotheca supina subsp. pusilla"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "635",
+      "NOMBRE_RIOJA_VERBATIM": "Omalotheca sylvatica subsp. carpetana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Omalotheca sylvatica subsp. carpetana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2008",
+      "NOMBRE_RIOJA_VERBATIM": "Ononis natrix subsp. natrix",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ononis natrix subsp. natrix"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4403",
+      "NOMBRE_RIOJA_VERBATIM": "Onopordon acanthium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Onopordon acanthium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4309",
+      "NOMBRE_RIOJA_VERBATIM": "Onopordon corymbosum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Onopordon corymbosum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2045",
+      "NOMBRE_RIOJA_VERBATIM": "Onopordon nervosum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Onopordon nervosum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4407",
+      "NOMBRE_RIOJA_VERBATIM": "Onopordum acaulon subsp. acaulon",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Onopordum acaulon subsp. acaulon"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4791",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys arnoldii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys arnoldii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5031",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys bilunulata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys bilunulata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5299",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys castellana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys castellana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2916",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys dyris",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys dyris"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3310",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys fusca gr.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys fusca gr."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2488",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys incubacea",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys incubacea"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1567",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys lupercalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys lupercalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1568",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys lupercalis x O. bilunulata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys lupercalis x O. bilunulata",
+        "Ophrys lupercalis × O. bilunulata",
+        "Ophrys lupercalis × Ophrys bilunulata",
+        "Ophrys lupercalis x Ophrys bilunulata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1166",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys passionis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys passionis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1261",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys picta",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys picta"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "986",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys riojana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys riojana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5320",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys scolopax subsp. scolopax",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys scolopax subsp. scolopax"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "167",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys scolopax x O. tenthredinifera",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys scolopax x O. tenthredinifera",
+        "Ophrys scolopax × O. tenthredinifera",
+        "Ophrys scolopax × Ophrys tenthredinifera",
+        "Ophrys scolopax x Ophrys tenthredinifera"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3813",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys vasconica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys vasconica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3991",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys x manfredoniae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ophrys x manfredoniae",
+        "Ophrys × manfredoniae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4092",
+      "NOMBRE_RIOJA_VERBATIM": "Orchis champagneuxii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Orchis champagneuxii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3262",
+      "NOMBRE_RIOJA_VERBATIM": "Orchis fragrans",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Orchis fragrans"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1262",
+      "NOMBRE_RIOJA_VERBATIM": "Orchis picta",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Orchis picta"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "784",
+      "NOMBRE_RIOJA_VERBATIM": "Orchis purpurea x Aceras anthropophorum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Orchis purpurea x Aceras anthropophorum",
+        "Orchis purpurea × Aceras anthropophorum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2620",
+      "NOMBRE_RIOJA_VERBATIM": "Orobanche laevis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Orobanche laevis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5337",
+      "NOMBRE_RIOJA_VERBATIM": "Orobanche leptantha",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Orobanche leptantha"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4770",
+      "NOMBRE_RIOJA_VERBATIM": "Paronychia argentea var. argentea",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Paronychia argentea var. argentea"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5247",
+      "NOMBRE_RIOJA_VERBATIM": "Paronychia capitata var. capitata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Paronychia capitata var. capitata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2582",
+      "NOMBRE_RIOJA_VERBATIM": "Paronychia kapela var. pseudoaretioides",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Paronychia kapela var. pseudoaretioides"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1348",
+      "NOMBRE_RIOJA_VERBATIM": "Paronychia polygonifolia var. polygonifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Paronychia polygonifolia var. polygonifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2228",
+      "NOMBRE_RIOJA_VERBATIM": "Peucedanum officinales subsp. officinale",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Peucedanum officinales subsp. officinale"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "843",
+      "NOMBRE_RIOJA_VERBATIM": "Phyteuma pyrenaicum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Phyteuma pyrenaicum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "391",
+      "NOMBRE_RIOJA_VERBATIM": "Pilosella sp.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Pilosella sp."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3402",
+      "NOMBRE_RIOJA_VERBATIM": "Pimpinella gracilis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Pimpinella gracilis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3401",
+      "NOMBRE_RIOJA_VERBATIM": "Pimpinella gracilis subsp. puberula",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Pimpinella gracilis subsp. puberula"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4588",
+      "NOMBRE_RIOJA_VERBATIM": "Plantago alpina subsp. penyalarensis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Plantago alpina subsp. penyalarensis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4876",
+      "NOMBRE_RIOJA_VERBATIM": "Plantago atrata subsp. discolor",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Plantago atrata subsp. discolor"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4172",
+      "NOMBRE_RIOJA_VERBATIM": "Platanthera clorantha",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Platanthera clorantha"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5125",
+      "NOMBRE_RIOJA_VERBATIM": "Poa bulbosa var. vivipara",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Poa bulbosa var. vivipara"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3993",
+      "NOMBRE_RIOJA_VERBATIM": "Polypodium x mantoniae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Polypodium x mantoniae",
+        "Polypodium × mantoniae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3998",
+      "NOMBRE_RIOJA_VERBATIM": "Polypodium x shivasiae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Polypodium x shivasiae",
+        "Polypodium × shivasiae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3983",
+      "NOMBRE_RIOJA_VERBATIM": "Polystichum x bicknellii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Polystichum x bicknellii",
+        "Polystichum × bicknellii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3989",
+      "NOMBRE_RIOJA_VERBATIM": "Polystichum x illyricum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Polystichum x illyricum",
+        "Polystichum × illyricum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2071",
+      "NOMBRE_RIOJA_VERBATIM": "Populus nigra var. italica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Populus nigra var. italica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "662",
+      "NOMBRE_RIOJA_VERBATIM": "Potentilla tabernaemontani",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Potentilla tabernaemontani"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3817",
+      "NOMBRE_RIOJA_VERBATIM": "Potentilla velutina",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Potentilla velutina"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3833",
+      "NOMBRE_RIOJA_VERBATIM": "Primula veris subsp. suaveolens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Primula veris subsp. suaveolens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3507",
+      "NOMBRE_RIOJA_VERBATIM": "Prunella hastifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Prunella hastifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4077",
+      "NOMBRE_RIOJA_VERBATIM": "Quercus cerrioides",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Quercus cerrioides"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3082",
+      "NOMBRE_RIOJA_VERBATIM": "Quercus faginea x Q. pusbescens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Quercus faginea x Q. pusbescens",
+        "Quercus faginea × Q. pusbescens",
+        "Quercus faginea × Quercus pusbescens",
+        "Quercus faginea x Quercus pusbescens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3083",
+      "NOMBRE_RIOJA_VERBATIM": "Quercus faginea x Q. pyrenaica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Quercus faginea x Q. pyrenaica",
+        "Quercus faginea × Q. pyrenaica",
+        "Quercus faginea × Quercus pyrenaica",
+        "Quercus faginea x Quercus pyrenaica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3626",
+      "NOMBRE_RIOJA_VERBATIM": "Quercus pubescens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Quercus pubescens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "791",
+      "NOMBRE_RIOJA_VERBATIM": "Quercus pusbescens x Q. pyrenaica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Quercus pusbescens x Q. pyrenaica",
+        "Quercus pusbescens × Q. pyrenaica",
+        "Quercus pusbescens × Quercus pyrenaica",
+        "Quercus pusbescens x Quercus pyrenaica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5127",
+      "NOMBRE_RIOJA_VERBATIM": "Ranunculus bulbosus var. aleae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ranunculus bulbosus var. aleae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5128",
+      "NOMBRE_RIOJA_VERBATIM": "Ranunculus bulbosus var. hispanicus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ranunculus bulbosus var. hispanicus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1189",
+      "NOMBRE_RIOJA_VERBATIM": "Ranunculus peltatus var. peltatus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ranunculus peltatus var. peltatus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1614",
+      "NOMBRE_RIOJA_VERBATIM": "Rhamnus lycioides subsp. velutina",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Rhamnus lycioides subsp. velutina"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1733",
+      "NOMBRE_RIOJA_VERBATIM": "Rhinanthus mediterraneus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Rhinanthus mediterraneus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1442",
+      "NOMBRE_RIOJA_VERBATIM": "Robinia pseudacacia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Robinia pseudacacia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5338",
+      "NOMBRE_RIOJA_VERBATIM": "Rorippa sylvestris sylvestris",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Rorippa sylvestris sylvestris"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2111",
+      "NOMBRE_RIOJA_VERBATIM": "Rosa nitidula",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Rosa nitidula"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5157",
+      "NOMBRE_RIOJA_VERBATIM": "Rubus caesius x R. ulmifolius",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Rubus caesius x R. ulmifolius",
+        "Rubus caesius × R. ulmifolius",
+        "Rubus caesius × Rubus ulmifolius",
+        "Rubus caesius x Rubus ulmifolius"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4884",
+      "NOMBRE_RIOJA_VERBATIM": "Salix atrocinerea x S. caprea",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Salix atrocinerea x S. caprea",
+        "Salix atrocinerea × S. caprea",
+        "Salix atrocinerea × Salix caprea",
+        "Salix atrocinerea x Salix caprea"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2944",
+      "NOMBRE_RIOJA_VERBATIM": "Salix eleagnos subsp. angustifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Salix eleagnos subsp. angustifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "779",
+      "NOMBRE_RIOJA_VERBATIM": "Salix purpurea var. lambertiana",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Salix purpurea var. lambertiana"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "78",
+      "NOMBRE_RIOJA_VERBATIM": "Salix salvifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Salix salvifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3995",
+      "NOMBRE_RIOJA_VERBATIM": "Salix x neotricha",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Salix x neotricha",
+        "Salix × neotricha"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3996",
+      "NOMBRE_RIOJA_VERBATIM": "Salix x rubens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Salix x rubens",
+        "Salix × rubens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1821",
+      "NOMBRE_RIOJA_VERBATIM": "Sanguisorba minor subsp. muricata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sanguisorba minor subsp. muricata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "NOMBRE_RIOJA_VERBATIM": "Satureja acinos",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Satureja acinos"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4593",
+      "NOMBRE_RIOJA_VERBATIM": "Satureja alpina",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Satureja alpina"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4839",
+      "NOMBRE_RIOJA_VERBATIM": "Satureja ascendens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Satureja ascendens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4023",
+      "NOMBRE_RIOJA_VERBATIM": "Satureja vulgaris subsp. vulgaris",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Satureja vulgaris subsp. vulgaris"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4377",
+      "NOMBRE_RIOJA_VERBATIM": "Saxifraga cuneata x S. fragosoi",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Saxifraga cuneata x S. fragosoi",
+        "Saxifraga cuneata × S. fragosoi",
+        "Saxifraga cuneata × Saxifraga fragosoi",
+        "Saxifraga cuneata x Saxifraga fragosoi"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4378",
+      "NOMBRE_RIOJA_VERBATIM": "Saxifraga cuneata x S. losae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Saxifraga cuneata x S. losae",
+        "Saxifraga cuneata × S. losae",
+        "Saxifraga cuneata × Saxifraga losae",
+        "Saxifraga cuneata x Saxifraga losae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3982",
+      "NOMBRE_RIOJA_VERBATIM": "Saxifraga x arizagae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Saxifraga x arizagae",
+        "Saxifraga × arizagae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3985",
+      "NOMBRE_RIOJA_VERBATIM": "Saxifraga x celtiberica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Saxifraga x celtiberica",
+        "Saxifraga × celtiberica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4075",
+      "NOMBRE_RIOJA_VERBATIM": "Scirpus cernuus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Scirpus cernuus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4082",
+      "NOMBRE_RIOJA_VERBATIM": "Scirpus cespitosus subsp. germanicum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Scirpus cespitosus subsp. germanicum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3617",
+      "NOMBRE_RIOJA_VERBATIM": "Scirpus holoschoenus",
+      "TERMINAL_STATE": "RESOLVED_EXACT_ORIGINAL_NAME",
+      "MITECO_IDTAXON": "32535",
+      "CANDIDATE_IDS": [
+        "32535"
+      ],
+      "QUERIED_NAMES": [
+        "Scirpus holoschoenus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": true,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2603",
+      "NOMBRE_RIOJA_VERBATIM": "Scirpus lacustris",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Scirpus lacustris"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1692",
+      "NOMBRE_RIOJA_VERBATIM": "Scirpus maritimus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Scirpus maritimus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "335",
+      "NOMBRE_RIOJA_VERBATIM": "Scirpus setaceus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Scirpus setaceus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "627",
+      "NOMBRE_RIOJA_VERBATIM": "Scirpus supinus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Scirpus supinus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4679",
+      "NOMBRE_RIOJA_VERBATIM": "Scorzonera angustifolia var. angustifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Scorzonera angustifolia var. angustifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2604",
+      "NOMBRE_RIOJA_VERBATIM": "Senecio laderoi subsp. laderoi",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Senecio laderoi subsp. laderoi"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1495",
+      "NOMBRE_RIOJA_VERBATIM": "Serapias lingua x parviflora",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Serapias lingua x parviflora",
+        "Serapias lingua × parviflora",
+        "Serapias lingua × Serapias parviflora",
+        "Serapias lingua x Serapias parviflora"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2699",
+      "NOMBRE_RIOJA_VERBATIM": "Serratula leucantha",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Serratula leucantha"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3625",
+      "NOMBRE_RIOJA_VERBATIM": "Seseli libanotis subsp. libanotis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Seseli libanotis subsp. libanotis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4769",
+      "NOMBRE_RIOJA_VERBATIM": "Sesleria argentea subsp. hispanica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sesleria argentea subsp. hispanica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5145",
+      "NOMBRE_RIOJA_VERBATIM": "Sesleria caerulea",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sesleria caerulea"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5184",
+      "NOMBRE_RIOJA_VERBATIM": "Sideritis camarae",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sideritis camarae"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2431",
+      "NOMBRE_RIOJA_VERBATIM": "Sideritis hyssopifolia subsp. hyssopifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sideritis hyssopifolia subsp. hyssopifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1896",
+      "NOMBRE_RIOJA_VERBATIM": "Sideritis montana subsp. ebracteata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sideritis montana subsp. ebracteata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1709",
+      "NOMBRE_RIOJA_VERBATIM": "Simethis mattiazzi",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Simethis mattiazzi"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4887",
+      "NOMBRE_RIOJA_VERBATIM": "Sixalix atropurpurea",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sixalix atropurpurea"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3916",
+      "NOMBRE_RIOJA_VERBATIM": "Solidago virgaurea subsp. fallit-tirones",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Solidago virgaurea subsp. fallit-tirones"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4780",
+      "NOMBRE_RIOJA_VERBATIM": "Sorbus aria subsp. aria",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sorbus aria subsp. aria"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4898",
+      "NOMBRE_RIOJA_VERBATIM": "Sorbus aucuparia subsp. aucuparia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sorbus aucuparia subsp. aucuparia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1941",
+      "NOMBRE_RIOJA_VERBATIM": "Sorbus mougeotii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Sorbus mougeotii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2231",
+      "NOMBRE_RIOJA_VERBATIM": "Stachys officinalis subsp. officinalis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Stachys officinalis subsp. officinalis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "923",
+      "NOMBRE_RIOJA_VERBATIM": "Stachys recta subsp. recta",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Stachys recta subsp. recta"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3394",
+      "NOMBRE_RIOJA_VERBATIM": "Taraxacum gr. erythrospermum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Taraxacum gr. erythrospermum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3397",
+      "NOMBRE_RIOJA_VERBATIM": "Taraxacum gr. officinale",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Taraxacum gr. officinale"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "392",
+      "NOMBRE_RIOJA_VERBATIM": "Taraxacum sp.",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Taraxacum sp."
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1690",
+      "NOMBRE_RIOJA_VERBATIM": "Tetragonolobus maritimus var. hirsutus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Tetragonolobus maritimus var. hirsutus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5313",
+      "NOMBRE_RIOJA_VERBATIM": "Tilia x vulgaris",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Tilia x vulgaris",
+        "Tilia × vulgaris"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4813",
+      "NOMBRE_RIOJA_VERBATIM": "Torilis arvensis subsp. arvensis",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Torilis arvensis subsp. arvensis"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2626",
+      "NOMBRE_RIOJA_VERBATIM": "Tragopogon lamottei",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Tragopogon lamottei"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1910",
+      "NOMBRE_RIOJA_VERBATIM": "Trifolium montanum subsp. montanum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Trifolium montanum subsp. montanum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "945",
+      "NOMBRE_RIOJA_VERBATIM": "Trifolium repens subsp. nevadense",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Trifolium repens subsp. nevadense"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "946",
+      "NOMBRE_RIOJA_VERBATIM": "Trifolium repens subsp. repens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Trifolium repens subsp. repens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3445",
+      "NOMBRE_RIOJA_VERBATIM": "Trinia glauca subsp. glauca",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Trinia glauca subsp. glauca"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3988",
+      "NOMBRE_RIOJA_VERBATIM": "Ulmus x hollandica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Ulmus x hollandica",
+        "Ulmus × hollandica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5271",
+      "NOMBRE_RIOJA_VERBATIM": "Valerianella carinata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Valerianella carinata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1582",
+      "NOMBRE_RIOJA_VERBATIM": "Valerianella lusitanica",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Valerianella lusitanica"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1969",
+      "NOMBRE_RIOJA_VERBATIM": "Valerianella muricata",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Valerianella muricata"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5343",
+      "NOMBRE_RIOJA_VERBATIM": "Verbascum rotundifolium ripacurcicum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Verbascum rotundifolium ripacurcicum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "240",
+      "NOMBRE_RIOJA_VERBATIM": "Verbascum thapsus subsp. crassifolium",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Verbascum thapsus subsp. crassifolium"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "241",
+      "NOMBRE_RIOJA_VERBATIM": "Verbascum thapsus subsp. montanum",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Verbascum thapsus subsp. montanum"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "242",
+      "NOMBRE_RIOJA_VERBATIM": "Verbascum thapsus subsp. thapsus",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Verbascum thapsus subsp. thapsus"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4923",
+      "NOMBRE_RIOJA_VERBATIM": "Veronica austriaca subsp. vahlii",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Veronica austriaca subsp. vahlii"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3512",
+      "NOMBRE_RIOJA_VERBATIM": "Veronica hederifolia subsp. hederifolia",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Veronica hederifolia subsp. hederifolia"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4640",
+      "NOMBRE_RIOJA_VERBATIM": "Vicia amphycarpa",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Vicia amphycarpa"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2372",
+      "NOMBRE_RIOJA_VERBATIM": "Vicia pannonica var. purpurascens",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Vicia pannonica var. purpurascens"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "105",
+      "NOMBRE_RIOJA_VERBATIM": "Vicia sativa subsp. nigra",
+      "TERMINAL_STATE": "HUMAN_REVIEW_REQUIRED",
+      "MITECO_IDTAXON": null,
+      "CANDIDATE_IDS": [],
+      "QUERIED_NAMES": [
+        "Vicia sativa subsp. nigra"
+      ],
+      "SPANISH_EVIDENCE": [],
+      "SOURCE_PLAN_COMPLETE": false,
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false
+    }
+  ]
+}

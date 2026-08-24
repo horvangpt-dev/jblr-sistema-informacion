@@ -1,0 +1,4076 @@
+{
+  "RUN_ID": "09_CORPUS_B_COLD_START_20260824_002",
+  "spanishDataset": {
+    "uuid": "91fecd78-0986-4713-9c36-77532846ee25",
+    "doi": "10.15468/opn9ki",
+    "url": "https://ipt.gbif.es/archive.do?r=taxonesfloraespanola",
+    "taxonFileSha256": "1226a11d4a39d70407fe94841be86c10e5e63d2e7578d40138f3b2b30d2953ae",
+    "headers": [
+      "id",
+      "taxonID",
+      "scientificNameID",
+      "nameAccordingToID",
+      "taxonConceptID",
+      "scientificName",
+      "nameAccordingTo",
+      "namePublishedIn",
+      "namePublishedInYear",
+      "higherClassification",
+      "kingdom",
+      "phylum",
+      "class",
+      "order",
+      "family",
+      "genus",
+      "specificEpithet",
+      "infraspecificEpithet",
+      "taxonRank",
+      "scientificNameAuthorship",
+      "taxonRemarks",
+      "modified",
+      "license",
+      "datasetID",
+      "datasetName"
+    ]
+  },
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "1891",
+      "originalName": "Acer monspessulanum x A. campestre",
+      "names": [
+        {
+          "name": "Acer monspessulanum x A. campestre",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1891"
+        },
+        {
+          "name": "Acer monspessulanum × A. campestre",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:1891"
+        },
+        {
+          "name": "Acer monspessulanum × Acer campestre",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1891"
+        },
+        {
+          "name": "Acer monspessulanum x Acer campestre",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1891"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "originalName": "Adenocarpus hispanicus subsp. neilense",
+      "names": [
+        {
+          "name": "Adenocarpus hispanicus subsp. neilense",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3600"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5517",
+      "originalName": "Agave americana",
+      "names": [
+        {
+          "name": "Agave americana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5517"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "originalName": "Alchemilla basaltica",
+      "names": [
+        {
+          "name": "Alchemilla basaltica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4981"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3143",
+      "originalName": "Alchemilla filicaulis var. vestita",
+      "names": [
+        {
+          "name": "Alchemilla filicaulis var. vestita",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3143"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1326",
+      "originalName": "Alchemilla plicatula",
+      "names": [
+        {
+          "name": "Alchemilla plicatula",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1326"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2250",
+      "originalName": "Allium oleraceum var. oleraceum",
+      "names": [
+        {
+          "name": "Allium oleraceum var. oleraceum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2250"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "156",
+      "originalName": "Allium schoenoprassum",
+      "names": [
+        {
+          "name": "Allium schoenoprassum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:156"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "300",
+      "originalName": "Allium senescens subsp. montanum",
+      "names": [
+        {
+          "name": "Allium senescens subsp. montanum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:300"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2545",
+      "originalName": "Anchusa italica",
+      "names": [
+        {
+          "name": "Anchusa italica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2545"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "895",
+      "originalName": "Andryala ragusina var. ragusina",
+      "names": [
+        {
+          "name": "Andryala ragusina var. ragusina",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:895"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4287",
+      "originalName": "Anteriorchis coriophora",
+      "names": [
+        {
+          "name": "Anteriorchis coriophora",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4287"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "originalName": "Anteriorchis coriophora var. carpetana",
+      "names": [
+        {
+          "name": "Anteriorchis coriophora var. carpetana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4286"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3261",
+      "originalName": "Anteriorchis fragrans",
+      "names": [
+        {
+          "name": "Anteriorchis fragrans",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3261"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "originalName": "Anthemis triumfettii",
+      "names": [
+        {
+          "name": "Anthemis triumfettii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3682"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1897",
+      "originalName": "Anthyllis montana subsp. hispanica",
+      "names": [
+        {
+          "name": "Anthyllis montana subsp. hispanica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1897"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4979",
+      "originalName": "Antirrhinum barrelieri",
+      "names": [
+        {
+          "name": "Antirrhinum barrelieri",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4979"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2285",
+      "originalName": "Arum orientale subsp. orientale",
+      "names": [
+        {
+          "name": "Arum orientale subsp. orientale",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2285"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "836",
+      "originalName": "Asperula pyrenaica",
+      "names": [
+        {
+          "name": "Asperula pyrenaica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:836"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "originalName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "names": [
+        {
+          "name": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4440"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3646",
+      "originalName": "Asplenium trichomanes subsp. hastatum",
+      "names": [
+        {
+          "name": "Asplenium trichomanes subsp. hastatum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3646"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3980",
+      "originalName": "Asplenium x alternifolium",
+      "names": [
+        {
+          "name": "Asplenium x alternifolium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3980"
+        },
+        {
+          "name": "Asplenium × alternifolium",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3980"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3997",
+      "originalName": "Asplenium x sarniense",
+      "names": [
+        {
+          "name": "Asplenium x sarniense",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3997"
+        },
+        {
+          "name": "Asplenium × sarniense",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3997"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3999",
+      "originalName": "Asplenium x souchei",
+      "names": [
+        {
+          "name": "Asplenium x souchei",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3999"
+        },
+        {
+          "name": "Asplenium × souchei",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3999"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4000",
+      "originalName": "Asplenium x staufferi",
+      "names": [
+        {
+          "name": "Asplenium x staufferi",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4000"
+        },
+        {
+          "name": "Asplenium × staufferi",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:4000"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4001",
+      "originalName": "Asplenium x ticinense",
+      "names": [
+        {
+          "name": "Asplenium x ticinense",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4001"
+        },
+        {
+          "name": "Asplenium × ticinense",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:4001"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "originalName": "Astragalus monspessulanus subsp. teresianus",
+      "names": [
+        {
+          "name": "Astragalus monspessulanus subsp. teresianus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1894"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "originalName": "Astragalus sempervirens subsp. muticus",
+      "names": [
+        {
+          "name": "Astragalus sempervirens subsp. muticus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:294"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "originalName": "Astragalus vesicarius subsp. vesicarius",
+      "names": [
+        {
+          "name": "Astragalus vesicarius subsp. vesicarius",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3862"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "originalName": "Atropa bella-donna",
+      "names": [
+        {
+          "name": "Atropa bella-donna",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4989"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "originalName": "Avenula bromoides subsp. pauneroi",
+      "names": [
+        {
+          "name": "Avenula bromoides subsp. pauneroi",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5099"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "originalName": "Avenula lodunensis subsp. romero-zarcoi",
+      "names": [
+        {
+          "name": "Avenula lodunensis subsp. romero-zarcoi",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1522"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1395",
+      "originalName": "Avenula pratensis subsp. iberica",
+      "names": [
+        {
+          "name": "Avenula pratensis subsp. iberica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1395"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1398",
+      "originalName": "Avenula pratensis var. paniculata",
+      "names": [
+        {
+          "name": "Avenula pratensis var. paniculata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1398"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1399",
+      "originalName": "Avenula pratensis var. vasconica",
+      "names": [
+        {
+          "name": "Avenula pratensis var. vasconica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1399"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "615",
+      "originalName": "Avenula sulcata subsp. sulcata",
+      "names": [
+        {
+          "name": "Avenula sulcata subsp. sulcata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:615"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5324",
+      "originalName": "Azolla spp.",
+      "names": [
+        {
+          "name": "Azolla spp.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5324"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2070",
+      "originalName": "Ballota nigra subsp. foetida",
+      "names": [
+        {
+          "name": "Ballota nigra subsp. foetida",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2070"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3688",
+      "originalName": "Bellardia trixago",
+      "names": [
+        {
+          "name": "Bellardia trixago",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3688"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4509",
+      "originalName": "Betula alba var. alba",
+      "names": [
+        {
+          "name": "Betula alba var. alba",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4509"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4510",
+      "originalName": "Betula alba var. glabrata",
+      "names": [
+        {
+          "name": "Betula alba var. glabrata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4510"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4065",
+      "originalName": "Betula celtiberica",
+      "names": [
+        {
+          "name": "Betula celtiberica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4065"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1192",
+      "originalName": "Betula pendula var. meridionalis",
+      "names": [
+        {
+          "name": "Betula pendula var. meridionalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1192"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3787",
+      "originalName": "Biscutella valentina var. laevigata",
+      "names": [
+        {
+          "name": "Biscutella valentina var. laevigata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3787"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3788",
+      "originalName": "Biscutella valentina var. valentina",
+      "names": [
+        {
+          "name": "Biscutella valentina var. valentina",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3788"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3789",
+      "originalName": "Biscutella valentina var. variegata",
+      "names": [
+        {
+          "name": "Biscutella valentina var. variegata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3789"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "415",
+      "originalName": "Blechnum spicant var. spicant",
+      "names": [
+        {
+          "name": "Blechnum spicant var. spicant",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:415"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1298",
+      "originalName": "Brachypodium pinnatum x B. phoenicoides",
+      "names": [
+        {
+          "name": "Brachypodium pinnatum x B. phoenicoides",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1298"
+        },
+        {
+          "name": "Brachypodium pinnatum × B. phoenicoides",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:1298"
+        },
+        {
+          "name": "Brachypodium pinnatum × Brachypodium phoenicoides",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1298"
+        },
+        {
+          "name": "Brachypodium pinnatum x Brachypodium phoenicoides",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1298"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4058",
+      "originalName": "Bromus catharticus",
+      "names": [
+        {
+          "name": "Bromus catharticus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4058"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4958",
+      "originalName": "Bupleurum baldense subsp. baldense",
+      "names": [
+        {
+          "name": "Bupleurum baldense subsp. baldense",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4958"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "910",
+      "originalName": "Bupleurum ranunculoides subsp. gramineus",
+      "names": [
+        {
+          "name": "Bupleurum ranunculoides subsp. gramineus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:910"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "911",
+      "originalName": "Bupleurum ranunculoides subsp. ranunculoides",
+      "names": [
+        {
+          "name": "Bupleurum ranunculoides subsp. ranunculoides",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:911"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "305",
+      "originalName": "Calystegia sepium subsp. sepium",
+      "names": [
+        {
+          "name": "Calystegia sepium subsp. sepium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:305"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3378",
+      "originalName": "Campanula glomerata subsp. glomerata",
+      "names": [
+        {
+          "name": "Campanula glomerata subsp. glomerata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3378"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3587",
+      "originalName": "Campanula hispanica",
+      "names": [
+        {
+          "name": "Campanula hispanica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3587"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1172",
+      "originalName": "Campanula paui",
+      "names": [
+        {
+          "name": "Campanula paui",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1172"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3629",
+      "originalName": "Campanula trachelium subsp. trachelium",
+      "names": [
+        {
+          "name": "Campanula trachelium subsp. trachelium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3629"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3767",
+      "originalName": "Campanula urbionensis",
+      "names": [
+        {
+          "name": "Campanula urbionensis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3767"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4858",
+      "originalName": "Carduus assoi",
+      "names": [
+        {
+          "name": "Carduus assoi",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4858"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2152",
+      "originalName": "Carduus nutans subsp. nutans",
+      "names": [
+        {
+          "name": "Carduus nutans subsp. nutans",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2152"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3164",
+      "originalName": "Carex flacca subsp. flacca",
+      "names": [
+        {
+          "name": "Carex flacca subsp. flacca",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3164"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3165",
+      "originalName": "Carex flacca subsp. serrulata",
+      "names": [
+        {
+          "name": "Carex flacca subsp. serrulata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3165"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3498",
+      "originalName": "Carex hallerana",
+      "names": [
+        {
+          "name": "Carex hallerana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3498"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1968",
+      "originalName": "Carex muricata subsp. lamprocarpa",
+      "names": [
+        {
+          "name": "Carex muricata subsp. lamprocarpa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1968"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2308",
+      "originalName": "Carex ovalis",
+      "names": [
+        {
+          "name": "Carex ovalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2308"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4021",
+      "originalName": "Carlina vulgaris subsp. vulgaris",
+      "names": [
+        {
+          "name": "Carlina vulgaris subsp. vulgaris",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4021"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2629",
+      "originalName": "Carthamus lanatus subsp. lanatus",
+      "names": [
+        {
+          "name": "Carthamus lanatus subsp. lanatus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2629"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2758",
+      "originalName": "Centaurea debeauxii subsp. nemoralis",
+      "names": [
+        {
+          "name": "Centaurea debeauxii subsp. nemoralis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2758"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2296",
+      "originalName": "Centaurea ornata x C. scabiosa",
+      "names": [
+        {
+          "name": "Centaurea ornata x C. scabiosa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2296"
+        },
+        {
+          "name": "Centaurea ornata × C. scabiosa",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:2296"
+        },
+        {
+          "name": "Centaurea ornata × Centaurea scabiosa",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:2296"
+        },
+        {
+          "name": "Centaurea ornata x Centaurea scabiosa",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:2296"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2367",
+      "originalName": "Centaurea paniculata subsp. castellana",
+      "names": [
+        {
+          "name": "Centaurea paniculata subsp. castellana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2367"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3681",
+      "originalName": "Centaurea triumfetti subsp. lingulata",
+      "names": [
+        {
+          "name": "Centaurea triumfetti subsp. lingulata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3681"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3903",
+      "originalName": "Centaurea vinyalsii",
+      "names": [
+        {
+          "name": "Centaurea vinyalsii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3903"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4002",
+      "originalName": "Centaurea x zubiae",
+      "names": [
+        {
+          "name": "Centaurea x zubiae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4002"
+        },
+        {
+          "name": "Centaurea × zubiae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:4002"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3006",
+      "originalName": "Centaurium erythraea subsp. grandiflorum",
+      "names": [
+        {
+          "name": "Centaurium erythraea subsp. grandiflorum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3006"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3007",
+      "originalName": "Centaurium erythraea subsp. majus",
+      "names": [
+        {
+          "name": "Centaurium erythraea subsp. majus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3007"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5177",
+      "originalName": "Centranthus calcitrapae subsp. calcitrapae",
+      "names": [
+        {
+          "name": "Centranthus calcitrapae subsp. calcitrapae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5177"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5080",
+      "originalName": "Cerastium brachypetalum var. brachypetalum",
+      "names": [
+        {
+          "name": "Cerastium brachypetalum var. brachypetalum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5080"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2289",
+      "originalName": "Chaenorhinum origanifolium subsp. crassifolium",
+      "names": [
+        {
+          "name": "Chaenorhinum origanifolium subsp. crassifolium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2289"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "originalName": "Chaenorhinum rupestre",
+      "names": [
+        {
+          "name": "Chaenorhinum rupestre",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1117"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "686",
+      "originalName": "Chaerophyllum temulentum",
+      "names": [
+        {
+          "name": "Chaerophyllum temulentum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:686"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4419",
+      "originalName": "Cheilanthes acrostica",
+      "names": [
+        {
+          "name": "Cheilanthes acrostica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4419"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4781",
+      "originalName": "Cicer arietinum",
+      "names": [
+        {
+          "name": "Cicer arietinum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4781"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "839",
+      "originalName": "Cirsium pyrenaicum var. longespinosum",
+      "names": [
+        {
+          "name": "Cirsium pyrenaicum var. longespinosum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:839"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "840",
+      "originalName": "Cirsium pyrenaicum var. pyrenaicum",
+      "names": [
+        {
+          "name": "Cirsium pyrenaicum var. pyrenaicum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:840"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "974",
+      "originalName": "Cirsium richterianum",
+      "names": [
+        {
+          "name": "Cirsium richterianum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:974"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1367",
+      "originalName": "Cistus populifolius x C. Salvifolius",
+      "names": [
+        {
+          "name": "Cistus populifolius x C. Salvifolius",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1367"
+        },
+        {
+          "name": "Cistus populifolius × C. Salvifolius",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:1367"
+        },
+        {
+          "name": "Cistus populifolius × Cistus Salvifolius",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1367"
+        },
+        {
+          "name": "Cistus populifolius x Cistus Salvifolius",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1367"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "79",
+      "originalName": "Cistus salvifolius",
+      "names": [
+        {
+          "name": "Cistus salvifolius",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:79"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4871",
+      "originalName": "Colutea atlantica",
+      "names": [
+        {
+          "name": "Colutea atlantica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4871"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5071",
+      "originalName": "Conopodium bourgaei",
+      "names": [
+        {
+          "name": "Conopodium bourgaei",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5071"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5244",
+      "originalName": "Conopodium capillifolium",
+      "names": [
+        {
+          "name": "Conopodium capillifolium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5244"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "907",
+      "originalName": "Conopodium ramosum",
+      "names": [
+        {
+          "name": "Conopodium ramosum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:907"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3784",
+      "originalName": "Coronilla valentina subsp. glauca",
+      "names": [
+        {
+          "name": "Coronilla valentina subsp. glauca",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3784"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5325",
+      "originalName": "Cortaderia spp.",
+      "names": [
+        {
+          "name": "Cortaderia spp.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5325"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2015",
+      "originalName": "Cotoneaster nebrodensis",
+      "names": [
+        {
+          "name": "Cotoneaster nebrodensis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2015"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1878",
+      "originalName": "Crataegus monogyna subsp. brevispina",
+      "names": [
+        {
+          "name": "Crataegus monogyna subsp. brevispina",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1878"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1879",
+      "originalName": "Crataegus monogyna subsp. monogyna",
+      "names": [
+        {
+          "name": "Crataegus monogyna subsp. monogyna",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1879"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5528",
+      "originalName": "Cylindropuntia spp.",
+      "names": [
+        {
+          "name": "Cylindropuntia spp.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5528"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4957",
+      "originalName": "Cytisus balansae subsp. europaeus",
+      "names": [
+        {
+          "name": "Cytisus balansae subsp. europaeus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4957"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "173",
+      "originalName": "Cytisus scoparius subsp. cantabricus",
+      "names": [
+        {
+          "name": "Cytisus scoparius subsp. cantabricus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:173"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3594",
+      "originalName": "Dactylis hispanica",
+      "names": [
+        {
+          "name": "Dactylis hispanica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3594"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2934",
+      "originalName": "Dactylorhiza elata subsp. sesquipedalis",
+      "names": [
+        {
+          "name": "Dactylorhiza elata subsp. sesquipedalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2934"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2994",
+      "originalName": "Dactylorhiza ericetorum",
+      "names": [
+        {
+          "name": "Dactylorhiza ericetorum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2994"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2483",
+      "originalName": "Dactylorhiza incarnata subsp. incarnata",
+      "names": [
+        {
+          "name": "Dactylorhiza incarnata subsp. incarnata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2483"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1624",
+      "originalName": "Dactylorhiza maculata subsp. elodes",
+      "names": [
+        {
+          "name": "Dactylorhiza maculata subsp. elodes",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1624"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1625",
+      "originalName": "Dactylorhiza maculata subsp. maculata",
+      "names": [
+        {
+          "name": "Dactylorhiza maculata subsp. maculata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1625"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1647",
+      "originalName": "Dactylorhiza majalis subsp. majalis",
+      "names": [
+        {
+          "name": "Dactylorhiza majalis subsp. majalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1647"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1696",
+      "originalName": "Dactylorhiza markusii",
+      "names": [
+        {
+          "name": "Dactylorhiza markusii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1696"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3595",
+      "originalName": "Deschampsia hispanica",
+      "names": [
+        {
+          "name": "Deschampsia hispanica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3595"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2816",
+      "originalName": "Doronicum diazii",
+      "names": [
+        {
+          "name": "Doronicum diazii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2816"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1204",
+      "originalName": "Dorycnium pentaphyllum subsp. pentaphyllum",
+      "names": [
+        {
+          "name": "Dorycnium pentaphyllum subsp. pentaphyllum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1204"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4480",
+      "originalName": "Dryopteris affinis subsp. cambrensis",
+      "names": [
+        {
+          "name": "Dryopteris affinis subsp. cambrensis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4480"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4481",
+      "originalName": "Dryopteris affinis var. borreri",
+      "names": [
+        {
+          "name": "Dryopteris affinis var. borreri",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4481"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4482",
+      "originalName": "Dryopteris affinis var. robusta",
+      "names": [
+        {
+          "name": "Dryopteris affinis var. robusta",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4482"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5527",
+      "originalName": "Dryopteris mindshelkensis",
+      "names": [
+        {
+          "name": "Dryopteris mindshelkensis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5527"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3981",
+      "originalName": "Dryopteris x ambroseae",
+      "names": [
+        {
+          "name": "Dryopteris x ambroseae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3981"
+        },
+        {
+          "name": "Dryopteris × ambroseae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3981"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3992",
+      "originalName": "Dryopteris x mantoniae",
+      "names": [
+        {
+          "name": "Dryopteris x mantoniae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3992"
+        },
+        {
+          "name": "Dryopteris × mantoniae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3992"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4850",
+      "originalName": "Echium asperrinum",
+      "names": [
+        {
+          "name": "Echium asperrinum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4850"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3592",
+      "originalName": "Epipactis hispanica",
+      "names": [
+        {
+          "name": "Epipactis hispanica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3592"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1156",
+      "originalName": "Epipactis parviflora",
+      "names": [
+        {
+          "name": "Epipactis parviflora",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1156"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1250",
+      "originalName": "Epipactis phyllanthes var. fageticola",
+      "names": [
+        {
+          "name": "Epipactis phyllanthes var. fageticola",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1250"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3990",
+      "originalName": "Equisetum x litorale",
+      "names": [
+        {
+          "name": "Equisetum x litorale",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3990"
+        },
+        {
+          "name": "Equisetum × litorale",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3990"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4802",
+      "originalName": "Festuca arundinacea subsp. fenas",
+      "names": [
+        {
+          "name": "Festuca arundinacea subsp. fenas",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4802"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3536",
+      "originalName": "Festuca heterophylla subsp. braun-blanquetii",
+      "names": [
+        {
+          "name": "Festuca heterophylla subsp. braun-blanquetii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3536"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2316",
+      "originalName": "Festuca ovina var. glauca",
+      "names": [
+        {
+          "name": "Festuca ovina var. glauca",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2316"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "394",
+      "originalName": "Festuca sp.",
+      "names": [
+        {
+          "name": "Festuca sp.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:394"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3720",
+      "originalName": "Filipendula ulmaria subsp. ulmaria",
+      "names": [
+        {
+          "name": "Filipendula ulmaria subsp. ulmaria",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3720"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2043",
+      "originalName": "Fritillaria nervosa subsp. nervosa",
+      "names": [
+        {
+          "name": "Fritillaria nervosa subsp. nervosa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2043"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3250",
+      "originalName": "Gagea fragifera",
+      "names": [
+        {
+          "name": "Gagea fragifera",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3250"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2054",
+      "originalName": "Gagea nevadensis gr.",
+      "names": [
+        {
+          "name": "Gagea nevadensis gr.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2054"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4676",
+      "originalName": "Galeopsis angustifolia subsp. carpetana",
+      "names": [
+        {
+          "name": "Galeopsis angustifolia subsp. carpetana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4676"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4547",
+      "originalName": "Galium album subsp. album",
+      "names": [
+        {
+          "name": "Galium album subsp. album",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4547"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4300",
+      "originalName": "Galium corrudifolium",
+      "names": [
+        {
+          "name": "Galium corrudifolium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4300"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2865",
+      "originalName": "Galium divaricatum",
+      "names": [
+        {
+          "name": "Galium divaricatum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2865"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3271",
+      "originalName": "Galium fruticescens",
+      "names": [
+        {
+          "name": "Galium fruticescens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3271"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1285",
+      "originalName": "Galium pinetorum",
+      "names": [
+        {
+          "name": "Galium pinetorum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1285"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "489",
+      "originalName": "Galium spurium",
+      "names": [
+        {
+          "name": "Galium spurium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:489"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4133",
+      "originalName": "Genista cinerea subsp. ausetana",
+      "names": [
+        {
+          "name": "Genista cinerea subsp. ausetana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4133"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4134",
+      "originalName": "Genista cinerea subsp. cinerea",
+      "names": [
+        {
+          "name": "Genista cinerea subsp. cinerea",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4134"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3203",
+      "originalName": "Genista florida subsp. polygaliphylla",
+      "names": [
+        {
+          "name": "Genista florida subsp. polygaliphylla",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3203"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "68",
+      "originalName": "Genista sagittalis",
+      "names": [
+        {
+          "name": "Genista sagittalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:68"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4677",
+      "originalName": "Gentiana angustifolia subsp. occidentalis",
+      "names": [
+        {
+          "name": "Gentiana angustifolia subsp. occidentalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4677"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2789",
+      "originalName": "Gymnadenia densiflora",
+      "names": [
+        {
+          "name": "Gymnadenia densiflora",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2789"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4240",
+      "originalName": "Hedysarum confertum",
+      "names": [
+        {
+          "name": "Hedysarum confertum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4240"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2149",
+      "originalName": "Helianthemum nummularium subsp. nummularium",
+      "names": [
+        {
+          "name": "Helianthemum nummularium subsp. nummularium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2149"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "412",
+      "originalName": "Heracleum sphondylium subsp. montanum",
+      "names": [
+        {
+          "name": "Heracleum sphondylium subsp. montanum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:412"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "413",
+      "originalName": "Heracleum sphondylium subsp. pyrenaicum",
+      "names": [
+        {
+          "name": "Heracleum sphondylium subsp. pyrenaicum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:413"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3272",
+      "originalName": "Herniaria fruticosa var. fruticosa",
+      "names": [
+        {
+          "name": "Herniaria fruticosa var. fruticosa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3272"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3428",
+      "originalName": "Herniaria glabra var. glabra",
+      "names": [
+        {
+          "name": "Herniaria glabra var. glabra",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3428"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "136",
+      "originalName": "Herniaria scabrida var. glabrescens",
+      "names": [
+        {
+          "name": "Herniaria scabrida var. glabrescens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:136"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "137",
+      "originalName": "Herniaria scabrida var. scabrida",
+      "names": [
+        {
+          "name": "Herniaria scabrida var. scabrida",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:137"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4776",
+      "originalName": "Hieracium argillaceum",
+      "names": [
+        {
+          "name": "Hieracium argillaceum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4776"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2602",
+      "originalName": "Hieracium lactucella subsp. lactucella",
+      "names": [
+        {
+          "name": "Hieracium lactucella subsp. lactucella",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2602"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2120",
+      "originalName": "Hieracium niveum",
+      "names": [
+        {
+          "name": "Hieracium niveum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2120"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1270",
+      "originalName": "Hieracium pilosella subsp. micradenium",
+      "names": [
+        {
+          "name": "Hieracium pilosella subsp. micradenium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1270"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1271",
+      "originalName": "Hieracium pilosella subsp. pilosella",
+      "names": [
+        {
+          "name": "Hieracium pilosella subsp. pilosella",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1271"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1272",
+      "originalName": "Hieracium pilosella subsp. tricholepium",
+      "names": [
+        {
+          "name": "Hieracium pilosella subsp. tricholepium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1272"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3555",
+      "originalName": "Himantoglossum hircinum subsp. hircinum",
+      "names": [
+        {
+          "name": "Himantoglossum hircinum subsp. hircinum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3555"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4217",
+      "originalName": "Hippocrepis comosa subsp. squamata",
+      "names": [
+        {
+          "name": "Hippocrepis comosa subsp. squamata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4217"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3429",
+      "originalName": "Hypochoeris glabra",
+      "names": [
+        {
+          "name": "Hypochoeris glabra",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3429"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "892",
+      "originalName": "Hypochoeris radicata",
+      "names": [
+        {
+          "name": "Hypochoeris radicata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:892"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4342",
+      "originalName": "Jasione crispa subsp. centralis",
+      "names": [
+        {
+          "name": "Jasione crispa subsp. centralis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4342"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4343",
+      "originalName": "Jasione crispa subsp. sessiliflora",
+      "names": [
+        {
+          "name": "Jasione crispa subsp. sessiliflora",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4343"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2617",
+      "originalName": "Jasione laevis subsp. carpetana",
+      "names": [
+        {
+          "name": "Jasione laevis subsp. carpetana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2617"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2618",
+      "originalName": "Jasione laevis subsp. laevis",
+      "names": [
+        {
+          "name": "Jasione laevis subsp. laevis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2618"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4244",
+      "originalName": "Juncus conglomeratus var. conglomeratus",
+      "names": [
+        {
+          "name": "Juncus conglomeratus var. conglomeratus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4244"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4245",
+      "originalName": "Juncus conglomeratus var. laxus",
+      "names": [
+        {
+          "name": "Juncus conglomeratus var. laxus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4245"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2929",
+      "originalName": "Juncus effusus var. effusus",
+      "names": [
+        {
+          "name": "Juncus effusus var. effusus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2929"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2930",
+      "originalName": "Juncus effusus var. subglomeratus",
+      "names": [
+        {
+          "name": "Juncus effusus var. subglomeratus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2930"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2500",
+      "originalName": "Juncus inflexus var. inflexus",
+      "names": [
+        {
+          "name": "Juncus inflexus var. inflexus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2500"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "687",
+      "originalName": "Juncus tenageia subsp. tenageia",
+      "names": [
+        {
+          "name": "Juncus tenageia subsp. tenageia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:687"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4837",
+      "originalName": "Knautia arvernensis",
+      "names": [
+        {
+          "name": "Knautia arvernensis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4837"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "781",
+      "originalName": "Knautia purpurea",
+      "names": [
+        {
+          "name": "Knautia purpurea",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:781"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "591",
+      "originalName": "Knautia subscaposa subsp. subscaposa",
+      "names": [
+        {
+          "name": "Knautia subscaposa subsp. subscaposa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:591"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5335",
+      "originalName": "Koeleria pyramidata subsp. pyramidata",
+      "names": [
+        {
+          "name": "Koeleria pyramidata subsp. pyramidata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5335"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2063",
+      "originalName": "Lathyrus niger subsp. niger",
+      "names": [
+        {
+          "name": "Lathyrus niger subsp. niger",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2063"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "531",
+      "originalName": "Lavandula stoechas subsp. pedunculata",
+      "names": [
+        {
+          "name": "Lavandula stoechas subsp. pedunculata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:531"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5298",
+      "originalName": "Legousia castellana",
+      "names": [
+        {
+          "name": "Legousia castellana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5298"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "670",
+      "originalName": "Leontodon taraxacoides subsp. hispidus",
+      "names": [
+        {
+          "name": "Leontodon taraxacoides subsp. hispidus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:670"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2538",
+      "originalName": "Leucanthemum ircutianum",
+      "names": [
+        {
+          "name": "Leucanthemum ircutianum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2538"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4589",
+      "originalName": "Linaria alpina var. aciculifolia",
+      "names": [
+        {
+          "name": "Linaria alpina var. aciculifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4589"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1433",
+      "originalName": "Linaria proxima",
+      "names": [
+        {
+          "name": "Linaria proxima",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1433"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4809",
+      "originalName": "Lithospermum arvense",
+      "names": [
+        {
+          "name": "Lithospermum arvense",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4809"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2487",
+      "originalName": "Lithospermum incrassatum",
+      "names": [
+        {
+          "name": "Lithospermum incrassatum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2487"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "789",
+      "originalName": "Lithospermum purpurocaeruleum",
+      "names": [
+        {
+          "name": "Lithospermum purpurocaeruleum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:789"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3758",
+      "originalName": "Littorela uniflora",
+      "names": [
+        {
+          "name": "Littorela uniflora",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3758"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5255",
+      "originalName": "Lonicera caprifolium",
+      "names": [
+        {
+          "name": "Lonicera caprifolium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5255"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1693",
+      "originalName": "Lotus maritimus",
+      "names": [
+        {
+          "name": "Lotus maritimus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1693"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1412",
+      "originalName": "Lotus preslii",
+      "names": [
+        {
+          "name": "Lotus preslii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1412"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5516",
+      "originalName": "Ludwigia spp.",
+      "names": [
+        {
+          "name": "Ludwigia spp.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5516"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5195",
+      "originalName": "Luzula campestris subsp. carpetana",
+      "names": [
+        {
+          "name": "Luzula campestris subsp. carpetana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5195"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1949",
+      "originalName": "Luzula multiflora subsp. congesta",
+      "names": [
+        {
+          "name": "Luzula multiflora subsp. congesta",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1949"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "636",
+      "originalName": "Luzula sylvatica subsp. henriquesii",
+      "names": [
+        {
+          "name": "Luzula sylvatica subsp. henriquesii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:636"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2037",
+      "originalName": "Lysimachia nemorun",
+      "names": [
+        {
+          "name": "Lysimachia nemorun",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2037"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1883",
+      "originalName": "Medicago monspeliaca",
+      "names": [
+        {
+          "name": "Medicago monspeliaca",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1883"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1343",
+      "originalName": "Medicago polyceratia",
+      "names": [
+        {
+          "name": "Medicago polyceratia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1343"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "106",
+      "originalName": "Medicago sativa subsp. sativa",
+      "names": [
+        {
+          "name": "Medicago sativa subsp. sativa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:106"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4615",
+      "originalName": "Melilotus altissima",
+      "names": [
+        {
+          "name": "Melilotus altissima",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4615"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2012",
+      "originalName": "Melilotus neapolitanus",
+      "names": [
+        {
+          "name": "Melilotus neapolitanus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2012"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1755",
+      "originalName": "Melittis melissophyllum subsp. melissophyllum",
+      "names": [
+        {
+          "name": "Melittis melissophyllum subsp. melissophyllum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1755"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3986",
+      "originalName": "Mentha x dumetorum",
+      "names": [
+        {
+          "name": "Mentha x dumetorum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3986"
+        },
+        {
+          "name": "Mentha × dumetorum",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3986"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2034",
+      "originalName": "Myosotis nemorosa",
+      "names": [
+        {
+          "name": "Myosotis nemorosa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2034"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "900",
+      "originalName": "Myosotis ramosissima subsp. globularis",
+      "names": [
+        {
+          "name": "Myosotis ramosissima subsp. globularis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:900"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5122",
+      "originalName": "Narcissus bulbocodium subsp. bulbocodium",
+      "names": [
+        {
+          "name": "Narcissus bulbocodium subsp. bulbocodium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5122"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2041",
+      "originalName": "Nepeta nepetella subsp. cordifolia",
+      "names": [
+        {
+          "name": "Nepeta nepetella subsp. cordifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2041"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2953",
+      "originalName": "Odontites eliassennenii",
+      "names": [
+        {
+          "name": "Odontites eliassennenii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2953"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1529",
+      "originalName": "Odontites longiflora",
+      "names": [
+        {
+          "name": "Odontites longiflora",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1529"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3843",
+      "originalName": "Odontites verna",
+      "names": [
+        {
+          "name": "Odontites verna",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3843"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3837",
+      "originalName": "Odontites verna subsp. serotina",
+      "names": [
+        {
+          "name": "Odontites verna subsp. serotina",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3837"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3839",
+      "originalName": "Odontites verna subsp. verna",
+      "names": [
+        {
+          "name": "Odontites verna subsp. verna",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3839"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3942",
+      "originalName": "Odontites viscosa",
+      "names": [
+        {
+          "name": "Odontites viscosa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3942"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "624",
+      "originalName": "Omalotheca supina subsp. pusilla",
+      "names": [
+        {
+          "name": "Omalotheca supina subsp. pusilla",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:624"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "635",
+      "originalName": "Omalotheca sylvatica subsp. carpetana",
+      "names": [
+        {
+          "name": "Omalotheca sylvatica subsp. carpetana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:635"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2008",
+      "originalName": "Ononis natrix subsp. natrix",
+      "names": [
+        {
+          "name": "Ononis natrix subsp. natrix",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2008"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4403",
+      "originalName": "Onopordon acanthium",
+      "names": [
+        {
+          "name": "Onopordon acanthium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4403"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4309",
+      "originalName": "Onopordon corymbosum",
+      "names": [
+        {
+          "name": "Onopordon corymbosum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4309"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2045",
+      "originalName": "Onopordon nervosum",
+      "names": [
+        {
+          "name": "Onopordon nervosum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2045"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4407",
+      "originalName": "Onopordum acaulon subsp. acaulon",
+      "names": [
+        {
+          "name": "Onopordum acaulon subsp. acaulon",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4407"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4791",
+      "originalName": "Ophrys arnoldii",
+      "names": [
+        {
+          "name": "Ophrys arnoldii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4791"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5031",
+      "originalName": "Ophrys bilunulata",
+      "names": [
+        {
+          "name": "Ophrys bilunulata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5031"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5299",
+      "originalName": "Ophrys castellana",
+      "names": [
+        {
+          "name": "Ophrys castellana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5299"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2916",
+      "originalName": "Ophrys dyris",
+      "names": [
+        {
+          "name": "Ophrys dyris",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2916"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3310",
+      "originalName": "Ophrys fusca gr.",
+      "names": [
+        {
+          "name": "Ophrys fusca gr.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3310"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2488",
+      "originalName": "Ophrys incubacea",
+      "names": [
+        {
+          "name": "Ophrys incubacea",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2488"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1567",
+      "originalName": "Ophrys lupercalis",
+      "names": [
+        {
+          "name": "Ophrys lupercalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1567"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1568",
+      "originalName": "Ophrys lupercalis x O. bilunulata",
+      "names": [
+        {
+          "name": "Ophrys lupercalis x O. bilunulata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1568"
+        },
+        {
+          "name": "Ophrys lupercalis × O. bilunulata",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:1568"
+        },
+        {
+          "name": "Ophrys lupercalis × Ophrys bilunulata",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1568"
+        },
+        {
+          "name": "Ophrys lupercalis x Ophrys bilunulata",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1568"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1166",
+      "originalName": "Ophrys passionis",
+      "names": [
+        {
+          "name": "Ophrys passionis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1166"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1261",
+      "originalName": "Ophrys picta",
+      "names": [
+        {
+          "name": "Ophrys picta",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1261"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "986",
+      "originalName": "Ophrys riojana",
+      "names": [
+        {
+          "name": "Ophrys riojana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:986"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5320",
+      "originalName": "Ophrys scolopax subsp. scolopax",
+      "names": [
+        {
+          "name": "Ophrys scolopax subsp. scolopax",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5320"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "167",
+      "originalName": "Ophrys scolopax x O. tenthredinifera",
+      "names": [
+        {
+          "name": "Ophrys scolopax x O. tenthredinifera",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:167"
+        },
+        {
+          "name": "Ophrys scolopax × O. tenthredinifera",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:167"
+        },
+        {
+          "name": "Ophrys scolopax × Ophrys tenthredinifera",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:167"
+        },
+        {
+          "name": "Ophrys scolopax x Ophrys tenthredinifera",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:167"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3813",
+      "originalName": "Ophrys vasconica",
+      "names": [
+        {
+          "name": "Ophrys vasconica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3813"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3991",
+      "originalName": "Ophrys x manfredoniae",
+      "names": [
+        {
+          "name": "Ophrys x manfredoniae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3991"
+        },
+        {
+          "name": "Ophrys × manfredoniae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3991"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4092",
+      "originalName": "Orchis champagneuxii",
+      "names": [
+        {
+          "name": "Orchis champagneuxii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4092"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3262",
+      "originalName": "Orchis fragrans",
+      "names": [
+        {
+          "name": "Orchis fragrans",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3262"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1262",
+      "originalName": "Orchis picta",
+      "names": [
+        {
+          "name": "Orchis picta",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1262"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "784",
+      "originalName": "Orchis purpurea x Aceras anthropophorum",
+      "names": [
+        {
+          "name": "Orchis purpurea x Aceras anthropophorum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:784"
+        },
+        {
+          "name": "Orchis purpurea × Aceras anthropophorum",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:784"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2620",
+      "originalName": "Orobanche laevis",
+      "names": [
+        {
+          "name": "Orobanche laevis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2620"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5337",
+      "originalName": "Orobanche leptantha",
+      "names": [
+        {
+          "name": "Orobanche leptantha",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5337"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4770",
+      "originalName": "Paronychia argentea var. argentea",
+      "names": [
+        {
+          "name": "Paronychia argentea var. argentea",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4770"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5247",
+      "originalName": "Paronychia capitata var. capitata",
+      "names": [
+        {
+          "name": "Paronychia capitata var. capitata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5247"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2582",
+      "originalName": "Paronychia kapela var. pseudoaretioides",
+      "names": [
+        {
+          "name": "Paronychia kapela var. pseudoaretioides",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2582"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1348",
+      "originalName": "Paronychia polygonifolia var. polygonifolia",
+      "names": [
+        {
+          "name": "Paronychia polygonifolia var. polygonifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1348"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2228",
+      "originalName": "Peucedanum officinales subsp. officinale",
+      "names": [
+        {
+          "name": "Peucedanum officinales subsp. officinale",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2228"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "843",
+      "originalName": "Phyteuma pyrenaicum",
+      "names": [
+        {
+          "name": "Phyteuma pyrenaicum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:843"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "391",
+      "originalName": "Pilosella sp.",
+      "names": [
+        {
+          "name": "Pilosella sp.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:391"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3402",
+      "originalName": "Pimpinella gracilis",
+      "names": [
+        {
+          "name": "Pimpinella gracilis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3402"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3401",
+      "originalName": "Pimpinella gracilis subsp. puberula",
+      "names": [
+        {
+          "name": "Pimpinella gracilis subsp. puberula",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3401"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4588",
+      "originalName": "Plantago alpina subsp. penyalarensis",
+      "names": [
+        {
+          "name": "Plantago alpina subsp. penyalarensis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4588"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4876",
+      "originalName": "Plantago atrata subsp. discolor",
+      "names": [
+        {
+          "name": "Plantago atrata subsp. discolor",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4876"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4172",
+      "originalName": "Platanthera clorantha",
+      "names": [
+        {
+          "name": "Platanthera clorantha",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4172"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5125",
+      "originalName": "Poa bulbosa var. vivipara",
+      "names": [
+        {
+          "name": "Poa bulbosa var. vivipara",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5125"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3993",
+      "originalName": "Polypodium x mantoniae",
+      "names": [
+        {
+          "name": "Polypodium x mantoniae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3993"
+        },
+        {
+          "name": "Polypodium × mantoniae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3993"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3998",
+      "originalName": "Polypodium x shivasiae",
+      "names": [
+        {
+          "name": "Polypodium x shivasiae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3998"
+        },
+        {
+          "name": "Polypodium × shivasiae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3998"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3983",
+      "originalName": "Polystichum x bicknellii",
+      "names": [
+        {
+          "name": "Polystichum x bicknellii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3983"
+        },
+        {
+          "name": "Polystichum × bicknellii",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3983"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3989",
+      "originalName": "Polystichum x illyricum",
+      "names": [
+        {
+          "name": "Polystichum x illyricum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3989"
+        },
+        {
+          "name": "Polystichum × illyricum",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3989"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2071",
+      "originalName": "Populus nigra var. italica",
+      "names": [
+        {
+          "name": "Populus nigra var. italica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2071"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "662",
+      "originalName": "Potentilla tabernaemontani",
+      "names": [
+        {
+          "name": "Potentilla tabernaemontani",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:662"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3817",
+      "originalName": "Potentilla velutina",
+      "names": [
+        {
+          "name": "Potentilla velutina",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3817"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3833",
+      "originalName": "Primula veris subsp. suaveolens",
+      "names": [
+        {
+          "name": "Primula veris subsp. suaveolens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3833"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3507",
+      "originalName": "Prunella hastifolia",
+      "names": [
+        {
+          "name": "Prunella hastifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3507"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4077",
+      "originalName": "Quercus cerrioides",
+      "names": [
+        {
+          "name": "Quercus cerrioides",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4077"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3082",
+      "originalName": "Quercus faginea x Q. pusbescens",
+      "names": [
+        {
+          "name": "Quercus faginea x Q. pusbescens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3082"
+        },
+        {
+          "name": "Quercus faginea × Q. pusbescens",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3082"
+        },
+        {
+          "name": "Quercus faginea × Quercus pusbescens",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:3082"
+        },
+        {
+          "name": "Quercus faginea x Quercus pusbescens",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:3082"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3083",
+      "originalName": "Quercus faginea x Q. pyrenaica",
+      "names": [
+        {
+          "name": "Quercus faginea x Q. pyrenaica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3083"
+        },
+        {
+          "name": "Quercus faginea × Q. pyrenaica",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3083"
+        },
+        {
+          "name": "Quercus faginea × Quercus pyrenaica",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:3083"
+        },
+        {
+          "name": "Quercus faginea x Quercus pyrenaica",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:3083"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3626",
+      "originalName": "Quercus pubescens",
+      "names": [
+        {
+          "name": "Quercus pubescens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3626"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "791",
+      "originalName": "Quercus pusbescens x Q. pyrenaica",
+      "names": [
+        {
+          "name": "Quercus pusbescens x Q. pyrenaica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:791"
+        },
+        {
+          "name": "Quercus pusbescens × Q. pyrenaica",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:791"
+        },
+        {
+          "name": "Quercus pusbescens × Quercus pyrenaica",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:791"
+        },
+        {
+          "name": "Quercus pusbescens x Quercus pyrenaica",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:791"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5127",
+      "originalName": "Ranunculus bulbosus var. aleae",
+      "names": [
+        {
+          "name": "Ranunculus bulbosus var. aleae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5127"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5128",
+      "originalName": "Ranunculus bulbosus var. hispanicus",
+      "names": [
+        {
+          "name": "Ranunculus bulbosus var. hispanicus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5128"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1189",
+      "originalName": "Ranunculus peltatus var. peltatus",
+      "names": [
+        {
+          "name": "Ranunculus peltatus var. peltatus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1189"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1614",
+      "originalName": "Rhamnus lycioides subsp. velutina",
+      "names": [
+        {
+          "name": "Rhamnus lycioides subsp. velutina",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1614"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1733",
+      "originalName": "Rhinanthus mediterraneus",
+      "names": [
+        {
+          "name": "Rhinanthus mediterraneus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1733"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1442",
+      "originalName": "Robinia pseudacacia",
+      "names": [
+        {
+          "name": "Robinia pseudacacia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1442"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5338",
+      "originalName": "Rorippa sylvestris sylvestris",
+      "names": [
+        {
+          "name": "Rorippa sylvestris sylvestris",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5338"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2111",
+      "originalName": "Rosa nitidula",
+      "names": [
+        {
+          "name": "Rosa nitidula",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2111"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5157",
+      "originalName": "Rubus caesius x R. ulmifolius",
+      "names": [
+        {
+          "name": "Rubus caesius x R. ulmifolius",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5157"
+        },
+        {
+          "name": "Rubus caesius × R. ulmifolius",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:5157"
+        },
+        {
+          "name": "Rubus caesius × Rubus ulmifolius",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:5157"
+        },
+        {
+          "name": "Rubus caesius x Rubus ulmifolius",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:5157"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4884",
+      "originalName": "Salix atrocinerea x S. caprea",
+      "names": [
+        {
+          "name": "Salix atrocinerea x S. caprea",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4884"
+        },
+        {
+          "name": "Salix atrocinerea × S. caprea",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:4884"
+        },
+        {
+          "name": "Salix atrocinerea × Salix caprea",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:4884"
+        },
+        {
+          "name": "Salix atrocinerea x Salix caprea",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:4884"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2944",
+      "originalName": "Salix eleagnos subsp. angustifolia",
+      "names": [
+        {
+          "name": "Salix eleagnos subsp. angustifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2944"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "779",
+      "originalName": "Salix purpurea var. lambertiana",
+      "names": [
+        {
+          "name": "Salix purpurea var. lambertiana",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:779"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "78",
+      "originalName": "Salix salvifolia",
+      "names": [
+        {
+          "name": "Salix salvifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:78"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3995",
+      "originalName": "Salix x neotricha",
+      "names": [
+        {
+          "name": "Salix x neotricha",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3995"
+        },
+        {
+          "name": "Salix × neotricha",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3995"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3996",
+      "originalName": "Salix x rubens",
+      "names": [
+        {
+          "name": "Salix x rubens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3996"
+        },
+        {
+          "name": "Salix × rubens",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3996"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1821",
+      "originalName": "Sanguisorba minor subsp. muricata",
+      "names": [
+        {
+          "name": "Sanguisorba minor subsp. muricata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1821"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "originalName": "Satureja acinos",
+      "names": [
+        {
+          "name": "Satureja acinos",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4415"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4593",
+      "originalName": "Satureja alpina",
+      "names": [
+        {
+          "name": "Satureja alpina",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4593"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4839",
+      "originalName": "Satureja ascendens",
+      "names": [
+        {
+          "name": "Satureja ascendens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4839"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4023",
+      "originalName": "Satureja vulgaris subsp. vulgaris",
+      "names": [
+        {
+          "name": "Satureja vulgaris subsp. vulgaris",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4023"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4377",
+      "originalName": "Saxifraga cuneata x S. fragosoi",
+      "names": [
+        {
+          "name": "Saxifraga cuneata x S. fragosoi",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4377"
+        },
+        {
+          "name": "Saxifraga cuneata × S. fragosoi",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:4377"
+        },
+        {
+          "name": "Saxifraga cuneata × Saxifraga fragosoi",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:4377"
+        },
+        {
+          "name": "Saxifraga cuneata x Saxifraga fragosoi",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:4377"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4378",
+      "originalName": "Saxifraga cuneata x S. losae",
+      "names": [
+        {
+          "name": "Saxifraga cuneata x S. losae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4378"
+        },
+        {
+          "name": "Saxifraga cuneata × S. losae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:4378"
+        },
+        {
+          "name": "Saxifraga cuneata × Saxifraga losae",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:4378"
+        },
+        {
+          "name": "Saxifraga cuneata x Saxifraga losae",
+          "relation": "EXPANDED_ABBREVIATED_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:4378"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3982",
+      "originalName": "Saxifraga x arizagae",
+      "names": [
+        {
+          "name": "Saxifraga x arizagae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3982"
+        },
+        {
+          "name": "Saxifraga × arizagae",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3982"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3985",
+      "originalName": "Saxifraga x celtiberica",
+      "names": [
+        {
+          "name": "Saxifraga x celtiberica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3985"
+        },
+        {
+          "name": "Saxifraga × celtiberica",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3985"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4075",
+      "originalName": "Scirpus cernuus",
+      "names": [
+        {
+          "name": "Scirpus cernuus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4075"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4082",
+      "originalName": "Scirpus cespitosus subsp. germanicum",
+      "names": [
+        {
+          "name": "Scirpus cespitosus subsp. germanicum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4082"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3617",
+      "originalName": "Scirpus holoschoenus",
+      "names": [
+        {
+          "name": "Scirpus holoschoenus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3617"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2603",
+      "originalName": "Scirpus lacustris",
+      "names": [
+        {
+          "name": "Scirpus lacustris",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2603"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1692",
+      "originalName": "Scirpus maritimus",
+      "names": [
+        {
+          "name": "Scirpus maritimus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1692"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "335",
+      "originalName": "Scirpus setaceus",
+      "names": [
+        {
+          "name": "Scirpus setaceus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:335"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "627",
+      "originalName": "Scirpus supinus",
+      "names": [
+        {
+          "name": "Scirpus supinus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:627"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4679",
+      "originalName": "Scorzonera angustifolia var. angustifolia",
+      "names": [
+        {
+          "name": "Scorzonera angustifolia var. angustifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4679"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2604",
+      "originalName": "Senecio laderoi subsp. laderoi",
+      "names": [
+        {
+          "name": "Senecio laderoi subsp. laderoi",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2604"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1495",
+      "originalName": "Serapias lingua x parviflora",
+      "names": [
+        {
+          "name": "Serapias lingua x parviflora",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1495"
+        },
+        {
+          "name": "Serapias lingua × parviflora",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:1495"
+        },
+        {
+          "name": "Serapias lingua × Serapias parviflora",
+          "relation": "EXPANDED_SAME_GENUS_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1495"
+        },
+        {
+          "name": "Serapias lingua x Serapias parviflora",
+          "relation": "EXPANDED_SAME_GENUS_HYBRID_PARENT",
+          "evidence": "RIOJA_ID:1495"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2699",
+      "originalName": "Serratula leucantha",
+      "names": [
+        {
+          "name": "Serratula leucantha",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2699"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3625",
+      "originalName": "Seseli libanotis subsp. libanotis",
+      "names": [
+        {
+          "name": "Seseli libanotis subsp. libanotis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3625"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4769",
+      "originalName": "Sesleria argentea subsp. hispanica",
+      "names": [
+        {
+          "name": "Sesleria argentea subsp. hispanica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4769"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5145",
+      "originalName": "Sesleria caerulea",
+      "names": [
+        {
+          "name": "Sesleria caerulea",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5145"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5184",
+      "originalName": "Sideritis camarae",
+      "names": [
+        {
+          "name": "Sideritis camarae",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5184"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2431",
+      "originalName": "Sideritis hyssopifolia subsp. hyssopifolia",
+      "names": [
+        {
+          "name": "Sideritis hyssopifolia subsp. hyssopifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2431"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1896",
+      "originalName": "Sideritis montana subsp. ebracteata",
+      "names": [
+        {
+          "name": "Sideritis montana subsp. ebracteata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1896"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1709",
+      "originalName": "Simethis mattiazzi",
+      "names": [
+        {
+          "name": "Simethis mattiazzi",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1709"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4887",
+      "originalName": "Sixalix atropurpurea",
+      "names": [
+        {
+          "name": "Sixalix atropurpurea",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4887"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3916",
+      "originalName": "Solidago virgaurea subsp. fallit-tirones",
+      "names": [
+        {
+          "name": "Solidago virgaurea subsp. fallit-tirones",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3916"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4780",
+      "originalName": "Sorbus aria subsp. aria",
+      "names": [
+        {
+          "name": "Sorbus aria subsp. aria",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4780"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4898",
+      "originalName": "Sorbus aucuparia subsp. aucuparia",
+      "names": [
+        {
+          "name": "Sorbus aucuparia subsp. aucuparia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4898"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1941",
+      "originalName": "Sorbus mougeotii",
+      "names": [
+        {
+          "name": "Sorbus mougeotii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1941"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2231",
+      "originalName": "Stachys officinalis subsp. officinalis",
+      "names": [
+        {
+          "name": "Stachys officinalis subsp. officinalis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2231"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "923",
+      "originalName": "Stachys recta subsp. recta",
+      "names": [
+        {
+          "name": "Stachys recta subsp. recta",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:923"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3394",
+      "originalName": "Taraxacum gr. erythrospermum",
+      "names": [
+        {
+          "name": "Taraxacum gr. erythrospermum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3394"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3397",
+      "originalName": "Taraxacum gr. officinale",
+      "names": [
+        {
+          "name": "Taraxacum gr. officinale",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3397"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "392",
+      "originalName": "Taraxacum sp.",
+      "names": [
+        {
+          "name": "Taraxacum sp.",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:392"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1690",
+      "originalName": "Tetragonolobus maritimus var. hirsutus",
+      "names": [
+        {
+          "name": "Tetragonolobus maritimus var. hirsutus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1690"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5313",
+      "originalName": "Tilia x vulgaris",
+      "names": [
+        {
+          "name": "Tilia x vulgaris",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5313"
+        },
+        {
+          "name": "Tilia × vulgaris",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:5313"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4813",
+      "originalName": "Torilis arvensis subsp. arvensis",
+      "names": [
+        {
+          "name": "Torilis arvensis subsp. arvensis",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4813"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2626",
+      "originalName": "Tragopogon lamottei",
+      "names": [
+        {
+          "name": "Tragopogon lamottei",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2626"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1910",
+      "originalName": "Trifolium montanum subsp. montanum",
+      "names": [
+        {
+          "name": "Trifolium montanum subsp. montanum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1910"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "945",
+      "originalName": "Trifolium repens subsp. nevadense",
+      "names": [
+        {
+          "name": "Trifolium repens subsp. nevadense",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:945"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "946",
+      "originalName": "Trifolium repens subsp. repens",
+      "names": [
+        {
+          "name": "Trifolium repens subsp. repens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:946"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3445",
+      "originalName": "Trinia glauca subsp. glauca",
+      "names": [
+        {
+          "name": "Trinia glauca subsp. glauca",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3445"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3988",
+      "originalName": "Ulmus x hollandica",
+      "names": [
+        {
+          "name": "Ulmus x hollandica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3988"
+        },
+        {
+          "name": "Ulmus × hollandica",
+          "relation": "NOMENCLATURAL_MULTIPLICATION_SIGN_VARIANT",
+          "evidence": "RIOJA_ID:3988"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5271",
+      "originalName": "Valerianella carinata",
+      "names": [
+        {
+          "name": "Valerianella carinata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5271"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1582",
+      "originalName": "Valerianella lusitanica",
+      "names": [
+        {
+          "name": "Valerianella lusitanica",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1582"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1969",
+      "originalName": "Valerianella muricata",
+      "names": [
+        {
+          "name": "Valerianella muricata",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:1969"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5343",
+      "originalName": "Verbascum rotundifolium ripacurcicum",
+      "names": [
+        {
+          "name": "Verbascum rotundifolium ripacurcicum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:5343"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "240",
+      "originalName": "Verbascum thapsus subsp. crassifolium",
+      "names": [
+        {
+          "name": "Verbascum thapsus subsp. crassifolium",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:240"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "241",
+      "originalName": "Verbascum thapsus subsp. montanum",
+      "names": [
+        {
+          "name": "Verbascum thapsus subsp. montanum",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:241"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "242",
+      "originalName": "Verbascum thapsus subsp. thapsus",
+      "names": [
+        {
+          "name": "Verbascum thapsus subsp. thapsus",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:242"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4923",
+      "originalName": "Veronica austriaca subsp. vahlii",
+      "names": [
+        {
+          "name": "Veronica austriaca subsp. vahlii",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4923"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3512",
+      "originalName": "Veronica hederifolia subsp. hederifolia",
+      "names": [
+        {
+          "name": "Veronica hederifolia subsp. hederifolia",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:3512"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4640",
+      "originalName": "Vicia amphycarpa",
+      "names": [
+        {
+          "name": "Vicia amphycarpa",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:4640"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2372",
+      "originalName": "Vicia pannonica var. purpurascens",
+      "names": [
+        {
+          "name": "Vicia pannonica var. purpurascens",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:2372"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "105",
+      "originalName": "Vicia sativa subsp. nigra",
+      "names": [
+        {
+          "name": "Vicia sativa subsp. nigra",
+          "relation": "ORIGINAL_RIOJA_NAME",
+          "evidence": "RIOJA_ID:105"
+        }
+      ]
+    }
+  ]
+}
