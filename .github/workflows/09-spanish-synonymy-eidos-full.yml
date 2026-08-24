@@ -1,0 +1,69 @@
+name: 09 Full Spanish synonymy to EIDOS sweep
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FULL.json'
+
+permissions:
+  contents: write
+
+jobs:
+  full-spanish-sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+      - name: Validate full-run request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FULL.json'))
+          assert p['enabled'] is True
+          assert p['inputCount'] == 337
+          assert p['mode'] == 'FULL_337_SPANISH_SYNONYMY_THEN_OFFICIAL_EIDOS_DUMP'
+          assert p['crossWithA'] is False
+          assert p['neonWrites'] == 0
+          assert p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True
+          assert p['noParentIdInheritance'] is True
+          PY
+      - name: Download official current EIDOS open-data dump
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 1200 \
+            -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+      - name: Execute 337 taxon-by-taxon Spanish synonymy sweep
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          QUEUE=execution/09/corpus-b-cold-start-v1/runs/09_CORPUS_B_COLD_START_20260824_002/CORPUS_B_338_RESOLUTION_RESULTS_v2.json
+          OUT="$ROOT/runs/SPANISH_EIDOS_FULL_337_20260824_001"
+          python "$ROOT/full_spanish_synonymy_eidos_sweep.py" "$QUEUE" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+      - name: QA invariants
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_EIDOS_FULL_337_20260824_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          assert r['input']==337 and r['output']==337
+          assert r['crossWithA'] is False
+          assert r['neonWrites']==0
+          assert r['corpusBFreeze'] is False
+          assert r['sourcePlanCompleteRows']==0
+          PY
+      - name: Persist immutable full-run evidence
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_EIDOS_FULL_337_20260824_001
+          git commit -m "result(09): full 337 Spanish synonymy EIDOS sweep ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
