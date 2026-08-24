@@ -12,11 +12,10 @@ if not any(s["key"] == _JOLUBE["key"] for s in core.SOURCES):
 _SYMBOL_RE = re.compile(r"(?:≡|(?<![<>!])=(?!=))")
 _LABEL_RE = re.compile(r"\b(?:syn\.?|synonym(?:s)?|sinonim(?:ia|ias|o|os)?|sinónim(?:ia|ias|o|os)?)\b", re.I)
 
+
 def _canon_key(name):
     return core.norm(core.canonical(name))
 
-def _names(text):
-    return [core.canonical(x) for x in core.scientific_names(text or "")]
 
 def _dedup_names(names):
     out, seen = [], set()
@@ -27,17 +26,183 @@ def _dedup_names(names):
             out.append(core.canonical(name))
     return out
 
+
+def _name_matches(text):
+    out = []
+    for match in core.SCI_RE.finditer(text or ""):
+        name = core.canonical(match.group(1))
+        key = _canon_key(name)
+        if key:
+            out.append({
+                "name": name,
+                "key": key,
+                "start": match.start(1),
+                "end": match.end(1),
+            })
+    return out
+
+
+def _previous_nonempty_line(lines, index):
+    j = index - 1
+    while j >= 0:
+        value = lines[j].strip()
+        if value:
+            return value
+        j -= 1
+    return ""
+
+
+def _symbol_clause_evidence(line, seed):
+    """Return only names in the explicit =/≡ relation chain containing seed."""
+    seed_key = _canon_key(seed)
+    matches = _name_matches(line)
+    if len(matches) < 2:
+        return []
+
+    adjacency = {i: set() for i in range(len(matches))}
+    edge_markers = {}
+    for i in range(len(matches) - 1):
+        left, right = matches[i], matches[i + 1]
+        between = line[left["end"]:right["start"]]
+        # ≠ is explicitly not a synonymic relation and blocks adjacency.
+        if "≠" in between:
+            continue
+        marker = _SYMBOL_RE.search(between)
+        if marker:
+            adjacency[i].add(i + 1)
+            adjacency[i + 1].add(i)
+            edge_markers[(i, i + 1)] = marker.group(0)
+
+    evidence = []
+    seen_components = set()
+    for seed_index, item in enumerate(matches):
+        if item["key"] != seed_key:
+            continue
+
+        stack = [seed_index]
+        component = {seed_index}
+        while stack:
+            current = stack.pop()
+            for neighbor in adjacency[current]:
+                if neighbor not in component:
+                    component.add(neighbor)
+                    stack.append(neighbor)
+
+        if len(component) < 2:
+            continue
+        component_key = tuple(sorted(component))
+        if component_key in seen_components:
+            continue
+        seen_components.add(component_key)
+
+        ordered = sorted(component)
+        candidates = _dedup_names([
+            matches[i]["name"]
+            for i in ordered
+            if matches[i]["key"] != seed_key
+        ])
+        if not candidates:
+            continue
+
+        markers = []
+        for i in ordered:
+            if i + 1 in component and (i, i + 1) in edge_markers:
+                markers.append(edge_markers[(i, i + 1)])
+        start = matches[ordered[0]]["start"]
+        end = matches[ordered[-1]]["end"]
+        evidence.append({
+            "relationKind": "SEED_BOUND_SYMBOL_CHAIN",
+            "marker": " ".join(markers),
+            "seed": core.canonical(seed),
+            "candidates": candidates,
+            "context": core.short(line[start:end], 700),
+            "relationClauseBound": True,
+        })
+    return evidence
+
+
+def _label_clause_evidence(lines, index, seed):
+    """Bind Syn./synonym/sinonimia candidates to the label clause containing seed."""
+    line = lines[index].strip()
+    seed_key = _canon_key(seed)
+    label_matches = list(_LABEL_RE.finditer(line))
+    if not label_matches:
+        return []
+
+    previous_line = _previous_nonempty_line(lines, index)
+    previous_keys = {x["key"] for x in _name_matches(previous_line)}
+    evidence = []
+
+    for label_pos, label in enumerate(label_matches):
+        # The subject may occur on the same line before the label. Restrict it
+        # to the current semicolon-delimited clause.
+        subject_start = line.rfind(";", 0, label.start()) + 1
+        subject_text = line[subject_start:label.start()]
+        subject_matches = _name_matches(subject_text)
+        subject_keys = {x["key"] for x in subject_matches}
+
+        # Candidate side ends at the next independent clause. This prevents a
+        # second relation on the same line from leaking into the seed clause.
+        candidate_start = label.end()
+        candidate_end = len(line)
+        semicolon = line.find(";", candidate_start)
+        if semicolon >= 0:
+            candidate_end = min(candidate_end, semicolon)
+        if label_pos + 1 < len(label_matches):
+            candidate_end = min(candidate_end, label_matches[label_pos + 1].start())
+        candidate_text = line[candidate_start:candidate_end]
+        candidate_matches = _name_matches(candidate_text)
+        candidate_keys = {x["key"] for x in candidate_matches}
+
+        seed_in_clause = (
+            seed_key in subject_keys
+            or seed_key in candidate_keys
+            or (not subject_matches and seed_key in previous_keys)
+        )
+        if not seed_in_clause:
+            continue
+
+        candidates = [
+            x["name"] for x in candidate_matches if x["key"] != seed_key
+        ]
+        # If the seed itself is on the candidate side, a named subject on the
+        # same clause is also directly bound by the label relation.
+        if seed_key in candidate_keys:
+            candidates.extend(
+                x["name"] for x in subject_matches if x["key"] != seed_key
+            )
+        candidates = _dedup_names(candidates)
+        if not candidates:
+            continue
+
+        context_parts = []
+        if not subject_matches and seed_key in previous_keys:
+            context_parts.append(previous_line)
+        context_parts.append(line[subject_start:candidate_end].strip())
+        evidence.append({
+            "relationKind": "SEED_BOUND_LABEL_CLAUSE",
+            "marker": label.group(0),
+            "seed": core.canonical(seed),
+            "candidates": candidates,
+            "context": core.short("\n".join(context_parts), 900),
+            "relationClauseBound": True,
+        })
+
+    return evidence
+
+
 def seed_bound_relation_evidence(text, seed):
     """
     Precision-first relation extractor.
 
     A candidate is accepted only if:
-      1) an explicit synonymic relation marker is present (=, ≡, Syn./synonym/sinonimia), and
-      2) the investigated seed taxon is explicitly present in the same bounded relation context.
+      1) an explicit synonymic relation marker is present (=, ≡, Syn./synonym/sinonimia),
+      2) the investigated seed taxon is explicitly present in the same relation clause/chain, and
+      3) the candidate is connected to that seed by that exact explicit relation clause/chain.
 
-    Broad synonymy sections with no seed occurrence are rejected.
+    Mere co-occurrence in a bounded block is insufficient. Broad synonymy
+    sections and neighboring independent relations are rejected.
     """
-    seed_key = _canon_key(seed)
     lines = (text or "").splitlines()
     evidence = []
 
@@ -45,43 +210,9 @@ def seed_bound_relation_evidence(text, seed):
         line = raw_line.strip()
         if not line:
             continue
+        evidence.extend(_symbol_clause_evidence(line, seed))
+        evidence.extend(_label_clause_evidence(lines, i, seed))
 
-        symbol_match = _SYMBOL_RE.search(line)
-        if symbol_match:
-            names = _dedup_names(_names(line))
-            keys = {_canon_key(n) for n in names}
-            if seed_key in keys:
-                candidates = [n for n in names if _canon_key(n) != seed_key]
-                if candidates:
-                    evidence.append({
-                        "relationKind": "SEED_BOUND_SYMBOL",
-                        "marker": symbol_match.group(0),
-                        "seed": core.canonical(seed),
-                        "candidates": candidates,
-                        "context": core.short(line, 700),
-                    })
-
-        label_match = _LABEL_RE.search(line)
-        if label_match:
-            # A label relation may span at most one neighboring line each side.
-            # This deliberately sacrifices recall to avoid harvesting names from
-            # broad taxonomic windows.
-            block_lines = lines[max(0, i-1):min(len(lines), i+2)]
-            block = "\n".join(x.strip() for x in block_lines if x.strip())
-            names = _dedup_names(_names(block))
-            keys = {_canon_key(n) for n in names}
-            if seed_key in keys:
-                candidates = [n for n in names if _canon_key(n) != seed_key]
-                if candidates:
-                    evidence.append({
-                        "relationKind": "SEED_BOUND_LABEL",
-                        "marker": label_match.group(0),
-                        "seed": core.canonical(seed),
-                        "candidates": candidates,
-                        "context": core.short(block, 900),
-                    })
-
-    # Deduplicate relation evidence by relation kind + candidate set + context.
     out, seen = [], set()
     for ev in evidence:
         key = (
@@ -94,10 +225,11 @@ def seed_bound_relation_evidence(text, seed):
             out.append(ev)
     return out
 
+
 def strict_source_hits(seed, src, max_results=6):
     """
     Use source-targeted search only for page discovery. Re-fetch returned pages
-    and retain only seed-bound explicit synonym relations as evidence.
+    and retain only seed-bound, clause-bound explicit synonym relations.
     """
     base = core.source_hits(seed, src, max_results=max_results)
     strict_pages = []
@@ -125,10 +257,9 @@ def strict_source_hits(seed, src, max_results=6):
         if not rels:
             continue
 
-        names = []
-        for rel in rels:
-            names.extend(rel["candidates"])
-        names = _dedup_names(names)
+        names = _dedup_names(
+            name for rel in rels for name in rel["candidates"]
+        )
         if not names:
             continue
 
@@ -139,7 +270,7 @@ def strict_source_hits(seed, src, max_results=6):
             "names": names,
             "relationEvidence": rels,
             "discoverySeed": seed,
-            "relationExtraction": "SEED_BOUND_EXPLICIT_RELATION_V1",
+            "relationExtraction": "SEED_BOUND_RELATION_CLAUSE_V2",
         })
 
     return {
@@ -150,5 +281,6 @@ def strict_source_hits(seed, src, max_results=6):
         "explicitSynonymyPages": strict_pages,
         "fetchFailures": fetch_failures,
         "strictSeedBound": True,
+        "relationClauseBound": True,
         "broadDiscoveryPagesDiscarded": len(base.get("explicitSynonymyPages", [])),
     }
