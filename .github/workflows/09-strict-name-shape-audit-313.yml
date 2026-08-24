@@ -1,0 +1,55 @@
+name: 09 Strict name-shape audit 313
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_STRICT_AUDIT_313.json'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+      - name: Validate request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_STRICT_AUDIT_313.json'))
+          assert p['enabled'] is True and p['scope']==313
+          assert p['noSilentInference'] is True
+          PY
+      - name: Audit consolidated results
+        run: |
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          python "$ROOT/strict_name_shape_audit_313.py" \
+            "$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_20260824_001/CONSOLIDATED_RESULTS_313.json" \
+            "$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001"
+      - name: QA
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          assert r['inputRows']==r['outputRows']==313
+          assert r['resolvedRows']+r['failedRows']==313
+          assert r['qaDemotionsFromResolved']>=4
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          assert r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
+          PY
+      - name: Persist evidence
+        run: |
+          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          git add "$OUT"
+          git commit -m "evidence(09): strict name-shape QA 313 ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
