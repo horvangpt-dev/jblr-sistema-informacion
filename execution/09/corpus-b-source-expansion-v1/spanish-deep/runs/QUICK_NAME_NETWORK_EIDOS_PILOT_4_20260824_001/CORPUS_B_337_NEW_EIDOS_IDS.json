@@ -1,0 +1,22 @@
+{
+  "run_id": "09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001",
+  "count": 2,
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "original": "Alchemilla basaltica",
+      "MITECO_IDTAXON": "1618",
+      "EIDOS_NAME": "Alchemilla transiens (Buser) Buser in Dörfl.",
+      "via_name": "Alchemilla transiens",
+      "source": "FLORA_IBERICA"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "original": "Chaenorhinum rupestre",
+      "MITECO_IDTAXON": "3444",
+      "EIDOS_NAME": "Chaenorhinum exile (Coss. & Kralik) Lange",
+      "via_name": "Chaenorhinum exile",
+      "source": "FLORA_IBERICA"
+    }
+  ]
+}

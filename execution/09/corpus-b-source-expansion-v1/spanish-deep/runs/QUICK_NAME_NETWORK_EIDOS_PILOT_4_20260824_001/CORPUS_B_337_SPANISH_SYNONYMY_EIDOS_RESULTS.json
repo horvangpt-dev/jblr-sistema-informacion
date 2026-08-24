@@ -1,0 +1,211 @@
+{
+  "run_id": "09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001",
+  "eidos_source": "https://datos.iepnb.es/datasets/eidos.ttl",
+  "eidos_ttl_bytes": 250612716,
+  "eidos_ttl_sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "total_rows": 4,
+  "resolved_by_spanish_synonymy_to_eidos": 2,
+  "conflicts": 0,
+  "special_cases": 0,
+  "unresolved_after_flora_iberica": 2,
+  "results": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "NOMBRE_RIOJA_VERBATIM": "Adenocarpus hispanicus subsp. neilense",
+      "source_kind": "INFRASPECIFIC",
+      "source_rank": "Subspecies",
+      "flora_iberica_query_state": null,
+      "terminal_state": "UNRESOLVED_AFTER_FLORA_IBERICA_SWEEP",
+      "MITECO_IDTAXON": null,
+      "EIDOS_NAME": null,
+      "candidate_evidence": [
+        {
+          "name": "Adenocarpus hispanicus subsp. neilense",
+          "canonical": "Adenocarpus hispanicus subsp. neilense",
+          "candidate_rank": "Subspecies",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Adenocarpus hispanicus subsp. hispanicus",
+          "canonical": "Adenocarpus hispanicus subsp. hispanicus",
+          "candidate_rank": "Subspecies",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Adenocarpus hispanicus subsp. gredensis",
+          "canonical": "Adenocarpus hispanicus subsp. gredensis",
+          "candidate_rank": "Subspecies",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Adenocarpus complicatus subsp. anisochilus",
+          "canonical": "Adenocarpus complicatus subsp. anisochilus",
+          "candidate_rank": "Subspecies",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla basaltica",
+      "source_kind": "SPECIES",
+      "source_rank": "Species",
+      "flora_iberica_query_state": null,
+      "terminal_state": "RESOLVED_BY_SPANISH_SYNONYMY_TO_EIDOS",
+      "MITECO_IDTAXON": "1618",
+      "EIDOS_NAME": "Alchemilla transiens (Buser) Buser in Dörfl.",
+      "candidate_evidence": [
+        {
+          "name": "Alchemilla basaltica",
+          "canonical": "Alchemilla basaltica",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Alchemilla transiens",
+          "canonical": "Alchemilla transiens",
+          "candidate_rank": "Species",
+          "state": "EIDOS_MATCH",
+          "records": [
+            {
+              "taxonID": "1618",
+              "scientificName": "Alchemilla transiens (Buser) Buser in Dörfl.",
+              "genus": "Alchemilla",
+              "specificEpithet": "transiens",
+              "infraspecificEpithet": null,
+              "taxonRank": "Species",
+              "taxonomicStatus": "Aceptado/Válido",
+              "acceptedNameUsageID": null,
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ]
+        },
+        {
+          "name": "Alchemilla brachyclada",
+          "canonical": "Alchemilla brachyclada",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Alchemilla mucronata",
+          "canonical": "Alchemilla mucronata",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Alchemilla obovalis",
+          "canonical": "Alchemilla obovalis",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "NOMBRE_RIOJA_VERBATIM": "Chaenorhinum rupestre",
+      "source_kind": "SPECIES",
+      "source_rank": "Species",
+      "flora_iberica_query_state": null,
+      "terminal_state": "RESOLVED_BY_SPANISH_SYNONYMY_TO_EIDOS",
+      "MITECO_IDTAXON": "3444",
+      "EIDOS_NAME": "Chaenorhinum exile (Coss. & Kralik) Lange",
+      "candidate_evidence": [
+        {
+          "name": "Chaenorhinum rupestre",
+          "canonical": "Chaenorhinum rupestre",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Linaria rupestris",
+          "canonical": "Linaria rupestris",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Linaria exilis",
+          "canonical": "Linaria exilis",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Chaenorhinum exile",
+          "canonical": "Chaenorhinum exile",
+          "candidate_rank": "Species",
+          "state": "EIDOS_MATCH",
+          "records": [
+            {
+              "taxonID": "3444",
+              "scientificName": "Chaenorhinum exile (Coss. & Kralik) Lange",
+              "genus": "Chaenorhinum",
+              "specificEpithet": "exile",
+              "infraspecificEpithet": null,
+              "taxonRank": "Species",
+              "taxonomicStatus": "Aceptado/Válido",
+              "acceptedNameUsageID": null,
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "NOMBRE_RIOJA_VERBATIM": "Atropa bella-donna",
+      "source_kind": "SPECIES",
+      "source_rank": "Species",
+      "flora_iberica_query_state": null,
+      "terminal_state": "UNRESOLVED_AFTER_FLORA_IBERICA_SWEEP",
+      "MITECO_IDTAXON": null,
+      "EIDOS_NAME": null,
+      "candidate_evidence": [
+        {
+          "name": "Atropa bella-donna",
+          "canonical": "Atropa bella-donna",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Atropa lethalis",
+          "canonical": "Atropa lethalis",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Boberella bella-donna",
+          "canonical": "Boberella bella-donna",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Belladona baccifera",
+          "canonical": "Belladona baccifera",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        },
+        {
+          "name": "Belladona trichotoma",
+          "canonical": "Belladona trichotoma",
+          "candidate_rank": "Species",
+          "state": "NO_EIDOS_MATCH",
+          "records": []
+        }
+      ]
+    }
+  ]
+}

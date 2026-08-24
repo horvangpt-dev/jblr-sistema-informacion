@@ -1,0 +1,67 @@
+{
+  "pilotId": "JBLR_CORPUS_B_QUICK_NAME_NETWORK_EIDOS_PILOT_4_v1",
+  "githubRunId": "32738280284",
+  "method": "DOCUMENTED_NAME_NETWORK_THEN_EXACT_EIDOS_CONTRAST",
+  "inputRows": 4,
+  "runtimeSeconds": 2,
+  "resolvedCount": 2,
+  "conflictCount": 0,
+  "specialCaseCount": 0,
+  "unresolvedCount": 2,
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "NOMBRE_RIOJA_VERBATIM": "Adenocarpus hispanicus subsp. neilense",
+      "terminal_state": "UNRESOLVED_AFTER_FLORA_IBERICA_SWEEP",
+      "MITECO_IDTAXON": null,
+      "EIDOS_NAME": null,
+      "matchedCandidates": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla basaltica",
+      "terminal_state": "RESOLVED_BY_SPANISH_SYNONYMY_TO_EIDOS",
+      "MITECO_IDTAXON": "1618",
+      "EIDOS_NAME": "Alchemilla transiens (Buser) Buser in Dörfl.",
+      "matchedCandidates": [
+        {
+          "name": "Alchemilla transiens",
+          "canonical": "Alchemilla transiens",
+          "state": "EIDOS_MATCH",
+          "recordCount": 1
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "NOMBRE_RIOJA_VERBATIM": "Chaenorhinum rupestre",
+      "terminal_state": "RESOLVED_BY_SPANISH_SYNONYMY_TO_EIDOS",
+      "MITECO_IDTAXON": "3444",
+      "EIDOS_NAME": "Chaenorhinum exile (Coss. & Kralik) Lange",
+      "matchedCandidates": [
+        {
+          "name": "Chaenorhinum exile",
+          "canonical": "Chaenorhinum exile",
+          "state": "EIDOS_MATCH",
+          "recordCount": 1
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "NOMBRE_RIOJA_VERBATIM": "Atropa bella-donna",
+      "terminal_state": "UNRESOLVED_AFTER_FLORA_IBERICA_SWEEP",
+      "MITECO_IDTAXON": null,
+      "EIDOS_NAME": null,
+      "matchedCandidates": []
+    }
+  ],
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "canonicalEffect": "NONE_PENDING_0000_REVIEW"
+}
