@@ -1,0 +1,22 @@
+{
+  "run_id": "09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001",
+  "count": 2,
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "original": "Anthemis triumfettii",
+      "MITECO_IDTAXON": "31641",
+      "EIDOS_NAME": "Cota triumfettii (L.) J. Gay",
+      "via_name": "Cota triumfettii",
+      "source": "FLORA_IBERICA"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3006",
+      "original": "Centaurium erythraea subsp. grandiflorum",
+      "MITECO_IDTAXON": "3353",
+      "EIDOS_NAME": "Centaurium grandiflorum subsp. boissieri (Willk.) Díaz Lifante",
+      "via_name": "Centaurium grandiflorum subsp. boissieri",
+      "source": "FLORA_IBERICA"
+    }
+  ]
+}
