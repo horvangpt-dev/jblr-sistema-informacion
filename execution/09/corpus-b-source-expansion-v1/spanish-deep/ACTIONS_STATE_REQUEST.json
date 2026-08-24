@@ -1,0 +1,7 @@
+{
+  "requestedAt": "2026-08-24T08:06:00Z",
+  "purpose": "Observe already-launched source-expansion workflow states without creating a taxonomic retry",
+  "productiveExecution": false,
+  "crossWithA": false,
+  "neonWrites": 0
+}
