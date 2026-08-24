@@ -1,0 +1,153 @@
+name: 06 V17 fresh 67 taxonomy rank-fix rerun
+
+on:
+  push:
+    branches:
+      - 06-v17-fresh-67-taxonomy-rankfix
+    paths:
+      - 'execution/06/v17/corpus-b-fresh-67/RANKFIX_AUTH.json'
+
+permissions:
+  contents: write
+
+jobs:
+  fresh_67_taxonomy_rankfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout isolated rank-fix branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-v17-fresh-67-taxonomy-rankfix
+          fetch-depth: 1
+
+      - name: Validate unchanged scientific scope and corrective authority
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          root='execution/06/v17/corpus-b-fresh-67'
+          p=json.load(open(root+'/RUN_REQUEST.json'))
+          a=json.load(open(root+'/RANKFIX_AUTH.json'))
+          assert p['scope']==67 and len(p['scopeRecords'])==67
+          assert len({str(x['B_SOURCE_RECORD_ID']) for x in p['scopeRecords']})==67
+          assert {str(x['B_SOURCE_RECORD_ID']) for x in p['excludedByReuseFirst']}=={'3682','3006'}
+          assert p['authorizationEvent']=='JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001'
+          assert p['crossWithA'] is False and p['corpusBFreeze'] is False
+          assert p['neonWrites']==0 and p['databaseWrites']==0
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
+          assert p['downstreamStimesAuthorized'] is False
+          assert a['actor']=='06'
+          assert a['runId']=='06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002'
+          assert a['supersedesRunId']=='06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001'
+          assert a['rankFixVersion']=='RANK_FIX_v1'
+          assert a['scope']==67 and a['scopeChange'] is False and a['technicalFixOnly'] is True
+          q=dict(p)
+          q['runId']=a['runId']
+          q['supersedesRunId']=a['supersedesRunId']
+          q['rankFixVersion']=a['rankFixVersion']
+          q['triggerNonce']=a['triggerNonce']
+          json.dump(q,open('/tmp/RUN_REQUEST_002.json','w'),ensure_ascii=False,indent=2)
+          PY
+          INPUT='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json'
+          test "$(git hash-object "$INPUT")" = 'ef5192304fa22c2ca8a9daffd67f58aa9c4827de'
+
+      - name: Fetch technical engine only
+        run: |
+          set -euo pipefail
+          git fetch origin 06-vnext-corpus-b-185-taxonomy --depth=1 --no-tags
+          git show origin/06-vnext-corpus-b-185-taxonomy:execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py > "$RUNNER_TEMP/taxonomy_185_vnext.py"
+          test -s "$RUNNER_TEMP/taxonomy_185_vnext.py"
+
+      - name: Install runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Download current official EIDOS snapshot
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl" | tee "$RUNNER_TEMP/eidos.sha256"
+
+      - name: Execute corrected exact same 67 taxonomic scope
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/corpus-b-fresh-67'
+          INPUT='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json'
+          OUT="$ROOT/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002"
+          rm -rf "$OUT"
+          mkdir -p "$OUT" "$ROOT/state"
+          cat > "$ROOT/state/RUNNING_RUN_002.json" <<JSON
+          {"state":"RUNNING","actor":"06","runId":"06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002","scope":67,"githubRunId":"${GITHUB_RUN_ID}","rankFixVersion":"RANK_FIX_v1","crossWithA":false,"neonWrites":0,"databaseWrites":0,"downstreamStimesExecuted":false}
+          JSON
+          python "$ROOT/run_fresh_67.py" "$RUNNER_TEMP/taxonomy_185_vnext.py" "$INPUT" "$RUNNER_TEMP/eidos.ttl" "$OUT" /tmp/RUN_REQUEST_002.json
+
+      - name: Enforce original QA plus independent rank QA
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('execution/06/v17/corpus-b-fresh-67')
+          out=root/'runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002'
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          q=json.load(open(out/'QA_REPORT.json'))
+          rq=json.load(open(out/'RANK_FIX_QA.json'))
+          a=json.load(open(out/'SCOPE_AUTHORITY.json'))
+          assert r['processedRows']==67 and r['inputRows']==67
+          assert q['pass'] is True and rq['pass'] is True
+          assert rq['checkedRows']==67 and rq['doublePeriodCount']==0 and not rq['failures']
+          assert a['scope']==67 and a['rankFixVersion']=='RANK_FIX_v1'
+          assert a['supersedesRunId']=='06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001'
+          assert r['crossWithA'] is False and r['corpusBFreeze'] is False
+          assert r['neonWrites']==0 and r['databaseWrites']==0
+          assert r['downstreamStimesExecuted'] is False and r['existingCorpusOverwritten'] is False
+          intake=json.load(open(out/'SOURCE_INTAKE_RECEIPTS.json'))['rows']
+          original=json.load(open(root/'RUN_REQUEST.json'))['scopeRecords']
+          assert [x['B_SOURCE_RECORD_ID'] for x in intake]==[str(x['B_SOURCE_RECORD_ID']) for x in original]
+          assert [x['NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM'] for x in intake]==[x['name'] for x in original]
+          print(json.dumps({'state':r['state'],'processedRows':67,'resolvedCount':r.get('resolvedCount',0),'unresolvedOrConflictCount':r.get('unresolvedOrConflictCount',0),'conflictCount':r.get('conflictCount',0),'rankQaPass':rq['pass'],'rankCounts':rq['rankCounts']},ensure_ascii=False))
+          PY
+
+      - name: Persist corrective terminal evidence without deleting run 001
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/corpus-b-fresh-67'
+          OUT="$ROOT/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path('execution/06/v17/corpus-b-fresh-67')
+          out=root/'runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002'
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          rq=json.load(open(out/'RANK_FIX_QA.json'))
+          state={
+            'state':r['state'],'stopRequired':r['stopRequired'],'stopReason':r['stopReason'],
+            'runId':r['runId'],'supersedesRunId':'06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001',
+            'githubRunId':os.environ['GITHUB_RUN_ID'],'scope':67,'rankFixVersion':'RANK_FIX_v1',
+            'rankFixQaPass':rq['pass'],'processedRows':r['processedRows'],'resolvedCount':r.get('resolvedCount',0),
+            'unresolvedOrConflictCount':r.get('unresolvedOrConflictCount',0),'conflictCount':r.get('conflictCount',0),
+            'crossWithA':False,'neonWrites':0,'databaseWrites':0,'corpusBFreeze':False,'downstreamStimesExecuted':False
+          }
+          (root/'state/TERMINAL_RUN_002.json').write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-fresh-67-taxonomy-rankfix
+          git add "$OUT" "$ROOT/state/RUNNING_RUN_002.json" "$ROOT/state/TERMINAL_RUN_002.json"
+          git commit -m "evidence(06): V17 fresh 67 rankfix taxonomy ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-fresh-67-taxonomy-rankfix
+
+      - name: Enforce stop before downstream STIME
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/06/v17/corpus-b-fresh-67/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          if r['stopRequired']:
+              raise SystemExit('STOP_REQUIRED: '+str(r['stopReason']))
+          assert r['state']=='PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES'
+          assert r['processedRows']==67 and r['downstreamStimesExecuted'] is False
+          PY
