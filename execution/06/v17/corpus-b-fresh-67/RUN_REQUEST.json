@@ -94,6 +94,7 @@
   "downstreamStimesAuthorized": false,
   "externalTaxonomicSourcesAuthorized": true,
   "eidosSource": "https://datos.iepnb.es/datasets/eidos.ttl",
+  "triggerNonce": "2026-08-24T20:27:13+02:00_explicit_after_workflow_present",
   "engineReuse": {
     "sourceBranch": "06-vnext-corpus-b-185-taxonomy",
     "sourcePath": "execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py",
