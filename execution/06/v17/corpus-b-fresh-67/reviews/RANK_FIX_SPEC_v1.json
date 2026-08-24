@@ -1,0 +1,18 @@
+{
+  "spec": "RANK_FIX_SPEC_v1",
+  "requiredBehaviors": {
+    "Avena lodunensis subsp. romero-zarcoi": "subspecies",
+    "Anteriorchis coriophora var. carpetana": "variety",
+    "Hieracium lactucella subsp. lactucella": "subspecies",
+    "Biscutella valentina var. variegata": "variety",
+    "Adenocarpus hispanicus subsp. neilense": "subspecies",
+    "Littorela uniflora": "species"
+  },
+  "canonicalRequirements": [
+    "No canonical scientific name may contain '..'",
+    "subsp. must remain exactly one dotted marker",
+    "var. must remain exactly one dotted marker",
+    "f. must remain exactly one dotted marker"
+  ],
+  "qaRequirement": "Parsed rank must be independently compared against the verbatim infraspecific marker for all 67 scope records."
+}
