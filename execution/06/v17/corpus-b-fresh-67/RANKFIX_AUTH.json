@@ -7,7 +7,7 @@
   "scopeChange": false,
   "scientificCriteriaChange": false,
   "technicalFixOnly": true,
-  "triggerNonce": "2026-08-24T21:40:36+02:00_rank_parser_corrective_rerun",
+  "triggerNonce": "2026-08-24T21:46:00+02:00_explicit_second_trigger_after_workflow_present",
   "authorizationBasis": "JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001",
   "guards": {
     "corpusACross": 0,
