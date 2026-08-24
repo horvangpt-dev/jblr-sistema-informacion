@@ -1,0 +1,23 @@
+/home/runner/work/_temp/florae/man/Fi_get_taxon_synonyms.Rd:2:% Please edit documentation in R/Fi_get_taxon_synonyms.R
+/home/runner/work/_temp/florae/man/Fi_get_taxon_synonyms.Rd:3:\name{Fi_get_taxon_synonyms}
+/home/runner/work/_temp/florae/man/Fi_get_taxon_synonyms.Rd:4:\alias{Fi_get_taxon_synonyms}
+/home/runner/work/_temp/florae/man/Fi_get_taxon_synonyms.Rd:7:Fi_get_taxon_synonyms(genus, epithet = NULL, infra = NULL, infrarank = NULL)
+/home/runner/work/_temp/florae/man/Fi_taxon_in.Rd:2:% Please edit documentation in R/Fi_taxon_in.R
+/home/runner/work/_temp/florae/man/Fi_taxon_in.Rd:3:\name{Fi_taxon_in}
+/home/runner/work/_temp/florae/man/Fi_taxon_in.Rd:4:\alias{Fi_taxon_in}
+/home/runner/work/_temp/florae/man/Fi_taxon_in.Rd:7:Fi_taxon_in(genus, epithet = NULL, infra = NULL, infrarank = NULL)
+/home/runner/work/_temp/florae/NAMESPACE:8:export(Fi_get_taxon_synonyms)
+/home/runner/work/_temp/florae/NAMESPACE:10:export(Fi_taxon_in)
+/home/runner/work/_temp/florae/R/Fi_get_taxon_synonyms.R:1:# Fi_get_taxon_synonyms.R
+/home/runner/work/_temp/florae/R/Fi_get_taxon_synonyms.R:20:Fi_get_taxon_synonyms <- function (genus, epithet=NULL, infra=NULL, infrarank=NULL) {
+/home/runner/work/_temp/florae/R/Fi_get_taxon_synonyms.R:26:  aiFi <- Fi_taxon_in(genus, epithet, infra, infrarank)["accepted.in.Fi"]
+/home/runner/work/_temp/florae/R/Fi_get_taxon_synonyms.R:31:  Fi_result_syn <- readLines(paste0("http://www.floraiberica.es/PHP/cientificos2.php?gen=", genus,"&espe=", epithet, "&infra=", infra), encoding="latin1", warn=FALSE) #For now "latin1" encoding seems appropriate. #Adding "&infrank=", infrarank" to the paste0() don't change the result of the search in Fi, so it was removed.
+/home/runner/work/_temp/florae/R/Fi_taxon_in.R:1:# Fi_taxon_in.R
+/home/runner/work/_temp/florae/R/Fi_taxon_in.R:26:Fi_taxon_in <- function(genus, epithet = NULL, infra = NULL, infrarank = NULL) {
+/home/runner/work/_temp/florae/R/Fi_taxon_in.R:31:  #Fi_result <- readLines(paste0("http://www.floraiberica.es/PHP/cientificos_.php?gen=", genus), encoding="latin1", warn=FALSE) #It is not necessary ","&espe=", epithet, "&infra=", infra" #"latin1" seems to work in some cases, but not in other cases...
+/home/runner/work/_temp/florae/R/Fi_taxon_in.R:32:  Fi_result <- readLines(paste0("http://www.floraiberica.es/PHP/cientificos_.php?gen=", genus), warn=FALSE) #It is not necessary ","&espe=", epithet, "&infra=", infra"
+/home/runner/work/_temp/florae/R/Fi_taxon_in.R:44:  i <- grep("HREF =cientificos2.php\\?gen", Fi_result) #finds index of element with relevant names
+/home/runner/work/_temp/florae/R/Fi_get_nothotaxon_synonyms.R:22:  Fi_result_syn <- readLines(paste0("http://www.floraiberica.es/PHP/cientificos2.php?paren=", hybrid_formula_mod), encoding="latin1", warn=FALSE) #For now "latin1" encoding seems appropriate. #As the genus is abbreviated in the hybrid_formula, it is possible that rare cases require also the genus. Not implemented for now.
+/home/runner/work/_temp/florae/R/Fi_nothotaxon_in.R:20:  Fi_result_syn <- readLines(paste0("http://www.floraiberica.es/PHP/cientificos2.php?paren=", hybrid_formula_mod), encoding="latin1", warn=FALSE) #For now "latin1" encoding seems appropriate. #As the genus is abbreviated in the hybrid_formula, it is possible that rare cases require also the genus. Not implemented for now.
+/home/runner/work/_temp/florae/R/Fi_get_infrageneric.R:19:  Fi_result <- readLines(paste0("http://www.floraiberica.es/PHP/cientificos_.php?gen=", genus), warn=FALSE)
+/home/runner/work/_temp/florae/R/Fi_get_infrageneric.R:27:  i <- grep("HREF =cientificos2.php\\?gen", Fi_result) #finds index of element with relevant names
