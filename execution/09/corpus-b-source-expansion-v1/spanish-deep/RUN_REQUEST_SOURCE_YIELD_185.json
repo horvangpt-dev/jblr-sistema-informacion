@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "scope": 185,
+  "runId": "CORPUS_B_SECONDARY_SOURCE_YIELD_185_20260824_001",
+  "noEidosAssignment": true,
+  "measureSearchHits": true,
+  "measureExplicitSynonymy": true,
+  "measureDiscoveredNames": true,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false
+}
