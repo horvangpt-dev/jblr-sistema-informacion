@@ -1,0 +1,541 @@
+{
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "nameVerbatim": "Adenocarpus hispanicus subsp. neilense",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Adenocarpus hispanicus subsp. neilense"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "nameVerbatim": "Anteriorchis coriophora var. carpetana",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Anteriorchis coriophora var. carpetana"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "nameVerbatim": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Asplenium adiantum-nigrum var. adiantum-nigrum"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "nameVerbatim": "Astragalus monspessulanus subsp. teresianus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Astragalus monspessulanus subsp. teresianus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "nameVerbatim": "Astragalus sempervirens subsp. muticus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Astragalus sempervirens subsp. muticus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "nameVerbatim": "Astragalus vesicarius subsp. vesicarius",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Astragalus vesicarius subsp. vesicarius"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "nameVerbatim": "Avenula bromoides subsp. pauneroi",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Avenula bromoides subsp. pauneroi"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "nameVerbatim": "Avenula lodunensis subsp. romero-zarcoi",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Avenula lodunensis subsp. romero-zarcoi"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3789",
+      "nameVerbatim": "Biscutella valentina var. variegata",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Biscutella valentina var. variegata"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "910",
+      "nameVerbatim": "Bupleurum ranunculoides subsp. gramineus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Bupleurum ranunculoides subsp. gramineus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "911",
+      "nameVerbatim": "Bupleurum ranunculoides subsp. ranunculoides",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Bupleurum ranunculoides subsp. ranunculoides"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3629",
+      "nameVerbatim": "Campanula trachelium subsp. trachelium",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Campanula trachelium subsp. trachelium"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1968",
+      "nameVerbatim": "Carex muricata subsp. lamprocarpa",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Carex muricata subsp. lamprocarpa"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2758",
+      "nameVerbatim": "Centaurea debeauxii subsp. nemoralis",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Centaurea debeauxii subsp. nemoralis"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2367",
+      "nameVerbatim": "Centaurea paniculata subsp. castellana",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Centaurea paniculata subsp. castellana"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3681",
+      "nameVerbatim": "Centaurea triumfetti subsp. lingulata",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Centaurea triumfetti subsp. lingulata"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5177",
+      "nameVerbatim": "Centranthus calcitrapae subsp. calcitrapae",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Centranthus calcitrapae subsp. calcitrapae"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5080",
+      "nameVerbatim": "Cerastium brachypetalum var. brachypetalum",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Cerastium brachypetalum var. brachypetalum"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "839",
+      "nameVerbatim": "Cirsium pyrenaicum var. longespinosum",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Cirsium pyrenaicum var. longespinosum"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "840",
+      "nameVerbatim": "Cirsium pyrenaicum var. pyrenaicum",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Cirsium pyrenaicum var. pyrenaicum"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "173",
+      "nameVerbatim": "Cytisus scoparius subsp. cantabricus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Cytisus scoparius subsp. cantabricus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2934",
+      "nameVerbatim": "Dactylorhiza elata subsp. sesquipedalis",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Dactylorhiza elata subsp. sesquipedalis"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2483",
+      "nameVerbatim": "Dactylorhiza incarnata subsp. incarnata",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Dactylorhiza incarnata subsp. incarnata"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1624",
+      "nameVerbatim": "Dactylorhiza maculata subsp. elodes",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Dactylorhiza maculata subsp. elodes"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1625",
+      "nameVerbatim": "Dactylorhiza maculata subsp. maculata",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Dactylorhiza maculata subsp. maculata"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1647",
+      "nameVerbatim": "Dactylorhiza majalis subsp. majalis",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Dactylorhiza majalis subsp. majalis"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4480",
+      "nameVerbatim": "Dryopteris affinis subsp. cambrensis",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Dryopteris affinis subsp. cambrensis"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1250",
+      "nameVerbatim": "Epipactis phyllanthes var. fageticola",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Epipactis phyllanthes var. fageticola"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3720",
+      "nameVerbatim": "Filipendula ulmaria subsp. ulmaria",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Filipendula ulmaria subsp. ulmaria"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3203",
+      "nameVerbatim": "Genista florida subsp. polygaliphylla",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Genista florida subsp. polygaliphylla"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4677",
+      "nameVerbatim": "Gentiana angustifolia subsp. occidentalis",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Gentiana angustifolia subsp. occidentalis"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2149",
+      "nameVerbatim": "Helianthemum nummularium subsp. nummularium",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Helianthemum nummularium subsp. nummularium"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "412",
+      "nameVerbatim": "Heracleum sphondylium subsp. montanum",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Heracleum sphondylium subsp. montanum"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "136",
+      "nameVerbatim": "Herniaria scabrida var. glabrescens",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Herniaria scabrida var. glabrescens"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2602",
+      "nameVerbatim": "Hieracium lactucella subsp. lactucella",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Hieracium lactucella subsp. lactucella"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1270",
+      "nameVerbatim": "Hieracium pilosella subsp. micradenium",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Hieracium pilosella subsp. micradenium"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1271",
+      "nameVerbatim": "Hieracium pilosella subsp. pilosella",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Hieracium pilosella subsp. pilosella"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1272",
+      "nameVerbatim": "Hieracium pilosella subsp. tricholepium",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Hieracium pilosella subsp. tricholepium"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3555",
+      "nameVerbatim": "Himantoglossum hircinum subsp. hircinum",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Himantoglossum hircinum subsp. hircinum"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4217",
+      "nameVerbatim": "Hippocrepis comosa subsp. squamata",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Hippocrepis comosa subsp. squamata"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4244",
+      "nameVerbatim": "Juncus conglomeratus var. conglomeratus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Juncus conglomeratus var. conglomeratus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2930",
+      "nameVerbatim": "Juncus effusus var. subglomeratus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Juncus effusus var. subglomeratus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "591",
+      "nameVerbatim": "Knautia subscaposa subsp. subscaposa",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Knautia subscaposa subsp. subscaposa"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3758",
+      "nameVerbatim": "Littorela uniflora",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Littorela uniflora"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5195",
+      "nameVerbatim": "Luzula campestris subsp. carpetana",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Luzula campestris subsp. carpetana"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1949",
+      "nameVerbatim": "Luzula multiflora subsp. congesta",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Luzula multiflora subsp. congesta"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "636",
+      "nameVerbatim": "Luzula sylvatica subsp. henriquesii",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Luzula sylvatica subsp. henriquesii"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "624",
+      "nameVerbatim": "Omalotheca supina subsp. pusilla",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Omalotheca supina subsp. pusilla"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "635",
+      "nameVerbatim": "Omalotheca sylvatica subsp. carpetana",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Omalotheca sylvatica subsp. carpetana"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4407",
+      "nameVerbatim": "Onopordum acaulon subsp. acaulon",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Onopordum acaulon subsp. acaulon"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4770",
+      "nameVerbatim": "Paronychia argentea var. argentea",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Paronychia argentea var. argentea"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2582",
+      "nameVerbatim": "Paronychia kapela var. pseudoaretioides",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Paronychia kapela var. pseudoaretioides"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1348",
+      "nameVerbatim": "Paronychia polygonifolia var. polygonifolia",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Paronychia polygonifolia var. polygonifolia"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2228",
+      "nameVerbatim": "Peucedanum officinales subsp. officinale",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Peucedanum officinales subsp. officinale"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3401",
+      "nameVerbatim": "Pimpinella gracilis subsp. puberula",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Pimpinella gracilis subsp. puberula"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4588",
+      "nameVerbatim": "Plantago alpina subsp. penyalarensis",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Plantago alpina subsp. penyalarensis"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5128",
+      "nameVerbatim": "Ranunculus bulbosus var. hispanicus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Ranunculus bulbosus var. hispanicus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2944",
+      "nameVerbatim": "Salix eleagnos subsp. angustifolia",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Salix eleagnos subsp. angustifolia"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1821",
+      "nameVerbatim": "Sanguisorba minor subsp. muricata",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Sanguisorba minor subsp. muricata"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4082",
+      "nameVerbatim": "Scirpus cespitosus subsp. germanicum",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Scirpus cespitosus subsp. germanicum"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4679",
+      "nameVerbatim": "Scorzonera angustifolia var. angustifolia",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Scorzonera angustifolia var. angustifolia"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3916",
+      "nameVerbatim": "Solidago virgaurea subsp. fallit-tirones",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Solidago virgaurea subsp. fallit-tirones"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4898",
+      "nameVerbatim": "Sorbus aucuparia subsp. aucuparia",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Sorbus aucuparia subsp. aucuparia"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2231",
+      "nameVerbatim": "Stachys officinalis subsp. officinalis",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Stachys officinalis subsp. officinalis"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1690",
+      "nameVerbatim": "Tetragonolobus maritimus var. hirsutus",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Tetragonolobus maritimus var. hirsutus"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "945",
+      "nameVerbatim": "Trifolium repens subsp. nevadense",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Trifolium repens subsp. nevadense"
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2372",
+      "nameVerbatim": "Vicia pannonica var. purpurascens",
+      "state": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "documentedQueryNames": [
+        "Vicia pannonica var. purpurascens"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "state": "PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES",
+  "stopRequired": false,
+  "stopReason": null,
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+  "supersedesRunId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "githubRunId": "32769998339",
+  "scope": 67,
+  "rankFixVersion": "RANK_FIX_v1",
+  "rankFixQaPass": true,
+  "processedRows": 67,
+  "resolvedCount": 0,
+  "unresolvedOrConflictCount": 67,
+  "conflictCount": 0,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "corpusBFreeze": false,
+  "downstreamStimesExecuted": false
+}
