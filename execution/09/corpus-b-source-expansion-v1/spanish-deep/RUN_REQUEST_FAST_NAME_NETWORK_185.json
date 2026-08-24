@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "scope": 185,
+  "batchSize": 25,
+  "method": "NAME_NETWORK_TO_EXACT_EIDOS",
+  "releaseEvent": "JBLR-EVT-0000-20260824-RELEASE-09-FAST-NAME-NETWORK-185-001",
+  "primaryNetworkSource": "GBIF_BACKBONE_EXACT_STRUCTURED_API",
+  "top4Primary": false,
+  "top4RescueOnly": true,
+  "autoContinueIfNormal": true,
+  "stopOnAnomalousNearZeroYieldOrSourceFailureCluster": true,
+  "eidosSnapshot": "https://datos.iepnb.es/datasets/eidos.ttl",
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true
+}
