@@ -1,0 +1,89 @@
+name: 09 Corpus B productive fresh resolution v2
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-productive-v1
+    paths:
+      - 'execution/09/corpus-b-cold-start-v1/run-control/RUN_REQUEST_002.json'
+
+permissions:
+  contents: write
+
+jobs:
+  productive-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-productive-v1
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate request and prepare immutable run path
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const root='execution/09/corpus-b-cold-start-v1';
+          const p=JSON.parse(fs.readFileSync(root+'/run-control/RUN_REQUEST_002.json','utf8'));
+          if(p.releaseEvent!=='JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-CORPUS-B-001') throw new Error('RELEASE_EVENT_MISMATCH');
+          if(p.crossWithA!==false||p.neonWrites!==0||p.cacheInitialState!=='EMPTY') throw new Error('ISOLATION_CONTRACT_FAIL');
+          if(p.sourceSha256!=='f3b2c9ca0921779cf5131ea8d4c98a35299a325cf0be4f419cfec4d39e667f4f') throw new Error('SOURCE_HASH_MISMATCH');
+          const q=JSON.parse(fs.readFileSync(root+'/input/CORPUS_B_338_QUEUE.json','utf8'));q.RUN_ID=p.requestId;
+          fs.writeFileSync(process.env.RUNNER_TEMP+'/queue-v2.json',JSON.stringify(q));
+          fs.appendFileSync(process.env.GITHUB_ENV,`RUN_ID=${p.requestId}\nRUN_DIR=${root}/runs/${p.requestId}\n`);
+          NODE
+
+      - name: Re-run accepted isolation QA
+        working-directory: execution/08/corpus-b-cold-start-v1
+        run: node --test test/*.test.js
+
+      - name: Download fresh Spanish vascular checklist
+        shell: bash
+        run: |
+          rm -rf "$RUNNER_TEMP/spanish-flora" "$RUNNER_TEMP/spanish-flora.zip"
+          mkdir -p "$RUNNER_TEMP/spanish-flora"
+          curl -fL --retry 3 --retry-delay 2 'https://ipt.gbif.es/archive.do?r=taxonesfloraespanola' -o "$RUNNER_TEMP/spanish-flora.zip"
+          unzip -q "$RUNNER_TEMP/spanish-flora.zip" -d "$RUNNER_TEMP/spanish-flora"
+          TAXON_FILE="$(find "$RUNNER_TEMP/spanish-flora" -type f \( -name 'taxon.txt' -o -name 'taxa.txt' \) | head -n 1)"
+          test -n "$TAXON_FILE"
+          echo "TAXON_FILE=$TAXON_FILE" >> "$GITHUB_ENV"
+          sha256sum "$RUNNER_TEMP/spanish-flora.zip"
+          sha256sum "$TAXON_FILE"
+
+      - name: Execute corrected fresh 338 resolution
+        shell: bash
+        run: |
+          test ! -e "$RUN_DIR"
+          mkdir -p "$RUN_DIR"
+          node execution/09/corpus-b-cold-start-v1/bin/run-fresh-338-resolution-v2.js \
+            "$RUNNER_TEMP/queue-v2.json" \
+            "$TAXON_FILE" \
+            "$RUN_DIR"
+
+      - name: Build immutable receipt
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),crypto=require('crypto');
+          const dir=process.env.RUN_DIR,id=process.env.RUN_ID;
+          const m=JSON.parse(fs.readFileSync(dir+'/RUN_MANIFEST_PHASE_B_v2.json','utf8'));
+          const qa=JSON.parse(fs.readFileSync(dir+'/QA_REPORT_v2.json','utf8'));
+          const hashes={};for(const f of fs.readdirSync(dir).sort())hashes[f]=crypto.createHash('sha256').update(fs.readFileSync(dir+'/'+f)).digest('hex');
+          const receipt={receiptVersion:'CORPUS_B_09_PRODUCTIVE_RECEIPT_v2',githubRunId:String(process.env.GITHUB_RUN_ID),observedAt:new Date().toISOString(),status:qa.QA_STATE,releaseEvent:'JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-CORPUS-B-001',runId:id,counts:m.counts,independence:m.independence,hashes,CROSS_WITH_A_PERFORMED:false,CROSSWALK_MODULE_EXECUTED:false,NEON_WRITES:0,CANONICAL_CORPUS_A_MUTATION:0,canonicalEffect:'NONE_PENDING_0000_POSTRUN_ACCEPTANCE'};
+          fs.writeFileSync(dir+'/RUN_RECEIPT.json',JSON.stringify(receipt,null,2)+'\n');
+          console.log(JSON.stringify(receipt,null,2));
+          NODE
+
+      - name: Publish immutable attempt-02 evidence
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$RUN_DIR"
+          git commit -m "result(09): Corpus B fresh productive run v2 ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:09-corpus-b-productive-v1
