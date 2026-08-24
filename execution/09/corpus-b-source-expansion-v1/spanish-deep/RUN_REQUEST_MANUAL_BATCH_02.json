@@ -1,5 +1,5 @@
 {
-  "runId": "SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_001",
+  "runId": "SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_002",
   "enabled": true,
   "scope": 337,
   "inputRelations": 25,
@@ -7,6 +7,9 @@
   "humanDirective": "taxon-by-taxon deep Spanish synonymy search then contrast each result with EIDOS",
   "parentReleaseEvent": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001",
   "terminalAttempt003Event": "JBLR-EVT-09-20260824-SOURCE-EXPANSION-337-TERMINAL-ATTEMPT003-001",
+  "priorRun": 32705830203,
+  "correctionCommit": "f24963e2c2da00be3c16773192210a9c51d32b43",
+  "retryReason": "EIDOS_RANK_FILTER_CORRECTION_ONLY;NO_TAXONOMIC_SEMANTIC_CHANGE",
   "crossWithA": false,
   "neonWrites": 0,
   "corpusBFreeze": false,
