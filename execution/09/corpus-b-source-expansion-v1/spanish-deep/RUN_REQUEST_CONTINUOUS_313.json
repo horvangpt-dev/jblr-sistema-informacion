@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "runId": "CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_20260824_001",
+  "scope": 313,
+  "gateEvent": "JBLR-EVT-0000-20260824-ACCEPT-BATCH03-SWITCH-09-CONTINUOUS-313-001",
+  "executionMode": "CONTINUOUS_DEEP_SPANISH_SINGLE_EIDOS_INDEX",
+  "singleEidosLoad": true,
+  "spanishChecklist": "GBIF_SPAIN_FLORA_VASCULAR_v1.16",
+  "reuseCurrentReleaseDocumentaryEvidence": [
+    "FLORA_CATALANA_EIDOS_337_20260824_001",
+    "SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_002"
+  ],
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "requiredOutput": "ONE_DEDUPLICATED_CONSOLIDATED_RECEIPT_WITH_RESOLVED_AND_FAILURE_GROUPS"
+}
