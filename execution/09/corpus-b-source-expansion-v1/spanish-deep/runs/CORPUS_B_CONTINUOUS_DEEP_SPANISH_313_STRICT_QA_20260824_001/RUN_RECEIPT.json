@@ -1,0 +1,61 @@
+{
+  "runClass": "CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_NAME_SHAPE_AUDIT",
+  "inputRows": 313,
+  "outputRows": 313,
+  "counts": {
+    "FAILED": 299,
+    "RESOLVED": 14
+  },
+  "groupCounts": {
+    "QUALIFIED_OR_UNMARKED_NAME_REQUIRES_EXPLICIT_SAME_FORM_RELATION": 49,
+    "NO_RESULT_IN_SPANISH_SOURCES_CONSULTED": 185,
+    "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE": 14,
+    "SPANISH_RESULT_FOUND_BUT_NAMES_NOT_FOUND_IN_EIDOS": 62,
+    "CROSS_RANK_RELATION_ONLY_NOT_ID_ELIGIBLE": 1,
+    "CONFLICTING_SUPPORTED_NAMES_MULTIPLE_EIDOS_IDS": 1,
+    "SPANISH_RELATION_FOUND_EIDOS_SAME_RANK_NO_ACCEPTED": 1
+  },
+  "resolvedRows": 14,
+  "failedRows": 299,
+  "qaDemotionsFromResolved": 4,
+  "qaDemotions": [
+    {
+      "B_SOURCE_RECORD_ID": "3310",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys fusca gr.",
+      "oldId": "6607",
+      "shape": "QUALIFIED_GROUP_NAME"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5338",
+      "NOMBRE_RIOJA_VERBATIM": "Rorippa sylvestris sylvestris",
+      "oldId": "7814",
+      "shape": "UNMARKED_TRINOMIAL"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1495",
+      "NOMBRE_RIOJA_VERBATIM": "Serapias lingua x parviflora",
+      "oldId": "8266",
+      "shape": "HYBRID_FORMULA_OR_SHORTHAND"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5343",
+      "NOMBRE_RIOJA_VERBATIM": "Verbascum rotundifolium ripacurcicum",
+      "oldId": "9297",
+      "shape": "UNMARKED_TRINOMIAL"
+    }
+  ],
+  "baseContinuousResult": "CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_20260824_001",
+  "baseEidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "singleEidosLoadInBaseRun": true,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "semantics": [
+    "NO_SILENT_INFERENCE",
+    "SOURCE_FAILURE!=NOT_FOUND",
+    "NOT_FOUND!=ABSENCE"
+  ]
+}
