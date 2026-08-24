@@ -62,38 +62,45 @@ call_taxon <- function(p) {
   stop(paste("unsupported kind",p$kind))
 }
 
-call_synonyms <- function(parsed_accept) {
-  fun <- get("Fi_get_taxon_synonyms", asNamespace("florae"))
-  if (parsed_accept$kind == "SPECIES") return(do.call(fun, list(parsed_accept$genus, parsed_accept$epithet)))
-  if (parsed_accept$kind == "INFRASPECIFIC") return(do.call(fun, list(parsed_accept$genus, parsed_accept$epithet, parsed_accept$infra, parsed_accept$rank)))
+call_synonyms <- function(p) {
+  if (p$kind == "SPECIES") return(do.call(get("Fi_get_taxon_synonyms", asNamespace("florae")), list(p$genus,p$epithet)))
+  if (p$kind == "INFRASPECIFIC") return(do.call(get("Fi_get_taxon_synonyms", asNamespace("florae")), list(p$genus,p$epithet,p$infra,p$rank)))
+  if (p$kind == "NAMED_HYBRID" && exists("Fi_get_nothotaxon_synonyms", where=asNamespace("florae"), inherits=FALSE)) return(do.call(get("Fi_get_nothotaxon_synonyms", asNamespace("florae")), list(p$genus,p$epithet)))
   NULL
+}
+
+is_accepted_fi <- function(ans) {
+  if (is.atomic(ans) && !is.null(names(ans)) && "accepted.in.Fi" %in% names(ans)) {
+    v <- ans[["accepted.in.Fi"]]
+    return(!is.na(v) && identical(tolower(as.character(v)), "true"))
+  }
+  FALSE
 }
 
 results <- vector("list", length(rows))
 for (i in seq_along(rows)) {
   r <- rows[[i]]; p <- parse_name(r$NOMBRE_RIOJA_VERBATIM)
-  rec <- list(B_SOURCE_RECORD_ID=r$B_SOURCE_RECORD_ID, NOMBRE_RIOJA_VERBATIM=r$NOMBRE_RIOJA_VERBATIM, parsed=p, source="FLORA_IBERICA", query_state="NOT_RUN", raw=NULL, extracted_names=list(), synonym_expansions=list(), source_failure=NULL)
+  rec <- list(B_SOURCE_RECORD_ID=r$B_SOURCE_RECORD_ID, NOMBRE_RIOJA_VERBATIM=r$NOMBRE_RIOJA_VERBATIM, parsed=p, source="FLORA_IBERICA", query_state="NOT_RUN", raw=NULL, accepted_in_flora_iberica=NULL, extracted_names=list(), synonym_expansions=list(), source_failure=NULL)
   if (p$kind %in% c("SPECIES","INFRASPECIFIC","NAMED_HYBRID")) {
     ans <- tryCatch(call_taxon(p), error=function(e) structure(list(error=conditionMessage(e)), class="fi_error"))
     if (inherits(ans,"fi_error")) {
       rec$query_state <- "SOURCE_FAILURE"; rec$source_failure <- ans$error
     } else {
-      rec$query_state <- "QUERY_OK"; rec$raw <- obj_to_json_safe(ans); rec$extracted_names <- extract_name_rows(ans)
-      accepted <- Filter(function(z) !is.null(z$status) && !is.na(z$status) && grepl("accepted|acept", z$status, ignore.case=TRUE), rec$extracted_names)
-      if (!length(accepted) && length(rec$extracted_names)) accepted <- rec$extracted_names[1]
-      if (length(accepted) > 3) accepted <- accepted[seq_len(3)]
-      for (a in accepted) {
-        pa <- parse_name(a$name)
-        if (pa$kind %in% c("SPECIES","INFRASPECIFIC")) {
-          sy <- tryCatch(call_synonyms(pa), error=function(e) structure(list(error=conditionMessage(e)), class="fi_error"))
-          if (inherits(sy,"fi_error")) rec$synonym_expansions[[length(rec$synonym_expansions)+1]] <- list(accepted_name=a$name, state="SOURCE_FAILURE", detail=sy$error)
-          else rec$synonym_expansions[[length(rec$synonym_expansions)+1]] <- list(accepted_name=a$name, state="QUERY_OK", raw=obj_to_json_safe(sy), extracted_names=extract_name_rows(sy))
+      rec$query_state <- "QUERY_OK"; rec$raw <- obj_to_json_safe(ans); rec$accepted_in_flora_iberica <- is_accepted_fi(ans)
+      # Fi_taxon_in() returns a status vector, not a name table. If accepted, query
+      # the synonym page for THIS exact parsed taxon directly; never infer an accepted
+      # name from string similarity.
+      if (isTRUE(rec$accepted_in_flora_iberica)) {
+        sy <- tryCatch(call_synonyms(p), error=function(e) structure(list(error=conditionMessage(e)), class="fi_error"))
+        if (inherits(sy,"fi_error")) {
+          rec$synonym_expansions[[1]] <- list(accepted_name=p$normalized, state="SOURCE_FAILURE", detail=sy$error)
+        } else {
+          rec$synonym_expansions[[1]] <- list(accepted_name=p$normalized, state="QUERY_OK", raw=obj_to_json_safe(sy), extracted_names=extract_name_rows(sy))
         }
       }
     }
   } else rec$query_state <- paste0("SKIPPED_",p$kind)
   all_names <- c(r$NOMBRE_RIOJA_VERBATIM)
-  if (length(rec$extracted_names)) all_names <- c(all_names, vapply(rec$extracted_names, `[[`, character(1), "name"))
   if (length(rec$synonym_expansions)) for (s in rec$synonym_expansions) if (!is.null(s$extracted_names) && length(s$extracted_names)) all_names <- c(all_names, vapply(s$extracted_names, `[[`, character(1), "name"))
   rec$name_network <- unique(norm_ws(all_names[nzchar(all_names)]))
   results[[i]] <- rec
@@ -101,15 +108,17 @@ for (i in seq_along(rows)) {
   Sys.sleep(0.15)
 }
 summary <- list(
-  run_id="09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001",
+  run_id="09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_002",
   source="FLORA_IBERICA",
   total=length(results),
   query_ok=sum(vapply(results,function(z) identical(z$query_state,"QUERY_OK"),logical(1))),
+  accepted_in_flora_iberica=sum(vapply(results,function(z) isTRUE(z$accepted_in_flora_iberica),logical(1))),
+  synonym_pages_ok=sum(vapply(results,function(z) length(z$synonym_expansions)>0 && identical(z$synonym_expansions[[1]]$state,"QUERY_OK"),logical(1))),
   source_failure=sum(vapply(results,function(z) identical(z$query_state,"SOURCE_FAILURE"),logical(1))),
   special_skipped=sum(vapply(results,function(z) grepl("^SKIPPED_",z$query_state),logical(1))),
   rows=results
 )
 writeLines(toJSON(summary, auto_unbox=TRUE, null="null", na="null", pretty=TRUE), file.path(outdir,"FLORA_IBERICA_337_TAXON_SWEEP.json"), useBytes=TRUE)
-network <- lapply(results, function(z) list(B_SOURCE_RECORD_ID=z$B_SOURCE_RECORD_ID,NOMBRE_RIOJA_VERBATIM=z$NOMBRE_RIOJA_VERBATIM,source_rank=z$parsed$rank,source_kind=z$parsed$kind,query_state=z$query_state,names=z$name_network,source_failure=z$source_failure))
+network <- lapply(results, function(z) list(B_SOURCE_RECORD_ID=z$B_SOURCE_RECORD_ID,NOMBRE_RIOJA_VERBATIM=z$NOMBRE_RIOJA_VERBATIM,source_rank=z$parsed$rank,source_kind=z$parsed$kind,query_state=z$query_state,accepted_in_flora_iberica=z$accepted_in_flora_iberica,names=z$name_network,source_failure=z$source_failure))
 writeLines(toJSON(list(run_id=summary$run_id,source="FLORA_IBERICA",rows=network),auto_unbox=TRUE,null="null",na="null",pretty=TRUE), file.path(outdir,"FLORA_IBERICA_337_NAME_NETWORK.json"), useBytes=TRUE)
-cat(toJSON(summary[c("run_id","source","total","query_ok","source_failure","special_skipped")],auto_unbox=TRUE),"\n")
+cat(toJSON(summary[c("run_id","source","total","query_ok","accepted_in_flora_iberica","synonym_pages_ok","source_failure","special_skipped")],auto_unbox=TRUE),"\n")
