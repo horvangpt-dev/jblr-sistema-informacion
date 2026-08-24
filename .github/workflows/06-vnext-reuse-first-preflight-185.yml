@@ -1,0 +1,31 @@
+name: 06 vNEXT reuse-first preflight 185
+
+on:
+  push:
+    branches:
+      - 06-vnext-reuse-first-preflight-185
+    paths:
+      - 'execution/06/vnext/reuse-first-preflight-185/**'
+      - '.github/workflows/06-vnext-reuse-first-preflight-185.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  reuse-first-preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout preflight branch with history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch frozen historical 06 branch
+        run: git fetch origin 06-stimes-banco-semillas --no-tags
+      - name: Execute read-only reuse comparator
+        run: python3 execution/06/vnext/reuse-first-preflight-185/read_only_reuse_preflight.py
+      - name: Upload preflight evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: 06-reuse-first-preflight-185
+          path: execution/06/vnext/reuse-first-preflight-185/output/
+          if-no-files-found: error
