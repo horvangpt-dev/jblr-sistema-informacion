@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "scope": 4,
+  "method": "NAME_NETWORK_TO_EXACT_EIDOS",
+  "releaseEvent": "JBLR-EVT-0000-20260824-PIVOT-09-NAME-NETWORK-PRIMARY-001",
+  "supersedesRun": 32734083294,
+  "top4Primary": false,
+  "networkFile": "QUICK_NAME_NETWORK_PILOT_4.json",
+  "eidosSnapshot": "https://datos.iepnb.es/datasets/eidos.ttl",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true
+}
