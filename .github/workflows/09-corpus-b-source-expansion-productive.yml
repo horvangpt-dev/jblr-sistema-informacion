@@ -1,9 +1,9 @@
-name: 09 Corpus B source expansion 337 productive
+name: 09 Corpus B source expansion 337 productive v2
 
 on:
   push:
     branches:
-      - 09-corpus-b-source-expansion-v1
+      - 09-corpus-b-source-expansion-v2
     paths:
       - 'execution/09/corpus-b-source-expansion-v1/run-control/RUN_REQUEST.json'
   workflow_dispatch:
@@ -19,11 +19,11 @@ env:
 jobs:
   productive-source-expansion:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 09-corpus-b-source-expansion-v1
+          ref: 09-corpus-b-source-expansion-v2
           fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
@@ -41,6 +41,7 @@ jobs:
           if(p.neonWrites!==0) throw new Error('NEON_WRITES_MUST_BE_ZERO');
           if(p.carryForwardQueue!==337) throw new Error('QUEUE_337_REQUIRED');
           if(p.implementation08Commit!==process.env.ACCEPTED_08_COMMIT) throw new Error('IMPLEMENTATION_COMMIT_MISMATCH');
+          if(p.attempt!==3) throw new Error('ATTEMPT_003_REQUIRED');
           fs.appendFileSync(process.env.GITHUB_OUTPUT,`run_id=${p.runId}\n`);
           NODE
       - name: Load immutable accepted 08 implementation through authenticated git
@@ -58,7 +59,7 @@ jobs:
           test "$(git hash-object "$D/source-expansion.js")" = "a751e7449bc817734b0ae67ada0b2a68f99df31e"
           test "$(git hash-object "$D/transports.js")" = "678aa7710bcc0b4a32510bbc0f7d7950db90adb2"
           test "$(git hash-object "$D/source-access-inventory.json")" = "030ae0e2182375573f49c601a6c64ae38dd8ec62"
-      - name: Execute productive 337 source expansion
+      - name: Execute productive 337 source expansion with bounded transport circuit breakers
         env:
           RUN_ID: ${{ steps.request.outputs.run_id }}
         shell: bash
@@ -76,8 +77,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$ROOT/runs/${{ steps.request.outputs.run_id }}"
-          git commit -m "result(09): Corpus B source expansion 337 ${GITHUB_RUN_ID}" || true
-          git push origin HEAD:09-corpus-b-source-expansion-v1
+          git commit -m "result(09): Corpus B source expansion 337 bounded ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:09-corpus-b-source-expansion-v2
       - name: Persist failure receipt
         if: failure()
         shell: bash
@@ -99,5 +100,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$ROOT/failures/FAILURE_${GITHUB_RUN_ID}.json"
-          git commit -m "failure(09): Corpus B source expansion 337 ${GITHUB_RUN_ID}" || true
-          git push origin HEAD:09-corpus-b-source-expansion-v1 || true
+          git commit -m "failure(09): Corpus B source expansion 337 bounded ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:09-corpus-b-source-expansion-v2 || true
