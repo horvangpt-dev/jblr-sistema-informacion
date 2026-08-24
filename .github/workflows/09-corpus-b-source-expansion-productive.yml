@@ -13,6 +13,7 @@ permissions:
 
 env:
   ROOT: execution/09/corpus-b-source-expansion-v1
+  ACCEPTED_08_BRANCH: 08-corpus-b-source-expansion-v1
   ACCEPTED_08_COMMIT: b04c32c08d7f1fcf47b558efab3ce2a13a4ccf99
 
 jobs:
@@ -23,6 +24,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: 09-corpus-b-source-expansion-v1
+          fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -38,17 +40,21 @@ jobs:
           if(p.crossWithA!==false) throw new Error('CROSS_WITH_A_MUST_BE_FALSE');
           if(p.neonWrites!==0) throw new Error('NEON_WRITES_MUST_BE_ZERO');
           if(p.carryForwardQueue!==337) throw new Error('QUEUE_337_REQUIRED');
+          if(p.implementation08Commit!==process.env.ACCEPTED_08_COMMIT) throw new Error('IMPLEMENTATION_COMMIT_MISMATCH');
           fs.appendFileSync(process.env.GITHUB_OUTPUT,`run_id=${p.runId}\n`);
           NODE
-      - name: Fetch immutable accepted 08 implementation
+      - name: Load immutable accepted 08 implementation through authenticated git
         shell: bash
         run: |
           set -euo pipefail
+          git fetch --no-tags --depth=1 origin "+refs/heads/${ACCEPTED_08_BRANCH}:refs/remotes/origin/${ACCEPTED_08_BRANCH}"
+          ACTUAL="$(git rev-parse "refs/remotes/origin/${ACCEPTED_08_BRANCH}")"
+          test "$ACTUAL" = "$ACCEPTED_08_COMMIT"
           D="$RUNNER_TEMP/accepted08"
           mkdir -p "$D"
-          curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/src/source-expansion.js" -o "$D/source-expansion.js"
-          curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/src/transports.js" -o "$D/transports.js"
-          curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/contracts/source-access-inventory.json" -o "$D/source-access-inventory.json"
+          git show "${ACCEPTED_08_COMMIT}:execution/08/corpus-b-source-expansion-v1/src/source-expansion.js" > "$D/source-expansion.js"
+          git show "${ACCEPTED_08_COMMIT}:execution/08/corpus-b-source-expansion-v1/src/transports.js" > "$D/transports.js"
+          git show "${ACCEPTED_08_COMMIT}:execution/08/corpus-b-source-expansion-v1/contracts/source-access-inventory.json" > "$D/source-access-inventory.json"
           test "$(git hash-object "$D/source-expansion.js")" = "a751e7449bc817734b0ae67ada0b2a68f99df31e"
           test "$(git hash-object "$D/transports.js")" = "678aa7710bcc0b4a32510bbc0f7d7950db90adb2"
           test "$(git hash-object "$D/source-access-inventory.json")" = "030ae0e2182375573f49c601a6c64ae38dd8ec62"
@@ -84,6 +90,7 @@ jobs:
             "githubRunId": "${GITHUB_RUN_ID}",
             "observedAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
             "status": "FAIL",
+            "failureClass": "EXECUTION_OR_SOURCE_FAILURE_UNCLASSIFIED_UNTIL_LOG_REVIEW",
             "semantics": "SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND_OR_ABSENCE",
             "crossWithA": false,
             "neonWrites": 0
