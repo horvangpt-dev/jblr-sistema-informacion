@@ -1,0 +1,17 @@
+{
+  "runId": "09_CORPUS_B_SPANISH_SYNONYMY_EIDOS_DEEP_20260824_001",
+  "enabled": true,
+  "humanDirectiveObservedAt": "2026-08-24T07:44:34Z",
+  "objective": "Execute the full 337 taxon-by-taxon deep Spanish synonymy sweep, then contrast every documented name against the official MITECO EIDOS dump to recover additional taxon IDs",
+  "primarySpanishSource": "FLORA_IBERICA",
+  "nextSourcesForResiduals": ["ANTHOS_RJB","FLORA_MONTIBERICA","FLORA_ANDALUCIA","HVMO_UIB","ATLAS_FLORA_ARAGON_JACA","FLORA_CATALANA","REGIONAL_SPANISH_SOURCES"],
+  "eidosContrast": "OFFICIAL_MITECO_EIDOS_OPEN_DATA_TTL",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "sourceFailureNotAbsence": true,
+  "notFoundNotAbsence": true
+}
