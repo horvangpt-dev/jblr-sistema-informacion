@@ -1,0 +1,8 @@
+{
+  "name": "jblr-08-corpus-b-source-expansion-v1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": {"node": ">=22"},
+  "scripts": {"test": "node --test test/*.test.js"}
+}
