@@ -10,6 +10,7 @@ if not any(s["key"] == _JOLUBE["key"] for s in core.SOURCES):
     core.SOURCES = core.SOURCES + [_JOLUBE]
 
 _SYMBOL_RE = re.compile(r"(?:≡|(?<![<>!])=(?!=))")
+_SYMBOL_LINE_START_RE = re.compile(r"^\s*(?:≡|(?<![<>!])=(?!=))\s*")
 _LABEL_RE = re.compile(r"\b(?:syn\.?|synonym(?:s)?|sinonim(?:ia|ias|o|os)?|sinónim(?:ia|ias|o|os)?)\b", re.I)
 
 
@@ -52,8 +53,8 @@ def _previous_nonempty_line(lines, index):
     return ""
 
 
-def _symbol_clause_evidence(line, seed):
-    """Return only names in the explicit =/≡ relation chain containing seed."""
+def _symbol_clause_evidence(line, seed, relation_kind="SEED_BOUND_SYMBOL_CHAIN"):
+    """Return only names in the explicit =/≡ relation graph component containing seed."""
     seed_key = _canon_key(seed)
     matches = _name_matches(line)
     if len(matches) < 2:
@@ -111,13 +112,70 @@ def _symbol_clause_evidence(line, seed):
         start = matches[ordered[0]]["start"]
         end = matches[ordered[-1]]["end"]
         evidence.append({
-            "relationKind": "SEED_BOUND_SYMBOL_CHAIN",
+            "relationKind": relation_kind,
             "marker": " ".join(markers),
             "seed": core.canonical(seed),
             "candidates": candidates,
-            "context": core.short(line[start:end], 700),
+            "context": core.short(line[start:end], 900),
             "relationClauseBound": True,
         })
+    return evidence
+
+
+def _multiline_symbol_clause_evidence(lines, seed):
+    """
+    Preserve explicit nomenclatural chains split over physical lines.
+
+    A multiline chain starts on a line containing the investigated seed and may
+    continue only through immediately following non-empty lines whose first
+    non-whitespace token is '=' or '≡'. Any other non-empty line terminates the
+    chain. This captures layouts such as:
+
+        Chaenorhinum rupestre (Guss.) Speta
+        ≡ Linaria rupestris ...
+        = Linaria exilis ...
+
+    without opening a broad multi-line name-harvesting window.
+    """
+    seed_key = _canon_key(seed)
+    evidence = []
+
+    for i, raw_line in enumerate(lines):
+        line = raw_line.strip()
+        if not line:
+            continue
+        if seed_key not in {x["key"] for x in _name_matches(line)}:
+            continue
+
+        continuation = []
+        j = i + 1
+        while j < len(lines):
+            nxt = lines[j].strip()
+            if not nxt:
+                j += 1
+                continue
+            if not _SYMBOL_LINE_START_RE.match(nxt):
+                break
+            # A relation marker without a scientific name is not sufficient
+            # evidence and terminates this conservative chain.
+            if not _name_matches(nxt):
+                break
+            continuation.append(nxt)
+            j += 1
+
+        if not continuation:
+            continue
+
+        synthetic_clause = " ".join([line] + continuation)
+        for ev in _symbol_clause_evidence(
+            synthetic_clause,
+            seed,
+            relation_kind="SEED_BOUND_MULTILINE_SYMBOL_CHAIN",
+        ):
+            ev["physicalLineSpan"] = [i + 1, i + len(continuation) + 1]
+            ev["multilineRelationBound"] = True
+            evidence.append(ev)
+
     return evidence
 
 
@@ -200,8 +258,10 @@ def seed_bound_relation_evidence(text, seed):
       2) the investigated seed taxon is explicitly present in the same relation clause/chain, and
       3) the candidate is connected to that seed by that exact explicit relation clause/chain.
 
-    Mere co-occurrence in a bounded block is insufficient. Broad synonymy
-    sections and neighboring independent relations are rejected.
+    Explicit =/≡ chains split across consecutive physical lines are preserved
+    only when each continuation line begins with a relation marker. Mere
+    co-occurrence in a bounded block is insufficient. Broad synonymy sections
+    and neighboring independent relations are rejected.
     """
     lines = (text or "").splitlines()
     evidence = []
@@ -212,6 +272,8 @@ def seed_bound_relation_evidence(text, seed):
             continue
         evidence.extend(_symbol_clause_evidence(line, seed))
         evidence.extend(_label_clause_evidence(lines, i, seed))
+
+    evidence.extend(_multiline_symbol_clause_evidence(lines, seed))
 
     out, seen = [], set()
     for ev in evidence:
@@ -270,7 +332,7 @@ def strict_source_hits(seed, src, max_results=6):
             "names": names,
             "relationEvidence": rels,
             "discoverySeed": seed,
-            "relationExtraction": "SEED_BOUND_RELATION_CLAUSE_V2",
+            "relationExtraction": "SEED_BOUND_RELATION_CLAUSE_MULTILINE_V3",
         })
 
     return {
@@ -282,5 +344,6 @@ def strict_source_hits(seed, src, max_results=6):
         "fetchFailures": fetch_failures,
         "strictSeedBound": True,
         "relationClauseBound": True,
+        "multilineExplicitRelationsPreserved": True,
         "broadDiscoveryPagesDiscarded": len(base.get("explicitSynonymyPages", [])),
     }
