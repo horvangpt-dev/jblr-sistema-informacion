@@ -1,0 +1,63 @@
+name: 09 source yield audit 185
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-secondary-web-185-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SOURCE_YIELD_185.json'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-secondary-web-185-v1
+          fetch-depth: 1
+      - name: Validate request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SOURCE_YIELD_185.json'))
+          assert p['enabled'] is True and p['scope']==185
+          assert p['noEidosAssignment'] is True
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          PY
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml ddgs
+      - name: Execute source-yield audit
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          GROUP_FILE="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
+          OUT="$ROOT/runs/CORPUS_B_SECONDARY_SOURCE_YIELD_185_20260824_001"
+          python "$ROOT/source_yield_185.py" "$GROUP_FILE" "$OUT"
+      - name: QA and persist
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/CORPUS_B_SECONDARY_SOURCE_YIELD_185_20260824_001"
+          python - <<'PY'
+          import json
+          r=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SECONDARY_SOURCE_YIELD_185_20260824_001/SOURCE_YIELD_RECEIPT.json'))
+          assert r['inputTaxa']==185
+          assert r['sourceCount']>=15
+          assert r['totalSourceTaxonQueries']==185*r['sourceCount']
+          assert r['noEidosAssignment'] is True
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-secondary-web-185-v1
+          git add "$OUT"
+          git commit -m "evidence(09): source-yield audit 185 ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-secondary-web-185-v1
