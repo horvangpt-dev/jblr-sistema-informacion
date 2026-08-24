@@ -1,0 +1,160 @@
+{
+  "runClass": "SPANISH_DOCUMENTED_RELATIONS_TO_OFFICIAL_CURRENT_EIDOS_DUMP",
+  "resolverVersion": "RANK_EXACT_v2",
+  "inputRelations": 4,
+  "outputRelations": 4,
+  "counts": {
+    "RESOLVED_SPANISH_DOCUMENTED_NAME": 4
+  },
+  "newIdCandidates": 4,
+  "eidosBytes": 250612716,
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "2487",
+      "original": "Lithospermum incrassatum",
+      "sourceRank": "species",
+      "candidate": "Buglossoides incrassata",
+      "candidateRank": "species",
+      "relation": "EXPLICIT_NOMENCLATURAL_EQUIVALENCE_SPANISH_REGIONAL_CATALOGUE",
+      "idEligible": true,
+      "source": "Catálogo de las plantas vasculares del Principado de Asturias",
+      "evidence": "https://medioambiente.asturias.es/documents/646140/0/Cat%C3%A1logo%2Bde%2Blas%2Bplantas%2Bvasculares%2Bdel%2BPrincipado%2Bde%2BAsturias.pdf/d56dd876-80f8-ec6e-d754-a6ae3a46329b",
+      "EIDOS_RECORDS": [
+        {
+          "scientificName": "Buglossoides incrassata (Guss.) I.M.Johnst.",
+          "canonical": "Buglossoides incrassata",
+          "taxonID": "2815",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+        },
+        {
+          "scientificName": "Buglossoides incrassata (Guss.) I.M.Johnst. subsp. incrassata",
+          "canonical": "Buglossoides incrassata",
+          "taxonID": "2816",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Subspecies",
+          "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+        }
+      ],
+      "EIDOS_MATCHING_RANK_RECORDS": [
+        {
+          "scientificName": "Buglossoides incrassata (Guss.) I.M.Johnst.",
+          "canonical": "Buglossoides incrassata",
+          "taxonID": "2815",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+        }
+      ],
+      "RESULT_STATE": "RESOLVED_SPANISH_DOCUMENTED_NAME",
+      "MITECO_IDTAXON": "2815"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "789",
+      "original": "Lithospermum purpurocaeruleum",
+      "sourceRank": "species",
+      "candidate": "Aegonychon purpurocaeruleum",
+      "candidateRank": "species",
+      "relation": "EXPLICIT_SYNONYM_FLORA_CATALANA",
+      "idEligible": true,
+      "source": "Flora Catalana - Vasculars.Taxons finals",
+      "evidence": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonims",
+      "EIDOS_RECORDS": [
+        {
+          "scientificName": "Aegonychon purpurocaeruleum (L.) J.Holub",
+          "canonical": "Aegonychon purpurocaeruleum",
+          "taxonID": "1895",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+        }
+      ],
+      "EIDOS_MATCHING_RANK_RECORDS": [
+        {
+          "scientificName": "Aegonychon purpurocaeruleum (L.) J.Holub",
+          "canonical": "Aegonychon purpurocaeruleum",
+          "taxonID": "1895",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+        }
+      ],
+      "RESULT_STATE": "RESOLVED_SPANISH_DOCUMENTED_NAME",
+      "MITECO_IDTAXON": "1895"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4287",
+      "original": "Anteriorchis coriophora",
+      "sourceRank": "species",
+      "candidate": "Anacamptis coriophora",
+      "candidateRank": "species",
+      "relation": "EXPLICIT_SYNONYM_FLORA_ANDALUCIA",
+      "idEligible": true,
+      "source": "Flora Andalucía - Anacamptis coriophora",
+      "evidence": "https://www.florandalucia.es/index.php/anacamptis-coriophora",
+      "EIDOS_RECORDS": [
+        {
+          "scientificName": "Anacamptis coriophora (L.) R.M.Bateman, Pridgeon & M.W.Chase",
+          "canonical": "Anacamptis coriophora",
+          "taxonID": "32222",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": null
+        }
+      ],
+      "EIDOS_MATCHING_RANK_RECORDS": [
+        {
+          "scientificName": "Anacamptis coriophora (L.) R.M.Bateman, Pridgeon & M.W.Chase",
+          "canonical": "Anacamptis coriophora",
+          "taxonID": "32222",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": null
+        }
+      ],
+      "RESULT_STATE": "RESOLVED_SPANISH_DOCUMENTED_NAME",
+      "MITECO_IDTAXON": "32222"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3261",
+      "original": "Anteriorchis fragrans",
+      "sourceRank": "species",
+      "candidate": "Anacamptis coriophora",
+      "candidateRank": "species",
+      "relation": "EXPLICIT_SYNONYM_FLORA_ANDALUCIA",
+      "idEligible": true,
+      "source": "Flora Andalucía - Anacamptis coriophora",
+      "evidence": "https://www.florandalucia.es/index.php/anacamptis-coriophora",
+      "EIDOS_RECORDS": [
+        {
+          "scientificName": "Anacamptis coriophora (L.) R.M.Bateman, Pridgeon & M.W.Chase",
+          "canonical": "Anacamptis coriophora",
+          "taxonID": "32222",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": null
+        }
+      ],
+      "EIDOS_MATCHING_RANK_RECORDS": [
+        {
+          "scientificName": "Anacamptis coriophora (L.) R.M.Bateman, Pridgeon & M.W.Chase",
+          "canonical": "Anacamptis coriophora",
+          "taxonID": "32222",
+          "taxonomicStatus": "Aceptado/Válido",
+          "taxonRank": "Species",
+          "nameAccordingTo": null
+        }
+      ],
+      "RESULT_STATE": "RESOLVED_SPANISH_DOCUMENTED_NAME",
+      "MITECO_IDTAXON": "32222"
+    }
+  ]
+}
