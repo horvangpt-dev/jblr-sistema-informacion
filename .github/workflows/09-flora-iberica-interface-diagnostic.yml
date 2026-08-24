@@ -1,0 +1,44 @@
+name: 09 Flora Iberica interface diagnostic
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FI_DIAGNOSTIC.json'
+
+permissions:
+  contents: write
+
+jobs:
+  inspect-fi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+      - name: Fetch Flora Iberica interfaces
+        run: |
+          set -euo pipefail
+          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/diagnostics/flora_iberica_interface
+          mkdir -p "$OUT"
+          for U in \
+            'https://www.floraiberica.es/PHP/cientificos_.php?gen=Juniperus' \
+            'https://www.floraiberica.es/PHP/cientificos_.php?gen=Acinos' \
+            'https://www.floraiberica.es/PHP/cientificos_.php?gen=Isolepis' \
+            'https://www.floraiberica.es/PHP/cientificos.php' \
+            'https://www.floraiberica.es/' ; do
+            F=$(echo "$U" | sha256sum | cut -c1-16)
+            curl -A 'JBLR-09-taxonomic-research/1.0' --fail --location --connect-timeout 15 --max-time 45 "$U" -o "$OUT/$F.html" || echo "$U" >> "$OUT/failures.txt"
+            echo "$F $U" >> "$OUT/index.txt"
+          done
+          grep -RoiE 'href="[^"]*(cientificos2|cientificos_|cientificos)[^"]*"' "$OUT" > "$OUT/taxonomic_links.txt" || true
+          grep -RniE '<form|action=|name=|select|input' "$OUT" > "$OUT/forms_and_inputs.txt" || true
+      - name: Persist diagnostic
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add execution/09/corpus-b-source-expansion-v1/spanish-deep/diagnostics/flora_iberica_interface
+          git commit -m "evidence(09): Flora Iberica interface diagnostic ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
