@@ -1,0 +1,63 @@
+name: 09 Spanish documented relations EIDOS batch 03
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_MANUAL_BATCH_03.json'
+
+permissions:
+  contents: write
+
+jobs:
+  contrast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+      - name: Validate governed request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_MANUAL_BATCH_03.json'))
+          assert p['enabled'] is True and p['scope']==317
+          assert p['runId']=='SPANISH_RELATIONS_EIDOS_BATCH_03_20260824_001'
+          assert p['gateEvent']=='JBLR-EVT-0000-20260824-ACCEPT-09-CARRY-FORWARD-317-001'
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
+          PY
+      - name: Download official current EIDOS dump
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 1200 \
+            -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+      - name: Contrast explicit Spanish relations with EIDOS
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/SPANISH_RELATIONS_EIDOS_BATCH_03_20260824_001/RUN_RECEIPT.json"
+          python "$ROOT/manual_spanish_relations_eidos_batch.py" "$ROOT/MANUAL_SPANISH_RELATIONS_BATCH_03.json" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+      - name: QA and persist evidence
+        run: |
+          set -euo pipefail
+          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_RELATIONS_EIDOS_BATCH_03_20260824_001
+          python - <<'PY'
+          import json
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_RELATIONS_EIDOS_BATCH_03_20260824_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          assert r['resolverVersion']=='RANK_EXACT_v2'
+          assert r['inputRelations']==r['outputRelations']==4
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          assert r['noFuzzy'] is True and r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          git add "$OUT"
+          git commit -m "evidence(09): Spanish relations EIDOS batch03 rank-exact ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
