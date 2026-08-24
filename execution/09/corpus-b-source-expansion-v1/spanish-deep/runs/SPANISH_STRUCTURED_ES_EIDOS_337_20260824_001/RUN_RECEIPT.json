@@ -1,0 +1,49 @@
+{
+  "input": 337,
+  "output": 337,
+  "spanishChecklistRecords": 10489,
+  "spanishChecklistMeta": {
+    "file": "taxon.txt",
+    "fields": {
+      "0": "id",
+      "1": "taxonID",
+      "2": "scientificNameID",
+      "3": "nameAccordingToID",
+      "4": "taxonConceptID",
+      "5": "scientificName",
+      "6": "nameAccordingTo",
+      "7": "namePublishedIn",
+      "8": "namePublishedInYear",
+      "9": "higherClassification",
+      "10": "kingdom",
+      "11": "phylum",
+      "12": "class",
+      "13": "order",
+      "14": "family",
+      "15": "genus",
+      "16": "specificEpithet",
+      "17": "infraspecificEpithet",
+      "18": "taxonRank",
+      "19": "scientificNameAuthorship",
+      "20": "taxonRemarks",
+      "21": "modified",
+      "22": "license",
+      "23": "datasetID",
+      "24": "datasetName"
+    },
+    "records": 10489,
+    "zip_sha256": "966aebd5882bf08cbc8b8b5ee276cc3b921c45626bbac6d5239d7a412e27d5ee"
+  },
+  "exactSpanishChecklistMatches": 8,
+  "explicitAcceptedNameRelations": 0,
+  "counts": {
+    "NOT_FOUND_IN_SPANISH_CHECKLIST": 330,
+    "RESOLVED_EXACT_ORIGINAL_NAME": 4,
+    "HUMAN_REVIEW_REQUIRED": 3
+  },
+  "resolvedNew": 4,
+  "sourcePlanCompleteRows": 0,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false
+}
