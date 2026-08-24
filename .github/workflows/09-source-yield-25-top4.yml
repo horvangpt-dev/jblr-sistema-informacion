@@ -1,9 +1,9 @@
-name: 09 source yield 25 TOP4 calibration
+name: 09 source yield 25 TOP4 context-gated
 
 on:
   push:
     branches:
-      - 09-corpus-b-secondary-web-185-v1
+      - 09-source-yield-25-top4-v2
     paths:
       - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SOURCE_YIELD_25_TOP4.json'
 
@@ -17,8 +17,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 09-corpus-b-secondary-web-185-v1
+          ref: 09-source-yield-25-top4-v2
           fetch-depth: 1
+      - name: Persist heartbeat
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          mkdir -p "$ROOT/state"
+          printf '{"state":"RUNNING","runId":"CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_003","githubRunId":"%s"}\n' "$GITHUB_RUN_ID" > "$ROOT/state/SOURCE_YIELD_25_TOP4_V2_RUNNING.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/state/SOURCE_YIELD_25_TOP4_V2_RUNNING.json"
+          git commit -m "state(09): source-yield 25 TOP4 v2 running ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-source-yield-25-top4-v2
       - name: Validate request
         run: |
           python - <<'PY'
@@ -27,6 +38,7 @@ jobs:
           assert p['enabled'] is True
           assert p['sampleTaxa']==25 and p['sourceCount']==15
           assert p['rankingCriterion']=='TOTAL_SYNONYM_COUNT_PER_SOURCE'
+          assert p['contextGate'] is True
           assert p['eidosUsed'] is False
           assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
           PY
@@ -36,27 +48,26 @@ jobs:
           sudo apt-get install -y -qq poppler-utils
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml ddgs
-      - name: Execute 25 x 15 source-yield calibration
+      - name: Execute 25 x 15 context-gated calibration
         run: |
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
           GROUP_FILE="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
-          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001"
+          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_003"
           python "$ROOT/source_yield_25_top4.py" "$GROUP_FILE" "$OUT"
       - name: QA and persist
         run: |
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
-          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001"
+          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_003"
           python - <<'PY'
           import json
-          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001/SOURCE_YIELD_25_TOP4_RECEIPT.json'
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_003/SOURCE_YIELD_25_TOP4_RECEIPT.json'
           r=json.load(open(p))
-          assert r['inputTaxa']==25
-          assert r['sourceCount']==15
+          assert r['inputTaxa']==25 and r['sourceCount']==15
           assert r['totalSourceTaxonQueries']==375
-          assert len(r['ranking'])==15
-          assert len(r['top4'])==4
+          assert len(r['ranking'])==15 and len(r['top4'])==4
+          assert r['contextGate']=='PAGE_PRIMARY_EQUALS_SEED_OR_SEED_APPEARS_IN_RELATION_WINDOW'
           assert r['rankingCriterion']=='SUM_OF_PER_TAXON_DEDUPLICATED_SYNONYM_NAMES_PER_SOURCE'
           assert r['seedNameExcludedFromSynonymCount'] is True
           assert r['eidosUsed'] is False
@@ -64,9 +75,10 @@ jobs:
           totals=[x['totalSynonyms'] for x in r['ranking']]
           assert totals==sorted(totals, reverse=True)
           PY
+          printf '{"state":"TERMINAL","runId":"CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_003","githubRunId":"%s"}\n' "$GITHUB_RUN_ID" > "$ROOT/state/SOURCE_YIELD_25_TOP4_V2_TERMINAL.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin 09-corpus-b-secondary-web-185-v1
-          git add "$OUT"
-          git commit -m "evidence(09): source-yield 25 TOP4 ${GITHUB_RUN_ID}"
-          git push origin HEAD:09-corpus-b-secondary-web-185-v1
+          git add "$OUT" "$ROOT/state/SOURCE_YIELD_25_TOP4_V2_TERMINAL.json"
+          git commit -m "evidence(09): source-yield 25 TOP4 v2 ${GITHUB_RUN_ID}"
+          git pull --rebase origin 09-source-yield-25-top4-v2
+          git push origin HEAD:09-source-yield-25-top4-v2
