@@ -1,0 +1,3053 @@
+{
+  "count": 18,
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "5517",
+      "NOMBRE_RIOJA_VERBATIM": "Agave americana",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "1941",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave melliflua",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave melliflua Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave zonata",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave zonata Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave virginica",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave virginica Mill.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave variegata",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave variegata Steud.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave theometel",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave theometel Zuccagni",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave subzonata",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave subzonata Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave subtilis",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave subtilis Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave spectabilis",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave spectabilis Salisb.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave salmiana subsp. gracilispina",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave salmiana subsp. gracilispina Rol.-Goss.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave rasconensis",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave rasconensis Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave ramosa",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave ramosa Moench",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave picta",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave picta Salm-Dyck",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave ornata",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave ornata Jacobi",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave milleri",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave milleri Haw.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave altissima",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave altissima Zumagl.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave ingens",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave ingens A.Berger",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave gracilispina",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave gracilispina (Rol.-Goss.) Engelm. ex Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave fuerstenbergii",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave fuerstenbergii Jacobi",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave felina",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave felina Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave cordillerensis",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave cordillerensis Lodé & Pino",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave complicata",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave complicata Trel. ex Ochot.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave communis",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave communis Gaterau",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave americana subsp. virginica",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave americana subsp. virginica Voss",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave americana subsp. striata",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave americana subsp. striata Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave americana subsp. mediopicta",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave americana subsp. mediopicta Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Agave americana subsp. marginata",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Agave americana subsp. marginata Trel.",
+                "Agave",
+                "Agavàcies"
+              ]
+            },
+            {
+              "accepted": "Agave americana",
+              "synonym": "Aloe americana",
+              "cells": [
+                "TOTES…",
+                "Agave americana",
+                "Aloe americana (L.) Crantz",
+                "Agave",
+                "Agavàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "EXACT_RESULT",
+          "records": [
+            {
+              "id": "F204F218-B678-468B-AF7D-0496E2DB973C",
+              "taxonID": "F204F218-B678-468B-AF7D-0496E2DB973C",
+              "scientificNameID": "urn:lsid:ipni.org:names:94177-3:1.1",
+              "nameAccordingToID": "urn:lsid:recibio.net:ref_biblio:74aa3718-5cfc-46c7-8c3c-e37fbc899fc6",
+              "taxonConceptID": "urn:lsid:recibio.net:taxon:f0f1e369-8a8d-4fde-9c97-e86fc5ee80a4",
+              "scientificName": "Agave americana L.",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.",
+              "namePublishedIn": "Sp. Pl. 1: 323. 1753",
+              "namePublishedInYear": "1753",
+              "higherClassification": "Plantae | Liliopsida | Liliales  | Agavaceae | Agave",
+              "kingdom": "Plantae",
+              "phylum": "Magnoliophyta",
+              "class": "Liliopsida",
+              "order": "Liliales",
+              "family": "Agavaceae",
+              "genus": "Agave",
+              "specificEpithet": "americana",
+              "infraspecificEpithet": "",
+              "taxonRank": "species",
+              "scientificNameAuthorship": "L.",
+              "taxonRemarks": "Monocotyledoneae | Asparagales | Asparagaceae",
+              "modified": "2015-07-01",
+              "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+              "datasetID": "",
+              "datasetName": "Lista de táxones de la flora vascular española"
+            }
+          ]
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Agave americana",
+          "provenance": [
+            {
+              "name": "Agave americana",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            },
+            {
+              "name": "Agave americana",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        },
+        {
+          "name": "Agave melliflua",
+          "provenance": [
+            {
+              "name": "Agave melliflua",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave zonata",
+          "provenance": [
+            {
+              "name": "Agave zonata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave virginica",
+          "provenance": [
+            {
+              "name": "Agave virginica",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave variegata",
+          "provenance": [
+            {
+              "name": "Agave variegata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave theometel",
+          "provenance": [
+            {
+              "name": "Agave theometel",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave subzonata",
+          "provenance": [
+            {
+              "name": "Agave subzonata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave subtilis",
+          "provenance": [
+            {
+              "name": "Agave subtilis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave spectabilis",
+          "provenance": [
+            {
+              "name": "Agave spectabilis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave rasconensis",
+          "provenance": [
+            {
+              "name": "Agave rasconensis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave ramosa",
+          "provenance": [
+            {
+              "name": "Agave ramosa",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave picta",
+          "provenance": [
+            {
+              "name": "Agave picta",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave ornata",
+          "provenance": [
+            {
+              "name": "Agave ornata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave milleri",
+          "provenance": [
+            {
+              "name": "Agave milleri",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave altissima",
+          "provenance": [
+            {
+              "name": "Agave altissima",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave ingens",
+          "provenance": [
+            {
+              "name": "Agave ingens",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave gracilispina",
+          "provenance": [
+            {
+              "name": "Agave gracilispina",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave fuerstenbergii",
+          "provenance": [
+            {
+              "name": "Agave fuerstenbergii",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave felina",
+          "provenance": [
+            {
+              "name": "Agave felina",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave cordillerensis",
+          "provenance": [
+            {
+              "name": "Agave cordillerensis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave complicata",
+          "provenance": [
+            {
+              "name": "Agave complicata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Agave communis",
+          "provenance": [
+            {
+              "name": "Agave communis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Aloe americana",
+          "provenance": [
+            {
+              "name": "Aloe americana",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [
+        {
+          "source": "FLORA_CATALANA",
+          "name": "Agave salmiana subsp. gracilispina",
+          "relation": "FLORA_CATALANA_SYNONYM",
+          "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "FLORA_CATALANA",
+          "name": "Agave americana subsp. virginica",
+          "relation": "FLORA_CATALANA_SYNONYM",
+          "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "FLORA_CATALANA",
+          "name": "Agave americana subsp. striata",
+          "relation": "FLORA_CATALANA_SYNONYM",
+          "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "FLORA_CATALANA",
+          "name": "Agave americana subsp. mediopicta",
+          "relation": "FLORA_CATALANA_SYNONYM",
+          "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "FLORA_CATALANA",
+          "name": "Agave americana subsp. marginata",
+          "relation": "FLORA_CATALANA_SYNONYM",
+          "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        }
+      ],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Agave americana",
+          "canonical": "Agave americana",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "1941",
+          "records": [
+            {
+              "scientificName": "Agave americana L.",
+              "canonical": "Agave americana",
+              "taxonID": "1941",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Agave americana L.",
+              "canonical": "Agave americana",
+              "taxonID": "1941",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Agave americana",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            },
+            {
+              "name": "Agave americana",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave melliflua",
+          "canonical": "Agave melliflua",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave melliflua",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave zonata",
+          "canonical": "Agave zonata",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave zonata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave virginica",
+          "canonical": "Agave virginica",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave virginica",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave variegata",
+          "canonical": "Agave variegata",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave variegata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave theometel",
+          "canonical": "Agave theometel",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave theometel",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave subzonata",
+          "canonical": "Agave subzonata",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave subzonata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave subtilis",
+          "canonical": "Agave subtilis",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave subtilis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave spectabilis",
+          "canonical": "Agave spectabilis",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave spectabilis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave rasconensis",
+          "canonical": "Agave rasconensis",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave rasconensis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave ramosa",
+          "canonical": "Agave ramosa",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave ramosa",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave picta",
+          "canonical": "Agave picta",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave picta",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave ornata",
+          "canonical": "Agave ornata",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave ornata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave milleri",
+          "canonical": "Agave milleri",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave milleri",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave altissima",
+          "canonical": "Agave altissima",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave altissima",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave ingens",
+          "canonical": "Agave ingens",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave ingens",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave gracilispina",
+          "canonical": "Agave gracilispina",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave gracilispina",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave fuerstenbergii",
+          "canonical": "Agave fuerstenbergii",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave fuerstenbergii",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave felina",
+          "canonical": "Agave felina",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave felina",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave cordillerensis",
+          "canonical": "Agave cordillerensis",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave cordillerensis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave complicata",
+          "canonical": "Agave complicata",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave complicata",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Agave communis",
+          "canonical": "Agave communis",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Agave communis",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Aloe americana",
+          "canonical": "Aloe americana",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Aloe americana",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Agave+americana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1326",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla plicatula",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "1825",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Alchemilla+plicatula&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Alchemilla alpigena",
+              "synonym": "Alchemilla plicatula",
+              "cells": [
+                "TOTES…",
+                "Alchemilla alpigena",
+                "Alchemilla plicatula auct. p.p.",
+                "Alchemilla",
+                "Rosàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Alchemilla plicatula",
+          "provenance": [
+            {
+              "name": "Alchemilla plicatula",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Alchemilla alpigena",
+          "provenance": [
+            {
+              "name": "Alchemilla alpigena",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Alchemilla+plicatula&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Alchemilla plicatula",
+          "canonical": "Alchemilla plicatula",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Alchemilla plicatula",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Alchemilla alpigena",
+          "canonical": "Alchemilla alpigena",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "1825",
+          "records": [
+            {
+              "scientificName": "Alchemilla alpigena Buser ex Hegi",
+              "canonical": "Alchemilla alpigena",
+              "taxonID": "1825",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Alchemilla alpigena Buser ex Hegi",
+              "canonical": "Alchemilla alpigena",
+              "taxonID": "1825",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Alchemilla alpigena",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Alchemilla+plicatula&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4058",
+      "NOMBRE_RIOJA_VERBATIM": "Bromus catharticus",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "1079",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Bromus+catharticus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Bromus catharticus",
+              "synonym": "Ceratochloa unioloides",
+              "cells": [
+                "TOTES…",
+                "Bromus catharticus",
+                "Ceratochloa unioloides ( Willd.) P. Beauv.",
+                "Bromus",
+                "Gramínies"
+              ]
+            },
+            {
+              "accepted": "Bromus catharticus",
+              "synonym": "Bromus willdenowii",
+              "cells": [
+                "TOTES…",
+                "Bromus catharticus",
+                "Bromus willdenowii Kunth",
+                "Bromus",
+                "Gramínies"
+              ]
+            },
+            {
+              "accepted": "Bromus catharticus",
+              "synonym": "Bromus schraderi",
+              "cells": [
+                "TOTES…",
+                "Bromus catharticus",
+                "Bromus schraderi Kunth",
+                "Bromus",
+                "Gramínies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Bromus catharticus",
+          "provenance": [
+            {
+              "name": "Bromus catharticus",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Ceratochloa unioloides",
+          "provenance": [
+            {
+              "name": "Ceratochloa unioloides",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Bromus+catharticus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Bromus willdenowii",
+          "provenance": [
+            {
+              "name": "Bromus willdenowii",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Bromus+catharticus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "name": "Bromus schraderi",
+          "provenance": [
+            {
+              "name": "Bromus schraderi",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Bromus+catharticus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Bromus catharticus",
+          "canonical": "Bromus catharticus",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Bromus catharticus",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Ceratochloa unioloides",
+          "canonical": "Ceratochloa unioloides",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Ceratochloa unioloides",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Bromus+catharticus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Bromus willdenowii",
+          "canonical": "Bromus willdenowii",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "1079",
+          "records": [
+            {
+              "scientificName": "Bromus willdenowii Kunth",
+              "canonical": "Bromus willdenowii",
+              "taxonID": "1079",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "SANZ ELORZA, M., DANA, E.D. & SOBRINO, E. (eds.). 2004. Atlas de las Plantas Alóctonas Invasoras en España. Dirección General para la Biodiversidad. Madrid, 384 pp."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Bromus willdenowii Kunth",
+              "canonical": "Bromus willdenowii",
+              "taxonID": "1079",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "SANZ ELORZA, M., DANA, E.D. & SOBRINO, E. (eds.). 2004. Atlas de las Plantas Alóctonas Invasoras en España. Dirección General para la Biodiversidad. Madrid, 384 pp."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Bromus willdenowii",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Bromus+catharticus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        },
+        {
+          "queriedName": "Bromus schraderi",
+          "canonical": "Bromus schraderi",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Bromus schraderi",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Bromus+catharticus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2308",
+      "NOMBRE_RIOJA_VERBATIM": "Carex ovalis",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "3108",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Carex+ovalis&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Carex ovalis",
+              "synonym": "Carex leporina",
+              "cells": [
+                "TOTES…",
+                "Carex ovalis",
+                "Carex leporina L. Nom vàlid?",
+                "Carex",
+                "Ciperàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Carex ovalis",
+          "provenance": [
+            {
+              "name": "Carex ovalis",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Carex leporina",
+          "provenance": [
+            {
+              "name": "Carex leporina",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Carex+ovalis&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Carex ovalis",
+          "canonical": "Carex ovalis",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Carex ovalis",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Carex leporina",
+          "canonical": "Carex leporina",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "3108",
+          "records": [
+            {
+              "scientificName": "Carex leporina L.",
+              "canonical": "Carex leporina",
+              "taxonID": "3108",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Carex leporina L.",
+              "canonical": "Carex leporina",
+              "taxonID": "3108",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Carex leporina",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_SYNONYM",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Carex+ovalis&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "974",
+      "NOMBRE_RIOJA_VERBATIM": "Cirsium richterianum",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "3593",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Cirsium+richterianum&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Cirsium eriophorum subsp. richterianum",
+              "synonym": "Cirsium richterianum",
+              "cells": [
+                "TOTES…",
+                "Cirsium eriophorum subsp. richterianum",
+                "Cirsium richterianum Gillot subsp. costae (Sennen & Pau) Talavera & Valdés",
+                "Cirsium",
+                "Compostes"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Cirsium richterianum",
+          "provenance": [
+            {
+              "name": "Cirsium richterianum",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [
+        {
+          "source": "FLORA_CATALANA",
+          "name": "Cirsium eriophorum subsp. richterianum",
+          "relation": "FLORA_CATALANA_ACCEPTED",
+          "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Cirsium+richterianum&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        }
+      ],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Cirsium richterianum",
+          "canonical": "Cirsium richterianum",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "3593",
+          "records": [
+            {
+              "scientificName": "Cirsium richterianum Gillot",
+              "canonical": "Cirsium richterianum",
+              "taxonID": "3593",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            },
+            {
+              "scientificName": "Cirsium richterianum Guillot subsp. richterianum",
+              "canonical": "Cirsium richterianum",
+              "taxonID": "3594",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Subspecies",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Cirsium richterianum Gillot",
+              "canonical": "Cirsium richterianum",
+              "taxonID": "3593",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Cirsium richterianum",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2015",
+      "NOMBRE_RIOJA_VERBATIM": "Cotoneaster nebrodensis",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "3840",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Cotoneaster+nebrodensis&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Cotoneaster tomentosus",
+              "synonym": "Cotoneaster nebrodensis",
+              "cells": [
+                "TOTES…",
+                "Cotoneaster tomentosus",
+                "Cotoneaster nebrodensis auct.",
+                "Cotoneaster",
+                "Rosàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Cotoneaster nebrodensis",
+          "provenance": [
+            {
+              "name": "Cotoneaster nebrodensis",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Cotoneaster tomentosus",
+          "provenance": [
+            {
+              "name": "Cotoneaster tomentosus",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Cotoneaster+nebrodensis&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Cotoneaster nebrodensis",
+          "canonical": "Cotoneaster nebrodensis",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Cotoneaster nebrodensis",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Cotoneaster tomentosus",
+          "canonical": "Cotoneaster tomentosus",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "3840",
+          "records": [
+            {
+              "scientificName": "Cotoneaster tomentosus (Aiton) Lindl.",
+              "canonical": "Cotoneaster tomentosus",
+              "taxonID": "3840",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Cotoneaster tomentosus (Aiton) Lindl.",
+              "canonical": "Cotoneaster tomentosus",
+              "taxonID": "3840",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Cotoneaster tomentosus",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Cotoneaster+nebrodensis&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "489",
+      "NOMBRE_RIOJA_VERBATIM": "Galium spurium",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "4789",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Galium+spurium&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Galium aparine subsp. spurium",
+              "synonym": "Galium spurium",
+              "cells": [
+                "TOTES…",
+                "Galium aparine subsp. spurium",
+                "Galium spurium L.",
+                "Galium",
+                "Rubiàcies"
+              ]
+            },
+            {
+              "accepted": "Galium uliginosum",
+              "synonym": "Galium spurium",
+              "cells": [
+                "TOTES…",
+                "Galium uliginosum",
+                "Galium spurium Spreng.",
+                "Galium",
+                "Rubiàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Galium spurium",
+          "provenance": [
+            {
+              "name": "Galium spurium",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Galium uliginosum",
+          "provenance": [
+            {
+              "name": "Galium uliginosum",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Galium+spurium&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [
+        {
+          "source": "FLORA_CATALANA",
+          "name": "Galium aparine subsp. spurium",
+          "relation": "FLORA_CATALANA_ACCEPTED",
+          "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Galium+spurium&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        }
+      ],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Galium spurium",
+          "canonical": "Galium spurium",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Galium spurium",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Galium uliginosum",
+          "canonical": "Galium uliginosum",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "4789",
+          "records": [
+            {
+              "scientificName": "Galium uliginosum L.",
+              "canonical": "Galium uliginosum",
+              "taxonID": "4789",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Galium uliginosum L.",
+              "canonical": "Galium uliginosum",
+              "taxonID": "4789",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Galium uliginosum",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Galium+spurium&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4776",
+      "NOMBRE_RIOJA_VERBATIM": "Hieracium argillaceum",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "5249",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Hieracium+argillaceum&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Hieracium lachenalii",
+              "synonym": "Hieracium argillaceum",
+              "cells": [
+                "TOTES…",
+                "Hieracium lachenalii",
+                "Hieracium argillaceum Jord.",
+                "Hieracium",
+                "Compostes"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Hieracium argillaceum",
+          "provenance": [
+            {
+              "name": "Hieracium argillaceum",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Hieracium lachenalii",
+          "provenance": [
+            {
+              "name": "Hieracium lachenalii",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Hieracium+argillaceum&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Hieracium argillaceum",
+          "canonical": "Hieracium argillaceum",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Hieracium argillaceum",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Hieracium lachenalii",
+          "canonical": "Hieracium lachenalii",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "5249",
+          "records": [
+            {
+              "scientificName": "Hieracium lachenalii C.C.Gmel.",
+              "canonical": "Hieracium lachenalii",
+              "taxonID": "5249",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Hieracium lachenalii C.C.Gmel.",
+              "canonical": "Hieracium lachenalii",
+              "taxonID": "5249",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Hieracium lachenalii",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Hieracium+argillaceum&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5298",
+      "NOMBRE_RIOJA_VERBATIM": "Legousia castellana",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "5624",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Legousia+castellana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Legousia scabra",
+              "synonym": "Legousia castellana",
+              "cells": [
+                "TOTES…",
+                "Legousia scabra",
+                "Legousia castellana (Lange) Samp.",
+                "Legousia",
+                "Campanulàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Legousia castellana",
+          "provenance": [
+            {
+              "name": "Legousia castellana",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Legousia scabra",
+          "provenance": [
+            {
+              "name": "Legousia scabra",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Legousia+castellana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Legousia castellana",
+          "canonical": "Legousia castellana",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Legousia castellana",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Legousia scabra",
+          "canonical": "Legousia scabra",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "5624",
+          "records": [
+            {
+              "scientificName": "Legousia scabra (Lowe) Gamisans",
+              "canonical": "Legousia scabra",
+              "taxonID": "5624",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Legousia scabra (Lowe) Gamisans",
+              "canonical": "Legousia scabra",
+              "taxonID": "5624",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Legousia scabra",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Legousia+castellana&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5255",
+      "NOMBRE_RIOJA_VERBATIM": "Lonicera caprifolium",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "6037",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Lonicera+caprifolium&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Lonicera caprifolium",
+              "synonym": "",
+              "cells": [
+                "TOTES…",
+                "Lonicera caprifolium",
+                "",
+                "Lonicera",
+                "Caprifoliàcies"
+              ]
+            },
+            {
+              "accepted": "Lonicera etrusca",
+              "synonym": "Lonicera caprifolium",
+              "cells": [
+                "TOTES…",
+                "Lonicera etrusca",
+                "Lonicera caprifolium Schousb.",
+                "Lonicera",
+                "Caprifoliàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Lonicera caprifolium",
+          "provenance": [
+            {
+              "name": "Lonicera caprifolium",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Lonicera etrusca",
+          "provenance": [
+            {
+              "name": "Lonicera etrusca",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Lonicera+caprifolium&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Lonicera caprifolium",
+          "canonical": "Lonicera caprifolium",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Lonicera caprifolium",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Lonicera etrusca",
+          "canonical": "Lonicera etrusca",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "6037",
+          "records": [
+            {
+              "scientificName": "Lonicera etrusca Santi",
+              "canonical": "Lonicera etrusca",
+              "taxonID": "6037",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Lonicera etrusca Santi",
+              "canonical": "Lonicera etrusca",
+              "taxonID": "6037",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Lonicera etrusca",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Lonicera+caprifolium&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1693",
+      "NOMBRE_RIOJA_VERBATIM": "Lotus maritimus",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "8766",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Lotus+maritimus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Tetragonolobus maritimus",
+              "synonym": "Lotus maritimus",
+              "cells": [
+                "TOTES…",
+                "Tetragonolobus maritimus",
+                "Lotus maritimus L.",
+                "Tetragonolobus",
+                "Papilionàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Lotus maritimus",
+          "provenance": [
+            {
+              "name": "Lotus maritimus",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Tetragonolobus maritimus",
+          "provenance": [
+            {
+              "name": "Tetragonolobus maritimus",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Lotus+maritimus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Lotus maritimus",
+          "canonical": "Lotus maritimus",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Lotus maritimus",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Tetragonolobus maritimus",
+          "canonical": "Tetragonolobus maritimus",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "8766",
+          "records": [
+            {
+              "scientificName": "Tetragonolobus maritimus (L.) Roth",
+              "canonical": "Tetragonolobus maritimus",
+              "taxonID": "8766",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Tetragonolobus maritimus (L.) Roth",
+              "canonical": "Tetragonolobus maritimus",
+              "taxonID": "8766",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Tetragonolobus maritimus",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Lotus+maritimus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1343",
+      "NOMBRE_RIOJA_VERBATIM": "Medicago polyceratia",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "9083",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Medicago+polyceratia&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Trigonella polyceratia",
+              "synonym": "Medicago polyceratia",
+              "cells": [
+                "TOTES…",
+                "Trigonella polyceratia",
+                "Medicago polyceratia (L.) Trautv.",
+                "Trigonella",
+                "Papilionàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Medicago polyceratia",
+          "provenance": [
+            {
+              "name": "Medicago polyceratia",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Trigonella polyceratia",
+          "provenance": [
+            {
+              "name": "Trigonella polyceratia",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Medicago+polyceratia&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Medicago polyceratia",
+          "canonical": "Medicago polyceratia",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Medicago polyceratia",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Trigonella polyceratia",
+          "canonical": "Trigonella polyceratia",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "9083",
+          "records": [
+            {
+              "scientificName": "Trigonella polyceratia L.",
+              "canonical": "Trigonella polyceratia",
+              "taxonID": "9083",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Trigonella polyceratia L.",
+              "canonical": "Trigonella polyceratia",
+              "taxonID": "9083",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Trigonella polyceratia",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Medicago+polyceratia&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3310",
+      "NOMBRE_RIOJA_VERBATIM": "Ophrys fusca gr.",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "6607",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "NO_EXACT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Ophrys+fusca+gr.&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "EXACT_RESULT",
+          "records": [
+            {
+              "id": "EFB81725-A2E3-4C43-B2B2-11F611128056",
+              "taxonID": "EFB81725-A2E3-4C43-B2B2-11F611128056",
+              "scientificNameID": "urn:lsid:ipni.org:names:647906-1:1.2.2.1",
+              "nameAccordingToID": "urn:lsid:recibio.net:ref_biblio:74aa3718-5cfc-46c7-8c3c-e37fbc899fc6",
+              "taxonConceptID": "urn:lsid:recibio.net:taxon:ee6698cd-306e-40d5-83b8-ac0d937943ee",
+              "scientificName": "Ophrys fusca Link",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.",
+              "namePublishedIn": "J. Bot. (Schrader) 1799(2): 324. 1800",
+              "namePublishedInYear": "1800",
+              "higherClassification": "Plantae | Liliopsida | Asparagales | Orchidaceae | Ophrys",
+              "kingdom": "Plantae",
+              "phylum": "Magnoliophyta",
+              "class": "Liliopsida",
+              "order": "Asparagales",
+              "family": "Orchidaceae",
+              "genus": "Ophrys",
+              "specificEpithet": "fusca",
+              "infraspecificEpithet": "",
+              "taxonRank": "species",
+              "scientificNameAuthorship": "Link",
+              "taxonRemarks": "Monocotyledoneae | Asparagales | Orchidaceae",
+              "modified": "2015-07-01",
+              "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+              "datasetID": "",
+              "datasetName": "Lista de táxones de la flora vascular española"
+            }
+          ]
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Ophrys fusca",
+          "provenance": [
+            {
+              "name": "Ophrys fusca",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Ophrys fusca",
+          "canonical": "Ophrys fusca",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "6607",
+          "records": [
+            {
+              "scientificName": "Ophrys fusca Link",
+              "canonical": "Ophrys fusca",
+              "taxonID": "6607",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            },
+            {
+              "scientificName": "Ophrys fusca Link subsp. fusca",
+              "canonical": "Ophrys fusca",
+              "taxonID": "6608",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Subspecies",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Ophrys fusca Link",
+              "canonical": "Ophrys fusca",
+              "taxonID": "6607",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Ophrys fusca",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3833",
+      "NOMBRE_RIOJA_VERBATIM": "Primula veris subsp. suaveolens",
+      "RANK": "subspecies",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "7200",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Primula+veris+subsp.+suaveolens&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Primula veris subsp. columnae",
+              "synonym": "Primula veris subsp. suaveolens",
+              "cells": [
+                "TOTES…",
+                "Primula veris subsp. columnae",
+                "Primula veris subsp. suaveolens (Bertol.) Gutermann & Ehrend.",
+                "Primula",
+                "Primulàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Primula veris subsp. suaveolens",
+          "provenance": [
+            {
+              "name": "Primula veris subsp. suaveolens",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Primula veris subsp. columnae",
+          "provenance": [
+            {
+              "name": "Primula veris subsp. columnae",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Primula+veris+subsp.+suaveolens&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Primula veris subsp. suaveolens",
+          "canonical": "Primula veris subsp. suaveolens",
+          "requiredRank": "subspecies",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Primula veris subsp. suaveolens",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Primula veris subsp. columnae",
+          "canonical": "Primula veris subsp. columnae",
+          "requiredRank": "subspecies",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "7200",
+          "records": [
+            {
+              "scientificName": "Primula veris subsp. columnae (Ten.) Maire & Petitm.",
+              "canonical": "Primula veris subsp. columnae",
+              "taxonID": "7200",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Subspecies",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Primula veris subsp. columnae (Ten.) Maire & Petitm.",
+              "canonical": "Primula veris subsp. columnae",
+              "taxonID": "7200",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Subspecies",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Primula veris subsp. columnae",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Primula+veris+subsp.+suaveolens&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1733",
+      "NOMBRE_RIOJA_VERBATIM": "Rhinanthus mediterraneus",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "7764",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "EXPLICIT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Rhinanthus+mediterraneus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value=",
+          "exactRows": [
+            {
+              "accepted": "Rhinanthus pumilus",
+              "synonym": "Rhinanthus mediterraneus",
+              "cells": [
+                "TOTES…",
+                "Rhinanthus pumilus",
+                "Rhinanthus mediterraneus (Sterneck) Adamović",
+                "Rhinanthus",
+                "Escrofulariàcies"
+              ]
+            }
+          ]
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "NO_EXACT_RESULT"
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Rhinanthus mediterraneus",
+          "provenance": [
+            {
+              "name": "Rhinanthus mediterraneus",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "name": "Rhinanthus pumilus",
+          "provenance": [
+            {
+              "name": "Rhinanthus pumilus",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Rhinanthus+mediterraneus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Rhinanthus mediterraneus",
+          "canonical": "Rhinanthus mediterraneus",
+          "requiredRank": "species",
+          "state": "NAME_NOT_FOUND_IN_EIDOS",
+          "taxonID": null,
+          "records": [],
+          "sameRankRecords": [],
+          "provenance": [
+            {
+              "name": "Rhinanthus mediterraneus",
+              "source": "FLORA_CATALANA",
+              "relation": "EXACT_NAME_IN_SOURCE"
+            }
+          ]
+        },
+        {
+          "queriedName": "Rhinanthus pumilus",
+          "canonical": "Rhinanthus pumilus",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "7764",
+          "records": [
+            {
+              "scientificName": "Rhinanthus pumilus (Sterneck) Pau",
+              "canonical": "Rhinanthus pumilus",
+              "taxonID": "7764",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            },
+            {
+              "scientificName": "Rhinanthus pumilus (Sterneck) Pau subsp. pumilus",
+              "canonical": "Rhinanthus pumilus",
+              "taxonID": "7765",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Subspecies",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Rhinanthus pumilus (Sterneck) Pau",
+              "canonical": "Rhinanthus pumilus",
+              "taxonID": "7764",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Rhinanthus pumilus",
+              "source": "FLORA_CATALANA",
+              "relation": "FLORA_CATALANA_ACCEPTED",
+              "sourceUrl": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Rhinanthus+mediterraneus&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5338",
+      "NOMBRE_RIOJA_VERBATIM": "Rorippa sylvestris sylvestris",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "7814",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "NO_EXACT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Rorippa+sylvestris+sylvestris&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "EXACT_RESULT",
+          "records": [
+            {
+              "id": "03A34291-7242-4674-A27D-BADEA5F29565",
+              "taxonID": "03A34291-7242-4674-A27D-BADEA5F29565",
+              "scientificNameID": "urn:lsid:ipni.org:names:288692-1:1.5",
+              "nameAccordingToID": "urn:lsid:recibio.net:ref_biblio:74aa3718-5cfc-46c7-8c3c-e37fbc899fc6",
+              "taxonConceptID": "urn:lsid:recibio.net:taxon:02645831-7927-43c2-be91-f695a67881a7",
+              "scientificName": "Rorippa sylvestris (L.) Besser",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.",
+              "namePublishedIn": "Enum. Pl. (Besser) 27. 1821",
+              "namePublishedInYear": "1821",
+              "higherClassification": "Plantae | Magnoliopsida | Capparales | Cruciferae | Rorippa",
+              "kingdom": "Plantae",
+              "phylum": "Magnoliophyta",
+              "class": "Magnoliopsida",
+              "order": "Capparales",
+              "family": "Cruciferae",
+              "genus": "Rorippa",
+              "specificEpithet": "sylvestris",
+              "infraspecificEpithet": "",
+              "taxonRank": "species",
+              "scientificNameAuthorship": "(L.) Besser",
+              "taxonRemarks": "Malvidae | Brassicales | Brassicaceae",
+              "modified": "2015-07-01",
+              "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+              "datasetID": "",
+              "datasetName": "Lista de táxones de la flora vascular española"
+            }
+          ]
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Rorippa sylvestris",
+          "provenance": [
+            {
+              "name": "Rorippa sylvestris",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Rorippa sylvestris",
+          "canonical": "Rorippa sylvestris",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "7814",
+          "records": [
+            {
+              "scientificName": "Rorippa sylvestris (L.) Besser",
+              "canonical": "Rorippa sylvestris",
+              "taxonID": "7814",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            },
+            {
+              "scientificName": "Rorippa sylvestris (L.) Besser subsp. sylvestris",
+              "canonical": "Rorippa sylvestris",
+              "taxonID": "7815",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Subspecies",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Rorippa sylvestris (L.) Besser",
+              "canonical": "Rorippa sylvestris",
+              "taxonID": "7814",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Rorippa sylvestris",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1495",
+      "NOMBRE_RIOJA_VERBATIM": "Serapias lingua x parviflora",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "8266",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "NO_EXACT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Serapias+lingua+x+parviflora&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "EXACT_RESULT",
+          "records": [
+            {
+              "id": "7CFABAE7-4132-40CF-B41F-D6D14AAC407E",
+              "taxonID": "7CFABAE7-4132-40CF-B41F-D6D14AAC407E",
+              "scientificNameID": "urn:lsid:ipni.org:names:657644-1:1.4",
+              "nameAccordingToID": "urn:lsid:recibio.net:ref_biblio:74aa3718-5cfc-46c7-8c3c-e37fbc899fc6",
+              "taxonConceptID": "urn:lsid:recibio.net:taxon:7c63218f-b889-4e13-abb2-85fee92225f1",
+              "scientificName": "Serapias lingua L.",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.",
+              "namePublishedIn": "Sp. Pl. 950. 1753",
+              "namePublishedInYear": "1753",
+              "higherClassification": "Plantae | Liliopsida | Asparagales | Orchidaceae | Serapias",
+              "kingdom": "Plantae",
+              "phylum": "Magnoliophyta",
+              "class": "Liliopsida",
+              "order": "Asparagales",
+              "family": "Orchidaceae",
+              "genus": "Serapias",
+              "specificEpithet": "lingua",
+              "infraspecificEpithet": "",
+              "taxonRank": "species",
+              "scientificNameAuthorship": "L.",
+              "taxonRemarks": "Monocotyledoneae | Asparagales | Orchidaceae",
+              "modified": "2015-07-01",
+              "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+              "datasetID": "",
+              "datasetName": "Lista de táxones de la flora vascular española"
+            }
+          ]
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Serapias lingua",
+          "provenance": [
+            {
+              "name": "Serapias lingua",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Serapias lingua",
+          "canonical": "Serapias lingua",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "8266",
+          "records": [
+            {
+              "scientificName": "Serapias lingua L.",
+              "canonical": "Serapias lingua",
+              "taxonID": "8266",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Serapias lingua L.",
+              "canonical": "Serapias lingua",
+              "taxonID": "8266",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Serapias lingua",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5343",
+      "NOMBRE_RIOJA_VERBATIM": "Verbascum rotundifolium ripacurcicum",
+      "RANK": "species",
+      "FINAL_GROUP": "RESOLVED",
+      "FAILURE_OR_RESOLUTION_TYPE": "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE",
+      "MITECO_IDTAXON": "9297",
+      "SPANISH_SOURCE_EVIDENCE": [
+        {
+          "source": "FLORA_CATALANA",
+          "state": "NO_EXACT_RESULT",
+          "url": "https://floracatalana.cat/flora/vasculars/taxonsfinalssinonimsnocodi?field_nom_cientific_value=Verbascum+rotundifolium+ripacurcicum&field_nom_de_la_familia1_value=&field_nom_del_genere1_value="
+        },
+        {
+          "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+          "state": "EXACT_RESULT",
+          "records": [
+            {
+              "id": "012ED847-921D-47F3-BC1E-0F6784CBE339",
+              "taxonID": "012ED847-921D-47F3-BC1E-0F6784CBE339",
+              "scientificNameID": "urn:lsid:ipni.org:names:770100-1:1.1.2.1.1.2",
+              "nameAccordingToID": "urn:lsid:recibio.net:ref_biblio:74aa3718-5cfc-46c7-8c3c-e37fbc899fc6",
+              "taxonConceptID": "urn:lsid:recibio.net:taxon:00386a5a-f4fc-4c92-a6c0-fb54f47c68f2",
+              "scientificName": "Verbascum rotundifolium Ten.",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.",
+              "namePublishedIn": "Fl. Napol. 1: 92, tab. 23. 1814",
+              "namePublishedInYear": "1814",
+              "higherClassification": "Plantae | Magnoliopsida | Scrophulariales | Scrophulariaceae | Verbascum",
+              "kingdom": "Plantae",
+              "phylum": "Magnoliophyta",
+              "class": "Magnoliopsida",
+              "order": "Scrophulariales",
+              "family": "Scrophulariaceae",
+              "genus": "Verbascum",
+              "specificEpithet": "rotundifolium",
+              "infraspecificEpithet": "",
+              "taxonRank": "species",
+              "scientificNameAuthorship": "Ten.",
+              "taxonRemarks": "Lamiidae | Lamiales | Scrophulariaceae",
+              "modified": "2015-07-01",
+              "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+              "datasetID": "",
+              "datasetName": "Lista de táxones de la flora vascular española"
+            }
+          ]
+        }
+      ],
+      "SUPPORTED_SAME_RANK_CANDIDATES": [
+        {
+          "name": "Verbascum rotundifolium",
+          "provenance": [
+            {
+              "name": "Verbascum rotundifolium",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "CROSS_RANK_RELATIONS_NOT_USED": [],
+      "SOURCE_FAILURES": [],
+      "EIDOS_EVALUATION": [
+        {
+          "queriedName": "Verbascum rotundifolium",
+          "canonical": "Verbascum rotundifolium",
+          "requiredRank": "species",
+          "state": "UNIQUE_ACCEPTED_SAME_RANK",
+          "taxonID": "9297",
+          "records": [
+            {
+              "scientificName": "Verbascum rotundifolium Ten.",
+              "canonical": "Verbascum rotundifolium",
+              "taxonID": "9297",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "sameRankRecords": [
+            {
+              "scientificName": "Verbascum rotundifolium Ten.",
+              "canonical": "Verbascum rotundifolium",
+              "taxonID": "9297",
+              "taxonomicStatus": "Aceptado/Válido",
+              "taxonRank": "Species",
+              "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+            }
+          ],
+          "provenance": [
+            {
+              "name": "Verbascum rotundifolium",
+              "source": "GBIF_SPAIN_FLORA_VASCULAR_CHECKLIST_v1.16",
+              "relation": "EXACT_NAME_IN_CURRENT_SPANISH_CHECKLIST"
+            }
+          ]
+        }
+      ],
+      "NO_FUZZY_EQUIVALENCE": true,
+      "PARENT_ID_INHERITANCE": false,
+      "NO_RANK_COLLAPSE": true
+    }
+  ]
+}

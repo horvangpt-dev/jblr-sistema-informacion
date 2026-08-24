@@ -1,0 +1,73 @@
+{
+  "runClass": "CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_CONSOLIDATED",
+  "inputRows": 313,
+  "outputRows": 313,
+  "counts": {
+    "FAILED": 295,
+    "RESOLVED": 18
+  },
+  "groupCounts": {
+    "NO_RESULT_IN_SPANISH_SOURCES_CONSULTED": 229,
+    "UNIQUE_ACCEPTED_EIDOS_ID_FROM_SPANISH_EVIDENCE": 18,
+    "SPANISH_RESULT_FOUND_BUT_NAMES_NOT_FOUND_IN_EIDOS": 63,
+    "CROSS_RANK_RELATION_ONLY_NOT_ID_ELIGIBLE": 1,
+    "CONFLICTING_SUPPORTED_NAMES_MULTIPLE_EIDOS_IDS": 1,
+    "SPANISH_RELATION_FOUND_EIDOS_SAME_RANK_NO_ACCEPTED": 1
+  },
+  "resolvedRows": 18,
+  "failedRows": 295,
+  "spanishChecklistRecords": 10489,
+  "spanishChecklistMeta": {
+    "file": "taxon.txt",
+    "records": 10489,
+    "fields": {
+      "0": "id",
+      "1": "taxonID",
+      "2": "scientificNameID",
+      "3": "nameAccordingToID",
+      "4": "taxonConceptID",
+      "5": "scientificName",
+      "6": "nameAccordingTo",
+      "7": "namePublishedIn",
+      "8": "namePublishedInYear",
+      "9": "higherClassification",
+      "10": "kingdom",
+      "11": "phylum",
+      "12": "class",
+      "13": "order",
+      "14": "family",
+      "15": "genus",
+      "16": "specificEpithet",
+      "17": "infraspecificEpithet",
+      "18": "taxonRank",
+      "19": "scientificNameAuthorship",
+      "20": "taxonRemarks",
+      "21": "modified",
+      "22": "license",
+      "23": "datasetID",
+      "24": "datasetName"
+    },
+    "zipSha256": "966aebd5882bf08cbc8b8b5ee276cc3b921c45626bbac6d5239d7a412e27d5ee",
+    "zipBytes": 1230212
+  },
+  "eidosSource": "https://datos.iepnb.es/datasets/eidos.ttl",
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "eidosBytes": 250612716,
+  "singleEidosLoad": true,
+  "sourceEvidenceInputs": [
+    "FLORA_CATALANA_EIDOS_337_20260824_001 source evidence",
+    "GBIF Spain flora vascular checklist v1.16 fresh DwC-A",
+    "Batch02 unresolved documentary relations"
+  ],
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "semantics": [
+    "SOURCE_FAILURE!=NOT_FOUND",
+    "NOT_FOUND!=ABSENCE",
+    "unknown!=absence"
+  ]
+}
