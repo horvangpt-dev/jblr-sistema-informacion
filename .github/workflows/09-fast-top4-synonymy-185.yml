@@ -1,0 +1,110 @@
+name: 09 fast TOP4 synonymy 185 to EIDOS
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-fast-top4-185-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FAST_TOP4_185.json'
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-fast-top4-185-v1
+          fetch-depth: 1
+
+      - name: Validate governed request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FAST_TOP4_185.json'))
+          assert p['enabled'] is True and p['scope']==185
+          assert p['releaseEvent']=='JBLR-EVT-0000-20260824-RELEASE-09-TOP4-FAST-SYNONYMY-185-001'
+          assert p['primaryPassSources']==['FLORA_MONTIBERICA','JOLUBE_BOTANICAL_CATALOGS','ARANZADI_MUNIBE','FLORA_CATALANA']
+          assert p['other11RescueOnly'] is True
+          assert p['deduplicateNamesPerTaxonBeforeEidos'] is True
+          assert p['queryEveryUniqueDiscoveredNameOnce'] is True
+          assert p['seedExcludedFromSynonymCompendium'] is True
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
+          PY
+
+      - name: Persist running heartbeat
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          mkdir -p "$ROOT/state"
+          cat > "$ROOT/state/FAST_TOP4_185_RUNNING.json" <<JSON
+          {"state":"RUNNING","runId":"CORPUS_B_FAST_TOP4_SYNONYMY_185_20260824_001","githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}","requestSha":"${GITHUB_SHA}"}
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-fast-top4-185-v1
+          git add "$ROOT/state/FAST_TOP4_185_RUNNING.json"
+          git commit -m "state(09): fast TOP4 185 running ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-fast-top4-185-v1
+
+      - name: Install extraction dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml ddgs
+
+      - name: Download and verify official EIDOS snapshot
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          echo '810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737  '"$RUNNER_TEMP/eidos.ttl" | sha256sum -c -
+
+      - name: Execute fast TOP4 sweep over 185 taxa
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          GROUP_FILE="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
+          OUT="$ROOT/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_20260824_001"
+          python "$ROOT/fast_top4_synonymy_185.py" "$GROUP_FILE" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+
+      - name: QA and persist terminal evidence
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_20260824_001"
+          python - <<'PY'
+          import json
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_20260824_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          assert r['inputRows']==185 and r['outputRows']==185
+          assert r['primaryPassSources']==['FLORA_MONTIBERICA','JOLUBE_BOTANICAL_CATALOGS','ARANZADI_MUNIBE','FLORA_CATALANA']
+          assert r['other11Sources']=='EXTRAORDINARY_RESCUE_ONLY_NOT_USED_IN_PRIMARY_PASS'
+          assert r['eidosSha256']=='810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737'
+          assert r['singleEidosLoad'] is True
+          assert r['perTaxonUniqueSynonymEqualsEidosQueries'] is True
+          assert r['uniqueSynonymQueriesAcrossTaxa']==r['eidosQueryCountAcrossTaxa']
+          assert r['seedExcludedFromSynonymCompendium'] is True
+          assert r['deduplicateNamesPerTaxonBeforeEidos'] is True
+          assert r['queryEveryUniqueDiscoveredNameOnce'] is True
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          assert r['noFuzzy'] is True and r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
+          c=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_20260824_001/FAST_TOP4_COMPENDIUM_185.json'))
+          assert len(c['rows'])==185
+          for row in c['rows']:
+              assert row['UNIQUE_SYNONYM_COUNT']==row['EIDOS_QUERY_COUNT']
+          PY
+          cat > "$ROOT/state/FAST_TOP4_185_TERMINAL.json" <<JSON
+          {"state":"TERMINAL","runId":"CORPUS_B_FAST_TOP4_SYNONYMY_185_20260824_001","githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}"}
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-fast-top4-185-v1
+          git add "$OUT" "$ROOT/state/FAST_TOP4_185_TERMINAL.json"
+          git commit -m "evidence(09): fast TOP4 synonymy 185 ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-fast-top4-185-v1
