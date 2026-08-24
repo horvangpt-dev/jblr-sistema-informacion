@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "runId": "CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001",
+  "sampleTaxa": 25,
+  "sourceCount": 15,
+  "rankingCriterion": "TOTAL_SYNONYM_COUNT_PER_SOURCE",
+  "eidosUsed": false,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false
+}
