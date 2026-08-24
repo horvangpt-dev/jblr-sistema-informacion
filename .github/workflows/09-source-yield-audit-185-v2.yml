@@ -24,12 +24,12 @@ jobs:
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
           mkdir -p "$ROOT/state"
-          printf '{"state":"RUNNING","runId":"CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001","githubRunId":"%s"}\n' "$GITHUB_RUN_ID" > "$ROOT/state/SOURCE_YIELD_25_TOP4_RUNNING.json"
+          printf '{"state":"RUNNING","runId":"CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_002","githubRunId":"%s"}\n' "$GITHUB_RUN_ID" > "$ROOT/state/SOURCE_YIELD_25_TOP4_RUNNING.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin 09-corpus-b-secondary-web-185-v1
           git add "$ROOT/state/SOURCE_YIELD_25_TOP4_RUNNING.json"
-          git commit -m "state(09): source-yield 25 TOP4 running ${GITHUB_RUN_ID}"
+          git commit -m "state(09): source-yield 25 TOP4 v2 running ${GITHUB_RUN_ID}" || true
           git push origin HEAD:09-corpus-b-secondary-web-185-v1
       - name: Validate request
         run: |
@@ -40,6 +40,7 @@ jobs:
           assert p['sampleTaxa']==25 and p['sourceCount']==15
           assert p['rankingCriterion']=='TOTAL_SYNONYM_COUNT_PER_SOURCE'
           assert p['noEidosAssignment'] is True
+          assert p['contextGate'] is True
           assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
           PY
       - name: Install dependencies
@@ -53,31 +54,32 @@ jobs:
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
           GROUP_FILE="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
-          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001"
+          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_002"
           python "$ROOT/source_yield_25_top4.py" "$GROUP_FILE" "$OUT"
       - name: QA and persist
         run: |
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
-          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001"
+          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_002"
           python - <<'PY'
           import json
-          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001/SOURCE_YIELD_25_TOP4_RECEIPT.json'
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_002/SOURCE_YIELD_25_TOP4_RECEIPT.json'
           r=json.load(open(p))
           assert r['inputTaxa']==25 and r['sourceCount']==15
           assert r['totalSourceTaxonQueries']==375
           assert len(r['ranking'])==15 and len(r['top4'])==4
           assert r['rankingCriterion']=='SUM_OF_PER_TAXON_DEDUPLICATED_SYNONYM_NAMES_PER_SOURCE'
           assert r['seedNameExcludedFromSynonymCount'] is True
+          assert r['contextGate']=='PAGE_PRIMARY_EQUALS_SEED_OR_SEED_APPEARS_IN_RELATION_WINDOW'
           assert r['eidosUsed'] is False
           assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
           totals=[x['totalSynonyms'] for x in r['ranking']]
           assert totals==sorted(totals, reverse=True)
           PY
-          printf '{"state":"TERMINAL","runId":"CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001","githubRunId":"%s"}\n' "$GITHUB_RUN_ID" > "$ROOT/state/SOURCE_YIELD_25_TOP4_TERMINAL.json"
+          printf '{"state":"TERMINAL","runId":"CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_002","githubRunId":"%s"}\n' "$GITHUB_RUN_ID" > "$ROOT/state/SOURCE_YIELD_25_TOP4_TERMINAL.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin 09-corpus-b-secondary-web-185-v1
           git add "$OUT" "$ROOT/state/SOURCE_YIELD_25_TOP4_TERMINAL.json"
-          git commit -m "evidence(09): source-yield 25 TOP4 ${GITHUB_RUN_ID}"
+          git commit -m "evidence(09): source-yield 25 TOP4 v2 ${GITHUB_RUN_ID}"
+          git pull --rebase origin 09-corpus-b-secondary-web-185-v1
           git push origin HEAD:09-corpus-b-secondary-web-185-v1
