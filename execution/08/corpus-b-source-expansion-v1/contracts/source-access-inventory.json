@@ -1,0 +1,89 @@
+{
+  "inventory_version": "CORPUS_B_SOURCE_EXPANSION_ACCESS_v1",
+  "checked_at": "2026-08-24T08:41:47+02:00",
+  "scope": "08_CONTROLLED_IMPLEMENTATION_QA_ONLY",
+  "carry_forward_queue": 337,
+  "sources": [
+    {
+      "priority": 1,
+      "source_id": "MITECO_EIDOS",
+      "access_state": "OFFICIAL_SOAP_DOCUMENTED_WSDL_FETCH_FAILED_502_IN_08_WEB_CHECK",
+      "adapter_state": "IMPLEMENTED_SOAP_FAIL_CLOSED_LIVE_CONNECTIVITY_UNVERIFIED",
+      "endpoint": "https://eportal.miteco.gob.es/IEPNB_EIDOS_WS/services/IEPNB_EIDOS",
+      "evidence": ["Official MITECO SOAP EIDOS service documented", "MITECO taxonomic-service document defines buscarTaxones and TAXONID response", "08 WSDL fetch check returned HTTP 502"]
+    },
+    {
+      "priority": 2,
+      "source_id": "FLORA_IBERICA_RJB",
+      "access_state": "PUBLIC_RJB_SEARCH_DISCOVERED_DIRECT_FETCH_UNSTABLE_502",
+      "adapter_state": "TECHNICALLY_UNAVAILABLE_STABLE_MACHINE_QUERY_CONTRACT_UNVERIFIED",
+      "endpoint": "https://colecciones.rjb.csic.es/index.php",
+      "evidence": ["RJB search interface exposes taxonomic information and synonymy according to Flora Iberica", "08 direct open check returned HTTP 502"]
+    },
+    {
+      "priority": 3,
+      "source_id": "ANTHOS_RJB",
+      "access_state": "PUBLIC_RJB_SEARCH_DISCOVERED_DIRECT_FETCH_UNSTABLE_502",
+      "adapter_state": "TECHNICALLY_UNAVAILABLE_STABLE_MACHINE_QUERY_CONTRACT_UNVERIFIED",
+      "endpoint": "https://colecciones.rjb.csic.es/index.php",
+      "evidence": ["RJB search interface exposes Anthos bibliographic citations linked to taxon views", "08 direct open check returned HTTP 502"]
+    },
+    {
+      "priority": 4,
+      "source_id": "FLORA_MONTIBERICA",
+      "access_state": "PUBLIC_HTML_AND_PDF_ACCESSIBLE_NO_STABLE_TAXON_API_VERIFIED",
+      "adapter_state": "IMPLEMENTED_CONFIGURED_DOCUMENT_SEARCH_CONTRACT",
+      "endpoint": "https://www.floramontiberica.org/",
+      "evidence": ["Current site and issue indexes accessible", "Article PDFs accessible/searchable", "No stable taxon query API verified by 08"]
+    },
+    {
+      "priority": 5,
+      "source_id": "FLORA_ANDALUCIA",
+      "access_state": "PUBLIC_CURRENT_TAXON_ANNEX_DISCOVERED_NO_STABLE_MACHINE_QUERY_VERIFIED",
+      "adapter_state": "IMPLEMENTED_CONFIGURED_DOCUMENT_SEARCH_CONTRACT",
+      "endpoint": "PUBLIC_DOCUMENT_POINTER_REQUIRED_PER_QUERY",
+      "evidence": ["2025 public Flora Vascular de Andalucia taxon annex discovered with synonymy/parental-taxa field", "No stable official per-taxon query API verified by 08"]
+    },
+    {
+      "priority": 6,
+      "source_id": "HVMO_UIB",
+      "access_state": "PUBLIC_HTML_INDEX_AND_SPECIES_PAGES_ACCESSIBLE",
+      "adapter_state": "IMPLEMENTED_HTML_INDEX_LOOKUP_FAIL_CLOSED",
+      "endpoint": "https://herbarivirtual.uib.es/es/general/{LETTER}/per-nom-cientific",
+      "evidence": ["Scientific-name alphabetical index accessible", "Species pages accessible", "Site reports 2327 species and update 2025-09-09"]
+    },
+    {
+      "priority": 7,
+      "source_id": "ATLAS_FLORA_ARAGON_JACA",
+      "access_state": "OFFICIAL_ATLAS_PAGE_ACCESSIBLE_TAXON_ENDPOINT_NOT_VERIFIED",
+      "adapter_state": "TECHNICALLY_UNAVAILABLE_STABLE_MACHINE_QUERY_ENDPOINT_UNVERIFIED",
+      "endpoint": "https://www.aragon.es/biodiversidad/especies-protegidas/atlas-de-flora-vascular-de-aragon",
+      "evidence": ["Official Atlas page accessible and updated 2026-05-22", "Atlas states it is based on Herbario JACA", "Stable machine per-taxon endpoint not verified by 08"]
+    },
+    {
+      "priority": 8,
+      "source_id": "FLORA_CATALANA",
+      "access_state": "CATALOG_DOCUMENTATION_DISCOVERED_TAXON_ENDPOINT_NOT_VERIFIED",
+      "adapter_state": "TECHNICALLY_UNAVAILABLE_STABLE_MACHINE_QUERY_ENDPOINT_UNVERIFIED",
+      "endpoint": "https://floracatalana.cat/",
+      "evidence": ["Public catalogue documentation discovered", "Stable machine per-taxon endpoint not verified by 08"]
+    },
+    {
+      "priority": 9,
+      "source_id": "REGIONAL_SPANISH_SOURCES",
+      "access_state": "MULTI_SOURCE_DYNAMIC_NO_SINGLE_ENDPOINT",
+      "adapter_state": "IMPLEMENTED_CONFIGURED_SEARCH_CONTRACT_REQUIRES_EXPLICIT_PER_SOURCE_BINDING",
+      "endpoint": null,
+      "evidence": ["Directive permits regional catalogues and other traceable Spanish taxonomic sources", "Each concrete source requires an explicit fresh evidence pointer and binding"]
+    }
+  ],
+  "global_guards": {
+    "source_failure_ne_not_found": true,
+    "not_found_ne_absence": true,
+    "no_fuzzy_equivalence_acceptance": true,
+    "no_parent_id_inheritance": true,
+    "no_rank_collapse": true,
+    "no_hybrid_marker_loss": true,
+    "no_source_silent_invalidation": true
+  }
+}
