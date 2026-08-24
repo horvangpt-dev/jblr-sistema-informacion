@@ -1,0 +1,170 @@
+name: 09 fast TOP4 synonymy 185 seed-bound recovery
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-fast-top4-185-recovery-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FAST_TOP4_185_RECOVERY.json'
+
+permissions:
+  contents: write
+
+jobs:
+  recovery_sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-fast-top4-185-recovery-v1
+          fetch-depth: 1
+
+      - name: Validate governed recovery request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FAST_TOP4_185_RECOVERY.json'))
+          assert p['enabled'] is True and p['scope']==185
+          assert p['releaseEvent']
+          assert p['releaseEvent']!='JBLR-EVT-0000-20260824-RELEASE-09-TOP4-FAST-SYNONYMY-185-001'
+          assert p['failureDiagnosisEvent']=='JBLR-EVT-0000-20260824-FAST-TOP4-FAILURE-DIAGNOSIS-001'
+          assert p['supersedesRun']==32723005903
+          assert p['relaunchAsIs'] is False
+          assert p['seedBoundExplicitRelationRequired'] is True
+          assert p['boundedPersistenceRequired'] is True
+          assert p['primaryPassSources']==['FLORA_MONTIBERICA','JOLUBE_BOTANICAL_CATALOGS','ARANZADI_MUNIBE','FLORA_CATALANA']
+          assert p['other11RescueOnly'] is True
+          assert p['deduplicateNamesPerTaxonBeforeEidos'] is True
+          assert p['queryEveryUniqueDiscoveredNameOnce'] is True
+          assert p['seedExcludedFromSynonymCompendium'] is True
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
+          PY
+
+      - name: Persist recovery running heartbeat
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          mkdir -p "$ROOT/state"
+          cat > "$ROOT/state/FAST_TOP4_185_RECOVERY_RUNNING.json" <<JSON
+          {"state":"RUNNING_RECOVERY","supersedesRun":32723005903,"githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}","requestSha":"${GITHUB_SHA}"}
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-fast-top4-185-recovery-v1
+          git add "$ROOT/state/FAST_TOP4_185_RECOVERY_RUNNING.json"
+          git commit -m "state(09): fast TOP4 seed-bound recovery running ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-fast-top4-185-recovery-v1
+
+      - name: Install extraction dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml ddgs
+
+      - name: Run seed-bound extraction unit tests
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          python "$ROOT/test_seed_bound_synonymy_recovery_v1.py"
+
+      - name: Download and verify official EIDOS snapshot
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          echo '810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737  '"$RUNNER_TEMP/eidos.ttl" | sha256sum -c -
+
+      - name: Execute seed-bound TOP4 recovery over 185 taxa
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          GROUP_FILE="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
+          REQUEST="$ROOT/RUN_REQUEST_FAST_TOP4_185_RECOVERY.json"
+          OUT="$ROOT/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_RECOVERY_20260824_001"
+          python "$ROOT/fast_top4_synonymy_185.py" "$GROUP_FILE" "$RUNNER_TEMP/eidos.ttl" "$OUT" "$REQUEST"
+
+      - name: QA bounded terminal evidence
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_RECOVERY_20260824_001"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          out=Path('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_RECOVERY_20260824_001')
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          assert r['inputRows']==185 and r['outputRows']==185
+          assert r['supersedesRun']==32723005903
+          assert r['priorRunResultsCanonical'] is False
+          assert r['seedBoundExplicitRelationExtraction'] is True
+          assert r['broadSectionHarvesting'] is False
+          assert r['repositoryPersistence']=='COMPACT_ONLY'
+          assert r['rawEvidencePersistence']=='PER_TAXON_GZIP_ACTIONS_ARTIFACT'
+          assert r['eidosSha256']=='810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737'
+          assert r['perTaxonUniqueSynonymEqualsEidosQueries'] is True
+          assert r['uniqueSynonymQueriesAcrossTaxa']==r['eidosQueryCountAcrossTaxa']
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          c=json.load(open(out/'COMPACT_RESULTS_185.json'))
+          assert len(c['rows'])==185
+          for row in c['rows']:
+              assert row['UNIQUE_SYNONYM_COUNT']==row['EIDOS_QUERY_COUNT']
+              assert row['SEED_BOUND_EXPLICIT_RELATION'] is True
+          m=json.load(open(out/'EVIDENCE_MANIFEST_185.json'))
+          assert m['fileCount']==185
+          assert len(list((out/'raw_evidence').glob('*.json.gz')))==185
+          for name in ['RUN_RECEIPT.json','COMPACT_RESULTS_185.json','GROUP_INDEX_185.json','RESOLVED_185.json','EVIDENCE_MANIFEST_185.json']:
+              size=(out/name).stat().st_size
+              assert size < 100*1024*1024, (name,size)
+          PY
+
+      - name: Upload raw evidence package
+        id: raw_evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: 09-fast-top4-185-seed-bound-raw-evidence-${{ github.run_id }}
+          path: execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_RECOVERY_20260824_001/raw_evidence/*.json.gz
+          retention-days: 30
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Persist compact terminal evidence
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_RECOVERY_20260824_001"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          out=Path('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_FAST_TOP4_SYNONYMY_185_RECOVERY_20260824_001')
+          p=out/'RUN_RECEIPT.json'
+          r=json.load(open(p))
+          r['actionsArtifact']={
+              'name': '09-fast-top4-185-seed-bound-raw-evidence-'+os.environ['GITHUB_RUN_ID'],
+              'artifactId': os.environ.get('RAW_ARTIFACT_ID'),
+              'artifactUrl': os.environ.get('RAW_ARTIFACT_URL'),
+          }
+          p.write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          (out/'ARTIFACT_POINTER.json').write_text(json.dumps(r['actionsArtifact'],ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          cat > "$ROOT/state/FAST_TOP4_185_RECOVERY_TERMINAL.json" <<JSON
+          {"state":"TERMINAL_RECOVERY","supersedesRun":32723005903,"githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}","rawArtifactId":"${{ steps.raw_evidence.outputs.artifact-id }}","rawArtifactUrl":"${{ steps.raw_evidence.outputs.artifact-url }}"}
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-fast-top4-185-recovery-v1
+          git add \
+            "$OUT/RUN_RECEIPT.json" \
+            "$OUT/COMPACT_RESULTS_185.json" \
+            "$OUT/GROUP_INDEX_185.json" \
+            "$OUT/RESOLVED_185.json" \
+            "$OUT/EVIDENCE_MANIFEST_185.json" \
+            "$OUT/ARTIFACT_POINTER.json" \
+            "$ROOT/state/FAST_TOP4_185_RECOVERY_TERMINAL.json"
+          git commit -m "evidence(09): seed-bound TOP4 recovery ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-fast-top4-185-recovery-v1
+        env:
+          RAW_ARTIFACT_ID: ${{ steps.raw_evidence.outputs.artifact-id }}
+          RAW_ARTIFACT_URL: ${{ steps.raw_evidence.outputs.artifact-url }}
