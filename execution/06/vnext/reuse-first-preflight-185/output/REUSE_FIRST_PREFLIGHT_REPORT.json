@@ -151,10 +151,10 @@
           "key": "taxon",
           "value": "Alchemilla basaltica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -164,10 +164,10 @@
           "key": "powo_matched_canonical",
           "value": "Alchemilla basaltica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -177,10 +177,10 @@
           "key": "wfo_matched_canonical",
           "value": "Alchemilla basaltica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -258,10 +258,10 @@
           "key": "taxon",
           "value": "Alchemilla filicaulis var. vestita",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -271,10 +271,10 @@
           "key": "powo_matched_canonical",
           "value": "Alchemilla filicaulis var. vestita",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -284,10 +284,10 @@
           "key": "wfo_matched_canonical",
           "value": "Alchemilla filicaulis var. vestita",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -365,10 +365,10 @@
           "key": "taxon",
           "value": "Allium oleraceum var. oleraceum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -378,10 +378,10 @@
           "key": "taxon",
           "value": "Allium oleraceum var. oleraceum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -481,10 +481,10 @@
           "key": "taxon",
           "value": "Allium schoenoprassum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -494,10 +494,10 @@
           "key": "taxon",
           "value": "Allium schoenoprassum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -597,10 +597,10 @@
           "key": "taxon",
           "value": "Andryala ragusina var. ragusina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -610,10 +610,10 @@
           "key": "wfo_matched_canonical",
           "value": "Andryala ragusina var. ragusina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -827,10 +827,10 @@
           "key": "taxon",
           "value": "Arum orientale subsp. orientale",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -840,10 +840,10 @@
           "key": "powo_matched_canonical",
           "value": "Arum orientale subsp. orientale",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -853,10 +853,10 @@
           "key": "wfo_matched_canonical",
           "value": "Arum orientale subsp. orientale",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -934,10 +934,10 @@
           "key": "taxon",
           "value": "Asperula pyrenaica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -947,10 +947,10 @@
           "key": "powo_matched_canonical",
           "value": "Asperula pyrenaica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -960,10 +960,10 @@
           "key": "wfo_matched_canonical",
           "value": "Asperula pyrenaica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1517,10 +1517,10 @@
           "key": "taxon",
           "value": "Avenula pratensis var. paniculata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1530,10 +1530,10 @@
           "key": "powo_matched_canonical",
           "value": "Avenula pratensis var. paniculata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1543,10 +1543,10 @@
           "key": "wfo_matched_canonical",
           "value": "Avenula pratensis var. paniculata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1624,10 +1624,10 @@
           "key": "taxon",
           "value": "Avenula pratensis var. vasconica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1637,10 +1637,10 @@
           "key": "powo_matched_canonical",
           "value": "Avenula pratensis var. vasconica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1650,10 +1650,10 @@
           "key": "wfo_matched_canonical",
           "value": "Avenula pratensis var. vasconica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1731,10 +1731,10 @@
           "key": "taxon",
           "value": "Avenula sulcata subsp. sulcata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1744,10 +1744,10 @@
           "key": "anthos_matched_canonical",
           "value": "Avenula sulcata subsp. sulcata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1825,10 +1825,10 @@
           "key": "taxon",
           "value": "Betula alba var. alba",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1838,10 +1838,10 @@
           "key": "taxon",
           "value": "Betula alba var. alba",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1941,10 +1941,10 @@
           "key": "taxon",
           "value": "Betula alba var. glabrata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1954,10 +1954,10 @@
           "key": "powo_matched_canonical",
           "value": "Betula alba var. glabrata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -1967,10 +1967,10 @@
           "key": "wfo_matched_canonical",
           "value": "Betula alba var. glabrata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2048,10 +2048,10 @@
           "key": "taxon",
           "value": "Betula pendula var. meridionalis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2061,10 +2061,10 @@
           "key": "powo_matched_canonical",
           "value": "Betula pendula var. meridionalis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2074,10 +2074,10 @@
           "key": "wfo_matched_canonical",
           "value": "Betula pendula var. meridionalis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2155,10 +2155,10 @@
           "key": "taxon",
           "value": "Biscutella valentina var. laevigata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2168,10 +2168,10 @@
           "key": "powo_matched_canonical",
           "value": "Biscutella valentina var. laevigata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2181,10 +2181,10 @@
           "key": "wfo_matched_canonical",
           "value": "Biscutella valentina var. laevigata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2262,10 +2262,10 @@
           "key": "taxon",
           "value": "Biscutella valentina var. valentina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2275,10 +2275,10 @@
           "key": "wfo_matched_canonical",
           "value": "Biscutella valentina var. valentina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2367,10 +2367,10 @@
           "key": "taxon",
           "value": "Blechnum spicant var. spicant",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2380,10 +2380,10 @@
           "key": "powo_matched_canonical",
           "value": "Blechnum spicant var. spicant",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2427,10 +2427,10 @@
           "key": "taxon",
           "value": "Campanula hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2440,10 +2440,10 @@
           "key": "powo_matched_canonical",
           "value": "Campanula hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2453,10 +2453,10 @@
           "key": "wfo_matched_canonical",
           "value": "Campanula hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2478,10 +2478,10 @@
           "key": "taxon",
           "value": "Campanula paui",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2491,10 +2491,10 @@
           "key": "powo_matched_canonical",
           "value": "Campanula paui",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2504,10 +2504,10 @@
           "key": "wfo_matched_canonical",
           "value": "Campanula paui",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2540,10 +2540,10 @@
           "key": "taxon",
           "value": "Campanula urbionensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2553,10 +2553,10 @@
           "key": "powo_matched_canonical",
           "value": "Campanula urbionensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2566,10 +2566,10 @@
           "key": "wfo_matched_canonical",
           "value": "Campanula urbionensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2591,10 +2591,10 @@
           "key": "taxon",
           "value": "Carduus assoi",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2604,10 +2604,10 @@
           "key": "powo_matched_canonical",
           "value": "Carduus assoi",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2617,10 +2617,10 @@
           "key": "wfo_matched_canonical",
           "value": "Carduus assoi",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2642,10 +2642,10 @@
           "key": "taxon",
           "value": "Carex flacca subsp. serrulata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2655,10 +2655,10 @@
           "key": "powo_matched_canonical",
           "value": "Carex flacca subsp. serrulata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2668,10 +2668,10 @@
           "key": "wfo_matched_canonical",
           "value": "Carex flacca subsp. serrulata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2693,10 +2693,10 @@
           "key": "taxon",
           "value": "Carex hallerana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2706,10 +2706,10 @@
           "key": "taxon",
           "value": "Carex hallerana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2830,10 +2830,10 @@
           "key": "taxon",
           "value": "Chaenorhinum rupestre",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2843,10 +2843,10 @@
           "key": "powo_matched_canonical",
           "value": "Chaenorhinum rupestre",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2856,10 +2856,10 @@
           "key": "wfo_matched_canonical",
           "value": "Chaenorhinum rupestre",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2881,10 +2881,10 @@
           "key": "taxon",
           "value": "Chaerophyllum temulentum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2894,10 +2894,10 @@
           "key": "powo_matched_canonical",
           "value": "Chaerophyllum temulentum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2907,10 +2907,10 @@
           "key": "wfo_matched_canonical",
           "value": "Chaerophyllum temulentum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -2932,10 +2932,10 @@
           "key": "taxon",
           "value": "Cheilanthes acrostica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2945,10 +2945,10 @@
           "key": "powo_matched_canonical",
           "value": "Cheilanthes acrostica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2958,10 +2958,10 @@
           "key": "wfo_matched_canonical",
           "value": "Cheilanthes acrostica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -2971,10 +2971,10 @@
           "key": "anthos_matched_canonical",
           "value": "Cheilanthes acrostica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3018,10 +3018,10 @@
           "key": "taxon",
           "value": "Cistus salvifolius",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3031,10 +3031,10 @@
           "key": "taxon",
           "value": "Cistus salvifolius",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3078,10 +3078,10 @@
           "key": "taxon",
           "value": "Colutea atlantica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3091,10 +3091,10 @@
           "key": "powo_matched_canonical",
           "value": "Colutea atlantica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3104,10 +3104,10 @@
           "key": "wfo_matched_canonical",
           "value": "Colutea atlantica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3129,10 +3129,10 @@
           "key": "taxon",
           "value": "Conopodium bourgaei",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3142,10 +3142,10 @@
           "key": "powo_matched_canonical",
           "value": "Conopodium bourgaei",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3155,10 +3155,10 @@
           "key": "wfo_matched_canonical",
           "value": "Conopodium bourgaei",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3180,10 +3180,10 @@
           "key": "taxon",
           "value": "Conopodium capillifolium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3193,10 +3193,10 @@
           "key": "powo_matched_canonical",
           "value": "Conopodium capillifolium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3206,10 +3206,10 @@
           "key": "wfo_matched_canonical",
           "value": "Conopodium capillifolium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3231,10 +3231,10 @@
           "key": "taxon",
           "value": "Conopodium ramosum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3244,10 +3244,10 @@
           "key": "powo_matched_canonical",
           "value": "Conopodium ramosum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3257,10 +3257,10 @@
           "key": "wfo_matched_canonical",
           "value": "Conopodium ramosum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3293,10 +3293,10 @@
           "key": "taxon",
           "value": "Dactylis hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3306,10 +3306,10 @@
           "key": "powo_matched_canonical",
           "value": "Dactylis hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3319,10 +3319,10 @@
           "key": "wfo_matched_canonical",
           "value": "Dactylis hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3355,10 +3355,10 @@
           "key": "taxon",
           "value": "Dactylorhiza ericetorum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3368,10 +3368,10 @@
           "key": "powo_matched_canonical",
           "value": "Dactylorhiza ericetorum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3381,10 +3381,10 @@
           "key": "wfo_matched_canonical",
           "value": "Dactylorhiza ericetorum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3450,10 +3450,10 @@
           "key": "taxon",
           "value": "Dactylorhiza markusii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3463,10 +3463,10 @@
           "key": "powo_matched_canonical",
           "value": "Dactylorhiza markusii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3476,10 +3476,10 @@
           "key": "wfo_matched_canonical",
           "value": "Dactylorhiza markusii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3501,10 +3501,10 @@
           "key": "taxon",
           "value": "Deschampsia hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3514,10 +3514,10 @@
           "key": "powo_matched_canonical",
           "value": "Deschampsia hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3527,10 +3527,10 @@
           "key": "wfo_matched_canonical",
           "value": "Deschampsia hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3552,10 +3552,10 @@
           "key": "taxon",
           "value": "Doronicum diazii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3565,10 +3565,10 @@
           "key": "powo_matched_canonical",
           "value": "Doronicum diazii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3578,10 +3578,10 @@
           "key": "wfo_matched_canonical",
           "value": "Doronicum diazii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3614,10 +3614,10 @@
           "key": "taxon",
           "value": "Dryopteris affinis var. borreri",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3627,10 +3627,10 @@
           "key": "taxon",
           "value": "Dryopteris affinis var. borreri",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3674,10 +3674,10 @@
           "key": "taxon",
           "value": "Dryopteris affinis var. robusta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3687,10 +3687,10 @@
           "key": "powo_matched_canonical",
           "value": "Dryopteris affinis var. robusta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3700,10 +3700,10 @@
           "key": "wfo_matched_canonical",
           "value": "Dryopteris affinis var. robusta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3725,10 +3725,10 @@
           "key": "taxon",
           "value": "Echium asperrinum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3738,10 +3738,10 @@
           "key": "wfo_matched_canonical",
           "value": "Echium asperrinum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3763,10 +3763,10 @@
           "key": "taxon",
           "value": "Epipactis hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3776,10 +3776,10 @@
           "key": "powo_matched_canonical",
           "value": "Epipactis hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3789,10 +3789,10 @@
           "key": "wfo_matched_canonical",
           "value": "Epipactis hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3814,10 +3814,10 @@
           "key": "taxon",
           "value": "Epipactis parviflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3827,10 +3827,10 @@
           "key": "powo_matched_canonical",
           "value": "Epipactis parviflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3840,10 +3840,10 @@
           "key": "wfo_matched_canonical",
           "value": "Epipactis parviflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3876,10 +3876,10 @@
           "key": "taxon",
           "value": "Festuca heterophylla subsp. braun-blanquetii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3889,10 +3889,10 @@
           "key": "powo_matched_canonical",
           "value": "Festuca heterophylla subsp. braun-blanquetii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3902,10 +3902,10 @@
           "key": "wfo_matched_canonical",
           "value": "Festuca heterophylla subsp. braun-blanquetii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3915,10 +3915,10 @@
           "key": "anthos_matched_canonical",
           "value": "Festuca heterophylla subsp. braun-blanquetii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -3940,10 +3940,10 @@
           "key": "taxon",
           "value": "Festuca ovina var. glauca",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3953,10 +3953,10 @@
           "key": "powo_matched_canonical",
           "value": "Festuca ovina var. glauca",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -3966,10 +3966,10 @@
           "key": "wfo_matched_canonical",
           "value": "Festuca ovina var. glauca",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4002,10 +4002,10 @@
           "key": "taxon",
           "value": "Fritillaria nervosa subsp. nervosa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4015,10 +4015,10 @@
           "key": "taxon",
           "value": "Fritillaria nervosa subsp. nervosa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4062,10 +4062,10 @@
           "key": "taxon",
           "value": "Galeopsis angustifolia subsp. carpetana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4075,10 +4075,10 @@
           "key": "powo_matched_canonical",
           "value": "Galeopsis angustifolia subsp. carpetana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4088,10 +4088,10 @@
           "key": "wfo_matched_canonical",
           "value": "Galeopsis angustifolia subsp. carpetana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4113,10 +4113,10 @@
           "key": "taxon",
           "value": "Galium album subsp. album",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4126,10 +4126,10 @@
           "key": "powo_matched_canonical",
           "value": "Galium album subsp. album",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4139,10 +4139,10 @@
           "key": "wfo_matched_canonical",
           "value": "Galium album subsp. album",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4164,10 +4164,10 @@
           "key": "taxon",
           "value": "Galium fruticescens",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4177,10 +4177,10 @@
           "key": "powo_matched_canonical",
           "value": "Galium fruticescens",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4190,10 +4190,10 @@
           "key": "wfo_matched_canonical",
           "value": "Galium fruticescens",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4215,10 +4215,10 @@
           "key": "taxon",
           "value": "Galium pinetorum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4228,10 +4228,10 @@
           "key": "powo_matched_canonical",
           "value": "Galium pinetorum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4241,10 +4241,10 @@
           "key": "wfo_matched_canonical",
           "value": "Galium pinetorum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4266,10 +4266,10 @@
           "key": "taxon",
           "value": "Genista cinerea subsp. cinerea",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4279,10 +4279,10 @@
           "key": "powo_matched_canonical",
           "value": "Genista cinerea subsp. cinerea",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4292,10 +4292,10 @@
           "key": "wfo_matched_canonical",
           "value": "Genista cinerea subsp. cinerea",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4339,10 +4339,10 @@
           "key": "taxon",
           "value": "Gymnadenia densiflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4352,10 +4352,10 @@
           "key": "powo_matched_canonical",
           "value": "Gymnadenia densiflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4365,10 +4365,10 @@
           "key": "wfo_matched_canonical",
           "value": "Gymnadenia densiflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4412,10 +4412,10 @@
           "key": "taxon",
           "value": "Herniaria fruticosa var. fruticosa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4425,10 +4425,10 @@
           "key": "taxon",
           "value": "Herniaria fruticosa var. fruticosa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4472,10 +4472,10 @@
           "key": "taxon",
           "value": "Herniaria glabra var. glabra",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4485,10 +4485,10 @@
           "key": "taxon",
           "value": "Herniaria glabra var. glabra",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4543,10 +4543,10 @@
           "key": "taxon",
           "value": "Herniaria scabrida var. scabrida",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4556,10 +4556,10 @@
           "key": "taxon",
           "value": "Herniaria scabrida var. scabrida",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4669,10 +4669,10 @@
           "key": "taxon",
           "value": "Jasione laevis subsp. carpetana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4682,10 +4682,10 @@
           "key": "powo_matched_canonical",
           "value": "Jasione laevis subsp. carpetana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4695,10 +4695,10 @@
           "key": "wfo_matched_canonical",
           "value": "Jasione laevis subsp. carpetana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4731,10 +4731,10 @@
           "key": "taxon",
           "value": "Juncus conglomeratus var. laxus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4744,10 +4744,10 @@
           "key": "powo_matched_canonical",
           "value": "Juncus conglomeratus var. laxus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4757,10 +4757,10 @@
           "key": "wfo_matched_canonical",
           "value": "Juncus conglomeratus var. laxus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4782,10 +4782,10 @@
           "key": "taxon",
           "value": "Juncus effusus var. effusus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4795,10 +4795,10 @@
           "key": "wfo_matched_canonical",
           "value": "Juncus effusus var. effusus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4831,10 +4831,10 @@
           "key": "taxon",
           "value": "Juncus inflexus var. inflexus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4844,10 +4844,10 @@
           "key": "taxon",
           "value": "Juncus inflexus var. inflexus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4891,10 +4891,10 @@
           "key": "taxon",
           "value": "Knautia arvernensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4904,10 +4904,10 @@
           "key": "powo_matched_canonical",
           "value": "Knautia arvernensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4917,10 +4917,10 @@
           "key": "wfo_matched_canonical",
           "value": "Knautia arvernensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -4964,10 +4964,10 @@
           "key": "taxon",
           "value": "Leucanthemum ircutianum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4977,10 +4977,10 @@
           "key": "powo_matched_canonical",
           "value": "Leucanthemum ircutianum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -4990,10 +4990,10 @@
           "key": "wfo_matched_canonical",
           "value": "Leucanthemum ircutianum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5003,10 +5003,10 @@
           "key": "anthos_matched_canonical",
           "value": "Leucanthemum ircutianum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5028,10 +5028,10 @@
           "key": "taxon",
           "value": "Linaria alpina var. aciculifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5041,10 +5041,10 @@
           "key": "powo_matched_canonical",
           "value": "Linaria alpina var. aciculifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5054,10 +5054,10 @@
           "key": "wfo_matched_canonical",
           "value": "Linaria alpina var. aciculifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5079,10 +5079,10 @@
           "key": "taxon",
           "value": "Linaria proxima",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5092,10 +5092,10 @@
           "key": "powo_matched_canonical",
           "value": "Linaria proxima",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5105,10 +5105,10 @@
           "key": "wfo_matched_canonical",
           "value": "Linaria proxima",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5141,10 +5141,10 @@
           "key": "taxon",
           "value": "Lotus preslii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5154,10 +5154,10 @@
           "key": "powo_matched_canonical",
           "value": "Lotus preslii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5167,10 +5167,10 @@
           "key": "wfo_matched_canonical",
           "value": "Lotus preslii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5225,10 +5225,10 @@
           "key": "taxon",
           "value": "Lysimachia nemorun",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5238,10 +5238,10 @@
           "key": "taxon",
           "value": "Lysimachia nemorun",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5296,10 +5296,10 @@
           "key": "taxon",
           "value": "Myosotis ramosissima subsp. globularis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5309,10 +5309,10 @@
           "key": "powo_matched_canonical",
           "value": "Myosotis ramosissima subsp. globularis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5322,10 +5322,10 @@
           "key": "wfo_matched_canonical",
           "value": "Myosotis ramosissima subsp. globularis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5347,10 +5347,10 @@
           "key": "taxon",
           "value": "Narcissus bulbocodium subsp. bulbocodium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5360,10 +5360,10 @@
           "key": "powo_matched_canonical",
           "value": "Narcissus bulbocodium subsp. bulbocodium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5373,10 +5373,10 @@
           "key": "wfo_matched_canonical",
           "value": "Narcissus bulbocodium subsp. bulbocodium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5398,10 +5398,10 @@
           "key": "taxon",
           "value": "Nepeta nepetella subsp. cordifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5411,10 +5411,10 @@
           "key": "powo_matched_canonical",
           "value": "Nepeta nepetella subsp. cordifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5424,10 +5424,10 @@
           "key": "wfo_matched_canonical",
           "value": "Nepeta nepetella subsp. cordifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5449,10 +5449,10 @@
           "key": "taxon",
           "value": "Odontites eliassennenii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5462,10 +5462,10 @@
           "key": "powo_matched_canonical",
           "value": "Odontites eliassennenii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5475,10 +5475,10 @@
           "key": "wfo_matched_canonical",
           "value": "Odontites eliassennenii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -5500,10 +5500,10 @@
           "key": "taxon",
           "value": "Odontites longiflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5513,10 +5513,10 @@
           "key": "taxon",
           "value": "Odontites longiflora",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5560,10 +5560,10 @@
           "key": "taxon",
           "value": "Odontites verna",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5573,10 +5573,10 @@
           "key": "taxon",
           "value": "Odontites verna",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5628,10 +5628,10 @@
           "key": "taxon",
           "value": "Odontites verna subsp. serotina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5641,10 +5641,10 @@
           "key": "taxon",
           "value": "Odontites verna subsp. serotina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5696,10 +5696,10 @@
           "key": "taxon",
           "value": "Odontites verna subsp. verna",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5709,10 +5709,10 @@
           "key": "taxon",
           "value": "Odontites verna subsp. verna",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5764,10 +5764,10 @@
           "key": "taxon",
           "value": "Odontites viscosa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5777,10 +5777,10 @@
           "key": "taxon",
           "value": "Odontites viscosa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5854,10 +5854,10 @@
           "key": "taxon",
           "value": "Onopordon acanthium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5867,10 +5867,10 @@
           "key": "taxon",
           "value": "Onopordon acanthium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5922,10 +5922,10 @@
           "key": "taxon",
           "value": "Onopordon corymbosum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5935,10 +5935,10 @@
           "key": "taxon",
           "value": "Onopordon corymbosum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -5990,10 +5990,10 @@
           "key": "taxon",
           "value": "Onopordon nervosum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6003,10 +6003,10 @@
           "key": "taxon",
           "value": "Onopordon nervosum",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6069,10 +6069,10 @@
           "key": "taxon",
           "value": "Ophrys arnoldii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6082,10 +6082,10 @@
           "key": "powo_matched_canonical",
           "value": "Ophrys arnoldii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6095,10 +6095,10 @@
           "key": "wfo_matched_canonical",
           "value": "Ophrys arnoldii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6120,10 +6120,10 @@
           "key": "taxon",
           "value": "Ophrys bilunulata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6133,10 +6133,10 @@
           "key": "powo_matched_canonical",
           "value": "Ophrys bilunulata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6146,10 +6146,10 @@
           "key": "wfo_matched_canonical",
           "value": "Ophrys bilunulata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6171,10 +6171,10 @@
           "key": "taxon",
           "value": "Ophrys castellana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6184,10 +6184,10 @@
           "key": "powo_matched_canonical",
           "value": "Ophrys castellana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6197,10 +6197,10 @@
           "key": "wfo_matched_canonical",
           "value": "Ophrys castellana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6222,10 +6222,10 @@
           "key": "taxon",
           "value": "Ophrys passionis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6235,10 +6235,10 @@
           "key": "powo_matched_canonical",
           "value": "Ophrys passionis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6248,10 +6248,10 @@
           "key": "wfo_matched_canonical",
           "value": "Ophrys passionis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6273,10 +6273,10 @@
           "key": "taxon",
           "value": "Ophrys picta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6286,10 +6286,10 @@
           "key": "powo_matched_canonical",
           "value": "Ophrys picta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6299,10 +6299,10 @@
           "key": "wfo_matched_canonical",
           "value": "Ophrys picta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6324,10 +6324,10 @@
           "key": "taxon",
           "value": "Ophrys riojana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6337,10 +6337,10 @@
           "key": "powo_matched_canonical",
           "value": "Ophrys riojana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6350,10 +6350,10 @@
           "key": "wfo_matched_canonical",
           "value": "Ophrys riojana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6375,10 +6375,10 @@
           "key": "taxon",
           "value": "Ophrys vasconica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6388,10 +6388,10 @@
           "key": "powo_matched_canonical",
           "value": "Ophrys vasconica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6401,10 +6401,10 @@
           "key": "wfo_matched_canonical",
           "value": "Ophrys vasconica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6426,10 +6426,10 @@
           "key": "taxon",
           "value": "Orchis picta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6439,10 +6439,10 @@
           "key": "powo_matched_canonical",
           "value": "Orchis picta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6452,10 +6452,10 @@
           "key": "wfo_matched_canonical",
           "value": "Orchis picta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6477,10 +6477,10 @@
           "key": "taxon",
           "value": "Orobanche laevis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6490,10 +6490,10 @@
           "key": "powo_matched_canonical",
           "value": "Orobanche laevis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6503,10 +6503,10 @@
           "key": "wfo_matched_canonical",
           "value": "Orobanche laevis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6528,10 +6528,10 @@
           "key": "taxon",
           "value": "Orobanche leptantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6541,10 +6541,10 @@
           "key": "powo_matched_canonical",
           "value": "Orobanche leptantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6554,10 +6554,10 @@
           "key": "wfo_matched_canonical",
           "value": "Orobanche leptantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6590,10 +6590,10 @@
           "key": "taxon",
           "value": "Paronychia capitata var. capitata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6603,10 +6603,10 @@
           "key": "taxon",
           "value": "Paronychia capitata var. capitata",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6694,10 +6694,10 @@
           "key": "taxon",
           "value": "Pimpinella gracilis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6707,10 +6707,10 @@
           "key": "powo_matched_canonical",
           "value": "Pimpinella gracilis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6720,10 +6720,10 @@
           "key": "wfo_matched_canonical",
           "value": "Pimpinella gracilis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6767,10 +6767,10 @@
           "key": "taxon",
           "value": "Plantago atrata subsp. discolor",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6780,10 +6780,10 @@
           "key": "powo_matched_canonical",
           "value": "Plantago atrata subsp. discolor",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6793,10 +6793,10 @@
           "key": "wfo_matched_canonical",
           "value": "Plantago atrata subsp. discolor",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6818,10 +6818,10 @@
           "key": "taxon",
           "value": "Platanthera clorantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6831,10 +6831,10 @@
           "key": "taxon",
           "value": "Platanthera clorantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6878,10 +6878,10 @@
           "key": "taxon",
           "value": "Poa bulbosa var. vivipara",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6891,10 +6891,10 @@
           "key": "powo_matched_canonical",
           "value": "Poa bulbosa var. vivipara",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6904,10 +6904,10 @@
           "key": "wfo_matched_canonical",
           "value": "Poa bulbosa var. vivipara",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6929,10 +6929,10 @@
           "key": "taxon",
           "value": "Populus nigra var. italica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6942,10 +6942,10 @@
           "key": "powo_matched_canonical",
           "value": "Populus nigra var. italica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6955,10 +6955,10 @@
           "key": "wfo_matched_canonical",
           "value": "Populus nigra var. italica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -6980,10 +6980,10 @@
           "key": "taxon",
           "value": "Potentilla velutina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -6993,10 +6993,10 @@
           "key": "powo_matched_canonical",
           "value": "Potentilla velutina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7006,10 +7006,10 @@
           "key": "wfo_matched_canonical",
           "value": "Potentilla velutina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7031,10 +7031,10 @@
           "key": "taxon",
           "value": "Ranunculus bulbosus var. aleae",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7044,10 +7044,10 @@
           "key": "powo_matched_canonical",
           "value": "Ranunculus bulbosus var. aleae",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7080,10 +7080,10 @@
           "key": "taxon",
           "value": "Ranunculus peltatus var. peltatus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7093,10 +7093,10 @@
           "key": "taxon",
           "value": "Ranunculus peltatus var. peltatus",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7140,10 +7140,10 @@
           "key": "taxon",
           "value": "Rhamnus lycioides subsp. velutina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7153,10 +7153,10 @@
           "key": "powo_matched_canonical",
           "value": "Rhamnus lycioides subsp. velutina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7166,10 +7166,10 @@
           "key": "wfo_matched_canonical",
           "value": "Rhamnus lycioides subsp. velutina",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7191,10 +7191,10 @@
           "key": "taxon",
           "value": "Robinia pseudacacia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7204,10 +7204,10 @@
           "key": "wfo_matched_canonical",
           "value": "Robinia pseudacacia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7229,10 +7229,10 @@
           "key": "taxon",
           "value": "Rosa nitidula",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7242,10 +7242,10 @@
           "key": "powo_matched_canonical",
           "value": "Rosa nitidula",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7255,10 +7255,10 @@
           "key": "wfo_matched_canonical",
           "value": "Rosa nitidula",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7291,10 +7291,10 @@
           "key": "taxon",
           "value": "Salix purpurea var. lambertiana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7304,10 +7304,10 @@
           "key": "powo_matched_canonical",
           "value": "Salix purpurea var. lambertiana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7317,10 +7317,10 @@
           "key": "wfo_matched_canonical",
           "value": "Salix purpurea var. lambertiana",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7342,10 +7342,10 @@
           "key": "taxon",
           "value": "Salix salvifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7355,10 +7355,10 @@
           "key": "taxon",
           "value": "Salix salvifolia",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7413,10 +7413,10 @@
           "key": "taxon",
           "value": "Satureja ascendens",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7426,10 +7426,10 @@
           "key": "powo_matched_canonical",
           "value": "Satureja ascendens",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7439,10 +7439,10 @@
           "key": "wfo_matched_canonical",
           "value": "Satureja ascendens",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7486,10 +7486,10 @@
           "key": "taxon",
           "value": "Senecio laderoi subsp. laderoi",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7499,10 +7499,10 @@
           "key": "wfo_matched_canonical",
           "value": "Senecio laderoi subsp. laderoi",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7524,10 +7524,10 @@
           "key": "taxon",
           "value": "Serratula leucantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7537,10 +7537,10 @@
           "key": "powo_matched_canonical",
           "value": "Serratula leucantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7550,10 +7550,10 @@
           "key": "wfo_matched_canonical",
           "value": "Serratula leucantha",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7575,10 +7575,10 @@
           "key": "taxon",
           "value": "Seseli libanotis subsp. libanotis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7588,10 +7588,10 @@
           "key": "taxon",
           "value": "Seseli libanotis subsp. libanotis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7635,10 +7635,10 @@
           "key": "taxon",
           "value": "Sesleria argentea subsp. hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7648,10 +7648,10 @@
           "key": "taxon",
           "value": "Sesleria argentea subsp. hispanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7703,10 +7703,10 @@
           "key": "taxon",
           "value": "Sesleria caerulea",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7716,10 +7716,10 @@
           "key": "powo_matched_canonical",
           "value": "Sesleria caerulea",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7729,10 +7729,10 @@
           "key": "wfo_matched_canonical",
           "value": "Sesleria caerulea",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7754,10 +7754,10 @@
           "key": "taxon",
           "value": "Sideritis camarae",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7767,10 +7767,10 @@
           "key": "powo_matched_canonical",
           "value": "Sideritis camarae",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7780,10 +7780,10 @@
           "key": "wfo_matched_canonical",
           "value": "Sideritis camarae",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7849,10 +7849,10 @@
           "key": "taxon",
           "value": "Stachys recta subsp. recta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7862,10 +7862,10 @@
           "key": "powo_matched_canonical",
           "value": "Stachys recta subsp. recta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7875,10 +7875,10 @@
           "key": "wfo_matched_canonical",
           "value": "Stachys recta subsp. recta",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7911,10 +7911,10 @@
           "key": "taxon",
           "value": "Torilis arvensis subsp. arvensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7924,10 +7924,10 @@
           "key": "powo_matched_canonical",
           "value": "Torilis arvensis subsp. arvensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7937,10 +7937,10 @@
           "key": "wfo_matched_canonical",
           "value": "Torilis arvensis subsp. arvensis",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -7973,10 +7973,10 @@
           "key": "taxon",
           "value": "Valerianella lusitanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7986,10 +7986,10 @@
           "key": "powo_matched_canonical",
           "value": "Valerianella lusitanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -7999,10 +7999,10 @@
           "key": "wfo_matched_canonical",
           "value": "Valerianella lusitanica",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -8024,10 +8024,10 @@
           "key": "taxon",
           "value": "Verbascum thapsus subsp. crassifolium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -8037,10 +8037,10 @@
           "key": "powo_matched_canonical",
           "value": "Verbascum thapsus subsp. crassifolium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -8050,10 +8050,10 @@
           "key": "wfo_matched_canonical",
           "value": "Verbascum thapsus subsp. crassifolium",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -8075,10 +8075,10 @@
           "key": "taxon",
           "value": "Veronica austriaca subsp. vahlii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -8088,10 +8088,10 @@
           "key": "powo_matched_canonical",
           "value": "Veronica austriaca subsp. vahlii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -8101,10 +8101,10 @@
           "key": "wfo_matched_canonical",
           "value": "Veronica austriaca subsp. vahlii",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "KEEP_TAXONIC_RESPONSE",
             "wfo_state": "EXACT_CANONICAL_FOUND",
-            "resolution": "KEEP_TAXONIC_RESPONSE"
+            "powo_state": "EXACT_CANONICAL_FOUND"
           },
           "miteco_idtaxon": null
         }
@@ -8126,10 +8126,10 @@
           "key": "taxon",
           "value": "Vicia amphycarpa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },
@@ -8139,10 +8139,10 @@
           "key": "taxon",
           "value": "Vicia amphycarpa",
           "statuses": {
-            "powo_state": "EXACT_CANONICAL_NOT_FOUND",
             "anthos_state": "EXACT_CANONICAL_NOT_FOUND",
+            "resolution": "NO_RESPONSE_ALL_THREE",
             "wfo_state": "EXACT_CANONICAL_NOT_FOUND",
-            "resolution": "NO_RESPONSE_ALL_THREE"
+            "powo_state": "EXACT_CANONICAL_NOT_FOUND"
           },
           "miteco_idtaxon": null
         },

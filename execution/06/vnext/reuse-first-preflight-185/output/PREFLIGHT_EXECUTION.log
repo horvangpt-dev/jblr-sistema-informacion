@@ -1,0 +1,25 @@
+{
+  "preflight": "REUSE_FIRST_CROSSWALK_PREFLIGHT_v1",
+  "input_rows": 185,
+  "counts": {
+    "EXACT_ID_TAXON": 0,
+    "EXACT_NAME": 121,
+    "DOCUMENTED_SYNONYM_NETWORK": 0,
+    "NO_HISTORICAL_REUSE_MATCH": 64
+  },
+  "historical_reuse_match_total": 121,
+  "remaining_without_historical_reuse_match": 64,
+  "explicit_historical_resolution_signal_count": 84,
+  "guards": {
+    "external_taxonomic_network_calls": 0,
+    "corpus_a_membership_cross": 0,
+    "corpus_b_freeze": 0,
+    "neon_writes": 0,
+    "database_writes": 0,
+    "fuzzy_matching": 0,
+    "parent_id_inheritance": 0,
+    "rank_collapse": 0,
+    "historical_files_modified": 0
+  }
+}
+EXIT_CODE=0
