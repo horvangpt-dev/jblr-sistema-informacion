@@ -1,0 +1,169 @@
+{
+  "RUN_ID": "09_CORPUS_B_COLD_START_20260824_001",
+  "endpoint": "https://datos.iepnb.es/sparql",
+  "batches": [
+    {
+      "batchNo": 1,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:10.036Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Acer monspessulanum x A. campestre\" \"Adenocarpus hispanicus subsp. neilense\" \"Agave americana\" \"Alchemilla basaltica\" \"Alchemilla filicaulis var. vestita\" \"Alchemilla plicatula\" \"Allium oleraceum var. oleraceum\" \"Allium schoenoprassum\" \"Allium senescens subsp. montanum\" \"Anchusa italica\" \"Andryala ragusina var. ragusina\" \"Anteriorchis coriophora\" \"Anteriorchis coriophora var. carpetana\" \"Anteriorchis fragrans\" \"Anthemis triumfettii\" \"Anthyllis montana subsp. hispanica\" \"Antirrhinum barrelieri\" \"Arum orientale subsp. orientale\" \"Asperula pyrenaica\" \"Asplenium adiantum-nigrum var. adiantum-nigrum\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 2,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:12.666Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Asplenium trichomanes subsp. hastatum\" \"Asplenium x alternifolium\" \"Asplenium x sarniense\" \"Asplenium x souchei\" \"Asplenium x staufferi\" \"Asplenium x ticinense\" \"Astragalus monspessulanus subsp. teresianus\" \"Astragalus sempervirens subsp. muticus\" \"Astragalus vesicarius subsp. vesicarius\" \"Atropa bella-donna\" \"Avenula bromoides subsp. pauneroi\" \"Avenula lodunensis subsp. romero-zarcoi\" \"Avenula pratensis subsp. iberica\" \"Avenula pratensis var. paniculata\" \"Avenula pratensis var. vasconica\" \"Avenula sulcata subsp. sulcata\" \"Azolla spp.\" \"Ballota nigra subsp. foetida\" \"Bellardia trixago\" \"Betula alba var. alba\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 3,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:14.652Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Betula alba var. glabrata\" \"Betula celtiberica\" \"Betula pendula var. meridionalis\" \"Biscutella valentina var. laevigata\" \"Biscutella valentina var. valentina\" \"Biscutella valentina var. variegata\" \"Blechnum spicant var. spicant\" \"Brachypodium pinnatum x B. phoenicoides\" \"Bromus catharticus\" \"Bupleurum baldense subsp. baldense\" \"Bupleurum ranunculoides subsp. gramineus\" \"Bupleurum ranunculoides subsp. ranunculoides\" \"Calystegia sepium subsp. sepium\" \"Campanula glomerata subsp. glomerata\" \"Campanula hispanica\" \"Campanula paui\" \"Campanula trachelium subsp. trachelium\" \"Campanula urbionensis\" \"Carduus assoi\" \"Carduus nutans subsp. nutans\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 4,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:16.730Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Carex flacca subsp. flacca\" \"Carex flacca subsp. serrulata\" \"Carex hallerana\" \"Carex muricata subsp. lamprocarpa\" \"Carex ovalis\" \"Carlina vulgaris subsp. vulgaris\" \"Carthamus lanatus subsp. lanatus\" \"Centaurea debeauxii subsp. nemoralis\" \"Centaurea ornata x C. scabiosa\" \"Centaurea paniculata subsp. castellana\" \"Centaurea triumfetti subsp. lingulata\" \"Centaurea vinyalsii\" \"Centaurea x zubiae\" \"Centaurium erythraea subsp. grandiflorum\" \"Centaurium erythraea subsp. majus\" \"Centranthus calcitrapae subsp. calcitrapae\" \"Cerastium brachypetalum var. brachypetalum\" \"Chaenorhinum origanifolium subsp. crassifolium\" \"Chaenorhinum rupestre\" \"Chaerophyllum temulentum\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 5,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:18.774Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Cheilanthes acrostica\" \"Cicer arietinum\" \"Cirsium pyrenaicum var. longespinosum\" \"Cirsium pyrenaicum var. pyrenaicum\" \"Cirsium richterianum\" \"Cistus populifolius x C. Salvifolius\" \"Cistus salvifolius\" \"Colutea atlantica\" \"Conopodium bourgaei\" \"Conopodium capillifolium\" \"Conopodium ramosum\" \"Coronilla valentina subsp. glauca\" \"Cortaderia spp.\" \"Cotoneaster nebrodensis\" \"Crataegus monogyna subsp. brevispina\" \"Crataegus monogyna subsp. monogyna\" \"Cylindropuntia spp.\" \"Cytisus balansae subsp. europaeus\" \"Cytisus scoparius subsp. cantabricus\" \"Dactylis hispanica\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 6,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:20.843Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Dactylorhiza elata subsp. sesquipedalis\" \"Dactylorhiza ericetorum\" \"Dactylorhiza incarnata subsp. incarnata\" \"Dactylorhiza maculata subsp. elodes\" \"Dactylorhiza maculata subsp. maculata\" \"Dactylorhiza majalis subsp. majalis\" \"Dactylorhiza markusii\" \"Deschampsia hispanica\" \"Doronicum diazii\" \"Dorycnium pentaphyllum subsp. pentaphyllum\" \"Dryopteris affinis subsp. cambrensis\" \"Dryopteris affinis var. borreri\" \"Dryopteris affinis var. robusta\" \"Dryopteris mindshelkensis\" \"Dryopteris x ambroseae\" \"Dryopteris x mantoniae\" \"Echium asperrinum\" \"Epipactis hispanica\" \"Epipactis parviflora\" \"Epipactis phyllanthes var. fageticola\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 7,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:22.877Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Equisetum x litorale\" \"Festuca arundinacea subsp. fenas\" \"Festuca heterophylla subsp. braun-blanquetii\" \"Festuca ovina var. glauca\" \"Festuca sp.\" \"Filipendula ulmaria subsp. ulmaria\" \"Fritillaria nervosa subsp. nervosa\" \"Gagea fragifera\" \"Gagea nevadensis gr.\" \"Galeopsis angustifolia subsp. carpetana\" \"Galium album subsp. album\" \"Galium corrudifolium\" \"Galium divaricatum\" \"Galium fruticescens\" \"Galium pinetorum\" \"Galium spurium\" \"Genista cinerea subsp. ausetana\" \"Genista cinerea subsp. cinerea\" \"Genista florida subsp. polygaliphylla\" \"Genista sagittalis\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 8,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:24.901Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Gentiana angustifolia subsp. occidentalis\" \"Gymnadenia densiflora\" \"Hedysarum confertum\" \"Helianthemum nummularium subsp. nummularium\" \"Heracleum sphondylium subsp. montanum\" \"Heracleum sphondylium subsp. pyrenaicum\" \"Herniaria fruticosa var. fruticosa\" \"Herniaria glabra var. glabra\" \"Herniaria scabrida var. glabrescens\" \"Herniaria scabrida var. scabrida\" \"Hieracium argillaceum\" \"Hieracium lactucella subsp. lactucella\" \"Hieracium niveum\" \"Hieracium pilosella subsp. micradenium\" \"Hieracium pilosella subsp. pilosella\" \"Hieracium pilosella subsp. tricholepium\" \"Himantoglossum hircinum subsp. hircinum\" \"Hippocrepis comosa subsp. squamata\" \"Hypochoeris glabra\" \"Hypochoeris radicata\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 9,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:26.859Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Jasione crispa subsp. centralis\" \"Jasione crispa subsp. sessiliflora\" \"Jasione laevis subsp. carpetana\" \"Jasione laevis subsp. laevis\" \"Juncus conglomeratus var. conglomeratus\" \"Juncus conglomeratus var. laxus\" \"Juncus effusus var. effusus\" \"Juncus effusus var. subglomeratus\" \"Juncus inflexus var. inflexus\" \"Juncus tenageia subsp. tenageia\" \"Knautia arvernensis\" \"Knautia purpurea\" \"Knautia subscaposa subsp. subscaposa\" \"Koeleria pyramidata subsp. pyramidata\" \"Lathyrus niger subsp. niger\" \"Lavandula stoechas subsp. pedunculata\" \"Legousia castellana\" \"Leontodon taraxacoides subsp. hispidus\" \"Leucanthemum ircutianum\" \"Linaria alpina var. aciculifolia\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 10,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:28.863Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Linaria proxima\" \"Lithospermum arvense\" \"Lithospermum incrassatum\" \"Lithospermum purpurocaeruleum\" \"Littorela uniflora\" \"Lonicera caprifolium\" \"Lotus maritimus\" \"Lotus preslii\" \"Ludwigia spp.\" \"Luzula campestris subsp. carpetana\" \"Luzula multiflora subsp. congesta\" \"Luzula sylvatica subsp. henriquesii\" \"Lysimachia nemorun\" \"Medicago monspeliaca\" \"Medicago polyceratia\" \"Medicago sativa subsp. sativa\" \"Melilotus altissima\" \"Melilotus neapolitanus\" \"Melittis melissophyllum subsp. melissophyllum\" \"Mentha x dumetorum\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 11,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:30.873Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Myosotis nemorosa\" \"Myosotis ramosissima subsp. globularis\" \"Narcissus bulbocodium subsp. bulbocodium\" \"Nepeta nepetella subsp. cordifolia\" \"Odontites eliassennenii\" \"Odontites longiflora\" \"Odontites verna\" \"Odontites verna subsp. serotina\" \"Odontites verna subsp. verna\" \"Odontites viscosa\" \"Omalotheca supina subsp. pusilla\" \"Omalotheca sylvatica subsp. carpetana\" \"Ononis natrix subsp. natrix\" \"Onopordon acanthium\" \"Onopordon corymbosum\" \"Onopordon nervosum\" \"Onopordum acaulon subsp. acaulon\" \"Ophrys arnoldii\" \"Ophrys bilunulata\" \"Ophrys castellana\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 12,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:32.847Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Ophrys dyris\" \"Ophrys fusca gr.\" \"Ophrys incubacea\" \"Ophrys lupercalis\" \"Ophrys lupercalis x O. bilunulata\" \"Ophrys passionis\" \"Ophrys picta\" \"Ophrys riojana\" \"Ophrys scolopax subsp. scolopax\" \"Ophrys scolopax x O. tenthredinifera\" \"Ophrys vasconica\" \"Ophrys x manfredoniae\" \"Orchis champagneuxii\" \"Orchis fragrans\" \"Orchis picta\" \"Orchis purpurea x Aceras anthropophorum\" \"Orobanche laevis\" \"Orobanche leptantha\" \"Paronychia argentea var. argentea\" \"Paronychia capitata var. capitata\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 13,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:34.839Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Paronychia kapela var. pseudoaretioides\" \"Paronychia polygonifolia var. polygonifolia\" \"Peucedanum officinales subsp. officinale\" \"Phyteuma pyrenaicum\" \"Pilosella sp.\" \"Pimpinella gracilis\" \"Pimpinella gracilis subsp. puberula\" \"Plantago alpina subsp. penyalarensis\" \"Plantago atrata subsp. discolor\" \"Platanthera clorantha\" \"Poa bulbosa var. vivipara\" \"Polypodium x mantoniae\" \"Polypodium x shivasiae\" \"Polystichum x bicknellii\" \"Polystichum x illyricum\" \"Populus nigra var. italica\" \"Potentilla tabernaemontani\" \"Potentilla velutina\" \"Primula veris subsp. suaveolens\" \"Prunella hastifolia\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 14,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:36.844Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Quercus cerrioides\" \"Quercus faginea x Q. pusbescens\" \"Quercus faginea x Q. pyrenaica\" \"Quercus pubescens\" \"Quercus pusbescens x Q. pyrenaica\" \"Ranunculus bulbosus var. aleae\" \"Ranunculus bulbosus var. hispanicus\" \"Ranunculus peltatus var. peltatus\" \"Rhamnus lycioides subsp. velutina\" \"Rhinanthus mediterraneus\" \"Robinia pseudacacia\" \"Rorippa sylvestris sylvestris\" \"Rosa nitidula\" \"Rubus caesius x R. ulmifolius\" \"Salix atrocinerea x S. caprea\" \"Salix eleagnos subsp. angustifolia\" \"Salix purpurea var. lambertiana\" \"Salix salvifolia\" \"Salix x neotricha\" \"Salix x rubens\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 15,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:38.824Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Sanguisorba minor subsp. muricata\" \"Satureja acinos\" \"Satureja alpina\" \"Satureja ascendens\" \"Satureja vulgaris subsp. vulgaris\" \"Saxifraga cuneata x S. fragosoi\" \"Saxifraga cuneata x S. losae\" \"Saxifraga x arizagae\" \"Saxifraga x celtiberica\" \"Scirpus cernuus\" \"Scirpus cespitosus subsp. germanicum\" \"Scirpus holoschoenus\" \"Scirpus lacustris\" \"Scirpus maritimus\" \"Scirpus setaceus\" \"Scirpus supinus\" \"Scorzonera angustifolia var. angustifolia\" \"Senecio laderoi subsp. laderoi\" \"Serapias lingua x parviflora\" \"Serratula leucantha\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "a4f625e15074786b74734867a7c10b5f9f69b4abcaff2c8c54e4f0ad717d1d12",
+      "bindings": [
+        {
+          "QueryName": {
+            "type": "literal",
+            "value": "Scirpus holoschoenus"
+          },
+          "TaxonRecord": {
+            "type": "uri",
+            "value": "https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/32535"
+          },
+          "TaxonRecordID": {
+            "type": "literal",
+            "value": "32535"
+          },
+          "ScientificName": {
+            "type": "literal",
+            "value": "Scirpus holoschoenus"
+          },
+          "TaxonRank": {
+            "type": "literal",
+            "value": "Species"
+          },
+          "TaxonomicStatus": {
+            "type": "literal",
+            "value": "Aceptado/Válido"
+          }
+        }
+      ]
+    },
+    {
+      "batchNo": 16,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:40.844Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Seseli libanotis subsp. libanotis\" \"Sesleria argentea subsp. hispanica\" \"Sesleria caerulea\" \"Sideritis camarae\" \"Sideritis hyssopifolia subsp. hyssopifolia\" \"Sideritis montana subsp. ebracteata\" \"Simethis mattiazzi\" \"Sixalix atropurpurea\" \"Solidago virgaurea subsp. fallit-tirones\" \"Sorbus aria subsp. aria\" \"Sorbus aucuparia subsp. aucuparia\" \"Sorbus mougeotii\" \"Stachys officinalis subsp. officinalis\" \"Stachys recta subsp. recta\" \"Taraxacum gr. erythrospermum\" \"Taraxacum gr. officinale\" \"Taraxacum sp.\" \"Tetragonolobus maritimus var. hirsutus\" \"Tilia x vulgaris\" \"Torilis arvensis subsp. arvensis\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    },
+    {
+      "batchNo": 17,
+      "status": "PASS",
+      "observedAt": "2026-08-24T06:25:42.835Z",
+      "query": "PREFIX plinian:<https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#>\nPREFIX dwc:<http://rs.tdwg.org/dwc/terms/>\nSELECT DISTINCT ?QueryName ?TaxonRecord ?TaxonRecordID ?ScientificName ?TaxonRank ?TaxonomicStatus WHERE {\n VALUES ?QueryName { \"Tragopogon lamottei\" \"Trifolium montanum subsp. montanum\" \"Trifolium repens subsp. nevadense\" \"Trifolium repens subsp. repens\" \"Trinia glauca subsp. glauca\" \"Ulmus x hollandica\" \"Valerianella carinata\" \"Valerianella lusitanica\" \"Valerianella muricata\" \"Verbascum rotundifolium ripacurcicum\" \"Verbascum thapsus subsp. crassifolium\" \"Verbascum thapsus subsp. montanum\" \"Verbascum thapsus subsp. thapsus\" \"Veronica austriaca subsp. vahlii\" \"Veronica hederifolia subsp. hederifolia\" \"Vicia amphycarpa\" \"Vicia pannonica var. purpurascens\" \"Vicia sativa subsp. nigra\" }\n ?TaxonRecord plinian:hasHierarchy ?Taxon .\n ?TaxonRecord plinian:TaxonRecordID ?TaxonRecordID .\n ?Taxon dwc:scientificName ?ScientificName .\n FILTER(STR(?ScientificName)=STR(?QueryName))\n OPTIONAL{?Taxon dwc:taxonRank ?TaxonRank}\n OPTIONAL{?Taxon dwc:taxonomicStatus ?TaxonomicStatus}\n} ORDER BY ?QueryName ?TaxonRecordID",
+      "responseHash": "f6e7e89a7ec2942d915e8ce7b46c9d7efaccd012358aa1df217c59c1a6540604",
+      "bindings": []
+    }
+  ]
+}
