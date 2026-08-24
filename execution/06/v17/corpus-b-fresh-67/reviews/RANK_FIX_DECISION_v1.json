@@ -1,0 +1,11 @@
+{
+  "actor": "06",
+  "decision": "CORRECT_AND_RERUN_EXACT_SAME_SCOPE",
+  "scope": 67,
+  "scopeChange": false,
+  "scientificCriteriaChange": false,
+  "technicalFixOnly": true,
+  "supersededRunId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "nextRunId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+  "doNotPromoteRun001": true
+}
