@@ -10,6 +10,10 @@ def canonical(s):
     m=re.match(r'^([A-Z][A-Za-zÀ-ÿ-]+\s+(?:x\s+)?[a-z][A-Za-zÀ-ÿ0-9.-]+(?:\s+(?:subsp\.|ssp\.|var\.|f\.|nothosubsp\.)\s+[a-z][A-Za-zÀ-ÿ0-9.-]+)?)',s)
     return m.group(1).replace('ssp.','subsp.').strip() if m else s
 
+def rank_norm(s):
+    x=norm(s)
+    return {'sp.':'species','species':'species','subsp.':'subspecies','ssp.':'subspecies','subspecies':'subspecies','var.':'variety','variety':'variety','forma':'form','form':'form'}.get(x,x)
+
 def parse_eidos(ttl, target_names):
     wanted={norm(x) for x in target_names}; found={k:[] for k in wanted}; block=[]
     def emit(lines):
@@ -38,22 +42,25 @@ def main(relations_path,ttl_path,out_path):
     outrows=[]; counts={}
     for r in rows:
         recs=idx.get(norm(r['candidate']),[])
-        accepted=[x for x in recs if norm(x.get('taxonomicStatus')) in ('aceptado/válido','aceptado/valido')]
+        matching_rank=[x for x in recs if rank_norm(x.get('taxonRank'))==rank_norm(r.get('candidateRank'))]
+        accepted=[x for x in matching_rank if norm(x.get('taxonomicStatus')) in ('aceptado/válido','aceptado/valido')]
         if not r['idEligible']:
             state='RELATION_DOCUMENTED_NOT_ID_ELIGIBLE'; taxon=None
         elif len(accepted)==1:
             state='RESOLVED_SPANISH_DOCUMENTED_NAME'; taxon=accepted[0]['taxonID']
         elif len(accepted)>1:
-            state='AMBIGUOUS_MULTIPLE_ACCEPTED_EIDOS_IDS'; taxon=None
+            state='AMBIGUOUS_MULTIPLE_ACCEPTED_EIDOS_IDS_SAME_RANK'; taxon=None
+        elif matching_rank:
+            state='EIDOS_NAME_PRESENT_SAME_RANK_NO_UNIQUE_ACCEPTED_RECORD'; taxon=None
         elif recs:
-            state='EIDOS_NAME_PRESENT_NO_UNIQUE_ACCEPTED_RECORD'; taxon=None
+            state='EIDOS_NAME_PRESENT_ONLY_OTHER_RANKS'; taxon=None
         else:
             state='EIDOS_NAME_NOT_FOUND_IN_CURRENT_DUMP'; taxon=None
         counts[state]=counts.get(state,0)+1
-        z=dict(r); z.update({'EIDOS_RECORDS':recs,'RESULT_STATE':state,'MITECO_IDTAXON':taxon}); outrows.append(z)
+        z=dict(r); z.update({'EIDOS_RECORDS':recs,'EIDOS_MATCHING_RANK_RECORDS':matching_rank,'RESULT_STATE':state,'MITECO_IDTAXON':taxon}); outrows.append(z)
     ttl=Path(ttl_path)
-    receipt={'runClass':'SPANISH_DOCUMENTED_RELATIONS_TO_OFFICIAL_CURRENT_EIDOS_DUMP','inputRelations':len(rows),'outputRelations':len(outrows),'counts':counts,'newIdCandidates':sum(1 for r in outrows if r['MITECO_IDTAXON']),'eidosBytes':ttl.stat().st_size,'eidosSha256':hashlib.sha256(ttl.read_bytes()).hexdigest(),'crossWithA':False,'neonWrites':0,'corpusBFreeze':False,'noFuzzy':True,'noParentIdInheritance':True,'noRankCollapse':True,'rows':outrows}
+    receipt={'runClass':'SPANISH_DOCUMENTED_RELATIONS_TO_OFFICIAL_CURRENT_EIDOS_DUMP','resolverVersion':'RANK_EXACT_v2','inputRelations':len(rows),'outputRelations':len(outrows),'counts':counts,'newIdCandidates':sum(1 for r in outrows if r['MITECO_IDTAXON']),'eidosBytes':ttl.stat().st_size,'eidosSha256':hashlib.sha256(ttl.read_bytes()).hexdigest(),'crossWithA':False,'neonWrites':0,'corpusBFreeze':False,'noFuzzy':True,'noParentIdInheritance':True,'noRankCollapse':True,'rows':outrows}
     p=Path(out_path);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps({k:receipt[k] for k in ('inputRelations','counts','newIdCandidates','eidosBytes','eidosSha256')},ensure_ascii=False))
+    print(json.dumps({k:receipt[k] for k in ('resolverVersion','inputRelations','counts','newIdCandidates','eidosBytes','eidosSha256')},ensure_ascii=False))
 
 if __name__=='__main__': main(*sys.argv[1:4])
