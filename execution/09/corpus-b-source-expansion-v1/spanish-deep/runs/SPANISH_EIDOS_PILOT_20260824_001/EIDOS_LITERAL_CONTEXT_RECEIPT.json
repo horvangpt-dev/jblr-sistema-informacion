@@ -1,0 +1,918 @@
+{
+  "source": "OFFICIAL_MITECO_EIDOS_OPEN_DATA_TTL",
+  "source_url": "https://datos.iepnb.es/datasets/eidos.ttl",
+  "ttl_bytes": 250612716,
+  "ttl_sha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "target_count": 30,
+  "targets_with_literal_hits": 15,
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "name": "Satureja acinos",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "name": "Acinos arvensis",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 1,
+      "hits": [
+        {
+          "line": 161946,
+          "context": [
+            "        Darwin:genus                 \"Acinos\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Labiatae | Acinos |  | arvensis | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"J. Ecol. 33: 326. 1946\" ;",
+            "        Darwin:namePublishedInYear   \"1946\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Acinos arvensis (Lam.) Dandy\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(Lam.) Dandy\" ;",
+            "        Darwin:specificEpithet       \"arvensis\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:ffca9177-03f4-44c6-bf75-cc4301f10c9b\" ;",
+            "        Darwin:taxonID               \"1795\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Lamiidae | Lamiales | Lamiaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "name": "Thymus acinos",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "name": "Calamintha acinos",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "name": "Clinopodium acinos",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "335",
+      "name": "Scirpus setaceus",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "335",
+      "name": "Isolepis setacea",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 1,
+      "hits": [
+        {
+          "line": 792260,
+          "context": [
+            "        Darwin:genus                 \"Isolepis\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Poales | Cyperaceae | Isolepis |  | setacea | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Prodr. Fl. Nov. Holland. 222. 1810\" ;",
+            "        Darwin:namePublishedInYear   \"1810\" ;",
+            "        Darwin:order                 \"Poales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Isolepis setacea (L.) R.Br.\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) R.Br.\" ;",
+            "        Darwin:specificEpithet       \"setacea\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:bc302cad-012a-4f50-86c9-c435cce243f6\" ;",
+            "        Darwin:taxonID               \"5387\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Commelinidae | Poales | Cyperaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4075",
+      "name": "Scirpus cernuus",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4075",
+      "name": "Isolepis cernua",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 1,
+      "hits": [
+        {
+          "line": 746343,
+          "context": [
+            "        Darwin:genus                 \"Isolepis\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Poales | Cyperaceae | Isolepis |  | cernua | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Syst. Veg. 2: 106. 1817\" ;",
+            "        Darwin:namePublishedInYear   \"1817\" ;",
+            "        Darwin:order                 \"Poales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Isolepis cernua (Vahl) Roem. & Schult.\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(Vahl) Roem. & Schult.\" ;",
+            "        Darwin:specificEpithet       \"cernua\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:0a2723b3-595a-4dc0-afa2-44c1f1e6e252\" ;",
+            "        Darwin:taxonID               \"5383\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Commelinidae | Poales | Cyperaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4075",
+      "name": "Scirpus savii",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4075",
+      "name": "Isolepis savii",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2603",
+      "name": "Scirpus lacustris",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 3,
+      "hits": [
+        {
+          "line": 552182,
+          "context": [
+            "        j.0:ManagementID  \"5819_CONSERVATIONMANAGEMENT\" ;",
+            "        Darwin:ConservationMeasurementUnstructured",
+            "                \"Medidas propuestas: Se proponen como medidas de conservación: el vallado de al menos parte de la única población conocida, el seguimiento de su dinámica poblacional, la vigilancia por parte de la guardería forestal, la realización de nuevas prospecciones en las localidades referenciadas y áreas limítrofes con afloramientos de yesos, la recolección de semillas para su inclusión en bancos de germoplasma y la redacción de las Bases Técnicas para la elaboración del Plan de Conservación del Hábitat.\" ;",
+            "        Darwin:ManagementConservationUnstructured",
+            "                \"La población se halla entre los LIC de \\\"Altos de Marimezquita, Los Pinarejos y Muela de Cascante\\\" y de \\\"Cuenca del Ebrón\\\", pero fuera de ambos.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/541_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"Crece en caricedas densas presididas por Carex hispida, situadas en zonas de escasa pendiente, cerca de cursos de agua lentos o lagunas someras de aguas estancadas, sobre sustrato profundo rico en materia orgánica vegetal. Estas caricedas constituyen la segunda o tercera banda de vegetación en torno a las lagunas. A veces penetra en los juncales más próximos al agua. Esporádicamente se encuentra en pastizales húmedos, de poca talla y gran cobertura, desarrollados en zonas de escasa o nula pendiente, en exposiciones frescas bajo dosel arbóreo ralo, derivados aparentemente de la degradación de caricedas. Entre las especies más abundantes se encuentran Carex elata, C. cuprina, C. distans, Juncus acutus, Schoenus nigricans y Scirpus lacustris subsp. tabernaemontani.\" ;",
+            "        Plinian:HabitatsID           \"541_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/DistributionType/8038>",
+            "        a                              Plinian:DistributionType ;",
+            "        Plinian:DistributionID         \"8038\" ;",
+            "        Plinian:DistributionScope      \"Demarcaciones marinas\" ;",
+            "        Plinian:DistributionScopeType  \"Nacional\" ;",
+            "        Plinian:Distribution_Type      \"Natural\" ;"
+          ]
+        },
+        {
+          "line": 778813,
+          "context": [
+            "        Plinian:Language          \"Catalán\" ;",
+            "        Plinian:Name              \"Queixals de verro\" ;",
+            "        Plinian:VernacularNameID  \"23057\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/DirectThreatsType/11101_DIRECTTHREATTYPE>",
+            "        a                       Plinian:DirectThreatsType ;",
+            "        Plinian:DirectThreatID  \"11101_DIRECTTHREATTYPE\" ;",
+            "        Plinian:DirectThreatUnstructured",
+            "                \"Las principales amenazas que sufre la especie están relacionadas con la reducción y/o degradación de sus principales hábitats y con las agresiones directas, al ser confundida en las cacerías con la Focha Común. Pérdida de hábitat. Durante el siglo XX, gran parte de las áreas húmedas de vital importancia para la especie fueron completamente destruidas o degradadas. En Andalucía, el hábitat disponible para la Focha Moruna en la actualidad representa sólo el 18% del que existía en los años cincuenta (EBD, 1994). Como ya se ha comentado en el apartado anterior, los humedales de Marruecos también se están perdiendo hasta un 25%. la degradación más acentuada de las zonas húmedas en este país tuvo lugar entre 1978 y 1999 (Green et al., 2002). Los humedales más afectados son los de baja salinidadcon un 98% de pérdida de humedales estacionales mesohalinos, un 41% de pérdida de lagos de montaña y un 33% de pérdida de marismas estacionales de Phragmites/Scirpus lacustris. (Green, 2001). Además, en septiembre de 2001, se comprobó que dos de los humedales más importantes del Medio Atlas (uno de los cuales es Sitio Ramsar y ambos de enorme importancia para la Focha Moruna, se encontraban completamente secos (Green, 2001). Degradación del hábitat. La degradación de los humedales está motivada por procesos de colmatación, cambios en su régimen hidrológico y sobreexplotación de acuíferos, que alteran el periodo de inundación. Los vertidos de origen agrícola, industrial y doméstico representan una grave amenaza para la calidad de sus aguas. Actividades tales como el sobrepastoreo, la introducción de especies exóticas y la quema de vegetación, alteran sustancialmente la calidad de los humedales. Estos mismos factores son los que sufren los humedales de Marruecos. Caza. La Focha Moruna esmuy vulnerable a la caza debido a la dificultad de diferenciarla de la Focha Común (especie cinegética). Probablemente todos los años sean abatidas fochas morunas durante las cacerías de comunes 2. De hecho existen antecedentes de este tipo de confusión: en una cacería realizada en el año 1987 en la zona de arrozales de Cantarita (marismas del Guadalquivir) se mataron seis morunas de entre 650 comunes (EBD, 1994); un ejemplar cazado en las salinas de Bonanza (Cádiz) en 1990 (Hidalgo en Fernandez-Palacios & Raya, 1991) y en estas mismas salinas, en concreto en las ¿salinas de los Portugueses¿, ocho ejemplares abatidos en el 2001 (F. Ibañez, com. pers.) uno de cuyos cadáveres pudo ser recuperado por los agentes forestales y que en la actualidad permanece congelado en las oficinas del P. Natural de Doñana (CMA, datos inéditos.). En 2001, se tiene constancia además de dos fochas morunas cazadas en la Dehesa de Abajo y otras dos en el Caño Guadiamar Encauzado (F. Ibáñez, com. pers.). Introducción de especies exóticas. La introducción de algunas especies en ciertos humedales (cangrejo rojo Procambarus clarkii, carpa Cyprinus carpio) está afectando probablemente a su calidad debido al impacto que ejerce sobre diferentes especies de la flora y fauna de dichos humedales. Tanto el cangrejo rojo como la carpa generan cambios en los sistemas tróficos de los humedales al causar la destrucción de la vegetación sumergida que soporta a toda una rica comunidad de organismos acuáticos (Alonso et al., 1985). Como consecuencia puede estar incidiendo negativamente sobre la Focha Moruna y otras acuáticas amenazadas (p.e.: Ceceta Pardilla y Porrón Pardo, ver textos relevantes) al destruir los recursos alimenticios usados por la especie (Amat, 1997). Sobrepastoreo. El elevado número de cabezas de ganado y su concentración durante el estío alrededor de las pocas zonas con agua, son causa de daños directos e indirectos sobre los humedales, siendo las marismas del Parque Nacional de Doñana las que sufren de forma más alarmante dicho impacto. Actúa de forma negativa sobre los elementos del sistema húmedo de la siguiente manera: ¿Impacto sobre el suelo y relieve de los humedales por el pisoteo, que compacta el suelo y genera la desaparición del microrelieve, empobreciendo gravemente su diversidad. ¿Impacto sobre la vegetación emergente y sumergida, por consumo directo e incremneto de la turbidez del agua, provocando un descenso acusado de la productividad primaria. ¿Impacto sobre la fauna por la pérdida de vegetación, la competencia trófica, molestias por parte de la actividad humana asociada.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/546_OTHREF4>",
+            "        a                    Plinian:RecordMetadataType ;",
+            "        Plinian:hasRevision  <https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#ReferenceType/83> .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/DistributionType/10005>",
+            "        a                              Plinian:DistributionType ;",
+            "        Plinian:DistributionID         \"10005\" ;"
+          ]
+        },
+        {
+          "line": 1476843,
+          "context": [
+            "        Darwin:specificEpithet       \"filare\" ;",
+            "        Darwin:taxonID               \"31498\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;",
+            "        Darwin:verbatimTaxonRank     \"subsp.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/7528_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"La única población estudiada se encuentra en un carrizal, junto a un humedal con predominio de Scirpus lacustris, en zona llana sobre sustrato margoso y suelo limo-arcilloso. Son destacables las siguientes especies acompañantes: Lycopus europaeus, Polypogon monspeliensis, Phalaris paradoxa, Alopecurus myosuroides, Ranunculus ophioglossifolius, Galium palustre, Carex riparia, Scirpus lacustris, Epilobium hirsutum, Lotus tenuis, Lysimachia vulgaris, Oenanthe lachenalii,  lthaea officinalis.\" ;",
+            "        Plinian:HabitatsID           \"7528_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/9948>",
+            "        a                           Darwin:MeasurementOrFact ;",
+            "        Darwin:measurementAccuracy  \"Alta\" ;",
+            "        Darwin:measurementDeterminedDate",
+            "                \"2007-2012\" ;",
+            "        Darwin:measurementID        \"9948\" ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2603",
+      "name": "Schoenoplectus lacustris",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 3,
+      "hits": [
+        {
+          "line": 1348643,
+          "context": [
+            "        Darwin:genus                 \"Schoenoplectus\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Poales | Cyperaceae | Schoenoplectus |  | lacustris | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Bot. Jahrb. Syst. 10: 299. 1889\" ;",
+            "        Darwin:namePublishedInYear   \"1889\" ;",
+            "        Darwin:order                 \"Poales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Schoenoplectus lacustris (L.) Palla\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) Palla\" ;",
+            "        Darwin:specificEpithet       \"lacustris\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:900f3584-4c8f-406f-b0cb-70db6a3f0b85\" ;",
+            "        Darwin:taxonID               \"8106\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Commelinidae | Poales | Cyperaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        },
+        {
+          "line": 1360003,
+          "context": [
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Poales | Cyperaceae | Schoenoplectus |  | lacustris | lacustris\" ;",
+            "        Darwin:infraspecificEpithet  \"lacustris\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Bot. Jahrb. Syst. 10: 299. 1889\" ;",
+            "        Darwin:namePublishedInYear   \"1889\" ;",
+            "        Darwin:order                 \"Poales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Schoenoplectus lacustris (L.) Palla subsp. lacustris\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) Palla\" ;",
+            "        Darwin:specificEpithet       \"lacustris\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:c21d31b0-2e15-444e-b64f-4606d2a4bba7\" ;",
+            "        Darwin:taxonID               \"8107\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonRemarks          \"Commelinidae | Poales | Cyperaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        },
+        {
+          "line": 1371299,
+          "context": [
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Poales | Cyperaceae | Schoenoplectus |  | lacustris | glaucus\" ;",
+            "        Darwin:infraspecificEpithet  \"glaucus\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Repert. Spec. Nov. Regni Veg. 25: 11. 1928\" ;",
+            "        Darwin:namePublishedInYear   \"1928\" ;",
+            "        Darwin:order                 \"Poales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Schoenoplectus lacustris subsp. glaucus (Sm. ex Hartm.) Bech.\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(Sm. ex Hartm.) Bech.\" ;",
+            "        Darwin:specificEpithet       \"lacustris\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:f5116177-862d-4fb2-b1ef-d724590b6c1f\" ;",
+            "        Darwin:taxonID               \"8108\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonRemarks          \"Commelinidae | Poales | Cyperaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3688",
+      "name": "Bellardia trixago",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 2,
+      "hits": [
+        {
+          "line": 309778,
+          "context": [
+            "        Darwin:taxonConceptID        \"127348\" ;",
+            "        Darwin:taxonID               \"15882\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;",
+            "        Darwin:verbatimTaxonRank     \"sp.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/2602_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"Habita en pastizales termófilos (Aristido coerulescentis- Hyparrhenietum hirtae) y relativamente nitrificados (Stipion retortae), sobre sustrato de origen metamórfico, en el piso termomediterráneo inferior con ombrotipo semiárido. Son especies acompañantes: Hyparrhenia sinaica, Lotus edulis, Ononis natrix, Bellardia trixago, Bituminaria bituminosa, etc.\" ;",
+            "        Plinian:HabitatsID           \"2602_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/MeasurementOrFact/23147>",
+            "        a                          Darwin:MeasurementOrFact ;",
+            "        Darwin:measurementID       \"23147\" ;",
+            "        Darwin:measurementRemarks  \"Inventario español de los conocimientos tradicionales relativos a la Biodiversidad. 2014\" ;",
+            "        Darwin:measurementType     \"Fin Floración\" ;",
+            "        Darwin:measurementUnit     \"mes\" ;"
+          ]
+        },
+        {
+          "line": 1639056,
+          "context": [
+            "                \"Propuestas: - Protección estricta del hábitat. - Control de la caza ilegal. - Control de perturbaciones humanas (trasiego, actividades recreativas, etc.). - Existentes: - Especie protegida en la C.A. de Cataluña por la Ley 3/88 de 4 de marzo de protección de animales. Diari Oficial de la Generalidad de Cataluña, nº 967.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/11042_OTHREF3>",
+            "        a                    Plinian:RecordMetadataType ;",
+            "        Plinian:hasRevision  <https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#ReferenceType/11> .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/24409_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"Humedales poco profundos (juncales, claros de carrizales, zonas más o menos inundadas), donde vive junto a especies como Phragmites australis, Cladium mariscus, Carex sp., Juncus acutus, etc. Secundariamente se puede localizar en dunas fijadas conviviendo con Bellardia trixago, Ophrys apifera, Orchis coriophora subsp. fragans, Juncus bufonius, Panicum repens, Plantago coronopus y Serapias parviflora.\" ;",
+            "        Plinian:HabitatsID           \"24409_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/760>",
+            "        a                        Plinian:TaxonRecord ;",
+            "        Plinian:CodeEUNIS        \"159725\" ;",
+            "        Plinian:TaxonRecordID    \"760\" ;",
+            "        Plinian:grupoTaxonomico  \"Anagyris latifolia Brouss. ex Willd.\" ;",
+            "        Plinian:hasCollection    <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/25> ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3688",
+      "name": "Bartsia trixago",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 1,
+      "hits": [
+        {
+          "line": 1294995,
+          "context": [
+            "        Darwin:genus                 \"Bartsia\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Scrophulariales | Scrophulariaceae | Bartsia |  | trixago | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Sp. Pl. 602. 1753\" ;",
+            "        Darwin:namePublishedInYear   \"1753\" ;",
+            "        Darwin:order                 \"Scrophulariales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Bartsia trixago L.\" ;",
+            "        Darwin:specificEpithet       \"trixago\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:3bff596e-4836-4e4d-9e4a-6fcddb8f9e89\" ;",
+            "        Darwin:taxonID               \"2743\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Lamiidae | Lamiales | Orobanchaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;",
+            "        Darwin:verbatimTaxonRank     \"sp.\" .",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3688",
+      "name": "Trixago apula",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4092",
+      "name": "Orchis champagneuxii",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4092",
+      "name": "Orchis morio",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 1,
+      "hits": [
+        {
+          "line": 1490313,
+          "context": [
+            "        Darwin:genus                 \"Orchis\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Asparagales | Orchidaceae | Orchis |  | morio | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Sp. Pl. 940. 1753\" ;",
+            "        Darwin:namePublishedInYear   \"1753\" ;",
+            "        Darwin:order                 \"Asparagales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Orchis morio L.\" ;",
+            "        Darwin:specificEpithet       \"morio\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:ef2f3a5e-e1b3-4543-90e0-3b54a1869b5f\" ;",
+            "        Darwin:taxonID               \"6834\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Monocotyledoneae | Asparagales | Orchidaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;",
+            "        Darwin:verbatimTaxonRank     \"sp.\" .",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4092",
+      "name": "Anacamptis morio",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 1,
+      "hits": [
+        {
+          "line": 880424,
+          "context": [
+            "        a                            Darwin:Taxon ;",
+            "        Darwin:class                 \"Liliopsida\" ;",
+            "        Darwin:family                \"Orchidaceae\" ;",
+            "        Darwin:genus                 \"Anacamptis\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Orchidales | Orchidaceae | Anacamptis |  | morio | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:order                 \"Orchidales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Anacamptis morio (L) R.M.Bateman, Prigeon & M.W. Chase\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L) R.M.Bateman, Prigeon & M.W. Chase\" ;",
+            "        Darwin:specificEpithet       \"morio\" ;",
+            "        Darwin:taxonID               \"27490\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonomicStatus       \"Sinonimia\" ;",
+            "        Darwin:verbatimTaxonRank     \"sp.\" .",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3262",
+      "name": "Orchis fragrans",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3262",
+      "name": "Orchis coriophora",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 2,
+      "hits": [
+        {
+          "line": 1158025,
+          "context": [
+            "        Darwin:genus                 \"Orchis\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Liliopsida | Asparagales | Orchidaceae | Orchis |  | coriophora | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Sp. Pl. 940. 1753\" ;",
+            "        Darwin:namePublishedInYear   \"1753\" ;",
+            "        Darwin:order                 \"Asparagales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Orchis coriophora L.\" ;",
+            "        Darwin:specificEpithet       \"coriophora\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:65dc78d1-600c-4848-ba1b-7a15e6a81774\" ;",
+            "        Darwin:taxonID               \"6826\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Monocotyledoneae | Asparagales | Orchidaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;",
+            "        Darwin:verbatimTaxonRank     \"sp.\" .",
+            ""
+          ]
+        },
+        {
+          "line": 1639056,
+          "context": [
+            "                \"Propuestas: - Protección estricta del hábitat. - Control de la caza ilegal. - Control de perturbaciones humanas (trasiego, actividades recreativas, etc.). - Existentes: - Especie protegida en la C.A. de Cataluña por la Ley 3/88 de 4 de marzo de protección de animales. Diari Oficial de la Generalidad de Cataluña, nº 967.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/11042_OTHREF3>",
+            "        a                    Plinian:RecordMetadataType ;",
+            "        Plinian:hasRevision  <https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#ReferenceType/11> .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/24409_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"Humedales poco profundos (juncales, claros de carrizales, zonas más o menos inundadas), donde vive junto a especies como Phragmites australis, Cladium mariscus, Carex sp., Juncus acutus, etc. Secundariamente se puede localizar en dunas fijadas conviviendo con Bellardia trixago, Ophrys apifera, Orchis coriophora subsp. fragans, Juncus bufonius, Panicum repens, Plantago coronopus y Serapias parviflora.\" ;",
+            "        Plinian:HabitatsID           \"24409_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/760>",
+            "        a                        Plinian:TaxonRecord ;",
+            "        Plinian:CodeEUNIS        \"159725\" ;",
+            "        Plinian:TaxonRecordID    \"760\" ;",
+            "        Plinian:grupoTaxonomico  \"Anagyris latifolia Brouss. ex Willd.\" ;",
+            "        Plinian:hasCollection    <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Collection/25> ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "68",
+      "name": "Genista sagittalis",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 1,
+      "hits": [
+        {
+          "line": 1233687,
+          "context": [
+            "        Darwin:class                 \"Magnoliopsida\" ;",
+            "        Darwin:family                \"Leguminosae\" ;",
+            "        Darwin:genus                 \"Genista\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Fabales | Leguminosae | Genista |  | sagittalis | delphinensis\" ;",
+            "        Darwin:infraspecificEpithet  \"delphinensis\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:order                 \"Fabales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Genista sagittalis subsp. delphinensis (Verl.) Nyman\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(Verl.) Nyman\" ;",
+            "        Darwin:specificEpithet       \"sagittalis\" ;",
+            "        Darwin:taxonID               \"26582\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonomicStatus       \"Sinonimia\" ;",
+            "        Darwin:verbatimTaxonRank     \"subsp.\" .",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "68",
+      "name": "Chamaespartium sagittale",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 2,
+      "hits": [
+        {
+          "line": 1385981,
+          "context": [
+            "        Darwin:class                 \"Magnoliopsida\" ;",
+            "        Darwin:family                \"Leguminosae (fabaceae)\" ;",
+            "        Darwin:genus                 \"Chamaespartium\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Fabales | Leguminosae (fabaceae) | Chamaespartium |  | sagittale | delphinense\" ;",
+            "        Darwin:infraspecificEpithet  \"delphinense\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:order                 \"Fabales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Chamaespartium sagittale subsp. delphinense (Verl.) O. Bolós & Vigo\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(Verl.) O. Bolós & Vigo\" ;",
+            "        Darwin:specificEpithet       \"sagittale\" ;",
+            "        Darwin:taxonID               \"26488\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonomicStatus       \"Sinonimia\" ;",
+            "        Darwin:verbatimTaxonRank     \"subsp.\" .",
+            ""
+          ]
+        },
+        {
+          "line": 1823087,
+          "context": [
+            "        Darwin:genus                 \"Chamaespartium\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Fabales | Leguminosae | Chamaespartium |  | sagittale | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Feddes Repert. 79: 54. 1968\" ;",
+            "        Darwin:namePublishedInYear   \"1968\" ;",
+            "        Darwin:order                 \"Fabales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Chamaespartium sagittale (L.) P.E.Gibbs\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) P.E.Gibbs\" ;",
+            "        Darwin:specificEpithet       \"sagittale\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:3f89c2d2-c6bd-4ee3-9aeb-0233564a176d\" ;",
+            "        Darwin:taxonID               \"3522\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Fabidae | Fabales | Leguminosae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4809",
+      "name": "Lithospermum arvense",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4809",
+      "name": "Buglossoides arvensis",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 5,
+      "hits": [
+        {
+          "line": 131896,
+          "context": [
+            "        Darwin:genus                 \"Buglossoides\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Boraginaceae | Buglossoides |  | arvensis | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"J. Arnold Arbor. 35: 42. 1954\" ;",
+            "        Darwin:namePublishedInYear   \"1954\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Buglossoides arvensis (L.) I.M.Johnst.\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) I.M.Johnst.\" ;",
+            "        Darwin:specificEpithet       \"arvensis\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:72d95288-be25-493c-8ed0-41379aff1d63\" ;",
+            "        Darwin:taxonID               \"2812\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Lamiidae | Unplaced | Boraginaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        },
+        {
+          "line": 143110,
+          "context": [
+            "        Darwin:family                \"Boraginaceae\" ;",
+            "        Darwin:genus                 \"Buglossoides\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Boraginaceae | Buglossoides |  | arvensis | arvensis\" ;",
+            "        Darwin:infraspecificEpithet  \"arvensis\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Buglossoides arvensis (L.) I.M.Johnst. subsp. arvensis\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) I.M.Johnst.\" ;",
+            "        Darwin:specificEpithet       \"arvensis\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:93ddedbd-bb2c-49f9-aaaf-d757f6302c98\" ;",
+            "        Darwin:taxonID               \"2813\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonRemarks          \"Lamiidae | Unplaced | Boraginaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        },
+        {
+          "line": 154328,
+          "context": [
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Boraginaceae | Buglossoides |  | arvensis | permixta\" ;",
+            "        Darwin:infraspecificEpithet  \"permixta\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Bot. J. Linn. Soc. 64: 379. 1971\" ;",
+            "        Darwin:namePublishedInYear   \"1971\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Buglossoides arvensis subsp. Permixta (Jord. ex F.W.Schultz) R.Fern.\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(Jord. ex F.W.Schultz) R.Fern.\" ;",
+            "        Darwin:specificEpithet       \"arvensis\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:95bea45b-8d12-4f70-9dd5-bbcaac4cb861\" ;",
+            "        Darwin:taxonID               \"2814\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonRemarks          \"Lamiidae | Unplaced | Boraginaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        },
+        {
+          "line": 1304468,
+          "context": [
+            "        Darwin:measurementRemarks  \"Informe del Art.17 de la Directiva Hábitats en España, referido a especies para el periodo 2007-2012\" ;",
+            "        Darwin:measurementType     \"Abundancia poblacional (máxima)\" ;",
+            "        Darwin:measurementUnit     \"Nº individuos\" ;",
+            "        Darwin:measurementValue    \"200\" ;",
+            "        Plinian:AppliesTo          \"Región Biogeográfica Macaronésica\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/2701_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"Aparece siempre en cultivos de secano, con mayor densidad sobre zonas de cultivo en barbecho y cultivos de cereal. En menor medida se encuentra en bordes de caminos y, ocasionalmente, en cultivos arbolados de secano (almendros). Suelen acompañarle especies de su comunidad (Artemisio glutinosae-Santolinetum canescentis) como son: Artemisia campestris subsp. glutinosa, Papaver rhoeas, Buglossoides arvensis, Tragopogon porrifolius, Tragopogon dubius, Hordeum murinum, Medicago minima, Andryala ragusina, Euphorbia serrata, etc. Se integra dentro del dominio de la serie de vegetación mesomediterránea, bética, seca- subhúmeda basófila de la encina o Quercus rotundifolia (Paeonio coriaceae-Querceto rotundifoliae S.) sobre suelos con gran desarrollo (regosoles y cambisoles).\" ;",
+            "        Plinian:HabitatsID           \"2701_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/Location/10kmE283N164>",
+            "        a                     Darwin:Location ;",
+            "        Darwin:locationID     \"10kmE283N164\" ;",
+            "        Plinian:hasCell       <https://datos.iepnb.es/recurso/sector-publico/cuadricula-espacial/celda/10kmE283N164> ;",
+            "        Plinian:isLocationOf  <https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/TaxonRecord/20071> .",
+            ""
+          ]
+        },
+        {
+          "line": 1361904,
+          "context": [
+            "        Darwin:class                 \"Magnoliopsida\" ;",
+            "        Darwin:family                \"Boraginaceae\" ;",
+            "        Darwin:genus                 \"Buglossoides\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Boraginaceae | Buglossoides |  | arvensis | gasparrinii\" ;",
+            "        Darwin:infraspecificEpithet  \"gasparrinii\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Buglossoides arvensis (L.) I.M. Johnston gasparrinii (Heldr. ex Guss.) R. Fernandes\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) I.M. Johnston\" ;",
+            "        Darwin:specificEpithet       \"arvensis\" ;",
+            "        Darwin:taxonID               \"24543\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonomicStatus       \"Sinonimia\" ;",
+            "        Darwin:verbatimTaxonRank     \"subsp.\" .",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4593",
+      "name": "Satureja alpina",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4593",
+      "name": "Acinos alpinus",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 3,
+      "hits": [
+        {
+          "line": 150768,
+          "context": [
+            "        Darwin:genus                 \"Acinos\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Labiatae | Acinos |  | alpinus | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Methodus (Moench) 407. 1794\" ;",
+            "        Darwin:namePublishedInYear   \"1794\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Acinos alpinus (L.) Moench\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) Moench\" ;",
+            "        Darwin:specificEpithet       \"alpinus\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:776f6f94-476f-437d-90fb-587cf9b2120a\" ;",
+            "        Darwin:taxonID               \"1794\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Lamiidae | Lamiales | Lamiaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;"
+          ]
+        },
+        {
+          "line": 305084,
+          "context": [
+            "        Darwin:class                 \"Magnoliopsida\" ;",
+            "        Darwin:family                \"Labiatae\" ;",
+            "        Darwin:genus                 \"Acinos\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Labiatae | Acinos |  | alpinus | meridionalis\" ;",
+            "        Darwin:infraspecificEpithet  \"meridionalis\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Acinos alpinus (L.) Moench meridionalis (Nyman) P.W. Ball\" ;",
+            "        Darwin:scientificNameAuthorship",
+            "                \"(L.) Moench\" ;",
+            "        Darwin:specificEpithet       \"alpinus\" ;",
+            "        Darwin:taxonID               \"24463\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonomicStatus       \"Sinonimia\" ;",
+            "        Darwin:verbatimTaxonRank     \"subsp.\" .",
+            ""
+          ]
+        },
+        {
+          "line": 1239814,
+          "context": [
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/VernacularName/5152>",
+            "        a                         Plinian:VernacularName ;",
+            "        Plinian:Language          \"Inglés\" ;",
+            "        Plinian:Name              \"Western Green Lizard\" ;",
+            "        Plinian:VernacularNameID  \"5152\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/6890_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"Vive en orientación N-NE, de los pisos meso y supramediterráneo, en las fisuras de paredones calcáreos y en gleras, a veces en pendientes pronunciadas, de la Sierra de Grazalema. Con frecuencia está acompañada por Asplenium ceterach, Rhamnus myrtifolius, Linaria tristis, Jasminum fruticans y Scabiosa turolensis en los paredones calizos, y por Acinos alpinus, Arenaria armerina subsp. armerina, Cerastium gibraltaricum y Dactylis hispanica en las gleras.\" ;",
+            "        Plinian:HabitatsID           \"6890_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/11011_OTHREF4>",
+            "        a                    Plinian:RecordMetadataType ;",
+            "        Plinian:hasRevision  <https://datos.iepnb.es/def/sector-publico/medio-ambiente/pliniancore#ReferenceType/49> .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/InvasivenessType/332>",
+            "        a                       Plinian:InvasivenessType ;"
+          ]
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4593",
+      "name": "Calamintha alpina",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4023",
+      "name": "Satureja vulgaris subsp. vulgaris",
+      "kind": "ORIGINAL",
+      "hit_count_capped": 0,
+      "hits": []
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4023",
+      "name": "Clinopodium vulgare",
+      "kind": "SPANISH_DOCUMENTED_NAME",
+      "hit_count_capped": 4,
+      "hits": [
+        {
+          "line": 101454,
+          "context": [
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/VernacularName/13025>",
+            "        a                         Plinian:VernacularName ;",
+            "        Plinian:Language          \"Español, castellano\" ;",
+            "        Plinian:Name              \"Espiguinas\" ;",
+            "        Plinian:VernacularNameID  \"13025\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/HabitatsType/2606_HABITATTYPE>",
+            "        a                            Plinian:HabitatsType ;",
+            "        Plinian:HabitatUnstructured  \"Coloniza pedrizas semifijadas, tanto silíceas como calizas, al pie de roquedos, a veces por donde se desplaza la nieve y los aludes. No obstante, bajo las piedras no falta la materia orgánica. Forma herbazales con: Laserpitium siler, Ligusticum lucidum, Carduus carlinifolius, Dactylis glomerata, Lathyrus pratensis, Clinopodium vulgare y Tussilago farfara. En los alrededores hay Rumex scutatus, avellano, jóvenes abedules y Rhamnus alpina.\" ;",
+            "        Plinian:HabitatsID           \"2606_HABITATTYPE\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/DistributionType/2939>",
+            "        a                              Plinian:DistributionType ;",
+            "        Plinian:DistributionID         \"2939\" ;",
+            "        Plinian:DistributionScope      \"Demarcaciones marinas\" ;",
+            "        Plinian:DistributionScopeType  \"Nacional\" ;",
+            "        Plinian:Distribution_Type      \"Natural\" ;"
+          ]
+        },
+        {
+          "line": 103132,
+          "context": [
+            "        Darwin:class                 \"Magnoliopsida\" ;",
+            "        Darwin:family                \"Labiatae\" ;",
+            "        Darwin:genus                 \"Clinopodium\" ;",
+            "        Darwin:higherClassification  \"Plantae | Tracheophyta | Magnoliopsida | Lamiales | Labiatae | Clinopodium |  | vulgare | vulgare\" ;",
+            "        Darwin:infraspecificEpithet  \"vulgare\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Tracheophyta\" ;",
+            "        Darwin:scientificName        \"Clinopodium vulgare L. vulgare\" ;",
+            "        Darwin:specificEpithet       \"vulgare\" ;",
+            "        Darwin:taxonID               \"24660\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonomicStatus       \"Sinonimia\" ;",
+            "        Darwin:verbatimTaxonRank     \"subsp.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/RecordMetadataType/11041_OTHREF4>",
+            "        a                    Plinian:RecordMetadataType ;"
+          ]
+        },
+        {
+          "line": 665802,
+          "context": [
+            "        Darwin:genus                 \"Clinopodium\" ;",
+            "        Darwin:higherClassification  \"Plantae | Magnoliophyta | Magnoliopsida | Lamiales | Labiatae | Clinopodium |  | vulgare | \" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:nameAccordingTo       \"CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid.\" ;",
+            "        Darwin:namePublishedIn       \"Sp. Pl. 587. 1753\" ;",
+            "        Darwin:namePublishedInYear   \"1753\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Magnoliophyta\" ;",
+            "        Darwin:scientificName        \"Clinopodium vulgare L.\" ;",
+            "        Darwin:specificEpithet       \"vulgare\" ;",
+            "        Darwin:taxonConceptID        \"urn:lsid:recibio.net:taxon:223aef76-02db-44af-9858-0b17d22c6a37\" ;",
+            "        Darwin:taxonID               \"3648\" ;",
+            "        Darwin:taxonRank             \"Species\" ;",
+            "        Darwin:taxonRemarks          \"Lamiidae | Lamiales | Lamiaceae\" ;",
+            "        Darwin:taxonomicStatus       \"Aceptado/Válido\" ;",
+            "        Darwin:verbatimTaxonRank     \"sp.\" .",
+            ""
+          ]
+        },
+        {
+          "line": 1701818,
+          "context": [
+            "        Darwin:class                 \"Magnoliopsida\" ;",
+            "        Darwin:family                \"Labiatae\" ;",
+            "        Darwin:genus                 \"Clinopodium\" ;",
+            "        Darwin:higherClassification  \"Plantae | Tracheophyta | Magnoliopsida | Lamiales | Labiatae | Clinopodium |  | vulgare | arundanum\" ;",
+            "        Darwin:infraspecificEpithet  \"arundanum\" ;",
+            "        Darwin:kingdom               \"Plantae\" ;",
+            "        Darwin:order                 \"Lamiales\" ;",
+            "        Darwin:phylum                \"Tracheophyta\" ;",
+            "        Darwin:scientificName        \"Clinopodium vulgare L. arundanum (Boiss.) Nyman\" ;",
+            "        Darwin:specificEpithet       \"vulgare\" ;",
+            "        Darwin:taxonID               \"24659\" ;",
+            "        Darwin:taxonRank             \"Subspecies\" ;",
+            "        Darwin:taxonomicStatus       \"Sinonimia\" ;",
+            "        Darwin:verbatimTaxonRank     \"subsp.\" .",
+            "",
+            "<https://datos.iepnb.es/recurso/sector-publico/medio-ambiente/pliniancore/DistributionType/9300_DISTRIBUTIONTYPE>",
+            "        a                          Plinian:DistributionType ;"
+          ]
+        }
+      ]
+    }
+  ],
+  "semantics": "LITERAL_HIT_IS_EVIDENCE_POINTER_ONLY;ID_EXTRACTION_REQUIRES_GRAPH_CONTEXT_VALIDATION"
+}
