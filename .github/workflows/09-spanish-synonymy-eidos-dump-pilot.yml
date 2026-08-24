@@ -1,0 +1,51 @@
+name: 09 Spanish synonymy to EIDOS dump pilot
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_PILOT.json'
+
+permissions:
+  contents: write
+
+jobs:
+  eidos-dump-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+      - name: Validate request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_PILOT.json'))
+          assert p['enabled'] is True
+          assert p['crossWithA'] is False
+          assert p['neonWrites'] == 0
+          assert p['mode'] == 'SPANISH_DOCUMENTED_SYNONYMS_TO_OFFICIAL_EIDOS_DUMP_PILOT'
+          PY
+      - name: Download official EIDOS open-data dump
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 900 \
+            -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+      - name: Contrast documented Spanish names
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/SPANISH_EIDOS_PILOT_20260824_001/EIDOS_LITERAL_CONTEXT_RECEIPT.json"
+          python "$ROOT/pilot_eidos_dump_lookup.py" "$ROOT/PILOT_DOCUMENTED_NAMES.json" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+      - name: Persist immutable pilot evidence
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/SPANISH_EIDOS_PILOT_20260824_001
+          git commit -m "evidence(09): official EIDOS dump synonym pilot ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
