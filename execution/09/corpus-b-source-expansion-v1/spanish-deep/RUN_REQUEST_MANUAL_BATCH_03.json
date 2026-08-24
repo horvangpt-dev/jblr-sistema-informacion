@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "runId": "SPANISH_RELATIONS_EIDOS_BATCH_03_20260824_001",
+  "gateEvent": "JBLR-EVT-0000-20260824-ACCEPT-09-CARRY-FORWARD-317-001",
+  "scope": 317,
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "notes": "Execute only four explicit Spanish-source documented relations drawn from the accepted 317 carry-forward. Contrast candidate names against the official current EIDOS dump with exact rank equality."
+}
