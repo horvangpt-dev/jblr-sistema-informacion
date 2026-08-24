@@ -1,0 +1,26 @@
+{
+  "actor": "06",
+  "reviewType": "POST_RUN_TAXONOMIC_VALIDITY_REVIEW",
+  "reviewedRunId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "reviewedEvidenceCommit": "c043dfd63bf793bf3ca9b37b10b9880ac97100ea",
+  "state": "SUPERSEDED_FOR_TAXONOMIC_PROMOTION_PENDING_CORRECTIVE_RERUN",
+  "reason": "DEMONSTRATED_RANK_PARSER_DEFECT_AND_CANONICAL_MARKER_DOUBLE_PERIOD",
+  "findings": [
+    "detect_rank did not reliably recognize dotted infraspecific markers subsp. and var. in verbatim names",
+    "canonical normalization could produce subsp.. and var..",
+    "the previous noRankCollapse QA check only inspected an output flag and did not independently verify parsed rank against the source marker"
+  ],
+  "consequence": "Do not promote the 41 resolved IDs or 24 conflicts from run _001 as canonical taxonomic conclusions.",
+  "historyPolicy": "PRESERVE_RUN_001_UNCHANGED;HISTORY_NEVER_DELETE",
+  "correctiveAction": "PATCH_PARSER_ADD_INDEPENDENT_RANK_TESTS_RERUN_EXACT_SAME_67_AS_RUN_002",
+  "guards": {
+    "corpusACross": 0,
+    "corpusBFreeze": 0,
+    "neonWrites": 0,
+    "databaseWrites": 0,
+    "fuzzy": 0,
+    "parentIdInheritance": 0,
+    "rankCollapse": 0,
+    "downstreamStimesExecuted": 0
+  }
+}
