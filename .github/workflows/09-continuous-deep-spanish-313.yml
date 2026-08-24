@@ -1,0 +1,91 @@
+name: 09 Continuous deep Spanish synonymy 313
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_CONTINUOUS_313.json'
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+
+      - name: Validate governed request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_CONTINUOUS_313.json'))
+          assert p['enabled'] is True
+          assert p['scope']==313
+          assert p['gateEvent']=='JBLR-EVT-0000-20260824-ACCEPT-BATCH03-SWITCH-09-CONTINUOUS-313-001'
+          assert p['singleEidosLoad'] is True
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
+          PY
+
+      - name: Download current Spanish checklist once
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 600 \
+            -o "$RUNNER_TEMP/spanish_flora_v1_16.zip" \
+            'https://ipt.gbif.es/archive.do?r=taxonesfloraespanola&v=1.16'
+          test -s "$RUNNER_TEMP/spanish_flora_v1_16.zip"
+
+      - name: Download official current EIDOS dump once
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 1200 \
+            -o "$RUNNER_TEMP/eidos.ttl" \
+            'https://datos.iepnb.es/datasets/eidos.ttl'
+          test -s "$RUNNER_TEMP/eidos.ttl"
+
+      - name: Execute consolidated continuous sweep
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_20260824_001"
+          python "$ROOT/continuous_spanish_313_consolidated.py" \
+            "$ROOT/runs/CORPUS_B_DEDUP_CARRY_FORWARD_20260824_001/CARRY_FORWARD_RECEIPT.json" \
+            "$ROOT/runs/SPANISH_RELATIONS_EIDOS_BATCH_03_20260824_001/RUN_RECEIPT.json" \
+            "$ROOT/runs/SPANISH_RELATIONS_EIDOS_BATCH_02_20260824_002/RUN_RECEIPT.json" \
+            "$ROOT/runs/FLORA_CATALANA_EIDOS_337_20260824_001/FLORA_CATALANA_EIDOS_RESULTS.json" \
+            "$RUNNER_TEMP/spanish_flora_v1_16.zip" \
+            "$RUNNER_TEMP/eidos.ttl" \
+            "$OUT"
+
+      - name: QA consolidated result
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_20260824_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          assert r['inputRows']==313 and r['outputRows']==313
+          assert r['resolvedRows']+r['failedRows']==313
+          assert sum(r['groupCounts'].values())==313
+          assert r['singleEidosLoad'] is True
+          assert r['eidosSha256']=='810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737'
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          assert r['noFuzzy'] is True and r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
+          PY
+
+      - name: Persist consolidated evidence
+        run: |
+          set -euo pipefail
+          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_20260824_001
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          git add "$OUT"
+          git commit -m "evidence(09): continuous deep Spanish 313 consolidated ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
