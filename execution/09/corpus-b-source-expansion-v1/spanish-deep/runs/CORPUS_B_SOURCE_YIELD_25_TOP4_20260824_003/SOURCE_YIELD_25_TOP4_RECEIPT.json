@@ -1,0 +1,242 @@
+{
+  "runClass": "CORPUS_B_SOURCE_YIELD_CALIBRATION_25_TOP4_V2_CONTEXT_GATED",
+  "sampleRule": "FIRST_25_ROWS_OF_NO_RESULT_IN_SPANISH_SOURCES_CONSULTED_185",
+  "inputTaxa": 25,
+  "sourceCount": 15,
+  "totalSourceTaxonQueries": 375,
+  "searchQueriesPerTaxonSource": 1,
+  "maxSearchResultsPerTaxonSource": 6,
+  "workers": 8,
+  "eidosUsed": false,
+  "rankingCriterion": "SUM_OF_PER_TAXON_DEDUPLICATED_SYNONYM_NAMES_PER_SOURCE",
+  "seedNameExcludedFromSynonymCount": true,
+  "contextGate": "PAGE_PRIMARY_EQUALS_SEED_OR_SEED_APPEARS_IN_RELATION_WINDOW",
+  "ranking": [
+    {
+      "source": "FLORA_VASCULAR_BIOSCRIPTS",
+      "domain": "floravascular.com",
+      "taxaAudited": 25,
+      "totalSynonyms": 72,
+      "taxaWithSynonyms": 2,
+      "relevantPages": 3,
+      "searchHitTaxa": 9,
+      "searchFailureTaxa": 11,
+      "fetchFailures": 0
+    },
+    {
+      "source": "UMA_ACTA_BOTANICA_MALACITANA",
+      "domain": "revistas.uma.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 61,
+      "taxaWithSynonyms": 1,
+      "relevantPages": 1,
+      "searchHitTaxa": 9,
+      "searchFailureTaxa": 11,
+      "fetchFailures": 10
+    },
+    {
+      "source": "ASTURNATURA",
+      "domain": "asturnatura.com",
+      "taxaAudited": 25,
+      "totalSynonyms": 14,
+      "taxaWithSynonyms": 2,
+      "relevantPages": 2,
+      "searchHitTaxa": 10,
+      "searchFailureTaxa": 8,
+      "fetchFailures": 1
+    },
+    {
+      "source": "FLORA_ANDALUCIA",
+      "domain": "florandalucia.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 13,
+      "searchFailureTaxa": 8,
+      "fetchFailures": 0
+    },
+    {
+      "source": "ARANZADI_MUNIBE",
+      "domain": "aranzadi.eus",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 7,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 2
+    },
+    {
+      "source": "FLORAGON_JACA",
+      "domain": "floragon.ipe.csic.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 6,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 32
+    },
+    {
+      "source": "FLORA_CANARIAS",
+      "domain": "floradecanarias.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 9,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORA_CATALANA",
+      "domain": "floracatalana.cat",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 6,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 5
+    },
+    {
+      "source": "HVMO_UIB",
+      "domain": "herbarivirtual.uib.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 8,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 48
+    },
+    {
+      "source": "JOLUBE_BOTANICAL_CATALOGS",
+      "domain": "jolube.net",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 8,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 1
+    },
+    {
+      "source": "UNAVARRA",
+      "domain": "unavarra.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 9,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 1
+    },
+    {
+      "source": "US_FLORA_ANDALUCIA_AUTHOR_PAGES",
+      "domain": "personal.us.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 9,
+      "searchFailureTaxa": 12,
+      "fetchFailures": 1
+    },
+    {
+      "source": "CICYTEX_EXTREMADURA",
+      "domain": "cicytex.juntaex.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 6,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "UGR_HERBARIUM_FLORA_ANDALUCIA_ORIENTAL",
+      "domain": "herbarium.ugr.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 4,
+      "searchFailureTaxa": 13,
+      "fetchFailures": 0
+    },
+    {
+      "source": "FLORA_MONTIBERICA",
+      "domain": "floramontiberica.org",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 4,
+      "searchFailureTaxa": 14,
+      "fetchFailures": 1
+    }
+  ],
+  "top4": [
+    "FLORA_VASCULAR_BIOSCRIPTS",
+    "UMA_ACTA_BOTANICA_MALACITANA",
+    "ASTURNATURA",
+    "FLORA_ANDALUCIA"
+  ],
+  "top4Detail": [
+    {
+      "source": "FLORA_VASCULAR_BIOSCRIPTS",
+      "domain": "floravascular.com",
+      "taxaAudited": 25,
+      "totalSynonyms": 72,
+      "taxaWithSynonyms": 2,
+      "relevantPages": 3,
+      "searchHitTaxa": 9,
+      "searchFailureTaxa": 11,
+      "fetchFailures": 0
+    },
+    {
+      "source": "UMA_ACTA_BOTANICA_MALACITANA",
+      "domain": "revistas.uma.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 61,
+      "taxaWithSynonyms": 1,
+      "relevantPages": 1,
+      "searchHitTaxa": 9,
+      "searchFailureTaxa": 11,
+      "fetchFailures": 10
+    },
+    {
+      "source": "ASTURNATURA",
+      "domain": "asturnatura.com",
+      "taxaAudited": 25,
+      "totalSynonyms": 14,
+      "taxaWithSynonyms": 2,
+      "relevantPages": 2,
+      "searchHitTaxa": 10,
+      "searchFailureTaxa": 8,
+      "fetchFailures": 1
+    },
+    {
+      "source": "FLORA_ANDALUCIA",
+      "domain": "florandalucia.es",
+      "taxaAudited": 25,
+      "totalSynonyms": 0,
+      "taxaWithSynonyms": 0,
+      "relevantPages": 0,
+      "searchHitTaxa": 13,
+      "searchFailureTaxa": 8,
+      "fetchFailures": 0
+    }
+  ],
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "semantics": [
+    "SEARCH_HIT!=SYNONYM",
+    "UNRELATED_NAMES_IN_LARGE_DOCUMENTS_EXCLUDED",
+    "SOURCE_FAILURE!=NOT_FOUND",
+    "RANKING_ONLY_DOES_NOT_CANONICALIZE_TAXONOMY"
+  ]
+}
