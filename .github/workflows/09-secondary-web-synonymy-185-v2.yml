@@ -1,0 +1,76 @@
+name: 09 secondary web synonymy 185 v2 discovery to EIDOS
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-secondary-web-185-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SECONDARY_WEB_185_V2.json'
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-secondary-web-185-v1
+          fetch-depth: 1
+      - name: Validate governed request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SECONDARY_WEB_185_V2.json'))
+          assert p['enabled'] is True
+          assert p['scope']==185
+          assert p['runId']=='CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V2_20260824_001'
+          assert p['discoveryMode'] is True
+          assert p['seedNotRequiredInsideSynonymyBlock'] is True
+          assert p['queryEveryUniqueDiscoveredNameOnce'] is True
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
+          PY
+      - name: Install extraction dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml ddgs
+      - name: Download official current EIDOS dump once
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+      - name: Execute broad secondary discovery sweep over the 185 taxa
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          GROUPS="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
+          OUT="$ROOT/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V2_20260824_001"
+          python "$ROOT/secondary_web_synonymy_185_v2.py" "$GROUPS" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+      - name: QA and persist evidence
+        run: |
+          set -euo pipefail
+          OUT=execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V2_20260824_001
+          python - <<'PY'
+          import json
+          r=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V2_20260824_001/RUN_RECEIPT.json'))
+          assert r['inputRows']==185 and r['outputRows']==185
+          assert r['singleEidosLoad'] is True
+          assert r['discoveryMode'] is True
+          assert r['seedNotRequiredInsideSynonymyBlock'] is True
+          assert r['queryEveryUniqueDiscoveredNameOnce'] is True
+          assert r['deduplicateNamesPerTaxonBeforeEidos'] is True
+          assert r['sourceCountPreserved'] is True
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          assert r['noFuzzy'] is True and r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-secondary-web-185-v1
+          git add "$OUT"
+          git commit -m "evidence(09): secondary-web discovery 185 v2 ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-secondary-web-185-v1
