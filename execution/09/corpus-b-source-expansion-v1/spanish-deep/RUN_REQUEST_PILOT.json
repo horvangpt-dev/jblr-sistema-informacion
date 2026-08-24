@@ -1,0 +1,14 @@
+{
+  "runId": "SPANISH_EIDOS_PILOT_20260824_001",
+  "enabled": true,
+  "mode": "SPANISH_DOCUMENTED_SYNONYMS_TO_OFFICIAL_EIDOS_DUMP_PILOT",
+  "humanDirectiveObservedAt": "2026-08-24T07:26:32Z",
+  "parentReleaseEvent": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001",
+  "failedSourceExpansionCommit": "cbf346c62dfa687cf6e82f491cc1c9614e329004",
+  "objective": "Validate deterministic contrast of fresh Spanish documented synonym names against official MITECO EIDOS open-data dump before applying to all 337 records",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true
+}
