@@ -1,0 +1,95 @@
+name: 09 Corpus B source expansion 337 productive
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-source-expansion-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/run-control/RUN_REQUEST.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  ROOT: execution/09/corpus-b-source-expansion-v1
+  ACCEPTED_08_COMMIT: b04c32c08d7f1fcf47b558efab3ce2a13a4ccf99
+
+jobs:
+  productive-source-expansion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-source-expansion-v1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate governed request
+        id: request
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const p=JSON.parse(fs.readFileSync(process.env.ROOT+'/run-control/RUN_REQUEST.json','utf8'));
+          if(p.enabled!==true) throw new Error('RUN_NOT_ENABLED');
+          if(p.releaseEvent!=='JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001') throw new Error('RELEASE_EVENT_MISMATCH');
+          if(p.crossWithA!==false) throw new Error('CROSS_WITH_A_MUST_BE_FALSE');
+          if(p.neonWrites!==0) throw new Error('NEON_WRITES_MUST_BE_ZERO');
+          if(p.carryForwardQueue!==337) throw new Error('QUEUE_337_REQUIRED');
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,`run_id=${p.runId}\n`);
+          NODE
+      - name: Fetch immutable accepted 08 implementation
+        shell: bash
+        run: |
+          set -euo pipefail
+          D="$RUNNER_TEMP/accepted08"
+          mkdir -p "$D"
+          curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/src/source-expansion.js" -o "$D/source-expansion.js"
+          curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/src/transports.js" -o "$D/transports.js"
+          curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/contracts/source-access-inventory.json" -o "$D/source-access-inventory.json"
+          echo 'a751e7449bc817734b0ae67ada0b2a68f99df31e  '"$D/source-expansion.js" | sha1sum -c -
+          echo '678aa7710bcc0b4a32510bbc0f7d7950db90adb2  '"$D/transports.js" | sha1sum -c -
+      - name: Execute productive 337 source expansion
+        env:
+          RUN_ID: ${{ steps.request.outputs.run_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          D="$RUNNER_TEMP/accepted08"
+          OUT="$ROOT/runs/$RUN_ID"
+          rm -rf "$OUT"
+          node "$ROOT/bin/run-source-expansion-337.js" "$D" "$D/source-access-inventory.json" "$OUT"
+      - name: Persist immutable run evidence
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/runs/${{ steps.request.outputs.run_id }}"
+          git commit -m "result(09): Corpus B source expansion 337 ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:09-corpus-b-source-expansion-v1
+      - name: Persist failure receipt
+        if: failure()
+        shell: bash
+        run: |
+          set +e
+          mkdir -p "$ROOT/failures"
+          cat > "$ROOT/failures/FAILURE_${GITHUB_RUN_ID}.json" <<EOF
+          {
+            "runId": "${{ steps.request.outputs.run_id }}",
+            "githubRunId": "${GITHUB_RUN_ID}",
+            "observedAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "status": "FAIL",
+            "semantics": "SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND_OR_ABSENCE",
+            "crossWithA": false,
+            "neonWrites": 0
+          }
+          EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ROOT/failures/FAILURE_${GITHUB_RUN_ID}.json"
+          git commit -m "failure(09): Corpus B source expansion 337 ${GITHUB_RUN_ID}" || true
+          git push origin HEAD:09-corpus-b-source-expansion-v1 || true
