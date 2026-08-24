@@ -1,0 +1,72 @@
+name: 09 source yield 25 TOP4 calibration
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-secondary-web-185-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SOURCE_YIELD_25_TOP4.json'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-secondary-web-185-v1
+          fetch-depth: 1
+      - name: Validate request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SOURCE_YIELD_25_TOP4.json'))
+          assert p['enabled'] is True
+          assert p['sampleTaxa']==25 and p['sourceCount']==15
+          assert p['rankingCriterion']=='TOTAL_SYNONYM_COUNT_PER_SOURCE'
+          assert p['eidosUsed'] is False
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          PY
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml ddgs
+      - name: Execute 25 x 15 source-yield calibration
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          GROUP_FILE="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
+          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001"
+          python "$ROOT/source_yield_25_top4.py" "$GROUP_FILE" "$OUT"
+      - name: QA and persist
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001"
+          python - <<'PY'
+          import json
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001/SOURCE_YIELD_25_TOP4_RECEIPT.json'
+          r=json.load(open(p))
+          assert r['inputTaxa']==25
+          assert r['sourceCount']==15
+          assert r['totalSourceTaxonQueries']==375
+          assert len(r['ranking'])==15
+          assert len(r['top4'])==4
+          assert r['rankingCriterion']=='SUM_OF_PER_TAXON_DEDUPLICATED_SYNONYM_NAMES_PER_SOURCE'
+          assert r['seedNameExcludedFromSynonymCount'] is True
+          assert r['eidosUsed'] is False
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          totals=[x['totalSynonyms'] for x in r['ranking']]
+          assert totals==sorted(totals, reverse=True)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-secondary-web-185-v1
+          git add "$OUT"
+          git commit -m "evidence(09): source-yield 25 TOP4 ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-secondary-web-185-v1
