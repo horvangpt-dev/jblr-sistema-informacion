@@ -1,0 +1,1 @@
+Run 001 remains preserved. Corrective run 002 will reuse the exact same authorized 67-record scope, with parser-only fixes and independent rank QA. No downstream STIME, Corpus A cross, Corpus B freeze, Neon or database writes are authorized by this corrective action.
