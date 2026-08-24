@@ -49,8 +49,9 @@ jobs:
           curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/src/source-expansion.js" -o "$D/source-expansion.js"
           curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/src/transports.js" -o "$D/transports.js"
           curl -fsSL "https://raw.githubusercontent.com/horvangpt-dev/jblr-sistema-informacion/${ACCEPTED_08_COMMIT}/execution/08/corpus-b-source-expansion-v1/contracts/source-access-inventory.json" -o "$D/source-access-inventory.json"
-          echo 'a751e7449bc817734b0ae67ada0b2a68f99df31e  '"$D/source-expansion.js" | sha1sum -c -
-          echo '678aa7710bcc0b4a32510bbc0f7d7950db90adb2  '"$D/transports.js" | sha1sum -c -
+          test "$(git hash-object "$D/source-expansion.js")" = "a751e7449bc817734b0ae67ada0b2a68f99df31e"
+          test "$(git hash-object "$D/transports.js")" = "678aa7710bcc0b4a32510bbc0f7d7950db90adb2"
+          test "$(git hash-object "$D/source-access-inventory.json")" = "030ae0e2182375573f49c601a6c64ae38dd8ec62"
       - name: Execute productive 337 source expansion
         env:
           RUN_ID: ${{ steps.request.outputs.run_id }}
