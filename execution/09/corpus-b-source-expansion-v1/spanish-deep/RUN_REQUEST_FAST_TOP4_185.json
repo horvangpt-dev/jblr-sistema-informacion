@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "scope": 185,
+  "runId": "CORPUS_B_FAST_TOP4_SYNONYMY_185_20260824_001",
+  "releaseEvent": "JBLR-EVT-0000-20260824-RELEASE-09-TOP4-FAST-SYNONYMY-185-001",
+  "primaryPassSources": [
+    "FLORA_MONTIBERICA",
+    "JOLUBE_BOTANICAL_CATALOGS",
+    "ARANZADI_MUNIBE",
+    "FLORA_CATALANA"
+  ],
+  "other11RescueOnly": true,
+  "deduplicateNamesPerTaxonBeforeEidos": true,
+  "queryEveryUniqueDiscoveredNameOnce": true,
+  "seedExcludedFromSynonymCompendium": true,
+  "reuseVerifiedEidosSnapshot": true,
+  "expectedEidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "supersedesAsA2Gate": "32712414674"
+}
