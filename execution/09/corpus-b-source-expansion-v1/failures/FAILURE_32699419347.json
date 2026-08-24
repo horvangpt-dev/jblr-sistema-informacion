@@ -1,0 +1,9 @@
+{
+  "runId": "09_CORPUS_B_SOURCE_EXPANSION_337_20260824_001",
+  "githubRunId": "32699419347",
+  "observedAt": "2026-08-24T06:58:20Z",
+  "status": "FAIL",
+  "semantics": "SOURCE_OR_EXECUTION_FAILURE_NEVER_IMPLIES_NOT_FOUND_OR_ABSENCE",
+  "crossWithA": false,
+  "neonWrites": 0
+}
