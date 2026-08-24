@@ -76,6 +76,35 @@ class SeedBoundRelationTests(unittest.TestCase):
         names = self._candidate_names(text)
         self.assertEqual(names, {"Campanula urticifolia", "Campanula latifolia"})
 
+    def test_accepts_confirmed_chaenorhinum_multiline_relation(self):
+        text = """
+        Chaenorhinum rupestre (Guss.) Speta
+        ≡ Linaria rupestris (Guss.) J.A.Schmidt
+        = Linaria exilis (Coss. & Kralik) Lange
+        """
+        names = self._candidate_names(text, "Chaenorhinum rupestre")
+        self.assertEqual(names, {"Linaria rupestris", "Linaria exilis"})
+
+    def test_multiline_relation_stops_at_unrelated_nonrelation_line(self):
+        text = """
+        Chaenorhinum rupestre (Guss.) Speta
+        ≡ Linaria rupestris (Guss.) J.A.Schmidt
+        Rosa canina L.
+        = Rosa dumalis Bechst.
+        """
+        names = self._candidate_names(text, "Chaenorhinum rupestre")
+        self.assertEqual(names, {"Linaria rupestris"})
+        self.assertNotIn("Rosa canina", names)
+        self.assertNotIn("Rosa dumalis", names)
+
+    def test_multiline_relation_requires_relation_marker_at_line_start(self):
+        text = """
+        Chaenorhinum rupestre (Guss.) Speta
+        Nota editorial: = Linaria rupestris (Guss.) J.A.Schmidt
+        """
+        names = self._candidate_names(text, "Chaenorhinum rupestre")
+        self.assertEqual(names, set())
+
 
 if __name__ == "__main__":
     unittest.main()
