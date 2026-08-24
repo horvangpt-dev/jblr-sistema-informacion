@@ -1,0 +1,9 @@
+{
+  "runId": "09_FLORAE_FI_DIAGNOSTIC_20260824_001",
+  "enabled": true,
+  "humanDirectiveObservedAt": "2026-08-24T07:26:32Z",
+  "objective": "Inspect open florae implementation only to reproduce fresh official Flora Iberica taxon-by-taxon synonym queries for the 337 Corpus B records",
+  "dataReuse": "NO_PRECOMPUTED_TAXON_RESULTS",
+  "crossWithA": false,
+  "neonWrites": 0
+}
