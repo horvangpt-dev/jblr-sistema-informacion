@@ -1,0 +1,20 @@
+{
+  "runId": "SPANISH_STRUCTURED_ES_EIDOS_337_20260824_001",
+  "enabled": true,
+  "inputCount": 337,
+  "source": "GBIF_SPAIN_LISTA_TAXONES_FLORA_VASCULAR_2025_V1_16",
+  "sourceUrl": "https://ipt.gbif.es/resource?r=taxonesfloraespanola&v=1.16",
+  "sourceArchive": "https://ipt.gbif.es/archive.do?r=taxonesfloraespanola&v=1.16",
+  "objective": "Use explicit taxonomic relations from the current structured Spanish vascular-flora checklist to generate supported names for each of the 337 unresolved Corpus B records, then contrast each supported name against the official current MITECO EIDOS open-data dump to recover additional taxon IDs",
+  "humanDirectiveObservedAt": "2026-08-24T07:47:59Z",
+  "parentReleaseEvent": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001",
+  "pilotEvidenceCommit": "118ab31c8e0c6fe99fffa85ccd072c89dd0cd828",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "sourceFailureNotAbsence": true,
+  "notFoundNotAbsence": true
+}
