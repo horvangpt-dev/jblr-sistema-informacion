@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "runId": "CORPUS_B_SECONDARY_WEB_SYNONYMY_185_20260824_001",
+  "scope": 185,
+  "targetGroup": "NO_RESULT_IN_SPANISH_SOURCES_CONSULTED",
+  "method": "per-taxon multi-source secondary web synonymy compendium -> deduplicate names preserving source count -> unique-name EIDOS lookup",
+  "prioritySources": [
+    "FLORA_ANDALUCIA",
+    "ASTURNATURA",
+    "HVMO_UIB",
+    "FLORA_CANARIAS",
+    "FLORA_CATALANA",
+    "FLORAGON_JACA",
+    "FLORA_CANTABRICA",
+    "FLORA_GALICIA",
+    "CICYTEX_EXTREMADURA",
+    "UNAVARRA_FLORA",
+    "DIGITUM_MURCIA"
+  ],
+  "crossWithA": false,
+  "neonWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "notes": "User-directed deep secondary-source web pass over the 185 no-result taxa. Source failures must remain distinct from no-result. Every synonym retains URL/source provenance and source-count before EIDOS contrast."
+}
