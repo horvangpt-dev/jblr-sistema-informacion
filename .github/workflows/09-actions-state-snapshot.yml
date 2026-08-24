@@ -1,0 +1,40 @@
+name: 09 Actions state snapshot
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/ACTIONS_STATE_REQUEST.json'
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+      - name: Read workflow states
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          mkdir -p "$ROOT/state"
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/actions/runs?branch=09-corpus-b-spanish-synonymy-eidos-deep-v1&per_page=30" \
+            --jq '{observed_at: now|todate, workflow_runs: [.workflow_runs[] | {id,name,path,head_sha,event,status,conclusion,run_number,created_at,updated_at,html_url}]}' \
+            > "$ROOT/state/ACTIONS_STATE_SNAPSHOT.json"
+      - name: Persist snapshot
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          git add execution/09/corpus-b-source-expansion-v1/spanish-deep/state/ACTIONS_STATE_SNAPSHOT.json
+          git commit -m "state(09): snapshot current source-expansion Actions ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
