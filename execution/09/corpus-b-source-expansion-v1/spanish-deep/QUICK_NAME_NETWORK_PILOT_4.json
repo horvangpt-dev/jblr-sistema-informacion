@@ -1,0 +1,85 @@
+{
+  "pilotId": "JBLR_CORPUS_B_QUICK_NAME_NETWORK_EIDOS_PILOT_4_v1",
+  "method": "DOCUMENTED_NAME_NETWORK_THEN_EXACT_EIDOS_CONTRAST",
+  "rules": {
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "sourceFailureNotFound": false,
+    "crossWithA": false,
+    "neonWrites": 0,
+    "corpusBFreeze": false
+  },
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "NOMBRE_RIOJA_VERBATIM": "Adenocarpus hispanicus subsp. neilense",
+      "names": [
+        "Adenocarpus hispanicus subsp. neilense",
+        "Adenocarpus hispanicus subsp. hispanicus",
+        "Adenocarpus hispanicus subsp. gredensis",
+        "Adenocarpus complicatus subsp. anisochilus"
+      ],
+      "evidence": [
+        {
+          "source": "POWO/WCVP",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77214110-1",
+          "assertion": "Adenocarpus hispanicus subsp. neilense is listed as a synonym of accepted Adenocarpus hispanicus subsp. hispanicus"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla basaltica",
+      "names": [
+        "Alchemilla basaltica",
+        "Alchemilla transiens",
+        "Alchemilla brachyclada",
+        "Alchemilla mucronata",
+        "Alchemilla obovalis"
+      ],
+      "evidence": [
+        {
+          "source": "POWO/WCVP",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:721162-1",
+          "assertion": "Alchemilla basaltica and the listed species names occur in the synonym network of accepted Alchemilla transiens"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "NOMBRE_RIOJA_VERBATIM": "Chaenorhinum rupestre",
+      "names": [
+        "Chaenorhinum rupestre",
+        "Linaria rupestris",
+        "Linaria exilis",
+        "Chaenorhinum exile"
+      ],
+      "evidence": [
+        {
+          "source": "FLORA_MONTIBERICA_81",
+          "url": "https://www.floramontiberica.org/FM/Flora_Montiberica81.pdf",
+          "assertion": "Chaenorhinum rupestre is explicitly related to Linaria rupestris, Linaria exilis and Chaenorhinum exile"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "NOMBRE_RIOJA_VERBATIM": "Atropa bella-donna",
+      "names": [
+        "Atropa bella-donna",
+        "Atropa lethalis",
+        "Boberella bella-donna",
+        "Belladona baccifera",
+        "Belladona trichotoma"
+      ],
+      "evidence": [
+        {
+          "source": "POWO/WCVP",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:814358-1",
+          "assertion": "Atropa bella-donna is accepted and the listed species names are synonyms"
+        }
+      ]
+    }
+  ]
+}
