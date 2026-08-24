@@ -16,18 +16,32 @@ def rank_of(c):
     if ' x ' in c and len(c.split())>=4:return 'hybrid_formula'
     return 'species'
 
+def first_element(node, namespaced_path, plain_path, ns):
+    el=node.find(namespaced_path,ns)
+    if el is not None:
+        return el
+    return node.find(plain_path)
+
 def read_dwca(zip_path):
     z=zipfile.ZipFile(zip_path)
     meta=ET.fromstring(z.read('meta.xml'))
     ns={'d':'http://rs.tdwg.org/dwc/text/'}
     core=meta.find('d:core',ns)
-    if core is None: core=meta.find('core')
-    loc=(core.find('d:files/d:location',ns) or core.find('files/location')).text
+    if core is None:
+        core=meta.find('core')
+    if core is None:
+        raise RuntimeError('DwC-A meta.xml has no core element')
+    locel=first_element(core,'d:files/d:location','files/location',ns)
+    if locel is None or not locel.text:
+        raise RuntimeError('DwC-A meta.xml has no core file location')
+    loc=locel.text.strip()
     enc=core.attrib.get('encoding','UTF-8')
     delim=core.attrib.get('fieldsTerminatedBy','\\t').encode().decode('unicode_escape')
     quote=core.attrib.get('fieldsEnclosedBy','')
     ignore=int(core.attrib.get('ignoreHeaderLines','0'))
-    idel=core.find('d:id',ns) or core.find('id')
+    idel=first_element(core,'d:id','id',ns)
+    if idel is None:
+        raise RuntimeError('DwC-A meta.xml has no core id descriptor')
     fields={int(idel.attrib['index']):'id'}
     for f in list(core.findall('d:field',ns))+list(core.findall('field')):
         term=f.attrib.get('term','').rsplit('/',1)[-1]
