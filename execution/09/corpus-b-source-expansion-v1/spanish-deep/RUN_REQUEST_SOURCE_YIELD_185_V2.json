@@ -2,11 +2,12 @@
   "enabled": true,
   "sampleTaxa": 25,
   "sourceCount": 15,
-  "runId": "CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_001",
+  "runId": "CORPUS_B_SOURCE_YIELD_25_TOP4_20260824_002",
   "rankingCriterion": "TOTAL_SYNONYM_COUNT_PER_SOURCE",
   "noEidosAssignment": true,
+  "contextGate": true,
   "crossWithA": false,
   "neonWrites": 0,
   "corpusBFreeze": false,
-  "launchNonce": "2026-08-24T13:08:30+02:00"
+  "launchNonce": "2026-08-24T13:16:30+02:00"
 }
