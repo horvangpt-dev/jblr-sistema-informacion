@@ -21,15 +21,21 @@ jobs:
           fetch-depth: 0
       - name: Fetch frozen historical 06 branch
         run: git fetch origin 06-stimes-banco-semillas --no-tags
-      - name: Execute read-only reuse comparator
-        run: python3 execution/06/vnext/reuse-first-preflight-185/read_only_reuse_preflight.py
-      - name: Persist preflight control report only
+      - name: Execute comparator and preserve diagnostic
+        shell: bash
+        run: |
+          set +e
+          mkdir -p execution/06/vnext/reuse-first-preflight-185/output
+          python3 execution/06/vnext/reuse-first-preflight-185/read_only_reuse_preflight.py > execution/06/vnext/reuse-first-preflight-185/output/PREFLIGHT_EXECUTION.log 2>&1
+          code=$?
+          echo "EXIT_CODE=$code" >> execution/06/vnext/reuse-first-preflight-185/output/PREFLIGHT_EXECUTION.log
+          exit 0
+      - name: Persist preflight control outputs only
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add execution/06/vnext/reuse-first-preflight-185/output/REUSE_FIRST_PREFLIGHT_REPORT.json
-          git add execution/06/vnext/reuse-first-preflight-185/output/REUSE_FIRST_PREFLIGHT_ROWS.csv
-          git commit -m 'evidence(06): persist reuse-first preflight 185 report'
+          git add execution/06/vnext/reuse-first-preflight-185/output/
+          git commit -m 'evidence(06): persist reuse-first preflight 185 diagnostic' || exit 0
           git push
       - name: Upload preflight evidence
         uses: actions/upload-artifact@v4
