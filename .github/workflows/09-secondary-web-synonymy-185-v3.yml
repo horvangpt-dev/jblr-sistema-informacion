@@ -25,7 +25,7 @@ jobs:
           import json
           p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_SECONDARY_WEB_185_V3.json'))
           assert p['enabled'] is True and p['scope']==185
-          assert p['runId']=='CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_001'
+          assert p['runId']=='CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_002'
           assert p['discoveryMode'] is True and p['seedNotRequiredInsideSynonymyBlock'] is True
           assert p['explicitSymbolRelationsIncluded'] is True and p['queryEveryUniqueDiscoveredNameOnce'] is True
           assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
@@ -36,14 +36,14 @@ jobs:
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
           mkdir -p "$ROOT/state"
-          cat > "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_RUNNING.json" <<JSON
-          {"state":"RUNNING","runId":"CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_001","githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}","requestSha":"${GITHUB_SHA}"}
+          cat > "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_002_RUNNING.json" <<JSON
+          {"state":"RUNNING","runId":"CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_002","githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}","requestSha":"${GITHUB_SHA}"}
           JSON
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin 09-corpus-b-secondary-web-185-v1
-          git add "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_RUNNING.json"
-          git commit -m "state(09): secondary-web 185 v3 running ${GITHUB_RUN_ID}"
+          git add "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_002_RUNNING.json"
+          git commit -m "state(09): secondary-web 185 v3-002 running ${GITHUB_RUN_ID}"
           git push origin HEAD:09-corpus-b-secondary-web-185-v1
       - name: Install extraction dependencies
         run: |
@@ -60,17 +60,17 @@ jobs:
         run: |
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
-          GROUPS="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
-          OUT="$ROOT/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_001"
-          python "$ROOT/secondary_web_synonymy_185_v3.py" "$GROUPS" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+          GROUP_FILE="$ROOT/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json"
+          OUT="$ROOT/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_002"
+          python "$ROOT/secondary_web_synonymy_185_v3.py" "$GROUP_FILE" "$RUNNER_TEMP/eidos.ttl" "$OUT"
       - name: QA and persist evidence
         run: |
           set -euo pipefail
           ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
-          OUT="$ROOT/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_001"
+          OUT="$ROOT/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_002"
           python - <<'PY'
           import json
-          r=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_001/RUN_RECEIPT.json'))
+          r=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_002/RUN_RECEIPT.json'))
           assert r['inputRows']==185 and r['outputRows']==185 and r['singleEidosLoad'] is True
           assert r['discoveryMode'] is True and r['seedNotRequiredInsideSynonymyBlock'] is True
           assert r['explicitSymbolRelationsIncluded'] is True
@@ -79,12 +79,12 @@ jobs:
           assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
           assert r['noFuzzy'] is True and r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
           PY
-          cat > "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_TERMINAL.json" <<JSON
-          {"state":"TERMINAL","runId":"CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_001","githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}"}
+          cat > "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_002_TERMINAL.json" <<JSON
+          {"state":"TERMINAL","runId":"CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_20260824_002","githubRunId":"${GITHUB_RUN_ID}","githubRunAttempt":"${GITHUB_RUN_ATTEMPT}"}
           JSON
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin 09-corpus-b-secondary-web-185-v1
-          git add "$OUT" "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_TERMINAL.json"
-          git commit -m "evidence(09): secondary-web discovery 185 v3 ${GITHUB_RUN_ID}"
+          git add "$OUT" "$ROOT/state/CORPUS_B_SECONDARY_WEB_SYNONYMY_185_V3_002_TERMINAL.json"
+          git commit -m "evidence(09): secondary-web discovery 185 v3-002 ${GITHUB_RUN_ID}"
           git push origin HEAD:09-corpus-b-secondary-web-185-v1
