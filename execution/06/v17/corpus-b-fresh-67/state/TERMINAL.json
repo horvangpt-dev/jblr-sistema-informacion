@@ -1,0 +1,18 @@
+{
+  "state": "PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES",
+  "stopRequired": false,
+  "stopReason": null,
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "githubRunId": "32762969145",
+  "scope": 67,
+  "processedRows": 67,
+  "resolvedCount": 41,
+  "unresolvedOrConflictCount": 26,
+  "conflictCount": 24,
+  "authorizationEvent": "JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "corpusBFreeze": false,
+  "downstreamStimesExecuted": false
+}

@@ -1,0 +1,306 @@
+{
+  "actor": "06",
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "scope": 67,
+  "authorizationEvent": "JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001",
+  "reconciledScopeDriveId": "1GtLSjl1J7Vbf5JVqN_pL4D09z3JIZOMz",
+  "inputBlobSha": "ef5192304fa22c2ca8a9daffd67f58aa9c4827de",
+  "scopeRecords": [
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "name": "Adenocarpus hispanicus subsp. neilense"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "name": "Anteriorchis coriophora var. carpetana"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "name": "Asplenium adiantum-nigrum var. adiantum-nigrum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "name": "Astragalus monspessulanus subsp. teresianus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "name": "Astragalus sempervirens subsp. muticus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "name": "Astragalus vesicarius subsp. vesicarius"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "name": "Avenula bromoides subsp. pauneroi"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "name": "Avenula lodunensis subsp. romero-zarcoi"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3789",
+      "name": "Biscutella valentina var. variegata"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "910",
+      "name": "Bupleurum ranunculoides subsp. gramineus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "911",
+      "name": "Bupleurum ranunculoides subsp. ranunculoides"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3629",
+      "name": "Campanula trachelium subsp. trachelium"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1968",
+      "name": "Carex muricata subsp. lamprocarpa"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2758",
+      "name": "Centaurea debeauxii subsp. nemoralis"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2367",
+      "name": "Centaurea paniculata subsp. castellana"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3681",
+      "name": "Centaurea triumfetti subsp. lingulata"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5177",
+      "name": "Centranthus calcitrapae subsp. calcitrapae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5080",
+      "name": "Cerastium brachypetalum var. brachypetalum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "839",
+      "name": "Cirsium pyrenaicum var. longespinosum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "840",
+      "name": "Cirsium pyrenaicum var. pyrenaicum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "173",
+      "name": "Cytisus scoparius subsp. cantabricus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2934",
+      "name": "Dactylorhiza elata subsp. sesquipedalis"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2483",
+      "name": "Dactylorhiza incarnata subsp. incarnata"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1624",
+      "name": "Dactylorhiza maculata subsp. elodes"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1625",
+      "name": "Dactylorhiza maculata subsp. maculata"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1647",
+      "name": "Dactylorhiza majalis subsp. majalis"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4480",
+      "name": "Dryopteris affinis subsp. cambrensis"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1250",
+      "name": "Epipactis phyllanthes var. fageticola"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3720",
+      "name": "Filipendula ulmaria subsp. ulmaria"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3203",
+      "name": "Genista florida subsp. polygaliphylla"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4677",
+      "name": "Gentiana angustifolia subsp. occidentalis"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2149",
+      "name": "Helianthemum nummularium subsp. nummularium"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "412",
+      "name": "Heracleum sphondylium subsp. montanum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "136",
+      "name": "Herniaria scabrida var. glabrescens"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2602",
+      "name": "Hieracium lactucella subsp. lactucella"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1270",
+      "name": "Hieracium pilosella subsp. micradenium"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1271",
+      "name": "Hieracium pilosella subsp. pilosella"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1272",
+      "name": "Hieracium pilosella subsp. tricholepium"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3555",
+      "name": "Himantoglossum hircinum subsp. hircinum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4217",
+      "name": "Hippocrepis comosa subsp. squamata"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4244",
+      "name": "Juncus conglomeratus var. conglomeratus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2930",
+      "name": "Juncus effusus var. subglomeratus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "591",
+      "name": "Knautia subscaposa subsp. subscaposa"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3758",
+      "name": "Littorela uniflora"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5195",
+      "name": "Luzula campestris subsp. carpetana"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1949",
+      "name": "Luzula multiflora subsp. congesta"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "636",
+      "name": "Luzula sylvatica subsp. henriquesii"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "624",
+      "name": "Omalotheca supina subsp. pusilla"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "635",
+      "name": "Omalotheca sylvatica subsp. carpetana"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4407",
+      "name": "Onopordum acaulon subsp. acaulon"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4770",
+      "name": "Paronychia argentea var. argentea"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2582",
+      "name": "Paronychia kapela var. pseudoaretioides"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1348",
+      "name": "Paronychia polygonifolia var. polygonifolia"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2228",
+      "name": "Peucedanum officinales subsp. officinale"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3401",
+      "name": "Pimpinella gracilis subsp. puberula"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4588",
+      "name": "Plantago alpina subsp. penyalarensis"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5128",
+      "name": "Ranunculus bulbosus var. hispanicus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2944",
+      "name": "Salix eleagnos subsp. angustifolia"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1821",
+      "name": "Sanguisorba minor subsp. muricata"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4082",
+      "name": "Scirpus cespitosus subsp. germanicum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4679",
+      "name": "Scorzonera angustifolia var. angustifolia"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3916",
+      "name": "Solidago virgaurea subsp. fallit-tirones"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4898",
+      "name": "Sorbus aucuparia subsp. aucuparia"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2231",
+      "name": "Stachys officinalis subsp. officinalis"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1690",
+      "name": "Tetragonolobus maritimus var. hirsutus"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "945",
+      "name": "Trifolium repens subsp. nevadense"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2372",
+      "name": "Vicia pannonica var. purpurascens"
+    }
+  ],
+  "excludedByReuseFirst": [
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "name": "Anthemis triumfettii",
+      "reason": "PRIOR_09_REUSABLE_RESOLUTION"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3006",
+      "name": "Centaurium erythraea subsp. grandiflorum",
+      "reason": "PRIOR_09_REUSABLE_RESOLUTION"
+    }
+  ],
+  "engineReuse": {
+    "sourceBranch": "06-vnext-corpus-b-185-taxonomy",
+    "sourcePath": "execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py",
+    "reuseType": "TECHNICAL_ENGINE_ONLY",
+    "priorResultsImported": false
+  },
+  "guards": {
+    "crossWithA": false,
+    "corpusBFreeze": false,
+    "neonWrites": 0,
+    "databaseWrites": 0,
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "downstreamStimesAuthorized": false
+  }
+}

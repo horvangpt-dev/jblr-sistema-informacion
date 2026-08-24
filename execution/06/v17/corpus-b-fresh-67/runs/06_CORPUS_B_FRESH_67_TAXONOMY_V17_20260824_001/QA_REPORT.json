@@ -1,0 +1,123 @@
+{
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "pass": true,
+  "checks": {
+    "inputCount67": true,
+    "uniqueSourceRecordIds67": true,
+    "identityCount67": true,
+    "idStateCount67": true,
+    "snapshotCount67": true,
+    "verbatimPreserved": true,
+    "noForcedIds": true,
+    "noFuzzy": true,
+    "noParentInheritance": true,
+    "noRankCollapse": true,
+    "crossWithA0": true,
+    "neonWrites0": true,
+    "databaseWrites0": true,
+    "corpusBFreeze0": true,
+    "downstreamBlocked": true,
+    "documentedNetworkAvailable": true,
+    "eidosIndexAvailable": true
+  },
+  "sourceStatus": {
+    "POWO_WCVP": {
+      "state": "READY",
+      "meta": {
+        "source": "POWO_WCVP",
+        "provenance": "WCVP official Darwin Core Archive published by Royal Botanic Gardens, Kew; POWO names backbone",
+        "requestedUrl": "http://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+        "finalUrl": "https://sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip",
+        "archiveSha256": "6ff1e084d7e1de5bce526a9952c96fbb0f13b4f2c615b0fc30c055f88bfb5483",
+        "archiveBytes": 88208088,
+        "coreRows": 1448984,
+        "uniqueCanonicalNames": 1040041,
+        "availableFields": [
+          "acceptedNameUsageID",
+          "dynamicProperties",
+          "family",
+          "genus",
+          "infraSpecificEpithet",
+          "namePublishedIn",
+          "nomenclaturalStatus",
+          "originalNameUsageID",
+          "parentNameUsageID",
+          "references",
+          "scientificName",
+          "scientificNameAuthorship",
+          "scientificNameID",
+          "specificEpithet",
+          "taxonID",
+          "taxonRank",
+          "taxonRemarks",
+          "taxonomicStatus"
+        ]
+      }
+    },
+    "WFO": {
+      "state": "SOURCE_FAILURE",
+      "error": "RuntimeError:meta.xml not found"
+    },
+    "ANTHOS": {
+      "state": "READY",
+      "meta": {
+        "source": "ANTHOS",
+        "provenance": "ANTHOS official RJB-CSIC Darwin Core Archive via GBIF-Spain IPT",
+        "requestedUrl": "https://ipt.gbif.es/archive.do?r=rjb-anthos",
+        "finalUrl": "https://ipt.gbif.es/archive.do?r=rjb-anthos",
+        "archiveSha256": "e6e19630a9415359fba90888864d17313873a984ac79a3677c1d62aac943f991",
+        "archiveBytes": 57334273,
+        "coreRows": 1667138,
+        "uniqueCanonicalNames": 9029,
+        "availableFields": [
+          "basisOfRecord",
+          "catalogNumber",
+          "class",
+          "collectionCode",
+          "coordinateUncertaintyInMeters",
+          "country",
+          "countryCode",
+          "decimalLatitude",
+          "decimalLongitude",
+          "establishmentMeans",
+          "family",
+          "genus",
+          "geodeticDatum",
+          "habitat",
+          "infraspecificEpithet",
+          "institutionCode",
+          "kingdom",
+          "language",
+          "locality",
+          "maximumElevationInMeters",
+          "minimumElevationInMeters",
+          "modified",
+          "occurrenceID",
+          "order",
+          "phylum",
+          "scientificName",
+          "scientificNameAuthorship",
+          "specificEpithet",
+          "stateProvince",
+          "taxonRank",
+          "verbatimCoordinates",
+          "verbatimElevation"
+        ]
+      }
+    }
+  },
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "resolvedCount": 41,
+  "unresolvedOrConflictCount": 26,
+  "conflictCount": 24,
+  "semantics": [
+    "REALITY_FIRST",
+    "PERSISTED_EVIDENCE_FIRST",
+    "NO_SILENT_INFERENCE",
+    "NO_FUZZY",
+    "NO_RANK_COLLAPSE",
+    "NO_PARENT_ID_INHERITANCE",
+    "SOURCE_FAILURE!=NOT_FOUND",
+    "UNRESOLVED!=ABSENCE"
+  ]
+}
