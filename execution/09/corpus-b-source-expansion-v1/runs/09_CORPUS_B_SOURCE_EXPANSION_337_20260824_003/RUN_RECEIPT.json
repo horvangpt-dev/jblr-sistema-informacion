@@ -1,0 +1,131 @@
+{
+  "receiptVersion": "CORPUS_B_09_SOURCE_EXPANSION_337_RECEIPT_v1",
+  "status": "PASS",
+  "runId": "09_CORPUS_B_SOURCE_EXPANSION_337_20260824_003",
+  "observedAt": "2026-08-24T07:22:39.179Z",
+  "counts": {
+    "SOURCE_FAILURE": 337
+  },
+  "sourcePlanCompleteRows": 0,
+  "transportState": {
+    "MITECO_EIDOS_CIRCUIT": {
+      "state": "ACCESS_FAILED",
+      "failures": 3,
+      "evidencePointer": "https://eportal.miteco.gob.es/IEPNB_EIDOS_WS/services/IEPNB_EIDOS",
+      "accessDetail": "fetch failed"
+    },
+    "HVMO_INDEX_KEYS": 21,
+    "HVMO_FAILED_INDEX_KEYS": [
+      {
+        "key": "/es/general/A/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/B/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/C/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/D/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/E/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/F/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/G/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/H/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/J/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/K/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/L/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/M/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/N/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/O/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/P/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/Q/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/R/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/S/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/T/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/U/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/V/per-nom-cientific",
+        "detail": "This operation was aborted"
+      }
+    ]
+  },
+  "independence": {
+    "CORPUS_A_ROWS_READ_FOR_DISCOVERY": 0,
+    "RC2_ROWS_READ_FOR_DISCOVERY": 0,
+    "HISTORICAL_TAXON_ROWS_READ_FOR_DISCOVERY": 0,
+    "PRIOR_SEARCH_RESULT_ROWS_IMPORTED": 0,
+    "PRIOR_STATIC_MITECO_LIST_ROWS_IMPORTED": 0,
+    "PRIOR_LOOKUP_CACHE_HITS": 0,
+    "PRIOR_SYNONYM_LEDGER_ROWS_IMPORTED": 0,
+    "CROSS_WITH_A_PERFORMED": false,
+    "CROSSWALK_MODULE_EXECUTED": false,
+    "NEON_WRITES": 0,
+    "CACHE_INITIAL_STATE": "EMPTY",
+    "CANONICAL_CORPUS_A_MUTATION": 0
+  },
+  "hashes": {
+    "CORPUS_B_337_RESOLUTION_RESULTS_v1.json": "912586c0ed9fbc82da959971ef1e8971af7744a874c67cc1b67dd5eb667a6a01",
+    "CORPUS_B_337_NAME_NETWORK_LEDGER_v1.json": "b06a90297d4335d705bf8a548416ff10ce82f8cd2d1517778bc2e477e31808d8",
+    "CORPUS_B_337_QUERY_PROVENANCE_LEDGER_v1.json": "6255ba50ae99a151e18cb2af8ddc82670cb268b94fc13393976d1b64c8f68bfd",
+    "CORPUS_B_337_SOURCE_ACCESS_FAILURE_LEDGER_v1.json": "84090e48c270f2202705fbb372efec0a6ea69e6cbea7d11c1a698b50e8289112",
+    "CORPUS_B_337_MITECO_REQUERY_LEDGER_v1.json": "89817ff00e05d60b338d2310f38f8e498b1c8bad5e1059ae76078ab652847d57",
+    "CORPUS_B_337_FIXED_POINT_RECEIPT_v1.json": "9e33bbade68d7ad5c363d6cf02d70efa8d7183a78702fdf1ae17fc4c20db7cd2",
+    "INDEPENDENCE_RECEIPT.json": "2418790e194773061dd056f4aee3333525e451b02e141f6c3a218ceabb25c8de",
+    "QA_REPORT.json": "6d9f4fa21d715baf9b9e86295e11df984361c7c8f43e41881623f1706a7cb691",
+    "RUN_MANIFEST": "0efebeea9c2851e3102f02d99e72788d1e069b8a6be13d9b675a1dd059a47450"
+  },
+  "canonicalEffect": "NONE_PENDING_0000_POSTRUN_ACCEPTANCE"
+}

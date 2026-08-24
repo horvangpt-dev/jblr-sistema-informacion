@@ -1,0 +1,150 @@
+{
+  "RUN_ID": "09_CORPUS_B_SOURCE_EXPANSION_337_20260824_003",
+  "MODE": "CORPUS_B_SOURCE_EXPANSION_337_PRODUCTIVE_09",
+  "STATE": "EXECUTED_PENDING_0000",
+  "RELEASE_EVENT": "JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-SOURCE-EXPANSION-337-001",
+  "DIRECTIVE_ID": "1ZNGdTSTBGLr26_jx4CZiWfBfsOshIKL8_uo9TbkclQ4",
+  "INPUT_CURRENT_COLD_START_COMMIT": "fe0dd36a952a24f737495ee7ebe3d57be9e21ee9",
+  "IMPLEMENTATION_08_COMMIT": "b04c32c08d7f1fcf47b558efab3ce2a13a4ccf99",
+  "IMPLEMENTATION_SOURCE_EXPANSION_SHA": "a751e7449bc817734b0ae67ada0b2a68f99df31e",
+  "IMPLEMENTATION_TRANSPORTS_SHA": "678aa7710bcc0b4a32510bbc0f7d7950db90adb2",
+  "SOURCE_INVENTORY_SHA": "030ae0e2182375573f49c601a6c64ae38dd8ec62",
+  "BRANCH": "09-corpus-b-source-expansion-v2",
+  "GITHUB_RUN_ID": "32700528766",
+  "GITHUB_RUN_ATTEMPT": "1",
+  "STARTED_AT": "2026-08-24T07:19:09.004Z",
+  "FINISHED_AT": "2026-08-24T07:22:39.179Z",
+  "INPUT_COUNT": 337,
+  "OUTPUT_COUNT": 337,
+  "COUNTS": {
+    "SOURCE_FAILURE": 337
+  },
+  "QUERY_LEDGER_ROWS": 3609,
+  "MITECO_REQUERY_ROWS": 401,
+  "SOURCE_ACCESS_ROWS": 3033,
+  "SOURCE_PLAN_COMPLETE_ROWS": 0,
+  "TRANSPORT_STATE": {
+    "MITECO_EIDOS_CIRCUIT": {
+      "state": "ACCESS_FAILED",
+      "failures": 3,
+      "evidencePointer": "https://eportal.miteco.gob.es/IEPNB_EIDOS_WS/services/IEPNB_EIDOS",
+      "accessDetail": "fetch failed"
+    },
+    "HVMO_INDEX_KEYS": 21,
+    "HVMO_FAILED_INDEX_KEYS": [
+      {
+        "key": "/es/general/A/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/B/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/C/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/D/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/E/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/F/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/G/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/H/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/J/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/K/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/L/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/M/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/N/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/O/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/P/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/Q/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/R/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/S/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/T/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/U/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/V/per-nom-cientific",
+        "detail": "This operation was aborted"
+      }
+    ]
+  },
+  "ARTIFACT_HASHES": {
+    "CORPUS_B_337_RESOLUTION_RESULTS_v1.json": "912586c0ed9fbc82da959971ef1e8971af7744a874c67cc1b67dd5eb667a6a01",
+    "CORPUS_B_337_NAME_NETWORK_LEDGER_v1.json": "b06a90297d4335d705bf8a548416ff10ce82f8cd2d1517778bc2e477e31808d8",
+    "CORPUS_B_337_QUERY_PROVENANCE_LEDGER_v1.json": "6255ba50ae99a151e18cb2af8ddc82670cb268b94fc13393976d1b64c8f68bfd",
+    "CORPUS_B_337_SOURCE_ACCESS_FAILURE_LEDGER_v1.json": "84090e48c270f2202705fbb372efec0a6ea69e6cbea7d11c1a698b50e8289112",
+    "CORPUS_B_337_MITECO_REQUERY_LEDGER_v1.json": "89817ff00e05d60b338d2310f38f8e498b1c8bad5e1059ae76078ab652847d57",
+    "CORPUS_B_337_FIXED_POINT_RECEIPT_v1.json": "9e33bbade68d7ad5c363d6cf02d70efa8d7183a78702fdf1ae17fc4c20db7cd2",
+    "INDEPENDENCE_RECEIPT.json": "2418790e194773061dd056f4aee3333525e451b02e141f6c3a218ceabb25c8de",
+    "QA_REPORT.json": "6d9f4fa21d715baf9b9e86295e11df984361c7c8f43e41881623f1706a7cb691"
+  },
+  "INDEPENDENCE": {
+    "CORPUS_A_ROWS_READ_FOR_DISCOVERY": 0,
+    "RC2_ROWS_READ_FOR_DISCOVERY": 0,
+    "HISTORICAL_TAXON_ROWS_READ_FOR_DISCOVERY": 0,
+    "PRIOR_SEARCH_RESULT_ROWS_IMPORTED": 0,
+    "PRIOR_STATIC_MITECO_LIST_ROWS_IMPORTED": 0,
+    "PRIOR_LOOKUP_CACHE_HITS": 0,
+    "PRIOR_SYNONYM_LEDGER_ROWS_IMPORTED": 0,
+    "CROSS_WITH_A_PERFORMED": false,
+    "CROSSWALK_MODULE_EXECUTED": false,
+    "NEON_WRITES": 0,
+    "CACHE_INITIAL_STATE": "EMPTY",
+    "CANONICAL_CORPUS_A_MUTATION": 0
+  },
+  "CORPUS_B_FREEZE": false,
+  "CROSS_WITH_A_PERFORMED": false,
+  "CROSSWALK_MODULE_EXECUTED": false,
+  "NEON_WRITES": 0,
+  "CANONICAL_CORPUS_A_MUTATION": 0
+}

@@ -1,0 +1,108 @@
+{
+  "RUN_ID": "09_CORPUS_B_SOURCE_EXPANSION_337_20260824_003",
+  "QA_STATE": "PASS",
+  "INPUT_COUNT": 337,
+  "OUTPUT_COUNT": 337,
+  "RECONCILIATION": "PASS",
+  "COUNTS": {
+    "SOURCE_FAILURE": 337
+  },
+  "ALL_CONTAMINATION_COUNTERS_ZERO": true,
+  "CORPUS_A_CROSS": false,
+  "NEON_WRITES": 0,
+  "TRANSPORT_STATE": {
+    "MITECO_EIDOS_CIRCUIT": {
+      "state": "ACCESS_FAILED",
+      "failures": 3,
+      "evidencePointer": "https://eportal.miteco.gob.es/IEPNB_EIDOS_WS/services/IEPNB_EIDOS",
+      "accessDetail": "fetch failed"
+    },
+    "HVMO_INDEX_KEYS": 21,
+    "HVMO_FAILED_INDEX_KEYS": [
+      {
+        "key": "/es/general/A/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/B/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/C/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/D/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/E/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/F/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/G/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/H/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/J/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/K/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/L/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/M/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/N/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/O/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/P/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/Q/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/R/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/S/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/T/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/U/per-nom-cientific",
+        "detail": "This operation was aborted"
+      },
+      {
+        "key": "/es/general/V/per-nom-cientific",
+        "detail": "This operation was aborted"
+      }
+    ]
+  }
+}
