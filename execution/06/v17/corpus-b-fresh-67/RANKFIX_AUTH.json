@@ -1,0 +1,22 @@
+{
+  "actor": "06",
+  "runId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002",
+  "supersedesRunId": "06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001",
+  "rankFixVersion": "RANK_FIX_v1",
+  "scope": 67,
+  "scopeChange": false,
+  "scientificCriteriaChange": false,
+  "technicalFixOnly": true,
+  "triggerNonce": "2026-08-24T21:40:36+02:00_rank_parser_corrective_rerun",
+  "authorizationBasis": "JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001",
+  "guards": {
+    "corpusACross": 0,
+    "corpusBFreeze": 0,
+    "neonWrites": 0,
+    "databaseWrites": 0,
+    "fuzzy": 0,
+    "parentIdInheritance": 0,
+    "rankCollapse": 0,
+    "downstreamStimesExecuted": 0
+  }
+}
