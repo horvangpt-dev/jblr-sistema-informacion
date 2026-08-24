@@ -1,0 +1,61 @@
+name: 09 Flora Catalana synonymy to EIDOS 337
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-spanish-synonymy-eidos-deep-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FLORA_CATALANA.json'
+
+permissions:
+  contents: write
+
+jobs:
+  flora-catalana-pass:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          fetch-depth: 1
+      - name: Validate request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_FLORA_CATALANA.json'))
+          assert p['enabled'] is True and p['inputCount']==337
+          assert p['crossWithA'] is False and p['neonWrites']==0 and p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
+          PY
+      - name: Download official current EIDOS dump
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 1200 \
+            -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+      - name: Query Flora Catalana exactly for all 337 and contrast EIDOS
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          QUEUE=execution/09/corpus-b-cold-start-v1/runs/09_CORPUS_B_COLD_START_20260824_002/CORPUS_B_338_RESOLUTION_RESULTS_v2.json
+          OUT="$ROOT/runs/FLORA_CATALANA_EIDOS_337_20260824_001"
+          python "$ROOT/flora_catalana_eidos_pass.py" "$QUEUE" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+      - name: QA and persist
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/FLORA_CATALANA_EIDOS_337_20260824_001"
+          python - <<'PY'
+          import json
+          p='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/FLORA_CATALANA_EIDOS_337_20260824_001/RUN_RECEIPT.json'
+          r=json.load(open(p)); assert r['input']==337 and r['output']==337
+          assert r['crossWithA'] is False and r['neonWrites']==0 and r['corpusBFreeze'] is False
+          assert r['sourcePlanCompleteRows']==0
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-spanish-synonymy-eidos-deep-v1
+          git add "$OUT"
+          git commit -m "evidence(09): Flora Catalana EIDOS 337 ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-spanish-synonymy-eidos-deep-v1
