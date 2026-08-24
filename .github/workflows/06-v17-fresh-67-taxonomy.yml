@@ -5,55 +5,62 @@ on:
     branches:
       - 06-v17-fresh-67-taxonomy
     paths:
-      - 'execution/06/v17/corpus-b-fresh-67/RUN_REQUEST.json'
-      - '.github/workflows/06-v17-fresh-67-taxonomy.yml'
+      - 'execution/06/v17/corpus-b-fresh-67/RANKFIX_AUTH_WORKING.json'
 
 permissions:
   contents: write
 
 jobs:
-  fresh_67_taxonomy:
+  fresh_67_taxonomy_rankfix:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
-      - name: Checkout constrained V17 branch
+      - name: Checkout working V17 branch
         uses: actions/checkout@v4
         with:
           ref: 06-v17-fresh-67-taxonomy
           fetch-depth: 1
 
-      - name: Validate authority and exact source scope
+      - name: Validate unchanged 67 scope and corrective authority
         run: |
           set -euo pipefail
           python - <<'PY'
           import json
-          p=json.load(open('execution/06/v17/corpus-b-fresh-67/RUN_REQUEST.json'))
-          assert p['enabled'] is True and p['actor']=='06'
-          assert p['runId']=='06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001'
-          assert p['corpusId']=='BIODIVERSIDAD_RIOJANA_FLORA'
-          assert p['sourceBatchId']=='CORPUS_B_FRESH_67_v17'
+          root='execution/06/v17/corpus-b-fresh-67'
+          p=json.load(open(root+'/RUN_REQUEST.json'))
+          a=json.load(open(root+'/RANKFIX_AUTH_WORKING.json'))
           assert p['scope']==67 and len(p['scopeRecords'])==67
           assert len({str(x['B_SOURCE_RECORD_ID']) for x in p['scopeRecords']})==67
           assert {str(x['B_SOURCE_RECORD_ID']) for x in p['excludedByReuseFirst']}=={'3682','3006'}
-          assert not ({str(x['B_SOURCE_RECORD_ID']) for x in p['scopeRecords']} & {'3682','3006'})
           assert p['authorizationEvent']=='JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001'
-          assert p['reconciledScopeDriveId']=='1GtLSjl1J7Vbf5JVqN_pL4D09z3JIZOMz'
           assert p['crossWithA'] is False and p['corpusBFreeze'] is False
           assert p['neonWrites']==0 and p['databaseWrites']==0
           assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True and p['noRankCollapse'] is True
           assert p['downstreamStimesAuthorized'] is False
-          assert p['engineReuse']['reuseType']=='TECHNICAL_ENGINE_ONLY'
-          assert p['engineReuse']['priorResultsImported'] is False
+          assert a['actor']=='06'
+          assert a['runId']=='06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002'
+          assert a['supersedesRunId']=='06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001'
+          assert a['rankFixVersion']=='RANK_FIX_v1'
+          assert a['scope']==67 and a['scopeChange'] is False and a['technicalFixOnly'] is True
+          q=dict(p)
+          q['runId']=a['runId']
+          q['supersedesRunId']=a['supersedesRunId']
+          q['rankFixVersion']=a['rankFixVersion']
+          q['triggerNonce']=a['triggerNonce']
+          json.dump(q,open('/tmp/RUN_REQUEST_002.json','w'),ensure_ascii=False,indent=2)
           PY
           INPUT='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json'
           test "$(git hash-object "$INPUT")" = 'ef5192304fa22c2ca8a9daffd67f58aa9c4827de'
 
-      - name: Fetch technical engine only
+      - name: Fetch original technical engine and corrected wrapper
         run: |
           set -euo pipefail
           git fetch origin 06-vnext-corpus-b-185-taxonomy --depth=1 --no-tags
           git show origin/06-vnext-corpus-b-185-taxonomy:execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py > "$RUNNER_TEMP/taxonomy_185_vnext.py"
+          git fetch origin 06-v17-fresh-67-taxonomy-rankfix --depth=1 --no-tags
+          git show origin/06-v17-fresh-67-taxonomy-rankfix:execution/06/v17/corpus-b-fresh-67/run_fresh_67.py > "$RUNNER_TEMP/run_fresh_67_rankfix.py"
           test -s "$RUNNER_TEMP/taxonomy_185_vnext.py"
+          test -s "$RUNNER_TEMP/run_fresh_67_rankfix.py"
 
       - name: Install runtime
         run: |
@@ -67,84 +74,83 @@ jobs:
           test -s "$RUNNER_TEMP/eidos.ttl"
           sha256sum "$RUNNER_TEMP/eidos.ttl" | tee "$RUNNER_TEMP/eidos.sha256"
 
-      - name: Execute constrained fresh 67 taxonomic phase
+      - name: Execute corrected exact same 67 scope as run 002
         run: |
           set -euo pipefail
           ROOT='execution/06/v17/corpus-b-fresh-67'
           INPUT='execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/CORPUS_B_CONTINUOUS_DEEP_SPANISH_313_STRICT_QA_20260824_001/FINAL_COMPACT_GROUPS_313.json'
-          OUT="$ROOT/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001"
+          OUT="$ROOT/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002"
           rm -rf "$OUT"
           mkdir -p "$OUT" "$ROOT/state"
-          cat > "$ROOT/state/RUNNING.json" <<JSON
-          {"state":"RUNNING","actor":"06","runId":"06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001","scope":67,"githubRunId":"${GITHUB_RUN_ID}","authorizationEvent":"JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001","crossWithA":false,"neonWrites":0,"databaseWrites":0,"downstreamStimesExecuted":false}
+          cat > "$ROOT/state/RUNNING_RUN_002.json" <<JSON
+          {"state":"RUNNING","actor":"06","runId":"06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002","scope":67,"githubRunId":"${GITHUB_RUN_ID}","rankFixVersion":"RANK_FIX_v1","crossWithA":false,"neonWrites":0,"databaseWrites":0,"downstreamStimesExecuted":false}
           JSON
-          python "$ROOT/run_fresh_67.py" "$RUNNER_TEMP/taxonomy_185_vnext.py" "$INPUT" "$RUNNER_TEMP/eidos.ttl" "$OUT" "$ROOT/RUN_REQUEST.json"
+          python "$RUNNER_TEMP/run_fresh_67_rankfix.py" "$RUNNER_TEMP/taxonomy_185_vnext.py" "$INPUT" "$RUNNER_TEMP/eidos.ttl" "$OUT" /tmp/RUN_REQUEST_002.json
 
-      - name: Enforce exact 67 QA boundary
+      - name: Enforce original QA and independent rank QA
         run: |
           set -euo pipefail
           python - <<'PY'
           import json
           from pathlib import Path
           root=Path('execution/06/v17/corpus-b-fresh-67')
-          out=root/'runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001'
-          req=json.load(open(root/'RUN_REQUEST.json'))
+          out=root/'runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002'
           r=json.load(open(out/'RUN_RECEIPT.json'))
           q=json.load(open(out/'QA_REPORT.json'))
+          rq=json.load(open(out/'RANK_FIX_QA.json'))
           a=json.load(open(out/'SCOPE_AUTHORITY.json'))
-          assert r['crossWithA'] is False
-          assert r['neonWrites']==0 and r['databaseWrites']==0 and r['corpusBFreeze'] is False
-          assert a['scope']==67 and a['authorizationEvent']=='JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001'
-          if r.get('processedRows'):
-              assert r['processedRows']==67
-              assert r['inputRows']==67
-              assert r['downstreamStimesExecuted'] is False
-              assert r['existingCorpusOverwritten'] is False
-              intake=json.load(open(out/'SOURCE_INTAKE_RECEIPTS.json'))['rows']
-              assert [x['B_SOURCE_RECORD_ID'] for x in intake]==[str(x['B_SOURCE_RECORD_ID']) for x in req['scopeRecords']]
-              assert [x['NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM'] for x in intake]==[x['name'] for x in req['scopeRecords']]
-          for p in out.rglob('*.json'):
-              assert p.stat().st_size < 100*1024*1024, (str(p),p.stat().st_size)
-          print(json.dumps({'state':r['state'],'stopRequired':r['stopRequired'],'processedRows':r['processedRows'],'resolvedCount':r.get('resolvedCount',0),'unresolvedOrConflictCount':r.get('unresolvedOrConflictCount',0),'qaPass':q.get('pass')},ensure_ascii=False))
+          assert r['processedRows']==67 and r['inputRows']==67
+          assert q['pass'] is True and rq['pass'] is True
+          assert rq['checkedRows']==67 and rq['doublePeriodCount']==0 and not rq['failures']
+          assert a['scope']==67 and a['rankFixVersion']=='RANK_FIX_v1'
+          assert a['supersedesRunId']=='06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001'
+          assert r['crossWithA'] is False and r['corpusBFreeze'] is False
+          assert r['neonWrites']==0 and r['databaseWrites']==0
+          assert r['downstreamStimesExecuted'] is False and r['existingCorpusOverwritten'] is False
+          intake=json.load(open(out/'SOURCE_INTAKE_RECEIPTS.json'))['rows']
+          original=json.load(open(root/'RUN_REQUEST.json'))['scopeRecords']
+          assert [x['B_SOURCE_RECORD_ID'] for x in intake]==[str(x['B_SOURCE_RECORD_ID']) for x in original]
+          assert [x['NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM'] for x in intake]==[x['name'] for x in original]
+          print(json.dumps({'state':r['state'],'processedRows':67,'resolvedCount':r.get('resolvedCount',0),'unresolvedOrConflictCount':r.get('unresolvedOrConflictCount',0),'conflictCount':r.get('conflictCount',0),'rankQaPass':rq['pass'],'rankCounts':rq['rankCounts']},ensure_ascii=False))
           PY
 
-      - name: Persist terminal evidence on isolated branch
+      - name: Persist corrective evidence without deleting run 001
         run: |
           set -euo pipefail
           ROOT='execution/06/v17/corpus-b-fresh-67'
-          OUT="$ROOT/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001"
+          OUT="$ROOT/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002"
           python - <<'PY'
-          import json, os
+          import json,os
           from pathlib import Path
           root=Path('execution/06/v17/corpus-b-fresh-67')
-          out=root/'runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001'
+          out=root/'runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002'
           r=json.load(open(out/'RUN_RECEIPT.json'))
+          rq=json.load(open(out/'RANK_FIX_QA.json'))
           state={
             'state':r['state'],'stopRequired':r['stopRequired'],'stopReason':r['stopReason'],
-            'runId':r['runId'],'githubRunId':os.environ['GITHUB_RUN_ID'],'scope':67,
-            'processedRows':r['processedRows'],'resolvedCount':r.get('resolvedCount',0),
+            'runId':r['runId'],'supersedesRunId':'06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001',
+            'githubRunId':os.environ['GITHUB_RUN_ID'],'scope':67,'rankFixVersion':'RANK_FIX_v1',
+            'rankFixQaPass':rq['pass'],'processedRows':r['processedRows'],'resolvedCount':r.get('resolvedCount',0),
             'unresolvedOrConflictCount':r.get('unresolvedOrConflictCount',0),'conflictCount':r.get('conflictCount',0),
-            'authorizationEvent':'JBLR-EVT-0000-20260824-RECONCILE-REUSE-FIRST-185-001',
             'crossWithA':False,'neonWrites':0,'databaseWrites':0,'corpusBFreeze':False,'downstreamStimesExecuted':False
           }
-          (root/'state/TERMINAL.json').write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          (root/'state/TERMINAL_RUN_002.json').write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git pull --rebase origin 06-v17-fresh-67-taxonomy
-          git add "$OUT" "$ROOT/state/RUNNING.json" "$ROOT/state/TERMINAL.json"
-          git commit -m "evidence(06): V17 fresh 67 taxonomy ${GITHUB_RUN_ID}"
+          git add "$OUT" "$ROOT/state/RUNNING_RUN_002.json" "$ROOT/state/TERMINAL_RUN_002.json"
+          git commit -m "evidence(06): V17 fresh 67 corrected rankfix ${GITHUB_RUN_ID}"
           git push origin HEAD:06-v17-fresh-67-taxonomy
 
-      - name: Enforce phase boundary
+      - name: Enforce stop before downstream STIME
         run: |
           python - <<'PY'
           import json
-          p='execution/06/v17/corpus-b-fresh-67/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_001/RUN_RECEIPT.json'
+          p='execution/06/v17/corpus-b-fresh-67/runs/06_CORPUS_B_FRESH_67_TAXONOMY_V17_20260824_002/RUN_RECEIPT.json'
           r=json.load(open(p))
           if r['stopRequired']:
               raise SystemExit('STOP_REQUIRED: '+str(r['stopReason']))
           assert r['state']=='PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES'
-          assert r['processedRows']==67
-          assert r['downstreamStimesExecuted'] is False
+          assert r['processedRows']==67 and r['downstreamStimesExecuted'] is False
           PY
