@@ -9,6 +9,13 @@ import secondary_web_synonymy_185_v3 as v3
 ROOT_GROUP = v3.core.ROOT_GROUP
 
 
+def relevant_window(seed, page_primary, window_text):
+    seed_norm = v3.core.norm(v3.core.canonical(seed))
+    primary_norm = v3.core.norm(v3.core.canonical(page_primary or ''))
+    window_norm = v3.core.norm(window_text or '')
+    return primary_norm == seed_norm or seed_norm in window_norm
+
+
 def audit_one(row, src, max_results=6):
     seed = row['name']
     query = f'"{seed}" site:{src["domain"]}'
@@ -17,6 +24,7 @@ def audit_one(row, src, max_results=6):
     urls = []
     names = {}
     fetch_failures = []
+    relevant_pages = 0
 
     for sr in vals:
         url = sr.get('href') or sr.get('url') or ''
@@ -31,11 +39,18 @@ def audit_one(row, src, max_results=6):
             fetch_failures.append({'url': url, 'error': f'{type(e).__name__}:{e}'})
             continue
 
+        primary = v3.core.canonical(doc.get('title') or '')
         windows = []
         for w in v3.core.marker_windows(doc.get('text', ''), src.get('markers', [])):
-            windows.append(w)
+            if relevant_window(seed, primary, w):
+                windows.append(w)
         for rel in v3.symbolic_relation_windows(doc.get('text', '')):
-            windows.append(rel.get('text', ''))
+            w = rel.get('text', '')
+            if relevant_window(seed, primary, w):
+                windows.append(w)
+
+        if windows:
+            relevant_pages += 1
 
         for w in windows:
             for n in v3.core.scientific_names(w):
@@ -56,6 +71,7 @@ def audit_one(row, src, max_results=6):
         'domain': src['domain'],
         'searchError': search_error,
         'searchResultUrls': urls,
+        'relevantPages': relevant_pages,
         'fetchFailures': fetch_failures,
         'synonymNames': out_names,
         'synonymCount': len(out_names),
@@ -71,7 +87,7 @@ def main(groups_path, outdir):
     assert len(sources) == 15, len(sources)
 
     detail = []
-    with ThreadPoolExecutor(max_workers=32) as ex:
+    with ThreadPoolExecutor(max_workers=8) as ex:
         futs = {
             ex.submit(audit_one, row, src, 6): (row, src)
             for row in rows for src in sources
@@ -89,6 +105,7 @@ def main(groups_path, outdir):
                     'domain': src['domain'],
                     'searchError': f'WORKER:{type(e).__name__}:{e}',
                     'searchResultUrls': [],
+                    'relevantPages': 0,
                     'fetchFailures': [],
                     'synonymNames': [],
                     'synonymCount': 0,
@@ -108,6 +125,7 @@ def main(groups_path, outdir):
             'taxaAudited': 25,
             'totalSynonyms': sum(r['synonymCount'] for r in recs),
             'taxaWithSynonyms': sum(1 for r in recs if r['synonymCount'] > 0),
+            'relevantPages': sum(r['relevantPages'] for r in recs),
             'searchHitTaxa': sum(1 for r in recs if r['searchResultUrls']),
             'searchFailureTaxa': sum(1 for r in recs if r['searchError']),
             'fetchFailures': sum(len(r['fetchFailures']) for r in recs),
@@ -122,16 +140,18 @@ def main(groups_path, outdir):
     out = Path(outdir)
     out.mkdir(parents=True, exist_ok=True)
     receipt = {
-        'runClass': 'CORPUS_B_SOURCE_YIELD_CALIBRATION_25_TOP4',
+        'runClass': 'CORPUS_B_SOURCE_YIELD_CALIBRATION_25_TOP4_V2_CONTEXT_GATED',
         'sampleRule': 'FIRST_25_ROWS_OF_NO_RESULT_IN_SPANISH_SOURCES_CONSULTED_185',
         'inputTaxa': 25,
         'sourceCount': 15,
         'totalSourceTaxonQueries': 375,
         'searchQueriesPerTaxonSource': 1,
         'maxSearchResultsPerTaxonSource': 6,
+        'workers': 8,
         'eidosUsed': False,
         'rankingCriterion': 'SUM_OF_PER_TAXON_DEDUPLICATED_SYNONYM_NAMES_PER_SOURCE',
         'seedNameExcludedFromSynonymCount': True,
+        'contextGate': 'PAGE_PRIMARY_EQUALS_SEED_OR_SEED_APPEARS_IN_RELATION_WINDOW',
         'ranking': ranking,
         'top4': [x['source'] for x in top4],
         'top4Detail': top4,
@@ -140,6 +160,7 @@ def main(groups_path, outdir):
         'corpusBFreeze': False,
         'semantics': [
             'SEARCH_HIT!=SYNONYM',
+            'UNRELATED_NAMES_IN_LARGE_DOCUMENTS_EXCLUDED',
             'SOURCE_FAILURE!=NOT_FOUND',
             'RANKING_ONLY_DOES_NOT_CANONICALIZE_TAXONOMY'
         ]
