@@ -1,0 +1,85 @@
+{
+  "pilotId": "JBLR_CORPUS_B_QUICK_NAME_NETWORK_EIDOS_PILOT_4_v2",
+  "method": "DOCUMENTED_NAME_NETWORK_THEN_EXACT_EIDOS_CONTRAST",
+  "rules": {
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "sourceFailureNotFound": false,
+    "crossWithA": false,
+    "neonWrites": 0,
+    "corpusBFreeze": false
+  },
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3143",
+      "NOMBRE_RIOJA_VERBATIM": "Alchemilla filicaulis var. vestita",
+      "names": [
+        "Alchemilla filicaulis var. vestita",
+        "Alchemilla minor var. vestita",
+        "Alchemilla vulgaris var. vestita",
+        "Alchemilla vestita var. calvescens"
+      ],
+      "evidence": [
+        {
+          "source": "POWO/WCVP",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:8074-2",
+          "assertion": "Alchemilla filicaulis var. vestita and the listed variety-rank names occur in the synonym network of Alchemilla filicaulis"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "NOMBRE_RIOJA_VERBATIM": "Anthemis triumfettii",
+      "names": [
+        "Anthemis triumfettii",
+        "Cota triumfetti",
+        "Cota triumfettii",
+        "Anthemis rigescens",
+        "Chamaemelum discoideum"
+      ],
+      "evidence": [
+        {
+          "source": "POWO/WCVP + Flora d'Italia",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:198408-1",
+          "assertion": "Anthemis triumfettii is treated in the synonym network of accepted Cota triumfetti/Cota triumfettii at species rank"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3587",
+      "NOMBRE_RIOJA_VERBATIM": "Campanula hispanica",
+      "names": [
+        "Campanula hispanica",
+        "Campanula betetae",
+        "Campanula burgalensis",
+        "Campanula granatensis",
+        "Campanula paui"
+      ],
+      "evidence": [
+        {
+          "source": "POWO/WCVP",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:140435-1",
+          "assertion": "Campanula hispanica is accepted and the listed species-rank names are synonyms"
+        }
+      ]
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3006",
+      "NOMBRE_RIOJA_VERBATIM": "Centaurium erythraea subsp. grandiflorum",
+      "names": [
+        "Centaurium erythraea subsp. grandiflorum",
+        "Centaurium erythraea subsp. boissieri",
+        "Centaurium grandiflorum subsp. boissieri",
+        "Centaurium umbellatum subsp. grandiflorum"
+      ],
+      "evidence": [
+        {
+          "source": "Euro+Med / taxonomic references",
+          "url": "https://ww2.bgbm.org/euroPlusMed/PTaxonDetail.asp?NameId=82841&PTRefFk=7200000",
+          "assertion": "Centaurium erythraea subsp. grandiflorum is accepted in Euro+Med and related subspecies-rank names are documented synonyms"
+        }
+      ]
+    }
+  ]
+}
