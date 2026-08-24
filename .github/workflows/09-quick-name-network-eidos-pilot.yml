@@ -1,0 +1,121 @@
+name: 09 quick name-network to EIDOS pilot
+
+on:
+  push:
+    branches:
+      - 09-corpus-b-fast-top4-185-recovery-v1
+    paths:
+      - 'execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_QUICK_NAME_NETWORK_PILOT_4.json'
+
+permissions:
+  contents: write
+
+jobs:
+  quick_pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-corpus-b-fast-top4-185-recovery-v1
+          fetch-depth: 1
+
+      - name: Validate quick governed request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/corpus-b-source-expansion-v1/spanish-deep/RUN_REQUEST_QUICK_NAME_NETWORK_PILOT_4.json'))
+          assert p['enabled'] is True
+          assert p['scope'] == 4
+          assert p['method'] == 'NAME_NETWORK_TO_EXACT_EIDOS'
+          assert p['releaseEvent'] == 'JBLR-EVT-0000-20260824-PIVOT-09-NAME-NETWORK-PRIMARY-001'
+          assert p['supersedesRun'] == 32734083294
+          assert p['top4Primary'] is False
+          assert p['crossWithA'] is False
+          assert p['neonWrites'] == 0
+          assert p['corpusBFreeze'] is False
+          assert p['noFuzzy'] is True
+          assert p['noParentIdInheritance'] is True
+          assert p['noRankCollapse'] is True
+          PY
+
+      - name: Download and verify official EIDOS snapshot
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 300 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          echo '810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737  '"$RUNNER_TEMP/eidos.ttl" | sha256sum -c -
+
+      - name: Execute four-taxon name-network contrast
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          NETWORK="$ROOT/QUICK_NAME_NETWORK_PILOT_4.json"
+          OUT="$ROOT/runs/QUICK_NAME_NETWORK_EIDOS_PILOT_4_20260824_001"
+          rm -rf "$OUT"
+          mkdir -p "$OUT"
+          START=$(date +%s)
+          python "$ROOT/contrast_name_network_with_eidos.py" "$NETWORK" "$RUNNER_TEMP/eidos.ttl" "$OUT"
+          END=$(date +%s)
+          printf '%s\n' "$((END-START))" > "$OUT/RUNTIME_SECONDS.txt"
+
+      - name: QA and build compact pilot receipt
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          out=Path('execution/09/corpus-b-source-expansion-v1/spanish-deep/runs/QUICK_NAME_NETWORK_EIDOS_PILOT_4_20260824_001')
+          result=json.load(open(out/'CORPUS_B_337_SPANISH_SYNONYMY_EIDOS_RESULTS.json'))
+          resolved=json.load(open(out/'CORPUS_B_337_NEW_EIDOS_IDS.json'))
+          assert result['total_rows'] == 4
+          runtime=int((out/'RUNTIME_SECONDS.txt').read_text().strip())
+          rows=[]
+          for r in result['results']:
+              rows.append({
+                  'B_SOURCE_RECORD_ID': r['B_SOURCE_RECORD_ID'],
+                  'NOMBRE_RIOJA_VERBATIM': r['NOMBRE_RIOJA_VERBATIM'],
+                  'terminal_state': r['terminal_state'],
+                  'MITECO_IDTAXON': r.get('MITECO_IDTAXON'),
+                  'EIDOS_NAME': r.get('EIDOS_NAME'),
+                  'matchedCandidates': [
+                      {'name': c['name'], 'canonical': c['canonical'], 'state': c['state'], 'recordCount': len(c.get('records') or [])}
+                      for c in r.get('candidate_evidence', [])
+                      if c.get('state') == 'EIDOS_MATCH'
+                  ]
+              })
+          receipt={
+              'pilotId':'JBLR_CORPUS_B_QUICK_NAME_NETWORK_EIDOS_PILOT_4_v1',
+              'githubRunId': '${{ github.run_id }}',
+              'method':'DOCUMENTED_NAME_NETWORK_THEN_EXACT_EIDOS_CONTRAST',
+              'inputRows':4,
+              'runtimeSeconds':runtime,
+              'resolvedCount':len(resolved.get('rows') or []),
+              'conflictCount':result.get('conflicts'),
+              'specialCaseCount':result.get('special_cases'),
+              'unresolvedCount':result.get('unresolved_after_flora_iberica'),
+              'rows':rows,
+              'eidosSha256':result.get('eidos_ttl_sha256'),
+              'noFuzzy':True,
+              'noParentIdInheritance':True,
+              'noRankCollapse':True,
+              'crossWithA':False,
+              'neonWrites':0,
+              'corpusBFreeze':False,
+              'canonicalEffect':'NONE_PENDING_0000_REVIEW'
+          }
+          (out/'PILOT_RECEIPT.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps({'runtimeSeconds':runtime,'resolvedCount':receipt['resolvedCount'],'rows':rows},ensure_ascii=False,indent=2))
+          PY
+
+      - name: Persist compact pilot evidence
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/corpus-b-source-expansion-v1/spanish-deep
+          OUT="$ROOT/runs/QUICK_NAME_NETWORK_EIDOS_PILOT_4_20260824_001"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-corpus-b-fast-top4-185-recovery-v1
+          git add "$OUT/CORPUS_B_337_SPANISH_SYNONYMY_EIDOS_RESULTS.json" "$OUT/CORPUS_B_337_NEW_EIDOS_IDS.json" "$OUT/RUNTIME_SECONDS.txt" "$OUT/PILOT_RECEIPT.json"
+          git commit -m "evidence(09): quick name-network EIDOS pilot ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-corpus-b-fast-top4-185-recovery-v1
