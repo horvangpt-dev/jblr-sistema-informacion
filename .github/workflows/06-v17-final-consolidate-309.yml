@@ -1,0 +1,38 @@
+name: 06 v17 final consolidate 309
+on:
+  push:
+    branches: [06-v17-synonym-system-309]
+    paths:
+      - execution/06/v17/synonym-system-309/EXECUTE_FINAL_CONSOLIDATION.json
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 0
+      - name: Validate authorization
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/06/v17/synonym-system-309/EXECUTE_FINAL_CONSOLIDATION.json'
+          x=json.load(open(p))
+          assert x['execute'] is True
+          assert x['scope']==309
+          assert x['stimes']=='HOLD'
+          assert x['rc2Mutation']==0 and x['neonWrites']==0 and x['databaseWrites']==0
+          PY
+      - name: Consolidate and QA 309
+        run: python execution/06/v17/synonym-system-309/final_consolidate_309.py
+      - name: Commit persisted final evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add execution/06/v17/synonym-system-309/runs/FINAL_CONSOLIDATED_309_V17/
+          if ! git diff --cached --quiet; then
+            git commit -m "evidence(06): final consolidated 309 QA $GITHUB_RUN_ID"
+            git push
+          fi
