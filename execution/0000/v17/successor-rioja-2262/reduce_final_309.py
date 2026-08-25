@@ -1,4 +1,4 @@
-import json, hashlib
+import json, hashlib, csv
 from pathlib import Path
 
 SRC = Path('execution/06/v17/synonym-system-309/runs/FINAL_CONSOLIDATED_309_V17/CONSOLIDATED_309.jsonl')
@@ -45,34 +45,31 @@ for r in rows:
         rid=None if r['ID_TAXON_EXACT'] in (None,'') else str(r['ID_TAXON_EXACT'])
         d={'position309':r['position309'],'B_SOURCE_RECORD_ID':r['B_SOURCE_RECORD_ID'],'nameVerbatim':r['nameVerbatim'],'ID_TAXON_EXACT':rid,'closureIds':r['closureIds'],'state':r['state']}
         if rid is None:
-            d['identityCheck']='FAIL_MISSING_ID'
-            violations.append({'type':'RESOLVED_MISSING_ID',**d})
+            d['identityCheck']='FAIL_MISSING_ID'; violations.append({'type':'RESOLVED_MISSING_ID',**d})
         elif rid not in r['closureIds']:
-            d['identityCheck']='FAIL_SELECTED_ID_NOT_IN_CLOSURE'
-            violations.append({'type':'RESOLVED_SELECTED_ID_NOT_IN_CLOSURE',**d})
+            d['identityCheck']='FAIL_SELECTED_ID_NOT_IN_CLOSURE'; violations.append({'type':'RESOLVED_SELECTED_ID_NOT_IN_CLOSURE',**d})
         else:
             d['identityCheck']='PASS_SELECTED_ID_IN_CLOSURE'
-            if len(r['closureIds'])>1:
-                d['note']='MULTIPLE_CLOSURE_IDS_PRESERVED;FINAL_SELECTED_ID_TAXON_EXACT_IS_OPERATIONAL_RESOLUTION'
+            if len(r['closureIds'])>1: d['note']='MULTIPLE_CLOSURE_IDS_PRESERVED;FINAL_SELECTED_ID_TAXON_EXACT_IS_OPERATIONAL_RESOLUTION'
         resolved_diagnostics.append(d)
 
-all_path=OUTDIR/'ALL_309_REDUCED.jsonl'
-res_path=OUTDIR/'RESOLVED_47_REDUCED.jsonl'
+all_path=OUTDIR/'ALL_309_REDUCED.jsonl'; res_path=OUTDIR/'RESOLVED_47_REDUCED.jsonl'; min_path=OUTDIR/'ALL_309_IDENTITY_MIN.csv'
 with all_path.open('w',encoding='utf-8') as f:
     for r in rows: f.write(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n')
 with res_path.open('w',encoding='utf-8') as f:
     for r in rows:
         if r['finalCategory']=='RESOLVED': f.write(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n')
+with min_path.open('w',encoding='utf-8',newline='') as f:
+    w=csv.writer(f); w.writerow(['position309','B_SOURCE_RECORD_ID','nameVerbatim','sourceRank','isHybrid','finalCategory','ID_TAXON_EXACT','state'])
+    for r in rows: w.writerow([r['position309'],r['B_SOURCE_RECORD_ID'],r['nameVerbatim'],r['sourceRank'],r['isHybrid'],r['finalCategory'],r['ID_TAXON_EXACT'] or '',r['state'] or ''])
 (OUTDIR/'RESOLVED_47_DIAGNOSTICS.json').write_text(json.dumps(resolved_diagnostics,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 summary={
     'scope':len(rows),'counts':counts,'uniqueSourceIds':len(set(source_ids)),
     'sourceSha256Actual':sha(SRC),'sourceSha256Expected':EXPECTED_SHA,
-    'all309Sha256':sha(all_path),'resolved47Sha256':sha(res_path),
+    'all309Sha256':sha(all_path),'resolved47Sha256':sha(res_path),'all309IdentityMinSha256':sha(min_path),
     'resolvedWithMultipleClosureIds':sum(1 for d in resolved_diagnostics if len(d['closureIds'])>1),
-    'violations':violations,
-    'qa':'PASS' if not violations else 'FAIL'
+    'violations':violations,'qa':'PASS' if not violations else 'FAIL'
 }
 (OUTDIR/'PREFLIGHT_309_SUMMARY.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(summary,ensure_ascii=False))
-if violations:
-    raise SystemExit('PREFLIGHT_QA_FAIL')
+if violations: raise SystemExit('PREFLIGHT_QA_FAIL')
