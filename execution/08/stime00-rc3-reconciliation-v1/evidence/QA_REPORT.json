@@ -1,0 +1,43 @@
+{
+  "schema": "08_STIME00_RC3_RECONCILIATION_QA_REPORT_V1",
+  "authority_event": "JBLR-EVT-0000-20260826-ACCEPT-04-STIME00-RC3-DESIGN-V18-001",
+  "design_report_drive_id": "1c5FdjbCt6oO8om0K5scyzJS5iQVRC1pdmsER-WK73LA",
+  "rc3_accept_event": "JBLR-EVT-0000-20260825-ACCEPT-RC3-SUCCESSOR-V18-001",
+  "base_commit": "7626679fe65243b1448ff4ce687ffb7d76e2addf",
+  "branch": "08-stime00-rc3-reconciliation-v1",
+  "controlled_unit_tests": {"total": 18, "pass": 18, "fail": 0},
+  "controlled_integration": {"state": "PASS", "receipt": "evidence/INTEGRATION_QA_RECEIPT.json"},
+  "verified": {
+    "historical_rows": 2210,
+    "historical_unique_twk": 2210,
+    "rc3_inherited_rows": 2210,
+    "twk_intersection": 2210,
+    "missing_historical_twk_in_rc3": 0,
+    "rc3_inherited_twk_without_history": 0,
+    "rioja_order_mismatch_count": 0,
+    "identity_hub_key_mismatch_count": 0,
+    "rc3_hubs": 3033,
+    "new_official": 562,
+    "new_temp": 261,
+    "inherited_official_evidence": 1405,
+    "historical_review_queue": 14
+  },
+  "guards": {
+    "FULL_CORPUS_EXECUTION_BY_08": 0,
+    "PRODUCTIVE_IDENTITY_WORK_BY_08": 0,
+    "NEON_WRITES": 0,
+    "DATABASE_WRITES": 0,
+    "RC2_MUTATION": 0,
+    "STIME00_FINAL_VALIDATED": false,
+    "SOURCE_FAILURE_CONVERTED_TO_NOT_FOUND": 0,
+    "PARENT_ID_INHERITANCE": 0,
+    "RANK_COLLAPSE": 0,
+    "HYBRID_COLLAPSE": 0,
+    "DO_NOT_RERUN_ALL_3033": true
+  },
+  "READY_FOR_09": "YES",
+  "input_sha256": {
+    "historical_stime_csv": "94b4840377719e3f4ad8d0c27170fdbbbcf2a54d0f34a0952169b77e60510ed4",
+    "rc3_zip": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71"
+  }
+}
