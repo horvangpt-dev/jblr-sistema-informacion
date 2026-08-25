@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "actor": "06",
+  "runId": "06_SYNONYM_SYSTEM_309_V17_20260825_001",
+  "corpusId": "BIODIVERSIDAD_RIOJANA_FLORA",
+  "sourceBatchId": "CORPUS_B_NEW_309_v17",
+  "scope": 309,
+  "authorizationEvent": "JBLR-EVT-0000-20260825-EXECUTE-SYNONYM-SYSTEM-309-V17-001",
+  "inputReportDriveId": "1AsYYU5wTLV5zVt-1n9h3LIdOv0zPSmzL",
+  "humanCurrentFileId": "1i7mybeY8Qrf7-KygY7YfSMlxmdiKMHhj",
+  "inputBlobSha": "9d0f0711854e4af785535cb0289c20d5ac47dd11",
+  "inputSha256": "494b0bd91601455940e055a953b15f0d04341f0fd690e3a1253490dec2c321b2",
+  "crossWithA": false,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "corpusBFreeze": false,
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "downstreamStimesAuthorized": false,
+  "masterPromptId": "1Vn3VTU8NcOtA4-G8C0zzrhw_g_nvQ3Bt9TBUySzBZDA",
+  "restorationEvent": "JBLR-EVT-06-20260824-RESTORATION-VNEXT-001",
+  "externalTaxonomicSourcesAuthorized": true,
+  "eidosSource": "https://datos.iepnb.es/datasets/eidos.ttl",
+  "engineReuse": {
+    "reuseType": "TECHNICAL_ENGINE_ONLY",
+    "engineBranch": "06-vnext-corpus-b-185-taxonomy",
+    "enginePath": "execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py",
+    "priorResultsImported": false
+  },
+  "guards": {
+    "sameSpeciesNotSameInfraspecificTaxon": true,
+    "hybridGuard": true,
+    "sourceVerbatimPreserved": true,
+    "closed1953Untouched": true
+  }
+}
