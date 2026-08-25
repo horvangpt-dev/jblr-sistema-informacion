@@ -1,0 +1,7 @@
+{
+  "schema": "JBLR_V18_CANDIDATE_KEYS_262_V1",
+  "sourceRows": 262,
+  "keyRows": 266,
+  "parts": 5,
+  "hash": "SHA256(NFKC_CASEFOLD_SPACE_NORMALIZED_NAME|rank|hybrid_flag)"
+}
