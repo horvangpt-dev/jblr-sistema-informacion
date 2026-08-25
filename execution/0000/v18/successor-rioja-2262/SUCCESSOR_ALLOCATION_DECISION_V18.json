@@ -1,0 +1,50 @@
+{
+  "schema": "JBLR_V18_SUCCESSOR_ALLOCATION_DECISION_V1",
+  "authority": "0000.V18",
+  "successorReleaseId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "baseRelease": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2",
+  "baseFrozen": true,
+  "allocationPolicy": {
+    "rc2OrdersPreserved": "1..2210",
+    "newIdentityOrders": "append_only_from_2211_in_first_official_rioja_vascular_source_order",
+    "releaseRowId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3:ROW:<zero_padded_rioja_order>",
+    "newTaxonWorkKey": "TWK- + first24hex(SHA256(successorReleaseId + '|' + successorReleaseRowId))",
+    "taxonWorkKeyCarryForward": "existing RC2 TWK preserved exactly; generated successor TWK is immutable in all future releases",
+    "temporaryId": "ID_TAXON_JBLR_<rioja_order>",
+    "temporaryIdOnlyWhenNoExactCurrentOfficialIdAtCreation": true,
+    "historicalTemporaryIdsNeverReused": true,
+    "sourceRecordKey": "RIOJA_SOURCE_2024-09-19:VASCULAR_ORDER:<n>:RAW_ROW:<raw_excel_row>"
+  },
+  "integrationScopeGuard": {
+    "inheritedRc2CurrentOperationalIds": "PRESERVE_EXACTLY_DURING_SUCCESSOR_INTEGRATION",
+    "newOfficialEvidenceOnInheritedRc2": "LINK_AS_EVIDENCE_ONLY; DO_NOT_PROMOTE_CURRENT_ID_IN_THIS_INTEGRATION_STEP",
+    "newOfficialHubCurrentId": "EXACT_GOVERNMENT_EIDOS_ID_AT_CREATION",
+    "newUnresolvedOrConflictHubCurrentId": "TEMPORARY_JBLR_FROM_SUCCESSOR_RIOJA_ORDER",
+    "stime": "HOLD_UNTIL_SUCCESSOR_QA_AND_0000_ACCEPTANCE",
+    "neonWrites": 0,
+    "databaseWrites": 0
+  },
+  "identityRoutingCountsExpected": {
+    "sourceRowsToRc2": 1435,
+    "sourceRowsToNewOfficialHubs": 566,
+    "sourceRowsToNewTemporaryHubs": 261,
+    "newOfficialHubs": 562,
+    "newTemporaryHubs": 261,
+    "totalSuccessorHubs": 3033
+  },
+  "nonresolved262Final": {
+    "mergeRc2": 1,
+    "newTemporaryHubs": 261,
+    "mergeRc2SourceId": "1395",
+    "mergeRc2Target": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1944"
+  },
+  "guards": {
+    "fuzzy": false,
+    "parentIdInheritance": false,
+    "rankCollapse": false,
+    "hybridCollapse": false,
+    "silentNameReplacement": false,
+    "copyNeverMove": true,
+    "historyNeverDelete": true
+  }
+}
