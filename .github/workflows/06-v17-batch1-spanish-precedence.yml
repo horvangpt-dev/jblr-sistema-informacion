@@ -1,0 +1,127 @@
+name: 06 V17 Batch1 Spanish precedence
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/EXECUTE_BATCH1_PRECEDENCE.json'
+
+permissions:
+  contents: write
+
+jobs:
+  recalc_batch1_precedence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 1
+
+      - name: Validate authorization
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/06/v17/synonym-system-309/EXECUTE_BATCH1_PRECEDENCE.json'
+          x=json.load(open(p))
+          assert x['execute'] is True
+          assert x['sourceEvent']=='JBLR-EVT-0000-20260825-SPANISH-SOURCE-PRECEDENCE-V17-001'
+          assert x['batch']==1 and x['stimes']=='HOLD'
+          PY
+
+      - name: Apply Spanish source precedence to 16 conflicts
+        run: |
+          python - <<'PY'
+          import json, copy
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          src=root/'runs/SPANISH_SYNONYM_TO_EIDOS_V3/batch_01_retry/BATCH_RESULTS.jsonl'
+          rows=[json.loads(x) for x in src.read_text(encoding='utf-8').splitlines() if x.strip()]
+          assert len(rows)==100 and len({str(r['B_SOURCE_RECORD_ID']) for r in rows})==100
+          assert sum(1 for r in rows if str(r.get('state','')).startswith('CONFLICT_'))==16
+          out=[]; ledger=[]
+          precedence=0; spanish_vs_spanish=0; rank_guard=0; hybrid_guard=0
+          for r in rows:
+              n=copy.deepcopy(r)
+              original_state=r.get('state')
+              spanish_ids=sorted(set(str(x) for x in (r.get('newSpanishClosureIds') or []) if x is not None))
+              spanish_relations=r.get('newSpanishRelations') or []
+              guarded=r.get('guardedRelations') or []
+              rank_guard += sum(1 for g in guarded if g.get('reason') in {'RANK_OR_HYBRID_GUARD','RANK_CHANGE_GUARD'})
+              if str(original_state).startswith('CONFLICT_'):
+                  if r.get('isHybrid'):
+                      hybrid_guard += 1
+                      decision='REMAINS_CONFLICT_HYBRID_GUARD'
+                  elif len(spanish_ids)>1:
+                      spanish_vs_spanish += 1
+                      decision='REMAINS_CONFLICT_SPANISH_VS_SPANISH'
+                  elif len(spanish_ids)==1:
+                      chosen=spanish_ids[0]
+                      n['ID_TAXON_EXACT']=chosen
+                      n['state']='RESOLVED_BY_SPANISH_SOURCE_PRECEDENCE'
+                      n['precedenceApplied']=True
+                      n['precedenceChosenId']=chosen
+                      n['competingAlternativeEvidence']={
+                          'originalState':original_state,
+                          'originalClosureIds':r.get('closureIds') or [],
+                          'oldNetworkClosureIds':r.get('oldNetworkClosureIds') or [],
+                          'queries':r.get('queries') or []
+                      }
+                      precedence += 1
+                      decision='RESOLVED_SPANISH_PRECEDENCE'
+                  else:
+                      decision='REMAINS_CONFLICT_NO_ELIGIBLE_SPANISH_ID'
+                  ledger.append({
+                      'position309':r['position309'],
+                      'B_SOURCE_RECORD_ID':r['B_SOURCE_RECORD_ID'],
+                      'nameVerbatim':r['nameVerbatim'],
+                      'originalState':original_state,
+                      'spanishClosureIds':spanish_ids,
+                      'spanishRelations':spanish_relations,
+                      'decision':decision,
+                      'finalState':n.get('state'),
+                      'finalID_TAXON_EXACT':n.get('ID_TAXON_EXACT')
+                  })
+              out.append(n)
+          target=root/'runs/SPANISH_SYNONYM_TO_EIDOS_V4/batch_01_precedence'
+          target.mkdir(parents=True,exist_ok=True)
+          with (target/'BATCH_RESULTS.jsonl').open('w',encoding='utf-8') as f:
+              for r in out: f.write(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n')
+          with (target/'PRECEDENCE_LEDGER.jsonl').open('w',encoding='utf-8') as f:
+              for r in ledger: f.write(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n')
+          resolved=sum(1 for r in out if r.get('ID_TAXON_EXACT'))
+          conflicts=sum(1 for r in out if str(r.get('state','')).startswith('CONFLICT_'))
+          unresolved=100-resolved-conflicts
+          summary={
+              'pass':True,'batch':1,'processedRows':100,'uniqueIds':100,
+              'resolved':resolved,'conflicts':conflicts,'unresolved':unresolved,
+              'spanishPrecedenceResolutions':precedence,
+              'spanishVsSpanishConflicts':spanish_vs_spanish,
+              'rankGuardBlocks':rank_guard,'hybridGuardBlocks':hybrid_guard,
+              'sourceEvent':'JBLR-EVT-0000-20260825-SPANISH-SOURCE-PRECEDENCE-V17-001',
+              'guards':{'noFuzzy':True,'noParentIdInheritance':True,'noRankCollapse':True,'noSpeciesSubspeciesCollapse':True,'noHybridCollapse':True,'sourceNameDeletion':False},
+              'rc2Mutation':0,'neonWrites':0,'databaseWrites':0,'stimes':'HOLD'
+          }
+          (target/'SUMMARY.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          assert len(out)==100 and len({str(r['B_SOURCE_RECORD_ID']) for r in out})==100
+          assert [int(r['position309']) for r in out]==list(range(1,101))
+          assert resolved+conflicts+unresolved==100
+          assert all(out[i]['nameVerbatim']==rows[i]['nameVerbatim'] for i in range(100))
+          print(json.dumps(summary,ensure_ascii=False))
+          PY
+
+      - name: Persist immutable precedence evidence
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add "$ROOT/runs/SPANISH_SYNONYM_TO_EIDOS_V4/batch_01_precedence"
+          git commit -m "evidence(06): batch1 Spanish precedence ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
+
+      - name: Hold downstream
+        run: echo 'RC2_MUTATION=0; NEON_WRITES=0; DATABASE_WRITES=0; STIME=HOLD'
