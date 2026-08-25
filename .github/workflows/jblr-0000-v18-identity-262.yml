@@ -1,0 +1,93 @@
+name: JBLR 0000 V18 Nonresolved 262 Identity
+
+on:
+  push:
+    branches:
+      - 0000-v17-successor-rioja-2262
+    paths:
+      - '.github/workflows/jblr-0000-v18-identity-262.yml'
+      - 'execution/0000/v18/successor-rioja-2262/analyze_nonresolved_262_identity.py'
+      - 'execution/0000/v18/successor-rioja-2262/inputs/DIRECT_OFFICIAL_550_INDEX.json.gz.b64'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  identity-262:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout successor branch
+        uses: actions/checkout@v4
+        with:
+          ref: 0000-v17-successor-rioja-2262
+          fetch-depth: 0
+
+      - name: Restore persisted 06 and RC2 evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin 06-v17-synonym-system-309 09-stime00-execution-run-1
+          git show origin/06-v17-synonym-system-309:execution/06/v17/synonym-system-309/runs/FINAL_CONSOLIDATED_309_V17/CONSOLIDATED_309.jsonl > /tmp/CONSOLIDATED_309.jsonl
+          rm -f /tmp/RC2_MEMBERSHIP_2210.jsonl.gz.b64 /tmp/RC2_MEMBERSHIP_2210.jsonl.gz /tmp/RC2_MEMBERSHIP_2210.jsonl
+          while IFS= read -r p; do
+            git show origin/09-stime00-execution-run-1:"$p" >> /tmp/RC2_MEMBERSHIP_2210.jsonl.gz.b64
+          done < <(git ls-tree -r --name-only origin/09-stime00-execution-run-1 execution/09/stime00/membership_parts | sort)
+          base64 -d /tmp/RC2_MEMBERSHIP_2210.jsonl.gz.b64 > /tmp/RC2_MEMBERSHIP_2210.jsonl.gz
+          gzip -dc /tmp/RC2_MEMBERSHIP_2210.jsonl.gz > /tmp/RC2_MEMBERSHIP_2210.jsonl
+          test "$(grep -cve '^$' /tmp/CONSOLIDATED_309.jsonl)" -eq 309
+          test "$(grep -cve '^$' /tmp/RC2_MEMBERSHIP_2210.jsonl)" -eq 2210
+
+      - name: Execute strict identity routing
+        id: analyze
+        shell: bash
+        run: |
+          set +e
+          python execution/0000/v18/successor-rioja-2262/analyze_nonresolved_262_identity.py | tee /tmp/identity262.log
+          code=${PIPESTATUS[0]}
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Persist routing evidence
+        shell: bash
+        env:
+          ANALYZE_EXIT: ${{ steps.analyze.outputs.exit_code }}
+          RUN_ID: ${{ github.run_id }}
+          TRIGGER_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          d=execution/0000/v18/successor-rioja-2262
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          d=Path('execution/0000/v18/successor-rioja-2262')
+          receipt={
+            'schema':'JBLR_V18_IDENTITY_262_RUN_RECEIPT_V1',
+            'runId':int(os.environ['RUN_ID']),
+            'triggerSha':os.environ['TRIGGER_SHA'],
+            'analyzeExitCode':int(os.environ['ANALYZE_EXIT']),
+            'rc2Mutation':0,
+            'neonWrites':0,
+            'databaseWrites':0,
+            'stime':'HOLD'
+          }
+          (d/'IDENTITY_262_RUN_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$d/NONRESOLVED_262_IDENTITY_ROUTING.json" "$d/NONRESOLVED_262_IDENTITY_EDGES.json" "$d/QA_NONRESOLVED_262_IDENTITY.json" "$d/IDENTITY_262_RUN_RECEIPT.json"
+          if ! git diff --cached --quiet; then
+            git commit -m "evidence(0000-v18): route nonresolved 262 identities ${RUN_ID}"
+            git push origin HEAD:0000-v17-successor-rioja-2262
+          fi
+
+      - name: Enforce identity collision stop
+        shell: bash
+        env:
+          ANALYZE_EXIT: ${{ steps.analyze.outputs.exit_code }}
+        run: |
+          if [ "$ANALYZE_EXIT" != "0" ]; then
+            echo "Identity analysis reported a governed stop; evidence was persisted."
+            exit "$ANALYZE_EXIT"
+          fi
