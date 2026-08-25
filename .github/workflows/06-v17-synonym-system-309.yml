@@ -1,0 +1,160 @@
+name: 06 V17 synonym system 309
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/EXECUTE_AUTH.json'
+
+permissions:
+  contents: write
+
+jobs:
+  synonym_system_309:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout isolated 309 branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 1
+
+      - name: Validate authority and immutable input
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          python - <<'PY'
+          import json
+          root='execution/06/v17/synonym-system-309'
+          r=json.load(open(root+'/RUN_REQUEST.json'))
+          a=json.load(open(root+'/EXECUTE_AUTH.json'))
+          assert r['enabled'] is True and r['actor']=='06'
+          assert r['runId']=='06_SYNONYM_SYSTEM_309_V17_20260825_001'
+          assert r['scope']==309
+          assert r['authorizationEvent']=='JBLR-EVT-0000-20260825-EXECUTE-SYNONYM-SYSTEM-309-V17-001'
+          assert r['inputReportDriveId']=='1AsYYU5wTLV5zVt-1n9h3LIdOv0zPSmzL'
+          assert r['crossWithA'] is False and r['corpusBFreeze'] is False
+          assert r['neonWrites']==0 and r['databaseWrites']==0
+          assert r['noFuzzy'] is True and r['noParentIdInheritance'] is True and r['noRankCollapse'] is True
+          assert r['downstreamStimesAuthorized'] is False
+          assert r['guards']['sameSpeciesNotSameInfraspecificTaxon'] is True
+          assert r['guards']['hybridGuard'] is True
+          assert a['actor']=='06' and a['scope']==309 and a['execute'] is True
+          assert a['authorizationEvent']==r['authorizationEvent']
+          PY
+          test "$(git hash-object "$ROOT/SOURCE_309.json")" = '9d0f0711854e4af785535cb0289c20d5ac47dd11'
+
+      - name: Fetch validated technical engine
+        run: |
+          set -euo pipefail
+          git fetch origin 06-vnext-corpus-b-185-taxonomy --depth=1 --no-tags
+          git show origin/06-vnext-corpus-b-185-taxonomy:execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py > "$RUNNER_TEMP/taxonomy_185_vnext.py"
+          test -s "$RUNNER_TEMP/taxonomy_185_vnext.py"
+          test -s execution/06/v17/synonym-system-309/run_synonym_309.py
+
+      - name: Install runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Download current official EIDOS snapshot
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl" | tee "$RUNNER_TEMP/eidos.sha256"
+
+      - name: Execute synonym and documented name-network system on 309
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          OUT="$ROOT/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001"
+          rm -rf "$OUT"
+          mkdir -p "$OUT" "$ROOT/state"
+          cat > "$ROOT/state/RUNNING.json" <<JSON
+          {"state":"RUNNING","actor":"06","runId":"06_SYNONYM_SYSTEM_309_V17_20260825_001","scope":309,"githubRunId":"${GITHUB_RUN_ID}","crossWithA":false,"neonWrites":0,"databaseWrites":0,"corpusBFreeze":false,"downstreamStimesExecuted":false}
+          JSON
+          python "$ROOT/run_synonym_309.py" \
+            "$RUNNER_TEMP/taxonomy_185_vnext.py" \
+            "$ROOT/SOURCE_309.json" \
+            "$RUNNER_TEMP/eidos.ttl" \
+            "$OUT" \
+            "$ROOT/RUN_REQUEST.json"
+
+      - name: Enforce QA and guards
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          out=root/'runs/06_SYNONYM_SYSTEM_309_V17_20260825_001'
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          q=json.load(open(out/'QA_REPORT.json'))
+          ids=json.load(open(out/'ID_TAXON_STATE_RESULTS.json'))['rows']
+          intake=json.load(open(out/'SOURCE_INTAKE_RECEIPTS.json'))['rows']
+          assert r['processedRows']==309 and r['inputRows']==309
+          assert len(ids)==309 and len(intake)==309
+          assert q['pass'] is True
+          assert q['checks']['rankGuard309'] is True
+          assert q['checks']['hybridFormulaGuardApplied'] is True
+          assert all(not x['forcedId'] for x in ids)
+          assert all(not x['fuzzyUsed'] for x in ids)
+          assert all(not x['parentIdInherited'] for x in ids)
+          assert all(not x['rankCollapsed'] for x in ids)
+          assert r['crossWithA'] is False and r['corpusBFreeze'] is False
+          assert r['neonWrites']==0 and r['databaseWrites']==0
+          assert r['downstreamStimesExecuted'] is False and r['existingCorpusOverwritten'] is False
+          print(json.dumps({
+            'processedRows':309,
+            'resolvedCount':r.get('resolvedCount',0),
+            'conflictCount':r.get('conflictCount',0),
+            'pureUnresolvedCount':r.get('pureUnresolvedCount',0),
+            'hybridFormulaGuardedCount':r.get('hybridFormulaGuardedCount',0),
+            'sourceStatus':r.get('sourceStatus',{})
+          },ensure_ascii=False))
+          PY
+
+      - name: Persist immutable evidence
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          OUT="$ROOT/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          out=root/'runs/06_SYNONYM_SYSTEM_309_V17_20260825_001'
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          state={
+            'state':r['state'],'stopRequired':r['stopRequired'],'stopReason':r['stopReason'],
+            'runId':r['runId'],'githubRunId':os.environ['GITHUB_RUN_ID'],'scope':309,
+            'processedRows':r['processedRows'],'resolvedCount':r.get('resolvedCount',0),
+            'unresolvedOrConflictCount':r.get('unresolvedOrConflictCount',0),
+            'conflictCount':r.get('conflictCount',0),'pureUnresolvedCount':r.get('pureUnresolvedCount',0),
+            'hybridFormulaGuardedCount':r.get('hybridFormulaGuardedCount',0),
+            'crossWithA':False,'neonWrites':0,'databaseWrites':0,'corpusBFreeze':False,
+            'downstreamStimesExecuted':False
+          }
+          (root/'state/TERMINAL.json').write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add "$OUT" "$ROOT/state/RUNNING.json" "$ROOT/state/TERMINAL.json"
+          git commit -m "evidence(06): synonym system 309 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
+
+      - name: Enforce stop before downstream STIME
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/06/v17/synonym-system-309/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          if r['stopRequired']:
+              raise SystemExit('STOP_REQUIRED: '+str(r['stopReason']))
+          assert r['state']=='PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES'
+          assert r['processedRows']==309 and r['downstreamStimesExecuted'] is False
+          PY
