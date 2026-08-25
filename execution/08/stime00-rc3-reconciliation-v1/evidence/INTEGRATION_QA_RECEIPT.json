@@ -1,0 +1,76 @@
+{
+  "mode": "STIME00_RC3_RECONCILIATION_CONTROLLED_QA",
+  "release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "input_sha256": {
+    "historical_stime_csv": "94b4840377719e3f4ad8d0c27170fdbbbcf2a54d0f34a0952169b77e60510ed4",
+    "rc3_zip": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71"
+  },
+  "manifest_check": {
+    "pass": true,
+    "release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+    "counts": {
+      "hubs": 3033,
+      "rc2Inherited": 2210,
+      "newOfficial": 562,
+      "newTemporary": 261,
+      "sourceRows": 2262,
+      "inheritedOfficialEvidenceDeferred": 1405
+    }
+  },
+  "historical_reconciliation": {
+    "historical_rows": 2210,
+    "historical_unique_twk": 2210,
+    "rc3_inherited_rows": 2210,
+    "rc3_inherited_unique_twk": 2210,
+    "intersection": 2210,
+    "missing_historical_twk_in_rc3": 0,
+    "rc3_inherited_twk_without_history": 0,
+    "rioja_order_mismatch_count": 0,
+    "identity_hub_key_mismatch_count": 0,
+    "pass": true
+  },
+  "cohorts": {
+    "total_hubs": 3033,
+    "cohort_a_inherited": 2210,
+    "cohort_b_total": 823,
+    "new_official": 562,
+    "new_temp": 261,
+    "new_official_missing_government_id": 0,
+    "new_official_wrong_state": 0,
+    "new_temp_with_government_id": 0,
+    "new_temp_wrong_state": 0,
+    "pass": true
+  },
+  "inherited_official_evidence": {
+    "rows": 1405,
+    "states": {
+      "DEFERRED_TO_STIME_SAME_RANK_RECONFIRMED": 1303,
+      "BLOCK_CURRENT_RANK_MISMATCH_PRESERVE_EVIDENCE": 16,
+      "DEFERRED_TO_STIME_CURRENT_MITECO_NOT_VERIFIED": 55,
+      "DEFERRED_TO_STIME_DIRECT_OFFICIAL_CONFIRMED": 1,
+      "DEFERRED_TO_STIME_ACTOR06_ACCEPTED_EXACT_IDENTITY": 30
+    },
+    "current_id_changed_in_integration": 0,
+    "pass": true
+  },
+  "scope_for_09": {
+    "historical_review_queue_count": 14,
+    "new_temp_fresh_scope_count": 261,
+    "new_official_reuse_only_count": 562,
+    "do_not_rerun_all_3033": true,
+    "productive_execution_by_08": 0
+  },
+  "guards": {
+    "FULL_CORPUS_EXECUTION_BY_08": 0,
+    "PRODUCTIVE_IDENTITY_WORK_BY_08": 0,
+    "NEON_WRITES": 0,
+    "DATABASE_WRITES": 0,
+    "RC2_MUTATION": 0,
+    "STIME00_FINAL_VALIDATED": false,
+    "SOURCE_FAILURE_CONVERTED_TO_NOT_FOUND": 0,
+    "PARENT_ID_INHERITANCE": 0,
+    "RANK_COLLAPSE": 0,
+    "HYBRID_COLLAPSE": 0
+  },
+  "READY_FOR_09": "YES"
+}
