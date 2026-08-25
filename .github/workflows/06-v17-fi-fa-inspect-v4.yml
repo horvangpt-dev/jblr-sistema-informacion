@@ -1,0 +1,55 @@
+name: 06 V17 FI FA inspect v4
+on:
+  push:
+    branches: [06-v17-synonym-system-309]
+    paths: ['execution/06/v17/synonym-system-309/INSPECT_FI_FA_V4.json']
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: 06-v17-synonym-system-309}
+      - run: python -m pip install requests beautifulsoup4
+      - run: |
+          python - <<'PY'
+          import json,re,requests,urllib3
+          from bs4 import BeautifulSoup
+          from pathlib import Path
+          urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+          S=requests.Session(); S.headers.update({'User-Agent':'Mozilla/5.0 JBLR/1.0'})
+          out={}
+          # FI direct, TLS bypass documented
+          fi={}
+          for g in ['Anchusa','Asperula','Allium','Anthemis']:
+              u=f'https://www.floraiberica.es/PHP/cientificos_.php?gen={g}'
+              r=S.get(u,timeout=20,verify=False)
+              soup=BeautifulSoup(r.content,'html.parser')
+              fi[g]={'status':r.status_code,'len':len(r.content),'text':soup.get_text('\n',strip=True)[:30000],
+                     'links':[{'text':a.get_text(' ',strip=True),'href':a.get('href')} for a in soup.find_all('a') if a.get('href')][:1000]}
+          out['FI']=fi
+          # FA raw structure
+          r=S.get('https://floradeandalucia.es/buscador/',timeout=20)
+          soup=BeautifulSoup(r.content,'html.parser')
+          forms=[]
+          for f in soup.find_all('form'):
+              forms.append({'action':f.get('action'),'method':f.get('method'),'id':f.get('id'),'class':f.get('class'),
+                'controls':[{'tag':i.name,'name':i.get('name'),'id':i.get('id'),'type':i.get('type'),'value':i.get('value'),'class':i.get('class')} for i in f.find_all(['input','select','button'])]})
+          scripts=[]
+          for sc in soup.find_all('script'):
+              src=sc.get('src'); txt=(sc.string or sc.get_text() or '')
+              if src or txt.strip(): scripts.append({'src':src,'text':txt[:20000]})
+          out['FA']={'forms':forms,'scripts':scripts,'taxonLinks':[{'text':a.get_text(' ',strip=True),'href':a.get('href')} for a in soup.find_all('a') if '/taxones/' in (a.get('href') or '')][:200]}
+          root=Path('execution/06/v17/synonym-system-309/runs/FI_FA_INSPECT_V4'); root.mkdir(parents=True,exist_ok=True)
+          (root/'inspect.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('FI_FA_INSPECT_DONE')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add execution/06/v17/synonym-system-309/runs/FI_FA_INSPECT_V4
+          git commit -m "evidence(06): FI FA inspect v4 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
