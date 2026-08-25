@@ -1,0 +1,42 @@
+{
+  "release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "release_state": "CANDIDATE_QA_PASS_PENDING_0000_ACCEPTANCE",
+  "hub_count": 3033,
+  "rc2_hubs": 2210,
+  "new_official_hubs": 562,
+  "new_temp_hubs": 261,
+  "source_rows": 2262,
+  "source_route_counts": {
+    "NEW_OFFICIAL": 566,
+    "RC2": 1435,
+    "NEW_TEMP": 261
+  },
+  "final309_counts": {
+    "CONFLICT": 48,
+    "UNRESOLVED": 214,
+    "RESOLVED": 47
+  },
+  "inherited_official_evidence_rows_deferred_to_stime": 1405,
+  "inherited_operational_id_changes_in_integration": 0,
+  "stime": "HOLD",
+  "neon_writes": 0,
+  "database_writes": 0,
+  "qa": {
+    "RC2_VALUES_CHANGED": 0,
+    "RC2_ROWS_LOST": 0,
+    "RIOJA_SOURCE_ROWS_EXPECTED": 2262,
+    "RIOJA_SOURCE_ROWS_PRESERVED": 2262,
+    "SOURCE_ATTRIBUTE_LOSS": 0,
+    "309_FINAL_ROWS_ACCOUNTED": 309,
+    "TAXON_WORK_KEY_DUPLICATES": 0,
+    "ACTIVE_ID_DUPLICATES": 0,
+    "TEMP_ID_REUSE": 0,
+    "PARENT_ID_INHERITANCE": 0,
+    "RANK_COLLAPSE": 0,
+    "HYBRID_COLLAPSE": 0,
+    "SILENT_NAME_REPLACEMENT": 0,
+    "UNRESOLVED_EXCLUDED": 0,
+    "CONFLICT_EXCLUDED": 0,
+    "QA_FINAL": "PASS"
+  }
+}
