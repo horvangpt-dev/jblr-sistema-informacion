@@ -1,0 +1,77 @@
+{
+  "schema": "JBLR_CONTROL_STATE_V1",
+  "updated_date": "2026-08-26",
+  "authority": {
+    "actor_id": "00000",
+    "name": "DIRECCION GENERAL JBLR",
+    "role": "CEO_JBLR",
+    "superior_actor": "000000",
+    "superior_role": "COORDINATION_ONLY"
+  },
+  "north_star": {
+    "program": "Sistema Integral de Informacion y Gestion JBLR",
+    "one_jblr_system": true,
+    "one_master_information_universe": true,
+    "projects_are_execution_contexts": true,
+    "files_are_not_the_database": true,
+    "data_capture_once_reuse_many": true
+  },
+  "current_state": {
+    "macro_phase": "INSTITUTIONAL_INFRASTRUCTURE_PLUS_TAXONOMIC_SUCCESSOR_INTEGRATION",
+    "workstream": "00000_CONTROL_SYSTEM_PLUS_V18_TAXONOMIC_CONTINUITY",
+    "current_step": "ESTABLISH_PERSISTENT_DIRECTION_CONTROL",
+    "next_step": "RESUME_V18_IDENTITY_GUARD_FOR_48_CONFLICT_PLUS_214_UNRESOLVED",
+    "taxonomic_successor_state": "IN_PROGRESS_AFTER_PREFLIGHT",
+    "stime_state": "HOLD",
+    "neon_writes": 0,
+    "blocker": "CLOSE_INTERNAL_IDENTITY_DEDUPLICATION_OF_262_BEFORE_CREATING_TEMPORARY_HUBS"
+  },
+  "roadmap": [
+    {"phase":"00_DIRECTION_GOVERNANCE","state":"IN_PROGRESS"},
+    {"phase":"01_CORE_PLATFORM","state":"PARTIALLY_BUILT"},
+    {"phase":"02_TAXONOMIC_UNIVERSE","state":"IN_PROGRESS"},
+    {"phase":"03_FIELD_REGISTRY_STIMES","state":"EXISTS_NEEDS_CONSOLIDATION"},
+    {"phase":"04_ANALYTICAL_ENGINES","state":"PARTIALLY_BUILT"},
+    {"phase":"05_OPERATIONAL_ENGINE","state":"DESIGNED_NOT_COMPLETE"},
+    {"phase":"06_PROJECT_RUNTIME","state":"IN_PROGRESS"},
+    {"phase":"07_EXTERNAL_OUTPUTS","state":"DESIGNED_NOT_COMPLETE"},
+    {"phase":"08_INTERFACES","state":"FUTURE"}
+  ],
+  "critical_resources": {
+    "github_repo": "horvangpt-dev/jblr-sistema-informacion",
+    "github_control_branch": "00000-general-jblr-control",
+    "neon_project": "crimson-hall-16978747",
+    "neon_default_branch": "br-polished-pond-b24mvk11",
+    "shared_event_bus": "1ooGUwDYQ5Q_nR6ctvrMx1kS1ESaJVmNDsyizLeXRMNs",
+    "canonical_state": "1UhIkAmCNLVJibUUhbAogyU8EtzUsNOsIqdkEdfS_KMo",
+    "human_root": "10Crw_B-tBHtSFtmtibNyTTwEVvDiUfW7",
+    "direction_folder": "1Xav2GlwsnanajH7do1SE7PB9NchZINVp",
+    "north_star_doc": "1ueDylJoQK60icM7YTVHi_JhOYpAKR-58c8M3t21Cvso",
+    "control_tower_sheet": "1BwT5rTiLhNYXPn9zLXxqVb8RySbDiXqIkpdh9Pbr08E",
+    "resource_guide_doc": "1jZDCYCOwiSQeONGLIl7n5MeyUZEv24Us9U_DRA9Kcsg",
+    "restore_protocol_doc": "1CQ_7pH9cSlt4Ol61DJuO1vgaYzKk_REOlSMOcyq8Ak4",
+    "stimes_folder": "1Rx3r9xMUFamdMb490RCakEZHpmUkoxuM",
+    "amenaza_interes_folder": "1qRWlmDQoBQI3yGMp-XFZD51hu5olIcgv"
+  },
+  "restore_requirements": [
+    "READ_NORTH_STAR",
+    "READ_CONTROL_TOWER",
+    "READ_RESOURCE_GUIDE",
+    "READ_RESTORE_PROTOCOL",
+    "VERIFY_VOLATILE_GITHUB_NEON_DRIVE_STATE",
+    "EMIT_RESTORATION_REPORT_BEFORE_STRATEGIC_WORK"
+  ],
+  "invariants": {
+    "reality_first": true,
+    "persisted_evidence_first": true,
+    "no_silent_inference": true,
+    "copy_never_move": true,
+    "history_never_delete": true,
+    "conversational_memory_is_not_canonical": true,
+    "unknown_is_not_zero": true,
+    "not_found_is_not_absence": true,
+    "name_is_not_identity": true,
+    "project_is_not_data_container": true,
+    "excel_is_not_core": true
+  }
+}
