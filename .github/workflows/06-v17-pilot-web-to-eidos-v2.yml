@@ -1,0 +1,88 @@
+name: 06 V17 Spanish web to EIDOS pilot v2
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/PILOT_WEB_TO_EIDOS_V2_TRIGGER.json'
+
+permissions:
+  contents: write
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+      - name: Download current EIDOS
+        run: |
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+      - name: Exact EIDOS pilot with guards
+        run: |
+          python - <<'PY'
+          import json,re,os
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          seed=json.load(open(root/'PILOT_WEB_TO_EIDOS_V2.json',encoding='utf-8'))
+          def norm(s): return re.sub(r'\s+',' ',(s or '').replace('×','x').strip()).casefold()
+          def canonical(name):
+              s=re.sub(r'\s+',' ',(name or '').replace('×',' x ').strip())
+              pat=re.compile(r'^([A-ZÁÉÍÓÚÜÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ.-]+\s+(?:x\s+)?[a-záéíóúüñ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9.-]+(?:\s+(?:subsp\.?|ssp\.?|var\.?|f\.?|nothosubsp\.?)\s+[a-záéíóúüñ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9.-]+)?)')
+              m=pat.match(s); c=m.group(1) if m else s
+              c=re.sub(r'\bssp\.?(?=\s)','subsp.',c)
+              c=re.sub(r'\bsubsp\.?(?=\s)','subsp.',c)
+              c=re.sub(r'\bvar\.?(?=\s)','var.',c)
+              c=re.sub(r'\bf\.?(?=\s)','f.',c)
+              return re.sub(r'\s+',' ',c).strip().replace(' x ',' × ')
+          def rank_norm(s):
+              x=norm(s).replace('.','').replace('_',' ')
+              return {'sp':'species','species':'species','especie':'species','subsp':'subspecies','ssp':'subspecies','subspecies':'subspecies','subespecie':'subspecies','var':'variety','variety':'variety','variedad':'variety','forma':'form','form':'form','f':'form','nothospecies':'species','nothosubspecies':'subspecies'}.get(x,x)
+          idx={}; block=[]
+          def emit(lines):
+              if not lines: return
+              t='\n'.join(lines)
+              mn=re.search(r'Darwin:scientificName\s+"([^"]+)"',t); mi=re.search(r'Darwin:taxonID\s+"([^"]+)"',t)
+              if not (mn and mi): return
+              ms=re.search(r'Darwin:taxonomicStatus\s+"([^"]+)"',t); mr=re.search(r'Darwin:taxonRank\s+"([^"]+)"',t); ma=re.search(r'Darwin:nameAccordingTo\s+"([^"]+)"',t)
+              c=canonical(mn.group(1)); rec={'scientificName':mn.group(1),'canonicalName':c,'taxonID':mi.group(1),'taxonomicStatus':ms.group(1) if ms else None,'rank':rank_norm(mr.group(1) if mr else ''),'nameAccordingTo':ma.group(1) if ma else None}
+              idx.setdefault(norm(c),[]).append(rec)
+          with open(Path(os.environ['RUNNER_TEMP'])/'eidos.ttl',encoding='utf-8',errors='replace') as f:
+              for line in f:
+                  if not line.strip(): emit(block); block=[]
+                  else: block.append(line.rstrip())
+              emit(block)
+          assert len(idx)>1000
+          out=[]
+          for c in seed['cases']:
+              alias=c['alias']; source_rank=c['sourceRank']; alias_rank=c['aliasRank']
+              recs=idx.get(norm(canonical(alias)),[])
+              same=[r for r in recs if r.get('rank')==alias_rank]
+              accepted=[r for r in same if norm(r.get('taxonomicStatus')) in {'aceptado/válido','aceptado/valido','accepted','valid'}]
+              if source_rank != alias_rank:
+                  state='GUARDED_RANK_CHANGE'; tid=None
+              elif len(accepted)==1:
+                  state='RESOLVED_UNIQUE_EXACT_EIDOS_ID'; tid=accepted[0]['taxonID']
+              elif len(accepted)>1:
+                  state='CONFLICT_MULTIPLE_EXACT_EIDOS_IDS'; tid=None
+              else:
+                  state='UNRESOLVED_EXACT_EIDOS'; tid=None
+              out.append({**c,'eidosQuery':alias,'eidosExactRecords':same,'ID_TAXON_EXACT':tid,'state':state})
+          assert len(out)==3
+          assert all(x['sourceNameVerbatim'] for x in out)
+          p=root/'runs'/'PILOT_WEB_TO_EIDOS_V2'; p.mkdir(parents=True,exist_ok=True)
+          (p/'RESULT.json').write_text(json.dumps({'pilot':'SPANISH_WEB_TO_EIDOS_V2','pass':True,'rows':out},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps([{'name':x['sourceNameVerbatim'],'alias':x['alias'],'id':x['ID_TAXON_EXACT'],'state':x['state']} for x in out],ensure_ascii=False))
+          PY
+      - name: Persist evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add execution/06/v17/synonym-system-309/runs/PILOT_WEB_TO_EIDOS_V2
+          git commit -m "evidence(06): Spanish web-to-EIDOS pilot v2 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
