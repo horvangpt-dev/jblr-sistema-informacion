@@ -62,6 +62,17 @@
         "selectedIdSupported": false,
         "records": []
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Agave americana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Agave americana"
+        ]
+      }
     ]
   },
   {
@@ -100,6 +111,17 @@
           }
         ]
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Cota triumfettii",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Cota triumfettii"
+        ]
+      }
     ]
   },
   {
@@ -136,6 +158,17 @@
             "rank": "species",
             "taxonomicStatus": "Aceptado/Válido"
           }
+        ]
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Antirrhinum litigiosum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Antirrhinum litigiosum"
         ]
       }
     ]
@@ -473,6 +506,17 @@
         "selectedIdSupported": false,
         "records": []
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Bromus willdenowii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Bromus willdenowii"
+        ]
+      }
     ]
   },
   {
@@ -566,6 +610,26 @@
           }
         ]
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Chaenorhinum exile",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Chaenorhinum exile"
+        ]
+      },
+      {
+        "alias": "Chaenorhinum exile",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Chaenorhinum exile"
+        ]
+      }
     ]
   },
   {
@@ -604,6 +668,17 @@
         "selectedIdSupported": false,
         "records": []
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Cirsium richterianum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Cirsium richterianum"
+        ]
+      }
     ]
   },
   {
@@ -640,6 +715,17 @@
             "rank": "subspecies",
             "taxonomicStatus": "Aceptado/Válido"
           }
+        ]
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Galeopsis ladanum subsp. carpetana",
+        "aliasRank": "subspecies",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Galeopsis ladanum subsp. carpetana"
         ]
       }
     ]
@@ -725,6 +811,17 @@
         "selectedIdSupported": false,
         "records": []
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Buglossoides arvensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Buglossoides arvensis"
+        ]
+      }
     ]
   },
   {
@@ -771,6 +868,17 @@
         "acceptedExactIds": [],
         "selectedIdSupported": false,
         "records": []
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Buglossoides incrassata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Buglossoides incrassata"
+        ]
       }
     ]
   },
@@ -926,6 +1034,17 @@
         "acceptedExactIds": [],
         "selectedIdSupported": false,
         "records": []
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Lotus glaber",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Lotus glaber"
+        ]
       }
     ]
   },
@@ -1125,6 +1244,17 @@
             "rank": "species",
             "taxonomicStatus": "Aceptado/Válido"
           }
+        ]
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Potentilla neumanniana",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Potentilla neumanniana"
         ]
       }
     ]
@@ -1426,6 +1556,17 @@
         "selectedIdSupported": false,
         "records": []
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Rorippa sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Rorippa sylvestris"
+        ]
+      }
     ]
   },
   {
@@ -1499,6 +1640,17 @@
         "acceptedExactIds": [],
         "selectedIdSupported": false,
         "records": []
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Rosa blondaeana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Rosa blondaeana"
+        ]
       }
     ]
   },
@@ -1854,6 +2006,26 @@
           }
         ]
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Acinos arvensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Acinos arvensis"
+        ]
+      },
+      {
+        "alias": "Acinos arvensis",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Acinos arvensis"
+        ]
+      }
     ]
   },
   {
@@ -1972,6 +2144,26 @@
             "rank": "species",
             "taxonomicStatus": "Aceptado/Válido"
           }
+        ]
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Acinos alpinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Acinos alpinus"
+        ]
+      },
+      {
+        "alias": "Acinos alpinus",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Acinos alpinus"
         ]
       }
     ]
@@ -2182,6 +2374,26 @@
             "rank": "species",
             "taxonomicStatus": "Aceptado/Válido"
           }
+        ]
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Schoenoplectus lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Schoenoplectus lacustris"
+        ]
+      },
+      {
+        "alias": "Schoenoplectus lacustris",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Schoenoplectus lacustris"
         ]
       }
     ]
@@ -2428,6 +2640,26 @@
             "rank": "species",
             "taxonomicStatus": "Aceptado/Válido"
           }
+        ]
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Schoenoplectus supinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Schoenoplectus supinus"
+        ]
+      },
+      {
+        "alias": "Schoenoplectus supinus",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Schoenoplectus supinus"
         ]
       }
     ]
@@ -2755,6 +2987,17 @@
           }
         ]
       }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Simethis mattiazzii",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Simethis mattiazzii"
+        ]
+      }
     ]
   },
   {
@@ -2801,6 +3044,17 @@
             "rank": "subspecies",
             "taxonomicStatus": "Aceptado/Válido"
           }
+        ]
+      }
+    ],
+    "selectedAliases": [
+      {
+        "alias": "Verbascum rotundifolium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "canonicalNames": [
+          "Verbascum rotundifolium"
         ]
       }
     ]
