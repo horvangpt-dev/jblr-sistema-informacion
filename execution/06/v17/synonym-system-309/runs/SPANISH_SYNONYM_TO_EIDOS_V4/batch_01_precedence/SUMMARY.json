@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "batch": 1,
+  "processedRows": 100,
+  "uniqueIds": 100,
+  "resolved": 12,
+  "conflicts": 14,
+  "unresolved": 74,
+  "spanishPrecedenceResolutions": 2,
+  "spanishVsSpanishConflicts": 0,
+  "rankGuardBlocks": 15,
+  "hybridGuardBlocks": 10,
+  "sourceEvent": "JBLR-EVT-0000-20260825-SPANISH-SOURCE-PRECEDENCE-V17-001",
+  "guards": {
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "noSpeciesSubspeciesCollapse": true,
+    "noHybridCollapse": true,
+    "sourceNameDeletion": false
+  },
+  "rc2Mutation": 0,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "stimes": "HOLD"
+}
