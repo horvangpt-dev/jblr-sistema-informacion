@@ -1,0 +1,1 @@
+Direction control system established and verified on 2026-08-26. Current operational focus returns to V18 taxonomic successor identity guard.
