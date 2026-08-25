@@ -1,0 +1,17 @@
+{
+  "actor": "06",
+  "runId": "06_SYNONYM_SYSTEM_309_V17_20260825_001",
+  "scope": 309,
+  "execute": true,
+  "authorizationEvent": "JBLR-EVT-0000-20260825-EXECUTE-SYNONYM-SYSTEM-309-V17-001",
+  "triggerNonce": "2026-08-25T07:05:00+02:00_chunk_safe_transport",
+  "transportFixOnly": true,
+  "scientificCriteriaChange": false,
+  "guards": {
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "hybridGuard": true,
+    "downstreamStimesAuthorized": false
+  }
+}
