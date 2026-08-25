@@ -1,9 +1,10 @@
 {
   "execute": true,
-  "batch": 2,
+  "batch": 3,
   "sizes": [100, 100, 109],
   "objectiveEvent": "JBLR-EVT-0000-20260825-SYNONYM-TO-EIDOS-OBJECTIVE-V17-001",
   "batchingEvent": "JBLR-EVT-0000-20260825-BATCH-309-AS-100-100-109-V17-001",
+  "completionEvent": "JBLR-EVT-0000-20260825-EXECUTE-309-REMAINING-SEQUENCE-V17-001",
   "stimes": "HOLD",
   "closed1953Untouched": true,
   "noFuzzy": true,
