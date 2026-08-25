@@ -1,0 +1,35 @@
+{
+  "pilot": "SPANISH_WEB_TO_EIDOS_V2",
+  "cases": [
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "sourceNameVerbatim": "Anthemis triumfettii",
+      "sourceRank": "species",
+      "alias": "Cota triumfettii",
+      "aliasRank": "species",
+      "relationState": "DOCUMENTED_SYNONYM_SAME_RANK",
+      "source": "Flora Montiberica 75",
+      "sourceUrl": "https://www.floramontiberica.org/FM/Flora_Montiberica75.pdf"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2545",
+      "sourceNameVerbatim": "Anchusa italica",
+      "sourceRank": "species",
+      "alias": "Anchusa azurea",
+      "aliasRank": "species",
+      "relationState": "DOCUMENTED_SYNONYM_SAME_RANK",
+      "source": "Flora Iberica XI, Anchusa",
+      "sourceUrl": "https://www.floraiberica.es/floraiberica/texto/pdfs/11_138_05_Anchusa.pdf"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "836",
+      "sourceNameVerbatim": "Asperula pyrenaica",
+      "sourceRank": "species",
+      "alias": "Asperula cynanchica subsp. pyrenaica",
+      "aliasRank": "subspecies",
+      "relationState": "DOCUMENTED_SYNONYM_RANK_CHANGE_GUARD",
+      "source": "Flora Iberica XV, Asperula",
+      "sourceUrl": "https://www.floraiberica.es/eng/PHP/cientificos2.php?autabre=%28L.%29+Nyman&espe=cynanchica&familia=Rubiaceae&gen=Asperula&infra=pyrenaica&infrank=subsp."
+    }
+  ]
+}
