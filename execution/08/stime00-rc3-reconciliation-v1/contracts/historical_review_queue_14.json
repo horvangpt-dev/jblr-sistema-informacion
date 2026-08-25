@@ -1,0 +1,21 @@
+{
+  "source_event": "JBLR-EVT-09-20260822-STIME00-32-SPANISH-SYNONYMY-RESULT-001",
+  "queue_count": 14,
+  "items": [
+    {"name": "Festuca carpetana", "state": "UNRESOLVED_CURRENT"},
+    {"name": "Festuca rivas-martinezii subsp. rivas-martinezii", "state": "UNRESOLVED_CURRENT"},
+    {"name": "Hieracium saxifragum", "state": "UNRESOLVED_CURRENT"},
+    {"name": "Hieracium valentinum", "state": "UNRESOLVED_CURRENT"},
+    {"name": "Hieracium viride", "state": "UNRESOLVED_CURRENT"},
+    {"name": "Ranunculus auricomus", "state": "UNRESOLVED_CURRENT"},
+    {"name": "Hieracium arnedianum", "state": "PRIOR_SET_ASIDE_UNTOUCHED"},
+    {"name": "Hieracium flagelliferum", "state": "PRIOR_SET_ASIDE_UNTOUCHED"},
+    {"name": "Hieracium latemixtum", "state": "PRIOR_SET_ASIDE_UNTOUCHED"},
+    {"name": "Hieracium montserratii", "state": "PRIOR_SET_ASIDE_UNTOUCHED"},
+    {"name": "Hieracium rioxanum", "state": "PRIOR_SET_ASIDE_UNTOUCHED"},
+    {"name": "Hieracium urbionicum", "state": "PRIOR_SET_ASIDE_UNTOUCHED"},
+    {"name": "Elytrigia pungens subsp. pungens", "state": "PRIOR_SET_ASIDE_UNTOUCHED"},
+    {"name": "Festuca gracilior", "state": "PRIOR_SET_ASIDE_UNTOUCHED"}
+  ],
+  "note": "Directly transcribed from accepted Event Bus evidence; no reconstruction."
+}
