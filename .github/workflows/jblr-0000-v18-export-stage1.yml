@@ -1,0 +1,39 @@
+name: JBLR 0000 V18 Export Identity Stage1
+
+on:
+  push:
+    branches:
+      - 0000-v17-successor-rioja-2262
+    paths:
+      - '.github/workflows/jblr-0000-v18-export-stage1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export-stage1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout successor branch
+        uses: actions/checkout@v4
+        with:
+          ref: 0000-v17-successor-rioja-2262
+      - name: Validate stage1 files
+        shell: bash
+        run: |
+          set -euo pipefail
+          d=execution/0000/v18/successor-rioja-2262
+          test -f "$d/NONRESOLVED_262_EXPLICIT_NAMES.json"
+          test -f "$d/NONRESOLVED_262_IDENTITY_ROUTING_STAGE1.json"
+          test -f "$d/QA_NONRESOLVED_262_IDENTITY_STAGE1.json"
+      - name: Upload stage1 identity evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: JBLR_V18_IDENTITY_262_STAGE1_EVIDENCE
+          path: |
+            execution/0000/v18/successor-rioja-2262/NONRESOLVED_262_EXPLICIT_NAMES.json
+            execution/0000/v18/successor-rioja-2262/NONRESOLVED_262_IDENTITY_ROUTING_STAGE1.json
+            execution/0000/v18/successor-rioja-2262/NONRESOLVED_262_IDENTITY_EDGES_STAGE1.json
+            execution/0000/v18/successor-rioja-2262/QA_NONRESOLVED_262_IDENTITY_STAGE1.json
+          retention-days: 30
