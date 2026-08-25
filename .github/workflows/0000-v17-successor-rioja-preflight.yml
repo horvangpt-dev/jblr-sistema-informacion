@@ -27,6 +27,8 @@ jobs:
           PY
       - name: Reduce final 309 for successor integration
         run: python execution/0000/v17/successor-rioja-2262/reduce_final_309.py
+      - name: Extract alias evidence for 19 remaining resolved candidates
+        run: python execution/0000/v17/successor-rioja-2262/extract_new19_aliases.py
       - name: Commit preflight evidence
         run: |
           git config user.name 'github-actions[bot]'
