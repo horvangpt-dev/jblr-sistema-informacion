@@ -1,0 +1,38 @@
+name: 0000 v17 successor rioja preflight
+on:
+  push:
+    branches: [0000-v17-successor-rioja-2262]
+    paths:
+      - execution/0000/v17/successor-rioja-2262/EXECUTE_PREFLIGHT.json
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 0000-v17-successor-rioja-2262
+          fetch-depth: 0
+      - name: Validate authorization
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/0000/v17/successor-rioja-2262/EXECUTE_PREFLIGHT.json'
+          x=json.load(open(p))
+          assert x['execute'] is True
+          assert x['scope']==309
+          assert x['rc2Mutation']==0
+          assert x['stimes']=='HOLD'
+          PY
+      - name: Reduce final 309 for successor integration
+        run: python execution/0000/v17/successor-rioja-2262/reduce_final_309.py
+      - name: Commit preflight evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add execution/0000/v17/successor-rioja-2262/preflight/
+          if ! git diff --cached --quiet; then
+            git commit -m "evidence(0000): successor 309 preflight $GITHUB_RUN_ID"
+            git push
+          fi
