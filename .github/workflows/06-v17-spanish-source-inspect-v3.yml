@@ -1,0 +1,76 @@
+name: 06 V17 Spanish source inspect v3
+
+on:
+  push:
+    branches: [06-v17-synonym-system-309]
+    paths:
+      - 'execution/06/v17/synonym-system-309/INSPECT_SPANISH_SOURCES_V3.json'
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+      - run: python -m pip install requests beautifulsoup4
+      - name: Inspect source internals
+        run: |
+          python - <<'PY'
+          import json,re,requests,urllib3
+          from bs4 import BeautifulSoup
+          from pathlib import Path
+          urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+          S=requests.Session(); S.headers.update({'User-Agent':'Mozilla/5.0 JBLR-source-inspector/1.0','Accept-Language':'es,en;q=0.8'})
+          out={}
+          # Flora Iberica: controlled TLS bypass only for this known host; capture links/accepted names for pilot genera.
+          fi={}
+          for genus in ['Anchusa','Asperula','Allium','Anthemis']:
+              url=f'https://www.floraiberica.es/PHP/cientificos_.php?gen={genus}'
+              try:
+                  r=S.get(url,timeout=30,verify=False,allow_redirects=True)
+                  soup=BeautifulSoup(r.content,'html.parser')
+                  links=[{'text':a.get_text(' ',strip=True),'href':a.get('href')} for a in soup.find_all('a') if a.get('href')]
+                  fi[genus]={'status':r.status_code,'len':len(r.content),'url':r.url,'title':soup.title.get_text(' ',strip=True) if soup.title else None,'text':soup.get_text('\n',strip=True)[:50000],'links':links[:1000]}
+              except Exception as e: fi[genus]={'error':type(e).__name__+':'+str(e)}
+          out['FLORA_IBERICA']=fi
+          # Flora Andalucia: inspect form, scripts, inline code and initial taxon links.
+          try:
+              r=S.get('https://floradeandalucia.es/buscador/',timeout=30)
+              soup=BeautifulSoup(r.content,'html.parser')
+              forms=[]
+              for f in soup.find_all('form'):
+                  forms.append({'action':f.get('action'),'method':f.get('method'),'id':f.get('id'),'class':f.get('class'),'inputs':[{'name':i.get('name'),'id':i.get('id'),'type':i.get('type'),'value':i.get('value'),'class':i.get('class')} for i in f.find_all(['input','select','button'])][:300]})
+              scripts=[]
+              for sc in soup.find_all('script'):
+                  src=sc.get('src'); txt=sc.string or sc.get_text() or ''
+                  if src or any(k in txt.casefold() for k in ['ajax','taxon','filter','load','buscador','rest_url','wp_ajax']):
+                      scripts.append({'src':src,'text':txt[:30000]})
+              taxlinks=[{'text':a.get_text(' ',strip=True),'href':a.get('href')} for a in soup.find_all('a') if '/taxones/' in (a.get('href') or '')]
+              out['FLORA_ANDALUCIA']={'status':r.status_code,'len':len(r.content),'forms':forms,'scripts':scripts,'taxonLinks':taxlinks[:500]}
+          except Exception as e: out['FLORA_ANDALUCIA']={'error':type(e).__name__+':'+str(e)}
+          # HVMO protocol variants and endpoints.
+          hv={}
+          for url in ['https://herbarivirtual.uib.es/es/general/A/per-nom-cientific','http://herbarivirtual.uib.es/es/general/A/per-nom-cientific','https://herbarivirtual.uib.es/ca/general/A/per-nom-cientific']:
+              try:
+                  r=S.get(url,timeout=45,allow_redirects=True,verify=False)
+                  soup=BeautifulSoup(r.content,'html.parser')
+                  hv[url]={'status':r.status_code,'len':len(r.content),'final':r.url,'title':soup.title.get_text(' ',strip=True) if soup.title else None,'links':[{'text':a.get_text(' ',strip=True),'href':a.get('href')} for a in soup.find_all('a') if a.get('href')][:300]}
+              except Exception as e: hv[url]={'error':type(e).__name__+':'+str(e)}
+          out['HVMO']=hv
+          root=Path('execution/06/v17/synonym-system-309/runs/SPANISH_SOURCE_INSPECT_V3'); root.mkdir(parents=True,exist_ok=True)
+          (root/'inspect.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps({k:'done' for k in out},ensure_ascii=False))
+          PY
+      - name: Persist
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add execution/06/v17/synonym-system-309/runs/SPANISH_SOURCE_INSPECT_V3
+          git commit -m "evidence(06): inspect Spanish source endpoints v3 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
