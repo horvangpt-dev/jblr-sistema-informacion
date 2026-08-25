@@ -1,75 +1,63 @@
 {
-  "schema": "JBLR_V18_RC3_MACHINE_PACKAGE_MANIFEST_V1",
+  "schema": "JBLR_V18_RC3_SUCCESSOR_MACHINE_MANIFEST_V1",
   "releaseId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
-  "state": "CANDIDATE_QA_PASS_PENDING_0000_ACCEPTANCE",
-  "createdBy": "0000.V18",
-  "baseRelease": {
-    "releaseId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2",
-    "driveId": "1bpPteoHpYe_bCbCTdrAphE5qRZhO1nP_",
-    "sha256": "7f8daa8951975f2ad13d9eed5c46062d383a403ff70a8650704ee21da7c3da53",
-    "frozen": true,
-    "mutation": 0
-  },
-  "riojaSource": {
-    "driveId": "10SgY3zlEWKXbRSOfO8HvynvJMF5r0zOX",
-    "sha256": "f3b2c9ca0921779cf5131ea8d4c98a35299a325cf0be4f419cfec4d39e667f4f",
-    "vascularRows": 2262
-  },
-  "globalCross": {
-    "driveId": "1AsYYU5wTLV5zVt-1n9h3LIdOv0zPSmzL"
-  },
-  "actor06": {
-    "branch": "06-v17-synonym-system-309",
-    "finalHead": "8f4ffe2af9528f72882d9aaebe5de3c976a7e487",
-    "finalRun": 32851119841,
-    "counts": {
-      "RESOLVED": 47,
-      "CONFLICT": 48,
-      "UNRESOLVED": 214,
-      "TOTAL": 309
-    }
-  },
-  "allocation": {
-    "decisionCommit": "0da63de7b65de42c0ba24170cd14fe088af65f90",
-    "rc2RiojaOrders": "1..2210 preserved",
-    "newIdentityOrders": "append-only from 2211 in first official Rioja vascular source order",
-    "newTaxonWorkKey": "TWK- + first24hex(SHA256(releaseId + '|' + successorReleaseRowId))",
-    "temporaryId": "ID_TAXON_JBLR_<rioja_order>",
-    "historicalTemporaryIdsNeverReused": true
+  "releaseState": "CANDIDATE_QA_PASS_PENDING_0000_ACCEPTANCE",
+  "allocationDecisionCommit": "0da63de7b65de42c0ba24170cd14fe088af65f90",
+  "inputs": {
+    "rc2DriveId": "1bpPteoHpYe_bCbCTdrAphE5qRZhO1nP_",
+    "rc2Sha256": "7f8daa8951975f2ad13d9eed5c46062d383a403ff70a8650704ee21da7c3da53",
+    "riojaRawDriveId": "10SgY3zlEWKXbRSOfO8HvynvJMF5r0zOX",
+    "riojaRawSha256": "f3b2c9ca0921779cf5131ea8d4c98a35299a325cf0be4f419cfec4d39e667f4f",
+    "globalCrossDriveId": "1AsYYU5wTLV5zVt-1n9h3LIdOv0zPSmzL",
+    "actor06FinalHead": "8f4ffe2af9528f72882d9aaebe5de3c976a7e487",
+    "actor06FinalSha256": "a2c49bd2f6ad05769dafecaf90b417656ef7e298305d1d250b95b32e1eb556f2"
   },
   "counts": {
-    "successorHubs": 3033,
-    "inheritedRc2Hubs": 2210,
-    "newOfficialHubs": 562,
-    "newTemporaryHubs": 261,
-    "riojaSourceRowsPreserved": 2262,
-    "riojaRowsToRc2": 1435,
-    "riojaRowsToNewOfficial": 566,
-    "riojaRowsToNewTemporary": 261,
-    "inheritedOfficialEvidenceDeferredToStime": 1405
+    "hubs": 3033,
+    "rc2Inherited": 2210,
+    "newOfficial": 562,
+    "newTemporary": 261,
+    "sourceRows": 2262,
+    "sourceToRc2": 1435,
+    "sourceToNewOfficial": 566,
+    "sourceToNewTemporary": 261,
+    "actor06Resolved": 47,
+    "actor06Conflict": 48,
+    "actor06Unresolved": 214,
+    "inheritedOfficialEvidenceDeferred": 1405
   },
-  "files": [
-    {"name":"TAXON_HUBS_3033_part01.jsonl","sha256":"b63806304c048f1bdcc0ff80e80e7b8a7f42fb34ee99ad61a2273484365f4b87"},
-    {"name":"TAXON_HUBS_3033_part02.jsonl","sha256":"d8fb80e61498a6a93f7cbac6175cd554062336dc218c67a19a1a903707160108"},
-    {"name":"TAXON_HUBS_3033_part03.jsonl","sha256":"8e7e428507af1a59a04ff40bffb9de27cf8a8a6698c21d1c5fd93e0e19f8a156"},
-    {"name":"TAXON_HUBS_3033_part04.jsonl","sha256":"44cce28cebd4793a065dd09f6ecf00f0a0fa53725f788835fe23c8d0a0139c2a"},
-    {"name":"TAXON_HUBS_3033_part05.jsonl","sha256":"bc7fa994652585969c4de7134498955746a1aac18d4fe0f36d4e79fca08c3c2d"},
-    {"name":"TAXON_HUBS_3033_part06.jsonl","sha256":"d41657e8865b342c0f82a3b8f0835c98309ec54b5da6d0095b39c7870d944448"},
-    {"name":"RIOJA_SOURCE_ROUTING_2262_part01.jsonl","sha256":"160600821a866e672e574de5ca433ca937d709753a0a847db0c5eb061311fb3f"},
-    {"name":"RIOJA_SOURCE_ROUTING_2262_part02.jsonl","sha256":"8a87fe8068d784b7c2f65801911007b8983950b101677982525daf5be143d5a0"},
-    {"name":"RIOJA_SOURCE_ROUTING_2262_part03.jsonl","sha256":"f9bcd0b84865d42ea01cc82f7dfc3b08062be0b3dca04bbe34ab5758055ca790"},
-    {"name":"RIOJA_SOURCE_ROUTING_2262_part04.jsonl","sha256":"e0908c1c4958ee655d629ce621773e92e88aa9d48349e3f83e99a23d931ca837"},
-    {"name":"RIOJA_SOURCE_ROUTING_2262_part05.jsonl","sha256":"fd4dd32eb55f14dc2532628008168537261986515053081de2732378886f3cc0"},
-    {"name":"INHERITED_ID_EVIDENCE_1405_part01.jsonl","sha256":"6f37972dd24a2e8d0f5927688895579105b32314868cb3928d33a3a82ca33d05"},
-    {"name":"INHERITED_ID_EVIDENCE_1405_part02.jsonl","sha256":"ab140034739a56cb6ae45dc231f4d51f01a0e6905c24626bcde21a3319e45ad3"},
-    {"name":"INHERITED_ID_EVIDENCE_1405_part03.jsonl","sha256":"7ec1251c64fbc9dfbf84290eef1ac8fa25bacbcbb3fc79e21a8ffbeb7d031fc8"}
-  ],
-  "qaFile": "QA_FINAL.json",
-  "summaryFile": "SUCCESSOR_SUMMARY.json",
-  "governance": {
-    "stime": "HOLD_PENDING_0000_ACCEPTANCE",
-    "neonWrites": 0,
+  "files": {
+    "hubParts": [
+      {"file":"TAXON_HUBS_3033_part01.jsonl","rows":600,"sha256":"35893fc8ea9cd21dea5e18c5cd9bf0378551907410f337e37e3faa3b18ca98f8","bytes":398377},
+      {"file":"TAXON_HUBS_3033_part02.jsonl","rows":600,"sha256":"a4af5b8cce0657394aec7e7ee84822cf3d16c48de659f859bccd722f186ee7a8","bytes":398846},
+      {"file":"TAXON_HUBS_3033_part03.jsonl","rows":600,"sha256":"cbf5484f9519774022fecd7bcf5765c4628a0d82fc2de8edecaab3581a177e34","bytes":399381},
+      {"file":"TAXON_HUBS_3033_part04.jsonl","rows":600,"sha256":"d671bbd953abd60b62a71e28e6d25182a446a06125504098cbf585c4013b8f11","bytes":395731},
+      {"file":"TAXON_HUBS_3033_part05.jsonl","rows":600,"sha256":"83025b8576189cb23a3296ad4d5dc7d96520ed398cddcd6eba4763a2849c9bff","bytes":388764},
+      {"file":"TAXON_HUBS_3033_part06.jsonl","rows":33,"sha256":"562546e1ada18be528529c601b500385c55da0a7b54c6162e9318fd3b6749112","bytes":21373}
+    ],
+    "sourceRoutingParts": [
+      {"file":"RIOJA_SOURCE_ROUTING_2262_part01.jsonl","rows":500,"sha256":"800cf8d5eca95f301ecc1aa715cc2bf336351b2b30c93388f51f19cc28ad0ae4","bytes":410205},
+      {"file":"RIOJA_SOURCE_ROUTING_2262_part02.jsonl","rows":500,"sha256":"916a8c94104693e07562ee5d7c34078a25626303e984af9ab168706fc1f7a80e","bytes":409829},
+      {"file":"RIOJA_SOURCE_ROUTING_2262_part03.jsonl","rows":500,"sha256":"633751407362ab102f364448fd992c58cb0019c4eac410fc25503a5d5e7afd01","bytes":409763},
+      {"file":"RIOJA_SOURCE_ROUTING_2262_part04.jsonl","rows":500,"sha256":"99280d6dde248483e9a8041ecf700d3c0d436c8cd0c9700557ea90779175532d","bytes":409144},
+      {"file":"RIOJA_SOURCE_ROUTING_2262_part05.jsonl","rows":262,"sha256":"b9e4774eb5f5fba1ca9028662168147092d8a0a745476921a94d7c8ca5ae4a7f","bytes":212944}
+    ],
+    "inheritedEvidenceParts": [
+      {"file":"INHERITED_ID_EVIDENCE_1405_part01.jsonl","rows":500,"sha256":"c39ae0c87d375b95beb4b2400658539369411846ed2d076eeade229e01f69052","bytes":213929},
+      {"file":"INHERITED_ID_EVIDENCE_1405_part02.jsonl","rows":500,"sha256":"0a35bc026bfa4bf6eb8da360ae7f5163d77e94e7de4aef14868840fa086a5b7c","bytes":211944},
+      {"file":"INHERITED_ID_EVIDENCE_1405_part03.jsonl","rows":405,"sha256":"08a95d6fb475b22cab9e51666193f63ae14f730c65a5e7ae099e2080dd843391","bytes":171684}
+    ],
+    "qa": {"file":"QA_FINAL.json","sha256":"a2c43038b54d34d2418793d0bb191b26d04c183f1f4eb77ea329ace420bdb771"},
+    "summary": {"file":"SUCCESSOR_SUMMARY.json","sha256":"9cbfe6abf2baaa6763f12ec54588ffbeb0878b96621abaee99eb5ceabcfac440"}
+  },
+  "guards": {
+    "rc2Mutation": 0,
     "databaseWrites": 0,
-    "inheritedOperationalIdChanges": 0
+    "neonWrites": 0,
+    "stime": "HOLD",
+    "parentIdInheritance": 0,
+    "rankCollapse": 0,
+    "hybridCollapse": 0,
+    "silentNameReplacement": 0
   }
 }
