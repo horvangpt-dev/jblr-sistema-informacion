@@ -1,0 +1,32 @@
+{
+  "pass": true,
+  "batch": 1,
+  "slice": [
+    1,
+    100
+  ],
+  "expectedRows": 100,
+  "processedRows": 100,
+  "uniqueIds": 100,
+  "resolved": 6,
+  "conflicts": 16,
+  "unresolved": 78,
+  "rowsWithNewSpanishAliases": 0,
+  "newSpanishAliasCount": 0,
+  "sourceFailureEvents": 38,
+  "guards": {
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "hybridGuard": true,
+    "sourceFailureNotNotFound": true,
+    "closed1953Untouched": true
+  },
+  "semantics": [
+    "SOURCE_NAME_VERBATIM_PRESERVED",
+    "DOCUMENTED_ALIAS_BEFORE_EIDOS",
+    "EXACT_EIDOS_ONLY",
+    "REGIONAL_NOT_FOUND!=ABSENCE",
+    "SOURCE_FAILURE!=NOT_FOUND"
+  ]
+}
