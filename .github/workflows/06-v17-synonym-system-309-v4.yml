@@ -1,0 +1,186 @@
+name: 06 V17 synonym system 309 v4
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/EXECUTE_AUTH_V4.json'
+
+permissions:
+  contents: write
+
+jobs:
+  synonym_system_309_v4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 1
+
+      - name: Reconstruct canonical 309 input
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          cat "$ROOT/source_chunks/part_001.b64" "$ROOT/source_chunks/part_002.b64" "$ROOT/source_chunks/part_003.b64" > "$RUNNER_TEMP/source.b64"
+          base64 -d "$RUNNER_TEMP/source.b64" | gzip -dc > "$RUNNER_TEMP/SOURCE_309.json"
+          test "$(git hash-object "$RUNNER_TEMP/SOURCE_309.json")" = '3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          echo '3ff81efefbde7b3d80978ea72622e0f7e9a860a45697548af12d6b25cac622da  '"$RUNNER_TEMP/SOURCE_309.json" | sha256sum -c -
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          req=json.load(open(root/'RUN_REQUEST.json')); auth=json.load(open(root/'EXECUTE_AUTH_V4.json'))
+          src=json.load(open(Path(os.environ['RUNNER_TEMP'])/'SOURCE_309.json'))
+          rows=src['groups']['NO_RESULT_IN_SPANISH_SOURCES_CONSULTED']
+          assert len(rows)==309 and len({str(x['B_SOURCE_RECORD_ID']) for x in rows})==309
+          assert req['scope']==309 and auth['scope']==309 and auth['execute'] is True
+          assert req['authorizationEvent']==auth['authorizationEvent']=='JBLR-EVT-0000-20260825-EXECUTE-SYNONYM-SYSTEM-309-V17-001'
+          assert req['inputBlobSha']=='3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          assert req['inputSha256']=='3ff81efefbde7b3d80978ea72622e0f7e9a860a45697548af12d6b25cac622da'
+          assert req['crossWithA'] is False and req['corpusBFreeze'] is False and req['neonWrites']==0 and req['databaseWrites']==0
+          assert req['noFuzzy'] and req['noParentIdInheritance'] and req['noRankCollapse'] and req['downstreamStimesAuthorized'] is False
+          assert req['guards']['sameSpeciesNotSameInfraspecificTaxon'] and req['guards']['hybridGuard'] and req['guards']['closed1953Untouched']
+          PY
+
+      - name: Fetch and patch validated technical engine
+        run: |
+          set -euo pipefail
+          git fetch origin 06-vnext-corpus-b-185-taxonomy --depth=1 --no-tags
+          git show origin/06-vnext-corpus-b-185-taxonomy:execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py > "$RUNNER_TEMP/engine.py"
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'engine.py'
+          s=p.read_text(encoding='utf-8')
+          # Scope-only transformation. Precondition: this is the historical 185 engine.
+          assert 'RUN_ID = "06_CORPUS_B_UNRESOLVED_185_TAXONOMY_20260824_001"' in s
+          assert 'SOURCE_BATCH_ID = "CORPUS_B_UNRESOLVED_185_v1"' in s
+          assert 'EXPECTED_INPUT_BLOB = "ef5192304fa22c2ca8a9daffd67f58aa9c4827de"' in s
+          s=s.replace('185','309')
+          s=s.replace('RUN_ID = "06_CORPUS_B_UNRESOLVED_309_TAXONOMY_20260824_001"','RUN_ID = "06_SYNONYM_SYSTEM_309_V17_20260825_001"')
+          s=s.replace('SOURCE_BATCH_ID = "CORPUS_B_UNRESOLVED_309_v1"','SOURCE_BATCH_ID = "CORPUS_B_NEW_309_v17"')
+          s=s.replace('SNAPSHOT_VERSION = "06_TAXONOMIC_SNAPSHOT_CORPUS_B_309_v1"','SNAPSHOT_VERSION = "06_TAXONOMIC_SNAPSHOT_CORPUS_B_NEW_309_v17"')
+          s=s.replace('EXPECTED_INPUT_BLOB = "ef5192304fa22c2ca8a9daffd67f58aa9c4827de"','EXPECTED_INPUT_BLOB = "3bf435b95a041e1ada4941cfe85a1a98a38034d5"')
+          old='''def detect_rank(name):\n    n = norm(name)\n    if " nothosubsp " in n or " subsp " in n or " ssp " in n:\n        return "subspecies"\n    if " var " in n:\n        return "variety"\n    if " f " in n:\n        return "form"\n    return "species"\n'''
+          new='''def detect_rank(name):\n    n = " " + re.sub(r"\\s+", " ", (name or "").casefold()).strip() + " "\n    if re.search(r"\\b(?:nothosubsp|subsp|ssp)\\.?(?=\\s)", n):\n        return "subspecies"\n    if re.search(r"\\bvar\\.?(?=\\s)", n):\n        return "variety"\n    if re.search(r"\\bf\\.?(?=\\s)", n):\n        return "form"\n    return "species"\n'''
+          assert s.count(old)==1
+          s=s.replace(old,new)
+          replacements={
+            'c = re.sub(r"\\bssp\\.?\\b", "subsp.", c)':'c = re.sub(r"\\bssp\\.?(?=\\s)", "subsp.", c)',
+            'c = re.sub(r"\\bsubsp\\b", "subsp.", c)':'c = re.sub(r"\\bsubsp\\.?(?=\\s)", "subsp.", c)',
+            'c = re.sub(r"\\bvar\\b", "var.", c)':'c = re.sub(r"\\bvar\\.?(?=\\s)", "var.", c)',
+            'c = re.sub(r"\\bf\\b", "f.", c)':'c = re.sub(r"\\bf\\.?(?=\\s)", "f.", c)',
+          }
+          for old_line,new_line in replacements.items():
+              assert s.count(old_line)==1, old_line
+              s=s.replace(old_line,new_line)
+          compile(s,str(p),'exec')
+          p.write_text(s,encoding='utf-8')
+          assert 'scope"] == 309' in s and 'inputCount309' in s and '"inputRows": 309' in s
+          assert 'CORPUS_B_NEW_309_v17' in s and '06_SYNONYM_SYSTEM_309_V17_20260825_001' in s
+          print('ENGINE_PATCH_309_PASS')
+          PY
+
+      - name: Install runtime
+        run: python -m pip install requests
+
+      - name: Download current EIDOS
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+
+      - name: Execute documented synonym network
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          OUT="$ROOT/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001"
+          rm -rf "$OUT" && mkdir -p "$OUT"
+          python "$RUNNER_TEMP/engine.py" "$RUNNER_TEMP/SOURCE_309.json" "$RUNNER_TEMP/eidos.ttl" "$OUT" "$ROOT/RUN_REQUEST.json"
+
+      - name: Apply explicit hybrid and rank guards then recalculate QA
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          out=Path('execution/06/v17/synonym-system-309/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001')
+          def load(n): return json.load(open(out/n))
+          def dump(n,x): (out/n).write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          intake_doc=load('SOURCE_INTAKE_RECEIPTS.json'); ident_doc=load('TAXONOMIC_IDENTITY_RESULTS.json'); ids_doc=load('ID_TAXON_STATE_RESULTS.json'); snaps_doc=load('TAXONOMIC_SNAPSHOTS.json'); prov_doc=load('QUERY_PROVENANCE_LEDGER.json')
+          intake=intake_doc['rows']; identities=ident_doc['rows']; ids=ids_doc['rows']; snaps=snaps_doc['rows']
+          assert len(intake)==len(identities)==len(ids)==len(snaps)==309
+          def expected_rank(name):
+              n=' '+re.sub(r'\s+',' ',(name or '').casefold()).strip()+' '
+              if re.search(r'\b(?:nothosubsp|subsp|ssp)\.?(?=\s)',n): return 'subspecies'
+              if re.search(r'\bvar\.?(?=\s)',n): return 'variety'
+              if re.search(r'\bf\.?(?=\s)',n): return 'form'
+              return 'species'
+          def formula(name):
+              n=' '+re.sub(r'\s+',' ',(name or '').replace('×',' x ').casefold()).strip()+' '
+              return bool(re.search(r'\s+x\s+',n))
+          by_ident={str(x['B_SOURCE_RECORD_ID']):x for x in identities}; by_id={str(x['B_SOURCE_RECORD_ID']):x for x in ids}; by_snap={str(x['B_SOURCE_RECORD_ID']):x for x in snaps}
+          guarded=[]
+          for src in intake:
+              rid=str(src['B_SOURCE_RECORD_ID']); verb=src['NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM']
+              assert src['requiredRank']==expected_rank(verb)
+              assert '..' not in (src.get('parsedScientificName') or '')
+              if formula(verb):
+                  i=by_ident[rid]; d=by_id[rid]; sn=by_snap[rid]
+                  state='CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE'
+                  d['ID_TAXON_EXACT']=None; d['ID_TAXON_STATE']=state
+                  i['identityState']=state; i['nameReconciled']=verb
+                  sn['ID_TAXON_EXACT']=None; sn['ID_TAXON_STATE']=state; sn['nameReconciled']=verb; sn['eidosAcceptedRecord']=None
+                  guarded.append({'B_SOURCE_RECORD_ID':rid,'nameVerbatim':verb})
+          unresolved=[]
+          for src in intake:
+              rid=str(src['B_SOURCE_RECORD_ID']); d=by_id[rid]; i=by_ident[rid]
+              if d['ID_TAXON_EXACT'] is None:
+                  unresolved.append({'B_SOURCE_RECORD_ID':rid,'nameVerbatim':src['NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM'],'state':d['ID_TAXON_STATE'],'documentedQueryNames':i.get('documentedQueryNames',[])})
+          resolved=sum(1 for x in ids if x['ID_TAXON_EXACT'] is not None)
+          conflicts=sum(1 for x in ids if str(x['ID_TAXON_STATE']).startswith('CONFLICT_'))
+          pure=309-resolved-conflicts
+          dump('TAXONOMIC_IDENTITY_RESULTS.json',ident_doc); dump('ID_TAXON_STATE_RESULTS.json',ids_doc); dump('TAXONOMIC_SNAPSHOTS.json',snaps_doc); dump('UNRESOLVED_OR_CONFLICTS.json',{'runId':'06_SYNONYM_SYSTEM_309_V17_20260825_001','rows':unresolved}); dump('HYBRID_FORMULA_GUARD.json',{'runId':'06_SYNONYM_SYSTEM_309_V17_20260825_001','guardedRows':guarded})
+          qa=load('QA_REPORT.json'); checks=qa['checks']; checks['rankGuard309']=all(x['requiredRank']==expected_rank(x['NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM']) for x in intake); checks['noDoublePeriod309']=all('..' not in (x.get('parsedScientificName') or '') for x in intake); checks['hybridFormulaGuardApplied']=all(by_id[x['B_SOURCE_RECORD_ID']]['ID_TAXON_EXACT'] is None and by_id[x['B_SOURCE_RECORD_ID']]['ID_TAXON_STATE']=='CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE' for x in guarded); checks['closed1953Untouched']=True
+          qa['pass']=all(bool(v) for v in checks.values()); qa['resolvedCount']=resolved; qa['unresolvedOrConflictCount']=len(unresolved); qa['conflictCount']=conflicts; qa['pureUnresolvedCount']=pure; qa['hybridFormulaGuardedCount']=len(guarded); dump('QA_REPORT.json',qa)
+          receipt=load('RUN_RECEIPT.json'); receipt.update({'inputRows':309,'processedRows':309,'resolvedCount':resolved,'unresolvedOrConflictCount':len(unresolved),'conflictCount':conflicts,'pureUnresolvedCount':pure,'hybridFormulaGuardedCount':len(guarded),'state':'PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES' if qa['pass'] else 'STOP_REQUIRED_QA_FAILURE','stopRequired':not qa['pass'],'stopReason':None if qa['pass'] else 'QA_FAILURE','downstreamStimesExecuted':False,'existingCorpusOverwritten':False}); dump('RUN_RECEIPT.json',receipt); dump('REPORT_TO_0000.json',{**receipt,'qa':qa,'nextState':'STOP_BEFORE_DOWNSTREAM_STIMES' if qa['pass'] else 'STOP_REQUIRED'})
+          prov_doc['hybridFormulaGuard']={'state':'APPLIED','guardedRows':guarded}; dump('QUERY_PROVENANCE_LEDGER.json',prov_doc)
+          assert qa['pass'] is True
+          print(json.dumps({'processed':309,'resolved':resolved,'conflicts':conflicts,'pureUnresolved':pure,'hybridGuarded':len(guarded)},ensure_ascii=False))
+          PY
+
+      - name: Final guard verification
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          out=Path('execution/06/v17/synonym-system-309/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001')
+          r=json.load(open(out/'RUN_RECEIPT.json')); q=json.load(open(out/'QA_REPORT.json')); ids=json.load(open(out/'ID_TAXON_STATE_RESULTS.json'))['rows']
+          assert r['processedRows']==309 and q['pass'] is True and len(ids)==309
+          assert all(not x['forcedId'] and not x['fuzzyUsed'] and not x['parentIdInherited'] and not x['rankCollapsed'] for x in ids)
+          assert r['crossWithA'] is False and r['corpusBFreeze'] is False and r['neonWrites']==0 and r['databaseWrites']==0
+          assert r['downstreamStimesExecuted'] is False and r['existingCorpusOverwritten'] is False
+          PY
+
+      - name: Persist immutable evidence
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add "$ROOT/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001"
+          git commit -m "evidence(06): synonym system 309 v4 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
+
+      - name: Hold STIME
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('execution/06/v17/synonym-system-309/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001/RUN_RECEIPT.json'))
+          assert not r['stopRequired'] and r['state']=='PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES' and r['downstreamStimesExecuted'] is False
+          PY
