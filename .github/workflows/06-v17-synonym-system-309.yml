@@ -25,22 +25,35 @@ jobs:
         run: |
           set -euo pipefail
           ROOT='execution/06/v17/synonym-system-309'
-          base64 -d "$ROOT/SOURCE_309.json.gz.b64" | gzip -dc > "$RUNNER_TEMP/SOURCE_309.json"
-          base64 -d "$ROOT/run_synonym_309.py.b64" > "$RUNNER_TEMP/run_synonym_309.py"
-          test "$(git hash-object "$RUNNER_TEMP/SOURCE_309.json")" = '9d0f0711854e4af785535cb0289c20d5ac47dd11'
-          echo '50ef71da1f7a63354a0ff42d1b1caec51dad65b3ad2e1eded0b5fd5a13397803  '"$RUNNER_TEMP/run_synonym_309.py" | sha256sum -c -
+          gzip -dc "$ROOT/SOURCE_309.json.gz" > "$RUNNER_TEMP/SOURCE_309.json"
+          cp "$ROOT/run_synonym_309.py" "$RUNNER_TEMP/run_synonym_309.py"
           python - <<'PY'
-          import json
+          import os
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'run_synonym_309.py'
+          s=p.read_text(encoding='utf-8')
+          old='9d0f0711854e4af785535cb0289c20d5ac47dd11'
+          new='3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          assert s.count(old)==1
+          p.write_text(s.replace(old,new),encoding='utf-8')
+          PY
+          test "$(git hash-object "$RUNNER_TEMP/SOURCE_309.json")" = '3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          echo '3ff81efefbde7b3d80978ea72622e0f7e9a860a45697548af12d6b25cac622da  '"$RUNNER_TEMP/SOURCE_309.json" | sha256sum -c -
+          echo '90f9a95fb91b9bc26b3ef9c79ce40495b224ced80f3d106cbe29452c68e0cff6  '"$RUNNER_TEMP/run_synonym_309.py" | sha256sum -c -
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
           root='execution/06/v17/synonym-system-309'
           r=json.load(open(root+'/RUN_REQUEST.json'))
           a=json.load(open(root+'/EXECUTE_AUTH.json'))
-          s=json.load(open('/home/runner/work/_temp/SOURCE_309.json'))
+          s=json.load(open(Path(os.environ['RUNNER_TEMP'])/'SOURCE_309.json'))
           rows=s['groups']['NO_RESULT_IN_SPANISH_SOURCES_CONSULTED']
           assert len(rows)==309 and len({str(x['B_SOURCE_RECORD_ID']) for x in rows})==309
           assert r['enabled'] is True and r['actor']=='06' and r['scope']==309
           assert r['runId']=='06_SYNONYM_SYSTEM_309_V17_20260825_001'
           assert r['authorizationEvent']=='JBLR-EVT-0000-20260825-EXECUTE-SYNONYM-SYSTEM-309-V17-001'
-          assert r['inputReportDriveId']=='1AsYYU5wTLV5zVt-1n9h3LIdOv0zPSmzL'
+          assert r['inputBlobSha']=='3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          assert r['inputSha256']=='3ff81efefbde7b3d80978ea72622e0f7e9a860a45697548af12d6b25cac622da'
           assert r['crossWithA'] is False and r['corpusBFreeze'] is False
           assert r['neonWrites']==0 and r['databaseWrites']==0
           assert r['noFuzzy'] and r['noParentIdInheritance'] and r['noRankCollapse']
