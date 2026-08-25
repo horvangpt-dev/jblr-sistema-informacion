@@ -1,0 +1,120 @@
+name: 06 V17 Spanish synonym to EIDOS batches
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/EXECUTE_SPANISH_BATCH.json'
+
+permissions:
+  contents: write
+
+jobs:
+  spanish_synonym_to_eidos_batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 1
+
+      - name: Read batch authorization and reconstruct canonical 309
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          python - <<'PY'
+          import json
+          p='execution/06/v17/synonym-system-309/EXECUTE_SPANISH_BATCH.json'
+          x=json.load(open(p))
+          assert x['execute'] is True and x['batch'] in [1,2,3]
+          assert x['sizes']==[100,100,109]
+          assert x['objectiveEvent']=='JBLR-EVT-0000-20260825-SYNONYM-TO-EIDOS-OBJECTIVE-V17-001'
+          assert x['batchingEvent']=='JBLR-EVT-0000-20260825-BATCH-309-AS-100-100-109-V17-001'
+          open('/tmp/batch','w').write(str(x['batch']))
+          PY
+          cat "$ROOT/source_chunks/part_001.b64" "$ROOT/source_chunks/part_002.b64" "$ROOT/source_chunks/part_003.b64" > "$RUNNER_TEMP/source.b64"
+          base64 -d "$RUNNER_TEMP/source.b64" | gzip -dc > "$RUNNER_TEMP/SOURCE_309.json"
+          echo '3ff81efefbde7b3d80978ea72622e0f7e9a860a45697548af12d6b25cac622da  '"$RUNNER_TEMP/SOURCE_309.json" | sha256sum -c -
+          python - <<'PY'
+          import json, os
+          x=json.load(open(os.environ['RUNNER_TEMP']+'/SOURCE_309.json'))
+          r=x['groups']['NO_RESULT_IN_SPANISH_SOURCES_CONSULTED']
+          assert len(r)==309 and len({str(z['B_SOURCE_RECORD_ID']) for z in r})==309
+          PY
+
+      - name: Fetch and patch validated EIDOS engine
+        run: |
+          set -euo pipefail
+          git fetch origin 06-vnext-corpus-b-185-taxonomy --depth=1 --no-tags
+          git show origin/06-vnext-corpus-b-185-taxonomy:execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py > "$RUNNER_TEMP/engine.py"
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'engine.py'; s=p.read_text(encoding='utf-8')
+          old='''def detect_rank(name):\n    n = norm(name)\n    if " nothosubsp " in n or " subsp " in n or " ssp " in n:\n        return "subspecies"\n    if " var " in n:\n        return "variety"\n    if " f " in n:\n        return "form"\n    return "species"\n'''
+          new='''def detect_rank(name):\n    n = " " + re.sub(r"\\s+", " ", (name or "").casefold()).strip() + " "\n    if re.search(r"\\b(?:nothosubsp|subsp|ssp)\\.?(?=\\s)", n): return "subspecies"\n    if re.search(r"\\bvar\\.?(?=\\s)", n): return "variety"\n    if re.search(r"\\bf\\.?(?=\\s)", n): return "form"\n    return "species"\n'''
+          assert s.count(old)==1; s=s.replace(old,new)
+          repl={
+            'c = re.sub(r"\\bssp\\.?\\b", "subsp.", c)':'c = re.sub(r"\\bssp\\.?(?=\\s)", "subsp.", c)',
+            'c = re.sub(r"\\bsubsp\\b", "subsp.", c)':'c = re.sub(r"\\bsubsp\\.?(?=\\s)", "subsp.", c)',
+            'c = re.sub(r"\\bvar\\b", "var.", c)':'c = re.sub(r"\\bvar\\.?(?=\\s)", "var.", c)',
+            'c = re.sub(r"\\bf\\b", "f.", c)':'c = re.sub(r"\\bf\\.?(?=\\s)", "f.", c)',
+          }
+          for a,b in repl.items(): assert s.count(a)==1; s=s.replace(a,b)
+          compile(s,str(p),'exec'); p.write_text(s,encoding='utf-8')
+          PY
+
+      - name: Install runtime
+        run: python -m pip install requests beautifulsoup4 pypdf
+
+      - name: Download current EIDOS
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+
+      - name: Execute selected batch
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          BATCH=$(cat /tmp/batch)
+          OUT="$ROOT/runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_0${BATCH}"
+          rm -rf "$OUT" && mkdir -p "$OUT"
+          python "$ROOT/spanish_synonym_to_eidos_batch.py" \
+            --source "$RUNNER_TEMP/SOURCE_309.json" \
+            --eidos "$RUNNER_TEMP/eidos.ttl" \
+            --engine "$RUNNER_TEMP/engine.py" \
+            --previous "$ROOT/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001/TAXONOMIC_SNAPSHOTS.json" \
+            --batch "$BATCH" --out "$OUT"
+
+      - name: Verify batch QA and invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          b=int(open('/tmp/batch').read()); root=Path('execution/06/v17/synonym-system-309/runs/SPANISH_SYNONYM_TO_EIDOS_V2')/f'batch_0{b}'
+          s=json.load(open(root/'SUMMARY.json'))
+          expected={1:100,2:100,3:109}[b]
+          assert s['pass'] is True and s['processedRows']==expected and s['uniqueIds']==expected
+          assert s['guards']['noFuzzy'] and s['guards']['noParentIdInheritance'] and s['guards']['noRankCollapse'] and s['guards']['closed1953Untouched']
+          print(json.dumps(s,ensure_ascii=False))
+          PY
+
+      - name: Persist compact immutable batch evidence
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          BATCH=$(cat /tmp/batch)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add "$ROOT/runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_0${BATCH}"
+          git commit -m "evidence(06): Spanish synonym-to-EIDOS batch ${BATCH} ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
+
+      - name: Hold downstream STIME
+        run: |
+          echo 'STIME=HOLD; CORPUS_B_FREEZE=0; NEON_WRITES=0; FINAL_309_CONSOLIDATION=0'
