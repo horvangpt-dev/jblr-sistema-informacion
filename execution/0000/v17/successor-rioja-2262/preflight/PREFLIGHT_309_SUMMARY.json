@@ -10,6 +10,7 @@
   "sourceSha256Expected": "a2c49bd2f6ad05769dafecaf90b417656ef7e298305d1d250b95b32e1eb556f2",
   "all309Sha256": "ec2a46a6a294e72c28268805ed06cb3f7c76426803df7d52b491d5da17eb29be",
   "resolved47Sha256": "2558cde2f9a5a8bde2034d560aa8e49b76ac084debf0cf65583a34eca2d031d6",
+  "all309IdentityMinSha256": "16f1d6f5e6a0aea4f918a4f3ba0cf3dc64b9d3d05ca810d8c4ef209603f837ef",
   "resolvedWithMultipleClosureIds": 4,
   "violations": [],
   "qa": "PASS"
