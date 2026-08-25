@@ -1,0 +1,21 @@
+name: 08 STIME00 RC3 reconciliation controlled QA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 08-stime00-rc3-reconciliation-v1
+    paths:
+      - 'execution/08/stime00-rc3-reconciliation-v1/**'
+      - '.github/workflows/08-stime00-rc3-reconciliation-qa.yml'
+
+jobs:
+  controlled-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run controlled contract tests
+        run: python -m unittest discover -s execution/08/stime00-rc3-reconciliation-v1/tests -v
