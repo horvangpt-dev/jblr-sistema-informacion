@@ -1,0 +1,29 @@
+name: JBLR 0000 V18 Candidate Keys 262
+on:
+  push:
+    branches: [0000-v17-successor-rioja-2262]
+    paths:
+      - '.github/workflows/jblr-0000-v18-candidate-keys-262.yml'
+      - 'execution/0000/v18/successor-rioja-2262/build_candidate_keys_262.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 0000-v17-successor-rioja-2262
+          fetch-depth: 0
+      - name: Build compact keys
+        run: python execution/0000/v18/successor-rioja-2262/build_candidate_keys_262.py
+      - name: Persist compact keys
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          d=execution/0000/v18/successor-rioja-2262
+          git add -- "$d/candidate_keys_262_parts" "$d/CANDIDATE_KEYS_262_MANIFEST.json"
+          git commit -m "evidence(0000-v18): persist candidate keys 262 ${GITHUB_RUN_ID}"
+          git push origin HEAD:0000-v17-successor-rioja-2262
