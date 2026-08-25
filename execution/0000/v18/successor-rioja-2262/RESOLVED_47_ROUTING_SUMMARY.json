@@ -1,0 +1,41 @@
+{
+  "schema": "JBLR_V18_RESOLVED47_ROUTING_SUMMARY_V1",
+  "preflightRun": 32875581113,
+  "preflightHeadBeforeV18": "652af73149006eacad09a49bd6e42d986531b198",
+  "rc2DriveId": "1bpPteoHpYe_bCbCTdrAphE5qRZhO1nP_",
+  "rc2Sha256": "7f8daa8951975f2ad13d9eed5c46062d383a403ff70a8650704ee21da7c3da53",
+  "globalCrossDriveId": "1AsYYU5wTLV5zVt-1n9h3LIdOv0zPSmzL",
+  "counts": {
+    "totalResolved": 47,
+    "mergeRc2SharedDocumentedId": 24,
+    "mergeDirectOfficialHubSharedId": 4,
+    "mergeRc2DocumentedAliasExactSameRank": 6,
+    "createNewOfficialIdHub": 13
+  },
+  "derivation": "47 - 24 RC2 shared documented ID - 4 direct-official shared ID = NEW19; NEW19 strict documented-alias-vs-RC2 check = 6 RC2 merges + 13 new official-ID hubs",
+  "guards": {
+    "fuzzy": false,
+    "rankCollapse": false,
+    "parentIdInheritance": false,
+    "hybridCollapse": false
+  },
+  "mergeRc2SharedDocumentedIdSourceIds": ["2545","4065","5071","5244","907","3592","1156","1285","4240","4837","789","4615","900","2953","843","3402","3507","4075","3617","1692","335","5184","4887","1969"],
+  "mergeDirectOfficialHubSharedIdSourceIds": ["3767","2041","1941","1582"],
+  "mergeDirectOfficialHubTargets": {
+    "3767": {"idTaxon":"3011","targetRiojaId":"1031","targetName":"Campanula rotundifolia"},
+    "2041": {"idTaxon":"6556","targetRiojaId":"2040","targetName":"Nepeta nepetella subsp. aragonensis"},
+    "1941": {"idTaxon":"8562","targetRiojaId":"2518","targetName":"Sorbus intermedia"},
+    "1582": {"idTaxon":"9247","targetRiojaId":"1521","targetName":"Valerianella locusta"}
+  },
+  "mergeRc2DocumentedAliasExactSameRankSourceIds": ["4676","1412","662","4415","4593","1709"],
+  "mergeRc2DocumentedAliasTargets": {
+    "4676": {"idTaxon":"4724","alias":"Galeopsis ladanum subsp. carpetana","target":"JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0891"},
+    "1412": {"idTaxon":"6067","alias":"Lotus glaber","target":"JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1037"},
+    "662": {"idTaxon":"7344","alias":"Potentilla neumanniana","target":"JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1421"},
+    "4415": {"idTaxon":"1795","alias":"Acinos arvensis","target":"JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0881"},
+    "4593": {"idTaxon":"1794","alias":"Acinos alpinus","target":"JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0880"},
+    "1709": {"idTaxon":"32028","alias":"Simethis mattiazzii","target":"JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2127"}
+  },
+  "createNewOfficialIdHubSourceIds": ["5517","3682","4979","4058","1117","974","4809","2487","5338","2111","2603","627","5343"],
+  "note": "RC2_NAME_MAP.json on the branch contains only three names and was not treated as exhaustive. This routing was recomputed from the frozen RC2 workbook in Drive plus GLOBAL CROSS and the persisted NEW19 alias evidence. RC2 was read only; no RC2 mutation was performed."
+}
