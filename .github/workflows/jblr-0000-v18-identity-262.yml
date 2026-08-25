@@ -6,8 +6,7 @@ on:
       - 0000-v17-successor-rioja-2262
     paths:
       - '.github/workflows/jblr-0000-v18-identity-262.yml'
-      - 'execution/0000/v18/successor-rioja-2262/analyze_nonresolved_262_identity.py'
-      - 'execution/0000/v18/successor-rioja-2262/inputs/DIRECT_OFFICIAL_550_INDEX.json.gz.b64'
+      - 'execution/0000/v18/successor-rioja-2262/analyze_nonresolved_262_identity_v2.py'
   workflow_dispatch:
 
 permissions:
@@ -39,17 +38,17 @@ jobs:
           test "$(grep -cve '^$' /tmp/CONSOLIDATED_309.jsonl)" -eq 309
           test "$(grep -cve '^$' /tmp/RC2_MEMBERSHIP_2210.jsonl)" -eq 2210
 
-      - name: Execute strict identity routing
+      - name: Execute strict identity routing stage 1
         id: analyze
         shell: bash
         run: |
           set +e
-          python execution/0000/v18/successor-rioja-2262/analyze_nonresolved_262_identity.py | tee /tmp/identity262.log
+          python execution/0000/v18/successor-rioja-2262/analyze_nonresolved_262_identity_v2.py | tee /tmp/identity262.log
           code=${PIPESTATUS[0]}
           echo "exit_code=$code" >> "$GITHUB_OUTPUT"
           exit 0
 
-      - name: Persist routing evidence
+      - name: Persist stage 1 evidence
         shell: bash
         env:
           ANALYZE_EXIT: ${{ steps.analyze.outputs.exit_code }}
@@ -62,32 +61,23 @@ jobs:
           import json,os
           from pathlib import Path
           d=Path('execution/0000/v18/successor-rioja-2262')
-          receipt={
-            'schema':'JBLR_V18_IDENTITY_262_RUN_RECEIPT_V1',
-            'runId':int(os.environ['RUN_ID']),
-            'triggerSha':os.environ['TRIGGER_SHA'],
-            'analyzeExitCode':int(os.environ['ANALYZE_EXIT']),
-            'rc2Mutation':0,
-            'neonWrites':0,
-            'databaseWrites':0,
-            'stime':'HOLD'
-          }
-          (d/'IDENTITY_262_RUN_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          receipt={'schema':'JBLR_V18_IDENTITY_262_STAGE1_RUN_RECEIPT_V1','runId':int(os.environ['RUN_ID']),'triggerSha':os.environ['TRIGGER_SHA'],'analyzeExitCode':int(os.environ['ANALYZE_EXIT']),'rc2Mutation':0,'neonWrites':0,'databaseWrites':0,'stime':'HOLD'}
+          (d/'IDENTITY_262_STAGE1_RUN_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- "$d/NONRESOLVED_262_IDENTITY_ROUTING.json" "$d/NONRESOLVED_262_IDENTITY_EDGES.json" "$d/QA_NONRESOLVED_262_IDENTITY.json" "$d/IDENTITY_262_RUN_RECEIPT.json"
+          git add -- "$d/NONRESOLVED_262_IDENTITY_ROUTING_STAGE1.json" "$d/NONRESOLVED_262_IDENTITY_EDGES_STAGE1.json" "$d/NONRESOLVED_262_EXPLICIT_NAMES.json" "$d/QA_NONRESOLVED_262_IDENTITY_STAGE1.json" "$d/IDENTITY_262_STAGE1_RUN_RECEIPT.json"
           if ! git diff --cached --quiet; then
-            git commit -m "evidence(0000-v18): route nonresolved 262 identities ${RUN_ID}"
+            git commit -m "evidence(0000-v18): route nonresolved 262 stage1 ${RUN_ID}"
             git push origin HEAD:0000-v17-successor-rioja-2262
           fi
 
-      - name: Enforce identity collision stop
+      - name: Enforce governed stop
         shell: bash
         env:
           ANALYZE_EXIT: ${{ steps.analyze.outputs.exit_code }}
         run: |
           if [ "$ANALYZE_EXIT" != "0" ]; then
-            echo "Identity analysis reported a governed stop; evidence was persisted."
+            echo "Stage1 identity analysis reported a governed stop; evidence was persisted."
             exit "$ANALYZE_EXIT"
           fi
