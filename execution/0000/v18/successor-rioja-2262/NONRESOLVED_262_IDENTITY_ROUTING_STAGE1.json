@@ -1,0 +1,1643 @@
+{
+  "schema": "JBLR_V18_NONRESOLVED_262_IDENTITY_ROUTING_STAGE1_V1",
+  "scope": {
+    "conflict": 48,
+    "unresolved": 214,
+    "total": 262
+  },
+  "appliedTargets": [
+    "RC2_2210",
+    "NEW13_OFFICIAL"
+  ],
+  "deferredTarget": "DIRECT_OFFICIAL_550",
+  "method": "STRICT_EXACT_NAME_OR_DOCUMENTED_SAME_RANK_ALIAS_ONLY;NO_FUZZY;PRIOR_NETWORK_OVERLAP_REVIEW_ONLY",
+  "counts": {
+    "rows": 262,
+    "strongInternalEdges": 0,
+    "reviewOnlyEdges": 5,
+    "identityGroups": 262,
+    "mergeExistingRows": 1,
+    "pendingDirectRows": 261,
+    "blockers": 0
+  },
+  "routing": {
+    "78": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "78"
+      ]
+    },
+    "79": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "79"
+      ]
+    },
+    "105": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "105"
+      ]
+    },
+    "106": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "106"
+      ]
+    },
+    "136": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "136"
+      ]
+    },
+    "137": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "137"
+      ]
+    },
+    "156": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "156"
+      ]
+    },
+    "167": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "167"
+      ]
+    },
+    "173": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "173"
+      ]
+    },
+    "240": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "240"
+      ]
+    },
+    "241": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "241"
+      ]
+    },
+    "242": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "242"
+      ]
+    },
+    "294": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "294"
+      ]
+    },
+    "300": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "300"
+      ]
+    },
+    "305": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "305"
+      ]
+    },
+    "391": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "391"
+      ]
+    },
+    "392": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "392"
+      ]
+    },
+    "394": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "394"
+      ]
+    },
+    "412": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "412"
+      ]
+    },
+    "413": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "413"
+      ]
+    },
+    "415": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "415"
+      ]
+    },
+    "489": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "489"
+      ]
+    },
+    "531": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "531"
+      ]
+    },
+    "591": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "591"
+      ]
+    },
+    "615": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "615"
+      ]
+    },
+    "624": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "624"
+      ]
+    },
+    "635": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "635"
+      ]
+    },
+    "636": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "636"
+      ]
+    },
+    "670": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "670"
+      ]
+    },
+    "686": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "686"
+      ]
+    },
+    "687": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "687"
+      ]
+    },
+    "779": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "779"
+      ]
+    },
+    "781": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "781"
+      ]
+    },
+    "784": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "784"
+      ]
+    },
+    "791": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "791"
+      ]
+    },
+    "836": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "836"
+      ]
+    },
+    "839": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "839"
+      ]
+    },
+    "840": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "840"
+      ]
+    },
+    "892": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "892"
+      ]
+    },
+    "895": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "895"
+      ]
+    },
+    "910": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "910"
+      ]
+    },
+    "911": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "911"
+      ]
+    },
+    "923": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "923"
+      ]
+    },
+    "945": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "945"
+      ]
+    },
+    "946": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "946"
+      ]
+    },
+    "1172": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1172"
+      ]
+    },
+    "1189": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1189"
+      ]
+    },
+    "1192": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1192"
+      ]
+    },
+    "1204": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1204"
+      ]
+    },
+    "1250": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1250"
+      ]
+    },
+    "1262": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1262"
+      ]
+    },
+    "1270": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1270"
+      ]
+    },
+    "1271": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1271"
+      ]
+    },
+    "1272": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1272"
+      ]
+    },
+    "1298": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1298"
+      ]
+    },
+    "1326": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1326"
+      ]
+    },
+    "1348": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1348"
+      ]
+    },
+    "1367": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1367"
+      ]
+    },
+    "1395": {
+      "route": "MERGE_EXISTING_HUB",
+      "targetType": "RC2",
+      "targetId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1944",
+      "groupMembers": [
+        "1395"
+      ],
+      "evidence": [
+        {
+          "sourceId": "1395",
+          "reason": "DOCUMENTED_SAME_RANK_ALIAS",
+          "target": {
+            "targetType": "RC2",
+            "targetId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1944",
+            "name": "Helictochloa pratensis subsp. iberica",
+            "rank": "subspecies",
+            "hybrid": false
+          },
+          "evidence": {
+            "name": "Helictochloa pratensis subsp. iberica",
+            "rank": "subspecies",
+            "hybrid": false,
+            "source": "Flora Montiberica 75",
+            "relationState": "DOCUMENTED_EQUIVALENT_SAME_RANK",
+            "sourceUrl": "https://www.floramontiberica.org/FM/075/Flora_Montib_075_077-093_2019.pdf"
+          }
+        }
+      ]
+    },
+    "1398": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1398"
+      ]
+    },
+    "1399": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1399"
+      ]
+    },
+    "1442": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1442"
+      ]
+    },
+    "1495": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1495"
+      ]
+    },
+    "1522": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1522"
+      ]
+    },
+    "1529": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1529"
+      ]
+    },
+    "1568": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1568"
+      ]
+    },
+    "1614": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1614"
+      ]
+    },
+    "1624": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1624"
+      ]
+    },
+    "1625": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1625"
+      ]
+    },
+    "1647": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1647"
+      ]
+    },
+    "1690": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1690"
+      ]
+    },
+    "1733": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1733"
+      ]
+    },
+    "1755": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1755"
+      ]
+    },
+    "1821": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1821"
+      ]
+    },
+    "1878": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1878"
+      ]
+    },
+    "1879": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1879"
+      ]
+    },
+    "1891": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1891"
+      ]
+    },
+    "1894": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1894"
+      ]
+    },
+    "1896": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1896"
+      ]
+    },
+    "1897": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1897"
+      ]
+    },
+    "1910": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1910"
+      ]
+    },
+    "1949": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1949"
+      ]
+    },
+    "1968": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "1968"
+      ]
+    },
+    "2008": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2008"
+      ]
+    },
+    "2015": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2015"
+      ]
+    },
+    "2034": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2034"
+      ]
+    },
+    "2037": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2037"
+      ]
+    },
+    "2043": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2043"
+      ]
+    },
+    "2045": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2045"
+      ]
+    },
+    "2054": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2054"
+      ]
+    },
+    "2063": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2063"
+      ]
+    },
+    "2070": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2070"
+      ]
+    },
+    "2071": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2071"
+      ]
+    },
+    "2120": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2120"
+      ]
+    },
+    "2149": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2149"
+      ]
+    },
+    "2152": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2152"
+      ]
+    },
+    "2228": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2228"
+      ]
+    },
+    "2231": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2231"
+      ]
+    },
+    "2250": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2250"
+      ]
+    },
+    "2285": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2285"
+      ]
+    },
+    "2289": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2289"
+      ]
+    },
+    "2296": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2296"
+      ]
+    },
+    "2308": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2308"
+      ]
+    },
+    "2316": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2316"
+      ]
+    },
+    "2367": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2367"
+      ]
+    },
+    "2372": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2372"
+      ]
+    },
+    "2431": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2431"
+      ]
+    },
+    "2483": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2483"
+      ]
+    },
+    "2500": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2500"
+      ]
+    },
+    "2538": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2538"
+      ]
+    },
+    "2582": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2582"
+      ]
+    },
+    "2602": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2602"
+      ]
+    },
+    "2604": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2604"
+      ]
+    },
+    "2617": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2617"
+      ]
+    },
+    "2618": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2618"
+      ]
+    },
+    "2620": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2620"
+      ]
+    },
+    "2626": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2626"
+      ]
+    },
+    "2629": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2629"
+      ]
+    },
+    "2699": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2699"
+      ]
+    },
+    "2758": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2758"
+      ]
+    },
+    "2816": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2816"
+      ]
+    },
+    "2865": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2865"
+      ]
+    },
+    "2929": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2929"
+      ]
+    },
+    "2930": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2930"
+      ]
+    },
+    "2934": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2934"
+      ]
+    },
+    "2944": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2944"
+      ]
+    },
+    "2994": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "2994"
+      ]
+    },
+    "3006": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3006"
+      ]
+    },
+    "3007": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3007"
+      ]
+    },
+    "3082": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3082"
+      ]
+    },
+    "3083": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3083"
+      ]
+    },
+    "3143": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3143"
+      ]
+    },
+    "3164": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3164"
+      ]
+    },
+    "3165": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3165"
+      ]
+    },
+    "3203": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3203"
+      ]
+    },
+    "3261": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3261"
+      ]
+    },
+    "3271": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3271"
+      ]
+    },
+    "3272": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3272"
+      ]
+    },
+    "3310": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3310"
+      ]
+    },
+    "3378": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3378"
+      ]
+    },
+    "3394": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3394"
+      ]
+    },
+    "3397": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3397"
+      ]
+    },
+    "3401": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3401"
+      ]
+    },
+    "3428": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3428"
+      ]
+    },
+    "3429": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3429"
+      ]
+    },
+    "3445": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3445"
+      ]
+    },
+    "3512": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3512"
+      ]
+    },
+    "3555": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3555"
+      ]
+    },
+    "3587": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3587"
+      ]
+    },
+    "3594": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3594"
+      ]
+    },
+    "3595": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3595"
+      ]
+    },
+    "3600": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3600"
+      ]
+    },
+    "3625": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3625"
+      ]
+    },
+    "3626": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3626"
+      ]
+    },
+    "3629": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3629"
+      ]
+    },
+    "3681": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3681"
+      ]
+    },
+    "3720": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3720"
+      ]
+    },
+    "3758": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3758"
+      ]
+    },
+    "3784": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3784"
+      ]
+    },
+    "3787": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3787"
+      ]
+    },
+    "3788": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3788"
+      ]
+    },
+    "3789": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3789"
+      ]
+    },
+    "3817": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3817"
+      ]
+    },
+    "3833": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3833"
+      ]
+    },
+    "3837": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3837"
+      ]
+    },
+    "3839": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3839"
+      ]
+    },
+    "3843": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3843"
+      ]
+    },
+    "3862": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3862"
+      ]
+    },
+    "3903": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3903"
+      ]
+    },
+    "3916": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3916"
+      ]
+    },
+    "3942": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3942"
+      ]
+    },
+    "3980": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3980"
+      ]
+    },
+    "3981": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3981"
+      ]
+    },
+    "3982": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3982"
+      ]
+    },
+    "3983": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3983"
+      ]
+    },
+    "3985": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3985"
+      ]
+    },
+    "3986": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3986"
+      ]
+    },
+    "3988": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3988"
+      ]
+    },
+    "3989": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3989"
+      ]
+    },
+    "3990": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3990"
+      ]
+    },
+    "3991": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3991"
+      ]
+    },
+    "3992": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3992"
+      ]
+    },
+    "3993": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3993"
+      ]
+    },
+    "3995": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3995"
+      ]
+    },
+    "3996": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3996"
+      ]
+    },
+    "3997": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3997"
+      ]
+    },
+    "3998": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3998"
+      ]
+    },
+    "3999": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "3999"
+      ]
+    },
+    "4000": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4000"
+      ]
+    },
+    "4001": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4001"
+      ]
+    },
+    "4002": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4002"
+      ]
+    },
+    "4021": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4021"
+      ]
+    },
+    "4023": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4023"
+      ]
+    },
+    "4077": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4077"
+      ]
+    },
+    "4082": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4082"
+      ]
+    },
+    "4133": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4133"
+      ]
+    },
+    "4134": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4134"
+      ]
+    },
+    "4172": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4172"
+      ]
+    },
+    "4217": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4217"
+      ]
+    },
+    "4244": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4244"
+      ]
+    },
+    "4245": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4245"
+      ]
+    },
+    "4286": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4286"
+      ]
+    },
+    "4287": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4287"
+      ]
+    },
+    "4300": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4300"
+      ]
+    },
+    "4309": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4309"
+      ]
+    },
+    "4342": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4342"
+      ]
+    },
+    "4343": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4343"
+      ]
+    },
+    "4377": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4377"
+      ]
+    },
+    "4378": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4378"
+      ]
+    },
+    "4403": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4403"
+      ]
+    },
+    "4407": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4407"
+      ]
+    },
+    "4419": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4419"
+      ]
+    },
+    "4440": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4440"
+      ]
+    },
+    "4480": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4480"
+      ]
+    },
+    "4481": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4481"
+      ]
+    },
+    "4482": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4482"
+      ]
+    },
+    "4509": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4509"
+      ]
+    },
+    "4510": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4510"
+      ]
+    },
+    "4547": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4547"
+      ]
+    },
+    "4588": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4588"
+      ]
+    },
+    "4589": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4589"
+      ]
+    },
+    "4677": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4677"
+      ]
+    },
+    "4679": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4679"
+      ]
+    },
+    "4770": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4770"
+      ]
+    },
+    "4776": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4776"
+      ]
+    },
+    "4780": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4780"
+      ]
+    },
+    "4781": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4781"
+      ]
+    },
+    "4791": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4791"
+      ]
+    },
+    "4802": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4802"
+      ]
+    },
+    "4813": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4813"
+      ]
+    },
+    "4839": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4839"
+      ]
+    },
+    "4850": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4850"
+      ]
+    },
+    "4858": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4858"
+      ]
+    },
+    "4871": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4871"
+      ]
+    },
+    "4876": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4876"
+      ]
+    },
+    "4884": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4884"
+      ]
+    },
+    "4898": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4898"
+      ]
+    },
+    "4923": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4923"
+      ]
+    },
+    "4957": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4957"
+      ]
+    },
+    "4958": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4958"
+      ]
+    },
+    "4981": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4981"
+      ]
+    },
+    "4989": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "4989"
+      ]
+    },
+    "5080": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5080"
+      ]
+    },
+    "5099": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5099"
+      ]
+    },
+    "5122": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5122"
+      ]
+    },
+    "5125": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5125"
+      ]
+    },
+    "5127": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5127"
+      ]
+    },
+    "5128": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5128"
+      ]
+    },
+    "5145": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5145"
+      ]
+    },
+    "5157": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5157"
+      ]
+    },
+    "5177": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5177"
+      ]
+    },
+    "5195": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5195"
+      ]
+    },
+    "5247": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5247"
+      ]
+    },
+    "5255": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5255"
+      ]
+    },
+    "5271": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5271"
+      ]
+    },
+    "5298": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5298"
+      ]
+    },
+    "5313": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5313"
+      ]
+    },
+    "5320": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5320"
+      ]
+    },
+    "5324": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5324"
+      ]
+    },
+    "5325": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5325"
+      ]
+    },
+    "5516": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5516"
+      ]
+    },
+    "5528": {
+      "route": "PENDING_DIRECT_OFFICIAL_CHECK",
+      "groupMembers": [
+        "5528"
+      ]
+    }
+  },
+  "existingHits": {
+    "1395": [
+      {
+        "reason": "DOCUMENTED_SAME_RANK_ALIAS",
+        "target": {
+          "targetType": "RC2",
+          "targetId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1944",
+          "name": "Helictochloa pratensis subsp. iberica",
+          "rank": "subspecies",
+          "hybrid": false
+        },
+        "evidence": {
+          "name": "Helictochloa pratensis subsp. iberica",
+          "rank": "subspecies",
+          "hybrid": false,
+          "source": "Flora Montiberica 75",
+          "relationState": "DOCUMENTED_EQUIVALENT_SAME_RANK",
+          "sourceUrl": "https://www.floramontiberica.org/FM/075/Flora_Montib_075_077-093_2019.pdf"
+        }
+      }
+    ]
+  },
+  "blockers": []
+}

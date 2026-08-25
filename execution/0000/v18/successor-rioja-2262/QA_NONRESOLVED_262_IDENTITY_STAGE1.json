@@ -1,0 +1,12 @@
+{
+  "schema": "JBLR_V18_QA_NONRESOLVED_262_IDENTITY_STAGE1_V1",
+  "membership262": true,
+  "all262Accounted": true,
+  "resolvedOverlap": 0,
+  "fuzzyMerges": 0,
+  "rankCollapse": 0,
+  "hybridCollapse": 0,
+  "sourceRowsLost": 0,
+  "identityCollisionBlockers": 0,
+  "qaState": "PASS_STAGE1_PENDING_DIRECT_OFFICIAL_CHECK"
+}

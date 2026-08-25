@@ -1,0 +1,48 @@
+{
+  "schema": "JBLR_V18_NONRESOLVED_262_IDENTITY_EDGES_STAGE1_V1",
+  "strong": [],
+  "reviewOnly": [
+    {
+      "a": "1172",
+      "b": "3587",
+      "reason": "PRIOR_NETWORK_ALIAS_TO_SOURCE_REVIEW_ONLY",
+      "evidence": {
+        "name": "Campanula paui",
+        "rank": "species",
+        "hybrid": false
+      }
+    },
+    {
+      "a": "1172",
+      "b": "3587",
+      "reason": "SHARED_PRIOR_NETWORK_ALIAS_REVIEW_ONLY",
+      "evidence": {
+        "aliasKey": "campanula granatensis"
+      }
+    },
+    {
+      "a": "3394",
+      "b": "3397",
+      "reason": "SHARED_PRIOR_NETWORK_ALIAS_REVIEW_ONLY",
+      "evidence": {
+        "aliasKey": "taraxacum gr."
+      }
+    },
+    {
+      "a": "489",
+      "b": "2865",
+      "reason": "SHARED_PRIOR_NETWORK_ALIAS_REVIEW_ONLY",
+      "evidence": {
+        "aliasKey": "galium tenellum"
+      }
+    },
+    {
+      "a": "489",
+      "b": "4300",
+      "reason": "SHARED_PRIOR_NETWORK_ALIAS_REVIEW_ONLY",
+      "evidence": {
+        "aliasKey": "galium scabrum"
+      }
+    }
+  ]
+}

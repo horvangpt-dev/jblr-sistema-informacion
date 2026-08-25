@@ -1,0 +1,10 @@
+{
+  "schema": "JBLR_V18_IDENTITY_262_STAGE1_RUN_RECEIPT_V1",
+  "runId": 32896074110,
+  "triggerSha": "9b6f99d4920bea4bd46edda8d8fb950ff0ff77ac",
+  "analyzeExitCode": 0,
+  "rc2Mutation": 0,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "stime": "HOLD"
+}
