@@ -1,0 +1,168 @@
+name: 06 V17 batch1 Spanish to EIDOS retry v3
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/BATCH1_RETRY_V3_TRIGGER.json'
+
+permissions:
+  contents: write
+
+jobs:
+  retry_batch1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 1
+
+      - name: Validate batch and enrichment
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          rows=[json.loads(x) for x in (root/'runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_01/BATCH_RESULTS.jsonl').read_text(encoding='utf-8').splitlines() if x.strip()]
+          enr=json.load(open(root/'BATCH1_SPANISH_ENRICHMENT_V3.json',encoding='utf-8'))
+          assert len(rows)==100 and len({str(x['B_SOURCE_RECORD_ID']) for x in rows})==100
+          assert [int(x['position309']) for x in rows]==list(range(1,101))
+          ids={str(x['B_SOURCE_RECORD_ID']) for x in rows}
+          assert len(enr['relations'])>=20
+          assert all(str(r['B_SOURCE_RECORD_ID']) in ids for r in enr['relations'])
+          assert all(r['sourceUrl'].startswith('https://') for r in enr['relations'])
+          assert all(r['sourceNameVerbatim'] and r['alias'] and r['sourceRank'] and r['aliasRank'] for r in enr['relations'])
+          PY
+
+      - name: Download current EIDOS
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl"
+
+      - name: Recompute batch1 with verified Spanish aliases
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,re
+          from collections import defaultdict
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          old=[json.loads(x) for x in (root/'runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_01/BATCH_RESULTS.jsonl').read_text(encoding='utf-8').splitlines() if x.strip()]
+          enr=json.load(open(root/'BATCH1_SPANISH_ENRICHMENT_V3.json',encoding='utf-8'))
+          byid=defaultdict(list)
+          for r in enr['relations']: byid[str(r['B_SOURCE_RECORD_ID'])].append(r)
+          def norm(s): return re.sub(r'\s+',' ',(s or '').replace('×','x').strip()).casefold()
+          def canonical(name):
+              s=re.sub(r'\s+',' ',(name or '').replace('×',' x ').strip())
+              pat=re.compile(r'^([A-ZÁÉÍÓÚÜÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ.-]+\s+(?:x\s+)?[a-záéíóúüñ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9.-]+(?:\s+(?:subsp\.?|ssp\.?|var\.?|f\.?|nothosubsp\.?)\s+[a-záéíóúüñ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9.-]+)?)')
+              m=pat.match(s); c=m.group(1) if m else s
+              c=re.sub(r'\bssp\.?(?=\s)','subsp.',c); c=re.sub(r'\bsubsp\.?(?=\s)','subsp.',c); c=re.sub(r'\bvar\.?(?=\s)','var.',c); c=re.sub(r'\bf\.?(?=\s)','f.',c)
+              return re.sub(r'\s+',' ',c).strip().replace(' x ',' × ')
+          def rank_norm(s):
+              x=norm(s).replace('.','').replace('_',' ')
+              return {'sp':'species','species':'species','especie':'species','subsp':'subspecies','ssp':'subspecies','subspecies':'subspecies','subespecie':'subspecies','var':'variety','variety':'variety','variedad':'variety','forma':'form','form':'form','f':'form','nothospecies':'species','nothosubspecies':'subspecies'}.get(x,x)
+          def hybrid(name): return bool(re.search(r'\s(?:x|×)\s', ' '+re.sub(r'\s+',' ',name or '').strip()+' ', flags=re.I))
+          # Build EIDOS exact-name index.
+          eidx={}; block=[]
+          def emit(lines):
+              if not lines: return
+              t='\n'.join(lines)
+              mn=re.search(r'Darwin:scientificName\s+"([^"]+)"',t); mi=re.search(r'Darwin:taxonID\s+"([^"]+)"',t)
+              if not (mn and mi): return
+              ms=re.search(r'Darwin:taxonomicStatus\s+"([^"]+)"',t); mr=re.search(r'Darwin:taxonRank\s+"([^"]+)"',t); ma=re.search(r'Darwin:nameAccordingTo\s+"([^"]+)"',t)
+              c=canonical(mn.group(1)); rec={'scientificName':mn.group(1),'canonicalName':c,'taxonID':mi.group(1),'taxonomicStatus':ms.group(1) if ms else None,'rank':rank_norm(mr.group(1) if mr else ''),'nameAccordingTo':ma.group(1) if ma else None}
+              eidx.setdefault(norm(c),[]).append(rec)
+          ep=Path(os.environ['RUNNER_TEMP'])/'eidos.ttl'
+          with open(ep,encoding='utf-8',errors='replace') as f:
+              for line in f:
+                  if not line.strip(): emit(block); block=[]
+                  else: block.append(line.rstrip())
+              emit(block)
+          assert len(eidx)>1000
+          def accepted_exact(alias,rank):
+              same=[r for r in eidx.get(norm(canonical(alias)),[]) if r.get('rank')==rank]
+              acc=[r for r in same if norm(r.get('taxonomicStatus')) in {'aceptado/válido','aceptado/valido','accepted','valid'}]
+              return same,acc
+          results=[]
+          new_recoveries=0; new_confirmations=0; rank_guard_hits=0; resolved=conflicts=unresolved=0
+          for row in old:
+              rid=str(row['B_SOURCE_RECORD_ID']); sname=row['nameVerbatim']; srank=row['sourceRank']; ishyb=hybrid(sname)
+              old_aliases=[]; seen=set()
+              for a in row.get('documentedAliases',[]):
+                  k=norm(canonical(a))
+                  if k and k not in seen: seen.add(k); old_aliases.append({'alias':a,'aliasRank':srank,'origin':'PRIOR_DOCUMENTED_NETWORK'})
+              newrels=byid.get(rid,[])
+              queries=[]; closure_ids=set(); old_closure_ids=set(); new_closure_ids=set(); guarded=[]; local_multi=False
+              if ishyb:
+                  # Parent-name aliases never identify a hybrid formula. No explicit hybrid-equivalent alias is supplied in v3.
+                  for a in old_aliases: guarded.append({'alias':a['alias'],'reason':'HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE'})
+              else:
+                  for a in old_aliases:
+                      same,acc=accepted_exact(a['alias'],srank)
+                      ids=sorted({x['taxonID'] for x in acc})
+                      queries.append({'alias':a['alias'],'aliasRank':srank,'origin':a['origin'],'closureEligible':True,'exactSameRankRecords':same[:10],'acceptedExactIds':ids})
+                      if len(ids)>1: local_multi=True
+                      old_closure_ids.update(ids); closure_ids.update(ids)
+              for rel in newrels:
+                  same,acc=accepted_exact(rel['alias'],rel['aliasRank'])
+                  ids=sorted({x['taxonID'] for x in acc})
+                  eligible=(not ishyb and rel['sourceRank']==rel['aliasRank'] and 'RANK_CHANGE_GUARD' not in rel['relationState'])
+                  queries.append({'alias':rel['alias'],'aliasRank':rel['aliasRank'],'origin':'SPANISH_VERIFIED','relationState':rel['relationState'],'source':rel['source'],'sourceUrl':rel['sourceUrl'],'closureEligible':eligible,'exactRecords':same[:10],'acceptedExactIds':ids})
+                  if eligible:
+                      if len(ids)>1: local_multi=True
+                      new_closure_ids.update(ids); closure_ids.update(ids)
+                  else:
+                      guarded.append({'alias':rel['alias'],'reason':'RANK_OR_HYBRID_GUARD','eidosAcceptedExactIds':ids,'source':rel['source']})
+                      if ids: rank_guard_hits += 1
+              prior_id=row.get('ID_TAXON_EXACT')
+              if ishyb:
+                  state='CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE'; tid=None; conflicts+=1
+              elif local_multi or len(closure_ids)>1:
+                  state='CONFLICT_MULTIPLE_EXACT_EIDOS_IDS_VIA_DOCUMENTED_NETWORK'; tid=None; conflicts+=1
+              elif len(closure_ids)==1:
+                  tid=next(iter(closure_ids)); state='RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK'; resolved+=1
+                  if not prior_id and tid in new_closure_ids: new_recoveries+=1
+                  if prior_id and tid in new_closure_ids: new_confirmations+=1
+              else:
+                  tid=None; state='UNRESOLVED_AFTER_SPANISH_NETWORK_AND_EIDOS'; unresolved+=1
+              results.append({'batch':1,'position309':row['position309'],'B_SOURCE_RECORD_ID':rid,'nameVerbatim':sname,'sourceRank':srank,'isHybrid':ishyb,'priorID_TAXON_EXACT':prior_id,'newSpanishRelations':newrels,'ID_TAXON_EXACT':tid,'state':state,'closureIds':sorted(closure_ids),'oldNetworkClosureIds':sorted(old_closure_ids),'newSpanishClosureIds':sorted(new_closure_ids),'guardedRelations':guarded,'queries':queries})
+          assert len(results)==100 and len({x['B_SOURCE_RECORD_ID'] for x in results})==100
+          assert resolved+conflicts+unresolved==100
+          out=root/'runs/SPANISH_SYNONYM_TO_EIDOS_V3/batch_01_retry'; out.mkdir(parents=True,exist_ok=True)
+          with open(out/'BATCH_RESULTS.jsonl','w',encoding='utf-8') as f:
+              for r in results: f.write(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n')
+          old_summary=json.load(open(root/'runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_01/SUMMARY.json',encoding='utf-8'))
+          sha=hashlib.sha256(ep.read_bytes()).hexdigest()
+          summary={'pass':True,'batch':1,'retry':'v3','processedRows':100,'uniqueIds':100,'verifiedSpanishRelationCount':len(enr['relations']),'rowsWithVerifiedSpanishRelations':len(byid),'resolved':resolved,'conflicts':conflicts,'unresolved':unresolved,'newRecoveriesViaSpanishAliases':new_recoveries,'existingResolvedAlsoSupportedByNewSpanishAliases':new_confirmations,'rankGuardQueriesWithEidosHit':rank_guard_hits,'previousTechnicalAttempt':{'resolved':old_summary['resolved'],'conflicts':old_summary['conflicts'],'unresolved':old_summary['unresolved'],'newSpanishAliasCount':old_summary['newSpanishAliasCount'],'status':'SUPERSEDED_SCIENTIFICALLY'},'eidosSha256':sha,'guards':{'noFuzzy':True,'noParentIdInheritance':True,'noRankCollapse':True,'hybridGuard':True,'sourceFailureNotNotFound':True,'closed1953Untouched':True},'stimes':'HOLD'}
+          (out/'SUMMARY.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(summary,ensure_ascii=False))
+          PY
+
+      - name: Verify invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('execution/06/v17/synonym-system-309/runs/SPANISH_SYNONYM_TO_EIDOS_V3/batch_01_retry')
+          s=json.load(open(p/'SUMMARY.json'))
+          rows=[json.loads(x) for x in (p/'BATCH_RESULTS.jsonl').read_text().splitlines() if x.strip()]
+          assert s['pass'] and s['processedRows']==100 and s['uniqueIds']==100
+          assert len(rows)==100 and len({x['B_SOURCE_RECORD_ID'] for x in rows})==100
+          assert s['resolved']+s['conflicts']+s['unresolved']==100
+          assert s['guards']['noFuzzy'] and s['guards']['noParentIdInheritance'] and s['guards']['noRankCollapse'] and s['guards']['hybridGuard'] and s['guards']['closed1953Untouched']
+          assert s['stimes']=='HOLD'
+          PY
+
+      - name: Persist immutable retry evidence
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add execution/06/v17/synonym-system-309/runs/SPANISH_SYNONYM_TO_EIDOS_V3/batch_01_retry
+          git commit -m "evidence(06): corrected Spanish-to-EIDOS batch1 retry v3 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
