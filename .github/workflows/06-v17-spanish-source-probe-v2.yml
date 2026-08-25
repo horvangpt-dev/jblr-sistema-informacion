@@ -1,0 +1,67 @@
+name: 06 V17 Spanish source direct probe v2
+
+on:
+  push:
+    branches: [06-v17-synonym-system-309]
+    paths:
+      - 'execution/06/v17/synonym-system-309/PROBE_SPANISH_SOURCES.json'
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+      - run: python -m pip install requests beautifulsoup4
+      - name: Probe direct source endpoints
+        run: |
+          python - <<'PY'
+          import json,re,requests
+          from bs4 import BeautifulSoup
+          from urllib.parse import quote_plus
+          from pathlib import Path
+          names=['Anthemis triumfettii','Anchusa italica','Asperula pyrenaica','Allium schoenoprassum']
+          S=requests.Session(); S.headers['User-Agent']='Mozilla/5.0 JBLR/1.0'
+          out=[]
+          def get(url):
+              try:
+                  r=S.get(url,timeout=20,allow_redirects=True)
+                  return {'ok':r.ok,'status':r.status_code,'url':r.url,'ctype':r.headers.get('content-type',''),'len':len(r.content),'text':r.text[:200000] if 'text' in r.headers.get('content-type','') or 'html' in r.headers.get('content-type','') else ''}
+              except Exception as e: return {'ok':False,'error':type(e).__name__+':'+str(e),'url':url,'text':''}
+          for name in names:
+              genus=name.split()[0]
+              rec={'name':name,'probes':{}}
+              urls={
+                'FI_GENUS':f'https://www.floraiberica.es/PHP/cientificos_.php?gen={quote_plus(genus)}',
+                'FA_SEARCH':f'https://floradeandalucia.es/?s={quote_plus(name)}',
+                'FA_WP_SEARCH':f'https://floradeandalucia.es/wp-json/wp/v2/search?search={quote_plus(name)}',
+                'HVMO_INDEX':f'https://herbarivirtual.uib.es/es/general/{genus[0].upper()}/per-nom-cientific',
+                'HVMO_SEARCH':f'https://herbarivirtual.uib.es/es/?s={quote_plus(name)}',
+              }
+              for k,u in urls.items():
+                  x=get(u); txt=x.pop('text','');
+                  if txt:
+                      soup=BeautifulSoup(txt,'html.parser')
+                      x['title']=soup.title.get_text(' ',strip=True) if soup.title else None
+                      x['h1']=[h.get_text(' ',strip=True) for h in soup.find_all('h1')[:3]]
+                      x['links']=[{'text':a.get_text(' ',strip=True)[:160],'href':a.get('href')} for a in soup.find_all('a')[:300] if a.get('href')]
+                      x['containsName']=name.casefold() in soup.get_text(' ',strip=True).casefold()
+                  rec['probes'][k]=x
+              out.append(rec)
+          root=Path('execution/06/v17/synonym-system-309/runs/SPANISH_SOURCE_PROBE_V2'); root.mkdir(parents=True,exist_ok=True)
+          (root/'probe.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps([{r['name']:{k:(v.get('status'),v.get('containsName'),v.get('len')) for k,v in r['probes'].items()}} for r in out],ensure_ascii=False))
+          PY
+      - name: Persist
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add execution/06/v17/synonym-system-309/runs/SPANISH_SOURCE_PROBE_V2
+          git commit -m "evidence(06): direct Spanish source probe v2 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
