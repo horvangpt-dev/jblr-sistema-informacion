@@ -1,0 +1,135 @@
+name: 06 V17 synonym system 309 v2
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/EXECUTE_AUTH_V2.json'
+
+permissions:
+  contents: write
+
+jobs:
+  synonym_system_309_v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout isolated branch
+        uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 1
+
+      - name: Reconstruct and validate canonical 309 input
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          cat "$ROOT/source_chunks/part_001.b64" "$ROOT/source_chunks/part_002.b64" "$ROOT/source_chunks/part_003.b64" > "$RUNNER_TEMP/source.b64"
+          base64 -d "$RUNNER_TEMP/source.b64" | gzip -dc > "$RUNNER_TEMP/SOURCE_309.json"
+          test "$(git hash-object "$RUNNER_TEMP/SOURCE_309.json")" = '3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          echo '3ff81efefbde7b3d80978ea72622e0f7e9a860a45697548af12d6b25cac622da  '"$RUNNER_TEMP/SOURCE_309.json" | sha256sum -c -
+          cp "$ROOT/run_synonym_309.py" "$RUNNER_TEMP/run_synonym_309.py"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309')
+          req=json.load(open(root/'RUN_REQUEST.json'))
+          auth=json.load(open(root/'EXECUTE_AUTH_V2.json'))
+          src=json.load(open(Path(os.environ['RUNNER_TEMP'])/'SOURCE_309.json'))
+          rows=src['groups']['NO_RESULT_IN_SPANISH_SOURCES_CONSULTED']
+          assert len(rows)==309 and len({str(x['B_SOURCE_RECORD_ID']) for x in rows})==309
+          assert all((x.get('name') or '').strip() for x in rows)
+          assert req['scope']==309 and req['authorizationEvent']=='JBLR-EVT-0000-20260825-EXECUTE-SYNONYM-SYSTEM-309-V17-001'
+          assert req['inputBlobSha']=='3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          assert req['inputSha256']=='3ff81efefbde7b3d80978ea72622e0f7e9a860a45697548af12d6b25cac622da'
+          assert req['crossWithA'] is False and req['corpusBFreeze'] is False
+          assert req['neonWrites']==0 and req['databaseWrites']==0
+          assert req['noFuzzy'] and req['noParentIdInheritance'] and req['noRankCollapse']
+          assert req['downstreamStimesAuthorized'] is False
+          assert req['guards']['sameSpeciesNotSameInfraspecificTaxon'] and req['guards']['hybridGuard'] and req['guards']['closed1953Untouched']
+          assert auth['execute'] is True and auth['scope']==309 and auth['authorizationEvent']==req['authorizationEvent']
+          p=Path(os.environ['RUNNER_TEMP'])/'run_synonym_309.py'
+          s=p.read_text(encoding='utf-8')
+          old='9d0f0711854e4af785535cb0289c20d5ac47dd11'; new='3bf435b95a041e1ada4941cfe85a1a98a38034d5'
+          assert s.count(old)==1
+          p.write_text(s.replace(old,new),encoding='utf-8')
+          compile(p.read_text(encoding='utf-8'),str(p),'exec')
+          PY
+
+      - name: Fetch validated technical engine
+        run: |
+          set -euo pipefail
+          git fetch origin 06-vnext-corpus-b-185-taxonomy --depth=1 --no-tags
+          git show origin/06-vnext-corpus-b-185-taxonomy:execution/06/vnext/corpus-b-unresolved-185/taxonomy_185_vnext.py > "$RUNNER_TEMP/taxonomy_185_vnext.py"
+          test -s "$RUNNER_TEMP/taxonomy_185_vnext.py"
+
+      - name: Install runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Download current official EIDOS snapshot
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl" | tee "$RUNNER_TEMP/eidos.sha256"
+
+      - name: Execute documented synonym system on 309
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          OUT="$ROOT/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001"
+          rm -rf "$OUT"
+          mkdir -p "$OUT" "$ROOT/state"
+          printf '%s\n' '{"state":"RUNNING","actor":"06","runId":"06_SYNONYM_SYSTEM_309_V17_20260825_001","scope":309,"crossWithA":false,"neonWrites":0,"databaseWrites":0,"corpusBFreeze":false,"downstreamStimesExecuted":false}' > "$ROOT/state/RUNNING.json"
+          python "$RUNNER_TEMP/run_synonym_309.py" "$RUNNER_TEMP/taxonomy_185_vnext.py" "$RUNNER_TEMP/SOURCE_309.json" "$RUNNER_TEMP/eidos.ttl" "$OUT" "$ROOT/RUN_REQUEST.json"
+
+      - name: Enforce QA and guards
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          out=Path('execution/06/v17/synonym-system-309/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001')
+          r=json.load(open(out/'RUN_RECEIPT.json')); q=json.load(open(out/'QA_REPORT.json'))
+          ids=json.load(open(out/'ID_TAXON_STATE_RESULTS.json'))['rows']
+          assert r['processedRows']==309 and r['inputRows']==309 and len(ids)==309
+          assert q['pass'] is True and q['checks']['rankGuard309'] is True and q['checks']['hybridFormulaGuardApplied'] is True
+          assert all(not x['forcedId'] and not x['fuzzyUsed'] and not x['parentIdInherited'] and not x['rankCollapsed'] for x in ids)
+          assert r['crossWithA'] is False and r['corpusBFreeze'] is False and r['neonWrites']==0 and r['databaseWrites']==0
+          assert r['downstreamStimesExecuted'] is False and r['existingCorpusOverwritten'] is False
+          print(json.dumps({'processedRows':309,'resolvedCount':r.get('resolvedCount',0),'conflictCount':r.get('conflictCount',0),'pureUnresolvedCount':r.get('pureUnresolvedCount',0),'hybridFormulaGuardedCount':r.get('hybridFormulaGuardedCount',0),'sourceStatus':r.get('sourceStatus',{})},ensure_ascii=False))
+          PY
+
+      - name: Persist immutable evidence
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          OUT="$ROOT/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path('execution/06/v17/synonym-system-309'); out=root/'runs/06_SYNONYM_SYSTEM_309_V17_20260825_001'
+          r=json.load(open(out/'RUN_RECEIPT.json'))
+          state={'state':r['state'],'stopRequired':r['stopRequired'],'stopReason':r['stopReason'],'runId':r['runId'],'githubRunId':os.environ['GITHUB_RUN_ID'],'scope':309,'processedRows':r['processedRows'],'resolvedCount':r.get('resolvedCount',0),'unresolvedOrConflictCount':r.get('unresolvedOrConflictCount',0),'conflictCount':r.get('conflictCount',0),'pureUnresolvedCount':r.get('pureUnresolvedCount',0),'hybridFormulaGuardedCount':r.get('hybridFormulaGuardedCount',0),'crossWithA':False,'neonWrites':0,'databaseWrites':0,'corpusBFreeze':False,'downstreamStimesExecuted':False}
+          (root/'state/TERMINAL.json').write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add "$OUT" "$ROOT/state/RUNNING.json" "$ROOT/state/TERMINAL.json"
+          git commit -m "evidence(06): synonym system 309 v2 ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
+
+      - name: Enforce stop before downstream STIME
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/06/v17/synonym-system-309/runs/06_SYNONYM_SYSTEM_309_V17_20260825_001/RUN_RECEIPT.json'
+          r=json.load(open(p))
+          if r['stopRequired']: raise SystemExit('STOP_REQUIRED: '+str(r['stopReason']))
+          assert r['state']=='PHASE1_TAXONOMIC_COMPLETE_STOP_BEFORE_DOWNSTREAM_STIMES'
+          assert r['processedRows']==309 and r['downstreamStimesExecuted'] is False
+          PY
