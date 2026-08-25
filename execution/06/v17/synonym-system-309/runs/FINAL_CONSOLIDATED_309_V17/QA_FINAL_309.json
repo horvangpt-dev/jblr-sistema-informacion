@@ -1,0 +1,52 @@
+{
+  "qa": {
+    "TOTAL_INPUT_IDS": 309,
+    "TOTAL_OUTPUT_IDS": 309,
+    "UNION_BATCH_IDS_EQUALS_INPUT_309_IDS": true,
+    "UNIQUE_SOURCE_IDS": 309,
+    "ROW_LOSS_COUNT": 0,
+    "DUPLICATE_BATCH_MEMBERSHIP_COUNT": 0,
+    "CROSS_TAXON_MUTATION_COUNT": 0,
+    "UNTRACKED_QUERY_NAMES": 0,
+    "ASSERTIONS_WITHOUT_EVIDENCE": 0,
+    "FALSE_NOT_FOUND_FROM_SOURCE_FAILURE": 0,
+    "PARENT_ID_ASSIGNED_TO_CHILD": 0,
+    "RANK_COLLAPSE": 0,
+    "HYBRID_COLLAPSE": 0,
+    "SUMMARY_GUARDS": {
+      "1": {
+        "noFuzzy": true,
+        "noParentIdInheritance": true,
+        "noRankCollapse": true,
+        "noSpeciesSubspeciesCollapse": true,
+        "noHybridCollapse": true,
+        "sourceFailureNotNotFound": null,
+        "sourceNamePreserved": null
+      },
+      "2": {
+        "noFuzzy": true,
+        "noParentIdInheritance": true,
+        "noRankCollapse": true,
+        "noSpeciesSubspeciesCollapse": true,
+        "noHybridCollapse": true,
+        "sourceFailureNotNotFound": true,
+        "sourceNamePreserved": true
+      },
+      "3": {
+        "noFuzzy": true,
+        "noParentIdInheritance": true,
+        "noRankCollapse": true,
+        "noSpeciesSubspeciesCollapse": true,
+        "noHybridCollapse": true,
+        "sourceFailureNotNotFound": true,
+        "sourceNamePreserved": true
+      }
+    },
+    "QA_FINAL": "PASS"
+  },
+  "crossTaxonMutationEvidence": [],
+  "untrackedQueryEvidence": [],
+  "assertionsWithoutEvidencePositions": [],
+  "rankCollapsePositions": [],
+  "hybridCollapsePositions": []
+}

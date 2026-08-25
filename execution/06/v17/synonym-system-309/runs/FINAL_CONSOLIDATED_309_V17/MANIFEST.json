@@ -1,0 +1,22 @@
+{
+  "files": {
+    "REPORT_TO_0000_FINAL.json": {
+      "sha256": "03225be53094e56369490cf2f9fe19760ca3c95e310c23538d347b0a33b641e1",
+      "bytes": 6170
+    },
+    "NEW_ID_TAXON_RECOVERED.json": {
+      "sha256": "09963067bfadd6ecf96799e17081938826b4036c0bfad961d80fa977653e9b44",
+      "bytes": 2951
+    },
+    "CONSOLIDATED_309.jsonl": {
+      "sha256": "a2c49bd2f6ad05769dafecaf90b417656ef7e298305d1d250b95b32e1eb556f2",
+      "bytes": 594327
+    },
+    "QA_FINAL_309.json": {
+      "sha256": "23d728d415e593cd5ea686d1d138fb80d109c296420de3991e5f6d8627982551",
+      "bytes": 1518
+    }
+  },
+  "qaFinal": "PASS",
+  "reportState": "READY_FOR_0000_REVIEW"
+}

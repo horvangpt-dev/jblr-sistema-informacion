@@ -1,0 +1,130 @@
+[
+  {
+    "batch": 1,
+    "position309": 10,
+    "B_SOURCE_RECORD_ID": "2545",
+    "nameVerbatim": "Anchusa italica",
+    "ID_TAXON": "2124",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 1,
+    "position309": 15,
+    "B_SOURCE_RECORD_ID": "3682",
+    "nameVerbatim": "Anthemis triumfettii",
+    "ID_TAXON": "31641",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 1,
+    "position309": 40,
+    "B_SOURCE_RECORD_ID": "4065",
+    "nameVerbatim": "Betula celtiberica",
+    "ID_TAXON": "2767",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 1,
+    "position309": 86,
+    "B_SOURCE_RECORD_ID": "5071",
+    "nameVerbatim": "Conopodium bourgaei",
+    "ID_TAXON": "3678",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 1,
+    "position309": 87,
+    "B_SOURCE_RECORD_ID": "5244",
+    "nameVerbatim": "Conopodium capillifolium",
+    "ID_TAXON": "3679",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 1,
+    "position309": 88,
+    "B_SOURCE_RECORD_ID": "907",
+    "nameVerbatim": "Conopodium ramosum",
+    "ID_TAXON": "3672",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 2,
+    "position309": 113,
+    "B_SOURCE_RECORD_ID": "3592",
+    "nameVerbatim": "Epipactis hispanica",
+    "ID_TAXON": "32231",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 2,
+    "position309": 123,
+    "B_SOURCE_RECORD_ID": "4676",
+    "nameVerbatim": "Galeopsis angustifolia subsp. carpetana",
+    "ID_TAXON": "4724",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 2,
+    "position309": 162,
+    "B_SOURCE_RECORD_ID": "4837",
+    "nameVerbatim": "Knautia arvernensis",
+    "ID_TAXON": "5574",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 2,
+    "position309": 183,
+    "B_SOURCE_RECORD_ID": "4615",
+    "nameVerbatim": "Melilotus altissima",
+    "ID_TAXON": "6142",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 2,
+    "position309": 187,
+    "B_SOURCE_RECORD_ID": "900",
+    "nameVerbatim": "Myosotis ramosissima subsp. globularis",
+    "ID_TAXON": "6467",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 2,
+    "position309": 189,
+    "B_SOURCE_RECORD_ID": "2041",
+    "nameVerbatim": "Nepeta nepetella subsp. cordifolia",
+    "ID_TAXON": "6556",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 3,
+    "position309": 230,
+    "B_SOURCE_RECORD_ID": "662",
+    "nameVerbatim": "Potentilla tabernaemontani",
+    "ID_TAXON": "7344",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 3,
+    "position309": 265,
+    "B_SOURCE_RECORD_ID": "3617",
+    "nameVerbatim": "Scirpus holoschoenus",
+    "ID_TAXON": "8128",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 3,
+    "position309": 279,
+    "B_SOURCE_RECORD_ID": "1709",
+    "nameVerbatim": "Simethis mattiazzi",
+    "ID_TAXON": "32028",
+    "viaSpanishEvidence": true
+  },
+  {
+    "batch": 3,
+    "position309": 284,
+    "B_SOURCE_RECORD_ID": "1941",
+    "nameVerbatim": "Sorbus mougeotii",
+    "ID_TAXON": "8562",
+    "viaSpanishEvidence": true
+  }
+]
