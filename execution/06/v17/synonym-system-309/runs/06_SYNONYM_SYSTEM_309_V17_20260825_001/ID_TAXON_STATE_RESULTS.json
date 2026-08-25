@@ -1,0 +1,3095 @@
+{
+  "runId": "06_SYNONYM_SYSTEM_309_V17_20260825_001",
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "1891",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3600",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5517",
+      "ID_TAXON_EXACT": "1941",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4981",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3143",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1326",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2250",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "156",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "300",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2545",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "895",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4287",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4286",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3261",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1897",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4979",
+      "ID_TAXON_EXACT": "2204",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2285",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "836",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4440",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3980",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3997",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3999",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4000",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4001",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1894",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "294",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3862",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4989",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5099",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1522",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1395",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1398",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1399",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "615",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5324",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2070",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4509",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4510",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4065",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1192",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3787",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3788",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3789",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "415",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1298",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4058",
+      "ID_TAXON_EXACT": "1079",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4958",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "910",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "911",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "305",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3378",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3587",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1172",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3629",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3767",
+      "ID_TAXON_EXACT": "3011",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4858",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2152",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3164",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3165",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1968",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2308",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4021",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2629",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2758",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2296",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2367",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3681",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3903",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4002",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3006",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3007",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5177",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5080",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2289",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1117",
+      "ID_TAXON_EXACT": "3444",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "686",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4419",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4781",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "839",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "840",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "974",
+      "ID_TAXON_EXACT": "3593",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1367",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "79",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4871",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5071",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5244",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "907",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3784",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5325",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2015",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1878",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1879",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5528",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4957",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "173",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3594",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2934",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2994",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2483",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1624",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1625",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1647",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3595",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2816",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1204",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4480",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4481",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4482",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3981",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3992",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4850",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3592",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1156",
+      "ID_TAXON_EXACT": "4341",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1250",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3990",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4802",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2316",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "394",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3720",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2043",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2054",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4676",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4547",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4300",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2865",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3271",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1285",
+      "ID_TAXON_EXACT": "4747",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "489",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4133",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4134",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3203",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4677",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4240",
+      "ID_TAXON_EXACT": "6669",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2149",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "412",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "413",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3272",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3428",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "136",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "137",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4776",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2602",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2120",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1270",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1271",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1272",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3555",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4217",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3429",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "892",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4342",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4343",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2617",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2618",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4244",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4245",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2929",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2930",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2500",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "687",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4837",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "781",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "591",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2063",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "531",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5298",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "670",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2538",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4589",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4809",
+      "ID_TAXON_EXACT": "2812",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2487",
+      "ID_TAXON_EXACT": "2815",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "789",
+      "ID_TAXON_EXACT": "1895",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3758",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5255",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1412",
+      "ID_TAXON_EXACT": "6067",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5516",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5195",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1949",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "636",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2037",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "106",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4615",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1755",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3986",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2034",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "900",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5122",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2041",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2953",
+      "ID_TAXON_EXACT": "6446",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1529",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3843",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3837",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3839",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3942",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "624",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "635",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2008",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4403",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4309",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2045",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4407",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4791",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3310",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1568",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5320",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "167",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3991",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1262",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "784",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2620",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4770",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5247",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2582",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1348",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2228",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "843",
+      "ID_TAXON_EXACT": "6992",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "391",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3402",
+      "ID_TAXON_EXACT": "7110",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3401",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4588",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4876",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4172",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5125",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3993",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3998",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3983",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3989",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2071",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "662",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3817",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3833",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3507",
+      "ID_TAXON_EXACT": "7231",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4077",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3082",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3083",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3626",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "791",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5127",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5128",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1189",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1614",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1733",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1442",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5338",
+      "ID_TAXON_EXACT": "7814",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2111",
+      "ID_TAXON_EXACT": "7616",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5157",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4884",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2944",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "779",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "78",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3995",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3996",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1821",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4415",
+      "ID_TAXON_EXACT": "1795",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4593",
+      "ID_TAXON_EXACT": "1794",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4839",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4023",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4377",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4378",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3982",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3985",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4075",
+      "ID_TAXON_EXACT": "5383",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4082",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3617",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_MULTIPLE_EXACT_EIDOS_IDS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2603",
+      "ID_TAXON_EXACT": "8106",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1692",
+      "ID_TAXON_EXACT": "2673",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "335",
+      "ID_TAXON_EXACT": "5387",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "627",
+      "ID_TAXON_EXACT": "8112",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4679",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2604",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1495",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2699",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3625",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5145",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5184",
+      "ID_TAXON_EXACT": "8280",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2431",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1896",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1709",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4887",
+      "ID_TAXON_EXACT": "8066",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3916",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4780",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4898",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1941",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2231",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "923",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3394",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3397",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "392",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1690",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5313",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4813",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2626",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1910",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "945",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "946",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3445",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3988",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "CONFLICT_HYBRID_FORMULA_REQUIRES_EXPLICIT_IDENTITY_EVIDENCE",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5271",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1582",
+      "ID_TAXON_EXACT": "9247",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1969",
+      "ID_TAXON_EXACT": "9245",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5343",
+      "ID_TAXON_EXACT": "9297",
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "RESOLVED_EXACT_EIDOS_ID_FROM_DOCUMENTED_NAME_NETWORK",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "240",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "241",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "242",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4923",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3512",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2372",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    },
+    {
+      "B_SOURCE_RECORD_ID": "105",
+      "ID_TAXON_EXACT": null,
+      "ID_TAXON_EFFECTIVE_PARENT_REFERENCE": null,
+      "ID_TAXON_STATE": "UNRESOLVED_AFTER_DOCUMENTED_NAME_NETWORK_AND_EXACT_EIDOS",
+      "forcedId": false,
+      "fuzzyUsed": false,
+      "parentIdInherited": false,
+      "rankCollapsed": false
+    }
+  ]
+}

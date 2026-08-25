@@ -1,0 +1,4022 @@
+{
+  "runId": "06_SYNONYM_SYSTEM_309_V17_20260825_001",
+  "rows": [
+    {
+      "index": 1,
+      "B_SOURCE_RECORD_ID": "1891",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Acer monspessulanum x A. campestre",
+      "parsedScientificName": "Acer monspessulanum",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1891",
+        "name": "Acer monspessulanum x A. campestre",
+        "sourceExcelRow": 6
+      }
+    },
+    {
+      "index": 2,
+      "B_SOURCE_RECORD_ID": "3600",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Adenocarpus hispanicus subsp. neilense",
+      "parsedScientificName": "Adenocarpus hispanicus subsp. neilense",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3600",
+        "name": "Adenocarpus hispanicus subsp. neilense",
+        "sourceExcelRow": 20
+      }
+    },
+    {
+      "index": 3,
+      "B_SOURCE_RECORD_ID": "5517",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Agave americana",
+      "parsedScientificName": "Agave americana",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5517",
+        "name": "Agave americana",
+        "sourceExcelRow": 35
+      }
+    },
+    {
+      "index": 4,
+      "B_SOURCE_RECORD_ID": "4981",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Alchemilla basaltica",
+      "parsedScientificName": "Alchemilla basaltica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4981",
+        "name": "Alchemilla basaltica",
+        "sourceExcelRow": 55
+      }
+    },
+    {
+      "index": 5,
+      "B_SOURCE_RECORD_ID": "3143",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Alchemilla filicaulis var. vestita",
+      "parsedScientificName": "Alchemilla filicaulis var. vestita",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3143",
+        "name": "Alchemilla filicaulis var. vestita",
+        "sourceExcelRow": 57
+      }
+    },
+    {
+      "index": 6,
+      "B_SOURCE_RECORD_ID": "1326",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Alchemilla plicatula",
+      "parsedScientificName": "Alchemilla plicatula",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1326",
+        "name": "Alchemilla plicatula",
+        "sourceExcelRow": 59
+      }
+    },
+    {
+      "index": 7,
+      "B_SOURCE_RECORD_ID": "2250",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Allium oleraceum var. oleraceum",
+      "parsedScientificName": "Allium oleraceum var. oleraceum",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2250",
+        "name": "Allium oleraceum var. oleraceum",
+        "sourceExcelRow": 72
+      }
+    },
+    {
+      "index": 8,
+      "B_SOURCE_RECORD_ID": "156",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Allium schoenoprassum",
+      "parsedScientificName": "Allium schoenoprassum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "156",
+        "name": "Allium schoenoprassum",
+        "sourceExcelRow": 74
+      }
+    },
+    {
+      "index": 9,
+      "B_SOURCE_RECORD_ID": "300",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Allium senescens subsp. montanum",
+      "parsedScientificName": "Allium senescens subsp. montanum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "300",
+        "name": "Allium senescens subsp. montanum",
+        "sourceExcelRow": 75
+      }
+    },
+    {
+      "index": 10,
+      "B_SOURCE_RECORD_ID": "2545",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Anchusa italica",
+      "parsedScientificName": "Anchusa italica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2545",
+        "name": "Anchusa italica",
+        "sourceExcelRow": 110
+      }
+    },
+    {
+      "index": 11,
+      "B_SOURCE_RECORD_ID": "895",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Andryala ragusina var. ragusina",
+      "parsedScientificName": "Andryala ragusina var. ragusina",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "895",
+        "name": "Andryala ragusina var. ragusina",
+        "sourceExcelRow": 116
+      }
+    },
+    {
+      "index": 12,
+      "B_SOURCE_RECORD_ID": "4287",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Anteriorchis coriophora",
+      "parsedScientificName": "Anteriorchis coriophora",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4287",
+        "name": "Anteriorchis coriophora",
+        "sourceExcelRow": 122
+      }
+    },
+    {
+      "index": 13,
+      "B_SOURCE_RECORD_ID": "4286",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Anteriorchis coriophora var. carpetana",
+      "parsedScientificName": "Anteriorchis coriophora var. carpetana",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4286",
+        "name": "Anteriorchis coriophora var. carpetana",
+        "sourceExcelRow": 123
+      }
+    },
+    {
+      "index": 14,
+      "B_SOURCE_RECORD_ID": "3261",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Anteriorchis fragrans",
+      "parsedScientificName": "Anteriorchis fragrans",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3261",
+        "name": "Anteriorchis fragrans",
+        "sourceExcelRow": 124
+      }
+    },
+    {
+      "index": 15,
+      "B_SOURCE_RECORD_ID": "3682",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Anthemis triumfettii",
+      "parsedScientificName": "Anthemis triumfettii",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3682",
+        "name": "Anthemis triumfettii",
+        "sourceExcelRow": 129
+      }
+    },
+    {
+      "index": 16,
+      "B_SOURCE_RECORD_ID": "1897",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Anthyllis montana subsp. hispanica",
+      "parsedScientificName": "Anthyllis montana subsp. hispanica",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1897",
+        "name": "Anthyllis montana subsp. hispanica",
+        "sourceExcelRow": 135
+      }
+    },
+    {
+      "index": 17,
+      "B_SOURCE_RECORD_ID": "4979",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Antirrhinum barrelieri",
+      "parsedScientificName": "Antirrhinum barrelieri",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4979",
+        "name": "Antirrhinum barrelieri",
+        "sourceExcelRow": 141
+      }
+    },
+    {
+      "index": 18,
+      "B_SOURCE_RECORD_ID": "2285",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Arum orientale subsp. orientale",
+      "parsedScientificName": "Arum orientale subsp. orientale",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2285",
+        "name": "Arum orientale subsp. orientale",
+        "sourceExcelRow": 186
+      }
+    },
+    {
+      "index": 19,
+      "B_SOURCE_RECORD_ID": "836",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Asperula pyrenaica",
+      "parsedScientificName": "Asperula pyrenaica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "836",
+        "name": "Asperula pyrenaica",
+        "sourceExcelRow": 195
+      }
+    },
+    {
+      "index": 20,
+      "B_SOURCE_RECORD_ID": "4440",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "parsedScientificName": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4440",
+        "name": "Asplenium adiantum-nigrum var. adiantum-nigrum",
+        "sourceExcelRow": 201
+      }
+    },
+    {
+      "index": 21,
+      "B_SOURCE_RECORD_ID": "3980",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Asplenium x alternifolium",
+      "parsedScientificName": "Asplenium × alternifolium",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3980",
+        "name": "Asplenium x alternifolium",
+        "sourceExcelRow": 216
+      }
+    },
+    {
+      "index": 22,
+      "B_SOURCE_RECORD_ID": "3997",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Asplenium x sarniense",
+      "parsedScientificName": "Asplenium × sarniense",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3997",
+        "name": "Asplenium x sarniense",
+        "sourceExcelRow": 217
+      }
+    },
+    {
+      "index": 23,
+      "B_SOURCE_RECORD_ID": "3999",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Asplenium x souchei",
+      "parsedScientificName": "Asplenium × souchei",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3999",
+        "name": "Asplenium x souchei",
+        "sourceExcelRow": 218
+      }
+    },
+    {
+      "index": 24,
+      "B_SOURCE_RECORD_ID": "4000",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Asplenium x staufferi",
+      "parsedScientificName": "Asplenium × staufferi",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4000",
+        "name": "Asplenium x staufferi",
+        "sourceExcelRow": 219
+      }
+    },
+    {
+      "index": 25,
+      "B_SOURCE_RECORD_ID": "4001",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Asplenium x ticinense",
+      "parsedScientificName": "Asplenium × ticinense",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4001",
+        "name": "Asplenium x ticinense",
+        "sourceExcelRow": 220
+      }
+    },
+    {
+      "index": 26,
+      "B_SOURCE_RECORD_ID": "1894",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Astragalus monspessulanus subsp. teresianus",
+      "parsedScientificName": "Astragalus monspessulanus subsp. teresianus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1894",
+        "name": "Astragalus monspessulanus subsp. teresianus",
+        "sourceExcelRow": 237
+      }
+    },
+    {
+      "index": 27,
+      "B_SOURCE_RECORD_ID": "294",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Astragalus sempervirens subsp. muticus",
+      "parsedScientificName": "Astragalus sempervirens subsp. muticus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "294",
+        "name": "Astragalus sempervirens subsp. muticus",
+        "sourceExcelRow": 239
+      }
+    },
+    {
+      "index": 28,
+      "B_SOURCE_RECORD_ID": "3862",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Astragalus vesicarius subsp. vesicarius",
+      "parsedScientificName": "Astragalus vesicarius subsp. vesicarius",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3862",
+        "name": "Astragalus vesicarius subsp. vesicarius",
+        "sourceExcelRow": 242
+      }
+    },
+    {
+      "index": 29,
+      "B_SOURCE_RECORD_ID": "4989",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Atropa bella-donna",
+      "parsedScientificName": "Atropa bella-donna",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4989",
+        "name": "Atropa bella-donna",
+        "sourceExcelRow": 252
+      }
+    },
+    {
+      "index": 30,
+      "B_SOURCE_RECORD_ID": "5099",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Avenula bromoides subsp. pauneroi",
+      "parsedScientificName": "Avenula bromoides subsp. pauneroi",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5099",
+        "name": "Avenula bromoides subsp. pauneroi",
+        "sourceExcelRow": 258
+      }
+    },
+    {
+      "index": 31,
+      "B_SOURCE_RECORD_ID": "1522",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Avenula lodunensis subsp. romero-zarcoi",
+      "parsedScientificName": "Avenula lodunensis subsp. romero-zarcoi",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1522",
+        "name": "Avenula lodunensis subsp. romero-zarcoi",
+        "sourceExcelRow": 259
+      }
+    },
+    {
+      "index": 32,
+      "B_SOURCE_RECORD_ID": "1395",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Avenula pratensis subsp. iberica",
+      "parsedScientificName": "Avenula pratensis subsp. iberica",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1395",
+        "name": "Avenula pratensis subsp. iberica",
+        "sourceExcelRow": 260
+      }
+    },
+    {
+      "index": 33,
+      "B_SOURCE_RECORD_ID": "1398",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Avenula pratensis var. paniculata",
+      "parsedScientificName": "Avenula pratensis var. paniculata",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1398",
+        "name": "Avenula pratensis var. paniculata",
+        "sourceExcelRow": 261
+      }
+    },
+    {
+      "index": 34,
+      "B_SOURCE_RECORD_ID": "1399",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Avenula pratensis var. vasconica",
+      "parsedScientificName": "Avenula pratensis var. vasconica",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1399",
+        "name": "Avenula pratensis var. vasconica",
+        "sourceExcelRow": 262
+      }
+    },
+    {
+      "index": 35,
+      "B_SOURCE_RECORD_ID": "615",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Avenula sulcata subsp. sulcata",
+      "parsedScientificName": "Avenula sulcata subsp. sulcata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "615",
+        "name": "Avenula sulcata subsp. sulcata",
+        "sourceExcelRow": 263
+      }
+    },
+    {
+      "index": 36,
+      "B_SOURCE_RECORD_ID": "5324",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Azolla spp.",
+      "parsedScientificName": "Azolla spp.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5324",
+        "name": "Azolla spp.",
+        "sourceExcelRow": 264
+      }
+    },
+    {
+      "index": 37,
+      "B_SOURCE_RECORD_ID": "2070",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ballota nigra subsp. foetida",
+      "parsedScientificName": "Ballota nigra subsp. foetida",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2070",
+        "name": "Ballota nigra subsp. foetida",
+        "sourceExcelRow": 266
+      }
+    },
+    {
+      "index": 38,
+      "B_SOURCE_RECORD_ID": "4509",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Betula alba var. alba",
+      "parsedScientificName": "Betula alba var. alba",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4509",
+        "name": "Betula alba var. alba",
+        "sourceExcelRow": 274
+      }
+    },
+    {
+      "index": 39,
+      "B_SOURCE_RECORD_ID": "4510",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Betula alba var. glabrata",
+      "parsedScientificName": "Betula alba var. glabrata",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4510",
+        "name": "Betula alba var. glabrata",
+        "sourceExcelRow": 275
+      }
+    },
+    {
+      "index": 40,
+      "B_SOURCE_RECORD_ID": "4065",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Betula celtiberica",
+      "parsedScientificName": "Betula celtiberica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4065",
+        "name": "Betula celtiberica",
+        "sourceExcelRow": 276
+      }
+    },
+    {
+      "index": 41,
+      "B_SOURCE_RECORD_ID": "1192",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Betula pendula var. meridionalis",
+      "parsedScientificName": "Betula pendula var. meridionalis",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1192",
+        "name": "Betula pendula var. meridionalis",
+        "sourceExcelRow": 277
+      }
+    },
+    {
+      "index": 42,
+      "B_SOURCE_RECORD_ID": "3787",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Biscutella valentina var. laevigata",
+      "parsedScientificName": "Biscutella valentina var. laevigata",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3787",
+        "name": "Biscutella valentina var. laevigata",
+        "sourceExcelRow": 284
+      }
+    },
+    {
+      "index": 43,
+      "B_SOURCE_RECORD_ID": "3788",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Biscutella valentina var. valentina",
+      "parsedScientificName": "Biscutella valentina var. valentina",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3788",
+        "name": "Biscutella valentina var. valentina",
+        "sourceExcelRow": 285
+      }
+    },
+    {
+      "index": 44,
+      "B_SOURCE_RECORD_ID": "3789",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Biscutella valentina var. variegata",
+      "parsedScientificName": "Biscutella valentina var. variegata",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3789",
+        "name": "Biscutella valentina var. variegata",
+        "sourceExcelRow": 286
+      }
+    },
+    {
+      "index": 45,
+      "B_SOURCE_RECORD_ID": "415",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Blechnum spicant var. spicant",
+      "parsedScientificName": "Blechnum spicant var. spicant",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "415",
+        "name": "Blechnum spicant var. spicant",
+        "sourceExcelRow": 289
+      }
+    },
+    {
+      "index": 46,
+      "B_SOURCE_RECORD_ID": "1298",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Brachypodium pinnatum x B. phoenicoides",
+      "parsedScientificName": "Brachypodium pinnatum",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1298",
+        "name": "Brachypodium pinnatum x B. phoenicoides",
+        "sourceExcelRow": 297
+      }
+    },
+    {
+      "index": 47,
+      "B_SOURCE_RECORD_ID": "4058",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Bromus catharticus",
+      "parsedScientificName": "Bromus catharticus",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4058",
+        "name": "Bromus catharticus",
+        "sourceExcelRow": 310
+      }
+    },
+    {
+      "index": 48,
+      "B_SOURCE_RECORD_ID": "4958",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Bupleurum baldense subsp. baldense",
+      "parsedScientificName": "Bupleurum baldense subsp. baldense",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4958",
+        "name": "Bupleurum baldense subsp. baldense",
+        "sourceExcelRow": 326
+      }
+    },
+    {
+      "index": 49,
+      "B_SOURCE_RECORD_ID": "910",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Bupleurum ranunculoides subsp. gramineus",
+      "parsedScientificName": "Bupleurum ranunculoides subsp. gramineus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "910",
+        "name": "Bupleurum ranunculoides subsp. gramineus",
+        "sourceExcelRow": 330
+      }
+    },
+    {
+      "index": 50,
+      "B_SOURCE_RECORD_ID": "911",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Bupleurum ranunculoides subsp. ranunculoides",
+      "parsedScientificName": "Bupleurum ranunculoides subsp. ranunculoides",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "911",
+        "name": "Bupleurum ranunculoides subsp. ranunculoides",
+        "sourceExcelRow": 331
+      }
+    },
+    {
+      "index": 51,
+      "B_SOURCE_RECORD_ID": "305",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Calystegia sepium subsp. sepium",
+      "parsedScientificName": "Calystegia sepium subsp. sepium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "305",
+        "name": "Calystegia sepium subsp. sepium",
+        "sourceExcelRow": 345
+      }
+    },
+    {
+      "index": 52,
+      "B_SOURCE_RECORD_ID": "3378",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Campanula glomerata subsp. glomerata",
+      "parsedScientificName": "Campanula glomerata subsp. glomerata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3378",
+        "name": "Campanula glomerata subsp. glomerata",
+        "sourceExcelRow": 349
+      }
+    },
+    {
+      "index": 53,
+      "B_SOURCE_RECORD_ID": "3587",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Campanula hispanica",
+      "parsedScientificName": "Campanula hispanica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3587",
+        "name": "Campanula hispanica",
+        "sourceExcelRow": 350
+      }
+    },
+    {
+      "index": 54,
+      "B_SOURCE_RECORD_ID": "1172",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Campanula paui",
+      "parsedScientificName": "Campanula paui",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1172",
+        "name": "Campanula paui",
+        "sourceExcelRow": 352
+      }
+    },
+    {
+      "index": 55,
+      "B_SOURCE_RECORD_ID": "3629",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Campanula trachelium subsp. trachelium",
+      "parsedScientificName": "Campanula trachelium subsp. trachelium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3629",
+        "name": "Campanula trachelium subsp. trachelium",
+        "sourceExcelRow": 357
+      }
+    },
+    {
+      "index": 56,
+      "B_SOURCE_RECORD_ID": "3767",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Campanula urbionensis",
+      "parsedScientificName": "Campanula urbionensis",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3767",
+        "name": "Campanula urbionensis",
+        "sourceExcelRow": 358
+      }
+    },
+    {
+      "index": 57,
+      "B_SOURCE_RECORD_ID": "4858",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carduus assoi",
+      "parsedScientificName": "Carduus assoi",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4858",
+        "name": "Carduus assoi",
+        "sourceExcelRow": 368
+      }
+    },
+    {
+      "index": 58,
+      "B_SOURCE_RECORD_ID": "2152",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carduus nutans subsp. nutans",
+      "parsedScientificName": "Carduus nutans subsp. nutans",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2152",
+        "name": "Carduus nutans subsp. nutans",
+        "sourceExcelRow": 371
+      }
+    },
+    {
+      "index": 59,
+      "B_SOURCE_RECORD_ID": "3164",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carex flacca subsp. flacca",
+      "parsedScientificName": "Carex flacca subsp. flacca",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3164",
+        "name": "Carex flacca subsp. flacca",
+        "sourceExcelRow": 391
+      }
+    },
+    {
+      "index": 60,
+      "B_SOURCE_RECORD_ID": "3165",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carex flacca subsp. serrulata",
+      "parsedScientificName": "Carex flacca subsp. serrulata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3165",
+        "name": "Carex flacca subsp. serrulata",
+        "sourceExcelRow": 392
+      }
+    },
+    {
+      "index": 61,
+      "B_SOURCE_RECORD_ID": "1968",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carex muricata subsp. lamprocarpa",
+      "parsedScientificName": "Carex muricata subsp. lamprocarpa",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1968",
+        "name": "Carex muricata subsp. lamprocarpa",
+        "sourceExcelRow": 402
+      }
+    },
+    {
+      "index": 62,
+      "B_SOURCE_RECORD_ID": "2308",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carex ovalis",
+      "parsedScientificName": "Carex ovalis",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2308",
+        "name": "Carex ovalis",
+        "sourceExcelRow": 405
+      }
+    },
+    {
+      "index": 63,
+      "B_SOURCE_RECORD_ID": "4021",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carlina vulgaris subsp. vulgaris",
+      "parsedScientificName": "Carlina vulgaris subsp. vulgaris",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4021",
+        "name": "Carlina vulgaris subsp. vulgaris",
+        "sourceExcelRow": 422
+      }
+    },
+    {
+      "index": 64,
+      "B_SOURCE_RECORD_ID": "2629",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Carthamus lanatus subsp. lanatus",
+      "parsedScientificName": "Carthamus lanatus subsp. lanatus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2629",
+        "name": "Carthamus lanatus subsp. lanatus",
+        "sourceExcelRow": 423
+      }
+    },
+    {
+      "index": 65,
+      "B_SOURCE_RECORD_ID": "2758",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurea debeauxii subsp. nemoralis",
+      "parsedScientificName": "Centaurea debeauxii subsp. nemoralis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2758",
+        "name": "Centaurea debeauxii subsp. nemoralis",
+        "sourceExcelRow": 435
+      }
+    },
+    {
+      "index": 66,
+      "B_SOURCE_RECORD_ID": "2296",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurea ornata x C. scabiosa",
+      "parsedScientificName": "Centaurea ornata",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2296",
+        "name": "Centaurea ornata x C. scabiosa",
+        "sourceExcelRow": 443
+      }
+    },
+    {
+      "index": 67,
+      "B_SOURCE_RECORD_ID": "2367",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurea paniculata subsp. castellana",
+      "parsedScientificName": "Centaurea paniculata subsp. castellana",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2367",
+        "name": "Centaurea paniculata subsp. castellana",
+        "sourceExcelRow": 445
+      }
+    },
+    {
+      "index": 68,
+      "B_SOURCE_RECORD_ID": "3681",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurea triumfetti subsp. lingulata",
+      "parsedScientificName": "Centaurea triumfetti subsp. lingulata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3681",
+        "name": "Centaurea triumfetti subsp. lingulata",
+        "sourceExcelRow": 447
+      }
+    },
+    {
+      "index": 69,
+      "B_SOURCE_RECORD_ID": "3903",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurea vinyalsii",
+      "parsedScientificName": "Centaurea vinyalsii",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3903",
+        "name": "Centaurea vinyalsii",
+        "sourceExcelRow": 448
+      }
+    },
+    {
+      "index": 70,
+      "B_SOURCE_RECORD_ID": "4002",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurea x zubiae",
+      "parsedScientificName": "Centaurea × zubiae",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4002",
+        "name": "Centaurea x zubiae",
+        "sourceExcelRow": 449
+      }
+    },
+    {
+      "index": 71,
+      "B_SOURCE_RECORD_ID": "3006",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurium erythraea subsp. grandiflorum",
+      "parsedScientificName": "Centaurium erythraea subsp. grandiflorum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3006",
+        "name": "Centaurium erythraea subsp. grandiflorum",
+        "sourceExcelRow": 451
+      }
+    },
+    {
+      "index": 72,
+      "B_SOURCE_RECORD_ID": "3007",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centaurium erythraea subsp. majus",
+      "parsedScientificName": "Centaurium erythraea subsp. majus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3007",
+        "name": "Centaurium erythraea subsp. majus",
+        "sourceExcelRow": 452
+      }
+    },
+    {
+      "index": 73,
+      "B_SOURCE_RECORD_ID": "5177",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Centranthus calcitrapae subsp. calcitrapae",
+      "parsedScientificName": "Centranthus calcitrapae subsp. calcitrapae",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5177",
+        "name": "Centranthus calcitrapae subsp. calcitrapae",
+        "sourceExcelRow": 455
+      }
+    },
+    {
+      "index": 74,
+      "B_SOURCE_RECORD_ID": "5080",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cerastium brachypetalum var. brachypetalum",
+      "parsedScientificName": "Cerastium brachypetalum var. brachypetalum",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5080",
+        "name": "Cerastium brachypetalum var. brachypetalum",
+        "sourceExcelRow": 464
+      }
+    },
+    {
+      "index": 75,
+      "B_SOURCE_RECORD_ID": "2289",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Chaenorhinum origanifolium subsp. crassifolium",
+      "parsedScientificName": "Chaenorhinum origanifolium subsp. crassifolium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2289",
+        "name": "Chaenorhinum origanifolium subsp. crassifolium",
+        "sourceExcelRow": 477
+      }
+    },
+    {
+      "index": 76,
+      "B_SOURCE_RECORD_ID": "1117",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Chaenorhinum rupestre",
+      "parsedScientificName": "Chaenorhinum rupestre",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1117",
+        "name": "Chaenorhinum rupestre",
+        "sourceExcelRow": 480
+      }
+    },
+    {
+      "index": 77,
+      "B_SOURCE_RECORD_ID": "686",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Chaerophyllum temulentum",
+      "parsedScientificName": "Chaerophyllum temulentum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "686",
+        "name": "Chaerophyllum temulentum",
+        "sourceExcelRow": 485
+      }
+    },
+    {
+      "index": 78,
+      "B_SOURCE_RECORD_ID": "4419",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cheilanthes acrostica",
+      "parsedScientificName": "Cheilanthes acrostica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4419",
+        "name": "Cheilanthes acrostica",
+        "sourceExcelRow": 490
+      }
+    },
+    {
+      "index": 79,
+      "B_SOURCE_RECORD_ID": "4781",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cicer arietinum",
+      "parsedScientificName": "Cicer arietinum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4781",
+        "name": "Cicer arietinum",
+        "sourceExcelRow": 505
+      }
+    },
+    {
+      "index": 80,
+      "B_SOURCE_RECORD_ID": "839",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cirsium pyrenaicum var. longespinosum",
+      "parsedScientificName": "Cirsium pyrenaicum var. longespinosum",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "839",
+        "name": "Cirsium pyrenaicum var. longespinosum",
+        "sourceExcelRow": 517
+      }
+    },
+    {
+      "index": 81,
+      "B_SOURCE_RECORD_ID": "840",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cirsium pyrenaicum var. pyrenaicum",
+      "parsedScientificName": "Cirsium pyrenaicum var. pyrenaicum",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "840",
+        "name": "Cirsium pyrenaicum var. pyrenaicum",
+        "sourceExcelRow": 518
+      }
+    },
+    {
+      "index": 82,
+      "B_SOURCE_RECORD_ID": "974",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cirsium richterianum",
+      "parsedScientificName": "Cirsium richterianum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "974",
+        "name": "Cirsium richterianum",
+        "sourceExcelRow": 519
+      }
+    },
+    {
+      "index": 83,
+      "B_SOURCE_RECORD_ID": "1367",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cistus populifolius x C. Salvifolius",
+      "parsedScientificName": "Cistus populifolius",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1367",
+        "name": "Cistus populifolius x C. Salvifolius",
+        "sourceExcelRow": 527
+      }
+    },
+    {
+      "index": 84,
+      "B_SOURCE_RECORD_ID": "79",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cistus salvifolius",
+      "parsedScientificName": "Cistus salvifolius",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "79",
+        "name": "Cistus salvifolius",
+        "sourceExcelRow": 528
+      }
+    },
+    {
+      "index": 85,
+      "B_SOURCE_RECORD_ID": "4871",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Colutea atlantica",
+      "parsedScientificName": "Colutea atlantica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4871",
+        "name": "Colutea atlantica",
+        "sourceExcelRow": 538
+      }
+    },
+    {
+      "index": 86,
+      "B_SOURCE_RECORD_ID": "5071",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Conopodium bourgaei",
+      "parsedScientificName": "Conopodium bourgaei",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5071",
+        "name": "Conopodium bourgaei",
+        "sourceExcelRow": 541
+      }
+    },
+    {
+      "index": 87,
+      "B_SOURCE_RECORD_ID": "5244",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Conopodium capillifolium",
+      "parsedScientificName": "Conopodium capillifolium",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5244",
+        "name": "Conopodium capillifolium",
+        "sourceExcelRow": 542
+      }
+    },
+    {
+      "index": 88,
+      "B_SOURCE_RECORD_ID": "907",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Conopodium ramosum",
+      "parsedScientificName": "Conopodium ramosum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "907",
+        "name": "Conopodium ramosum",
+        "sourceExcelRow": 544
+      }
+    },
+    {
+      "index": 89,
+      "B_SOURCE_RECORD_ID": "3784",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Coronilla valentina subsp. glauca",
+      "parsedScientificName": "Coronilla valentina subsp. glauca",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3784",
+        "name": "Coronilla valentina subsp. glauca",
+        "sourceExcelRow": 559
+      }
+    },
+    {
+      "index": 90,
+      "B_SOURCE_RECORD_ID": "5325",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cortaderia spp.",
+      "parsedScientificName": "Cortaderia spp.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5325",
+        "name": "Cortaderia spp.",
+        "sourceExcelRow": 564
+      }
+    },
+    {
+      "index": 91,
+      "B_SOURCE_RECORD_ID": "2015",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cotoneaster nebrodensis",
+      "parsedScientificName": "Cotoneaster nebrodensis",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2015",
+        "name": "Cotoneaster nebrodensis",
+        "sourceExcelRow": 572
+      }
+    },
+    {
+      "index": 92,
+      "B_SOURCE_RECORD_ID": "1878",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Crataegus monogyna subsp. brevispina",
+      "parsedScientificName": "Crataegus monogyna subsp. brevispina",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1878",
+        "name": "Crataegus monogyna subsp. brevispina",
+        "sourceExcelRow": 576
+      }
+    },
+    {
+      "index": 93,
+      "B_SOURCE_RECORD_ID": "1879",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Crataegus monogyna subsp. monogyna",
+      "parsedScientificName": "Crataegus monogyna subsp. monogyna",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1879",
+        "name": "Crataegus monogyna subsp. monogyna",
+        "sourceExcelRow": 577
+      }
+    },
+    {
+      "index": 94,
+      "B_SOURCE_RECORD_ID": "5528",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cylindropuntia spp.",
+      "parsedScientificName": "Cylindropuntia spp.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5528",
+        "name": "Cylindropuntia spp.",
+        "sourceExcelRow": 604
+      }
+    },
+    {
+      "index": 95,
+      "B_SOURCE_RECORD_ID": "4957",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cytisus balansae subsp. europaeus",
+      "parsedScientificName": "Cytisus balansae subsp. europaeus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4957",
+        "name": "Cytisus balansae subsp. europaeus",
+        "sourceExcelRow": 628
+      }
+    },
+    {
+      "index": 96,
+      "B_SOURCE_RECORD_ID": "173",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Cytisus scoparius subsp. cantabricus",
+      "parsedScientificName": "Cytisus scoparius subsp. cantabricus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "173",
+        "name": "Cytisus scoparius subsp. cantabricus",
+        "sourceExcelRow": 630
+      }
+    },
+    {
+      "index": 97,
+      "B_SOURCE_RECORD_ID": "3594",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dactylis hispanica",
+      "parsedScientificName": "Dactylis hispanica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3594",
+        "name": "Dactylis hispanica",
+        "sourceExcelRow": 635
+      }
+    },
+    {
+      "index": 98,
+      "B_SOURCE_RECORD_ID": "2934",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dactylorhiza elata subsp. sesquipedalis",
+      "parsedScientificName": "Dactylorhiza elata subsp. sesquipedalis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2934",
+        "name": "Dactylorhiza elata subsp. sesquipedalis",
+        "sourceExcelRow": 637
+      }
+    },
+    {
+      "index": 99,
+      "B_SOURCE_RECORD_ID": "2994",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dactylorhiza ericetorum",
+      "parsedScientificName": "Dactylorhiza ericetorum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2994",
+        "name": "Dactylorhiza ericetorum",
+        "sourceExcelRow": 638
+      }
+    },
+    {
+      "index": 100,
+      "B_SOURCE_RECORD_ID": "2483",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dactylorhiza incarnata subsp. incarnata",
+      "parsedScientificName": "Dactylorhiza incarnata subsp. incarnata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2483",
+        "name": "Dactylorhiza incarnata subsp. incarnata",
+        "sourceExcelRow": 639
+      }
+    },
+    {
+      "index": 101,
+      "B_SOURCE_RECORD_ID": "1624",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dactylorhiza maculata subsp. elodes",
+      "parsedScientificName": "Dactylorhiza maculata subsp. elodes",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1624",
+        "name": "Dactylorhiza maculata subsp. elodes",
+        "sourceExcelRow": 642
+      }
+    },
+    {
+      "index": 102,
+      "B_SOURCE_RECORD_ID": "1625",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dactylorhiza maculata subsp. maculata",
+      "parsedScientificName": "Dactylorhiza maculata subsp. maculata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1625",
+        "name": "Dactylorhiza maculata subsp. maculata",
+        "sourceExcelRow": 643
+      }
+    },
+    {
+      "index": 103,
+      "B_SOURCE_RECORD_ID": "1647",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dactylorhiza majalis subsp. majalis",
+      "parsedScientificName": "Dactylorhiza majalis subsp. majalis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1647",
+        "name": "Dactylorhiza majalis subsp. majalis",
+        "sourceExcelRow": 644
+      }
+    },
+    {
+      "index": 104,
+      "B_SOURCE_RECORD_ID": "3595",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Deschampsia hispanica",
+      "parsedScientificName": "Deschampsia hispanica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3595",
+        "name": "Deschampsia hispanica",
+        "sourceExcelRow": 656
+      }
+    },
+    {
+      "index": 105,
+      "B_SOURCE_RECORD_ID": "2816",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Doronicum diazii",
+      "parsedScientificName": "Doronicum diazii",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2816",
+        "name": "Doronicum diazii",
+        "sourceExcelRow": 684
+      }
+    },
+    {
+      "index": 106,
+      "B_SOURCE_RECORD_ID": "1204",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dorycnium pentaphyllum subsp. pentaphyllum",
+      "parsedScientificName": "Dorycnium pentaphyllum subsp. pentaphyllum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1204",
+        "name": "Dorycnium pentaphyllum subsp. pentaphyllum",
+        "sourceExcelRow": 688
+      }
+    },
+    {
+      "index": 107,
+      "B_SOURCE_RECORD_ID": "4480",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dryopteris affinis subsp. cambrensis",
+      "parsedScientificName": "Dryopteris affinis subsp. cambrensis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4480",
+        "name": "Dryopteris affinis subsp. cambrensis",
+        "sourceExcelRow": 696
+      }
+    },
+    {
+      "index": 108,
+      "B_SOURCE_RECORD_ID": "4481",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dryopteris affinis var. borreri",
+      "parsedScientificName": "Dryopteris affinis var. borreri",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4481",
+        "name": "Dryopteris affinis var. borreri",
+        "sourceExcelRow": 697
+      }
+    },
+    {
+      "index": 109,
+      "B_SOURCE_RECORD_ID": "4482",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dryopteris affinis var. robusta",
+      "parsedScientificName": "Dryopteris affinis var. robusta",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4482",
+        "name": "Dryopteris affinis var. robusta",
+        "sourceExcelRow": 698
+      }
+    },
+    {
+      "index": 110,
+      "B_SOURCE_RECORD_ID": "3981",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dryopteris x ambroseae",
+      "parsedScientificName": "Dryopteris × ambroseae",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3981",
+        "name": "Dryopteris x ambroseae",
+        "sourceExcelRow": 705
+      }
+    },
+    {
+      "index": 111,
+      "B_SOURCE_RECORD_ID": "3992",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Dryopteris x mantoniae",
+      "parsedScientificName": "Dryopteris × mantoniae",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3992",
+        "name": "Dryopteris x mantoniae",
+        "sourceExcelRow": 706
+      }
+    },
+    {
+      "index": 112,
+      "B_SOURCE_RECORD_ID": "4850",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Echium asperrinum",
+      "parsedScientificName": "Echium asperrinum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4850",
+        "name": "Echium asperrinum",
+        "sourceExcelRow": 712
+      }
+    },
+    {
+      "index": 113,
+      "B_SOURCE_RECORD_ID": "3592",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Epipactis hispanica",
+      "parsedScientificName": "Epipactis hispanica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3592",
+        "name": "Epipactis hispanica",
+        "sourceExcelRow": 739
+      }
+    },
+    {
+      "index": 114,
+      "B_SOURCE_RECORD_ID": "1156",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Epipactis parviflora",
+      "parsedScientificName": "Epipactis parviflora",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1156",
+        "name": "Epipactis parviflora",
+        "sourceExcelRow": 742
+      }
+    },
+    {
+      "index": 115,
+      "B_SOURCE_RECORD_ID": "1250",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Epipactis phyllanthes var. fageticola",
+      "parsedScientificName": "Epipactis phyllanthes var. fageticola",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1250",
+        "name": "Epipactis phyllanthes var. fageticola",
+        "sourceExcelRow": 744
+      }
+    },
+    {
+      "index": 116,
+      "B_SOURCE_RECORD_ID": "3990",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Equisetum x litorale",
+      "parsedScientificName": "Equisetum × litorale",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3990",
+        "name": "Equisetum x litorale",
+        "sourceExcelRow": 753
+      }
+    },
+    {
+      "index": 117,
+      "B_SOURCE_RECORD_ID": "4802",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Festuca arundinacea subsp. fenas",
+      "parsedScientificName": "Festuca arundinacea subsp. fenas",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4802",
+        "name": "Festuca arundinacea subsp. fenas",
+        "sourceExcelRow": 825
+      }
+    },
+    {
+      "index": 118,
+      "B_SOURCE_RECORD_ID": "2316",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Festuca ovina var. glauca",
+      "parsedScientificName": "Festuca ovina var. glauca",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2316",
+        "name": "Festuca ovina var. glauca",
+        "sourceExcelRow": 833
+      }
+    },
+    {
+      "index": 119,
+      "B_SOURCE_RECORD_ID": "394",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Festuca sp.",
+      "parsedScientificName": "Festuca sp.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "394",
+        "name": "Festuca sp.",
+        "sourceExcelRow": 838
+      }
+    },
+    {
+      "index": 120,
+      "B_SOURCE_RECORD_ID": "3720",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Filipendula ulmaria subsp. ulmaria",
+      "parsedScientificName": "Filipendula ulmaria subsp. ulmaria",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3720",
+        "name": "Filipendula ulmaria subsp. ulmaria",
+        "sourceExcelRow": 841
+      }
+    },
+    {
+      "index": 121,
+      "B_SOURCE_RECORD_ID": "2043",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Fritillaria nervosa subsp. nervosa",
+      "parsedScientificName": "Fritillaria nervosa subsp. nervosa",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2043",
+        "name": "Fritillaria nervosa subsp. nervosa",
+        "sourceExcelRow": 851
+      }
+    },
+    {
+      "index": 122,
+      "B_SOURCE_RECORD_ID": "2054",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Gagea nevadensis gr.",
+      "parsedScientificName": "Gagea nevadensis",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2054",
+        "name": "Gagea nevadensis gr.",
+        "sourceExcelRow": 870
+      }
+    },
+    {
+      "index": 123,
+      "B_SOURCE_RECORD_ID": "4676",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Galeopsis angustifolia subsp. carpetana",
+      "parsedScientificName": "Galeopsis angustifolia subsp. carpetana",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4676",
+        "name": "Galeopsis angustifolia subsp. carpetana",
+        "sourceExcelRow": 875
+      }
+    },
+    {
+      "index": 124,
+      "B_SOURCE_RECORD_ID": "4547",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Galium album subsp. album",
+      "parsedScientificName": "Galium album subsp. album",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4547",
+        "name": "Galium album subsp. album",
+        "sourceExcelRow": 878
+      }
+    },
+    {
+      "index": 125,
+      "B_SOURCE_RECORD_ID": "4300",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Galium corrudifolium",
+      "parsedScientificName": "Galium corrudifolium",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4300",
+        "name": "Galium corrudifolium",
+        "sourceExcelRow": 880
+      }
+    },
+    {
+      "index": 126,
+      "B_SOURCE_RECORD_ID": "2865",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Galium divaricatum",
+      "parsedScientificName": "Galium divaricatum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2865",
+        "name": "Galium divaricatum",
+        "sourceExcelRow": 881
+      }
+    },
+    {
+      "index": 127,
+      "B_SOURCE_RECORD_ID": "3271",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Galium fruticescens",
+      "parsedScientificName": "Galium fruticescens",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3271",
+        "name": "Galium fruticescens",
+        "sourceExcelRow": 882
+      }
+    },
+    {
+      "index": 128,
+      "B_SOURCE_RECORD_ID": "1285",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Galium pinetorum",
+      "parsedScientificName": "Galium pinetorum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1285",
+        "name": "Galium pinetorum",
+        "sourceExcelRow": 890
+      }
+    },
+    {
+      "index": 129,
+      "B_SOURCE_RECORD_ID": "489",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Galium spurium",
+      "parsedScientificName": "Galium spurium",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "489",
+        "name": "Galium spurium",
+        "sourceExcelRow": 893
+      }
+    },
+    {
+      "index": 130,
+      "B_SOURCE_RECORD_ID": "4133",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Genista cinerea subsp. ausetana",
+      "parsedScientificName": "Genista cinerea subsp. ausetana",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4133",
+        "name": "Genista cinerea subsp. ausetana",
+        "sourceExcelRow": 901
+      }
+    },
+    {
+      "index": 131,
+      "B_SOURCE_RECORD_ID": "4134",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Genista cinerea subsp. cinerea",
+      "parsedScientificName": "Genista cinerea subsp. cinerea",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4134",
+        "name": "Genista cinerea subsp. cinerea",
+        "sourceExcelRow": 902
+      }
+    },
+    {
+      "index": 132,
+      "B_SOURCE_RECORD_ID": "3203",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Genista florida subsp. polygaliphylla",
+      "parsedScientificName": "Genista florida subsp. polygaliphylla",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3203",
+        "name": "Genista florida subsp. polygaliphylla",
+        "sourceExcelRow": 903
+      }
+    },
+    {
+      "index": 133,
+      "B_SOURCE_RECORD_ID": "4677",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Gentiana angustifolia subsp. occidentalis",
+      "parsedScientificName": "Gentiana angustifolia subsp. occidentalis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4677",
+        "name": "Gentiana angustifolia subsp. occidentalis",
+        "sourceExcelRow": 911
+      }
+    },
+    {
+      "index": 134,
+      "B_SOURCE_RECORD_ID": "4240",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hedysarum confertum",
+      "parsedScientificName": "Hedysarum confertum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4240",
+        "name": "Hedysarum confertum",
+        "sourceExcelRow": 954
+      }
+    },
+    {
+      "index": 135,
+      "B_SOURCE_RECORD_ID": "2149",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Helianthemum nummularium subsp. nummularium",
+      "parsedScientificName": "Helianthemum nummularium subsp. nummularium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2149",
+        "name": "Helianthemum nummularium subsp. nummularium",
+        "sourceExcelRow": 964
+      }
+    },
+    {
+      "index": 136,
+      "B_SOURCE_RECORD_ID": "412",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Heracleum sphondylium subsp. montanum",
+      "parsedScientificName": "Heracleum sphondylium subsp. montanum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "412",
+        "name": "Heracleum sphondylium subsp. montanum",
+        "sourceExcelRow": 979
+      }
+    },
+    {
+      "index": 137,
+      "B_SOURCE_RECORD_ID": "413",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Heracleum sphondylium subsp. pyrenaicum",
+      "parsedScientificName": "Heracleum sphondylium subsp. pyrenaicum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "413",
+        "name": "Heracleum sphondylium subsp. pyrenaicum",
+        "sourceExcelRow": 980
+      }
+    },
+    {
+      "index": 138,
+      "B_SOURCE_RECORD_ID": "3272",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Herniaria fruticosa var. fruticosa",
+      "parsedScientificName": "Herniaria fruticosa var. fruticosa",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3272",
+        "name": "Herniaria fruticosa var. fruticosa",
+        "sourceExcelRow": 982
+      }
+    },
+    {
+      "index": 139,
+      "B_SOURCE_RECORD_ID": "3428",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Herniaria glabra var. glabra",
+      "parsedScientificName": "Herniaria glabra var. glabra",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3428",
+        "name": "Herniaria glabra var. glabra",
+        "sourceExcelRow": 983
+      }
+    },
+    {
+      "index": 140,
+      "B_SOURCE_RECORD_ID": "136",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Herniaria scabrida var. glabrescens",
+      "parsedScientificName": "Herniaria scabrida var. glabrescens",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "136",
+        "name": "Herniaria scabrida var. glabrescens",
+        "sourceExcelRow": 987
+      }
+    },
+    {
+      "index": 141,
+      "B_SOURCE_RECORD_ID": "137",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Herniaria scabrida var. scabrida",
+      "parsedScientificName": "Herniaria scabrida var. scabrida",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "137",
+        "name": "Herniaria scabrida var. scabrida",
+        "sourceExcelRow": 988
+      }
+    },
+    {
+      "index": 142,
+      "B_SOURCE_RECORD_ID": "4776",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hieracium argillaceum",
+      "parsedScientificName": "Hieracium argillaceum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4776",
+        "name": "Hieracium argillaceum",
+        "sourceExcelRow": 990
+      }
+    },
+    {
+      "index": 143,
+      "B_SOURCE_RECORD_ID": "2602",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hieracium lactucella subsp. lactucella",
+      "parsedScientificName": "Hieracium lactucella subsp. lactucella",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2602",
+        "name": "Hieracium lactucella subsp. lactucella",
+        "sourceExcelRow": 994
+      }
+    },
+    {
+      "index": 144,
+      "B_SOURCE_RECORD_ID": "2120",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hieracium niveum",
+      "parsedScientificName": "Hieracium niveum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2120",
+        "name": "Hieracium niveum",
+        "sourceExcelRow": 997
+      }
+    },
+    {
+      "index": 145,
+      "B_SOURCE_RECORD_ID": "1270",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hieracium pilosella subsp. micradenium",
+      "parsedScientificName": "Hieracium pilosella subsp. micradenium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1270",
+        "name": "Hieracium pilosella subsp. micradenium",
+        "sourceExcelRow": 1000
+      }
+    },
+    {
+      "index": 146,
+      "B_SOURCE_RECORD_ID": "1271",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hieracium pilosella subsp. pilosella",
+      "parsedScientificName": "Hieracium pilosella subsp. pilosella",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1271",
+        "name": "Hieracium pilosella subsp. pilosella",
+        "sourceExcelRow": 1001
+      }
+    },
+    {
+      "index": 147,
+      "B_SOURCE_RECORD_ID": "1272",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hieracium pilosella subsp. tricholepium",
+      "parsedScientificName": "Hieracium pilosella subsp. tricholepium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1272",
+        "name": "Hieracium pilosella subsp. tricholepium",
+        "sourceExcelRow": 1002
+      }
+    },
+    {
+      "index": 148,
+      "B_SOURCE_RECORD_ID": "3555",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Himantoglossum hircinum subsp. hircinum",
+      "parsedScientificName": "Himantoglossum hircinum subsp. hircinum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3555",
+        "name": "Himantoglossum hircinum subsp. hircinum",
+        "sourceExcelRow": 1007
+      }
+    },
+    {
+      "index": 149,
+      "B_SOURCE_RECORD_ID": "4217",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hippocrepis comosa subsp. squamata",
+      "parsedScientificName": "Hippocrepis comosa subsp. squamata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4217",
+        "name": "Hippocrepis comosa subsp. squamata",
+        "sourceExcelRow": 1011
+      }
+    },
+    {
+      "index": 150,
+      "B_SOURCE_RECORD_ID": "3429",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hypochoeris glabra",
+      "parsedScientificName": "Hypochoeris glabra",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3429",
+        "name": "Hypochoeris glabra",
+        "sourceExcelRow": 1046
+      }
+    },
+    {
+      "index": 151,
+      "B_SOURCE_RECORD_ID": "892",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Hypochoeris radicata",
+      "parsedScientificName": "Hypochoeris radicata",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "892",
+        "name": "Hypochoeris radicata",
+        "sourceExcelRow": 1047
+      }
+    },
+    {
+      "index": 152,
+      "B_SOURCE_RECORD_ID": "4342",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Jasione crispa subsp. centralis",
+      "parsedScientificName": "Jasione crispa subsp. centralis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4342",
+        "name": "Jasione crispa subsp. centralis",
+        "sourceExcelRow": 1065
+      }
+    },
+    {
+      "index": 153,
+      "B_SOURCE_RECORD_ID": "4343",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Jasione crispa subsp. sessiliflora",
+      "parsedScientificName": "Jasione crispa subsp. sessiliflora",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4343",
+        "name": "Jasione crispa subsp. sessiliflora",
+        "sourceExcelRow": 1066
+      }
+    },
+    {
+      "index": 154,
+      "B_SOURCE_RECORD_ID": "2617",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Jasione laevis subsp. carpetana",
+      "parsedScientificName": "Jasione laevis subsp. carpetana",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2617",
+        "name": "Jasione laevis subsp. carpetana",
+        "sourceExcelRow": 1068
+      }
+    },
+    {
+      "index": 155,
+      "B_SOURCE_RECORD_ID": "2618",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Jasione laevis subsp. laevis",
+      "parsedScientificName": "Jasione laevis subsp. laevis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2618",
+        "name": "Jasione laevis subsp. laevis",
+        "sourceExcelRow": 1069
+      }
+    },
+    {
+      "index": 156,
+      "B_SOURCE_RECORD_ID": "4244",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Juncus conglomeratus var. conglomeratus",
+      "parsedScientificName": "Juncus conglomeratus var. conglomeratus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4244",
+        "name": "Juncus conglomeratus var. conglomeratus",
+        "sourceExcelRow": 1083
+      }
+    },
+    {
+      "index": 157,
+      "B_SOURCE_RECORD_ID": "4245",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Juncus conglomeratus var. laxus",
+      "parsedScientificName": "Juncus conglomeratus var. laxus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4245",
+        "name": "Juncus conglomeratus var. laxus",
+        "sourceExcelRow": 1084
+      }
+    },
+    {
+      "index": 158,
+      "B_SOURCE_RECORD_ID": "2929",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Juncus effusus var. effusus",
+      "parsedScientificName": "Juncus effusus var. effusus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2929",
+        "name": "Juncus effusus var. effusus",
+        "sourceExcelRow": 1086
+      }
+    },
+    {
+      "index": 159,
+      "B_SOURCE_RECORD_ID": "2930",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Juncus effusus var. subglomeratus",
+      "parsedScientificName": "Juncus effusus var. subglomeratus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2930",
+        "name": "Juncus effusus var. subglomeratus",
+        "sourceExcelRow": 1087
+      }
+    },
+    {
+      "index": 160,
+      "B_SOURCE_RECORD_ID": "2500",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Juncus inflexus var. inflexus",
+      "parsedScientificName": "Juncus inflexus var. inflexus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2500",
+        "name": "Juncus inflexus var. inflexus",
+        "sourceExcelRow": 1090
+      }
+    },
+    {
+      "index": 161,
+      "B_SOURCE_RECORD_ID": "687",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Juncus tenageia subsp. tenageia",
+      "parsedScientificName": "Juncus tenageia subsp. tenageia",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "687",
+        "name": "Juncus tenageia subsp. tenageia",
+        "sourceExcelRow": 1096
+      }
+    },
+    {
+      "index": 162,
+      "B_SOURCE_RECORD_ID": "4837",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Knautia arvernensis",
+      "parsedScientificName": "Knautia arvernensis",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4837",
+        "name": "Knautia arvernensis",
+        "sourceExcelRow": 1110
+      }
+    },
+    {
+      "index": 163,
+      "B_SOURCE_RECORD_ID": "781",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Knautia purpurea",
+      "parsedScientificName": "Knautia purpurea",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "781",
+        "name": "Knautia purpurea",
+        "sourceExcelRow": 1111
+      }
+    },
+    {
+      "index": 164,
+      "B_SOURCE_RECORD_ID": "591",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Knautia subscaposa subsp. subscaposa",
+      "parsedScientificName": "Knautia subscaposa subsp. subscaposa",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "591",
+        "name": "Knautia subscaposa subsp. subscaposa",
+        "sourceExcelRow": 1112
+      }
+    },
+    {
+      "index": 165,
+      "B_SOURCE_RECORD_ID": "2063",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lathyrus niger subsp. niger",
+      "parsedScientificName": "Lathyrus niger subsp. niger",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2063",
+        "name": "Lathyrus niger subsp. niger",
+        "sourceExcelRow": 1143
+      }
+    },
+    {
+      "index": 166,
+      "B_SOURCE_RECORD_ID": "531",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lavandula stoechas subsp. pedunculata",
+      "parsedScientificName": "Lavandula stoechas subsp. pedunculata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "531",
+        "name": "Lavandula stoechas subsp. pedunculata",
+        "sourceExcelRow": 1152
+      }
+    },
+    {
+      "index": 167,
+      "B_SOURCE_RECORD_ID": "5298",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Legousia castellana",
+      "parsedScientificName": "Legousia castellana",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5298",
+        "name": "Legousia castellana",
+        "sourceExcelRow": 1154
+      }
+    },
+    {
+      "index": 168,
+      "B_SOURCE_RECORD_ID": "670",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Leontodon taraxacoides subsp. hispidus",
+      "parsedScientificName": "Leontodon taraxacoides subsp. hispidus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "670",
+        "name": "Leontodon taraxacoides subsp. hispidus",
+        "sourceExcelRow": 1162
+      }
+    },
+    {
+      "index": 169,
+      "B_SOURCE_RECORD_ID": "2538",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Leucanthemum ircutianum",
+      "parsedScientificName": "Leucanthemum ircutianum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2538",
+        "name": "Leucanthemum ircutianum",
+        "sourceExcelRow": 1173
+      }
+    },
+    {
+      "index": 170,
+      "B_SOURCE_RECORD_ID": "4589",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Linaria alpina var. aciculifolia",
+      "parsedScientificName": "Linaria alpina var. aciculifolia",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4589",
+        "name": "Linaria alpina var. aciculifolia",
+        "sourceExcelRow": 1188
+      }
+    },
+    {
+      "index": 171,
+      "B_SOURCE_RECORD_ID": "4809",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lithospermum arvense",
+      "parsedScientificName": "Lithospermum arvense",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4809",
+        "name": "Lithospermum arvense",
+        "sourceExcelRow": 1213
+      }
+    },
+    {
+      "index": 172,
+      "B_SOURCE_RECORD_ID": "2487",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lithospermum incrassatum",
+      "parsedScientificName": "Lithospermum incrassatum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2487",
+        "name": "Lithospermum incrassatum",
+        "sourceExcelRow": 1214
+      }
+    },
+    {
+      "index": 173,
+      "B_SOURCE_RECORD_ID": "789",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lithospermum purpurocaeruleum",
+      "parsedScientificName": "Lithospermum purpurocaeruleum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "789",
+        "name": "Lithospermum purpurocaeruleum",
+        "sourceExcelRow": 1216
+      }
+    },
+    {
+      "index": 174,
+      "B_SOURCE_RECORD_ID": "3758",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Littorela uniflora",
+      "parsedScientificName": "Littorela uniflora",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3758",
+        "name": "Littorela uniflora",
+        "sourceExcelRow": 1217
+      }
+    },
+    {
+      "index": 175,
+      "B_SOURCE_RECORD_ID": "5255",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lonicera caprifolium",
+      "parsedScientificName": "Lonicera caprifolium",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5255",
+        "name": "Lonicera caprifolium",
+        "sourceExcelRow": 1226
+      }
+    },
+    {
+      "index": 176,
+      "B_SOURCE_RECORD_ID": "1412",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lotus preslii",
+      "parsedScientificName": "Lotus preslii",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1412",
+        "name": "Lotus preslii",
+        "sourceExcelRow": 1239
+      }
+    },
+    {
+      "index": 177,
+      "B_SOURCE_RECORD_ID": "5516",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ludwigia spp.",
+      "parsedScientificName": "Ludwigia spp.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5516",
+        "name": "Ludwigia spp.",
+        "sourceExcelRow": 1240
+      }
+    },
+    {
+      "index": 178,
+      "B_SOURCE_RECORD_ID": "5195",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Luzula campestris subsp. carpetana",
+      "parsedScientificName": "Luzula campestris subsp. carpetana",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5195",
+        "name": "Luzula campestris subsp. carpetana",
+        "sourceExcelRow": 1244
+      }
+    },
+    {
+      "index": 179,
+      "B_SOURCE_RECORD_ID": "1949",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Luzula multiflora subsp. congesta",
+      "parsedScientificName": "Luzula multiflora subsp. congesta",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1949",
+        "name": "Luzula multiflora subsp. congesta",
+        "sourceExcelRow": 1249
+      }
+    },
+    {
+      "index": 180,
+      "B_SOURCE_RECORD_ID": "636",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Luzula sylvatica subsp. henriquesii",
+      "parsedScientificName": "Luzula sylvatica subsp. henriquesii",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "636",
+        "name": "Luzula sylvatica subsp. henriquesii",
+        "sourceExcelRow": 1254
+      }
+    },
+    {
+      "index": 181,
+      "B_SOURCE_RECORD_ID": "2037",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Lysimachia nemorun",
+      "parsedScientificName": "Lysimachia nemorun",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2037",
+        "name": "Lysimachia nemorun",
+        "sourceExcelRow": 1262
+      }
+    },
+    {
+      "index": 182,
+      "B_SOURCE_RECORD_ID": "106",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Medicago sativa subsp. sativa",
+      "parsedScientificName": "Medicago sativa subsp. sativa",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "106",
+        "name": "Medicago sativa subsp. sativa",
+        "sourceExcelRow": 1294
+      }
+    },
+    {
+      "index": 183,
+      "B_SOURCE_RECORD_ID": "4615",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Melilotus altissima",
+      "parsedScientificName": "Melilotus altissima",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4615",
+        "name": "Melilotus altissima",
+        "sourceExcelRow": 1305
+      }
+    },
+    {
+      "index": 184,
+      "B_SOURCE_RECORD_ID": "1755",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Melittis melissophyllum subsp. melissophyllum",
+      "parsedScientificName": "Melittis melissophyllum subsp. melissophyllum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1755",
+        "name": "Melittis melissophyllum subsp. melissophyllum",
+        "sourceExcelRow": 1310
+      }
+    },
+    {
+      "index": 185,
+      "B_SOURCE_RECORD_ID": "3986",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Mentha x dumetorum",
+      "parsedScientificName": "Mentha × dumetorum",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3986",
+        "name": "Mentha x dumetorum",
+        "sourceExcelRow": 1316
+      }
+    },
+    {
+      "index": 186,
+      "B_SOURCE_RECORD_ID": "2034",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Myosotis nemorosa",
+      "parsedScientificName": "Myosotis nemorosa",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2034",
+        "name": "Myosotis nemorosa",
+        "sourceExcelRow": 1357
+      }
+    },
+    {
+      "index": 187,
+      "B_SOURCE_RECORD_ID": "900",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Myosotis ramosissima subsp. globularis",
+      "parsedScientificName": "Myosotis ramosissima subsp. globularis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "900",
+        "name": "Myosotis ramosissima subsp. globularis",
+        "sourceExcelRow": 1359
+      }
+    },
+    {
+      "index": 188,
+      "B_SOURCE_RECORD_ID": "5122",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Narcissus bulbocodium subsp. bulbocodium",
+      "parsedScientificName": "Narcissus bulbocodium subsp. bulbocodium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5122",
+        "name": "Narcissus bulbocodium subsp. bulbocodium",
+        "sourceExcelRow": 1369
+      }
+    },
+    {
+      "index": 189,
+      "B_SOURCE_RECORD_ID": "2041",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Nepeta nepetella subsp. cordifolia",
+      "parsedScientificName": "Nepeta nepetella subsp. cordifolia",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2041",
+        "name": "Nepeta nepetella subsp. cordifolia",
+        "sourceExcelRow": 1383
+      }
+    },
+    {
+      "index": 190,
+      "B_SOURCE_RECORD_ID": "2953",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Odontites eliassennenii",
+      "parsedScientificName": "Odontites eliassennenii",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2953",
+        "name": "Odontites eliassennenii",
+        "sourceExcelRow": 1387
+      }
+    },
+    {
+      "index": 191,
+      "B_SOURCE_RECORD_ID": "1529",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Odontites longiflora",
+      "parsedScientificName": "Odontites longiflora",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1529",
+        "name": "Odontites longiflora",
+        "sourceExcelRow": 1389
+      }
+    },
+    {
+      "index": 192,
+      "B_SOURCE_RECORD_ID": "3843",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Odontites verna",
+      "parsedScientificName": "Odontites verna",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3843",
+        "name": "Odontites verna",
+        "sourceExcelRow": 1391
+      }
+    },
+    {
+      "index": 193,
+      "B_SOURCE_RECORD_ID": "3837",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Odontites verna subsp. serotina",
+      "parsedScientificName": "Odontites verna subsp. serotina",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3837",
+        "name": "Odontites verna subsp. serotina",
+        "sourceExcelRow": 1392
+      }
+    },
+    {
+      "index": 194,
+      "B_SOURCE_RECORD_ID": "3839",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Odontites verna subsp. verna",
+      "parsedScientificName": "Odontites verna subsp. verna",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3839",
+        "name": "Odontites verna subsp. verna",
+        "sourceExcelRow": 1393
+      }
+    },
+    {
+      "index": 195,
+      "B_SOURCE_RECORD_ID": "3942",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Odontites viscosa",
+      "parsedScientificName": "Odontites viscosa",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3942",
+        "name": "Odontites viscosa",
+        "sourceExcelRow": 1394
+      }
+    },
+    {
+      "index": 196,
+      "B_SOURCE_RECORD_ID": "624",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Omalotheca supina subsp. pusilla",
+      "parsedScientificName": "Omalotheca supina subsp. pusilla",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "624",
+        "name": "Omalotheca supina subsp. pusilla",
+        "sourceExcelRow": 1401
+      }
+    },
+    {
+      "index": 197,
+      "B_SOURCE_RECORD_ID": "635",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Omalotheca sylvatica subsp. carpetana",
+      "parsedScientificName": "Omalotheca sylvatica subsp. carpetana",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "635",
+        "name": "Omalotheca sylvatica subsp. carpetana",
+        "sourceExcelRow": 1403
+      }
+    },
+    {
+      "index": 198,
+      "B_SOURCE_RECORD_ID": "2008",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ononis natrix subsp. natrix",
+      "parsedScientificName": "Ononis natrix subsp. natrix",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2008",
+        "name": "Ononis natrix subsp. natrix",
+        "sourceExcelRow": 1411
+      }
+    },
+    {
+      "index": 199,
+      "B_SOURCE_RECORD_ID": "4403",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Onopordon acanthium",
+      "parsedScientificName": "Onopordon acanthium",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4403",
+        "name": "Onopordon acanthium",
+        "sourceExcelRow": 1421
+      }
+    },
+    {
+      "index": 200,
+      "B_SOURCE_RECORD_ID": "4309",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Onopordon corymbosum",
+      "parsedScientificName": "Onopordon corymbosum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4309",
+        "name": "Onopordon corymbosum",
+        "sourceExcelRow": 1422
+      }
+    },
+    {
+      "index": 201,
+      "B_SOURCE_RECORD_ID": "2045",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Onopordon nervosum",
+      "parsedScientificName": "Onopordon nervosum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2045",
+        "name": "Onopordon nervosum",
+        "sourceExcelRow": 1423
+      }
+    },
+    {
+      "index": 202,
+      "B_SOURCE_RECORD_ID": "4407",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Onopordum acaulon subsp. acaulon",
+      "parsedScientificName": "Onopordum acaulon subsp. acaulon",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4407",
+        "name": "Onopordum acaulon subsp. acaulon",
+        "sourceExcelRow": 1424
+      }
+    },
+    {
+      "index": 203,
+      "B_SOURCE_RECORD_ID": "4791",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ophrys arnoldii",
+      "parsedScientificName": "Ophrys arnoldii",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4791",
+        "name": "Ophrys arnoldii",
+        "sourceExcelRow": 1427
+      }
+    },
+    {
+      "index": 204,
+      "B_SOURCE_RECORD_ID": "3310",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ophrys fusca gr.",
+      "parsedScientificName": "Ophrys fusca",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3310",
+        "name": "Ophrys fusca gr.",
+        "sourceExcelRow": 1433
+      }
+    },
+    {
+      "index": 205,
+      "B_SOURCE_RECORD_ID": "1568",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ophrys lupercalis x O. bilunulata",
+      "parsedScientificName": "Ophrys lupercalis",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1568",
+        "name": "Ophrys lupercalis x O. bilunulata",
+        "sourceExcelRow": 1437
+      }
+    },
+    {
+      "index": 206,
+      "B_SOURCE_RECORD_ID": "5320",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ophrys scolopax subsp. scolopax",
+      "parsedScientificName": "Ophrys scolopax subsp. scolopax",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5320",
+        "name": "Ophrys scolopax subsp. scolopax",
+        "sourceExcelRow": 1443
+      }
+    },
+    {
+      "index": 207,
+      "B_SOURCE_RECORD_ID": "167",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ophrys scolopax x O. tenthredinifera",
+      "parsedScientificName": "Ophrys scolopax",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "167",
+        "name": "Ophrys scolopax x O. tenthredinifera",
+        "sourceExcelRow": 1444
+      }
+    },
+    {
+      "index": 208,
+      "B_SOURCE_RECORD_ID": "3991",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ophrys x manfredoniae",
+      "parsedScientificName": "Ophrys × manfredoniae",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3991",
+        "name": "Ophrys x manfredoniae",
+        "sourceExcelRow": 1449
+      }
+    },
+    {
+      "index": 209,
+      "B_SOURCE_RECORD_ID": "1262",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Orchis picta",
+      "parsedScientificName": "Orchis picta",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1262",
+        "name": "Orchis picta",
+        "sourceExcelRow": 1458
+      }
+    },
+    {
+      "index": 210,
+      "B_SOURCE_RECORD_ID": "784",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Orchis purpurea x Aceras anthropophorum",
+      "parsedScientificName": "Orchis purpurea",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "784",
+        "name": "Orchis purpurea x Aceras anthropophorum",
+        "sourceExcelRow": 1461
+      }
+    },
+    {
+      "index": 211,
+      "B_SOURCE_RECORD_ID": "2620",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Orobanche laevis",
+      "parsedScientificName": "Orobanche laevis",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2620",
+        "name": "Orobanche laevis",
+        "sourceExcelRow": 1475
+      }
+    },
+    {
+      "index": 212,
+      "B_SOURCE_RECORD_ID": "4770",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Paronychia argentea var. argentea",
+      "parsedScientificName": "Paronychia argentea var. argentea",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4770",
+        "name": "Paronychia argentea var. argentea",
+        "sourceExcelRow": 1500
+      }
+    },
+    {
+      "index": 213,
+      "B_SOURCE_RECORD_ID": "5247",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Paronychia capitata var. capitata",
+      "parsedScientificName": "Paronychia capitata var. capitata",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5247",
+        "name": "Paronychia capitata var. capitata",
+        "sourceExcelRow": 1501
+      }
+    },
+    {
+      "index": 214,
+      "B_SOURCE_RECORD_ID": "2582",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Paronychia kapela var. pseudoaretioides",
+      "parsedScientificName": "Paronychia kapela var. pseudoaretioides",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2582",
+        "name": "Paronychia kapela var. pseudoaretioides",
+        "sourceExcelRow": 1503
+      }
+    },
+    {
+      "index": 215,
+      "B_SOURCE_RECORD_ID": "1348",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Paronychia polygonifolia var. polygonifolia",
+      "parsedScientificName": "Paronychia polygonifolia var. polygonifolia",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1348",
+        "name": "Paronychia polygonifolia var. polygonifolia",
+        "sourceExcelRow": 1504
+      }
+    },
+    {
+      "index": 216,
+      "B_SOURCE_RECORD_ID": "2228",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Peucedanum officinales subsp. officinale",
+      "parsedScientificName": "Peucedanum officinales subsp. officinale",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2228",
+        "name": "Peucedanum officinales subsp. officinale",
+        "sourceExcelRow": 1514
+      }
+    },
+    {
+      "index": 217,
+      "B_SOURCE_RECORD_ID": "843",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Phyteuma pyrenaicum",
+      "parsedScientificName": "Phyteuma pyrenaicum",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "843",
+        "name": "Phyteuma pyrenaicum",
+        "sourceExcelRow": 1536
+      }
+    },
+    {
+      "index": 218,
+      "B_SOURCE_RECORD_ID": "391",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Pilosella sp.",
+      "parsedScientificName": "Pilosella sp.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "391",
+        "name": "Pilosella sp.",
+        "sourceExcelRow": 1542
+      }
+    },
+    {
+      "index": 219,
+      "B_SOURCE_RECORD_ID": "3402",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Pimpinella gracilis",
+      "parsedScientificName": "Pimpinella gracilis",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3402",
+        "name": "Pimpinella gracilis",
+        "sourceExcelRow": 1543
+      }
+    },
+    {
+      "index": 220,
+      "B_SOURCE_RECORD_ID": "3401",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Pimpinella gracilis subsp. puberula",
+      "parsedScientificName": "Pimpinella gracilis subsp. puberula",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3401",
+        "name": "Pimpinella gracilis subsp. puberula",
+        "sourceExcelRow": 1544
+      }
+    },
+    {
+      "index": 221,
+      "B_SOURCE_RECORD_ID": "4588",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Plantago alpina subsp. penyalarensis",
+      "parsedScientificName": "Plantago alpina subsp. penyalarensis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4588",
+        "name": "Plantago alpina subsp. penyalarensis",
+        "sourceExcelRow": 1566
+      }
+    },
+    {
+      "index": 222,
+      "B_SOURCE_RECORD_ID": "4876",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Plantago atrata subsp. discolor",
+      "parsedScientificName": "Plantago atrata subsp. discolor",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4876",
+        "name": "Plantago atrata subsp. discolor",
+        "sourceExcelRow": 1567
+      }
+    },
+    {
+      "index": 223,
+      "B_SOURCE_RECORD_ID": "4172",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Platanthera clorantha",
+      "parsedScientificName": "Platanthera clorantha",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4172",
+        "name": "Platanthera clorantha",
+        "sourceExcelRow": 1579
+      }
+    },
+    {
+      "index": 224,
+      "B_SOURCE_RECORD_ID": "5125",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Poa bulbosa var. vivipara",
+      "parsedScientificName": "Poa bulbosa var. vivipara",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5125",
+        "name": "Poa bulbosa var. vivipara",
+        "sourceExcelRow": 1587
+      }
+    },
+    {
+      "index": 225,
+      "B_SOURCE_RECORD_ID": "3993",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Polypodium x mantoniae",
+      "parsedScientificName": "Polypodium × mantoniae",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3993",
+        "name": "Polypodium x mantoniae",
+        "sourceExcelRow": 1618
+      }
+    },
+    {
+      "index": 226,
+      "B_SOURCE_RECORD_ID": "3998",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Polypodium x shivasiae",
+      "parsedScientificName": "Polypodium × shivasiae",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3998",
+        "name": "Polypodium x shivasiae",
+        "sourceExcelRow": 1619
+      }
+    },
+    {
+      "index": 227,
+      "B_SOURCE_RECORD_ID": "3983",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Polystichum x bicknellii",
+      "parsedScientificName": "Polystichum × bicknellii",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3983",
+        "name": "Polystichum x bicknellii",
+        "sourceExcelRow": 1625
+      }
+    },
+    {
+      "index": 228,
+      "B_SOURCE_RECORD_ID": "3989",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Polystichum x illyricum",
+      "parsedScientificName": "Polystichum × illyricum",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3989",
+        "name": "Polystichum x illyricum",
+        "sourceExcelRow": 1626
+      }
+    },
+    {
+      "index": 229,
+      "B_SOURCE_RECORD_ID": "2071",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Populus nigra var. italica",
+      "parsedScientificName": "Populus nigra var. italica",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2071",
+        "name": "Populus nigra var. italica",
+        "sourceExcelRow": 1629
+      }
+    },
+    {
+      "index": 230,
+      "B_SOURCE_RECORD_ID": "662",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Potentilla tabernaemontani",
+      "parsedScientificName": "Potentilla tabernaemontani",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "662",
+        "name": "Potentilla tabernaemontani",
+        "sourceExcelRow": 1650
+      }
+    },
+    {
+      "index": 231,
+      "B_SOURCE_RECORD_ID": "3817",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Potentilla velutina",
+      "parsedScientificName": "Potentilla velutina",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3817",
+        "name": "Potentilla velutina",
+        "sourceExcelRow": 1651
+      }
+    },
+    {
+      "index": 232,
+      "B_SOURCE_RECORD_ID": "3833",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Primula veris subsp. suaveolens",
+      "parsedScientificName": "Primula veris subsp. suaveolens",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3833",
+        "name": "Primula veris subsp. suaveolens",
+        "sourceExcelRow": 1656
+      }
+    },
+    {
+      "index": 233,
+      "B_SOURCE_RECORD_ID": "3507",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Prunella hastifolia",
+      "parsedScientificName": "Prunella hastifolia",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3507",
+        "name": "Prunella hastifolia",
+        "sourceExcelRow": 1660
+      }
+    },
+    {
+      "index": 234,
+      "B_SOURCE_RECORD_ID": "4077",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Quercus cerrioides",
+      "parsedScientificName": "Quercus cerrioides",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4077",
+        "name": "Quercus cerrioides",
+        "sourceExcelRow": 1684
+      }
+    },
+    {
+      "index": 235,
+      "B_SOURCE_RECORD_ID": "3082",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Quercus faginea x Q. pusbescens",
+      "parsedScientificName": "Quercus faginea",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3082",
+        "name": "Quercus faginea x Q. pusbescens",
+        "sourceExcelRow": 1687
+      }
+    },
+    {
+      "index": 236,
+      "B_SOURCE_RECORD_ID": "3083",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Quercus faginea x Q. pyrenaica",
+      "parsedScientificName": "Quercus faginea",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3083",
+        "name": "Quercus faginea x Q. pyrenaica",
+        "sourceExcelRow": 1688
+      }
+    },
+    {
+      "index": 237,
+      "B_SOURCE_RECORD_ID": "3626",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Quercus pubescens",
+      "parsedScientificName": "Quercus pubescens",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3626",
+        "name": "Quercus pubescens",
+        "sourceExcelRow": 1692
+      }
+    },
+    {
+      "index": 238,
+      "B_SOURCE_RECORD_ID": "791",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Quercus pusbescens x Q. pyrenaica",
+      "parsedScientificName": "Quercus pusbescens",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "791",
+        "name": "Quercus pusbescens x Q. pyrenaica",
+        "sourceExcelRow": 1693
+      }
+    },
+    {
+      "index": 239,
+      "B_SOURCE_RECORD_ID": "5127",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ranunculus bulbosus var. aleae",
+      "parsedScientificName": "Ranunculus bulbosus var. aleae",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5127",
+        "name": "Ranunculus bulbosus var. aleae",
+        "sourceExcelRow": 1702
+      }
+    },
+    {
+      "index": 240,
+      "B_SOURCE_RECORD_ID": "5128",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ranunculus bulbosus var. hispanicus",
+      "parsedScientificName": "Ranunculus bulbosus var. hispanicus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5128",
+        "name": "Ranunculus bulbosus var. hispanicus",
+        "sourceExcelRow": 1703
+      }
+    },
+    {
+      "index": 241,
+      "B_SOURCE_RECORD_ID": "1189",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ranunculus peltatus var. peltatus",
+      "parsedScientificName": "Ranunculus peltatus var. peltatus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1189",
+        "name": "Ranunculus peltatus var. peltatus",
+        "sourceExcelRow": 1719
+      }
+    },
+    {
+      "index": 242,
+      "B_SOURCE_RECORD_ID": "1614",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Rhamnus lycioides subsp. velutina",
+      "parsedScientificName": "Rhamnus lycioides subsp. velutina",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1614",
+        "name": "Rhamnus lycioides subsp. velutina",
+        "sourceExcelRow": 1740
+      }
+    },
+    {
+      "index": 243,
+      "B_SOURCE_RECORD_ID": "1733",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Rhinanthus mediterraneus",
+      "parsedScientificName": "Rhinanthus mediterraneus",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1733",
+        "name": "Rhinanthus mediterraneus",
+        "sourceExcelRow": 1744
+      }
+    },
+    {
+      "index": 244,
+      "B_SOURCE_RECORD_ID": "1442",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Robinia pseudacacia",
+      "parsedScientificName": "Robinia pseudacacia",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1442",
+        "name": "Robinia pseudacacia",
+        "sourceExcelRow": 1750
+      }
+    },
+    {
+      "index": 245,
+      "B_SOURCE_RECORD_ID": "5338",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Rorippa sylvestris sylvestris",
+      "parsedScientificName": "Rorippa sylvestris",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5338",
+        "name": "Rorippa sylvestris sylvestris",
+        "sourceExcelRow": 1756
+      }
+    },
+    {
+      "index": 246,
+      "B_SOURCE_RECORD_ID": "2111",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Rosa nitidula",
+      "parsedScientificName": "Rosa nitidula",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2111",
+        "name": "Rosa nitidula",
+        "sourceExcelRow": 1766
+      }
+    },
+    {
+      "index": 247,
+      "B_SOURCE_RECORD_ID": "5157",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Rubus caesius x R. ulmifolius",
+      "parsedScientificName": "Rubus caesius",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5157",
+        "name": "Rubus caesius x R. ulmifolius",
+        "sourceExcelRow": 1780
+      }
+    },
+    {
+      "index": 248,
+      "B_SOURCE_RECORD_ID": "4884",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Salix atrocinerea x S. caprea",
+      "parsedScientificName": "Salix atrocinerea",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4884",
+        "name": "Salix atrocinerea x S. caprea",
+        "sourceExcelRow": 1811
+      }
+    },
+    {
+      "index": 249,
+      "B_SOURCE_RECORD_ID": "2944",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Salix eleagnos subsp. angustifolia",
+      "parsedScientificName": "Salix eleagnos subsp. angustifolia",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2944",
+        "name": "Salix eleagnos subsp. angustifolia",
+        "sourceExcelRow": 1815
+      }
+    },
+    {
+      "index": 250,
+      "B_SOURCE_RECORD_ID": "779",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Salix purpurea var. lambertiana",
+      "parsedScientificName": "Salix purpurea var. lambertiana",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "779",
+        "name": "Salix purpurea var. lambertiana",
+        "sourceExcelRow": 1817
+      }
+    },
+    {
+      "index": 251,
+      "B_SOURCE_RECORD_ID": "78",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Salix salvifolia",
+      "parsedScientificName": "Salix salvifolia",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "78",
+        "name": "Salix salvifolia",
+        "sourceExcelRow": 1818
+      }
+    },
+    {
+      "index": 252,
+      "B_SOURCE_RECORD_ID": "3995",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Salix x neotricha",
+      "parsedScientificName": "Salix × neotricha",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3995",
+        "name": "Salix x neotricha",
+        "sourceExcelRow": 1820
+      }
+    },
+    {
+      "index": 253,
+      "B_SOURCE_RECORD_ID": "3996",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Salix x rubens",
+      "parsedScientificName": "Salix × rubens",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3996",
+        "name": "Salix x rubens",
+        "sourceExcelRow": 1821
+      }
+    },
+    {
+      "index": 254,
+      "B_SOURCE_RECORD_ID": "1821",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sanguisorba minor subsp. muricata",
+      "parsedScientificName": "Sanguisorba minor subsp. muricata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1821",
+        "name": "Sanguisorba minor subsp. muricata",
+        "sourceExcelRow": 1833
+      }
+    },
+    {
+      "index": 255,
+      "B_SOURCE_RECORD_ID": "4415",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Satureja acinos",
+      "parsedScientificName": "Satureja acinos",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4415",
+        "name": "Satureja acinos",
+        "sourceExcelRow": 1841
+      }
+    },
+    {
+      "index": 256,
+      "B_SOURCE_RECORD_ID": "4593",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Satureja alpina",
+      "parsedScientificName": "Satureja alpina",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4593",
+        "name": "Satureja alpina",
+        "sourceExcelRow": 1842
+      }
+    },
+    {
+      "index": 257,
+      "B_SOURCE_RECORD_ID": "4839",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Satureja ascendens",
+      "parsedScientificName": "Satureja ascendens",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4839",
+        "name": "Satureja ascendens",
+        "sourceExcelRow": 1843
+      }
+    },
+    {
+      "index": 258,
+      "B_SOURCE_RECORD_ID": "4023",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Satureja vulgaris subsp. vulgaris",
+      "parsedScientificName": "Satureja vulgaris subsp. vulgaris",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4023",
+        "name": "Satureja vulgaris subsp. vulgaris",
+        "sourceExcelRow": 1844
+      }
+    },
+    {
+      "index": 259,
+      "B_SOURCE_RECORD_ID": "4377",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Saxifraga cuneata x S. fragosoi",
+      "parsedScientificName": "Saxifraga cuneata",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4377",
+        "name": "Saxifraga cuneata x S. fragosoi",
+        "sourceExcelRow": 1847
+      }
+    },
+    {
+      "index": 260,
+      "B_SOURCE_RECORD_ID": "4378",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Saxifraga cuneata x S. losae",
+      "parsedScientificName": "Saxifraga cuneata",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4378",
+        "name": "Saxifraga cuneata x S. losae",
+        "sourceExcelRow": 1848
+      }
+    },
+    {
+      "index": 261,
+      "B_SOURCE_RECORD_ID": "3982",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Saxifraga x arizagae",
+      "parsedScientificName": "Saxifraga × arizagae",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3982",
+        "name": "Saxifraga x arizagae",
+        "sourceExcelRow": 1858
+      }
+    },
+    {
+      "index": 262,
+      "B_SOURCE_RECORD_ID": "3985",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Saxifraga x celtiberica",
+      "parsedScientificName": "Saxifraga × celtiberica",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3985",
+        "name": "Saxifraga x celtiberica",
+        "sourceExcelRow": 1859
+      }
+    },
+    {
+      "index": 263,
+      "B_SOURCE_RECORD_ID": "4075",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scirpus cernuus",
+      "parsedScientificName": "Scirpus cernuus",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4075",
+        "name": "Scirpus cernuus",
+        "sourceExcelRow": 1870
+      }
+    },
+    {
+      "index": 264,
+      "B_SOURCE_RECORD_ID": "4082",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scirpus cespitosus subsp. germanicum",
+      "parsedScientificName": "Scirpus cespitosus subsp. germanicum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4082",
+        "name": "Scirpus cespitosus subsp. germanicum",
+        "sourceExcelRow": 1871
+      }
+    },
+    {
+      "index": 265,
+      "B_SOURCE_RECORD_ID": "3617",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scirpus holoschoenus",
+      "parsedScientificName": "Scirpus holoschoenus",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3617",
+        "name": "Scirpus holoschoenus",
+        "sourceExcelRow": 1872
+      }
+    },
+    {
+      "index": 266,
+      "B_SOURCE_RECORD_ID": "2603",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scirpus lacustris",
+      "parsedScientificName": "Scirpus lacustris",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2603",
+        "name": "Scirpus lacustris",
+        "sourceExcelRow": 1873
+      }
+    },
+    {
+      "index": 267,
+      "B_SOURCE_RECORD_ID": "1692",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scirpus maritimus",
+      "parsedScientificName": "Scirpus maritimus",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1692",
+        "name": "Scirpus maritimus",
+        "sourceExcelRow": 1874
+      }
+    },
+    {
+      "index": 268,
+      "B_SOURCE_RECORD_ID": "335",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scirpus setaceus",
+      "parsedScientificName": "Scirpus setaceus",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "335",
+        "name": "Scirpus setaceus",
+        "sourceExcelRow": 1875
+      }
+    },
+    {
+      "index": 269,
+      "B_SOURCE_RECORD_ID": "627",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scirpus supinus",
+      "parsedScientificName": "Scirpus supinus",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "627",
+        "name": "Scirpus supinus",
+        "sourceExcelRow": 1876
+      }
+    },
+    {
+      "index": 270,
+      "B_SOURCE_RECORD_ID": "4679",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Scorzonera angustifolia var. angustifolia",
+      "parsedScientificName": "Scorzonera angustifolia var. angustifolia",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4679",
+        "name": "Scorzonera angustifolia var. angustifolia",
+        "sourceExcelRow": 1884
+      }
+    },
+    {
+      "index": 271,
+      "B_SOURCE_RECORD_ID": "2604",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Senecio laderoi subsp. laderoi",
+      "parsedScientificName": "Senecio laderoi subsp. laderoi",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2604",
+        "name": "Senecio laderoi subsp. laderoi",
+        "sourceExcelRow": 1919
+      }
+    },
+    {
+      "index": 272,
+      "B_SOURCE_RECORD_ID": "1495",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Serapias lingua x parviflora",
+      "parsedScientificName": "Serapias lingua",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1495",
+        "name": "Serapias lingua x parviflora",
+        "sourceExcelRow": 1929
+      }
+    },
+    {
+      "index": 273,
+      "B_SOURCE_RECORD_ID": "2699",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Serratula leucantha",
+      "parsedScientificName": "Serratula leucantha",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2699",
+        "name": "Serratula leucantha",
+        "sourceExcelRow": 1931
+      }
+    },
+    {
+      "index": 274,
+      "B_SOURCE_RECORD_ID": "3625",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Seseli libanotis subsp. libanotis",
+      "parsedScientificName": "Seseli libanotis subsp. libanotis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3625",
+        "name": "Seseli libanotis subsp. libanotis",
+        "sourceExcelRow": 1937
+      }
+    },
+    {
+      "index": 275,
+      "B_SOURCE_RECORD_ID": "5145",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sesleria caerulea",
+      "parsedScientificName": "Sesleria caerulea",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5145",
+        "name": "Sesleria caerulea",
+        "sourceExcelRow": 1941
+      }
+    },
+    {
+      "index": 276,
+      "B_SOURCE_RECORD_ID": "5184",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sideritis camarae",
+      "parsedScientificName": "Sideritis camarae",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5184",
+        "name": "Sideritis camarae",
+        "sourceExcelRow": 1945
+      }
+    },
+    {
+      "index": 277,
+      "B_SOURCE_RECORD_ID": "2431",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sideritis hyssopifolia subsp. hyssopifolia",
+      "parsedScientificName": "Sideritis hyssopifolia subsp. hyssopifolia",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2431",
+        "name": "Sideritis hyssopifolia subsp. hyssopifolia",
+        "sourceExcelRow": 1947
+      }
+    },
+    {
+      "index": 278,
+      "B_SOURCE_RECORD_ID": "1896",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sideritis montana subsp. ebracteata",
+      "parsedScientificName": "Sideritis montana subsp. ebracteata",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1896",
+        "name": "Sideritis montana subsp. ebracteata",
+        "sourceExcelRow": 1949
+      }
+    },
+    {
+      "index": 279,
+      "B_SOURCE_RECORD_ID": "1709",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Simethis mattiazzi",
+      "parsedScientificName": "Simethis mattiazzi",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1709",
+        "name": "Simethis mattiazzi",
+        "sourceExcelRow": 1976
+      }
+    },
+    {
+      "index": 280,
+      "B_SOURCE_RECORD_ID": "4887",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sixalix atropurpurea",
+      "parsedScientificName": "Sixalix atropurpurea",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4887",
+        "name": "Sixalix atropurpurea",
+        "sourceExcelRow": 1989
+      }
+    },
+    {
+      "index": 281,
+      "B_SOURCE_RECORD_ID": "3916",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Solidago virgaurea subsp. fallit-tirones",
+      "parsedScientificName": "Solidago virgaurea subsp. fallit-tirones",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3916",
+        "name": "Solidago virgaurea subsp. fallit-tirones",
+        "sourceExcelRow": 1995
+      }
+    },
+    {
+      "index": 282,
+      "B_SOURCE_RECORD_ID": "4780",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sorbus aria subsp. aria",
+      "parsedScientificName": "Sorbus aria subsp. aria",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4780",
+        "name": "Sorbus aria subsp. aria",
+        "sourceExcelRow": 2002
+      }
+    },
+    {
+      "index": 283,
+      "B_SOURCE_RECORD_ID": "4898",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sorbus aucuparia subsp. aucuparia",
+      "parsedScientificName": "Sorbus aucuparia subsp. aucuparia",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4898",
+        "name": "Sorbus aucuparia subsp. aucuparia",
+        "sourceExcelRow": 2003
+      }
+    },
+    {
+      "index": 284,
+      "B_SOURCE_RECORD_ID": "1941",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Sorbus mougeotii",
+      "parsedScientificName": "Sorbus mougeotii",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1941",
+        "name": "Sorbus mougeotii",
+        "sourceExcelRow": 2006
+      }
+    },
+    {
+      "index": 285,
+      "B_SOURCE_RECORD_ID": "2231",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Stachys officinalis subsp. officinalis",
+      "parsedScientificName": "Stachys officinalis subsp. officinalis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2231",
+        "name": "Stachys officinalis subsp. officinalis",
+        "sourceExcelRow": 2026
+      }
+    },
+    {
+      "index": 286,
+      "B_SOURCE_RECORD_ID": "923",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Stachys recta subsp. recta",
+      "parsedScientificName": "Stachys recta subsp. recta",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "923",
+        "name": "Stachys recta subsp. recta",
+        "sourceExcelRow": 2027
+      }
+    },
+    {
+      "index": 287,
+      "B_SOURCE_RECORD_ID": "3394",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Taraxacum gr. erythrospermum",
+      "parsedScientificName": "Taraxacum gr.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3394",
+        "name": "Taraxacum gr. erythrospermum",
+        "sourceExcelRow": 2054
+      }
+    },
+    {
+      "index": 288,
+      "B_SOURCE_RECORD_ID": "3397",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Taraxacum gr. officinale",
+      "parsedScientificName": "Taraxacum gr.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3397",
+        "name": "Taraxacum gr. officinale",
+        "sourceExcelRow": 2055
+      }
+    },
+    {
+      "index": 289,
+      "B_SOURCE_RECORD_ID": "392",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Taraxacum sp.",
+      "parsedScientificName": "Taraxacum sp.",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "392",
+        "name": "Taraxacum sp.",
+        "sourceExcelRow": 2057
+      }
+    },
+    {
+      "index": 290,
+      "B_SOURCE_RECORD_ID": "1690",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Tetragonolobus maritimus var. hirsutus",
+      "parsedScientificName": "Tetragonolobus maritimus var. hirsutus",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1690",
+        "name": "Tetragonolobus maritimus var. hirsutus",
+        "sourceExcelRow": 2062
+      }
+    },
+    {
+      "index": 291,
+      "B_SOURCE_RECORD_ID": "5313",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Tilia x vulgaris",
+      "parsedScientificName": "Tilia × vulgaris",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5313",
+        "name": "Tilia x vulgaris",
+        "sourceExcelRow": 2093
+      }
+    },
+    {
+      "index": 292,
+      "B_SOURCE_RECORD_ID": "4813",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Torilis arvensis subsp. arvensis",
+      "parsedScientificName": "Torilis arvensis subsp. arvensis",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4813",
+        "name": "Torilis arvensis subsp. arvensis",
+        "sourceExcelRow": 2099
+      }
+    },
+    {
+      "index": 293,
+      "B_SOURCE_RECORD_ID": "2626",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Tragopogon lamottei",
+      "parsedScientificName": "Tragopogon lamottei",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2626",
+        "name": "Tragopogon lamottei",
+        "sourceExcelRow": 2107
+      }
+    },
+    {
+      "index": 294,
+      "B_SOURCE_RECORD_ID": "1910",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Trifolium montanum subsp. montanum",
+      "parsedScientificName": "Trifolium montanum subsp. montanum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1910",
+        "name": "Trifolium montanum subsp. montanum",
+        "sourceExcelRow": 2121
+      }
+    },
+    {
+      "index": 295,
+      "B_SOURCE_RECORD_ID": "945",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Trifolium repens subsp. nevadense",
+      "parsedScientificName": "Trifolium repens subsp. nevadense",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "945",
+        "name": "Trifolium repens subsp. nevadense",
+        "sourceExcelRow": 2125
+      }
+    },
+    {
+      "index": 296,
+      "B_SOURCE_RECORD_ID": "946",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Trifolium repens subsp. repens",
+      "parsedScientificName": "Trifolium repens subsp. repens",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "946",
+        "name": "Trifolium repens subsp. repens",
+        "sourceExcelRow": 2126
+      }
+    },
+    {
+      "index": 297,
+      "B_SOURCE_RECORD_ID": "3445",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Trinia glauca subsp. glauca",
+      "parsedScientificName": "Trinia glauca subsp. glauca",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3445",
+        "name": "Trinia glauca subsp. glauca",
+        "sourceExcelRow": 2139
+      }
+    },
+    {
+      "index": 298,
+      "B_SOURCE_RECORD_ID": "3988",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Ulmus x hollandica",
+      "parsedScientificName": "Ulmus × hollandica",
+      "requiredRank": "species",
+      "isHybrid": true,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3988",
+        "name": "Ulmus x hollandica",
+        "sourceExcelRow": 2157
+      }
+    },
+    {
+      "index": 299,
+      "B_SOURCE_RECORD_ID": "5271",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Valerianella carinata",
+      "parsedScientificName": "Valerianella carinata",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5271",
+        "name": "Valerianella carinata",
+        "sourceExcelRow": 2171
+      }
+    },
+    {
+      "index": 300,
+      "B_SOURCE_RECORD_ID": "1582",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Valerianella lusitanica",
+      "parsedScientificName": "Valerianella lusitanica",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1582",
+        "name": "Valerianella lusitanica",
+        "sourceExcelRow": 2179
+      }
+    },
+    {
+      "index": 301,
+      "B_SOURCE_RECORD_ID": "1969",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Valerianella muricata",
+      "parsedScientificName": "Valerianella muricata",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "1969",
+        "name": "Valerianella muricata",
+        "sourceExcelRow": 2180
+      }
+    },
+    {
+      "index": 302,
+      "B_SOURCE_RECORD_ID": "5343",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Verbascum rotundifolium ripacurcicum",
+      "parsedScientificName": "Verbascum rotundifolium",
+      "requiredRank": "species",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "5343",
+        "name": "Verbascum rotundifolium ripacurcicum",
+        "sourceExcelRow": 2184
+      }
+    },
+    {
+      "index": 303,
+      "B_SOURCE_RECORD_ID": "240",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Verbascum thapsus subsp. crassifolium",
+      "parsedScientificName": "Verbascum thapsus subsp. crassifolium",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "240",
+        "name": "Verbascum thapsus subsp. crassifolium",
+        "sourceExcelRow": 2186
+      }
+    },
+    {
+      "index": 304,
+      "B_SOURCE_RECORD_ID": "241",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Verbascum thapsus subsp. montanum",
+      "parsedScientificName": "Verbascum thapsus subsp. montanum",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "241",
+        "name": "Verbascum thapsus subsp. montanum",
+        "sourceExcelRow": 2187
+      }
+    },
+    {
+      "index": 305,
+      "B_SOURCE_RECORD_ID": "242",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Verbascum thapsus subsp. thapsus",
+      "parsedScientificName": "Verbascum thapsus subsp. thapsus",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "242",
+        "name": "Verbascum thapsus subsp. thapsus",
+        "sourceExcelRow": 2188
+      }
+    },
+    {
+      "index": 306,
+      "B_SOURCE_RECORD_ID": "4923",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Veronica austriaca subsp. vahlii",
+      "parsedScientificName": "Veronica austriaca subsp. vahlii",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "4923",
+        "name": "Veronica austriaca subsp. vahlii",
+        "sourceExcelRow": 2194
+      }
+    },
+    {
+      "index": 307,
+      "B_SOURCE_RECORD_ID": "3512",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Veronica hederifolia subsp. hederifolia",
+      "parsedScientificName": "Veronica hederifolia subsp. hederifolia",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "3512",
+        "name": "Veronica hederifolia subsp. hederifolia",
+        "sourceExcelRow": 2198
+      }
+    },
+    {
+      "index": 308,
+      "B_SOURCE_RECORD_ID": "2372",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Vicia pannonica var. purpurascens",
+      "parsedScientificName": "Vicia pannonica var. purpurascens",
+      "requiredRank": "variety",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "2372",
+        "name": "Vicia pannonica var. purpurascens",
+        "sourceExcelRow": 2221
+      }
+    },
+    {
+      "index": 309,
+      "B_SOURCE_RECORD_ID": "105",
+      "NOMBRE_BIODIVERSIDAD_RIOJANA_VERBATIM": "Vicia sativa subsp. nigra",
+      "parsedScientificName": "Vicia sativa subsp. nigra",
+      "requiredRank": "subspecies",
+      "isHybrid": false,
+      "sourceRow": {
+        "B_SOURCE_RECORD_ID": "105",
+        "name": "Vicia sativa subsp. nigra",
+        "sourceExcelRow": 2226
+      }
+    }
+  ]
+}

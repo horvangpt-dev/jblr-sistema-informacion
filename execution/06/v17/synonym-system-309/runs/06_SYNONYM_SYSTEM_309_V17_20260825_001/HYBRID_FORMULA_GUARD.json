@@ -1,0 +1,149 @@
+{
+  "runId": "06_SYNONYM_SYSTEM_309_V17_20260825_001",
+  "guardedRows": [
+    {
+      "B_SOURCE_RECORD_ID": "1891",
+      "nameVerbatim": "Acer monspessulanum x A. campestre"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3980",
+      "nameVerbatim": "Asplenium x alternifolium"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3997",
+      "nameVerbatim": "Asplenium x sarniense"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3999",
+      "nameVerbatim": "Asplenium x souchei"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4000",
+      "nameVerbatim": "Asplenium x staufferi"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4001",
+      "nameVerbatim": "Asplenium x ticinense"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1298",
+      "nameVerbatim": "Brachypodium pinnatum x B. phoenicoides"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2296",
+      "nameVerbatim": "Centaurea ornata x C. scabiosa"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4002",
+      "nameVerbatim": "Centaurea x zubiae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1367",
+      "nameVerbatim": "Cistus populifolius x C. Salvifolius"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3981",
+      "nameVerbatim": "Dryopteris x ambroseae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3992",
+      "nameVerbatim": "Dryopteris x mantoniae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3990",
+      "nameVerbatim": "Equisetum x litorale"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3986",
+      "nameVerbatim": "Mentha x dumetorum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1568",
+      "nameVerbatim": "Ophrys lupercalis x O. bilunulata"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "167",
+      "nameVerbatim": "Ophrys scolopax x O. tenthredinifera"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3991",
+      "nameVerbatim": "Ophrys x manfredoniae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "784",
+      "nameVerbatim": "Orchis purpurea x Aceras anthropophorum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3993",
+      "nameVerbatim": "Polypodium x mantoniae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3998",
+      "nameVerbatim": "Polypodium x shivasiae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3983",
+      "nameVerbatim": "Polystichum x bicknellii"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3989",
+      "nameVerbatim": "Polystichum x illyricum"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3082",
+      "nameVerbatim": "Quercus faginea x Q. pusbescens"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3083",
+      "nameVerbatim": "Quercus faginea x Q. pyrenaica"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "791",
+      "nameVerbatim": "Quercus pusbescens x Q. pyrenaica"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5157",
+      "nameVerbatim": "Rubus caesius x R. ulmifolius"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4884",
+      "nameVerbatim": "Salix atrocinerea x S. caprea"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3995",
+      "nameVerbatim": "Salix x neotricha"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3996",
+      "nameVerbatim": "Salix x rubens"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4377",
+      "nameVerbatim": "Saxifraga cuneata x S. fragosoi"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "4378",
+      "nameVerbatim": "Saxifraga cuneata x S. losae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3982",
+      "nameVerbatim": "Saxifraga x arizagae"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3985",
+      "nameVerbatim": "Saxifraga x celtiberica"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "1495",
+      "nameVerbatim": "Serapias lingua x parviflora"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "5313",
+      "nameVerbatim": "Tilia x vulgaris"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "3988",
+      "nameVerbatim": "Ulmus x hollandica"
+    }
+  ]
+}
