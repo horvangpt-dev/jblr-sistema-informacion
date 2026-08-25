@@ -1,0 +1,2808 @@
+[
+  {
+    "sourceId": "5517",
+    "position309": 3,
+    "nameVerbatim": "Agave americana",
+    "sourceRank": "species",
+    "selectedIdTaxon": "1941",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Agave americana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "1941"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Agave americana L.",
+            "canonicalName": "Agave americana",
+            "taxonID": "1941",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Agave spectabilis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Aloe americana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Agave applanata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Agave cinerascens",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "3682",
+    "position309": 15,
+    "nameVerbatim": "Anthemis triumfettii",
+    "sourceRank": "species",
+    "selectedIdTaxon": "31641",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Anthemis triumfettii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cota triumfettii",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "31641"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Cota triumfettii (L.) J. Gay",
+            "canonicalName": "Cota triumfettii",
+            "taxonID": "31641",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "4979",
+    "position309": 17,
+    "nameVerbatim": "Antirrhinum barrelieri",
+    "sourceRank": "species",
+    "selectedIdTaxon": "2204",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Antirrhinum barrelieri",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Antirrhinum litigiosum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "2204"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Antirrhinum litigiosum Pau",
+            "canonicalName": "Antirrhinum litigiosum",
+            "taxonID": "2204",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "4058",
+    "position309": 47,
+    "nameVerbatim": "Bromus catharticus",
+    "sourceRank": "species",
+    "selectedIdTaxon": "1079",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Bromus catharticus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Zerna unioloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Schedonorus unioloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Serrafalcus unioloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Forasaccus breviaristatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus angustatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Tragus unioloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus bolivianus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Festuca unioloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus brongniartii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Festuca stricta",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus breviaristatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus haenkeanus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Festuca quitensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus schraderi",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus preslii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus mucronatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus mathewsii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus matthewsii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus unioloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus willdenowii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "1079"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Bromus willdenowii Kunth",
+            "canonicalName": "Bromus willdenowii",
+            "taxonID": "1079",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Bromus tacna",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bromus strictus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa haenkeana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa cathartica",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa festucoides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa australis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa boryana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa breviaristata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa pendula",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa secunda",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa simplex",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa submutica",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa unioloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ceratochloa willdenowii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "1117",
+    "position309": 76,
+    "nameVerbatim": "Chaenorhinum rupestre",
+    "sourceRank": "species",
+    "selectedIdTaxon": "3444",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Chaenorhinum rupestre",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Linaria exilis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Linaria rupestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Chaenorhinum thymiflorum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Chaenorhinum exile",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "3444"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Chaenorhinum exile (Coss. & Kralik) Lange",
+            "canonicalName": "Chaenorhinum exile",
+            "taxonID": "3444",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Linaria meyeri",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Chaenorhinum exile",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "3444"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Chaenorhinum exile (Coss. & Kralik) Lange",
+            "canonicalName": "Chaenorhinum exile",
+            "taxonID": "3444",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "974",
+    "position309": 82,
+    "nameVerbatim": "Cirsium richterianum",
+    "sourceRank": "species",
+    "selectedIdTaxon": "3593",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Cirsium richterianum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "3593"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Cirsium richterianum Gillot",
+            "canonicalName": "Cirsium richterianum",
+            "taxonID": "3593",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Lophiolepis richteriana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "4676",
+    "position309": 123,
+    "nameVerbatim": "Galeopsis angustifolia subsp. carpetana",
+    "sourceRank": "subspecies",
+    "selectedIdTaxon": "4724",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Galeopsis angustifolia subsp. carpetana",
+        "aliasRank": "subspecies",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Galeopsis ladanum subsp. carpetana",
+        "aliasRank": "subspecies",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "4724"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Galeopsis ladanum subsp. carpetana (Willk.) O.Bolòs & Vigo",
+            "canonicalName": "Galeopsis ladanum subsp. carpetana",
+            "taxonID": "4724",
+            "rank": "subspecies",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "4809",
+    "position309": 171,
+    "nameVerbatim": "Lithospermum arvense",
+    "sourceRank": "species",
+    "selectedIdTaxon": "2812",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Lithospermum arvense",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lithospermum erythrorhizon",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lithospermum murasaki",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Buglossoides arvensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "2812"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Buglossoides arvensis (L.) I.M.Johnst.",
+            "canonicalName": "Buglossoides arvensis",
+            "taxonID": "2812",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Margarospermum arvense",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rhytispermum arvense",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Aegonychon arvense",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "2487",
+    "position309": 172,
+    "nameVerbatim": "Lithospermum incrassatum",
+    "sourceRank": "species",
+    "selectedIdTaxon": "2815",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Lithospermum incrassatum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Buglossoides incrassata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "2815"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Buglossoides incrassata (Guss.) I.M.Johnst.",
+            "canonicalName": "Buglossoides incrassata",
+            "taxonID": "2815",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Rhytispermum incrassatum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "1412",
+    "position309": 176,
+    "nameVerbatim": "Lotus preslii",
+    "sourceRank": "species",
+    "selectedIdTaxon": "6067",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Lotus preslii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus tenuifolius",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus tenuis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Dorycnium iberecum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus macbridei",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus minor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus noeanus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus acutus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus glaber",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "6067"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Lotus glaber Mill.",
+            "canonicalName": "Lotus glaber",
+            "taxonID": "6067",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Lotus filicaulis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotus campestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Psoralea fascicularis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Lotodes fasciculare",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Psoralea thunbergiana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Psoralea tenuifolia",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "662",
+    "position309": 230,
+    "nameVerbatim": "Potentilla tabernaemontani",
+    "sourceRank": "species",
+    "selectedIdTaxon": "7344",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Potentilla tabernaemontani",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla verna",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Dynamidium australe",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Dynamidium montivagum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Dynamidium vernum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Dynamidium stipulaceum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Dynamidium agrivagum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Fragaria verna",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla vitodurinensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla vulgaris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla incana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla croceolata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla explanata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla agrivaga",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla aurulenta",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla auripetala",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla australis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla billotii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla candollei",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Potentilla neumanniana",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "7344"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Potentilla neumanniana Rchb.",
+            "canonicalName": "Potentilla neumanniana",
+            "taxonID": "7344",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "5338",
+    "position309": 245,
+    "nameVerbatim": "Rorippa sylvestris sylvestris",
+    "sourceRank": "species",
+    "selectedIdTaxon": "7814",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Rorippa sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "7814"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Rorippa sylvestris (L.) Besser",
+            "canonicalName": "Rorippa sylvestris",
+            "taxonID": "7814",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Radicula sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Radicula pinnata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rorippa uliginosa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Caroli-gmelina sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rorippa morisonii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rorippa rivularis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rorippa silvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rorippa liaotungensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium astyloides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium brevistylon",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium hyi",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium mucronulatum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium morisonii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Sisymbrianthus sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Sisymbrium nasturtiifolium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Sisymbrium vulgare",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Sisymbrium sylvestre",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Sisymbrella sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Brachiolobos brevistylus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Brachiolobos sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Crucifera sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rorippa stenocarpa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rorippa reichenbachii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium erythrospermum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium sylvestre",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium stenocarpum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium rivulare",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium riparium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Nasturtium reichenbachii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cardamine sylvestris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "2111",
+    "position309": 246,
+    "nameVerbatim": "Rosa nitidula",
+    "sourceRank": "species",
+    "selectedIdTaxon": "7616",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Rosa nitidula",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rosa bujedana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rosa blondaeana",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "7616"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Rosa blondaeana Ripart ex Déségl.",
+            "canonicalName": "Rosa blondaeana",
+            "taxonID": "7616",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Rosa aspernata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rosa latens",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Rosa latebrosa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      }
+    ]
+  },
+  {
+    "sourceId": "4415",
+    "position309": 255,
+    "nameVerbatim": "Satureja acinos",
+    "sourceRank": "species",
+    "selectedIdTaxon": "1795",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Satureja acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clinopodium acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Calamintha acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Calamintha heterophylla",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Calamintha villosa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos thymoides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos acuminatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos arvensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "1795"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Acinos arvensis (Lam.) Dandy",
+            "canonicalName": "Acinos arvensis",
+            "taxonID": "1795",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Acinos clinopodiifacie",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos eglandulosus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos infectus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos schizodontus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos subcrispus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos villosus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Melissa arvensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus canescens",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus diffusus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus gibbosus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus heterophyllus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Faucibarba acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Satureja villosa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Melissa acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Calamintha arvensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus acinoides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus arvensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Thymus concinnus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora infecta",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora eglandulosa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora subcrispa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora schizodonta",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora acinos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora acuminata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora villosa",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos arvensis",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "1795"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Acinos arvensis (Lam.) Dandy",
+            "canonicalName": "Acinos arvensis",
+            "taxonID": "1795",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "4593",
+    "position309": 256,
+    "nameVerbatim": "Satureja alpina",
+    "sourceRank": "species",
+    "selectedIdTaxon": "1794",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Satureja alpina",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clinopodium alpinum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Calamintha alpina",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos alpinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "1794"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Acinos alpinus (L.) Moench",
+            "canonicalName": "Acinos alpinus",
+            "taxonID": "1794",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Thymus alpinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora alpicola",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Faucibarba alpina",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Melissa alpina",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Ziziphora alpina",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Acinos alpinus",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "1794"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Acinos alpinus (L.) Moench",
+            "canonicalName": "Acinos alpinus",
+            "taxonID": "1794",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "2603",
+    "position309": 266,
+    "nameVerbatim": "Scirpus lacustris",
+    "sourceRank": "species",
+    "selectedIdTaxon": "8106",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Scirpus lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Schoenoplectus lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "8106"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Schoenoplectus lacustris (L.) Palla",
+            "canonicalName": "Schoenoplectus lacustris",
+            "taxonID": "8106",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Cyperus lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Hymenochaeta lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Heleophylax lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Schoenus lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Eleogiton lacustris",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus tenuispicatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus nocha",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus paposanus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus quinquespicatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus rancoanus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus rufidulus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Mariscus conceptionis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Chlorocyperus oostachyus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus oostachyus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus conceptionis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus chilensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Cyperus aurescens",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Schoenoplectus lacustris",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "8106"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Schoenoplectus lacustris (L.) Palla",
+            "canonicalName": "Schoenoplectus lacustris",
+            "taxonID": "8106",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "627",
+    "position309": 269,
+    "nameVerbatim": "Scirpus supinus",
+    "sourceRank": "species",
+    "selectedIdTaxon": "8112",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Scirpus supinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Isolepis uninodis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus erismaniae",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus lateralis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus sinuatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus ternatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus uninodis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus wilkensii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Schoenoplectiella supina",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Heleophylax supinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Isolepis pentasticha",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Isolepis striolata",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Isolepis simillima",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus halleri",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Isolepis supina",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus guaraniticus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus polycoleus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus natans",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus mucronatus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus adscendens",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Schoenoplectus supinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "8112"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Schoenoplectus supinus (L.) Palla",
+            "canonicalName": "Schoenoplectus supinus",
+            "taxonID": "8112",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Cyperus supinus",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Scirpus tristachyos",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Schoenoplectus supinus",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "8112"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Schoenoplectus supinus (L.) Palla",
+            "canonicalName": "Schoenoplectus supinus",
+            "taxonID": "8112",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "1709",
+    "position309": 279,
+    "nameVerbatim": "Simethis mattiazzi",
+    "sourceRank": "species",
+    "selectedIdTaxon": "32028",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Simethis mattiazzi",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Simethis bicolor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Sieboldia bicolor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Anthericum mattiazzi",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Bulbine planifolia",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Phalangium holosericeum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Anthericum bicolor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Phalangium bicolor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Anthericum planifolium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Pogonella planifolium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Anthericum ericetorum",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Phalangium planifolium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Pubilaria bicolor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Simethis planifolia",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": [
+          {
+            "scientificName": "Simethis planifolia (L.) Gren.",
+            "canonicalName": "Simethis planifolia",
+            "taxonID": "25080",
+            "rank": "species",
+            "taxonomicStatus": "Sinonimia"
+          }
+        ]
+      },
+      {
+        "alias": "Pubilaria mattiazzii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Pubilaria planifolia",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Morgagnia bicolor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Hemierium planifolium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis florida",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis anemonoides",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Viticella florida",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Anemone japonica",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Atragene florida",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis bicolor",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Atragene indica",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis plena",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis purpurea",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Sieboldia florida",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis leptomera",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis hakonensis",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis japonica",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Clematis sieboldii",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [],
+        "selectedIdSupported": false,
+        "records": []
+      },
+      {
+        "alias": "Simethis mattiazzii",
+        "aliasRank": "species",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "32028"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Simethis mattiazzii (Vand.) Sacc.",
+            "canonicalName": "Simethis mattiazzii",
+            "taxonID": "32028",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "5343",
+    "position309": 302,
+    "nameVerbatim": "Verbascum rotundifolium ripacurcicum",
+    "sourceRank": "species",
+    "selectedIdTaxon": "9297",
+    "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID_VIA_DOCUMENTED_NETWORK",
+    "aliases": [
+      {
+        "alias": "Verbascum rotundifolium",
+        "aliasRank": "species",
+        "origin": "PRIOR_DOCUMENTED_NETWORK",
+        "closureEligible": true,
+        "acceptedExactIds": [
+          "9297"
+        ],
+        "selectedIdSupported": true,
+        "records": [
+          {
+            "scientificName": "Verbascum rotundifolium Ten.",
+            "canonicalName": "Verbascum rotundifolium",
+            "taxonID": "9297",
+            "rank": "species",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      },
+      {
+        "alias": "Verbascum rotundifolium subsp. ripacurcicum",
+        "aliasRank": "subspecies",
+        "origin": "SPANISH_VERIFIED",
+        "closureEligible": false,
+        "acceptedExactIds": [
+          "9296"
+        ],
+        "selectedIdSupported": false,
+        "records": [
+          {
+            "scientificName": "Verbascum rotundifolium subsp. ripacurcicum O.Bolòs & Vigo",
+            "canonicalName": "Verbascum rotundifolium subsp. ripacurcicum",
+            "taxonID": "9296",
+            "rank": "subspecies",
+            "taxonomicStatus": "Aceptado/Válido"
+          }
+        ]
+      }
+    ]
+  }
+]
