@@ -1,0 +1,30 @@
+{
+  "version": "BATCH2_SPANISH_ENRICHMENT_V3",
+  "scope": "positions_101_200_of_309",
+  "policy": {
+    "evidenceOnly": true,
+    "noFuzzy": true,
+    "sameRankRequiredForClosure": true,
+    "rankChangeQueriedButGuarded": true,
+    "hybridRequiresExplicitIdentityEvidence": true,
+    "regionalNotFoundIsNotAbsence": true,
+    "spanishSourcePrecedence": true
+  },
+  "relations": [
+    {"B_SOURCE_RECORD_ID":"1624","sourceNameVerbatim":"Dactylorhiza maculata subsp. elodes","sourceRank":"subspecies","alias":"Dactylorhiza maculata","aliasRank":"species","relationState":"DOCUMENTED_RELATION_RANK_CHANGE_GUARD","source":"Flora Iberica XXI - Dactylorhiza","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/21_189_16_Dactylorhiza.pdf"},
+    {"B_SOURCE_RECORD_ID":"4480","sourceNameVerbatim":"Dryopteris affinis subsp. cambrensis","sourceRank":"subspecies","alias":"Dryopteris cambrensis subsp. cambrensis","aliasRank":"subspecies","relationState":"DOCUMENTED_EQUIVALENT_SAME_RANK","source":"Flora Montiberica 75","sourceUrl":"https://www.floramontiberica.org/FM/075/Flora_Montib_075_077-093_2019.pdf"},
+    {"B_SOURCE_RECORD_ID":"4481","sourceNameVerbatim":"Dryopteris affinis var. borreri","sourceRank":"variety","alias":"Dryopteris borreri","aliasRank":"species","relationState":"DOCUMENTED_RELATION_RANK_CHANGE_GUARD","source":"Flora Montiberica 75","sourceUrl":"https://www.floramontiberica.org/FM/075/Flora_Montib_075_077-093_2019.pdf"},
+    {"B_SOURCE_RECORD_ID":"3592","sourceNameVerbatim":"Epipactis hispanica","sourceRank":"species","alias":"Epipactis bugacensis","aliasRank":"species","relationState":"DOCUMENTED_SYNONYM_SAME_RANK","source":"Flora Montiberica 56","sourceUrl":"https://www.floramontiberica.org/FM/Flora_Montiberica56.pdf"},
+    {"B_SOURCE_RECORD_ID":"1156","sourceNameVerbatim":"Epipactis parviflora","sourceRank":"species","alias":"Epipactis kleinii","aliasRank":"species","relationState":"DOCUMENTED_SYNONYM_SAME_RANK","source":"Flora Iberica XXI - Epipactis","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/21_189_02_Epipactis.pdf"},
+    {"B_SOURCE_RECORD_ID":"4676","sourceNameVerbatim":"Galeopsis angustifolia subsp. carpetana","sourceRank":"subspecies","alias":"Galeopsis ladanum subsp. carpetana","aliasRank":"subspecies","relationState":"DOCUMENTED_SYNONYM_SAME_RANK","source":"Flora Iberica XII - Nomenclatura","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/imprenta/tomoXII/entrega_1/Nomenclatura_primera_entrega.pdf"},
+    {"B_SOURCE_RECORD_ID":"2865","sourceNameVerbatim":"Galium divaricatum","sourceRank":"species","alias":"Galium parisiense subsp. divaricatum","aliasRank":"subspecies","relationState":"DOCUMENTED_BASIONYM_RANK_CHANGE_GUARD","source":"Flora Iberica XV - Galium","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/15_154_08_Galium.pdf"},
+    {"B_SOURCE_RECORD_ID":"4343","sourceNameVerbatim":"Jasione crispa subsp. sessiliflora","sourceRank":"subspecies","alias":"Jasione sessiliflora","aliasRank":"species","relationState":"DOCUMENTED_SYNONYM_RANK_CHANGE_GUARD","source":"Flora Iberica XIV - Jasione","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/14_09_jasione.pdf"},
+    {"B_SOURCE_RECORD_ID":"4837","sourceNameVerbatim":"Knautia arvernensis","sourceRank":"species","alias":"Knautia nevadensis","aliasRank":"species","relationState":"DOCUMENTED_CURRENT_TREATMENT_SAME_RANK","source":"Flora Montiberica 61","sourceUrl":"https://www.floramontiberica.org/FM/Flora_Montiberica61.pdf"},
+    {"B_SOURCE_RECORD_ID":"4615","sourceNameVerbatim":"Melilotus altissima","sourceRank":"species","alias":"Melilotus altissimus","aliasRank":"species","relationState":"DOCUMENTED_ORTHOGRAPHIC_TREATMENT_SAME_RANK","source":"Flora Iberica VII - Melilotus","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/07_39%20Melilotus.pdf"},
+    {"B_SOURCE_RECORD_ID":"900","sourceNameVerbatim":"Myosotis ramosissima subsp. globularis","sourceRank":"subspecies","alias":"Myosotis ramosissima subsp. gracillima","aliasRank":"subspecies","relationState":"DOCUMENTED_SYNONYM_SAME_RANK","source":"Flora Iberica XI - Myosotis","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/11_138_26_Myosotis.pdf"},
+    {"B_SOURCE_RECORD_ID":"2041","sourceNameVerbatim":"Nepeta nepetella subsp. cordifolia","sourceRank":"subspecies","alias":"Nepeta nepetella subsp. aragonensis","aliasRank":"subspecies","relationState":"DOCUMENTED_SYNONYM_SAME_RANK","source":"Flora Iberica XII - Nepeta","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/12_140_33_Nepeta.pdf"},
+    {"B_SOURCE_RECORD_ID":"2953","sourceNameVerbatim":"Odontites eliassennenii","sourceRank":"species","alias":"Odontites recordonii","aliasRank":"species","relationState":"DOCUMENTED_SYNONYM_SAME_RANK","source":"Flora Iberica XIII - Odontites","sourceUrl":"https://www.floraiberica.es/floraiberica/texto/pdfs/13_144_25_Odontites.pdf"},
+    {"B_SOURCE_RECORD_ID":"2054","sourceNameVerbatim":"Gagea nevadensis gr.","sourceRank":"species","alias":"Gagea foliosa subsp. nevadensis","aliasRank":"subspecies","relationState":"DOCUMENTED_SYNONYM_RANK_CHANGE_GUARD","source":"Flora de Andalucia - Gagea nevadensis","sourceUrl":"https://floradeandalucia.es/taxones/gagea-nevadensis-boiss/"},
+    {"B_SOURCE_RECORD_ID":"2054","sourceNameVerbatim":"Gagea nevadensis gr.","sourceRank":"species","alias":"Gagea soleirolii subsp. nevadensis","aliasRank":"subspecies","relationState":"DOCUMENTED_SYNONYM_RANK_CHANGE_GUARD","source":"Flora de Andalucia - Gagea nevadensis","sourceUrl":"https://floradeandalucia.es/taxones/gagea-nevadensis-boiss/"}
+  ]
+}
