@@ -1,0 +1,32 @@
+{
+  "pass": true,
+  "batch": 1,
+  "retry": "v3",
+  "processedRows": 100,
+  "uniqueIds": 100,
+  "verifiedSpanishRelationCount": 25,
+  "rowsWithVerifiedSpanishRelations": 25,
+  "resolved": 10,
+  "conflicts": 16,
+  "unresolved": 74,
+  "newRecoveriesViaSpanishAliases": 4,
+  "existingResolvedAlsoSupportedByNewSpanishAliases": 1,
+  "rankGuardQueriesWithEidosHit": 11,
+  "previousTechnicalAttempt": {
+    "resolved": 6,
+    "conflicts": 16,
+    "unresolved": 78,
+    "newSpanishAliasCount": 0,
+    "status": "SUPERSEDED_SCIENTIFICALLY"
+  },
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "guards": {
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "hybridGuard": true,
+    "sourceFailureNotNotFound": true,
+    "closed1953Untouched": true
+  },
+  "stimes": "HOLD"
+}
