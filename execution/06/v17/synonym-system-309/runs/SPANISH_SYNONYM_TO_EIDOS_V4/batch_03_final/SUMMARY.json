@@ -1,0 +1,32 @@
+{
+  "pass": true,
+  "batch": 3,
+  "processedRows": 109,
+  "uniqueIds": 109,
+  "verifiedSpanishRelationCount": 25,
+  "rowsWithVerifiedSpanishRelations": 25,
+  "resolved": 21,
+  "conflicts": 25,
+  "unresolved": 63,
+  "newRecoveriesViaSpanishAliases": 4,
+  "spanishPrecedenceResolutions": 1,
+  "spanishVsSpanishConflicts": 0,
+  "rankGuardBlocks": 11,
+  "hybridGuardBlocks": 22,
+  "technicalBaselineSourceFailureEvents": 38,
+  "technicalBaselineStatus": "SUPERSEDED_SCIENTIFICALLY_FOR_SPANISH_SOURCE_DISCOVERY",
+  "eidosSha256": "810467771b2493676e47423e1a5705e7983b3bc11d2f5abde902006fc9286737",
+  "guards": {
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "noSpeciesSubspeciesCollapse": true,
+    "noHybridCollapse": true,
+    "sourceFailureNotNotFound": true,
+    "sourceNamePreserved": true
+  },
+  "rc2Mutation": 0,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "stimes": "HOLD"
+}
