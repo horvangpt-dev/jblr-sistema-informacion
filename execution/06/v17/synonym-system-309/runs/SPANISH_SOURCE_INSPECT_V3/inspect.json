@@ -1,0 +1,700 @@
+{
+  "FLORA_IBERICA": {
+    "Anchusa": {
+      "error": "ReadTimeout:HTTPSConnectionPool(host='www.floraiberica.es', port=443): Read timed out. (read timeout=30)"
+    },
+    "Asperula": {
+      "error": "ReadTimeout:HTTPSConnectionPool(host='www.floraiberica.es', port=443): Read timed out. (read timeout=30)"
+    },
+    "Allium": {
+      "error": "ReadTimeout:HTTPSConnectionPool(host='www.floraiberica.es', port=443): Read timed out. (read timeout=30)"
+    },
+    "Anthemis": {
+      "error": "ReadTimeout:HTTPSConnectionPool(host='www.floraiberica.es', port=443): Read timed out. (read timeout=30)"
+    }
+  },
+  "FLORA_ANDALUCIA": {
+    "status": 200,
+    "len": 1701809,
+    "forms": [],
+    "scripts": [
+      {
+        "src": null,
+        "text": "\ndocument.addEventListener('DOMContentLoaded', function() {\n(($)=>{\n//We must wait for the jQuery ready event because JetSmartFilters is not initialized yet\n$(document).ready(function(){\n//Get the spinner container\nconst spinnerContainer = document.getElementById('itchy-loader');\n//Get the listing container\nconst listingContainer = document.getElementById('listado');\nif(spinnerContainer && listingContainer) {\n//Subscribe start loading event bus by JetSmartFilters\nwindow.JetSmartFilters.events.subscribe('ajaxFilters/start-loading', ()=>{\nspinnerContainer.style.display = 'flex';\nlistingContainer.style.display = 'none';\n})\n//Subscribe end loading event bus by JetSmartFilters\nwindow.JetSmartFilters.events.subscribe('ajaxFilters/end-loading', ()=>{\nspinnerContainer.style.display = 'none';\nlistingContainer.style.display = 'flex';\n})\n}\n})\n})(jQuery)\n});\n"
+      },
+      {
+        "src": null,
+        "text": "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/floradeandalucia.es\\/buscador\\/\",\"url\":\"https:\\/\\/floradeandalucia.es\\/buscador\\/\",\"name\":\"Buscador - Flora de Andalucía\",\"isPartOf\":{\"@id\":\"https:\\/\\/floradeandalucia.es\\/#website\"},\"datePublished\":\"2023-01-04T00:05:06+00:00\",\"dateModified\":\"2026-03-30T19:06:28+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/floradeandalucia.es\\/buscador\\/#breadcrumb\"},\"inLanguage\":\"es\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/floradeandalucia.es\\/buscador\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/floradeandalucia.es\\/buscador\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https:\\/\\/floradeandalucia.es\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Buscador\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/floradeandalucia.es\\/#website\",\"url\":\"https:\\/\\/floradeandalucia.es\\/\",\"name\":\"Flora de Andalucía\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/floradeandalucia.es\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"}]}"
+      },
+      {
+        "src": "//floradeandalucia.es/wp-content/cache/wpfc-minified/jqg83eo6/hrgtg.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nWebFont.load({\ngoogle: {\nfamilies: ['Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic']\n}\n});\n//# sourceURL=jupiterx-webfont-js-after\n"
+      },
+      {
+        "src": "//floradeandalucia.es/wp-content/cache/wpfc-minified/6xdzvkfh/hrgtg.js",
+        "text": ""
+      },
+      {
+        "src": "//floradeandalucia.es/wp-content/cache/wpfc-minified/jpzo1t7k/hrgtg.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar whp_local_data = {\"add_url\":\"https://floradeandalucia.es/wp-admin/post-new.php?post_type=event\",\"ajaxurl\":\"https://floradeandalucia.es/wp-admin/admin-ajax.php\"};\n//# sourceURL=whp5256front.js1479-js-extra\n"
+      },
+      {
+        "src": "//floradeandalucia.es/wp-content/cache/wpfc-minified/8tnn9ai3/hrgtg.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nif (window.innerWidth <= 600){\ndocument.addEventListener('DOMContentLoaded', function() {\njQuery(function($){\n$('.jet-checkboxes-list, .jet-search-filter').slice(0).slideUp();\n$('.jet-filter-label').slice(0,1).addClass('noicon');\n$('.jet-filter-label').click(function(){\n$(this).toggleClass('activeicon');\n$(this).next().slideToggle();\n});\n});\n});\n}\n"
+      },
+      {
+        "src": null,
+        "text": "\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/flora/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n"
+      },
+      {
+        "src": null,
+        "text": "\n( () => {\nconst lazyloadRunObserver = () => {\nconst lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );\nconst lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {\nentries.forEach( ( entry ) => {\nif ( entry.isIntersecting ) {\nlet lazyloadBackground = entry.target;\nif( lazyloadBackground ) {\nlazyloadBackground.classList.add( 'e-lazyloaded' );\n}\nlazyloadBackgroundObserver.unobserve( entry.target );\n}\n});\n}, { rootMargin: '200px 0px 200px 0px' } );\nlazyloadBackgrounds.forEach( ( lazyloadBackground ) => {\nlazyloadBackgroundObserver.observe( lazyloadBackground );\n} );\n};\nconst events = [\n'DOMContentLoaded',\n'elementor/lazyload/observe',\n];\nevents.forEach( ( event ) => {\ndocument.addEventListener( event, lazyloadRunObserver );\n} );\n} )();\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jupiterx-core/includes/woocommerce/wc-quick-view.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-includes/js/underscore.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/themes/flora/lib/assets/dist/js/frontend.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/elementor/assets/js/frontend-modules.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-includes/js/jquery/ui/core.min.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar elementorFrontendConfig = {\"environmentMode\":{\"edit\":false,\"wpPreview\":false,\"isScriptDebug\":false},\"i18n\":{\"shareOnFacebook\":\"Compartir en Facebook\",\"shareOnX\":\"Compartir en X\",\"pinIt\":\"Pinear\",\"download\":\"Descargar\",\"downloadImage\":\"Descargar imagen\",\"fullscreen\":\"Pantalla completa\",\"zoom\":\"Zoom\",\"share\":\"Compartir\",\"playVideo\":\"Reproducir v\\u00eddeo\",\"previous\":\"Anterior\",\"next\":\"Siguiente\",\"close\":\"Cerrar\",\"a11yCarouselPrevSlideMessage\":\"Diapositiva anterior\",\"a11yCarouselNextSlideMessage\":\"Diapositiva siguiente\",\"a11yCarouselFirstSlideMessage\":\"Esta es la primera diapositiva\",\"a11yCarouselLastSlideMessage\":\"Esta es la \\u00faltima diapositiva\",\"a11yCarouselPaginationBulletMessage\":\"Ir a la diapositiva\"},\"is_rtl\":false,\"breakpoints\":{\"xs\":0,\"sm\":480,\"md\":768,\"lg\":1025,\"xl\":1440,\"xxl\":1600},\"responsive\":{\"breakpoints\":{\"mobile\":{\"label\":\"M\\u00f3vil vertical\",\"value\":767,\"default_value\":767,\"direction\":\"max\",\"is_enabled\":true},\"mobile_extra\":{\"label\":\"M\\u00f3vil horizontal\",\"value\":880,\"default_value\":880,\"direction\":\"max\",\"is_enabled\":false},\"tablet\":{\"label\":\"Tableta vertical\",\"value\":1024,\"default_value\":1024,\"direction\":\"max\",\"is_enabled\":true},\"tablet_extra\":{\"label\":\"Tableta horizontal\",\"value\":1200,\"default_value\":1200,\"direction\":\"max\",\"is_enabled\":false},\"laptop\":{\"label\":\"Port\\u00e1til\",\"value\":1366,\"default_value\":1366,\"direction\":\"max\",\"is_enabled\":false},\"widescreen\":{\"label\":\"Pantalla grande\",\"value\":2400,\"default_value\":2400,\"direction\":\"min\",\"is_enabled\":false}},\"hasCustomBreakpoints\":false},\"version\":\"4.2.0\",\"is_static\":false,\"experimentalFeatures\":{\"additional_custom_breakpoints\":true,\"container\":true,\"e_panel_promotions\":true,\"theme_builder_v2\":true,\"nested-elements\":true,\"global_classes_should_enforce_capabilities\":true,\"e_variables\":true,\"e_opt_in_v4_page\":true,\"e_components\":true,\"e_interactions\":true,\"e_widget_creation\":true,\"import-export-customization\":true,\"e_pro_atomic_form\":true,\"e_pro_collection_loop\":true,\"e_pro_variables\":true,\"e_pro_interactions\":true},\"urls\":{\"assets\":\"https:\\/\\/floradeandalucia.es\\/wp-content\\/plugins\\/elementor\\/assets\\/\",\"ajaxurl\":\"https:\\/\\/floradeandalucia.es\\/wp-admin\\/admin-ajax.php\",\"uploadUrl\":\"https:\\/\\/floradeandalucia.es\\/wp-content\\/uploads\"},\"nonces\":{\"floatingButtonsClickTracking\":\"c96e97e455\",\"atomicFormsSendForm\":\"ea335654a4\"},\"swiperClass\":\"swiper\",\"settings\":{\"page\":[],\"editorPreferences\":[]},\"kit\":{\"active_breakpoints\":[\"viewport_mobile\",\"viewport_tablet\"],\"global_image_lightbox\":\"yes\",\"lightbox_enable_counter\":\"yes\",\"lightbox_enable_fullscreen\":\"yes\",\"lightbox_enable_zoom\":\"yes\",\"lightbox_enable_share\":\"yes\",\"lightbox_title_src\":\"title\",\"lightbox_description_src\":\"description\"},\"post\":{\"id\":1038,\"title\":\"Buscador%20-%20Flora%20de%20Andaluc%C3%ADa\",\"excerpt\":\"\",\"featuredImage\":false}};\n//# sourceURL=elementor-frontend-js-before\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/elementor/assets/js/frontend.min.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar localize = {\"ajaxurl\":\"https://floradeandalucia.es/wp-admin/admin-ajax.php\",\"nonce\":\"4dc26c002e\",\"i18n\":{\"added\":\"A\\u00f1adido\",\"compare\":\"Comparar\",\"loading\":\"Cargando...\"},\"eael_translate_text\":{\"required_text\":\"es un campo obligatorio\",\"invalid_text\":\"No v\\u00e1lido\",\"billing_text\":\"Facturaci\\u00f3n\",\"shipping_text\":\"Env\\u00edo\",\"fg_mfp_counter_text\":\"de\"},\"page_permalink\":\"https://floradeandalucia.es/buscador/\",\"cart_redirectition\":\"\",\"cart_page_url\":\"\",\"el_breakpoints\":{\"mobile\":{\"label\":\"M\\u00f3vil vertical\",\"value\":767,\"default_value\":767,\"direction\":\"max\",\"is_enabled\":true},\"mobile_extra\":{\"label\":\"M\\u00f3vil horizontal\",\"value\":880,\"default_value\":880,\"direction\":\"max\",\"is_enabled\":false},\"tablet\":{\"label\":\"Tableta vertical\",\"value\":1024,\"default_value\":1024,\"direction\":\"max\",\"is_enabled\":true},\"tablet_extra\":{\"label\":\"Tableta horizontal\",\"value\":1200,\"default_value\":1200,\"direction\":\"max\",\"is_enabled\":false},\"laptop\":{\"label\":\"Port\\u00e1til\",\"value\":1366,\"default_value\":1366,\"direction\":\"max\",\"is_enabled\":false},\"widescreen\":{\"label\":\"Pantalla grande\",\"value\":2400,\"default_value\":2400,\"direction\":\"min\",\"is_enabled\":false}},\"ParticleThemesData\":{\"default\":\"{\\\"particles\\\":{\\\"number\\\":{\\\"value\\\":160,\\\"density\\\":{\\\"enable\\\":true,\\\"value_area\\\":800}},\\\"color\\\":{\\\"value\\\":\\\"#ffffff\\\"},\\\"shape\\\":{\\\"type\\\":\\\"circle\\\",\\\"stroke\\\":{\\\"width\\\":0,\\\"color\\\":\\\"#000000\\\"},\\\"polygon\\\":{\\\"nb_sides\\\":5},\\\"image\\\":{\\\"src\\\":\\\"img/github.svg\\\",\\\"width\\\":100,\\\"height\\\":100}},\\\"opacity\\\":{\\\"value\\\":0.5,\\\"random\\\":false,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":1,\\\"opacity_min\\\":0.1,\\\"sync\\\":false}},\\\"size\\\":{\\\"value\\\":3,\\\"random\\\":true,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":40,\\\"size_min\\\":0.1,\\\"sync\\\":false}},\\\"line_linked\\\":{\\\"enable\\\":true,\\\"distance\\\":150,\\\"color\\\":\\\"#ffffff\\\",\\\"opacity\\\":0.4,\\\"width\\\":1},\\\"move\\\":{\\\"enable\\\":true,\\\"speed\\\":6,\\\"direction\\\":\\\"none\\\",\\\"random\\\":false,\\\"straight\\\":false,\\\"out_mode\\\":\\\"out\\\",\\\"bounce\\\":false,\\\"attract\\\":{\\\"enable\\\":false,\\\"rotateX\\\":600,\\\"rotateY\\\":1200}}},\\\"interactivity\\\":{\\\"detect_on\\\":\\\"canvas\\\",\\\"events\\\":{\\\"onhover\\\":{\\\"enable\\\":true,\\\"mode\\\":\\\"repulse\\\"},\\\"onclick\\\":{\\\"enable\\\":true,\\\"mode\\\":\\\"push\\\"},\\\"resize\\\":true},\\\"modes\\\":{\\\"grab\\\":{\\\"distance\\\":400,\\\"line_linked\\\":{\\\"opacity\\\":1}},\\\"bubble\\\":{\\\"distance\\\":400,\\\"size\\\":40,\\\"duration\\\":2,\\\"opacity\\\":8,\\\"speed\\\":3},\\\"repulse\\\":{\\\"distance\\\":200,\\\"duration\\\":0.4},\\\"push\\\":{\\\"particles_nb\\\":4},\\\"remove\\\":{\\\"particles_nb\\\":2}}},\\\"retina_detect\\\":true}\",\"nasa\":\"{\\\"particles\\\":{\\\"number\\\":{\\\"value\\\":250,\\\"density\\\":{\\\"enable\\\":true,\\\"value_area\\\":800}},\\\"color\\\":{\\\"value\\\":\\\"#ffffff\\\"},\\\"shape\\\":{\\\"type\\\":\\\"circle\\\",\\\"stroke\\\":{\\\"width\\\":0,\\\"color\\\":\\\"#000000\\\"},\\\"polygon\\\":{\\\"nb_sides\\\":5},\\\"image\\\":{\\\"src\\\":\\\"img/github.svg\\\",\\\"width\\\":100,\\\"height\\\":100}},\\\"opacity\\\":{\\\"value\\\":1,\\\"random\\\":true,\\\"anim\\\":{\\\"enable\\\":true,\\\"speed\\\":1,\\\"opacity_min\\\":0,\\\"sync\\\":false}},\\\"size\\\":{\\\"value\\\":3,\\\"random\\\":true,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":4,\\\"size_min\\\":0.3,\\\"sync\\\":false}},\\\"line_linked\\\":{\\\"enable\\\":false,\\\"distance\\\":150,\\\"color\\\":\\\"#ffffff\\\",\\\"opacity\\\":0.4,\\\"width\\\":1},\\\"move\\\":{\\\"enable\\\":true,\\\"speed\\\":1,\\\"direction\\\":\\\"none\\\",\\\"random\\\":true,\\\"straight\\\":false,\\\"out_mode\\\":\\\"out\\\",\\\"bounce\\\":false,\\\"attract\\\":{\\\"enable\\\":false,\\\"rotateX\\\":600,\\\"rotateY\\\":600}}},\\\"interactivity\\\":{\\\"detect_on\\\":\\\"canvas\\\",\\\"events\\\":{\\\"onhover\\\":{\\\"enable\\\":true,\\\"mode\\\":\\\"bubble\\\"},\\\"onclick\\\":{\\\"enable\\\":true,\\\"mode\\\":\\\"repulse\\\"},\\\"resize\\\":true},\\\"modes\\\":{\\\"grab\\\":{\\\"distance\\\":400,\\\"line_linked\\\":{\\\"opacity\\\":1}},\\\"bubble\\\":{\\\"distance\\\":250,\\\"size\\\":0,\\\"duration\\\":2,\\\"opacity\\\":0,\\\"speed\\\":3},\\\"repulse\\\":{\\\"distance\\\":400,\\\"duration\\\":0.4},\\\"push\\\":{\\\"particles_nb\\\":4},\\\"remove\\\":{\\\"particles_nb\\\":2}}},\\\"retina_detect\\\":true}\",\"bubble\":\"{\\\"particles\\\":{\\\"number\\\":{\\\"value\\\":15,\\\"density\\\":{\\\"enable\\\":true,\\\"value_area\\\":800}},\\\"color\\\":{\\\"value\\\":\\\"#1b1e34\\\"},\\\"shape\\\":{\\\"type\\\":\\\"polygon\\\",\\\"stroke\\\":{\\\"width\\\":0,\\\"color\\\":\\\"#000\\\"},\\\"polygon\\\":{\\\"nb_sides\\\":6},\\\"image\\\":{\\\"src\\\":\\\"img/github.svg\\\",\\\"width\\\":100,\\\"height\\\":100}},\\\"opacity\\\":{\\\"value\\\":0.3,\\\"random\\\":true,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":1,\\\"opacity_min\\\":0.1,\\\"sync\\\":false}},\\\"size\\\":{\\\"value\\\":50,\\\"random\\\":false,\\\"anim\\\":{\\\"enable\\\":true,\\\"speed\\\":10,\\\"size_min\\\":40,\\\"sync\\\":false}},\\\"line_linked\\\":{\\\"enable\\\":false,\\\"distance\\\":200,\\\"color\\\":\\\"#ffffff\\\",\\\"opacity\\\":1,\\\"width\\\":2},\\\"move\\\":{\\\"enable\\\":true,\\\"speed\\\":8,\\\"direction\\\":\\\"none\\\",\\\"random\\\":false,\\\"straight\\\":false,\\\"out_mode\\\":\\\"out\\\",\\\"bounce\\\":false,\\\"attract\\\":{\\\"enable\\\":false,\\\"rotateX\\\":600,\\\"rotateY\\\":1200}}},\\\"interactivity\\\":{\\\"detect_on\\\":\\\"canvas\\\",\\\"events\\\":{\\\"onhover\\\":{\\\"enable\\\":false,\\\"mode\\\":\\\"grab\\\"},\\\"onclick\\\":{\\\"enable\\\":false,\\\"mode\\\":\\\"push\\\"},\\\"resize\\\":true},\\\"modes\\\":{\\\"grab\\\":{\\\"distance\\\":400,\\\"line_linked\\\":{\\\"opacity\\\":1}},\\\"bubble\\\":{\\\"distance\\\":400,\\\"size\\\":40,\\\"duration\\\":2,\\\"opacity\\\":8,\\\"speed\\\":3},\\\"repulse\\\":{\\\"distance\\\":200,\\\"duration\\\":0.4},\\\"push\\\":{\\\"particles_nb\\\":4},\\\"remove\\\":{\\\"particles_nb\\\":2}}},\\\"retina_detect\\\":true}\",\"snow\":\"{\\\"particles\\\":{\\\"number\\\":{\\\"value\\\":450,\\\"density\\\":{\\\"enable\\\":true,\\\"value_area\\\":800}},\\\"color\\\":{\\\"value\\\":\\\"#fff\\\"},\\\"shape\\\":{\\\"type\\\":\\\"circle\\\",\\\"stroke\\\":{\\\"width\\\":0,\\\"color\\\":\\\"#000000\\\"},\\\"polygon\\\":{\\\"nb_sides\\\":5},\\\"image\\\":{\\\"src\\\":\\\"img/github.svg\\\",\\\"width\\\":100,\\\"height\\\":100}},\\\"opacity\\\":{\\\"value\\\":0.5,\\\"random\\\":true,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":1,\\\"opacity_min\\\":0.1,\\\"sync\\\":false}},\\\"size\\\":{\\\"value\\\":5,\\\"random\\\":true,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":40,\\\"size_min\\\":0.1,\\\"sync\\\":false}},\\\"line_linked\\\":{\\\"enable\\\":false,\\\"distance\\\":500,\\\"color\\\":\\\"#ffffff\\\",\\\"opacity\\\":0.4,\\\"width\\\":2},\\\"move\\\":{\\\"enable\\\":true,\\\"speed\\\":6,\\\"direction\\\":\\\"bottom\\\",\\\"random\\\":false,\\\"straight\\\":false,\\\"out_mode\\\":\\\"out\\\",\\\"bounce\\\":false,\\\"attract\\\":{\\\"enable\\\":false,\\\"rotateX\\\":600,\\\"rotateY\\\":1200}}},\\\"interactivity\\\":{\\\"detect_on\\\":\\\"canvas\\\",\\\"events\\\":{\\\"onhover\\\":{\\\"enable\\\":true,\\\"mode\\\":\\\"bubble\\\"},\\\"onclick\\\":{\\\"enable\\\":true,\\\"mode\\\":\\\"repulse\\\"},\\\"resize\\\":true},\\\"modes\\\":{\\\"grab\\\":{\\\"distance\\\":400,\\\"line_linked\\\":{\\\"opacity\\\":0.5}},\\\"bubble\\\":{\\\"distance\\\":400,\\\"size\\\":4,\\\"duration\\\":0.3,\\\"opacity\\\":1,\\\"speed\\\":3},\\\"repulse\\\":{\\\"distance\\\":200,\\\"duration\\\":0.4},\\\"push\\\":{\\\"particles_nb\\\":4},\\\"remove\\\":{\\\"particles_nb\\\":2}}},\\\"retina_detect\\\":true}\",\"nyan_cat\":\"{\\\"particles\\\":{\\\"number\\\":{\\\"value\\\":150,\\\"density\\\":{\\\"enable\\\":false,\\\"value_area\\\":800}},\\\"color\\\":{\\\"value\\\":\\\"#ffffff\\\"},\\\"shape\\\":{\\\"type\\\":\\\"star\\\",\\\"stroke\\\":{\\\"width\\\":0,\\\"color\\\":\\\"#000000\\\"},\\\"polygon\\\":{\\\"nb_sides\\\":5},\\\"image\\\":{\\\"src\\\":\\\"http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg\\\",\\\"width\\\":100,\\\"height\\\":100}},\\\"opacity\\\":{\\\"value\\\":0.5,\\\"random\\\":false,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":1,\\\"opacity_min\\\":0.1,\\\"sync\\\":false}},\\\"size\\\":{\\\"value\\\":4,\\\"random\\\":true,\\\"anim\\\":{\\\"enable\\\":false,\\\"speed\\\":40,\\\"size_min\\\":0.1,\\\"sync\\\":false}},\\\"line_linked\\\":{\\\"enable\\\":false,\\\"distance\\\":150,\\\"color\\\":\\\"#ffffff\\\",\\\"opacity\\\":0.4,\\\"width\\\":1},\\\"move\\\":{\\\"enable\\\":true,\\\"speed\\\":14,\\\"direction\\\":\\\"left\\\",\\\"random\\\":false,\\\"straight\\\":true,\\\"out_mode\\\":\\\"out\\\",\\\"bounce\\\":false,\\\"attract\\\":{\\\"enable\\\":false,\\\"rotateX\\\":600,\\\"rotateY\\\":1200}}},\\\"interactivity\\\":{\\\"detect_on\\\":\\\"canvas\\\",\\\"events\\\":{\\\"onhover\\\":{\\\"enable\\\":false,\\\"mode\\\":\\\"grab\\\"},\\\"onclick\\\":{\\\"enable\\\":true,\\\"mode\\\":\\\"repulse\\\"},\\\"resize\\\":true},\\\"modes\\\":{\\\"grab\\\":{\\\"distance\\\":200,\\\"line_linked\\\":{\\\"opacity\\\":1}},\\\"bubble\\\":{\\\"distance\\\":400,\\\"size\\\":40,\\\"duration\\\":2,\\\"opacity\\\":8,\\\"speed\\\":3},\\\"repulse\\\":{\\\"distance\\\":200,\\\"duration\\\":0.4},\\\"push\\\":{\\\"particles_nb\\\":4},\\\"remove\\\":{\\\"particles_nb\\\":2}}},\\\"retina_detect\\\":true}\"},\"eael_login_nonce\":\"4aefbb87d0\",\"eael_register_nonce\":\"0a17a0b33c\",\"eael_lostpassword_nonce\":\"6b97470287\",\"eael_resetpassword_nonce\":\"7ded64435d\"};\n//# sourceURL=eael-general-js-extra\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/lib/smartmenus/jquery.smartmenus.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/lib/url-polyfill/jupiterx-raven-url-polyfill.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jet-engine/assets/lib/jet-plugins/jet-plugins.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jet-engine/assets/js/frontend/modules/calendar.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jet-engine/assets/js/frontend/modules/jet-smart-filters.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar JetEngineSettings = {\"ajaxurl\":\"https://floradeandalucia.es/wp-admin/admin-ajax.php\",\"ajaxlisting\":\"https://floradeandalucia.es/buscador/?nocache=1785495686\",\"restNonce\":\"4944d609a9\",\"hoverActionTimeout\":\"400\",\"post_id\":\"1038\",\"query_builder\":{\"custom_ids\":[]},\"addedPostCSS\":[\"1040\"],\"queried_object_id\":\"1038\",\"queried_object_class\":\"WP_Post\"};\n//# sourceURL=jet-engine-frontend-js-extra\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jet-engine/assets/js/frontend/frontend.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar borlabsCookieConfig = {\"ajaxURL\":\"https://floradeandalucia.es/wp-admin/admin-ajax.php\",\"language\":\"es\",\"animation\":\"1\",\"animationDelay\":\"\",\"animationIn\":\"_brlbs-fadeInDown\",\"animationOut\":\"_brlbs-fadeOut\",\"blockContent\":\"\",\"boxLayout\":\"box\",\"boxLayoutAdvanced\":\"1\",\"automaticCookieDomainAndPath\":\"1\",\"cookieDomain\":\"floradeandalucia.es\",\"cookiePath\":\"/\",\"cookieSameSite\":\"Lax\",\"cookieSecure\":\"1\",\"cookieLifetime\":\"365\",\"cookieLifetimeEssentialOnly\":\"365\",\"crossDomainCookie\":[],\"cookieBeforeConsent\":\"\",\"cookiesForBots\":\"1\",\"cookieVersion\":\"1\",\"hideCookieBoxOnPages\":[],\"respectDoNotTrack\":\"\",\"reloadAfterConsent\":\"\",\"reloadAfterOptOut\":\"1\",\"showCookieBox\":\"1\",\"cookieBoxIntegration\":\"javascript\",\"ignorePreSelectStatus\":\"\",\"cookies\":{\"essential\":[\"borlabs-cookie\",\"phpsessid\",\"vchideactivationmsg\",\"wp-settings-time\",\"wp-settings\"],\"statistics\":[\"google-analytics\"]}};\nvar borlabsCookieCookies = {\"essential\":{\"borlabs-cookie\":{\"cookieNameList\":{\"borlabs-cookie\":\"borlabs-cookie\"},\"settings\":{\"blockCookiesBeforeConsent\":\"0\",\"prioritize\":\"0\"}},\"phpsessid\":{\"cookieNameList\":{\"PHPSESSID\":\"PHPSESSID\"},\"settings\":{\"blockCookiesBeforeConsent\":\"0\",\"prioritize\":\"0\"}},\"vchideactivationmsg\":{\"cookieNameList\":{\"vchideactivationmsg_vc11\":\"vchideactivationmsg_vc11\"},\"settings\":{\"blockCookiesBeforeConsent\":\"0\",\"prioritize\":\"0\"}},\"wp-settings-time\":{\"cookieNameList\":{\"wp-settings-time-1\":\"wp-settings-time-1\"},\"settings\":{\"blockCookiesBeforeConsent\":\"0\",\"prioritize\":\"0\"}},\"wp-settings\":{\"cookieNameList\":{\"wp-settings-1\":\"wp-settings-1\"},\"settings\":{\"blockCookiesBeforeConsent\":\"0\",\"prioritize\":\"0\"}}},\"statistics\":{\"google-analytics\":{\"cookieNameList\":{\"_ga\":\"_ga\",\"_gat\":\"_gat\",\"_gid\":\"_gid\"},\"settings\":{\"blockCookiesBeforeConsent\":\"1\",\"prioritize\":\"1\",\"asyncOptOutCode\":\"0\",\"trackingId\":\"G-MJ5PWYMEG6\",\"consentMode\":\"0\"},\"optInJS\":\"\",\"optOutJS\":\"\"}}};\n//# sourceURL=borlabs-cookie-js-extra\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie.min.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\ndocument.addEventListener(\"DOMContentLoaded\", function (e) {\nvar borlabsCookieContentBlocker = {\"facebook\": {\"id\": \"facebook\",\"global\": function (contentBlockerData) {  },\"init\": function (el, contentBlockerData) { if(typeof FB === \"object\") { FB.XFBML.parse(el.parentElement); } },\"settings\": {\"executeGlobalCodeBeforeUnblocking\":false}},\"default\": {\"id\": \"default\",\"global\": function (contentBlockerData) {  },\"init\": function (el, contentBlockerData) {  },\"settings\": {\"executeGlobalCodeBeforeUnblocking\":false}},\"instagram\": {\"id\": \"instagram\",\"global\": function (contentBlockerData) {  },\"init\": function (el, contentBlockerData) { if (typeof instgrm === \"object\") { instgrm.Embeds.process(); } },\"settings\": {\"executeGlobalCodeBeforeUnblocking\":false}},\"openstreetmap\": {\"id\": \"openstreetmap\",\"global\": function (contentBlockerData) {  },\"init\": function (el, contentBlockerData) {  },\"settings\": {\"executeGlobalCodeBeforeUnblocking\":false}},\"twitter\": {\"id\": \"twitter\",\"global\": function (contentBlockerData) {  },\"init\": function (el, contentBlockerData) {  },\"settings\": {\"executeGlobalCodeBeforeUnblocking\":false}}};\nvar BorlabsCookieInitCheck = function () {\nif (typeof window.BorlabsCookie === \"object\" && typeof window.jQuery === \"function\") {\nif (typeof borlabsCookiePrioritized !== \"object\") {\nborlabsCookiePrioritized = { optInJS: {} };\n}\nwindow.BorlabsCookie.init(borlabsCookieConfig, borlabsCookieCookies, borlabsCookieContentBlocker, borlabsCookiePrioritized.optInJS);\n} else {\nwindow.setTimeout(BorlabsCookieInitCheck, 50);\n}\n};\nBorlabsCookieInitCheck();});\n//# sourceURL=borlabs-cookie-js-after\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-includes/js/dist/hooks.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-includes/js/dist/i18n.min.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar ElementorProFrontendConfig = {\"ajaxurl\":\"https:\\/\\/floradeandalucia.es\\/wp-admin\\/admin-ajax.php\",\"nonce\":\"463bc7f420\",\"urls\":{\"assets\":\"https:\\/\\/floradeandalucia.es\\/wp-content\\/plugins\\/elementor-pro\\/assets\\/\",\"rest\":\"https:\\/\\/floradeandalucia.es\\/wp-json\\/\"},\"settings\":{\"lazy_load_background_images\":true},\"popup\":{\"hasPopUps\":false},\"shareButtonsNetworks\":{\"facebook\":{\"title\":\"Facebook\",\"has_counter\":true},\"twitter\":{\"title\":\"Twitter\"},\"linkedin\":{\"title\":\"LinkedIn\",\"has_counter\":true},\"pinterest\":{\"title\":\"Pinterest\",\"has_counter\":true},\"reddit\":{\"title\":\"Reddit\",\"has_counter\":true},\"vk\":{\"title\":\"VK\",\"has_counter\":true},\"odnoklassniki\":{\"title\":\"OK\",\"has_counter\":true},\"tumblr\":{\"title\":\"Tumblr\"},\"digg\":{\"title\":\"Digg\"},\"skype\":{\"title\":\"Skype\"},\"stumbleupon\":{\"title\":\"StumbleUpon\",\"has_counter\":true},\"mix\":{\"title\":\"Mix\"},\"telegram\":{\"title\":\"Telegram\"},\"pocket\":{\"title\":\"Pocket\",\"has_counter\":true},\"xing\":{\"title\":\"XING\",\"has_counter\":true},\"whatsapp\":{\"title\":\"WhatsApp\"},\"email\":{\"title\":\"Email\"},\"print\":{\"title\":\"Print\"},\"x-twitter\":{\"title\":\"X\"},\"threads\":{\"title\":\"Threads\"}},\"facebook_sdk\":{\"lang\":\"es_ES\",\"app_id\":\"\"},\"lottie\":{\"defaultAnimationUrl\":\"https:\\/\\/floradeandalucia.es\\/wp-content\\/plugins\\/elementor-pro\\/modules\\/lottie\\/assets\\/animations\\/default.json\"}};\n//# sourceURL=elementor-pro-frontend-js-before\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/elementor-pro/assets/js/frontend.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar _wpUtilSettings = {\"ajax\":{\"url\":\"/wp-admin/admin-ajax.php\"}};\n//# sourceURL=wp-util-js-extra\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-includes/js/wp-util.min.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar ravenFormsTranslations = {\"validation\":{\"required\":\"Please fill in this field\",\"invalidEmail\":\"The value is not a valid email address\",\"invalidPhone\":\"The value should only consist numbers and phone characters (-, +, (), etc)\",\"invalidNumber\":\"The value is not a valid number\",\"invalidMaxValue\":\"Value must be less than or equal to MAX_VALUE\",\"invalidMinValue\":\"Value must be greater than or equal to MIN_VALUE\"},\"itiValidation\":{\"invalidCountryCode\":\"Invalid country code\",\"tooShort\":\"Phone number is too short\",\"tooLong\":\"Phone number is too long\",\"areaCodeMissing\":\"Area code is required.\",\"invalidLength\":\"Phone number has an invalid length\",\"invalidGeneral\":\"Invalid phone number\",\"forceMinLength\":\"Phone number must be more than X digits\",\"typeMismatch\":[\"Phone number must be of type: Fixed Line\",\"Phone number must be of type: Mobile\",\"Phone number must be of type: Fixed Line or Mobile\",\"Phone number must be of type: Toll Free\",\"Phone number must be of type: Premium Rate\",\"Phone number must be of type: Shared Cost\",\"Phone number must be of type: VOIP\",\"Phone number must be of type: Personal Number\",\"Phone number must be of type: Pager\",\"Phone number must be of type: UAN\",\"Phone number must be of type: Voicemail\"]}};\nvar ravenTools = {\"nonce\":\"3d252d7a26\",\"activeElements\":{\"0\":\"custom-attributes\",\"1\":\"custom-css\",\"2\":\"global-widget\",\"3\":\"motion_effects\",\"4\":\"preview-settings\",\"5\":\"role-manager\",\"6\":\"tooltip\",\"7\":\"advanced-nav-menu\",\"8\":\"archive-description\",\"9\":\"archive-title\",\"10\":\"author-box\",\"11\":\"nav-menu\",\"12\":\"post-comments\",\"13\":\"post-content\",\"14\":\"post-meta\",\"15\":\"post-title\",\"16\":\"search-form\",\"17\":\"site-logo\",\"18\":\"site-title\",\"19\":\"alert\",\"20\":\"animated-heading\",\"21\":\"breadcrumbs\",\"22\":\"business-hours\",\"23\":\"button\",\"24\":\"call-to-action\",\"25\":\"carousel\",\"26\":\"categories\",\"27\":\"code-highlight\",\"28\":\"content-switch\",\"29\":\"countdown\",\"30\":\"counter\",\"31\":\"divider\",\"32\":\"flex-spacer\",\"33\":\"flip-box\",\"34\":\"forms\",\"35\":\"heading\",\"36\":\"hotspot\",\"37\":\"icon\",\"38\":\"image\",\"39\":\"image-gallery\",\"40\":\"inline-svg\",\"41\":\"lottie\",\"43\":\"photo-album\",\"44\":\"photo-roller\",\"45\":\"posts\",\"46\":\"price-list\",\"47\":\"pricing-table\",\"48\":\"progress-tracker\",\"49\":\"slider\",\"50\":\"social-share\",\"51\":\"tabs\",\"52\":\"video\",\"53\":\"add-to-cart\",\"54\":\"cart\",\"55\":\"my-account\",\"56\":\"product-additional-info\",\"57\":\"product-content\",\"58\":\"product-data-tabs\",\"59\":\"product-gallery\",\"60\":\"product-meta\",\"61\":\"product-price\",\"62\":\"product-rating\",\"63\":\"product-reviews\",\"64\":\"product-short-description\",\"65\":\"product-title\",\"66\":\"products\",\"67\":\"shopping-cart\",\"68\":\"woocommerce-breadcrumbs\",\"69\":\"paypal\",\"70\":\"stripe\"},\"globalTypography\":{\"fontFamily\":\"\",\"fontSize\":{\"size\":\"\",\"unit\":\"\"},\"lineHeight\":{\"size\":\"\",\"unit\":\"\"},\"color\":\"\"},\"wc\":{\"wcAjaxAddToCart\":\"\",\"disableAjaxToCartInArchive\":true},\"maxFileUploadSize\":\"104857600\"};\nvar lottie_defaultAnimationUrl = {\"url\":\"https://floradeandalucia.es/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/animations/default.json\"};\n//# sourceURL=jupiterx-core-raven-frontend-js-extra\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/js/frontend.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.js",
+        "text": ""
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-includes/js/jquery/ui/datepicker.min.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\nvar JetSmartFilterSettings = {\"ajaxurl\":\"https://floradeandalucia.es/wp-admin/admin-ajax.php\",\"siteurl\":\"https://floradeandalucia.es\",\"sitepath\":\"\",\"baseurl\":\"/buscador/\",\"selectors\":{\"epro-archive-products\":{\"selector\":\".elementor-widget-wc-archive-products .elementor-widget-container\",\"action\":\"replace\",\"inDepth\":false,\"idPrefix\":\"#\",\"list\":\".products\",\"item\":\".product\"},\"epro-archive\":{\"selector\":\".elementor-widget-archive-posts .elementor-widget-container\",\"action\":\"replace\",\"inDepth\":false,\"idPrefix\":\"#\",\"list\":\".elementor-posts\",\"item\":\".elementor-post\"},\"epro-loop-builder\":{\"selector\":\".elementor-loop-container\",\"action\":\"replace\",\"inDepth\":true,\"idPrefix\":\"#\"},\"epro-portfolio\":{\"selector\":\".elementor-portfolio\",\"action\":\"insert\",\"inDepth\":true,\"idPrefix\":\"#\",\"item\":\".elementor-portfolio-item\"},\"epro-posts\":{\"selector\":\".elementor-widget-posts .elementor-widget-container\",\"action\":\"replace\",\"inDepth\":false,\"idPrefix\":\"#\",\"list\":\".elementor-posts\",\"item\":\".elementor-post\"},\"epro-products\":{\"selector\":\".elementor-widget-woocommerce-products .elementor-widget-container\",\"action\":\"replace\",\"inDepth\":false,\"idPrefix\":\"#\",\"list\":\".products\",\"item\":\".product\"},\"jet-engine-calendar\":{\"selector\":\".jet-listing-calendar\",\"action\":\"replace\",\"inDepth\":true,\"idPrefix\":\"#\"},\"jet-engine\":{\"selector\":\".jet-listing-grid.jet-listing\",\"action\":\"replace\",\"inDepth\":true,\"idPrefix\":\"#\",\"list\":\".jet-listing-grid__items\"},\"jet-woo-products-grid\":{\"selector\":\".elementor-jet-woo-products.jet-woo-builder\",\"action\":\"insert\",\"inDepth\":true,\"idPrefix\":\"#\",\"list\":\".jet-woo-products\",\"item\":\".jet-woo-builder-product\"},\"jet-woo-products-list\":{\"selector\":\".elementor-jet-woo-products-list.jet-woo-builder\",\"action\":\"insert\",\"inDepth\":true,\"idPrefix\":\"#\",\"list\":\".jet-woo-products-list\",\"item\":\".jet-woo-builder-product\"},\"jsf-listing\":{\"selector\":\".jsf-listing\",\"action\":\"replace\",\"inDepth\":true,\"idPrefix\":\"#\",\"item\":\".jsf-listing__item\"},\"woocommerce-archive\":{\"selector\":\".jet-woo-products-wrapper\",\"action\":\"insert\",\"inDepth\":false,\"idPrefix\":\"#\",\"list\":\".products\",\"item\":\".product\"},\"default-woo-archive\":{\"selector\":\".woocommerce .products\",\"action\":\"insert\",\"inDepth\":false,\"idPrefix\":\"#\",\"list\":\".products\",\"item\":\".product\"},\"woocommerce-shortcode\":{\"selector\":\".woocommerce[class*=\\\"columns\\\"]\",\"action\":\"replace\",\"inDepth\":false,\"idPrefix\":\".\",\"list\":\".products\",\"item\":\".product\"},\"jet-engine-multiday-calendar\":{\"selector\":\".jet-md-calendar\",\"action\":\"replace\",\"inDepth\":true,\"idPrefix\":\"#\"}},\"queries\":{\"jet-engine\":[]},\"settings\":{\"jet-engine\":{\"listado\":{\"lisitng_id\":\"1040\",\"columns\":3,\"columns_tablet\":\"2\",\"columns_mobile\":\"1\",\"column_min_width\":240,\"column_min_width_tablet\":\"\",\"column_min_width_mobile\":\"\",\"inline_columns_css\":false,\"is_archive_template\":\"\",\"post_status\":[\"publish\"],\"use_random_posts_num\":\"\",\"posts_num\":120,\"max_posts_num\":9,\"not_found_message\":\"No se encontraron resultados\",\"is_masonry\":\"\",\"equal_columns_height\":\"yes\",\"use_load_more\":\"\",\"load_more_id\":\"\",\"load_more_type\":\"click\",\"load_more_offset\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"loader_text\":\"\",\"loader_spinner\":\"\",\"use_custom_post_types\":\"\",\"custom_post_types\":\"\",\"hide_widget_if\":\"\",\"carousel_enabled\":\"\",\"slides_to_scroll\":\"1\",\"arrows\":\"true\",\"arrow_icon\":\"fa fa-angle-left\",\"dots\":\"\",\"autoplay\":\"true\",\"pause_on_hover\":\"true\",\"autoplay_speed\":5000,\"infinite\":\"true\",\"center_mode\":\"\",\"effect\":\"slide\",\"speed\":500,\"inject_alternative_items\":\"\",\"injection_items\":[],\"scroll_slider_enabled\":\"\",\"scroll_slider_on\":[\"desktop\",\"tablet\",\"mobile\"],\"custom_query\":\"yes\",\"custom_query_id\":\"2\",\"_element_id\":\"listado\",\"collapse_first_last_gap\":\"\",\"list_items_wrapper_tag\":\"div\",\"list_item_tag\":\"div\",\"empty_items_wrapper_tag\":\"div\",\"list_tags_selection\":\"\"}}},\"misc\":{\"week_start\":\"1\",\"url_type\":\"plain\",\"valid_url_params\":[\"jsf\",\"tax\",\"meta\",\"date\",\"sort\",\"alphabet\",\"_s\",\"_sm\",\"pagenum\",\"plain_query\",\"jet-smart-filters\",\"jet_paged\",\"search\",\"_tax_query_\",\"_meta_query_\",\"_date_query_\",\"_sort_\",\"__s_\"]},\"props\":{\"jet-engine\":{\"listado\":{\"found_posts\":4953,\"max_num_pages\":42,\"page\":1,\"query_type\":\"posts\",\"query_id\":2,\"query_meta\":[]}}},\"extra_props\":{},\"templates\":{\"active_tag\":{\"label\":\"\\u003Cdiv class=\\\"jet-active-tag__label\\\"\\u003E/% $value %/\\u003Cspan class=\\\"jet-active-tag__label-separator\\\"\\u003E:\\u003C/span\\u003E\\u003C/div\\u003E\",\"value\":\"\\u003Cdiv class=\\\"jet-active-tag__val\\\"\\u003E/% $value %/\\u003C/div\\u003E\",\"remove\":\"\\u003Cdiv class=\\\"jet-active-tag__remove\\\"\\u003E&times;\\u003C/div\\u003E\"},\"active_filter\":{\"label\":\"\\u003Cdiv class=\\\"jet-active-filter__label\\\"\\u003E/% $value %/\\u003Cspan class=\\\"jet-active-filter__label-separator\\\"\\u003E:\\u003C/span\\u003E\\u003C/div\\u003E\",\"value\":\"\\u003Cdiv class=\\\"jet-active-filter__val\\\"\\u003E/% $value %/\\u003C/div\\u003E\",\"remove\":\"\\u003Cdiv class=\\\"jet-active-filter__remove\\\"\\u003E&times;\\u003C/div\\u003E\"},\"pagination\":{\"item\":\"\\u003Cdiv class=\\\"jet-filters-pagination__link\\\"\\u003E/% $value %/\\u003C/div\\u003E\",\"dots\":\"\\u003Cdiv class=\\\"jet-filters-pagination__dots\\\"\\u003E&hellip;\\u003C/div\\u003E\",\"load_more\":\"\\u003Cdiv class=\\\"jet-filters-pagination__link\\\"\\u003E/% $value %/\\u003C/div\\u003E\"}},\"plugin_settings\":{\"use_tabindex\":false,\"use_url_aliases\":false,\"url_aliases\":[],\"provider_preloader\":{\"template\":\"\",\"fixed_position\":false,\"fixed_edge_gap\":80},\"url_custom_symbols\":\"\"},\"datePickerData\":{\"closeText\":\"Done\",\"prevText\":\"Prev\",\"nextText\":\"Next\",\"currentText\":\"Today\",\"monthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"monthNamesShort\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"dayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"dayNamesShort\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"dayNamesMin\":[\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"weekHeader\":\"Wk\"}};\n//# sourceURL=jet-smart-filters-js-extra\n"
+      },
+      {
+        "src": "https://floradeandalucia.es/wp-content/plugins/jet-smart-filters/assets/js/public.js",
+        "text": ""
+      },
+      {
+        "src": null,
+        "text": "\n/*! This file is auto-generated */\nconst a=JSON.parse(document.getElementById(\"wp-emoji-settings\").textContent),o=(window._wpemojiSettings=a,\"wpEmojiSettingsSupports\"),s=[\"flag\",\"emoji\"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\udde8\\ud83c\\uddf6\",\"\\ud83c\\udde8\\u200b\\ud83c\\uddf6\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!a(e,\"\\ud83e\\u1fac8\")}return!1}function f(e,t,n,a){let r;const o=(r=\"undefined\"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement(\"canvas\")).getContext(\"2d\",{willReadFrequently:!0}),s=(o.textBaseline=\"top\",o.font=\"600 32px Arial\",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement(\"script\");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&\"object\"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if(\"undefined\"!=typeof Worker&&\"undefined\"!=typeof OffscreenCanvas&&\"undefined\"!=typeof URL&&URL.createObjectURL&&\"undefined\"!=typeof Blob)try{var e=\"postMessage(\"+f.toString()+\"(\"+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(\",\")+\"));\",a=new Blob([e],{type:\"text/javascript\"});const r=new Worker(URL.createObjectURL(a),{name:\"wpTestEmojiSupports\"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],\"flag\"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});\n//# sourceURL=https://floradeandalucia.es/wp-includes/js/wp-emoji-loader.min.js\n"
+      }
+    ],
+    "taxonLinks": [
+      {
+        "text": "× Serapicamptis andaluciana (B. Baumann & H. Baumann) H. Kretzschmar, Eccarius & H. Dietr. × Serapicamptis andaluciana (B. Baumann & H. Baumann) H. Kretzschmar, Eccarius & H. Dietr.",
+        "href": "https://floradeandalucia.es/taxones/x-orchiserapias-andaluciana-b-baumann-h-baumann/"
+      },
+      {
+        "text": "Abies alba Mill. Abies alba Mill.",
+        "href": "https://floradeandalucia.es/taxones/abies-alba-mill/"
+      },
+      {
+        "text": "Abies cephalonica Loudon Abies cephalonica Loudon",
+        "href": "https://floradeandalucia.es/taxones/abies-cephalonica-loudon/"
+      },
+      {
+        "text": "Abies pinsapo Boiss. Abies pinsapo Boiss.",
+        "href": "https://floradeandalucia.es/taxones/abies-pinsapo-boiss/"
+      },
+      {
+        "text": "Abies x masjoannis D. Soto, J.I. García Viñas & E.P. Bujarrabal Abies x masjoannis D. Soto, J.I. García Viñas & E.P. Bujarrabal",
+        "href": "https://floradeandalucia.es/taxones/abies-x-masjoannis-d-soto-j-i-garcia-vinas-e-p-bujarrabal/"
+      },
+      {
+        "text": "Abutilon grandifolium (Willd.) Sweet Abutilon grandifolium (Willd.) Sweet",
+        "href": "https://floradeandalucia.es/taxones/abutilon-grandifolium-willd-sweet/"
+      },
+      {
+        "text": "Abutilon theophrasti Medik. Abutilon theophrasti Medik.",
+        "href": "https://floradeandalucia.es/taxones/abutilon-theophrasti-medik/"
+      },
+      {
+        "text": "Acacia baileyana F. Muell. Acacia baileyana F. Muell.",
+        "href": "https://floradeandalucia.es/taxones/acacia-baileyana-f-muell/"
+      },
+      {
+        "text": "Acacia cyclops G. Don Acacia cyclops G. Don",
+        "href": "https://floradeandalucia.es/taxones/acacia-cyclops-g-don/"
+      },
+      {
+        "text": "Acacia dealbata Link Acacia dealbata Link",
+        "href": "https://floradeandalucia.es/taxones/acacia-dealbata-link/"
+      },
+      {
+        "text": "Acacia longifolia (Andrews) Willd. Acacia longifolia (Andrews) Willd.",
+        "href": "https://floradeandalucia.es/taxones/acacia-longifolia-andrews-willd/"
+      },
+      {
+        "text": "Acacia mearnsii De Wild. Acacia mearnsii De Wild.",
+        "href": "https://floradeandalucia.es/taxones/acacia-mearnsii-de-wild/"
+      },
+      {
+        "text": "Acacia melanoxylon R. Br. Acacia melanoxylon R. Br.",
+        "href": "https://floradeandalucia.es/taxones/acacia-melanoxylon-r-br/"
+      },
+      {
+        "text": "Acacia provincialis A. Camus Acacia provincialis A. Camus",
+        "href": "https://floradeandalucia.es/taxones/acacia-provincialis-a-camus/"
+      },
+      {
+        "text": "Acacia pycnantha Benth. Acacia pycnantha Benth.",
+        "href": "https://floradeandalucia.es/taxones/acacia-pycnantha-benth/"
+      },
+      {
+        "text": "Acacia salicina Lindl. Acacia salicina Lindl.",
+        "href": "https://floradeandalucia.es/taxones/acacia-salicina-lindl/"
+      },
+      {
+        "text": "Acacia saligna (Labill.) H.L. Wendl. Acacia saligna (Labill.) H.L. Wendl.",
+        "href": "https://floradeandalucia.es/taxones/acacia-saligna-labill-h-l-wendl/"
+      },
+      {
+        "text": "Acanthostyles buniifolius (Hook. & Arn.) R.M. King & H. Rob. Acanthostyles buniifolius (Hook. & Arn.) R.M. King & H. Rob.",
+        "href": "https://floradeandalucia.es/taxones/acanthostyles-buniifolius-hook-arn-r-m-king-h-rob/"
+      },
+      {
+        "text": "Acanthus mollis L. Acanthus mollis L.",
+        "href": "https://floradeandalucia.es/taxones/acanthus-mollis-l/"
+      },
+      {
+        "text": "Acer campestre L. Acer campestre L.",
+        "href": "https://floradeandalucia.es/taxones/acer-campestre-l/"
+      },
+      {
+        "text": "Acer monspessulanum L.  subsp. monspessulanum Acer monspessulanum L.  subsp. monspessulanum",
+        "href": "https://floradeandalucia.es/taxones/acer-monspessulanum-l-subsp-monspessulanum/"
+      },
+      {
+        "text": "Acer negundo L. Acer negundo L.",
+        "href": "https://floradeandalucia.es/taxones/acer-negundo-l/"
+      },
+      {
+        "text": "Acer opalus Mill. subsp. granatense (Boiss.) Font Quer & Rothm. Acer opalus Mill. subsp. granatense (Boiss.) Font Quer & Rothm.",
+        "href": "https://floradeandalucia.es/taxones/acer-opalus-mill-subsp-granatense-boiss-font-quer-rothm/"
+      },
+      {
+        "text": "Acer pseudoplatanus L. Acer pseudoplatanus L.",
+        "href": "https://floradeandalucia.es/taxones/acer-pseudoplatanus-l/"
+      },
+      {
+        "text": "Acer x avilae Font Quer & Rothm. Acer x avilae Font Quer & Rothm.",
+        "href": "https://floradeandalucia.es/taxones/acer-x-avilae-font-quer-rothm/"
+      },
+      {
+        "text": "Achillea ageratum L. Achillea ageratum L.",
+        "href": "https://floradeandalucia.es/taxones/achillea-ageratum-l/"
+      },
+      {
+        "text": "Achillea filipendulina Lam. Achillea filipendulina Lam.",
+        "href": "https://floradeandalucia.es/taxones/achillea-filipendulina-lam/"
+      },
+      {
+        "text": "Achillea maritima (L.) Ehrend. & Y.P. Guo subsp. maritima Achillea maritima (L.) Ehrend. & Y.P. Guo subsp. maritima",
+        "href": "https://floradeandalucia.es/taxones/achillea-maritima-l-ehrend-y-p-guo-subsp-maritima/"
+      },
+      {
+        "text": "Achillea millefolium L. Achillea millefolium L.",
+        "href": "https://floradeandalucia.es/taxones/achillea-millefolium-l/"
+      },
+      {
+        "text": "Achillea odorata L. Achillea odorata L.",
+        "href": "https://floradeandalucia.es/taxones/achillea-odorata-l/"
+      },
+      {
+        "text": "Achillea santolinoides Lag. Achillea santolinoides Lag.",
+        "href": "https://floradeandalucia.es/taxones/achillea-santolinoides-lag/"
+      },
+      {
+        "text": "Achnatherum bromoides (L.) P. Beauv. Achnatherum bromoides (L.) P. Beauv.",
+        "href": "https://floradeandalucia.es/taxones/achnatherum-bromoides-l-p-beauv/"
+      },
+      {
+        "text": "Achnatherum calamagrostis (L.) P. Beauv. subsp. calamagrostis Achnatherum calamagrostis (L.) P. Beauv. subsp. calamagrostis",
+        "href": "https://floradeandalucia.es/taxones/achnatherum-calamagrostis-l-p-beauv/"
+      },
+      {
+        "text": "Achnatherum paradoxum (L.) Banfi, Galasso & Bartolucci Achnatherum paradoxum (L.) Banfi, Galasso & Bartolucci",
+        "href": "https://floradeandalucia.es/taxones/achnatherum-paradoxum-l-banfi-galasso-bartolucci/"
+      },
+      {
+        "text": "Achyranthes sicula (L.) All. Achyranthes sicula (L.) All.",
+        "href": "https://floradeandalucia.es/taxones/achyranthes-sicula-l-all/"
+      },
+      {
+        "text": "Acis autumnalis (L.) Sweet Acis autumnalis (L.) Sweet",
+        "href": "https://floradeandalucia.es/taxones/acis-autumnalis-l-sweet/"
+      },
+      {
+        "text": "Acis trichophylla G. Don Acis trichophylla G. Don",
+        "href": "https://floradeandalucia.es/taxones/acis-trichophylla-g-don/"
+      },
+      {
+        "text": "Aconitum lamarckii Rchb. Aconitum lamarckii Rchb.",
+        "href": "https://floradeandalucia.es/taxones/aconitum-lycoctonum-l/"
+      },
+      {
+        "text": "Aconitum nevadense Gáyer Aconitum nevadense Gáyer",
+        "href": "https://floradeandalucia.es/taxones/aconitum-nevadense-gayer/"
+      },
+      {
+        "text": "Acrospelion glaciale (Bory) Barberá, Soreng & Quintanar Acrospelion glaciale (Bory) Barberá, Soreng & Quintanar",
+        "href": "https://floradeandalucia.es/taxones/acrospelion-glaciale-bory-barbera-soreng-quintanar/"
+      },
+      {
+        "text": "Acrospelion velutinum (Boiss.) Barberá & Quintanar Acrospelion velutinum (Boiss.) Barberá & Quintanar",
+        "href": "https://floradeandalucia.es/taxones/trisetum-velutinum-boiss/"
+      },
+      {
+        "text": "Adenocarpus argyrophyllus (Rivas Goday) Caball. Adenocarpus argyrophyllus (Rivas Goday) Caball.",
+        "href": "https://floradeandalucia.es/taxones/adenocarpus-argyrophyllus-rivas-goday-caball/"
+      },
+      {
+        "text": "Adenocarpus aureus (Cav.) Pau x Adenocarpus complicatus (L.) J. Gay Adenocarpus aureus (Cav.) Pau x Adenocarpus complicatus (L.) J. Gay",
+        "href": "https://floradeandalucia.es/taxones/adenocarpus-aureus-cav-pau-x-adenocarpus-complicatus-l-j-gay/"
+      },
+      {
+        "text": "Adenocarpus complicatus (L.) J. Gay Adenocarpus complicatus (L.) J. Gay",
+        "href": "https://floradeandalucia.es/taxones/adenocarpus-complicatus-l-j-gay/"
+      },
+      {
+        "text": "Adenocarpus decorticans Boiss. Adenocarpus decorticans Boiss.",
+        "href": "https://floradeandalucia.es/taxones/adenocarpus-decorticans-boiss/"
+      },
+      {
+        "text": "Adenocarpus gibbsianus Castrov. & Talavera Adenocarpus gibbsianus Castrov. & Talavera",
+        "href": "https://floradeandalucia.es/taxones/adenocarpus-gibbsianus-castrov-talavera/"
+      },
+      {
+        "text": "Adenocarpus telonensis (Loisel.) DC. Adenocarpus telonensis (Loisel.) DC.",
+        "href": "https://floradeandalucia.es/taxones/adenocarpus-telonensis-loisel-dc/"
+      },
+      {
+        "text": "Adiantum capillus-veneris L. Adiantum capillus-veneris L.",
+        "href": "https://floradeandalucia.es/taxones/adiantum-capillus-veneris-l/"
+      },
+      {
+        "text": "Adonis aestivalis L.  subsp. squarrosa (Steven) Nyman Adonis aestivalis L.  subsp. squarrosa (Steven) Nyman",
+        "href": "https://floradeandalucia.es/taxones/adonis-aestivalis-l-subsp-squarrosa-steven-nyman/"
+      },
+      {
+        "text": "Adonis annua L. Adonis annua L.",
+        "href": "https://floradeandalucia.es/taxones/adonis-annua-l/"
+      },
+      {
+        "text": "Adonis flammea Jacq. Adonis flammea Jacq.",
+        "href": "https://floradeandalucia.es/taxones/adonis-flammea-jacq/"
+      },
+      {
+        "text": "Adonis microcarpa DC. Adonis microcarpa DC.",
+        "href": "https://floradeandalucia.es/taxones/adonis-microcarpa-dc/"
+      },
+      {
+        "text": "Adonis vernalis L. Adonis vernalis L.",
+        "href": "https://floradeandalucia.es/taxones/adonis-vernalis-l/"
+      },
+      {
+        "text": "Aegialina pumila (Domin) Quintanar & Barberá Aegialina pumila (Domin) Quintanar & Barberá",
+        "href": "https://floradeandalucia.es/taxones/rostraria-pumila-desf-tzvelev/"
+      },
+      {
+        "text": "Aegialina salzmannii (Boiss.) Quintanar & Barberá Aegialina salzmannii (Boiss.) Quintanar & Barberá",
+        "href": "https://floradeandalucia.es/taxones/rostraria-salzmannii-boiss-holub/"
+      },
+      {
+        "text": "Aegilops biuncialis Viv. Aegilops biuncialis Viv.",
+        "href": "https://floradeandalucia.es/taxones/aegilops-biuncialis-viv/"
+      },
+      {
+        "text": "Aegilops cylindrica Host Aegilops cylindrica Host",
+        "href": "https://floradeandalucia.es/taxones/aegilops-cylindrica-host/"
+      },
+      {
+        "text": "Aegilops geniculata Roth Aegilops geniculata Roth",
+        "href": "https://floradeandalucia.es/taxones/aegilops-geniculata-roth/"
+      },
+      {
+        "text": "Aegilops neglecta Bertol. Aegilops neglecta Bertol.",
+        "href": "https://floradeandalucia.es/taxones/aegilops-neglecta-bertol/"
+      },
+      {
+        "text": "Aegilops triuncialis L. Aegilops triuncialis L.",
+        "href": "https://floradeandalucia.es/taxones/aegilops-triuncialis-l/"
+      },
+      {
+        "text": "Aegilops ventricosa Tausch Aegilops ventricosa Tausch",
+        "href": "https://floradeandalucia.es/taxones/aegilops-ventricosa-tausch/"
+      },
+      {
+        "text": "Aegonychon purpurocaeruleum (L.) J. Holub. Aegonychon purpurocaeruleum (L.) J. Holub.",
+        "href": "https://floradeandalucia.es/taxones/aegonychon-purpurocaeruleum-l-j-holub/"
+      },
+      {
+        "text": "Aeluropus littoralis (Gouan) Parl. Aeluropus littoralis (Gouan) Parl.",
+        "href": "https://floradeandalucia.es/taxones/aeluropus-littoralis-gouan-parl/"
+      },
+      {
+        "text": "Aeonium arboreum (L.) Webb & Berth. Aeonium arboreum (L.) Webb & Berth.",
+        "href": "https://floradeandalucia.es/taxones/aeonium-arboreum-l-webb-berth/"
+      },
+      {
+        "text": "Aethionema marginatum (Lapeyr.) Thell. Aethionema marginatum (Lapeyr.) Thell.",
+        "href": "https://floradeandalucia.es/taxones/aethionema-marginatum-lapeyr-thell/"
+      },
+      {
+        "text": "Aethionema saxatile (L.) R. Br. Aethionema saxatile (L.) R. Br.",
+        "href": "https://floradeandalucia.es/taxones/aethionema-saxatile-l-r-br/"
+      },
+      {
+        "text": "Aethusa cynapium L.  subsp. cynapium Aethusa cynapium L.  subsp. cynapium",
+        "href": "https://floradeandalucia.es/taxones/aethusa-cynapium-l-subsp-cynapium/"
+      },
+      {
+        "text": "Agave americana L. Agave americana L.",
+        "href": "https://floradeandalucia.es/taxones/agave-americana-l/"
+      },
+      {
+        "text": "Agave amica (Medik.) Thiede & Govaerts Agave amica (Medik.) Thiede & Govaerts",
+        "href": "https://floradeandalucia.es/taxones/agave-amica-medik-thiede-govaerts/"
+      },
+      {
+        "text": "Agave angustifolia Haw. Agave angustifolia Haw.",
+        "href": "https://floradeandalucia.es/taxones/agave-angustifolia-haw/"
+      },
+      {
+        "text": "Agave decipiens Baker Agave decipiens Baker",
+        "href": "https://floradeandalucia.es/taxones/agave-decipiens-baker/"
+      },
+      {
+        "text": "Agave fourcroydes Lem. Agave fourcroydes Lem.",
+        "href": "https://floradeandalucia.es/taxones/agave-fourcroydes-lem/"
+      },
+      {
+        "text": "Agave salmiana Salm-Dyck. Agave salmiana Salm-Dyck.",
+        "href": "https://floradeandalucia.es/taxones/agave-salmiana-salm-dyck/"
+      },
+      {
+        "text": "Agave sisalana Perrine Agave sisalana Perrine",
+        "href": "https://floradeandalucia.es/taxones/agave-sisalana-perrine/"
+      },
+      {
+        "text": "Agave tequilana F.A.C. Weber Agave tequilana F.A.C. Weber",
+        "href": "https://floradeandalucia.es/taxones/agave-tequilana-f-a-c-weber/"
+      },
+      {
+        "text": "Ageratina adenophora (Spreng.) R.M. King & H. Rob. Ageratina adenophora (Spreng.) R.M. King & H. Rob.",
+        "href": "https://floradeandalucia.es/taxones/ageratina-adenophora-spreng-r-m-king-h-rob/"
+      },
+      {
+        "text": "Agrimonia eupatoria L.  subsp. eupatoria Agrimonia eupatoria L.  subsp. eupatoria",
+        "href": "https://floradeandalucia.es/taxones/agrimonia-eupatoria-l-subsp-eupatoria/"
+      },
+      {
+        "text": "Agrimonia eupatoria L.  subsp. major (Boiss.) Iamonico Agrimonia eupatoria L.  subsp. major (Boiss.) Iamonico",
+        "href": "https://floradeandalucia.es/taxones/agrimonia-eupatoria-l-subsp-major-boiss-iamonico/"
+      },
+      {
+        "text": "Agrimonia procera Wallr. Agrimonia procera Wallr.",
+        "href": "https://floradeandalucia.es/taxones/agrimonia-procera-wallr/"
+      },
+      {
+        "text": "Agropyron cristatum (L.) Gaertn. Agropyron cristatum (L.) Gaertn.",
+        "href": "https://floradeandalucia.es/taxones/agropyron-cristatum-l-gaertn/"
+      },
+      {
+        "text": "Agrostemma githago L. Agrostemma githago L.",
+        "href": "https://floradeandalucia.es/taxones/agrostemma-githago-l/"
+      },
+      {
+        "text": "Agrostis canina L.  subsp. granatensis Romero García, Blanca & C. Morales Agrostis canina L.  subsp. granatensis Romero García, Blanca & C. Morales",
+        "href": "https://floradeandalucia.es/taxones/agrostis-canina-l-subsp-granatensis-romero-garcia-blanca-c-morales/"
+      },
+      {
+        "text": "Agrostis castellana Boiss. & Reut. Agrostis castellana Boiss. & Reut.",
+        "href": "https://floradeandalucia.es/taxones/agrostis-castellana-boiss-reut/"
+      },
+      {
+        "text": "Agrostis mediterranea Röser & Tkach subsp. mediterranea Agrostis mediterranea Röser & Tkach subsp. mediterranea",
+        "href": "https://floradeandalucia.es/taxones/polypogon-maritimus-willd/"
+      },
+      {
+        "text": "Agrostis mediterranea Röser & Tkach subspathacea (Req.) Romero Zarco & L. Sáez Agrostis mediterranea Röser & Tkach subspathacea (Req.) Romero Zarco & L. Sáez",
+        "href": "https://floradeandalucia.es/taxones/polypogon-subspathaceus-req/"
+      },
+      {
+        "text": "Agrostis monspeliensis (L.) Romero Zarco & L. Sáez Agrostis monspeliensis (L.) Romero Zarco & L. Sáez",
+        "href": "https://floradeandalucia.es/taxones/polypogon-monspeliensis-l-desf/"
+      },
+      {
+        "text": "Agrostis nebulosa Boiss. & Reut. Agrostis nebulosa Boiss. & Reut.",
+        "href": "https://floradeandalucia.es/taxones/agrostis-nebulosa-boiss-reut/"
+      },
+      {
+        "text": "Agrostis nevadensis Boiss. Agrostis nevadensis Boiss.",
+        "href": "https://floradeandalucia.es/taxones/agrostis-nevadensis-boiss/"
+      },
+      {
+        "text": "Agrostis pourretii Willd. Agrostis pourretii Willd.",
+        "href": "https://floradeandalucia.es/taxones/agrostis-pourretii-willd/"
+      },
+      {
+        "text": "Agrostis reuteri Boiss. Agrostis reuteri Boiss.",
+        "href": "https://floradeandalucia.es/taxones/agrostis-reuteri-boiss/"
+      },
+      {
+        "text": "Agrostis stolonifera L. Agrostis stolonifera L.",
+        "href": "https://floradeandalucia.es/taxones/agrostis-stolonifera-l/"
+      },
+      {
+        "text": "Agrostis subspicata (Willd.) Raspail subsp. subspicata Agrostis subspicata (Willd.) Raspail subsp. subspicata",
+        "href": "https://floradeandalucia.es/taxones/agrostis-subspicata-willd-raspail-subsp-subspicata/"
+      },
+      {
+        "text": "Agrostis tenerrima Trin. Agrostis tenerrima Trin.",
+        "href": "https://floradeandalucia.es/taxones/agrostis-tenerrima-trin/"
+      },
+      {
+        "text": "Agrostis viridis Gouan Agrostis viridis Gouan",
+        "href": "https://floradeandalucia.es/taxones/polypogon-viridis-gouan-breistr/"
+      },
+      {
+        "text": "Agrostula truncatula (Parl.) P.M. Peterson, Romasch., Soreng & Sylvester subsp. truncatula Agrostula truncatula (Parl.) P.M. Peterson, Romasch., Soreng & Sylvester subsp. truncatula",
+        "href": "https://floradeandalucia.es/taxones/agrostula-truncatula-parl-p-m-peterson-romasch-soreng-sylvester-subsp-truncatula/"
+      },
+      {
+        "text": "Ailanthus altissima (Mill.) Swingle Ailanthus altissima (Mill.) Swingle",
+        "href": "https://floradeandalucia.es/taxones/ailanthus-altissima-mill-swingle/"
+      },
+      {
+        "text": "Aira caryophyllea L. Aira caryophyllea L.",
+        "href": "https://floradeandalucia.es/taxones/aira-caryophyllea-l/"
+      },
+      {
+        "text": "Aira cupaniana Guss. Aira cupaniana Guss.",
+        "href": "https://floradeandalucia.es/taxones/aira-cupaniana-guss/"
+      },
+      {
+        "text": "Aira elegans Roem. & Schult. Aira elegans Roem. & Schult.",
+        "href": "https://floradeandalucia.es/taxones/aira-elegans-roem-schult/"
+      },
+      {
+        "text": "Aira hercynica Romero Zarco, M.Á. Ortiz & L. Sáez Aira hercynica Romero Zarco, M.Á. Ortiz & L. Sáez",
+        "href": "https://floradeandalucia.es/taxones/aira-hercynica-romero-zarco-m-a-ortiz-l-saez/"
+      },
+      {
+        "text": "Aira multiculmis Dumort. Aira multiculmis Dumort.",
+        "href": "https://floradeandalucia.es/taxones/aira-multiculmis-dumort/"
+      },
+      {
+        "text": "Aira praecox L. Aira praecox L.",
+        "href": "https://floradeandalucia.es/taxones/aira-praecox-l/"
+      },
+      {
+        "text": "Aira uniaristata Lag. & Rodr. Aira uniaristata Lag. & Rodr.",
+        "href": "https://floradeandalucia.es/taxones/aira-uniaristata-lag-rodr/"
+      },
+      {
+        "text": "Airopsis tenella (Cav.) Coss. & Durieu Airopsis tenella (Cav.) Coss. & Durieu",
+        "href": "https://floradeandalucia.es/taxones/airopsis-tenella-cav-coss-durieu/"
+      },
+      {
+        "text": "Aizoanthemopsis hispanica (L.) Klak Aizoanthemopsis hispanica (L.) Klak",
+        "href": "https://floradeandalucia.es/taxones/aizoanthemopsis-hispanica-l-klak/"
+      },
+      {
+        "text": "Aizoon canariense L. Aizoon canariense L.",
+        "href": "https://floradeandalucia.es/taxones/aizoon-canariense-l/"
+      },
+      {
+        "text": "Aizoon pubescens Eckl. & Aizoon pubescens Eckl. &",
+        "href": "https://floradeandalucia.es/taxones/aizoon-pubescens-eckl-zeyh/"
+      },
+      {
+        "text": "Ajuga chamaepitys (L.) Schreb. Ajuga chamaepitys (L.) Schreb.",
+        "href": "https://floradeandalucia.es/taxones/ajuga-chamaepitys-l-schreb/"
+      },
+      {
+        "text": "Ajuga iva (L.) Schreb. subsp. iva Ajuga iva (L.) Schreb. subsp. iva",
+        "href": "https://floradeandalucia.es/taxones/ajuga-iva-l-schreb-subsp-iva/"
+      },
+      {
+        "text": "Ajuga iva (L.) Schreb. subsp. pseudoiva (DC.) Briq. Ajuga iva (L.) Schreb. subsp. pseudoiva (DC.) Briq.",
+        "href": "https://floradeandalucia.es/taxones/ajuga-iva-l-schreb-subsp-pseudoiva-dc-briq/"
+      },
+      {
+        "text": "Albizia julibrissin Durazz. Albizia julibrissin Durazz.",
+        "href": "https://floradeandalucia.es/taxones/albizia-julibrissin-durazz/"
+      },
+      {
+        "text": "Alcea rosea L. Alcea rosea L.",
+        "href": "https://floradeandalucia.es/taxones/alcea-rosea-l/"
+      },
+      {
+        "text": "Alcea setosa (Boiss.) Alef. Alcea setosa (Boiss.) Alef.",
+        "href": "https://floradeandalucia.es/taxones/alcea-setosa-boiss-alef/"
+      },
+      {
+        "text": "Alchemilla arvensis (L.) Scop. Alchemilla arvensis (L.) Scop.",
+        "href": "https://floradeandalucia.es/taxones/aphanes-arvensis-l/"
+      },
+      {
+        "text": "Alchemilla australis (Rydb.) Bomble Alchemilla australis (Rydb.) Bomble",
+        "href": "https://floradeandalucia.es/taxones/aphanes-australis-rydb/"
+      },
+      {
+        "text": "Alchemilla cornucopioides (Lag.) Roem. & Schult. Alchemilla cornucopioides (Lag.) Roem. & Schult.",
+        "href": "https://floradeandalucia.es/taxones/aphanes-cornucopioides-lag/"
+      },
+      {
+        "text": "Alchemilla filicaulis Buser Alchemilla filicaulis Buser",
+        "href": "https://floradeandalucia.es/taxones/alchemilla-filicaulis-buser/"
+      },
+      {
+        "text": "Alchemilla fontqueri Rothm. Alchemilla fontqueri Rothm.",
+        "href": "https://floradeandalucia.es/taxones/alchemilla-fontqueri-rothm/"
+      },
+      {
+        "text": "Alchemilla glabra Neygenf. Alchemilla glabra Neygenf.",
+        "href": "https://floradeandalucia.es/taxones/alchemilla-glabra-neygenf/"
+      },
+      {
+        "text": "Alchemilla maroccana (Hyl. & Rothm.) Lahora Alchemilla maroccana (Hyl. & Rothm.) Lahora",
+        "href": "https://floradeandalucia.es/taxones/aphanes-maroccana-hyl-rothm/"
+      }
+    ]
+  },
+  "HVMO": {
+    "https://herbarivirtual.uib.es/es/general/A/per-nom-cientific": {
+      "error": "ConnectTimeout:HTTPSConnectionPool(host='herbarivirtual.uib.es', port=443): Max retries exceeded with url: /es/general/A/per-nom-cientific (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f54e50f9610>, 'Connection to herbarivirtual.uib.es timed out. (connect timeout=45)'))"
+    },
+    "http://herbarivirtual.uib.es/es/general/A/per-nom-cientific": {
+      "error": "ConnectTimeout:HTTPConnectionPool(host='herbarivirtual.uib.es', port=80): Max retries exceeded with url: /es/general/A/per-nom-cientific (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f54e50f9ac0>, 'Connection to herbarivirtual.uib.es timed out. (connect timeout=45)'))"
+    },
+    "https://herbarivirtual.uib.es/ca/general/A/per-nom-cientific": {
+      "error": "ConnectTimeout:HTTPSConnectionPool(host='herbarivirtual.uib.es', port=443): Max retries exceeded with url: /ca/general/A/per-nom-cientific (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f54e50f9d30>, 'Connection to herbarivirtual.uib.es timed out. (connect timeout=45)'))"
+    }
+  }
+}
