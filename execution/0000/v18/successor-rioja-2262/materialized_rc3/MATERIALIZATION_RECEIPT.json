@@ -1,0 +1,17 @@
+{
+  "schema": "JBLR_V18_RC3_MATERIALIZATION_RECEIPT_V1",
+  "releaseId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "state": "CANDIDATE_QA_PASS_PENDING_0000_ACCEPTANCE",
+  "driveFileId": "1g1ark3uunwMwhNJoIdeAqUQg-ZXJIGME",
+  "driveUrl": "https://drive.google.com/file/d/1g1ark3uunwMwhNJoIdeAqUQg-ZXJIGME/view",
+  "driveParentFolderId": "1kg4cUypyYDpcwsYzAPAyi9BvR6Zh2HxX",
+  "packageFile": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3_CANDIDATE_QA_PASS.zip",
+  "packageSha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71",
+  "packageBytes": 756173,
+  "driveRoundTripVerified": true,
+  "allocationDecisionCommit": "0da63de7b65de42c0ba24170cd14fe088af65f90",
+  "rc2Mutation": 0,
+  "stime": "HOLD_PENDING_0000_ACCEPTANCE",
+  "neonWrites": 0,
+  "databaseWrites": 0
+}
