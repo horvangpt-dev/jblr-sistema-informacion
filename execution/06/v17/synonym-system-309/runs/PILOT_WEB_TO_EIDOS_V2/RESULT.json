@@ -1,0 +1,75 @@
+{
+  "pilot": "SPANISH_WEB_TO_EIDOS_V2",
+  "pass": true,
+  "rows": [
+    {
+      "B_SOURCE_RECORD_ID": "3682",
+      "sourceNameVerbatim": "Anthemis triumfettii",
+      "sourceRank": "species",
+      "alias": "Cota triumfettii",
+      "aliasRank": "species",
+      "relationState": "DOCUMENTED_SYNONYM_SAME_RANK",
+      "source": "Flora Montiberica 75",
+      "sourceUrl": "https://www.floramontiberica.org/FM/Flora_Montiberica75.pdf",
+      "eidosQuery": "Cota triumfettii",
+      "eidosExactRecords": [
+        {
+          "scientificName": "Cota triumfettii (L.) J. Gay",
+          "canonicalName": "Cota triumfettii",
+          "taxonID": "31641",
+          "taxonomicStatus": "Aceptado/Válido",
+          "rank": "species",
+          "nameAccordingTo": "GREUTER, W.R., BURDET, H.M. & LONG, G. (eds.). 2007. Med-Checklist. A critical inventory of vascular plants of the circum-mediterranean countries... Ginebra. [vol. 2: 3. Dicotyledones (Compositae), 2007]."
+        }
+      ],
+      "ID_TAXON_EXACT": "31641",
+      "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "2545",
+      "sourceNameVerbatim": "Anchusa italica",
+      "sourceRank": "species",
+      "alias": "Anchusa azurea",
+      "aliasRank": "species",
+      "relationState": "DOCUMENTED_SYNONYM_SAME_RANK",
+      "source": "Flora Iberica XI, Anchusa",
+      "sourceUrl": "https://www.floraiberica.es/floraiberica/texto/pdfs/11_138_05_Anchusa.pdf",
+      "eidosQuery": "Anchusa azurea",
+      "eidosExactRecords": [
+        {
+          "scientificName": "Anchusa azurea Mill.",
+          "canonicalName": "Anchusa azurea",
+          "taxonID": "2124",
+          "taxonomicStatus": "Aceptado/Válido",
+          "rank": "species",
+          "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+        }
+      ],
+      "ID_TAXON_EXACT": "2124",
+      "state": "RESOLVED_UNIQUE_EXACT_EIDOS_ID"
+    },
+    {
+      "B_SOURCE_RECORD_ID": "836",
+      "sourceNameVerbatim": "Asperula pyrenaica",
+      "sourceRank": "species",
+      "alias": "Asperula cynanchica subsp. pyrenaica",
+      "aliasRank": "subspecies",
+      "relationState": "DOCUMENTED_SYNONYM_RANK_CHANGE_GUARD",
+      "source": "Flora Iberica XV, Asperula",
+      "sourceUrl": "https://www.floraiberica.es/eng/PHP/cientificos2.php?autabre=%28L.%29+Nyman&espe=cynanchica&familia=Rubiaceae&gen=Asperula&infra=pyrenaica&infrank=subsp.",
+      "eidosQuery": "Asperula cynanchica subsp. pyrenaica",
+      "eidosExactRecords": [
+        {
+          "scientificName": "Asperula cynanchica subsp. pyrenaica (L.) Nyman",
+          "canonicalName": "Asperula cynanchica subsp. pyrenaica",
+          "taxonID": "2385",
+          "taxonomicStatus": "Aceptado/Válido",
+          "rank": "subspecies",
+          "nameAccordingTo": "CASTROVIEJO, S. (coord. gen.). 1986-2014. Flora iberica. Plantas vasculares de la Península Ibérica e Islas Baleares. 1-8, 10-16(1), 17-18, 20-21. Real Jardín Botánico, CSIC. Madrid."
+        }
+      ],
+      "ID_TAXON_EXACT": null,
+      "state": "GUARDED_RANK_CHANGE"
+    }
+  ]
+}
