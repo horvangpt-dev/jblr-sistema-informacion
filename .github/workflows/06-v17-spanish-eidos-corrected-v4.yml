@@ -1,0 +1,91 @@
+name: 06 V17 corrected Spanish to EIDOS batches 2-3
+
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/EXECUTE_SPANISH_V4_BATCH.json'
+
+permissions:
+  contents: write
+
+jobs:
+  corrected_spanish_to_eidos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+          fetch-depth: 1
+
+      - name: Validate trigger
+        run: |
+          python - <<'PY'
+          import json
+          p='execution/06/v17/synonym-system-309/EXECUTE_SPANISH_V4_BATCH.json'
+          x=json.load(open(p))
+          assert x['execute'] is True and x['batch'] in [2,3]
+          assert x['objectiveEvent']=='JBLR-EVT-0000-20260825-SYNONYM-TO-EIDOS-OBJECTIVE-V17-001'
+          assert x['precedenceEvent']=='JBLR-EVT-0000-20260825-SPANISH-SOURCE-PRECEDENCE-V17-001'
+          assert x['stimes']=='HOLD' and x['rc2Mutation']==0 and x['neonWrites']==0 and x['databaseWrites']==0
+          open('/tmp/batch','w').write(str(x['batch']))
+          PY
+
+      - name: Download current EIDOS
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --connect-timeout 20 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl"
+
+      - name: Apply verified Spanish evidence, exact EIDOS and precedence
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          BATCH=$(cat /tmp/batch)
+          python "$ROOT/apply_spanish_enrichment_v4.py" \
+            --baseline "$ROOT/runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_0${BATCH}/BATCH_RESULTS.jsonl" \
+            --baseline-summary "$ROOT/runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_0${BATCH}/SUMMARY.json" \
+            --enrichment "$ROOT/BATCH${BATCH}_SPANISH_ENRICHMENT_V3.json" \
+            --eidos "$RUNNER_TEMP/eidos.ttl" \
+            --batch "$BATCH" \
+            --out "$ROOT/runs/SPANISH_SYNONYM_TO_EIDOS_V4/batch_0${BATCH}_final"
+
+      - name: Verify invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          b=int(open('/tmp/batch').read())
+          expected={2:100,3:109}[b]
+          lo={2:101,3:201}[b]
+          hi={2:200,3:309}[b]
+          p=Path('execution/06/v17/synonym-system-309/runs/SPANISH_SYNONYM_TO_EIDOS_V4')/f'batch_0{b}_final'
+          s=json.load(open(p/'SUMMARY.json'))
+          rows=[json.loads(x) for x in (p/'BATCH_RESULTS.jsonl').read_text().splitlines() if x.strip()]
+          assert s['pass'] and s['processedRows']==expected and s['uniqueIds']==expected
+          assert len(rows)==expected and len({r['B_SOURCE_RECORD_ID'] for r in rows})==expected
+          assert [int(r['position309']) for r in rows]==list(range(lo,hi+1))
+          assert s['resolved']+s['conflicts']+s['unresolved']==expected
+          g=s['guards']
+          assert g['noFuzzy'] and g['noParentIdInheritance'] and g['noRankCollapse'] and g['noSpeciesSubspeciesCollapse'] and g['noHybridCollapse'] and g['sourceFailureNotNotFound'] and g['sourceNamePreserved']
+          assert s['rc2Mutation']==0 and s['neonWrites']==0 and s['databaseWrites']==0 and s['stimes']=='HOLD'
+          PY
+
+      - name: Persist immutable corrected batch evidence
+        run: |
+          set -euo pipefail
+          ROOT='execution/06/v17/synonym-system-309'
+          BATCH=$(cat /tmp/batch)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin 06-v17-synonym-system-309
+          git add "$ROOT/runs/SPANISH_SYNONYM_TO_EIDOS_V4/batch_0${BATCH}_final"
+          git commit -m "evidence(06): corrected Spanish-to-EIDOS batch ${BATCH} ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
+
+      - name: Hold downstream
+        run: echo 'RC2_MUTATION=0; NEON_WRITES=0; DATABASE_WRITES=0; STIME=HOLD'
