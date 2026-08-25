@@ -1,0 +1,31 @@
+name: 06 V17 export batch1 names
+on:
+  push:
+    branches:
+      - 06-v17-synonym-system-309
+    paths:
+      - 'execution/06/v17/synonym-system-309/EXPORT_BATCH1_NAMES_TRIGGER.json'
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 06-v17-synonym-system-309
+      - run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          src=Path('execution/06/v17/synonym-system-309/runs/SPANISH_SYNONYM_TO_EIDOS_V2/batch_01/BATCH_RESULTS.jsonl')
+          rows=[json.loads(x) for x in src.read_text(encoding='utf-8').splitlines() if x.strip()]
+          assert len(rows)==100
+          out=Path('execution/06/v17/synonym-system-309/BATCH1_NAMES.tsv')
+          out.write_text('position\tB_SOURCE_RECORD_ID\tnameVerbatim\tsourceRank\n' + ''.join(f"{r['position309']}\t{r['B_SOURCE_RECORD_ID']}\t{r['nameVerbatim']}\t{r['sourceRank']}\n" for r in rows),encoding='utf-8')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add execution/06/v17/synonym-system-309/BATCH1_NAMES.tsv
+          git commit -m "chore(06): export batch1 names ${GITHUB_RUN_ID}"
+          git push origin HEAD:06-v17-synonym-system-309
