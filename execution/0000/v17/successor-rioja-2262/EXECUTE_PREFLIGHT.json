@@ -3,7 +3,7 @@
   "scope": 309,
   "rc2Mutation": 0,
   "stimes": "HOLD",
-  "attempt": 4,
+  "attempt": 5,
   "authorityEvent": "JBLR-EVT-0000-20260825-AUTHORIZE-SUCCESSOR-INTEGRATION-V17-001",
   "accepted06Event": "JBLR-EVT-0000-20260825-ACCEPT-06-FINAL-309-V17-001"
 }
