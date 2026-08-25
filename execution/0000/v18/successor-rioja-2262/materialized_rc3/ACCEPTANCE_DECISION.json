@@ -1,0 +1,50 @@
+{
+  "schema": "JBLR_V18_RC3_ACCEPTANCE_DECISION_V1",
+  "acceptedBy": "0000.V18",
+  "acceptedAt": "2026-08-25T23:24:00+02:00",
+  "releaseId": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "releaseState": "ACCEPTED_CANONICAL_SUCCESSOR",
+  "predecessorRelease": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2",
+  "predecessorState": "FROZEN_HISTORY_UNCHANGED",
+  "qaFinal": "PASS",
+  "counts": {
+    "hubs": 3033,
+    "rc2Inherited": 2210,
+    "newOfficialHubs": 562,
+    "newTemporaryHubs": 261,
+    "riojaSourceRows": 2262,
+    "sourceToRc2": 1435,
+    "sourceToNewOfficial": 566,
+    "sourceToNewTemporary": 261,
+    "actor06Resolved": 47,
+    "actor06Conflict": 48,
+    "actor06Unresolved": 214
+  },
+  "package": {
+    "driveFileId": "1g1ark3uunwMwhNJoIdeAqUQg-ZXJIGME",
+    "driveParentFolderId": "1kg4cUypyYDpcwsYzAPAyi9BvR6Zh2HxX",
+    "sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71",
+    "bytes": 756173,
+    "roundTripVerified": true
+  },
+  "integrationGuards": {
+    "rc2ValuesChanged": 0,
+    "rc2RowsLost": 0,
+    "sourceAttributeLoss": 0,
+    "taxonWorkKeyDuplicates": 0,
+    "activeIdDuplicates": 0,
+    "temporaryIdReuse": 0,
+    "parentIdInheritance": 0,
+    "rankCollapse": 0,
+    "hybridCollapse": 0,
+    "silentNameReplacement": 0,
+    "unresolvedExcluded": 0,
+    "conflictExcluded": 0
+  },
+  "inheritedOfficialEvidenceDeferredToStime": 1405,
+  "inheritedOperationalIdChangesDuringIntegration": 0,
+  "stimeState": "READY_NOT_STARTED",
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "notes": "Acceptance closes successor integration only. It does not execute STIME and does not promote inherited RC2 operational IDs from newly attached evidence. Those 1405 evidence rows remain auditable inputs for the governed downstream STIME or a later explicit promotion phase."
+}
