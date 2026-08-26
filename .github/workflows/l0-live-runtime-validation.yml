@@ -1,6 +1,11 @@
 name: L0 live runtime validation closeout
 
 on:
+  push:
+    branches:
+      - l0-software-foundation-20260826
+    paths:
+      - '.github/runtime-validation-trigger.txt'
   workflow_dispatch:
 
 permissions:
