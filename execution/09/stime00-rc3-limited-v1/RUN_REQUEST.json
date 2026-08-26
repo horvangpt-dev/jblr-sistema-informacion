@@ -1,6 +1,7 @@
 {
   "enabled": true,
   "releaseEvent": "JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001",
+  "recoveryEvent": "JBLR-EVT-00000-20260826-ACCEPT-09-INCOMPLETE-MATERIALIZATION-RECOVERY-001",
   "scopeNewTemp": 261,
   "scopeNewOfficialReuse": 562,
   "historicalReviewQueue": 14,
@@ -8,6 +9,7 @@
   "doNotRerunAll3033": true,
   "hardGateAPolicy": "2210_OF_2210_NATIONAL_IDS_UNCHANGED",
   "extensionGateB": "823_OF_823_AUDITABLE_TERMINAL_IDENTITY_STATE",
+  "boundedInputTarSha256": "3813af25163ef34c970bdca192393237086f915793cc5a9d026407b407aabb57",
   "noFuzzy": true,
   "noParentIdInheritance": true,
   "noRankCollapse": true,
@@ -17,5 +19,5 @@
   "databaseWrites": 0,
   "mutateRC2": false,
   "finalClose": false,
-  "dispatchAttempt": 2
+  "dispatchAttempt": 3
 }
