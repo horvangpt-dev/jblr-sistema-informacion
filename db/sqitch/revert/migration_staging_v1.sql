@@ -1,0 +1,3 @@
+BEGIN;
+DROP SCHEMA migration_staging CASCADE;
+COMMIT;
