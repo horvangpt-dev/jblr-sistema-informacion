@@ -1,0 +1,145 @@
+name: 09 STIME00 RC3 limited productive execution
+
+on:
+  push:
+    branches:
+      - 09-stime00-rc3-limited-productive-v1
+    paths:
+      - 'execution/09/stime00-rc3-limited-v1/RUN_REQUEST.json'
+
+permissions:
+  contents: write
+
+jobs:
+  stime00_rc3_limited:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 09-stime00-rc3-limited-productive-v1
+          fetch-depth: 1
+
+      - name: Validate governed request
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/stime00-rc3-limited-v1/RUN_REQUEST.json'))
+          assert p['enabled'] is True
+          assert p['releaseEvent']=='JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001'
+          assert p['scopeNewTemp']==261 and p['scopeNewOfficialReuse']==562
+          assert p['historicalReviewQueue']==14 and p['inheritedEvidence']==1405
+          assert p['doNotRerunAll3033'] is True
+          assert p['hardGateAPolicy']=='2210_OF_2210_NATIONAL_IDS_UNCHANGED'
+          assert p['extensionGateB']=='823_OF_823_AUDITABLE_TERMINAL_IDENTITY_STATE'
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True
+          assert p['noRankCollapse'] is True and p['noHybridCollapse'] is True
+          assert p['sourceFailureNotFound'] is False
+          assert p['neonWrites']==0 and p['databaseWrites']==0
+          assert p['mutateRC2'] is False and p['finalClose'] is False
+          PY
+
+      - name: Materialize limited inputs from canonical RC3
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/stime00-rc3-limited-v1
+          RC3=execution/0000/v18/successor-rioja-2262/materialized_rc3
+          mkdir -p "$ROOT/inputs"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('execution/0000/v18/successor-rioja-2262/materialized_rc3')
+          out=Path('execution/09/stime00-rc3-limited-v1/inputs')
+          def read(parts):
+              rows=[]
+              for p in sorted(root.glob(parts)):
+                  with p.open(encoding='utf-8') as f:
+                      rows += [json.loads(x) for x in f if x.strip()]
+              return rows
+          def write(name, rows):
+              with (out/name).open('w',encoding='utf-8') as f:
+                  for r in rows: f.write(json.dumps(r,ensure_ascii=False,sort_keys=True)+'\n')
+          hubs=read('TAXON_HUBS_3033_part*.jsonl')
+          assert len(hubs)==3033
+          nt=[r for r in hubs if r.get('hub_origin')=='NEW_TEMP']
+          no=[r for r in hubs if r.get('hub_origin')=='NEW_OFFICIAL']
+          ih=[r for r in hubs if r.get('hub_origin')=='INHERITED_RC2']
+          assert len(nt)==261 and len(no)==562 and len(ih)==2210
+          pred={r.get('predecessor_release_row_id'):r for r in ih if r.get('predecessor_release_row_id')}
+          ev=read('INHERITED_ID_EVIDENCE_1405_part*.jsonl')
+          assert len(ev)==1405
+          joined=[]
+          for x in ev:
+              h=pred.get(x.get('predecessor_release_row_id'))
+              assert h is not None
+              joined.append({**x,
+                  'taxon_work_key':h.get('taxon_work_key'),
+                  'taxon_identity_hub_key':h.get('taxon_identity_hub_key'),
+                  'current_operational_id':h.get('ID_TAXON_JBLR'),
+                  'hub_display_name':h.get('hub_display_name'),
+                  'hub_origin':h.get('hub_origin')})
+          write('NEW_TEMP_261.jsonl',nt)
+          write('NEW_OFFICIAL_562.jsonl',no)
+          write('INHERITED_ID_EVIDENCE_1405_WITH_TWK.jsonl',joined)
+          hist=json.load(open('execution/09/stime00-rc3-limited-v1/HISTORICAL_REVIEW_ROWS_14_COMPACT.json'))
+          assert len(hist)==14
+          write('HISTORICAL_REVIEW_ROWS_14.jsonl',hist)
+          PY
+
+      - name: Download current official EIDOS
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --retry-all-errors \
+            --connect-timeout 30 --max-time 1800 \
+            -o "$RUNNER_TEMP/eidos.ttl" \
+            https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl"
+
+      - name: Execute limited productive reconciliation
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/stime00-rc3-limited-v1
+          OUT="$ROOT/runs/STIME00_RC3_LIMITED_20260826_001"
+          rm -rf "$OUT"; mkdir -p "$OUT"
+          python "$ROOT/src/productive_stime00_rc3.py" \
+            --inputs "$ROOT/inputs" \
+            --final309 "execution/06/v17/synonym-system-309/runs/FINAL_CONSOLIDATED_309_V17/CONSOLIDATED_309.jsonl" \
+            --eidos "$RUNNER_TEMP/eidos.ttl" \
+            --out "$OUT" \
+            --release-event "JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001"
+
+      - name: QA terminal evidence
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          out=Path('execution/09/stime00-rc3-limited-v1/runs/STIME00_RC3_LIMITED_20260826_001')
+          q=json.load(open(out/'QA_FINAL.json')); r=json.load(open(out/'RUN_RECEIPT.json'))
+          assert q['pass'] is True
+          assert all(q[x] is True for x in ['newTempProcessed','newOfficialAudited','extension823Accounted','historical14Accounted','inheritedEvidence1405Accounted','allExtensionStatesTerminalAllowed','hardGateAReusedNotRerun','doNotRerunAll3033'])
+          assert q['neonWrites']==0 and q['databaseWrites']==0 and q['rc2Mutation']==0
+          assert q['stime00FinalClose'] is False
+          assert r['scope']=={'newTemp':261,'newOfficialReuseAudit':562,'extensionTotal':823,'historicalReviewQueue':14,'inheritedEvidence':1405}
+          assert r['guards']['hardGateAReprovedInThisRun'] is False
+          assert r['guards']['sourceFailureNotFound'] is False
+          assert r['guards']['neonWrites']==0 and r['guards']['databaseWrites']==0
+          for name in ['NEW_TEMP_261_RESULTS.jsonl','NEW_OFFICIAL_562_AUDIT.jsonl','EXTENSION_823_RESULTS.jsonl','HISTORICAL_REVIEW_14_RESULTS.json','INHERITED_EVIDENCE_1405_RECONCILED.jsonl','FINAL_COUNTS.json','RUN_RECEIPT.json','QA_FINAL.json']:
+              p=out/name; assert p.exists() and p.stat().st_size>0, name
+          PY
+
+      - name: Persist compact productive evidence
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/stime00-rc3-limited-v1
+          OUT="$ROOT/runs/STIME00_RC3_LIMITED_20260826_001"
+          cat > "$ROOT/TERMINAL_STATE.json" <<JSON
+          {"state":"TERMINAL_LIMITED_PRODUCTIVE_EXECUTION","githubRunId":"${GITHUB_RUN_ID}","releaseEvent":"JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001","stime00FinalClose":false,"neonWrites":0,"databaseWrites":0,"rc2Mutation":0}
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-stime00-rc3-limited-productive-v1
+          git add "$OUT" "$ROOT/TERMINAL_STATE.json"
+          git commit -m "evidence(09): STIME00 RC3 limited productive ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-stime00-rc3-limited-productive-v1

@@ -1,0 +1,27 @@
+{
+  "package": "STIME00_RC3_LIMITED_PRODUCTIVE_v1",
+  "canonicalRc3Base": "7626679fe65243b1448ff4ce687ffb7d76e2addf",
+  "releaseEvent": "JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001",
+  "scope": {
+    "newTemp": 261,
+    "newOfficialReuseAudit": 562,
+    "extensionTotal": 823,
+    "historicalReviewQueue": 14,
+    "inheritedEvidence": 1405
+  },
+  "method": "CURRENT_EIDOS_EXACT_OVER_ACCEPTED_EXISTING_EVIDENCE",
+  "guards": {
+    "doNotRerunAll3033": true,
+    "hardGateAPolicy": "2210_OF_2210_NATIONAL_IDS_UNCHANGED",
+    "extensionGateB": "823_OF_823_AUDITABLE_TERMINAL_IDENTITY_STATE",
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "noHybridCollapse": true,
+    "sourceFailureNotFound": false,
+    "neonWrites": 0,
+    "databaseWrites": 0,
+    "mutateRC2": false,
+    "finalClose": false
+  }
+}
