@@ -8,70 +8,69 @@ Mode: REALITY_FIRST · NON_DESTRUCTIVE
 
 ## Restoration
 
-The following superior references were restored before code:
+Restored before application code:
 - 00000 · JBLR · NORTH STAR Y ARQUITECTURA MAESTRA
 - 00000 · JBLR · CONTROL TOWER
 - 00000 · JBLR · PROTOCOLO DE RESTAURACIÓN Y ARRANQUE
 - 00000 · JBLR · CONTROL DE RECURSOS Y HERRAMIENTAS
 - HOJA DE RUTA TÉCNICA DE CONSTRUCCIÓN DEL SISTEMA JBLR vigente
 
-No application code or database mutation was performed before the preflight.
+`RESTORATION = PASS`
 
 ## Live baselines
 
 ### GitHub
+
 Repository: `horvangpt-dev/jblr-sistema-informacion`
 
 Default branch: `main`.
 
-Cumulative successor inspected: `0000-v17-successor-rioja-2262`.
+Cumulative predecessor inspected before L0 creation:
+`0000-v17-successor-rioja-2262`
 
-Verified HEAD before L0 write:
+Verified predecessor HEAD:
 `7626679fe65243b1448ff4ce687ffb7d76e2addf`
 
-HEAD message:
+Message:
 `decision(0000-v18): accept RC3 canonical successor after final QA`
 
-Tree SHA:
-`6e994fa8f22e1dde07f0afd861ecfc77df201046`
-
-No branch named `0000-v18-successor-rioja-2262` existed at verification time. V18 evidence is present inside the cumulative successor branch.
-
-L0 branch created non-destructively from that exact HEAD:
+L0 branch was created from exactly that HEAD:
 `l0-software-foundation-20260826`.
 
 ### Neon
+
 Project: `jblr-01-6-staging-zero-cost-20260815`
 Project ID: `crimson-hall-16978747`
 
-Current PostgreSQL server verified by direct SQL on both primary and L0 DEV:
+PostgreSQL verified by direct SQL:
 `18.6 (3484359)`.
 
 Primary/default branch:
-- name: `production`
-- id: `br-polished-pond-b24mvk11`
-- protected: false at verification time
+`production` (`br-polished-pond-b24mvk11`).
 
-Historical validation/certification branches observed:
+Historical branches verified:
 - `01.6-fix1-validation-20260815` (`br-royal-salad-b25qgcso`)
 - `01.6-sqitch-cli-certified-20260815` (`br-quiet-pine-b2hj8lb2`)
 
-L0 DEV branch created after preflight:
-- `l0-dev-20260826`
-- id: `br-fancy-snow-b2tlrwmb`
-- parent: `br-polished-pond-b24mvk11`
-- initial written_data_bytes reported by Neon: 0
+L0 DEV created after preflight:
+`l0-dev-20260826` (`br-fancy-snow-b2tlrwmb`), parent = primary.
 
-Production SQL performed by L0: read-only only.
-Production writes: 0.
+Production SQL by L0: read-only only.
+Production writes by L0: `0`.
 
-### Reality correction preserved
+## Reality corrections preserved
 
-An earlier preflight read had reported PostgreSQL 17.7 and different historical branch labels. Immediate revalidation by direct `current_setting('server_version')` on both primary and L0 DEV plus a fresh project description returned PostgreSQL 18.6 and the branch names above. Under REALITY_FIRST, the later direct verification supersedes the earlier observation. The erroneous first report remains recoverable in Git history; it is not silently erased.
+Two earlier observations were superseded after direct revalidation:
+
+1. PostgreSQL had initially been reported as 17.7. Direct `current_setting('server_version')` on primary and L0 DEV returned 18.6. Current truth = 18.6.
+
+2. An early Sqitch read was summarized with incorrect `01_6_*` change labels. Direct query of `sqitch.changes` and `sqitch.tags` returned the actual registry shown below. Current truth is the directly verified registry.
+
+Earlier states remain recoverable in Git history; corrections are not silent.
 
 ## 1. Repository structure
 
-Observed mature material is concentrated under:
+Pre-L0 mature material was concentrated under:
 - `.github/workflows/`
 - `db/baseline/parts/`
 - `execution/0000/`
@@ -79,18 +78,18 @@ Observed mature material is concentrated under:
 - `execution/08/`
 - `execution/09/`
 
-A coherent top-level foundation product (`docs`, `registry`, `src`, canonical `tests`, `scripts`) was not present before L0.
+No coherent top-level Python product foundation existed.
 
-Classification: existing structure `KEEP + WRAP`; additive foundation structure `L0_REQUIRED`.
+Classification: `KEEP + WRAP`; additive L0 structure required.
 
 ## 2. Languages
 
 Observed:
-- Python: substantial scientific, taxonomy, enrichment, reconciliation and ETL code.
-- JavaScript/Node.js: execution/control-plane code and tests.
-- R: specialized diagnostics/source tooling.
-- SQL: database baseline/schema definitions.
-- YAML: GitHub Actions.
+- Python
+- JavaScript/Node.js
+- R
+- SQL
+- YAML
 
 Classification:
 - Python: `KEEP + WRAP`
@@ -101,76 +100,62 @@ Classification:
 ## 3. Packages and dependencies
 
 Inspected `execution/08/package.json`:
-- package: `jblr-actor-08-execution-control-plane`
-- version: `1.0.0`
+- `jblr-actor-08-execution-control-plane`
 - CommonJS
-- Node: `>=22`
-- tests: `node --test test/*.test.js`
+- Node `>=22`
+- tests: Node built-in test runner
 - no external dependencies declared there
 
-No canonical root Python dependency manifest (`pyproject.toml` or `requirements.txt`) was identified in the inspected cumulative tree.
+No canonical root Python dependency manifest existed before L0.
 
-Classification: Node package `KEEP`; Python environment `L0_REQUIRED`.
+Classification: Node package `KEEP`; reproducible Python environment `L0_REQUIRED`.
 
 ## 4. Scripts
 
-Many scripts exist under actors 0000, 06, 08 and 09, including taxonomy/synonym processing, Rioja spatial indexing, MITECO-related processing and analytical enrichment.
+Many operational/scientific scripts exist for taxonomy, enrichment, reconciliation, Rioja spatial work, MITECO and execution control.
 
 Classification: `KEEP`; mature capabilities later `WRAP`. No aesthetic rewrite.
 
 ## 5. Workflows
 
-Many task-specific GitHub Actions workflows exist. The inspected `0000-v17-successor-rioja-preflight.yml` validates authorization JSON, runs Python, writes evidence and uses scoped `contents: write` permission.
+Many historical/task-specific GitHub Actions workflows exist. They encode useful execution evidence and patterns but did not provide a unified L0 CI layer.
 
-Classification: historical/current workflows `KEEP`; unified foundation CI `L0_REQUIRED`.
+Classification: historical workflows `KEEP`; unified L0 CI `L0_REQUIRED`.
 
 ## 6. Tests
 
-Observed:
-- Node tests under `execution/08/test/` using Node's built-in test runner.
-- Python test material in the execution tree.
-- no canonical unified top-level Python test harness identified.
+Observed Node tests and Python test material, but no unified top-level Python test harness before L0.
 
-Classification: existing tests `KEEP`; foundation test system `L0_REQUIRED`.
+Classification: existing tests `KEEP`; L0 unified tests `L0_REQUIRED`.
 
 ## 7. Python
 
-Python is already a major JBLR implementation language. This confirms Python for the new backend/scientific foundation.
+Python is already a major implementation language. Confirmed for new backend/scientific foundation.
 
 Classification: `KEEP + WRAP`.
 
 ## 8. JavaScript / Node.js
 
-Operational JS/Node code and tests are already real and valid enough to preserve. No evidence supports a forced Python rewrite.
+Valid operational control-plane code exists and must not be rewritten merely for uniformity.
 
 Classification: `KEEP + WRAP`.
 
 ## 9. Other languages
 
-R remains justified for specialized workflows; SQL remains foundational; YAML remains automation configuration.
+R remains justified for specialized scientific/diagnostic workflows. SQL remains foundational. YAML remains automation configuration.
 
 Classification: `KEEP`.
 
 ## 10. Neon schemas and tables
 
 Schemas observed:
-- `analytics`
-- `core`
-- `evidence`
-- `field`
-- `governance`
-- `material`
-- `migration_staging`
-- `public`
-- `security`
-- `sqitch`
-- `taxonomy`
+`analytics`, `core`, `evidence`, `field`, `governance`, `material`, `migration_staging`, `public`, `security`, `sqitch`, `taxonomy`.
 
-Counts at preflight:
-- 98 base tables
-- 10 views
+Inventory at preflight:
+- 98 base tables total
+- 10 views total
 
-Base tables / views by schema:
+Base tables / views:
 - analytics: 5 / 0
 - core: 8 / 0
 - evidence: 11 / 2
@@ -191,150 +176,150 @@ Classification: `KEEP`.
 
 GitHub contains baseline SQL fragments under `db/baseline/parts/`.
 
-Neon Sqitch registry contains three deployed changes:
-1. `01_6_preflight_environment`
-2. `01_6_release_candidate`
-3. `01_6_release_candidate_extras`
+Live Neon Sqitch registry, directly revalidated:
+1. `core_physical_model_v1`
+2. `institutional_release_registry_v1`
+3. `migration_staging_v1`
 
-Observed tag:
-`01.6-preproduction-rc3`.
+Live tag:
+`@JBLR_DB_PREPROD_01_4_1.0.0-dev1`.
 
-`governance.schema_release` exists but had 0 rows on direct verification.
+Historical Git inspection found the exact certified package under `db/sqitch` at commit `75b567d15d6b610939ccdc95009a8aa0d30dd8b6`, subtree SHA `cc14ca5da886fd1184d1aded53bd8755d058f8aa`.
 
-No Sqitch project/configuration path was identifiable in the inspected cumulative Git tree.
+L0 recovered that exact subtree by copy. Regression CI verified all three recovered deploy-script SHA-1 values against the live Neon `sqitch.changes.script_hash` values and verified the deployed tag.
 
 Classification:
 - baseline SQL: `KEEP`
-- deployed Sqitch authority: `KEEP + WRAP`
-- Git/DB migration-definition reconciliation: `L0_REQUIRED`
-- adding Alembic as a parallel authority: `DEPRECATE_WITH_EVIDENCE` as the default proposal; only reconsider with new evidence.
+- Sqitch/versioned SQL: `KEEP + WRAP`
+- recovered versioned migration package: `KEEP`
+- Alembic as parallel authority: `DEPRECATE_WITH_EVIDENCE` as default proposal; do not introduce without new evidence.
 
 ## 12. Neon branches
 
-Before L0 DEV creation, the primary branch plus two historical validation/certification branches existed. L0 has now added one isolated child branch for development.
+Primary plus historical validation/certification branches exist; L0 now also has isolated DEV.
 
-Classification: existing branches `KEEP`; L0 DEV `KEEP` while L0 is active.
+Classification: `KEEP`.
 
 ## 13. DEV / STAGING / PRODUCTION
 
-Current naming remains ambiguous:
+Current naming is ambiguous:
 - project name contains `staging`;
 - primary/default branch is named `production`;
 - primary branch is not protected;
-- no separate branch explicitly named `staging` exists;
-- L0 DEV now exists as `l0-dev-20260826`.
+- no separate canonical branch explicitly named `staging` was verified;
+- L0 DEV exists explicitly.
 
-Classification: `L0_REQUIRED` for a formal environment policy. Production remains non-sandbox.
+Classification: environment policy `L0_REQUIRED`.
+
+Production remains non-sandbox.
 
 ## 14. Configuration mechanisms
 
-Observed configuration is distributed across GitHub Actions, actor/package-local files, JSON execution authorization/state and Neon project/branch state.
-
-No single canonical foundation configuration layer was identified.
+Configuration is distributed across workflows, actor/package files, execution JSON and Neon state. No single foundation configuration layer existed before L0.
 
 Classification: `WRAP + L0_REQUIRED`.
 
 ## 15. Secrets / credentials required
 
-Credential classes required, values excluded:
-- GitHub repository/action credential context;
-- Neon/PostgreSQL application connection credential;
-- Google Drive API authorization credential for the asset adapter.
+Capability classes, values excluded:
+- GitHub repository/action authorization context;
+- PostgreSQL/Neon application connection authorization;
+- Google Drive API authorization for the runtime adapter.
 
-Canonical environment-variable names and secret-store mapping are not yet established.
+Historical 01.6 evidence also shows a passwordless Neon bootstrap approach that generated temporary credentials at runtime rather than storing a database password in Git.
 
-Classification: existing naming `UNKNOWN_REQUIRES_INSPECTION`; policy `L0_REQUIRED`.
+Classification: no secret values persisted; L0 policy required.
 
-## 16. Current Google Drive integration
+## 16. Google Drive integration
 
-Drive is already an authoritative human/heavy-asset repository and was used to restore L0 direction.
+Drive is already authoritative for human/heavy assets and was used to restore L0 direction.
 
-No dedicated Drive adapter implementation was identifiable by repository path/name inspection.
+Existing Neon table `evidence.digital_asset` already contains structured asset identity/metadata including `asset_id`, `resource_id`, `storage_uri`, `sha256`, `bytes`, `media_type`, `original_filename`, timestamps, rights/terms, metadata and notes.
 
-Existing `evidence.digital_asset` already provides asset identity and metadata fields including `asset_id`, `resource_id`, `storage_uri`, `sha256`, `bytes`, `media_type`, `original_filename`, timestamps, rights/terms, metadata and notes.
+No competing asset table is justified.
 
-Classification: database asset model `KEEP + WRAP`; programmatic Drive adapter `L0_REQUIRED`. L0 must not create a competing asset identity model.
+Classification: database asset model `KEEP + WRAP`; programmatic Drive adapter `L0_REQUIRED`.
 
 ## 17. Reusable code
 
 High reuse value:
-- Python analytical/scientific scripts;
-- Node control-plane and tests;
-- spatial indexing code;
+- existing Python scientific/analytical scripts;
+- Node control-plane/tests;
+- spatial code;
 - baseline SQL;
+- recovered Sqitch package;
 - GitHub Actions patterns;
-- existing Neon schema/evidence model.
+- existing Neon schemas/evidence model.
 
 Classification: `KEEP + WRAP`.
 
 ## 18. Experimental code
 
-The `execution/` tree contains batch-specific, pilot, diagnostic, preflight and evidence-generation material. Experimental status cannot be inferred for every file solely from names.
+`execution/` contains batch-specific, pilot, diagnostic and evidence-generation material. Experimental status cannot be inferred for every file solely from names.
 
 Classification: `UNKNOWN_REQUIRES_INSPECTION` per capability. Preserve history.
 
 ## 19. Technical debt
 
-Verified gaps:
+Verified gaps at preflight:
 - sparse root product structure;
 - minimal root README;
 - fragmented Python environment;
 - no unified application/API foundation;
-- many task-specific workflows but no unified foundation CI;
-- deployed Sqitch history not clearly paired with its versioned definitions in inspected Git reality;
+- no unified foundation CI;
+- current branch had lost the historical `db/sqitch` package despite live deployment metadata;
 - environment naming ambiguity;
-- generated evidence/data extensively stored in source-control history.
+- extensive generated evidence in source history.
 
-Classification: non-destructive `L0_REQUIRED` remediation.
+Classification: non-destructive L0 remediation.
 
 ## 20. Duplications
 
-Potential duplication exists among successive actor/batch implementations and generated outputs. Semantic duplication has not been asserted without file-level comparison.
+Potential duplication exists among successive actor/batch implementations and generated outputs. Semantic duplication is not asserted without file-level comparison.
 
 Classification: `UNKNOWN_REQUIRES_INSPECTION`.
 
-Rule: never delete history; canonical wrappers may supersede implementations while originals remain preserved.
+Rule: history is not deleted.
 
 ## 21. Migration risks
 
 Primary risks:
-- using primary `production` as a sandbox;
-- introducing a second migration authority beside Sqitch;
-- rewriting valid polyglot code for uniformity;
-- using Drive human paths as persistent asset identity;
+- treating primary `production` as sandbox;
+- introducing a second migration authority;
+- rewriting valid polyglot code;
+- using Drive paths as persistent identity;
 - deleting/moving historical evidence;
-- binding a new API directly to undocumented internal tables before stable contracts;
-- relying on stale infrastructure observations instead of live verification.
+- binding new APIs directly to undocumented tables;
+- trusting stale infrastructure observations without live revalidation.
 
-Mitigation: isolated branches, additive changes, tests, ADRs, stable contracts, explicit environment gates, no production writes.
+Mitigation: isolated branches, additive changes, tests, ADRs, versioned contracts and zero production writes.
 
-## 22. Gaps required for L0
+## 22. L0 gaps identified
 
-Required:
-- additive foundation directory structure;
+Required foundation capabilities:
+- repository reality map;
 - technology ADR;
 - reproducible Python environment;
-- FastAPI `/health` and `/version`;
-- OpenAPI contract;
-- safe environment-aware DB connection layer;
-- Sqitch/Git reconciliation;
-- unified tests and GitHub Actions CI;
-- Drive asset adapter using stable file identity;
-- logging/run_id;
+- minimal FastAPI API;
+- persisted OpenAPI;
+- safe DB connection layer;
+- versioned migration recovery/reconciliation;
+- automated tests and CI;
+- Drive asset adapter;
+- structured logging/run_id;
 - secrets/config policy;
-- DEV/STAGING/PRODUCTION policy;
+- environment policy;
 - operational README.
 
 ## Technology conclusion
 
-- New backend/scientific foundation: Python, confirmed.
-- API: FastAPI, confirmed for L0 minimal API.
-- Validation: Pydantic.
+- Python: confirmed for new backend/scientific foundation.
+- FastAPI + Pydantic: confirmed for L0 API.
 - Existing JS/Node: preserve.
-- R: preserve where specialized.
-- Database: current PostgreSQL 18.6 on Neon.
-- Spatial: existing PostGIS retained.
-- Migration authority: existing Sqitch/versioned SQL; do not create Alembic as a parallel authority without new evidence.
+- R: preserve where justified.
+- PostgreSQL: current live version 18.6 on Neon.
+- PostGIS: retain.
+- Migrations: Sqitch/versioned SQL, recovered and validated.
 - CI: GitHub Actions.
 
 ## Stop-condition review
@@ -350,4 +335,4 @@ Required:
 - UNRESOLVED_ARCHITECTURE_CONTRADICTION: NO
 - NEED_FOR_NON_DERIVABLE_HUMAN_DECISION: NO
 
-PRE-FLIGHT RESULT = PASS
+`PREFLIGHT = PASS`
