@@ -3,4 +3,4 @@ L0 live runtime validation trigger marker.
 Do not place secrets in this file.
 After the required GitHub Actions repository secrets are configured, edit only the timestamp/value below and commit the change on branch l0-software-foundation-20260826 to trigger the controlled live runtime validation workflow.
 
-TRIGGER=2026-08-26T15:10:00+02:00
+TRIGGER=2026-08-26T15:14:19+02:00
