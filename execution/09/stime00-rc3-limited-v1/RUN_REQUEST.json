@@ -1,5 +1,8 @@
 {
   "enabled": true,
+  "direction": "00000.V19",
+  "currentAction": "ACT.000",
+  "continuityEvent": "JBLR-EVT-00000-20260826-CONTINUITY-V18-TO-V19-001",
   "releaseEvent": "JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001",
   "recoveryEvent": "JBLR-EVT-00000-20260826-ACCEPT-09-INCOMPLETE-MATERIALIZATION-RECOVERY-001",
   "scopeNewTemp": 261,
@@ -19,5 +22,5 @@
   "databaseWrites": 0,
   "mutateRC2": false,
   "finalClose": false,
-  "dispatchAttempt": 3
+  "dispatchAttempt": 4
 }
