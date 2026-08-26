@@ -16,5 +16,6 @@
   "neonWrites": 0,
   "databaseWrites": 0,
   "mutateRC2": false,
-  "finalClose": false
+  "finalClose": false,
+  "dispatchAttempt": 2
 }
