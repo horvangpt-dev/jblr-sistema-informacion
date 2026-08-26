@@ -53,20 +53,34 @@ Database writes are blocked in L0 for `production` and `unknown`. Read connectio
 
 Current project: `jblr-01-6-staging-zero-cost-20260815`.
 
-Primary/default branch is named `production` and is not an L0 sandbox.
+Primary/default branch:
+`production` (`br-polished-pond-b24mvk11`) — never an L0 sandbox.
 
-L0 DEV branch:
+L0 DEV:
 `l0-dev-20260826` (`br-fancy-snow-b2tlrwmb`).
+
+L0 STAGING:
+`l0-staging-20260826` (`br-shiny-bonus-b2ilao69`).
+
+Promotion direction:
+`DEV → STAGING → PRODUCTION`.
 
 Production writes during L0: **0 unless 00000 explicitly authorizes otherwise**.
 
 ## Database migrations
 
-Existing deployed migration authority is Sqitch/versioned SQL. L0 does not introduce Alembic as a second authority. Recovery/reconciliation of the deployed Sqitch definitions with Git is required before new schema migrations are authored.
+Migration authority is Sqitch/versioned SQL. L0 does not introduce Alembic as a second authority.
+
+The historical certified `db/sqitch` package has been recovered by exact Git-tree copy and validated against the live Neon Sqitch registry. Regression CI locks the three deploy-script hashes and deployed tag so future drift fails visibly.
+
+See:
+`docs/architecture/L0_SQITCH_RECOVERY_VALIDATION.md`.
 
 ## Google Drive assets
 
-Heavy/human assets remain in Google Drive. `GoogleDriveAssetAdapter` resolves them by stable Drive `file_id`, retrieves metadata/checksums and produces structured metadata without downloading or duplicating binary content into PostgreSQL.
+Heavy/human assets remain in Google Drive. `GoogleDriveAssetAdapter` resolves them by stable Drive `file_id`, retrieves metadata/checksums when supplied by Drive and produces structured metadata without duplicating binary content into PostgreSQL.
+
+Live Drive access/metadata has been validated through the connected interface. Production-style Python credential wiring remains runtime configuration, never committed.
 
 ## Logging
 
@@ -75,8 +89,11 @@ Heavy/human assets remain in Google Drive. `GoogleDriveAssetAdapter` resolves th
 ## Architecture evidence
 
 - `docs/architecture/L0_SOFTWARE_PREFLIGHT_REPORT.md`
+- `docs/architecture/L0_REPOSITORY_REALITY_MAP.md`
 - `docs/architecture/L0_DEV_STAGING_PRODUCTION_POLICY.md`
 - `docs/architecture/L0_SECRETS_AND_CONFIGURATION_POLICY.md`
+- `docs/architecture/L0_SQITCH_RECOVERY_VALIDATION.md`
+- `docs/architecture/L0_DRIVE_ADAPTER_VALIDATION.md`
 - `docs/decisions/ADR-0001-L0-FOUNDATION-TECHNOLOGY.md`
 - `docs/decisions/ADR-0002-DRIVE-ASSET-IDENTITY.md`
 
