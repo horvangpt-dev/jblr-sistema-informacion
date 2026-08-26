@@ -67,7 +67,7 @@ The recovered plan defines:
 - `migration_staging_v1`
 - tag `@JBLR_DB_PREPROD_01_4_1.0.0-dev1`
 
-These names and tag match the current Sqitch registry read directly from the Neon L0 DEV branch.
+Names, tag and deploy-script SHA-1 hashes were validated against the current Neon Sqitch registry by CI.
 
 ## Neon reality linked to repository
 
@@ -77,11 +77,14 @@ Project:
 Current PostgreSQL:
 `18.6 (3484359)`
 
-Primary/default branch:
+Primary/default:
 `production` (`br-polished-pond-b24mvk11`)
 
 L0 DEV:
 `l0-dev-20260826` (`br-fancy-snow-b2tlrwmb`)
+
+L0 STAGING:
+`l0-staging-20260826` (`br-shiny-bonus-b2ilao69`)
 
 Production writes by L0:
 `0`
@@ -89,19 +92,24 @@ Production writes by L0:
 Schemas observed:
 `analytics`, `core`, `evidence`, `field`, `governance`, `material`, `migration_staging`, `public`, `security`, `sqitch`, `taxonomy`.
 
-Observed inventory:
+Observed primary inventory:
 - 98 base tables total
 - 10 views total
 - PostGIS present
 - Sqitch registry present
 
+STAGING creation verification:
+- PostgreSQL 18.6
+- 3 Sqitch changes
+- 1 Sqitch tag
+- 91 JBLR application/migration base tables
+
 ## Known gaps after map
 
-1. No canonical separate STAGING branch has yet been established.
-2. Primary Neon branch is named `production` while project name contains `staging`; explicit environment configuration is therefore mandatory.
-3. Existing historical execution code remains heterogeneous and will be wrapped progressively, not mass-rewritten.
-4. Heavy generated historical artifacts remain in Git history for now; any later externalization must use COPY, never destructive movement.
-5. Live Google Drive programmatic deployment credentials are not committed and must remain runtime-only.
+1. Primary Neon branch is named `production` while the project title contains `staging`; explicit environment configuration remains mandatory.
+2. Existing historical execution code remains heterogeneous and will be wrapped progressively, not mass-rewritten.
+3. Heavy generated historical artifacts remain in Git history for now; any later externalization must use COPY, never destructive movement.
+4. Production-style Python credential wiring for Neon and Google Drive is not committed and must remain runtime-only.
 
 ## Governing conclusion
 
