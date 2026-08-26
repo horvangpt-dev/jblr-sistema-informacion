@@ -1,0 +1,52 @@
+name: L0 live runtime validation closeout
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  live-runtime-closeout:
+    runs-on: ubuntu-latest
+    env:
+      JBLR_TEST_NEON_DEV_DATABASE_URL: ${{ secrets.JBLR_NEON_DEV_DATABASE_URL }}
+      JBLR_TEST_NEON_STAGING_DATABASE_URL: ${{ secrets.JBLR_NEON_STAGING_DATABASE_URL }}
+      JBLR_GOOGLE_DRIVE_ACCESS_TOKEN: ${{ secrets.JBLR_DRIVE_OAUTH_ACCESS_TOKEN }}
+      JBLR_DRIVE_TEST_FILE_ID: 1ueDylJoQK60icM7YTVHi_JhOYpAKR-58c8M3t21Cvso
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: requirements/l0.lock
+
+      - name: Install locked L0 dependencies
+        run: python -m pip install -r requirements/l0.lock
+
+      - name: Verify required ephemeral runtime credentials are present
+        shell: bash
+        run: |
+          missing=0
+          for variable in \
+            JBLR_TEST_NEON_DEV_DATABASE_URL \
+            JBLR_TEST_NEON_STAGING_DATABASE_URL \
+            JBLR_GOOGLE_DRIVE_ACCESS_TOKEN
+          do
+            if [ -z "${!variable:-}" ]; then
+              echo "::error::$variable is not configured for this runtime"
+              missing=1
+            fi
+          done
+          exit "$missing"
+
+      - name: Run three live runtime E2E validations
+        run: >-
+          python -m pytest -q
+          tests/integration/test_neon_runtime.py
+          tests/integration/test_drive_runtime.py
+
+      - name: Run complete L0 test suite on the same HEAD
+        run: python -m pytest -q
