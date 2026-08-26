@@ -26,13 +26,14 @@ def validate_database_read_runtime(settings: Settings) -> dict[str, Any]:
     """
 
     connection = connect_database(settings, write=False)
+    result: dict[str, Any]
     try:
         with connection.cursor() as cursor:
             cursor.execute(DATABASE_PROBE_SQL)
             row = cursor.fetchone()
             if row is None:
                 raise RuntimeError("database runtime probe returned no row")
-        return {
+        result = {
             "environment": settings.environment.value,
             "server_version": row[0],
             "database_name": row[1],
@@ -41,10 +42,12 @@ def validate_database_read_runtime(settings: Settings) -> dict[str, Any]:
             "role_name": row[4],
             "sqitch_change_count": int(row[5]),
             "sqitch_tag_count": int(row[6]),
-            "connection_closed_after_probe": False,
         }
     finally:
         connection.close()
+
+    result["connection_closed_after_probe"] = bool(connection.closed)
+    return result
 
 
 def validate_drive_asset_runtime(
