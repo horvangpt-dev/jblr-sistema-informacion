@@ -1,89 +1,112 @@
-name: 09 Corpus B productive fresh resolution v2
+name: 09 STIME00 RC3 limited productive execution shim
 
 on:
   push:
     branches:
-      - 09-corpus-b-productive-v1
+      - 09-stime00-rc3-limited-productive-v1
     paths:
-      - 'execution/09/corpus-b-cold-start-v1/run-control/RUN_REQUEST_002.json'
+      - 'execution/09/stime00-rc3-limited-v1/RUN_REQUEST.json'
 
 permissions:
   contents: write
 
 jobs:
-  productive-v2:
+  stime00_rc3_limited:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 09-corpus-b-productive-v1
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Validate request and prepare immutable run path
-        shell: bash
+          ref: 09-stime00-rc3-limited-productive-v1
+          fetch-depth: 1
+      - name: Validate governed request
         run: |
-          node - <<'NODE'
-          const fs=require('fs');
-          const root='execution/09/corpus-b-cold-start-v1';
-          const p=JSON.parse(fs.readFileSync(root+'/run-control/RUN_REQUEST_002.json','utf8'));
-          if(p.releaseEvent!=='JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-CORPUS-B-001') throw new Error('RELEASE_EVENT_MISMATCH');
-          if(p.crossWithA!==false||p.neonWrites!==0||p.cacheInitialState!=='EMPTY') throw new Error('ISOLATION_CONTRACT_FAIL');
-          if(p.sourceSha256!=='f3b2c9ca0921779cf5131ea8d4c98a35299a325cf0be4f419cfec4d39e667f4f') throw new Error('SOURCE_HASH_MISMATCH');
-          const q=JSON.parse(fs.readFileSync(root+'/input/CORPUS_B_338_QUEUE.json','utf8'));q.RUN_ID=p.requestId;
-          fs.writeFileSync(process.env.RUNNER_TEMP+'/queue-v2.json',JSON.stringify(q));
-          fs.appendFileSync(process.env.GITHUB_ENV,`RUN_ID=${p.requestId}\nRUN_DIR=${root}/runs/${p.requestId}\n`);
-          NODE
-
-      - name: Re-run accepted isolation QA
-        working-directory: execution/08/corpus-b-cold-start-v1
-        run: node --test test/*.test.js
-
-      - name: Download fresh Spanish vascular checklist
-        shell: bash
+          python - <<'PY'
+          import json
+          p=json.load(open('execution/09/stime00-rc3-limited-v1/RUN_REQUEST.json'))
+          assert p['enabled'] is True
+          assert p['releaseEvent']=='JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001'
+          assert p['scopeNewTemp']==261 and p['scopeNewOfficialReuse']==562
+          assert p['historicalReviewQueue']==14 and p['inheritedEvidence']==1405
+          assert p['doNotRerunAll3033'] is True
+          assert p['hardGateAPolicy']=='2210_OF_2210_NATIONAL_IDS_UNCHANGED'
+          assert p['extensionGateB']=='823_OF_823_AUDITABLE_TERMINAL_IDENTITY_STATE'
+          assert p['noFuzzy'] is True and p['noParentIdInheritance'] is True
+          assert p['noRankCollapse'] is True and p['noHybridCollapse'] is True
+          assert p['sourceFailureNotFound'] is False
+          assert p['neonWrites']==0 and p['databaseWrites']==0
+          assert p['mutateRC2'] is False and p['finalClose'] is False
+          PY
+      - name: Materialize limited inputs from canonical RC3
         run: |
-          rm -rf "$RUNNER_TEMP/spanish-flora" "$RUNNER_TEMP/spanish-flora.zip"
-          mkdir -p "$RUNNER_TEMP/spanish-flora"
-          curl -fL --retry 3 --retry-delay 2 'https://ipt.gbif.es/archive.do?r=taxonesfloraespanola' -o "$RUNNER_TEMP/spanish-flora.zip"
-          unzip -q "$RUNNER_TEMP/spanish-flora.zip" -d "$RUNNER_TEMP/spanish-flora"
-          TAXON_FILE="$(find "$RUNNER_TEMP/spanish-flora" -type f \( -name 'taxon.txt' -o -name 'taxa.txt' \) | head -n 1)"
-          test -n "$TAXON_FILE"
-          echo "TAXON_FILE=$TAXON_FILE" >> "$GITHUB_ENV"
-          sha256sum "$RUNNER_TEMP/spanish-flora.zip"
-          sha256sum "$TAXON_FILE"
-
-      - name: Execute corrected fresh 338 resolution
-        shell: bash
+          set -euo pipefail
+          ROOT=execution/09/stime00-rc3-limited-v1
+          mkdir -p "$ROOT/inputs"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('execution/0000/v18/successor-rioja-2262/materialized_rc3')
+          out=Path('execution/09/stime00-rc3-limited-v1/inputs')
+          def read(pattern):
+              rows=[]
+              for p in sorted(root.glob(pattern)):
+                  with p.open(encoding='utf-8') as f: rows += [json.loads(x) for x in f if x.strip()]
+              return rows
+          def write(name, rows):
+              with (out/name).open('w',encoding='utf-8') as f:
+                  for r in rows: f.write(json.dumps(r,ensure_ascii=False,sort_keys=True)+'\n')
+          hubs=read('TAXON_HUBS_3033_part*.jsonl'); assert len(hubs)==3033
+          nt=[r for r in hubs if r.get('hub_origin')=='NEW_TEMP']
+          no=[r for r in hubs if r.get('hub_origin')=='NEW_OFFICIAL']
+          ih=[r for r in hubs if r.get('hub_origin')=='INHERITED_RC2']
+          assert len(nt)==261 and len(no)==562 and len(ih)==2210
+          pred={r.get('predecessor_release_row_id'):r for r in ih if r.get('predecessor_release_row_id')}
+          ev=read('INHERITED_ID_EVIDENCE_1405_part*.jsonl'); assert len(ev)==1405
+          joined=[]
+          for x in ev:
+              h=pred.get(x.get('predecessor_release_row_id')); assert h is not None
+              joined.append({**x,'taxon_work_key':h.get('taxon_work_key'),'taxon_identity_hub_key':h.get('taxon_identity_hub_key'),'current_operational_id':h.get('ID_TAXON_JBLR'),'hub_display_name':h.get('hub_display_name'),'hub_origin':h.get('hub_origin')})
+          write('NEW_TEMP_261.jsonl',nt); write('NEW_OFFICIAL_562.jsonl',no); write('INHERITED_ID_EVIDENCE_1405_WITH_TWK.jsonl',joined)
+          hist=json.load(open('execution/09/stime00-rc3-limited-v1/HISTORICAL_REVIEW_ROWS_14_COMPACT.json')); assert len(hist)==14
+          write('HISTORICAL_REVIEW_ROWS_14.jsonl',hist)
+          PY
+      - name: Download current official EIDOS
         run: |
-          test ! -e "$RUN_DIR"
-          mkdir -p "$RUN_DIR"
-          node execution/09/corpus-b-cold-start-v1/bin/run-fresh-338-resolution-v2.js \
-            "$RUNNER_TEMP/queue-v2.json" \
-            "$TAXON_FILE" \
-            "$RUN_DIR"
-
-      - name: Build immutable receipt
-        shell: bash
+          set -euo pipefail
+          curl --fail --location --retry 4 --retry-all-errors --connect-timeout 30 --max-time 1800 -o "$RUNNER_TEMP/eidos.ttl" https://datos.iepnb.es/datasets/eidos.ttl
+          test -s "$RUNNER_TEMP/eidos.ttl"
+          sha256sum "$RUNNER_TEMP/eidos.ttl"
+      - name: Execute limited productive reconciliation
         run: |
-          node - <<'NODE'
-          const fs=require('fs'),crypto=require('crypto');
-          const dir=process.env.RUN_DIR,id=process.env.RUN_ID;
-          const m=JSON.parse(fs.readFileSync(dir+'/RUN_MANIFEST_PHASE_B_v2.json','utf8'));
-          const qa=JSON.parse(fs.readFileSync(dir+'/QA_REPORT_v2.json','utf8'));
-          const hashes={};for(const f of fs.readdirSync(dir).sort())hashes[f]=crypto.createHash('sha256').update(fs.readFileSync(dir+'/'+f)).digest('hex');
-          const receipt={receiptVersion:'CORPUS_B_09_PRODUCTIVE_RECEIPT_v2',githubRunId:String(process.env.GITHUB_RUN_ID),observedAt:new Date().toISOString(),status:qa.QA_STATE,releaseEvent:'JBLR-EVT-0000-20260824-ACCEPT-08-RELEASE-09-CORPUS-B-001',runId:id,counts:m.counts,independence:m.independence,hashes,CROSS_WITH_A_PERFORMED:false,CROSSWALK_MODULE_EXECUTED:false,NEON_WRITES:0,CANONICAL_CORPUS_A_MUTATION:0,canonicalEffect:'NONE_PENDING_0000_POSTRUN_ACCEPTANCE'};
-          fs.writeFileSync(dir+'/RUN_RECEIPT.json',JSON.stringify(receipt,null,2)+'\n');
-          console.log(JSON.stringify(receipt,null,2));
-          NODE
-
-      - name: Publish immutable attempt-02 evidence
-        shell: bash
+          set -euo pipefail
+          ROOT=execution/09/stime00-rc3-limited-v1
+          OUT="$ROOT/runs/STIME00_RC3_LIMITED_20260826_001"
+          rm -rf "$OUT"; mkdir -p "$OUT"
+          python "$ROOT/src/productive_stime00_rc3.py" --inputs "$ROOT/inputs" --final309 "execution/06/v17/synonym-system-309/runs/FINAL_CONSOLIDATED_309_V17/CONSOLIDATED_309.jsonl" --eidos "$RUNNER_TEMP/eidos.ttl" --out "$OUT" --release-event "JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001"
+      - name: QA terminal evidence
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "$RUN_DIR"
-          git commit -m "result(09): Corpus B fresh productive run v2 ${GITHUB_RUN_ID}" || true
-          git push origin HEAD:09-corpus-b-productive-v1
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          out=Path('execution/09/stime00-rc3-limited-v1/runs/STIME00_RC3_LIMITED_20260826_001')
+          q=json.load(open(out/'QA_FINAL.json')); r=json.load(open(out/'RUN_RECEIPT.json'))
+          assert q['pass'] is True
+          assert all(q[x] is True for x in ['newTempProcessed','newOfficialAudited','extension823Accounted','historical14Accounted','inheritedEvidence1405Accounted','allExtensionStatesTerminalAllowed','hardGateAReusedNotRerun','doNotRerunAll3033'])
+          assert q['neonWrites']==0 and q['databaseWrites']==0 and q['rc2Mutation']==0 and q['stime00FinalClose'] is False
+          assert r['guards']['hardGateAReprovedInThisRun'] is False and r['guards']['sourceFailureNotFound'] is False
+          assert r['guards']['neonWrites']==0 and r['guards']['databaseWrites']==0
+          PY
+      - name: Persist compact productive evidence
+        run: |
+          set -euo pipefail
+          ROOT=execution/09/stime00-rc3-limited-v1
+          OUT="$ROOT/runs/STIME00_RC3_LIMITED_20260826_001"
+          cat > "$ROOT/TERMINAL_STATE.json" <<JSON
+          {"state":"TERMINAL_LIMITED_PRODUCTIVE_EXECUTION","githubRunId":"${GITHUB_RUN_ID}","releaseEvent":"JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001","stime00FinalClose":false,"neonWrites":0,"databaseWrites":0,"rc2Mutation":0}
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin 09-stime00-rc3-limited-productive-v1
+          git add "$OUT" "$ROOT/TERMINAL_STATE.json"
+          git commit -m "evidence(09): STIME00 RC3 limited productive ${GITHUB_RUN_ID}"
+          git push origin HEAD:09-stime00-rc3-limited-productive-v1
