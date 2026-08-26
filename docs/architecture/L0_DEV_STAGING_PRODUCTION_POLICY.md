@@ -5,38 +5,67 @@ Status: ACTIVE_FOR_L0
 
 ## Current reality
 
-Neon project: `jblr-01-6-staging-zero-cost-20260815`.
+Neon project:
+`jblr-01-6-staging-zero-cost-20260815`.
 
-Primary/default branch: `production` (`br-polished-pond-b24mvk11`).
+Current PostgreSQL:
+`18.6 (3484359)`.
 
-L0 development branch: `l0-dev-20260826` (`br-fancy-snow-b2tlrwmb`).
+Primary/default branch:
+`production` (`br-polished-pond-b24mvk11`).
 
-The project name and primary branch name are semantically inconsistent. L0 will not infer environment from the project name alone.
+L0 development branch:
+`l0-dev-20260826` (`br-fancy-snow-b2tlrwmb`).
+
+L0 staging branch:
+`l0-staging-20260826` (`br-shiny-bonus-b2ilao69`).
+
+Both L0 branches are non-primary children of the primary branch. The project name and primary branch name remain semantically inconsistent, so environment is NEVER inferred from the project name.
 
 ## Policy
 
 ### DEV
 
-L0 development and destructive/experimental validation must occur only on an explicitly identified non-primary branch. Current L0 DEV is `l0-dev-20260826`.
+`JBLR_ENV=dev`
+
+Development, experiments and destructive validation are allowed only on an explicitly identified DEV resource. Current Neon DEV is `l0-dev-20260826`.
 
 ### STAGING
 
-No canonical separate STAGING branch is asserted at this milestone. Until one is deliberately established, `STAGING=UNRESOLVED` in application configuration. The project name containing `staging` is not sufficient evidence.
+`JBLR_ENV=staging`
+
+Promotion/integration validation may target only the explicit L0 STAGING resource. Current Neon STAGING is `l0-staging-20260826`.
+
+Live read verification at creation showed:
+- PostgreSQL 18.6
+- 3 Sqitch changes
+- 1 Sqitch tag
+- 91 JBLR base tables across the application/migration schemas
+
+STAGING is not production and is independently discardable.
 
 ### PRODUCTION
 
-The primary/default Neon branch named `production` is treated as production for safety regardless of project naming ambiguity.
+`JBLR_ENV=production`
+
+The primary/default Neon branch named `production` is treated as production for safety regardless of the project title.
 
 `PRODUCTION_WRITES_DURING_L0 = 0` unless 00000 explicitly authorizes otherwise.
 
 ## Gates
 
-Application configuration MUST carry an explicit environment code. Unknown environment is not converted to DEV/STAGING/PRODUCTION silently.
+Application configuration MUST carry an explicit environment code. Unknown environment is not converted silently.
 
-Any database write capability must refuse production by default during L0.
+The L0 database library permits write connections only for explicit `dev` or `staging` and refuses writes for `production` or `unknown`.
 
-Secrets must be provided by runtime secret stores/environment configuration and never committed.
+Secrets must be supplied by runtime secret stores/environment configuration and never committed.
+
+## Promotion direction
+
+DEV → STAGING → PRODUCTION
+
+Promotion means tested/versioned code and migrations move forward. It does not mean copying uncontrolled production data backward or treating the production branch as a test target.
 
 ## Recovery
 
-L0 DEV is a child branch and can be discarded without deleting or rewriting primary history. Production remains the source from which L0 DEV was branched at creation time.
+L0 DEV and L0 STAGING are separate child branches and can be discarded independently without deleting or rewriting primary history.
