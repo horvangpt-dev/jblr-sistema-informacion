@@ -14,6 +14,8 @@ class JsonFormatter(logging.Formatter):
             "logger": record.name,
             "message": record.getMessage(),
             "run_id": getattr(record, "run_id", "unknown"),
+            "environment": getattr(record, "environment", "unknown"),
+            "git_sha": getattr(record, "git_sha", "unknown"),
         }
         return json.dumps(payload, ensure_ascii=False, sort_keys=True)
 
@@ -26,7 +28,13 @@ def validate_run_id(run_id: str) -> str:
     return str(UUID(run_id))
 
 
-def configure_logging(*, run_id: str | None = None, level: int = logging.INFO) -> logging.LoggerAdapter:
+def configure_logging(
+    *,
+    run_id: str | None = None,
+    environment: str = "unknown",
+    git_sha: str = "unknown",
+    level: int = logging.INFO,
+) -> logging.LoggerAdapter:
     resolved_run_id = validate_run_id(run_id) if run_id is not None else new_run_id()
 
     logger = logging.getLogger("jblr")
@@ -38,4 +46,11 @@ def configure_logging(*, run_id: str | None = None, level: int = logging.INFO) -
     handler.setFormatter(JsonFormatter())
     logger.addHandler(handler)
 
-    return logging.LoggerAdapter(logger, {"run_id": resolved_run_id})
+    return logging.LoggerAdapter(
+        logger,
+        {
+            "run_id": resolved_run_id,
+            "environment": environment,
+            "git_sha": git_sha,
+        },
+    )
