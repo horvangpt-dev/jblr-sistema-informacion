@@ -1,0 +1,36 @@
+{
+  "dataset_sha256": "16efb27b72b2c1dda77f1adaf658b01e20d0e60427f853b219c9d9579960aea0",
+  "deterministic_rebuild_sha256_match": true,
+  "history": {
+    "aliases_asserted": 0,
+    "created_in_rc3": 823,
+    "history_records": 3033,
+    "inherited_from_rc2": 2210,
+    "supersessions_asserted": 0
+  },
+  "local_tests": "PASS_8_OF_8",
+  "mapping_breakdown": {
+    "actor06_explicit_conflicts": 48,
+    "actor06_unresolved_ids": 214,
+    "external_id_mapping_evidence_rows": 4276,
+    "external_id_mapping_semantic_unique": 4224,
+    "semantic_mapping_conflicts": 0,
+    "unknown_external_ids_total": 2685,
+    "unknown_miteco_hub_ids": 2471
+  },
+  "output_bytes": 1651788,
+  "output_file": "JBLR_L1_TAXONOMY_PACKET_02_DRY_RUN.zip",
+  "output_sha256": "4f433be676851833d5e609da6ea9891a4bf4fc9ca22eeb0d187b954f72625ae4",
+  "packet": "L1_PACKET_02",
+  "schema": "JBLR_L1_PACKET_02_BUILD_EVIDENCE_V1",
+  "source_release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "source_sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71",
+  "writes": {
+    "dev_data_writes": 0,
+    "migrations": 0,
+    "neon_data_writes": 0,
+    "production_writes": 0,
+    "staging_data_writes": 0
+  },
+  "zip_integrity": "PASS"
+}

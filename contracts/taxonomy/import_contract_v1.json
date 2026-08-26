@@ -1,0 +1,14 @@
+{
+  "schema": "JBLR_L1_TAXONOMY_IMPORT_CONTRACT_V1",
+  "packet": "L1_PACKET_02",
+  "source_release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "source_sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71",
+  "mode": "DRY_RUN_ONLY",
+  "pipeline": ["VALIDATED_RC3_RELEASE", "NORMALIZE", "MAP", "PREPARE_LOAD", "DRY_RUN", "VALIDATE_COUNTS", "IDEMPOTENCY_CHECK"],
+  "identity_rule": "taxon_concept_id MUST equal RC3 taxon_identity_hub_key; names never mint or resolve identity",
+  "source_record_rule": "source_record remains a separate evidence-bearing entity linked only through explicit RC3 routing",
+  "idempotency_rule": "same stable primary key plus byte-equivalent canonical payload is unchanged; same key plus divergent payload is an explicit conflict and MUST NOT overwrite",
+  "expected_source_counts": {"taxon_hubs": 3033, "source_records": 2262, "inherited_id_evidence": 1405},
+  "write_boundary": {"dev_data_writes": 0, "staging_data_writes": 0, "production_writes": 0, "neon_data_writes": 0, "migrations": 0},
+  "invariants": ["NAME != IDENTITY", "SOURCE_RECORD != TAXON_IDENTITY", "UNKNOWN != ZERO", "UNKNOWN != ABSENCE", "NOT_FOUND != ABSENCE", "HISTORY_NEVER_DELETE", "NO_SILENT_INFERENCE"]
+}

@@ -1,0 +1,55 @@
+name: JBLR L1 Taxonomy Packet 02
+
+on:
+  push:
+    branches:
+      - l1-taxonomy-backbone-20260826
+    paths:
+      - 'src/jblr/taxonomy/**'
+      - 'tests/test_l1_taxonomy_packet02.py'
+      - 'contracts/taxonomy/**'
+      - 'execution/L1/L1_PACKET_02_**'
+      - '.github/workflows/l1-taxonomy-packet-02.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-l1-packet-02:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Run importer, mapping and history guard tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest tests.test_l1_taxonomy_packet02 -v
+      - name: Verify persisted real-RC3 dry-run evidence
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('execution/L1/L1_PACKET_02_DRY_RUN_EVIDENCE.json')
+          e=json.loads(p.read_text())
+          b=json.loads(pathlib.Path('execution/L1/L1_PACKET_02_BUILD_EVIDENCE.json').read_text())
+          assert e['source_byte_immutable'] is True
+          assert e['idempotency']['pass'] is True
+          assert e['counts']['taxon_concepts'] == 3033
+          assert e['counts']['source_records'] == 2262
+          assert e['external_id_mapping_evidence_rows'] == 4276
+          assert e['external_id_mapping_semantic_unique'] == 4224
+          assert e['external_id_mapping_conflicts'] == 0
+          assert e['actor06_explicit_conflicts'] == 48
+          assert e['counts']['aliases'] == 0
+          assert e['counts']['supersessions'] == 0
+          assert e['counts']['history_records'] == 3033
+          assert e['counts']['unknown_external_ids'] == 2685
+          assert b['deterministic_rebuild_sha256_match'] is True
+          assert b['zip_integrity'] == 'PASS'
+          assert b['mapping_breakdown']['unknown_miteco_hub_ids'] == 2471
+          assert b['mapping_breakdown']['actor06_unresolved_ids'] == 214
+          assert all(v == 0 for v in e['writes'].values())
+          print('L1_PACKET_02 persisted real-RC3 evidence PASS')
+          PY

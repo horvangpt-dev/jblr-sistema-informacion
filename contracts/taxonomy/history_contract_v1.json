@@ -1,0 +1,10 @@
+{
+  "schema": "JBLR_L1_TAXONOMY_HISTORY_CONTRACT_V1",
+  "packet": "L1_PACKET_02",
+  "history_never_delete": true,
+  "predecessor_rule": "predecessor_release_row_id is release lineage and MUST NOT be converted into supersession",
+  "alias_rule": "aliases are asserted only from explicit accepted evidence such as PREVIOUS_ID_TAXON_JBLR; a name match is never sufficient",
+  "supersession_rule": "supersession/replacement requires explicit accepted relation evidence, distinct existing concept IDs, reason and provenance",
+  "cycle_rule": "directed supersession cycles are invalid",
+  "current_release_zero_relation_semantics": "zero explicit aliases or supersessions means no such relation is asserted by RC3; it does not mean external absence"
+}

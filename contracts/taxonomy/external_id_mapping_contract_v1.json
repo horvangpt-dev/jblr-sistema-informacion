@@ -1,0 +1,15 @@
+{
+  "schema": "JBLR_L1_EXTERNAL_ID_MAPPING_CONTRACT_V1",
+  "packet": "L1_PACKET_02",
+  "external_source_harvest": false,
+  "external_source_augmentation": false,
+  "name_based_resolution": false,
+  "schemes": {
+    "MITECO_OFFICIAL_ID": ["RC3 hub ID_TAXON_GOBIERNO", "RC3 actor06_selected_official_id when actor06_final_category=RESOLVED", "RC3 inherited-ID evidence official_id"],
+    "RIOJA_SOURCE_ID": ["RC3 source-routing rioja_id"]
+  },
+  "mapping_status": "REFERENCE",
+  "semantic_conflict_rule": "same scheme+value mapping to more than one taxon_concept_id is FAIL; repeated evidence for the same mapping is preserved, not overwritten",
+  "unknown_rule": "empty or unresolved identifier values remain UNKNOWN and no synthetic value is created",
+  "explicit_conflict_rule": "RC3 actor06_final_category=CONFLICT is preserved as conflict without choosing a value"
+}

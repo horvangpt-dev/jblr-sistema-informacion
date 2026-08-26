@@ -1,0 +1,101 @@
+{
+  "actor06_explicit_conflicts": 48,
+  "aliases_asserted": 0,
+  "counts": {
+    "aliases": 0,
+    "external_id_conflicts": 48,
+    "external_id_mappings": 4276,
+    "history_records": 3033,
+    "identifications": 2262,
+    "operational_identifiers": 3033,
+    "source_records": 2262,
+    "supersessions": 0,
+    "taxon_concepts": 3033,
+    "taxonomic_names": 5295,
+    "unknown_external_ids": 2685
+  },
+  "dataset_sha256": "16efb27b72b2c1dda77f1adaf658b01e20d0e60427f853b219c9d9579960aea0",
+  "external_id_mapping_conflicts": 0,
+  "external_id_mapping_evidence_rows": 4276,
+  "external_id_mapping_semantic_unique": 4224,
+  "fingerprints": {
+    "aliases": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "external_id_conflicts": "4d6588ee25ca43bde585b4cabeaebcddcc4cf467c96613d72b9dc877c826bde8",
+    "external_id_mappings": "940db033e511d7038ead1c941500c82cea874aaa2a1b78f50520aa42fd16e313",
+    "history_records": "078c512e01eed455522b78b4bffedace6901175bdb65331aef08be95de831051",
+    "identifications": "4206689d1a29ad9f4c3696ef3a052e370b90418406cc915ffe494ddda4746eb7",
+    "operational_identifiers": "38bdcf54117d02ebe55cbbadb0aec885ba742d3905c909a80bf9657cf7e25e1d",
+    "source_records": "0cefc08d8d24a41984c7303aedd6164a96dcb5961a5502f729a70415efdd4445",
+    "supersessions": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "taxon_concepts": "85ccf715b261aa1b600660a407c3b1de35318718096aec954c4cbb81efda0af5",
+    "taxonomic_names": "fa107279d415d031af483df595f87ad35b7cedcdb70f2a35488f535dd53be8b2",
+    "unknown_external_ids": "4b5e15eca26dfe420ea7997456340ac1dc8e9796a4f5851d8b1b8e38559bb5d6"
+  },
+  "first_simulated_upsert": {
+    "inserted": {
+      "aliases": 0,
+      "external_id_conflicts": 48,
+      "external_id_mappings": 4276,
+      "history_records": 3033,
+      "identifications": 2262,
+      "operational_identifiers": 3033,
+      "source_records": 2262,
+      "supersessions": 0,
+      "taxon_concepts": 3033,
+      "taxonomic_names": 5295,
+      "unknown_external_ids": 2685
+    },
+    "state_sha256": "106c571783e54ad884056ca0d1d240aae7961e87d3ab4758a8b4b657398ff295"
+  },
+  "history_records": 3033,
+  "idempotency": {
+    "pass": true,
+    "same_state_sha256": true,
+    "second_run_all_rows_unchanged": true,
+    "second_run_inserts_zero": true
+  },
+  "packet": "L1_PACKET_02",
+  "schema": "JBLR_L1_PACKET_02_DRY_RUN_EVIDENCE_V1",
+  "second_simulated_upsert": {
+    "inserted": {
+      "aliases": 0,
+      "external_id_conflicts": 0,
+      "external_id_mappings": 0,
+      "history_records": 0,
+      "identifications": 0,
+      "operational_identifiers": 0,
+      "source_records": 0,
+      "supersessions": 0,
+      "taxon_concepts": 0,
+      "taxonomic_names": 0,
+      "unknown_external_ids": 0
+    },
+    "state_sha256": "106c571783e54ad884056ca0d1d240aae7961e87d3ab4758a8b4b657398ff295",
+    "unchanged": {
+      "aliases": 0,
+      "external_id_conflicts": 48,
+      "external_id_mappings": 4276,
+      "history_records": 3033,
+      "identifications": 2262,
+      "operational_identifiers": 3033,
+      "source_records": 2262,
+      "supersessions": 0,
+      "taxon_concepts": 3033,
+      "taxonomic_names": 5295,
+      "unknown_external_ids": 2685
+    }
+  },
+  "source_byte_immutable": true,
+  "source_release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "source_sha256_after": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71",
+  "source_sha256_before": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71",
+  "supersessions_asserted": 0,
+  "unknown_external_ids": 2685,
+  "writes": {
+    "dev_data_writes": 0,
+    "migrations": 0,
+    "neon_data_writes": 0,
+    "production_writes": 0,
+    "staging_data_writes": 0
+  }
+}
