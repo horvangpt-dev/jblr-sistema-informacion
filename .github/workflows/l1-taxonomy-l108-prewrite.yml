@@ -1,0 +1,45 @@
+name: JBLR L1.08 Prewrite Physical Adapter
+
+on:
+  push:
+    branches: [l1-taxonomy-backbone-20260826]
+    paths:
+      - 'src/jblr/taxonomy/staging_prewrite.py'
+      - 'src/jblr/taxonomy/postgres_adapter.py'
+      - 'tests/test_l1_taxonomy_l108_prewrite.py'
+      - 'contracts/taxonomy/l1_08_physical_mapping_matrix_v1.json'
+      - 'execution/L1/L1_08_PREWRITE_**'
+      - 'docs/architecture/L1_08_PREWRITE_**'
+      - 'db/l1_prewrite/l1_08_postgres_adapter_plan.sql'
+      - '.github/workflows/l1-taxonomy-l108-prewrite.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-l108-prewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Run L1.08 prewrite guards
+        env:
+          PYTHONPATH: src
+        run: python -m unittest tests.test_l1_taxonomy_l108_prewrite -v
+      - name: Verify persisted evidence is zero-write
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          e=json.loads(pathlib.Path('execution/L1/L1_08_PREWRITE_EVIDENCE.json').read_text())
+          assert e['writes'] == {'dev_dml':0,'staging_dml':0,'production_writes':0,'migrations':0}
+          assert e['staging']['taxonomy_live_objects_accounted'] == 23
+          assert e['collisions']['candidate_concepts'] == 3
+          assert e['collisions']['candidate_name_rows'] == 6
+          assert e['guards']['name_equals_identity'] is False
+          assert e['guards']['rc3_operational_id_to_physical_jblr_code'] is False
+          assert e['guards']['rc3_temp_id_to_physical_jblr_code'] is False
+          print('L1.08 PREWRITE persisted evidence PASS')
+          PY

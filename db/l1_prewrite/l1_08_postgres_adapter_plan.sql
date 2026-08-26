@@ -1,0 +1,24 @@
+-- JBLR L1.08 PREWRITE PHYSICAL ADAPTER PLAN
+-- NOT AUTHORIZED FOR EXECUTION.
+-- This file is documentation/test input only. L1.08_PREWRITE performs zero DML/DDL.
+--
+-- Future gate invariants:
+--   * BEGIN ISOLATION LEVEL SERIALIZABLE;
+--   * first boundary is migration_staging.raw_record
+--   * fresh physical core.resource IDs use uuidv7()
+--   * jblr_code is supplied as NULL; core triggers issue required codes
+--   * TWK-* / ID_TAXON_JBLR_* are never copied into jblr_code
+--   * name equality never selects an existing target_resource_id
+--   * collision candidates are needs_review/quarantined
+--   * any reconciliation failure => ROLLBACK
+--
+-- PSEUDOCODE ONLY (DO NOT RUN):
+-- INSERT INTO core.resource(resource_id, resource_type_code, jblr_code, validation_status)
+-- VALUES (uuidv7(), :resource_type_code, NULL, 'unreviewed')
+-- RETURNING resource_id, jblr_code;
+--
+-- The returned resource_id is then inserted into the corresponding taxonomy subtype,
+-- and only then may migration_staging.register_source_mapping(...) bind the stable
+-- source identity to that new target resource.
+--
+-- COMMIT requires a separate 00000 authorization and is intentionally absent here.

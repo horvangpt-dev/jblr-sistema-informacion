@@ -1,0 +1,122 @@
+{
+  "ci": "TO_BE_MATERIALIZED_BY_COMMITTED_WORKFLOW",
+  "collisions": {
+    "candidate_concepts": 3,
+    "candidate_name_rows": 6,
+    "candidates": [
+      {
+        "candidate_name": "Artemisia herba-alba",
+        "classification": "NAME_OVERLAP_ONLY_REVIEW_REQUIRED",
+        "identity_merge_authorized": false,
+        "prepared_name_rows": 2,
+        "rc3_provisional": false,
+        "rc3_source_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3:ROW:0361",
+        "rc3_taxon_concept_id": "TWK-7a89d9240a4dd39dcd67c0b9"
+      },
+      {
+        "candidate_name": "Papaver rhoeas",
+        "classification": "NAME_OVERLAP_ONLY_REVIEW_REQUIRED",
+        "identity_merge_authorized": false,
+        "prepared_name_rows": 2,
+        "rc3_provisional": false,
+        "rc3_source_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3:ROW:1223",
+        "rc3_taxon_concept_id": "TWK-25de774fbf529a9dce497745"
+      },
+      {
+        "candidate_name": "Plantago major",
+        "classification": "NAME_OVERLAP_ONLY_REVIEW_REQUIRED",
+        "identity_merge_authorized": false,
+        "prepared_name_rows": 2,
+        "rc3_provisional": false,
+        "rc3_source_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3:ROW:1237",
+        "rc3_taxon_concept_id": "TWK-b4e6c8ce0b3698aca6950bd7"
+      }
+    ],
+    "non_candidate_concepts": 3030,
+    "total_rc3_concepts": 3033
+  },
+  "future_physical_readiness": {
+    "all_prepared_rows_first_traceable_boundary": "migration_staging.raw_record",
+    "name_usage_relations_deferred_missing_rc3_treatment_resource": 5295,
+    "taxon_concepts_new_resource_candidates": 3030,
+    "taxon_concepts_quarantined_name_overlap": 3,
+    "taxonomic_names_new_resource_candidates": 5289,
+    "taxonomic_names_quarantined_name_overlap": 6
+  },
+  "guards": {
+    "fresh_external_harvest": false,
+    "name_equals_identity": false,
+    "rc3_operational_id_to_physical_jblr_code": false,
+    "rc3_temp_id_to_physical_jblr_code": false,
+    "reuse_live_jblr_code_on_name_overlap": false,
+    "reuse_live_uuid_on_name_overlap": false,
+    "second_staging_schema": false
+  },
+  "local_tests": "PASS_14_OF_14",
+  "precommit_live_recheck": "PASS_NO_DRIFT",
+  "prepared_dispositions": {
+    "DEFERRED_RELATION": 6538,
+    "QUARANTINE_EXPLICIT_CONFLICT": 48,
+    "QUARANTINE_NAME_OVERLAP": 9,
+    "READY_NEW_RESOURCE": 8319,
+    "STAGING_ONLY": 11013
+  },
+  "prewrite_intent_reconciliation": {
+    "changed": [],
+    "extra": [],
+    "first_count": 25927,
+    "missing": [],
+    "pass": true,
+    "second_count": 25927
+  },
+  "prewrite_intent_sha256": "1710b1737dff0ccf803f984efd01564ce572ff5406a82ca63c63bd9cf8e02b90",
+  "python_compile": "PASS",
+  "schema": "JBLR_L1_08_PREWRITE_EVIDENCE_V1",
+  "source": {
+    "packet02_counts": {
+      "aliases": 0,
+      "external_id_conflicts": 48,
+      "external_id_mappings": 4276,
+      "history_records": 3033,
+      "identifications": 2262,
+      "operational_identifiers": 3033,
+      "source_records": 2262,
+      "supersessions": 0,
+      "taxon_concepts": 3033,
+      "taxonomic_names": 5295,
+      "unknown_external_ids": 2685
+    },
+    "packet02_sha256": "4f433be676851833d5e609da6ea9891a4bf4fc9ca22eeb0d187b954f72625ae4",
+    "prepared_fingerprint": "fc39db86501c10ffd1f8cb38634897dc4f93d89c0af65353ba7e83254a763e73",
+    "prepared_total_rows": 25927,
+    "rc3_sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71"
+  },
+  "staging": {
+    "collision_summary": {
+      "DEPENDENCY_ON_NAME_OVERLAP_REVIEW_REQUIRED": 6,
+      "NAME_OVERLAP_ONLY_REVIEW_REQUIRED": 6,
+      "NO_RC3_COLLISION": 9,
+      "REFERENCE_TERM_NO_RC3_IDENTITY": 2
+    },
+    "ledger_semantic_sha256": "5e0591d576f2e103a0a0943f205360d3eadd55837e70dbe6f9b26db131514275",
+    "linked_demo_treatment_is_rc3_authorized": false,
+    "linked_demo_treatment_resource": "JBLR-DOC-00000001",
+    "migration_staging_counts": {
+      "import_run": 0,
+      "migration_event": 0,
+      "raw_record": 0,
+      "source_file": 0,
+      "source_map": 0
+    },
+    "postgres_version": "PostgreSQL 18.6",
+    "snapshot_branch_id": "br-shiny-bonus-b2ilao69",
+    "snapshot_semantic_sha256": "ee4e7d6b44c6ffd3c752b61e535bd6687ac6edc3f74588e4b26c0eaa5678fad1",
+    "taxonomy_live_objects_accounted": 23
+  },
+  "writes": {
+    "dev_dml": 0,
+    "migrations": 0,
+    "production_writes": 0,
+    "staging_dml": 0
+  }
+}

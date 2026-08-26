@@ -1,0 +1,74 @@
+{
+  "all_prepared_rows_first_boundary": "migration_staging.raw_record",
+  "deferred": {
+    "external_id_mappings": {
+      "count": 4276,
+      "reason": "requires accepted evidence.external_source physical mapping; no fresh harvest or source invention authorized"
+    },
+    "history_records": {
+      "count": 3033,
+      "reason": "no accepted direct physical table mapping; governance.record_revision is not silently repurposed as release history"
+    },
+    "identifications": {
+      "count": 2262,
+      "reason": "physical target_resource_id for source record is not semantically materialized"
+    },
+    "name_usage_relations": {
+      "count": 5295,
+      "reason": "taxonomy.name_usage requires treatment_resource_id and an allowed usage_role; current linked DOC is an unreviewed STAGING demo explicitly not a taxonomic source, and Packet02 DISPLAY/VERBATIM_SOURCE roles are not silently mapped to physical usage_role semantics"
+    }
+  },
+  "direct_materialization_after_future_gate": {
+    "taxon_concepts": {
+      "clear_candidates": 3030,
+      "mapping_note": "rank_term_key remains NULL unless explicitly supported; display name is stored as concept_label only",
+      "quarantined_name_overlap": 3,
+      "resource_type": "TXC",
+      "table": "taxonomy.taxon_concept"
+    },
+    "taxonomic_names": {
+      "clear_candidates": 5289,
+      "mapping_note": "scientific_name/canonical_name may preserve verbatim source text; no authorship/rank/genus parsing is inferred by prewrite adapter",
+      "quarantined_name_overlap": 6,
+      "resource_type": "NAM",
+      "table": "taxonomy.taxonomic_name"
+    }
+  },
+  "identity_policy": {
+    "name_match": "collision-review signal only; never identity merge",
+    "physical_jblr_code": "NULL on INSERT; deployed core.resource trigger issues code when required",
+    "physical_resource_id": "uuidv7() only at authorized DML time",
+    "rc3_jblr_operational_id": "source operational identifier only; never core.resource.jblr_code",
+    "rc3_taxon_concept_id": "source identity only; never core.resource.resource_id"
+  },
+  "input": {
+    "packet02_drive_id": "16XqthkD5bfBXYrM1ILPLYhBIQrBL7Gub",
+    "packet02_sha256": "4f433be676851833d5e609da6ea9891a4bf4fc9ca22eeb0d187b954f72625ae4",
+    "rc3_sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71"
+  },
+  "prepared_total_rows": 25927,
+  "required_existing_schemas": [
+    "core",
+    "taxonomy",
+    "migration_staging",
+    "governance",
+    "evidence"
+  ],
+  "schema": "JBLR_L1_08_PHYSICAL_MAPPING_MATRIX_V1",
+  "scope": "PREWRITE_ONLY_NO_DML",
+  "second_staging_schema": false,
+  "staging_only": {
+    "aliases": 0,
+    "external_id_conflicts": 48,
+    "operational_identifiers": 3033,
+    "source_records": 2262,
+    "supersessions": 0,
+    "unknown_external_ids": 2685
+  },
+  "write_boundary": {
+    "dev_dml": 0,
+    "migrations": 0,
+    "production_writes": 0,
+    "staging_dml": 0
+  }
+}
