@@ -1,0 +1,67 @@
+{
+  "schema": "JBLR_09_STIME00_RC3_RECOVERY_INPUTS_MANIFEST_v1",
+  "recoveryEvent": "JBLR-EVT-00000-20260826-ACCEPT-09-INCOMPLETE-MATERIALIZATION-RECOVERY-001",
+  "releaseEvent": "JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001",
+  "canonicalRc3": {
+    "driveId": "1g1ark3uunwMwhNJoIdeAqUQg-ZXJIGME",
+    "sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71"
+  },
+  "historicalStime00": {
+    "rows": 2210,
+    "uniqueTaxonWorkKeys": 2210,
+    "sha256": "94b4840377719e3f4ad8d0c27170fdbbbcf2a54d0f34a0952169b77e60510ed4",
+    "upstreamControlledQaEvent": "JBLR-EVT-08-20260826-STIME00-RC3-QA-001",
+    "twkIntersectionWithRc3Inherited": 2210,
+    "missingTaxonWorkKeys": 0,
+    "riojaOrderMismatches": 0,
+    "identityHubKeyMismatches": 0,
+    "integrationIdChanges": 0
+  },
+  "boundedInputs": {
+    "NEW_TEMP_261.jsonl": {
+      "rows": 261,
+      "bytes": 171507,
+      "sha256": "7aeda5a222f9acf4da0e93ab7a06c794b163de95f74ef0fa8548403e7541dc0f"
+    },
+    "NEW_OFFICIAL_562.jsonl": {
+      "rows": 562,
+      "bytes": 361871,
+      "sha256": "76570b7d4e621208b48212efd29105d710dc0866dd2f0cdb77a109d241d2d6c3"
+    },
+    "INHERITED_ID_EVIDENCE_1405_WITH_TWK.jsonl": {
+      "rows": 1405,
+      "bytes": 907923,
+      "sha256": "f1a580540c225827b497db4b5c0945e955bcbd973e88436bac841239de34e0af"
+    },
+    "HISTORICAL_REVIEW_ROWS_14.jsonl": {
+      "rows": 14,
+      "bytes": 4759,
+      "sha256": "cb15d8a5d08d2699f232e2e44839282bbfa00e7db945fc89297a479b89c72ba9"
+    }
+  },
+  "archive": {
+    "file": "stime00_recovery_inputs.tar.gz",
+    "bytes": 129424,
+    "sha256": "3813af25163ef34c970bdca192393237086f915793cc5a9d026407b407aabb57",
+    "chunks": [
+      {"part": "00", "decodedBytes": 40000, "decodedSha256": "33fcdcf511fffe18085b4190da2476b55f956ba2a94b9316286cb2a469ab4ebb"},
+      {"part": "01", "decodedBytes": 40000, "decodedSha256": "93e269ba917fa669683c863d2a90196c4091d2382d78fd1eeb9e45699de6bb5e"},
+      {"part": "02", "decodedBytes": 40000, "decodedSha256": "c7d872f9d7e95abc56e63bfa5615d13fa84f615cbc698928128dc7e51969a25d"},
+      {"part": "03", "decodedBytes": 9424, "decodedSha256": "dcde537244431262eee27e41c35aa4d217568c261e08a7c8c0ed0976af9ce782"}
+    ]
+  },
+  "guards": {
+    "doNotRerunAll3033": true,
+    "hardGateA": "2210_OF_2210_NATIONAL_IDS_UNCHANGED_REUSED_FROM_ACCEPTED_CONTROLLED_QA_AND_PRESERVED_BY_ZERO_HISTORICAL_MUTATION",
+    "extensionGateB": "823_OF_823_AUDITABLE_TERMINAL_IDENTITY_STATE",
+    "noFuzzy": true,
+    "noParentIdInheritance": true,
+    "noRankCollapse": true,
+    "noHybridCollapse": true,
+    "sourceFailureNotFound": false,
+    "neonWrites": 0,
+    "databaseWrites": 0,
+    "rc2Mutation": 0,
+    "stime00FinalClose": false
+  }
+}
