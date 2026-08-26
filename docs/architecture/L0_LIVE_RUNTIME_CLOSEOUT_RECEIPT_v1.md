@@ -31,8 +31,10 @@ No skip guard was removed.
 Workflow:
 `.github/workflows/l0-live-runtime-validation.yml`
 
-Trigger:
-`workflow_dispatch` only.
+Primary branch-safe trigger:
+edit and commit `.github/runtime-validation-trigger.txt` on branch `l0-software-foundation-20260826` after all three secrets are configured.
+
+The workflow also retains `workflow_dispatch`, but GitHub requires a manually dispatched workflow definition to exist on the repository default branch. This package does not promote or copy the workflow to the default branch, so the branch-safe push trigger is the authorized closeout path.
 
 Permissions:
 `contents: read`.
