@@ -1,0 +1,59 @@
+{
+  "build": {
+    "compression": "ZIP_DEFLATED",
+    "entry_order": "lexicographic",
+    "entry_timestamp": "1980-01-01T00:00:00Z"
+  },
+  "counts": {
+    "hubs": 3033,
+    "inherited_id_evidence": 1405,
+    "source_rows": 2262
+  },
+  "drive_id": "10OmBo_O0AVkSt3f1nCFJ9tvw0iv-f94b",
+  "drive_url": "https://drive.google.com/file/d/10OmBo_O0AVkSt3f1nCFJ9tvw0iv-f94b/view?usp=drivesdk",
+  "files": {
+    "contracts/id_alias_supersession_rules_v1.json": {
+      "bytes": 2473,
+      "sha256": "5863fc36df9399df30b2e5b5d7d5531b61c8534f926481c5b00e91858fe7d99c"
+    },
+    "contracts/identity_schema_v1.json": {
+      "bytes": 7392,
+      "sha256": "b48aa65375062d308adc8f18e3a0553cb6859fc780777c3f8dc700995b163d48"
+    },
+    "contracts/release_contract_v1.json": {
+      "bytes": 5660,
+      "sha256": "5e7b3821de5980c375e0d4b3c8b35dddf5410a36c4fb8e18c42149bfd40bef12"
+    },
+    "relations/ALIASES.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "relations/SUPERSESSIONS.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source/JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3.zip": {
+      "bytes": 756173,
+      "sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71"
+    }
+  },
+  "local_test_suite": "5/5 PASS",
+  "output_bytes": 759621,
+  "output_sha256": "0ef73385bcf1362f8ba07967c0bffc6c6d28c45a375373068b513d88b441d9eb",
+  "packet": "L1_PACKET_01",
+  "persisted_package": "YES",
+  "production_writes": 0,
+  "release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "schema": "JBLR_L1_REPRODUCIBLE_PACKAGE_MANIFEST_V1",
+  "semantic_guards": {
+    "aliases_asserted": 0,
+    "name_is_identity": false,
+    "production_writes": 0,
+    "source_record_is_taxon_identity": false,
+    "staging_writes": 0,
+    "supersessions_asserted": 0
+  },
+  "source_sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71",
+  "staging_writes": 0,
+  "validation_status": "PASS"
+}

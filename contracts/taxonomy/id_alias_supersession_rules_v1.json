@@ -1,0 +1,73 @@
+{
+  "rc3_relation_materialization": {
+    "aliases_file": "relations/ALIASES.jsonl",
+    "initial_alias_rows": 0,
+    "initial_supersession_rows": 0,
+    "semantic_note": "Zero rows means no relation is asserted by L1_PACKET_01; it does not mean external absence.",
+    "supersessions_file": "relations/SUPERSESSIONS.jsonl"
+  },
+  "rules": [
+    {
+      "id": "ID-001",
+      "rule": "For RC3 materialization, taxon_concept_id is exactly taxon_identity_hub_key. No name-derived ID is permitted."
+    },
+    {
+      "id": "ID-002",
+      "rule": "taxon_work_key must equal taxon_identity_hub_key for every RC3 hub; divergence is FAIL."
+    },
+    {
+      "id": "ID-003",
+      "rule": "ID_TAXON_JBLR and ID_TAXON_GOBIERNO are identifiers attached to a concept and are not substitutes for the concept identity key."
+    },
+    {
+      "id": "ID-004",
+      "rule": "Empty or unknown external identifiers remain unknown; they are not zero, absence, or synthetic values."
+    },
+    {
+      "id": "ID-005",
+      "rule": "L1_PACKET_01 does not mint identities outside the frozen RC3 universe."
+    },
+    {
+      "id": "ALIAS-001",
+      "rule": "An alias must resolve to exactly one existing taxon concept and cannot create, merge, or collapse concepts."
+    },
+    {
+      "id": "ALIAS-002",
+      "rule": "A name match alone cannot create an alias."
+    },
+    {
+      "id": "ALIAS-003",
+      "rule": "Historical aliases are retained; deletion is not permitted."
+    },
+    {
+      "id": "SUP-001",
+      "rule": "Supersession/replacement is an explicit directed relation between two distinct existing concept IDs."
+    },
+    {
+      "id": "SUP-002",
+      "rule": "Supersession/replacement requires provenance and a non-empty reason."
+    },
+    {
+      "id": "SUP-003",
+      "rule": "Supersession/replacement never deletes the historical source concept."
+    },
+    {
+      "id": "SUP-004",
+      "rule": "Cycles in supersession/replacement relations are invalid."
+    },
+    {
+      "id": "PROV-001",
+      "rule": "Every identification, external identifier, alias and supersession/replacement relation requires provenance."
+    },
+    {
+      "id": "NAME-001",
+      "rule": "Taxonomic names are separate records/assertions; NAME != IDENTITY."
+    },
+    {
+      "id": "SRC-001",
+      "rule": "Source records are evidence-bearing records; SOURCE_RECORD != TAXON_IDENTITY."
+    }
+  ],
+  "schema": "JBLR_L1_ID_ALIAS_SUPERSESSION_RULES_V1",
+  "scope": "L1_PACKET_01"
+}

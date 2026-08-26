@@ -1,0 +1,167 @@
+{
+  "counts": {
+    "hubs": 3033,
+    "inherited_id_evidence": 1405,
+    "new_official": 562,
+    "new_temporary": 261,
+    "rc2_inherited": 2210,
+    "source_rows": 2262
+  },
+  "expected_internal_files": {
+    "INHERITED_ID_EVIDENCE_1405_part01.jsonl": {
+      "bytes": 213929,
+      "sha256": "c39ae0c87d375b95beb4b2400658539369411846ed2d076eeade229e01f69052"
+    },
+    "INHERITED_ID_EVIDENCE_1405_part02.jsonl": {
+      "bytes": 211944,
+      "sha256": "0a35bc026bfa4bf6eb8da360ae7f5163d77e94e7de4aef14868840fa086a5b7c"
+    },
+    "INHERITED_ID_EVIDENCE_1405_part03.jsonl": {
+      "bytes": 171684,
+      "sha256": "08a95d6fb475b22cab9e51666193f63ae14f730c65a5e7ae099e2080dd843391"
+    },
+    "MANIFEST.json": {
+      "bytes": 4579,
+      "sha256": "d927978c9686ebe151d098676f605b38936832008dd12a0cad5f538767a53fac"
+    },
+    "QA_FINAL.json": {
+      "bytes": 463,
+      "sha256": "a2c43038b54d34d2418793d0bb191b26d04c183f1f4eb77ea329ace420bdb771"
+    },
+    "README_RC3_CANDIDATE.md": {
+      "bytes": 1173,
+      "sha256": "f01bf08923f9d8dd4135b1032035654be5349997495e95d2100b8c5e57a956fe"
+    },
+    "RIOJA_SOURCE_ROUTING_2262_AUDIT.csv": {
+      "bytes": 681778,
+      "sha256": "59f73908cce3ff6ef83c171de170e6ce254cb731473886b1a23028da58e2d2b2"
+    },
+    "RIOJA_SOURCE_ROUTING_2262_part01.jsonl": {
+      "bytes": 410205,
+      "sha256": "800cf8d5eca95f301ecc1aa715cc2bf336351b2b30c93388f51f19cc28ad0ae4"
+    },
+    "RIOJA_SOURCE_ROUTING_2262_part02.jsonl": {
+      "bytes": 409829,
+      "sha256": "916a8c94104693e07562ee5d7c34078a25626303e984af9ab168706fc1f7a80e"
+    },
+    "RIOJA_SOURCE_ROUTING_2262_part03.jsonl": {
+      "bytes": 409763,
+      "sha256": "633751407362ab102f364448fd992c58cb0019c4eac410fc25503a5d5e7afd01"
+    },
+    "RIOJA_SOURCE_ROUTING_2262_part04.jsonl": {
+      "bytes": 409144,
+      "sha256": "99280d6dde248483e9a8041ecf700d3c0d436c8cd0c9700557ea90779175532d"
+    },
+    "RIOJA_SOURCE_ROUTING_2262_part05.jsonl": {
+      "bytes": 212944,
+      "sha256": "b9e4774eb5f5fba1ca9028662168147092d8a0a745476921a94d7c8ca5ae4a7f"
+    },
+    "SUCCESSOR_SUMMARY.json": {
+      "bytes": 1112,
+      "sha256": "9cbfe6abf2baaa6763f12ec54588ffbeb0878b96621abaee99eb5ceabcfac440"
+    },
+    "TAXON_HUBS_3033_AUDIT.csv": {
+      "bytes": 646663,
+      "sha256": "154fbdd87604fef00d02463ddbbfe581a628088b99ecf4c5f382e17f8b026b09"
+    },
+    "TAXON_HUBS_3033_part01.jsonl": {
+      "bytes": 398377,
+      "sha256": "35893fc8ea9cd21dea5e18c5cd9bf0378551907410f337e37e3faa3b18ca98f8"
+    },
+    "TAXON_HUBS_3033_part02.jsonl": {
+      "bytes": 398846,
+      "sha256": "a4af5b8cce0657394aec7e7ee84822cf3d16c48de659f859bccd722f186ee7a8"
+    },
+    "TAXON_HUBS_3033_part03.jsonl": {
+      "bytes": 399381,
+      "sha256": "cbf5484f9519774022fecd7bcf5765c4628a0d82fc2de8edecaab3581a177e34"
+    },
+    "TAXON_HUBS_3033_part04.jsonl": {
+      "bytes": 395731,
+      "sha256": "d671bbd953abd60b62a71e28e6d25182a446a06125504098cbf585c4013b8f11"
+    },
+    "TAXON_HUBS_3033_part05.jsonl": {
+      "bytes": 388764,
+      "sha256": "83025b8576189cb23a3296ad4d5dc7d96520ed398cddcd6eba4763a2849c9bff"
+    },
+    "TAXON_HUBS_3033_part06.jsonl": {
+      "bytes": 21373,
+      "sha256": "562546e1ada18be528529c601b500385c55da0a7b54c6162e9318fd3b6749112"
+    }
+  },
+  "identity_guards": {
+    "historical_identity_deletion_allowed": false,
+    "name_is_identity": false,
+    "rc3_work_key_must_equal_hub_key": true,
+    "silent_name_replacement_allowed": false,
+    "source_record_is_taxon_identity": false,
+    "taxon_concept_key_field": "taxon_identity_hub_key"
+  },
+  "packet": "L1_PACKET_01",
+  "release_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3",
+  "reproducibility": {
+    "compression": "ZIP_DEFLATED",
+    "manifest_json": "UTF-8, sort_keys=true, indent=2, trailing_newline=true",
+    "zip_entry_order": "lexicographic",
+    "zip_timestamp": "1980-01-01T00:00:00Z"
+  },
+  "required_fields": {
+    "hub": [
+      "successor_release_row_id",
+      "rioja_order",
+      "taxon_work_key",
+      "taxon_identity_hub_key",
+      "predecessor_release_row_id",
+      "hub_origin",
+      "hub_display_name",
+      "hub_display_name_state",
+      "ID_TAXON_GOBIERNO",
+      "ID_TAXON_JBLR",
+      "ID_TAXON_JBLR_STATE",
+      "PREVIOUS_ID_TAXON_JBLR",
+      "first_rioja_vascular_source_order",
+      "first_raw_excel_row",
+      "source_record_count",
+      "member_source_ids"
+    ],
+    "inherited_id_evidence": [
+      "predecessor_release_row_id",
+      "rioja_id",
+      "rioja_name",
+      "evidence_origin",
+      "official_id",
+      "source_rank",
+      "current_miteco_names",
+      "current_miteco_ranks",
+      "integration_promotion_state",
+      "current_id_changed_in_integration"
+    ],
+    "source_routing": [
+      "source_record_key",
+      "source_snapshot_sha256",
+      "raw_excel_row",
+      "rioja_vascular_source_order",
+      "global_cross_row",
+      "rioja_id",
+      "source_name_verbatim",
+      "global_cross_name_normalized",
+      "taxon_work_key",
+      "successor_release_row_id",
+      "identity_route",
+      "identity_route_reason",
+      "classification_v3",
+      "actor06_final_category",
+      "actor06_selected_official_id",
+      "actor06_evidence_pointer",
+      "raw_row_sha256"
+    ]
+  },
+  "schema": "JBLR_L1_RELEASE_CONTRACT_V1",
+  "source": {
+    "acquisition_rule": "Download exact Drive object by drive_id; reject before extraction unless SHA-256 matches.",
+    "bytes": 756173,
+    "drive_filename": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC3_CANDIDATE_QA_PASS.zip",
+    "drive_id": "1g1ark3uunwMwhNJoIdeAqUQg-ZXJIGME",
+    "sha256": "d45b09e8b57dc403d675f6cada9bd4d65b7411fa57063fd7c90df286ed3b3c71"
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "$defs": {
+    "Alias": {
+      "additionalProperties": false,
+      "properties": {
+        "alias_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "alias_type": {
+          "enum": [
+            "HISTORICAL_INTERNAL_ID",
+            "LEGACY_OPERATIONAL_ID",
+            "SOURCE_IDENTIFIER",
+            "NAME_REFERENCE"
+          ]
+        },
+        "alias_value": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "target_taxon_concept_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "alias_id",
+        "alias_value",
+        "alias_type",
+        "target_taxon_concept_id",
+        "provenance"
+      ],
+      "type": "object"
+    },
+    "ExternalIdentifier": {
+      "additionalProperties": false,
+      "properties": {
+        "external_identifier_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "scheme": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "subject_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "subject_type": {
+          "enum": [
+            "TAXON_CONCEPT",
+            "TAXONOMIC_NAME",
+            "SOURCE_RECORD"
+          ]
+        },
+        "value": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "external_identifier_id",
+        "scheme",
+        "value",
+        "subject_type",
+        "subject_id",
+        "provenance"
+      ],
+      "type": "object"
+    },
+    "Identification": {
+      "additionalProperties": false,
+      "properties": {
+        "identification_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "status": {
+          "enum": [
+            "REFERENCE",
+            "ASSERTION",
+            "VALIDATED_FACT",
+            "UNKNOWN"
+          ]
+        },
+        "subject_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "taxon_concept_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "identification_id",
+        "subject_record_id",
+        "taxon_concept_id",
+        "status",
+        "provenance"
+      ],
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_pointer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recorded_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_pointer": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_type": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_pointer"
+      ],
+      "type": "object"
+    },
+    "SourceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "raw_record_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_name_verbatim": {
+          "type": "string"
+        },
+        "source_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "taxon_concept_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "source_record_id",
+        "source_name_verbatim",
+        "provenance"
+      ],
+      "type": "object"
+    },
+    "SupersessionRelation": {
+      "additionalProperties": false,
+      "properties": {
+        "from_taxon_concept_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "reason": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "relation_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "relation_type": {
+          "enum": [
+            "SUPERSEDED_BY",
+            "REPLACED_BY"
+          ]
+        },
+        "to_taxon_concept_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "relation_id",
+        "from_taxon_concept_id",
+        "to_taxon_concept_id",
+        "relation_type",
+        "reason",
+        "provenance"
+      ],
+      "type": "object"
+    },
+    "TaxonConcept": {
+      "additionalProperties": false,
+      "properties": {
+        "display_name": {
+          "type": "string"
+        },
+        "display_name_state": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "provisional": {
+          "type": "boolean"
+        },
+        "source_release_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_release_row_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "taxon_concept_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "taxon_concept_id",
+        "source_release_id",
+        "source_release_row_id",
+        "display_name",
+        "display_name_state",
+        "provenance"
+      ],
+      "type": "object"
+    },
+    "TaxonomicName": {
+      "additionalProperties": false,
+      "properties": {
+        "name_verbatim": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "relationship_to_concept": {
+          "enum": [
+            "DISPLAY",
+            "ACCEPTED_NAME_ASSERTION",
+            "SYNONYM_ASSERTION",
+            "VERBATIM_SOURCE"
+          ]
+        },
+        "taxon_concept_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "taxonomic_name_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "validation_state": {
+          "enum": [
+            "REFERENCE",
+            "ASSERTION",
+            "VALIDATED_FACT",
+            "UNKNOWN"
+          ]
+        }
+      },
+      "required": [
+        "taxonomic_name_id",
+        "name_verbatim",
+        "relationship_to_concept",
+        "provenance"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://jblr.invalid/schemas/taxonomy/identity-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Software schema only. It separates identity, names, source records, identifications, external identifiers, aliases and supersession relations; it does not add botanical assertions to RC3.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/TaxonConcept"
+    },
+    {
+      "$ref": "#/$defs/TaxonomicName"
+    },
+    {
+      "$ref": "#/$defs/SourceRecord"
+    },
+    {
+      "$ref": "#/$defs/Identification"
+    },
+    {
+      "$ref": "#/$defs/ExternalIdentifier"
+    },
+    {
+      "$ref": "#/$defs/Alias"
+    },
+    {
+      "$ref": "#/$defs/SupersessionRelation"
+    }
+  ],
+  "title": "JBLR Taxonomic Identity Contract v1"
+}

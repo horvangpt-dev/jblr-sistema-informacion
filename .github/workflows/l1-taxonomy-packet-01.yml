@@ -1,0 +1,45 @@
+name: JBLR L1 Taxonomy Packet 01
+
+on:
+  push:
+    branches:
+      - l1-taxonomy-backbone-20260826
+    paths:
+      - 'src/jblr/taxonomy/**'
+      - 'tests/test_l1_taxonomy_packet01.py'
+      - 'contracts/taxonomy/**'
+      - 'execution/L1/**'
+      - '.github/workflows/l1-taxonomy-packet-01.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-l1-packet-01:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Run deterministic validator and relation tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest tests.test_l1_taxonomy_packet01 -v
+      - name: Verify persisted RC3 validation evidence
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          contract=json.loads(pathlib.Path('contracts/taxonomy/release_contract_v1.json').read_text())
+          validation=json.loads(pathlib.Path('execution/L1/L1_PACKET_01_RC3_VALIDATION.json').read_text())
+          build=json.loads(pathlib.Path('execution/L1/L1_PACKET_01_BUILD_EVIDENCE.json').read_text())
+          assert validation['status'] == 'PASS'
+          assert validation['source_sha256'] == contract['source']['sha256']
+          assert validation['counts']['hubs'] == contract['counts']['hubs'] == 3033
+          assert validation['counts']['source_rows'] == contract['counts']['source_rows'] == 2262
+          assert build['validation_status'] == 'PASS'
+          assert build['source_sha256'] == contract['source']['sha256']
+          assert len(build['output_sha256']) == 64
+          print('L1_PACKET_01 persisted evidence PASS')
+          PY
