@@ -53,3 +53,5 @@ jobs:
           assert all(v == 0 for v in e['writes'].values())
           print('L1_PACKET_02 persisted real-RC3 evidence PASS')
           PY
+
+# Contents API trigger only; validation semantics unchanged.
