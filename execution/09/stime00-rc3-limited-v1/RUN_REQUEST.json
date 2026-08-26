@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "releaseEvent": "JBLR-EVT-00000-20260826-ACCEPT-08-STIME00-RC3-QA-AND-RELEASE-09-001",
+  "scopeNewTemp": 261,
+  "scopeNewOfficialReuse": 562,
+  "historicalReviewQueue": 14,
+  "inheritedEvidence": 1405,
+  "doNotRerunAll3033": true,
+  "hardGateAPolicy": "2210_OF_2210_NATIONAL_IDS_UNCHANGED",
+  "extensionGateB": "823_OF_823_AUDITABLE_TERMINAL_IDENTITY_STATE",
+  "noFuzzy": true,
+  "noParentIdInheritance": true,
+  "noRankCollapse": true,
+  "noHybridCollapse": true,
+  "sourceFailureNotFound": false,
+  "neonWrites": 0,
+  "databaseWrites": 0,
+  "mutateRC2": false,
+  "finalClose": false
+}
