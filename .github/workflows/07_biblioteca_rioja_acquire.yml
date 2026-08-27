@@ -1,6 +1,12 @@
 name: JBLR 07 Rioja Acquire
 
 on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - 'library/07_biblioteca/acquisition/rioja_targets_batch02.json'
+      - 'library/07_biblioteca/acquisition/acquire_rioja_batch.py'
   workflow_dispatch:
 
 concurrency:
