@@ -1,0 +1,56 @@
+{
+  "actor": "07.V2",
+  "date": "2026-08-27",
+  "human_navigation_strategy": {
+    "single_physical_copy": true,
+    "drive_multi_parent_supported": false,
+    "implementation": "THEMATIC_GOOGLE_DOC_INDEXES_LINKING_CANONICAL_FILES",
+    "reason": "Google Drive moves a file when adding a new parent; native shortcut creation is not exposed by the connector. Human navigation must therefore use live index documents without copying PDFs."
+  },
+  "active_human_indexes": [
+    {
+      "folder": "ES/01 · PROSPECCIÓN · SCOUTING · OBSERVACIÓN",
+      "document_id": "1wuTqiRhhqDL7hvRoznd_iqDzfMNqQglhBx2T98Xg57M"
+    },
+    {
+      "folder": "ES/02 · POBLACIONES · DEMOGRAFÍA · SEGUIMIENTO",
+      "document_id": "1Pp--Rrweo41NbXcKeuegCDi1CCVVE9dG9zVoqwIOYTo"
+    },
+    {
+      "folder": "ES/13 · LEGISLACIÓN · NORMATIVA · ESTÁNDARES",
+      "document_id": "1gjXVyoIu7WySUDYyNa4Jg7SHx6mLWWJCJL_I9XAwcXE"
+    },
+    {
+      "folder": "ES/15 · MAPAS · GEOREFERENCIACIÓN · GIS",
+      "document_id": "1O3dIfLHTKVV4UaZ7u1ZD2gIHBqk_0b_39_i7XfJ5Wgs"
+    },
+    {
+      "folder": "ES/18 · ECOLOGÍA · HÁBITAT · AMENAZAS",
+      "document_id": "1IToIIgWlx1vMKtExHGSKxD2iXbLMKPHVBj5MAhP1K7o"
+    },
+    {
+      "folder": "ES/24 · POBLACIONES AMENAZADAS · DATOS SENSIBLES",
+      "document_id": "1l0zETTHCo_kBwvLkmm_SyUGToUcyYng6pm9S78py1vI"
+    }
+  ],
+  "duplicate_resolution": [
+    {
+      "canonical_identity": "JBLR-LIB-00000092",
+      "canonical_drive_id": "16mUuEXJ6nDRe7ldw6MyS85UpYJa1apaG",
+      "deleted_drive_id": "1C8WQ0RDN7ArEHE09h8mAZeECbKryV7G4",
+      "title": "Guía de Inventario de la Flora y Vegetación",
+      "sha256": "101131ce7a9b9b05b3adf87b2814c27009ddd49879b807fb1aacb7433826c70b",
+      "status": "BINARY_IDENTICAL_DUPLICATE_DELETED"
+    },
+    {
+      "canonical_identity": "JBLR-LIB-00000076",
+      "canonical_drive_id": "1uJMykibzEqDY65Zsm-mPpT_7XXoGE6PS",
+      "deleted_drive_id": "1pWcRfHRkDRrNXGftFxQNtoJ3nCJnffr9",
+      "title": "Guia de procedimentos de PLANTAS · Monitoramento da Biodiversidade",
+      "sha256": "311c2f4b7a2ab2ccf3fd1c4e3805b73fb66b5913ad400b21ece798536910cf49",
+      "status": "BINARY_IDENTICAL_DUPLICATE_DELETED"
+    }
+  ],
+  "duplicate_policy": "DELETE_ONLY_AFTER_BINARY_IDENTITY_PROOF_OR_EQUIVALENT_STRONG_EVIDENCE",
+  "human_catalog_duplicate_entries_removed": ["JBLR-LIB-00000093", "JBLR-LIB-00000079"]
+}
