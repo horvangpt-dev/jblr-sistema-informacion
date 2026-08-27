@@ -1,7 +1,7 @@
 {
-  "vocabulary_version": "1.0.3",
+  "vocabulary_version": "1.0.4",
   "epistemic_states": ["KNOWN", "UNKNOWN", "NOT_ASSESSED", "NOT_APPLICABLE", "NOT_FOUND"],
-  "LANGUAGE": ["es", "en", "fr", "pt", "it", "ru", "zh", "id", "hr", "bg", "de", "nl", "cs", "sk", "tr", "th", "other", "und"],
+  "LANGUAGE": ["es", "en", "fr", "pt", "it", "ru", "zh", "id", "hr", "bg", "de", "nl", "cs", "sk", "tr", "th", "lv", "ja", "other", "und"],
   "DOCUMENT_TYPE": ["article", "book", "book_chapter", "manual", "protocol", "standard", "guideline", "report", "thesis", "dissertation", "form", "template", "datasheet", "catalogue", "flora", "identification_key", "presentation", "dataset", "image", "web_capture", "supplement", "annex", "other", "unknown"],
   "JBLR_AREA": ["conservation", "field_observation_collection", "laboratory_processing_characterization", "storage", "viability_germination", "herbarium", "taxonomy_nomenclature", "research", "horticulture", "environmental_education", "management_governance", "multi_area", "other", "unknown"],
   "PROCESS": ["selection", "localization", "permissions", "prospection", "field_observation", "sampling", "collection", "transport", "reception", "cleaning", "processing", "drying", "characterization", "packaging", "storage", "inventory", "viability_testing", "germination", "dormancy_treatment", "herbarium_preparation", "identification", "taxonomy", "georeferencing", "documentation", "quality_assurance", "traceability", "expedition", "transfer", "equipment_facilities", "multi_process", "other", "unknown"],
@@ -18,7 +18,7 @@
   "RIGHTS_STATUS": ["unknown", "public_domain", "open_license", "copyrighted_access_permitted", "internal", "restricted", "other"],
   "RELATION_TYPE": ["parent_document", "child_document", "related_file", "translation_of", "supplement_to", "annex_to", "version_of", "supersedes", "superseded_by", "duplicate_of", "derivative_of"],
   "$defs": {
-    "LANGUAGE": {"enum": ["es", "en", "fr", "pt", "it", "ru", "zh", "id", "hr", "bg", "de", "nl", "cs", "sk", "tr", "th", "other", "und"]},
+    "LANGUAGE": {"enum": ["es", "en", "fr", "pt", "it", "ru", "zh", "id", "hr", "bg", "de", "nl", "cs", "sk", "tr", "th", "lv", "ja", "other", "und"]},
     "DOCUMENT_TYPE": {"enum": ["article", "book", "book_chapter", "manual", "protocol", "standard", "guideline", "report", "thesis", "dissertation", "form", "template", "datasheet", "catalogue", "flora", "identification_key", "presentation", "dataset", "image", "web_capture", "supplement", "annex", "other", "unknown"]},
     "JBLR_AREA": {"enum": ["conservation", "field_observation_collection", "laboratory_processing_characterization", "storage", "viability_germination", "herbarium", "taxonomy_nomenclature", "research", "horticulture", "environmental_education", "management_governance", "multi_area", "other", "unknown"]},
     "PROCESS": {"enum": ["selection", "localization", "permissions", "prospection", "field_observation", "sampling", "collection", "transport", "reception", "cleaning", "processing", "drying", "characterization", "packaging", "storage", "inventory", "viability_testing", "germination", "dormancy_treatment", "herbarium_preparation", "identification", "taxonomy", "georeferencing", "documentation", "quality_assurance", "traceability", "expedition", "transfer", "equipment_facilities", "multi_process", "other", "unknown"]},
