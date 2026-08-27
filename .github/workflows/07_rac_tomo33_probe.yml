@@ -1,6 +1,12 @@
 name: JBLR 07 Cámara Niño Discovery
 
 on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - 'library/07_biblioteca/diagnostics/probe_rac_tomo33.py'
+      - 'library/07_biblioteca/diagnostics/probe_ia_camaranino.py'
   workflow_dispatch:
 
 concurrency:
