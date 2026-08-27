@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "actor": "07.V2",
+  "directive_event": "JBLR-EVT-00000-20260827-REDESIGN-07-DUAL-INGRESS-CENTRAL-LIBRARY-CONSOLIDATION-001",
+  "principles": ["ONE_JBLR_LIBRARY","DUAL_INGRESS","ONE_CANONICAL_FILE_MANY_VIEWS","LIBRARY_FIRST"],
+  "root": {"name":"07_BIBLIOTECA","drive_id":"1d3irAPiX5drg1FNlOzD6ENTe_83pSldr"},
+  "components": {
+    "human_ingress": {"name":"00 · SUBIR AQUÍ · ARCHIVOS JOAQUÍN","drive_id":"18oyxoat65ubmkrpre88F2ygqfe-VDy4h","path":"07_BIBLIOTECA/00_ENTRADAS/00 · SUBIR AQUÍ · ARCHIVOS JOAQUÍN","origin_channel":"HUMAN_USER_UPLOAD"},
+    "agent_ingress": {"name":"JBLR-MOD-0001_HERBARIOS_LOCALIDADES_GEOREFERENCIACION","drive_id":"1TZA7e-csmdfU3dIxs7Z-VVWmKV0JCKfs","path":"07_BIBLIOTECA/00_STAGING/JBLR-MOD-0001_HERBARIOS_LOCALIDADES_GEOREFERENCIACION","origin_channel":"AGENT_AUTOMATED_SEARCH","note":"Physical path preserved to avoid breaking active 001 M01."},
+    "canonical_archive": {"drive_id":"1ZhVfq9KiJrm96g_ml_vHlfo-BIPxCPID","path":"07_BIBLIOTECA/01_ARCHIVO_CANONICO","subroots":{"human_user":"1WKbAvEBTcge0b0oDicL49nMuJsvYaOuA","agent_automated":"1IEJ6uqMGWdEMu3PsiYY0LtNlgo1MjQNl","legacy_institutional":"1jG55XMKsvj0Y94a9ThowyX1yMEC7rzWs","pending_origin":"15deA9qx4c9ebqlMPRLvLV7S2_zUxwoyD"}},
+    "ai_index": {"drive_id":"1fnXoT2l9QDTrHxrarpzgRiM_VratOZPb","central_index_folder_id":"1XFzOS6ONo-Ti-29bpAVBSNt1c4WWVedp","path":"07_BIBLIOTECA/02_INDICE_IA/JBLR_CENTRAL_LIBRARY_INDEX"},
+    "human_view": {"drive_id":"1x_tgK89B74Tp0hEEZLMdSfrP6gRSHItq","path":"07_BIBLIOTECA/03_BIBLIOTECA_HUMANA","scope":"USER_UPLOADED_FILES_ONLY","languages":["ES","EN","FR","PT","OTHER"]},
+    "metadata_relations": {"drive_id":"1B5-INdKWMAJGZ2pBF3Q9xtAh7MHHNCdt","path":"07_BIBLIOTECA/04_METADATA_Y_RELACIONES"},
+    "control_qa": {"drive_id":"1zMAfgaUrTw4YCp-sCVzzEeHedbWBieMy","path":"07_BIBLIOTECA/05_CONTROL_Y_QA"},
+    "archive_control": {"drive_id":"18sX4102LK23ivJp-KeG60lH5RYYyvCaw","path":"07_BIBLIOTECA/99_ARCHIVO_DE_CONTROL"}
+  },
+  "human_hierarchy": ["LANGUAGE","PURPOSE_PROCESS_MODULE","SOURCE_INSTITUTION_ENTITY","DOCUMENT"],
+  "binary_duplication_policy": "NO_BY_DEFAULT"
+}

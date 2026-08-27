@@ -1,0 +1,9 @@
+{
+  "schema_version":"1.0.0",
+  "directive_event":"JBLR-EVT-00000-20260827-REDESIGN-07-DUAL-INGRESS-CENTRAL-LIBRARY-CONSOLIDATION-001",
+  "status":"PARTIAL",
+  "operations_summary":{"institution_collection_folders_moved":25,"m01_preexisting_folder_moved":1,"legacy_mirror_folder_moved":1,"mixed_human_source_folder_moved_to_pending_origin":1,"legacy_v1_content_folders_moved_to_legacy_canonical":4,"control_resources_moved_to_archive":5,"empty_legacy_folders_removed":3,"duplicate_binaries_removed":0,"data_loss":"NO","provenance_loss":"NO"},
+  "verified_removed_empty_folders":[{"drive_id":"1KFGCEP8ZSDAN2UCwVCPCufQ6kZFMcT_P","name":"04_BIBLIOTECA_TECNICA_DE_CONSERVACION"},{"drive_id":"11myFxqtMRkGyfEas06PNB-hGEaw2A31L","name":"00_CATALOGO_Y_FUENTES"},{"drive_id":"1Ez8gfBCTe_tTtK45wD97cjETO5CG9wZe","name":"99_PENDIENTE_DE_CATALOGAR"}],
+  "unresolved":["Exact per-file origin crosswalk for the mixed legacy human source.","Exhaustive recursive file-level inventory of all 25 institutional collection subtrees.","Hash-based duplicate confirmation/removal.","Human navigation shortcuts for verified legacy human uploads.","Full central index coverage for all legacy descendants."],
+  "rules":["STOP_ON_AMBIGUITY","MOVE_EXISTING_FILE_OR_FOLDER_PREFERRED","NO_DUPLICATE_REMOVAL_WITHOUT_HASH_IDENTITY_PROVENANCE","CONTROL_CONTENT_EXCLUDED_FROM_LIBRARY_CORPUS"]
+}

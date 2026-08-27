@@ -1,0 +1,9 @@
+{
+  "schema_version":"1.0.0",
+  "channels":[
+    {"channel_id":"HUMAN_USER_UPLOAD","origin_actor":"USER","drive_id":"18oyxoat65ubmkrpre88F2ygqfe-VDy4h","module_required":false,"human_repository_eligible":true,"ai_library_eligible":true,"workflow":["DOWNLOAD","UPLOAD_ORIGINAL","STOP"],"classification_burden_on_originator":"NONE"},
+    {"channel_id":"AGENT_AUTOMATED_SEARCH","origin_actor":"001","drive_id":"1TZA7e-csmdfU3dIxs7Z-VVWmKV0JCKfs","module_id":"JBLR-MOD-0001","human_repository_eligible":"NO_BY_DEFAULT","ai_library_eligible":true,"workflow":["DISCOVER","DOWNLOAD_OR_REGISTER_REFERENCE","UPLOAD_TO_MODULE_STAGING","MINIMAL_PROVENANCE","CONTINUE_SEARCH"]}
+  ],
+  "invariant":"USER_UPLOAD != AGENT_ACQUISITION",
+  "same_document_policy":"IDENTITY_MAY_CONVERGE_BUT_ORIGIN_OCCURRENCES_REMAIN_DISTINCT"
+}
