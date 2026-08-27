@@ -1,21 +1,11 @@
 name: JBLR 07 Cámara Niño Discovery
 
 on:
-  push:
-    branches:
-      - 07-biblioteca-index
-    paths:
-      - '.github/workflows/07_rac_tomo33_probe.yml'
-      - 'library/07_biblioteca/diagnostics/probe_rac_tomo33.py'
-      - 'library/07_biblioteca/diagnostics/probe_ia_camaranino.py'
-  pull_request:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/07_rac_tomo33_probe.yml'
-      - 'library/07_biblioteca/diagnostics/probe_rac_tomo33.py'
-      - 'library/07_biblioteca/diagnostics/probe_ia_camaranino.py'
   workflow_dispatch:
+
+concurrency:
+  group: 07-rac-tomo33-probe
+  cancel-in-progress: true
 
 permissions:
   contents: read
