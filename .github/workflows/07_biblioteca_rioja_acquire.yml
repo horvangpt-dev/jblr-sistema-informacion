@@ -1,21 +1,11 @@
 name: JBLR 07 Rioja Acquire
 
 on:
-  push:
-    branches:
-      - 07-biblioteca-index
-    paths:
-      - '.github/workflows/07_biblioteca_rioja_acquire.yml'
-      - 'library/07_biblioteca/acquisition/rioja_targets_batch02.json'
-      - 'library/07_biblioteca/acquisition/acquire_rioja_batch.py'
-  pull_request:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/07_biblioteca_rioja_acquire.yml'
-      - 'library/07_biblioteca/acquisition/rioja_targets_batch02.json'
-      - 'library/07_biblioteca/acquisition/acquire_rioja_batch.py'
   workflow_dispatch:
+
+concurrency:
+  group: 07-biblioteca-rioja-acquire
+  cancel-in-progress: true
 
 permissions:
   contents: read
