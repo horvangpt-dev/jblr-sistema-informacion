@@ -1,0 +1,25 @@
+{
+  "schema": "JBLR_SANDBOX_CONTRACT_v1",
+  "execution_target": "SANDBOX",
+  "canonical_effect": false,
+  "canonical_authority": false,
+  "production_write": false,
+  "staging_canonical_write": false,
+  "production_secrets_allowed": false,
+  "external_side_effects_default": "DENY",
+  "promotion_to_canonical": "EXPLICIT_REVIEW_AND_ACCEPTANCE_REQUIRED",
+  "history_rule": "SANDBOX_RESULTS_ARE_EVIDENCE_ONLY_UNTIL_PROMOTED",
+  "one_jblr_system": true,
+  "one_taxonomy": true,
+  "sandbox_is_second_canonical_system": false,
+  "baseline_source": {
+    "branch": "07-biblioteca-index",
+    "sha": "3ba9eb7e8108d7a8bf71e544f414d44ed28d0afe"
+  },
+  "branch_policy": {
+    "permanent_lab": "sandbox/jblr-lab-v1",
+    "experiment_prefix": "sandbox/",
+    "module_experiments_should_fork_from": "CURRENT_VERIFIED_SOURCE_BRANCH_HEAD"
+  },
+  "created_for": "JBLR experimental integration and external-component evaluation"
+}
