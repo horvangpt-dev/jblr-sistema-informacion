@@ -1,0 +1,103 @@
+name: JBLR Sandbox Certification
+
+on:
+  push:
+    branches:
+      - 'sandbox/**'
+    paths:
+      - 'sandbox/**'
+      - '.github/workflows/jblr_sandbox_guard.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jblr-sandbox-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  certify-sandbox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      EXECUTION_TARGET: SANDBOX
+      PGHOST: 127.0.0.1
+      PGPORT: '5432'
+      PGDATABASE: jblr_sandbox
+      PGUSER: sandbox
+      PGPASSWORD: sandbox-only-not-a-secret
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: jblr_sandbox
+          POSTGRES_USER: sandbox
+          POSTGRES_PASSWORD: sandbox-only-not-a-secret
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U sandbox -d jblr_sandbox"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - name: Checkout sandbox code
+        uses: actions/checkout@v4
+
+      - name: Enforce sandbox contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$EXECUTION_TARGET" = "SANDBOX"
+          case "$GITHUB_REF_NAME" in
+            sandbox/*) ;;
+            *) echo "Refusing non-sandbox branch: $GITHUB_REF_NAME"; exit 1 ;;
+          esac
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          contract = json.loads(Path('sandbox/SANDBOX_CONTRACT.json').read_text())
+          assert contract['execution_target'] == 'SANDBOX'
+          assert contract['canonical_effect'] is False
+          assert contract['canonical_authority'] is False
+          assert contract['production_write'] is False
+          assert contract['staging_canonical_write'] is False
+          assert contract['production_secrets_allowed'] is False
+          assert contract['external_side_effects_default'] == 'DENY'
+          assert contract['one_jblr_system'] is True
+          assert contract['one_taxonomy'] is True
+          assert contract['sandbox_is_second_canonical_system'] is False
+          print('SANDBOX_CONTRACT=PASS')
+          PY
+
+      - name: Wait for ephemeral PostgreSQL
+        shell: bash
+        run: |
+          set -euo pipefail
+          for i in {1..30}; do
+            if pg_isready -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE"; then
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "Ephemeral PostgreSQL did not become ready"
+          exit 1
+
+      - name: Execute sandbox database smoke test
+        shell: bash
+        run: |
+          set -euo pipefail
+          psql -v ON_ERROR_STOP=1 -f sandbox/tests/smoke.sql
+
+      - name: Verify rollback and zero persistent sandbox state
+        shell: bash
+        run: |
+          set -euo pipefail
+          remaining="$(psql -Atqc "SELECT coalesce(to_regclass('public.sandbox_taxon_candidate')::text, '')")"
+          test -z "$remaining"
+          echo "EPHEMERAL_DATABASE_ROLLBACK=PASS"
+          echo "CANONICAL_EFFECT=NO"
+          echo "PRODUCTION_WRITE=NO"
