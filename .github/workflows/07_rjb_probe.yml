@@ -1,6 +1,11 @@
 name: JBLR 07 Metadata Probe
 
 on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - 'library/07_biblioteca/diagnostics/probe_rac_metadata.py'
   workflow_dispatch:
 
 concurrency:
