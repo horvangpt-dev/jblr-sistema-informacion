@@ -1,6 +1,12 @@
 name: JBLR 07 Biblioteca Acquire
 
 on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - 'library/07_biblioteca/acquisition/acquire_rjb.py'
+      - 'library/07_biblioteca/acquisition/rjb_targets_batch01.json'
   workflow_dispatch:
 
 concurrency:
