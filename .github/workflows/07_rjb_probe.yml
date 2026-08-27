@@ -1,19 +1,11 @@
 name: JBLR 07 Metadata Probe
 
 on:
-  push:
-    branches:
-      - 07-biblioteca-index
-    paths:
-      - '.github/workflows/07_rjb_probe.yml'
-      - 'library/07_biblioteca/diagnostics/probe_rac_metadata.py'
-  pull_request:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/07_rjb_probe.yml'
-      - 'library/07_biblioteca/diagnostics/probe_rac_metadata.py'
   workflow_dispatch:
+
+concurrency:
+  group: 07-rjb-metadata-probe
+  cancel-in-progress: true
 
 permissions:
   contents: read
