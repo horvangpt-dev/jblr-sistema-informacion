@@ -1,1 +1,42 @@
-__LARGE_CONTENT_OMITTED__
+{
+  "schema_version": "1.0.1",
+  "registry_id": "M04_M05_ENRICHED_DOCUMENT_REGISTRY_2026-08-28_v1",
+  "actor_id": "07",
+  "actor_version": "07.V4",
+  "github_role": "MANIFEST_POINTER_NOT_FULL_PAYLOAD",
+  "full_registry": {
+    "drive_file_id": "1vQ897ViWDmuTBJCFCwgk6P3_Q5v7A2a9",
+    "drive_parent_id": "1B5-INdKWMAJGZ2pBF3Q9xtAh7MHHNCdt",
+    "sha256": "086a331242a5fdc3be6f8991916c620145675c546c8758324b0a6e44bdc3a9ee",
+    "local_verified_filename": "M04_M05_ENRICHED_DOCUMENT_REGISTRY_2026-08-28_v1.json"
+  },
+  "source_registry_001_drive_id": "1GSbrxpy2TLQEuU0q9DUvkYqLnT_Xe5CnkEpp-cDg_wU",
+  "authoritative_snapshot_drive_id": "14rUAnfIlX4BKClGeJ1meR2Z9VzkCTCjvwISAkZFpq2c",
+  "counts_at_enrichment": {
+    "physical_objects": 67,
+    "physical_files_matched_to_001_registry": 45,
+    "physical_files_enriched": 67,
+    "unique_001_discovery_ids_with_physical_binary": 37,
+    "registry_references_without_physical_binary": 157,
+    "physical_files_unresolved_to_individual_001_registry_id": 22,
+    "exact_duplicate_groups_resolved_by_strong_evidence": 5,
+    "canonical_duplicate_merges_committed_at_that_time": 0,
+    "same_publication_different_binary_manifestation_groups": 1,
+    "distinct_document_identities_represented_by_67_objects": 63,
+    "m04_documentary_coverage_files": 64,
+    "m05_documentary_coverage_files": 66,
+    "multimodule_files": 64,
+    "out_of_scope_misuploads": 1
+  },
+  "identity_policy": {
+    "one_canonical_document_identity": true,
+    "filename_alone_insufficient": true,
+    "human_copy_creates_lib_file_id": false,
+    "dedupe_without_strong_evidence": false,
+    "reference_is_not_binary": true,
+    "not_detected_is_not_absent": true
+  },
+  "historical_master_index_count_at_enrichment": 95,
+  "historical_master_index_count_change_at_enrichment": 0,
+  "note": "This GitHub object intentionally stores only a verified manifest pointer. The complete enriched payload is the Drive object identified above. Later library index advances, including USA closure, do not rewrite this historical enrichment snapshot."
+}
