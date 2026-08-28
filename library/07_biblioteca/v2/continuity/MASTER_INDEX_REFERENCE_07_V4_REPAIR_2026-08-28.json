@@ -1,0 +1,19 @@
+{
+  "actor_id": "07",
+  "version": "07.V4",
+  "repository": "horvangpt-dev/jblr-sistema-informacion",
+  "branch": "07-biblioteca-index",
+  "path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_v1.json",
+  "index_last_change_commit": "310d24baeba5e51b0553a0b2a4436cabce88c88b",
+  "audit_branch_head_before_repair": "978787ad47d5e57298a6967aba0625e138d1b48f",
+  "schema_version": "1.1.0",
+  "persisted_record_count": 95,
+  "count_change_by_repair": 0,
+  "coverage_status": "PARTIAL_FINE_GRAINED_CONSOLIDATION",
+  "dedupe_requires_strong_evidence": true,
+  "filename_alone_not_identity": true,
+  "pending_merges": [
+    ["JBLR-LIB-00000079", "JBLR-LIB-00000076"],
+    ["JBLR-LIB-00000093", "JBLR-LIB-00000092"]
+  ]
+}
