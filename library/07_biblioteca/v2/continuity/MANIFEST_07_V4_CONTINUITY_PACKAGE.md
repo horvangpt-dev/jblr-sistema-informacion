@@ -5,7 +5,9 @@ Package folder: `1n5kepOmAO6OtRhUgvSoVccdcwK3Z801O`
 ## Identity
 - ACTOR_ID `07`
 - CURRENT_VERSION `07.V4`
-- PREVIOUS_VERSION originally recorded as `07.V3_FROZEN_BY_CONTINUITY`
+- PREVIOUS_VERSION `07.V3`
+- CURRENT_STATUS `ACTIVE`
+- PREVIOUS_STATUS `FROZEN_BY_CONTINUITY`
 - LOSSLESS `YES`
 - PROJECT_RESTART `NO`
 - SYSTEM_RESTART `NO`
@@ -55,6 +57,7 @@ Repository `horvangpt-dev/jblr-sistema-informacion`
 Branch `07-biblioteca-index`
 Initial V4 handoff commit `04ba8130816b6c7f8855f993298812f90a3a7ef7`
 Initial manifest head observed at audit `978787ad47d5e57298a6967aba0625e138d1b48f`
+Repair-state PASS commit `86e3e5bf75399467ec148e12a6946b2ac295a103`
 Repair files:
 - `HANDOFF_REPAIR_07_V4_2026-08-28_v1.md`
 - `STATE_07_V4_REPAIRED_2026-08-28.md`
@@ -79,15 +82,26 @@ The empty 001 Drive artifact is an intentional/non-authoritative placeholder for
 Post-handoff global continuity authority:
 `JBLR-EVT-00000-20260828-ADOPT-RESTORE-CONTINUITY-LOSSLESS-V2-001`
 CURRENT_ACTIVE release `2026-08-28_v1_2`, protocol `2.0`.
-Predecessor freeze before successor PASS is prohibited. The initial early-freeze record is retained as historical evidence and reconciled only after successor RESTORATION_TEST PASS + HANDOFF_COMMIT.
+Predecessor freeze before successor PASS is prohibited. The initial early-freeze record is retained as historical evidence.
 
-## Repair conclusion before final shared commit
+Additional later certification consumed:
+`JBLR-EVT-00000-20260828-CERTIFY-RESTORE-CONTINUITY-LOSSLESS-V2-001`
+Protocol v2.0 QA certification = `PASS`.
+
+## Final repair and commit
 - HANDOFF_INITIAL `PARTIAL_BUT_RECOVERABLE`
 - HANDOFF_REPAIR `EXECUTED`
+- RESTORATION_TEST `PASS`
+- RESTORE_PASS event `JBLR-EVT-07-20260828-RESTORE-PASS-V4-001`, Event Bus row `537`
+- HANDOFF_COMMITTED `YES`
+- commit event `JBLR-EVT-07-20260828-HANDOFF-COMMIT-V3-TO-V4-001`, Event Bus row `538`
+- Canonical State key `ACTOR_07_CONTINUITY_STATE`, commit row `654`
+- PREVIOUS_VERSION final state `07.V3_FROZEN_BY_CONTINUITY`
+- CURRENT_VERSION final state `07.V4_ACTIVE`
 - NO V5 created
 - master index count change `0`
 - historical evidence preserved
-- RESTORE_STATUS remains pending until final live shared-state write + readback
+- DATA_LOSS `NO`
 
 ## Priority after PASS
 `JBLR-EVT-00000-20260828-DIRECT-07-M04-M05-INVENTORY-SNAPSHOT-001`
