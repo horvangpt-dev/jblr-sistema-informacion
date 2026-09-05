@@ -177,8 +177,21 @@
     ],
     "user_originals_moved": 0,
     "physical_deletions": 0,
-    "routing_state": "PENDING_AFTER_INDEX_ACTIVATION"
+    "routing_state": "COMPLETE_AFTER_ROUTING_VERIFIED",
+    "processed_copies_routed": 4,
+    "route_readback_parent": "1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS"
   },
   "next_LIB_FILE_ID": "JBLR-LIB-00000782",
-  "history_policy": "APPEND_ONLY"
+  "history_policy": "APPEND_ONLY",
+  "queue_reconciliation": {
+    "queue_id": "1Mp6i9iJcdSSel1QOywygYtD_6xLQD-OsFWBXNoscZII",
+    "rows": "003_TO_07!18:21",
+    "readback": "PASS",
+    "mapping": {
+      "003-SRC-1wzP403me4sKdLUIHEdunjkaxh9NsgtVy": "JBLR-LIB-00000779",
+      "003-SRC-10q_N8-e73X6cVMeGRpeNO6gHqW1SRyHS": "JBLR-LIB-00000740",
+      "003-SRC-1r6ZD8PspVaAN1dlQSx6NagLm-6lV0y13": "JBLR-LIB-00000780",
+      "003-SRC-1y09EgEgfLMY4V7PKwchInd-bmhvV0BK5": "JBLR-LIB-00000781"
+    }
+  }
 }
