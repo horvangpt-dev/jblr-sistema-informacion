@@ -1,0 +1,12 @@
+{
+  "schema_version":"1.0.0",
+  "registry_id":"UNITED_STATES_M01_M05_RECONCILIATION_2026-08-28_v1",
+  "status":"SUPERSEDED",
+  "superseded_by":"USA_M01_M05_LIVE_RECONCILIATION_2026-08-28_v1",
+  "superseding_path":"library/07_biblioteca/v2/index/USA_M01_M05_LIVE_RECONCILIATION_2026-08-28_v1.json",
+  "superseding_commit":"4583bf55b245cf8c1e562d2001b4be002dcd0481",
+  "policy":"LIVE_RECONCILIATION_NO_HISTORICAL_ID_AUTHORITY_v1",
+  "reason":"User directive removed historical reconciliation as identity authority. The prior assertion that historical range 96-111 reserved canonical IDs is no longer operative. Discovery history remains preserved as provenance and WHY_SELECTED context only.",
+  "preserve_git_history":true,
+  "canonical_effect":"NO_IDENTITY_AUTHORITY;NO_ID_RESERVATION;USE_LIVE_REGISTRY"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "ES_SPANISH_TERRITORIAL_NESTING_SPAIN_LARIOJA_POLICY_v1",
+  "actor_id": "07",
+  "actor_version": "07.V4",
+  "parent_authority": "00000.V3",
+  "effective_date": "2026-08-28",
+  "scope": "HUMAN_LIBRARY_ES_ONLY",
+  "rules": {
+    "applies_only_to_spanish_language_root": true,
+    "english_unchanged": true,
+    "other_languages_unchanged": true,
+    "each_existing_spanish_functional_category_gets_spain_subfolder": true,
+    "spain_folder_name": "ESPAÑA",
+    "la_rioja_is_nested_under_spain": true,
+    "la_rioja_folder_name": "LA RIOJA",
+    "la_rioja_folders_created_on_demand_when_content_exists_or_is_being_routed": true,
+    "spanish_documents_from_spain_route_to_category_spain": true,
+    "spanish_documents_from_la_rioja_route_to_category_spain_la_rioja": true,
+    "spanish_documents_from_other_countries_remain_at_functional_category_level_unless_other_facets_apply": true,
+    "territorial_nesting_is_human_navigation_only": true,
+    "canonical_document_identity_unchanged": true,
+    "human_distribution_copy_creates_new_lib_file_id": false,
+    "technical_ai_ingestion_remains_mandatory": true,
+    "multitag_and_ai_retrieval_remain_mandatory": true,
+    "no_parallel_library": true,
+    "no_scientific_fact_canonicalization": true
+  },
+  "implementation": {
+    "spanish_root": "1MHXinDIrwDb5IUX9bLBkOuH2rtfw0vJp",
+    "existing_spanish_functional_categories_processed": 43,
+    "spain_subfolders_created": 43,
+    "initial_la_rioja_route_created_in": "11 · REFERENCIA · GOBERNANZA · DOCUMENTACIÓN/ESPAÑA/LA RIOJA",
+    "la_rioja_reference_folder_id": "1Gg56Xf48b-p74ZkUDJGa2AXYgSXOupud",
+    "historical_la_rioja_index_id": "1rwlX6XdbrzTyEEVNCZBTNhs1IvwgCC21n2TAGkvbWkI",
+    "historical_la_rioja_index_new_title": "ÍNDICE HISTÓRICO · LA RIOJA · ANTIGUA VISTA PRINCIPAL",
+    "old_la_rioja_main_root_id": "1verTfYlvovWNd7DWvq9OKsTzANeG01UZ",
+    "old_la_rioja_main_root_status": "SUPERSEDED_ARCHIVED_IN_99_CONTROL",
+    "old_la_rioja_main_root_new_parent": "18sX4102LK23ivJp-KeG60lH5RYYyvCaw"
+  },
+  "index_safety": {
+    "master_index_last_verified_count": 95,
+    "master_index_count_change_by_this_policy": 0,
+    "no_new_lib_file_id_from_territorial_folders": true
+  }
+}
