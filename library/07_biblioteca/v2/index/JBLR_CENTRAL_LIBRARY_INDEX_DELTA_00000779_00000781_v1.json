@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000779_00000781",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_003_AMARANTHUS_FINAL4_CANONICALIZATION_779_781_AND_LIB740_ENRICHMENT_2026_09_05",
+  "range": {
+    "from": "JBLR-LIB-00000779",
+    "to": "JBLR-LIB-00000781",
+    "count": 3
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000779",
+      "003-SRC-1wzP403me4sKdLUIHEdunjkaxh9NsgtVy",
+      "1y2l_nIQJ1NLED5lkNZIwEXcLiTHIR9Jv",
+      "en",
+      [],
+      "NONE",
+      "Germination of Amaranthus deflexus L. seeds subjected to different temperature and salt-stress conditions",
+      "003_AMARANTHUS_SEARCH2_FINAL4"
+    ],
+    [
+      "JBLR-LIB-00000780",
+      "003-SRC-1r6ZD8PspVaAN1dlQSx6NagLm-6lV0y13",
+      "1_LRoJvDiLNC3surMAtFCeSk6AxOMOAxZ",
+      "en",
+      [],
+      "NONE",
+      "Temperature- and moisture-dependent models of seed germination and shoot elongation in green and redroot pigweed (Amaranthus powellii, A. retroflexus)",
+      "003_AMARANTHUS_SEARCH2_FINAL4"
+    ],
+    [
+      "JBLR-LIB-00000781",
+      "003-SRC-1y09EgEgfLMY4V7PKwchInd-bmhvV0BK5",
+      "1L_vw3syp7lBy6VtfyV-lTs0W2Ak60gZz",
+      "en",
+      [],
+      "NONE",
+      "Effects of canopy shade on the morphology, phenology, and seed characteristics of Powell amaranth (Amaranthus powellii)",
+      "003_AMARANTHUS_SEARCH2_FINAL4"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000779",
+      "doi": "10.5433/1679-0359.2022v43n6p2785",
+      "authors": "Larissa de Oliveira Fontes; Alexandre Bosco de Oliveira; Maria de Fátima de Queiroz Lopes; José Hamilton da Costa Filho; Luiz Eduardo Santos Lazzarini; Elton Camelo Marques",
+      "year": 2022
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000780",
+      "doi": "10.1017/S0043174500088718",
+      "authors": "Joseph O. E. Oryokot; Stephen D. Murphy; A. Gordon Thomas; Clarence J. Swanton",
+      "year": 1997
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000781",
+      "doi": "10.1614/WS-04-067R1",
+      "authors": "Dan C. Brainard; Robin R. Bellinder; Antonio DiTommaso",
+      "year": 2005
+    }
+  ],
+  "documentary_relations": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000779",
+      "taxon": "Amaranthus deflexus",
+      "relation_type": "DIRECT_TAXON_GERMINATION_TEMPERATURE_LIGHT_SALINITY",
+      "canonical_taxonomic_effect": "NONE",
+      "source_specific_rules_only": true
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000780",
+      "taxon": "Amaranthus powellii",
+      "relation_type": "DIRECT_TAXON_GERMINATION_TEMPERATURE_WATER_POTENTIAL_EMERGENCE",
+      "canonical_taxonomic_effect": "NONE",
+      "source_specific_rules_only": true
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000781",
+      "taxon": "Amaranthus powellii",
+      "relation_type": "DIRECT_TAXON_MATERNAL_ENVIRONMENT_DORMANCY_GERMINATION",
+      "canonical_taxonomic_effect": "NONE",
+      "source_specific_rules_only": true
+    }
+  ],
+  "representations": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000779",
+      "primary_drive_id": "1y2l_nIQJ1NLED5lkNZIwEXcLiTHIR9Jv",
+      "alternate_drive_ids": [
+        "1wzP403me4sKdLUIHEdunjkaxh9NsgtVy",
+        "1BRdnNm7_dmIovsj4PElNoFZYXehKAnPc",
+        "1j7F0adbu_Tke28shT2436o5k_IxXT4zN",
+        "1nV5WfNyKw7u_CzNXU_LUIUk7Zm0PJhoa",
+        "1MGFfYTGSK3StZ21vISsSAYtDPlm93RM3"
+      ],
+      "binary_equality_asserted": false
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000780",
+      "primary_drive_id": "1_LRoJvDiLNC3surMAtFCeSk6AxOMOAxZ",
+      "alternate_drive_ids": [
+        "1r6ZD8PspVaAN1dlQSx6NagLm-6lV0y13",
+        "1HM8eGiib_r5G7KZNSvdyzU-uYoDQI7Ax",
+        "1MSxtDQhGI9drDkHnFqOIQUOMvB8FW2vP",
+        "1UOsYu7ETSQmG2XrKnyBSe9ANjTEMBMOY",
+        "1bsnqPcwr36DHKk6cmj2itiE6OBKhle5M"
+      ],
+      "binary_equality_asserted": false
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000781",
+      "primary_drive_id": "1L_vw3syp7lBy6VtfyV-lTs0W2Ak60gZz",
+      "alternate_drive_ids": [
+        "1y09EgEgfLMY4V7PKwchInd-bmhvV0BK5",
+        "1TSKrHeSGvn-qrt-C4WrvR-WIaKGReryS",
+        "1njLoKdKXgX6ykPU7ZINRFVG2Z25yDQpW",
+        "1F-Hb_wk4UkZI2Kqkh5nxUsdj5As1sDDI",
+        "19sSlldJG2kmHoNt3NioQ8-6QYuLu3H8f"
+      ],
+      "binary_equality_asserted": false
+    }
+  ],
+  "existing_identity_enrichment": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000740",
+      "identity": "Effects of after-harvest period and environmental factors on seed dormancy of Amaranthus species",
+      "doi": "10.1111/j.1365-3180.2007.00574.x",
+      "prior_primary_drive_id": "1psV_Pl-RNMY8GtuoAeLcq7sMpVuLfInn",
+      "new_verified_representations": [
+        "10q_N8-e73X6cVMeGRpeNO6gHqW1SRyHS",
+        "19O5ixw_j4kWVvnlhTenrPEfowENLFAmK",
+        "1XO0aCjccf3E668Qv9AdKd9OVK8lOgOq9",
+        "1Ae9TyaMxmhWZULBiBjWzGwFS6xMTJ_CM",
+        "1KVer_KDHliOEHPVvLZZJSzp2bY17QovF",
+        "1Jf4snpaHg2LjVzG5C2enJIhu32O-sZ2r",
+        "1Md8klZhtHhsVQczkm4b11JEcZJDAnE35",
+        "1HRoTuGiu8rAtBHbn67wyC4hp9itbwlcp",
+        "1BxzMRX01iVJKmhYRIAUMCiNYK6LP-iD3",
+        "1_qEKIL-HTNz_6Q0N38eBg_ZBRN4c9FQD"
+      ],
+      "enrichment_basis": "003 fulltext verified DOI + exact title/authors/year match to existing LIB740",
+      "binary_equality_asserted": false,
+      "new_LIB_FILE_ID": false
+    }
+  ],
+  "identity_review": {
+    "live_active_index_precheck": "HWM778_NEXT779_SHA_5bce0796277f5df48aa1603e3c7497916b24d147",
+    "cristaudo_reuse": "JBLR-LIB-00000740",
+    "new_identity_count": 3,
+    "prior_canonical_match_for_new_three": "NONE_DEMONSTRATED",
+    "source_originals_move_delete": false,
+    "copy_never_move_preserved": true,
+    "no_hash_equality_assertion": true,
+    "no_silent_inference": true
+  },
+  "physical_reconciliation": {
+    "processed_source_folder": "1TpBXrk3vPC0ChOzcI0qR86z49YtLDQjm",
+    "canonical_destination_en": "1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS",
+    "processed_copies_to_route": [
+      "1y2l_nIQJ1NLED5lkNZIwEXcLiTHIR9Jv",
+      "19O5ixw_j4kWVvnlhTenrPEfowENLFAmK",
+      "1_LRoJvDiLNC3surMAtFCeSk6AxOMOAxZ",
+      "1L_vw3syp7lBy6VtfyV-lTs0W2Ak60gZz"
+    ],
+    "user_originals_moved": 0,
+    "physical_deletions": 0,
+    "routing_state": "PENDING_AFTER_INDEX_ACTIVATION"
+  },
+  "next_LIB_FILE_ID": "JBLR-LIB-00000782",
+  "history_policy": "APPEND_ONLY"
+}
