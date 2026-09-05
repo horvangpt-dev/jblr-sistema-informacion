@@ -486,8 +486,16 @@
     "english_destination": "1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS",
     "portuguese_destination": "1XIRbTojW3rcC1BaGODKqSRdSzBb49lre",
     "spanish_destination": "1MHXinDIrwDb5IUX9bLBkOuH2rtfw0vJp",
-    "routing_state": "PENDING_AFTER_INDEX_ACTIVATION",
-    "physical_deletions": 0
+    "routing_state": "COMPLETE_AFTER_ROUTING_VERIFIED",
+    "physical_deletions": 0,
+    "source_folder_final_count": 0,
+    "canonical_objects_routed": 17,
+    "route_counts": {
+      "en": 8,
+      "pt": 7,
+      "es": 2
+    },
+    "same_drive_ids_preserved": true
   },
   "next_LIB_FILE_ID": "JBLR-LIB-00000799",
   "history_policy": "APPEND_ONLY"
