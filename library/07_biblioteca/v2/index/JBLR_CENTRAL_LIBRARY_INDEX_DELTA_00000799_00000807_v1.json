@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000799_00000807",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_799_807_2026_09_06",
+  "range": {
+    "from": "JBLR-LIB-00000799",
+    "to": "JBLR-LIB-00000807",
+    "count": 9
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000799",
+      "001-DISC-000752",
+      "1GF5vkdul2mS5vZY7prxDOzuTCkC6evz5",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000752",
+      "Collection de graines. Conservation et germination des plantes patrimoniales de Provence-Alpes-Côte d'Azur",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000800",
+      "001-DISC-000753",
+      "1bHG1aYnVSq9d1t56UsnQLQeoPKlZ8hi8",
+      "fr",
+      [
+        "M02",
+        "M04",
+        "M05"
+      ],
+      "000753",
+      "Vers une méthodologie commune pour le suivi de la flore patrimoniale. Contribution au programme de surveillance de la biodiversité terrestre",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000801",
+      "001-DISC-000754",
+      "1TIvl6onS7szMDdt-4YAUic7KYM10pTPx",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000754",
+      "Amélioration des connaissances sur la biologie des espèces sauvages cueillies : tests de germination et essais de culture",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000802",
+      "001-DISC-000756",
+      "1S1zG7lxbdmqTXuivGMdS7u1w7fyuPqRt",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000756",
+      "Mise en place d'un Observatoire de la Régénération des Espèces Patrimoniales des Alpes sud-occidentales. SEMINALP régénération séminale dans les Alpes du Sud",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000803",
+      "001-DISC-000757",
+      "1nQsrZoHyXyAuP1KshMHb6kHv4fN_0hA_",
+      "fr",
+      [
+        "M02",
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000757",
+      "Référentiel technique associé au Règlement d’usage de la marque collective simple Végétal local",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000804",
+      "001-DISC-000758",
+      "1nDF7e6RuytHLT9CzNg4TBc7nHSEFTl95",
+      "fr",
+      [
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "000758",
+      "Quand collecter des graines de prairies ? Outil de collecte de graines en mélange en prairies de fauche de montagne [Version 1]",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000805",
+      "001-DISC-000760",
+      "1D4KpwWrZlT-qDUdjGp0wtn4KZgbVHu9S",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000760",
+      "Bilan d’activités scientifique et technique du Conservatoire botanique national de Franche-Comté 2014-2024",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000806",
+      "001-DISC-000761",
+      "1Avuem9a2XxADKFS4mR0r5zCowDJercOs",
+      "fr",
+      [
+        "M02",
+        "M04",
+        "M05"
+      ],
+      "000761",
+      "Monitoring avec FlorApp. Présentation de la méthode PopCount et des standards d’Info Flora",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ],
+    [
+      "JBLR-LIB-00000807",
+      "001-DISC-000767",
+      "1_avIymKLYIqSFuHLqVKtUcTXJKWXJmqo",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M04",
+        "M05"
+      ],
+      "000767",
+      "Actions pour la mise en œuvre d'un futur observatoire de la flore menacée du Parc naturel marin : Action n°2 - Élaboration des protocoles de suivis pour les espèces du programme",
+      "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000799",
+      "isbn": "978-2-9511-8642-2",
+      "stable_identifier": "OAI:oai:cbn-alpin-biblio.fr:83927",
+      "authors": "Élodie Demonty; Lara Dixon; Noémie Fort",
+      "year": 2014,
+      "pages": 152
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000800",
+      "stable_identifier": "OAI:oai:cbn-alpin-biblio.fr:575032",
+      "year": 2024,
+      "publication_month": "May"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000801",
+      "stable_identifier": "CBNPMP_NOTICE_153907",
+      "author": "Laurent Bourgne",
+      "report_period": "2022-2024",
+      "institution": "Conservatoire botanique national des Pyrénées et de Midi-Pyrénées"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000802",
+      "stable_identifier": "OAI:oai:cbn-alpin-biblio.fr:88224",
+      "author": "Jonathan Dubois",
+      "year": 2015,
+      "program": "Interreg Alcotra SEMINALP"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000803",
+      "stable_identifier": "OFB_VEGETAL_LOCAL_REFERENTIEL_MARCH_2023",
+      "institution": "Office français de la biodiversité",
+      "version": "Mars 2023"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000804",
+      "stable_identifier": "OAI:oai:cbn-alpin-biblio.fr:559725",
+      "year": 2022,
+      "version": "01"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000805",
+      "stable_identifier": "CBNFC_ORI_BILAN_2014_2024",
+      "authors": "Y. Ferrez (coord.)",
+      "bibliographic_year": 2025,
+      "pages": 130,
+      "note": "001 candidate year/version was later than the bibliographic year demonstrated by the physical fulltext; source fulltext prevails."
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000806",
+      "stable_identifier": "INFOFLORA_POPCOUNT_BOOKLET_F",
+      "author": "Christophe Bornand",
+      "version": "1.1",
+      "version_date": "2022-12-15"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000807",
+      "stable_identifier": "OBFLORES_ACTION2_2023",
+      "institution": "Conservatoire botanique national de Bailleul",
+      "year": 2023,
+      "publication_month": "November"
+    }
+  ],
+  "historical_links": [
+    [
+      "JBLR-LIB-00000799",
+      "000752",
+      "SUPERSEDES_BUFFER_RESOLUTION_000332_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000800",
+      "000753",
+      "SUPERSEDES_BUFFER_RESOLUTION_000333_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000801",
+      "000754",
+      "SUPERSEDES_BUFFER_RESOLUTION_000334_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000802",
+      "000756",
+      "SUPERSEDES_BUFFER_RESOLUTION_000336_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000803",
+      "000757",
+      "SUPERSEDES_BUFFER_RESOLUTION_000337_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000804",
+      "000758",
+      "SUPERSEDES_BUFFER_RESOLUTION_000338_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000805",
+      "000760",
+      "SUPERSEDES_BUFFER_RESOLUTION_000340_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000806",
+      "000761",
+      "SUPERSEDES_BUFFER_RESOLUTION_000341_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000807",
+      "000767",
+      "SUPERSEDES_BUFFER_RESOLUTION_000347_NOT_ACQUIRED"
+    ]
+  ],
+  "representation_groups": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000807",
+      "primary_drive_id": "1_avIymKLYIqSFuHLqVKtUcTXJKWXJmqo",
+      "alternate_drive_ids": [
+        "1D873gsySXd7CyP6qa-oc70mNP4A4HoeS",
+        "1g9aXJf_xtigbh47lw-B7AWeEXVfrB3tH"
+      ],
+      "relation": "SAME_DOCUMENT_TITLE_AND_CONTENT_IDENTITY;NO_BINARY_HASH_EQUALITY_ASSERTION"
+    }
+  ],
+  "identity_review": {
+    "prior_07_reconciliation_through_hwm_771": "NO_CANONICAL_MATCH_DEMONSTRATED_FOR_THESE_DISCOVERIES",
+    "post_771_active_segments_scan": "PASS_772_798_NO_MATCH_DEMONSTRATED",
+    "live_drive_physical_readback": "PASS_9_OF_9_CONTENT_IDENTITY_CONFIRMED",
+    "previous_not_acquired_state": "SUPERSEDED_BY_LIVE_PHYSICAL_EVIDENCE",
+    "no_hash_equality_assertion": true,
+    "no_silent_inference": true
+  },
+  "physical_reconciliation": {
+    "physical_objects_canonicalized": 9,
+    "physical_moves": 0,
+    "physical_deletions": 0,
+    "copy_never_move": true,
+    "source_drive_ids_preserved": true,
+    "routing_state": "PRESERVED_IN_EXISTING_AUTHORIZED_FOLDERS"
+  },
+  "next_LIB_FILE_ID": "JBLR-LIB-00000808",
+  "history_policy": "APPEND_ONLY"
+}
