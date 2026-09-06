@@ -3,9 +3,9 @@
   "index_name": "JBLR_CENTRAL_LIBRARY_ACTIVE_INDEX",
   "status": "ACTIVE_LOGICAL_SEGMENTED_INDEX",
   "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
-  "high_watermark_LIB_FILE_ID": "JBLR-LIB-00000798",
-  "next_LIB_FILE_ID": "JBLR-LIB-00000799",
-  "allocated_id_slots": 798,
+  "high_watermark_LIB_FILE_ID": "JBLR-LIB-00000807",
+  "next_LIB_FILE_ID": "JBLR-LIB-00000808",
+  "allocated_id_slots": 807,
   "segments": [
     {
       "range": "JBLR-LIB-00000001..00000095",
@@ -330,6 +330,12 @@
       "count": 17,
       "path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000782_00000798_v1.json",
       "role": "P1_INTERNACIONAL_USER_UPLOADS_INDIA_BRAZIL_IBEROAMERICA"
+    },
+    {
+      "range": "JBLR-LIB-00000799..00000807",
+      "count": 9,
+      "path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000799_00000807_v1.json",
+      "role": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION"
     }
   ],
   "retired_duplicate_ids": [
@@ -349,7 +355,7 @@
       "physical_duplicate_state": "LOGICAL_DUPLICATE_RETIRED_PHYSICAL_REPRESENTATION_PRESERVED_NO_HASHLESS_DELETION"
     }
   ],
-  "known_active_allocated_slots_excluding_retired": 795,
+  "known_active_allocated_slots_excluding_retired": 804,
   "identity_rules": {
     "rediscovery_does_not_create_new_identity": true,
     "human_copy_does_not_create_new_LIB_FILE_ID": true,
@@ -361,5 +367,5 @@
   },
   "history_policy": "APPEND_ONLY",
   "previous_flat_index_record_count_95": "HISTORICAL_BASE_COUNT_NOT_CURRENT_HIGH_WATERMARK",
-  "last_transaction": "07_P1_INTERNACIONAL_USER_UPLOADS_INDIA_BRAZIL_IBEROAMERICA_782_798_2026_09_05"
+  "last_transaction": "07_REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_799_807_2026_09_06"
 }
