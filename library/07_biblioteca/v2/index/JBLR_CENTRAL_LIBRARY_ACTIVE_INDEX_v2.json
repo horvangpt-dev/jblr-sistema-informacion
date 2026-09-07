@@ -3,9 +3,9 @@
   "index_name": "JBLR_CENTRAL_LIBRARY_ACTIVE_INDEX",
   "status": "ACTIVE_LOGICAL_SEGMENTED_INDEX",
   "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
-  "high_watermark_LIB_FILE_ID": "JBLR-LIB-00000859",
-  "next_LIB_FILE_ID": "JBLR-LIB-00000860",
-  "allocated_id_slots": 859,
+  "high_watermark_LIB_FILE_ID": "JBLR-LIB-00000872",
+  "next_LIB_FILE_ID": "JBLR-LIB-00000873",
+  "allocated_id_slots": 872,
   "segments": [
     {
       "range": "JBLR-LIB-00000001..00000095",
@@ -342,6 +342,12 @@
       "count": 52,
       "path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000808_00000859_v1.json",
       "role": "FLORE_LOCALE_TAXON_FICHE_FIRST_PHYSICAL_CORPUS"
+    },
+    {
+      "range": "JBLR-LIB-00000860..00000872",
+      "count": 13,
+      "path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000860_00000872_v1.json",
+      "role": "P1_INTERNACIONAL_MANUAL_ACQUISITIONS_AND_RESEAU_HAIES_EXTRAS"
     }
   ],
   "retired_duplicate_ids": [
@@ -361,7 +367,7 @@
       "physical_duplicate_state": "LOGICAL_DUPLICATE_RETIRED_PHYSICAL_REPRESENTATION_PRESERVED_NO_HASHLESS_DELETION"
     }
   ],
-  "known_active_allocated_slots_excluding_retired": 856,
+  "known_active_allocated_slots_excluding_retired": 869,
   "identity_rules": {
     "rediscovery_does_not_create_new_identity": true,
     "human_copy_does_not_create_new_LIB_FILE_ID": true,
@@ -373,5 +379,5 @@
   },
   "history_policy": "APPEND_ONLY",
   "previous_flat_index_record_count_95": "HISTORICAL_BASE_COUNT_NOT_CURRENT_HIGH_WATERMARK",
-  "last_transaction": "07_FLORE_LOCALE_FIRST_PHYSICAL_CORPUS_808_859_2026_09_07"
+  "last_transaction": "07_P1_INTERNACIONAL_MANUAL_ACQUISITION_AND_EXTRAS_860_872_2026_09_07"
 }
