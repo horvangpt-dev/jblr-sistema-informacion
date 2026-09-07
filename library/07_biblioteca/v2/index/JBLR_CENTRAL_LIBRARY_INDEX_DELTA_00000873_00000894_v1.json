@@ -237,7 +237,7 @@
         "M04"
       ],
       "P1-COLD-EXTRA-004",
-      "Long-term storage of Salix xerophila, Salix maximowiczii and Salix koreensis seeds under different water contents and temperatures",
+      "Extended Low Temperature and Cryostorage Longevity of Salix Seeds with Desiccation Control",
       "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
     ],
     [
@@ -438,7 +438,13 @@
         "Salix xerophila",
         "Salix maximowiczii",
         "Salix koreensis"
-      ]
+      ],
+      "title_correction": {
+        "previous_title": "Long-term storage of Salix xerophila, Salix maximowiczii and Salix koreensis seeds under different water contents and temperatures",
+        "corrected_title": "Extended Low Temperature and Cryostorage Longevity of Salix Seeds with Desiccation Control",
+        "correction_basis": "DOI 10.1515/biol-2019-0001 bibliographic metadata and article record",
+        "identity_effect": "NONE"
+      }
     },
     {
       "LIB_FILE_ID": "JBLR-LIB-00000889",
