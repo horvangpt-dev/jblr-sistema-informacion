@@ -11,9 +11,9 @@
   },
   "summary": {
     "document_identities": 22,
-    "human_representation_objects": 32,
+    "human_representation_objects": 42,
     "identities_with_multiple_human_representations": 10,
-    "extra_human_representation_objects": 10
+    "extra_human_representation_objects": 20
   },
   "records": [
     {
@@ -214,9 +214,17 @@
           "language_bucket": "EN",
           "mime_type": "multipart/related",
           "size": "720453"
+        },
+        {
+          "drive_id": "1OcIbA7PWu5EMfzE7VqJdM0iMNQK2q2jO",
+          "title": "JBLR-LIB-00000885 · Cariniana legalis · seed viability physiology and proteomics · 2021.mht",
+          "url": "https://drive.google.com/file/d/1OcIbA7PWu5EMfzE7VqJdM0iMNQK2q2jO/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "720453"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -237,9 +245,17 @@
           "language_bucket": "EN",
           "mime_type": "application/pdf",
           "size": "7909195"
+        },
+        {
+          "drive_id": "1NaBv3cUqg0vBfngbQyBB0m6wcT9eonZH",
+          "title": "JBLR-LIB-00000886 · Lipid remodeling during germination of aged oat seeds · 2025.pdf",
+          "url": "https://drive.google.com/file/d/1NaBv3cUqg0vBfngbQyBB0m6wcT9eonZH/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "7909195"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -260,9 +276,17 @@
           "language_bucket": "EN",
           "mime_type": "multipart/related",
           "size": "674449"
+        },
+        {
+          "drive_id": "12TB6WGJFZCYzCsbFsXrfucQ_NmWd3H6I",
+          "title": "JBLR-LIB-00000887 · Cryopreservation of Seeds and Seed Embryos · 2021.mht",
+          "url": "https://drive.google.com/file/d/12TB6WGJFZCYzCsbFsXrfucQ_NmWd3H6I/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "674449"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -283,9 +307,17 @@
           "language_bucket": "EN",
           "mime_type": "application/pdf",
           "size": "428454"
+        },
+        {
+          "drive_id": "1k1uWkzXMeBW1CuTWDd8MUb7qATaRCcR5",
+          "title": "JBLR-LIB-00000888 · Salix seed long-term storage · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1k1uWkzXMeBW1CuTWDd8MUb7qATaRCcR5/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "428454"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -306,9 +338,17 @@
           "language_bucket": "EN",
           "mime_type": "application/pdf",
           "size": "2347152"
+        },
+        {
+          "drive_id": "1S9JmwXOlx9SdP6DmbNP2_gER7ooMjZYb",
+          "title": "JBLR-LIB-00000889 · Extending Populus seed longevity · 2018.pdf",
+          "url": "https://drive.google.com/file/d/1S9JmwXOlx9SdP6DmbNP2_gER7ooMjZYb/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "2347152"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -329,9 +369,17 @@
           "language_bucket": "EN",
           "mime_type": "application/pdf",
           "size": "5549142"
+        },
+        {
+          "drive_id": "1ipdL2TdNJn1r355GU38mI6G9Gw6odaCb",
+          "title": "JBLR-LIB-00000890 · Fiber flax cryopreservation and low-temperature seed storage · 2026.pdf",
+          "url": "https://drive.google.com/file/d/1ipdL2TdNJn1r355GU38mI6G9Gw6odaCb/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "5549142"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -352,9 +400,17 @@
           "language_bucket": "ZH",
           "mime_type": "application/pdf",
           "size": "3020175"
+        },
+        {
+          "drive_id": "1lv_DGQFRhxZoIu5IX6MsXNbbHxDGaCHh",
+          "title": "JBLR-LIB-00000891 · Camellia oleifera seed storage temperature and quality · 2026.pdf",
+          "url": "https://drive.google.com/file/d/1lv_DGQFRhxZoIu5IX6MsXNbbHxDGaCHh/view?usp=drivesdk",
+          "language_bucket": "ZH",
+          "mime_type": "application/pdf",
+          "size": "3020175"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -375,9 +431,17 @@
           "language_bucket": "EN",
           "mime_type": "application/pdf",
           "size": "3944971"
+        },
+        {
+          "drive_id": "1IfHSjCQYRxDI59OLBtogO4MRVd4LlN17",
+          "title": "JBLR-LIB-00000892 · Seed Longevity · evolution of knowledge and conceptual framework · 2023.pdf",
+          "url": "https://drive.google.com/file/d/1IfHSjCQYRxDI59OLBtogO4MRVd4LlN17/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "3944971"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -398,9 +462,17 @@
           "language_bucket": "EN",
           "mime_type": "application/pdf",
           "size": "575688"
+        },
+        {
+          "drive_id": "18WvFjLcdy0bEdPwrXe2AYijrStE4P6e2",
+          "title": "JBLR-LIB-00000893 · Seed freeze sensitivity and ex situ longevity of 295 Hawaiian species · 2019.pdf",
+          "url": "https://drive.google.com/file/d/18WvFjLcdy0bEdPwrXe2AYijrStE4P6e2/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "575688"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     },
     {
@@ -421,10 +493,22 @@
           "language_bucket": "EN",
           "mime_type": "application/pdf",
           "size": "1364944"
+        },
+        {
+          "drive_id": "1u-7aB6xpHqsSn3ILBhusPuQu1TcBKepc",
+          "title": "JBLR-LIB-00000894 · Lipid Thermal Fingerprints of Long-term Stored Seeds of Brassicaceae · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1u-7aB6xpHqsSn3ILBhusPuQu1TcBKepc/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "1364944"
         }
       ],
-      "representation_count": 2,
+      "representation_count": 3,
       "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
     }
+  ],
+  "updated_at": "2026-09-07T20:12:00+02:00",
+  "history_notes": [
+    "2026-09-07: additional EN/ZH human copies created during final reconciliation were preserved and appended; no LIB_FILE_ID effect; no deletion attempted."
   ]
 }
