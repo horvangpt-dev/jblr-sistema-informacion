@@ -1,0 +1,76 @@
+{
+  "schema": "JBLR_07_TAXON_SOURCE_RELATIONS_v1",
+  "generated_at": "2026-09-07T21:42:30+02:00",
+  "range": "JBLR-LIB-00000895..00000908",
+  "relations": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000895",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Androsace rioxana"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000896",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Androsace rioxana"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000897",
+      "relation": "FOCAL_ARTICLE_WITHIN_COMPOUND_SOURCE",
+      "taxon_as_source": "Vitis vinifera L. subsp. sylvestris (Gmelin) Hegi",
+      "pages": "95-120"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000898",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Prunus lusitanica subsp. lusitanica"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000899",
+      "relation": "GENERAL_REGIONAL_LEGAL_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000900",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Androsace rioxana"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000901",
+      "relation": "MULTITAXON_FLORISTIC_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000902",
+      "relation": "MULTITAXON_FLORISTIC_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000903",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Androsace rioxana"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000904",
+      "relation": "MULTITAXON_REGIONAL_FLORA_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000905",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Androsace rioxana"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000906",
+      "relation": "REGIONAL_HABITAT_CONNECTIVITY_SOURCE",
+      "geography": "Valle del Oja-Tirón, La Rioja"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000907",
+      "relation": "FOCAL_ARTICLE_WITHIN_COMPOUND_SOURCE",
+      "taxon_as_source": "Ilex aquifolium",
+      "pages": "83-142"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000908",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Androsace rioxana"
+    }
+  ],
+  "no_silent_taxon_inference": true
+}
