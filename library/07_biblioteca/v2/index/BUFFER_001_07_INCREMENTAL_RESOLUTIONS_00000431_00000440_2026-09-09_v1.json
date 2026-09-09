@@ -1,0 +1,135 @@
+{
+  "schema": "JBLR_001_07_BUFFER_INCREMENTAL_RESOLUTIONS_v1",
+  "generated_at": "2026-09-09T10:52:00+02:00",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "range": {
+    "from": "000431",
+    "to": "000440",
+    "count": 10
+  },
+  "active_index": {
+    "sha": "8acc84c6610656ca2d0e11518cb46c25921818d7",
+    "hwm": "JBLR-LIB-00000915",
+    "next": "JBLR-LIB-00000916"
+  },
+  "entries": [
+    {
+      "RESOLUTION_SEQ": "000431",
+      "SUPERSEDES_RESOLUTION_SEQ": "000384",
+      "DISCOVERY_ID": "000724",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000909",
+      "PHYSICAL_OBJECT_POINTER": "drive:1vIaZszq9a7sAt4WFcUnE1N5oACzP0XjJ",
+      "IDENTIFIER": "DOI:10.1016/j.biocon.2023.110267",
+      "SOURCE_ORIGIN": "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    },
+    {
+      "RESOLUTION_SEQ": "000432",
+      "SUPERSEDES_RESOLUTION_SEQ": "000386",
+      "DISCOVERY_ID": "000726",
+      "RESOLUTION_STATE": "CLOSED_NOT_ACQUIRED_USER_DIRECTIVE",
+      "LIB_FILE_ID": "NONE",
+      "IDENTIFIER": "DOI:10.1016/j.ecoleng.2024.107243",
+      "REASON": "No file present in the user-completed human-download batch; user explicitly directed that missing items be discarded as non-downloadable.",
+      "SOURCE_ORIGIN": "USER_DIRECTIVE_2026_09_09"
+    },
+    {
+      "RESOLUTION_SEQ": "000433",
+      "SUPERSEDES_RESOLUTION_SEQ": "000328",
+      "DISCOVERY_ID": "000742",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000910",
+      "PHYSICAL_OBJECT_POINTER": "drive:1Ah2sD64SwnErl1jMahzikoC6H-Bc6G8V",
+      "IDENTIFIER": "DOI:10.1007/s10531-025-03013-0",
+      "SOURCE_ORIGIN": "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    },
+    {
+      "RESOLUTION_SEQ": "000434",
+      "SUPERSEDES_RESOLUTION_SEQ": "000329",
+      "DISCOVERY_ID": "000743",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000911",
+      "PHYSICAL_OBJECT_POINTER": "drive:1NrsEX4aZ0doIlF0eCbuAoQ1AdDEW-P9z",
+      "IDENTIFIER": "DOI:10.1007/s13595-020-00963-z",
+      "SOURCE_ORIGIN": "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    },
+    {
+      "RESOLUTION_SEQ": "000435",
+      "SUPERSEDES_RESOLUTION_SEQ": "000342",
+      "DISCOVERY_ID": "000762",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000912",
+      "PHYSICAL_OBJECT_POINTER": "drive:1su_rRk7UREAORgpJ7G7RBvZji1JRd2yK",
+      "IDENTIFIER": "INFOFLORA_EX_SITU_WORKSHOP_2025_DE_FR",
+      "SOURCE_ORIGIN": "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    },
+    {
+      "RESOLUTION_SEQ": "000436",
+      "SUPERSEDES_RESOLUTION_SEQ": "000343",
+      "DISCOVERY_ID": "000763",
+      "RESOLUTION_STATE": "CLOSED_NOT_ACQUIRED_USER_DIRECTIVE",
+      "LIB_FILE_ID": "NONE",
+      "IDENTIFIER": "CRP1083",
+      "REASON": "No file present in the user-completed human-download batch; user explicitly directed that missing items be discarded as non-downloadable.",
+      "SOURCE_ORIGIN": "USER_DIRECTIVE_2026_09_09"
+    },
+    {
+      "RESOLUTION_SEQ": "000437",
+      "SUPERSEDES_RESOLUTION_SEQ": "000344",
+      "DISCOVERY_ID": "000764",
+      "RESOLUTION_STATE": "CLOSED_NOT_ACQUIRED_USER_DIRECTIVE",
+      "LIB_FILE_ID": "NONE",
+      "IDENTIFIER": "WALLONIA_ATLAS_GUIDE_METHODOL_2019",
+      "REASON": "No file present in the user-completed human-download batch; user explicitly directed that missing items be discarded as non-downloadable.",
+      "SOURCE_ORIGIN": "USER_DIRECTIVE_2026_09_09"
+    },
+    {
+      "RESOLUTION_SEQ": "000438",
+      "SUPERSEDES_RESOLUTION_SEQ": "000320",
+      "DISCOVERY_ID": "000769",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000913",
+      "PHYSICAL_OBJECT_POINTER": "drive:1ZmlMhBV_ALByhHCjD5qKB7qdlNWyRSpL",
+      "IDENTIFIER": "RBG_KEW_MSB_TIS_16_2024",
+      "SOURCE_ORIGIN": "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    },
+    {
+      "RESOLUTION_SEQ": "000439",
+      "SUPERSEDES_RESOLUTION_SEQ": "000321",
+      "DISCOVERY_ID": "000770",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000914",
+      "PHYSICAL_OBJECT_POINTER": "drive:1LmyiUwWyeLsGTElIaUZiai71zGJwfuTe",
+      "IDENTIFIER": "SEEDS_OF_SUCCESS_TECHNICAL_PROTOCOL_2026_06",
+      "SOURCE_ORIGIN": "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    },
+    {
+      "RESOLUTION_SEQ": "000440",
+      "SUPERSEDES_RESOLUTION_SEQ": "000323",
+      "DISCOVERY_ID": "000772",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000915",
+      "PHYSICAL_OBJECT_POINTER": "drive:1wxtBrxZ-dHDYnX6ZcICnEo3SrSZlJJm6",
+      "IDENTIFIER": "TANES_TREE_TRUST_FACTSHEET_15_2024",
+      "SOURCE_ORIGIN": "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    }
+  ],
+  "remote_unresolved_after_this_resolution": [],
+  "remote_closed_not_acquired": [
+    "000726",
+    "000763",
+    "000764"
+  ],
+  "remote_acquired": [
+    "000724",
+    "000742",
+    "000743",
+    "000762",
+    "000769",
+    "000770",
+    "000772"
+  ],
+  "latest_available_07_resolution_seq": "000440",
+  "history_policy": "APPEND_ONLY",
+  "data_loss": false
+}
