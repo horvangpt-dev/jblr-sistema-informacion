@@ -47,7 +47,7 @@
     {"LIB_FILE_ID":"JBLR-LIB-00001072","primary_drive_id":"1TJphokeCoP6fxCh3XiIjIrNeLzPfaznm","additional_drive_ids":["1ZhfWmvtvJuq490XFxfKsvMuBTTWkcTyT","1e8JOCyC6dgfOceRjI3RCnzdayQHyTr0o"],"relation":"THREE_PHYSICAL_REPRESENTATIONS_ONE_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"}
   ],
   "identity_review":{"active_index_precheck":"HWM1058_NEXT1059_BLOB_SHA_fd1688925a524818e9eb907959cfa9afb5fcc66d","source_folder":"1cVdRB1JNz3Eosls0ij305d4S9r6HqtFp","incoming_physical_objects":15,"new_canonical_identities":14,"incoming_internal_duplicate_representations":1,"preexisting_representation_links":8,"unresolved_identities":0,"source_failures":0,"redownload_required":0,"physical_deletions":0,"dedup_first":true,"no_silent_inference":true,"history_preserved":true},
-  "physical_routing":{"destination_en_folder":"1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS","source_objects_to_move":15,"drive_ids_preserved":true,"routing_state":"PENDING_WRITE_TIME_MOVE_AND_READBACK"},
+  "physical_routing":{"destination_en_folder":"1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS","source_objects_to_move":15,"source_objects_moved":15,"source_folder_final_count":0,"drive_ids_preserved":true,"physical_deletions":0,"routing_state":"COMPLETE_AFTER_MOVE_VERIFIED"},
   "history_policy":"APPEND_ONLY",
   "next_LIB_FILE_ID":"JBLR-LIB-00001073"
 }
