@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00001005_00001018",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_H02_001_002_GAP_CLOSURE_CANONICALIZATION_1005_1018_2026_09_11",
+  "range": {
+    "from": "JBLR-LIB-00001005",
+    "to": "JBLR-LIB-00001018",
+    "count": 14
+  },
+  "record_encoding": {
+    "columns": ["LIB_FILE_ID","SOURCE_KEY","DRIVE_ID","LANGUAGE","MODULES","DISCOVERY_ID","TITLE","ORIGIN_CHANNEL"]
+  },
+  "records": [
+    ["JBLR-LIB-00001005","07-H02-001","1SEm1HSBgF0icPxgNh2dtlZ96EYX1pTWA","en",["H02"],"NONE","A Low-Moisture-Content Limit to Logarithmic Relations Between Seed Moisture Content and Longevity","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001006","07-H02-002","1fNV7sUdcMFJJNALHfp8xKmEp9gpzjPbq","en",["H02"],"NONE","A Comparison of the Low-Moisture-Content Limit to the Logarithmic Relation Between Seed Moisture and Longevity in Twelve Species","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001007","07-H02-003","13co7oJqINSuA6BX-U9YGWswLnrfomiuB","en",["H02"],"NONE","Low Moisture Content Limits to Relations Between Seed Longevity and Moisture","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001008","07-H02-004","1Pc9bY3iqWwGDZCJM8vXGbGhcrj1CgcqQ","en",["H02"],"NONE","Theoretical Basis of Protocols for Seed Storage III. Optimum Moisture Contents for Pea Seeds Stored at Different Temperatures","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001009","07-H02-005","1f353IXkrcHXe-gafKqbS-MX2ovPS6HFH","en",["H02"],"NONE","Seed quality for conservation is critically affected by pre-storage factors","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001010","07-H02-006","1-HJLTVph5BuZV8H3pg0QsLBvuCYRjvlK","en",["H02"],"NONE","Physiology of Desiccation-Sensitive (Recalcitrant) Seeds and the Implications for Cryopreservation","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001011","07-H02-007","1qMWiZV2PBjwdQ50sZuWveVa94idsCS1J","en",["H02"],"NONE","Increases in the longevity of desiccation-phase developing rice seeds: response to high-temperature drying depends on harvest moisture content","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001012","07-H02-008","1W0nxI-LRCAAPKJiXHEIb7_Nd5lBXEkUs","en",["H02"],"NONE","High-temperature stress during drying improves subsequent rice (Oryza sativa L.) seed longevity","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001013","07-H02-009","13DhAGzLCFzmk_H31ICeIdFeEa1jT1gRe","en",["H02"],"NONE","Taxonomic affinity, habitat and seed mass strongly predict seed desiccation response: a boosted regression trees analysis based on 17 539 species","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001014","07-H02-010","1rJzGf0djCkRmXnxKxP-C38V1w537dG04","en",["H02"],"NONE","Further Evidence That the Genebank Standards for Drying Orthodox Seeds May Not Be Optimal for Subsequent Seed Longevity","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001015","07-H02-011","15nNa21HwyehQFfNYRq1LxtMDPRpK_xDY","en",["H02"],"NONE","Assessment of the performance of Cromarty's equation to predict seed equilibrium moisture content during drying","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001016","07-H02-012","1ELt_E7rIhKkdgoPuYp4rRo8W9cINfwXW","en",["H02"],"NONE","Contrasting seed moisture sorption behaviour between two species and the implication for seed longevity","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001017","07-H02-013","124U9Hog3piwkUq8bU_Eh1VT4vau8kF8d","en",["H02"],"NONE","The Effects of Storage Conditions on Seed Deterioration and Ageing: How to Improve Seed Longevity","USER_H02_001_002_GAP_CLOSURE"],
+    ["JBLR-LIB-00001018","07-H02-014","1XHi0kKCr8bvyJZpRtsxyKLpOzpVYt5Z6","en",["H02"],"NONE","Two-step drying of soya bean seed germplasm often improves subsequent storage longevity","USER_H02_001_002_GAP_CLOSURE"]
+  ],
+  "bibliographic_identifiers": [
+    {"LIB_FILE_ID":"JBLR-LIB-00001005","authors":"R. H. Ellis; T. D. Hong; E. H. Roberts","journal":"Annals of Botany","volume":"61","pages":"405-408","year":1988,"doi_status":"NOT_DEMONSTRATED_FROM_SOURCE_TEXT"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001006","authors":"R. H. Ellis; T. D. Hong; E. H. Roberts","journal":"Annals of Botany","volume":"63","pages":"601-611","year":1989,"doi_status":"NOT_DEMONSTRATED_FROM_SOURCE_TEXT"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001007","authors":"R. H. Ellis; T. D. Hong; E. H. Roberts; K.-L. Tao","journal":"Annals of Botany","volume":"65","pages":"493-504","year":1990,"doi_status":"NOT_DEMONSTRATED_FROM_SOURCE_TEXT"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001008","authors":"Christina W. Vertucci; Eric E. Roos; Jennifer Crane","journal":"Annals of Botany","volume":"74","pages":"531-540","year":1994,"doi_status":"NOT_DEMONSTRATED_FROM_SOURCE_TEXT"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001009","doi":"10.1071/BT06046","authors":"Robin Probert; John Adams; Julia Coneybeer; Andrew Crawford; Fiona Hay","journal":"Australian Journal of Botany","volume":"55","pages":"326-335","year":2007},
+    {"LIB_FILE_ID":"JBLR-LIB-00001010","doi":"10.1086/673302","authors":"N. W. Pammenter; Patricia Berjak","journal":"International Journal of Plant Sciences","volume":"175(1)","pages":"21-28","year":2014},
+    {"LIB_FILE_ID":"JBLR-LIB-00001011","doi":"10.1093/aob/mcv091","authors":"K. J. Whitehouse; F. R. Hay; R. H. Ellis","journal":"Annals of Botany","volume":"116","pages":"247-259","year":2015},
+    {"LIB_FILE_ID":"JBLR-LIB-00001012","doi":"10.1017/S0960258517000277","authors":"Katherine J. Whitehouse; Fiona R. Hay; Richard H. Ellis","journal":"Seed Science Research","volume":"27","pages":"281-291","year":2017},
+    {"LIB_FILE_ID":"JBLR-LIB-00001013","doi":"10.1093/aob/mcx128","authors":"Sarah V. Wyse; John B. Dickie","journal":"Annals of Botany","volume":"121","pages":"71-83","year":2018},
+    {"LIB_FILE_ID":"JBLR-LIB-00001014","doi":"10.1089/bio.2018.0026","authors":"Katherine J. Whitehouse et al.","journal":"Biopreservation and Biobanking","volume":"16(5)","year":2018},
+    {"LIB_FILE_ID":"JBLR-LIB-00001015","doi":"10.15258/sst.2023.51.3.16","authors":"Shabnam Rezaei; Julia Buitink; Fiona R. Hay","journal":"Seed Science and Technology","volume":"51(3)","pages":"485-491","year":2023},
+    {"LIB_FILE_ID":"JBLR-LIB-00001016","doi":"10.1017/S0960258523000156","authors":"Shabnam Rezaei; Julia Buitink; Fiona R. Hay","journal":"Seed Science Research","volume":"33","pages":"126-134","year":2023},
+    {"LIB_FILE_ID":"JBLR-LIB-00001017","doi":"10.3390/seeds3010005","author":"Françoise Corbineau","journal":"Seeds","volume":"3","pages":"56-75","year":2024},
+    {"LIB_FILE_ID":"JBLR-LIB-00001018","doi":"10.1007/s10722-025-02521-w","authors":"Olorunnisola F. Salvador; Richard H. Ellis; Olaniyi A. Oyatomi; Michael T. Abberton; Fiona R. Hay","journal":"Genetic Resources and Crop Evolution","volume":"72","pages":"9577-9590","year":2025}
+  ],
+  "alternate_physical_representations": [
+    {"LIB_FILE_ID":"JBLR-LIB-00001018","drive_ids":["1isIsHllcjlTM5mN6W2-zU1bMaPwGInfB"],"basis":["SAME_TITLE","SAME_DOI","SAME_EXTRACTED_BIBLIOGRAPHIC_CONTENT","SAME_FILE_SIZE_2312631"],"binary_duplicate":"NOT_ASSERTED_NO_HASH","physical_action":"PRESERVE_NO_HASHLESS_DELETION"}
+  ],
+  "preexisting_H02_confirmations": [
+    {"LIB_FILE_ID":"JBLR-LIB-00000554","DRIVE_ID":"14jInr0I-p8had8I7fnPOpxF9y_x1kHsK","title":"Solberg et al. - Long-Term Storage and Longevity of Orthodox Seeds A Systematic Review - 2020","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000558","DRIVE_ID":"1Hvoafc8nQJH2mJAhheOiO3VnB9DYsALw","title":"Kallow et al. - Drying banana seeds for ex situ conservation - 2022","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000559","DRIVE_ID":"1B0ETRzszF7Gun3YxoY5t3eRMGExajA2V","title":"Hay Rezaei y Buitink - Seed Moisture Isotherms Sorption Models and Longevity - 2022","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000560","DRIVE_ID":"1FLTTDbNbnslgf9MRwKTH-hnhq1d6jJy9","title":"Timple y Hay - High-temperature drying of seeds of wild Oryza species intended for long-term storage - 2018","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000561","DRIVE_ID":"1VtucxCPrrPlLDlvPK1wqa82BIFyMHmbC","title":"Hay et al. - Reconsidering how to dry orthodox seeds for improved ex situ conservation outcomes - 2026","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000998","DRIVE_ID":"1GX_5uLvAbjliLObTsxJFx3XPekoDYLe_","title":"Genebank Standards for Plant Genetic Resources for Food and Agriculture - Revised edition - 2014","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000999","DRIVE_ID":"1fgXSwy9Zt5lFEjkZmK69O_FjsDcb9Fdp","title":"Manual of Seed Handling in Genebanks - 2006","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001000","DRIVE_ID":"1pBi8wk8dMQDJhcgJb4Whtp5GPbENhqxo","title":"Practical guide for the application of the Genebank Standards - Conservation of orthodox seeds in seed genebanks - 2022","doi":"10.4060/cc0021en","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000063","DRIVE_ID":"1Hn6bT0NstoDp5ynNswo84g88koZt1b_9","title":"Blue drum drying_final.pdf","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000067","DRIVE_ID":"1bB2jAu_rzexvX5742wNG8bSQSx9CxEAN","title":"08-Small-scale-drying-methods.pdf","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000071","DRIVE_ID":"1FNF8J-ypuaYwGmVZLc1Qaja1PXIjZqzs","title":"05-eRH-moisture-measurement.pdf","state":"PREEXISTING_CANONICAL"},
+    {"LIB_FILE_ID":"JBLR-LIB-00000072","DRIVE_ID":"1QHdsWhV2GDEmf7OoXCyND0oKJUp7C9gm","title":"MSBP-Seed-Conservation-Standards.pdf","state":"PREEXISTING_CANONICAL"}
+  ],
+  "kew_user_confirmed_physical_canonical_unresolved": [
+    {"tis":"04","normalized_title":"Post-harvest handling of seed collections","state":"PHYSICAL_EXISTENCE_CONFIRMED_BY_USER_CANONICAL_ID_UNRESOLVED","LIB_FILE_ID":null,"DRIVE_ID":null},
+    {"tis":"07","normalized_title":"Low-cost monitors of seed moisture status","state":"PHYSICAL_EXISTENCE_CONFIRMED_BY_USER_CANONICAL_ID_UNRESOLVED","LIB_FILE_ID":null,"DRIVE_ID":null},
+    {"tis":"09","normalized_title":"Equilibrating seeds to specific moisture levels","state":"PHYSICAL_EXISTENCE_CONFIRMED_BY_USER_CANONICAL_ID_UNRESOLVED","LIB_FILE_ID":null,"DRIVE_ID":null},
+    {"tis":"10","normalized_title":"Identifying desiccation-sensitive seeds","state":"PHYSICAL_EXISTENCE_CONFIRMED_BY_USER_CANONICAL_ID_UNRESOLVED","LIB_FILE_ID":null,"DRIVE_ID":null},
+    {"tis":"11","normalized_title":"Seed bank design: seed drying rooms","state":"PHYSICAL_EXISTENCE_CONFIRMED_BY_USER_CANONICAL_ID_UNRESOLVED","LIB_FILE_ID":null,"DRIVE_ID":null}
+  ],
+  "identity_review": {
+    "active_index_before_allocation":{"high_watermark":"JBLR-LIB-00001004","next":"JBLR-LIB-00001005","content_sha":"d836de6b609d26d5094220b471df72a90cd9bf0b"},
+    "source_folder":{"name":"H02 · SECADO CONTROLADO · METROLOGÍA DEL SECADO","drive_id":"1A6nfEkVI8ZsY0il4lcwe1vRtKjNYiJql"},
+    "physical_objects_reviewed":15,
+    "new_canonical_identities":14,
+    "same_identity_representation_collapses":1,
+    "stable_identifier_title_and_historical_index_precheck":"PASS_NO_PRIOR_CANONICAL_IDENTITY_DEMONSTRATED_FOR_1005_1018",
+    "specialized_historical_segments_checked":["JBLR-LIB-00000740..00000750","JBLR-LIB-00000751..00000762","JBLR-LIB-00000873..00000894","JBLR-LIB-00000994..00001004"],
+    "not_found_is_not_absence":true,
+    "kew_unresolved_count":5,
+    "no_silent_inference":true
+  },
+  "physical_reconciliation": {
+    "source_folder":"1A6nfEkVI8ZsY0il4lcwe1vRtKjNYiJql",
+    "source_physical_objects":15,
+    "destination_en_folder":"1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS",
+    "planned_moves":15,
+    "physical_deletions":0,
+    "binary_duplicate_assertions":0,
+    "routing_state":"PENDING_POST_CANONICAL_ALLOCATION_READBACK"
+  },
+  "history_policy":"APPEND_ONLY",
+  "next_LIB_FILE_ID":"JBLR-LIB-00001019"
+}
