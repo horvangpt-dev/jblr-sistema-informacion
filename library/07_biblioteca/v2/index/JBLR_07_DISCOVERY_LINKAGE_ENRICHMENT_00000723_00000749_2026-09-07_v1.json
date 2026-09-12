@@ -1,0 +1,201 @@
+{
+  "schema": "JBLR_07_DISCOVERY_LINKAGE_ENRICHMENT_v1",
+  "generated_at": "2026-09-07T20:43:40+02:00",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "scope": "HISTORICAL_DISCOVERIES_000723_000740",
+  "source_authority": [
+    "JBLR-EVT-001-20260903-MSG-07-P1-EUROPE-ROUND19-023",
+    "JBLR-EVT-001-20260903-MSG-07-P1-EUROPE-ROUND20-024",
+    "JBLR-EVT-001-20260903-MSG-07-P1-EUROPE-PRACTICAL-CLOSURE-025",
+    "BUFFER_CORRECTIVE_RESOLUTIONS_000383_000400"
+  ],
+  "identity_basis": "EXACT_TITLE_DOI_OR_FULLTEXT_BIBLIOGRAPHIC_IDENTITY_AGAINST_EXISTING_CANONICAL_DELTAS;NO_FILENAME_ONLY_INFERENCE",
+  "records": [
+    {
+      "discovery_id": "000723",
+      "LIB_FILE_ID": "JBLR-LIB-00000749",
+      "drive_id": "1UV9nTZgnyMthreDFhGt2U06XVX56UvW9",
+      "doi": "10.1093/aob/mcq222",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000383",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000725",
+      "LIB_FILE_ID": "JBLR-LIB-00000748",
+      "drive_id": "1_RgVIOPssCbOwPu3Odv2hCjxLE1kbBCV",
+      "doi": "10.1016/j.biocon.2019.01.014",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000385",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000727",
+      "LIB_FILE_ID": "JBLR-LIB-00000743",
+      "drive_id": "1DfLiqMRYjzD4Sj7--D50pzNXdR9gdqJh",
+      "doi": "10.1111/rec.70239",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000387",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000728",
+      "LIB_FILE_ID": "JBLR-LIB-00000742",
+      "drive_id": "1914NgSzTlghsf9_GZPKmtSUwmTzpPYhg",
+      "doi": "10.5209/mbot.69341",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000388",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000729",
+      "LIB_FILE_ID": "JBLR-LIB-00000741",
+      "drive_id": "1IuNDqDOTa-X-cItoxLgWE71fdG17qMTA",
+      "doi": "10.7320/FlMedit32.421",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000389",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000730",
+      "LIB_FILE_ID": "JBLR-LIB-00000723",
+      "drive_id": "1SEr4_Qx4jSiW9F8XwlCJmWt0-ZHzk7LU",
+      "doi": "10.3390/plants9050581",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000390",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000731",
+      "LIB_FILE_ID": "JBLR-LIB-00000724",
+      "drive_id": "1SvHPJKpGJazMOrILUScHHqWoe0RLEKpH",
+      "doi": "10.1006/anbo.1999.0909",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000391",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000732",
+      "LIB_FILE_ID": "JBLR-LIB-00000725",
+      "drive_id": "187LQF2xOgtWl5aJgJ46eRuqZG4wZRwur",
+      "doi": "10.1007/s00035-022-00289-8",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000392",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000733",
+      "LIB_FILE_ID": "JBLR-LIB-00000726",
+      "drive_id": "112BnO2B4Zu5bpYCNdtYYKThGdcfQzMjp",
+      "doi": "10.1007/s00035-025-00346-y",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000393",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000734",
+      "LIB_FILE_ID": "JBLR-LIB-00000727",
+      "drive_id": "1Cv3hCfXWEeRGjgsm6n_2gVqXmxp8Cme3",
+      "doi": "10.1007/s11258-020-01061-w",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000394",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000735",
+      "LIB_FILE_ID": "JBLR-LIB-00000728",
+      "drive_id": "1AFKyMFdYYHSwVGxyl9_9_jJyg8EaA9wS",
+      "doi": "10.1006/anbo.1998.0711",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000395",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000736",
+      "LIB_FILE_ID": "JBLR-LIB-00000729",
+      "drive_id": "1Kv6L5kqeC62roXk3rOZAS_vuJtPkyzbG",
+      "doi": "10.15258/sst.2008.36.2.14",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000396",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000737",
+      "LIB_FILE_ID": "JBLR-LIB-00000730",
+      "drive_id": "1L-orjsacex38tlByoKqkozhSq8CMlWzk",
+      "doi": "10.1111/rec.70096",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000397",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000738",
+      "LIB_FILE_ID": "JBLR-LIB-00000731",
+      "drive_id": "14ZPefgfKu4pwtjGxOshWVIE5gL0i7D4v",
+      "doi": "10.15258/sst.2007.35.1.13",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000398",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000739",
+      "LIB_FILE_ID": "JBLR-LIB-00000732",
+      "drive_id": "16PfPSXIkHHO4VtKsEmZ6-jJrjeQitNdN",
+      "doi": "10.15258/sst.2009.37.3.12",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000399",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    },
+    {
+      "discovery_id": "000740",
+      "LIB_FILE_ID": "JBLR-LIB-00000733",
+      "drive_id": "1-boJR1YzbJpLg9YTNdhaKMF7Oj-U2mu5",
+      "doi": "10.15258/sst.2011.39.2.16",
+      "relation": "EXISTING_CANONICAL_IDENTITY_REUSE",
+      "supersedes_resolution": "000400",
+      "active_index_effect": "NONE",
+      "new_lib_file_id": false
+    }
+  ],
+  "unresolved": [
+    {
+      "discovery_id": "000724",
+      "doi": "10.1016/j.biocon.2023.110267",
+      "state": "NOT_ACQUIRED_REMOTE_UNRESOLVED",
+      "reason": "NO_EXACT_PHYSICAL_OR_CANONICAL_IDENTITY_DEMONSTRATED_IN_CURRENT_READBACK"
+    },
+    {
+      "discovery_id": "000726",
+      "doi": "10.1016/j.ecoleng.2024.107243",
+      "state": "NOT_ACQUIRED_REMOTE_UNRESOLVED",
+      "reason": "NO_EXACT_PHYSICAL_OR_CANONICAL_IDENTITY_DEMONSTRATED_IN_CURRENT_READBACK"
+    }
+  ],
+  "summary": {
+    "resolved_by_existing_identity_reuse": 16,
+    "remaining_historical_unresolved": 2,
+    "new_lib_file_ids": 0
+  },
+  "active_index_snapshot": {
+    "sha": "8e71dcd00010197d4bd8e3ae597a9f81798f56b5",
+    "hwm": "JBLR-LIB-00000894",
+    "next": "JBLR-LIB-00000895"
+  },
+  "history_policy": "APPEND_ONLY",
+  "data_loss": false
+}

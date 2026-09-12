@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.1.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000860_00000872",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_P1_INTERNACIONAL_MANUAL_ACQUISITION_AND_EXTRAS_860_872_2026_09_07",
+  "range": {
+    "from": "JBLR-LIB-00000860",
+    "to": "JBLR-LIB-00000872",
+    "count": 13
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000860",
+      "001-DISC-000741",
+      "1JN6IJY2EhaTXbCvcggH2p_mDDheHKAdv",
+      "en",
+      [
+        "M04",
+        "M05"
+      ],
+      "000741",
+      "Modeling seed germination data to meet biodiversity conservation needs in the Mediterranean",
+      "USER_P1_INTERNACIONAL_MANUAL_ACQUISITION"
+    ],
+    [
+      "JBLR-LIB-00000861",
+      "001-DISC-000744",
+      "147Vm_PuBvukIjxDfwfUoypxmGOdafi4V",
+      "en",
+      [
+        "M04",
+        "M05"
+      ],
+      "000744",
+      "Can alpine plant species “bank” on conservation?: Using artificial aging to understand seed longevity",
+      "USER_P1_INTERNACIONAL_MANUAL_ACQUISITION"
+    ],
+    [
+      "JBLR-LIB-00000862",
+      "001-DISC-000745",
+      "18BPVeqmyYdL68pA_VSptzOmjD22ZdVDm",
+      "en",
+      [
+        "M04",
+        "M05"
+      ],
+      "000745",
+      "Exploring seed longevity of UK native trees: implications for ex situ conservation",
+      "USER_P1_INTERNACIONAL_MANUAL_ACQUISITION"
+    ],
+    [
+      "JBLR-LIB-00000863",
+      "001-DISC-000755",
+      "1P7UmTtJExQIOnhnHy9PlPzIYRko2glsg",
+      "fr",
+      [
+        "M02",
+        "M05"
+      ],
+      "000755",
+      "Protocoles de suivi de la flore et des habitats patrimoniaux",
+      "USER_P1_INTERNACIONAL_MANUAL_ACQUISITION"
+    ],
+    [
+      "JBLR-LIB-00000864",
+      "001-DISC-000759",
+      "1InQCUErKn1JTHI8yzM_EMpOPJ2ZwHOGy",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000759",
+      "Collecte et mise en culture d’arbres et d’arbustes sauvages et locaux. Guide technique. 3e édition",
+      "USER_P1_INTERNACIONAL_MANUAL_ACQUISITION"
+    ],
+    [
+      "JBLR-LIB-00000865",
+      "001-DISC-000765",
+      "1MzA_4zo5Cedji3MNfwYl722vo90Gg_kn",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "000765",
+      "Liste Rouge de la Flore Vasculaire de Wallonie",
+      "USER_P1_INTERNACIONAL_MANUAL_ACQUISITION"
+    ],
+    [
+      "JBLR-LIB-00000866",
+      "001-DISC-000766",
+      "1GjwdpNg-CfgrKBIgYu1624tbQ4wNfeqa",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "000766",
+      "Analyse de l'état de conservation de la Flore vasculaire de Wallonie",
+      "USER_P1_INTERNACIONAL_MANUAL_ACQUISITION"
+    ],
+    [
+      "JBLR-LIB-00000867",
+      "P1-EXTRA-NATBELG107-3",
+      "1HQE8Ny7YM5VuqiwylR-ZkMVYTVKFct04",
+      "fr",
+      [
+        "M02",
+        "M04",
+        "M05"
+      ],
+      "P1-EXTRA-20260906-001",
+      "La Fritillaire pintade (Fritillaria meleagris L.) : le problème de son amplitude écologique",
+      "USER_P1_INTERNACIONAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000868",
+      "P1-EXTRA-RHF-2026-FLORAISON",
+      "1lxvwpgsYDuS62O8hUql7mv6WryYOhbwD",
+      "fr",
+      [
+        "M03"
+      ],
+      "P1-EXTRA-20260906-002",
+      "Tableau des périodes de floraison des espèces du guide technique",
+      "USER_P1_INTERNACIONAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000869",
+      "P1-EXTRA-RHF-2026-COLLECTE",
+      "1-LbLGqGpTrCZx29Y_TRWSYlYPSpdF3Sz",
+      "fr",
+      [
+        "M03"
+      ],
+      "P1-EXTRA-20260906-003",
+      "Tableau des époques de collecte des espèces présentées dans le guide technique Collecte et mise en culture d'arbres et arbustes sauvages et locaux",
+      "USER_P1_INTERNACIONAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000870",
+      "P1-EXTRA-RHF-2026-STRATIFICATION",
+      "1ITgMUjYBZaodNlKoKUdO_fLnHEK1Bejx",
+      "fr",
+      [
+        "M04"
+      ],
+      "P1-EXTRA-20260906-004",
+      "Tableau des temps et méthodes de stratification des espèces présentées dans le guide technique Collecte et mise en culture d'arbres et arbustes sauvages et locaux",
+      "USER_P1_INTERNACIONAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000871",
+      "P1-EXTRA-RHF-2026-TEMPS-TRAITEMENT",
+      "1LcZ6jwBqPsUeZ336uuYgsAzx0wInaIWe",
+      "fr",
+      [
+        "M03",
+        "M04"
+      ],
+      "P1-EXTRA-20260906-005",
+      "Tableau des équivalences moyennes de poids et de temps de collecte et traitement des fruits et graines des espèces présentées dans le guide technique",
+      "USER_P1_INTERNACIONAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000872",
+      "P1-EXTRA-RHF-2026-INVESTISSEMENT",
+      "1A-3IS1HsO1S-AcXZoTIk7qZWS3C2LC1-",
+      "fr",
+      [
+        "M05"
+      ],
+      "P1-EXTRA-20260906-006",
+      "Tableau des coûts d'investissement présentés dans le guide technique Collecte et mise en culture d'arbres et arbustes sauvages et locaux",
+      "USER_P1_INTERNACIONAL_EXTRA"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000860",
+      "doi": "10.1111/cobi.70329",
+      "authors": "Diana María Cruz-Tejada; Efisio Mattana; Angelino Carta",
+      "year": 2026,
+      "journal": "Conservation Biology",
+      "physical_fulltext_readback": "PASS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000861",
+      "doi": "10.1002/aps3.11493",
+      "author": "Alexandra E. Seglias",
+      "year": 2022,
+      "journal": "Applications in Plant Sciences",
+      "physical_fulltext_readback": "PASS_MAIN_ARTICLE_NOT_SUPPLEMENT"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000862",
+      "doi": "10.1017/S0960258520000215",
+      "authors": "Rachael M. Davies; Alice R. Hudson; John B. Dickie; Charlotte Cook; Tom O'Hara; Clare Trivedi",
+      "year": 2020,
+      "journal": "Seed Science Research",
+      "physical_fulltext_readback": "PASS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000863",
+      "stable_identifier": "CBN_ALPIN_BB_51524",
+      "institution": "Conservatoire botanique national alpin / Flore Sentinelle",
+      "year": 2025,
+      "physical_fulltext_readback": "PASS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000864",
+      "stable_identifier": "RESEAU_HAIES_FRANCE_GUIDE_TECHNIQUE_3E_2026",
+      "institution": "Réseau Haies France",
+      "edition": "3e édition",
+      "edition_date": "janvier 2026",
+      "physical_distribution": "TWO_PDF_COMPONENTS",
+      "physical_fulltext_readback": "PASS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000865",
+      "stable_identifier": "NATURALISTES_BELGES_107_1_2026",
+      "authors": "Philippe Frankard et al.",
+      "year": 2026,
+      "journal": "Naturalistes belges",
+      "volume": 107,
+      "issue": 1,
+      "physical_fulltext_readback": "PASS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000866",
+      "stable_identifier": "NATURALISTES_BELGES_107_2_2026",
+      "authors": "Louis-Marie Delescaille et al.",
+      "year": 2026,
+      "journal": "Naturalistes belges",
+      "volume": 107,
+      "issue": 2,
+      "physical_fulltext_readback": "PASS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000867",
+      "stable_identifier": "NATURALISTES_BELGES_107_3_2026_FRITILLARIA",
+      "author": "Martin Tanghe",
+      "year": 2026,
+      "journal": "Naturalistes belges",
+      "volume": 107,
+      "issue": 3,
+      "pages": "1-7",
+      "taxon": "Fritillaria meleagris",
+      "physical_fulltext_readback": "PASS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000868",
+      "stable_identifier": "RHF_2026_TABLE_FLORAISON",
+      "institution": "Réseau Haies France",
+      "year": 2026,
+      "format": "XLSX",
+      "source_note": "Working-document wording is preserved; no inferred publication status."
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000869",
+      "stable_identifier": "RHF_2026_TABLE_CALENDRIER_COLLECTE",
+      "institution": "Réseau Haies France",
+      "year": 2026,
+      "format": "XLSX",
+      "license_observed": "CC BY-NC"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000870",
+      "stable_identifier": "RHF_2026_TABLE_STRATIFICATION",
+      "institution": "Réseau Haies France",
+      "year": 2026,
+      "format": "XLSX",
+      "license_observed": "CC BY-NC"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000871",
+      "stable_identifier": "RHF_2026_TABLE_TEMPS_COLLECTE_TRAITEMENT",
+      "institution": "Réseau Haies France",
+      "year": 2026,
+      "format": "XLSX",
+      "license_observed": "CC BY-NC"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000872",
+      "stable_identifier": "RHF_2026_TABLE_COUTS_INVESTISSEMENT",
+      "institution": "Réseau Haies France",
+      "year": 2026,
+      "format": "XLSX",
+      "license_observed": "CC BY-NC"
+    }
+  ],
+  "historical_links": [
+    [
+      "JBLR-LIB-00000860",
+      "000741",
+      "SUPERSEDES_BUFFER_RESOLUTION_000327_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000861",
+      "000744",
+      "SUPERSEDES_BUFFER_RESOLUTION_000330_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000862",
+      "000745",
+      "SUPERSEDES_BUFFER_RESOLUTION_000331_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000863",
+      "000755",
+      "SUPERSEDES_BUFFER_RESOLUTION_000335_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000864",
+      "000759",
+      "SUPERSEDES_BUFFER_RESOLUTION_000339_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000865",
+      "000765",
+      "SUPERSEDES_BUFFER_RESOLUTION_000345_NOT_ACQUIRED"
+    ],
+    [
+      "JBLR-LIB-00000866",
+      "000766",
+      "SUPERSEDES_BUFFER_RESOLUTION_000346_NOT_ACQUIRED"
+    ]
+  ],
+  "representation_groups": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000864",
+      "primary_drive_id": "1InQCUErKn1JTHI8yzM_EMpOPJ2ZwHOGy",
+      "component_drive_ids": [
+        "1wSdKtwPwESxWXBX6l419d_brMCJow2pG"
+      ],
+      "relation": "COMPOUND_PUBLICATION_OFFICIAL_TWO_PDF_DISTRIBUTION;MAIN_GUIDE_PLUS_SPECIES_FICHE_RECUEIL;ONE_DOCUMENT_IDENTITY"
+    }
+  ],
+  "existing_identity_representation_links": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000808",
+      "additional_drive_id": "1r7RyAU102sNg0l0auvy522Tatg-jP9Q5",
+      "relation": "ADDITIONAL_PHYSICAL_REPRESENTATION_OF_EXISTING_FLORE_LOCALE_PAGEID_1595;NO_NEW_ID;NO_BINARY_HASH_EQUALITY_ASSERTION"
+    }
+  ],
+  "auxiliary_noncanonical_files": [
+    {
+      "drive_id": "1mine54-Z1EgTv0_N_tKNE1Dz5PjdTmd7",
+      "title": "COVER-Natbelg-107-2026.pdf",
+      "relation": "SERIAL_VOLUME_COVER_AND_FRONT_MATTER_FOR_NATURALISTES_BELGES_VOLUME_107_2026",
+      "lib_file_id_effect": "NONE"
+    }
+  ],
+  "package_relations": [
+    {
+      "bundle_id": "RESEAU_HAIES_FRANCE_GUIDE_TECHNIQUE_3E_2026",
+      "members": [
+        "JBLR-LIB-00000864",
+        "JBLR-LIB-00000868",
+        "JBLR-LIB-00000869",
+        "JBLR-LIB-00000870",
+        "JBLR-LIB-00000871",
+        "JBLR-LIB-00000872"
+      ],
+      "relation": "GUIDE_PLUS_ASSOCIATED_TECHNICAL_TABLES"
+    },
+    {
+      "bundle_id": "NATURALISTES_BELGES_VOLUME_107_2026",
+      "members": [
+        "JBLR-LIB-00000865",
+        "JBLR-LIB-00000866",
+        "JBLR-LIB-00000867"
+      ],
+      "auxiliary_drive_ids": [
+        "1mine54-Z1EgTv0_N_tKNE1Dz5PjdTmd7"
+      ],
+      "relation": "SERIAL_VOLUME_ISSUES_AND_AUXILIARY_COVER"
+    }
+  ],
+  "identity_review": {
+    "exact_doi_and_title_repository_precheck": "PASS_NO_CANONICAL_MATCH_FOUND",
+    "physical_fulltext_review": "PASS_FOR_7_DISCOVERY_TARGETS",
+    "guide_000759_two_component_identity_review": "PASS_ONE_COMPOUND_PUBLICATION",
+    "achillea_existing_identity_reuse": "PASS_NO_NEW_ID",
+    "natbelg_cover_non_document_identity": "PASS_NO_NEW_ID",
+    "no_silent_inference": true
+  },
+  "physical_reconciliation": {
+    "new_document_identities": 13,
+    "physical_moves": 0,
+    "physical_deletions": 0,
+    "copy_never_move": true,
+    "source_folder": "1YHWjLevw0sSb44F3pbx7Tv0E_XbvOyIe"
+  },
+  "next_LIB_FILE_ID": "JBLR-LIB-00000873",
+  "history_policy": "APPEND_ONLY"
+}

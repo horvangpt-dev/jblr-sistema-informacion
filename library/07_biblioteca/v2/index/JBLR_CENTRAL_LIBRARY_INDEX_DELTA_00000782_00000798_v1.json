@@ -1,0 +1,502 @@
+{
+  "schema_version": "1.0.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000782_00000798",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_P1_INTERNACIONAL_USER_UPLOADS_INDIA_BRAZIL_IBEROAMERICA_782_798_2026_09_05",
+  "range": {
+    "from": "JBLR-LIB-00000782",
+    "to": "JBLR-LIB-00000798",
+    "count": 17
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000782",
+      "001-DISC-000204",
+      "1egJM4Fe1efBnw6bW78TkY0AwkxLOGnx4",
+      "en",
+      [
+        "M03",
+        "M05"
+      ],
+      "000204",
+      "Handbook of Seed and Planting Material Testing Manuals",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000783",
+      "001-DISC-000193",
+      "1GBl9KfKw7WKLKUacy_pOWCXMl8W6xep5",
+      "en",
+      [
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "000193",
+      "Training Course on Herbarium Techniques and Methodology · Training Manual",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000784",
+      "001-DISC-000190",
+      "1LeBvjAg-UC6vNuhyH14LKyf5OovI35pz",
+      "en",
+      [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "000190",
+      "Sustainable Harvesting of Non Timber Forest Produce (NTFPs): An Operational Manual",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000785",
+      "001-DISC-000188",
+      "1ttSorgTJasnMO1zYDpLB-OtAp373rQan",
+      "en",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000188",
+      "Modern Nursery Techniques: A Manual",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000786",
+      "001-DISC-000174",
+      "19LN7NxGxC6bzaAdq8Hqk0104kIgPiXMa",
+      "en",
+      [
+        "M02",
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000174",
+      "Forest Seed Management: A Manual",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000787",
+      "001-DISC-000271",
+      "1Cbf7m-Q3h8m15N8ZYDvPSEYWrMBJMgVR",
+      "pt",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000271",
+      "Armazenamento de Sementes de Espécies Florestais Nativas",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000788",
+      "001-DISC-000275",
+      "1UnLwTkqqqsftQGA9fyvhSoLvr-JxIcRA",
+      "pt",
+      [
+        "M01",
+        "M02",
+        "M04"
+      ],
+      "000275",
+      "Planejamento da Coleta de Sementes Florestais Nativas",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000789",
+      "001-DISC-000246",
+      "1Nz1zRovJIAJtBWkNJpDpwKy_c01_n_BB",
+      "pt",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000246",
+      "Manual de Curadores de Germoplasma – Vegetal: Criopreservação",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000790",
+      "001-DISC-000243",
+      "1CENJoO-CNgZuzW3rIWxGBUs_j2ER67VH",
+      "pt",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000243",
+      "Manual de Curadores de Germoplasma – Vegetal: Conservação ex situ (Colbase – Sementes)",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000791",
+      "001-DISC-000242",
+      "1OUz5gj-AjwCTzUufwlhiZ2fs5hUSuv_Q",
+      "pt",
+      [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "000242",
+      "Manual de Curadores de Germoplasma – Vegetal: Coleta de Germoplasma",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000792",
+      "001-DISC-000233",
+      "1a9PSnO6WgRGYo2pMXJaKkTIwkqrQlMHu",
+      "en",
+      [
+        "M01",
+        "M04",
+        "M05"
+      ],
+      "000233",
+      "Revised Guidelines and Proforma for Assistance to Botanic Gardens",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000793",
+      "001-DISC-000232",
+      "1wb6p7irhPJOGjySaVB0TUoWTE2wmg7OC",
+      "en",
+      [
+        "M01",
+        "M02",
+        "M04"
+      ],
+      "000232",
+      "Wild Relatives of Crop Plants in India: Collection and Conservation",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000794",
+      "001-DISC-000269",
+      "1MMkxkNlcnmYswjNK753BQU16EqKXW8DZ",
+      "pt",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000269",
+      "Conservação de germoplasma semente de espécies nativas",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000795",
+      "001-DISC-000276",
+      "1i_zpJjT_NXvDplLYMJ_XYeDCGKCsLbv4",
+      "pt",
+      [
+        "M03"
+      ],
+      "000276",
+      "Extração e Beneficiamento de Sementes Florestais Nativas",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000796",
+      "001-DISC-000325",
+      "1TZRSX3lDYciZJrt7LZ_PJK7GmBFEG6aU",
+      "es",
+      [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000325",
+      "Manual de Semillas de Especies Forestales de Importancia Económica",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000797",
+      "001-DISC-000189",
+      "1XVgouKAqZ6fJ-Dq3Ozurx-j57ljqKSo4",
+      "en",
+      [
+        "M02",
+        "M03",
+        "M05"
+      ],
+      "000189",
+      "Cultivation of Selected NWFPs: A Manual",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ],
+    [
+      "JBLR-LIB-00000798",
+      "001-DISC-000323",
+      "1KrOp9OMv4qS3oD9GVuaM3DgliUg1y3H_",
+      "es",
+      [
+        "M03",
+        "M05"
+      ],
+      "000323",
+      "Manual para el análisis físico y biológico de semillas forestales",
+      "P1_INTERNACIONAL_USER_UPLOAD"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000782",
+      "institution": "Division of Horticulture, Indian Council of Agricultural Research",
+      "host": "National Horticulture Board",
+      "year_state": "NOT_DEMONSTRATED_FROM_FULLTEXT_EXCERPT",
+      "stable_identifier_state": "NONE_DEMONSTRATED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000783",
+      "institution": "ENVIS Centre on Floral Diversity, Botanical Survey of India",
+      "year_state": "NOT_DEMONSTRATED_FROM_FULLTEXT_EXCERPT",
+      "stable_identifier_state": "NONE_DEMONSTRATED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000784",
+      "institution": "Indian Council of Forestry Research and Education",
+      "year": 2020,
+      "pages": 102
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000785",
+      "institution": "Indian Council of Forestry Research and Education",
+      "year": 2019
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000786",
+      "institution": "Indian Council of Forestry Research and Education",
+      "year": 2019
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000787",
+      "authors": "Antonio Carlos de Souza Medeiros",
+      "institution": "Embrapa Florestas",
+      "series": "Documentos 66",
+      "issn": "1517-536X",
+      "year": 2001,
+      "pages": 24
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000788",
+      "authors": "Antonio Carlos de Souza Medeiros; Antonio Carlos Nogueira",
+      "institution": "Embrapa Florestas",
+      "series": "Circular Técnica 126",
+      "issn": "1517-5278",
+      "year": 2006
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000789",
+      "authors": "Izulmé Rita Imaculada Santos; Antonieta Nassif Salomão",
+      "institution": "Embrapa Recursos Genéticos e Biotecnologia",
+      "series": "Documentos 319",
+      "issn": "0102-0110",
+      "year": 2010,
+      "pages": 16
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000790",
+      "authors": "Solange C. Barrios Roveri José",
+      "institution": "Embrapa Recursos Genéticos e Biotecnologia",
+      "series": "Documentos 317",
+      "issn": "0102-0110",
+      "year": 2010,
+      "pages": 12
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000791",
+      "authors": "Bruno Machado Teles Walter",
+      "institution": "Embrapa Recursos Genéticos e Biotecnologia",
+      "series": "Documentos 309",
+      "issn": "0102-0110",
+      "year": 2010,
+      "pages": 15
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000792",
+      "institution": "Botanical Survey of India, Ministry of Environment, Forest and Climate Change",
+      "year": 2023,
+      "publication_month": "August"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000793",
+      "authors": "Anjula Pandey; D. C. Bhandari; K. C. Bhatt; S. K. Pareek; A. K. Tomer; B. S. Dhillon",
+      "institution": "National Bureau of Plant Genetic Resources",
+      "year": 2005,
+      "pages_state": "SOURCE_DISCREPANCY_72_OR_73_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000794",
+      "authors": "Antonieta Nassif Salomão; Renato Sales dos Santos; Cássio Costa da Silva Curi",
+      "institution": "Embrapa Recursos Genéticos e Biotecnologia",
+      "series": "Documentos 367",
+      "issn": "0102-0110",
+      "year": 2019,
+      "pages": 46
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000795",
+      "authors": "Antonio Carlos Nogueira; Antonio Carlos de Souza Medeiros",
+      "institution": "Embrapa Florestas",
+      "series": "Circular Técnica 131",
+      "issn": "1517-5278",
+      "year": 2007
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000796",
+      "authors": "Ymber Flores Bendezú",
+      "institution": "Instituto Nacional de Investigación Agraria, Estación Experimental Agraria Pucallpa",
+      "series": "Manual N° 01",
+      "year": 2002
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000797",
+      "institution": "Indian Council of Forestry Research and Education",
+      "year": 2019,
+      "pages": 218
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000798",
+      "authors": "Adriana Antonio Bautista; Cinthya Verónica Velarde Nuño; Olga Leticia Rumayor Rodríguez",
+      "institution": "Secretaría de Medio Ambiente de Coahuila",
+      "year": 2020
+    }
+  ],
+  "historical_links": [
+    [
+      "JBLR-LIB-00000782",
+      "000204",
+      "IND-033"
+    ],
+    [
+      "JBLR-LIB-00000783",
+      "000193",
+      "IND-022"
+    ],
+    [
+      "JBLR-LIB-00000784",
+      "000190",
+      "IND-019"
+    ],
+    [
+      "JBLR-LIB-00000785",
+      "000188",
+      "IND-017"
+    ],
+    [
+      "JBLR-LIB-00000786",
+      "000174",
+      "IND-003"
+    ],
+    [
+      "JBLR-LIB-00000787",
+      "000271",
+      "BR-030"
+    ],
+    [
+      "JBLR-LIB-00000788",
+      "000275",
+      "BR-034"
+    ],
+    [
+      "JBLR-LIB-00000789",
+      "000246",
+      "BR-005"
+    ],
+    [
+      "JBLR-LIB-00000790",
+      "000243",
+      "BR-002"
+    ],
+    [
+      "JBLR-LIB-00000791",
+      "000242",
+      "BR-001"
+    ],
+    [
+      "JBLR-LIB-00000792",
+      "000233",
+      "IND-062"
+    ],
+    [
+      "JBLR-LIB-00000793",
+      "000232",
+      "IND-061"
+    ],
+    [
+      "JBLR-LIB-00000794",
+      "000269",
+      "BR-028"
+    ],
+    [
+      "JBLR-LIB-00000795",
+      "000276",
+      "BR-035"
+    ],
+    [
+      "JBLR-LIB-00000796",
+      "000325",
+      "IB-007"
+    ],
+    [
+      "JBLR-LIB-00000797",
+      "000189",
+      "IND-018"
+    ],
+    [
+      "JBLR-LIB-00000798",
+      "000323",
+      "IB-005"
+    ]
+  ],
+  "identity_review": {
+    "active_index_full_segment_scan": "PASS_53_SEGMENTS_NO_CANONICAL_MATCH_DEMONSTRATED",
+    "buffer_discovery_reconciliation": "PASS_17_OF_17_EXPLICIT_DISCOVERY_LINKS",
+    "previous_physical_representations": "SOME_DISCOVERIES_HAVE_001_PHYSICAL_COPIES_OUTSIDE_ACTIVE_INDEX;GROUP_AS_REPRESENTATIONS_WITHOUT_BINARY_EQUALITY_ASSERTION",
+    "rediscovery_does_not_create_identity": true,
+    "no_hash_equality_assertion": true,
+    "no_silent_inference": true
+  },
+  "physical_reconciliation": {
+    "source_folder": "1YHWjLevw0sSb44F3pbx7Tv0E_XbvOyIe",
+    "source_objects_reviewed": 17,
+    "english_destination": "1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS",
+    "portuguese_destination": "1XIRbTojW3rcC1BaGODKqSRdSzBb49lre",
+    "spanish_destination": "1MHXinDIrwDb5IUX9bLBkOuH2rtfw0vJp",
+    "routing_state": "COMPLETE_AFTER_ROUTING_VERIFIED",
+    "physical_deletions": 0,
+    "source_folder_final_count": 0,
+    "canonical_objects_routed": 17,
+    "route_counts": {
+      "en": 8,
+      "pt": 7,
+      "es": 2
+    },
+    "same_drive_ids_preserved": true
+  },
+  "next_LIB_FILE_ID": "JBLR-LIB-00000799",
+  "history_policy": "APPEND_ONLY"
+}

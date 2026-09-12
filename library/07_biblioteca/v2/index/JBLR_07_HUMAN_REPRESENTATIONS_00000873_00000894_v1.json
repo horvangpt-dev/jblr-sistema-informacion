@@ -1,0 +1,514 @@
+{
+  "schema": "JBLR_07_HUMAN_REPRESENTATIONS_v1",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "canonical_range": "JBLR-LIB-00000873..00000894",
+  "generated_at": "2026-09-07T19:37:00+02:00",
+  "policy": {
+    "human_repository_is_output_surface_not_identity_authority": true,
+    "copy_never_move": true,
+    "no_hashless_deletion": true,
+    "multiple_human_copies_do_not_create_LIB_FILE_ID": true
+  },
+  "summary": {
+    "document_identities": 22,
+    "human_representation_objects": 42,
+    "identities_with_multiple_human_representations": 10,
+    "extra_human_representation_objects": 20
+  },
+  "records": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000873",
+      "representations": [
+        {
+          "drive_id": "15GEAbu1au7IyexIWw-_Eb8FKDXCp_gqK",
+          "title": "JBLR-LIB-00000873 · Etat des lieux de la flore messicole Nord–Pas-de-Calais · 2015.pdf",
+          "url": "https://drive.google.com/file/d/15GEAbu1au7IyexIWw-_Eb8FKDXCp_gqK/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "5388461"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000874",
+      "representations": [
+        {
+          "drive_id": "1O5ShsaJt3S0CnkQH_6bshw6j_j7kw7Jg",
+          "title": "JBLR-LIB-00000874 · CBN Bailleul · Rapport d’activités 2019.pdf",
+          "url": "https://drive.google.com/file/d/1O5ShsaJt3S0CnkQH_6bshw6j_j7kw7Jg/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "2166311"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000875",
+      "representations": [
+        {
+          "drive_id": "1IlMhBQzkAKDR7Sje908G31CqOB5w7Nvg",
+          "title": "JBLR-LIB-00000875 · Plan régional Phelipanche purpurea · 2016.pdf",
+          "url": "https://drive.google.com/file/d/1IlMhBQzkAKDR7Sje908G31CqOB5w7Nvg/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "1917554"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000876",
+      "representations": [
+        {
+          "drive_id": "15TErxn1XDI5_InrIbpYewlG6XCRkAa30",
+          "title": "JBLR-LIB-00000876 · Ressources génétiques végétales · modèle français · 2016.pdf",
+          "url": "https://drive.google.com/file/d/15TErxn1XDI5_InrIbpYewlG6XCRkAa30/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "718743"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000877",
+      "representations": [
+        {
+          "drive_id": "1y5nFEyBB3tNd6lwnPqrdFPJAzuKb13Ul",
+          "title": "JBLR-LIB-00000877 · Manuel récolte étude conservation gestion ex situ · 2007.pdf",
+          "url": "https://drive.google.com/file/d/1y5nFEyBB3tNd6lwnPqrdFPJAzuKb13Ul/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "3522544"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000878",
+      "representations": [
+        {
+          "drive_id": "1GQ48D7bsGZ_oC39leaiBIkv5338KbsIJ",
+          "title": "JBLR-LIB-00000878 · Indicateurs de gestion durable des forêts françaises · édition 2015.pdf",
+          "url": "https://drive.google.com/file/d/1GQ48D7bsGZ_oC39leaiBIkv5338KbsIJ/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "16803802"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000879",
+      "representations": [
+        {
+          "drive_id": "1Ju6z-6lEVFus3vkDAOc7Lj57xQsQNcXL",
+          "title": "JBLR-LIB-00000879 · OBFLORES · Bilan 2023–2024.pdf",
+          "url": "https://drive.google.com/file/d/1Ju6z-6lEVFus3vkDAOc7Lj57xQsQNcXL/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "11163559"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000880",
+      "representations": [
+        {
+          "drive_id": "1sEwEVuzss8ALbmN3CgmaV5rc10zldbP9",
+          "title": "JBLR-LIB-00000880 · Suivi de stations d’espèces rares ou menacées Hauts-de-France · 2024.pdf",
+          "url": "https://drive.google.com/file/d/1sEwEVuzss8ALbmN3CgmaV5rc10zldbP9/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "4981668"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000881",
+      "representations": [
+        {
+          "drive_id": "1lgSScvdos-pgxVassfh5yoDB1-Q4JY4_",
+          "title": "JBLR-LIB-00000881 · Artemisia maritima · populations et écologie · 2024.pdf",
+          "url": "https://drive.google.com/file/d/1lgSScvdos-pgxVassfh5yoDB1-Q4JY4_/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "7417414"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000882",
+      "representations": [
+        {
+          "drive_id": "1qg25DpwutXomBazp7iECQIpUAFWuCjd0",
+          "title": "JBLR-LIB-00000882 · Crambe maritima · cahier pédagogique · 2022.pdf",
+          "url": "https://drive.google.com/file/d/1qg25DpwutXomBazp7iECQIpUAFWuCjd0/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "6010990"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000883",
+      "representations": [
+        {
+          "drive_id": "1AzqwOhDaWjxyn2iv-xEAQlI_6nTRieub",
+          "title": "JBLR-LIB-00000883 · Flore Sentinelle · protocoles et GNSS RTK.pdf",
+          "url": "https://drive.google.com/file/d/1AzqwOhDaWjxyn2iv-xEAQlI_6nTRieub/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "3276467"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000884",
+      "representations": [
+        {
+          "drive_id": "1nPQWkuSFBSbHb68GU1na5xwlI3KSllVh",
+          "title": "JBLR-LIB-00000884 · ENSCONET · Manuel de Collecte de Graines · 2009.pdf",
+          "url": "https://drive.google.com/file/d/1nPQWkuSFBSbHb68GU1na5xwlI3KSllVh/view?usp=drivesdk",
+          "language_bucket": "FR",
+          "mime_type": "application/pdf",
+          "size": "1216099"
+        }
+      ],
+      "representation_count": 1,
+      "duplicate_human_representation_state": "SINGLE_HUMAN_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000885",
+      "representations": [
+        {
+          "drive_id": "1FhOs0LMMbB7GY9Fwtx8mEn9SeGUxvSur",
+          "title": "JBLR-LIB-00000885 · Cariniana legalis · seed viability physiology proteomics · 2021.mht",
+          "url": "https://drive.google.com/file/d/1FhOs0LMMbB7GY9Fwtx8mEn9SeGUxvSur/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "720453"
+        },
+        {
+          "drive_id": "1n3X3q_f7ZX5dE35Ru-7N7tXESZCjX6z9",
+          "title": "JBLR-LIB-00000885 · Cariniana legalis · seed viability · 2021.mht",
+          "url": "https://drive.google.com/file/d/1n3X3q_f7ZX5dE35Ru-7N7tXESZCjX6z9/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "720453"
+        },
+        {
+          "drive_id": "1OcIbA7PWu5EMfzE7VqJdM0iMNQK2q2jO",
+          "title": "JBLR-LIB-00000885 · Cariniana legalis · seed viability physiology and proteomics · 2021.mht",
+          "url": "https://drive.google.com/file/d/1OcIbA7PWu5EMfzE7VqJdM0iMNQK2q2jO/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "720453"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000886",
+      "representations": [
+        {
+          "drive_id": "1B2y_lyJK8KzPDf06ionBe04HrBhfUehC",
+          "title": "JBLR-LIB-00000886 · Lipid remodeling during germination of aged oat seeds · 2025.pdf",
+          "url": "https://drive.google.com/file/d/1B2y_lyJK8KzPDf06ionBe04HrBhfUehC/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "7909195"
+        },
+        {
+          "drive_id": "1JdvhhHNt98oi_l6IVLfvi1ALklJ3bLPq",
+          "title": "JBLR-LIB-00000886 · Lipid remodeling during germination of aged oat seeds · 2025.pdf",
+          "url": "https://drive.google.com/file/d/1JdvhhHNt98oi_l6IVLfvi1ALklJ3bLPq/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "7909195"
+        },
+        {
+          "drive_id": "1NaBv3cUqg0vBfngbQyBB0m6wcT9eonZH",
+          "title": "JBLR-LIB-00000886 · Lipid remodeling during germination of aged oat seeds · 2025.pdf",
+          "url": "https://drive.google.com/file/d/1NaBv3cUqg0vBfngbQyBB0m6wcT9eonZH/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "7909195"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000887",
+      "representations": [
+        {
+          "drive_id": "14CDxMLYOdM_K6xk4JsW8-S9u9Cd6Hj2d",
+          "title": "JBLR-LIB-00000887 · Cryopreservation of Seeds and Seed Embryos · 2021.mht",
+          "url": "https://drive.google.com/file/d/14CDxMLYOdM_K6xk4JsW8-S9u9Cd6Hj2d/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "674449"
+        },
+        {
+          "drive_id": "1U6Lp_Tnqht9PEyPlXdb9YlHoS6b2ukpT",
+          "title": "JBLR-LIB-00000887 · Cryopreservation of Seeds and Seed Embryos · 2021.mht",
+          "url": "https://drive.google.com/file/d/1U6Lp_Tnqht9PEyPlXdb9YlHoS6b2ukpT/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "674449"
+        },
+        {
+          "drive_id": "12TB6WGJFZCYzCsbFsXrfucQ_NmWd3H6I",
+          "title": "JBLR-LIB-00000887 · Cryopreservation of Seeds and Seed Embryos · 2021.mht",
+          "url": "https://drive.google.com/file/d/12TB6WGJFZCYzCsbFsXrfucQ_NmWd3H6I/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "multipart/related",
+          "size": "674449"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000888",
+      "representations": [
+        {
+          "drive_id": "1DP2O2aclcIPgR49WNvejpUZ9dzfXVnzN",
+          "title": "JBLR-LIB-00000888 · Salix seed long-term storage · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1DP2O2aclcIPgR49WNvejpUZ9dzfXVnzN/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "428454"
+        },
+        {
+          "drive_id": "1_ZbMUV3juKdbOczZ4o-ginQUUNNXTxVv",
+          "title": "JBLR-LIB-00000888 · Salix seed long-term storage · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1_ZbMUV3juKdbOczZ4o-ginQUUNNXTxVv/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "428454"
+        },
+        {
+          "drive_id": "1k1uWkzXMeBW1CuTWDd8MUb7qATaRCcR5",
+          "title": "JBLR-LIB-00000888 · Salix seed long-term storage · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1k1uWkzXMeBW1CuTWDd8MUb7qATaRCcR5/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "428454"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000889",
+      "representations": [
+        {
+          "drive_id": "1iZoyfZNZarPnVyjbLoEkerS5K8yeW6sU",
+          "title": "JBLR-LIB-00000889 · Extending Populus seed longevity · 2018.pdf",
+          "url": "https://drive.google.com/file/d/1iZoyfZNZarPnVyjbLoEkerS5K8yeW6sU/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "2347152"
+        },
+        {
+          "drive_id": "1i2dZGSJaYYQj_z0Obf8udibHfgpSB8c8",
+          "title": "JBLR-LIB-00000889 · Populus seed longevity · 2018.pdf",
+          "url": "https://drive.google.com/file/d/1i2dZGSJaYYQj_z0Obf8udibHfgpSB8c8/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "2347152"
+        },
+        {
+          "drive_id": "1S9JmwXOlx9SdP6DmbNP2_gER7ooMjZYb",
+          "title": "JBLR-LIB-00000889 · Extending Populus seed longevity · 2018.pdf",
+          "url": "https://drive.google.com/file/d/1S9JmwXOlx9SdP6DmbNP2_gER7ooMjZYb/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "2347152"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000890",
+      "representations": [
+        {
+          "drive_id": "17eoeqmr476WXKpC8T_p5WJfy74TX8bUv",
+          "title": "JBLR-LIB-00000890 · Fiber flax cryopreservation and low-temperature storage · 2026.pdf",
+          "url": "https://drive.google.com/file/d/17eoeqmr476WXKpC8T_p5WJfy74TX8bUv/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "5549142"
+        },
+        {
+          "drive_id": "1-UALEWyKr4-xnSDsDGoodmpFCmhcXBoD",
+          "title": "JBLR-LIB-00000890 · Fiber flax cryopreservation and low-temperature storage · 2026.pdf",
+          "url": "https://drive.google.com/file/d/1-UALEWyKr4-xnSDsDGoodmpFCmhcXBoD/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "5549142"
+        },
+        {
+          "drive_id": "1ipdL2TdNJn1r355GU38mI6G9Gw6odaCb",
+          "title": "JBLR-LIB-00000890 · Fiber flax cryopreservation and low-temperature seed storage · 2026.pdf",
+          "url": "https://drive.google.com/file/d/1ipdL2TdNJn1r355GU38mI6G9Gw6odaCb/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "5549142"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000891",
+      "representations": [
+        {
+          "drive_id": "1Z7aEtr-HewkX0xolQa7QFtVl-tjpXJ7V",
+          "title": "JBLR-LIB-00000891 · Camellia oleifera · seed storage temperature and quality · 2026.pdf",
+          "url": "https://drive.google.com/file/d/1Z7aEtr-HewkX0xolQa7QFtVl-tjpXJ7V/view?usp=drivesdk",
+          "language_bucket": "ZH",
+          "mime_type": "application/pdf",
+          "size": "3020175"
+        },
+        {
+          "drive_id": "1wlRHOInbPEp1q07W3UXi5R8XkWOnELC4",
+          "title": "JBLR-LIB-00000891 · Camellia oleifera · seed storage temperature · 2026.pdf",
+          "url": "https://drive.google.com/file/d/1wlRHOInbPEp1q07W3UXi5R8XkWOnELC4/view?usp=drivesdk",
+          "language_bucket": "ZH",
+          "mime_type": "application/pdf",
+          "size": "3020175"
+        },
+        {
+          "drive_id": "1lv_DGQFRhxZoIu5IX6MsXNbbHxDGaCHh",
+          "title": "JBLR-LIB-00000891 · Camellia oleifera seed storage temperature and quality · 2026.pdf",
+          "url": "https://drive.google.com/file/d/1lv_DGQFRhxZoIu5IX6MsXNbbHxDGaCHh/view?usp=drivesdk",
+          "language_bucket": "ZH",
+          "mime_type": "application/pdf",
+          "size": "3020175"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000892",
+      "representations": [
+        {
+          "drive_id": "1rc2uLcNSX6XiPvEDWlIMsW7FOYEYXMLC",
+          "title": "JBLR-LIB-00000892 · Seed Longevity · conceptual framework · 2023.pdf",
+          "url": "https://drive.google.com/file/d/1rc2uLcNSX6XiPvEDWlIMsW7FOYEYXMLC/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "3944971"
+        },
+        {
+          "drive_id": "1sudjCeYw0Jb_692ySYiKaLTZHrks2hBZ",
+          "title": "JBLR-LIB-00000892 · Seed Longevity · conceptual framework · 2023.pdf",
+          "url": "https://drive.google.com/file/d/1sudjCeYw0Jb_692ySYiKaLTZHrks2hBZ/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "3944971"
+        },
+        {
+          "drive_id": "1IfHSjCQYRxDI59OLBtogO4MRVd4LlN17",
+          "title": "JBLR-LIB-00000892 · Seed Longevity · evolution of knowledge and conceptual framework · 2023.pdf",
+          "url": "https://drive.google.com/file/d/1IfHSjCQYRxDI59OLBtogO4MRVd4LlN17/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "3944971"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000893",
+      "representations": [
+        {
+          "drive_id": "1CG6-Wz0htjqFxfStf610sO4hD3YWR6nC",
+          "title": "JBLR-LIB-00000893 · Seed freeze sensitivity in 295 Hawaiian species · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1CG6-Wz0htjqFxfStf610sO4hD3YWR6nC/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "575688"
+        },
+        {
+          "drive_id": "1MswhAHj9dzsggZ3wwfpI1DgWOmq70yMR",
+          "title": "JBLR-LIB-00000893 · Seed freeze sensitivity and ex situ longevity of 295 Hawaiian species · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1MswhAHj9dzsggZ3wwfpI1DgWOmq70yMR/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "575688"
+        },
+        {
+          "drive_id": "18WvFjLcdy0bEdPwrXe2AYijrStE4P6e2",
+          "title": "JBLR-LIB-00000893 · Seed freeze sensitivity and ex situ longevity of 295 Hawaiian species · 2019.pdf",
+          "url": "https://drive.google.com/file/d/18WvFjLcdy0bEdPwrXe2AYijrStE4P6e2/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "575688"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000894",
+      "representations": [
+        {
+          "drive_id": "1H5blM6_dgU2zb1OeQ3XqLWmRsFbLVPxt",
+          "title": "JBLR-LIB-00000894 · Lipid thermal fingerprints of long-term stored Brassicaceae seeds · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1H5blM6_dgU2zb1OeQ3XqLWmRsFbLVPxt/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "1364944"
+        },
+        {
+          "drive_id": "1o89iB44Kw-f_ljvhDW5b6vIISu6QZ6-w",
+          "title": "JBLR-LIB-00000894 · Lipid Thermal Fingerprints of Long-term Stored Seeds of Brassicaceae · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1o89iB44Kw-f_ljvhDW5b6vIISu6QZ6-w/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "1364944"
+        },
+        {
+          "drive_id": "1u-7aB6xpHqsSn3ILBhusPuQu1TcBKepc",
+          "title": "JBLR-LIB-00000894 · Lipid Thermal Fingerprints of Long-term Stored Seeds of Brassicaceae · 2019.pdf",
+          "url": "https://drive.google.com/file/d/1u-7aB6xpHqsSn3ILBhusPuQu1TcBKepc/view?usp=drivesdk",
+          "language_bucket": "EN",
+          "mime_type": "application/pdf",
+          "size": "1364944"
+        }
+      ],
+      "representation_count": 3,
+      "duplicate_human_representation_state": "MULTIPLE_HUMAN_REPRESENTATIONS_PRESERVED"
+    }
+  ],
+  "updated_at": "2026-09-07T20:12:00+02:00",
+  "history_notes": [
+    "2026-09-07: additional EN/ZH human copies created during final reconciliation were preserved and appended; no LIB_FILE_ID effect; no deletion attempted."
+  ]
+}

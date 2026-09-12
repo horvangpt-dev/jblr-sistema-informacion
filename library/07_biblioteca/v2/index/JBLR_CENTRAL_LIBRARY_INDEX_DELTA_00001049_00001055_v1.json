@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00001049_00001055",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_001_H03_VIABILITY_GERMINATION_DEDUP_CANONICALIZATION_1049_1055_2026_09_11",
+  "range": {
+    "from": "JBLR-LIB-00001049",
+    "to": "JBLR-LIB-00001055",
+    "count": 7
+  },
+  "record_encoding": {
+    "columns": ["LIB_FILE_ID","SOURCE_KEY","DRIVE_ID","LANGUAGE","MODULES","DISCOVERY_ID","TITLE","ORIGIN_CHANNEL"]
+  },
+  "records": [
+    ["JBLR-LIB-00001049","H03-01","1JNDtTkEG3GPNPVYDc3dVZw_TkjVCNrhU","en",[],"NONE","Viability Testing · SOP 12.2 · Version 1.0","001_H03_DEDUP_RECON_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001050","H03-02","1Cd30j4H4sKKhBIu8c2e45ZkioZ35hNOT","en",[],"NONE","Testing Wild Seeds","001_H03_DEDUP_RECON_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001051","H03-03","18EdoNAKDAfPnEEM0YeimNdwuhmUAEr_j","en",[],"NONE","Dormancy Breaking for Germination Testing","001_H03_DEDUP_RECON_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001052","H03-04","1Dps4F4_8NiXikqGRumbCdrE2SQHSbVzW","en",[],"NONE","Methodological contribution on seed germination and seedling initial growth tests in wild plants","001_H03_DEDUP_RECON_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001053","H03-05","1ZEM9KM_JJ69pBb6xTR0-pDYtOL-Nafh4","en",[],"NONE","Use of the tetrazolium test for estimating seed viability and vigour","001_H03_DEDUP_RECON_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001054","H03-PRE-02","1nMEUVTZ6fHoaNAeo7DlMpDd3k7bxoQRX","en",[],"NONE","Florabank Guidelines Module 10 – Seed Quality Testing","001_H03_PREEXISTING_PHYSICAL_UNINDEXED_RECONCILIATION"],
+    ["JBLR-LIB-00001055","H03-PRE-03","1bRmyPT7czurXW_hdV94SNtWaSLRl_BcE","en",[],"NONE","ENSCONET Germination Recommendations – Updated","001_H03_PREEXISTING_PHYSICAL_UNINDEXED_RECONCILIATION"]
+  ],
+  "bibliographic_identifiers": [
+    {"LIB_FILE_ID":"JBLR-LIB-00001049","institution":"USDA / National Laboratory for Genetic Resources Preservation","sop_number":"12.2","version":"1.0","effective_date":"2016-03-01","bibliographic_signature":"Viability Testing · SOP 12.2 · Version 1.0 · effective 2016-03-01"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001050","authors":"Gil Waibel; Ruojing Wang","institution":"ISTA Wild Species Committee","date":"2026-05-28","bibliographic_signature":"Testing Wild Seeds · Gil Waibel / Ruojing Wang · 2026-05-28"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001051","author":"David M. Johnston","institution":"ISTA / ISSS","event":"ISTA/ISSS Joint Webinar","date":"2023-06-07","bibliographic_signature":"Dormancy Breaking for Germination Testing · David M. Johnston · 2023-06-07"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001052","author":"Božena Šerá","doi":"10.15835/nbha51213164","journal":"Notulae Botanicae Horti Agrobotanici Cluj-Napoca","volume":"51","issue":"2","article_number":"13164","year":2023,"sha256":"b2fefe0362f8ec7030a32d006f439e7ce93261f7002f2f6db127e786db5e8e3e"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001053","authors":"José B. França-Neto; Francisco C. Krzyzanowski","institution":"Embrapa Soybean / ISSS / ISTA","event":"ISSS/ISTA Webinar on Seed Development and Viability","date":"2022-06-28","bibliographic_signature":"Use of the tetrazolium test for estimating seed viability and vigour · 2022-06-28"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001054","authors":"Lucy Commander; Alice Quarmby; Anne Cochrane; Lorena Ruiz-Talonia; Samantha Craigie; Andrew Crawford","parent_work":"Florabank Guidelines","module":"10","edition":"2nd edition","year":2021,"bibliographic_signature":"Florabank Guidelines Module 10 – Seed Quality Testing · 2nd edn · 2021"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001055","institution":"ENSCONET","overall_editor":"Royal Botanic Gardens, Kew","version":"2009-10-28","year":2009,"bibliographic_signature":"ENSCONET Germination Recommendations – Updated · Version 28 October 2009"}
+  ],
+  "alternate_physical_representations": [
+    {
+      "LIB_FILE_ID":"JBLR-LIB-00001052",
+      "primary_drive_id":"1Dps4F4_8NiXikqGRumbCdrE2SQHSbVzW",
+      "duplicate_drive_ids":["1xAqADn-9XyFkw_AGrZj1VDqKj5Ae4WTa","1lvyNfHmgWfSLpT-pA7kqCeeDnEkRcAoV"],
+      "binary_duplicate":"CONFIRMED_SHA256_EQUAL",
+      "sha256":"b2fefe0362f8ec7030a32d006f439e7ce93261f7002f2f6db127e786db5e8e3e",
+      "file_size_bytes":200562,
+      "history_policy":"PRESERVE_ALL_DRIVE_IDS_NO_DELETE_NO_MOVE"
+    }
+  ],
+  "preexisting_H03_confirmations": [
+    {
+      "source_key":"H03-PRE-01",
+      "LIB_FILE_ID":"JBLR-LIB-00000998",
+      "DRIVE_ID":"1GX_5uLvAbjliLObTsxJFx3XPekoDYLe_",
+      "title":"Genebank Standards for Plant Genetic Resources for Food and Agriculture · Revised edition",
+      "edition":"Revised edition",
+      "year":2014,
+      "status":"EXACT_MATCH_REUSE_NO_NEW_ID"
+    }
+  ],
+  "related_not_equivalent_identities": [
+    {"source_key":"H03-PRE-01","related_LIB_FILE_ID":"JBLR-LIB-00000061","relation":"EARLIER_FAO_2013_EDITION_NOT_DUPLICATE_OF_REVISED_2014"},
+    {"source_key":"H03-PRE-03","related_LIB_FILE_ID":"JBLR-LIB-00000058","relation":"BROADER_ENSCONET_CURATION_PROTOCOLS_AND_RECOMMENDATIONS_2009_REFERENCED_BY_THE_UPDATED_GERMINATION_DOCUMENT;DISTINCT_DOCUMENTARY_IDENTITY"},
+    {"source_key":"H03-PRE-03","related_LIB_FILE_ID":"JBLR-LIB-00000059","relation":"SPANISH_REPRESENTATION_OF_ENSCONET_CURATION_PROTOCOL;NOT_THE_UPDATED_GERMINATION_DOCUMENT"}
+  ],
+  "identity_review": {
+    "active_index_precheck":"HWM1048_NEXT1049_SHA_9fd2d147ebe7a0eb0d5c58956beb1e3b22cc7a4b",
+    "dedup_basis":"CURRENT_ACTIVE_SEGMENTS_PLUS_STRONG_DRIVE_ID_DOI_TITLE_AUTHOR_SEARCH_AND_PHYSICAL_FULLTEXT_READBACK",
+    "new_canonical_identities":7,
+    "reused_existing_identities":1,
+    "multiple_candidate_unresolved":0,
+    "source_failures":0,
+    "redownload_required":0,
+    "001_discovery_seq_consumed":false,
+    "next_formal_discovery_seq_preserved":"000776_UNCONSUMED",
+    "no_silent_inference":true,
+    "copy_never_move":true,
+    "physical_deletions":0
+  },
+  "redownload_review": {
+    "status":"NO_REDOWNLOAD_REQUIRED_DEMONSTRATED",
+    "readable_physical_sources":true,
+    "corrupt_or_incomplete_source_demonstrated":false
+  },
+  "history_policy":"APPEND_ONLY",
+  "next_LIB_FILE_ID":"JBLR-LIB-00001056"
+}

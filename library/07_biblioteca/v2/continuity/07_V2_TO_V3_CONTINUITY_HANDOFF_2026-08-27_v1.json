@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "actor_id": "07",
+  "actor_name": "BIBLIOTECA_CIENTIFICA_DOCUMENTAL_Y_CORPUS_JBLR",
+  "previous_version": "07.V2",
+  "current_version": "07.V3",
+  "continuity_mode": "LOSSLESS",
+  "project_restart": false,
+  "system_restart": false,
+  "history_rewrite": false,
+  "data_loss": false,
+  "parent_authority": "00000",
+  "drive_continuity_folder_id": "1xhY3XmECHlorQ4obVAgxTqO5rdFRJlNn",
+  "drive_continuity_doc_id": "1FF4vtkbHG2inOh2c9ZvI9Hjhit3ANSujO3IPfuE3low",
+  "pre_handoff_known_head": "30cb3cb5d0e7215159383b3b33edfae9b00b6aff",
+  "central_library_root_id": "1d3irAPiX5drg1FNlOzD6ENTe_83pSldr",
+  "human_upload_inbox_id": "18oyxoat65ubmkrpre88F2ygqfe-VDy4h",
+  "human_library_root_id": "1x_tgK89B74Tp0hEEZLMdSfrP6gRSHItq",
+  "central_index": {
+    "path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_v1.json",
+    "verified_record_count": 95,
+    "schema_version": "1.1.0",
+    "reconciliation_required": true,
+    "pending_reconciliation": [
+      "16 processed M04-M05 human-upload files were not verified as persisted in the master index",
+      "dedup merge JBLR-LIB-00000079 -> JBLR-LIB-00000076",
+      "dedup merge JBLR-LIB-00000093 -> JBLR-LIB-00000092",
+      "101 previously inventoried institutional/V1 files still need individual persistence"
+    ]
+  },
+  "module_state": {
+    "M01": {
+      "staging_drive_id": "1TZA7e-csmdfU3dIxs7Z-VVWmKV0JCKfs",
+      "status": "PAUSED_PARTIAL_REOPENABLE",
+      "practical_exhaustion": false,
+      "final_union_dedupe": "NOT_DONE",
+      "structured_references_verified": 159,
+      "physical_pdfs_verified": 23,
+      "provisional_content_groups": 17
+    },
+    "M04": {
+      "staging_drive_id": "1uDEbc_TMhXwv4iBftFeCyQkLmDooj_KI",
+      "ready_for_001_upload": true
+    },
+    "M05": {
+      "staging_drive_id": "18DWl2ssB6WJlytRHjtY8DcoWL9Vj3sQa",
+      "ready_for_001_upload": true
+    }
+  },
+  "human_distribution_library": {
+    "model": "PHYSICAL_DISTRIBUTION_COPIES",
+    "technical_canonical_copy_preserved": true,
+    "distribution_copy_creates_new_lib_file_id": false,
+    "initial_physical_copy_count": 30,
+    "initial_populated_folders": {
+      "01_PROSPECCION_SCOUTING_OBSERVACION": 7,
+      "02_POBLACIONES_DEMOGRAFIA_SEGUIMIENTO": 7,
+      "03_RECOLECCION_CAMPO_VOUCHERS": 2,
+      "13_LEGISLACION_NORMATIVA_ESTANDARES": 2,
+      "15_MAPAS_GEOREFERENCIACION_GIS": 3,
+      "18_ECOLOGIA_HABITAT_AMENAZAS": 4,
+      "24_POBLACIONES_AMENAZADAS_DATOS_SENSIBLES": 5
+    },
+    "external_permissions_changed": false,
+    "la_rioja_priority_view_folder_id": "1verTfYlvovWNd7DWvq9OKsTzANeG01UZ"
+  },
+  "title_policy": {
+    "visible_filename_authority": "VERIFIED_INTERNAL_EDITORIAL_TITLE",
+    "rename_preserves_drive_id": true,
+    "do_not_infer_unverified_title": true
+  },
+  "dedup_policy": {
+    "user_authorized_verified_duplicate_deletion": true,
+    "hashless_dedupe": false,
+    "verified_duplicate_deletions": 2,
+    "central_index_reconciliation_pending": true
+  },
+  "next_actions": [
+    "Reconcile the persisted 95-record central index with the M04-M05 batch and the two dedup merges before claiming a higher count",
+    "Continue populating the human library with physical distribution copies as documents are classified",
+    "Process new human uploads incrementally",
+    "Keep La Rioja as a priority territorial human view",
+    "Persist the 101 known institutional/V1 files individually without global Drive reconciliation"
+  ],
+  "restore_rule": "NEWER_VERIFIED_PERSISTED_STATE_OVERRIDES_THIS_CHECKPOINT"
+}

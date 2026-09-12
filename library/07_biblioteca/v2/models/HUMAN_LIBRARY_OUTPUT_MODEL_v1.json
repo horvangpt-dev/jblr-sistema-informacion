@@ -1,0 +1,3 @@
+{
+  "schema_version":"1.0.0","root_drive_id":"1x_tgK89B74Tp0hEEZLMdSfrP6gRSHItq","scope":"USER_UPLOADED_FILES_ONLY","levels":["LANGUAGE","PURPOSE_PROCESS_MODULE","SOURCE_INSTITUTION_ENTITY","DOCUMENT"],"languages":{"ES":"1MHXinDIrwDb5IUX9bLBkOuH2rtfw0vJp","EN":"1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS","FR":"1GDC6tnZLCa3RDVh3e_W9fLIO9m4HSQrG","PT":"1XIRbTojW3rcC1BaGODKqSRdSzBb49lre","OTHER":"1naZqDAtt3hzYDtoSQEIOpv63ZG8TYtFT"},"pointer_policy":"ONE_CANONICAL_FILE_TO_MANY_HUMAN_POINTERS","binary_duplication":"NO_BY_DEFAULT","eligibility_rule":"ORIGIN_CHANNEL in {HUMAN_USER_UPLOAD,HUMAN_USER_UPLOAD_LEGACY} and QA/identity resolved"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "JBLR_07_TAXON_SOURCE_RELATIONS_v1",
+  "generated_at": "2026-09-09T10:49:00+02:00",
+  "range": "JBLR-LIB-00000909..00000915",
+  "relations": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000909",
+      "relation": "DIRECT_TAXON_SOURCE",
+      "taxon_as_source": "Viscaria alpina"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000910",
+      "relation": "GENERAL_MULTI_COUNTRY_PLANT_CONSERVATION_TRANSLOCATION_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000911",
+      "relation": "DIRECT_MULTITAXON_SOURCE",
+      "taxa_as_source": [
+        "Malus sylvestris",
+        "Pyrus communis",
+        "Sorbus aucuparia",
+        "Prunus avium",
+        "Prunus padus",
+        "Cornus sanguinea"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000912",
+      "relation": "GENERAL_EX_SITU_CONSERVATION_AND_TRANSLOCATION_WORKSHOP_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000913",
+      "relation": "GENERAL_SEED_SHIPMENT_AND_MSB_TRANSFER_PROTOCOL_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000914",
+      "relation": "GENERAL_NATIVE_SEED_COLLECTION_STUDY_AND_CONSERVATION_PROTOCOL_SOURCE"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000915",
+      "relation": "GENERAL_NATIVE_TREE_AND_SHRUB_SEED_COLLECTION_HANDLING_SOURCE"
+    }
+  ],
+  "no_silent_taxon_inference": true
+}

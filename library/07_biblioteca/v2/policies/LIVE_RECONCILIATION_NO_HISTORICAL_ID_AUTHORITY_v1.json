@@ -1,0 +1,34 @@
+{
+  "schema_version":"1.0.0",
+  "policy_id":"LIVE_RECONCILIATION_NO_HISTORICAL_ID_AUTHORITY_v1",
+  "actor":"07.V4",
+  "effective_date":"2026-08-28",
+  "rules":{
+    "discovery_history_preserved":true,
+    "historical_registry_is_identity_authority":false,
+    "historical_reconciliation_snapshot_is_identity_authority":false,
+    "provisional_historical_id_ranges_reserve_canonical_ids":false,
+    "current_master_index_is_authority_for_existing_lib_file_ids":true,
+    "new_identity_requires_live_deduplication":true,
+    "filename_alone_is_identity":false,
+    "human_copy_creates_lib_file_id":false,
+    "reference_not_assertion":true,
+    "evidence_not_decision":true,
+    "not_found_not_absence":true
+  },
+  "identity_filter_order":[
+    "existing_LIB_FILE_ID",
+    "SHA256_or_exact_binary_identity",
+    "DOI_or_standard_identifier",
+    "canonical_or_official_source_identity",
+    "verified_internal_title",
+    "institution_author_year_version",
+    "bibliographic_signature",
+    "file_size_and_binary_manifestation_consistency",
+    "filename_as_supporting_signal_only"
+  ],
+  "id_assignment_rule":"After live reconciliation, the next canonical LIB_FILE_ID is derived from the current canonical master index. Historical numbers that are not present in the current master index do not reserve IDs.",
+  "source_history_drive_id":"1UZd9itkdJYwKn7EYsHRS1cX3KrJnOwpcKStWeXJRYyo",
+  "master_index_path":"library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_v1.json",
+  "master_index_last_verified_count":95
+}
