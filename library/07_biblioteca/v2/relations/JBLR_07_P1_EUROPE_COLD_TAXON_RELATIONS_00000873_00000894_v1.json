@@ -1,0 +1,157 @@
+{
+  "schema": "JBLR_07_TAXON_SOURCE_RELATIONS_v1",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "source_range": "JBLR-LIB-00000873..00000894",
+  "generated_at": "2026-09-07T16:18:00+02:00",
+  "intended_consumers": [
+    "003",
+    "TAXON_BY_TAXON_SYSTEM",
+    "FAMILY_GENUS_TAXON_RESEARCH"
+  ],
+  "records": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000875",
+      "relations": [
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Phelipanche purpurea",
+          "genus_token": "Phelipanche",
+          "evidence_scope": "REGIONAL_ACTION_PLAN",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        }
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000881",
+      "relations": [
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Artemisia maritima",
+          "genus_token": "Artemisia",
+          "evidence_scope": "POPULATION_STATUS_AND_ECOLOGY",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        }
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000882",
+      "relations": [
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Crambe maritima",
+          "genus_token": "Crambe",
+          "evidence_scope": "SPECIES_PROFILE_AND_CONSERVATION_OUTREACH",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        }
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000885",
+      "relations": [
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Cariniana legalis",
+          "genus_token": "Cariniana",
+          "evidence_scope": "SEED_VIABILITY_PHYSIOLOGY_PROTEOMICS",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        }
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000888",
+      "relations": [
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Salix xerophila",
+          "genus_token": "Salix",
+          "evidence_scope": "SEED_STORAGE_TEMPERATURE_AND_WATER_CONTENT",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        },
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Salix maximowiczii",
+          "genus_token": "Salix",
+          "evidence_scope": "SEED_STORAGE_TEMPERATURE_AND_WATER_CONTENT",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        },
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Salix koreensis",
+          "genus_token": "Salix",
+          "evidence_scope": "SEED_STORAGE_TEMPERATURE_AND_WATER_CONTENT",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        }
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000889",
+      "relations": [
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Populus davidiana",
+          "genus_token": "Populus",
+          "evidence_scope": "SEED_LONGEVITY_MOISTURE_TEMPERATURE",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        },
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Populus koreana",
+          "genus_token": "Populus",
+          "evidence_scope": "SEED_LONGEVITY_MOISTURE_TEMPERATURE",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        }
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000891",
+      "relations": [
+        {
+          "relation_level": "TAXON",
+          "source_name_verbatim": "Camellia oleifera",
+          "genus_token": "Camellia",
+          "evidence_scope": "SEED_STORAGE_TEMPERATURE_AND_QUALITY",
+          "rioja_match_state": "NO_EXACT_RIOJA_MATCH_DEMONSTRATED",
+          "rioja_exact_matches": []
+        }
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000894",
+      "relations": [
+        {
+          "relation_level": "FAMILY",
+          "source_name_verbatim": "Brassicaceae",
+          "evidence_scope": "LONG_TERM_SEED_STORAGE_LIPID_THERMAL_FINGERPRINTS",
+          "rioja_match_state": "FAMILY_LEVEL_NOT_TAXON_MATCH"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "source_documents_with_explicit_taxon_or_family_relations": 8,
+    "direct_taxon_relations": 10,
+    "family_relations": 1,
+    "exact_rioja_taxon_relations": 0
+  },
+  "exclusions": [
+    "No taxon inferred from common term 'oat'.",
+    "No taxon inferred from common term 'fiber flax'.",
+    "No 295 Hawaiian taxa extracted from article body in this transaction.",
+    "General reports/manuals remain corpus-level sources unless explicit taxon relations are later extracted."
+  ],
+  "rioja_cross_source": {
+    "drive_id": "1i7mybeY8Qrf7-KygY7YfSMlxmdiKMHhj",
+    "title": "GLOBAL_CROSS_FIRST_RIOJA_2262_CURRENT.xlsx"
+  },
+  "canonical_authority_remains_07": true,
+  "no_pdf_duplication_for_003": true
+}

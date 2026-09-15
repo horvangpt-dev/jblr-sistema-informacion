@@ -1,0 +1,47 @@
+{
+  "schema_version":"1.0.0",
+  "index_name":"JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00001093_00001106",
+  "authority":"07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction":"07_003_ALISMA_R01_PARTIAL_DOCUMENTARY_CANONICALIZATION_1093_1106_2026_09_12",
+  "source_actor":"003",
+  "source_batch":"003-ACQ-GENUS-ALISMA-20260911-R01",
+  "source_ledger_drive_id":"1BTgZPa9MIhXIPdIEknpncvHEwYDckgbCutNZGCn5Xzg",
+  "range":{"from":"JBLR-LIB-00001093","to":"JBLR-LIB-00001106","count":14},
+  "record_encoding":{"columns":["LIB_FILE_ID","SOURCE_DISCOVERY_ID","SOURCE_FILE_ID","CANONICAL_DRIVE_ID","STABLE_IDENTIFIER","TITLE","ORIGIN_CHANNEL"]},
+  "records":[
+    ["JBLR-LIB-00001093","003-ACQ-GENUS-ALISMA-20260911-R01-D0007","19v_1haF5XNUJaEhCW_ns93jPbOEz_P84","1qiECkQVv3EmNE7Lz4EbSQpSzpX9LB2sU","10.1086/331413","Delayed Germination in Seed of Alisma Plantago","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001094","003-ACQ-GENUS-ALISMA-20260911-R01-D0013","1BNhrKvusV8ZCw8JrR7m9Y4sbdwzA8cD2","1dPfEHj6CTh-vnDT_Jx7eCTL7PrczELvz","10.1134/S0012496622050167","Flowering Biology of Alisma plantago-aquatica (Alismataceae)","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001095","003-ACQ-GENUS-ALISMA-20260911-R01-D0019","1S8VhljOuLpeGU6itPYSc7i4FMRGFLhaO","1X77uJxNRW-O78yabOcPkNw9m4lRashB-","10.1614/WT-08-078.1","Resistance to Bensulfuron-Methyl in Water Plantain (Alisma plantago-aquatica) Populations from Chilean Paddy Fields","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001096","003-ACQ-GENUS-ALISMA-20260911-R01-D0023","1xNGcThS9sUvKYm8ufT0MWgT_5krQhxtt","1NEhoR-chfpH1zBXBL4Vi7owDiWZ38QXp","NZFLORA_SEED_PLANTS_7_PDF","Flora of New Zealand - Seed Plants 7: Alismataceae","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001097","003-ACQ-GENUS-ALISMA-20260911-R01-D0033","1hrPObgtYj32cp4rkpuxHRWHkDkiMSGoH","181zXhR3sP59HVxgSEbgyF_UNfdaQ2f5e","10.5586/asbp.2014.014","Alisma plantago-aquatica L.: the cytoskeleton of the suspensor development","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001098","003-ACQ-GENUS-ALISMA-20260911-R01-D0034","1mvchjjNjpp4vmPgq40erYi7M1_BJFxRk","156L_XHi-2g-TVd4gzByEfl6S8LUWjo_9","10.1111/j.1445-6664.2012.00433.x","Quantification of momilactone B in rice hulls and the phytotoxic potential of rice extracts on the seed germination of Alisma plantago-aquatica","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001099","003-ACQ-GENUS-ALISMA-20260911-R01-D0036","1IUFSTjdM55EhXJRO4toUhSIaAyQ9Fyor","11s_hrfjPGU-ufbJA3Cb5gNIDdViKySw3","10.15407/ukrbotj82.03.197","Plant strategy to adapt to life in water: peculiarities of root system organization in Sagittaria sagittifolia and Alisma plantago-aquatica (Alismataceae)","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001100","003-ACQ-GENUS-ALISMA-20260911-R01-D0041","1mfS7KkjCv4xk5eKXeLV9sHqjmEdIIHsN","1WAto_Cwud2TnS0MJQzwrQzVJt-AsS1yG","NZPCN_DIRECT_PDF","New Zealand Plant Conservation Network species factsheet: Alisma lanceolatum","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001101","003-ACQ-GENUS-ALISMA-20260911-R01-D0042","15FILGGrslJ0Fql4qZeR_QjA4kiNlG9VC","1EPxeqnNUwv2hICZrdAXIljg6ozU5wYVV","10.1016/0304-3770(78)90057-8","Morphology of germination and establishment of aquatic seedlings in Alismataceae and Hydrocharitaceae","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001102","003-ACQ-GENUS-ALISMA-20260911-R01-D0047","1MKsXsaM3HN00i7HaefmgnaJYpAlwKOYV","1cwkIx6BbM8alyarZIgrwaWt28YdKF5cQ","10.1016/j.aquabot.2009.08.002","Systematics of the Alismataceae—A morphological evaluation","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001103","003-ACQ-GENUS-ALISMA-20260911-R01-D0054","1IER9YXhPAINSF56QBRZOmuiF3k7hhWZo","1EBcMfuUcziyNFTfcK-YpfHnOKH9dTqsu","10.2307/2422629","A Revision of the Genus Alisma (Dill.) L.","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001104","003-ACQ-GENUS-ALISMA-20260911-R01-D0065","15v9d44tPlaKNwhHehyyTzr5KoX8Xdj9f","1WNqhz8TmM087JaPINzFUTTf7YY56co_Y","10.1134/S1995082917030099","Effect of nickel chloride on seed germination and morphophysiological parameters of seedlings of Alisma plantago-aquatica L. and Sium latifolium L.","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001105","003-ACQ-GENUS-ALISMA-20260911-R01-D0070","1cAVb6youSM8TOOeVf4kECoTK06q2OBtA","1ZiLUq6MDDi9oY-Sh_yvL9mN7W_Pu7l94","10.1016/0304-3770(85)90044-0","Reproductive phenology and biology in annual and perennial Alismataceae","003_ALISMA_R01_HUMAN_INBOX"],
+    ["JBLR-LIB-00001106","003-ACQ-GENUS-ALISMA-20260911-R01-D0073","1RvviFITE9p9FiRI5Bj663XCfHGKPEYF1","1AAdRu9L9WbHQu-d5deR1ZqSdj91zQrgs","10.1007/s00606-006-0514-x","Phylogenetic relationships in Alisma (Alismataceae) based on RAPDs, and sequence data from ITS and trnL","003_ALISMA_R01_HUMAN_INBOX"]
+  ],
+  "alternate_source_representations":[
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0007","drive_ids":["1myuc-dXGetk_bV4XaOAw1yZacY5hbzcd"],"binary_duplicate":"NOT_ASSERTED_NO_HASH"}
+  ],
+  "pending_without_LIB_FILE_ID":[
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0008","reason":"CANONICAL_RENAME_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":"1KaQPufJp8l9LKUXHVygetDl-u47v4i7B"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0014","reason":"CANONICAL_RENAME_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":"13eKV3i3SJMxuYNhm0g0WS3ypaM9T6Xt2"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0015","reason":"COPY_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":null},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0017","reason":"CANONICAL_RENAME_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":"13ANLgqvYUe05YKvgBj2yLxAxJ_xLBt8B"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0024","reason":"COPY_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":null},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0027","reason":"CANONICAL_RENAME_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":"1Hhpo23XjYVjx6VavySPLWU4BjL-8g7xp"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0056","reason":"CANONICAL_RENAME_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":"1lUNdNwP03lrqlP-ORkUTK8Zy7PU_II-t"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0074","reason":"COPY_BLOCKED_BY_CONNECTOR_CONTROLS","precanonical_copy_drive_id":null}
+  ],
+  "identity_review":{"drive_global_title_search":"NO_PRIOR_JBLR_LIB_ALISMA_IDENTITY_DEMONSTRATED","event_bus_precheck":"NO_PRIOR_ALISMA_CANONICAL_EVENT_DEMONSTRATED","no_silent_inference":true},
+  "physical_reconciliation":{"copy_never_move":true,"source_objects_preserved":true,"canonical_copies":14,"precanonical_copies_pending":5,"copy_blocked_before_write":3,"physical_deletions":0,"destination_folder":"1goK1LjFZ354rtxM1ow8coMW92DOwtVW0","readback":"PASS_14_CANONICAL_LABELS_PRESENT"},
+  "scientific_effect":"NONE_DOCUMENTARY_ONLY",
+  "no_002_state_mutation":true,
+  "history_policy":"APPEND_ONLY",
+  "next_LIB_FILE_ID":"JBLR-LIB-00001107",
+  "data_loss":"NO"
+}

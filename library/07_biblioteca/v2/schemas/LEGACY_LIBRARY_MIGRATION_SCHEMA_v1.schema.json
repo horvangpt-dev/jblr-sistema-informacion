@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://jblr.local/schemas/LEGACY_LIBRARY_MIGRATION_SCHEMA_v1.schema.json",
+  "title":"LEGACY_LIBRARY_MIGRATION_SCHEMA_v1",
+  "type":"object",
+  "required":["schema_version","records"],
+  "properties":{"schema_version":{"const":"1.0.0"},"records":{"type":"array","items":{"$ref":"#/$defs/record"}}},
+  "$defs":{
+    "state":{"enum":["YES","NO","UNKNOWN","NOT_ASSESSED","NOT_APPLICABLE","NOT_FOUND"]},
+    "record":{"type":"object","required":["FILE_ID","CURRENT_DRIVE_ID","ORIGINAL_FILENAME","MIGRATION_STATUS"],"properties":{
+      "FILE_ID":{"type":["string","null"]},"CURRENT_DRIVE_ID":{"type":"string","minLength":1},"CURRENT_PATH":{"type":["string","null"]},"CURRENT_PARENT":{"type":["string","null"]},"ORIGINAL_FILENAME":{"type":"string"},"SIZE":{"type":["integer","null"],"minimum":0},"HASH":{"type":["string","null"]},"HASH_STATE":{"$ref":"#/$defs/state"},"KNOWN_SOURCE":{"type":["string","null"]},"KNOWN_ORIGIN_CHANNEL":{"type":"string"},"USER_UPLOADED":{"$ref":"#/$defs/state"},"001_OR_AI_ACQUIRED":{"$ref":"#/$defs/state"},"CURRENT_DUPLICATES":{"type":"array","items":{"type":"string"}},"TARGET_LIBRARY_LOCATION":{"type":["string","null"]},"MIGRATION_STATUS":{"enum":["INVENTORIED","PENDING_ORIGIN","MOVED_PENDING_INDEX","VERIFIED","FAILED","DUPLICATE_REVIEW_PENDING","NOT_APPLICABLE"]},"NOTES":{"type":["string","null"]}
+    },"additionalProperties":false}
+  },
+  "additionalProperties":false
+}

@@ -1,0 +1,3370 @@
+{
+  "schema": "JBLR_07_FLORE_LOCALE_DISCOVERY_MANIFEST_v1",
+  "generated_at": "2026-09-07T00:03:00+02:00",
+  "source": {
+    "site": "https://florelocale.fr/encyclopedie/",
+    "category": "Catégorie:Flore (nom scientifique)",
+    "api_query": "https://florelocale.fr/encyclopedie/api.php?action=query&generator=categorymembers&gcmtitle=Cat%C3%A9gorie%3AFlore_(nom_scientifique)&gcmlimit=500&prop=revisions&rvprop=ids%7Ctimestamp&format=json&formatversion=2",
+    "mediawiki_version": "1.43.9",
+    "license_evidence": "CC BY-NC-SA 4.0 displayed on category and sampled species pages"
+  },
+  "counts": {
+    "category_members": 370,
+    "main_namespace": 368,
+    "non_main_namespace": 2,
+    "general_resource_members": 1,
+    "known_valid_species_outside_category": 1
+  },
+  "known_valid_species_outside_category": [
+    {
+      "pageid": 1595,
+      "ns": 0,
+      "title": "Achillea millefolium",
+      "revid": 7294,
+      "timestamp": "2026-03-30T17:07:00Z",
+      "type": "VALID_OUTSIDE_CATEGORY",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Achillea_millefolium",
+      "visual": "https://drive.google.com/file/d/1i9EuUWzb1dnq1Q6gcCLLq3B8S6UDwuf-/view"
+    }
+  ],
+  "members": [
+    {
+      "pageid": 230,
+      "ns": 0,
+      "title": "Abies alba",
+      "revid": 1154,
+      "timestamp": "2022-02-05T21:06:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Abies_alba"
+    },
+    {
+      "pageid": 3,
+      "ns": 0,
+      "title": "Acer campestre",
+      "revid": 7310,
+      "timestamp": "2026-08-19T14:03:32Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Acer_campestre"
+    },
+    {
+      "pageid": 48,
+      "ns": 0,
+      "title": "Acer monspessulanum",
+      "revid": 7308,
+      "timestamp": "2026-08-19T13:59:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Acer_monspessulanum"
+    },
+    {
+      "pageid": 18,
+      "ns": 0,
+      "title": "Acer opalus",
+      "revid": 4813,
+      "timestamp": "2024-03-21T21:17:46Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Acer_opalus"
+    },
+    {
+      "pageid": 19,
+      "ns": 0,
+      "title": "Acer platanoides",
+      "revid": 4804,
+      "timestamp": "2024-03-21T12:59:37Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Acer_platanoides"
+    },
+    {
+      "pageid": 47,
+      "ns": 0,
+      "title": "Acer pseudoplatanus",
+      "revid": 4811,
+      "timestamp": "2024-03-21T13:02:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Acer_pseudoplatanus"
+    },
+    {
+      "pageid": 1988,
+      "ns": 0,
+      "title": "Achillea ptarmica",
+      "revid": 7168,
+      "timestamp": "2025-05-19T09:36:53Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Achillea_ptarmica"
+    },
+    {
+      "pageid": 3456,
+      "ns": 0,
+      "title": "Agrimonia eupatoria",
+      "revid": 7302,
+      "timestamp": "2026-04-16T08:14:16Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Agrimonia_eupatoria"
+    },
+    {
+      "pageid": 288,
+      "ns": 0,
+      "title": "Agrostemma githago",
+      "revid": 3097,
+      "timestamp": "2022-09-27T13:00:59Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Agrostemma_githago"
+    },
+    {
+      "pageid": 1596,
+      "ns": 0,
+      "title": "Agrostemma githago L., 1753",
+      "revid": 5834,
+      "timestamp": "2024-05-29T09:42:26Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Agrostemma_githago_L.%2C_1753"
+    },
+    {
+      "pageid": 1989,
+      "ns": 0,
+      "title": "Alisma plantago-aquatica",
+      "revid": 5951,
+      "timestamp": "2024-06-05T10:00:46Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Alisma_plantago-aquatica"
+    },
+    {
+      "pageid": 293,
+      "ns": 0,
+      "title": "Allium sphaerocephalon",
+      "revid": 5676,
+      "timestamp": "2024-05-27T11:46:00Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Allium_sphaerocephalon"
+    },
+    {
+      "pageid": 2282,
+      "ns": 0,
+      "title": "Allium ursinum",
+      "revid": 5999,
+      "timestamp": "2024-06-17T14:04:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Allium_ursinum"
+    },
+    {
+      "pageid": 1615,
+      "ns": 0,
+      "title": "Allium victorialis",
+      "revid": 5839,
+      "timestamp": "2024-05-29T09:58:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Allium_victorialis"
+    },
+    {
+      "pageid": 235,
+      "ns": 0,
+      "title": "Alnus alnobetula",
+      "revid": 4625,
+      "timestamp": "2023-10-07T10:23:52Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Alnus_alnobetula"
+    },
+    {
+      "pageid": 1859,
+      "ns": 0,
+      "title": "Alnus cordata",
+      "revid": 7317,
+      "timestamp": "2026-08-19T14:25:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Alnus_cordata"
+    },
+    {
+      "pageid": 129,
+      "ns": 0,
+      "title": "Alnus glutinosa",
+      "revid": 7323,
+      "timestamp": "2026-08-19T14:37:10Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Alnus_glutinosa"
+    },
+    {
+      "pageid": 162,
+      "ns": 0,
+      "title": "Alnus incana",
+      "revid": 4800,
+      "timestamp": "2024-03-21T12:58:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Alnus_incana"
+    },
+    {
+      "pageid": 76,
+      "ns": 0,
+      "title": "Amelanchier ovalis",
+      "revid": 7326,
+      "timestamp": "2026-08-19T14:43:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Amelanchier_ovalis"
+    },
+    {
+      "pageid": 1620,
+      "ns": 0,
+      "title": "Anarrhinum bellidifolium",
+      "revid": 5636,
+      "timestamp": "2024-05-27T09:00:20Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Anarrhinum_bellidifolium"
+    },
+    {
+      "pageid": 2259,
+      "ns": 0,
+      "title": "Anthericum liliago",
+      "revid": 5721,
+      "timestamp": "2024-05-28T07:33:08Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Anthericum_liliago"
+    },
+    {
+      "pageid": 1799,
+      "ns": 0,
+      "title": "Anthyllis vulneraria subsp. alpestris",
+      "revid": 7265,
+      "timestamp": "2026-02-24T09:45:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Anthyllis_vulneraria_subsp._alpestris"
+    },
+    {
+      "pageid": 1626,
+      "ns": 0,
+      "title": "Aquilegia vulgaris",
+      "revid": 7282,
+      "timestamp": "2026-02-24T11:50:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Aquilegia_vulgaris"
+    },
+    {
+      "pageid": 77,
+      "ns": 0,
+      "title": "Arbutus unedo",
+      "revid": 7328,
+      "timestamp": "2026-08-19T14:52:02Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Arbutus_unedo"
+    },
+    {
+      "pageid": 1895,
+      "ns": 0,
+      "title": "Arctostaphylos alpina",
+      "revid": 4418,
+      "timestamp": "2023-05-10T15:04:20Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Arctostaphylos_alpina"
+    },
+    {
+      "pageid": 260,
+      "ns": 0,
+      "title": "Arctostaphylos uva-ursi",
+      "revid": 4798,
+      "timestamp": "2024-03-21T12:57:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Arctostaphylos_uva-ursi"
+    },
+    {
+      "pageid": 1614,
+      "ns": 0,
+      "title": "Armeria arenaria",
+      "revid": 5957,
+      "timestamp": "2024-06-07T08:46:18Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Armeria_arenaria"
+    },
+    {
+      "pageid": 1990,
+      "ns": 0,
+      "title": "Arrhenatherum elatius",
+      "revid": 5322,
+      "timestamp": "2024-05-17T08:38:14Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Arrhenatherum_elatius"
+    },
+    {
+      "pageid": 1631,
+      "ns": 0,
+      "title": "Artemisia campestris",
+      "revid": 5639,
+      "timestamp": "2024-05-27T09:06:17Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Artemisia_campestris"
+    },
+    {
+      "pageid": 3406,
+      "ns": 0,
+      "title": "Asphodelus albus",
+      "revid": 7139,
+      "timestamp": "2025-05-16T09:32:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Asphodelus_albus"
+    },
+    {
+      "pageid": 1991,
+      "ns": 0,
+      "title": "Astrantia major",
+      "revid": 7268,
+      "timestamp": "2026-02-24T09:49:35Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Astrantia_major"
+    },
+    {
+      "pageid": 2260,
+      "ns": 0,
+      "title": "Avenella flexuosa",
+      "revid": 5724,
+      "timestamp": "2024-05-28T08:13:00Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Avenella_flexuosa"
+    },
+    {
+      "pageid": 663,
+      "ns": 0,
+      "title": "Bellis perennis",
+      "revid": 2024,
+      "timestamp": "2022-05-02T12:36:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bellis_perennis"
+    },
+    {
+      "pageid": 118,
+      "ns": 0,
+      "title": "Berberis vulgaris",
+      "revid": 4812,
+      "timestamp": "2024-03-21T21:14:13Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Berberis_vulgaris"
+    },
+    {
+      "pageid": 1601,
+      "ns": 0,
+      "title": "Betonica officinalis",
+      "revid": 5318,
+      "timestamp": "2024-05-17T08:34:01Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Betonica_officinalis"
+    },
+    {
+      "pageid": 164,
+      "ns": 0,
+      "title": "Betula pendula",
+      "revid": 7330,
+      "timestamp": "2026-08-19T14:59:31Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Betula_pendula"
+    },
+    {
+      "pageid": 1644,
+      "ns": 0,
+      "title": "Betula pubescens",
+      "revid": 4815,
+      "timestamp": "2024-03-21T21:52:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Betula_pubescens"
+    },
+    {
+      "pageid": 1602,
+      "ns": 0,
+      "title": "Bifora radians",
+      "revid": 5843,
+      "timestamp": "2024-05-29T10:07:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bifora_radians"
+    },
+    {
+      "pageid": 1992,
+      "ns": 0,
+      "title": "Bistorta officinalis",
+      "revid": 5328,
+      "timestamp": "2024-05-17T08:42:36Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bistorta_officinalis"
+    },
+    {
+      "pageid": 1603,
+      "ns": 0,
+      "title": "Bromopsis erecta",
+      "revid": 5891,
+      "timestamp": "2024-06-03T07:26:02Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bromopsis_erecta"
+    },
+    {
+      "pageid": 3411,
+      "ns": 0,
+      "title": "Bromus arvensis",
+      "revid": 7140,
+      "timestamp": "2025-05-16T09:32:45Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bromus_arvensis"
+    },
+    {
+      "pageid": 3423,
+      "ns": 0,
+      "title": "Bromus secalinus",
+      "revid": 7158,
+      "timestamp": "2025-05-16T11:50:47Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bromus_secalinus"
+    },
+    {
+      "pageid": 1670,
+      "ns": 0,
+      "title": "Bryonia dioica",
+      "revid": 5850,
+      "timestamp": "2024-05-29T10:51:04Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bryonia_dioica"
+    },
+    {
+      "pageid": 1645,
+      "ns": 0,
+      "title": "Bupleurum fruticosum",
+      "revid": 7336,
+      "timestamp": "2026-08-19T16:04:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bupleurum_fruticosum"
+    },
+    {
+      "pageid": 1604,
+      "ns": 0,
+      "title": "Bupleurum rotundifolium",
+      "revid": 5858,
+      "timestamp": "2024-05-29T11:55:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Bupleurum_rotundifolium"
+    },
+    {
+      "pageid": 80,
+      "ns": 0,
+      "title": "Buxus sempervirens",
+      "revid": 7339,
+      "timestamp": "2026-08-19T16:08:25Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Buxus_sempervirens"
+    },
+    {
+      "pageid": 1605,
+      "ns": 0,
+      "title": "Calamagrostis varia",
+      "revid": 5860,
+      "timestamp": "2024-05-29T11:58:12Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Calamagrostis_varia"
+    },
+    {
+      "pageid": 1646,
+      "ns": 0,
+      "title": "Calluna vulgaris",
+      "revid": 5987,
+      "timestamp": "2024-06-11T12:03:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Calluna_vulgaris"
+    },
+    {
+      "pageid": 1993,
+      "ns": 0,
+      "title": "Campanula glomerata",
+      "revid": 5958,
+      "timestamp": "2024-06-07T10:30:34Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Campanula_glomerata"
+    },
+    {
+      "pageid": 2040,
+      "ns": 0,
+      "title": "Campanula persicifolia",
+      "revid": 5644,
+      "timestamp": "2024-05-27T10:05:13Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Campanula_persicifolia"
+    },
+    {
+      "pageid": 1606,
+      "ns": 0,
+      "title": "Campanula rapunculoides",
+      "revid": 5862,
+      "timestamp": "2024-05-29T12:05:37Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Campanula_rapunculoides"
+    },
+    {
+      "pageid": 1607,
+      "ns": 0,
+      "title": "Campanula rotundifolia subsp. rotundifolia",
+      "revid": 5332,
+      "timestamp": "2024-05-17T08:58:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Campanula_rotundifolia_subsp._rotundifolia"
+    },
+    {
+      "pageid": 1994,
+      "ns": 0,
+      "title": "Campanula scheuchzeri",
+      "revid": 5348,
+      "timestamp": "2024-05-17T10:30:04Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Campanula_scheuchzeri"
+    },
+    {
+      "pageid": 2225,
+      "ns": 0,
+      "title": "Campanula scheuchzeri subsp. lanceolata",
+      "revid": 5566,
+      "timestamp": "2024-05-23T14:39:00Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Campanula_scheuchzeri_subsp._lanceolata"
+    },
+    {
+      "pageid": 1743,
+      "ns": 0,
+      "title": "Capparis spinosa",
+      "revid": 3660,
+      "timestamp": "2023-02-06T15:10:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Capparis_spinosa"
+    },
+    {
+      "pageid": 1608,
+      "ns": 0,
+      "title": "Carex sempervirens",
+      "revid": 4506,
+      "timestamp": "2023-06-19T08:23:44Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Carex_sempervirens"
+    },
+    {
+      "pageid": 82,
+      "ns": 0,
+      "title": "Carpinus betulus",
+      "revid": 7341,
+      "timestamp": "2026-08-19T16:12:58Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Carpinus_betulus"
+    },
+    {
+      "pageid": 1741,
+      "ns": 0,
+      "title": "Carpinus ostrya",
+      "revid": 3702,
+      "timestamp": "2023-02-08T09:34:53Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Carpinus_ostrya"
+    },
+    {
+      "pageid": 236,
+      "ns": 0,
+      "title": "Castanea sativa",
+      "revid": 4822,
+      "timestamp": "2024-03-26T19:29:24Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Castanea_sativa"
+    },
+    {
+      "pageid": 1634,
+      "ns": 0,
+      "title": "Celtis australis",
+      "revid": 7346,
+      "timestamp": "2026-08-20T06:45:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Celtis_australis"
+    },
+    {
+      "pageid": 1609,
+      "ns": 0,
+      "title": "Centaurea jacea subsp. jacea",
+      "revid": 7260,
+      "timestamp": "2026-02-20T14:25:53Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Centaurea_jacea_subsp._jacea"
+    },
+    {
+      "pageid": 1995,
+      "ns": 0,
+      "title": "Centaurea nigra",
+      "revid": 5955,
+      "timestamp": "2024-06-06T08:38:54Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Centaurea_nigra"
+    },
+    {
+      "pageid": 1610,
+      "ns": 0,
+      "title": "Centaurea scabiosa subsp. scabiosa",
+      "revid": 7283,
+      "timestamp": "2026-02-24T11:52:27Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Centaurea_scabiosa_subsp._scabiosa"
+    },
+    {
+      "pageid": 1613,
+      "ns": 0,
+      "title": "Centaurea stoebe",
+      "revid": 5642,
+      "timestamp": "2024-05-27T10:01:31Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Centaurea_stoebe"
+    },
+    {
+      "pageid": 1611,
+      "ns": 0,
+      "title": "Cerastium arvense subsp. arvense",
+      "revid": 5939,
+      "timestamp": "2024-06-03T13:33:07Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cerastium_arvense_subsp._arvense"
+    },
+    {
+      "pageid": 1612,
+      "ns": 0,
+      "title": "Cerastium arvense subsp. strictum",
+      "revid": 5938,
+      "timestamp": "2024-06-03T13:29:12Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cerastium_arvense_subsp._strictum"
+    },
+    {
+      "pageid": 1749,
+      "ns": 0,
+      "title": "Ceratonia siliqua",
+      "revid": 3662,
+      "timestamp": "2023-02-06T15:13:32Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ceratonia_siliqua"
+    },
+    {
+      "pageid": 1767,
+      "ns": 0,
+      "title": "Cercis siliquastrum",
+      "revid": 3684,
+      "timestamp": "2023-02-07T17:44:29Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cercis_siliquastrum"
+    },
+    {
+      "pageid": 1996,
+      "ns": 0,
+      "title": "Cervaria rivini",
+      "revid": 5645,
+      "timestamp": "2024-05-27T10:06:00Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cervaria_rivini"
+    },
+    {
+      "pageid": 1735,
+      "ns": 0,
+      "title": "Chaetocladus distachyus",
+      "revid": 3915,
+      "timestamp": "2023-03-05T19:50:44Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Chaetocladus_distachyus"
+    },
+    {
+      "pageid": 256,
+      "ns": 0,
+      "title": "Chamaemespilus alpina",
+      "revid": 6013,
+      "timestamp": "2024-07-30T13:33:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Chamaemespilus_alpina"
+    },
+    {
+      "pageid": 1779,
+      "ns": 0,
+      "title": "Cichorium intybus",
+      "revid": 5680,
+      "timestamp": "2024-05-27T11:59:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cichorium_intybus"
+    },
+    {
+      "pageid": 85,
+      "ns": 0,
+      "title": "Cistus albidus",
+      "revid": 7349,
+      "timestamp": "2026-08-20T06:59:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cistus_albidus"
+    },
+    {
+      "pageid": 1647,
+      "ns": 0,
+      "title": "Cistus laurifolius",
+      "revid": 3712,
+      "timestamp": "2023-02-08T13:00:15Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cistus_laurifolius"
+    },
+    {
+      "pageid": 1635,
+      "ns": 0,
+      "title": "Cistus monspeliensis",
+      "revid": 3715,
+      "timestamp": "2023-02-08T13:22:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cistus_monspeliensis"
+    },
+    {
+      "pageid": 1636,
+      "ns": 0,
+      "title": "Cistus salviifolius",
+      "revid": 3713,
+      "timestamp": "2023-02-08T13:05:01Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cistus_salviifolius"
+    },
+    {
+      "pageid": 1648,
+      "ns": 0,
+      "title": "Clematis flammula",
+      "revid": 3374,
+      "timestamp": "2023-01-19T20:29:07Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Clematis_flammula"
+    },
+    {
+      "pageid": 237,
+      "ns": 0,
+      "title": "Clematis vitalba",
+      "revid": 4834,
+      "timestamp": "2024-03-29T16:01:10Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Clematis_vitalba"
+    },
+    {
+      "pageid": 1783,
+      "ns": 0,
+      "title": "Clinopodium vulgare",
+      "revid": 7269,
+      "timestamp": "2026-02-24T09:52:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Clinopodium_vulgare"
+    },
+    {
+      "pageid": 176,
+      "ns": 0,
+      "title": "Colutea arborescens",
+      "revid": 7353,
+      "timestamp": "2026-08-20T07:54:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Colutea_arborescens"
+    },
+    {
+      "pageid": 3415,
+      "ns": 0,
+      "title": "Conopodium majus",
+      "revid": 7141,
+      "timestamp": "2025-05-16T09:33:35Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Conopodium_majus"
+    },
+    {
+      "pageid": 1652,
+      "ns": 0,
+      "title": "Coriaria myrtifolia",
+      "revid": 3697,
+      "timestamp": "2023-02-07T18:34:37Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Coriaria_myrtifolia"
+    },
+    {
+      "pageid": 87,
+      "ns": 0,
+      "title": "Cornus mas",
+      "revid": 7355,
+      "timestamp": "2026-08-20T08:06:38Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cornus_mas"
+    },
+    {
+      "pageid": 31,
+      "ns": 0,
+      "title": "Cornus sanguinea",
+      "revid": 7357,
+      "timestamp": "2026-08-20T08:16:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cornus_sanguinea"
+    },
+    {
+      "pageid": 1637,
+      "ns": 0,
+      "title": "Coronilla glauca",
+      "revid": 7365,
+      "timestamp": "2026-08-20T08:37:03Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Coronilla_glauca"
+    },
+    {
+      "pageid": 1651,
+      "ns": 0,
+      "title": "Coronilla juncea",
+      "revid": 3910,
+      "timestamp": "2023-03-05T17:06:24Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Coronilla_juncea"
+    },
+    {
+      "pageid": 1795,
+      "ns": 0,
+      "title": "Coronilla varia",
+      "revid": 5940,
+      "timestamp": "2024-06-03T13:38:42Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Coronilla_varia"
+    },
+    {
+      "pageid": 98,
+      "ns": 0,
+      "title": "Corylus avellana",
+      "revid": 7367,
+      "timestamp": "2026-08-20T09:52:00Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Corylus_avellana"
+    },
+    {
+      "pageid": 1649,
+      "ns": 0,
+      "title": "Cotinus coggygria",
+      "revid": 4445,
+      "timestamp": "2023-05-31T15:59:24Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cotinus_coggygria"
+    },
+    {
+      "pageid": 1650,
+      "ns": 0,
+      "title": "Cotoneaster integerrimus",
+      "revid": 3904,
+      "timestamp": "2023-03-05T16:22:42Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cotoneaster_integerrimus"
+    },
+    {
+      "pageid": 1748,
+      "ns": 0,
+      "title": "Cotoneaster nebrodensis",
+      "revid": 3609,
+      "timestamp": "2023-02-02T09:20:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cotoneaster_nebrodensis"
+    },
+    {
+      "pageid": 1747,
+      "ns": 0,
+      "title": "Cotoneaster tomentosus",
+      "revid": 3608,
+      "timestamp": "2023-02-02T09:10:51Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cotoneaster_tomentosus"
+    },
+    {
+      "pageid": 1653,
+      "ns": 0,
+      "title": "Crataegus azarolus",
+      "revid": 3731,
+      "timestamp": "2023-02-11T17:24:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Crataegus_azarolus"
+    },
+    {
+      "pageid": 95,
+      "ns": 0,
+      "title": "Crataegus germanica",
+      "revid": 7370,
+      "timestamp": "2026-08-20T10:04:10Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Crataegus_germanica"
+    },
+    {
+      "pageid": 79,
+      "ns": 0,
+      "title": "Crataegus laevigata",
+      "revid": 7373,
+      "timestamp": "2026-08-20T10:11:14Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Crataegus_laevigata"
+    },
+    {
+      "pageid": 6,
+      "ns": 0,
+      "title": "Crataegus monogyna",
+      "revid": 7375,
+      "timestamp": "2026-08-20T10:17:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Crataegus_monogyna"
+    },
+    {
+      "pageid": 1761,
+      "ns": 0,
+      "title": "Cupressus sempervirens",
+      "revid": 4443,
+      "timestamp": "2023-05-31T15:55:12Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cupressus_sempervirens"
+    },
+    {
+      "pageid": 1785,
+      "ns": 0,
+      "title": "Cyanus segetum",
+      "revid": 6011,
+      "timestamp": "2024-07-25T07:23:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cyanus_segetum"
+    },
+    {
+      "pageid": 1754,
+      "ns": 0,
+      "title": "Cydonia oblonga",
+      "revid": 3905,
+      "timestamp": "2023-03-05T16:44:14Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cydonia_oblonga"
+    },
+    {
+      "pageid": 1997,
+      "ns": 0,
+      "title": "Cynosurus cristatus",
+      "revid": 5382,
+      "timestamp": "2024-05-17T13:33:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cynosurus_cristatus"
+    },
+    {
+      "pageid": 1654,
+      "ns": 0,
+      "title": "Cytisophyllum sessilifolium",
+      "revid": 3911,
+      "timestamp": "2023-03-05T18:49:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cytisophyllum_sessilifolium"
+    },
+    {
+      "pageid": 1672,
+      "ns": 0,
+      "title": "Cytisus oromediterraneus",
+      "revid": 3430,
+      "timestamp": "2023-01-24T13:05:25Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cytisus_oromediterraneus"
+    },
+    {
+      "pageid": 92,
+      "ns": 0,
+      "title": "Cytisus scoparius",
+      "revid": 7377,
+      "timestamp": "2026-08-20T10:23:37Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Cytisus_scoparius"
+    },
+    {
+      "pageid": 1655,
+      "ns": 0,
+      "title": "Daphne gnidium",
+      "revid": 3402,
+      "timestamp": "2023-01-24T08:00:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Daphne_gnidium"
+    },
+    {
+      "pageid": 1656,
+      "ns": 0,
+      "title": "Daphne laureola",
+      "revid": 3403,
+      "timestamp": "2023-01-24T08:01:23Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Daphne_laureola"
+    },
+    {
+      "pageid": 1786,
+      "ns": 0,
+      "title": "Daucus carota",
+      "revid": 5883,
+      "timestamp": "2024-05-29T13:27:58Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Daucus_carota"
+    },
+    {
+      "pageid": 2283,
+      "ns": 0,
+      "title": "Dianhtus hyssopifolium",
+      "revid": 5745,
+      "timestamp": "2024-05-28T10:33:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Dianhtus_hyssopifolium"
+    },
+    {
+      "pageid": 1976,
+      "ns": 0,
+      "title": "Dianthus carthusianorum",
+      "revid": 5648,
+      "timestamp": "2024-05-27T10:12:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Dianthus_carthusianorum"
+    },
+    {
+      "pageid": 1998,
+      "ns": 0,
+      "title": "Digitalis purpurea",
+      "revid": 5388,
+      "timestamp": "2024-05-17T14:13:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Digitalis_purpurea"
+    },
+    {
+      "pageid": 1657,
+      "ns": 0,
+      "title": "Dioscorea communis",
+      "revid": 5932,
+      "timestamp": "2024-06-03T12:33:36Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Dioscorea_communis"
+    },
+    {
+      "pageid": 1796,
+      "ns": 0,
+      "title": "Ephedr major",
+      "revid": 3914,
+      "timestamp": "2023-03-05T19:44:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ephedr_major"
+    },
+    {
+      "pageid": 1999,
+      "ns": 0,
+      "title": "Epilobium angustifolium",
+      "revid": 5394,
+      "timestamp": "2024-05-17T14:43:21Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Epilobium_angustifolium"
+    },
+    {
+      "pageid": 1787,
+      "ns": 0,
+      "title": "Epilobium dodonaei",
+      "revid": 4540,
+      "timestamp": "2023-06-26T11:07:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Epilobium_dodonaei"
+    },
+    {
+      "pageid": 1658,
+      "ns": 0,
+      "title": "Erica arborea",
+      "revid": 7383,
+      "timestamp": "2026-08-20T12:17:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Erica_arborea"
+    },
+    {
+      "pageid": 1740,
+      "ns": 0,
+      "title": "Erica carnea",
+      "revid": 3594,
+      "timestamp": "2023-02-01T19:00:03Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Erica_carnea"
+    },
+    {
+      "pageid": 1673,
+      "ns": 0,
+      "title": "Erica ciliaris",
+      "revid": 3432,
+      "timestamp": "2023-01-24T13:15:38Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Erica_ciliaris"
+    },
+    {
+      "pageid": 1659,
+      "ns": 0,
+      "title": "Erica cinerea",
+      "revid": 3407,
+      "timestamp": "2023-01-24T08:11:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Erica_cinerea"
+    },
+    {
+      "pageid": 1638,
+      "ns": 0,
+      "title": "Erica scoparia",
+      "revid": 3933,
+      "timestamp": "2023-03-06T09:53:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Erica_scoparia"
+    },
+    {
+      "pageid": 1660,
+      "ns": 0,
+      "title": "Erica tetralix",
+      "revid": 3408,
+      "timestamp": "2023-01-24T08:11:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Erica_tetralix"
+    },
+    {
+      "pageid": 1788,
+      "ns": 0,
+      "title": "Erucastrum nasturtiifolium",
+      "revid": 5897,
+      "timestamp": "2024-06-03T08:08:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Erucastrum_nasturtiifolium"
+    },
+    {
+      "pageid": 2261,
+      "ns": 0,
+      "title": "Eryngium campestre",
+      "revid": 5702,
+      "timestamp": "2024-05-27T14:08:05Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Eryngium_campestre"
+    },
+    {
+      "pageid": 91,
+      "ns": 0,
+      "title": "Euonymus europaeus",
+      "revid": 7385,
+      "timestamp": "2026-08-20T12:32:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Euonymus_europaeus"
+    },
+    {
+      "pageid": 1663,
+      "ns": 0,
+      "title": "Euonymus latifolius",
+      "revid": 3412,
+      "timestamp": "2023-01-24T08:20:08Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Euonymus_latifolius"
+    },
+    {
+      "pageid": 2135,
+      "ns": 0,
+      "title": "Eupatorium cannabinum",
+      "revid": 5806,
+      "timestamp": "2024-05-29T08:36:42Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Eupatorium_cannabinum"
+    },
+    {
+      "pageid": 1661,
+      "ns": 0,
+      "title": "Euphorbia characias",
+      "revid": 5904,
+      "timestamp": "2024-06-03T08:40:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Euphorbia_characias"
+    },
+    {
+      "pageid": 1662,
+      "ns": 0,
+      "title": "Euphorbia dendroides",
+      "revid": 5905,
+      "timestamp": "2024-06-03T08:41:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Euphorbia_dendroides"
+    },
+    {
+      "pageid": 1891,
+      "ns": 0,
+      "title": "Euphorbia helioscopia",
+      "revid": 5895,
+      "timestamp": "2024-06-03T07:49:16Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Euphorbia_helioscopia"
+    },
+    {
+      "pageid": 1671,
+      "ns": 0,
+      "title": "Euphorbia spinosa",
+      "revid": 5907,
+      "timestamp": "2024-06-03T08:45:44Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Euphorbia_spinosa"
+    },
+    {
+      "pageid": 238,
+      "ns": 0,
+      "title": "Fagus sylvatica",
+      "revid": 3930,
+      "timestamp": "2023-03-06T09:36:58Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Fagus_sylvatica"
+    },
+    {
+      "pageid": 1975,
+      "ns": 0,
+      "title": "Festuca arvenrnensis",
+      "revid": 5195,
+      "timestamp": "2024-05-15T12:44:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Festuca_arvenrnensis"
+    },
+    {
+      "pageid": 2076,
+      "ns": 0,
+      "title": "Festuca arvernensis",
+      "revid": 5649,
+      "timestamp": "2024-05-27T10:14:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Festuca_arvernensis"
+    },
+    {
+      "pageid": 1789,
+      "ns": 0,
+      "title": "Festuca laevigata",
+      "revid": 4544,
+      "timestamp": "2023-06-26T11:08:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Festuca_laevigata"
+    },
+    {
+      "pageid": 2001,
+      "ns": 0,
+      "title": "Festuca lemanii",
+      "revid": 5406,
+      "timestamp": "2024-05-22T08:34:14Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Festuca_lemanii"
+    },
+    {
+      "pageid": 1790,
+      "ns": 0,
+      "title": "Festuca violacea subsp. violacea",
+      "revid": 4546,
+      "timestamp": "2023-06-26T11:09:23Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Festuca_violacea_subsp._violacea"
+    },
+    {
+      "pageid": 1752,
+      "ns": 0,
+      "title": "Ficus carica",
+      "revid": 3666,
+      "timestamp": "2023-02-06T15:22:53Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ficus_carica"
+    },
+    {
+      "pageid": 2002,
+      "ns": 0,
+      "title": "Filipendula ulmaria",
+      "revid": 5412,
+      "timestamp": "2024-05-22T09:36:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Filipendula_ulmaria"
+    },
+    {
+      "pageid": 2003,
+      "ns": 0,
+      "title": "Filipendula vulgaris",
+      "revid": 5974,
+      "timestamp": "2024-06-10T08:37:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Filipendula_vulgaris"
+    },
+    {
+      "pageid": 49,
+      "ns": 0,
+      "title": "Frangula alnus",
+      "revid": 7394,
+      "timestamp": "2026-08-20T13:02:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Frangula_alnus"
+    },
+    {
+      "pageid": 1639,
+      "ns": 0,
+      "title": "Fraxinus angustifolia",
+      "revid": 7391,
+      "timestamp": "2026-08-20T12:54:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Fraxinus_angustifolia"
+    },
+    {
+      "pageid": 90,
+      "ns": 0,
+      "title": "Fraxinus excelsior",
+      "revid": 7396,
+      "timestamp": "2026-08-20T13:04:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Fraxinus_excelsior"
+    },
+    {
+      "pageid": 1742,
+      "ns": 0,
+      "title": "Fraxinus ornus",
+      "revid": 7402,
+      "timestamp": "2026-08-20T13:15:36Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Fraxinus_ornus"
+    },
+    {
+      "pageid": 1791,
+      "ns": 0,
+      "title": "Galium album",
+      "revid": 5934,
+      "timestamp": "2024-06-03T12:42:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Galium_album"
+    },
+    {
+      "pageid": 2315,
+      "ns": 0,
+      "title": "Galium mollugo",
+      "revid": 5787,
+      "timestamp": "2024-05-28T13:37:08Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Galium_mollugo"
+    },
+    {
+      "pageid": 1792,
+      "ns": 0,
+      "title": "Galium verum",
+      "revid": 5650,
+      "timestamp": "2024-05-27T10:16:35Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Galium_verum"
+    },
+    {
+      "pageid": 2004,
+      "ns": 0,
+      "title": "Galium vulgaris",
+      "revid": 5038,
+      "timestamp": "2024-05-14T11:43:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Galium_vulgaris"
+    },
+    {
+      "pageid": 1664,
+      "ns": 0,
+      "title": "Genista anglica",
+      "revid": 3418,
+      "timestamp": "2023-01-24T09:00:06Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_anglica"
+    },
+    {
+      "pageid": 1746,
+      "ns": 0,
+      "title": "Genista germanica",
+      "revid": 3607,
+      "timestamp": "2023-02-01T22:19:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_germanica"
+    },
+    {
+      "pageid": 1892,
+      "ns": 0,
+      "title": "Genista hispanica",
+      "revid": 4414,
+      "timestamp": "2023-05-02T11:58:38Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_hispanica"
+    },
+    {
+      "pageid": 1665,
+      "ns": 0,
+      "title": "Genista pilosa",
+      "revid": 3421,
+      "timestamp": "2023-01-24T09:07:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_pilosa"
+    },
+    {
+      "pageid": 3417,
+      "ns": 0,
+      "title": "Genista pulsa",
+      "revid": 7171,
+      "timestamp": "2025-05-19T09:47:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_pulsa"
+    },
+    {
+      "pageid": 1666,
+      "ns": 0,
+      "title": "Genista sagittalis",
+      "revid": 5651,
+      "timestamp": "2024-05-27T10:19:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_sagittalis"
+    },
+    {
+      "pageid": 1667,
+      "ns": 0,
+      "title": "Genista scorpius",
+      "revid": 3423,
+      "timestamp": "2023-01-24T09:18:38Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_scorpius"
+    },
+    {
+      "pageid": 1668,
+      "ns": 0,
+      "title": "Genista tinctoria",
+      "revid": 3425,
+      "timestamp": "2023-01-24T09:26:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Genista_tinctoria"
+    },
+    {
+      "pageid": 2005,
+      "ns": 0,
+      "title": "Gentiana lutea",
+      "revid": 5459,
+      "timestamp": "2024-05-22T13:36:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Gentiana_lutea"
+    },
+    {
+      "pageid": 2006,
+      "ns": 0,
+      "title": "Geranium nodosum",
+      "revid": 5467,
+      "timestamp": "2024-05-22T14:27:24Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Geranium_nodosum"
+    },
+    {
+      "pageid": 2007,
+      "ns": 0,
+      "title": "Geum urbanum",
+      "revid": 5983,
+      "timestamp": "2024-06-11T08:30:22Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Geum_urbanum"
+    },
+    {
+      "pageid": 1669,
+      "ns": 0,
+      "title": "Globularia alypum",
+      "revid": 3427,
+      "timestamp": "2023-01-24T09:34:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Globularia_alypum"
+    },
+    {
+      "pageid": 239,
+      "ns": 0,
+      "title": "Hedera helix",
+      "revid": 3886,
+      "timestamp": "2023-03-04T10:22:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Hedera_helix"
+    },
+    {
+      "pageid": 2008,
+      "ns": 0,
+      "title": "Helianthemum nummularium",
+      "revid": 7271,
+      "timestamp": "2026-02-24T09:54:51Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Helianthemum_nummularium"
+    },
+    {
+      "pageid": 1758,
+      "ns": 0,
+      "title": "Helichrysum italicum",
+      "revid": 3632,
+      "timestamp": "2023-02-03T11:38:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Helichrysum_italicum"
+    },
+    {
+      "pageid": 1759,
+      "ns": 0,
+      "title": "Helichrysum stoechas",
+      "revid": 3633,
+      "timestamp": "2023-02-03T11:48:32Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Helichrysum_stoechas"
+    },
+    {
+      "pageid": 240,
+      "ns": 0,
+      "title": "Hippocrepis emerus",
+      "revid": 7409,
+      "timestamp": "2026-08-20T13:31:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Hippocrepis_emerus"
+    },
+    {
+      "pageid": 78,
+      "ns": 0,
+      "title": "Hippophae rhamnoides",
+      "revid": 7411,
+      "timestamp": "2026-08-20T13:37:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Hippophae_rhamnoides"
+    },
+    {
+      "pageid": 1793,
+      "ns": 0,
+      "title": "Holcus lanatus",
+      "revid": 5485,
+      "timestamp": "2024-05-23T08:05:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Holcus_lanatus"
+    },
+    {
+      "pageid": 2009,
+      "ns": 0,
+      "title": "Holcus mollis",
+      "revid": 5489,
+      "timestamp": "2024-05-23T08:13:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Holcus_mollis"
+    },
+    {
+      "pageid": 1640,
+      "ns": 0,
+      "title": "Humulus lupulus",
+      "revid": 5976,
+      "timestamp": "2024-06-11T07:28:21Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Humulus_lupulus"
+    },
+    {
+      "pageid": 2182,
+      "ns": 0,
+      "title": "Hylotelephium maximum",
+      "revid": 5654,
+      "timestamp": "2024-05-27T10:25:47Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Hylotelephium_maximum"
+    },
+    {
+      "pageid": 1794,
+      "ns": 0,
+      "title": "Hypericum perforatum",
+      "revid": 7070,
+      "timestamp": "2025-05-14T13:08:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Hypericum_perforatum"
+    },
+    {
+      "pageid": 3419,
+      "ns": 0,
+      "title": "Hypericum pulchrum",
+      "revid": 7160,
+      "timestamp": "2025-05-16T11:53:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Hypericum_pulchrum"
+    },
+    {
+      "pageid": 1864,
+      "ns": 0,
+      "title": "Hypochaeris radicata",
+      "revid": 5915,
+      "timestamp": "2024-06-03T09:45:25Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Hypochaeris_radicata"
+    },
+    {
+      "pageid": 1865,
+      "ns": 0,
+      "title": "Iberis pinnata",
+      "revid": 5919,
+      "timestamp": "2024-06-03T10:04:58Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Iberis_pinnata"
+    },
+    {
+      "pageid": 94,
+      "ns": 0,
+      "title": "Ilex aquifolium",
+      "revid": 7413,
+      "timestamp": "2026-08-20T13:53:22Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ilex_aquifolium"
+    },
+    {
+      "pageid": 1675,
+      "ns": 0,
+      "title": "Jasminum fruticans",
+      "revid": 4237,
+      "timestamp": "2023-03-28T09:36:05Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Jasminum_fruticans"
+    },
+    {
+      "pageid": 1641,
+      "ns": 0,
+      "title": "Juglans regia",
+      "revid": 3987,
+      "timestamp": "2023-03-07T11:35:20Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Juglans_regia"
+    },
+    {
+      "pageid": 93,
+      "ns": 0,
+      "title": "Juniperus communis",
+      "revid": 7416,
+      "timestamp": "2026-08-20T14:02:59Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Juniperus_communis"
+    },
+    {
+      "pageid": 1642,
+      "ns": 0,
+      "title": "Juniperus oxycedrus",
+      "revid": 4595,
+      "timestamp": "2023-07-04T08:32:15Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Juniperus_oxycedrus"
+    },
+    {
+      "pageid": 1676,
+      "ns": 0,
+      "title": "Juniperus phoenicea",
+      "revid": 3756,
+      "timestamp": "2023-02-12T17:31:34Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Juniperus_phoenicea"
+    },
+    {
+      "pageid": 242,
+      "ns": 0,
+      "title": "Laburnum alpinum",
+      "revid": 3582,
+      "timestamp": "2023-01-31T21:38:18Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Laburnum_alpinum"
+    },
+    {
+      "pageid": 88,
+      "ns": 0,
+      "title": "Laburnum anagyroides",
+      "revid": 7418,
+      "timestamp": "2026-08-20T14:05:29Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Laburnum_anagyroides"
+    },
+    {
+      "pageid": 1890,
+      "ns": 0,
+      "title": "Lamium purpureum",
+      "revid": 5941,
+      "timestamp": "2024-06-03T13:44:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lamium_purpureum"
+    },
+    {
+      "pageid": 241,
+      "ns": 0,
+      "title": "Larix decidua",
+      "revid": 4592,
+      "timestamp": "2023-07-04T08:30:29Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Larix_decidua"
+    },
+    {
+      "pageid": 2011,
+      "ns": 0,
+      "title": "Lathyrus tuberosus",
+      "revid": 5655,
+      "timestamp": "2024-05-27T10:27:01Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lathyrus_tuberosus"
+    },
+    {
+      "pageid": 1680,
+      "ns": 0,
+      "title": "Laurus nobilis",
+      "revid": 7424,
+      "timestamp": "2026-08-20T14:17:04Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Laurus_nobilis"
+    },
+    {
+      "pageid": 1677,
+      "ns": 0,
+      "title": "Lavandula angustifolia",
+      "revid": 3442,
+      "timestamp": "2023-01-25T13:11:34Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lavandula_angustifolia"
+    },
+    {
+      "pageid": 1678,
+      "ns": 0,
+      "title": "Lavandula latifolia",
+      "revid": 3444,
+      "timestamp": "2023-01-25T13:16:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lavandula_latifolia"
+    },
+    {
+      "pageid": 1866,
+      "ns": 0,
+      "title": "Legousia speculum-veneris",
+      "revid": 5925,
+      "timestamp": "2024-06-03T10:19:51Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Legousia_speculum-veneris"
+    },
+    {
+      "pageid": 1867,
+      "ns": 0,
+      "title": "Leontodon hispidus subsp. hispidus",
+      "revid": 5943,
+      "timestamp": "2024-06-03T13:51:25Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Leontodon_hispidus_subsp._hispidus"
+    },
+    {
+      "pageid": 1868,
+      "ns": 0,
+      "title": "Leucanthemum ircutianum",
+      "revid": 5993,
+      "timestamp": "2024-06-13T08:20:37Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Leucanthemum_ircutianum"
+    },
+    {
+      "pageid": 45,
+      "ns": 0,
+      "title": "Ligustrum vulgare",
+      "revid": 7426,
+      "timestamp": "2026-08-20T14:33:35Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ligustrum_vulgare"
+    },
+    {
+      "pageid": 243,
+      "ns": 0,
+      "title": "Lonicera alpigena",
+      "revid": 3324,
+      "timestamp": "2023-01-18T21:42:51Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_alpigena"
+    },
+    {
+      "pageid": 244,
+      "ns": 0,
+      "title": "Lonicera caerulea",
+      "revid": 3599,
+      "timestamp": "2023-02-01T21:20:21Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_caerulea"
+    },
+    {
+      "pageid": 2012,
+      "ns": 0,
+      "title": "Lonicera estruca",
+      "revid": 5046,
+      "timestamp": "2024-05-14T11:45:26Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_estruca"
+    },
+    {
+      "pageid": 1682,
+      "ns": 0,
+      "title": "Lonicera etrusca",
+      "revid": 5816,
+      "timestamp": "2024-05-29T08:56:22Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_etrusca"
+    },
+    {
+      "pageid": 1684,
+      "ns": 0,
+      "title": "Lonicera implexa",
+      "revid": 3452,
+      "timestamp": "2023-01-25T19:52:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_implexa"
+    },
+    {
+      "pageid": 245,
+      "ns": 0,
+      "title": "Lonicera nigra",
+      "revid": 3453,
+      "timestamp": "2023-01-25T19:55:36Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_nigra"
+    },
+    {
+      "pageid": 163,
+      "ns": 0,
+      "title": "Lonicera periclymenum",
+      "revid": 4437,
+      "timestamp": "2023-05-31T15:14:13Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_periclymenum"
+    },
+    {
+      "pageid": 81,
+      "ns": 0,
+      "title": "Lonicera xylosteum",
+      "revid": 7428,
+      "timestamp": "2026-08-20T14:58:29Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lonicera_xylosteum"
+    },
+    {
+      "pageid": 1869,
+      "ns": 0,
+      "title": "Lotus corniculatus subsp. corniculatus",
+      "revid": 5961,
+      "timestamp": "2024-06-10T08:19:03Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lotus_corniculatus_subsp._corniculatus"
+    },
+    {
+      "pageid": 1681,
+      "ns": 0,
+      "title": "Lotus dorycnium",
+      "revid": 3449,
+      "timestamp": "2023-01-25T19:42:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lotus_dorycnium"
+    },
+    {
+      "pageid": 1683,
+      "ns": 0,
+      "title": "Lotus hirsutus",
+      "revid": 3451,
+      "timestamp": "2023-01-25T19:48:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lotus_hirsutus"
+    },
+    {
+      "pageid": 1769,
+      "ns": 0,
+      "title": "Lotus rectus",
+      "revid": 3673,
+      "timestamp": "2023-02-06T17:11:00Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lotus_rectus"
+    },
+    {
+      "pageid": 2013,
+      "ns": 0,
+      "title": "Luzula nivea",
+      "revid": 5959,
+      "timestamp": "2024-06-07T14:43:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Luzula_nivea"
+    },
+    {
+      "pageid": 2014,
+      "ns": 0,
+      "title": "Luzula sylvatica",
+      "revid": 5523,
+      "timestamp": "2024-05-23T10:43:20Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Luzula_sylvatica"
+    },
+    {
+      "pageid": 1762,
+      "ns": 0,
+      "title": "Lycium barbarum",
+      "revid": 3647,
+      "timestamp": "2023-02-03T14:28:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lycium_barbarum"
+    },
+    {
+      "pageid": 1894,
+      "ns": 0,
+      "title": "Lycium europaeum",
+      "revid": 4417,
+      "timestamp": "2023-05-10T14:33:05Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Lycium_europaeum"
+    },
+    {
+      "pageid": 107,
+      "ns": 0,
+      "title": "Malus sylvestris",
+      "revid": 7431,
+      "timestamp": "2026-08-20T15:02:34Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Malus_sylvestris"
+    },
+    {
+      "pageid": 2021,
+      "ns": 0,
+      "title": "Malva moschata",
+      "revid": 5659,
+      "timestamp": "2024-05-27T10:42:01Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Malva_moschata"
+    },
+    {
+      "pageid": 3421,
+      "ns": 0,
+      "title": "Matricaria chamomilla",
+      "revid": 7175,
+      "timestamp": "2025-05-19T10:08:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Matricaria_chamomilla"
+    },
+    {
+      "pageid": 2022,
+      "ns": 0,
+      "title": "Melica ciliata",
+      "revid": 7281,
+      "timestamp": "2026-02-24T11:47:34Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Melica_ciliata"
+    },
+    {
+      "pageid": 2023,
+      "ns": 0,
+      "title": "Meum athamanticum",
+      "revid": 5558,
+      "timestamp": "2024-05-23T14:11:06Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Meum_athamanticum"
+    },
+    {
+      "pageid": 17,
+      "ns": 10,
+      "title": "Modèle:FicheEspèce",
+      "revid": 3463,
+      "timestamp": "2023-01-25T20:20:47Z",
+      "type": "TEMPLATE_OR_NON_MAIN",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Mod%C3%A8le%3AFicheEsp%C3%A8ce"
+    },
+    {
+      "pageid": 279,
+      "ns": 10,
+      "title": "Modèle:FicheEspècesHerbacées",
+      "revid": 5443,
+      "timestamp": "2024-05-22T12:49:32Z",
+      "type": "TEMPLATE_OR_NON_MAIN",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Mod%C3%A8le%3AFicheEsp%C3%A8cesHerbac%C3%A9es"
+    },
+    {
+      "pageid": 2285,
+      "ns": 0,
+      "title": "Molinia caerulea",
+      "revid": 5753,
+      "timestamp": "2024-05-28T12:12:12Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Molinia_caerulea"
+    },
+    {
+      "pageid": 1974,
+      "ns": 0,
+      "title": "Muscari comosum",
+      "revid": 5313,
+      "timestamp": "2024-05-17T08:19:32Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Muscari_comosum"
+    },
+    {
+      "pageid": 1870,
+      "ns": 0,
+      "title": "Myosotis alpestris",
+      "revid": 4573,
+      "timestamp": "2023-06-26T11:29:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Myosotis_alpestris"
+    },
+    {
+      "pageid": 1736,
+      "ns": 0,
+      "title": "Myricaria germanica",
+      "revid": 3589,
+      "timestamp": "2023-02-01T09:12:59Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Myricaria_germanica"
+    },
+    {
+      "pageid": 1685,
+      "ns": 0,
+      "title": "Myrtus communis",
+      "revid": 7439,
+      "timestamp": "2026-08-20T15:18:18Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Myrtus_communis"
+    },
+    {
+      "pageid": 2024,
+      "ns": 0,
+      "title": "Narcissus poeticus",
+      "revid": 5560,
+      "timestamp": "2024-05-23T14:14:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Narcissus_poeticus"
+    },
+    {
+      "pageid": 1737,
+      "ns": 0,
+      "title": "Nerium oleander",
+      "revid": 3650,
+      "timestamp": "2023-02-03T16:39:47Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Nerium_oleander"
+    },
+    {
+      "pageid": 1958,
+      "ns": 0,
+      "title": "Nigella Arvensis L.",
+      "revid": 4631,
+      "timestamp": "2023-10-11T18:45:16Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Nigella_Arvensis_L."
+    },
+    {
+      "pageid": 1956,
+      "ns": 0,
+      "title": "Onobrychis viciifolia",
+      "revid": 4609,
+      "timestamp": "2023-08-28T14:49:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Onobrychis_viciifolia"
+    },
+    {
+      "pageid": 1686,
+      "ns": 0,
+      "title": "Ononis fruticosa",
+      "revid": 3461,
+      "timestamp": "2023-01-25T20:15:07Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ononis_fruticosa"
+    },
+    {
+      "pageid": 1687,
+      "ns": 0,
+      "title": "Ononis spinosa",
+      "revid": 3770,
+      "timestamp": "2023-02-13T10:31:23Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ononis_spinosa"
+    },
+    {
+      "pageid": 1765,
+      "ns": 0,
+      "title": "Origanum vulgare",
+      "revid": 6010,
+      "timestamp": "2024-07-22T10:44:00Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Origanum_vulgare"
+    },
+    {
+      "pageid": 1897,
+      "ns": 0,
+      "title": "Osyris alba",
+      "revid": 4424,
+      "timestamp": "2023-05-10T15:44:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Osyris_alba"
+    },
+    {
+      "pageid": 1688,
+      "ns": 0,
+      "title": "Paliurus spina-christi",
+      "revid": 3465,
+      "timestamp": "2023-01-25T20:21:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Paliurus_spina-christi"
+    },
+    {
+      "pageid": 165,
+      "ns": 0,
+      "title": "Phillyrea angustifolia",
+      "revid": 7445,
+      "timestamp": "2026-08-20T15:30:45Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Phillyrea_angustifolia"
+    },
+    {
+      "pageid": 166,
+      "ns": 0,
+      "title": "Phillyrea latifolia",
+      "revid": 7450,
+      "timestamp": "2026-08-20T15:37:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Phillyrea_latifolia"
+    },
+    {
+      "pageid": 1689,
+      "ns": 0,
+      "title": "Phillyrea media",
+      "revid": 3466,
+      "timestamp": "2023-01-25T20:26:21Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Phillyrea_media"
+    },
+    {
+      "pageid": 2025,
+      "ns": 0,
+      "title": "Phleum phleoides",
+      "revid": 5661,
+      "timestamp": "2024-05-27T10:46:14Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Phleum_phleoides"
+    },
+    {
+      "pageid": 2026,
+      "ns": 0,
+      "title": "Phyteuma spicatum",
+      "revid": 7273,
+      "timestamp": "2026-02-24T10:05:29Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Phyteuma_spicatum"
+    },
+    {
+      "pageid": 246,
+      "ns": 0,
+      "title": "Picea abies",
+      "revid": 4623,
+      "timestamp": "2023-10-07T10:13:15Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Picea_abies"
+    },
+    {
+      "pageid": 2392,
+      "ns": 0,
+      "title": "Pimpinella major",
+      "revid": 5952,
+      "timestamp": "2024-06-05T11:25:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pimpinella_major"
+    },
+    {
+      "pageid": 1930,
+      "ns": 0,
+      "title": "Pimprinella major",
+      "revid": 5788,
+      "timestamp": "2024-05-28T13:43:07Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pimprinella_major"
+    },
+    {
+      "pageid": 262,
+      "ns": 0,
+      "title": "Pinus cembra",
+      "revid": 3634,
+      "timestamp": "2023-02-03T13:30:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pinus_cembra"
+    },
+    {
+      "pageid": 1774,
+      "ns": 0,
+      "title": "Pinus halepensis",
+      "revid": 3794,
+      "timestamp": "2023-02-14T14:03:07Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pinus_halepensis"
+    },
+    {
+      "pageid": 263,
+      "ns": 0,
+      "title": "Pinus mugo subsp. uncinata",
+      "revid": 3776,
+      "timestamp": "2023-02-14T08:40:08Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pinus_mugo_subsp._uncinata"
+    },
+    {
+      "pageid": 1766,
+      "ns": 0,
+      "title": "Pinus nigra subsp. salzmannii",
+      "revid": 3659,
+      "timestamp": "2023-02-06T11:45:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pinus_nigra_subsp._salzmannii"
+    },
+    {
+      "pageid": 1690,
+      "ns": 0,
+      "title": "Pinus pinea",
+      "revid": 4444,
+      "timestamp": "2023-05-31T15:56:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pinus_pinea"
+    },
+    {
+      "pageid": 247,
+      "ns": 0,
+      "title": "Pinus sylvestris",
+      "revid": 4594,
+      "timestamp": "2023-07-04T08:31:27Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pinus_sylvestris"
+    },
+    {
+      "pageid": 103,
+      "ns": 0,
+      "title": "Pistacia lentiscus",
+      "revid": 7452,
+      "timestamp": "2026-08-20T15:42:17Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pistacia_lentiscus"
+    },
+    {
+      "pageid": 104,
+      "ns": 0,
+      "title": "Pistacia terebinthus",
+      "revid": 7456,
+      "timestamp": "2026-08-20T15:50:29Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pistacia_terebinthus"
+    },
+    {
+      "pageid": 1739,
+      "ns": 0,
+      "title": "Pistacia vera",
+      "revid": 3663,
+      "timestamp": "2023-02-06T15:14:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pistacia_vera"
+    },
+    {
+      "pageid": 102,
+      "ns": 0,
+      "title": "Populus alba",
+      "revid": 7459,
+      "timestamp": "2026-08-20T15:57:17Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Populus_alba"
+    },
+    {
+      "pageid": 248,
+      "ns": 0,
+      "title": "Populus nigra",
+      "revid": 7465,
+      "timestamp": "2026-08-24T08:46:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Populus_nigra"
+    },
+    {
+      "pageid": 1691,
+      "ns": 0,
+      "title": "Populus tremula",
+      "revid": 3784,
+      "timestamp": "2023-02-14T11:41:47Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Populus_tremula"
+    },
+    {
+      "pageid": 1692,
+      "ns": 0,
+      "title": "Populus x canescens",
+      "revid": 3477,
+      "timestamp": "2023-01-26T11:11:46Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Populus_x_canescens"
+    },
+    {
+      "pageid": 1973,
+      "ns": 0,
+      "title": "Poterium sanguisorba",
+      "revid": 5684,
+      "timestamp": "2024-05-27T12:09:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Poterium_sanguisorba"
+    },
+    {
+      "pageid": 2027,
+      "ns": 0,
+      "title": "Prunella vulgaris",
+      "revid": 5663,
+      "timestamp": "2024-05-27T10:48:04Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunella_vulgaris"
+    },
+    {
+      "pageid": 71,
+      "ns": 0,
+      "title": "Prunus avium",
+      "revid": 7468,
+      "timestamp": "2026-08-24T09:02:03Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_avium"
+    },
+    {
+      "pageid": 1674,
+      "ns": 0,
+      "title": "Prunus cerasifera",
+      "revid": 3788,
+      "timestamp": "2023-02-14T13:11:26Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_cerasifera"
+    },
+    {
+      "pageid": 108,
+      "ns": 0,
+      "title": "Prunus domestica",
+      "revid": 7470,
+      "timestamp": "2026-08-24T09:04:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_domestica"
+    },
+    {
+      "pageid": 1643,
+      "ns": 0,
+      "title": "Prunus dulcis",
+      "revid": 4599,
+      "timestamp": "2023-07-06T13:00:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_dulcis"
+    },
+    {
+      "pageid": 72,
+      "ns": 0,
+      "title": "Prunus mahaleb",
+      "revid": 7472,
+      "timestamp": "2026-08-24T09:12:04Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_mahaleb"
+    },
+    {
+      "pageid": 73,
+      "ns": 0,
+      "title": "Prunus padus",
+      "revid": 7475,
+      "timestamp": "2026-08-24T09:23:59Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_padus"
+    },
+    {
+      "pageid": 1693,
+      "ns": 0,
+      "title": "Prunus persica",
+      "revid": 3480,
+      "timestamp": "2023-01-27T17:18:36Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_persica"
+    },
+    {
+      "pageid": 74,
+      "ns": 0,
+      "title": "Prunus spinosa",
+      "revid": 7478,
+      "timestamp": "2026-08-24T09:58:06Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Prunus_spinosa"
+    },
+    {
+      "pageid": 1777,
+      "ns": 0,
+      "title": "Pyracantha coccinea",
+      "revid": 3846,
+      "timestamp": "2023-02-24T17:11:37Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pyracantha_coccinea"
+    },
+    {
+      "pageid": 1694,
+      "ns": 0,
+      "title": "Pyrus communis",
+      "revid": 3484,
+      "timestamp": "2023-01-27T17:35:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pyrus_communis"
+    },
+    {
+      "pageid": 106,
+      "ns": 0,
+      "title": "Pyrus communis subsp pyraster",
+      "revid": 7480,
+      "timestamp": "2026-08-24T10:01:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pyrus_communis_subsp_pyraster"
+    },
+    {
+      "pageid": 105,
+      "ns": 0,
+      "title": "Pyrus cordata",
+      "revid": 7483,
+      "timestamp": "2026-08-24T10:09:56Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pyrus_cordata"
+    },
+    {
+      "pageid": 1695,
+      "ns": 0,
+      "title": "Pyrus spinosa",
+      "revid": 7493,
+      "timestamp": "2026-08-24T10:29:03Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Pyrus_spinosa"
+    },
+    {
+      "pageid": 1775,
+      "ns": 0,
+      "title": "Quercus cerris",
+      "revid": 3837,
+      "timestamp": "2023-02-19T20:28:54Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Quercus_cerris"
+    },
+    {
+      "pageid": 1699,
+      "ns": 0,
+      "title": "Quercus coccifera",
+      "revid": 3491,
+      "timestamp": "2023-01-28T13:24:22Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Quercus_coccifera"
+    },
+    {
+      "pageid": 1697,
+      "ns": 0,
+      "title": "Quercus ilex",
+      "revid": 7498,
+      "timestamp": "2026-08-24T12:18:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Quercus_ilex"
+    },
+    {
+      "pageid": 84,
+      "ns": 0,
+      "title": "Quercus petraea",
+      "revid": 7486,
+      "timestamp": "2026-08-24T10:15:22Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Quercus_petraea"
+    },
+    {
+      "pageid": 83,
+      "ns": 0,
+      "title": "Quercus pubescens",
+      "revid": 7500,
+      "timestamp": "2026-08-24T13:02:45Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Quercus_pubescens"
+    },
+    {
+      "pageid": 1696,
+      "ns": 0,
+      "title": "Quercus pyrenaica",
+      "revid": 3487,
+      "timestamp": "2023-01-28T13:04:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Quercus_pyrenaica"
+    },
+    {
+      "pageid": 1698,
+      "ns": 0,
+      "title": "Quercus suber",
+      "revid": 7509,
+      "timestamp": "2026-08-24T13:15:33Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Quercus_suber"
+    },
+    {
+      "pageid": 96,
+      "ns": 0,
+      "title": "Rhamnus alaternus",
+      "revid": 7512,
+      "timestamp": "2026-08-24T13:24:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rhamnus_alaternus"
+    },
+    {
+      "pageid": 228,
+      "ns": 0,
+      "title": "Rhamnus alpina",
+      "revid": 3494,
+      "timestamp": "2023-01-28T13:28:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rhamnus_alpina"
+    },
+    {
+      "pageid": 97,
+      "ns": 0,
+      "title": "Rhamnus cathartica",
+      "revid": 7514,
+      "timestamp": "2026-08-24T13:33:46Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rhamnus_cathartica"
+    },
+    {
+      "pageid": 3422,
+      "ns": 0,
+      "title": "Rhinanthus minor",
+      "revid": 7154,
+      "timestamp": "2025-05-16T11:06:46Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rhinanthus_minor"
+    },
+    {
+      "pageid": 264,
+      "ns": 0,
+      "title": "Rhododendron ferrugineum",
+      "revid": 3605,
+      "timestamp": "2023-02-01T22:02:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rhododendron_ferrugineum"
+    },
+    {
+      "pageid": 1700,
+      "ns": 0,
+      "title": "Rhus coriaria",
+      "revid": 3496,
+      "timestamp": "2023-01-29T14:56:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rhus_coriaria"
+    },
+    {
+      "pageid": 179,
+      "ns": 0,
+      "title": "Ribes alpinum",
+      "revid": 5699,
+      "timestamp": "2024-05-27T14:04:45Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ribes_alpinum"
+    },
+    {
+      "pageid": 1701,
+      "ns": 0,
+      "title": "Ribes nigrum",
+      "revid": 3500,
+      "timestamp": "2023-01-30T08:22:13Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ribes_nigrum"
+    },
+    {
+      "pageid": 265,
+      "ns": 0,
+      "title": "Ribes petraeum",
+      "revid": 3798,
+      "timestamp": "2023-02-14T14:19:52Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ribes_petraeum"
+    },
+    {
+      "pageid": 266,
+      "ns": 0,
+      "title": "Ribes rubrum",
+      "revid": 4039,
+      "timestamp": "2023-03-07T14:16:53Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ribes_rubrum"
+    },
+    {
+      "pageid": 267,
+      "ns": 0,
+      "title": "Ribes uva-crispa",
+      "revid": 3799,
+      "timestamp": "2023-02-14T14:23:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ribes_uva-crispa"
+    },
+    {
+      "pageid": 1702,
+      "ns": 0,
+      "title": "Rosa agrestis",
+      "revid": 3501,
+      "timestamp": "2023-01-30T08:28:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_agrestis"
+    },
+    {
+      "pageid": 250,
+      "ns": 0,
+      "title": "Rosa arvensis",
+      "revid": 3502,
+      "timestamp": "2023-01-30T08:39:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_arvensis"
+    },
+    {
+      "pageid": 89,
+      "ns": 0,
+      "title": "Rosa canina",
+      "revid": 7516,
+      "timestamp": "2026-08-24T13:39:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_canina"
+    },
+    {
+      "pageid": 1763,
+      "ns": 0,
+      "title": "Rosa micrantha",
+      "revid": 3654,
+      "timestamp": "2023-02-06T08:47:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_micrantha"
+    },
+    {
+      "pageid": 1704,
+      "ns": 0,
+      "title": "Rosa pendulina",
+      "revid": 3505,
+      "timestamp": "2023-01-30T09:31:23Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_pendulina"
+    },
+    {
+      "pageid": 1705,
+      "ns": 0,
+      "title": "Rosa rubiginosa",
+      "revid": 3802,
+      "timestamp": "2023-02-14T14:50:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_rubiginosa"
+    },
+    {
+      "pageid": 1707,
+      "ns": 0,
+      "title": "Rosa sempervirens",
+      "revid": 4037,
+      "timestamp": "2023-03-07T14:11:51Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_sempervirens"
+    },
+    {
+      "pageid": 1706,
+      "ns": 0,
+      "title": "Rosa spinosissima",
+      "revid": 3804,
+      "timestamp": "2023-02-14T15:01:26Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosa_spinosissima"
+    },
+    {
+      "pageid": 1703,
+      "ns": 0,
+      "title": "Rosmarinus officinalis",
+      "revid": 7523,
+      "timestamp": "2026-08-24T13:53:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rosmarinus_officinalis"
+    },
+    {
+      "pageid": 1709,
+      "ns": 0,
+      "title": "Rubus caesius",
+      "revid": 3840,
+      "timestamp": "2023-02-21T10:38:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rubus_caesius"
+    },
+    {
+      "pageid": 1710,
+      "ns": 0,
+      "title": "Rubus fruticosus",
+      "revid": 3516,
+      "timestamp": "2023-01-30T10:21:20Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rubus_fruticosus"
+    },
+    {
+      "pageid": 1771,
+      "ns": 0,
+      "title": "Rubus idaeus",
+      "revid": 7213,
+      "timestamp": "2025-09-25T07:54:14Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rubus_idaeus"
+    },
+    {
+      "pageid": 1711,
+      "ns": 0,
+      "title": "Rubus ulmifolius",
+      "revid": 3803,
+      "timestamp": "2023-02-14T14:54:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rubus_ulmifolius"
+    },
+    {
+      "pageid": 2262,
+      "ns": 0,
+      "title": "Rumex acetosa",
+      "revid": 5970,
+      "timestamp": "2024-06-10T08:31:59Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Rumex_acetosa"
+    },
+    {
+      "pageid": 1708,
+      "ns": 0,
+      "title": "Ruscus aculeatus",
+      "revid": 4051,
+      "timestamp": "2023-03-07T15:32:02Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ruscus_aculeatus"
+    },
+    {
+      "pageid": 251,
+      "ns": 0,
+      "title": "Salix alba",
+      "revid": 4598,
+      "timestamp": "2023-07-04T08:34:45Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_alba"
+    },
+    {
+      "pageid": 1712,
+      "ns": 0,
+      "title": "Salix atrocinerea",
+      "revid": 4008,
+      "timestamp": "2023-03-07T13:27:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_atrocinerea"
+    },
+    {
+      "pageid": 1713,
+      "ns": 0,
+      "title": "Salix aurita",
+      "revid": 3807,
+      "timestamp": "2023-02-15T09:20:36Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_aurita"
+    },
+    {
+      "pageid": 255,
+      "ns": 0,
+      "title": "Salix cinerea",
+      "revid": 3809,
+      "timestamp": "2023-02-15T09:38:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_cinerea"
+    },
+    {
+      "pageid": 1714,
+      "ns": 0,
+      "title": "Salix daphnoides",
+      "revid": 3810,
+      "timestamp": "2023-02-15T09:39:53Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_daphnoides"
+    },
+    {
+      "pageid": 253,
+      "ns": 0,
+      "title": "Salix eleagnos",
+      "revid": 3813,
+      "timestamp": "2023-02-15T09:53:50Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_eleagnos"
+    },
+    {
+      "pageid": 1893,
+      "ns": 0,
+      "title": "Salix foetida",
+      "revid": 4416,
+      "timestamp": "2023-05-02T12:20:10Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_foetida"
+    },
+    {
+      "pageid": 1715,
+      "ns": 0,
+      "title": "Salix fragilis",
+      "revid": 3814,
+      "timestamp": "2023-02-15T10:00:29Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_fragilis"
+    },
+    {
+      "pageid": 1896,
+      "ns": 0,
+      "title": "Salix hastata",
+      "revid": 4420,
+      "timestamp": "2023-05-10T15:22:55Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_hastata"
+    },
+    {
+      "pageid": 1717,
+      "ns": 0,
+      "title": "Salix myrsinifolia",
+      "revid": 3536,
+      "timestamp": "2023-01-30T12:52:02Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_myrsinifolia"
+    },
+    {
+      "pageid": 1776,
+      "ns": 0,
+      "title": "Salix pentandra",
+      "revid": 3839,
+      "timestamp": "2023-02-19T20:49:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_pentandra"
+    },
+    {
+      "pageid": 254,
+      "ns": 0,
+      "title": "Salix purpurea",
+      "revid": 3817,
+      "timestamp": "2023-02-15T11:57:05Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_purpurea"
+    },
+    {
+      "pageid": 1719,
+      "ns": 0,
+      "title": "Salix repens",
+      "revid": 3818,
+      "timestamp": "2023-02-15T12:00:58Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_repens"
+    },
+    {
+      "pageid": 1718,
+      "ns": 0,
+      "title": "Salix repens subsp. repens",
+      "revid": 3540,
+      "timestamp": "2023-01-30T16:43:31Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_repens_subsp._repens"
+    },
+    {
+      "pageid": 1720,
+      "ns": 0,
+      "title": "Salix repens var. dunensis",
+      "revid": 3543,
+      "timestamp": "2023-01-30T16:55:08Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_repens_var._dunensis"
+    },
+    {
+      "pageid": 1721,
+      "ns": 0,
+      "title": "Salix rosmarinifolia",
+      "revid": 3642,
+      "timestamp": "2023-02-03T14:03:35Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_rosmarinifolia"
+    },
+    {
+      "pageid": 1722,
+      "ns": 0,
+      "title": "Salix triandra",
+      "revid": 3820,
+      "timestamp": "2023-02-15T12:04:20Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_triandra"
+    },
+    {
+      "pageid": 1723,
+      "ns": 0,
+      "title": "Salix viminalis",
+      "revid": 3819,
+      "timestamp": "2023-02-15T12:02:34Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salix_viminalis"
+    },
+    {
+      "pageid": 1955,
+      "ns": 0,
+      "title": "Salvia officinalis",
+      "revid": 4608,
+      "timestamp": "2023-08-27T15:42:21Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salvia_officinalis"
+    },
+    {
+      "pageid": 1797,
+      "ns": 0,
+      "title": "Salvia pratensis",
+      "revid": 7275,
+      "timestamp": "2026-02-24T10:11:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Salvia_pratensis"
+    },
+    {
+      "pageid": 111,
+      "ns": 0,
+      "title": "Sambucus nigra",
+      "revid": 7527,
+      "timestamp": "2026-08-24T14:03:53Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Sambucus_nigra"
+    },
+    {
+      "pageid": 110,
+      "ns": 0,
+      "title": "Sambucus racemosa",
+      "revid": 7529,
+      "timestamp": "2026-08-24T14:20:08Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Sambucus_racemosa"
+    },
+    {
+      "pageid": 1964,
+      "ns": 0,
+      "title": "Sanguisorba officinalis",
+      "revid": 5432,
+      "timestamp": "2024-05-22T11:46:59Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Sanguisorba_officinalis"
+    },
+    {
+      "pageid": 1744,
+      "ns": 0,
+      "title": "Santolina chamaecyparissus",
+      "revid": 3836,
+      "timestamp": "2023-02-19T19:59:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Santolina_chamaecyparissus"
+    },
+    {
+      "pageid": 1716,
+      "ns": 0,
+      "title": "Satureja montana",
+      "revid": 3535,
+      "timestamp": "2023-01-30T12:49:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Satureja_montana"
+    },
+    {
+      "pageid": 2028,
+      "ns": 0,
+      "title": "Saxifraga granulata",
+      "revid": 5966,
+      "timestamp": "2024-06-10T08:26:46Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Saxifraga_granulata"
+    },
+    {
+      "pageid": 3424,
+      "ns": 0,
+      "title": "Scandix pecten veneris",
+      "revid": 7182,
+      "timestamp": "2025-05-20T09:19:24Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Scandix_pecten_veneris"
+    },
+    {
+      "pageid": 1929,
+      "ns": 0,
+      "title": "Silene latifolia",
+      "revid": 5603,
+      "timestamp": "2024-05-24T12:16:30Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Silene_latifolia"
+    },
+    {
+      "pageid": 2029,
+      "ns": 0,
+      "title": "Silene nutans",
+      "revid": 7180,
+      "timestamp": "2025-05-19T10:16:03Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Silene_nutans"
+    },
+    {
+      "pageid": 1778,
+      "ns": 0,
+      "title": "Smilax aspera",
+      "revid": 3892,
+      "timestamp": "2023-03-05T15:01:15Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Smilax_aspera"
+    },
+    {
+      "pageid": 1954,
+      "ns": 0,
+      "title": "Solanum dulcamara",
+      "revid": 4602,
+      "timestamp": "2023-07-19T14:38:23Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Solanum_dulcamara"
+    },
+    {
+      "pageid": 46,
+      "ns": 0,
+      "title": "Sorbus aria",
+      "revid": 7531,
+      "timestamp": "2026-08-24T14:26:25Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Sorbus_aria"
+    },
+    {
+      "pageid": 115,
+      "ns": 0,
+      "title": "Sorbus aucuparia",
+      "revid": 7533,
+      "timestamp": "2026-08-24T14:30:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Sorbus_aucuparia"
+    },
+    {
+      "pageid": 86,
+      "ns": 0,
+      "title": "Sorbus domestica",
+      "revid": 7535,
+      "timestamp": "2026-08-24T14:35:27Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Sorbus_domestica"
+    },
+    {
+      "pageid": 75,
+      "ns": 0,
+      "title": "Sorbus torminalis",
+      "revid": 7537,
+      "timestamp": "2026-08-24T14:43:21Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Sorbus_torminalis"
+    },
+    {
+      "pageid": 1725,
+      "ns": 0,
+      "title": "Spartium junceum",
+      "revid": 3557,
+      "timestamp": "2023-01-31T09:25:32Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Spartium_junceum"
+    },
+    {
+      "pageid": 1978,
+      "ns": 0,
+      "title": "Stachys recta",
+      "revid": 5980,
+      "timestamp": "2024-06-11T07:56:35Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Stachys_recta"
+    },
+    {
+      "pageid": 1726,
+      "ns": 0,
+      "title": "Staehelina dubia",
+      "revid": 3558,
+      "timestamp": "2023-01-31T09:30:27Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Staehelina_dubia"
+    },
+    {
+      "pageid": 1751,
+      "ns": 0,
+      "title": "Tamarix africana",
+      "revid": 3615,
+      "timestamp": "2023-02-02T10:17:17Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Tamarix_africana"
+    },
+    {
+      "pageid": 1727,
+      "ns": 0,
+      "title": "Tamarix gallica",
+      "revid": 3893,
+      "timestamp": "2023-03-05T15:03:36Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Tamarix_gallica"
+    },
+    {
+      "pageid": 2263,
+      "ns": 0,
+      "title": "Tanacetum corymbosum",
+      "revid": 5723,
+      "timestamp": "2024-05-28T07:43:07Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Tanacetum_corymbosum"
+    },
+    {
+      "pageid": 2030,
+      "ns": 0,
+      "title": "Tanacetum vulgare",
+      "revid": 5666,
+      "timestamp": "2024-05-27T10:54:35Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Tanacetum_vulgare"
+    },
+    {
+      "pageid": 257,
+      "ns": 0,
+      "title": "Taxus baccata",
+      "revid": 4603,
+      "timestamp": "2023-07-19T14:54:31Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Taxus_baccata"
+    },
+    {
+      "pageid": 1977,
+      "ns": 0,
+      "title": "Teucrium chamaedrys",
+      "revid": 7278,
+      "timestamp": "2026-02-24T11:20:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Teucrium_chamaedrys"
+    },
+    {
+      "pageid": 1772,
+      "ns": 0,
+      "title": "Thymus drucei",
+      "revid": 5801,
+      "timestamp": "2024-05-29T08:17:32Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Thymus_drucei"
+    },
+    {
+      "pageid": 1756,
+      "ns": 0,
+      "title": "Thymus herba-barona",
+      "revid": 3623,
+      "timestamp": "2023-02-02T10:55:39Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Thymus_herba-barona"
+    },
+    {
+      "pageid": 1755,
+      "ns": 0,
+      "title": "Thymus nitens",
+      "revid": 3624,
+      "timestamp": "2023-02-02T10:57:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Thymus_nitens"
+    },
+    {
+      "pageid": 1773,
+      "ns": 0,
+      "title": "Thymus polytrichus",
+      "revid": 3772,
+      "timestamp": "2023-02-13T15:40:38Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Thymus_polytrichus"
+    },
+    {
+      "pageid": 1764,
+      "ns": 0,
+      "title": "Thymus pulegioides",
+      "revid": 5667,
+      "timestamp": "2024-05-27T10:56:22Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Thymus_pulegioides"
+    },
+    {
+      "pageid": 1757,
+      "ns": 0,
+      "title": "Thymus serpyllum",
+      "revid": 3626,
+      "timestamp": "2023-02-02T11:03:09Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Thymus_serpyllum"
+    },
+    {
+      "pageid": 1728,
+      "ns": 0,
+      "title": "Thymus vulgaris",
+      "revid": 4593,
+      "timestamp": "2023-07-04T08:31:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Thymus_vulgaris"
+    },
+    {
+      "pageid": 258,
+      "ns": 0,
+      "title": "Tilia cordata",
+      "revid": 7543,
+      "timestamp": "2026-08-24T15:01:43Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Tilia_cordata"
+    },
+    {
+      "pageid": 259,
+      "ns": 0,
+      "title": "Tilia platyphyllos",
+      "revid": 7547,
+      "timestamp": "2026-08-24T15:10:19Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Tilia_platyphyllos"
+    },
+    {
+      "pageid": 2031,
+      "ns": 0,
+      "title": "Trifolium medium",
+      "revid": 5672,
+      "timestamp": "2024-05-27T11:37:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Trifolium_medium"
+    },
+    {
+      "pageid": 2032,
+      "ns": 0,
+      "title": "Trifolium rubens",
+      "revid": 5673,
+      "timestamp": "2024-05-27T11:39:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Trifolium_rubens"
+    },
+    {
+      "pageid": 1729,
+      "ns": 0,
+      "title": "Typha latifolia",
+      "revid": 3566,
+      "timestamp": "2023-01-31T10:03:44Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Typha_latifolia"
+    },
+    {
+      "pageid": 1731,
+      "ns": 0,
+      "title": "Ulex europaeus",
+      "revid": 4438,
+      "timestamp": "2023-05-31T15:17:38Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ulex_europaeus"
+    },
+    {
+      "pageid": 1730,
+      "ns": 0,
+      "title": "Ulex minor",
+      "revid": 4036,
+      "timestamp": "2023-03-07T14:10:14Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ulex_minor"
+    },
+    {
+      "pageid": 1732,
+      "ns": 0,
+      "title": "Ulex parviflorus",
+      "revid": 3575,
+      "timestamp": "2023-01-31T11:27:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ulex_parviflorus"
+    },
+    {
+      "pageid": 100,
+      "ns": 0,
+      "title": "Ulmus glabra",
+      "revid": 7549,
+      "timestamp": "2026-08-24T15:18:31Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ulmus_glabra"
+    },
+    {
+      "pageid": 101,
+      "ns": 0,
+      "title": "Ulmus laevis",
+      "revid": 7551,
+      "timestamp": "2026-08-24T15:28:41Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ulmus_laevis"
+    },
+    {
+      "pageid": 99,
+      "ns": 0,
+      "title": "Ulmus minor",
+      "revid": 7553,
+      "timestamp": "2026-08-24T15:31:28Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Ulmus_minor"
+    },
+    {
+      "pageid": 229,
+      "ns": 0,
+      "title": "Vaccinium myrtillus",
+      "revid": 3832,
+      "timestamp": "2023-02-17T16:43:51Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Vaccinium_myrtillus"
+    },
+    {
+      "pageid": 1750,
+      "ns": 0,
+      "title": "Vaccinium uliginosum",
+      "revid": 3614,
+      "timestamp": "2023-02-02T09:45:49Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Vaccinium_uliginosum"
+    },
+    {
+      "pageid": 268,
+      "ns": 0,
+      "title": "Vaccinium uliginosum subsp. microphyllum",
+      "revid": 3613,
+      "timestamp": "2023-02-02T09:41:06Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Vaccinium_uliginosum_subsp._microphyllum"
+    },
+    {
+      "pageid": 269,
+      "ns": 0,
+      "title": "Vaccinium vitis-idaea",
+      "revid": 3579,
+      "timestamp": "2023-01-31T12:09:11Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Vaccinium_vitis-idaea"
+    },
+    {
+      "pageid": 2033,
+      "ns": 0,
+      "title": "Valeriana officinalis",
+      "revid": 5985,
+      "timestamp": "2024-06-11T08:32:47Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Valeriana_officinalis"
+    },
+    {
+      "pageid": 1957,
+      "ns": 0,
+      "title": "Viabilité des semences d'espèces ligneuses",
+      "revid": 4785,
+      "timestamp": "2024-03-14T11:37:14Z",
+      "type": "GENERAL_RESOURCE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Viabilit%C3%A9_des_semences_d'esp%C3%A8ces_ligneuses"
+    },
+    {
+      "pageid": 112,
+      "ns": 0,
+      "title": "Viburnum lantana",
+      "revid": 7555,
+      "timestamp": "2026-08-24T15:34:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Viburnum_lantana"
+    },
+    {
+      "pageid": 113,
+      "ns": 0,
+      "title": "Viburnum opulus",
+      "revid": 7557,
+      "timestamp": "2026-08-24T15:37:57Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Viburnum_opulus"
+    },
+    {
+      "pageid": 114,
+      "ns": 0,
+      "title": "Viburnum tinus",
+      "revid": 7563,
+      "timestamp": "2026-08-24T15:45:21Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Viburnum_tinus"
+    },
+    {
+      "pageid": 2284,
+      "ns": 0,
+      "title": "Viola lutea",
+      "revid": 5780,
+      "timestamp": "2024-05-28T13:13:48Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Viola_lutea"
+    },
+    {
+      "pageid": 1888,
+      "ns": 0,
+      "title": "Viola odorata",
+      "revid": 5944,
+      "timestamp": "2024-06-03T14:05:40Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Viola_odorata"
+    },
+    {
+      "pageid": 1738,
+      "ns": 0,
+      "title": "Vitex agnus-castus",
+      "revid": 3591,
+      "timestamp": "2023-02-01T09:36:13Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Vitex_agnus-castus"
+    },
+    {
+      "pageid": 2034,
+      "ns": 0,
+      "title": "Xanthoselinum alsaticum",
+      "revid": 5675,
+      "timestamp": "2024-05-27T11:42:02Z",
+      "type": "TAXON_CANDIDATE",
+      "live": "https://florelocale.fr/encyclopedie/index.php/Xanthoselinum_alsaticum"
+    }
+  ],
+  "governance": {
+    "lib_file_id_effect": "NONE",
+    "hwm": "JBLR-LIB-00000807",
+    "next": "JBLR-LIB-00000808",
+    "latest_07_resolution_seq": "000375",
+    "copy_never_move": true,
+    "note": "Discovery/version manifest only; no canonical ID allocation."
+  }
+}

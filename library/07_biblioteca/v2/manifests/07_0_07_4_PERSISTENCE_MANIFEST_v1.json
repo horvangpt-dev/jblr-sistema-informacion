@@ -1,0 +1,32 @@
+{
+  "package": "07_0_TO_07_4_PERSISTENCE",
+  "version": "1.0.0",
+  "actor": "07.V2",
+  "date": "2026-08-27",
+  "parent_authority": "00000",
+  "gate_event": "JBLR-EVT-00000-20260827-REVIEW-07-0-07-4-REQUIRE-PERSISTENCE-001",
+  "start_head": "fc4da76a490ca292d2ab60f6749d480bf1f581eb",
+  "v1_legacy_manifest": "library/07_biblioteca/manifest.json",
+  "v1_overwrite": false,
+  "07_5_to_07_10": "NOT_STARTED",
+  "mass_ingestion": "NO",
+  "corpus_file_moves": 0,
+  "corpus_file_deletions": 0,
+  "corpus_file_duplications": 0,
+  "artifacts": [
+    {"path": "library/07_biblioteca/v2/README.md", "sha256": "ea4703a8da8458ae1ab375a3bdc03329271fd0e9b5dc09243a757e9e72914609", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/architecture/V2_ARCHITECTURE_v1.md", "sha256": "d9b6e8c7041fae3e595e4dc00ef658e3e2908c2666ab8d20f8f28bdf6edf201c", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/schemas/METADATA_SCHEMA_v1.schema.json", "sha256": "2908ab9ef76d43b15cfb24bca4117165b2ac21f4b8bf666cec6a52e53551485a", "format": "JSON", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/vocabularies/CONTROLLED_VOCABULARIES_v1.json", "sha256": "e23151f49212383cce8a3b54e35542330858949a008b575a02b7c99a7392f6ba", "format": "JSON", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/protocols/INGESTION_PROTOCOL_v1.md", "sha256": "df80e4a694e6f36cc0ab0252aec04515b556da0b1238e862109afaf5c41a06a3", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/models/DOCUMENT_IDENTITY_MODEL_v1.md", "sha256": "1871454fc93fc09696107f227a618ed4855959ad60daf8efbf787cecebf7e43a", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/models/DEDUP_VERSION_MODEL_v1.md", "sha256": "c4af03ff02a2902622dde29903f4760f8316032192e0c1a0995b7bfc129fa201", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/models/HUMAN_VIEW_MODEL_v1.md", "sha256": "a2bd2c0229718410b6b9c6fcb8b5d8871ec53e276b8cde974841819249220f47", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/models/AI_TAGGING_MODEL_v1.md", "sha256": "c87385f8ab22606cfc4e8ab43b23e1bc486d38ffeb73a7c031828c78a8399daf", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/architecture/DRIVE_CAPABILITY_AUDIT_v1.md", "sha256": "694d748c2b3e8d44a42697250dfb0d368c39f489fe6ec9f188d3062cba3ec5ea", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/architecture/FULLTEXT_INDEX_DESIGN_v1.md", "sha256": "0f1a6707ea27862b5646786004d826f0d2f1bdcd62f393e94cfe94ede32b245a", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/architecture/PAGE_EVIDENCE_INDEX_DESIGN_v1.md", "sha256": "b30b3c43f67d5b53a79efbd3b2f5a517e47a4ddb17bef91d73ae06d35546cc35", "format": "Markdown", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/queries/QUERY_CONTRACT_v1.json", "sha256": "8a7023b61d6fd894410094600464f320921d42e7f6dcbb5ecb24c0dc971269dc", "format": "JSON", "version": "1.0.0"},
+    {"path": "library/07_biblioteca/v2/plans/SOFTWARE_IMPLEMENTATION_PLAN_v1.md", "sha256": "7d7733ccfbb42c91ad9fb64b0278085252eaffeb61cad3fc0486e36b0676ddf5", "format": "Markdown", "version": "1.0.0"}
+  ]
+}

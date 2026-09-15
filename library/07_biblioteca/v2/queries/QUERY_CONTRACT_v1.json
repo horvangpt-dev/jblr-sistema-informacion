@@ -1,0 +1,30 @@
+{
+  "contract_version": "1.0.0",
+  "name": "LIBRARY_QUERY",
+  "inputs": {
+    "filters": {
+      "language": {"type": "array", "items": "LANGUAGE"},
+      "jblr_area": {"type": "array", "items": "JBLR_AREA"},
+      "process": {"type": "array", "items": "PROCESS"},
+      "subprocess": {"type": "array", "items": "SUBPROCESS"},
+      "institution": {"type": "array", "items": "string"},
+      "document_type": {"type": "array", "items": "DOCUMENT_TYPE"},
+      "topic": {"type": "array", "items": "string"},
+      "author": {"type": "array", "items": "string"},
+      "country": {"type": "array", "items": "string"},
+      "year": {"type": "object", "properties": {"from": "integer", "to": "integer"}},
+      "source_class": {"type": "array", "items": "SOURCE_CLASS"},
+      "qa_status": {"type": "array", "items": "QA_STATUS"},
+      "index_status": {"type": "array", "items": "CONTENT_INDEX_STATUS"}
+    },
+    "keywords": {"type": "array", "items": "string"},
+    "full_text_query": {"type": "string"},
+    "limit": {"type": "integer", "default": 50},
+    "offset": {"type": "integer", "default": 0}
+  },
+  "outputs": {
+    "MATCHES": {"type": "array", "items": {"required": ["LIB_FILE_ID", "SOURCE_ID", "SOURCE_FAMILY_ID", "TITLE", "RELEVANCE_REASON", "METADATA", "DRIVE_POINTER"], "properties": {"LIB_FILE_ID": "string", "SOURCE_ID": "string", "SOURCE_FAMILY_ID": "string", "TITLE": "string", "RELEVANCE_REASON": "string", "METADATA": "object", "DRIVE_POINTER": "string", "SOURCE_POINTER": "array", "PAGE_POINTER": "object_or_absent", "PROVENANCE": "array", "QA_STATUS": "string"}}},
+    "TOTAL": "integer"
+  },
+  "semantics": {"unknown_is_not_absence": true, "not_found_is_not_absence": true, "evidence_is_not_conclusion": true, "folder_path_is_not_identity": true}
+}

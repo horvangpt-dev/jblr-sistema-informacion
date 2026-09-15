@@ -1,0 +1,246 @@
+{
+  "schema": "JBLR_07_HUMAN_OUTPUT_ROUTING_v1",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "range": "JBLR-LIB-00000873..00000894",
+  "generated_at": "2026-09-07T16:31:00+02:00",
+  "policy": {
+    "copy_never_move": true,
+    "canonical_identity_remains_active_index": true,
+    "human_copy_is_representation_not_new_identity": true
+  },
+  "language_folders": {
+    "fr": "1GDC6tnZLCa3RDVh3e_W9fLIO9m4HSQrG",
+    "en": "1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS",
+    "zh": "1dQtG47bpKxiJonvnfd-etIgU6Exy1nxk"
+  },
+  "records": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000873",
+      "language": "fr",
+      "human_drive_id": "15GEAbu1au7IyexIWw-_Eb8FKDXCp_gqK",
+      "display_title": "Etat des lieux de la flore messicole Nord–Pas-de-Calais · 2015",
+      "modules": [
+        "M01",
+        "M02",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000874",
+      "language": "fr",
+      "human_drive_id": "1O5ShsaJt3S0CnkQH_6bshw6j_j7kw7Jg",
+      "display_title": "CBN Bailleul · Rapport d’activités 2019",
+      "modules": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000875",
+      "language": "fr",
+      "human_drive_id": "1IlMhBQzkAKDR7Sje908G31CqOB5w7Nvg",
+      "display_title": "Plan régional Phelipanche purpurea · 2016",
+      "modules": [
+        "M01",
+        "M02",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000876",
+      "language": "fr",
+      "human_drive_id": "15TErxn1XDI5_InrIbpYewlG6XCRkAa30",
+      "display_title": "Ressources génétiques végétales · modèle français · 2016",
+      "modules": [
+        "M01",
+        "M02",
+        "M03",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000877",
+      "language": "fr",
+      "human_drive_id": "1y5nFEyBB3tNd6lwnPqrdFPJAzuKb13Ul",
+      "display_title": "Manuel récolte étude conservation gestion ex situ · 2007",
+      "modules": [
+        "M03",
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000878",
+      "language": "fr",
+      "human_drive_id": "1GQ48D7bsGZ_oC39leaiBIkv5338KbsIJ",
+      "display_title": "Indicateurs de gestion durable des forêts françaises · édition 2015",
+      "modules": [
+        "M01",
+        "M02"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000879",
+      "language": "fr",
+      "human_drive_id": "1Ju6z-6lEVFus3vkDAOc7Lj57xQsQNcXL",
+      "display_title": "OBFLORES · Bilan 2023–2024",
+      "modules": [
+        "M01",
+        "M02",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000880",
+      "language": "fr",
+      "human_drive_id": "1sEwEVuzss8ALbmN3CgmaV5rc10zldbP9",
+      "display_title": "Suivi de stations d’espèces rares ou menacées Hauts-de-France · 2024",
+      "modules": [
+        "M01",
+        "M02",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000881",
+      "language": "fr",
+      "human_drive_id": "1lgSScvdos-pgxVassfh5yoDB1-Q4JY4_",
+      "display_title": "Artemisia maritima · populations et écologie · 2024",
+      "modules": [
+        "M01",
+        "M02",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000882",
+      "language": "fr",
+      "human_drive_id": "1qg25DpwutXomBazp7iECQIpUAFWuCjd0",
+      "display_title": "Crambe maritima · cahier pédagogique · 2022",
+      "modules": [
+        "M01",
+        "M02",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000883",
+      "language": "fr",
+      "human_drive_id": "1AzqwOhDaWjxyn2iv-xEAQlI_6nTRieub",
+      "display_title": "Flore Sentinelle · protocoles et GNSS RTK",
+      "modules": [
+        "M02"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000884",
+      "language": "fr",
+      "human_drive_id": "1nPQWkuSFBSbHb68GU1na5xwlI3KSllVh",
+      "display_title": "ENSCONET · Manuel de Collecte de Graines · 2009",
+      "modules": [
+        "M03",
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000885",
+      "language": "en",
+      "human_drive_id": "1n3X3q_f7ZX5dE35Ru-7N7tXESZCjX6z9",
+      "display_title": "Cariniana legalis · seed viability · 2021",
+      "modules": [
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000886",
+      "language": "en",
+      "human_drive_id": "1JdvhhHNt98oi_l6IVLfvi1ALklJ3bLPq",
+      "display_title": "Lipid remodeling during germination of aged oat seeds · 2025",
+      "modules": [
+        "M04"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000887",
+      "language": "en",
+      "human_drive_id": "1U6Lp_Tnqht9PEyPlXdb9YlHoS6b2ukpT",
+      "display_title": "Cryopreservation of Seeds and Seed Embryos · 2021",
+      "modules": [
+        "M03",
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000888",
+      "language": "en",
+      "human_drive_id": "1_ZbMUV3juKdbOczZ4o-ginQUUNNXTxVv",
+      "display_title": "Salix seed long-term storage · 2019",
+      "modules": [
+        "M04"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000889",
+      "language": "en",
+      "human_drive_id": "1i2dZGSJaYYQj_z0Obf8udibHfgpSB8c8",
+      "display_title": "Populus seed longevity · 2018",
+      "modules": [
+        "M04"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000890",
+      "language": "en",
+      "human_drive_id": "1-UALEWyKr4-xnSDsDGoodmpFCmhcXBoD",
+      "display_title": "Fiber flax cryopreservation and low-temperature storage · 2026",
+      "modules": [
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000891",
+      "language": "zh",
+      "human_drive_id": "1wlRHOInbPEp1q07W3UXi5R8XkWOnELC4",
+      "display_title": "Camellia oleifera · seed storage temperature · 2026",
+      "modules": [
+        "M04"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000892",
+      "language": "en",
+      "human_drive_id": "1sudjCeYw0Jb_692ySYiKaLTZHrks2hBZ",
+      "display_title": "Seed Longevity · conceptual framework · 2023",
+      "modules": [
+        "M04"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000893",
+      "language": "en",
+      "human_drive_id": "1MswhAHj9dzsggZ3wwfpI1DgWOmq70yMR",
+      "display_title": "Seed freeze sensitivity and ex situ longevity of 295 Hawaiian species · 2019",
+      "modules": [
+        "M03",
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000894",
+      "language": "en",
+      "human_drive_id": "1o89iB44Kw-f_ljvhDW5b6vIISu6QZ6-w",
+      "display_title": "Lipid Thermal Fingerprints of Long-term Stored Seeds of Brassicaceae · 2019",
+      "modules": [
+        "M04"
+      ]
+    }
+  ]
+}

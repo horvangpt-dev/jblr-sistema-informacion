@@ -1,0 +1,12 @@
+{
+  "project_id":"JBLR",
+  "actor_id":"07",
+  "previous":"07.V14",
+  "current_target":"07.V15",
+  "verification":"PASS",
+  "checkpoint_sha":"c979ac445d608ade7bb47c609a27733b623b15a7",
+  "index_sha":"66cbafc4a1a7cd36494cc30d6fe6712a81221264",
+  "hwm":"JBLR-LIB-00001092",
+  "next":"JBLR-LIB-00001093",
+  "data_loss":"NO"
+}

@@ -1,0 +1,29 @@
+name: JBLR 07 Metadata Probe
+
+on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - 'library/07_biblioteca/diagnostics/probe_rac_metadata.py'
+  workflow_dispatch:
+
+concurrency:
+  group: 07-rjb-metadata-probe
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests
+      - name: Probe RAC Fedora metadata datastreams
+        run: python library/07_biblioteca/diagnostics/probe_rac_metadata.py

@@ -1,0 +1,198 @@
+{
+  "schema_version": "2.1.0",
+  "registry_name": "BUFFER_001_07_INCREMENTAL_RESOLUTIONS_00000350_00000366",
+  "producer": "07.V10",
+  "consumer": "001",
+  "source_buffer_id": "1UZd9itkdJYwKn7EYsHRS1cX3KrJnOwpcKStWeXJRYyo",
+  "resolution_sequence": {
+    "from": "000350",
+    "to": "000366",
+    "previous_latest": "000349",
+    "count": 17
+  },
+  "active_library_snapshot": {
+    "index_path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_ACTIVE_INDEX_v2.json",
+    "index_sha": "37603e45fd8d7e2914165dca2c7b4dbbe5b8c5c8",
+    "hwm": "JBLR-LIB-00000798",
+    "next_lib_file_id": "JBLR-LIB-00000799"
+  },
+  "records": [
+    {
+      "resolution_seq": "000350",
+      "discovery_id": "000204",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000782",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Handbook of Seed and Planting Material Testing Manuals",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000351",
+      "discovery_id": "000193",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000783",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Training Course on Herbarium Techniques and Methodology · Training Manual",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000352",
+      "discovery_id": "000190",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000784",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Sustainable Harvesting of Non Timber Forest Produce (NTFPs): An Operational Manual",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000353",
+      "discovery_id": "000188",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000785",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Modern Nursery Techniques: A Manual",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000354",
+      "discovery_id": "000174",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000786",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Forest Seed Management: A Manual",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000355",
+      "discovery_id": "000271",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000787",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Armazenamento de Sementes de Espécies Florestais Nativas",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000356",
+      "discovery_id": "000275",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000788",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Planejamento da Coleta de Sementes Florestais Nativas",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000357",
+      "discovery_id": "000246",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000789",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Manual de Curadores de Germoplasma – Vegetal: Criopreservação",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000358",
+      "discovery_id": "000243",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000790",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Manual de Curadores de Germoplasma – Vegetal: Conservação ex situ (Colbase – Sementes)",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000359",
+      "discovery_id": "000242",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000791",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Manual de Curadores de Germoplasma – Vegetal: Coleta de Germoplasma",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000360",
+      "discovery_id": "000233",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000792",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Revised Guidelines and Proforma for Assistance to Botanic Gardens",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000361",
+      "discovery_id": "000232",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000793",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Wild Relatives of Crop Plants in India: Collection and Conservation",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000362",
+      "discovery_id": "000269",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000794",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Conservação de germoplasma semente de espécies nativas",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000363",
+      "discovery_id": "000276",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000795",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Extração e Beneficiamento de Sementes Florestais Nativas",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000364",
+      "discovery_id": "000325",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000796",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Manual de Semillas de Especies Forestales de Importancia Económica",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000365",
+      "discovery_id": "000189",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000797",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Cultivation of Selected NWFPs: A Manual",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    },
+    {
+      "resolution_seq": "000366",
+      "discovery_id": "000323",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000798",
+      "reason": "Physical user-uploaded representation was reviewed by 07, reconciled against all 53 active index segments, linked to the explicit 001 discovery, canonicalized, and physically routed with the same Drive ID. No prior canonical identity was demonstrated.",
+      "working_title": "Manual para el análisis físico y biológico de semillas forestales",
+      "source_search_run_id": "HISTORICAL_001_DISCOVERY_RECONCILED_BY_P1_INTERNACIONAL_USER_UPLOAD_2026_09_05"
+    }
+  ],
+  "consumer_contract": {
+    "001_may_consume_append_only_resolution": true,
+    "001_must_not_reassign_LIB_FILE_ID": true,
+    "physical_representations_do_not_create_additional_identity": true,
+    "future_metadata_correction_is_append_only": true
+  },
+  "history_policy": "APPEND_ONLY"
+}

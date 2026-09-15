@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "JBLR-LIB-CORPUS-RIOJA-FLORA-VASCULAR",
+  "title": "Continuidad documental de la flora vascular silvestre de La Rioja",
+  "canonical_storage": "GOOGLE_DRIVE",
+  "drive_collection_folder_id": "11Zpj24Fbckj0sfarp5yKT2T3ZbNko6Rf",
+  "drive_collection_path": "Botanico/07_BIBLIOTECA/01_RIOJA_DIRECTA/00_FUENTES_TAXONES_LOCALIZACIONES_Y_CENSOS/02_CITAS_LOCALIDADES_Y_COROLOGIA",
+  "records": [
+    {
+      "library_id": "JBLR-LIB-RIOJA-ADDREV-2015-I",
+      "title": "Adiciones y revisiones a la flora vascular silvestre de La Rioja, I",
+      "authors": ["Juan A. Alejandre Sáenz", "José Antonio Arizaleta Urarte", "Javier Benito Ayuso", "María Josefa Escalante Ruiz"],
+      "publication": "Flora Montiberica",
+      "volume": 61,
+      "year": 2015,
+      "pages_print": "96-113",
+      "pdf_pages": 18,
+      "drive_file_id": "1s2W2gEp1JIS4bgDZpymvKq--kSJYUq0d",
+      "drive_file_name": "Alejandre_et_al_2015_Adiciones_y_revisiones_flora_vascular_silvestre_La_Rioja_I.pdf",
+      "bytes": 422953,
+      "sha256": "278faf638b90d96681d159e3f8758d697c9f2a561fac385e81c01cedf0043ab5",
+      "ingest_status": "INGESTED_VERIFIED",
+      "content_summary": "33 taxones tratados; 10 novedades para el catálogo territorial.",
+      "duplicate_note": "Existe copia alternativa Dialnet aportada por el usuario con SHA-256 fc7952d01f9c08620637a11f642a35b1023bc4878df0cd7d93c679205bce6ceb. No se duplica en Drive: mismo artículo, distinto binario."
+    },
+    {
+      "library_id": "JBLR-LIB-RIOJA-ADDREV-2016-II",
+      "title": "Adiciones y revisiones a la flora vascular silvestre de La Rioja, II",
+      "authors": ["Juan A. Alejandre Sáenz", "José Antonio Arizaleta Urarte", "Javier Benito Ayuso"],
+      "publication": "Flora Montiberica",
+      "volume": 63,
+      "year": 2016,
+      "pages_print": "86-100",
+      "pdf_pages": 16,
+      "drive_file_id": "1WhzGSMTpVzIh1xx6QbMOGUPDatqnXFoX",
+      "drive_file_name": "Alejandre_et_al_2016_Adiciones_y_revisiones_flora_vascular_silvestre_La_Rioja_II.pdf",
+      "bytes": 1583603,
+      "sha256": "d5daa7f5309d1b203d3d11106f7f03d68740491fc78c3d6c7d6a7978743441c9",
+      "ingest_status": "INGESTED_VERIFIED",
+      "content_summary": "28 taxones tratados; 11 novedades para el catálogo territorial."
+    },
+    {
+      "library_id": "JBLR-LIB-RIOJA-ADDREV-2017-III",
+      "title": "Adiciones y revisiones a la flora vascular silvestre de La Rioja, III",
+      "authors": ["Juan A. Alejandre Sáenz", "José Antonio Arizaleta Urarte", "Javier Benito Ayuso"],
+      "publication": "Flora Montiberica",
+      "volume": 67,
+      "year": 2017,
+      "pages_print": "93-104",
+      "pdf_pages": 14,
+      "drive_file_id": "1VGnkPrK1ifPzOWapfX8iMbDT6sv81aC_",
+      "drive_file_name": "Alejandre_et_al_2017_Adiciones_y_revisiones_flora_vascular_silvestre_La_Rioja_III.pdf",
+      "bytes": 3108806,
+      "sha256": "4d09c33e2bb6349e4bea042679350596aaeaaf101af8e322b4b78465e418b002",
+      "ingest_status": "INGESTED_VERIFIED",
+      "content_summary": "26 taxones tratados; 9 novedades para el catálogo territorial."
+    },
+    {
+      "library_id": "JBLR-LIB-RIOJA-CATALOG-2016",
+      "title": "Actualización del catálogo de la flora vascular silvestre de La Rioja",
+      "authors": ["Juan A. Alejandre Sáenz", "José Antonio Arizaleta Urarte", "Javier Benito Ayuso", "Gonzalo Mateo"],
+      "year": 2016,
+      "extent": "106 páginas",
+      "physical_copy_available": true,
+      "digital_copy_in_07": false,
+      "ingest_status": "PHYSICAL_COPY_DEFERRED_TO_SEPARATE_DIGITIZATION_CHAT",
+      "notes": "El usuario ha indicado que el ejemplar físico se introducirá y digitalizará posteriormente en otro chat. No solicitar fotografías ni digitalización en 07 hasta ese flujo. Sus anexos forman parte de la obra y se incorporarán con la digitalización completa."
+    }
+  ],
+  "related_biogeographic_record": {
+    "library_id": "JBLR-LIB-BURGOS-ADDREV-2011-IV",
+    "title": "Adiciones y revisiones al Atlas de la flora vascular silvestre de Burgos, IV",
+    "year": 2011,
+    "publication": "Flora Montiberica 47: 36-56",
+    "pdf_pages": 21,
+    "drive_file_id": "1QL0wiW9GLMX33siFZ06HFMghYqV2PeuS",
+    "drive_folder_id": "1JJK4IPFwm2kNjinnDxM12rFTR8M7EzuB",
+    "drive_path": "Botanico/07_BIBLIOTECA/02_ENTORNO_BIOGEOGRAFICO/Burgos",
+    "bytes": 181382,
+    "sha256": "02adce03eb45297a0133ea6419bc248afdf7e2d33bfaa7f6df7748a16c5fe532",
+    "ingest_status": "INGESTED_VERIFIED",
+    "classification_note": "No pertenece a la serie riojana; se conserva como entorno biogeográfico porque incluye menciones puntuales a La Rioja y territorio limítrofe."
+  },
+  "invariants": {
+    "reference_is_not_validated_fact": true,
+    "raw_is_not_normalized": true,
+    "duplicate_binaries_are_not_duplicated_without_need": true
+  }
+}

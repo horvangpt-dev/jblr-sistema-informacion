@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "USER_UPLOAD_AI_SOURCE_AND_EN_HUMAN_MIRROR_POLICY_v1",
+  "actor_id": "07",
+  "actor_version": "07.V4",
+  "parent_authority": "00000.V3",
+  "user_directive_timestamp": "2026-08-28T02:45:29+02:00",
+  "effective_timestamp": "2026-08-28T02:54:35+02:00",
+  "rules": {
+    "user_upload_is_technical_source_by_default": true,
+    "human_library_only_terminal_state": false,
+    "technical_ingestion_required": true,
+    "canonical_identity_required_after_dedupe_reconciliation": true,
+    "ai_retrievable_source_required": true,
+    "ai_analysis_reuse_required": true,
+    "metadata_required": [
+      "verified_title",
+      "language",
+      "institution",
+      "territory",
+      "document_class",
+      "module_tags",
+      "functional_tags",
+      "relationships",
+      "provenance",
+      "source_url_or_drive_binary",
+      "duplicate_state"
+    ],
+    "multi_module_tagging_allowed": true,
+    "human_distribution_copies_create_new_lib_file_id": false,
+    "out_of_scope_material_may_be_quarantined": true,
+    "dedupe_requires_strong_evidence": true,
+    "filename_alone_is_identity": false
+  },
+  "human_library_language_policy": {
+    "ES": "FULL_RICH_TAXONOMY_PRIORITY",
+    "EN": "FULL_RICH_TAXONOMY_PRIORITY_MIRROR_OF_ES",
+    "ZH": "LARGE_CORPUS_PRIORITY_RICHER_STRUCTURE_WHEN_VOLUME_JUSTIFIES",
+    "RU": "LARGE_CORPUS_PRIORITY_RICHER_STRUCTURE_WHEN_VOLUME_JUSTIFIES",
+    "OTHER_LANGUAGES": "00_MANUAL_GUIDE_PLUS_GENERAL_SOURCE_MODULE_UNTIL_PROMOTED"
+  },
+  "drive": {
+    "human_library_root": "1x_tgK89B74Tp0hEEZLMdSfrP6gRSHItq",
+    "spanish_root": "1MHXinDIrwDb5IUX9bLBkOuH2rtfw0vJp",
+    "english_root": "1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS",
+    "english_manuals": "1ngnELBEHBYK1Y8mQtvHoyemlpuKMgQL-",
+    "english_m04": "1dSWRyd8kn7XLdgDqiOu47g3AFLgfxzM2",
+    "english_m05": "1x7F-rTpBxMw_HGo-2V8TenJm2Ld5uWS2"
+  },
+  "english_structure": {
+    "mirror_spanish_numbering": true,
+    "existing_00_retained": true,
+    "functional_folders_created": "01-21,23-39,41-43,99",
+    "no_parallel_taxonomy": true
+  },
+  "index_safety": {
+    "master_index_last_verified_count": 95,
+    "this_policy_changes_master_index_count": 0,
+    "pending_m04_m05_objects_remain_subject_to_identity_reconciliation": true
+  }
+}

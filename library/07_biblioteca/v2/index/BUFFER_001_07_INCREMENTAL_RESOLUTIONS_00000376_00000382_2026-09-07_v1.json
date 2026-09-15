@@ -1,0 +1,112 @@
+{
+  "schema": "JBLR_001_07_BUFFER_INCREMENTAL_RESOLUTIONS_v1",
+  "generated_at": "2026-09-07T15:37:00+02:00",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "range": {
+    "from": "000376",
+    "to": "000382",
+    "count": 7
+  },
+  "active_index": {
+    "hwm": "JBLR-LIB-00000872",
+    "next": "JBLR-LIB-00000873",
+    "sha": "937d1b8c6d6d8f9c7c72a7fd7773a3bdd2ec9934"
+  },
+  "entries": [
+    {
+      "RESOLUTION_SEQ": "000376",
+      "DISCOVERY_ID": "000741",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000860",
+      "SUPERSEDES_RESOLUTION_SEQ": "000327",
+      "PHYSICAL_OBJECT_POINTER": "drive:1JN6IJY2EhaTXbCvcggH2p_mDDheHKAdv",
+      "WORKING_TITLE": "Modeling seed germination data to meet biodiversity conservation needs in the Mediterranean",
+      "SOURCE_ORIGIN": "USER_MANUAL_DOWNLOAD_P1_INTERNACIONAL",
+      "PUBLISHED_BY": "07.V11",
+      "HISTORY_POLICY": "APPEND_ONLY"
+    },
+    {
+      "RESOLUTION_SEQ": "000377",
+      "DISCOVERY_ID": "000744",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000861",
+      "SUPERSEDES_RESOLUTION_SEQ": "000330",
+      "PHYSICAL_OBJECT_POINTER": "drive:147Vm_PuBvukIjxDfwfUoypxmGOdafi4V",
+      "WORKING_TITLE": "Can alpine plant species “bank” on conservation?: Using artificial aging to understand seed longevity",
+      "SOURCE_ORIGIN": "USER_MANUAL_DOWNLOAD_P1_INTERNACIONAL",
+      "PUBLISHED_BY": "07.V11",
+      "HISTORY_POLICY": "APPEND_ONLY"
+    },
+    {
+      "RESOLUTION_SEQ": "000378",
+      "DISCOVERY_ID": "000745",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000862",
+      "SUPERSEDES_RESOLUTION_SEQ": "000331",
+      "PHYSICAL_OBJECT_POINTER": "drive:18BPVeqmyYdL68pA_VSptzOmjD22ZdVDm",
+      "WORKING_TITLE": "Exploring seed longevity of UK native trees: implications for ex situ conservation",
+      "SOURCE_ORIGIN": "USER_MANUAL_DOWNLOAD_P1_INTERNACIONAL",
+      "PUBLISHED_BY": "07.V11",
+      "HISTORY_POLICY": "APPEND_ONLY"
+    },
+    {
+      "RESOLUTION_SEQ": "000379",
+      "DISCOVERY_ID": "000755",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000863",
+      "SUPERSEDES_RESOLUTION_SEQ": "000335",
+      "PHYSICAL_OBJECT_POINTER": "drive:1P7UmTtJExQIOnhnHy9PlPzIYRko2glsg",
+      "WORKING_TITLE": "Protocoles de suivi de la flore et des habitats patrimoniaux",
+      "SOURCE_ORIGIN": "USER_MANUAL_DOWNLOAD_P1_INTERNACIONAL",
+      "PUBLISHED_BY": "07.V11",
+      "HISTORY_POLICY": "APPEND_ONLY"
+    },
+    {
+      "RESOLUTION_SEQ": "000380",
+      "DISCOVERY_ID": "000759",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000864",
+      "SUPERSEDES_RESOLUTION_SEQ": "000339",
+      "PHYSICAL_OBJECT_POINTER": "drive:1InQCUErKn1JTHI8yzM_EMpOPJ2ZwHOGy",
+      "WORKING_TITLE": "Collecte et mise en culture d’arbres et d’arbustes sauvages et locaux. Guide technique. 3e édition",
+      "SOURCE_ORIGIN": "USER_MANUAL_DOWNLOAD_P1_INTERNACIONAL",
+      "PUBLISHED_BY": "07.V11",
+      "HISTORY_POLICY": "APPEND_ONLY"
+    },
+    {
+      "RESOLUTION_SEQ": "000381",
+      "DISCOVERY_ID": "000765",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000865",
+      "SUPERSEDES_RESOLUTION_SEQ": "000345",
+      "PHYSICAL_OBJECT_POINTER": "drive:1MzA_4zo5Cedji3MNfwYl722vo90Gg_kn",
+      "WORKING_TITLE": "Liste Rouge de la Flore Vasculaire de Wallonie",
+      "SOURCE_ORIGIN": "USER_MANUAL_DOWNLOAD_P1_INTERNACIONAL",
+      "PUBLISHED_BY": "07.V11",
+      "HISTORY_POLICY": "APPEND_ONLY"
+    },
+    {
+      "RESOLUTION_SEQ": "000382",
+      "DISCOVERY_ID": "000766",
+      "RESOLUTION_STATE": "ACQUIRED_CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000866",
+      "SUPERSEDES_RESOLUTION_SEQ": "000346",
+      "PHYSICAL_OBJECT_POINTER": "drive:1GjwdpNg-CfgrKBIgYu1624tbQ4wNfeqa",
+      "WORKING_TITLE": "Analyse de l'état de conservation de la Flore vasculaire de Wallonie",
+      "SOURCE_ORIGIN": "USER_MANUAL_DOWNLOAD_P1_INTERNACIONAL",
+      "PUBLISHED_BY": "07.V11",
+      "HISTORY_POLICY": "APPEND_ONLY"
+    }
+  ],
+  "remaining_remote_001_unresolved": [
+    "000742",
+    "000743",
+    "000762",
+    "000763",
+    "000764",
+    "000769",
+    "000770",
+    "000772"
+  ],
+  "data_loss": false
+}
