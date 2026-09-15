@@ -1,0 +1,21 @@
+{
+  "schema_version":"1.0.0",
+  "record_type":"07_ALISMA_R01_RUNTIME_CONNECTOR_CHECKPOINT",
+  "actor":"07.V15",
+  "date":"2026-09-15",
+  "source_folder_id":"1DzwJgXuUnC3pqy3mFWSuOra-apHQ9iO_",
+  "status":"PARTIAL_BLOCKED_BY_INTERMITTENT_DRIVE_CONNECTOR",
+  "drive_permission_state":"ALLOW_ALL_ACTIONS_CONFIRMED",
+  "drive_profile_read":"PASS",
+  "folder_enumeration":"PASS",
+  "priority_D0080_content_read":"PASS",
+  "subsequent_drive_search":"CONNECTOR_DISABLED_BY_RUNTIME",
+  "library_index_readback":{"HWM":"JBLR-LIB-00001129","NEXT":"JBLR-LIB-00001130","ALLOCATED_ID_SLOTS":1129},
+  "new_lib_ids_consumed":0,
+  "active_index_mutated":false,
+  "source_originals_mutated":false,
+  "003_productive_state_mutated":false,
+  "data_loss":"NO",
+  "gates":{"COPY_NEVER_MOVE":"ACTIVE","NO_SILENT_INFERENCE":"ACTIVE","NO_NEW_LIB_ID_WITHOUT_STABLE_SOURCE_READBACK":"ACTIVE"},
+  "next_action":"RESTORE_STABLE_GOOGLE_DRIVE_RUNTIME_THEN_ENUMERATE_2026-09-15_DELTA_READ_CLASSIFY_DEDUP_RESYNC_ALLOCATE_PERSIST_READBACK_REPORT"
+}
