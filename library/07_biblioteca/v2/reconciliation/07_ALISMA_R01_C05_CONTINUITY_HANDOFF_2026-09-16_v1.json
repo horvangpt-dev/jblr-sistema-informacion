@@ -79,6 +79,8 @@
     "VERIFY_BEFORE_REPORT",
     "UNKNOWN_IS_NOT_ABSENCE"
   ],
-  "handoff_state": "COMMITTED_TO_GITHUB_PENDING_READBACK",
+  "handoff_initial_commit": "505f4e55a65e8bf9c5773013f9e556c9ea2c4960",
+  "handoff_readback": "PASS",
+  "handoff_state": "COMMITTED_AND_READBACK_PASS",
   "data_loss": "NO"
 }
