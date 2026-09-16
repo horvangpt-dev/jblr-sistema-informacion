@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.1.0",
+  "registry_name": "BUFFER_001_07_INCREMENTAL_RESOLUTIONS_00000367_00000375",
+  "producer": "07.V11",
+  "consumer": "001",
+  "source_buffer_id": "1UZd9itkdJYwKn7EYsHRS1cX3KrJnOwpcKStWeXJRYyo",
+  "resolution_sequence": {
+    "from": "000367",
+    "to": "000375",
+    "previous_latest": "000366",
+    "count": 9
+  },
+  "active_library_snapshot": {
+    "index_path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_ACTIVE_INDEX_v2.json",
+    "index_sha": "8f8eff5118e54e497eb3bcadfb43e3f0c8e9739b",
+    "hwm": "JBLR-LIB-00000807",
+    "next_lib_file_id": "JBLR-LIB-00000808"
+  },
+  "records": [
+    {
+      "resolution_seq": "000367",
+      "discovery_id": "000752",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000799",
+      "supersedes_resolution_seq": "000332",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1GF5vkdul2mS5vZY7prxDOzuTCkC6evz5",
+      "working_title": "Collection de graines. Conservation et germination des plantes patrimoniales de Provence-Alpes-Côte d'Azur",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000368",
+      "discovery_id": "000753",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000800",
+      "supersedes_resolution_seq": "000333",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1bHG1aYnVSq9d1t56UsnQLQeoPKlZ8hi8",
+      "working_title": "Vers une méthodologie commune pour le suivi de la flore patrimoniale. Contribution au programme de surveillance de la biodiversité terrestre",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000369",
+      "discovery_id": "000754",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000801",
+      "supersedes_resolution_seq": "000334",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1TIvl6onS7szMDdt-4YAUic7KYM10pTPx",
+      "working_title": "Amélioration des connaissances sur la biologie des espèces sauvages cueillies : tests de germination et essais de culture",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000370",
+      "discovery_id": "000756",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000802",
+      "supersedes_resolution_seq": "000336",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1S1zG7lxbdmqTXuivGMdS7u1w7fyuPqRt",
+      "working_title": "Mise en place d'un Observatoire de la Régénération des Espèces Patrimoniales des Alpes sud-occidentales. SEMINALP régénération séminale dans les Alpes du Sud",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000371",
+      "discovery_id": "000757",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000803",
+      "supersedes_resolution_seq": "000337",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1nQsrZoHyXyAuP1KshMHb6kHv4fN_0hA_",
+      "working_title": "Référentiel technique associé au Règlement d’usage de la marque collective simple Végétal local",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000372",
+      "discovery_id": "000758",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000804",
+      "supersedes_resolution_seq": "000338",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1nDF7e6RuytHLT9CzNg4TBc7nHSEFTl95",
+      "working_title": "Quand collecter des graines de prairies ? Outil de collecte de graines en mélange en prairies de fauche de montagne [Version 1]",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000373",
+      "discovery_id": "000760",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000805",
+      "supersedes_resolution_seq": "000340",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1D4KpwWrZlT-qDUdjGp0wtn4KZgbVHu9S",
+      "working_title": "Bilan d’activités scientifique et technique du Conservatoire botanique national de Franche-Comté 2014-2024",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000374",
+      "discovery_id": "000761",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000806",
+      "supersedes_resolution_seq": "000341",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1Avuem9a2XxADKFS4mR0r5zCowDJercOs",
+      "working_title": "Monitoring avec FlorApp. Présentation de la méthode PopCount et des standards d’Info Flora",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    },
+    {
+      "resolution_seq": "000375",
+      "discovery_id": "000767",
+      "resolution_state": "ACQUIRED_ACTIVE_CANONICAL",
+      "library_effect": "CANONICAL_IDENTITY_ACTIVE",
+      "LIB_FILE_ID": "JBLR-LIB-00000807",
+      "supersedes_resolution_seq": "000347",
+      "reason": "Live Drive re-search demonstrated an exact physical representation. 07 verified fulltext identity, relied on the prior full reconciliation through HWM771, re-scanned active segments 772..798 with no canonical match demonstrated, and canonicalized the physical object without move or deletion.",
+      "physical_object_pointer": "drive:1_avIymKLYIqSFuHLqVKtUcTXJKWXJmqo",
+      "working_title": "Actions pour la mise en œuvre d'un futur observatoire de la flore menacée du Parc naturel marin : Action n°2 - Élaboration des protocoles de suivis pour les espèces du programme",
+      "source_search_run_id": "REMOTE_001_BACKLOG_LIVE_PHYSICAL_RECONCILIATION_2026_09_06"
+    }
+  ],
+  "consumer_contract": {
+    "001_may_consume_append_only_resolution": true,
+    "001_must_not_reassign_LIB_FILE_ID": true,
+    "physical_representations_do_not_create_additional_identity": true,
+    "future_metadata_correction_is_append_only": true
+  },
+  "history_policy": "APPEND_ONLY"
+}

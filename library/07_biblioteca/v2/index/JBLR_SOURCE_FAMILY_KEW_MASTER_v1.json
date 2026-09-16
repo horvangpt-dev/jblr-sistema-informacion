@@ -1,0 +1,118 @@
+{
+  "schema_version":"1.0.0",
+  "registry_name":"JBLR_SOURCE_FAMILY_KEW_MASTER",
+  "status":"ACTIVE_SOURCE_FAMILY_VIEW_CANONICAL_POINTERS_ONLY",
+  "source_family_id":"JBLR-SOURCE-FAMILY-KEW",
+  "institution":"Royal Botanic Gardens, Kew",
+  "programme":"Millennium Seed Bank Partnership",
+  "authority":"07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "parallel_library":false,
+  "scientific_fact_canonicalization_authority":false,
+  "canonical_library_rule":"THIS_REGISTRY_POINTS_TO_JBLR_LIB_FILE_ID_IDENTITIES_AND_DOES_NOT_CREATE_A_SECOND_LIBRARY_OR_ID_NAMESPACE",
+  "drive":{
+    "institutional_root":{"name":"01_KEW_MILLENNIUM_SEED_BANK","id":"1eHcHlue9CXFEz-aJx_ppuzWwTw2IvkYC"},
+    "originals":{"name":"01_ORIGINALES","id":"1w7keXHcqcCCTX_-DjLEB5u6e4DY4opRr"},
+    "historical_source_registry":{"id":"1Rpt-yomxNbGyEz8ZlNz7biHc6ESEAuQW","name":"FICHA_FUENTE_KEW_RESOURCES_MSBP_v1.md"},
+    "historical_analysis":{"id":"1hxKWGPlL_9JFGX6BBCzO4vQpnErpG2pk","name":"KEW_BLOQUE_01_ANALISIS_TECNICO_v1.md"},
+    "temporary_ingest_folder":{"id":"1Z8bdQHVRjon-__IvaHC4WiX1GvKd3syu","final_direct_file_count":0,"status":"EMPTY_AFTER_ROUTING_READBACK_PASS"}
+  },
+  "current_ingest":{
+    "date":"2026-09-11",
+    "canonical_delta":"library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00001019_00001041_v1.json",
+    "new_canonical_range":{"from":"JBLR-LIB-00001019","to":"JBLR-LIB-00001041","count":23},
+    "incoming_physical_objects":58,
+    "incoming_objects_reusing_existing_identity":32,
+    "incoming_objects_attached_to_new_identity":26,
+    "internal_duplicate_excess_objects":3,
+    "physical_deletions":0,
+    "active_index_after_ingest":{"high_watermark":"JBLR-LIB-00001041","next":"JBLR-LIB-00001042"}
+  },
+  "technical_information_sheets":{
+    "TIS01":{"LIB_FILE_ID":"JBLR-LIB-00001019","title":"Protocol for comparative seed longevity testing"},
+    "TIS02":{"LIB_FILE_ID":"JBLR-LIB-00001020","title":"Assessing a population for seed collection"},
+    "TIS03":{"LIB_FILE_ID":"JBLR-LIB-00001021","title":"Seed collecting techniques"},
+    "TIS04":{"LIB_FILE_ID":"JBLR-LIB-00001022","title":"Post-harvest handling of seed collections"},
+    "TIS05":{"LIB_FILE_ID":"JBLR-LIB-00000071","title":"Measuring seed moisture status using a hygrometer"},
+    "TIS06":{"LIB_FILE_ID":"JBLR-LIB-00000070","title":"Selecting containers for long-term seed storage"},
+    "TIS07":{"LIB_FILE_ID":"JBLR-LIB-00001023","title":"Low cost monitors of seed moisture status"},
+    "TIS08":{"LIB_FILE_ID":"JBLR-LIB-00000067","title":"Small-scale seed drying methods"},
+    "TIS09":{"LIB_FILE_ID":"JBLR-LIB-00001024","title":"Equilibrating seeds to specific moisture levels"},
+    "TIS10":{"LIB_FILE_ID":"JBLR-LIB-00001025","title":"Identifying desiccation-sensitive seeds"},
+    "TIS11":{"LIB_FILE_ID":"JBLR-LIB-00001026","title":"Seed bank design – seed drying rooms"},
+    "TIS12":{"LIB_FILE_ID":"JBLR-LIB-00000068","title":"Seed bank design – cold rooms for seed storage"},
+    "TIS13a":{"LIB_FILE_ID":"JBLR-LIB-00000069","title":"Germination testing – procedures and evaluation"},
+    "TIS13b":{"LIB_FILE_ID":"JBLR-LIB-00000066","title":"Germination testing – environmental factors and dormancy-breaking treatments"},
+    "TIS14":{"LIB_FILE_ID":"JBLR-LIB-00000065","title":"Cleaning seed collections for long-term conservation"},
+    "TIS15":{"LIB_FILE_ID":"JBLR-LIB-00001027","title":"Making herbarium specimens"},
+    "TIS16":{"LIB_FILE_ID":"JBLR-LIB-00001028","title":"Sending seed collections to the MSB"},
+    "TIS17":{"LIB_FILE_ID":"JBLR-LIB-00000064","title":"Seed bank risk management"},
+    "BLUE_DRUM":{"LIB_FILE_ID":"JBLR-LIB-00000063","title":"Silica gel drying of seed material – drum dryers"}
+  },
+  "training_and_transcripts":{
+    "HOW_TO_CLEAN_SEED_COLLECTION":{"LIB_FILE_ID":"JBLR-LIB-00001029"},
+    "MEASURING_SEED_MOISTURE_HYGROMETER":{"LIB_FILE_ID":"JBLR-LIB-00001030"},
+    "MAKING_HERBARIUM_SPECIMEN":{"LIB_FILE_ID":"JBLR-LIB-00001031"},
+    "USING_HERBARIUM_COLLECTIONS_AS_SEED_COLLECTING_GUIDES":{"LIB_FILE_ID":"JBLR-LIB-00000277"}
+  },
+  "msbp_core_and_data":{
+    "SEED_CONSERVATION_STANDARDS":{"LIB_FILE_ID":"JBLR-LIB-00000072"},
+    "SEED_DATA_TEMPLATE_AND_GLOSSARY":{"LIB_FILE_ID":"JBLR-LIB-00000062"},
+    "EXCEPTIONAL_STATUS_STRUCTURED_DATASET":{"LIB_FILE_ID":"JBLR-LIB-00001032"},
+    "DATA_WAREHOUSE_REGISTRATION":{"LIB_FILE_ID":"JBLR-LIB-00001033"},
+    "DATA_WAREHOUSE_USA_STUDY":{"LIB_FILE_ID":"JBLR-LIB-00001034"},
+    "DATA_WAREHOUSE_OVERVIEW":{"LIB_FILE_ID":"JBLR-LIB-00001035"},
+    "DATA_PROVIDER_AGREEMENT":{"LIB_FILE_ID":"JBLR-LIB-00001036"}
+  },
+  "strategy_and_manuals":{
+    "SCIENCE_COLLECTIONS_STRATEGY_2018_2028":{"LIB_FILE_ID":"JBLR-LIB-00001037"},
+    "FIELD_MANUAL_SEED_COLLECTORS_EN":{"LIB_FILE_ID":"JBLR-LIB-00000226"},
+    "FIELD_MANUAL_SEED_COLLECTORS_RU":{"LIB_FILE_ID":"JBLR-LIB-00001038"},
+    "KEW_HUMBOLDT_MANUAL_ES":{"LIB_FILE_ID":"JBLR-LIB-00000225"},
+    "ENSCONET_CURATION_PROTOCOL_EN":{"LIB_FILE_ID":"JBLR-LIB-00000058"},
+    "ENSCONET_SEED_COLLECTING_MANUAL_EN":{"LIB_FILE_ID":"JBLR-LIB-00000236"},
+    "COLOUR_IN_THE_MARGINS_PROPAGATION_REPORT":{"LIB_FILE_ID":"JBLR-LIB-00001039"}
+  },
+  "uk_flora_and_field_forms":{
+    "UK_FLORA_SEED_COLLECTION_PROTOCOL_V19_2026":{"LIB_FILE_ID":"JBLR-LIB-00000235"},
+    "UK_FLORA_DATA_SHEET_V13_2026":{"LIB_FILE_ID":"JBLR-LIB-00001040"},
+    "MSB_LANDOWNER_CONSENT_V12_2025":{"LIB_FILE_ID":"JBLR-LIB-00001041"},
+    "UK_TREES_FIELD_DATA_FORM_2026":{"LIB_FILE_ID":"JBLR-LIB-00000248"},
+    "UK_TREE_SEED_COLLECTING_MANUAL_V2_5":{"LIB_FILE_ID":"JBLR-LIB-00000278"}
+  },
+  "uktfp_propagation_protocols":{
+    "Artemisia campestris":"JBLR-LIB-00000234",
+    "Bupleurum baldense":"JBLR-LIB-00000237",
+    "Ervum gracile":"JBLR-LIB-00000238",
+    "Clinopodium acinos":"JBLR-LIB-00000239",
+    "Astragalus danicus":"JBLR-LIB-00000240",
+    "Hottonia palustris":"JBLR-LIB-00000241",
+    "Rumex rupestris":"JBLR-LIB-00000242",
+    "Salsola kali":"JBLR-LIB-00000243",
+    "Illecebrum verticillatum":"JBLR-LIB-00000244",
+    "Genista anglica":"JBLR-LIB-00000245",
+    "Turritis glabra":"JBLR-LIB-00000249",
+    "Silene conica":"JBLR-LIB-00000250"
+  },
+  "h02_gap_closure":{
+    "prior_state":"PHYSICAL_CONFIRMED_CANONICAL_ID_UNRESOLVED",
+    "current_state":"RESOLVED",
+    "TIS04":"JBLR-LIB-00001022",
+    "TIS07":"JBLR-LIB-00001023",
+    "TIS09":"JBLR-LIB-00001024",
+    "TIS10":"JBLR-LIB-00001025",
+    "TIS11":"JBLR-LIB-00001026",
+    "history_preserved":true
+  },
+  "dataset_notes":{
+    "JBLR-LIB-00001032":{"data_role":"STRUCTURED_EXTERNAL_EVIDENCE_DATASET","interpretation_role":"NONE_BY_07","important_fields":["Species name","WFO family","WFO genus","WFO taxon name","Exceptional status","EF1 seed unavailable","EF2 desiccation sensitive","EF3 short-lived","EF4 deep dormancy","Exceptional status justification","Exceptional status data sources","SID Seed Storage Behaviour","IUCN Red List Category","Countries of native occurrence","PlantSearch seed collections","PlantSearch tissue culture collections","PlantSearch cryopreservation collections","List Version","Status Change"]}
+  },
+  "governance":{
+    "reference_not_protocol":true,
+    "evidence_not_conclusion":true,
+    "unknown_not_absence":true,
+    "history_policy":"NEVER_DELETE",
+    "no_hashless_deletion":true,
+    "no_silent_inference":true,
+    "scientific_interpretation_requires_authorized_scientific_layer":true
+  }
+}

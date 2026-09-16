@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "07_ALISMA_R01_NEW_UPLOAD_DOCUMENTARY_REVIEW_CHECKPOINT",
+  "project_id": "JBLR",
+  "actor_id": "07",
+  "actor_version": "07.V15",
+  "date": "2026-09-15",
+  "source_actor": "003",
+  "source_batch": "003-ACQ-GENUS-ALISMA-20260911-R01",
+  "source_checkpoint_reported": "EVENT145",
+  "source_folder_drive_id": "1DzwJgXuUnC3pqy3mFWSuOra-apHQ9iO_",
+  "principles": ["REALITY_FIRST","PERSISTED_EVIDENCE_FIRST","NO_SILENT_INFERENCE","NO_INFORMATION_LOSS","COPY_NEVER_MOVE","HISTORY_NEVER_DELETE","NOT_FOUND_NE_ABSENCE"],
+  "live_07_state": {
+    "continuity_status": "07.V15_ACTIVE_VERIFIED_FROM_PERSISTED_CONTINUITY_COMMIT",
+    "active_index_status": "ACTIVE_LOGICAL_SEGMENTED_INDEX",
+    "hwm": "JBLR-LIB-00001129",
+    "next_lib_file_id": "JBLR-LIB-00001130",
+    "allocated_id_slots": 1129,
+    "active_index_sha": "5d130b28dbcd113869890457f9df9d7eb127c7f5",
+    "last_transaction": "07_003_ALISMA_R01_DOCUMENTARY_CANONICALIZATION_1107_1129_2026_09_13",
+    "concurrent_allocation_detected": false
+  },
+  "runtime_limitation": {
+    "live_google_drive_connector": "BECAME_DISABLED_DURING_SOURCE_FOLDER_ENUMERATION",
+    "source_folder_enumerated": false,
+    "new_physical_files_read_by_07": false,
+    "copy_to_07_performed": false,
+    "new_lib_file_ids_allocated": 0,
+    "active_index_mutated": false,
+    "reason_for_partial": "Physical source objects and full new-upload inventory cannot be safely verified, copied or deduplicated without live Drive access."
+  },
+  "priority_decisions": [
+    {
+      "source_id": "D0080",
+      "bibliographic_identity": "Stockey & Hunt 1994 - Predicting secondary succession in wetland mesocosms on the basis of autecological information on seeds and seedlings",
+      "doi": "10.2307/2404449",
+      "source_physical_file_id": "10YYg6C-X-Dkji8g9qut3n7rCmwBSzhcA",
+      "documentary_status": "BIBLIOGRAPHIC_IDENTITY_RESOLVED_PHYSICAL_CANONICALIZATION_PENDING",
+      "document_type": "JOURNAL_ARTICLE",
+      "classification": ["SEEDS_GERMINATION_SEEDLINGS","EXPERIMENTAL_METHODOLOGY","MESOCOSM_METHODOLOGY","ENVIRONMENTAL_GRADIENTS_HYDROLOGY","WETLAND_ECOLOGY_REUSABLE","SUCCESSION_RESTORATION_REFERENCE","TRANSVERSAL_SCIENTIFIC_REFERENCE"],
+      "alismaspecific_status": "DIRECT_ALISMA_PLANTAGO_AQUATICA_REPORTED_VERIFIED_BY_003_NOT_INDEPENDENTLY_READ_BY_07_IN_THIS_RUNTIME",
+      "dedup_status": "PENDING_LIVE_07_LIBRARY_AND_PHYSICAL_CHECK",
+      "lib_file_id": null
+    },
+    {
+      "source_id": "D0075",
+      "bibliographic_identity": "H.B. Guppy 1897 - On the Postponement of the Germination of the Seeds of Aquatic Plants",
+      "source_physical_file_id": "1IV0rexYJz3K7qhPBfDyhQ9zKJ9gKI-SO",
+      "documentary_status": "ARTICLE_IDENTITY_RESOLVED_CONTAINER_RELATION_PENDING_PHYSICAL_READBACK",
+      "document_type": "JOURNAL_ARTICLE_EMBEDDED_IN_SERIAL_VOLUME",
+      "container_relation": "CONTAINER_DOCUMENT_WITH_EMBEDDED_PRIMARY_ARTICLE",
+      "container_identity": "Proceedings of the Royal Physical Society of Edinburgh, volume 13",
+      "page_range_status": "344-359_OR_360_SECONDARY_SOURCES_DISAGREE_FINAL_FOLIO_NOT_CANONICALIZED_WITHOUT_PRIMARY_VOLUME_READBACK",
+      "classification": ["SEEDS_GERMINATION_DORMANCY","AQUATIC_PLANT_SEED_BIOLOGY","TRANSVERSAL_SCIENTIFIC_REFERENCE","HISTORICAL_PRIMARY_REFERENCE","FAMILY_AND_MULTI_TAXON_REUSABLE"],
+      "alismaspecific_status": "DIRECT_ALISMA_AND_ALISMATACEAE_REPORTED_VERIFIED_BY_003_NOT_INDEPENDENTLY_READ_BY_07_IN_THIS_RUNTIME",
+      "dedup_status": "PENDING_LIVE_07_LIBRARY_AND_CONTAINER_CONTENT_CHECK",
+      "lib_file_id": null,
+      "rule": "DO_NOT_EQUATE_SERIAL_VOLUME_PHYSICAL_FILE_WITH_ARTICLE_DOCUMENT_IDENTITY"
+    },
+    {
+      "source_id": "D0078",
+      "bibliographic_identity": "Bissels, Donath, Holzel & Otte 2005 - Ephemeral wetland vegetation in irregularly flooded arable fields along the northern Upper Rhine: the importance of persistent seedbanks",
+      "doi": "10.1127/0340-269X/2005/0035-0469",
+      "source_physical_file_id": "1jR-Z265nILa9kqD3-oJ9X7vjpPp7hlc9",
+      "documentary_status": "WORK_IDENTITY_RESOLVED_MANIFESTATION_RELATION_RESOLVED_PHYSICAL_CANONICALIZATION_PENDING",
+      "document_type": "JOURNAL_ARTICLE_WITH_AUTHOR_MANUSCRIPT_EMBEDDED_IN_THESIS_CONTAINER",
+      "article_vs_thesis_decision": "SAME_INTELLECTUAL_WORK_DISTINCT_MANIFESTATIONS",
+      "manifestation_relation": "THESIS_EMBEDS_PREPUBLICATION_AUTHOR_MANUSCRIPT_MARKED_PHYTOCOENOLOGIA_IN_PRESS; NOT_EQUIVALENT_TO_FINAL_PUBLISHER_PDF",
+      "classification": ["DIRECT_TAXON_EVIDENCE","SEED_BANKS","FIELD_METHODOLOGY","ENVIRONMENTAL_GRADIENTS_HYDROLOGY","RESTORATION_AND_CONSERVATION","WETLAND_ECOLOGY_REUSABLE","TRANSVERSAL_SCIENTIFIC_REFERENCE"],
+      "alismaspecific_status": "INDEPENDENT_EXTERNAL_ABSTRACT_VERIFICATION_SUPPORTS_ALISMA_LANCEOLATUM_AND_ALISMA_PLANTAGO_AQUATICA",
+      "dedup_status": "DO_NOT_COLLAPSE_THESIS_CONTAINER_WITH_PUBLISHER_ARTICLE_PDF; LINK_AS_MANIFESTATION_WHEN_PHYSICAL_READBACK_AVAILABLE",
+      "lib_file_id": null
+    }
+  ],
+  "transversal_reuse": {
+    "D0080": ["wetland germination","seedling establishment","mesocosm experimental design","water-table and flooding treatments","succession prediction"],
+    "D0075": ["aquatic seed germination","dormancy","historical seed biology","multi-taxon aquatic plant reference"],
+    "D0078": ["persistent soil seedbanks","flooding gradients","field vegetation/seedbank comparison","ephemeral wetland conservation","restoration ecology"]
+  },
+  "unreviewed_new_upload_material": {
+    "status": "PENDING_SOURCE_ENUMERATION_AND_CONTENT_READBACK",
+    "classification_not_claimed": true,
+    "reason": "Live Drive source folder unavailable; no silent inference from folder membership or filenames."
+  },
+  "gates": {
+    "new_lib_allocation": "BLOCKED_UNTIL_LIVE_DRIVE_RESYNC_AND_DEDUP",
+    "copy_never_move": "ACTIVE",
+    "source_originals_mutated": false,
+    "003_productive_state_mutated": false,
+    "RC3": "UNCHANGED",
+    "PROTOCOL_B": "NOT_STARTED_BY_07",
+    "scientific_fact_canonicalization": "NO",
+    "taxonomic_effect": "NO",
+    "data_loss": "NO_DETECTED"
+  },
+  "operation_status": "PARTIAL_SAFE_CHECKPOINT",
+  "completion_condition": "Restore live Drive access, enumerate 2026-09-15 source-folder delta, read each physical file, perform canonical dedup/version checks, copy accepted objects without moving originals, allocate LIB_FILE_ID only after immediate HWM resync, persist and read back final reconciliation and communication."
+}

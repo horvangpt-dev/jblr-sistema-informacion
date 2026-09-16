@@ -1,0 +1,53 @@
+{
+  "schema_version":"1.0.0",
+  "index_name":"JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00001059_00001072",
+  "authority":"07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction":"07_001_H05_METROLOGY_ALARMS_CONTINGENCY_CANONICALIZATION_1059_1072_2026_09_11",
+  "range":{"from":"JBLR-LIB-00001059","to":"JBLR-LIB-00001072","count":14},
+  "record_encoding":{"columns":["LIB_FILE_ID","SOURCE_KEY","DRIVE_ID","LANGUAGE","MODULES","DISCOVERY_ID","TITLE","ORIGIN_CHANNEL"]},
+  "records":[
+    ["JBLR-LIB-00001059","H05-01","1LnwdRKiiaVSvUBFDJL67NHWiksDadN46","en",[],"NONE","Operational Genebank Manuals · National Research Council · Institute of Bioscience and BioResources, CNR-IBBR · Bari, Italy","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001060","H05-02","1IuWDydMvAe-cFppPxLBc1QZClL6_lTeJ","en",[],"NONE","CIMMYT Genebank Review Report · 2025 review cycle · final report 27 January 2026","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001061","H05-03","1qScRbozd56SsqKj3HeFpfcuss7onWtj8","en",[],"NONE","Risk Management Framework for Genebanks","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001062","H05-04","188gFBdsHyHzpvxFjnZKLONF1jodWKLab","en",[],"NONE","Genebanks at Risk: Hazard Assessment and Risk Management of National and International Genebanks","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001063","H05-05","1IJA2BDCdEfAHRdC_-16c3Z7g15Z70Wsb","en",[],"NONE","GeneBank Standard Operating Procedures · SADC Plant Genetic Resources Centre (SPGRC)","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001064","H05-06","1k984i8SScXzJEusAq9RMIzbhrn3B02X7","en",[],"NONE","Best Practices for Germplasm Management: A New Approach for Achieving Genebank Standards","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001065","H05-07","1fSFQsLPFVNiiTq_QMsziiEVBr9_Imn4H","en",[],"NONE","Operational Genebank Manual for the UK Vegetable Genebank (Warwick Genetic Resources Unit)","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001066","H05-08","1zgKZOTnXQOhLvpreHglz_k8n0ukZBGKh","en",[],"NONE","Operational genebank manual of IHAR National Centre for Plant Genetic Resources, Poland","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001067","H05-09","1UiKNehwAhI4qzP6FRzOfSaLCgkeqgF0j","en",[],"NONE","Operational Genebank Manual of NordGen","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001068","H05-10","1Nyn4IcTVcci6syCOHNRo_hmIdlRSU-6O","en",[],"NONE","Operation Genebank Manual of the National Centre for Biodiversity and Gene Conservation (NCBGC), Tápiószele","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001069","H05-11","16I1gRGFTA61337l-7HUshj-GU502o3_m","en",[],"NONE","Suceava Genebank Operational Manual · Mihai Cristea Plant Genetic Resources Bank, Romania","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001070","H05-12","1aXtB82jyQdzPV89keHjbdVpjZKutKc7E","en",[],"NONE","Operational genebank manual of the Centre of Estonian Rural Research and Knowledge (METK)","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001071","H05-13","1k4shi9yXlQ7LcBVWoqRPGixtoWcUNcLU","en",[],"NONE","Operational Genebank Manual · Banco Português de Germoplasma Vegetal (BPGV)","USER_H05_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001072","H05-14","1TJphokeCoP6fxCh3XiIjIrNeLzPfaznm","en",[],"NONE","Operational genebank manual of the Czech Agrifood Research Center (CARC), Prague, Czech Republic","USER_H05_PHYSICAL_INPUT"]
+  ],
+  "bibliographic_identifiers":[
+    {"LIB_FILE_ID":"JBLR-LIB-00001059","institution":"CNR-IBBR / Mediterranean Germplasm Genebank, Bari, Italy","compilation_date":"2025-05-05"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001060","institution":"CIMMYT / Global Genebank Partnership","review_site_visit":"2025-11-03..2025-11-07","final_report_date":"2026-01-27"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001061","institution":"System-wide Genetic Resources Programme / CGIAR","document_type":"Risk management framework/protocol","year":2009},
+    {"LIB_FILE_ID":"JBLR-LIB-00001062","doi":"10.3390/plants12152874","authors":"Theresa Herbold; Johannes M. M. Engels","journal":"Plants","volume":"12","article_number":"2874","year":2023,"publication_date":"2023-08-04"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001063","institution":"SADC Plant Genetic Resources Centre (SPGRC)","isbn":"9982-43-026-2","date":"2020-01"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001064","authors":"T. Calles; M. E. Dulloo; J. M. M. Engels; I. Van den Houwe","document_type":"Technical report / best-practice guidance"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001065","institution":"UK Vegetable Genebank / Warwick Genetic Resources Unit","compilation_date":"2024-10-30"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001066","institution":"IHAR National Centre for Plant Genetic Resources, Poland","compilation_date":"2024-10-01","license":"CC BY 4.0"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001067","institution":"Nordic Genetic Resource Center (NordGen)","compilation_date":"2024-05-08"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001068","institution":"National Centre for Biodiversity and Gene Conservation, Tápiószele, Hungary","compilation_date":"2025-04-16"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001069","institution":"Mihai Cristea Plant Genetic Resources Bank, Suceava, Romania","year":2025},
+    {"LIB_FILE_ID":"JBLR-LIB-00001070","institution":"Centre of Estonian Rural Research and Knowledge (METK)","compilation_date":"2024-04-10"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001071","institution":"Banco Português de Germoplasma Vegetal / INIAV","compilation_date":"2025-03-03"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001072","institution":"Czech Agrifood Research Center (CARC), Prague","compilation_date":"2025-05-12"}
+  ],
+  "representation_groups":[
+    {"LIB_FILE_ID":"JBLR-LIB-00001059","primary_drive_id":"1LnwdRKiiaVSvUBFDJL67NHWiksDadN46","additional_drive_ids":["1Xcw-UfUsutI-0rHt7M8soUFkIRj02xVM"],"relation":"SAME_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001065","primary_drive_id":"1fSFQsLPFVNiiTq_QMsziiEVBr9_Imn4H","additional_drive_ids":["16C_9Jdn59yifQkGoN3vDruQJZ6V1rpKc"],"relation":"SAME_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001066","primary_drive_id":"1zgKZOTnXQOhLvpreHglz_k8n0ukZBGKh","additional_drive_ids":["1iAWVXcIWHHw37wPXhdj2jf48iCJn-Vy1","1JvHIqmNGhaFYa2zx_4JoLhM6GUQ_puqp"],"relation":"THREE_PHYSICAL_REPRESENTATIONS_ONE_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001068","primary_drive_id":"1Nyn4IcTVcci6syCOHNRo_hmIdlRSU-6O","additional_drive_ids":["1vzhiZ5BCqii4RawROiMVZUy24_qmbqWW"],"relation":"SAME_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001070","primary_drive_id":"1aXtB82jyQdzPV89keHjbdVpjZKutKc7E","additional_drive_ids":["1e5rNxtC6YaTCNGWMUm3wJVnTFgeJRwPX"],"relation":"SAME_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001071","primary_drive_id":"1k4shi9yXlQ7LcBVWoqRPGixtoWcUNcLU","additional_drive_ids":["1ni0JV1ZIMyf2OR4RhH54pf2Plgc7jmno"],"relation":"SAME_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"},
+    {"LIB_FILE_ID":"JBLR-LIB-00001072","primary_drive_id":"1TJphokeCoP6fxCh3XiIjIrNeLzPfaznm","additional_drive_ids":["1ZhfWmvtvJuq490XFxfKsvMuBTTWkcTyT","1e8JOCyC6dgfOceRjI3RCnzdayQHyTr0o"],"relation":"THREE_PHYSICAL_REPRESENTATIONS_ONE_DOCUMENT_IDENTITY;BINARY_EQUALITY_NOT_ASSERTED"}
+  ],
+  "identity_review":{"active_index_precheck":"HWM1058_NEXT1059_BLOB_SHA_fd1688925a524818e9eb907959cfa9afb5fcc66d","source_folder":"1cVdRB1JNz3Eosls0ij305d4S9r6HqtFp","incoming_physical_objects":15,"new_canonical_identities":14,"incoming_internal_duplicate_representations":1,"preexisting_representation_links":8,"unresolved_identities":0,"source_failures":0,"redownload_required":0,"physical_deletions":0,"dedup_first":true,"no_silent_inference":true,"history_preserved":true},
+  "physical_routing":{"destination_en_folder":"1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS","source_objects_to_move":15,"source_objects_moved":15,"source_folder_final_count":0,"drive_ids_preserved":true,"physical_deletions":0,"routing_state":"COMPLETE_AFTER_MOVE_VERIFIED"},
+  "history_policy":"APPEND_ONLY",
+  "next_LIB_FILE_ID":"JBLR-LIB-00001073"
+}

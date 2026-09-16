@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "ES_TERRITORIAL_CONTENT_MIGRATION_INVARIANT_v1",
+  "actor_id": "07",
+  "actor_version": "07.V4",
+  "effective_date": "2026-08-28",
+  "scope": "HUMAN_LIBRARY_ES_ONLY",
+  "problem_detected": "TERRITORIAL_FOLDERS_CREATED_WITHOUT_MIGRATING_EXISTING_SOURCE_BATCH_CONTENT",
+  "corrective_invariants": {
+    "STRUCTURE_CREATION_WITHOUT_CONTENT_AUDIT": "FORBIDDEN",
+    "KNOWN_SOURCE_BATCH_MUST_BE_AUDITED_BEFORE_EMPTY_STATE_IS_ACCEPTED": true,
+    "SPAIN_SEARCH_BATCH_DOES_NOT_IMPLY_SPANISH_LANGUAGE": true,
+    "ESPAÑA_ROUTING_REQUIRES_LANGUAGE_ES_AND_TERRITORY_SPAIN": true,
+    "LA_RIOJA_ROUTING_REQUIRES_LANGUAGE_ES_AND_TERRITORY_LA_RIOJA": true,
+    "HUMAN_COPY_CREATES_NEW_LIB_FILE_ID": false,
+    "TECHNICAL_AI_SOURCE_LAYER_REMAINS_MANDATORY": true,
+    "ORIGINAL_SOURCE_BATCH_IS_PRESERVED": true,
+    "HUMAN_PROJECTION_MAY_USE_VERIFIED_READABLE_TITLE": true,
+    "READBACK_AFTER_MIGRATION": "MANDATORY"
+  },
+  "audited_batches": {
+    "specific_spain": {
+      "folder_id": "1mj0k0Ip8G9HuMJl8SKILb8JmwddrIjLw",
+      "m04_m05_folder_id": "1dD6stwji8r_1MFpqooymQrLkgHgi0CgB",
+      "physical_files_seen": 17,
+      "spanish_language_files_confirmed_in_batch": 6,
+      "status": "HUMAN_PROJECTION_CORRECTED_FOR_CONFIRMED_ES_FILES"
+    },
+    "specific_la_rioja": {
+      "folder_id": "1mHL_q-M5qWdGwY7Kph1uGMHXVx--E20h",
+      "m01_m06_folder_id": "1H2GZX6C4ro-ZfEhWJDhVAjk4-xcFubdp",
+      "physical_objects_seen": 8,
+      "substantive_documents": 7,
+      "auxiliary_download_helper_files": 1,
+      "status": "SUBSTANTIVE_HUMAN_PROJECTION_CORRECTED"
+    }
+  },
+  "androsace_rioxana_recovery_paths": [
+    "ES/01/ESPAÑA/LA RIOJA",
+    "ES/02/ESPAÑA/LA RIOJA",
+    "ES/07/ESPAÑA/LA RIOJA",
+    "ES/13/ESPAÑA/LA RIOJA",
+    "ES/15/ESPAÑA/LA RIOJA",
+    "ES/16/ESPAÑA/LA RIOJA",
+    "ES/18/ESPAÑA/LA RIOJA",
+    "ES/21/ESPAÑA/LA RIOJA",
+    "ES/24/ESPAÑA/LA RIOJA",
+    "ES/37/ESPAÑA/LA RIOJA"
+  ],
+  "master_index_count_change": 0,
+  "notes": "This correction concerns human navigation and migration of already-existing source binaries. Canonical technical identity assignment remains controlled by the central index and dedupe workflow."
+}

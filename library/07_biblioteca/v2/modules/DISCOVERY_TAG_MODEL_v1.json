@@ -1,0 +1,1 @@
+{"schema_version":"1.0.0","tag_pattern":"DISCOVERY_MODULE:<MODULE_ID>","example":"DISCOVERY_MODULE:JBLR-MOD-0001","meaning":"How/why the item was discovered.","not_meaning":"Exclusive final library classification.","multiple_module_relations_allowed":true,"drive_projection_required_now":false}

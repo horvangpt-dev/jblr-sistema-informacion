@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.1.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000909_00000915",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_REMOTE10_HUMAN_DOWNLOAD_FINAL_RESOLUTION_909_915_2026_09_09",
+  "range": {
+    "from": "JBLR-LIB-00000909",
+    "to": "JBLR-LIB-00000915",
+    "count": 7
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000909",
+      "001-DISC-000724",
+      "1vIaZszq9a7sAt4WFcUnE1N5oACzP0XjJ",
+      "en",
+      [
+        "M04",
+        "M05"
+      ],
+      "000724",
+      "Fit for the future? Alpine plant responses to climatic stress over two decades of seed bank storage",
+      "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    ],
+    [
+      "JBLR-LIB-00000910",
+      "001-DISC-000742",
+      "1Ah2sD64SwnErl1jMahzikoC6H-Bc6G8V",
+      "en",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "000742",
+      "Current state of plant conservation translocations across Europe: motivations, challenges and outcomes",
+      "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    ],
+    [
+      "JBLR-LIB-00000911",
+      "001-DISC-000743",
+      "1NrsEX4aZ0doIlF0eCbuAoQ1AdDEW-P9z",
+      "en",
+      [
+        "M04",
+        "M05"
+      ],
+      "000743",
+      "Effect of different conditions of storage on seed viability and seedling growth of six European wild fruit woody plants",
+      "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    ],
+    [
+      "JBLR-LIB-00000912",
+      "001-DISC-000762",
+      "1su_rRk7UREAORgpJ7G7RBvZji1JRd2yK",
+      "de-fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "000762",
+      "Bericht / Rapport des 4. Ex-situ-Workshops vom 31. Januar 2025, Botanischer Garten Bern",
+      "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    ],
+    [
+      "JBLR-LIB-00000913",
+      "001-DISC-000769",
+      "1ZmlMhBV_ALByhHCjD5qKB7qdlNWyRSpL",
+      "en",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000769",
+      "Sending seed collections to the MSB · Technical Information Sheet 16",
+      "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    ],
+    [
+      "JBLR-LIB-00000914",
+      "001-DISC-000770",
+      "1LmyiUwWyeLsGTElIaUZiai71zGJwfuTe",
+      "en",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000770",
+      "Technical Protocol for the Collection, Study, and Conservation of Native Plant Seeds through the National Seeds of Success Program · June 2026",
+      "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    ],
+    [
+      "JBLR-LIB-00000915",
+      "001-DISC-000772",
+      "1wxtBrxZ-dHDYnX6ZcICnEo3SrSZlJJm6",
+      "en",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "000772",
+      "Collecting and handling seed of native trees and shrubs · Factsheet 15",
+      "USER_HUMAN_DOWNLOAD_PRE002_REMOTE10"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000909",
+      "doi": "10.1016/j.biocon.2023.110267",
+      "authors": "Fiona Jane White; Sergey Rosbakh; Simone Orsenigo; Andrea Mondoni",
+      "year": 2023,
+      "journal": "Biological Conservation",
+      "volume": "286",
+      "article": "110267",
+      "version": "Publisher PDF / Version of Record",
+      "license": "CC BY"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000910",
+      "doi": "10.1007/s10531-025-03013-0",
+      "authors": "Sandrine Godefroid et al.",
+      "year": 2025,
+      "journal": "Biodiversity and Conservation",
+      "version": "Accepted manuscript / postprint"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000911",
+      "doi": "10.1007/s13595-020-00963-z",
+      "authors": "Mikołaj Krzysztof Wawrzyniak; Marcin Michalak; Paweł Chmielarz",
+      "year": 2020,
+      "journal": "Annals of Forest Science",
+      "volume": "77",
+      "article": "58"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000912",
+      "stable_identifier": "INFOFLORA_EX_SITU_WORKSHOP_2025_DE_FR",
+      "authors": "Andreas Ensslin; Eva Malecore; Adrian Möhl; Deborah Schäfer",
+      "date": "2025-01-31",
+      "venue": "Botanischer Garten Bern",
+      "language": "German/French"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000913",
+      "stable_identifier": "RBG_KEW_MSB_TIS_16_2024",
+      "institution": "Royal Botanic Gardens, Kew / Millennium Seed Bank Partnership",
+      "year": 2024,
+      "type": "Technical Information Sheet 16"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000914",
+      "stable_identifier": "SEEDS_OF_SUCCESS_TECHNICAL_PROTOCOL_2026_06",
+      "institutions": "Bureau of Land Management; National Park Service; U.S. Fish & Wildlife Service",
+      "date": "2026-06",
+      "type": "Technical protocol"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000915",
+      "stable_identifier": "TANES_TREE_TRUST_FACTSHEET_15_2024",
+      "author": "David Bergin",
+      "institution": "Tāne’s Tree Trust",
+      "year": 2024,
+      "type": "Factsheet 15"
+    }
+  ],
+  "sha256": {
+    "JBLR-LIB-00000909": "a7d6e514496e492323f69573dbeed018495a81cc2fd6c2217b2f98f92a4c7e97",
+    "JBLR-LIB-00000910": "4346e245c3e8d02cae6e8e5fefd433f5bdec2c7ed70d4c0d2f091fcee1f73e88",
+    "JBLR-LIB-00000911": "c4bbc656bd986e003b68198b6750c38c471bcd8f00fa29fe3b01bf00771310f7",
+    "JBLR-LIB-00000912": "300925a69d55ec8ec948bcd1e0857646acd9a790f2584d2d0672ed8d16b9e9d7",
+    "JBLR-LIB-00000913": "cf37ec1eafcdd58576516362d8e9739d22c611ea5632693d923a7f5e1e9e5f5b",
+    "JBLR-LIB-00000914": "ec5e76f45771d8b06e43bbca632ba7c46281e473cddb028d66c36354fcb3f79b",
+    "JBLR-LIB-00000915": "3a7fb79baf2bcfe589fac818fabec0f1de27d211de63bd02699b0e3a85863a87"
+  },
+  "identity_review": {
+    "exact_doi_title_repository_precheck": "PASS_NO_CANONICAL_MATCH_FOUND",
+    "physical_fulltext_readback": "PASS_7_OF_7",
+    "source_to_library_sha256": "PASS_7_OF_7",
+    "no_silent_inference": true
+  },
+  "next_LIB_FILE_ID": "JBLR-LIB-00000916",
+  "history_policy": "APPEND_ONLY"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "M04_M05_INCREMENTAL_PREINGESTION_2026-08-28_BATCH01",
+  "actor_id": "07",
+  "actor_version": "07.V4",
+  "timestamp": "2026-08-28T02:26:03+02:00",
+  "source_snapshot": "M04_M05_AUTHORITATIVE_INVENTORY_SNAPSHOT_2026-08-28_v1",
+  "master_index_verified_count_before_batch": 95,
+  "master_index_count_change": 0,
+  "records": [
+    {
+      "source_drive_id": "1i0BAs_OcSK7WNMZ1HbUVgmniGvZOJiKQ",
+      "source_original_filename": "1Plant_Manual(ver3.2).pdf",
+      "language": "ja",
+      "document_title": "モニタリングサイト1000 里地調査 調査マニュアル 植物相",
+      "version": "3.2",
+      "date": "2023-05",
+      "document_type": "MANUAL_GUIDE_METHODOLOGY",
+      "classification_evidence": "DIRECT_TEXT_REVIEWED",
+      "module_projections": ["M04","M05"],
+      "m04_basis": "field flora survey route/transect design, observation and species recording methodology",
+      "m05_basis": "long-term repeated monitoring of flora and environmental change, monthly survey cadence and longitudinal records",
+      "canonical_identity_state": "PENDING_DEDUPE_AND_RECONCILIATION",
+      "lib_file_id": "NOT_ASSIGNED",
+      "sha256_or_content_hash": "NOT_ASSESSED",
+      "doi": "NOT_ASSESSED",
+      "canonical_url": "NOT_ASSESSED",
+      "source_url": "DRIVE_SOURCE_ONLY",
+      "bibliographic_signature": "NOT_ASSESSED",
+      "human_distribution_copy": {
+        "drive_id": "1R73NbjAXh60TaDghv-FRtxeJ2jjTArx9",
+        "path": "JA/00",
+        "creates_new_lib_file_id": false
+      }
+    }
+  ],
+  "status": "PREINGESTION_CLASSIFIED_PENDING_STRONG_DEDUPE_AND_INDEX_RECONCILIATION",
+  "rules": {
+    "DEDUPE_WITHOUT_STRONG_EVIDENCE": "PROHIBITED",
+    "MASTER_INDEX_INCREMENT_WITHOUT_RECONCILIATION": "PROHIBITED",
+    "HUMAN_COPY_CREATES_LIB_FILE_ID": false
+  }
+}

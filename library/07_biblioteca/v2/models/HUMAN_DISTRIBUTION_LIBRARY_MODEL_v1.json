@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "model": "HUMAN_DISTRIBUTION_LIBRARY",
+  "authorized_by": "00000",
+  "authorization_date": "2026-08-27",
+  "purpose": "Externally shareable and directly downloadable human-facing physical library, separate from the JBLR technical canonical corpus.",
+  "architecture": {
+    "technical_canonical_copy": "PRESERVED",
+    "human_distribution_physical_copies": "AUTHORIZED",
+    "human_copy_gets_new_LIB_FILE_ID": false,
+    "canonical_identity_remains_authoritative": true,
+    "human_distribution_may_have_multiple_topic_copies": true,
+    "external_sharing_does_not_require_access_to_internal_JBLR_system": true
+  },
+  "rules": [
+    "Human folders may contain physical PDF copies, not only index links.",
+    "The same canonical work may be copied into multiple human folders when its verified content spans multiple processes.",
+    "Human copy filenames use the verified internal/editorial title when known.",
+    "Technical provenance and LIB_FILE_ID stay in the index/ledger and are not required in the visible human filename.",
+    "Human copies never replace or redefine the canonical technical identity.",
+    "La Rioja remains a priority territorial human view.",
+    "Spain may remain a territorial facet integrated with general process views.",
+    "Duplicate cleanup inside the technical corpus requires verified document identity; distribution copies are intentional and are not treated as accidental duplicates."
+  ],
+  "initial_materialization": {
+    "01_PROSPECCION_SCOUTING_OBSERVACION": 7,
+    "02_POBLACIONES_DEMOGRAFIA_SEGUIMIENTO": 7,
+    "03_RECOLECCION_CAMPO_VOUCHERS": 2,
+    "13_LEGISLACION_NORMATIVA_ESTANDARES": 2,
+    "15_MAPAS_GEOREFERENCIACION_GIS": 3,
+    "18_ECOLOGIA_HABITAT_AMENAZAS": 4,
+    "24_POBLACIONES_AMENAZADAS_DATOS_SENSIBLES": 5
+  }
+}
