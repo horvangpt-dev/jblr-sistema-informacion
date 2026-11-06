@@ -97,6 +97,17 @@ function uses(parent,prefix){
     for (const [form,labelForm,formDesc] of forms)
       add(prefix+"-"+form,routeId,labelForm,"aplicacion",formDesc,{fuentes:form==="enema"?["ranm","criterio"]:form==="colutorio"||form==="gargara"?["edqm","criterio"]:form==="ducha-vaginal"?["medline","criterio"]:form==="tisana"?["ema","criterio"]:["criterio"]});
   }
+  // Las aplicaciones capilares son formas concretas dentro de la aplicación externa.
+  // No cualquier macerado equivale a un champú: la denominación depende de la forma final y su función lavante.
+  const capilar=prefix+"-capilar";
+  add(capilar,prefix+"-via-externa","Aplicaciones capilares · formas específicas","grupo",
+    "Se distinguen la preparación lavante, el enjuague y la loción o tónico que permanece sobre el cabello o cuero cabelludo. La obtención directa del gel de sábila desde la hoja no es por sí misma una maceración acuosa, sino una operación distinta sobre el material vegetal.",{fuentes:["criterio"]});
+  add(prefix+"-champu",capilar,"Champú vegetal · preparado lavante capilar","aplicacion",
+    "Denominación para una preparación destinada a lavar cabello y cuero cabelludo con función limpiadora. Puede contener componentes vegetales, incluidos extractos acuosos; un macerado por sí solo no se denomina champú si no cumple esa función. Algunas plantas aportan saponinas con acción tensioactiva.",{fuentes:["criterio"]});
+  add(prefix+"-enjuague-capilar",capilar,"Enjuague capilar · aclarado","aplicacion",
+    "Aplicación del preparado al cabello como líquido de aclarado o enjuague; no se define por su finalidad medicinal, cosmética o cultural, ni exige que tenga acción detergente.",{fuentes:["criterio"]});
+  add(prefix+"-locion-capilar",capilar,"Loción capilar · tónico capilar","aplicacion",
+    "Preparación líquida para contacto con cabello o cuero cabelludo, habitualmente sin aclarado inmediato. Los nombres loción y tónico pueden solaparse según el contexto; no designan por sí mismos un método extractivo.",{fuentes:["criterio"]});
 }
 for (const id of ["mac","dig","inf","dec","ref"])uses("p-"+id,"u-"+id);
 add("flu","a","Circulación de agua líquida","grupo","El agua atraviesa el material vegetal en lugar de permanecer simplemente inmersa.",{fuentes:['criterio']});
