@@ -32,10 +32,10 @@ footer{font-size:11px;color:#708076;padding:13px 20px;line-height:1.4;background
 <button id="minus" aria-label="Alejar">−</button><button id="plus" aria-label="Acercar">+</button><button id="fit">Ajustar</button>
 <button id="print">Imprimir A3</button><span class="count" id="count"></span>
 </div>
-<div class="hint">Recorrido: medio y factores → técnica → producto → aplicación → nombre por uso. Pulsa un nodo para desplegar su rama y consultar su ficha.</div>
+<div class="hint">Recorrido: medio y factores → técnica → producto → vía de administración → forma de aplicación y denominación. Pulsa un nodo para desplegar su rama y consultar su ficha.</div>
 <div class="main"><div class="canvas" id="canvas" aria-label="Árbol horizontal conectado"><div class="plane" id="plane"><svg class="paths" id="paths"></svg><div id="nodes"></div></div></div><aside class="detail" id="detail" aria-live="polite"></aside></div>
 <div class="legend"><span><i class="swatch" style="background:#286949"></i>Medio</span><span><i class="swatch" style="background:#72945e"></i>Factor / grupo</span><span><i class="swatch" style="background:#3d6690"></i>Técnica</span><span><i class="swatch" style="background:#af7338"></i>Producto</span><span><i class="swatch" style="background:#76598d"></i>Aplicación</span><span><i class="swatch" style="background:#347c7a"></i>Operación</span></div>
-<footer>Atlas descriptivo de nomenclatura, fundamentos y patrimonio etnobotánico. Los intervalos térmicos son referencias pedagógicas, no límites de definición. Una misma técnica puede tener varias aplicaciones; éstas no constituyen métodos extractivos nuevos. Revisión: 6 de noviembre de 2026.</footer>
+<footer>Atlas descriptivo de nomenclatura, fundamentos y patrimonio etnobotánico. Los intervalos térmicos son referencias pedagógicas, no límites de definición. Una misma técnica puede tener diversas vías y formas de aplicación, que no constituyen métodos extractivos nuevos; la denominación de una forma no supone que cualquier extracto sea apto para ella. Revisión: 6 de noviembre de 2026.</footer>
 <script>
 "use strict";
 const SOURCE={
@@ -63,17 +63,37 @@ for (const [id,parent,label,resumen,temp,tiempo,fundamento,product] of tech) {
  add("p-"+id,id,product,"producto","Producto que conserva el nombre de la técnica; sus aplicaciones pueden variar.",{fuentes:s});
 }
 function uses(parent,prefix){
- const base=[
-  ["oral","Bebida de plantas · tisana","Denominación de una preparación acuosa vegetal destinada a bebida en el contexto de las tisanas; no convierte la técnica en otra extracción."],
-  ["manos","Maniluvio","Baño localizado de manos; indica aplicación por inmersión, no un extracto nuevo."],
-  ["pies","Pediluvio","Baño localizado de pies; indica la región de aplicación."],
-  ["asiento","Baño de asiento por inmersión","Aplicación parcial en agua sobre la región pélvica o perineal; distinto del vaho de asiento."],
-  ["total","Baño corporal","Aplicación de inmersión general."],
-  ["compresa","Compresa, fomento o paño","Denominaciones de aplicación externa con soporte textil; no son técnicas de extracción."],
-  ["alimento","Uso alimentario o culinario","El mismo preparado acuoso puede integrarse como ingrediente, según su formulación y contexto."],
-  ["cosmetica","Uso cosmético o perfumístico","Aplicación o formulación posterior; el método extractivo sigue siendo el mismo."]
- ];
- for(const [k,label,desc] of base)add(prefix+"-"+k,parent,label,"aplicacion",desc,{fuentes:k==="oral"?['ema','criterio']:['criterio']});
+  // Clasificación por vía anatómica y modalidad de administración, no por finalidad (medicinal, culinaria o cosmética).
+  // La denominación de una forma no presupone que cualquier extracto sea idóneo para dicha vía.
+  const routes=[
+   ["oral","Vía oral · ingestión","El preparado se incorpora por la boca y se deglute.",[
+     ["tisana","Tisana o bebida de plantas","Denominación de una preparación acuosa destinada a beber; no indica una técnica extractiva distinta."]
+   ]],
+   ["bucal","Aplicación bucal y orofaríngea · sin deglución","Contacto localizado con la cavidad bucal o con la región orofaríngea.",[
+     ["colutorio","Enjuague bucal · colutorio","Colutorio denomina una forma de preparación para enjuague bucal; la extracción previa puede ser una de varias etapas y no determina por sí sola la formulación."],
+     ["gargara","Gárgaras · gargarismo","Modalidad de aplicación con contacto en la región orofaríngea, diferenciada del enjuague limitado a la boca."]
+   ]],
+   ["cutanea","Aplicación cutánea externa","Contacto con la piel por lavado, inmersión localizada o soporte.",[
+     ["lavado","Lavado cutáneo","Contacto externo por lavado; se clasifica por modalidad, no por finalidad."],
+     ["manos","Maniluvio","Baño de manos por inmersión; denominación anatómica."],
+     ["pies","Pediluvio","Baño de pies por inmersión; denominación anatómica."],
+     ["total","Baño corporal por inmersión","Modalidad de inmersión general."],
+     ["compresa","Compresa, fomento o paño","Aplicación mediante soporte textil impregnado con el preparado."]
+   ]],
+   ["perineal","Aplicación anal o perineal externa","Contacto con la superficie externa de la región anal o perineal, diferente de la administración rectal.",[
+     ["asiento","Baño de asiento por inmersión","Inmersión parcial de la región pélvica o perineal; distinto del vaho de asiento."],
+     ["anal","Lavado anal externo","Modalidad externa localizada; no implica introducir líquido en el recto."]
+   ]],
+   ["rectal","Vía rectal · administración interna","La vía de administración es distinta del baño o lavado anal externo.",[
+     ["enema","Enema o lavativa","Denominación de una forma rectal de administración; requiere una preparación específica y no equivale automáticamente a cualquier macerado acuoso."]
+   ]]
+  ];
+  for (const [key,label,desc,forms] of routes){
+    const routeId=prefix+"-via-"+key;
+    add(routeId,parent,label,"grupo",desc,{fuentes:["criterio"]});
+    for (const [form,labelForm,formDesc] of forms)
+      add(prefix+"-"+form,routeId,labelForm,"aplicacion",formDesc,{fuentes:form==="tisana"?["ema","criterio"]:["criterio"]});
+  }
 }
 for (const id of ["mac","dig","inf","dec","ref"])uses("p-"+id,"u-"+id);
 add("flu","a","Circulación de agua líquida","grupo","El agua atraviesa el material vegetal en lugar de permanecer simplemente inmersa.",{fuentes:['criterio']});
