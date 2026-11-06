@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123c36"><meta name="description" content="Árbol etnobotánico JBLR: técnicas de extracción vegetal, productos y denominaciones por aplicación.">
+<title>Árbol etnobotánico · JBLR</title>
+<style>
+:root{color-scheme:light;--ink:#17332f;--muted:#64756e;--line:#cddbd3;--bg:#f5f7f2;--paper:#fff;--green:#154d3b;--soft:#e8f1ea;--gold:#af7338;--blue:#3d6690;--violet:#76598d;--teal:#347c7a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #7acfb5;outline-offset:2px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#123c36;color:white;padding:14px 21px;flex-wrap:wrap}header .identity{font-size:12px;letter-spacing:.15em;text-transform:uppercase;opacity:.8}header h1{font-family:Georgia,serif;letter-spacing:-.02em;margin:0;font-weight:500;font-size:27px}header .tag{color:#b4dfbd;font-size:12px}
+.tabs{display:flex;gap:7px;padding:13px 20px;border-bottom:1px solid var(--line);background:white;overflow:auto}.tab{white-space:nowrap;color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:7px 12px;background:#fff;font-size:12px}.tab.active{background:var(--green);color:white;border-color:var(--green)}.tab.pending{opacity:.62}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:9px;padding:11px 20px;background:#fdfefd;border-bottom:1px solid var(--line)}.toolbar button{border:1px solid #bfcfc4;background:#fff;border-radius:8px;padding:7px 11px;color:var(--ink)}.toolbar button:hover{background:#e9f0e8}.toolbar input[type=search]{min-width:210px;max-width:340px;flex:1;background:#fff;border:1px solid #bfcfc4;border-radius:8px;padding:8px 10px}.count{color:var(--muted);font-size:12px;margin-left:auto}.hint{padding:8px 20px;font-size:12px;color:#586960;border-bottom:1px solid var(--line)}
+.main{display:grid;grid-template-columns:minmax(0,1fr) 355px;min-height:calc(100dvh - 202px)}
+.canvas{overflow:auto;background:radial-gradient(circle,#e1e9df 1px,transparent 1.1px) 0 0/22px 22px;min-height:68vh;position:relative}
+.plane{position:relative;transform-origin:0 0;min-width:700px}
+.paths{position:absolute;inset:0;pointer-events:none;overflow:visible}
+.paths path{fill:none;stroke:#a3bbb0;stroke-width:1.5;stroke-linecap:round}
+.node{position:absolute;width:246px;min-height:74px;border:1px solid #c9dad0;background:#fff;border-radius:12px;padding:11px 12px;box-shadow:0 4px 13px #163f2d0b;text-align:left;transition:border-color .15s,box-shadow .15s}.node:hover,.node.selected{border-color:#217b5a;box-shadow:0 6px 18px #163f2d24}.node .small{display:block;color:var(--muted);font-size:10px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:3px}.node .name{display:block;font-size:14px;font-weight:690;line-height:1.28}.node .sub{display:block;font-size:11px;line-height:1.32;color:var(--muted);margin-top:5px}.node .more{float:right;color:#206a53;font-size:15px;margin-left:8px}.node.medio{border-left:5px solid #286949}.node.grupo{border-left:5px solid #72945e}.node.tecnica{border-left:5px solid var(--blue)}.node.producto{border-left:5px solid var(--gold)}.node.aplicacion{border-left:5px solid var(--violet)}.node.nota{border-left:5px solid #999}.node.operacion{border-left:5px solid var(--teal)}
+.detail{background:#fff;border-left:1px solid var(--line);padding:24px 22px;overflow:auto;max-height:calc(100dvh - 170px)}.detail h2{font-family:Georgia,serif;font-weight:500;font-size:25px;line-height:1.15;margin:9px 0 10px}.detail h3{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#526d60;margin:23px 0 8px}.detail p{line-height:1.62;margin:8px 0}.kind{font-size:11px;background:#edf3ea;color:#355d49;border-radius:20px;padding:4px 9px}.pill{display:inline-block;margin:4px 5px 2px 0;border:1px solid #d6e0d4;background:#f8faf6;border-radius:7px;padding:5px 8px;font-size:12px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:7px}.fact{padding:10px;background:#f4f7f3;border-radius:8px}.fact label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#576960;margin-bottom:3px}.fact strong{font-size:13px}.breadcrumb{font-size:12px;color:#62786e;line-height:1.8}.detail ul{padding-left:18px;margin:6px 0}.detail li{margin:5px 0}.detail a{color:#176547}.legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:11px;color:#62776b;padding:7px 20px;background:#fff;border-top:1px solid var(--line)}.swatch{display:inline-block;width:9px;height:9px;margin-right:4px;border-radius:2px}
+footer{font-size:11px;color:#708076;padding:13px 20px;line-height:1.4;background:#fff;border-top:1px solid var(--line)}
+.mobileToggle{display:none}.empty{padding:36px;max-width:620px;margin:30px auto;text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px}.empty h2{font-family:Georgia,serif}
+@media(max-width:870px){.main{grid-template-columns:1fr}.detail{border-left:0;border-top:1px solid var(--line);max-height:none;min-height:190px}.canvas{height:55vh;min-height:340px}header h1{font-size:22px}.toolbar{padding:8px 12px}.hint,.legend{padding-left:12px}.tabs{padding:10px 12px}}
+@media print{header,.tabs,.toolbar,.hint,.detail,.legend,footer{display:none!important}.main{display:block}.canvas{overflow:visible;min-height:0}.plane{transform:none!important}body{background:#fff}.node{box-shadow:none;break-inside:avoid} @page{size:A3 landscape;margin:12mm}}
+</style>
+</head>
+<body>
+<header><div><div class="identity">Jardín Botánico de La Rioja · Educación ambiental</div><h1>Árbol etnobotánico</h1></div><div class="tag">Atlas técnico y cultural · Versión independiente JBLR</div></header>
+<nav class="tabs" id="tabs" aria-label="Familias de extracción"></nav>
+<div class="toolbar">
+<input id="search" type="search" aria-label="Buscar en el árbol" placeholder="Buscar técnica, producto o aplicación">
+<button id="expand">Desplegar todo</button><button id="collapse">Contraer</button>
+<button id="minus" aria-label="Alejar">−</button><button id="plus" aria-label="Acercar">+</button><button id="fit">Ajustar</button>
+<button id="print">Imprimir A3</button><span class="count" id="count"></span>
+</div>
+<div class="hint">Recorrido: medio y factores → técnica → producto → aplicación → nombre por uso. Pulsa un nodo para desplegar su rama y consultar su ficha.</div>
+<div class="main"><div class="canvas" id="canvas" aria-label="Árbol horizontal conectado"><div class="plane" id="plane"><svg class="paths" id="paths"></svg><div id="nodes"></div></div></div><aside class="detail" id="detail" aria-live="polite"></aside></div>
+<div class="legend"><span><i class="swatch" style="background:#286949"></i>Medio</span><span><i class="swatch" style="background:#72945e"></i>Factor / grupo</span><span><i class="swatch" style="background:#3d6690"></i>Técnica</span><span><i class="swatch" style="background:#af7338"></i>Producto</span><span><i class="swatch" style="background:#76598d"></i>Aplicación</span><span><i class="swatch" style="background:#347c7a"></i>Operación</span></div>
+<footer>Atlas descriptivo de nomenclatura, fundamentos y patrimonio etnobotánico. Los intervalos térmicos son referencias pedagógicas, no límites de definición. Una misma técnica puede tener varias aplicaciones; éstas no constituyen métodos extractivos nuevos. Revisión: 6 de noviembre de 2026.</footer>
+<script>
+"use strict";
+const SOURCE={
+  ema:["EMA · Glossary on herbal teas","https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/glossary-herbal-teas_en.pdf"],
+  who:["OMS · Good herbal processing practices (anexo 1)","https://www.who.int/docs/default-source/medicines/norms-and-standards/guidelines/production/trs1010-annex1-herbal-processing.pdf"],
+  prep:["EMA · Herbal preparations","https://www.ema.europa.eu/en/glossary-terms/herbal-preparations"],
+  criterio:["Terminología y estructura didáctica del curso JBLR",null],
+  patr:["Patrimonio etnobotánico y usos culturales contemporáneos; los nombres locales requieren documentación contextual",null]
+};
+const familyNames={acuoso:"Medio acuoso",oleoso:"Oleoso",alcoholico:"Alcohólico",glicerinado:"Glicerinado",acido:"Ácido",mecanico:"Mecánico",mixtos:"Mixtos"};
+const DATA=[], BY=new Map();
+function add(id,parent,label,kind,resumen,extra={}){const n={id,parent,label,kind,resumen,...extra};DATA.push(n);BY.set(id,n);return id}
+const s=['ema','criterio'], w=['who','criterio'];
+add("a",null,"Medio acuoso","medio","Agua en estado líquido o vapor como agente del proceso. La clasificación diferencia extracción, destilación, aplicación directa y transformaciones.",{fundamento:"El agua puede disolver constituyentes hidrosolubles, atravesar un lecho vegetal o generar vapor que transporta compuestos volátiles. No todas estas operaciones son equivalentes.",fuentes:s});
+add("inm","a","Contacto en agua líquida","grupo","La planta permanece en contacto con el agua; se distinguen régimen térmico y modo de aplicar calor.",{fuentes:s});
+const tech=[
+ ["mac","inm","Maceración acuosa en frío","Sin calentamiento añadido; contacto con agua líquida.","≈15–25 °C (ambiente)","Variable según planta; 30 min es una referencia del glosario EMA","Contacto sin aporte intencional de calor; puede interesar para fracciones hidrosolubles sensibles al calentamiento.","Macerado acuoso"],
+ ["dig","inm","Digestión acuosa","Contacto con calentamiento moderado sostenido, sin hervir.","≈35–50 °C (orientativo)","Variable","Maceración templada: el rasgo definitorio es el calor suave, no un umbral universal.","Extracto acuoso por digestión"],
+ ["inf","inm","Infusión","Agua caliente y reposo sin ebullición sostenida.","≈80–100 °C al inicio; desciende durante el contacto","Variable; 5–15 min como referencia EMA","Se caracteriza por el contacto con agua caliente y la ausencia de ebullición mantenida de la planta.","Infusión acuosa"],
+ ["dec","inm","Decocción","Planta en agua sometida a ebullición mantenida.","≈95–100 °C en ebullición atmosférica habitual","Variable; 15–30 min como referencia EMA","La ebullición mantenida, dependiente de la presión y altitud, distingue el procedimiento de la infusión.","Decocción acuosa"],
+ ["ref","inm","Extracción acuosa a reflujo","Ebullición con retorno del vapor condensado.","≈95–100 °C en el líquido hirviendo, a presión atmosférica habitual","Variable","Proceso de laboratorio con condensación y retorno del disolvente al recipiente.","Extracto acuoso a reflujo"]
+];
+for (const [id,parent,label,resumen,temp,tiempo,fundamento,product] of tech) {
+ add(id,parent,label,"tecnica",resumen,{temp,tiempo,fundamento,fuentes:id==="ref"?['criterio']:s});
+ add("p-"+id,id,product,"producto","Producto que conserva el nombre de la técnica; sus aplicaciones pueden variar.",{fuentes:s});
+}
+function uses(parent,prefix){
+ const base=[
+  ["oral","Bebida de plantas · tisana","Denominación de una preparación acuosa vegetal destinada a bebida en el contexto de las tisanas; no convierte la técnica en otra extracción."],
+  ["manos","Maniluvio","Baño localizado de manos; indica aplicación por inmersión, no un extracto nuevo."],
+  ["pies","Pediluvio","Baño localizado de pies; indica la región de aplicación."],
+  ["asiento","Baño de asiento por inmersión","Aplicación parcial en agua sobre la región pélvica o perineal; distinto del vaho de asiento."],
+  ["total","Baño corporal","Aplicación de inmersión general."],
+  ["compresa","Compresa, fomento o paño","Denominaciones de aplicación externa con soporte textil; no son técnicas de extracción."],
+  ["alimento","Uso alimentario o culinario","El mismo preparado acuoso puede integrarse como ingrediente, según su formulación y contexto."],
+  ["cosmetica","Uso cosmético o perfumístico","Aplicación o formulación posterior; el método extractivo sigue siendo el mismo."]
+ ];
+ for(const [k,label,desc] of base)add(prefix+"-"+k,parent,label,"aplicacion",desc,{fuentes:k==="oral"?['ema','criterio']:['criterio']});
+}
+for (const id of ["mac","dig","inf","dec","ref"])uses("p-"+id,"u-"+id);
+add("flu","a","Circulación de agua líquida","grupo","El agua atraviesa el material vegetal en lugar de permanecer simplemente inmersa.",{fuentes:['criterio']});
+add("perc","flu","Percolación acuosa","tecnica","El agua atraviesa un lecho vegetal y arrastra compuestos solubles.",{temp:"Variable; fría o caliente (≈15–95 °C como ilustración, no rango normativo)",tiempo:"Variable; depende del flujo",fundamento:"El factor definitorio es la circulación del líquido por la matriz vegetal; no hay destilación ni condensado.",fuentes:['criterio']});
+add("p-perc","perc","Percolado acuoso","producto","Líquido obtenido por percolación; no es un hidrolato.",{fuentes:['criterio']});
+add("u-perc-oral","p-perc","Bebidas filtradas · café de filtro (ejemplo)","aplicacion","Ejemplo cotidiano de percolación por gravedad; la aplicación no renombra la técnica.",{fuentes:['criterio']});
+add("u-perc-lab","p-perc","Extracto de análisis o formulación","aplicacion","La función posterior depende del objetivo del estudio o del preparado.",{fuentes:['criterio']});
+add("soxh","flu","Extracción continua tipo Soxhlet con agua","tecnica","Ciclos de evaporación, condensación y renovación del disolvente; variante poco habitual con agua.",{temp:"≈95–100 °C en el reservorio hirviendo; contacto variable",tiempo:"Variable",fundamento:"Equipo extractivo de laboratorio. La fase líquida atraviesa periódicamente la muestra y regresa al sistema.",fuentes:['criterio']});
+add("p-soxh","soxh","Extracto acuoso por Soxhlet","producto","Producto de una extracción cíclica; su denominación responde al procedimiento.",{fuentes:['criterio']});
+add("u-soxh","p-soxh","Uso analítico o de investigación","aplicacion","Aplicación técnica posterior, sin cambiar la identidad del método.",{fuentes:['criterio']});
+add("vap","a","Agua y vapor","grupo","La misma fase vapor participa en dos recorridos: recuperación del condensado o aplicación directa.",{fuentes:w});
+add("rec","vap","Con recuperación del condensado","grupo","Destilaciones que recogen el condensado; el producto acuoso puede ser un hidrolato.",{fuentes:w});
+const vapor=[
+ ["hid","Hidrodestilación","Material vegetal en agua en ebullición."],
+ ["av","Destilación con agua y vapor","Material vegetal en contacto con vapor generado en el sistema, sin permanecer sumergido."],
+ ["ad","Arrastre directo de vapor","Vapor generado separadamente que atraviesa la materia vegetal."]
+];
+for (const [id,label,resumen] of vapor){
+ add(id,"rec",label,"tecnica",resumen,{temp:"Vapor próximo a ≈95–100 °C en condiciones atmosféricas habituales; varía según presión",tiempo:"Variable",fundamento:"Transporte de componentes volátiles por vapor seguido de condensación; la fase recuperada puede separarse.",fuentes:w});
+ add("p-hid-"+id,id,"Hidrolato (fase acuosa)","producto","Fase acuosa aromática recuperada de la destilación; no es infusión ni percolado.",{fuentes:w});
+ add("u-hid-"+id,"p-hid-"+id,"Perfumería, cosmética y usos culturales","aplicacion","Aplicaciones posibles, distintas del nombre técnico de la destilación.",{fuentes:['criterio']});
+ add("p-ae-"+id,id,"Aceite esencial (si se obtiene fase separable)","producto","Fase volátil oleosa separable en determinadas destilaciones; no toda destilación produce una fracción recuperable.",{fuentes:w});
+ add("u-ae-"+id,"p-ae-"+id,"Perfumería, aromaterapia y formulaciones","aplicacion","Usos y nombres comerciales posteriores; no son nuevas técnicas de extracción.",{fuentes:['criterio']});
+}
+add("coho","rec","Cohobación · variante del proceso","operacion","Recirculación de parte del destilado al sistema; no constituye una familia de extracción independiente.",{fuentes:['criterio']});
+add("direct","vap","Vapor de aplicación directa","grupo","No se recupera un destilado: el vapor se dirige a una aplicación corporal o ambiental.",{fuentes:['criterio','patr']});
+add("p-vapor","direct","Vapor de agua con o sin volátiles vegetales","producto","Medio de aplicación directa. El vapor hidrotermal sin plantas no debe identificarse como extracto vegetal.",{fundamento:"Cuando hay componentes volátiles de plantas, el vapor puede transportarlos. El humo de combustión pertenece a otra familia y no a la extracción acuosa.",fuentes:['criterio']});
+const directUses=[
+ ["vaho","Vahos e inhalación de vapor","Aplicación localizada respiratoria; los nombres tradicionales varían según la cultura."],
+ ["bano","Baño de vapor corporal · hammam / spa","Aplicación general del vapor; puede ser exclusivamente hidrotermal o incluir componentes vegetales."],
+ ["asiento-v","Vaho de asiento o baño de vapor perineal","Aplicación localizada por vapor sobre región anal o perineal; distinta del baño de asiento por inmersión."],
+ ["gen","Baño de vapor genital o vaginal · chai-yok","Denominación cultural contemporánea documentada en Corea; la finalidad atribuida es información etnobotánica, no demostración de eficacia."],
+ ["loc","Vaporización localizada","Categoría de aplicación directa sobre zonas concretas del cuerpo."],
+];
+for (const [id,label,desc] of directUses)add("u-"+id,"p-vapor",label,"aplicacion",desc,{fuentes:['patr','criterio']});
+add("trans","a","Transformación biológica relacionada","grupo","Procesos vinculados a preparaciones acuosas pero no equivalentes a extracción.",{fuentes:['prep']});
+add("ferm","trans","Fermentación acuosa","operacion","Microorganismos transforman la composición química del sustrato.",{temp:"Variable según microorganismos; ≈20–35 °C solo para ejemplos mesófilos",tiempo:"Variable",fundamento:"Transformación bioquímica; no se define por la disolución extractiva de compuestos vegetales.",fuentes:['prep','criterio']});
+add("p-ferm","ferm","Preparado fermentado","producto","Producto transformado, de composición dependiente de los organismos y sustratos.",{fuentes:['prep']});
+add("u-ferm","p-ferm","Aplicación alimentaria u otras","aplicacion","Los usos se documentan en una capa posterior a la transformación.",{fuentes:['criterio']});
+add("modern","a","Tecnologías modernas · solo inventario","grupo","Rama informativa, sin desarrollo de productos ni aplicaciones por ahora.",{fuentes:['criterio']});
+for (const [id,label] of [["us","Extracción asistida por ultrasonidos"],["mic","Extracción asistida por microondas"],["enz","Extracción asistida por enzimas"],["pres","Agua caliente presurizada"],["puls","Campos eléctricos pulsados"]])add(id,"modern",label,"nota","Tecnología identificada; desarrollo técnico reservado para otra fase.",{fuentes:['criterio']});
+const children=new Map();
+for(const n of DATA){if(n.parent){if(!children.has(n.parent))children.set(n.parent,[]);children.get(n.parent).push(n.id)}}
+const $=id=>document.getElementById(id);
+let family='acuoso',selected='inf',zoom=1,expanded=new Set(['a','inm','vap','flu','trans','modern']);
+const XGAP=300,YCELL=126,CARDH=86;
+function esc(v){return String(v??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]))}
+function familyTabs(){const frag=document.createDocumentFragment();for(const [id,label] of Object.entries(familyNames)){const b=document.createElement('button');b.className='tab '+(id===family?'active':'')+(id!=='acuoso'?' pending':'');b.textContent=label+(id!=='acuoso'?' · pendiente':'');b.addEventListener('click',()=>{family=id;familyTabs();render()});frag.append(b)}$('tabs').replaceChildren(frag)}
+function ancestorChain(id){const a=[];while(id&&BY.has(id)){a.unshift(id);id=BY.get(id).parent}return a}
+function expandAncestors(id){for(const i of ancestorChain(id))expanded.add(i)}
+function clickNode(id){selected=id;const kids=children.get(id)||[];if(kids.length){if(expanded.has(id))expanded.delete(id);else expanded.add(id)}render()}
+function detail(){const n=BY.get(selected)||BY.get('a');const chain=ancestorChain(n.id);let html='<div class="breadcrumb">'+chain.map(x=>esc(BY.get(x).label)).join(' › ')+'</div><h2>'+esc(n.label)+'</h2><span class="kind">'+esc({medio:'Medio',grupo:'Factor de clasificación',tecnica:'Técnica',producto:'Producto',aplicacion:'Aplicación / denominación',operacion:'Operación / transformación',nota:'Rama enumerada'}[n.kind])+'</span><p>'+esc(n.resumen)+'</p>';
+ if(n.fundamento)html+='<h3>Fundamento</h3><p>'+esc(n.fundamento)+'</p>';
+ if(n.temp||n.tiempo)html+='<h3>Factores</h3><div class="facts"><div class="fact"><label>Temperatura aproximada</label><strong>'+esc(n.temp||'No asignable')+'</strong></div><div class="fact"><label>Tiempo</label><strong>'+esc(n.tiempo||'Variable')+'</strong></div></div>';
+ const ch=children.get(n.id)||[];if(ch.length)html+='<h3>Siguiente nivel · '+ch.length+' rama'+(ch.length===1?'':'s')+'</h3>'+ch.map(id=>'<span class="pill">'+esc(BY.get(id).label)+'</span>').join('');
+ if(n.kind==='producto')html+='<h3>Identidad del producto</h3><p>El producto no cambia de técnica porque se utilice en otro ámbito. Su denominación de uso se registra en la rama siguiente.</p>';
+ if(n.id==='a'||n.id==='inm'||n.id==='inf'||n.id==='dec')html+='<h3>Precisiones terminológicas</h3><p>La infusión y la decocción no están separadas por una frontera rígida de 100 °C. La ebullición mantenida, el modo de contacto y la presión son determinantes. “Cocción” no figura como técnica independiente.</p>';
+ if(n.id==='p-vapor'||n.id==='direct')html+='<h3>Alcance</h3><p>Vapor aplicado directamente no equivale a destilado recogido. Un baño hidrotermal sin plantas tampoco constituye por sí solo una extracción botánica.</p>';
+ if(n.id==='p-inf')html+='<h3>Denominación específica</h3><p>“Colirio” corresponde a una formulación oftálmica específica: una infusión común no cambia automáticamente de naturaleza ni recibe ese nombre por su destino.</p>';
+ const refs=n.fuentes||['criterio'];html+='<h3>Referencias y criterio</h3><ul>'+refs.map(k=>'<li>'+(SOURCE[k][1]?'<a href="'+esc(SOURCE[k][1])+'" target="_blank" rel="noopener noreferrer">':'')+esc(SOURCE[k][0])+(SOURCE[k][1]?'</a>':'')+'</li>').join('')+'</ul>';
+ $('detail').innerHTML=html;
+}
+function render(){
+ if(family!=='acuoso'){$('plane').style.width='100%';$('plane').style.height='500px';$('nodes').innerHTML='<div class="empty"><h2>'+esc(familyNames[family])+'</h2><p>Esta familia se conserva en la planificación original, pero todavía no se ha migrado a esta versión independiente. No se han inventado contenidos para completarla.</p><p>La rama acuosa ya es navegable y editable en el repositorio JBLR.</p></div>';$('paths').innerHTML='';$('detail').innerHTML='<h2>Rama pendiente</h2><p>Selecciona «Medio acuoso» para explorar la versión desarrollada.</p>';$('count').textContent='Rama pendiente';return}
+ const q=$('search').value.trim().toLocaleLowerCase('es');
+ let show=new Set();if(q){for(const n of DATA){const corpus=[n.label,n.resumen,n.fundamento,n.temp].filter(Boolean).join(' ').toLocaleLowerCase('es');if(corpus.includes(q))for(const id of ancestorChain(n.id))show.add(id)}}else{
+  const walk=id=>{show.add(id);if(expanded.has(id))for(const k of children.get(id)||[])walk(k)};walk('a');
+ }
+ if(!show.size){$('nodes').innerHTML='<div class="empty"><h2>Sin resultados</h2><p>Prueba otro nombre técnico, producto o aplicación.</p></div>';$('paths').replaceChildren();$('count').textContent='0 resultados';return}
+ const visible=DATA.filter(n=>show.has(n.id));const byDepth=new Map(),coords=new Map();let yidx=0;
+ function place(id,depth){if(!show.has(id))return null;let ys=[];for(const k of children.get(id)||[]){const t=place(k,depth+1);if(t!==null)ys.push(t)}const y=ys.length?(ys[0]+ys[ys.length-1])/2:42+yidx++*YCELL;coords.set(id,{x:28+depth*XGAP,y});return y}
+ place('a',0);
+ const maxDepth=Math.max(...visible.map(n=>ancestorChain(n.id).length-1));
+ const height=Math.max(520,(yidx-1)*YCELL+180),width=(maxDepth+1)*XGAP+20;
+ $('plane').style.width=width+'px';$('plane').style.height=height+'px';$('plane').style.transform='scale('+zoom+')';
+ $('canvas').style.setProperty('--planeH',height+'px');
+ $('nodes').replaceChildren();let paths=[];
+ for(const n of visible){const p=coords.get(n.id);if(!p)continue;const el=document.createElement('button');el.className='node '+n.kind+(n.id===selected?' selected':'');el.style.left=p.x+'px';el.style.top=(p.y-CARDH/2)+'px';const has=children.has(n.id);el.innerHTML='<span class="small">'+esc({medio:'MEDIO',grupo:'FACTOR',tecnica:'TÉCNICA',producto:'PRODUCTO',aplicacion:'APLICACIÓN',operacion:'OPERACIÓN',nota:'INVENTARIO'}[n.kind])+(has?'<span class="more">'+(expanded.has(n.id)?'−':'+')+'</span>':'')+'</span><span class="name">'+esc(n.label)+'</span><span class="sub">'+esc(n.temp&&n.kind==='tecnica'?n.temp:n.resumen.slice(0,83)+(n.resumen.length>83?'…':''))+'</span>';el.addEventListener('click',()=>clickNode(n.id));$('nodes').append(el);if(n.parent&&coords.has(n.parent)){const a=coords.get(n.parent),x1=a.x+246,y1=a.y,x2=p.x,y2=p.y;paths.push('<path d="M'+x1+' '+y1+' C'+(x1+27)+' '+y1+' '+(x2-26)+' '+y2+' '+x2+' '+y2+'"/>')}}
+ $('paths').setAttribute('viewBox','0 0 '+width+' '+height);$('paths').setAttribute('width',width);$('paths').setAttribute('height',height);$('paths').innerHTML=paths.join('');
+ const zMin=Math.max(0.3,Math.min(1,($('canvas').clientWidth-22)/width)); $('plane').style.marginBottom=(height*(zoom-1))+'px';$('plane').style.marginRight=(width*(zoom-1))+'px';
+ $('count').textContent=visible.length+' nodos visibles de '+DATA.length+' · '+Math.round(zoom*100)+' %';
+ detail();
+}
+function setZoom(z){zoom=Math.max(.3,Math.min(1.5,Math.round(z*100)/100));render()}
+$('expand').onclick=()=>{expanded=new Set(DATA.filter(x=>(children.get(x.id)||[]).length).map(x=>x.id));render()};
+$('collapse').onclick=()=>{expanded=new Set(['a']);render()};
+$('plus').onclick=()=>setZoom(zoom+.15);$('minus').onclick=()=>setZoom(zoom-.15);
+$('fit').onclick=()=>{const depth=Math.max(...DATA.filter(n=>n.kind==='tecnica').map(n=>ancestorChain(n.id).length));setZoom(Math.max(.4,Math.min(1,($('canvas').clientWidth-40)/(depth*XGAP))))};
+$('print').onclick=()=>window.print();
+$('search').addEventListener('input',()=>render());
+familyTabs();expandAncestors(selected);render();
+window.addEventListener('resize',()=>{if(family==='acuoso')render()});
+</script>
+</body>
+</html>
