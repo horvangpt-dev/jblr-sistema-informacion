@@ -21,6 +21,27 @@ footer{font-size:11px;color:#708076;padding:13px 20px;line-height:1.4;background
 .mobileToggle{display:none}.empty{padding:36px;max-width:620px;margin:30px auto;text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px}.empty h2{font-family:Georgia,serif}
 @media(max-width:870px){.main{grid-template-columns:1fr}.detail{border-left:0;border-top:1px solid var(--line);max-height:none;min-height:190px}.canvas{height:55vh;min-height:340px}header h1{font-size:22px}.toolbar{padding:8px 12px}.hint,.legend{padding-left:12px}.tabs{padding:10px 12px}}
 @media print{header,.tabs,.toolbar,.hint,.detail,.legend,footer{display:none!important}.main{display:block}.canvas{overflow:visible;min-height:0}.plane{transform:none!important}body{background:#fff}.node{box-shadow:none;break-inside:avoid} @page{size:A3 landscape;margin:12mm}}
+
+/* Árbol legible en móvil: jerarquía vertical sin reducción global */
+.mobile-tree{display:none}
+.mobile-entry{position:relative;margin:7px 9px 7px calc(8px + min(var(--depth),6) * 15px);border-left:3px solid #a1bea9;border-radius:0 12px 12px 0;background:white;box-shadow:0 1px 5px #143c3214}
+.mobile-entry:before{content:"";position:absolute;left:-17px;top:20px;width:14px;border-top:2px solid #b1c9b9}
+.mobile-entry[data-depth="0"]:before{display:none}
+.mobile-node-button{display:block;width:100%;border:0;background:transparent;color:#153d32;padding:11px 13px;text-align:left}
+.mobile-node-button[aria-current="true"]{background:#e8f3eb;border-radius:0 10px 10px 0}
+.mobile-type{display:block;font-size:10px;letter-spacing:.075em;text-transform:uppercase;color:#557269}
+.mobile-title{display:block;font-weight:690;font-size:14px;line-height:1.32;margin-top:2px}
+.mobile-sub{display:block;font-size:12px;color:#62776c;margin-top:5px;line-height:1.44}
+.mobile-plus{float:right;color:#276f4b;font-weight:700}
+.mobile-summary{padding:12px 15px;font-size:12px;color:#536f5c;background:#edf4ed;border-bottom:1px solid #d4e3d7}
+@media(max-width:870px){
+ .canvas{display:none!important}
+ .mobile-tree{display:block;min-height:200px;padding:2px 6px 20px;background:#f4f8f4}
+ .main{display:block}
+ .detail{padding:18px;border-left:0;border-top:1px solid var(--line);max-height:none}
+ .toolbar #plus,.toolbar #minus,.toolbar #fit{display:none}
+ .count{margin-left:0}
+}
 </style>
 </head>
 <body>
@@ -33,7 +54,7 @@ footer{font-size:11px;color:#708076;padding:13px 20px;line-height:1.4;background
 <button id="print">Imprimir A3</button><span class="count" id="count"></span>
 </div>
 <div class="hint">Recorrido: medio y factores → técnica → producto → vía de administración → forma de aplicación y denominación. Pulsa un nodo para desplegar su rama y consultar su ficha.</div>
-<div class="main"><div class="canvas" id="canvas" aria-label="Árbol horizontal conectado"><div class="plane" id="plane"><svg class="paths" id="paths"></svg><div id="nodes"></div></div></div><aside class="detail" id="detail" aria-live="polite"></aside></div>
+<div class="main"><div class="mobile-tree" id="mobileTree"><div class="mobile-summary">Vista por ramas: toca cada nodo para expandirlo. Métodos, productos y aplicaciones conservan sus nombres completos.</div><div id="mobileNodes"></div></div><div class="canvas" id="canvas" aria-label="Árbol horizontal conectado"><div class="plane" id="plane"><svg class="paths" id="paths"></svg><div id="nodes"></div></div></div><aside class="detail" id="detail" aria-live="polite"></aside></div>
 <div class="legend"><span><i class="swatch" style="background:#286949"></i>Medio</span><span><i class="swatch" style="background:#72945e"></i>Factor / grupo</span><span><i class="swatch" style="background:#3d6690"></i>Técnica</span><span><i class="swatch" style="background:#af7338"></i>Producto</span><span><i class="swatch" style="background:#76598d"></i>Aplicación</span><span><i class="swatch" style="background:#347c7a"></i>Operación</span></div>
 <footer>Atlas descriptivo de nomenclatura, fundamentos y patrimonio etnobotánico. Los intervalos térmicos son referencias pedagógicas, no límites de definición. Una misma técnica puede tener diversas vías y formas de aplicación, que no constituyen métodos extractivos nuevos; la denominación de una forma no supone que cualquier extracto sea apto para ella. Revisión: 6 de noviembre de 2026.</footer>
 <script>
@@ -221,14 +242,42 @@ function detail(){const n=BY.get(selected)||BY.get('a');const chain=ancestorChai
  const refs=n.fuentes||['criterio'];html+='<h3>Referencias y criterio</h3><ul>'+refs.map(k=>'<li>'+(SOURCE[k][1]?'<a href="'+esc(SOURCE[k][1])+'" target="_blank" rel="noopener noreferrer">':'')+esc(SOURCE[k][0])+(SOURCE[k][1]?'</a>':'')+'</li>').join('')+'</ul>';
  $('detail').innerHTML=html;
 }
+
+function renderMobileTree(visible){
+ const root=rootForFamily(family);
+ const view=$('mobileNodes');view.replaceChildren();
+ const visibleIds=new Set(visible.map(n=>n.id));
+ const titleMap={medio:'Medio / árbol',grupo:'Grupo',tecnica:'Técnica de extracción',producto:'Producto obtenido',aplicacion:'Aplicación / denominación',operacion:'Operación',nota:'Inventario'};
+ function addTree(id,depth){
+  if(!visibleIds.has(id))return;
+  const n=BY.get(id); const e=document.createElement('div');
+  e.className='mobile-entry';e.dataset.depth=Math.min(depth,6);
+  e.style.setProperty('--depth',String(Math.min(depth,6)));
+  const b=document.createElement('button');b.type='button';b.className='mobile-node-button';
+  b.setAttribute('aria-expanded',String(expanded.has(id)));
+  if(n.id===selected)b.setAttribute('aria-current','true');
+  const isLab=ancestorChain(n.id).includes('lab');
+  const childIds=(children.get(id)||[]).filter(k=>visibleIds.has(k));
+  let subText='';
+  if(!isLab && n.kind==='tecnica'){
+   subText=[n.resumen,n.temp?'Temperatura: '+n.temp:'',n.tiempo?'Tiempo: '+n.tiempo:''].filter(Boolean).join(' | ');
+  }else if(!isLab && n.kind==='producto'){subText=n.resumen}
+  else if(!isLab && (n.kind==='aplicacion'||n.kind==='operacion'))subText=n.resumen;
+  b.innerHTML='<span class="mobile-type">'+esc(titleMap[n.kind]||'Rama')+(childIds.length?'<span class="mobile-plus">'+(expanded.has(id)?'−':'+')+'</span>':'')+'</span><span class="mobile-title">'+esc(n.label)+'</span>'+(subText?'<span class="mobile-sub">'+esc(subText)+'</span>':'');
+  b.onclick=()=>{selected=id;if(children.has(id)){if(expanded.has(id))expanded.delete(id);else expanded.add(id);}render();};
+  e.appendChild(b);view.appendChild(e);
+  for(const child of childIds)addTree(child,depth+1);
+ }
+ addTree(root,0);
+}
 function render(){
  const root=rootForFamily(family);
  const q=$('search').value.trim().toLocaleLowerCase('es');
  let show=new Set();if(q){for(const n of DATA){const corpus=[n.label,n.resumen,n.fundamento,n.temp].filter(Boolean).join(' ').toLocaleLowerCase('es');if(corpus.includes(q)&&ancestorChain(n.id).includes(root))for(const id of ancestorChain(n.id))show.add(id)}}else{
   const walk=id=>{show.add(id);if(expanded.has(id))for(const k of children.get(id)||[])walk(k)};walk(root);
  }
- if(!show.size){$('nodes').innerHTML='<div class="empty"><h2>Sin resultados</h2><p>Prueba otro nombre técnico, producto o aplicación.</p></div>';$('paths').replaceChildren();$('count').textContent='0 resultados';return}
- const visible=DATA.filter(n=>show.has(n.id));const byDepth=new Map(),coords=new Map();let yidx=0;
+ if(!show.size){$('nodes').innerHTML='<div class="empty"><h2>Sin resultados</h2><p>Prueba otro nombre técnico, producto o aplicación.</p></div>';$('mobileNodes').textContent='No hay coincidencias para esa búsqueda.';$('paths').replaceChildren();$('count').textContent='0 resultados';return}
+ const visible=DATA.filter(n=>show.has(n.id));renderMobileTree(visible);const byDepth=new Map(),coords=new Map();let yidx=0;
  function place(id,depth){if(!show.has(id))return null;let ys=[];for(const k of children.get(id)||[]){const t=place(k,depth+1);if(t!==null)ys.push(t)}const y=ys.length?(ys[0]+ys[ys.length-1])/2:42+yidx++*YCELL;coords.set(id,{x:28+depth*XGAP,y});return y}
  place(root,0);
  const maxDepth=Math.max(...visible.map(n=>ancestorChain(n.id).length-1));
