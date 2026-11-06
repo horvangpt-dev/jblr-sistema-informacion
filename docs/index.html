@@ -203,6 +203,14 @@ function ancestorChain(id){const a=[];while(id&&BY.has(id)){a.unshift(id);id=BY.
 function expandAncestors(id){for(const i of ancestorChain(id))expanded.add(i)}
 function clickNode(id){selected=id;const kids=children.get(id)||[];if(kids.length){if(expanded.has(id))expanded.delete(id);else expanded.add(id)}render()}
 function detail(){const n=BY.get(selected)||BY.get('a');const chain=ancestorChain(n.id);let html='<div class="breadcrumb">'+chain.map(x=>esc(BY.get(x).label)).join(' › ')+'</div><h2>'+esc(n.label)+'</h2><span class="kind">'+esc({medio:'Medio',grupo:'Factor de clasificación',tecnica:'Técnica',producto:'Producto',aplicacion:'Aplicación / denominación',operacion:'Operación / transformación',nota:'Rama enumerada'}[n.kind])+'</span><p>'+esc(n.resumen)+'</p>';
+ if(ancestorChain(n.id).includes('lab')){
+   // Para técnicas de laboratorio mostrar solo su denominación y la de los productos.
+   html=html.replace('<p>'+esc(n.resumen)+'</p>','');
+   const childrenOfLab=children.get(n.id)||[];
+   if(childrenOfLab.length)html+='<h3>Denominaciones</h3>'+childrenOfLab.map(k=>'<span class="pill">'+esc(BY.get(k).label)+'</span>').join('');
+   $('detail').innerHTML=html;
+   return;
+ }
  if(n.fundamento)html+='<h3>Fundamento</h3><p>'+esc(n.fundamento)+'</p>';
  if(n.temp||n.tiempo)html+='<h3>Factores</h3><div class="facts"><div class="fact"><label>Temperatura aproximada</label><strong>'+esc(n.temp||'No asignable')+'</strong></div><div class="fact"><label>Tiempo</label><strong>'+esc(n.tiempo||'Variable')+'</strong></div></div>';
  const ch=children.get(n.id)||[];if(ch.length)html+='<h3>Siguiente nivel · '+ch.length+' rama'+(ch.length===1?'':'s')+'</h3>'+ch.map(id=>'<span class="pill">'+esc(BY.get(id).label)+'</span>').join('');
@@ -228,7 +236,7 @@ function render(){
  $('plane').style.width=width+'px';$('plane').style.height=height+'px';$('plane').style.transform='scale('+zoom+')';
  $('canvas').style.setProperty('--planeH',height+'px');
  $('nodes').replaceChildren();let paths=[];
- for(const n of visible){const p=coords.get(n.id);if(!p)continue;const el=document.createElement('button');el.className='node '+n.kind+(n.id===selected?' selected':'');el.style.left=p.x+'px';el.style.top=(p.y-CARDH/2)+'px';const has=children.has(n.id);el.innerHTML='<span class="small">'+esc({medio:'MEDIO',grupo:'FACTOR',tecnica:'TÉCNICA',producto:'PRODUCTO',aplicacion:'APLICACIÓN',operacion:'OPERACIÓN',nota:'INVENTARIO'}[n.kind])+(has?'<span class="more">'+(expanded.has(n.id)?'−':'+')+'</span>':'')+'</span><span class="name">'+esc(n.label)+'</span><span class="sub">'+esc(n.temp&&n.kind==='tecnica'?n.temp:n.resumen.slice(0,83)+(n.resumen.length>83?'…':''))+'</span>';el.addEventListener('click',()=>clickNode(n.id));$('nodes').append(el);if(n.parent&&coords.has(n.parent)){const a=coords.get(n.parent),x1=a.x+246,y1=a.y,x2=p.x,y2=p.y;paths.push('<path d="M'+x1+' '+y1+' C'+(x1+27)+' '+y1+' '+(x2-26)+' '+y2+' '+x2+' '+y2+'"/>')}}
+ for(const n of visible){const p=coords.get(n.id);if(!p)continue;const el=document.createElement('button');el.className='node '+n.kind+(n.id===selected?' selected':'');el.style.left=p.x+'px';el.style.top=(p.y-CARDH/2)+'px';const has=children.has(n.id);el.innerHTML='<span class="small">'+esc({medio:'MEDIO',grupo:'FACTOR',tecnica:'TÉCNICA',producto:'PRODUCTO',aplicacion:'APLICACIÓN',operacion:'OPERACIÓN',nota:'INVENTARIO'}[n.kind])+(has?'<span class="more">'+(expanded.has(n.id)?'−':'+')+'</span>':'')+'</span><span class="name">'+esc(n.label)+'</span><span class="sub">'+esc(ancestorChain(n.id).includes('lab')?'':(n.temp&&n.kind==='tecnica'?n.temp:n.resumen.slice(0,83)+(n.resumen.length>83?'…':'')))+'</span>';el.addEventListener('click',()=>clickNode(n.id));$('nodes').append(el);if(n.parent&&coords.has(n.parent)){const a=coords.get(n.parent),x1=a.x+246,y1=a.y,x2=p.x,y2=p.y;paths.push('<path d="M'+x1+' '+y1+' C'+(x1+27)+' '+y1+' '+(x2-26)+' '+y2+' '+x2+' '+y2+'"/>')}}
  $('paths').setAttribute('viewBox','0 0 '+width+' '+height);$('paths').setAttribute('width',width);$('paths').setAttribute('height',height);$('paths').innerHTML=paths.join('');
  const zMin=Math.max(0.3,Math.min(1,($('canvas').clientWidth-22)/width)); $('plane').style.marginBottom=(height*(zoom-1))+'px';$('plane').style.marginRight=(width*(zoom-1))+'px';
  $('count').textContent=visible.length+' nodos visibles de '+DATA.length+' · '+Math.round(zoom*100)+' %';
