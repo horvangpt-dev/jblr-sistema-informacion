@@ -46,20 +46,24 @@ const SOURCE={
   patr:["Patrimonio etnobotánico y usos culturales contemporáneos; los nombres locales requieren documentación contextual",null],
   ranm:["Real Academia Nacional de Medicina · Diccionario de términos médicos: enema","https://dtme.ranm.es/dtm/ver.php?cual=0&id=423534"],
   edqm:["EDQM · Standard Terms, formas y vías de administración","https://www.edqm.eu/en/standard-terms-database"],
-  medline:["MedlinePlus · Terminología de la ducha vaginal","https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-del-virus-del-papiloma-humano-vph/"]
+  medline:["MedlinePlus · Terminología de la ducha vaginal","https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-del-virus-del-papiloma-humano-vph/"],
+  gjtea:["Global Japanese Tea Association · Ice Brew Tea – Kōridashi","https://gjtea.org/koridashi/"]
 };
 const familyNames={acuoso:"Medio acuoso",oleoso:"Oleoso",alcoholico:"Alcohólico",glicerinado:"Glicerinado",acido:"Ácido",mecanico:"Mecánico",mixtos:"Mixtos",vegetal:"Planta como preparado"};
 const DATA=[], BY=new Map();
 function add(id,parent,label,kind,resumen,extra={}){const n={id,parent,label,kind,resumen,...extra};DATA.push(n);BY.set(id,n);return id}
 const s=['ema','criterio'], w=['who','criterio'];
-add("a",null,"Medio acuoso","medio","Agua en estado líquido o vapor como agente del proceso. La clasificación diferencia extracción, destilación, aplicación directa y transformaciones.",{fundamento:"El agua puede disolver constituyentes hidrosolubles, atravesar un lecho vegetal o generar vapor que transporta compuestos volátiles. No todas estas operaciones son equivalentes.",fuentes:s});
-add("inm","a","Contacto en agua líquida","grupo","La planta permanece en contacto con el agua; se distinguen régimen térmico y modo de aplicar calor.",{fuentes:s});
+add("a",null,"Medio acuoso","medio","Familias ordenadas por fase del agua implicada: líquida, vapor y hielo/deshielo. Dentro de cada fase se distinguen técnicas domésticas y de laboratorio.",{fundamento:"El agua líquida disuelve compuestos; el vapor puede transportar compuestos volátiles; el hielo, aunque es agua sólida, no actúa como disolvente convencional. En las técnicas con hielo, la extracción ocurre al fundirse el agua o por separación física.",fuentes:s});
+add("liq","a","Agua en estado líquido","grupo","Técnicas de inmersión y circulación con agua líquida, más operaciones relacionadas.",{fuentes:["criterio"]});
+add("dom","liq","Técnicas domésticas · desarrollo completo","grupo","Se detallan temperaturas y tiempos estimados, productos y aplicaciones. La percolación se incluye aquí.",{fuentes:["criterio"]});
+add("lab","liq","Técnicas de laboratorio · solo denominaciones","grupo","Rama de inventario: nombre técnico y producto, sin explicación de tiempos, temperaturas ni procedimiento en la presentación didáctica.",{fuentes:["criterio"]});
+add("inm","dom","Contacto en agua líquida","grupo","La planta permanece en contacto con el agua; se distinguen régimen térmico y modo de aplicar calor.",{fuentes:s});
 const tech=[
  ["mac","inm","Maceración acuosa en frío","Sin calentamiento añadido; contacto con agua líquida.","≈15–25 °C (ambiente)","Variable según planta; 30 min es una referencia del glosario EMA","Contacto sin aporte intencional de calor; puede interesar para fracciones hidrosolubles sensibles al calentamiento.","Macerado acuoso"],
  ["dig","inm","Digestión acuosa","Contacto con calentamiento moderado sostenido, sin hervir.","≈35–50 °C (orientativo)","Variable","Maceración templada: el rasgo definitorio es el calor suave, no un umbral universal.","Extracto acuoso por digestión"],
  ["inf","inm","Infusión","Agua caliente y reposo sin ebullición sostenida.","≈80–100 °C al inicio; desciende durante el contacto","Variable; 5–15 min como referencia EMA","Se caracteriza por el contacto con agua caliente y la ausencia de ebullición mantenida de la planta.","Infusión acuosa"],
  ["dec","inm","Decocción","Planta en agua sometida a ebullición mantenida.","≈95–100 °C en ebullición atmosférica habitual","Variable; 15–30 min como referencia EMA","La ebullición mantenida, dependiente de la presión y altitud, distingue el procedimiento de la infusión.","Decocción acuosa"],
- ["ref","inm","Extracción acuosa a reflujo","Ebullición con retorno del vapor condensado.","≈95–100 °C en el líquido hirviendo, a presión atmosférica habitual","Variable","Proceso de laboratorio con condensación y retorno del disolvente al recipiente.","Extracto acuoso a reflujo"]
+ ["ref","lab","Extracción acuosa a reflujo","Ebullición con retorno del vapor condensado.","≈95–100 °C en el líquido hirviendo, a presión atmosférica habitual","Variable","Proceso de laboratorio con condensación y retorno del disolvente al recipiente.","Extracto acuoso a reflujo"]
 ];
 for (const [id,parent,label,resumen,temp,tiempo,fundamento,product] of tech) {
  add(id,parent,label,"tecnica",resumen,{temp,tiempo,fundamento,fuentes:id==="ref"?['criterio']:s});
@@ -110,15 +114,15 @@ function uses(parent,prefix){
     "Preparación líquida para contacto con cabello o cuero cabelludo, habitualmente sin aclarado inmediato. Los nombres loción y tónico pueden solaparse según el contexto; no designan por sí mismos un método extractivo.",{fuentes:["criterio"]});
 }
 for (const id of ["mac","dig","inf","dec","ref"])uses("p-"+id,"u-"+id);
-add("flu","a","Circulación de agua líquida","grupo","El agua atraviesa el material vegetal en lugar de permanecer simplemente inmersa.",{fuentes:['criterio']});
+add("flu","dom","Circulación de agua líquida","grupo","El agua atraviesa el material vegetal en lugar de permanecer simplemente inmersa.",{fuentes:['criterio']});
 add("perc","flu","Percolación acuosa","tecnica","El agua atraviesa un lecho vegetal y arrastra compuestos solubles.",{temp:"Variable; fría o caliente (≈15–95 °C como ilustración, no rango normativo)",tiempo:"Variable; depende del flujo",fundamento:"El factor definitorio es la circulación del líquido por la matriz vegetal; no hay destilación ni condensado.",fuentes:['criterio']});
 add("p-perc","perc","Percolado acuoso","producto","Líquido obtenido por percolación; no es un hidrolato.",{fuentes:['criterio']});
 add("u-perc-oral","p-perc","Bebidas filtradas · café de filtro (ejemplo)","aplicacion","Ejemplo cotidiano de percolación por gravedad; la aplicación no renombra la técnica.",{fuentes:['criterio']});
 add("u-perc-lab","p-perc","Extracto de análisis o formulación","aplicacion","La función posterior depende del objetivo del estudio o del preparado.",{fuentes:['criterio']});
-add("soxh","flu","Extracción continua tipo Soxhlet con agua","tecnica","Ciclos de evaporación, condensación y renovación del disolvente; variante poco habitual con agua.",{temp:"≈95–100 °C en el reservorio hirviendo; contacto variable",tiempo:"Variable",fundamento:"Equipo extractivo de laboratorio. La fase líquida atraviesa periódicamente la muestra y regresa al sistema.",fuentes:['criterio']});
+add("soxh","lab","Extracción continua tipo Soxhlet con agua","tecnica","Ciclos de evaporación, condensación y renovación del disolvente; variante poco habitual con agua.",{temp:"≈95–100 °C en el reservorio hirviendo; contacto variable",tiempo:"Variable",fundamento:"Equipo extractivo de laboratorio. La fase líquida atraviesa periódicamente la muestra y regresa al sistema.",fuentes:['criterio']});
 add("p-soxh","soxh","Extracto acuoso por Soxhlet","producto","Producto de una extracción cíclica; su denominación responde al procedimiento.",{fuentes:['criterio']});
 add("u-soxh","p-soxh","Uso analítico o de investigación","aplicacion","Aplicación técnica posterior, sin cambiar la identidad del método.",{fuentes:['criterio']});
-add("vap","a","Agua y vapor","grupo","La misma fase vapor participa en dos recorridos: recuperación del condensado o aplicación directa.",{fuentes:w});
+add("vap","a","Agua en fase vapor · arrastre y aplicación","grupo","La misma fase vapor participa en dos recorridos: recuperación del condensado o aplicación directa.",{fuentes:w});
 add("rec","vap","Con recuperación del condensado","grupo","Destilaciones que recogen el condensado; el producto acuoso puede ser un hidrolato.",{fuentes:w});
 const vapor=[
  ["hid","Hidrodestilación","Material vegetal en agua en ebullición."],
@@ -143,15 +147,24 @@ const directUses=[
  ["loc","Vaporización localizada","Categoría de aplicación directa sobre zonas concretas del cuerpo."],
 ];
 for (const [id,label,desc] of directUses)add("u-"+id,"p-vapor",label,"aplicacion",desc,{fuentes:['patr','criterio']});
-add("trans","a","Transformación biológica relacionada","grupo","Procesos vinculados a preparaciones acuosas pero no equivalentes a extracción.",{fuentes:['prep']});
+add("trans","liq","Transformación biológica relacionada","grupo","Procesos vinculados a preparaciones acuosas pero no equivalentes a extracción.",{fuentes:['prep']});
 add("ferm","trans","Fermentación acuosa","operacion","Microorganismos transforman la composición química del sustrato.",{temp:"Variable según microorganismos; ≈20–35 °C solo para ejemplos mesófilos",tiempo:"Variable",fundamento:"Transformación bioquímica; no se define por la disolución extractiva de compuestos vegetales.",fuentes:['prep','criterio']});
 add("p-ferm","ferm","Preparado fermentado","producto","Producto transformado, de composición dependiente de los organismos y sustratos.",{fuentes:['prep']});
 add("u-ferm","p-ferm","Aplicación alimentaria u otras","aplicacion","Los usos se documentan en una capa posterior a la transformación.",{fuentes:['criterio']});
-add("modern","a","Tecnologías modernas · solo inventario","grupo","Rama informativa, sin desarrollo de productos ni aplicaciones por ahora.",{fuentes:['criterio']});
+add("modern","lab","Tecnologías modernas · solo inventario","grupo","Rama informativa, sin desarrollo de productos ni aplicaciones por ahora.",{fuentes:['criterio']});
 for (const [id,label] of [["us","Extracción asistida por ultrasonidos"],["mic","Extracción asistida por microondas"],["enz","Extracción asistida por enzimas"],["pres","Agua caliente presurizada"],["puls","Campos eléctricos pulsados"]])add(id,"modern",label,"nota","Tecnología identificada; desarrollo técnico reservado para otra fase.",{fuentes:['criterio']});
 // Los tres fenómenos del frío se ubican por la identidad del producto principal.
-add("ice","a","Agua en estado sólido · separación por congelación","grupo",
-  "Procesos en los que el agua cristaliza. El hielo no actúa como disolvente: permite una separación física de fases.",{fuentes:["criterio"]});
+add("ice","a","Hielo y deshielo · agua en fase sólida","grupo",
+  "Técnicas que parten de hielo: durante el deshielo, el agua líquida puede extraer sustancias; en crioextracción y crioconcentración la congelación facilita la separación física.",{fuentes:["criterio"]});
+add("kori","ice","Extracción por deshielo · kōridashi (té)","tecnica",
+  "Extracción acuosa mediante la fusión paulatina del hielo en contacto con hojas vegetales. Kōridashi (氷出し) es el nombre japonés documentado para la preparación de té por este método; no es un nombre universal de farmacotecnia.",
+  {temp:"≈0 °C en el agua de deshielo; variable conforme aumenta la temperatura ambiente",
+   tiempo:"Habitualmente ≈30 min–2 h en ejemplos de té; depende del deshielo y no es un límite técnico",
+   fundamento:"El hielo no disuelve compuestos mientras permanece sólido. El agua recién fundida entra en contacto con las hojas y extrae sustancias solubles a baja temperatura. Es distinto de una infusión caliente enfriada posteriormente y de una maceración fría por inmersión.",
+   fuentes:["gjtea","criterio"]});
+add("p-kori","kori","Extracto acuoso por deshielo · té kōridashi","producto",
+  "Líquido obtenido durante la fusión del hielo en contacto con las hojas. Cuando se destina a beber, puede considerarse una tisana de extracción fría; kōridashi es un nombre del preparado de té japonés.",
+  {fuentes:["gjtea","criterio"]});
 add("cryoex","ice","Crioextracción · congelación y prensado","tecnica",
   "La planta o el fruto se enfría hasta formar hielo parcialmente y se prensa; se recupera la fracción líquida que fluye mientras parte del agua permanece congelada.",
   {temp:"Por debajo del punto de congelación de la matriz; depende del fruto y de su composición",
@@ -160,7 +173,7 @@ add("cryoex","ice","Crioextracción · congelación y prensado","tecnica",
    fuentes:["criterio"]});
 add("p-cryoex","cryoex","Zumo o mosto obtenido por crioextracción","producto",
   "Fracción líquida expresada del material vegetal congelado parcialmente. En uva puede denominarse mosto crioextraído.",{fuentes:["criterio"]});
-add("postex","a","Operaciones posteriores sobre extractos acuosos","grupo",
+add("postex","ice","Operaciones posteriores sobre extractos acuosos","grupo",
   "Tratamientos de un extracto acuoso ya obtenido; no representan una nueva migración de compuestos desde la planta.",{fuentes:["criterio"]});
 add("cryoconc","postex","Crioconcentración · concentración por congelación","operacion",
   "Se congela parte del agua de un extracto líquido ya obtenido y se separa el hielo; los solutos quedan relativamente concentrados en la fracción líquida.",{fuentes:["criterio"]});
@@ -182,7 +195,7 @@ const children=new Map();
 for(const n of DATA){if(n.parent){if(!children.has(n.parent))children.set(n.parent,[]);children.get(n.parent).push(n.id)}}
 const $=id=>document.getElementById(id);
 const rootForFamily=id=>id==='acuoso'?'a':id==='vegetal'?'v-root':'lg-'+id;
-let family='acuoso',selected='inf',zoom=1,expanded=new Set(['a','inm','vap','flu','trans','modern']);
+let family='acuoso',selected='inf',zoom=1,expanded=new Set(['a','liq','dom','inm','vap','ice','flu','trans','modern']);
 const XGAP=300,YCELL=126,CARDH=86;
 function esc(v){return String(v??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]))}
 function familyTabs(){const frag=document.createDocumentFragment();for(const [id,label] of Object.entries(familyNames)){const b=document.createElement('button');b.className='tab '+(id===family?'active':'');b.textContent=label;b.addEventListener('click',()=>{family=id;selected=rootForFamily(id);expanded.add(selected);$('search').value='';familyTabs();render()});frag.append(b)}$('tabs').replaceChildren(frag)}
