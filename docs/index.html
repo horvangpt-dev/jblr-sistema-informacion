@@ -81,9 +81,9 @@ add("lab","liq","Técnicas de laboratorio · solo denominaciones","grupo","Rama 
 add("inm","dom","Contacto en agua líquida","grupo","La planta permanece en contacto con el agua; se distinguen régimen térmico y modo de aplicar calor.",{fuentes:s});
 const tech=[
  ["mac","inm","Maceración acuosa en frío","Sin calentamiento añadido; contacto con agua líquida.","≈15–25 °C (ambiente)","Variable según planta; 30 min es una referencia del glosario EMA","Contacto sin aporte intencional de calor; puede interesar para fracciones hidrosolubles sensibles al calentamiento.","Macerado acuoso"],
- ["dig","inm","Digestión acuosa","Contacto con calentamiento moderado sostenido, sin hervir.","≈35–50 °C (orientativo)","Variable","Maceración templada: el rasgo definitorio es el calor suave, no un umbral universal.","Extracto acuoso por digestión"],
- ["inf","inm","Infusión","Agua caliente y reposo sin ebullición sostenida.","≈80–100 °C al inicio; desciende durante el contacto","Variable; 5–15 min como referencia EMA","Se caracteriza por el contacto con agua caliente y la ausencia de ebullición mantenida de la planta.","Infusión acuosa"],
- ["dec","inm","Decocción","Planta en agua sometida a ebullición mantenida.","≈95–100 °C en ebullición atmosférica habitual","Variable; 15–30 min como referencia EMA","La ebullición mantenida, dependiente de la presión y altitud, distingue el procedimiento de la infusión.","Decocción acuosa"],
+ ["dig","inm","Digestión acuosa","Contacto con calentamiento moderado sostenido, sin hervir.","≈35–50 °C (orientativo)","Variable","Maceración templada: el rasgo definitorio es el calor suave, no un umbral universal.","Digesto acuoso · extracto acuoso por digestión"],
+ ["inf","inm","Infusión","Agua caliente y reposo sin ebullición sostenida.","≈80–100 °C al inicio; desciende durante el contacto","Variable; 5–15 min como referencia EMA","Se caracteriza por el contacto con agua caliente y la ausencia de ebullición mantenida de la planta.","Infuso · infusión acuosa"],
+ ["dec","inm","Decocción","Planta en agua sometida a ebullición mantenida.","≈95–100 °C en ebullición atmosférica habitual","Variable; 15–30 min como referencia EMA","La ebullición mantenida, dependiente de la presión y altitud, distingue el procedimiento de la infusión.","Decocto · decocción acuosa"],
  ["ref","lab","Extracción acuosa a reflujo","Ebullición con retorno del vapor condensado.","≈95–100 °C en el líquido hirviendo, a presión atmosférica habitual","Variable","Proceso de laboratorio con condensación y retorno del disolvente al recipiente.","Extracto acuoso a reflujo"]
 ];
 for (const [id,parent,label,resumen,temp,tiempo,fundamento,product] of tech) {
@@ -135,8 +135,29 @@ function uses(parent,prefix){
     "Preparación líquida para contacto con cabello o cuero cabelludo, habitualmente sin aclarado inmediato. Los nombres loción y tónico pueden solaparse según el contexto; no designan por sí mismos un método extractivo.",{fuentes:["criterio"]});
 }
 for (const id of ["mac","dig","inf","dec","ref"])uses("p-"+id,"u-"+id);
+// Variante doméstica: maceración por inmersión refrigerada.
+add("mac-refrig","inm","Maceración acuosa refrigerada · cold brew por inmersión","tecnica",
+  "El material vegetal permanece sumergido en agua fría durante un reposo prolongado, y después se separa el líquido. El término inglés se usa especialmente en café.",
+  {temp:"≈2–8 °C si se realiza en refrigeración",tiempo:"≈12–24 h en ejemplos de café; no es una duración universal",
+   fundamento:"Se distingue de la percolación: en el cold brew por inmersión el material permanece sumergido, y el líquido no circula a través del lecho desde el comienzo.",fuentes:["criterio"]});
+add("p-mac-refrig","mac-refrig","Macerado acuoso refrigerado","producto",
+  "Extracto en agua fría de la maceración por inmersión. Como bebida de café se denomina cold brew.",{fuentes:["criterio"]});
+add("u-mac-refrig","p-mac-refrig","Aplicaciones compartidas · bebida por inmersión fría","aplicacion",
+  "Las denominaciones dependen de la vía y formulación. La expresión «cold brew» no es el nombre general de toda maceración vegetal.",{fuentes:["criterio"]});
 add("flu","dom","Circulación de agua líquida","grupo","El agua atraviesa el material vegetal en lugar de permanecer simplemente inmersa.",{fuentes:['criterio']});
 add("perc","flu","Percolación acuosa","tecnica","El agua atraviesa un lecho vegetal y arrastra compuestos solubles.",{temp:"Variable; fría o caliente (≈15–95 °C como ilustración, no rango normativo)",tiempo:"Variable; depende del flujo",fundamento:"El factor definitorio es la circulación del líquido por la matriz vegetal; no hay destilación ni condensado.",fuentes:['criterio']});
+add("perc-cold","perc","Percolación acuosa en frío · cold drip / Kyoto drip","tecnica",
+  "El agua fría atraviesa el material vegetal poco a poco, a menudo gota a gota. En café se utiliza la denominación cold drip.",
+  {temp:"Agua fría; depende del equipo",tiempo:"Varias horas; varía según caudal y granulometría",
+   fundamento:"Es percolación y no maceración por inmersión: existe movimiento de agua a través del lecho vegetal.",fuentes:["criterio"]});
+add("p-perc-cold","perc-cold","Percolado acuoso en frío","producto",
+  "Extracto obtenido por goteo de agua fría a través del material vegetal.",{fuentes:["criterio"]});
+add("perc-hot","perc","Percolación acuosa en caliente","tecnica",
+  "Agua caliente circula a través del material vegetal: un ejemplo cotidiano es el café de filtro.",
+  {temp:"Agua caliente; variable según preparación",tiempo:"Habitualmente minutos para café filtrado; variable en otros materiales",
+   fundamento:"El líquido atraviesa el lecho vegetal y recupera solutos. La técnica es doméstica.",fuentes:["criterio"]});
+add("p-perc-hot","perc-hot","Percolado acuoso en caliente","producto",
+  "Extracto obtenido por circulación de agua caliente; por ejemplo, café filtrado.",{fuentes:["criterio"]});
 add("p-perc","perc","Percolado acuoso","producto","Líquido obtenido por percolación; no es un hidrolato.",{fuentes:['criterio']});
 add("u-perc-oral","p-perc","Bebidas filtradas · café de filtro (ejemplo)","aplicacion","Ejemplo cotidiano de percolación por gravedad; la aplicación no renombra la técnica.",{fuentes:['criterio']});
 add("u-perc-lab","p-perc","Extracto de análisis o formulación","aplicacion","La función posterior depende del objetivo del estudio o del preparado.",{fuentes:['criterio']});
