@@ -43,7 +43,10 @@ const SOURCE={
   who:["OMS · Good herbal processing practices (anexo 1)","https://www.who.int/docs/default-source/medicines/norms-and-standards/guidelines/production/trs1010-annex1-herbal-processing.pdf"],
   prep:["EMA · Herbal preparations","https://www.ema.europa.eu/en/glossary-terms/herbal-preparations"],
   criterio:["Terminología y estructura didáctica del curso JBLR",null],
-  patr:["Patrimonio etnobotánico y usos culturales contemporáneos; los nombres locales requieren documentación contextual",null]
+  patr:["Patrimonio etnobotánico y usos culturales contemporáneos; los nombres locales requieren documentación contextual",null],
+  ranm:["Real Academia Nacional de Medicina · Diccionario de términos médicos: enema","https://dtme.ranm.es/dtm/ver.php?cual=0&id=423534"],
+  edqm:["EDQM · Standard Terms, formas y vías de administración","https://www.edqm.eu/en/standard-terms-database"],
+  medline:["MedlinePlus · Terminología de la ducha vaginal","https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-del-virus-del-papiloma-humano-vph/"]
 };
 const familyNames={acuoso:"Medio acuoso",oleoso:"Oleoso",alcoholico:"Alcohólico",glicerinado:"Glicerinado",acido:"Ácido",mecanico:"Mecánico",mixtos:"Mixtos"};
 const DATA=[], BY=new Map();
@@ -63,36 +66,36 @@ for (const [id,parent,label,resumen,temp,tiempo,fundamento,product] of tech) {
  add("p-"+id,id,product,"producto","Producto que conserva el nombre de la técnica; sus aplicaciones pueden variar.",{fuentes:s});
 }
 function uses(parent,prefix){
-  // Clasificación por vía anatómica y modalidad de administración, no por finalidad (medicinal, culinaria o cosmética).
-  // La denominación de una forma no presupone que cualquier extracto sea idóneo para dicha vía.
+  // Organizar por vía y forma de aplicación. La finalidad (higiénica, medicinal, culinaria) es atributo contextual, no categoría primaria.
+  // Un nombre puede tener varios sentidos (procedimiento, preparado o instrumento) y varias finalidades.
   const routes=[
-   ["oral","Vía oral · ingestión","El preparado se incorpora por la boca y se deglute.",[
-     ["tisana","Tisana o bebida de plantas","Denominación de una preparación acuosa destinada a beber; no indica una técnica extractiva distinta."]
+   ["oral","Vía oral · deglución","El preparado se incorpora por la boca y se deglute.",[
+     ["tisana","Tisana · bebida de plantas","Nombre de una preparación acuosa vegetal destinada a ser bebida; no indica un procedimiento extractivo diferente."]
    ]],
-   ["bucal","Aplicación bucal y orofaríngea · sin deglución","Contacto localizado con la cavidad bucal o con la región orofaríngea.",[
-     ["colutorio","Enjuague bucal · colutorio","Colutorio denomina una forma de preparación para enjuague bucal; la extracción previa puede ser una de varias etapas y no determina por sí sola la formulación."],
-     ["gargara","Gárgaras · gargarismo","Modalidad de aplicación con contacto en la región orofaríngea, diferenciada del enjuague limitado a la boca."]
+   ["bucal","Aplicación bucal y orofaríngea · sin deglución","Contacto localizado con la cavidad bucal o la orofaringe; la terminología farmacéutica reconoce formas con doble modalidad, como colutorio/gargarismo.",[
+     ["colutorio","Colutorio · enjuague bucal","Denominación de la preparación para enjuague de la cavidad bucal; no se define por su finalidad."],
+     ["gargara","Gargarismo · gárgaras","Denominación de la modalidad de contacto orofaríngeo; una misma formulación puede estar designada para enjuague y gárgaras."]
    ]],
-   ["cutanea","Aplicación cutánea externa","Contacto con la piel por lavado, inmersión localizada o soporte.",[
-     ["lavado","Lavado cutáneo","Contacto externo por lavado; se clasifica por modalidad, no por finalidad."],
-     ["manos","Maniluvio","Baño de manos por inmersión; denominación anatómica."],
-     ["pies","Pediluvio","Baño de pies por inmersión; denominación anatómica."],
-     ["total","Baño corporal por inmersión","Modalidad de inmersión general."],
-     ["compresa","Compresa, fomento o paño","Aplicación mediante soporte textil impregnado con el preparado."]
+   ["externa","Aplicación externa · lavados, baños y contacto","Se agrupan las aplicaciones sobre superficies externas, sin subdividir por cada región anatómica cuando no existe nombre específico.",[
+     ["lavado","Lavado corporal o localizado externo","Categoría general para el lavado externo en cualquier región: piel, zona vulvar, región anal y perineal, entre otras. No genera nombres distintos solo por la zona."],
+     ["manos","Maniluvio","Denominación documentada para baño o lavado de manos."],
+     ["pies","Pediluvio","Denominación documentada para baño de pies."],
+     ["asiento","Baño de asiento · sediluvio","Baño regional de inmersión que incluye la zona pélvica o perineal; distinto del vaho de asiento."],
+     ["total","Baño corporal por inmersión","Baño general, frente a los baños locales o regionales."],
+     ["compresa","Compresa o fomento","Contacto externo mediante soporte textil; se conserva por ser una modalidad definida que no equivale a lavado."]
    ]],
-   ["perineal","Aplicación anal o perineal externa","Contacto con la superficie externa de la región anal o perineal, diferente de la administración rectal.",[
-     ["asiento","Baño de asiento por inmersión","Inmersión parcial de la región pélvica o perineal; distinto del vaho de asiento."],
-     ["anal","Lavado anal externo","Modalidad externa localizada; no implica introducir líquido en el recto."]
+   ["vaginal","Vía vaginal interna · irrigación","Se diferencia del lavado externo vulvar y del vapor perineal.",[
+     ["ducha-vaginal","Ducha vaginal · irrigación vaginal","Términos documentados para la introducción de líquido en la vagina; describen la forma de aplicación, no la finalidad ni la idoneidad de un macerado acuoso cualquiera."]
    ]],
-   ["rectal","Vía rectal · administración interna","La vía de administración es distinta del baño o lavado anal externo.",[
-     ["enema","Enema o lavativa","Denominación de una forma rectal de administración; requiere una preparación específica y no equivale automáticamente a cualquier macerado acuoso."]
+   ["rectal","Vía rectal interna · introducción de líquido","La denominación depende del modo de administración, no de si la finalidad es evacuante, diagnóstica o medicinal.",[
+     ["enema","Enema · lavativa · clíster","Enema nombra la introducción de líquido por el recto, y también puede nombrar el líquido o el utensilio. Lavativa, clíster e irrigación intestinal se documentan como sinónimos; el término se mantiene aunque cambie la finalidad."]
    ]]
   ];
   for (const [key,label,desc,forms] of routes){
     const routeId=prefix+"-via-"+key;
-    add(routeId,parent,label,"grupo",desc,{fuentes:["criterio"]});
+    add(routeId,parent,label,"grupo",desc,{fuentes:key==="rectal"?["ranm","criterio"]:key==="bucal"?["edqm","criterio"]:["criterio"]});
     for (const [form,labelForm,formDesc] of forms)
-      add(prefix+"-"+form,routeId,labelForm,"aplicacion",formDesc,{fuentes:form==="tisana"?["ema","criterio"]:["criterio"]});
+      add(prefix+"-"+form,routeId,labelForm,"aplicacion",formDesc,{fuentes:form==="enema"?["ranm","criterio"]:form==="colutorio"||form==="gargara"?["edqm","criterio"]:form==="ducha-vaginal"?["medline","criterio"]:form==="tisana"?["ema","criterio"]:["criterio"]});
   }
 }
 for (const id of ["mac","dig","inf","dec","ref"])uses("p-"+id,"u-"+id);
