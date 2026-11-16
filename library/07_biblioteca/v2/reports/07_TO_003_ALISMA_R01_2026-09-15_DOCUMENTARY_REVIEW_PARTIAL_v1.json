@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "07_OUTBOUND_DOCUMENTARY_REVIEW_REPORT",
+  "origin_project": "JBLR",
+  "origin_actor": "07",
+  "origin_actor_version": "07.V15",
+  "target_project": "JBLR_CONSERVACION",
+  "target_actor": "003",
+  "date": "2026-09-15",
+  "subject": "ALISMA_R01_2026-09-15_NEW_UPLOAD_DOCUMENTARY_REVIEW_PARTIAL",
+  "source_batch": "003-ACQ-GENUS-ALISMA-20260911-R01",
+  "source_checkpoint_reported": "EVENT145",
+  "canonical_review_pointer": "library/07_biblioteca/v2/reconciliation/ALISMA_R01_2026-09-15_NEW_UPLOAD_DOCUMENTARY_REVIEW_PARTIAL_v1.json@3f3681ca31ac70b788cf6b459cabdbebf993d4f0",
+  "status": "PREPARED_NOT_DISPATCHED",
+  "dispatch_reason": "Live Google Drive / interproject bus connector became unavailable in this runtime; no direct write to 003 productive state performed.",
+  "summary": {
+    "07_STATE": "07.V15_ACTIVE",
+    "HWM": "JBLR-LIB-00001129",
+    "NEXT": "JBLR-LIB-00001130",
+    "NEW_LIB_FILE_IDS": 0,
+    "ACTIVE_INDEX_MUTATED": false,
+    "D0080": "BIBLIOGRAPHIC_IDENTITY_RESOLVED; PHYSICAL_CANONICALIZATION_AND_DEDUP_PENDING",
+    "D0075": "ARTICLE_IDENTITY_RESOLVED; WHOLE_SERIAL_VOLUME_IS_CONTAINER_NOT_ARTICLE; PHYSICAL_READBACK_AND_DEDUP_PENDING",
+    "D0078": "SAME_INTELLECTUAL_WORK_AS_2005_ARTICLE; THESIS_EMBEDS_PREPUBLICATION_AUTHOR_MANUSCRIPT; DISTINCT_FROM_FINAL_PUBLISHER_PDF; PHYSICAL_CANONICALIZATION_PENDING",
+    "OTHER_2026_09_15_UPLOADS": "PENDING_SOURCE_ENUMERATION_AND_CONTENT_READBACK",
+    "RC3": "UNCHANGED",
+    "PROTOCOL_B": "NOT_STARTED_BY_07",
+    "DATA_LOSS": "NO_DETECTED"
+  },
+  "documentary_guidance_to_003": [
+    "D0078 may be linked at work-identity level to the final 2005 Phytocoenologia article, but the thesis file must remain a distinct container/manifestation and must not be represented as the final publisher PDF.",
+    "D0075 article identity must remain distinct from the Proceedings volume container; use an embedded-article relation after physical readback.",
+    "D0080 is reusable beyond Alisma for wetland germination, seedling establishment, mesocosm design, flooding/water-table treatments and succession studies.",
+    "Do not interpret absence of a LIB_FILE_ID in this report as documentary rejection or source absence; allocation is blocked pending live physical reconciliation.",
+    "Do not start Protocol B on the basis of 07 physical acceptance from this partial report; final physical readback and canonical LIB mapping remain pending where required."
+  ],
+  "003_productive_state_write": "NO",
+  "scientific_assertion_effect": "NO",
+  "taxonomic_effect": "NO"
+}

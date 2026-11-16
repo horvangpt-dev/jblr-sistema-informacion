@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "operation": "07.V16_ALISMA_R01_20260915_HUMAN_MATERIALIZATION_PHYSICAL_RECLASSIFICATION_FINAL",
+  "status": "PASS",
+  "actor": "07.V16",
+  "project": "JBLR",
+  "source_batch": "003-ACQ-GENUS-ALISMA-20260911-R01",
+  "source_folder_id": "1DzwJgXuUnC3pqy3mFWSuOra-apHQ9iO_",
+  "principles": {
+    "COPY_NEVER_MOVE": "ACTIVE",
+    "HISTORY": "NEVER_DELETE",
+    "ONE_CANONICAL_DOCUMENT": "YES",
+    "ORIGIN_SEARCH_NE_CLASSIFICATION": "ACTIVE",
+    "NEW_LIB_FILE_ID_FOR_HUMAN_COPY": "NO"
+  },
+  "identity_state": {
+    "new_range": "JBLR-LIB-00001130..JBLR-LIB-00001192",
+    "new_canonical_identities": 63,
+    "reused_existing_identity": "JBLR-LIB-00001126",
+    "new_LIB_FILE_IDs_created_by_this_correction": 0,
+    "HWM": "JBLR-LIB-00001192",
+    "NEXT": "JBLR-LIB-00001193",
+    "active_index_sha": "06f890c982b7fb524477fc727d648dc1a0a3a4e4"
+  },
+  "final_counts": {
+    "TOTAL_REVISADOS": 64,
+    "COPIAS_HUMANAS_CREADAS": 64,
+    "ALISMA_ALISMATACEAE": 4,
+    "TRANSVERSALES_RECLASIFICADOS": 57,
+    "OTROS_TAXONES_O_FAMILIAS": 3,
+    "REUSED_EXISTING": 1,
+    "PENDING_DESTINATION": 0,
+    "SOURCE_ORIGINALS_PRESERVED": "YES",
+    "DATA_LOSS": "NO"
+  },
+  "human_distribution": {
+    "ECOLOGY_HABITAT_THREATS": 48,
+    "VIABILITY_GERMINATION_DORMANCY": 4,
+    "RESTORATION_REINTRODUCTION_MULTIPLICATION": 2,
+    "FLORA_CONSERVATION_EX_SITU_RESTORATION": 5,
+    "POPULATIONS_DEMOGRAPHY_MONITORING": 2,
+    "GENERAL_BIBLIOGRAPHY_REVIEWS": 3,
+    "sum": 64
+  },
+  "taxonomy_relation_summary": {
+    "ALISMA_ALISMATACEAE_CONFIRMED": [
+      "JBLR-LIB-00001126",
+      "JBLR-LIB-00001130",
+      "JBLR-LIB-00001131",
+      "JBLR-LIB-00001132"
+    ],
+    "OTHER_TAXON_CONFIRMED_CAKILE": [
+      "JBLR-LIB-00001162",
+      "JBLR-LIB-00001163",
+      "JBLR-LIB-00001167"
+    ],
+    "remaining_transversal_or_general_count": 57
+  },
+  "specific_verification": {
+    "JBLR-LIB-00001126": {
+      "identity_status": "REUSED_EXISTING",
+      "classification": "GERMINATION",
+      "family_alismataceae_link": "VALID_TAXON_RESEARCH_MIRROR",
+      "human_copy_drive_id": "1xfL_ljxZsMhztLq57Kqi5zzyGNkoPW1g",
+      "human_destination_folder_id": "1XHYvqwymWNTS6s-EvvwoezHV2Y30vWcI",
+      "status": "PASS"
+    },
+    "JBLR-LIB-00001130": {
+      "identity_status": "NEW_CANONICAL_IDENTITY",
+      "classification": "ECOLOGY",
+      "family_alismataceae_link": "VALID_TAXON_RESEARCH_MIRROR",
+      "human_copy_drive_id": "1a7hkeZttFTidSR0owU5deB9GGPBN2bDe",
+      "human_destination_folder_id": "1k_9HxWVD91Tv-gojnocEJbqdDev-iW5t",
+      "status": "PASS"
+    },
+    "JBLR-LIB-00001131": {
+      "identity_status": "NEW_CANONICAL_IDENTITY",
+      "classification": "GERMINATION",
+      "family_alismataceae_link": "VALID_TAXON_RESEARCH_MIRROR",
+      "human_copy_drive_id": "1UXN_WNsYelw8EQO0ETPcEQQt_RZkL1mS",
+      "human_destination_folder_id": "1XHYvqwymWNTS6s-EvvwoezHV2Y30vWcI",
+      "status": "PASS"
+    },
+    "JBLR-LIB-00001132": {
+      "identity_status": "NEW_CANONICAL_IDENTITY",
+      "classification": "RESTORATION",
+      "family_alismataceae_link": "VALID_TAXON_RESEARCH_MIRROR",
+      "human_copy_drive_id": "1cmSBoOiHamPgBxPavGOEUMmEpp3pJjn7",
+      "human_destination_folder_id": "17ca0icoo2Qlr0iJK4LX8bq5X5rnSOoJ2",
+      "status": "PASS"
+    },
+    "JBLR-LIB-00001191": {
+      "identity_status": "NEW_CANONICAL_IDENTITY",
+      "classification": "ECOLOGY_COMPETITION_TRANSVERSAL",
+      "family_alismataceae_link": "HISTORICAL_PROVENANCE_ONLY_NOT_TAXON_CLASSIFICATION",
+      "human_copy_drive_id": "149CYEw5rFsbm4otXrHyoIY7yZg1ik-J_",
+      "human_destination_folder_id": "1k_9HxWVD91Tv-gojnocEJbqdDev-iW5t",
+      "status": "PASS"
+    },
+    "JBLR-LIB-00001192": {
+      "identity_status": "NEW_CANONICAL_IDENTITY",
+      "classification": "WETLAND_ECOLOGY_FLOODING_TRANSVERSAL",
+      "family_alismataceae_link": "HISTORICAL_PROVENANCE_ONLY_NOT_TAXON_CLASSIFICATION",
+      "human_copy_drive_id": "1l-NxxYHGYMR7kmI8pjMeTphQk9WCg19m",
+      "human_destination_folder_id": "1k_9HxWVD91Tv-gojnocEJbqdDev-iW5t",
+      "status": "PASS"
+    }
+  },
+  "full_verifiable_map": {
+    "path": "library/07_biblioteca/v2/index/JBLR_ALISMA_R01_20260915_HUMAN_MATERIALIZATION_RELATION_INDEX_v1.json",
+    "commit": "ba686f0699796f11d94b93b2501619b6ae81153b",
+    "records": 64,
+    "readback": "PASS"
+  },
+  "existing_alismataceae_view": {
+    "folder_id": "1goK1LjFZ354rtxM1ow8coMW92DOwtVW0",
+    "confirmed_alismataceae_semantics": "VALID_TAXON_RESEARCH_MIRROR",
+    "non_alismataceae_semantics": "HISTORICAL_PROVENANCE_ONLY_NOT_TAXON_CLASSIFICATION",
+    "physical_deletion_performed": false,
+    "physical_move_performed": false
+  },
+  "persistence": {
+    "event_bus_event": "JBLR-EVT-07-20260916-ALISMA-R01-HUMAN-MATERIALIZATION-PHYSICAL-RECLASSIFICATION-COMMITTED-001",
+    "event_bus_readback": "PASS",
+    "canonical_state_key": "ACTOR_07_ALISMA_R01_20260915_HUMAN_MATERIALIZATION_PHYSICAL_RECLASSIFICATION_STATE",
+    "canonical_state_readback": "PASS",
+    "direct_bus_ack": "00307-BUS-MSG-07-20260916-024232-ALISMA-R01-HUMAN-MATERIALIZATION-ACK",
+    "direct_bus_status": "DELIVERED_PERSISTED",
+    "direct_bus_readback": "PASS",
+    "direct_bus_read_state_003": "UNREAD_UNVERIFIED",
+    "direct_bus_read_state_07": "OWN_WRITE_VERIFIED"
+  },
+  "boundaries": {
+    "003_ledger_mutated_by_07": "NO",
+    "RC3_mutated": "NO",
+    "Protocol_B_mutated": "NO"
+  },
+  "final_readback": {
+    "human_materialization": "PASS",
+    "relation_index": "PASS",
+    "active_index_unchanged": "PASS",
+    "source_originals_preserved": "PASS",
+    "specific_LIB_1130_1131_1132_1191_1192": "PASS",
+    "reused_LIB1126": "PASS",
+    "pending_destination": 0,
+    "data_loss": "NO"
+  }
+}

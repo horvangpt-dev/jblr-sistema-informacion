@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "07_PRECANONICAL_DOCUMENTARY_RECONCILIATION_GENERAL_TITLE",
+  "actor": "07.V15",
+  "source_actor": "003",
+  "source_batch": "003-ACQ-GENUS-ALISMA-20260911-R01",
+  "source_ledger_drive_id": "1BTgZPa9MIhXIPdIEknpncvHEwYDckgbCutNZGCn5Xzg",
+  "selection_rule": "Remaining USER_DOWNLOAD_STATUS=DOWNLOADED_VERIFIED_IN_HUMAN_INBOX records whose titles do not explicitly contain Alisma/Alismataceae; reconcile by stable identifier/title without promoting thematic relation into scientific fact.",
+  "candidate_identity_count": 13,
+  "lookup_result": "NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED_IN_LIVE_DRIVE_LOOKUPS",
+  "lookup_caveat": "Drive lookup is semantic and is not proof of canonical absence. D0063 DOI lookup cross-returned another same-batch PDF. Status is therefore no distinct prior canonical identity demonstrated, not absence.",
+  "canonical_effect": "NONE_PRECANONICAL",
+  "lib_file_id_allocation": "NONE",
+  "id_reservation": "NONE",
+  "active_index_precheck": {
+    "sha": "66cbafc4a1a7cd36494cc30d6fe6712a81221264",
+    "high_watermark": "JBLR-LIB-00001092",
+    "next": "JBLR-LIB-00001093",
+    "allocated_id_slots": 1092
+  },
+  "records": [
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0020","source_file_id":"1b20MOB-4WZeqCy8DHCOAegLNXk8AmKZP","alternate_source_file_ids":[],"title":"Germination of Seeds of Water Plants","stable_identifier":"10.1086/329379","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0021","source_file_id":"1TQTMIei9tkLicCwbD5dS4difJ7G4W-UC","alternate_source_file_ids":[],"title":"Seed Germination Theory and Practice, 2nd Supplement","stable_identifier":"DENO_1998_PUBLIC_PDF","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0032","source_file_id":"1MbZSN610OhqjcBvwtKHvENASGO4wWr_a","alternate_source_file_ids":[],"title":"State-of-the-art survey and evaluation of marsh plant establishment techniques, Volume II: selected annotated bibliography on aquatic and marsh plants","stable_identifier":"USACE_PUBLIC_DOMAIN_PDF","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0035","source_file_id":"1mrB1aL-ev06Oay-uA-YjEQ21BxMPu6DI","alternate_source_file_ids":[],"title":"The Effect of Nickel Sulfate on Seed Germination and Development of Sprouts of Near-shore Aquatic Plants","stable_identifier":"SFU_KRAS_PUBLIC_PDF_2010","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0038","source_file_id":"1cHwFXJrfBtaDQkwPHhq3wbthg9GFfTAK","alternate_source_file_ids":[],"title":"The influence of an invasive plant species on the pollination success and reproductive output of three riparian plant species","stable_identifier":"10.1007/s10530-011-0067-y","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0046","source_file_id":"1jQ082DiJi9GQtYTy_NLylYpw9Xbx9BmO","alternate_source_file_ids":[],"title":"Effects of seed traits on the potential for seed dispersal by fish with contrasting modes of feeding","stable_identifier":"10.1111/fwb.12550","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0048","source_file_id":"1W2HojDoWnegV7Dly3wi9CuARoeiTICd6","alternate_source_file_ids":[],"title":"ГЛУБИНА БАССЕЙНА И ПРОРАСТАНИЕ СЕМЯН","stable_identifier":"BOOKSITE_CVETOVODSTVO_1982_5_PDF","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0051","source_file_id":"1RLnwqtBC-tEkrFg2-_KU2MUctzpGvcte","alternate_source_file_ids":["1ziDeH9KpM753C3RDWn0iManAE9J8fLyE"],"title":"Hydrology, shore morphology and species traits affect seed dispersal, germination and community assembly in shoreline plant communities","stable_identifier":"10.1111/1365-2745.12250","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0062","source_file_id":"1-6wxnaL8Y1BGSQEA-GBg1XLKDmLaXfFh","alternate_source_file_ids":[],"title":"Germination of macrophytes from a Delaware River tidal freshwater wetland","stable_identifier":"10.2307/2996306","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0063","source_file_id":"1J2GV8ymDRDf-2sG3p5J3E5Pw4Hhj6Qvd","alternate_source_file_ids":[],"title":"Changes along a disturbance gradient in the density and composition of propagule banks in floodplain aquatic habitats","stable_identifier":"10.1023/A:1009779411686","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED_WITH_SEMANTIC_LOOKUP_CAVEAT"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0066","source_file_id":"1Mh0ixeBNsQcGT8fO99ldkA7s3BVu67uj","alternate_source_file_ids":[],"title":"Germination of Ten Shoreline Plants in Relation to Seed Size, Soil Particle Size and Water Level: An Experimental Study","stable_identifier":"10.2307/2260354","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0071","source_file_id":"1bg4Xx00hVkczcqC3qLqMMM0so3KvmywF","alternate_source_file_ids":[],"title":"Viable seeds in deposits of the former lakes Kvismaren and Hornborgasjön, Sweden","stable_identifier":"10.1016/0304-3770(90)90074-U","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"},
+    {"source_discovery_id":"003-ACQ-GENUS-ALISMA-20260911-R01-D0072","source_file_id":"1xEE0-Vy0DlDSHiPB1W9NNPkDDAjjMRbx","alternate_source_file_ids":[],"title":"Seedling Emergence from Seed Banks in Ludwigia hexapetala-Invaded Wetlands: Implications for Restoration","stable_identifier":"10.3390/plants8110451","status":"PRECANDIDATE_NO_DISTINCT_CANONICAL_IDENTITY_DEMONSTRATED"}
+  ],
+  "physical_source_action": "NONE_COPY_BLOCK_REMAINS",
+  "copy_never_move": true,
+  "no_002_state_mutation": true,
+  "no_scientific_fact_canonicalization": true,
+  "history_policy": "APPEND_ONLY",
+  "data_loss": "NO"
+}

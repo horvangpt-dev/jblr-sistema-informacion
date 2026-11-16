@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00001056_00001058",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_001_H04_MONITORING_DEDUP_CANONICALIZATION_1056_1058_2026_09_11",
+  "range": {
+    "from": "JBLR-LIB-00001056",
+    "to": "JBLR-LIB-00001058",
+    "count": 3
+  },
+  "record_encoding": {
+    "columns": ["LIB_FILE_ID","SOURCE_KEY","DRIVE_ID","LANGUAGE","MODULES","DISCOVERY_ID","TITLE","ORIGIN_CHANNEL"]
+  },
+  "records": [
+    ["JBLR-LIB-00001056","H04-01","1ahvYYnNVOGO8K3v1lVLkYNeXVMliEic-","en",[],"NONE","Medium-term seed storage of 50 genera of forage legumes and evidence-based genebank monitoring intervals","001_H04_DEDUP_RECON_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001057","H04-02","1JXlgLRywDpnDg5LlLDXm0k2-oLg-KM_x","en",[],"NONE","Medium-term seed storage of diverse genera of forage grasses, evidence-based genebank monitoring intervals, and regeneration standards","001_H04_DEDUP_RECON_PHYSICAL_INPUT"],
+    ["JBLR-LIB-00001058","H04-03","1_1anTQa9v5GH3xBLsVgXY6FkbdWzz77e","en",[],"NONE","Viability monitoring intervals for genebank samples of Oryza sativa","001_H04_DEDUP_RECON_PHYSICAL_INPUT"]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00001056",
+      "doi": "10.1007/s10722-017-0558-5",
+      "authors": "Richard H. Ellis; Maryam Nasehzadeh; Jean Hanson; Yeshi Woldemariam",
+      "journal": "Genetic Resources and Crop Evolution",
+      "volume": "65",
+      "pages": "607-623",
+      "year": 2018,
+      "online_publication_date": "2017-09-05"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00001057",
+      "doi": "10.1007/s10722-019-00748-y",
+      "authors": "Richard H. Ellis; Maryam Nasehzadeh; Jean Hanson; Nicholas Ndiwa; Yeshi Woldemariam",
+      "journal": "Genetic Resources and Crop Evolution",
+      "volume": "66",
+      "pages": "723-734",
+      "year": 2019,
+      "online_publication_date": "2019-02-07"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00001058",
+      "doi": "10.15258/sst.2015.43.2.17",
+      "authors": "Fiona R. Hay; F. de Guzman; N. R. Sackville Hamilton",
+      "journal": "Seed Science and Technology",
+      "volume": "43",
+      "pages": "218-237",
+      "year": 2015
+    }
+  ],
+  "related_not_equivalent_identities": [
+    {
+      "related_LIB_FILE_ID": "JBLR-LIB-00000759",
+      "relation": "H04_CORE_RELATED_VIABILITY_MONITORING_RESOURCE_DIFFERENT_TITLE_AUTHORS_DOI_AND_STUDY;NOT_DUPLICATE"
+    },
+    {
+      "related_LIB_FILE_ID": "JBLR-LIB-00000762",
+      "relation": "H04_CORE_RELATED_METHOD_PAPER_HAY_WHITEHOUSE_2017_DOI_10.1093/conphys/cox009;NOT_DUPLICATE"
+    },
+    {
+      "related_LIB_FILE_ID": "JBLR-LIB-00000744",
+      "relation": "H04_CONTEXT_REVIEW_HAY_PROBERT_2013;NOT_DUPLICATE"
+    }
+  ],
+  "identity_review": {
+    "active_index_precheck": "HWM1055_NEXT1056_BLOB_SHA_542356bb2af449f17c1231c56b000722cbc95a88",
+    "dedup_basis": "CURRENT_ACTIVE_SEGMENTS_PLUS_EXACT_DOI_TITLE_AUTHOR_DRIVE_SEARCH_AND_PHYSICAL_FULLTEXT_READBACK",
+    "new_canonical_identities": 3,
+    "reused_existing_identities": 0,
+    "multiple_candidate_unresolved": 0,
+    "source_failures": 0,
+    "redownload_required": 0,
+    "001_discovery_seq_consumed": false,
+    "no_silent_inference": true,
+    "copy_never_move": true,
+    "physical_deletions": 0,
+    "physical_moves": 0,
+    "source_folder": "1gJ9DQIWM6dL9MYEuo7rEJspu9o72EL-x",
+    "source_pdf_count": 3,
+    "worklog_drive_id": "1jhmqQDxhB2gftQs9F-zErVifN7SizAuOQtbHX05IdfA"
+  },
+  "redownload_review": {
+    "status": "NO_REDOWNLOAD_REQUIRED_DEMONSTRATED",
+    "readable_physical_sources": true,
+    "corrupt_or_incomplete_source_demonstrated": false
+  },
+  "history_policy": "APPEND_ONLY",
+  "next_LIB_FILE_ID": "JBLR-LIB-00001059"
+}

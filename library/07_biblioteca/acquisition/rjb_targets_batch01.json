@@ -1,0 +1,86 @@
+{
+  "batch": "RJB_CORE_01",
+  "targets": [
+    {
+      "library_id": "JBLR-LIB-FI-000001",
+      "title": "Flora iberica. Vol. I",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_I.pdf",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/71/a5/be/6f/71a5be6f-b4bc-432f-9a6a-baa17a5d8ccb/files/Fl_iber1.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000002",
+      "title": "Flora iberica. Vol. II",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_II.pdf",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/4c/53/b4/f7/4c53b4f7-9ace-4018-83b7-49df650f7f3b/files/F(46)Fl_Iber2.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000003",
+      "title": "Flora iberica. Vol. III",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_III.pdf",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/c3/f6/07/52/c3f60752-cff2-40b4-bf80-a03a995b641c/files/Fl_Iber3.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000006",
+      "title": "Flora iberica. Vol. VI. Rosaceae",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_VI_Rosaceae.pdf",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/9902",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/89/7a/82/b8/897a82b8-c39b-4e69-aec4-cbab751b7220/files/Fl_Iber6.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000007A",
+      "title": "Flora iberica. Vol. VII (1). Leguminosae (partim)",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_VII_1_Leguminosae.pdf",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/9903",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/05/89/94/4b/0589944b-4ed7-46a4-b63d-a45c5f8617ff/files/Fl_Iber7%281%29.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000009",
+      "title": "Flora iberica. Vol. IX. Rhamnaceae-Polygalaceae",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_IX_Rhamnaceae-Polygalaceae.pdf",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/c4/51/33/b3/c45133b3-9c20-4017-926a-91004c85ae29/files/Fl_Iber9.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000012",
+      "title": "Flora iberica. Vol. XII. Verbenaceae-Labiatae-Callitrichaceae",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_XII_Verbenaceae-Labiatae-Callitrichaceae.pdf",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/79/52/4a/29/79524a29-60f7-4ae3-adab-f1737b76bb4f/files/Fl_Iber12.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000013",
+      "title": "Flora iberica. Vol. XIII. Plantaginaceae-Scrophulariaceae",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_XIII_Plantaginaceae-Scrophulariaceae.pdf",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/e6/4c/d0/0a/e64cd00a-6746-4b04-925c-17e4d3d1b7fb/files/Fl_Iber13.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000014",
+      "title": "Flora iberica. Vol. XIV",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_XIV.pdf",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/09/59/65/3a/0959653a-7994-4265-8981-218b9db67e52/files/Fl_Iber14.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-FI-000021",
+      "title": "Flora iberica. Vol. XXI. Smilacaceae-Orchidaceae",
+      "category": "Flora_Iberica",
+      "filename": "Flora_Iberica_Vol_XXI_Smilacaceae-Orchidaceae.pdf",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/9897",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/de/2d/ec/1c/de2dec1c-730c-460c-a7af-598fde6fe80a/files/475.pdf"
+    },
+    {
+      "library_id": "JBLR-LIB-000002",
+      "title": "Flora de la Rioja. Parte descriptiva. Tomo II",
+      "category": "Rioja_Historica",
+      "filename": "Zubia_1921_Flora_de_la_Rioja_Tomo_II.pdf",
+      "record_url": "https://bibdigital.rjb.csic.es/idurl/1/10190",
+      "pdf_url": "https://bibdigital.rjb.csic.es/medias/e3/fa/2f/5c/e3fa2f5c-cb87-4a98-a445-abd2fb43ab97/files/ZUB_Fl_Rioj_1.pdf"
+    }
+  ]
+}

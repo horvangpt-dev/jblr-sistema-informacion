@@ -1,0 +1,12 @@
+{
+  "schema_version":"1.0.0",
+  "values":[
+    {"id":"HUMAN_USER_UPLOAD","description":"Direct user upload through current human inbox"},
+    {"id":"HUMAN_USER_UPLOAD_LEGACY","description":"Legacy user-provided file supported by historical ingest evidence"},
+    {"id":"AGENT_AUTOMATED_SEARCH","description":"001 or future automated search/acquisition flow"},
+    {"id":"SYSTEM_AUTOMATED_ACQUISITION_LEGACY","description":"Legacy ChatGPT/JBLR automated acquisition or preserved system copy"},
+    {"id":"INSTITUTIONAL_LEGACY","description":"Legacy 07 institutional/library content without a user-upload claim"},
+    {"id":"UNKNOWN","description":"Origin cannot yet be demonstrated"}
+  ],
+  "rules":{"source_institution_is_not_origin_channel":true,"unknown_must_not_be_inferred":true,"origin_occurrences_preserved_when_binaries_dedupe":true}
+}

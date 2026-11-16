@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "MISSING_DOWNLOAD_ARTIFACT_RECONCILIATION_RULE_v1",
+  "actor": "07.V4",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "effective_date": "2026-08-28",
+  "scope": "PROSPECTIVE_001_TO_07_DOWNLOAD_RECONCILIATION",
+  "user_operational_observation": {
+    "requested_item_without_new_file_may_mean": [
+      "SOURCE_LINK_DEAD_OR_MIGRATED",
+      "DOCUMENT_ALREADY_EXISTS_FROM_PRIOR_DOWNLOAD_AND_WAS_NOT_DOWNLOADED_AGAIN"
+    ],
+    "duplicate_prevention_effect": "HUMAN_DOWNLOAD_LAYER_MAY_REFUSE_OR_SKIP_REDOWLOAD_WHEN_SAME_DOCUMENT_ALREADY_EXISTS"
+  },
+  "mandatory_rule": {
+    "MISSING_NEW_FILE_DOES_NOT_IMPLY_NOT_ACQUIRED": true,
+    "MISSING_NEW_FILE_DOES_NOT_IMPLY_ABSENCE": true,
+    "before_NOT_ACQUIRED": [
+      "CHECK_CANONICAL_LIBRARY_FOR_EXISTING_IDENTITY",
+      "CHECK_AUTHORIZED_DOWNLOAD_LIBRARY_AND_PREVIOUS_BATCHES_FOR_PRIOR_PHYSICAL_OBJECT",
+      "CHECK_STRONG_IDENTIFIERS_WHEN_AVAILABLE_DOI_STANDARD_ID_TITLE_INSTITUTION_VERSION_HASH",
+      "CHECK_SOURCE_LINK_STATE_WHEN_EVIDENCE_IS_AVAILABLE"
+    ],
+    "if_existing_identity_demonstrated": {
+      "PHYSICAL_INGESTION_STATUS": "DIRECT_FILE_VERIFIED_OR_LIBRARY_PREEXISTING_AS_EVIDENCE_SUPPORTS",
+      "CANONICAL_RELATION": "PHYSICAL_COPY_OF_OR_EXISTING_IDENTITY_REUSED_AS_EVIDENCE_SUPPORTS",
+      "LIB_FILE_ID": "REUSE_EXISTING",
+      "NOT_ACQUIRED": false,
+      "origin_rule": "DO_NOT_REWRITE_ORIGINAL_SOURCE_ORIGIN;ADD_DISCOVERY_RELATION_TRACEABLY"
+    },
+    "if_link_dead_or_migrated_and_no_existing_identity_demonstrated": {
+      "PHYSICAL_INGESTION_STATUS": "NOT_ACQUIRED",
+      "LIB_FILE_ID": "NONE_UNLESS_PREEXISTING_IDENTITY_IS_LATER_DEMONSTRATED",
+      "DUPLICATE_RESOLUTION": "UNRESOLVED",
+      "note": "NOT_ACQUIRED != ABSENCE; candidate may be retried later"
+    },
+    "if_reason_cannot_be_distinguished": {
+      "status": "UNRESOLVED_ACQUISITION_CAUSE",
+      "rule": "DO_NOT_INFER_LINK_FAILURE_OR_DUPLICATE_WITHOUT_EVIDENCE"
+    }
+  },
+  "interaction_with_buffer": {
+    "001_REPORT": "DISCOVERY_CONTEXT_NOT_GATE",
+    "07_resolution_precedence": true,
+    "new_resolution_may_link_to_prior_existing_LIB_FILE_ID": true,
+    "no_new_LIB_FILE_ID_for_rediscovery": true
+  },
+  "history": {
+    "prospective_only": true,
+    "prior_final_resolutions_not_reopened_automatically": true,
+    "retroactive_reconciliation_allowed_when_new_evidence_is_present": true,
+    "no_silent_history_rewrite": true
+  }
+}

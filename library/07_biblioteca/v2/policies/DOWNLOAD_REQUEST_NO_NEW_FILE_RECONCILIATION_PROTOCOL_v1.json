@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "DOWNLOAD_REQUEST_NO_NEW_FILE_RECONCILIATION_PROTOCOL_v1",
+  "actor": "07.V4",
+  "domain_authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "status": "ACTIVE_MANDATORY",
+  "effective_date": "2026-08-28",
+  "scope": "Any 001 discovery/download request or other authorized acquisition request for which no new physical object appears in the expected download/drop location.",
+  "principle": "NO_NEW_FILE_AFTER_REQUEST != DOWNLOAD_FAILURE != DOCUMENT_ABSENCE",
+  "user_observed_common_causes": [
+    "SOURCE_LINK_UNAVAILABLE_OR_MIGRATED",
+    "DOWNLOAD_SUPPRESSED_BECAUSE_DOCUMENT_ALREADY_EXISTS_FROM_PRIOR_ACQUISITION"
+  ],
+  "mandatory_reconciliation_order": [
+    "1_READ_REQUEST_AND_DISCOVERY_METADATA",
+    "2_SEARCH_CURRENT_CANONICAL_LIBRARY_BEFORE_CLASSIFYING_NOT_ACQUIRED",
+    "3_SEARCH_AUTHORIZED_PREEXISTING_PHYSICAL_INPUTS_AND_PRIOR_BATCHES",
+    "4_COMPARE_STRONG_IDENTITY_EVIDENCE_DOI_STANDARD_ID_OFFICIAL_TITLE_INSTITUTION_YEAR_VERSION_AND_WHEN_AVAILABLE_HASH",
+    "5_CHECK_SOURCE_URL_AND_DOWNLOAD_SOURCE_HISTORY_WHEN_AVAILABLE",
+    "6_ONLY_AFTER_THESE_CHECKS_CLASSIFY_THE_MISSING_NEW_DOWNLOAD"
+  ],
+  "resolution_cases": {
+    "ALREADY_PRESENT_AND_IDENTITY_DEMONSTRATED": {
+      "result": "EXISTING_CANONICAL_IDENTITY_REUSED",
+      "new_LIB_FILE_ID": false,
+      "LIB_FILE_ID": "REUSE_EXISTING",
+      "RELATED_DISCOVERY_ID": "PRESERVE_REQUEST_ID",
+      "CANONICAL_RELATION": "DUPLICATE_OF",
+      "CANONICAL_TARGET_LIB_FILE_ID": "REQUIRED",
+      "DUPLICATE_RESOLUTION": "DUPLICATE",
+      "PHYSICAL_INGESTION_STATUS_FOR_CURRENT_REQUEST": "NOT_ACQUIRED",
+      "ACQUISITION_REASON": "DOWNLOAD_SUPPRESSED_ALREADY_PRESENT",
+      "note": "No second binary is required. The request is covered by an already acquired canonical document identity."
+    },
+    "ALREADY_EXISTS_SIGNAL_BUT_IDENTITY_TARGET_NOT_YET_DEMONSTRATED": {
+      "result": "UNRESOLVED_EXISTING_CANDIDATE",
+      "new_LIB_FILE_ID": false,
+      "LIB_FILE_ID": "NONE_UNTIL_TARGET_DEMONSTRATED",
+      "CANONICAL_RELATION": "UNRESOLVED",
+      "DUPLICATE_RESOLUTION": "UNRESOLVED",
+      "PHYSICAL_INGESTION_STATUS": "NOT_ACQUIRED",
+      "ACQUISITION_REASON": "DOWNLOAD_INTERFACE_REPORTED_ALREADY_EXISTS",
+      "note": "The interface message is evidence that a prior object may exist, but filename/message alone cannot establish canonical identity."
+    },
+    "LINK_UNAVAILABLE_OR_MIGRATED_WITH_EVIDENCE": {
+      "result": "NOT_ACQUIRED_RETRYABLE_REFERENCE",
+      "new_LIB_FILE_ID": false,
+      "LIB_FILE_ID": "NONE_UNLESS_LIBRARY_ALREADY_COVERS_IDENTITY",
+      "CANONICAL_RELATION": "UNRESOLVED",
+      "DUPLICATE_RESOLUTION": "UNRESOLVED",
+      "PHYSICAL_INGESTION_STATUS": "NOT_ACQUIRED",
+      "ACQUISITION_REASON": "SOURCE_LINK_UNAVAILABLE_OR_MIGRATED",
+      "candidate_for_future_acquisition": true
+    },
+    "NO_CAUSE_DEMONSTRATED": {
+      "result": "NOT_ACQUIRED_UNRESOLVED_CAUSE",
+      "new_LIB_FILE_ID": false,
+      "CANONICAL_RELATION": "UNRESOLVED",
+      "DUPLICATE_RESOLUTION": "UNRESOLVED",
+      "PHYSICAL_INGESTION_STATUS": "NOT_ACQUIRED",
+      "ACQUISITION_REASON": "UNKNOWN",
+      "candidate_for_future_reconciliation": true
+    }
+  },
+  "mandatory_fields_when_applicable": [
+    "RELATED_DISCOVERY_ID",
+    "SOURCE_URL",
+    "DOWNLOAD_SOURCE",
+    "EXPECTED_FILENAME_OR_TITLE",
+    "CURRENT_REQUEST_NEW_PHYSICAL_OBJECT_PRESENT",
+    "PREEXISTING_LIBRARY_MATCH_CHECKED",
+    "PREEXISTING_LIBRARY_MATCH_RESULT",
+    "CANONICAL_TARGET_LIB_FILE_ID",
+    "ACQUISITION_REASON",
+    "EVIDENCE_POINTER"
+  ],
+  "evidence_rules": [
+    "DOWNLOAD_INTERFACE_ALREADY_EXISTS_MESSAGE_IS_EVIDENCE_OF_POSSIBLE_PREEXISTING_ACQUISITION_BUT_NOT_SUFFICIENT_ALONE_TO_SELECT_A_CANONICAL_TARGET",
+    "FILENAME_ALONE_IS_NOT_DOCUMENT_IDENTITY",
+    "EXACT_DOI_OR_STANDARD_ID_PLUS_COMPATIBLE_TITLE_VERSION_IS_STRONG_IDENTITY_EVIDENCE",
+    "HASH_WHEN_AVAILABLE_IS_STRONG_PHYSICAL_COPY_EVIDENCE",
+    "NO_NEW_FILE_MUST_NOT_BE_CLASSIFIED_AS_SOURCE_FAILURE_BEFORE_PREEXISTING_LIBRARY_CHECK"
+  ],
+  "invariants": [
+    "NOT_ACQUIRED != ABSENCE",
+    "NO_NEW_DOWNLOAD != NO_DOCUMENT",
+    "ALREADY_PRESENT != CREATE_NEW_LIB_FILE_ID",
+    "DISCOVERY_REQUEST != CANONICAL_IDENTITY",
+    "REFERENCE != ASSERTION",
+    "UNKNOWN != ZERO",
+    "UNKNOWN != ABSENCE",
+    "NO_SILENT_HISTORY_REWRITE"
+  ],
+  "buffer_application": {
+    "applies_to_future_resolution_seq": true,
+    "retroactive_mass_rewrite": false,
+    "historical_records_may_be_corrected_append_only_when_new_evidence_demonstrates_preexisting_coverage": true,
+    "001_consumption": "001 should treat a 07 demonstrated existing-identity reuse as documentary coverage and should not repeatedly request the same binary unless a different version or manifestation is intentionally required."
+  }
+}

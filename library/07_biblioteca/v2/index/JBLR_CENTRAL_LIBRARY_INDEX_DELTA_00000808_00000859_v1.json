@@ -1,0 +1,2900 @@
+{
+  "schema_version": "1.1.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000808_00000859",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_FLORE_LOCALE_FIRST_PHYSICAL_CORPUS_808_859_2026_09_07",
+  "source_collection": "FLORE_LOCALE",
+  "range": {
+    "from": "JBLR-LIB-00000808",
+    "to": "JBLR-LIB-00000859",
+    "count": 52
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000808",
+      "FLORELOCALE-PAGE-3",
+      "13NfinFwDKQJ4bc_gHItqT47o6-ANvIf_",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-3",
+      "Acer campestre — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000809",
+      "FLORELOCALE-PAGE-48",
+      "1-DECP7mtNbNzZ-Asb4FBURaO9MOuKSge",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-48",
+      "Acer monspessulanum — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000810",
+      "FLORELOCALE-PAGE-230",
+      "1-a-yRBFmBLjmtd_JsaN7UJ56DgqyGpub",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-230",
+      "Abies alba — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000811",
+      "FLORELOCALE-PAGE-287",
+      "1CRypiNH7dkNP6gK7TIeZhkqQKZvhNzVd",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-287",
+      "Encyclopédie flore herbacée — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000812",
+      "FLORELOCALE-PAGE-293",
+      "1XXXHI_Ka891njmZO6BrUtOmHqxYibXTG",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-293",
+      "Allium sphaerocephalon — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000813",
+      "FLORELOCALE-PAGE-1595",
+      "1i9EuUWzb1dnq1Q6gcCLLq3B8S6UDwuf-",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1595",
+      "Achillea millefolium — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000814",
+      "FLORELOCALE-PAGE-1596",
+      "1bX0DvCZnkjicXcQMalZdEfdUux8meGF5",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1596",
+      "Agrostemma githago L., 1753 — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000815",
+      "FLORELOCALE-PAGE-1597",
+      "1wxHzN0uqymWw0yTN5OMnU5i31ZtdJYbY",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1597",
+      "Agrostis capillaris L., 1753 — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000816",
+      "FLORELOCALE-PAGE-1598",
+      "15SB_CEJXgvgaovvO6htdpbN-axRVcIqM",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1598",
+      "Alchemilla alpigena Buser, 1894 — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000817",
+      "FLORELOCALE-PAGE-1599",
+      "1xGuCtDf3Mmg5iOVZcp3xL44HKC_4y5sj",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1599",
+      "Anthoxanthum odoratum L., 1753 — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000818",
+      "FLORELOCALE-PAGE-1601",
+      "1eRq_iqbUFX5VnZPONXF8XNrurJ51hhjQ",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1601",
+      "Betonica officinalis — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000819",
+      "FLORELOCALE-PAGE-1602",
+      "17jrtRSqje1bkMntXnikcULqiBvDXAIvU",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1602",
+      "Bifora radians — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000820",
+      "FLORELOCALE-PAGE-1604",
+      "1LAzA79h-Z_oWGqNCqzYhp1q0SIfRoja6",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1604",
+      "Bupleurum rotundifolium — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000821",
+      "FLORELOCALE-PAGE-1605",
+      "1RfH9OmVgYUb-ueB7bgWFTwfEbUeGv-WJ",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1605",
+      "Calamagrostis varia — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000822",
+      "FLORELOCALE-PAGE-1606",
+      "1LX2PYqTEKkliR8pg0EzExp4Gn0gRaKo0",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1606",
+      "Campanula rapunculoides — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000823",
+      "FLORELOCALE-PAGE-1608",
+      "1pTS5YvTp_JRonjA4l_pci1ZkgySnA5uc",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1608",
+      "Carex sempervirens — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000824",
+      "FLORELOCALE-PAGE-1610",
+      "1t3xw3GFU-GnykLNvL7gSx3C1NElFhQMa",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1610",
+      "Centaurea scabiosa subsp. scabiosa — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000825",
+      "FLORELOCALE-PAGE-1611",
+      "18nna-lhgjt9HwGmcuV97pmGfl2e3OG0J",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1611",
+      "Cerastium arvense subsp. arvense — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000826",
+      "FLORELOCALE-PAGE-1612",
+      "195ZMkF4pDFh_6e8ZsX4F_BuHO2w9mrd6",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1612",
+      "Cerastium arvense subsp. strictum — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000827",
+      "FLORELOCALE-PAGE-1613",
+      "1FADnxuDh4byxePLDhCvhseH-xDIOk0fj",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1613",
+      "Centaurea stoebe — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000828",
+      "FLORELOCALE-PAGE-1614",
+      "1NmAaUvv8tK5Pjc0pboeHUgVMLVNUCmHf",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1614",
+      "Armeria arenaria — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000829",
+      "FLORELOCALE-PAGE-1615",
+      "1yuvAgt86bKJl2tkM0xyQR1D_O8Xj2GHP",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1615",
+      "Allium victorialis — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000830",
+      "FLORELOCALE-PAGE-1620",
+      "1KzWkMZdd8_1Zann0ImolADg4PPgIPERx",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1620",
+      "Anarrhinum bellidifolium — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000831",
+      "FLORELOCALE-PAGE-1626",
+      "1HsFMqNnokTZZE68AjAxgepthbJJhw4XP",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1626",
+      "Aquilegia vulgaris — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000832",
+      "FLORELOCALE-PAGE-1631",
+      "1Zj7TtR1Drs415--OvsNpG6PIedhlOkF6",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1631",
+      "Artemisia campestris — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000833",
+      "FLORELOCALE-PAGE-1662",
+      "1tQ2vp-NXsH5nwmEFvZ8DAIzXtFLnZUDM",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1662",
+      "Euphorbia dendroides — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000834",
+      "FLORELOCALE-PAGE-1670",
+      "1Ig8KPaSlFgLjuApEwj2-i8ghGADlQf4f",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1670",
+      "Bryonia dioica — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000835",
+      "FLORELOCALE-PAGE-1671",
+      "1fIvKwvCn2TdKCzwowj1HUonEeFw-gBiz",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1671",
+      "Euphorbia spinosa — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000836",
+      "FLORELOCALE-PAGE-1779",
+      "1zhuIwU0ku1m5iTVj5quj6u26H35E__EK",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1779",
+      "Cichorium intybus — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000837",
+      "FLORELOCALE-PAGE-1783",
+      "11sZloROg-GPM5Jv1bUdMi4vWSKL0R3GU",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1783",
+      "Clinopodium vulgare — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000838",
+      "FLORELOCALE-PAGE-1785",
+      "1NdhaZV41dG9VrqbmN9AlGhZWGiig59uA",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1785",
+      "Cyanus segetum — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000839",
+      "FLORELOCALE-PAGE-1786",
+      "10GnM6sgfeFTuKIRXvEzzsGl-aNBmo3GS",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1786",
+      "Daucus carota — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000840",
+      "FLORELOCALE-PAGE-1787",
+      "1EhvSfAdAWaRBncSgJh1glKhV4mDp2kN_",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1787",
+      "Epilobium dodonaei — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000841",
+      "FLORELOCALE-PAGE-1788",
+      "1wDL-Im6OT9GLBog5yyf7FGe50BVcRI7y",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1788",
+      "Erucastrum nasturtiifolium — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000842",
+      "FLORELOCALE-PAGE-1795",
+      "1MRRqbD-D09j1cghLzxdX_Tqzb-doBbXH",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1795",
+      "Coronilla varia — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000843",
+      "FLORELOCALE-PAGE-1799",
+      "1xks27fW9MOJI8hZRzZfXwBiU6J4p-s9X",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1799",
+      "Anthyllis vulneraria subsp. alpestris — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000844",
+      "FLORELOCALE-PAGE-1887",
+      "1vx9yNjq-q78aTOWKd0K2GjeHtIq9e4zT",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1887",
+      "Corydalis solida — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000845",
+      "FLORELOCALE-PAGE-1988",
+      "1w9Zib4DpeVK7UBz70BN1S323EuYTdUZJ",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1988",
+      "Achillea ptarmica — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000846",
+      "FLORELOCALE-PAGE-1989",
+      "1cBsyFH31LWde3Tg_71y1Pk7rOlMIytnv",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1989",
+      "Alisma plantago-aquatica — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000847",
+      "FLORELOCALE-PAGE-1990",
+      "1KCa4h4ALHr1yohVg_uPCuSRxNRzw0cKv",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1990",
+      "Arrhenatherum elatius — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000848",
+      "FLORELOCALE-PAGE-1991",
+      "1c3XBuIgANGJDTnEa6aRUe7G7hzaSqnTr",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1991",
+      "Astrantia major — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000849",
+      "FLORELOCALE-PAGE-1995",
+      "1VYf0Bxis-VwixiGzdFqrFPSdWM1hmscu",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1995",
+      "Centaurea nigra — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000850",
+      "FLORELOCALE-PAGE-1997",
+      "1qSmxXWyOmaKjo2KkNc7UmHqoVNaNkAst",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1997",
+      "Cynosurus cristatus — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000851",
+      "FLORELOCALE-PAGE-1998",
+      "1JLsiJwU1AR-gn0rdEHPIzPFLSpRYtwFX",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-1998",
+      "Digitalis purpurea — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000852",
+      "FLORELOCALE-PAGE-2225",
+      "1KMkAw0WI2r7dy6blbo0nV6Z1B2nQeCrJ",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-2225",
+      "Campanula scheuchzeri subsp. lanceolata — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000853",
+      "FLORELOCALE-PAGE-2259",
+      "1s-FYEcQSg1dOf7TovxEHLhETozvPyKne",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-2259",
+      "Anthericum liliago — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000854",
+      "FLORELOCALE-PAGE-2282",
+      "1VOJ6IRkYj3OGqZzd-dz3qOQv1yaKHxJf",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-2282",
+      "Allium ursinum — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000855",
+      "FLORELOCALE-PAGE-2283",
+      "1WTKmb9X_cblFY0rQk90TJGmKslZSKAG2",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-2283",
+      "Dianhtus hyssopifolium — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000856",
+      "FLORELOCALE-PAGE-3406",
+      "1jybPy5ThjxJ4-laOTJ4_3QUIwihb29Eq",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-3406",
+      "Asphodelus albus — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000857",
+      "FLORELOCALE-PAGE-3411",
+      "1RRHdpeBKwbNarA2OVMJ2krapuY0R037J",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-3411",
+      "Bromus arvensis — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000858",
+      "FLORELOCALE-PAGE-3423",
+      "1-_g6bXqt9c8cjbeoSYlBEeIhmDEsP2Yg",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-3423",
+      "Bromus secalinus — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ],
+    [
+      "JBLR-LIB-00000859",
+      "FLORELOCALE-PAGE-3456",
+      "1TxKfSCQSKTIbJRxDn-N9jyUD5W87Mjk1",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "FL-PAGE-3456",
+      "Agrimonia eupatoria — Flore locale",
+      "FLORE_LOCALE_HUMAN_PDF_CORPUS"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000808",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_3",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=3",
+      "page_title": "Acer campestre",
+      "mediawiki_pageid": 3,
+      "mediawiki_revid": 7310,
+      "revision_timestamp": "2026-08-19T14:03:32Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Acer campestre",
+      "taxon_name_for_relation": "Acer campestre",
+      "family": "Acéracées",
+      "genus": "Acer",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Acer campestre",
+            "family": "Sapindaceae",
+            "rioja_id": "5193",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0075"
+          },
+          {
+            "rioja_name_verbatim": "Acer campestre",
+            "family": "Sapindaceae",
+            "rioja_id": "5193",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0075"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000809",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_48",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=48",
+      "page_title": "Acer monspessulanum",
+      "mediawiki_pageid": 48,
+      "mediawiki_revid": 7308,
+      "revision_timestamp": "2026-08-19T13:59:30Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Acer monspessulanum",
+      "taxon_name_for_relation": "Acer monspessulanum",
+      "family": "Acéracées",
+      "genus": "Acer",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Acer monspessulanum",
+            "family": "Sapindaceae",
+            "rioja_id": "1890",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Acer monspessulanum",
+            "family": "Sapindaceae",
+            "rioja_id": "1890",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000810",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_230",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=230",
+      "page_title": "Abies alba",
+      "mediawiki_pageid": 230,
+      "mediawiki_revid": 1154,
+      "revision_timestamp": "2022-02-05T21:06:49Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Abies alba Mill., 1759",
+      "taxon_name_for_relation": "Abies alba",
+      "family": "Pinaceae",
+      "genus": "Abies",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Abies alba",
+            "family": "Pinaceae",
+            "rioja_id": "4516",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Abies alba",
+            "family": "Pinaceae",
+            "rioja_id": "4516",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000811",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_287",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=287",
+      "page_title": "Encyclopédie flore herbacée",
+      "mediawiki_pageid": 287,
+      "mediawiki_revid": 7295,
+      "revision_timestamp": "2026-03-30T15:16:11Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Encyclopédie flore herbacée",
+      "taxon_name_for_relation": null,
+      "family": null,
+      "genus": null,
+      "page_type": "GENERAL_ENCYCLOPEDIA",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NOT_APPLICABLE",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000812",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_293",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=293",
+      "page_title": "Allium sphaerocephalon",
+      "mediawiki_pageid": 293,
+      "mediawiki_revid": 5676,
+      "revision_timestamp": "2024-05-27T11:46:00Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Allium sphaerocephalon L., 1753",
+      "taxon_name_for_relation": "Allium sphaerocephalon",
+      "family": "Amaryllidaceae",
+      "genus": "Allium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Allium sphaerocephalon",
+            "family": "Amaryllidaceae",
+            "rioja_id": "408",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2082"
+          },
+          {
+            "rioja_name_verbatim": "Allium sphaerocephalon",
+            "family": "Amaryllidaceae",
+            "rioja_id": "408",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2082"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000813",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1595",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1595",
+      "page_title": "Achillea millefolium",
+      "mediawiki_pageid": 1595,
+      "mediawiki_revid": 7294,
+      "revision_timestamp": "2026-03-30T15:07:06Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Achillea millefolium L., 1753",
+      "taxon_name_for_relation": "Achillea millefolium",
+      "family": "Asteraceae",
+      "genus": "Achillea",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Achillea millefolium subsp. millefolium",
+            "family": "Asteraceae",
+            "rioja_id": "1804",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Achillea millefolium subsp. millefolium",
+            "family": "Asteraceae",
+            "rioja_id": "1804",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000814",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1596",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1596",
+      "page_title": "Agrostemma githago L., 1753",
+      "mediawiki_pageid": 1596,
+      "mediawiki_revid": 5834,
+      "revision_timestamp": "2024-05-29T09:42:26Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Agrostemma githago L., 1753",
+      "taxon_name_for_relation": "Agrostemma githago",
+      "family": "Caryophyllaceae",
+      "genus": "Agrostemma",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Agrostemma githago",
+            "family": "Caryophyllaceae",
+            "rioja_id": "3426",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0174"
+          },
+          {
+            "rioja_name_verbatim": "Agrostemma githago",
+            "family": "Caryophyllaceae",
+            "rioja_id": "3426",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0174"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000815",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1597",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1597",
+      "page_title": "Agrostis capillaris L., 1753",
+      "mediawiki_pageid": 1597,
+      "mediawiki_revid": 7306,
+      "revision_timestamp": "2026-05-26T06:21:33Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Agrostis capillaris L., 1753",
+      "taxon_name_for_relation": "Agrostis capillaris",
+      "family": "Poaceae",
+      "genus": "Agrostis",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Agrostis capillaris",
+            "family": "Poaceae",
+            "rioja_id": "5243",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1849"
+          },
+          {
+            "rioja_name_verbatim": "Agrostis capillaris",
+            "family": "Poaceae",
+            "rioja_id": "5243",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1849"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000816",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1598",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1598",
+      "page_title": "Alchemilla alpigena Buser, 1894",
+      "mediawiki_pageid": 1598,
+      "mediawiki_revid": 7218,
+      "revision_timestamp": "2025-11-23T16:32:25Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Alchemilla alpigena Buser, 1894",
+      "taxon_name_for_relation": "Alchemilla alpigena",
+      "family": "Rosaceae",
+      "genus": "Alchemilla",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000817",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1599",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1599",
+      "page_title": "Anthoxanthum odoratum L., 1753",
+      "mediawiki_pageid": 1599,
+      "mediawiki_revid": 5678,
+      "revision_timestamp": "2024-05-27T11:52:44Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Anthoxanthum odoratum L., 1753",
+      "taxon_name_for_relation": "Anthoxanthum odoratum",
+      "family": "Poaceae",
+      "genus": "Anthoxanthum",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anthoxanthum odoratum",
+            "family": "Poaceae",
+            "rioja_id": "2217",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1864"
+          },
+          {
+            "rioja_name_verbatim": "Anthoxanthum odoratum",
+            "family": "Poaceae",
+            "rioja_id": "2217",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1864"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000818",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1601",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1601",
+      "page_title": "Betonica officinalis",
+      "mediawiki_pageid": 1601,
+      "mediawiki_revid": 5318,
+      "revision_timestamp": "2024-05-17T08:34:01Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Betonica officinalis L., 1753",
+      "taxon_name_for_relation": "Betonica officinalis",
+      "family": "Lamiaceae",
+      "genus": "Betonica",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000819",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1602",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1602",
+      "page_title": "Bifora radians",
+      "mediawiki_pageid": 1602,
+      "mediawiki_revid": 5843,
+      "revision_timestamp": "2024-05-29T10:07:40Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Bifora radians M.Bieb., 1819",
+      "taxon_name_for_relation": "Bifora radians",
+      "family": "Apiaceae",
+      "genus": "Bifora",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000820",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1604",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1604",
+      "page_title": "Bupleurum rotundifolium",
+      "mediawiki_pageid": 1604,
+      "mediawiki_revid": 5858,
+      "revision_timestamp": "2024-05-29T11:55:43Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Bupleurum rotundifolium L., 1753",
+      "taxon_name_for_relation": "Bupleurum rotundifolium",
+      "family": "Apiaceae",
+      "genus": "Bupleurum",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Bupleurum rotundifolium",
+            "family": "Apiaceae",
+            "rioja_id": "1034",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1659"
+          },
+          {
+            "rioja_name_verbatim": "Bupleurum rotundifolium",
+            "family": "Apiaceae",
+            "rioja_id": "1034",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1659"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000821",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1605",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1605",
+      "page_title": "Calamagrostis varia",
+      "mediawiki_pageid": 1605,
+      "mediawiki_revid": 5860,
+      "revision_timestamp": "2024-05-29T11:58:12Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Calamagrostis varia (Schrad.) Host, 1809",
+      "taxon_name_for_relation": "Calamagrostis varia",
+      "family": "Poaceae",
+      "genus": "Calamagrostis",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000822",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1606",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1606",
+      "page_title": "Campanula rapunculoides",
+      "mediawiki_pageid": 1606,
+      "mediawiki_revid": 5862,
+      "revision_timestamp": "2024-05-29T12:05:37Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Campanula rapunculoides L., 1753",
+      "taxon_name_for_relation": "Campanula rapunculoides",
+      "family": "Campanulaceae",
+      "genus": "Campanula",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000823",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1608",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1608",
+      "page_title": "Carex sempervirens",
+      "mediawiki_pageid": 1608,
+      "mediawiki_revid": 4506,
+      "revision_timestamp": "2023-06-19T08:23:44Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Carex sempervirens Vill., 1787",
+      "taxon_name_for_relation": "Carex sempervirens",
+      "family": "Cyperaceae",
+      "genus": "Carex",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000824",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1610",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1610",
+      "page_title": "Centaurea scabiosa subsp. scabiosa",
+      "mediawiki_pageid": 1610,
+      "mediawiki_revid": 7283,
+      "revision_timestamp": "2026-02-24T11:52:27Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Centaurea scabiosa subsp. scabiosa L., 1753",
+      "taxon_name_for_relation": "Centaurea scabiosa subsp. scabiosa",
+      "family": "Asteraceae",
+      "genus": "Centaurea",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Centaurea scabiosa",
+            "family": "Asteraceae",
+            "rioja_id": "131",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Centaurea scabiosa",
+            "family": "Asteraceae",
+            "rioja_id": "131",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000825",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1611",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1611",
+      "page_title": "Cerastium arvense subsp. arvense",
+      "mediawiki_pageid": 1611,
+      "mediawiki_revid": 5939,
+      "revision_timestamp": "2024-06-03T13:33:07Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Cerastium arvense subsp. arvense L., 1753",
+      "taxon_name_for_relation": "Cerastium arvense subsp. arvense",
+      "family": "Caryophyllaceae",
+      "genus": "Cerastium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          },
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000826",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1612",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1612",
+      "page_title": "Cerastium arvense subsp. strictum",
+      "mediawiki_pageid": 1612,
+      "mediawiki_revid": 5938,
+      "revision_timestamp": "2024-06-03T13:29:12Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Cerastium arvense subsp. strictum Gaudin, 1828",
+      "taxon_name_for_relation": "Cerastium arvense subsp. strictum",
+      "family": "Caryophyllaceae",
+      "genus": "Cerastium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          },
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000827",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1613",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1613",
+      "page_title": "Centaurea stoebe",
+      "mediawiki_pageid": 1613,
+      "mediawiki_revid": 5642,
+      "revision_timestamp": "2024-05-27T10:01:31Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Centaurea stoebe L., 1753",
+      "taxon_name_for_relation": "Centaurea stoebe",
+      "family": "Astéracées",
+      "genus": "Centaurea",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000828",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1614",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1614",
+      "page_title": "Armeria arenaria",
+      "mediawiki_pageid": 1614,
+      "mediawiki_revid": 5957,
+      "revision_timestamp": "2024-06-07T08:46:18Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Armeria arenaria (Pers.) Schult., 1820",
+      "taxon_name_for_relation": "Armeria arenaria",
+      "family": "Plumbaginacées",
+      "genus": "Armeria",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Armeria arenaria subsp. arenaria",
+            "family": "Plumbaginaceae",
+            "rioja_id": "4762",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1243"
+          },
+          {
+            "rioja_name_verbatim": "Armeria arenaria subsp. arenaria",
+            "family": "Plumbaginaceae",
+            "rioja_id": "4762",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1243"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000829",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1615",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1615",
+      "page_title": "Allium victorialis",
+      "mediawiki_pageid": 1615,
+      "mediawiki_revid": 5839,
+      "revision_timestamp": "2024-05-29T09:58:33Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Allium victorialis L., 1753,",
+      "taxon_name_for_relation": "Allium victorialis",
+      "family": "Amaryllidacées",
+      "genus": "Allium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Allium victorialis",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3878",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2085"
+          },
+          {
+            "rioja_name_verbatim": "Allium victorialis",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3878",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2085"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000830",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1620",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1620",
+      "page_title": "Anarrhinum bellidifolium",
+      "mediawiki_pageid": 1620,
+      "mediawiki_revid": 5636,
+      "revision_timestamp": "2024-05-27T09:00:20Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Anarrhinum bellidifolium",
+      "taxon_name_for_relation": "Anarrhinum bellidifolium",
+      "family": "Plantaginacées",
+      "genus": "Anarrhinum",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anarrhinum bellidifolium",
+            "family": "Plantaginaceae",
+            "rioja_id": "4991",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1536"
+          },
+          {
+            "rioja_name_verbatim": "Anarrhinum bellidifolium",
+            "family": "Plantaginaceae",
+            "rioja_id": "4991",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1536"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000831",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1626",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1626",
+      "page_title": "Aquilegia vulgaris",
+      "mediawiki_pageid": 1626,
+      "mediawiki_revid": 7282,
+      "revision_timestamp": "2026-02-24T11:50:09Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Aquilegia vulgaris L., 1753",
+      "taxon_name_for_relation": "Aquilegia vulgaris",
+      "family": "Renonculacées",
+      "genus": "Aquilegia",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Aquilegia vulgaris subsp. vulgaris",
+            "family": "Ranunculaceae",
+            "rioja_id": "4024",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1323"
+          },
+          {
+            "rioja_name_verbatim": "Aquilegia vulgaris subsp. vulgaris",
+            "family": "Ranunculaceae",
+            "rioja_id": "4024",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1323"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000832",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1631",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1631",
+      "page_title": "Artemisia campestris",
+      "mediawiki_pageid": 1631,
+      "mediawiki_revid": 5639,
+      "revision_timestamp": "2024-05-27T09:06:17Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Artemisia campestris L., 1753",
+      "taxon_name_for_relation": "Artemisia campestris",
+      "family": "Astéracées",
+      "genus": "Artemisia",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Artemisia campestris subsp. glutinosa",
+            "family": "Asteraceae",
+            "rioja_id": "5196",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Artemisia campestris subsp. glutinosa",
+            "family": "Asteraceae",
+            "rioja_id": "5196",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000833",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1662",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1662",
+      "page_title": "Euphorbia dendroides",
+      "mediawiki_pageid": 1662,
+      "mediawiki_revid": 5905,
+      "revision_timestamp": "2024-06-03T08:41:48Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Euphorbia dendroides",
+      "taxon_name_for_relation": "Euphorbia dendroides",
+      "family": "Euphorbiaceae",
+      "genus": "Euphorbia",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000834",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1670",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1670",
+      "page_title": "Bryonia dioica",
+      "mediawiki_pageid": 1670,
+      "mediawiki_revid": 5850,
+      "revision_timestamp": "2024-05-29T10:51:04Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Bryonia dioica Jacq., 1774",
+      "taxon_name_for_relation": "Bryonia dioica",
+      "family": "Cucurbitaceae",
+      "genus": "Bryonia",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Bryonia dioica",
+            "family": "Cucurbitaceae",
+            "rioja_id": "2835",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0758"
+          },
+          {
+            "rioja_name_verbatim": "Bryonia dioica",
+            "family": "Cucurbitaceae",
+            "rioja_id": "2835",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0758"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000835",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1671",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1671",
+      "page_title": "Euphorbia spinosa",
+      "mediawiki_pageid": 1671,
+      "mediawiki_revid": 5907,
+      "revision_timestamp": "2024-06-03T08:45:44Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Euphorbia spinosa",
+      "taxon_name_for_relation": "Euphorbia spinosa",
+      "family": "Euphorbiaceae",
+      "genus": "Euphorbia",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000836",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1779",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1779",
+      "page_title": "Cichorium intybus",
+      "mediawiki_pageid": 1779,
+      "mediawiki_revid": 5680,
+      "revision_timestamp": "2024-05-27T11:59:40Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Cichorium intybus L., 1753Nom vernaculaire : Chicorée amère",
+      "taxon_name_for_relation": "Cichorium intybus",
+      "family": "Asteraceae",
+      "genus": "Cichorium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Cichorium intybus",
+            "family": "Asteraceae",
+            "rioja_id": "2532",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0415"
+          },
+          {
+            "rioja_name_verbatim": "Cichorium intybus",
+            "family": "Asteraceae",
+            "rioja_id": "2532",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0415"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000837",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1783",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1783",
+      "page_title": "Clinopodium vulgare",
+      "mediawiki_pageid": 1783,
+      "mediawiki_revid": 7269,
+      "revision_timestamp": "2026-02-24T09:52:09Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Clinopodium vulgare L., 1753",
+      "taxon_name_for_relation": "Clinopodium vulgare",
+      "family": "Lamiaceae",
+      "genus": "Clinopodium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000838",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1785",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1785",
+      "page_title": "Cyanus segetum",
+      "mediawiki_pageid": 1785,
+      "mediawiki_revid": 6011,
+      "revision_timestamp": "2024-07-25T07:23:57Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Cyanus segetum Hill, 1762",
+      "taxon_name_for_relation": "Cyanus segetum",
+      "family": "Asteraceae",
+      "genus": "Cyanus",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000839",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1786",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1786",
+      "page_title": "Daucus carota",
+      "mediawiki_pageid": 1786,
+      "mediawiki_revid": 5883,
+      "revision_timestamp": "2024-05-29T13:27:58Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Daucus carota L., 1753",
+      "taxon_name_for_relation": "Daucus carota",
+      "family": "Apiaceae",
+      "genus": "Daucus",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Daucus carota",
+            "family": "Apiaceae",
+            "rioja_id": "5276",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Daucus carota",
+            "family": "Apiaceae",
+            "rioja_id": "5276",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000840",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1787",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1787",
+      "page_title": "Epilobium dodonaei",
+      "mediawiki_pageid": 1787,
+      "mediawiki_revid": 4540,
+      "revision_timestamp": "2023-06-26T11:07:50Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Epilobium dodonaei subsp. dodonaei Vill., 1779",
+      "taxon_name_for_relation": "Epilobium dodonaei",
+      "family": "Onagraceae",
+      "genus": "Epilobium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000841",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1788",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1788",
+      "page_title": "Erucastrum nasturtiifolium",
+      "mediawiki_pageid": 1788,
+      "mediawiki_revid": 5897,
+      "revision_timestamp": "2024-06-03T08:08:57Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Erucastrum nasturtiifolium (Poir.) O.E.Schulz, 1916",
+      "taxon_name_for_relation": "Erucastrum nasturtiifolium",
+      "family": "Brassicaceae",
+      "genus": "Erucastrum",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Erucastrum nasturtiifolium",
+            "family": "Brassicaceae",
+            "rioja_id": "2005",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Erucastrum nasturtiifolium",
+            "family": "Brassicaceae",
+            "rioja_id": "2005",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000842",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1795",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1795",
+      "page_title": "Coronilla varia",
+      "mediawiki_pageid": 1795,
+      "mediawiki_revid": 5940,
+      "revision_timestamp": "2024-06-03T13:38:42Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Coronilla varia L., 1753",
+      "taxon_name_for_relation": "Coronilla varia",
+      "family": "Fabaceae",
+      "genus": "Coronilla",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000843",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1799",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1799",
+      "page_title": "Anthyllis vulneraria subsp. alpestris",
+      "mediawiki_pageid": 1799,
+      "mediawiki_revid": 7265,
+      "revision_timestamp": "2026-02-24T09:45:11Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Anthyllis vulneraria subsp. alpestris (Kit.) Asch. & Graebn., 1908",
+      "taxon_name_for_relation": "Anthyllis vulneraria subsp. alpestris",
+      "family": "Fabaceae",
+      "genus": "Anthyllis",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anthyllis vulneraria subsp. alpestris",
+            "family": "Fabaceae",
+            "rioja_id": "3963",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0965"
+          },
+          {
+            "rioja_name_verbatim": "Anthyllis vulneraria subsp. alpestris",
+            "family": "Fabaceae",
+            "rioja_id": "3963",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0965"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000844",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1887",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1887",
+      "page_title": "Corydalis solida",
+      "mediawiki_pageid": 1887,
+      "mediawiki_revid": 5871,
+      "revision_timestamp": "2024-05-29T12:40:54Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Corydalis solida (L.) Clairv., 1811",
+      "taxon_name_for_relation": "Corydalis solida",
+      "family": "Papaveraceae",
+      "genus": "Corydalis",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000845",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1988",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1988",
+      "page_title": "Achillea ptarmica",
+      "mediawiki_pageid": 1988,
+      "mediawiki_revid": 7168,
+      "revision_timestamp": "2025-05-19T09:36:53Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Achillea ptarmica L., 1753",
+      "taxon_name_for_relation": "Achillea ptarmica",
+      "family": "Asteraceae",
+      "genus": "Achillea",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000846",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1989",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1989",
+      "page_title": "Alisma plantago-aquatica",
+      "mediawiki_pageid": 1989,
+      "mediawiki_revid": 5951,
+      "revision_timestamp": "2024-06-05T10:00:46Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Alisma plantago-aquatica L., 1753",
+      "taxon_name_for_relation": "Alisma plantago-aquatica",
+      "family": "Alismataceae",
+      "genus": "Alisma",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Alisma plantago-aquatica",
+            "family": "Alismataceae",
+            "rioja_id": "1314",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1768"
+          },
+          {
+            "rioja_name_verbatim": "Alisma plantago-aquatica",
+            "family": "Alismataceae",
+            "rioja_id": "1314",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1768"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000847",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1990",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1990",
+      "page_title": "Arrhenatherum elatius",
+      "mediawiki_pageid": 1990,
+      "mediawiki_revid": 5322,
+      "revision_timestamp": "2024-05-17T08:38:14Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Arrhenatherum elatius (L.) P.Beauv. ex J.Presl & C.Presl, 1819",
+      "taxon_name_for_relation": "Arrhenatherum elatius",
+      "family": "Poaceae",
+      "genus": "Arrhenatherum",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Arrhenatherum elatius",
+            "family": "Poaceae",
+            "rioja_id": "2941",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Arrhenatherum elatius",
+            "family": "Poaceae",
+            "rioja_id": "2941",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000848",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1991",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1991",
+      "page_title": "Astrantia major",
+      "mediawiki_pageid": 1991,
+      "mediawiki_revid": 7268,
+      "revision_timestamp": "2026-02-24T09:49:35Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Astrantia major",
+      "taxon_name_for_relation": "Astrantia major",
+      "family": "Apiaceae",
+      "genus": "Astrantia",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Astrantia major",
+            "family": "Apiaceae",
+            "rioja_id": "1651",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1648"
+          },
+          {
+            "rioja_name_verbatim": "Astrantia major",
+            "family": "Apiaceae",
+            "rioja_id": "1651",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1648"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000849",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1995",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1995",
+      "page_title": "Centaurea nigra",
+      "mediawiki_pageid": 1995,
+      "mediawiki_revid": 5955,
+      "revision_timestamp": "2024-06-06T08:38:54Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Centaurea nigra",
+      "taxon_name_for_relation": "Centaurea nigra",
+      "family": "Asteraceae",
+      "genus": "Centaurea",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Centaurea nigra subsp. carpetana",
+            "family": "Asteraceae",
+            "rioja_id": "2069",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Centaurea nigra subsp. carpetana",
+            "family": "Asteraceae",
+            "rioja_id": "2069",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000850",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1997",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1997",
+      "page_title": "Cynosurus cristatus",
+      "mediawiki_pageid": 1997,
+      "mediawiki_revid": 5382,
+      "revision_timestamp": "2024-05-17T13:33:50Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Cynosurus cristatus",
+      "taxon_name_for_relation": "Cynosurus cristatus",
+      "family": "Poaceae",
+      "genus": "Cynosurus",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Cynosurus cristatus",
+            "family": "Poaceae",
+            "rioja_id": "4356",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1903"
+          },
+          {
+            "rioja_name_verbatim": "Cynosurus cristatus",
+            "family": "Poaceae",
+            "rioja_id": "4356",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1903"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000851",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_1998",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=1998",
+      "page_title": "Digitalis purpurea",
+      "mediawiki_pageid": 1998,
+      "mediawiki_revid": 5388,
+      "revision_timestamp": "2024-05-17T14:13:39Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Digitalis purpurea",
+      "taxon_name_for_relation": "Digitalis purpurea",
+      "family": "Plantaginaceae",
+      "genus": "Digitalis",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Digitalis purpurea subsp. purpurea",
+            "family": "Plantaginaceae",
+            "rioja_id": "778",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1551"
+          },
+          {
+            "rioja_name_verbatim": "Digitalis purpurea subsp. purpurea",
+            "family": "Plantaginaceae",
+            "rioja_id": "778",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1551"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000852",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_2225",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=2225",
+      "page_title": "Campanula scheuchzeri subsp. lanceolata",
+      "mediawiki_pageid": 2225,
+      "mediawiki_revid": 5566,
+      "revision_timestamp": "2024-05-23T14:39:00Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Campanula scheuchzeri subsp. lanceolata (Lapeyr.) J.-M.Tison, 2010",
+      "taxon_name_for_relation": "Campanula scheuchzeri subsp. lanceolata",
+      "family": "Campanulaceae",
+      "genus": "Campanula",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Campanula scheuchzeri",
+            "family": "Campanulaceae",
+            "rioja_id": "148",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Campanula scheuchzeri",
+            "family": "Campanulaceae",
+            "rioja_id": "148",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000853",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_2259",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=2259",
+      "page_title": "Anthericum liliago",
+      "mediawiki_pageid": 2259,
+      "mediawiki_revid": 5721,
+      "revision_timestamp": "2024-05-28T07:33:08Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Anthericum liliago L., 1753",
+      "taxon_name_for_relation": "Anthericum liliago",
+      "family": "Asparagaceae",
+      "genus": "Anthericum",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anthericum liliago",
+            "family": "Asparagaceae",
+            "rioja_id": "1467",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Anthericum liliago",
+            "family": "Asparagaceae",
+            "rioja_id": "1467",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000854",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_2282",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=2282",
+      "page_title": "Allium ursinum",
+      "mediawiki_pageid": 2282,
+      "mediawiki_revid": 5999,
+      "revision_timestamp": "2024-06-17T14:04:41Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Allium ursinum L., 1753",
+      "taxon_name_for_relation": "Allium ursinum",
+      "family": "Amaryllidaceae",
+      "genus": "Allium",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Allium ursinum",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3770",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Allium ursinum",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3770",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000855",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_2283",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=2283",
+      "page_title": "Dianhtus hyssopifolium",
+      "mediawiki_pageid": 2283,
+      "mediawiki_revid": 5745,
+      "revision_timestamp": "2024-05-28T10:33:49Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Dianthus hyssopifolius L., 1755",
+      "taxon_name_for_relation": "Dianthus hyssopifolius",
+      "family": "Caryophyllaceae",
+      "genus": "Dianthus",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Dianthus hyssopifolius",
+            "family": "Caryophyllaceae",
+            "rioja_id": "2434",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Dianthus hyssopifolius",
+            "family": "Caryophyllaceae",
+            "rioja_id": "2434",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000856",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_3406",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=3406",
+      "page_title": "Asphodelus albus",
+      "mediawiki_pageid": 3406,
+      "mediawiki_revid": 7139,
+      "revision_timestamp": "2025-05-16T09:32:09Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Asphodelus albus",
+      "taxon_name_for_relation": "Asphodelus albus",
+      "family": "Asphodelaceae",
+      "genus": "Asphodelus",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Asphodelus albus subsp. albus",
+            "family": "Xanthorrhoeaceae",
+            "rioja_id": "4553",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2090"
+          },
+          {
+            "rioja_name_verbatim": "Asphodelus albus subsp. albus",
+            "family": "Xanthorrhoeaceae",
+            "rioja_id": "4553",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2090"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000857",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_3411",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=3411",
+      "page_title": "Bromus arvensis",
+      "mediawiki_pageid": 3411,
+      "mediawiki_revid": 7140,
+      "revision_timestamp": "2025-05-16T09:32:45Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Bromus arvensis",
+      "taxon_name_for_relation": "Bromus arvensis",
+      "family": "Poaceae",
+      "genus": "Bromus",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Bromus arvensis",
+            "family": "Poaceae",
+            "rioja_id": "4829",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1883"
+          },
+          {
+            "rioja_name_verbatim": "Bromus arvensis",
+            "family": "Poaceae",
+            "rioja_id": "4829",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1883"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000858",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_3423",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=3423",
+      "page_title": "Bromus secalinus",
+      "mediawiki_pageid": 3423,
+      "mediawiki_revid": 7158,
+      "revision_timestamp": "2025-05-16T11:50:47Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Bromus secalinus",
+      "taxon_name_for_relation": "Bromus secalinus",
+      "family": "Poaceae",
+      "genus": "Bromus",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000859",
+      "stable_identifier": "FLORE_LOCALE_PAGEID_3456",
+      "source_collection": "FLORE_LOCALE",
+      "source_url": "https://florelocale.fr/encyclopedie/index.php?curid=3456",
+      "page_title": "Agrimonia eupatoria",
+      "mediawiki_pageid": 3456,
+      "mediawiki_revid": 7302,
+      "revision_timestamp": "2026-04-16T08:14:16Z",
+      "source_language": "fr",
+      "physical_representation_language": "es",
+      "physical_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+      "license_observed": "CC BY-NC-SA 4.0",
+      "scientific_name_declared": "Famille :",
+      "taxon_name_for_relation": "Agrimonia eupatoria",
+      "family": "Voir",
+      "genus": "Agrimonia",
+      "page_type": "TAXON_FICHE",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "rioja_relation": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Agrimonia eupatoria subsp. eupatoria",
+            "family": "Rosaceae",
+            "rioja_id": "3028",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1382"
+          },
+          {
+            "rioja_name_verbatim": "Agrimonia eupatoria subsp. eupatoria",
+            "family": "Rosaceae",
+            "rioja_id": "3028",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1382"
+          }
+        ]
+      }
+    }
+  ],
+  "representation_groups": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000833",
+      "primary_drive_id": "1tQ2vp-NXsH5nwmEFvZ8DAIzXtFLnZUDM",
+      "alternate_drive_ids": [
+        "1glirU7Dnza_e-x3QrwIOB_ibqTzbyTBu"
+      ],
+      "relation": "SAME_MEDIAWIKI_PAGE_PRINT_REPRESENTATION;SAME_TITLE_AND_SIZE_WHERE_OBSERVED;NO_BINARY_HASH_EQUALITY_ASSERTION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000857",
+      "primary_drive_id": "1RRHdpeBKwbNarA2OVMJ2krapuY0R037J",
+      "alternate_drive_ids": [
+        "10UJVqLmCnjCpd11sW2oOMb1LVMVVng0W"
+      ],
+      "relation": "SAME_MEDIAWIKI_PAGE_PRINT_REPRESENTATION;SAME_TITLE_AND_SIZE_WHERE_OBSERVED;NO_BINARY_HASH_EQUALITY_ASSERTION"
+    }
+  ],
+  "collection_identity_policy": {
+    "document_identity_anchor": "MEDIAWIKI_PAGEID",
+    "version_anchor": "MEDIAWIKI_REVID",
+    "revision_change_does_not_automatically_create_new_LIB_FILE_ID": true,
+    "source_language": "fr",
+    "human_pdf_representation_language": "es",
+    "human_pdf_representation_kind": "BROWSER_TRANSLATED_PRINT_TO_PDF",
+    "license_observed": "CC BY-NC-SA 4.0",
+    "human_repository_root": "1epiW5H_oCEDdBMnpCCOWecuPf8bRM1CU",
+    "human_visual_folder": "1R7heizaSMm0JmtJePJy6vLwH7e-DsDyu",
+    "human_index_sheet": "1OyI-b-5QrANH9SpsPr8n4Nb76pVM0QGRoqB-w8cUxyY"
+  },
+  "identity_review": {
+    "github_source_domain_search": "NO_PREEXISTING_CANONICAL_MATCH_FOUND",
+    "github_title_spotchecks": "ACHILLEA_MILLEFOLIUM_AND_ABIES_ALBA_NO_PREEXISTING_MATCH_FOUND",
+    "physical_pdf_objects_observed": 54,
+    "document_identities_canonicalized": 52,
+    "physical_duplicate_representations_preserved": 2,
+    "no_hash_equality_assertion": true,
+    "no_silent_inference": true
+  },
+  "physical_reconciliation": {
+    "physical_objects_observed": 54,
+    "document_identities_canonicalized": 52,
+    "physical_moves": 0,
+    "physical_deletions": 0,
+    "copy_never_move": true,
+    "source_upload_folder_preserved": "1M88a7rWqjUryF3wJ5ivU4S6xSG_qoAsT",
+    "human_repository_preserved": true
+  },
+  "rioja_cross_summary": {
+    "source": "GLOBAL_CROSS_FIRST_RIOJA_2262_CURRENT.xlsx",
+    "drive_id": "1i7mybeY8Qrf7-KygY7YfSMlxmdiKMHhj",
+    "exact_rioja_taxa": 23,
+    "related_infrataxon_or_parent": 12,
+    "no_rioja_match_demonstrated": 16,
+    "general_non_taxon_resources": 1,
+    "rule": "EXACT_MATCH_ONLY_FOR_TAXON_RIOJA;PARENT_OR_INFRATAXON_RELATIONS_RECORDED_SEPARATELY"
+  },
+  "next_LIB_FILE_ID": "JBLR-LIB-00000860",
+  "history_policy": "APPEND_ONLY"
+}

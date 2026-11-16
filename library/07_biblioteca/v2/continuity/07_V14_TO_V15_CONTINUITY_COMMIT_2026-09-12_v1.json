@@ -1,0 +1,18 @@
+{
+  "project_id":"JBLR",
+  "actor_id":"07",
+  "from_version":"07.V14",
+  "to_version":"07.V15",
+  "continuity_mode":"LOSSLESS",
+  "restoration_test":"PASS",
+  "restore_evidence_readback":"PASS",
+  "transition_complete":true,
+  "from_version_status":"FROZEN_BY_CONTINUITY",
+  "to_version_status":"ACTIVE",
+  "current_actor_version":"07.V15",
+  "active_index_sha":"66cbafc4a1a7cd36494cc30d6fe6712a81221264",
+  "hwm":"JBLR-LIB-00001092",
+  "next_lib_file_id":"JBLR-LIB-00001093",
+  "data_loss":"NO",
+  "productive_work_started":false
+}

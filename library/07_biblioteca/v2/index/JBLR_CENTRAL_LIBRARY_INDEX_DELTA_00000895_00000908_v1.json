@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000895_00000908",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_RIOJA_TEMPORARY_REPOSITORY_FINAL_CANONICALIZATION_895_908_2026_09_07",
+  "range": {
+    "from": "JBLR-LIB-00000895",
+    "to": "JBLR-LIB-00000908",
+    "count": 14
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000895",
+      "07-RIOJA-001",
+      "1ugQJ30T-7Z3jsJaj4Uqi2wyYvsOl4NRD",
+      "es",
+      [],
+      "NONE",
+      "Proyecto de ejecución 2005 de las medidas prioritarias del Plan de Recuperación de la Androsela riojana (Androsace rioxana) en La Rioja · conclusiones",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000896",
+      "07-RIOJA-002",
+      "1pF9iKyWQ3DYHhEherdhDgo7HIN8An7by",
+      "es",
+      [],
+      "NONE",
+      "Plan de Recuperación de la Androsela riojana (Androsace rioxana) en La Rioja · Anexo 1",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000897",
+      "07-RIOJA-003",
+      "1fg22M5_CiLwUVufeNOz9R3-cl4cEB2XE",
+      "es",
+      [],
+      "NONE",
+      "Zubía Monográfico 29 · Vid y vino · 2017",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000898",
+      "07-RIOJA-004",
+      "1cGkf5zhRvgqzoKuzIz15FqGUkHkZXU4Y",
+      "es",
+      [],
+      "NONE",
+      "Plan de Recuperación del Loro o Laurel de Portugal (Prunus lusitanica subsp. lusitanica) en La Rioja · Anexo 2",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000899",
+      "07-RIOJA-005",
+      "1_SGMB4s9-sjgCokj_M3apu0YARYpaLLU",
+      "es",
+      [],
+      "NONE",
+      "Ley 2/2023, de 31 de enero, de biodiversidad y patrimonio natural de La Rioja · texto consolidado BOE",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000900",
+      "07-RIOJA-006",
+      "15fYJqC4JC3mPijE1uYkKJ3uit8eHkwDA",
+      "es",
+      [],
+      "NONE",
+      "Estimación de la abundancia de la amenazada Androsace rioxana A. Segura",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000901",
+      "07-RIOJA-007",
+      "1dPXyNLVyJSi3pC-6S6ztzQLF8cmZOgDT",
+      "es",
+      [],
+      "NONE",
+      "Nuevas especies presentes en la Sierra de la Demanda (Sistema Ibérico, La Rioja, España). II",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000902",
+      "07-RIOJA-008",
+      "1Jg7pGMqMBazbE22E8VSy48HxiXLr--jk",
+      "es",
+      [],
+      "NONE",
+      "Nuevas especies presentes en la Sierra de la Demanda (Sistema Ibérico, La Rioja, España)",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000903",
+      "07-RIOJA-009",
+      "1zYrsibi0PU4k-QktVROiN7IrT4P6yksZ",
+      "es",
+      [],
+      "NONE",
+      "Caracterización fitosociológica del hábitat de la especie amenazada Androsace rioxana A. Segura",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000904",
+      "07-RIOJA-010",
+      "1lPo0HXT-p0m0fTHV5G3C0S9bVbT3mJYY",
+      "es",
+      [],
+      "NONE",
+      "Flora y vegetación del Alto Oja (Sierra de La Demanda, La Rioja, España) · Guineana 11",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000905",
+      "07-RIOJA-011",
+      "1t20gpXxTFKj61R-8mTGiwJtpCg9rY6Q4",
+      "es",
+      [],
+      "NONE",
+      "Nueva localidad de Androsace rioxana A. Segura",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000906",
+      "07-RIOJA-012",
+      "1y7-UqXDgXxWsDgPbh04hbmhVzUVTabuR",
+      "es",
+      [],
+      "NONE",
+      "Diseño de una propuesta de infraestructura verde para el valle del Oja-Tirón (La Rioja)",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000907",
+      "07-RIOJA-013",
+      "13ysTIPKnbxJiNFztfPKYUrMOhWY82DZH",
+      "es",
+      [],
+      "NONE",
+      "Zubía · Revista de Ciencias · núm. 36 · 2018",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ],
+    [
+      "JBLR-LIB-00000908",
+      "07-RIOJA-014",
+      "1LO-0uq9od8GozevHinZM0N8TrvQWCUth",
+      "es",
+      [],
+      "NONE",
+      "Androsela riojana · única en su género",
+      "07_USER_SPECIFIC_RIOJA_TEMPORARY_INPUT"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000895",
+      "authors": "Gonzalo García-Baquero; Cipriano J. Valle Gutiérrez",
+      "year": 2005,
+      "type": "PROJECT_EXECUTION_CONCLUSIONS"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000896",
+      "issuing_body": "Gobierno de La Rioja",
+      "type": "RECOVERY_PLAN_ANNEX"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000897",
+      "issn": "1131-5423",
+      "year": 2017,
+      "type": "JOURNAL_MONOGRAPHIC_ISSUE",
+      "focal_article": "La vid silvestre en La Rioja (España): situación actual y difusión mediante infraestructuras de datos espaciales",
+      "focal_pages": "95-120"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000898",
+      "issuing_body": "Gobierno de La Rioja",
+      "type": "RECOVERY_PLAN_ANNEX"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000899",
+      "identifier": "BOE-A-2023-4327",
+      "year": 2023,
+      "type": "LEGISLATION_CONSOLIDATED"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000900",
+      "authors": "Gonzalo García-Baquero et al.",
+      "journal": "Studia Botanica",
+      "volume": "21",
+      "pages": "139-142",
+      "year": 2002,
+      "issn": "0211-9714"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000901",
+      "authors": "Gonzalo García-Baquero Moneo; Cipriano J. Valle Gutiérrez",
+      "journal": "Studia Botanica",
+      "volume": "20",
+      "pages": "155-157",
+      "year": 2001,
+      "issn": "0211-9714"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000902",
+      "authors": "Gonzalo García-Baquero Moneo; Cipriano J. Valle Gutiérrez",
+      "journal": "Studia Botanica",
+      "volume": "18",
+      "pages": "145-148",
+      "year": 1999,
+      "issn": "0214-3402"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000903",
+      "authors": "Gonzalo García-Baquero; Cipriano J. Valle",
+      "journal": "Lazaroa",
+      "volume": "24",
+      "pages": "43-48",
+      "year": 2003,
+      "issn": "0210-9778"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000904",
+      "author": "Gonzalo García-Baquero",
+      "series": "Guineana",
+      "volume": "11",
+      "year": 2005,
+      "type": "MONOGRAPH"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000905",
+      "authors": "Gonzalo García-Baquero Moneo; Cipriano J. Valle Gutiérrez; Alberto M. Arroyo Schnell",
+      "journal": "Studia Botanica",
+      "volume": "20",
+      "pages": "151-153",
+      "year": 2001,
+      "issn": "0211-9714"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000906",
+      "doi": "10.21138/CG/2023.lc",
+      "authors": "Adrian Díez Angulo; Nuria E. Pascual Bellido",
+      "year": 2023,
+      "pages": "543-552"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000907",
+      "issn": "0213-4306",
+      "year": 2018,
+      "type": "JOURNAL_ISSUE",
+      "focal_article": "Localización, descripción y accesos a las acebedas del Alto Najerilla, comarca de las Siete Villas (La Rioja)",
+      "focal_pages": "83-142"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000908",
+      "type": "INSTITUTIONAL_OUTREACH_ARTICLE",
+      "taxon": "Androsace rioxana"
+    }
+  ],
+  "sha256": {
+    "JBLR-LIB-00000895": "346e56fa288f5a150b3ee55a184a6a458a8df0a66d1bbc6e8cce15a81cd07bec",
+    "JBLR-LIB-00000896": "7eeefb8f1d7b75ea2330ba8e968a0e0bb6b2c1e237ee2ccccc30f23e330f3836",
+    "JBLR-LIB-00000897": "10187775fa88d13b1197c75878026db6e9869b1aac5f1799600210733ed9aff8",
+    "JBLR-LIB-00000898": "7ed5201ed8ca0f3dd8d0683c33eda2da3630f1f8c0469eb13bbfd4cf6f76a47e",
+    "JBLR-LIB-00000899": "8146d01a9c41abdd70fa81623fa9ee4d2481e7728214be3d2d4ef2a353ebf65b",
+    "JBLR-LIB-00000900": "bfda8037f70b04a49cc2b93c2417e08d655a3bcd7c06a064abe0c0e2cb193e47",
+    "JBLR-LIB-00000901": "fbaa5a0cdfa4bffdefb936dfa524e6275308841fac3ed477362e67ad793b142e",
+    "JBLR-LIB-00000902": "5ec870ffb80fca6e506864bc0eba73590611ab39648a60c1386367e8b0795048",
+    "JBLR-LIB-00000903": "22ec56f95a8fd686f852e29e2834066dbc6de2c6646230e5b798a3698ec0c3b5",
+    "JBLR-LIB-00000904": "d2b9e820f5669d1ad9b1eb25f7167ceb64ae24d918852d2f69cf0dc80fd945c5",
+    "JBLR-LIB-00000905": "478095b30e73405aa05506c81b79d3af969e685ada30e2fea3a999b4b30eed97",
+    "JBLR-LIB-00000906": "0768ca63d697a8b76aa1d5476582e5ddba673d7372ce917363aa4f156f89e8df",
+    "JBLR-LIB-00000907": "29d36b4776a13cb5786c5cb598fb4399514a7d56ce67e35d30e3f7e4ff6f37ed",
+    "JBLR-LIB-00000908": "e5629984c071451af75abd9c57babf4094336c365f65b3d23ec293000b1fb183"
+  },
+  "alternate_physical_representations": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000900",
+      "drive_id": "1B04YjqfMdaHBTKeOb7nvGZT1V1PNsfRe",
+      "sha256": "a8c4895665454343f8e6c8bc6c1117727d759d5533996e0691c66f2453605941",
+      "note": "Same bibliographic work; different PDF binary rendering."
+    }
+  ],
+  "duplicate_source_objects": [
+    {
+      "canonical_source_drive_id": "1vJiS3wOUJpNOVOd8EsFZS2hN2j9OSb7x",
+      "duplicate_source_drive_id": "1d-x8aFwzQcpe1T59zBkoP5d3arDf4c2r",
+      "sha256": "5ec870ffb80fca6e506864bc0eba73590611ab39648a60c1386367e8b0795048"
+    },
+    {
+      "canonical_source_drive_id": "1ZpSfr8rE8vs7HwSvtBjPBYTs684N08J-",
+      "duplicate_source_drive_id": "1A-FytfYjmYwyBOt4eyAvsXDvoQwBr3__",
+      "sha256": "478095b30e73405aa05506c81b79d3af969e685ada30e2fea3a999b4b30eed97"
+    }
+  ],
+  "auxiliary_files": [
+    {
+      "source_drive_id": "1EWHhGc7vEml-hyY6G9uL5Z7cvWel7rzF",
+      "copied_drive_id": "1NJIwg-gR1D5lTvy3VjZkOPlWsPjKTzji",
+      "relation_to_LIB_FILE_ID": "JBLR-LIB-00000905",
+      "role": "BIBLIOGRAPHIC_CITATION_METADATA",
+      "sha256": "3c7ead34fd86f7059e0294d1b78f850a629642cc4d6d3a65547a6cb5881f205e",
+      "separate_documentary_identity": false
+    }
+  ],
+  "physical_verification": {
+    "canonical_copies_sha256_match_sources": true,
+    "alternate_copy_sha256_match_source": true,
+    "auxiliary_copy_sha256_match_source": true
+  },
+  "history_policy": "APPEND_ONLY",
+  "next_LIB_FILE_ID": "JBLR-LIB-00000909"
+}

@@ -1,0 +1,16 @@
+{
+  "batch": "RIOJA_CORE_02",
+  "targets": [
+    {
+      "library_id": "JBLR-LIB-CAMARA-1940-03",
+      "title": "Estudios sobre Flora de La Rioja baja (Conclusión)",
+      "author": "Fernando Cámara Niño",
+      "year": 1940,
+      "bibliographic_pages": "242-287",
+      "source_repository": "Real Academia de Ciencias Exactas, Físicas y Naturales de España",
+      "source_url": "https://rac.es/fedora/get/Revistas%3AREV_20100220_03437/PDF",
+      "filename": "Camara_Nino_1940_Estudios_sobre_Flora_de_La_Rioja_baja_Parte_III.pdf",
+      "expected_title_fragment": "Estudios sobre Flora de La Rioja baja"
+    }
+  ]
+}

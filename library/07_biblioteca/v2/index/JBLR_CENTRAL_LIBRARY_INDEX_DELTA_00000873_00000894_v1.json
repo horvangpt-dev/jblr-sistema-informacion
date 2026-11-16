@@ -1,0 +1,582 @@
+{
+  "schema_version": "1.1.0",
+  "index_name": "JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00000873_00000894",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "origin_transaction": "07_P1_EUROPE_AND_COLD_RESIDUAL_CANONICALIZATION_873_894_2026_09_07",
+  "range": {
+    "from": "JBLR-LIB-00000873",
+    "to": "JBLR-LIB-00000894",
+    "count": 22
+  },
+  "record_encoding": {
+    "columns": [
+      "LIB_FILE_ID",
+      "SOURCE_KEY",
+      "DRIVE_ID",
+      "LANGUAGE",
+      "MODULES",
+      "DISCOVERY_ID",
+      "TITLE",
+      "ORIGIN_CHANNEL"
+    ]
+  },
+  "records": [
+    [
+      "JBLR-LIB-00000873",
+      "P1-EURO-EXTRA-MESSICOLES-2015",
+      "1Bm4_A33SItcrfspPPtrHc0ekWBRsZoiH",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-001",
+      "Etat des lieux de la flore messicole en région Nord – Pas-de-Calais sur le territoire du Parc Naturel Régional Scarpe-Escaut",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000874",
+      "P1-EURO-EXTRA-CBNBL-RAPPORT-2019",
+      "1SPGWZp9VdysiSYSLcOzk56uphDvceg7m",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-002",
+      "Conservatoire botanique national de Bailleul · Rapport d’activités 2019",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000875",
+      "P1-EURO-EXTRA-PHELIPANCHE-PURPUREA-2016",
+      "11FKFbBL7-dWjv0ZUEXbgdY-2zWYQnbjG",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-003",
+      "Plan régional d’actions en faveur de l’Orobanche pourprée (Phelipanche purpurea) · 2015–2019",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000876",
+      "P1-EURO-EXTRA-RGV-FRANCE-2016",
+      "19IZL1LdvPRF8FL5cmCdOj62OJ7Ho2AlI",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M03",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-004",
+      "Les ressources génétiques végétales, de l’amélioration à la conservation des espèces : le modèle français",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000877",
+      "P1-EURO-EXTRA-MANUEL-EXSITU-2007",
+      "14NAgi2oYU1x5PQXVuc0k7OtgVNe7MTJx",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-005",
+      "Manuel pour la récolte, l’étude, la conservation et la gestion ex situ du matériel végétal",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000878",
+      "P1-EURO-EXTRA-IGD-FORETS-2015",
+      "1wKXRuBlscWKXbdWAWpL8IWzHcvfsnoIw",
+      "fr",
+      [
+        "M01",
+        "M02"
+      ],
+      "P1-EURO-EXTRA-006",
+      "Indicateurs de gestion durable des forêts françaises métropolitaines · édition 2015 · Résultats",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000879",
+      "P1-EURO-EXTRA-OBFLORES-BILAN-2023-2024",
+      "1gZIlGwAfEhO3QmiQu49AQlujlUqg4SLv",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-007",
+      "Rapport OBFLORES · Bilan 2023–2024",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000880",
+      "P1-EURO-EXTRA-GDEAM62-FLORE-2024",
+      "16uQTQOStDdGIuqXUPwmuOF0OjSYYdGD3",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-008",
+      "Contribution à la recherche et au suivi de stations d’espèces végétales rares ou menacées en région Hauts-de-France · Bilan 2024",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000881",
+      "P1-EURO-EXTRA-ARTEMISIA-MARITIMA-2024",
+      "1KBkdL0j9QKlgro0Gr9Q1RheCaXaTKzhT",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-009",
+      "Bilan des populations et écologie de l’Armoise maritime (Artemisia maritima L., 1753) en baie de Somme et en baie d’Authie sud",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000882",
+      "P1-EURO-EXTRA-CRAMBE-MARITIMA-2022",
+      "1-oiKAhCJyb8m1sIXUD-gl-bQeulIYShU",
+      "fr",
+      [
+        "M01",
+        "M02",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-010",
+      "Où est passé le Chou marin ? · Crambe maritima · Cahier pédagogique",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000883",
+      "P1-EURO-EXTRA-FLORE-SENTINELLE-GNSS",
+      "1BBHyyDxaCNdGjBN3ZLeNNST-jK1gxp3C",
+      "fr",
+      [
+        "M02"
+      ],
+      "P1-EURO-EXTRA-011",
+      "Protocoles flore/habitats et outils de collecte GNSS RTK du réseau Flore Sentinelle",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000884",
+      "P1-EURO-EXTRA-ENSCONET-COLLECTE-2009",
+      "1Lj0XmpoPwisHYXy9lyLu_Ma3Xeh1znx6",
+      "fr",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "P1-EURO-EXTRA-012",
+      "ENSCONET · Manuel de Collecte de Graines pour les espèces sauvages",
+      "P1_EUROPE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000885",
+      "P1-COLD-EXTRA-CARINIANA-LEGALIS-2021",
+      "1X0qixbmmBuNt7pbKfVqTx583SyyyJV2M",
+      "en",
+      [
+        "M04",
+        "M05"
+      ],
+      "P1-COLD-EXTRA-001",
+      "Physiological and proteomic insights related to the loss of seed viability in Cariniana legalis (Lecythidaceae)",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000886",
+      "P1-COLD-EXTRA-OAT-AGING-2025",
+      "1Atljpfmf9SfSoGecwZd6b9BK9ZTqSms6",
+      "en",
+      [
+        "M04"
+      ],
+      "P1-COLD-EXTRA-002",
+      "Lipid remodeling and response mechanisms during the germination of aged oat seeds",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000887",
+      "P1-COLD-EXTRA-CRYOPRESERVATION-CHAPTER-2021",
+      "1koOF9EIOBnAUEHngFmcc6-ej1RSM4sRd",
+      "en",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "P1-COLD-EXTRA-003",
+      "Cryopreservation of Seeds and Seed Embryos in Orthodox-, Intermediate-, and Recalcitrant-Seeded Species",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000888",
+      "P1-COLD-EXTRA-SALIX-STORAGE-2019",
+      "1Zgp7113qSilq_E9r9e4TFoZui1eZnoO0",
+      "en",
+      [
+        "M04"
+      ],
+      "P1-COLD-EXTRA-004",
+      "Extended Low Temperature and Cryostorage Longevity of Salix Seeds with Desiccation Control",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000889",
+      "P1-COLD-EXTRA-POPULUS-LONGEVITY-2018",
+      "1Ft8WdF6KregxsUb3uthDvx0eKsyIRovZ",
+      "en",
+      [
+        "M04"
+      ],
+      "P1-COLD-EXTRA-005",
+      "Extending Populus seed longevity by controlling seed moisture content and temperature",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000890",
+      "P1-COLD-EXTRA-FIBER-FLAX-2026",
+      "1C6wro1K3hmZVyEb7SGo6DW3D-X0iFOUF",
+      "en",
+      [
+        "M04",
+        "M05"
+      ],
+      "P1-COLD-EXTRA-006",
+      "The Influence of Cryopreservation and Low-Temperature Seed Storage on the Morphological and Agronomical Characteristics of Fiber Flax",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000891",
+      "P1-COLD-EXTRA-CAMELLIA-OLEIFERA-2026",
+      "1S4lc9t4LVKq6uuLCGpB2CnYNHwPxoE49",
+      "zh",
+      [
+        "M04"
+      ],
+      "P1-COLD-EXTRA-007",
+      "Effect of Storage Temperature on Seed Quality of Camellia oleifera Abel",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000892",
+      "P1-COLD-EXTRA-SEED-LONGEVITY-REVIEW-2023",
+      "1BTg8-sFno1J9adNT52WJqwzjoJc1TE6m",
+      "en",
+      [
+        "M04"
+      ],
+      "P1-COLD-EXTRA-008",
+      "Seed Longevity—The Evolution of Knowledge and a Conceptual Framework",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000893",
+      "P1-COLD-EXTRA-HAWAII-295-SPECIES-2019",
+      "1Pjnmut5ypYUCfpjdO9hXfstX9udn9GK0",
+      "en",
+      [
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "P1-COLD-EXTRA-009",
+      "Seed freeze sensitivity and ex situ longevity of 295 species in the native Hawaiian flora",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ],
+    [
+      "JBLR-LIB-00000894",
+      "P1-COLD-EXTRA-BRASSICACEAE-LIPIDS-2019",
+      "1AXtPNcrqF2dmL2ibFcTUnXDLUwm4zguS",
+      "en",
+      [
+        "M04"
+      ],
+      "P1-COLD-EXTRA-010",
+      "Lipid Thermal Fingerprints of Long-term Stored Seeds of Brassicaceae",
+      "P1_COLD_TOLERANCE_RESIDUAL_EXTRA"
+    ]
+  ],
+  "bibliographic_identifiers": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000873",
+      "author": "Jonathan Millaud",
+      "year": 2015,
+      "document_type": "Master 1 report",
+      "institution": "Université Catholique de Lille / Parc naturel régional Scarpe-Escaut"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000874",
+      "institution": "Conservatoire botanique national de Bailleul",
+      "year": 2019,
+      "document_type": "Annual activity report"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000875",
+      "stable_identifier": "HAL:mnhn-04811639",
+      "author": "Clémence Salvaudon",
+      "year": 2016,
+      "taxon": "Phelipanche purpurea",
+      "document_type": "Regional action plan"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000876",
+      "stable_identifier": "ASSEMBLEE_NATIONALE_3552_SENAT_571_2016",
+      "year": 2016,
+      "document_type": "Parliamentary report"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000877",
+      "year": 2007,
+      "document_type": "Technical manual",
+      "source_note": "French corrected/amended edition from the 2006 Italian original"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000878",
+      "isbn_or_ean": "978-2-7585-3488-4",
+      "bibliographic_year": 2016,
+      "edition_label": "édition 2015",
+      "institution": "MAAF; IGN",
+      "pages": 343
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000879",
+      "year_range": "2023-2024",
+      "institution": "Conservatoire botanique national de Bailleul / OBFLORES",
+      "metadata_confidence": "TITLE_FILENAME_AND_COLLECTION_CONTEXT;FULLTEXT_EXTRACTION_EMPTY"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000880",
+      "year": 2024,
+      "institution": "GDEAM-62",
+      "authors": "Françoise Duhamel; Aymeric Everard"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000881",
+      "author": "Romane Tardy",
+      "year": 2024,
+      "taxon": "Artemisia maritima"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000882",
+      "year": 2022,
+      "taxon": "Crambe maritima",
+      "institution": "Conservatoire botanique national de Bailleul"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000883",
+      "authors": "Marc Isenmann; Guillaume Terpereau",
+      "institution": "Conservatoire botanique national alpin / Flore Sentinelle",
+      "document_type": "Workshop/presentation"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000884",
+      "isbn": "978-84-692-6455-3",
+      "year": 2009,
+      "edition": "1",
+      "edition_date": "2009-03-17",
+      "institution": "ENSCONET",
+      "document_type": "Seed collecting manual"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000885",
+      "doi": "10.1007/s40626-021-00202-4",
+      "year": 2021,
+      "journal": "Theoretical and Experimental Plant Physiology",
+      "volume": 33,
+      "issue": 2,
+      "pages": "173-186",
+      "taxon": "Cariniana legalis",
+      "physical_representation_kind": "MHT_SAVED_WEBPAGE",
+      "full_article_access_state": "PAGE_CAPTURE_NOT_FULL_PDF"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000886",
+      "doi": "10.1186/s12870-025-06191-9",
+      "year": 2025,
+      "journal": "BMC Plant Biology",
+      "volume": 25,
+      "article": "186",
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000887",
+      "doi": "10.1007/978-1-0716-0783-1_36",
+      "year": 2021,
+      "inbook_title": "Cryopreservation and Freeze-Drying Protocols",
+      "pages": "663-682",
+      "physical_representation_kind": "MHT_SAVED_WEBPAGE",
+      "full_article_access_state": "PAGE_CAPTURE_NOT_FULL_PDF"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000888",
+      "doi": "10.1515/biol-2019-0001",
+      "year": 2019,
+      "journal": "Open Life Sciences",
+      "volume": 14,
+      "pages": "1-11",
+      "taxa": [
+        "Salix xerophila",
+        "Salix maximowiczii",
+        "Salix koreensis"
+      ],
+      "title_correction": {
+        "previous_title": "Long-term storage of Salix xerophila, Salix maximowiczii and Salix koreensis seeds under different water contents and temperatures",
+        "corrected_title": "Extended Low Temperature and Cryostorage Longevity of Salix Seeds with Desiccation Control",
+        "correction_basis": "DOI 10.1515/biol-2019-0001 bibliographic metadata and article record",
+        "identity_effect": "NONE"
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000889",
+      "doi": "10.1371/journal.pone.0203080",
+      "year": 2018,
+      "journal": "PLOS ONE",
+      "taxa": [
+        "Populus davidiana",
+        "Populus koreana"
+      ]
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000890",
+      "doi": "10.3390/plants15040602",
+      "year": 2026,
+      "journal": "Plants",
+      "license": "CC BY"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000891",
+      "doi": "10.15933/j.cnki.1004-3268.2026.01.016",
+      "year": 2026,
+      "journal": "Journal of Henan Agricultural Sciences",
+      "volume": 55,
+      "issue": 1,
+      "pages": "173-180",
+      "taxon": "Camellia oleifera"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000892",
+      "doi": "10.3390/plants12030471",
+      "year": 2023,
+      "journal": "Plants",
+      "volume": 12,
+      "article": "471",
+      "document_type": "Review",
+      "license": "CC BY"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000893",
+      "doi": "10.1002/ajb2.1351",
+      "year": 2019,
+      "journal": "American Journal of Botany",
+      "volume": 106,
+      "issue": 9,
+      "pages": "1248-1270"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000894",
+      "doi": "10.3390/plants8100414",
+      "year": 2019,
+      "journal": "Plants",
+      "volume": 8,
+      "article": "414"
+    }
+  ],
+  "representation_groups": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000874",
+      "primary_drive_id": "1SPGWZp9VdysiSYSLcOzk56uphDvceg7m",
+      "alternate_drive_ids": [
+        "1iX9Jd68Qu3oPmPobKIKjjM7svXAgPjWc"
+      ],
+      "relation": "SAME_TITLE_SAME_SIZE_SAME_FULLTEXT_READBACK;NO_BINARY_HASH_EQUALITY_ASSERTION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000891",
+      "primary_drive_id": "1S4lc9t4LVKq6uuLCGpB2CnYNHwPxoE49",
+      "alternate_drive_ids": [
+        "1D0AH4ukSlyQAuexTx2INoCNwFlQiiSCY"
+      ],
+      "relation": "SAME_DOI_SAME_TITLE_SAME_SIZE;NO_BINARY_HASH_EQUALITY_ASSERTION"
+    }
+  ],
+  "existing_identity_representation_links": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000799",
+      "additional_drive_id": "1891gBNNAeg5ts5cu5aglS3QjKrBl0UAG",
+      "relation": "SAME_PUBLICATION_BY_EXACT_TITLE_AND_ISBN_978-2-9511-8642-2;ADDITIONAL_PHYSICAL_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000864",
+      "additional_drive_id": "11KFccaVcYsOuFFy21sqGK_ky22aGU68R",
+      "relation": "SAME_2026_3E_EDITION_MAIN_GUIDE;ADDITIONAL_PHYSICAL_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000864",
+      "additional_drive_id": "1YmDJQSbc0aEN2b9R9AQ0kx58KXQM0pdc",
+      "relation": "SAME_2026_3E_EDITION_OFFICIAL_SPECIES_FICHE_COMPONENT;ADDITIONAL_COMPONENT_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000681",
+      "additional_drive_id": "1ARSQr1J1DK3z20Gw0I0MqDMCU127SMwM",
+      "relation": "SAME_PRITCHARD_SEATON_1993_PUBLICATION;SAME_TITLE_SIZE_FULLTEXT;ADDITIONAL_PHYSICAL_REPRESENTATION"
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000685",
+      "additional_drive_id": "1RPHosaMs69f5lXw7IoMAp4yRS91eyfBR",
+      "relation": "SAME_BONNER_1990_PUBLICATION_BY_DOI_10.1016/0378-1127(90)90230-9;ALTERNATE_SAVED_WEBPAGE_CAPTURE"
+    }
+  ],
+  "source_folder_summary": {
+    "p1_europe_folder": "1nZWHX4pL87Iyg9e89OCpLfdsGEWHN-FT",
+    "p1_cold_tolerance_folder": "1KMZGo7kzFvfABMYt8SzTrCfKBIJTYUtC",
+    "p1_europe_total_objects": 25,
+    "p1_europe_previously_directly_canonical": 9,
+    "p1_europe_new_document_identities": 12,
+    "p1_europe_additional_representation_objects": 4,
+    "p1_cold_total_objects": 20,
+    "p1_cold_previously_directly_canonical": 7,
+    "p1_cold_new_document_identities": 10,
+    "p1_cold_additional_representation_objects": 3
+  },
+  "historical_non_effect": {
+    "discovery_range_000723_000740": "UNCHANGED_NOT_ACQUIRED_REMOTE_UNRESOLVED",
+    "reason": "Current Europe folder residual documents do not match the titles/DOIs of discoveries 000723..000740.",
+    "buffer_effect": "NONE"
+  },
+  "identity_review": {
+    "exact_title_doi_repository_search": "PASS_NO_PREEXISTING_CANONICAL_MATCH_FOR_22_NEW_IDENTITIES",
+    "existing_identity_reuse_count": 5,
+    "new_representation_group_count": 2,
+    "no_hash_equality_assertion": true,
+    "no_silent_inference": true,
+    "note_carinianna_and_cryo": "MHT captures contain bibliographic metadata/page content but are not asserted to be full PDF articles."
+  },
+  "physical_reconciliation": {
+    "new_document_identities": 22,
+    "physical_moves": 0,
+    "physical_deletions": 0,
+    "copy_never_move": true
+  },
+  "next_LIB_FILE_ID": "JBLR-LIB-00000895",
+  "history_policy": "APPEND_ONLY"
+}

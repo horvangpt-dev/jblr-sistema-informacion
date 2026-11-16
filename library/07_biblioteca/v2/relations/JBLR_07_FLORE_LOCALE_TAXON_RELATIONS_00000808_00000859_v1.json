@@ -1,0 +1,2726 @@
+{
+  "schema": "JBLR_07_TAXON_SOURCE_RELATIONS_v1",
+  "authority": "07_LIBRARY_FINAL_IDENTITY_AUTHORITY",
+  "source_collection": "FLORE_LOCALE",
+  "origin_transaction": "07_FLORE_LOCALE_FIRST_PHYSICAL_CORPUS_808_859_2026_09_07",
+  "canonical_range": "JBLR-LIB-00000808..00000859",
+  "generated_at": "2026-09-07T15:15:19+02:00",
+  "intended_consumers": [
+    "003",
+    "TAXON_BY_TAXON_SYSTEM",
+    "FAMILY_GENUS_TAXON_RESEARCH"
+  ],
+  "relation_semantics": {
+    "FAMILY": "Source metadata states family for the taxon fiche.",
+    "GENUS": "Genus relation derived from the taxon name declared/anchored by the page identity.",
+    "TAXON": "The source page is directly about this taxon.",
+    "TAXON_RIOJA_EXACT": "Only exact name match to canonical Rioja cross is treated as exact Rioja linkage.",
+    "RIOJA_RELATED_INFRATAXON_OR_PARENT": "Related hierarchical name is preserved as relation, not silently upgraded to exact match."
+  },
+  "records": [
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000808",
+      "source_key": "FLORELOCALE-PAGE-3",
+      "mediawiki_pageid": 3,
+      "mediawiki_revid": 7310,
+      "page_title": "Acer campestre",
+      "scientific_name_declared": "Acer campestre",
+      "taxon_name": "Acer campestre",
+      "family": "Acéracées",
+      "genus": "Acer",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Acéracées",
+          "display_name": "Acéracées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Acéracées/Acer",
+          "display_name": "Acer",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Acéracées/Acer/Acer campestre",
+          "display_name": "Acer campestre",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Acer campestre",
+            "family": "Sapindaceae",
+            "rioja_id": "5193",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0075"
+          },
+          {
+            "rioja_name_verbatim": "Acer campestre",
+            "family": "Sapindaceae",
+            "rioja_id": "5193",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0075"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000809",
+      "source_key": "FLORELOCALE-PAGE-48",
+      "mediawiki_pageid": 48,
+      "mediawiki_revid": 7308,
+      "page_title": "Acer monspessulanum",
+      "scientific_name_declared": "Acer monspessulanum",
+      "taxon_name": "Acer monspessulanum",
+      "family": "Acéracées",
+      "genus": "Acer",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Acéracées",
+          "display_name": "Acéracées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Acéracées/Acer",
+          "display_name": "Acer",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Acéracées/Acer/Acer monspessulanum",
+          "display_name": "Acer monspessulanum",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Acer monspessulanum",
+            "family": "Sapindaceae",
+            "rioja_id": "1890",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Acer monspessulanum",
+            "family": "Sapindaceae",
+            "rioja_id": "1890",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000810",
+      "source_key": "FLORELOCALE-PAGE-230",
+      "mediawiki_pageid": 230,
+      "mediawiki_revid": 1154,
+      "page_title": "Abies alba",
+      "scientific_name_declared": "Abies alba Mill., 1759",
+      "taxon_name": "Abies alba",
+      "family": "Pinaceae",
+      "genus": "Abies",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Pinaceae",
+          "display_name": "Pinaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Pinaceae/Abies",
+          "display_name": "Abies",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Pinaceae/Abies/Abies alba",
+          "display_name": "Abies alba",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Abies alba",
+            "family": "Pinaceae",
+            "rioja_id": "4516",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Abies alba",
+            "family": "Pinaceae",
+            "rioja_id": "4516",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000811",
+      "source_key": "FLORELOCALE-PAGE-287",
+      "mediawiki_pageid": 287,
+      "mediawiki_revid": 7295,
+      "page_title": "Encyclopédie flore herbacée",
+      "scientific_name_declared": "Encyclopédie flore herbacée",
+      "taxon_name": null,
+      "family": null,
+      "genus": null,
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "CORPUS_GENERAL",
+          "key": "FLORE_LOCALE/ENCYCLOPEDIE_FLORE_HERBACEE",
+          "display_name": "Encyclopédie flore herbacée",
+          "relation_type": "GENERAL_SOURCE_RESOURCE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NOT_APPLICABLE",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000812",
+      "source_key": "FLORELOCALE-PAGE-293",
+      "mediawiki_pageid": 293,
+      "mediawiki_revid": 5676,
+      "page_title": "Allium sphaerocephalon",
+      "scientific_name_declared": "Allium sphaerocephalon L., 1753",
+      "taxon_name": "Allium sphaerocephalon",
+      "family": "Amaryllidaceae",
+      "genus": "Allium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Amaryllidaceae",
+          "display_name": "Amaryllidaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Amaryllidaceae/Allium",
+          "display_name": "Allium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Amaryllidaceae/Allium/Allium sphaerocephalon",
+          "display_name": "Allium sphaerocephalon",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Allium sphaerocephalon",
+            "family": "Amaryllidaceae",
+            "rioja_id": "408",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2082"
+          },
+          {
+            "rioja_name_verbatim": "Allium sphaerocephalon",
+            "family": "Amaryllidaceae",
+            "rioja_id": "408",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2082"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000813",
+      "source_key": "FLORELOCALE-PAGE-1595",
+      "mediawiki_pageid": 1595,
+      "mediawiki_revid": 7294,
+      "page_title": "Achillea millefolium",
+      "scientific_name_declared": "Achillea millefolium L., 1753",
+      "taxon_name": "Achillea millefolium",
+      "family": "Asteraceae",
+      "genus": "Achillea",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asteraceae",
+          "display_name": "Asteraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asteraceae/Achillea",
+          "display_name": "Achillea",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asteraceae/Achillea/Achillea millefolium",
+          "display_name": "Achillea millefolium",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Achillea millefolium subsp. millefolium",
+            "family": "Asteraceae",
+            "rioja_id": "1804",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Achillea millefolium subsp. millefolium",
+            "family": "Asteraceae",
+            "rioja_id": "1804",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000814",
+      "source_key": "FLORELOCALE-PAGE-1596",
+      "mediawiki_pageid": 1596,
+      "mediawiki_revid": 5834,
+      "page_title": "Agrostemma githago L., 1753",
+      "scientific_name_declared": "Agrostemma githago L., 1753",
+      "taxon_name": "Agrostemma githago",
+      "family": "Caryophyllaceae",
+      "genus": "Agrostemma",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Caryophyllaceae",
+          "display_name": "Caryophyllaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Caryophyllaceae/Agrostemma",
+          "display_name": "Agrostemma",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Caryophyllaceae/Agrostemma/Agrostemma githago",
+          "display_name": "Agrostemma githago",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Agrostemma githago",
+            "family": "Caryophyllaceae",
+            "rioja_id": "3426",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0174"
+          },
+          {
+            "rioja_name_verbatim": "Agrostemma githago",
+            "family": "Caryophyllaceae",
+            "rioja_id": "3426",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0174"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000815",
+      "source_key": "FLORELOCALE-PAGE-1597",
+      "mediawiki_pageid": 1597,
+      "mediawiki_revid": 7306,
+      "page_title": "Agrostis capillaris L., 1753",
+      "scientific_name_declared": "Agrostis capillaris L., 1753",
+      "taxon_name": "Agrostis capillaris",
+      "family": "Poaceae",
+      "genus": "Agrostis",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Poaceae",
+          "display_name": "Poaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Poaceae/Agrostis",
+          "display_name": "Agrostis",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Poaceae/Agrostis/Agrostis capillaris",
+          "display_name": "Agrostis capillaris",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Agrostis capillaris",
+            "family": "Poaceae",
+            "rioja_id": "5243",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1849"
+          },
+          {
+            "rioja_name_verbatim": "Agrostis capillaris",
+            "family": "Poaceae",
+            "rioja_id": "5243",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1849"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000816",
+      "source_key": "FLORELOCALE-PAGE-1598",
+      "mediawiki_pageid": 1598,
+      "mediawiki_revid": 7218,
+      "page_title": "Alchemilla alpigena Buser, 1894",
+      "scientific_name_declared": "Alchemilla alpigena Buser, 1894",
+      "taxon_name": "Alchemilla alpigena",
+      "family": "Rosaceae",
+      "genus": "Alchemilla",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Rosaceae",
+          "display_name": "Rosaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Rosaceae/Alchemilla",
+          "display_name": "Alchemilla",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Rosaceae/Alchemilla/Alchemilla alpigena",
+          "display_name": "Alchemilla alpigena",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000817",
+      "source_key": "FLORELOCALE-PAGE-1599",
+      "mediawiki_pageid": 1599,
+      "mediawiki_revid": 5678,
+      "page_title": "Anthoxanthum odoratum L., 1753",
+      "scientific_name_declared": "Anthoxanthum odoratum L., 1753",
+      "taxon_name": "Anthoxanthum odoratum",
+      "family": "Poaceae",
+      "genus": "Anthoxanthum",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Poaceae",
+          "display_name": "Poaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Poaceae/Anthoxanthum",
+          "display_name": "Anthoxanthum",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Poaceae/Anthoxanthum/Anthoxanthum odoratum",
+          "display_name": "Anthoxanthum odoratum",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anthoxanthum odoratum",
+            "family": "Poaceae",
+            "rioja_id": "2217",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1864"
+          },
+          {
+            "rioja_name_verbatim": "Anthoxanthum odoratum",
+            "family": "Poaceae",
+            "rioja_id": "2217",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1864"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000818",
+      "source_key": "FLORELOCALE-PAGE-1601",
+      "mediawiki_pageid": 1601,
+      "mediawiki_revid": 5318,
+      "page_title": "Betonica officinalis",
+      "scientific_name_declared": "Betonica officinalis L., 1753",
+      "taxon_name": "Betonica officinalis",
+      "family": "Lamiaceae",
+      "genus": "Betonica",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Lamiaceae",
+          "display_name": "Lamiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Lamiaceae/Betonica",
+          "display_name": "Betonica",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Lamiaceae/Betonica/Betonica officinalis",
+          "display_name": "Betonica officinalis",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000819",
+      "source_key": "FLORELOCALE-PAGE-1602",
+      "mediawiki_pageid": 1602,
+      "mediawiki_revid": 5843,
+      "page_title": "Bifora radians",
+      "scientific_name_declared": "Bifora radians M.Bieb., 1819",
+      "taxon_name": "Bifora radians",
+      "family": "Apiaceae",
+      "genus": "Bifora",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Apiaceae",
+          "display_name": "Apiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Apiaceae/Bifora",
+          "display_name": "Bifora",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Apiaceae/Bifora/Bifora radians",
+          "display_name": "Bifora radians",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000820",
+      "source_key": "FLORELOCALE-PAGE-1604",
+      "mediawiki_pageid": 1604,
+      "mediawiki_revid": 5858,
+      "page_title": "Bupleurum rotundifolium",
+      "scientific_name_declared": "Bupleurum rotundifolium L., 1753",
+      "taxon_name": "Bupleurum rotundifolium",
+      "family": "Apiaceae",
+      "genus": "Bupleurum",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Apiaceae",
+          "display_name": "Apiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Apiaceae/Bupleurum",
+          "display_name": "Bupleurum",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Apiaceae/Bupleurum/Bupleurum rotundifolium",
+          "display_name": "Bupleurum rotundifolium",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Bupleurum rotundifolium",
+            "family": "Apiaceae",
+            "rioja_id": "1034",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1659"
+          },
+          {
+            "rioja_name_verbatim": "Bupleurum rotundifolium",
+            "family": "Apiaceae",
+            "rioja_id": "1034",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1659"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000821",
+      "source_key": "FLORELOCALE-PAGE-1605",
+      "mediawiki_pageid": 1605,
+      "mediawiki_revid": 5860,
+      "page_title": "Calamagrostis varia",
+      "scientific_name_declared": "Calamagrostis varia (Schrad.) Host, 1809",
+      "taxon_name": "Calamagrostis varia",
+      "family": "Poaceae",
+      "genus": "Calamagrostis",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Poaceae",
+          "display_name": "Poaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Poaceae/Calamagrostis",
+          "display_name": "Calamagrostis",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Poaceae/Calamagrostis/Calamagrostis varia",
+          "display_name": "Calamagrostis varia",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000822",
+      "source_key": "FLORELOCALE-PAGE-1606",
+      "mediawiki_pageid": 1606,
+      "mediawiki_revid": 5862,
+      "page_title": "Campanula rapunculoides",
+      "scientific_name_declared": "Campanula rapunculoides L., 1753",
+      "taxon_name": "Campanula rapunculoides",
+      "family": "Campanulaceae",
+      "genus": "Campanula",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Campanulaceae",
+          "display_name": "Campanulaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Campanulaceae/Campanula",
+          "display_name": "Campanula",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Campanulaceae/Campanula/Campanula rapunculoides",
+          "display_name": "Campanula rapunculoides",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000823",
+      "source_key": "FLORELOCALE-PAGE-1608",
+      "mediawiki_pageid": 1608,
+      "mediawiki_revid": 4506,
+      "page_title": "Carex sempervirens",
+      "scientific_name_declared": "Carex sempervirens Vill., 1787",
+      "taxon_name": "Carex sempervirens",
+      "family": "Cyperaceae",
+      "genus": "Carex",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Cyperaceae",
+          "display_name": "Cyperaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Cyperaceae/Carex",
+          "display_name": "Carex",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Cyperaceae/Carex/Carex sempervirens",
+          "display_name": "Carex sempervirens",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000824",
+      "source_key": "FLORELOCALE-PAGE-1610",
+      "mediawiki_pageid": 1610,
+      "mediawiki_revid": 7283,
+      "page_title": "Centaurea scabiosa subsp. scabiosa",
+      "scientific_name_declared": "Centaurea scabiosa subsp. scabiosa L., 1753",
+      "taxon_name": "Centaurea scabiosa subsp. scabiosa",
+      "family": "Asteraceae",
+      "genus": "Centaurea",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asteraceae",
+          "display_name": "Asteraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asteraceae/Centaurea",
+          "display_name": "Centaurea",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asteraceae/Centaurea/Centaurea scabiosa subsp. scabiosa",
+          "display_name": "Centaurea scabiosa subsp. scabiosa",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Centaurea scabiosa",
+            "family": "Asteraceae",
+            "rioja_id": "131",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Centaurea scabiosa",
+            "family": "Asteraceae",
+            "rioja_id": "131",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000825",
+      "source_key": "FLORELOCALE-PAGE-1611",
+      "mediawiki_pageid": 1611,
+      "mediawiki_revid": 5939,
+      "page_title": "Cerastium arvense subsp. arvense",
+      "scientific_name_declared": "Cerastium arvense subsp. arvense L., 1753",
+      "taxon_name": "Cerastium arvense subsp. arvense",
+      "family": "Caryophyllaceae",
+      "genus": "Cerastium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Caryophyllaceae",
+          "display_name": "Caryophyllaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Caryophyllaceae/Cerastium",
+          "display_name": "Cerastium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Caryophyllaceae/Cerastium/Cerastium arvense subsp. arvense",
+          "display_name": "Cerastium arvense subsp. arvense",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          },
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000826",
+      "source_key": "FLORELOCALE-PAGE-1612",
+      "mediawiki_pageid": 1612,
+      "mediawiki_revid": 5938,
+      "page_title": "Cerastium arvense subsp. strictum",
+      "scientific_name_declared": "Cerastium arvense subsp. strictum Gaudin, 1828",
+      "taxon_name": "Cerastium arvense subsp. strictum",
+      "family": "Caryophyllaceae",
+      "genus": "Cerastium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Caryophyllaceae",
+          "display_name": "Caryophyllaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Caryophyllaceae/Cerastium",
+          "display_name": "Cerastium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Caryophyllaceae/Cerastium/Cerastium arvense subsp. strictum",
+          "display_name": "Cerastium arvense subsp. strictum",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          },
+          {
+            "rioja_name_verbatim": "Cerastium arvense",
+            "family": "Caryophyllaceae",
+            "rioja_id": "4810",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0183"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000827",
+      "source_key": "FLORELOCALE-PAGE-1613",
+      "mediawiki_pageid": 1613,
+      "mediawiki_revid": 5642,
+      "page_title": "Centaurea stoebe",
+      "scientific_name_declared": "Centaurea stoebe L., 1753",
+      "taxon_name": "Centaurea stoebe",
+      "family": "Astéracées",
+      "genus": "Centaurea",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Astéracées",
+          "display_name": "Astéracées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Astéracées/Centaurea",
+          "display_name": "Centaurea",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Astéracées/Centaurea/Centaurea stoebe",
+          "display_name": "Centaurea stoebe",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000828",
+      "source_key": "FLORELOCALE-PAGE-1614",
+      "mediawiki_pageid": 1614,
+      "mediawiki_revid": 5957,
+      "page_title": "Armeria arenaria",
+      "scientific_name_declared": "Armeria arenaria (Pers.) Schult., 1820",
+      "taxon_name": "Armeria arenaria",
+      "family": "Plumbaginacées",
+      "genus": "Armeria",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Plumbaginacées",
+          "display_name": "Plumbaginacées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Plumbaginacées/Armeria",
+          "display_name": "Armeria",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Plumbaginacées/Armeria/Armeria arenaria",
+          "display_name": "Armeria arenaria",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Armeria arenaria subsp. arenaria",
+            "family": "Plumbaginaceae",
+            "rioja_id": "4762",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1243"
+          },
+          {
+            "rioja_name_verbatim": "Armeria arenaria subsp. arenaria",
+            "family": "Plumbaginaceae",
+            "rioja_id": "4762",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1243"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000829",
+      "source_key": "FLORELOCALE-PAGE-1615",
+      "mediawiki_pageid": 1615,
+      "mediawiki_revid": 5839,
+      "page_title": "Allium victorialis",
+      "scientific_name_declared": "Allium victorialis L., 1753,",
+      "taxon_name": "Allium victorialis",
+      "family": "Amaryllidacées",
+      "genus": "Allium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Amaryllidacées",
+          "display_name": "Amaryllidacées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Amaryllidacées/Allium",
+          "display_name": "Allium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Amaryllidacées/Allium/Allium victorialis",
+          "display_name": "Allium victorialis",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Allium victorialis",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3878",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2085"
+          },
+          {
+            "rioja_name_verbatim": "Allium victorialis",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3878",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2085"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000830",
+      "source_key": "FLORELOCALE-PAGE-1620",
+      "mediawiki_pageid": 1620,
+      "mediawiki_revid": 5636,
+      "page_title": "Anarrhinum bellidifolium",
+      "scientific_name_declared": "Anarrhinum bellidifolium",
+      "taxon_name": "Anarrhinum bellidifolium",
+      "family": "Plantaginacées",
+      "genus": "Anarrhinum",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Plantaginacées",
+          "display_name": "Plantaginacées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Plantaginacées/Anarrhinum",
+          "display_name": "Anarrhinum",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Plantaginacées/Anarrhinum/Anarrhinum bellidifolium",
+          "display_name": "Anarrhinum bellidifolium",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anarrhinum bellidifolium",
+            "family": "Plantaginaceae",
+            "rioja_id": "4991",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1536"
+          },
+          {
+            "rioja_name_verbatim": "Anarrhinum bellidifolium",
+            "family": "Plantaginaceae",
+            "rioja_id": "4991",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1536"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000831",
+      "source_key": "FLORELOCALE-PAGE-1626",
+      "mediawiki_pageid": 1626,
+      "mediawiki_revid": 7282,
+      "page_title": "Aquilegia vulgaris",
+      "scientific_name_declared": "Aquilegia vulgaris L., 1753",
+      "taxon_name": "Aquilegia vulgaris",
+      "family": "Renonculacées",
+      "genus": "Aquilegia",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Renonculacées",
+          "display_name": "Renonculacées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Renonculacées/Aquilegia",
+          "display_name": "Aquilegia",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Renonculacées/Aquilegia/Aquilegia vulgaris",
+          "display_name": "Aquilegia vulgaris",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Aquilegia vulgaris subsp. vulgaris",
+            "family": "Ranunculaceae",
+            "rioja_id": "4024",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1323"
+          },
+          {
+            "rioja_name_verbatim": "Aquilegia vulgaris subsp. vulgaris",
+            "family": "Ranunculaceae",
+            "rioja_id": "4024",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1323"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000832",
+      "source_key": "FLORELOCALE-PAGE-1631",
+      "mediawiki_pageid": 1631,
+      "mediawiki_revid": 5639,
+      "page_title": "Artemisia campestris",
+      "scientific_name_declared": "Artemisia campestris L., 1753",
+      "taxon_name": "Artemisia campestris",
+      "family": "Astéracées",
+      "genus": "Artemisia",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Astéracées",
+          "display_name": "Astéracées",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Astéracées/Artemisia",
+          "display_name": "Artemisia",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Astéracées/Artemisia/Artemisia campestris",
+          "display_name": "Artemisia campestris",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Artemisia campestris subsp. glutinosa",
+            "family": "Asteraceae",
+            "rioja_id": "5196",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Artemisia campestris subsp. glutinosa",
+            "family": "Asteraceae",
+            "rioja_id": "5196",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000833",
+      "source_key": "FLORELOCALE-PAGE-1662",
+      "mediawiki_pageid": 1662,
+      "mediawiki_revid": 5905,
+      "page_title": "Euphorbia dendroides",
+      "scientific_name_declared": "Euphorbia dendroides",
+      "taxon_name": "Euphorbia dendroides",
+      "family": "Euphorbiaceae",
+      "genus": "Euphorbia",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Euphorbiaceae",
+          "display_name": "Euphorbiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Euphorbiaceae/Euphorbia",
+          "display_name": "Euphorbia",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Euphorbiaceae/Euphorbia/Euphorbia dendroides",
+          "display_name": "Euphorbia dendroides",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000834",
+      "source_key": "FLORELOCALE-PAGE-1670",
+      "mediawiki_pageid": 1670,
+      "mediawiki_revid": 5850,
+      "page_title": "Bryonia dioica",
+      "scientific_name_declared": "Bryonia dioica Jacq., 1774",
+      "taxon_name": "Bryonia dioica",
+      "family": "Cucurbitaceae",
+      "genus": "Bryonia",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Cucurbitaceae",
+          "display_name": "Cucurbitaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Cucurbitaceae/Bryonia",
+          "display_name": "Bryonia",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Cucurbitaceae/Bryonia/Bryonia dioica",
+          "display_name": "Bryonia dioica",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Bryonia dioica",
+            "family": "Cucurbitaceae",
+            "rioja_id": "2835",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0758"
+          },
+          {
+            "rioja_name_verbatim": "Bryonia dioica",
+            "family": "Cucurbitaceae",
+            "rioja_id": "2835",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0758"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000835",
+      "source_key": "FLORELOCALE-PAGE-1671",
+      "mediawiki_pageid": 1671,
+      "mediawiki_revid": 5907,
+      "page_title": "Euphorbia spinosa",
+      "scientific_name_declared": "Euphorbia spinosa",
+      "taxon_name": "Euphorbia spinosa",
+      "family": "Euphorbiaceae",
+      "genus": "Euphorbia",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Euphorbiaceae",
+          "display_name": "Euphorbiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Euphorbiaceae/Euphorbia",
+          "display_name": "Euphorbia",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Euphorbiaceae/Euphorbia/Euphorbia spinosa",
+          "display_name": "Euphorbia spinosa",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000836",
+      "source_key": "FLORELOCALE-PAGE-1779",
+      "mediawiki_pageid": 1779,
+      "mediawiki_revid": 5680,
+      "page_title": "Cichorium intybus",
+      "scientific_name_declared": "Cichorium intybus L., 1753Nom vernaculaire : Chicorée amère",
+      "taxon_name": "Cichorium intybus",
+      "family": "Asteraceae",
+      "genus": "Cichorium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asteraceae",
+          "display_name": "Asteraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asteraceae/Cichorium",
+          "display_name": "Cichorium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asteraceae/Cichorium/Cichorium intybus",
+          "display_name": "Cichorium intybus",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Cichorium intybus",
+            "family": "Asteraceae",
+            "rioja_id": "2532",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0415"
+          },
+          {
+            "rioja_name_verbatim": "Cichorium intybus",
+            "family": "Asteraceae",
+            "rioja_id": "2532",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0415"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000837",
+      "source_key": "FLORELOCALE-PAGE-1783",
+      "mediawiki_pageid": 1783,
+      "mediawiki_revid": 7269,
+      "page_title": "Clinopodium vulgare",
+      "scientific_name_declared": "Clinopodium vulgare L., 1753",
+      "taxon_name": "Clinopodium vulgare",
+      "family": "Lamiaceae",
+      "genus": "Clinopodium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Lamiaceae",
+          "display_name": "Lamiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Lamiaceae/Clinopodium",
+          "display_name": "Clinopodium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Lamiaceae/Clinopodium/Clinopodium vulgare",
+          "display_name": "Clinopodium vulgare",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000838",
+      "source_key": "FLORELOCALE-PAGE-1785",
+      "mediawiki_pageid": 1785,
+      "mediawiki_revid": 6011,
+      "page_title": "Cyanus segetum",
+      "scientific_name_declared": "Cyanus segetum Hill, 1762",
+      "taxon_name": "Cyanus segetum",
+      "family": "Asteraceae",
+      "genus": "Cyanus",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asteraceae",
+          "display_name": "Asteraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asteraceae/Cyanus",
+          "display_name": "Cyanus",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asteraceae/Cyanus/Cyanus segetum",
+          "display_name": "Cyanus segetum",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000839",
+      "source_key": "FLORELOCALE-PAGE-1786",
+      "mediawiki_pageid": 1786,
+      "mediawiki_revid": 5883,
+      "page_title": "Daucus carota",
+      "scientific_name_declared": "Daucus carota L., 1753",
+      "taxon_name": "Daucus carota",
+      "family": "Apiaceae",
+      "genus": "Daucus",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Apiaceae",
+          "display_name": "Apiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Apiaceae/Daucus",
+          "display_name": "Daucus",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Apiaceae/Daucus/Daucus carota",
+          "display_name": "Daucus carota",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Daucus carota",
+            "family": "Apiaceae",
+            "rioja_id": "5276",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Daucus carota",
+            "family": "Apiaceae",
+            "rioja_id": "5276",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000840",
+      "source_key": "FLORELOCALE-PAGE-1787",
+      "mediawiki_pageid": 1787,
+      "mediawiki_revid": 4540,
+      "page_title": "Epilobium dodonaei",
+      "scientific_name_declared": "Epilobium dodonaei subsp. dodonaei Vill., 1779",
+      "taxon_name": "Epilobium dodonaei",
+      "family": "Onagraceae",
+      "genus": "Epilobium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Onagraceae",
+          "display_name": "Onagraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Onagraceae/Epilobium",
+          "display_name": "Epilobium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Onagraceae/Epilobium/Epilobium dodonaei",
+          "display_name": "Epilobium dodonaei",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000841",
+      "source_key": "FLORELOCALE-PAGE-1788",
+      "mediawiki_pageid": 1788,
+      "mediawiki_revid": 5897,
+      "page_title": "Erucastrum nasturtiifolium",
+      "scientific_name_declared": "Erucastrum nasturtiifolium (Poir.) O.E.Schulz, 1916",
+      "taxon_name": "Erucastrum nasturtiifolium",
+      "family": "Brassicaceae",
+      "genus": "Erucastrum",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Brassicaceae",
+          "display_name": "Brassicaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Brassicaceae/Erucastrum",
+          "display_name": "Erucastrum",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Brassicaceae/Erucastrum/Erucastrum nasturtiifolium",
+          "display_name": "Erucastrum nasturtiifolium",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Erucastrum nasturtiifolium",
+            "family": "Brassicaceae",
+            "rioja_id": "2005",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Erucastrum nasturtiifolium",
+            "family": "Brassicaceae",
+            "rioja_id": "2005",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000842",
+      "source_key": "FLORELOCALE-PAGE-1795",
+      "mediawiki_pageid": 1795,
+      "mediawiki_revid": 5940,
+      "page_title": "Coronilla varia",
+      "scientific_name_declared": "Coronilla varia L., 1753",
+      "taxon_name": "Coronilla varia",
+      "family": "Fabaceae",
+      "genus": "Coronilla",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Fabaceae",
+          "display_name": "Fabaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Fabaceae/Coronilla",
+          "display_name": "Coronilla",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Fabaceae/Coronilla/Coronilla varia",
+          "display_name": "Coronilla varia",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000843",
+      "source_key": "FLORELOCALE-PAGE-1799",
+      "mediawiki_pageid": 1799,
+      "mediawiki_revid": 7265,
+      "page_title": "Anthyllis vulneraria subsp. alpestris",
+      "scientific_name_declared": "Anthyllis vulneraria subsp. alpestris (Kit.) Asch. & Graebn., 1908",
+      "taxon_name": "Anthyllis vulneraria subsp. alpestris",
+      "family": "Fabaceae",
+      "genus": "Anthyllis",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Fabaceae",
+          "display_name": "Fabaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Fabaceae/Anthyllis",
+          "display_name": "Anthyllis",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Fabaceae/Anthyllis/Anthyllis vulneraria subsp. alpestris",
+          "display_name": "Anthyllis vulneraria subsp. alpestris",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anthyllis vulneraria subsp. alpestris",
+            "family": "Fabaceae",
+            "rioja_id": "3963",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0965"
+          },
+          {
+            "rioja_name_verbatim": "Anthyllis vulneraria subsp. alpestris",
+            "family": "Fabaceae",
+            "rioja_id": "3963",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:0965"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000844",
+      "source_key": "FLORELOCALE-PAGE-1887",
+      "mediawiki_pageid": 1887,
+      "mediawiki_revid": 5871,
+      "page_title": "Corydalis solida",
+      "scientific_name_declared": "Corydalis solida (L.) Clairv., 1811",
+      "taxon_name": "Corydalis solida",
+      "family": "Papaveraceae",
+      "genus": "Corydalis",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Papaveraceae",
+          "display_name": "Papaveraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Papaveraceae/Corydalis",
+          "display_name": "Corydalis",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Papaveraceae/Corydalis/Corydalis solida",
+          "display_name": "Corydalis solida",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000845",
+      "source_key": "FLORELOCALE-PAGE-1988",
+      "mediawiki_pageid": 1988,
+      "mediawiki_revid": 7168,
+      "page_title": "Achillea ptarmica",
+      "scientific_name_declared": "Achillea ptarmica L., 1753",
+      "taxon_name": "Achillea ptarmica",
+      "family": "Asteraceae",
+      "genus": "Achillea",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asteraceae",
+          "display_name": "Asteraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asteraceae/Achillea",
+          "display_name": "Achillea",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asteraceae/Achillea/Achillea ptarmica",
+          "display_name": "Achillea ptarmica",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000846",
+      "source_key": "FLORELOCALE-PAGE-1989",
+      "mediawiki_pageid": 1989,
+      "mediawiki_revid": 5951,
+      "page_title": "Alisma plantago-aquatica",
+      "scientific_name_declared": "Alisma plantago-aquatica L., 1753",
+      "taxon_name": "Alisma plantago-aquatica",
+      "family": "Alismataceae",
+      "genus": "Alisma",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Alismataceae",
+          "display_name": "Alismataceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Alismataceae/Alisma",
+          "display_name": "Alisma",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Alismataceae/Alisma/Alisma plantago-aquatica",
+          "display_name": "Alisma plantago-aquatica",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Alisma plantago-aquatica",
+            "family": "Alismataceae",
+            "rioja_id": "1314",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1768"
+          },
+          {
+            "rioja_name_verbatim": "Alisma plantago-aquatica",
+            "family": "Alismataceae",
+            "rioja_id": "1314",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1768"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000847",
+      "source_key": "FLORELOCALE-PAGE-1990",
+      "mediawiki_pageid": 1990,
+      "mediawiki_revid": 5322,
+      "page_title": "Arrhenatherum elatius",
+      "scientific_name_declared": "Arrhenatherum elatius (L.) P.Beauv. ex J.Presl & C.Presl, 1819",
+      "taxon_name": "Arrhenatherum elatius",
+      "family": "Poaceae",
+      "genus": "Arrhenatherum",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Poaceae",
+          "display_name": "Poaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Poaceae/Arrhenatherum",
+          "display_name": "Arrhenatherum",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Poaceae/Arrhenatherum/Arrhenatherum elatius",
+          "display_name": "Arrhenatherum elatius",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Arrhenatherum elatius",
+            "family": "Poaceae",
+            "rioja_id": "2941",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Arrhenatherum elatius",
+            "family": "Poaceae",
+            "rioja_id": "2941",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000848",
+      "source_key": "FLORELOCALE-PAGE-1991",
+      "mediawiki_pageid": 1991,
+      "mediawiki_revid": 7268,
+      "page_title": "Astrantia major",
+      "scientific_name_declared": "Astrantia major",
+      "taxon_name": "Astrantia major",
+      "family": "Apiaceae",
+      "genus": "Astrantia",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Apiaceae",
+          "display_name": "Apiaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Apiaceae/Astrantia",
+          "display_name": "Astrantia",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Apiaceae/Astrantia/Astrantia major",
+          "display_name": "Astrantia major",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Astrantia major",
+            "family": "Apiaceae",
+            "rioja_id": "1651",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1648"
+          },
+          {
+            "rioja_name_verbatim": "Astrantia major",
+            "family": "Apiaceae",
+            "rioja_id": "1651",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1648"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000849",
+      "source_key": "FLORELOCALE-PAGE-1995",
+      "mediawiki_pageid": 1995,
+      "mediawiki_revid": 5955,
+      "page_title": "Centaurea nigra",
+      "scientific_name_declared": "Centaurea nigra",
+      "taxon_name": "Centaurea nigra",
+      "family": "Asteraceae",
+      "genus": "Centaurea",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asteraceae",
+          "display_name": "Asteraceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asteraceae/Centaurea",
+          "display_name": "Centaurea",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asteraceae/Centaurea/Centaurea nigra",
+          "display_name": "Centaurea nigra",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Centaurea nigra subsp. carpetana",
+            "family": "Asteraceae",
+            "rioja_id": "2069",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Centaurea nigra subsp. carpetana",
+            "family": "Asteraceae",
+            "rioja_id": "2069",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000850",
+      "source_key": "FLORELOCALE-PAGE-1997",
+      "mediawiki_pageid": 1997,
+      "mediawiki_revid": 5382,
+      "page_title": "Cynosurus cristatus",
+      "scientific_name_declared": "Cynosurus cristatus",
+      "taxon_name": "Cynosurus cristatus",
+      "family": "Poaceae",
+      "genus": "Cynosurus",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Poaceae",
+          "display_name": "Poaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Poaceae/Cynosurus",
+          "display_name": "Cynosurus",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Poaceae/Cynosurus/Cynosurus cristatus",
+          "display_name": "Cynosurus cristatus",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Cynosurus cristatus",
+            "family": "Poaceae",
+            "rioja_id": "4356",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1903"
+          },
+          {
+            "rioja_name_verbatim": "Cynosurus cristatus",
+            "family": "Poaceae",
+            "rioja_id": "4356",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1903"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000851",
+      "source_key": "FLORELOCALE-PAGE-1998",
+      "mediawiki_pageid": 1998,
+      "mediawiki_revid": 5388,
+      "page_title": "Digitalis purpurea",
+      "scientific_name_declared": "Digitalis purpurea",
+      "taxon_name": "Digitalis purpurea",
+      "family": "Plantaginaceae",
+      "genus": "Digitalis",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Plantaginaceae",
+          "display_name": "Plantaginaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Plantaginaceae/Digitalis",
+          "display_name": "Digitalis",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Plantaginaceae/Digitalis/Digitalis purpurea",
+          "display_name": "Digitalis purpurea",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Digitalis purpurea subsp. purpurea",
+            "family": "Plantaginaceae",
+            "rioja_id": "778",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1551"
+          },
+          {
+            "rioja_name_verbatim": "Digitalis purpurea subsp. purpurea",
+            "family": "Plantaginaceae",
+            "rioja_id": "778",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1551"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000852",
+      "source_key": "FLORELOCALE-PAGE-2225",
+      "mediawiki_pageid": 2225,
+      "mediawiki_revid": 5566,
+      "page_title": "Campanula scheuchzeri subsp. lanceolata",
+      "scientific_name_declared": "Campanula scheuchzeri subsp. lanceolata (Lapeyr.) J.-M.Tison, 2010",
+      "taxon_name": "Campanula scheuchzeri subsp. lanceolata",
+      "family": "Campanulaceae",
+      "genus": "Campanula",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Campanulaceae",
+          "display_name": "Campanulaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Campanulaceae/Campanula",
+          "display_name": "Campanula",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Campanulaceae/Campanula/Campanula scheuchzeri subsp. lanceolata",
+          "display_name": "Campanula scheuchzeri subsp. lanceolata",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Campanula scheuchzeri",
+            "family": "Campanulaceae",
+            "rioja_id": "148",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Campanula scheuchzeri",
+            "family": "Campanulaceae",
+            "rioja_id": "148",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000853",
+      "source_key": "FLORELOCALE-PAGE-2259",
+      "mediawiki_pageid": 2259,
+      "mediawiki_revid": 5721,
+      "page_title": "Anthericum liliago",
+      "scientific_name_declared": "Anthericum liliago L., 1753",
+      "taxon_name": "Anthericum liliago",
+      "family": "Asparagaceae",
+      "genus": "Anthericum",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asparagaceae",
+          "display_name": "Asparagaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asparagaceae/Anthericum",
+          "display_name": "Anthericum",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asparagaceae/Anthericum/Anthericum liliago",
+          "display_name": "Anthericum liliago",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Anthericum liliago",
+            "family": "Asparagaceae",
+            "rioja_id": "1467",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Anthericum liliago",
+            "family": "Asparagaceae",
+            "rioja_id": "1467",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000854",
+      "source_key": "FLORELOCALE-PAGE-2282",
+      "mediawiki_pageid": 2282,
+      "mediawiki_revid": 5999,
+      "page_title": "Allium ursinum",
+      "scientific_name_declared": "Allium ursinum L., 1753",
+      "taxon_name": "Allium ursinum",
+      "family": "Amaryllidaceae",
+      "genus": "Allium",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Amaryllidaceae",
+          "display_name": "Amaryllidaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Amaryllidaceae/Allium",
+          "display_name": "Allium",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Amaryllidaceae/Allium/Allium ursinum",
+          "display_name": "Allium ursinum",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Allium ursinum",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3770",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Allium ursinum",
+            "family": "Amaryllidaceae",
+            "rioja_id": "3770",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000855",
+      "source_key": "FLORELOCALE-PAGE-2283",
+      "mediawiki_pageid": 2283,
+      "mediawiki_revid": 5745,
+      "page_title": "Dianhtus hyssopifolium",
+      "scientific_name_declared": "Dianthus hyssopifolius L., 1755",
+      "taxon_name": "Dianthus hyssopifolius",
+      "family": "Caryophyllaceae",
+      "genus": "Dianthus",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Caryophyllaceae",
+          "display_name": "Caryophyllaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Caryophyllaceae/Dianthus",
+          "display_name": "Dianthus",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Caryophyllaceae/Dianthus/Dianthus hyssopifolius",
+          "display_name": "Dianthus hyssopifolius",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Dianthus hyssopifolius",
+            "family": "Caryophyllaceae",
+            "rioja_id": "2434",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          },
+          {
+            "rioja_name_verbatim": "Dianthus hyssopifolius",
+            "family": "Caryophyllaceae",
+            "rioja_id": "2434",
+            "classification_v3": "CONFIRMED_BY_DIRECT_OFFICIAL_SOURCE_ID",
+            "rc2_release_row_id": ""
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000856",
+      "source_key": "FLORELOCALE-PAGE-3406",
+      "mediawiki_pageid": 3406,
+      "mediawiki_revid": 7139,
+      "page_title": "Asphodelus albus",
+      "scientific_name_declared": "Asphodelus albus",
+      "taxon_name": "Asphodelus albus",
+      "family": "Asphodelaceae",
+      "genus": "Asphodelus",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Asphodelaceae",
+          "display_name": "Asphodelaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Asphodelaceae/Asphodelus",
+          "display_name": "Asphodelus",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Asphodelaceae/Asphodelus/Asphodelus albus",
+          "display_name": "Asphodelus albus",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Asphodelus albus subsp. albus",
+            "family": "Xanthorrhoeaceae",
+            "rioja_id": "4553",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2090"
+          },
+          {
+            "rioja_name_verbatim": "Asphodelus albus subsp. albus",
+            "family": "Xanthorrhoeaceae",
+            "rioja_id": "4553",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:2090"
+          }
+        ]
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000857",
+      "source_key": "FLORELOCALE-PAGE-3411",
+      "mediawiki_pageid": 3411,
+      "mediawiki_revid": 7140,
+      "page_title": "Bromus arvensis",
+      "scientific_name_declared": "Bromus arvensis",
+      "taxon_name": "Bromus arvensis",
+      "family": "Poaceae",
+      "genus": "Bromus",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Poaceae",
+          "display_name": "Poaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Poaceae/Bromus",
+          "display_name": "Bromus",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Poaceae/Bromus/Bromus arvensis",
+          "display_name": "Bromus arvensis",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "EXACT_RIOJA_TAXON",
+        "exact_matches": [
+          {
+            "rioja_name_verbatim": "Bromus arvensis",
+            "family": "Poaceae",
+            "rioja_id": "4829",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1883"
+          },
+          {
+            "rioja_name_verbatim": "Bromus arvensis",
+            "family": "Poaceae",
+            "rioja_id": "4829",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1883"
+          }
+        ],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000858",
+      "source_key": "FLORELOCALE-PAGE-3423",
+      "mediawiki_pageid": 3423,
+      "mediawiki_revid": 7158,
+      "page_title": "Bromus secalinus",
+      "scientific_name_declared": "Bromus secalinus",
+      "taxon_name": "Bromus secalinus",
+      "family": "Poaceae",
+      "genus": "Bromus",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Poaceae",
+          "display_name": "Poaceae",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Poaceae/Bromus",
+          "display_name": "Bromus",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Poaceae/Bromus/Bromus secalinus",
+          "display_name": "Bromus secalinus",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "NO_RIOJA_MATCH_DEMONSTRATED",
+        "exact_matches": [],
+        "related_matches": []
+      }
+    },
+    {
+      "LIB_FILE_ID": "JBLR-LIB-00000859",
+      "source_key": "FLORELOCALE-PAGE-3456",
+      "mediawiki_pageid": 3456,
+      "mediawiki_revid": 7302,
+      "page_title": "Agrimonia eupatoria",
+      "scientific_name_declared": "Famille :",
+      "taxon_name": "Agrimonia eupatoria",
+      "family": "Voir",
+      "genus": "Agrimonia",
+      "evidence_scope": [
+        "SEED_OR_FRUIT_TRAITS",
+        "COLLECTION_CLEANING_EXTRACTION",
+        "GERMINATION_DORMANCY",
+        "CULTIVATION_PROPAGATION"
+      ],
+      "relations": [
+        {
+          "level": "FAMILY",
+          "key": "Voir",
+          "display_name": "Voir",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "GENUS",
+          "key": "Voir/Agrimonia",
+          "display_name": "Agrimonia",
+          "relation_type": "SOURCE_METADATA_RELATION"
+        },
+        {
+          "level": "TAXON",
+          "key": "Voir/Agrimonia/Agrimonia eupatoria",
+          "display_name": "Agrimonia eupatoria",
+          "relation_type": "DIRECT_SOURCE_TAXON_FICHE"
+        }
+      ],
+      "rioja": {
+        "match_type": "RELATED_RIOJA_INFRATAXON_OR_PARENT",
+        "exact_matches": [],
+        "related_matches": [
+          {
+            "rioja_name_verbatim": "Agrimonia eupatoria subsp. eupatoria",
+            "family": "Rosaceae",
+            "rioja_id": "3028",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1382"
+          },
+          {
+            "rioja_name_verbatim": "Agrimonia eupatoria subsp. eupatoria",
+            "family": "Rosaceae",
+            "rioja_id": "3028",
+            "classification_v3": "REUSED_FROM_POLISHED_CORPUS",
+            "rc2_release_row_id": "JBLR_TAXONOMIC_UNIVERSE_RELEASE_v1_RC2:ROW:1382"
+          }
+        ]
+      }
+    }
+  ],
+  "human_output": {
+    "repository_root": "1epiW5H_oCEDdBMnpCCOWecuPf8bRM1CU",
+    "visual_folder": "1R7heizaSMm0JmtJePJy6vLwH7e-DsDyu",
+    "index_sheet": "1OyI-b-5QrANH9SpsPr8n4Nb76pVM0QGRoqB-w8cUxyY"
+  },
+  "no_pdf_duplication_for_003": true,
+  "canonical_authority_remains_07": true
+}

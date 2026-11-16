@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "delta_type": "HUMAN_LIBRARY_METADATA_AND_DISTRIBUTION_PROJECTION",
+  "actor_id": "07",
+  "actor_version": "07.V3",
+  "created_at": "2026-08-28T00:11:00+02:00",
+  "master_index_count_change": 0,
+  "canonical_identity_change": false,
+  "rules": {
+    "ONE_CANONICAL_DOCUMENT_IDENTITY": true,
+    "HUMAN_DISTRIBUTION_COPY_NEW_LIB_FILE_ID": false,
+    "LANGUAGE_SPECIFIC_HUMAN_FOLDERS": true,
+    "COMPLETE_MANUAL_GUIDE_COLLECTION": true,
+    "QUALIFICATION_BY_SUBSTANTIVE_SCOPE_NOT_FILENAME_ONLY": true,
+    "PROCESS_DISTRIBUTION_COPIES_RETAINED": true,
+    "UNKNOWN_NOT_INFERRED": true
+  },
+  "language_folders": {
+    "es": {"root_id": "1MHXinDIrwDb5IUX9bLBkOuH2rtfw0vJp", "manuals_guides_id": "1Sz7ckVh6gUW90FNTPn-OEETIoh4zlAYY"},
+    "en": {"root_id": "1R5veZfXf3i031tVwAVYl0u6_0N0TfaZS", "manuals_guides_id": "1ngnELBEHBYK1Y8mQtvHoyemlpuKMgQL-"},
+    "fr": {"root_id": "1GDC6tnZLCa3RDVh3e_W9fLIO9m4HSQrG", "manuals_guides_id": "1e1fik7FtMCC7B56zvDra_rRx0G_E3Nry"},
+    "pt": {"root_id": "1XIRbTojW3rcC1BaGODKqSRdSzBb49lre", "manuals_guides_id": "178Gks7KhKNfVcNMRaMD6pWlddR3AdV2o"},
+    "ru": {"root_id": "1I2R1mKN5eCYnZy350hi2j65ZGZYeYGeE", "manuals_guides_id": "1KXI4GuaehxLmZuKOLkbACHooUiOSEiFs", "other_documents_id": "1joakpcqP2-QaS0MRCNIrcrwJGSd3_LEP"},
+    "zh": {"root_id": "1dQtG47bpKxiJonvnfd-etIgU6Exy1nxk", "manuals_guides_id": "1dDVceOWnZj73uOUpdu7X9K4FNxNvQ3Tz", "other_documents_id": "1m8rSIrHsLRawuU-FYrpc7UIR8stekJ0j"},
+    "id": {"root_id": "13s_89gDNnMeUt8nfdMEyAwgFPkQCBTJU", "manuals_guides_id": "1qViM9g9otdXJ1yEiCPT_NDvWBEl-Tr7Q", "other_documents_id": "1Ov79Ti_jAA-O_zSf9zjylFRhTWkHQbVL"},
+    "hr": {"root_id": "1zBfhaC-R7MnSjwLY5MD9DX5DI0VoPxuA", "manuals_guides_id": "1RBI2PsRNhlbJM6kNdwxDtH2Zm7nYk820", "other_documents_id": "1IaQZmbjXgXBQfngl7WKyJEO1rQRIaq88"},
+    "bg": {"root_id": "1wfvIstVJ5getEkMuoW99XeE59YzNgAZa", "manuals_guides_id": "1-ZffMQqPTZkn6lW1DfN4HXBxCF6o7jfe", "other_documents_id": "1FjyZixFSxbkuJomwaFXZpVeui4KOHU2m"}
+  },
+  "records": [
+    {"LIB_FILE_ID":"JBLR-LIB-00000074","CANONICAL_DRIVE_ID":"1gf89_aG2MZyqAzD4AsCEV6B7103LjlPS","PRIMARY_LANGUAGE":"ru","DOCUMENT_TYPE":"guideline","TITLE":"Инструкция по геопривязке образцов Гербария Московского университета (MW) · Вариант «Монголия» · Версия 1.0","COMPLETE_MANUAL_GUIDE":false,"HUMAN_COLLECTION":"other_documents","HUMAN_DISTRIBUTION_COPY_ID":"1kypwzBcM9ieAfVtQU6M-WesnEPNaOtI4","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000075","CANONICAL_DRIVE_ID":"1IE6P_BQVh88lO-EfyH5GFN4bxm6Ej_tH","PRIMARY_LANGUAGE":"zh","DOCUMENT_TYPE":"guideline","TITLE":"全国植物物种资源调查技术规定（试行）","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1dD5Z1FdH8bWEewZtkKLg51K9YU8jaJln","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000076","CANONICAL_DRIVE_ID":"1uJMykibzEqDY65Zsm-mPpT_7XXoGE6PS","PRIMARY_LANGUAGE":"pt","DOCUMENT_TYPE":"guideline","TITLE":"Guia de procedimentos de PLANTAS · Monitoramento da Biodiversidade","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"15URK-F1CiOCda1CAAQ1G7QxO5fzf-K9B","MERGED_DUPLICATE_ID":"JBLR-LIB-00000079","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000077","CANONICAL_DRIVE_ID":"1sE3hH6mWPRkHYNishrv6lhf2Vq25Z2AS","PRIMARY_LANGUAGE":"zh","DOCUMENT_TYPE":"guideline","TITLE":"县域陆生高等植物多样性调查与评估技术规定","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1oXH-diOXHQU4hFc4KQ2xmRnuJwyDlb7m","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000080","CANONICAL_DRIVE_ID":"1OWsTLydn14hGy7TwBgyQxekb_KLiOali","PRIMARY_LANGUAGE":"pt","DOCUMENT_TYPE":"manual","TITLE":"Inventário Florestal Nacional · Manual de Campo · Procedimentos para Coleta de Dados Biofísicos e Socioambientais","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1K4NmMX3kSrn4qmCgvmaenIb8gwRuU5ie","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000081","CANONICAL_DRIVE_ID":"1cffXWQ5n_0o4QItP225BJimBaOPiGn7K","PRIMARY_LANGUAGE":"pt","DOCUMENT_TYPE":"manual","TITLE":"Manual Técnico da Vegetação Brasileira","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1O2K0ke886u74JmAzHTrXk-oL_J2Okf2D","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000082","CANONICAL_DRIVE_ID":"1ngf1k7QI5tseYQYbOOzHlNJB7IKZ_H2i","PRIMARY_LANGUAGE":"en","DOCUMENT_TYPE":"manual","TITLE":"National Forest Inventory Programme of India · Manual for Field Data Collection","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1wliHG6Nsmu0ivXNgfrNNQVGvqX28V9Id","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000083","CANONICAL_DRIVE_ID":"1uTAP11wHxsxyJjB9b_xF_AlGkmIpomV1","PRIMARY_LANGUAGE":"id","DOCUMENT_TYPE":"guideline","TITLE":"Pedoman Inventarisasi Biota Karst & Gua","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1nDXfqUr8Omn8ww23NSgenDp3ie3QSw4m","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000086","CANONICAL_DRIVE_ID":"1GXBD7G0eD6FsobVyd-3G-ub6qy2UNCeK","PRIMARY_LANGUAGE":"pt","DOCUMENT_TYPE":"guideline","TITLE":"Directrizes do Inventário Florestal Nacional","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1M7ti3FGpJjALtsAhrPBd_BHhQPSuyo-7","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000087","CANONICAL_DRIVE_ID":"1FZ7SX767zUw-x_V2FJ7JUAp4IvnQ8zGo","PRIMARY_LANGUAGE":"pt","DOCUMENT_TYPE":"manual","TITLE":"Manual de Estabelecimento de Parcelas de Amostragem Permanentes (PAPs)","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1KgpjxP1GiG_JwkC3R1msw3kmqv11Cz7s","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000088","CANONICAL_DRIVE_ID":"1nWOZwM2X0OHoORRv2cR7qW__LTBm0EEU","PRIMARY_LANGUAGE":"en","DOCUMENT_TYPE":"manual","TITLE":"Improving Capacity in Forest Resources Assessment in Kenya (IC-FRA) · Field Manual for Biophysical Forest Resources Assessment in Kenya","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"173v2lmP6bz5NvbVy6QWIw6uu0JKyhKuo","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000089","CANONICAL_DRIVE_ID":"1ZCh9y6j4BGhaHTE0zgDvqSjGgLYVIUjb","PRIMARY_LANGUAGE":"fr","DOCUMENT_TYPE":"guideline","TITLE":"Guide méthodologique pour l'étude et le suivi de la flore et de la végétation","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"173i1hBkcztCouPeQSuGrg-bUFzqciZRZ","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000090","CANONICAL_DRIVE_ID":"1WCeywpO3yGs08n0iNjj3fIVIWStkIAs5","PRIMARY_LANGUAGE":"hr","DOCUMENT_TYPE":"manual","TITLE":"Flora · priručnik za inventarizaciju i praćenje stanja","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1DIB7XGbXR99ph_zLUtVk6QGXdse-irw7","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000091","CANONICAL_DRIVE_ID":"1syI8rJc70NhxssNbgz7h3U4sB-kulRPA","PRIMARY_LANGUAGE":"bg","DOCUMENT_TYPE":"guideline","TITLE":"Методика за мониторинг на висши растения","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"1MewW8p5oOM8Bz7ZN_Iid5vpkALAvKI6O","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}},
+    {"LIB_FILE_ID":"JBLR-LIB-00000092","CANONICAL_DRIVE_ID":"16mUuEXJ6nDRe7ldw6MyS85UpYJa1apaG","PRIMARY_LANGUAGE":"es","DOCUMENT_TYPE":"guideline","TITLE":"Guía de Inventario de la Flora y Vegetación","COMPLETE_MANUAL_GUIDE":true,"HUMAN_COLLECTION":"manuals_guides","HUMAN_DISTRIBUTION_COPY_ID":"13YWd_HAvPedeP5PdgGRgsGWxGz9Y3A6n","MERGED_DUPLICATE_ID":"JBLR-LIB-00000093","field_states":{"PRIMARY_LANGUAGE":"KNOWN","DOCUMENT_TYPE":"KNOWN","TITLE":"KNOWN","HUMAN_COLLECTION":"KNOWN"}}
+  ]
+}

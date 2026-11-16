@@ -1,0 +1,39 @@
+name: JBLR 07 Rioja Acquire
+
+on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - 'library/07_biblioteca/acquisition/rioja_targets_batch02.json'
+      - 'library/07_biblioteca/acquisition/acquire_rioja_batch.py'
+  workflow_dispatch:
+
+concurrency:
+  group: 07-biblioteca-rioja-acquire
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  acquire-rioja:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests pypdf
+      - name: Acquire Rioja priority batch
+        run: python library/07_biblioteca/acquisition/acquire_rioja_batch.py
+      - name: List acquired files
+        run: find acquired_rioja -maxdepth 2 -type f -printf '%p\t%s bytes\n' | sort
+      - name: Upload Rioja acquisition artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: JBLR_07_RIOJA_CORE_02
+          path: acquired_rioja/
+          if-no-files-found: error
+          retention-days: 7

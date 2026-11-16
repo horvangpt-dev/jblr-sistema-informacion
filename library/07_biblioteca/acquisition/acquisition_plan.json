@@ -1,0 +1,10 @@
+{
+  "phase": "RJB_CORE_01",
+  "targets": [
+    "Flora iberica",
+    "Flora de la Rioja - Ildefonso Zubia"
+  ],
+  "policy": "official-public-download-links-only",
+  "canonical_destination": "Google Drive / Botanico / 07_BIBLIOTECA",
+  "artifact_role": "temporary-transfer-layer"
+}

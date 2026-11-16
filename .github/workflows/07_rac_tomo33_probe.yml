@@ -1,0 +1,33 @@
+name: JBLR 07 Cámara Niño Discovery
+
+on:
+  push:
+    branches:
+      - 07-biblioteca-index
+    paths:
+      - 'library/07_biblioteca/diagnostics/probe_rac_tomo33.py'
+      - 'library/07_biblioteca/diagnostics/probe_ia_camaranino.py'
+  workflow_dispatch:
+
+concurrency:
+  group: 07-rac-tomo33-probe
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests pypdf
+      - name: Scan RAC pre-Tomo XXXIV objects
+        continue-on-error: true
+        run: python library/07_biblioteca/diagnostics/probe_rac_tomo33.py
+      - name: Search Internet Archive for Cámara Niño source objects
+        run: python library/07_biblioteca/diagnostics/probe_ia_camaranino.py

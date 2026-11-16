@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "07_C05_RESTORATION_CONTINUITY_HANDOFF",
+  "effective_at": "2026-09-16T01:21:00+02:00",
+  "project": "JBLR",
+  "actor": "07.V15",
+  "requested_protocol": "RESTAURACION_Y_CONTINUIDAD_SIN_PERDIDAS_v2",
+  "execution_status": "PARTIAL_SAFE_COMPLETION",
+  "reason_not_full_global_pass": "GOOGLE_DRIVE_AND_SHEETS_RUNTIME_DISABLED_IN_THIS_CHAT_PREVENTING_LIVE_GLOBAL_C05_POINTER_AND_BUS_READBACK",
+  "global_protocol_state_last_known_verified": {
+    "source_status": "PRIOR_CANONICAL_EXECUTION_NOT_LIVE_REVERIFIED_IN_THIS_RUNTIME",
+    "C05": "v2.0_RECOVERED_AND_ACTIVE",
+    "05E": "v2.5_EMERGENCY_MODE_ACTIVE",
+    "runtime_active": "00000.V20_ACTIVE",
+    "predecessor": "00000.V19",
+    "predecessor_frozen": true,
+    "handoff_committed": true,
+    "restoration_test": "PASS",
+    "data_loss": "NO",
+    "return_to_normal": "PENDING_VERIFIED_RECOVERY",
+    "pointer_mutation_by_this_execution": false
+  },
+  "actor_07_live_persisted_state": {
+    "active_index_path": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_ACTIVE_INDEX_v2.json",
+    "active_index_blob_sha": "06f890c982b7fb524477fc727d648dc1a0a3a4e4",
+    "HWM": "JBLR-LIB-00001192",
+    "NEXT": "JBLR-LIB-00001193",
+    "allocated_id_slots": 1192,
+    "last_transaction": "07_003_ALISMA_R01_NEW_UPLOAD_2026_09_15_DOCUMENTARY_CANONICALIZATION_1130_1192",
+    "new_upload_delta": "library/07_biblioteca/v2/index/JBLR_CENTRAL_LIBRARY_INDEX_DELTA_00001130_00001192_v1.json",
+    "new_upload_range": "JBLR-LIB-00001130..JBLR-LIB-00001192"
+  },
+  "alisma_2026_09_15_reconciliation": {
+    "path": "library/07_biblioteca/v2/reconciliation/ALISMA_R01_2026-09-15_NEW_UPLOAD_FINAL_DOCUMENTARY_RECONCILIATION_v1.json",
+    "blob_sha": "e121b2f043bfa2ee991d954e0b2f285373a5a4dd",
+    "status": "PASS_DOCUMENTARY_RECONCILIATION",
+    "new_upload_file_count": 64,
+    "files_reviewed": 64,
+    "new_canonical_identities": 63,
+    "existing_identity_reused": 1,
+    "physical_readback": "PASS",
+    "source_originals_mutated": false,
+    "source_originals_deleted": false,
+    "data_loss": "NO",
+    "D0080": "JBLR-LIB-00001130",
+    "D0075": "JBLR-LIB-00001131",
+    "D0078": "JBLR-LIB-00001132"
+  },
+  "scientific_boundary": {
+    "003_LEDGER_MUTATED_BY_07": "NO",
+    "RC3_MUTATED": "NO",
+    "PROTOCOL_B_STARTED_BY_07": "NO",
+    "002_MUTATED_BY_07": "NO",
+    "SCIENTIFIC_FACT_CANONICALIZATION": "NO"
+  },
+  "remaining_closure_steps": [
+    "LIVE_RESYNC_C05_05E_GLOBAL_POINTERS_WHEN_DRIVE_IS_AVAILABLE",
+    "WRITE_AND_READBACK_SHARED_EVENT_BUS_FOR_ALISMA_2026_09_15",
+    "WRITE_AND_READBACK_CANONICAL_STATE_FOR_ALISMA_2026_09_15",
+    "WRITE_AND_READBACK_07_TO_003_DIRECT_BUS_WITHOUT_MUTATING_003_PRODUCTIVE_LEDGER",
+    "CREATE_FINAL_ALISMA_HANDOFF_AFTER_BUS_READBACKS"
+  ],
+  "new_chat_startup_order": [
+    "READ_THIS_HANDOFF_FIRST",
+    "READ_CURRENT_ACTIVE_INDEX_AND_ACCEPT_1192_1193_ONLY_IF_STILL_CURRENT",
+    "READ_FINAL_DOCUMENTARY_RECONCILIATION_AND_DO_NOT_REPEAT_INGEST_1130_1192",
+    "LIVE_RESYNC_C05_05E_GLOBAL_STATE",
+    "COMPLETE_ONLY_REMAINING_BUS_CANONICAL_STATE_AND_FINAL_HANDOFF_STEPS",
+    "VERIFY_ALL_READBACKS_BEFORE_DECLARING_FULL_PASS"
+  ],
+  "invariants": [
+    "NO_PROJECT_RESTART",
+    "NO_STATE_RECONSTRUCTION_FROM_CHAT_MEMORY",
+    "NO_INFORMATION_LOSS",
+    "COPY_NEVER_MOVE",
+    "HISTORY_NEVER_DELETE",
+    "EVENT_BUS_APPEND_ONLY",
+    "NO_003_PRODUCTIVE_LEDGER_MUTATION_BY_07",
+    "VERIFY_BEFORE_REPORT",
+    "UNKNOWN_IS_NOT_ABSENCE"
+  ],
+  "handoff_initial_commit": "505f4e55a65e8bf9c5773013f9e556c9ea2c4960",
+  "handoff_readback": "PASS",
+  "handoff_state": "COMMITTED_AND_READBACK_PASS",
+  "data_loss": "NO"
+}
