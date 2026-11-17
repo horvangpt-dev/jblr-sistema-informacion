@@ -1,0 +1,51 @@
+{
+  "schema": "MODEL3_T0_BINDING_RULES_IMPLEMENTED_v1",
+  "execution_scope": "SYNTHETIC_TEST_ONLY",
+  "sources": {
+    "T0": {
+      "document_id": "1AYQVFOHtIYhk3i46fognwutDvRy2nJyY-xeThaV31X0",
+      "revision_id": "AHj4eMS6bmDuBsyxOlO73EekJ-7oKLSNbwxEog2jPu6Qk2wOL1yE0k8g1GFX3suuqKiTgJs8DWw5rM3wqdVC88v-PJTJgLrwT6cDWjIDp_Y",
+      "title": "04 · Modelo 3 · T0 contrato de interfaces y filtros · v0.2 · 2026-11-17"
+    },
+    "MODEL3_DESIGN": {
+      "document_id": "1uHRWArJaOs_gSukP8BESQHHErFk8vLGzCrXdljdLje0",
+      "revision_id": "AHj4eMTz8b-rufsSQ8HnF9IdPaOXHg1iIKLc1YP-Q5iQcr_3-vfsfbZRQyE6ylPQZwFRFi5kbJuM9JvpwjyYhpqnBl_zPpQa5C8GfJCAJSE",
+      "title": "04 · Modelo 3 de valoración de taxones y conexión con precampo · Diseño v0.2 correctivo · 2026-11-17"
+    },
+    "002_REV02": {
+      "document_id": "1mX27QAQqGPjRoyMsxD_tDddFGBoxnKodJN69tI2sczU",
+      "revision_id": "AHj4eMQ0-jm65PE40DFggZ6gRjipllmvOcNZPAJAOyDWdt8rVEYLvfQcaz74QVMamH4ey1ROd2-o6UWjxN0pyKP_FMh3bB4OxXLt-KxN0sM",
+      "title": "002 · Registro de cambios y entrega técnica · Precampo Modelo 3 · Candidato · REV02"
+    }
+  },
+  "open_scientific_parameters": {
+    "FINAL_WEIGHTS": "UNSET",
+    "N_REF": "UNSET",
+    "q_L": "UNSET",
+    "q_H": "UNSET",
+    "gamma_L": "UNSET",
+    "gamma_H": "UNSET",
+    "alpha": "UNSET",
+    "lambda_CWR": "UNSET"
+  },
+  "hard_invariants": [
+    "RUN_HAS_ONE_UNIVERSE_RELEASE_AND_HASH",
+    "RUN_ID_PLUS_TAXON_KEY_UNIQUE",
+    "U_AND_I_STORED_SEPARATELY",
+    "PHENOLOGY_DOES_NOT_MODIFY_U_I",
+    "LOGISTICS_DO_NOT_MODIFY_U_I",
+    "PERMISSIONS_DO_NOT_MODIFY_U_I",
+    "CWR_DOES_NOT_MODIFY_U_I",
+    "PROTECTION_SELECTION_FILTER_DOES_NOT_MODIFY_U_I",
+    "UNKNOWN_NE_ZERO",
+    "SOURCE_UNAVAILABLE_NE_ABSENCE",
+    "SEARCH_PARTIAL_NE_COMPLETE",
+    "NO_PROTECTION_CONFIRMED_REQUIRES_COMPLETE_LEGAL_SEARCH",
+    "CWR_MULTI_CROP_DOES_NOT_SUM_BY_MULTIPLICITY",
+    "LOW_NOT_COMPUTED_WITH_INSUFFICIENT_COVERAGE",
+    "AUTHORIZED_NE_COLLECTION_GO"
+  ],
+  "protection_mapping_version": "JBLR_PROT_MAP_LR_v0.1_2026-11-17",
+  "submission_readiness_precedence": ["HOLD_CONFIRMATION", "UNKNOWN_REQUIREMENT", "READY"],
+  "fixtures": ["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17"]
+}

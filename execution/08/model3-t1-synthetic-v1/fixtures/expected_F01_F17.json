@@ -1,0 +1,131 @@
+{
+  "F01": {
+    "simple_visible": true,
+    "ui_unchanged": true
+  },
+  "F02": {
+    "base_visible": true,
+    "high_visible": false,
+    "simple_visible": false,
+    "ui_unchanged": true
+  },
+  "F03": {
+    "high_visible": true,
+    "strict_no_protection_visible": false,
+    "ui_unchanged": true
+  },
+  "F04": {
+    "base_visible": true,
+    "high_visible": true,
+    "simple_visible": false
+  },
+  "F05": {
+    "no_cwr_visible": false,
+    "simple_visible": false,
+    "ui_unchanged": true
+  },
+  "F06": {
+    "cwr_state": "UNKNOWN",
+    "exclude_confirmed_visible": true,
+    "simple_visible": true
+  },
+  "F07": {
+    "CWR_FILTER_STATE": "YES",
+    "numeric_cwr_score": null,
+    "relation_count": 3
+  },
+  "F08": {
+    "CWR_FILTER_STATE": "CONFLICT"
+  },
+  "F09": {
+    "LOW_EVALUATION_STATE": "NOT_EVALUABLE",
+    "LOW_REASON_STATE": "UNKNOWN_INSUFFICIENT_SEARCH",
+    "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+    "RESEARCH_LOW_ELIGIBILITY": "FAIL_OR_UNKNOWN"
+  },
+  "F10": {
+    "LOW_EVALUATION_STATE": "EVALUABLE_PARAMETERS_UNSET",
+    "LOW_REASON_STATE": "PARAMETERS_UNSET",
+    "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+    "RESEARCH_LOW_ELIGIBILITY": "PASS"
+  },
+  "F11": {
+    "HIGH": null,
+    "LOW": null,
+    "RESEARCH_REFERENCE_DISTRIBUTION_STATE": "DEGENERATE"
+  },
+  "F12": {
+    "SELECTION_BOUNDARY_TIE": true,
+    "SELECTION_RESULT": "PENDING_DECISION",
+    "boundary_value": 7,
+    "decision_required": true
+  },
+  "F13": {
+    "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+    "APPLICATION_SUBMISSION_READINESS": "READY",
+    "OPEN_CONFIRMATIONS": [
+      {
+        "BLOCKS_SUBMISSION": "NO",
+        "CONFIRMATION_ID": "SYN-C13-1",
+        "STATUS": "OPEN"
+      }
+    ]
+  },
+  "F14": {
+    "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+    "APPLICATION_SUBMISSION_READINESS": "HOLD_CONFIRMATION",
+    "OPEN_CONFIRMATIONS": [
+      {
+        "BLOCKS_SUBMISSION": "YES",
+        "CONFIRMATION_ID": "SYN-C14-1",
+        "STATUS": "OPEN"
+      }
+    ]
+  },
+  "F15": {
+    "COLLECTION_GO": false,
+    "authorization_state": "AUTHORIZED_WITH_SCOPE"
+  },
+  "F16": {
+    "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+    "APPLICATION_SUBMISSION_READINESS": "HOLD_CONFIRMATION",
+    "OPEN_CONFIRMATIONS": [
+      {
+        "BLOCKS_SUBMISSION": "YES",
+        "CONFIRMATION_ID": "SYN-C16-Y",
+        "STATUS": "OPEN"
+      },
+      {
+        "BLOCKS_SUBMISSION": "UNKNOWN",
+        "CONFIRMATION_ID": "SYN-C16-U",
+        "STATUS": "OPEN"
+      }
+    ]
+  },
+  "F17": {
+    "records": [
+      {
+        "LOW_REASON_STATE": "PARAMETERS_UNSET",
+        "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+        "METHOD_VERSION_COMPARABLE": true,
+        "RESEARCH_ACTIVITY_VALUE": 3,
+        "RESEARCH_LOW_ELIGIBILITY": "PASS",
+        "RESEARCH_PERCENTILE": null,
+        "RESEARCH_REFERENCE_MEMBER": "YES",
+        "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+        "TAXON_KEY": "SYN-TAX-017"
+      },
+      {
+        "LOW_REASON_STATE": "UNKNOWN_INSUFFICIENT_SEARCH",
+        "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+        "METHOD_VERSION_COMPARABLE": true,
+        "RESEARCH_ACTIVITY_VALUE": 3,
+        "RESEARCH_LOW_ELIGIBILITY": "SEARCH_PARTIAL",
+        "RESEARCH_PERCENTILE": null,
+        "RESEARCH_REFERENCE_MEMBER": "NO",
+        "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+        "TAXON_KEY": "SYN-TAX-018"
+      }
+    ]
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "calibration_execution": 0,
+  "corpus_execution": 0,
+  "execution_scope": "SYNTHETIC_TEST_ONLY",
+  "failed": 0,
+  "fixture_count": 17,
+  "passed": 17,
+  "results": [
+    {
+      "actual": {
+        "simple_visible": true,
+        "ui_unchanged": true
+      },
+      "expected": {
+        "simple_visible": true,
+        "ui_unchanged": true
+      },
+      "id": "F01",
+      "pass": true
+    },
+    {
+      "actual": {
+        "base_visible": true,
+        "high_visible": false,
+        "simple_visible": false,
+        "ui_unchanged": true
+      },
+      "expected": {
+        "base_visible": true,
+        "high_visible": false,
+        "simple_visible": false,
+        "ui_unchanged": true
+      },
+      "id": "F02",
+      "pass": true
+    },
+    {
+      "actual": {
+        "high_visible": true,
+        "strict_no_protection_visible": false,
+        "ui_unchanged": true
+      },
+      "expected": {
+        "high_visible": true,
+        "strict_no_protection_visible": false,
+        "ui_unchanged": true
+      },
+      "id": "F03",
+      "pass": true
+    },
+    {
+      "actual": {
+        "base_visible": true,
+        "high_visible": true,
+        "simple_visible": false
+      },
+      "expected": {
+        "base_visible": true,
+        "high_visible": true,
+        "simple_visible": false
+      },
+      "id": "F04",
+      "pass": true
+    },
+    {
+      "actual": {
+        "no_cwr_visible": false,
+        "simple_visible": false,
+        "ui_unchanged": true
+      },
+      "expected": {
+        "no_cwr_visible": false,
+        "simple_visible": false,
+        "ui_unchanged": true
+      },
+      "id": "F05",
+      "pass": true
+    },
+    {
+      "actual": {
+        "cwr_state": "UNKNOWN",
+        "exclude_confirmed_visible": true,
+        "simple_visible": true
+      },
+      "expected": {
+        "cwr_state": "UNKNOWN",
+        "exclude_confirmed_visible": true,
+        "simple_visible": true
+      },
+      "id": "F06",
+      "pass": true
+    },
+    {
+      "actual": {
+        "CWR_FILTER_STATE": "YES",
+        "numeric_cwr_score": null,
+        "relation_count": 3
+      },
+      "expected": {
+        "CWR_FILTER_STATE": "YES",
+        "numeric_cwr_score": null,
+        "relation_count": 3
+      },
+      "id": "F07",
+      "pass": true
+    },
+    {
+      "actual": {
+        "CWR_FILTER_STATE": "CONFLICT"
+      },
+      "expected": {
+        "CWR_FILTER_STATE": "CONFLICT"
+      },
+      "id": "F08",
+      "pass": true
+    },
+    {
+      "actual": {
+        "LOW_EVALUATION_STATE": "NOT_EVALUABLE",
+        "LOW_REASON_STATE": "UNKNOWN_INSUFFICIENT_SEARCH",
+        "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+        "RESEARCH_LOW_ELIGIBILITY": "FAIL_OR_UNKNOWN"
+      },
+      "expected": {
+        "LOW_EVALUATION_STATE": "NOT_EVALUABLE",
+        "LOW_REASON_STATE": "UNKNOWN_INSUFFICIENT_SEARCH",
+        "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+        "RESEARCH_LOW_ELIGIBILITY": "FAIL_OR_UNKNOWN"
+      },
+      "id": "F09",
+      "pass": true
+    },
+    {
+      "actual": {
+        "LOW_EVALUATION_STATE": "EVALUABLE_PARAMETERS_UNSET",
+        "LOW_REASON_STATE": "PARAMETERS_UNSET",
+        "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+        "RESEARCH_LOW_ELIGIBILITY": "PASS"
+      },
+      "expected": {
+        "LOW_EVALUATION_STATE": "EVALUABLE_PARAMETERS_UNSET",
+        "LOW_REASON_STATE": "PARAMETERS_UNSET",
+        "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+        "RESEARCH_LOW_ELIGIBILITY": "PASS"
+      },
+      "id": "F10",
+      "pass": true
+    },
+    {
+      "actual": {
+        "HIGH": null,
+        "LOW": null,
+        "RESEARCH_REFERENCE_DISTRIBUTION_STATE": "DEGENERATE"
+      },
+      "expected": {
+        "HIGH": null,
+        "LOW": null,
+        "RESEARCH_REFERENCE_DISTRIBUTION_STATE": "DEGENERATE"
+      },
+      "id": "F11",
+      "pass": true
+    },
+    {
+      "actual": {
+        "SELECTION_BOUNDARY_TIE": true,
+        "SELECTION_RESULT": "PENDING_DECISION",
+        "boundary_value": 7,
+        "decision_required": true
+      },
+      "expected": {
+        "SELECTION_BOUNDARY_TIE": true,
+        "SELECTION_RESULT": "PENDING_DECISION",
+        "boundary_value": 7,
+        "decision_required": true
+      },
+      "id": "F12",
+      "pass": true
+    },
+    {
+      "actual": {
+        "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+        "APPLICATION_SUBMISSION_READINESS": "READY",
+        "OPEN_CONFIRMATIONS": [
+          {
+            "BLOCKS_SUBMISSION": "NO",
+            "CONFIRMATION_ID": "SYN-C13-1",
+            "STATUS": "OPEN"
+          }
+        ]
+      },
+      "expected": {
+        "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+        "APPLICATION_SUBMISSION_READINESS": "READY",
+        "OPEN_CONFIRMATIONS": [
+          {
+            "BLOCKS_SUBMISSION": "NO",
+            "CONFIRMATION_ID": "SYN-C13-1",
+            "STATUS": "OPEN"
+          }
+        ]
+      },
+      "id": "F13",
+      "pass": true
+    },
+    {
+      "actual": {
+        "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+        "APPLICATION_SUBMISSION_READINESS": "HOLD_CONFIRMATION",
+        "OPEN_CONFIRMATIONS": [
+          {
+            "BLOCKS_SUBMISSION": "YES",
+            "CONFIRMATION_ID": "SYN-C14-1",
+            "STATUS": "OPEN"
+          }
+        ]
+      },
+      "expected": {
+        "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+        "APPLICATION_SUBMISSION_READINESS": "HOLD_CONFIRMATION",
+        "OPEN_CONFIRMATIONS": [
+          {
+            "BLOCKS_SUBMISSION": "YES",
+            "CONFIRMATION_ID": "SYN-C14-1",
+            "STATUS": "OPEN"
+          }
+        ]
+      },
+      "id": "F14",
+      "pass": true
+    },
+    {
+      "actual": {
+        "COLLECTION_GO": false,
+        "authorization_state": "AUTHORIZED_WITH_SCOPE"
+      },
+      "expected": {
+        "COLLECTION_GO": false,
+        "authorization_state": "AUTHORIZED_WITH_SCOPE"
+      },
+      "id": "F15",
+      "pass": true
+    },
+    {
+      "actual": {
+        "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+        "APPLICATION_SUBMISSION_READINESS": "HOLD_CONFIRMATION",
+        "OPEN_CONFIRMATIONS": [
+          {
+            "BLOCKS_SUBMISSION": "YES",
+            "CONFIRMATION_ID": "SYN-C16-Y",
+            "STATUS": "OPEN"
+          },
+          {
+            "BLOCKS_SUBMISSION": "UNKNOWN",
+            "CONFIRMATION_ID": "SYN-C16-U",
+            "STATUS": "OPEN"
+          }
+        ]
+      },
+      "expected": {
+        "APPLICATION_DATA_STATE": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+        "APPLICATION_SUBMISSION_READINESS": "HOLD_CONFIRMATION",
+        "OPEN_CONFIRMATIONS": [
+          {
+            "BLOCKS_SUBMISSION": "YES",
+            "CONFIRMATION_ID": "SYN-C16-Y",
+            "STATUS": "OPEN"
+          },
+          {
+            "BLOCKS_SUBMISSION": "UNKNOWN",
+            "CONFIRMATION_ID": "SYN-C16-U",
+            "STATUS": "OPEN"
+          }
+        ]
+      },
+      "id": "F16",
+      "pass": true
+    },
+    {
+      "actual": {
+        "records": [
+          {
+            "LOW_REASON_STATE": "PARAMETERS_UNSET",
+            "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+            "METHOD_VERSION_COMPARABLE": true,
+            "RESEARCH_ACTIVITY_VALUE": 3,
+            "RESEARCH_LOW_ELIGIBILITY": "PASS",
+            "RESEARCH_PERCENTILE": null,
+            "RESEARCH_REFERENCE_MEMBER": "YES",
+            "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+            "TAXON_KEY": "SYN-TAX-017"
+          },
+          {
+            "LOW_REASON_STATE": "UNKNOWN_INSUFFICIENT_SEARCH",
+            "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+            "METHOD_VERSION_COMPARABLE": true,
+            "RESEARCH_ACTIVITY_VALUE": 3,
+            "RESEARCH_LOW_ELIGIBILITY": "SEARCH_PARTIAL",
+            "RESEARCH_PERCENTILE": null,
+            "RESEARCH_REFERENCE_MEMBER": "NO",
+            "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+            "TAXON_KEY": "SYN-TAX-018"
+          }
+        ]
+      },
+      "expected": {
+        "records": [
+          {
+            "LOW_REASON_STATE": "PARAMETERS_UNSET",
+            "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+            "METHOD_VERSION_COMPARABLE": true,
+            "RESEARCH_ACTIVITY_VALUE": 3,
+            "RESEARCH_LOW_ELIGIBILITY": "PASS",
+            "RESEARCH_PERCENTILE": null,
+            "RESEARCH_REFERENCE_MEMBER": "YES",
+            "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+            "TAXON_KEY": "SYN-TAX-017"
+          },
+          {
+            "LOW_REASON_STATE": "UNKNOWN_INSUFFICIENT_SEARCH",
+            "LOW_RESEARCH_OPPORTUNITY_COMPONENT": null,
+            "METHOD_VERSION_COMPARABLE": true,
+            "RESEARCH_ACTIVITY_VALUE": 3,
+            "RESEARCH_LOW_ELIGIBILITY": "SEARCH_PARTIAL",
+            "RESEARCH_PERCENTILE": null,
+            "RESEARCH_REFERENCE_MEMBER": "NO",
+            "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+            "TAXON_KEY": "SYN-TAX-018"
+          }
+        ]
+      },
+      "id": "F17",
+      "pass": true
+    }
+  ],
+  "scientific_validation": false,
+  "technical_pass": true
+}

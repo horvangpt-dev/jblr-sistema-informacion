@@ -1,0 +1,283 @@
+[
+  {
+    "description": "Sin protección confirmada y no CWR entra en perfil simple",
+    "id": "F01",
+    "input": {
+      "record": {
+        "CWR_FILTER_STATE": "NO_CONFIRMED",
+        "I_VALUE": 59.0,
+        "PROTECTION_EXCLUSION_CLASS": "NO_PROTECTION_CONFIRMED",
+        "PROTECTION_PRESENCE_STATE": "NO_PROTECTION_CONFIRMED",
+        "TAXON_KEY": "SYN-TAX-001",
+        "U_VALUE": 41.0
+      }
+    }
+  },
+  {
+    "description": "Protección alta confirmada excluida de vista alta y simple",
+    "id": "F02",
+    "input": {
+      "record": {
+        "CWR_FILTER_STATE": "NO_CONFIRMED",
+        "I_VALUE": 59.0,
+        "PROTECTION_EXCLUSION_CLASS": "HIGH_EXCLUSION",
+        "PROTECTION_PRESENCE_STATE": "PROTECTED_CONFIRMED",
+        "TAXON_KEY": "SYN-TAX-002",
+        "U_VALUE": 41.0
+      }
+    }
+  },
+  {
+    "description": "Protección no excluyente visible en EXCLUDE_HIGH y fuera de ONLY_NO_PROTECTION",
+    "id": "F03",
+    "input": {
+      "record": {
+        "CWR_FILTER_STATE": "NO_CONFIRMED",
+        "I_VALUE": 59.0,
+        "PROTECTION_EXCLUSION_CLASS": "PROTECTED_NON_EXCLUSION",
+        "PROTECTION_PRESENCE_STATE": "PROTECTED_CONFIRMED",
+        "TAXON_KEY": "SYN-TAX-003",
+        "U_VALUE": 41.0
+      }
+    }
+  },
+  {
+    "description": "Protección UNKNOWN visible en base/alto y fuera de simple",
+    "id": "F04",
+    "input": {
+      "record": {
+        "CWR_FILTER_STATE": "NO_CONFIRMED",
+        "I_VALUE": 59.0,
+        "PROTECTION_EXCLUSION_CLASS": "UNKNOWN",
+        "PROTECTION_PRESENCE_STATE": "UNKNOWN",
+        "TAXON_KEY": "SYN-TAX-004",
+        "U_VALUE": 41.0
+      }
+    }
+  },
+  {
+    "description": "CWR YES excluido de NO_CWR y simple",
+    "id": "F05",
+    "input": {
+      "record": {
+        "CWR_FILTER_STATE": "YES",
+        "I_VALUE": 59.0,
+        "PROTECTION_EXCLUSION_CLASS": "NO_PROTECTION_CONFIRMED",
+        "PROTECTION_PRESENCE_STATE": "NO_PROTECTION_CONFIRMED",
+        "TAXON_KEY": "SYN-TAX-005",
+        "U_VALUE": 41.0
+      }
+    }
+  },
+  {
+    "description": "CWR UNKNOWN se conserva en EXCLUDE_CONFIRMED_CWR y puede pasar simple si protección negativa",
+    "id": "F06",
+    "input": {
+      "record": {
+        "CWR_FILTER_STATE": "UNKNOWN",
+        "I_VALUE": 59.0,
+        "PROTECTION_EXCLUSION_CLASS": "NO_PROTECTION_CONFIRMED",
+        "PROTECTION_PRESENCE_STATE": "NO_PROTECTION_CONFIRMED",
+        "TAXON_KEY": "SYN-TAX-006",
+        "U_VALUE": 41.0
+      }
+    }
+  },
+  {
+    "description": "Tres cultivos, uno YES, agregación taxonómica YES sin triple conteo",
+    "id": "F07",
+    "input": {
+      "coverage_complete": true,
+      "relations": [
+        {
+          "crop": "SYN-CROP-A",
+          "state": "NO_CONFIRMED"
+        },
+        {
+          "crop": "SYN-CROP-B",
+          "state": "YES"
+        },
+        {
+          "crop": "SYN-CROP-C",
+          "state": "UNKNOWN"
+        }
+      ]
+    }
+  },
+  {
+    "description": "Sin YES, una relación materialmente conflictiva produce CONFLICT",
+    "id": "F08",
+    "input": {
+      "coverage_complete": true,
+      "relations": [
+        {
+          "crop": "SYN-CROP-A",
+          "state": "NO_CONFIRMED"
+        },
+        {
+          "crop": "SYN-CROP-B",
+          "state": "CONFLICT"
+        }
+      ]
+    }
+  },
+  {
+    "description": "Actividad baja con búsqueda parcial no genera LOW",
+    "id": "F09",
+    "input": {
+      "research": {
+        "DEDUPLICATION_STATE": "COMPLETE",
+        "MANDATORY_RESEARCH_SOURCE_PROFILE": "COMPLETE",
+        "MATERIAL_SOURCE_CONFLICT": "NONE",
+        "QUERY_LOG_AND_RAW_EVIDENCE": "PRESERVED",
+        "QUERY_NAME_SET": "COMPLETE",
+        "RETRIEVAL_COVERAGE": "PARTIAL",
+        "SEARCH_CUTOFF_CONSISTENT": true,
+        "TAXON_IDENTITY_FOR_QUERY": "RESOLVED"
+      }
+    }
+  },
+  {
+    "description": "Actividad baja con perfil completo queda elegible; parámetros científicos siguen UNSET",
+    "id": "F10",
+    "input": {
+      "research": {
+        "DEDUPLICATION_STATE": "COMPLETE",
+        "MANDATORY_RESEARCH_SOURCE_PROFILE": "COMPLETE",
+        "MATERIAL_SOURCE_CONFLICT": "NONE",
+        "QUERY_LOG_AND_RAW_EVIDENCE": "PRESERVED",
+        "QUERY_NAME_SET": "COMPLETE",
+        "RETRIEVAL_COVERAGE": "COMPLETE",
+        "SEARCH_CUTOFF_CONSISTENT": true,
+        "TAXON_IDENTITY_FOR_QUERY": "RESOLVED"
+      }
+    }
+  },
+  {
+    "description": "Referencia degenerada con R_i iguales deja LOW/HIGH UNSET",
+    "id": "F11",
+    "input": {
+      "records": [
+        {
+          "METHOD_VERSION_COMPARABLE": true,
+          "RESEARCH_ACTIVITY_VALUE": 2,
+          "RESEARCH_LOW_ELIGIBILITY": "PASS",
+          "RESEARCH_REFERENCE_POPULATION_MEMBER": true
+        },
+        {
+          "METHOD_VERSION_COMPARABLE": true,
+          "RESEARCH_ACTIVITY_VALUE": 2,
+          "RESEARCH_LOW_ELIGIBILITY": "PASS",
+          "RESEARCH_REFERENCE_POPULATION_MEMBER": true
+        },
+        {
+          "METHOD_VERSION_COMPARABLE": true,
+          "RESEARCH_ACTIVITY_VALUE": 2,
+          "RESEARCH_LOW_ELIGIBILITY": "PASS",
+          "RESEARCH_REFERENCE_POPULATION_MEMBER": true
+        }
+      ]
+    }
+  },
+  {
+    "description": "Empate en límite de capacidad exige decisión humana",
+    "id": "F12",
+    "input": {
+      "capacity": 2,
+      "items": [
+        {
+          "SYNTHETIC_SELECTION_METRIC": 9,
+          "id": "A"
+        },
+        {
+          "SYNTHETIC_SELECTION_METRIC": 7,
+          "id": "B"
+        },
+        {
+          "SYNTHETIC_SELECTION_METRIC": 7,
+          "id": "C"
+        },
+        {
+          "SYNTHETIC_SELECTION_METRIC": 1,
+          "id": "D"
+        }
+      ]
+    }
+  },
+  {
+    "description": "Datos completos con confirmación NO abierta: DATA_READY_WITH_OPEN_CONFIRMATIONS y READY",
+    "id": "F13",
+    "input": {
+      "confirmations": [
+        {
+          "BLOCKS_SUBMISSION": "NO",
+          "CONFIRMATION_ID": "SYN-C13-1",
+          "STATUS": "OPEN"
+        }
+      ],
+      "internally_complete": true
+    }
+  },
+  {
+    "description": "Confirmación bloqueante YES produce HOLD_CONFIRMATION",
+    "id": "F14",
+    "input": {
+      "confirmations": [
+        {
+          "BLOCKS_SUBMISSION": "YES",
+          "CONFIRMATION_ID": "SYN-C14-1",
+          "STATUS": "OPEN"
+        }
+      ],
+      "internally_complete": true
+    }
+  },
+  {
+    "description": "AUTHORIZED_WITH_SCOPE no genera COLLECTION_GO",
+    "id": "F15",
+    "input": {
+      "authorization_state": "AUTHORIZED_WITH_SCOPE"
+    }
+  },
+  {
+    "description": "YES + UNKNOWN: prevalece HOLD_CONFIRMATIO",
+    "id": "F16",
+    "input": {
+      "confirmations": [
+        {
+          "BLOCKS_SUBMISSION": "YES",
+          "CONFIRMATION_ID": "SYN-C16-Y",
+          "STATUS": "OPEN"
+        },
+        {
+          "BLOCKS_SUBMISSION": "UNKNOWN",
+          "CONFIRMATION_ID": "SYN-C16-U",
+          "STATUS": "OPEN"
+        }
+      ],
+      "internally_complete": true
+    }
+  },
+  {
+    "description": "Mismo R_i con distinta elegibilidad: no imputar LOW al SEARCH_PARTIAL",
+    "id": "F17",
+    "input": {
+      "records": [
+        {
+          "METHOD_VERSION_COMPARABLE": true,
+          "RESEARCH_ACTIVITY_VALUE": 3,
+          "RESEARCH_LOW_ELIGIBILITY": "PASS",
+          "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+          "TAXON_KEY": "SYN-TAX-017"
+        },
+        {
+          "METHOD_VERSION_COMPARABLE": true,
+          "RESEARCH_ACTIVITY_VALUE": 3,
+          "RESEARCH_LOW_ELIGIBILITY": "SEARCH_PARTIAL",
+          "RESEARCH_REFERENCE_POPULATION_MEMBER": true,
+          "TAXON_KEY": "SYN-TAX-018"
+        }
+      ]
+    }
+  }
+]

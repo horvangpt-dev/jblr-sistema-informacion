@@ -1,0 +1,189 @@
+{
+  "EXECUTION_SCOPE": "SYNTHETIC_TEST_ONLY",
+  "REAL_CORPUS_USED": false,
+  "UNIVERSE_HASH": "sha256:d6239c97f4ea4610fb4549dec30ab99718b0f165a2c60aa645f0a5ae1382bfc4",
+  "UNIVERSE_RELEASE_ID": "SYNTHETIC_MODEL3_T1_UNIVERSE_v1",
+  "UNIVERSE_VERSION": "SYNTHETIC_TEST_ONLY_v1",
+  "taxa": [
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 001",
+      "TAXON_KEY": "SYN-TAX-001"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 002",
+      "TAXON_KEY": "SYN-TAX-002"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 003",
+      "TAXON_KEY": "SYN-TAX-003"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 004",
+      "TAXON_KEY": "SYN-TAX-004"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 005",
+      "TAXON_KEY": "SYN-TAX-005"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 006",
+      "TAXON_KEY": "SYN-TAX-006"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 007",
+      "TAXON_KEY": "SYN-TAX-007"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 008",
+      "TAXON_KEY": "SYN-TAX-008"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 009",
+      "TAXON_KEY": "SYN-TAX-009"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 010",
+      "TAXON_KEY": "SYN-TAX-010"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 011",
+      "TAXON_KEY": "SYN-TAX-011"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 012",
+      "TAXON_KEY": "SYN-TAX-012"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 013",
+      "TAXON_KEY": "SYN-TAX-013"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 014",
+      "TAXON_KEY": "SYN-TAX-014"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 015",
+      "TAXON_KEY": "SYN-TAX-015"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 016",
+      "TAXON_KEY": "SYN-TAX-016"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 017",
+      "TAXON_KEY": "SYN-TAX-017"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 018",
+      "TAXON_KEY": "SYN-TAX-018"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 019",
+      "TAXON_KEY": "SYN-TAX-019"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 020",
+      "TAXON_KEY": "SYN-TAX-020"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 021",
+      "TAXON_KEY": "SYN-TAX-021"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 022",
+      "TAXON_KEY": "SYN-TAX-022"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 023",
+      "TAXON_KEY": "SYN-TAX-023"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 024",
+      "TAXON_KEY": "SYN-TAX-024"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 025",
+      "TAXON_KEY": "SYN-TAX-025"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 026",
+      "TAXON_KEY": "SYN-TAX-026"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 027",
+      "TAXON_KEY": "SYN-TAX-027"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 028",
+      "TAXON_KEY": "SYN-TAX-028"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 029",
+      "TAXON_KEY": "SYN-TAX-029"
+    },
+    {
+      "IDENTITY_STATE": "SYNTHETIC_RESOLVED",
+      "RANK": "Species",
+      "SCIENTIFIC_NAME": "Taxon syntheticus 030",
+      "TAXON_KEY": "SYN-TAX-030"
+    }
+  ]
+}

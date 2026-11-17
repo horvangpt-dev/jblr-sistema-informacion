@@ -1,0 +1,29 @@
+{
+  "executed_at": "2026-11-17T18:49:00+01:00",
+  "execution_scope": "SYNTHETIC_TEST_ONLY",
+  "fixture_runner": {
+    "failed": 0,
+    "fixtures": 17,
+    "passed": 17,
+    "technical_pass": true
+  },
+  "guards": {
+    "ACTOR_09_ACTIVATION": 0,
+    "CALIBRATION_EXECUTION": 0,
+    "EVENT_BUS_WRITES": 0,
+    "MASTER_MUTATION": 0,
+    "RC3_MUTATION": 0,
+    "REAL_CORPUS_EXECUTION": 0,
+    "SCIENTIFIC_VALIDATION_CLAIMED": false
+  },
+  "python": "3.13.5",
+  "result": "TECHNICAL_PASS",
+  "schema": "MODEL3_T1_SYNTHETIC_TEST_REPORT_v1",
+  "scientific_validation": "NOT_PERFORMED",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "failed": 0,
+    "passed": 39,
+    "total": 39
+  }
+}

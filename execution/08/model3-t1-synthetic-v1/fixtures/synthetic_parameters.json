@@ -1,0 +1,30 @@
+{
+  "FINAL_WEIGHTS": "UNSET",
+  "N_REF": "UNSET",
+  "PARAMETER_SET_ID": "MODEL3_T1_SYNTHETIC_PARAMS_v1",
+  "USAGE_SCOPE": "SYNTHETIC_TEST_ONLY",
+  "alpha": "UNSET",
+  "gamma_H": "UNSET",
+  "gamma_L": "UNSET",
+  "lambda_CWR": "UNSET",
+  "note": "Synthetic scenario weights exist only to exercise component plumbing and filter invariance. They are not scientific weights or calibration.",
+  "q_H": "UNSET",
+  "q_L": "UNSET",
+  "synthetic_scenarios": {
+    "SYN_I_BALANCED_TEST": {
+      "scope": "SYNTHETIC_TEST_ONLY",
+      "weights": {
+        "activity": 0.5,
+        "singularity_proxy": 0.5
+      }
+    },
+    "SYN_U_BALANCED_TEST": {
+      "scope": "SYNTHETIC_TEST_ONLY",
+      "weights": {
+        "exsitu_deficit": 0.3333333333333333,
+        "legal_protection": 0.3333333333333333,
+        "threat": 0.3333333333333333
+      }
+    }
+  }
+}

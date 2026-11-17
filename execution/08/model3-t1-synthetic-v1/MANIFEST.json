@@ -1,0 +1,139 @@
+{
+  "actor": "08",
+  "base_commit": "38b0be6dfc9ba9ad42b491594f04edc0a4bb8bc9",
+  "branch": "08-modelo3-t1-synthetic-v1",
+  "commands": [
+    "python run_fixtures.py",
+    "python -m unittest discover -s tests -v"
+  ],
+  "execution_scope": "SYNTHETIC_TEST_ONLY",
+  "files": [
+    {
+      "bytes": 687,
+      "path": ".github/workflows/08-modelo3-t1-synthetic.yml",
+      "sha256": "a1dd726cbe68811022a617e1436536ff68a5a5b4afd7fb3f71780aa1614fecfb"
+    },
+    {
+      "bytes": 19,
+      "path": ".gitignore",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "bytes": 1189,
+      "path": "README.md",
+      "sha256": "060dc7cb5aee8ad88c1888865ba7a4d7dcf103dd624bd6994e57a3f7ce10c8fa"
+    },
+    {
+      "bytes": 3180,
+      "path": "REPORT_T1_ES.md",
+      "sha256": "ca6228a144f0528e515517e5a641d52dab482ab40fc0f27f41d5b841e4702b79"
+    },
+    {
+      "bytes": 2256,
+      "path": "contracts/T0_BINDING_RULES.json",
+      "sha256": "9e7b95c9075e7416fc8957304ba71a9ccd69e5bf6c17869cf2d42f8e585fde63"
+    },
+    {
+      "bytes": 712,
+      "path": "evidence/TEST_REPORT.json",
+      "sha256": "f81d02db3cadb7950be91d9c1b3afe30b3dffb9e65d4ca24b0bc295b2e4337ea"
+    },
+    {
+      "bytes": 7564,
+      "path": "fixtures/F01_F17.json",
+      "sha256": "2115508d86f84f560a23031d1de71a9b92d90549b67fc3e9c2b464046d475f23"
+    },
+    {
+      "bytes": 3415,
+      "path": "fixtures/expected_F01_F17.json",
+      "sha256": "667500c0034704f21da87a8bf5fb758d3512ebcd4b425bf99d3f2c3e934206dc"
+    },
+    {
+      "bytes": 845,
+      "path": "fixtures/synthetic_parameters.json",
+      "sha256": "eb6c2f0f4dc144f17afe143e2a8df6ca7d820dce7d89cdfe34a1b2eb6d259c7e"
+    },
+    {
+      "bytes": 5303,
+      "path": "fixtures/synthetic_universe.json",
+      "sha256": "6eb499f954d15dd9ace5430b9ca309425ec2f170e9a73d7e99b5c0178a181a8e"
+    },
+    {
+      "bytes": 22,
+      "path": "model3_t1/__init__.py",
+      "sha256": "65b90a65319f483f88b2bc069f541995631557d4aa5ab9297c0887e1148c1535"
+    },
+    {
+      "bytes": 12982,
+      "path": "model3_t1/engine.py",
+      "sha256": "3ef9dc8ef1b21d1c81590bfe1c4cdda357879e5a5ce21b4f6b1d831fa8e8d5c7"
+    },
+    {
+      "bytes": 9095,
+      "path": "output/FIXTURE_RESULTS.json",
+      "sha256": "4481209acef35475717bfa919624c65ba0d3c0b5cf4faa2356224cfdd18e0cc5"
+    },
+    {
+      "bytes": 1215,
+      "path": "run_fixtures.py",
+      "sha256": "4d19666337fcb8034b91f76504ce11edac40c4b75aade3e4dec7c98c34d4f101"
+    },
+    {
+      "bytes": 9247,
+      "path": "tests/test_t1.py",
+      "sha256": "d471cd78f74d9c95d41ec12f25f7a019f064e2f45b73cc776b30dd421304ef24"
+    }
+  ],
+  "forbidden_side_effects": {
+    "ACTOR_09_ACTIVATION": 0,
+    "CALIBRATION_EXECUTION": 0,
+    "CANONICAL_STATE_WRITES": 0,
+    "CORPUS_EXECUTION": 0,
+    "DATABASE_WRITES": 0,
+    "EVENT_BUS_WRITES": 0,
+    "MASTER_MUTATION": 0,
+    "RC3_MUTATION": 0
+  },
+  "local_results": {
+    "calibration": false,
+    "fixtures_failed": 0,
+    "fixtures_passed": 17,
+    "fixtures_total": 17,
+    "real_cases": 0,
+    "scientific_validation": false,
+    "technical_pass": true,
+    "tests_failed": 0,
+    "tests_passed": 39,
+    "tests_total": 39
+  },
+  "parameters": {
+    "FINAL_WEIGHTS": "UNSET",
+    "N_REF": "UNSET",
+    "alpha": "UNSET",
+    "gamma_H": "UNSET",
+    "gamma_L": "UNSET",
+    "lambda_CWR": "UNSET",
+    "q_H": "UNSET",
+    "q_L": "UNSET"
+  },
+  "python_local": "3.13.5",
+  "real_taxa": 0,
+  "schema": "MODEL3_T1_SYNTHETIC_REPRODUCIBLE_MANIFEST_v1",
+  "source_docs": {
+    "002_REV02": {
+      "id": "1mX27QAQqGPjRoyMsxD_tDddFGBoxnKodJN69tI2sczU",
+      "revision": "AHj4eMQ0-jm65PE40DFggZ6gRjipllmvOcNZPAJAOyDWdt8rVEYLvfQcaz74QVMamH4ey1ROd2-o6UWjxN0pyKP_FMh3bB4OxXLt-KxN0sM"
+    },
+    "MODEL3_DESIGN": {
+      "id": "1uHRWArJaOs_gSukP8BESQHHErFk8vLGzCrXdljdLje0",
+      "revision": "AHj4eMTz8b-rufsSQ8HnF9IdPaOXHg1iIKLc1YP-Q5iQcr_3-vfsfbZRQyE6ylPQZwFRFi5kbJuM9JvpwjyYhpqnBl_zPpQa5C8GfJCAJSE"
+    },
+    "T0": {
+      "id": "1AYQVFOHtIYhk3i46fognwutDvRy2nJyY-xeThaV31X0",
+      "revision": "AHj4eMS6bmDuBsyxOlO73EekJ-7oKLSNbwxEog2jPu6Qk2wOL1yE0k8g1GFX3suuqKiTgJs8DWw5rM3wqdVC88v-PJTJgLrwT6cDWjIDp_Y"
+    }
+  },
+  "synthetic_taxa": 30,
+  "universe_hash": "sha256:d6239c97f4ea4610fb4549dec30ab99718b0f165a2c60aa645f0a5ae1382bfc4",
+  "universe_release_id": "SYNTHETIC_MODEL3_T1_UNIVERSE_v1"
+}
