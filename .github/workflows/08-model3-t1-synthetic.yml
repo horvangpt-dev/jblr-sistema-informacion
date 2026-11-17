@@ -1,0 +1,24 @@
+name: 08 Model3 T1 synthetic
+
+on:
+  push:
+    branches:
+      - 08-model3-t1-synthetic-v1
+    paths:
+      - experimental/08/model3_t1_synthetic_v1/prototype.py
+      - .github/workflows/08-model3-t1-synthetic.yml
+  workflow_dispatch:
+
+jobs:
+  synthetic-t1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Execute only T1 synthetic
+        run: |
+          cd experimental/08/model3_t1_synthetic_v1
+          python prototype.py
