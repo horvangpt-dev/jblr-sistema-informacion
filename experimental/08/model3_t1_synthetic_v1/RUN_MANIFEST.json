@@ -1,0 +1,25 @@
+{
+  "run_id": "MODEL3-T1-SYNTHETIC-20261117-001",
+  "model_version": "MODEL3_T1_PROTOTYPE_v1",
+  "universe_release_id": "SYNTHETIC_MODEL3_T1_2026-11-17_v1",
+  "universe_version": "v1",
+  "universe_hash": "8a4fa16bbbdaa568e11c8d44a9ecc29571e011f453b5d7864f8e2f3bcd6a099c",
+  "evidence_snapshot_id": "SYNTHETIC_EVIDENCE_MODEL3_T1_v1",
+  "run_cutoff_date": "2026-11-17",
+  "parameter_set_id": "SYNTHETIC_TEST_ONLY_MODEL3_T1_MECHANICS_v1",
+  "synthetic_test_only": true,
+  "scientific_weights": "UNSET",
+  "n_ref": "UNSET",
+  "corpus_execution": 0,
+  "real_case_execution": 0,
+  "calibration_execution": 0,
+  "event_bus_writes": 0,
+  "rc3_mutation": 0,
+  "actor_09_activation": 0,
+  "protection_mapping_version": "JBLR_PROT_MAP_LR_v0.1_2026-11-17",
+  "source_revisions": {
+    "T0": "AHj4eMS6bmDuBsyxOlO73EekJ-7oKLSNbwxEog2jPu6Qk2wOL1yE0k8g1GFX3suuqKiTgJs8DWw5rM3wqdVC88v-PJTJgLrwT6cDWjIDp_Y",
+    "DESIGN": "AHj4eMTz8b-rufsSQ8HnF9IdPaOXHg1iIKLc1YP-Q5iQcr_3-vfsfbZRQyE6ylPQZwFRFi5kbJuM9JvpwjyYhpqnBl_zPpQa5C8GfJCAJSE",
+    "002": "AHj4eMQ0-jm65PE40DFggZ6gRjipllmvOcNZPAJAOyDWdt8rVEYLvfQcaz74QVMamH4ey1ROd2-o6UWjxN0pyKP_FMh3bB4OxXLt-KxN0sM"
+  }
+}
