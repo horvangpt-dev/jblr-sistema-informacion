@@ -25,16 +25,11 @@ jobs:
         run: |
           cd experimental/08/model3_t1_synthetic_v1
           python prototype.py --write-results
-      - name: Show regenerated evidence for corrective staging
+      - name: Verify committed artifacts are current
         run: |
-          cd experimental/08/model3_t1_synthetic_v1
-          echo '--- T1_RESULT.json ---'
-          cat T1_RESULT.json
-          echo '--- RUN_MANIFEST.json ---'
-          cat RUN_MANIFEST.json
-          echo '--- FIXTURE_RESULTS.json ---'
-          cat FIXTURE_RESULTS.json
-          echo '--- SYNTHETIC_UNIVERSE.json ---'
-          cat SYNTHETIC_UNIVERSE.json
-          echo '--- DIFF STAT ---'
-          git diff --stat
+          git diff --exit-code -- \
+            experimental/08/model3_t1_synthetic_v1/RUN_MANIFEST.json \
+            experimental/08/model3_t1_synthetic_v1/FIXTURE_RESULTS.json \
+            experimental/08/model3_t1_synthetic_v1/T1_RESULT.json \
+            experimental/08/model3_t1_synthetic_v1/SYNTHETIC_UNIVERSE.json
+          test -z "$(git status --porcelain -- experimental/08/model3_t1_synthetic_v1/RUN_MANIFEST.json experimental/08/model3_t1_synthetic_v1/FIXTURE_RESULTS.json experimental/08/model3_t1_synthetic_v1/T1_RESULT.json experimental/08/model3_t1_synthetic_v1/SYNTHETIC_UNIVERSE.json)"

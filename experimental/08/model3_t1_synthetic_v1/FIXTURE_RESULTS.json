@@ -1,19 +1,391 @@
 [
-{"fixture":"F01","pass":true,"actual":{"cwr":"NO_CONFIRMED","pres":"NO_PROTECTION_CONFIRMED","pclass":"NO_PROTECTION_CONFIRMED","base":true,"high":true,"only_no":true,"no_cwr":true,"simple":true,"u":61,"i":42}},
-{"fixture":"F02","pass":true,"actual":{"cwr":"NO_CONFIRMED","pres":"PROTECTED_CONFIRMED","pclass":"HIGH_EXCLUSION","base":true,"high":false,"only_no":false,"no_cwr":true,"simple":false,"u":88,"i":33}},
-{"fixture":"F03","pass":true,"actual":{"cwr":"NO_CONFIRMED","pres":"PROTECTED_CONFIRMED","pclass":"PROTECTED_NON_EXCLUSION","base":true,"high":true,"only_no":false,"no_cwr":true,"simple":false,"u":70,"i":50}},
-{"fixture":"F04","pass":true,"actual":{"cwr":"NO_CONFIRMED","pres":"UNKNOWN","pclass":"UNKNOWN","base":true,"high":true,"only_no":false,"no_cwr":true,"simple":false,"u":55,"i":29}},
-{"fixture":"F05","pass":true,"actual":{"cwr":"YES","pres":"NO_PROTECTION_CONFIRMED","pclass":"NO_PROTECTION_CONFIRMED","base":true,"high":true,"only_no":true,"no_cwr":false,"simple":false,"u":44,"i":71}},
-{"fixture":"F06","pass":true,"actual":{"cwr":"UNKNOWN","pres":"NO_PROTECTION_CONFIRMED","pclass":"NO_PROTECTION_CONFIRMED","base":true,"high":true,"only_no":true,"no_cwr":true,"simple":true,"u":39,"i":47}},
-{"fixture":"F07","pass":true,"actual":{"cwr":"YES","rows":3,"numeric":"UNSET"}},
-{"fixture":"F08","pass":true,"actual":{"cwr":"CONFLICT","rows":2,"numeric":"UNSET"}},
-{"fixture":"F09","pass":true,"actual":{"F09":{"k":"F09","R":1,"member":"NO","eligibility":"SEARCH_PARTIAL","percentile":null,"low":null,"high":null,"low_reason":"UNKNOWN_INSUFFICIENT_SEARCH","distribution":"VALID"}}},
-{"fixture":"F10","pass":true,"actual":{"A":{"k":"A","R":1,"member":"YES","eligibility":"PASS","percentile":0.125,"low":50.0,"high":0.0,"low_reason":"EVALUATED","distribution":"VALID"},"B":{"k":"B","R":10,"member":"YES","eligibility":"PASS","percentile":0.375,"low":0.0,"high":0.0,"low_reason":"EVALUATED","distribution":"VALID"},"C":{"k":"C","R":20,"member":"YES","eligibility":"PASS","percentile":0.625,"low":0.0,"high":0.0,"low_reason":"EVALUATED","distribution":"VALID"},"D":{"k":"D","R":30,"member":"YES","eligibility":"PASS","percentile":0.875,"low":0.0,"high":50.0,"low_reason":"EVALUATED","distribution":"VALID"}}},
-{"fixture":"F11","pass":true,"actual":{"A":{"k":"A","R":5,"member":"YES","eligibility":"PASS","percentile":null,"low":null,"high":null,"low_reason":"UNSET_DEGENERATE_REFERENCE","distribution":"DEGENERATE"},"B":{"k":"B","R":5,"member":"YES","eligibility":"PASS","percentile":null,"low":null,"high":null,"low_reason":"UNSET_DEGENERATE_REFERENCE","distribution":"DEGENERATE"},"C":{"k":"C","R":5,"member":"YES","eligibility":"PASS","percentile":null,"low":null,"high":null,"low_reason":"UNSET_DEGENERATE_REFERENCE","distribution":"DEGENERATE"}}},
-{"fixture":"F12","pass":true,"actual":{"tie":true,"human":true}},
-{"fixture":"F13","pass":true,"actual":{"data":"DATA_READY_WITH_OPEN_CONFIRMATIONS","submission":"READY","preserved":1}},
-{"fixture":"F14","pass":true,"actual":{"data":"DATA_READY_WITH_OPEN_CONFIRMATIONS","submission":"HOLD_CONFIRMATION","preserved":1}},
-{"fixture":"F15","pass":true,"actual":{"collection_go":false}},
-{"fixture":"F16","pass":true,"actual":{"data":"DATA_READY_WITH_OPEN_CONFIRMATIONS","submission":"HOLD_CONFIRMATION","preserved":2}},
-{"fixture":"F17","pass":true,"actual":{"A":{"k":"A","R":5,"member":"YES","eligibility":"PASS","percentile":0.25,"low":0.0,"high":0.0,"low_reason":"EVALUATED","distribution":"VALID"},"B":{"k":"B","R":5,"member":"NO","eligibility":"SEARCH_PARTIAL","percentile":null,"low":null,"high":null,"low_reason":"UNKNOWN_INSUFFICIENT_SEARCH","distribution":"VALID"},"C":{"k":"C","R":20,"member":"YES","eligibility":"PASS","percentile":0.75,"low":0.0,"high":0.0,"low_reason":"EVALUATED","distribution":"VALID"}}}
+  {
+    "fixture": "F01",
+    "pass": true,
+    "actual": {
+      "cwr": "NO_CONFIRMED",
+      "pres": "NO_PROTECTION_CONFIRMED",
+      "pclass": "NO_PROTECTION_CONFIRMED",
+      "base": true,
+      "high": true,
+      "only_no": true,
+      "no_cwr": true,
+      "simple": true,
+      "u": 61,
+      "i": 42
+    }
+  },
+  {
+    "fixture": "F02",
+    "pass": true,
+    "actual": {
+      "cwr": "NO_CONFIRMED",
+      "pres": "PROTECTED_CONFIRMED",
+      "pclass": "HIGH_EXCLUSION",
+      "base": true,
+      "high": false,
+      "only_no": false,
+      "no_cwr": true,
+      "simple": false,
+      "u": 88,
+      "i": 33
+    }
+  },
+  {
+    "fixture": "F03",
+    "pass": true,
+    "actual": {
+      "cwr": "NO_CONFIRMED",
+      "pres": "PROTECTED_CONFIRMED",
+      "pclass": "PROTECTED_NON_EXCLUSION",
+      "base": true,
+      "high": true,
+      "only_no": false,
+      "no_cwr": true,
+      "simple": false,
+      "u": 70,
+      "i": 50
+    }
+  },
+  {
+    "fixture": "F04",
+    "pass": true,
+    "actual": {
+      "cwr": "NO_CONFIRMED",
+      "pres": "UNKNOWN",
+      "pclass": "UNKNOWN",
+      "base": true,
+      "high": true,
+      "only_no": false,
+      "no_cwr": true,
+      "simple": false,
+      "u": 55,
+      "i": 29
+    }
+  },
+  {
+    "fixture": "F05",
+    "pass": true,
+    "actual": {
+      "cwr": "YES",
+      "pres": "NO_PROTECTION_CONFIRMED",
+      "pclass": "NO_PROTECTION_CONFIRMED",
+      "base": true,
+      "high": true,
+      "only_no": true,
+      "no_cwr": false,
+      "simple": false,
+      "u": 44,
+      "i": 71
+    }
+  },
+  {
+    "fixture": "F06",
+    "pass": true,
+    "actual": {
+      "cwr": "UNKNOWN",
+      "pres": "NO_PROTECTION_CONFIRMED",
+      "pclass": "NO_PROTECTION_CONFIRMED",
+      "base": true,
+      "high": true,
+      "only_no": true,
+      "no_cwr": true,
+      "simple": true,
+      "u": 39,
+      "i": 47
+    }
+  },
+  {
+    "fixture": "F07",
+    "pass": true,
+    "actual": {
+      "cwr": "YES",
+      "rows": 3,
+      "numeric": "UNSET"
+    }
+  },
+  {
+    "fixture": "F08",
+    "pass": true,
+    "actual": {
+      "cwr": "CONFLICT",
+      "rows": 2,
+      "numeric": "UNSET"
+    }
+  },
+  {
+    "fixture": "F09",
+    "pass": true,
+    "actual": {
+      "F09": {
+        "k": "F09",
+        "R": 1,
+        "member": "NO",
+        "eligibility": "SEARCH_PARTIAL",
+        "REFERENCE_N_TOTAL_CANDIDATE": 1,
+        "REFERENCE_N_ELIGIBLE": 0,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 1,
+        "REFERENCE_ELIGIBILITY_RATE": 0.0,
+        "distribution": "EMPTY_REFERENCE",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": null,
+        "low": null,
+        "high": null,
+        "low_reason": "REFERENCE_UNAVAILABLE"
+      }
+    }
+  },
+  {
+    "fixture": "F10",
+    "pass": true,
+    "actual": {
+      "A": {
+        "k": "A",
+        "R": 1,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 4,
+        "REFERENCE_N_ELIGIBLE": 4,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 0,
+        "REFERENCE_ELIGIBILITY_RATE": 1.0,
+        "distribution": "VALID",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": 0.125,
+        "low": 50.0,
+        "high": 0.0,
+        "low_reason": "EVALUATED"
+      },
+      "B": {
+        "k": "B",
+        "R": 10,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 4,
+        "REFERENCE_N_ELIGIBLE": 4,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 0,
+        "REFERENCE_ELIGIBILITY_RATE": 1.0,
+        "distribution": "VALID",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": 0.375,
+        "low": 0.0,
+        "high": 0.0,
+        "low_reason": "EVALUATED"
+      },
+      "C": {
+        "k": "C",
+        "R": 20,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 4,
+        "REFERENCE_N_ELIGIBLE": 4,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 0,
+        "REFERENCE_ELIGIBILITY_RATE": 1.0,
+        "distribution": "VALID",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": 0.625,
+        "low": 0.0,
+        "high": 0.0,
+        "low_reason": "EVALUATED"
+      },
+      "D": {
+        "k": "D",
+        "R": 30,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 4,
+        "REFERENCE_N_ELIGIBLE": 4,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 0,
+        "REFERENCE_ELIGIBILITY_RATE": 1.0,
+        "distribution": "VALID",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": 0.875,
+        "low": 0.0,
+        "high": 50.0,
+        "low_reason": "EVALUATED"
+      }
+    }
+  },
+  {
+    "fixture": "F11",
+    "pass": true,
+    "actual": {
+      "A": {
+        "k": "A",
+        "R": 5,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 3,
+        "REFERENCE_N_ELIGIBLE": 3,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 0,
+        "REFERENCE_ELIGIBILITY_RATE": 1.0,
+        "distribution": "DEGENERATE",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": null,
+        "low": null,
+        "high": null,
+        "low_reason": "UNSET_DEGENERATE_REFERENCE"
+      },
+      "B": {
+        "k": "B",
+        "R": 5,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 3,
+        "REFERENCE_N_ELIGIBLE": 3,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 0,
+        "REFERENCE_ELIGIBILITY_RATE": 1.0,
+        "distribution": "DEGENERATE",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": null,
+        "low": null,
+        "high": null,
+        "low_reason": "UNSET_DEGENERATE_REFERENCE"
+      },
+      "C": {
+        "k": "C",
+        "R": 5,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 3,
+        "REFERENCE_N_ELIGIBLE": 3,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 0,
+        "REFERENCE_ELIGIBILITY_RATE": 1.0,
+        "distribution": "DEGENERATE",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": null,
+        "low": null,
+        "high": null,
+        "low_reason": "UNSET_DEGENERATE_REFERENCE"
+      }
+    }
+  },
+  {
+    "fixture": "F12",
+    "pass": true,
+    "actual": {
+      "tie": true,
+      "human": true
+    }
+  },
+  {
+    "fixture": "F13",
+    "pass": true,
+    "actual": {
+      "data": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+      "submission": "READY",
+      "preserved": 1
+    }
+  },
+  {
+    "fixture": "F14",
+    "pass": true,
+    "actual": {
+      "data": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+      "submission": "HOLD_CONFIRMATION",
+      "preserved": 1
+    }
+  },
+  {
+    "fixture": "F15",
+    "pass": true,
+    "actual": {
+      "collection_go": false
+    }
+  },
+  {
+    "fixture": "F16",
+    "pass": true,
+    "actual": {
+      "data": "DATA_READY_WITH_OPEN_CONFIRMATIONS",
+      "submission": "HOLD_CONFIRMATION",
+      "preserved": 2
+    }
+  },
+  {
+    "fixture": "F17",
+    "pass": true,
+    "actual": {
+      "A": {
+        "k": "A",
+        "R": 5,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 3,
+        "REFERENCE_N_ELIGIBLE": 2,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 1,
+        "REFERENCE_ELIGIBILITY_RATE": 0.6666666666666666,
+        "distribution": "VALID",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": 0.25,
+        "low": 0.0,
+        "high": 0.0,
+        "low_reason": "EVALUATED"
+      },
+      "B": {
+        "k": "B",
+        "R": 5,
+        "member": "NO",
+        "eligibility": "SEARCH_PARTIAL",
+        "REFERENCE_N_TOTAL_CANDIDATE": 3,
+        "REFERENCE_N_ELIGIBLE": 2,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 1,
+        "REFERENCE_ELIGIBILITY_RATE": 0.6666666666666666,
+        "distribution": "VALID",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": null,
+        "low": null,
+        "high": null,
+        "low_reason": "UNKNOWN_INSUFFICIENT_SEARCH"
+      },
+      "C": {
+        "k": "C",
+        "R": 20,
+        "member": "YES",
+        "eligibility": "PASS",
+        "REFERENCE_N_TOTAL_CANDIDATE": 3,
+        "REFERENCE_N_ELIGIBLE": 2,
+        "REFERENCE_EXCLUDED_INSUFFICIENT_COVERAGE": 1,
+        "REFERENCE_ELIGIBILITY_RATE": 0.6666666666666666,
+        "distribution": "VALID",
+        "boundary_tie_state": {
+          "q_l": false,
+          "q_h": false
+        },
+        "percentile": 0.75,
+        "low": 0.0,
+        "high": 0.0,
+        "low_reason": "EVALUATED"
+      }
+    }
+  }
 ]

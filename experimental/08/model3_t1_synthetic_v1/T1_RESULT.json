@@ -1,6 +1,6 @@
 {
   "technical_state": "TECHNICAL_PASS",
-  "tests_run": 15,
+  "tests_run": 24,
   "failures": 0,
   "errors": 0,
   "fixtures": 17,
@@ -12,5 +12,8 @@
   "corpus_rows": 0,
   "event_bus_writes": 0,
   "rc3_mutation": 0,
-  "actor_09_activation": 0
+  "master_doc_mutation": 0,
+  "external_evidence_queries": 0,
+  "actor_09_activation": 0,
+  "t2_state": "PREPARADO_NO_AUTORIZADO"
 }

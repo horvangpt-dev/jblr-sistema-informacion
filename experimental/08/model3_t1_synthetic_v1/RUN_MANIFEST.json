@@ -1,25 +1,55 @@
 {
-  "run_id": "MODEL3-T1-SYNTHETIC-20261117-001",
-  "model_version": "MODEL3_T1_PROTOTYPE_v1",
-  "universe_release_id": "SYNTHETIC_MODEL3_T1_2026-11-17_v1",
-  "universe_version": "v1",
+  "run_id": "MODEL3-T1-SYNTHETIC-20261117-002",
+  "model_version": "MODEL3_T1_PROTOTYPE_v2_CORRECTIVE",
+  "universe_release_id": "SYNTHETIC_MODEL3_T1_2026-11-17_v2",
+  "universe_version": "v2",
   "universe_hash": "8a4fa16bbbdaa568e11c8d44a9ecc29571e011f453b5d7864f8e2f3bcd6a099c",
-  "evidence_snapshot_id": "SYNTHETIC_EVIDENCE_MODEL3_T1_v1",
+  "evidence_snapshot_id": "SYNTHETIC_EVIDENCE_MODEL3_T1_v2",
   "run_cutoff_date": "2026-11-17",
-  "parameter_set_id": "SYNTHETIC_TEST_ONLY_MODEL3_T1_MECHANICS_v1",
+  "parameter_set_id": "SYNTHETIC_TEST_ONLY_MODEL3_T1_MECHANICS_v2",
   "synthetic_test_only": true,
   "scientific_weights": "UNSET",
+  "u_weights": "UNSET",
+  "i_weights": "UNSET",
   "n_ref": "UNSET",
+  "cwr_weight": "UNSET",
   "corpus_execution": 0,
   "real_case_execution": 0,
   "calibration_execution": 0,
   "event_bus_writes": 0,
   "rc3_mutation": 0,
   "actor_09_activation": 0,
+  "master_doc_mutation": 0,
+  "external_evidence_queries": 0,
   "protection_mapping_version": "JBLR_PROT_MAP_LR_v0.1_2026-11-17",
-  "source_revisions": {
-    "T0": "AHj4eMS6bmDuBsyxOlO73EekJ-7oKLSNbwxEog2jPu6Qk2wOL1yE0k8g1GFX3suuqKiTgJs8DWw5rM3wqdVC88v-PJTJgLrwT6cDWjIDp_Y",
-    "DESIGN": "AHj4eMTz8b-rufsSQ8HnF9IdPaOXHg1iIKLc1YP-Q5iQcr_3-vfsfbZRQyE6ylPQZwFRFi5kbJuM9JvpwjyYhpqnBl_zPpQa5C8GfJCAJSE",
-    "002": "AHj4eMQ0-jm65PE40DFggZ6gRjipllmvOcNZPAJAOyDWdt8rVEYLvfQcaz74QVMamH4ey1ROd2-o6UWjxN0pyKP_FMh3bB4OxXLt-KxN0sM"
+  "source_documents": {
+    "T0": {
+      "id": "1AYQVFOHtIYhk3i46fognwutDvRy2nJyY-xeThaV31X0",
+      "revision_id": "AHj4eMS6bmDuBsyxOlO73EekJ-7oKLSNbwxEog2jPu6Qk2wOL1yE0k8g1GFX3suuqKiTgJs8DWw5rM3wqdVC88v-PJTJgLrwT6cDWjIDp_Y"
+    },
+    "DESIGN": {
+      "id": "1uHRWArJaOs_gSukP8BESQHHErFk8vLGzCrXdljdLje0",
+      "revision_id": "AHj4eMTz8b-rufsSQ8HnF9IdPaOXHg1iIKLc1YP-Q5iQcr_3-vfsfbZRQyE6ylPQZwFRFi5kbJuM9JvpwjyYhpqnBl_zPpQa5C8GfJCAJSE"
+    },
+    "P1": {
+      "id": "1FzxQ3WfGox6LhbrXudY1geUTUBZqJDkH6qsGcZLXHIQ",
+      "revision_id": "AHj4eMSCp1STjVHVfY6rbTXbKUuQEhD_tuHmMFog57HxsqyuIlSA_SZSPg7gYH1ibK81ftCRdu-XmCtLisMaXXs5ZGF6OH5mPtI3C7FExLQ"
+    },
+    "MAN01": {
+      "id": "1NMKp0o9ADnIvg_BX5X-R8xRN94SE51MmtaoHrKCiUBk",
+      "revision_id": "AHj4eMQEqs9YoflemqKNlnNJP3Agqs02HWfZsBnM2K5d2A7oJrHZdt1LAtReo_y1ZhCyv02mq8caJDaZVnrALUDszj1q2wc7GL1hSj4_y8A"
+    },
+    "IT01": {
+      "id": "1oSdXFZ0Y_SfVrfLbg3BNqe5L3hFX9Rg7ylNoGqIlehI",
+      "revision_id": "AHj4eMS5EOblboVOEldKQzEldbgfKV3SIvCp33HJBHF-wqSFLV1VXUAMb6dWlcUfaJVrPbovj-YXfaHc59CQMm8X80jle8RaYWW2iCOUpzI"
+    },
+    "MAN02": {
+      "id": "1h2iAlcWU6Af3Wb3cpe4oSH6d4RNHG9FrYmfHDZBJl9Y",
+      "revision_id": "AHj4eMS_kReA0Ujv1TXU18eie810jzwWse1GSISEBG2nPugl1VYiZLWyL7hLcmbVKz004RRXSwFE2-65DoCoycK2dSfOuTSoV2650roHxPA"
+    },
+    "IT02": {
+      "id": "1jvzJUaIDa0dB9eonLU72YF-FLxN4yUSLzEpFLASGC6c",
+      "revision_id": "AHj4eMSJHYu0erIvdbf6F5Dm8GoOpxH9y_J0lXiZ9sqs--rVxvy5AQ_X8Wb0yYoWGQESTEO98rwGGfDn96QvTlQdwboq0IsqHYu_nxWewb4"
+    }
   }
 }

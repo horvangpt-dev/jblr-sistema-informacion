@@ -33,3 +33,14 @@ La relación punto por punto se conserva en CORRECTIVE_TRACEABILITY.md.
 - No se consulta ninguna fuente externa para datos del modelo durante la prueba.
 - TECHNICAL_PASS no equivale a calibración ni validación científica.
 - La aceptación final corresponde a 04.
+
+## CI de staging correctivo
+
+- commit: 4c948ca5be3c7981375199f47aacf873e76dfe09
+- run: 44152944756
+- resultado: success
+- tests: 24/24 PASS
+- fixtures: F01–F17 = 17/17 PASS
+- función del staging: regenerar los cuatro artefactos antes del commit final estricto.
+
+El CI del commit final debe repetir la suite y verificar diff limpio de artefactos.

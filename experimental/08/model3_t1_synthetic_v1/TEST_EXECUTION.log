@@ -1,20 +1,43 @@
-test_01_manifest_hash_keys (__main__.Tests.test_01_manifest_hash_keys) ... ok
+T1 corrective staging execution
+commit=4c948ca5be3c7981375199f47aacf873e76dfe09
+run=44152944756
+test_01_manifest_hash_keys_and_freeze (__main__.Tests.test_01_manifest_hash_keys_and_freeze) ... ok
 test_02_duplicate_keys (__main__.Tests.test_02_duplicate_keys) ... ok
 test_03_null_zero (__main__.Tests.test_03_null_zero) ... ok
-test_04_versions_business_key (__main__.Tests.test_04_versions_business_key) ... ok
-test_05_f01_f17 (__main__.Tests.test_05_f01_f17) ... ok
-test_06_ui_invariance (__main__.Tests.test_06_ui_invariance) ... ok
-test_07_protection_section17 (__main__.Tests.test_07_protection_section17) ... ok
-test_08_cwr_precedence (__main__.Tests.test_08_cwr_precedence) ... ok
-test_09_f16_precedence (__main__.Tests.test_09_f16_precedence) ... ok
-test_10_scenarios (__main__.Tests.test_10_scenarios) ... ok
-test_11_exsitu (__main__.Tests.test_11_exsitu) ... ok
-test_12_desktop_historical_locality (__main__.Tests.test_12_desktop_historical_locality) ... ok
-test_13_missing_phenology (__main__.Tests.test_13_missing_phenology) ... ok
-test_14_collection_go (__main__.Tests.test_14_collection_go) ... ok
-test_15_open_parameters (__main__.Tests.test_15_open_parameters) ... ok
+test_04_valuation_interface_and_business_key (__main__.Tests.test_04_valuation_interface_and_business_key) ... ok
+test_05_monthly_interface_filtered_audit (__main__.Tests.test_05_monthly_interface_filtered_audit) ... ok
+test_06_dossier_interface (__main__.Tests.test_06_dossier_interface) ... ok
+test_07_application_interface_and_states (__main__.Tests.test_07_application_interface_and_states) ... ok
+test_08_f01_f17 (__main__.Tests.test_08_f01_f17) ... ok
+test_09_ui_invariance (__main__.Tests.test_09_ui_invariance) ... ok
+test_10_protection_section17_categories (__main__.Tests.test_10_protection_section17_categories) ... ok
+test_11_protection_unknown_conflict_and_views (__main__.Tests.test_11_protection_unknown_conflict_and_views) ... ok
+test_12_cwr_precedence_and_views (__main__.Tests.test_12_cwr_precedence_and_views) ... ok
+test_13_f16_submission_precedence (__main__.Tests.test_13_f16_submission_precedence) ... ok
+test_14_empty_reference_not_valid (__main__.Tests.test_14_empty_reference_not_valid) ... ok
+test_15_low_boundary_tie (__main__.Tests.test_15_low_boundary_tie) ... ok
+test_16_high_boundary_tie (__main__.Tests.test_16_high_boundary_tie) ... ok
+test_17_reference_metrics_and_f17 (__main__.Tests.test_17_reference_metrics_and_f17) ... ok
+test_18_selection_boundary_tie (__main__.Tests.test_18_selection_boundary_tie) ... ok
+test_19_scenarios (__main__.Tests.test_19_scenarios) ... ok
+test_20_exsitu (__main__.Tests.test_20_exsitu) ... ok
+test_21_desktop_historical_locality (__main__.Tests.test_21_desktop_historical_locality) ... ok
+test_22_missing_phenology (__main__.Tests.test_22_missing_phenology) ... ok
+test_23_collection_go (__main__.Tests.test_23_collection_go) ... ok
+test_24_open_parameters_and_isolation (__main__.Tests.test_24_open_parameters_and_isolation) ... ok
 
-----------------------------------------------------------------------
-Ran 15 tests in 0.001s
-
-OK
+tests_run=24
+failures=0
+errors=0
+fixtures=17
+fixtures_pass=17
+technical_state=TECHNICAL_PASS
+t2_state=PREPARADO_NO_AUTORIZADO
+scientific_validation=NOT_PERFORMED
+calibration=NOT_PERFORMED
+corpus_rows=0
+event_bus_writes=0
+rc3_mutation=0
+master_doc_mutation=0
+external_evidence_queries=0
+actor_09_activation=0
