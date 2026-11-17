@@ -54,7 +54,7 @@ Resultado:
 ## Incidencias
 1. Una invocación auxiliar de `unittest discover` realizada desde un directorio de trabajo incorrecto produjo `ModuleNotFoundError`. No fue el comando reproducible oficial ni alteró datos. Se corrigió usando la ejecución desde la raíz del prototipo.
 2. No se detectaron fallos semánticos en la ejecución oficial.
-3. CI remoto: PENDING_AT_REPORT_CREATION; se actualizará tras readback del workflow.
+3. CI remoto verificado: GitHub Actions run 44143219971, job 134251306952, completed/success; el paso `Execute only T1 synthetic` terminó success.
 
 ## Límites
 TECHNICAL_PASS acredita únicamente que el prototipo implementado satisface las pruebas sintéticas definidas. No acredita calibración, validez científica, selección de campaña, autorización administrativa ni aptitud para corpus real.
