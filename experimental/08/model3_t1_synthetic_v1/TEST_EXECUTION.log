@@ -1,0 +1,20 @@
+test_01_manifest_hash_keys (__main__.Tests.test_01_manifest_hash_keys) ... ok
+test_02_duplicate_keys (__main__.Tests.test_02_duplicate_keys) ... ok
+test_03_null_zero (__main__.Tests.test_03_null_zero) ... ok
+test_04_versions_business_key (__main__.Tests.test_04_versions_business_key) ... ok
+test_05_f01_f17 (__main__.Tests.test_05_f01_f17) ... ok
+test_06_ui_invariance (__main__.Tests.test_06_ui_invariance) ... ok
+test_07_protection_section17 (__main__.Tests.test_07_protection_section17) ... ok
+test_08_cwr_precedence (__main__.Tests.test_08_cwr_precedence) ... ok
+test_09_f16_precedence (__main__.Tests.test_09_f16_precedence) ... ok
+test_10_scenarios (__main__.Tests.test_10_scenarios) ... ok
+test_11_exsitu (__main__.Tests.test_11_exsitu) ... ok
+test_12_desktop_historical_locality (__main__.Tests.test_12_desktop_historical_locality) ... ok
+test_13_missing_phenology (__main__.Tests.test_13_missing_phenology) ... ok
+test_14_collection_go (__main__.Tests.test_14_collection_go) ... ok
+test_15_open_parameters (__main__.Tests.test_15_open_parameters) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK
