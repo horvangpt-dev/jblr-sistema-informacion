@@ -5,9 +5,12 @@ on:
     branches:
       - 08-model3-t1-synthetic-v1
     paths:
-      - experimental/08/model3_t1_synthetic_v1/prototype.py
+      - experimental/08/model3_t1_synthetic_v1/**
       - .github/workflows/08-model3-t1-synthetic.yml
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   synthetic-t1:
@@ -18,7 +21,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Execute only T1 synthetic
+      - name: Execute corrective T1 and regenerate artifacts
         run: |
           cd experimental/08/model3_t1_synthetic_v1
-          python prototype.py
+          python prototype.py --write-results
+      - name: Show regenerated evidence for corrective staging
+        run: |
+          cd experimental/08/model3_t1_synthetic_v1
+          echo '--- T1_RESULT.json ---'
+          cat T1_RESULT.json
+          echo '--- RUN_MANIFEST.json ---'
+          cat RUN_MANIFEST.json
+          echo '--- FIXTURE_RESULTS.json ---'
+          cat FIXTURE_RESULTS.json
+          echo '--- SYNTHETIC_UNIVERSE.json ---'
+          cat SYNTHETIC_UNIVERSE.json
+          echo '--- DIFF STAT ---'
+          git diff --stat
